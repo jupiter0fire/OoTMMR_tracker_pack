@@ -465,5 +465,753 @@
         "img": "images/label_shadow.png"
       }
     ]
+  },
+  {
+    "name": "MM Sword",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": true,
+    "stages": [
+      {
+        "img": "images/mm_sword1.png",
+        "codes": "mm_sword,mm_kokirisword,mm_ksword"
+      },
+      {
+        "img": "images/mm_sword2.png",
+        "codes": "mm_sword2,mm_razorsword,mm_rsword"
+      },
+      {
+        "img": "images/mm_sword3.png",
+        "codes": "mm_sword3,mm_gildedsword,mm_gsword"
+      }
+    ]
+  },
+  {
+    "name": "MM Spin Attack",
+    "type": "toggle_badged",
+    "base_item": "sword",
+    "img": "images/mm_spin.png",
+    "codes": "mm_spinattack"
+  },
+  {
+    "name": "MM Shield",
+    "type": "progressive",
+    "allow_disabled": true,
+    "stages": [
+      {
+        "img": "images/mm_shield1.png",
+        "codes": "mm_shield1,mm_heroshield,mm_hshield"
+      },
+      {
+        "img": "images/mm_shield2.png",
+        "codes": "mm_shield2,mm_mirrorshield,mm_mshield"
+      }
+    ]
+  },
+  {
+    "name": "MM Bomber's Notebook",
+    "type": "toggle",
+    "img": "images/mm_notebook.png",
+    "codes": "mm_notebook,mm_bombersbook"
+  },
+  {
+    "name": "MM Wallet Upgrades",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_wallet.png"
+      },
+      {
+        "img": "images/mm_wallet1.png",
+        "codes": "mm_adultswallet,mm_wallet1,mm_wallet"
+      },
+      {
+        "img": "images/mm_wallet2.png",
+        "codes": "mm_giantswallet,mm_wallet2"
+      },
+      {
+        "img": "images/mm_wallet3.png",
+        "codes": "mm_royalwallet,mm_wallet3"
+      }
+    ]
+  },
+  {
+    "name": "MM Magic Meter",
+    "type": "progressive",
+    "allow_disabled": true,
+    "stages": [
+      {
+        "img": "images/mm_magic1.png",
+        "codes": "mm_magic,mm_magic1"
+      },
+      {
+        "img": "images/mm_magic2.png",
+        "codes": "mm_magic2"
+      }
+    ]
+  },
+  {
+    "name": "MM Heart Piece",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+          "img": "images/mm_HP.png",
+          "codes": "mm_HP,mm_PoH"
+      }
+    ]
+  },
+  {
+    "name": "MM Heart Container",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_HC.png",
+        "codes": "mm_HC"
+      }
+    ]
+  },
+  {
+    "name": "MM Boss Remains",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_zzRemains.png",
+        "codes": "mm_BR"
+      }
+    ]
+  },
+  {
+    "name": "MM Small Key",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_small_key.png",
+        "codes": "mm_smallkey"
+      }
+    ]
+  },
+  {
+    "name": "MM Boss Key",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_boss_key_sh.png",
+        "codes": "mm_bosskey,mm_bk"
+      }
+    ]
+  },
+  {
+    "name": "MM Rupee",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_rupee.png",
+        "codes": "mm_rupee"
+      }
+    ]
+  },
+  {
+    "item": "MM Map",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_map.png",
+        "codes": "mm_map"
+      }
+    ]
+  },
+  {
+    "name": "MM Song of Time",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_time_colored.png",
+    "initial_active_state": "true",
+    "codes": "mm_time,mm_sot"
+  },
+  {
+    "name": "MM Song of Time Check",
+    "type": "toggle_badged",
+    "base_item": "time",
+    "img": "images/mm_check.png",
+    "codes": "mm_timecheck,mm_sotcheck"
+  },
+  {
+    "name": "MM Song of Healing",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_healing_colored.png",
+    "codes": "mm_healing,mm_soh"
+  },
+  {
+    "name": "MM Song of Healing Check",
+    "type": "toggle_badged",
+    "base_item": "healing",
+    "img": "images/mm_check.png",
+    "codes": "mm_healingcheck,mm_sohcheck"
+  },
+  {
+    "name": "MM Epona's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_epona_colored.png",
+    "codes": "mm_epona"
+  },
+  {
+    "name": "MM Epona's Song Check",
+    "type": "toggle_badged",
+    "base_item": "epona",
+    "img": "images/mm_check.png",
+    "codes": "mm_eponacheck"
+  },
+  {
+    "name": "MM Song of Soaring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_soaring_colored.png",
+    "codes": "mm_soaring"
+  },
+  {
+    "name": "MM Song of Soaring Check",
+    "type": "toggle_badged",
+    "base_item": "soaring",
+    "img": "images/mm_check.png",
+    "codes": "mm_soaringcheck"
+  },
+  {
+    "name": "MM Song of Storms",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_storms_colored.png",
+    "codes": "mm_storm"
+  },
+  {
+    "name": "MM Song of Storms Check",
+    "type": "toggle_badged",
+    "base_item": "storm",
+    "img": "images/mm_check.png",
+    "codes": "mm_stormcheck"
+  },
+  {
+    "name": "MM Sonata of Awakening",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_sonata_colored.png",
+    "codes": "mm_sonata,mm_soa"
+  },
+  {
+    "name": "MM Sonata of Awakening Check",
+    "type": "toggle_badged",
+    "base_item": "sonata",
+    "img": "images/mm_check.png",
+    "codes": "mm_sonatacheck,mm_soacheck"
+  },
+  {
+    "name": "MM Goron's Lullaby",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_lullaby_colored.png",
+    "codes": "mm_goronlullaby,mm_lullaby"
+  },
+  {
+    "name": "MM Goron's Lullaby Check",
+    "type": "toggle_badged",
+    "base_item": "goronlullaby",
+    "img": "images/mm_check.png",
+    "codes": "mm_lullabycheck"
+  },
+  {
+    "name": "MM New Wave Bossa Nova",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_newwave_colored.png",
+    "codes": "mm_newwave,mm_bossanova,mm_nwbn"
+  },
+  {
+    "name": "MM New Bossa Nova Check",
+    "type": "toggle_badged",
+    "base_item": "newwave",
+    "img": "images/mm_check.png",
+    "codes": "mm_newwavecheck,mm_bossanovacheck,mm_nwbn"
+  },
+  {
+    "name": "MM Elegy of Emptiness",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_elegy_colored.png",
+    "codes": "mm_elegy,mm_emptiness,mm_eoe"
+  },
+  {
+    "name": "MM Elegy of Emptiness Check",
+    "type": "toggle_badged",
+    "base_item": "elegy",
+    "img": "images/mm_check.png",
+    "codes": "mm_elegycheck,mm_eoecheck"
+  },
+  {
+    "name": "MM Oath to Order",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_oath_colored.png",
+    "codes": "mm_oathtoorder,mm_oath,mm_oto"
+  },
+  {
+    "name": "MM Oath to Order Check",
+    "type": "toggle_badged",
+    "base_item": "oathtoorder",
+    "img": "images/mm_check.png",
+    "codes": "mm_oathcheck"
+  },
+  {
+    "name": "MM Boss Key Woodfall",
+    "type": "toggle",
+    "img": "images/mm_boss_key_wf.png",
+    "codes": "mm_bosskey_wf,mm_bk_wf"
+  },
+  {
+    "name": "MM Boss Key Snowhead",
+    "type": "toggle",
+    "img": "images/mm_boss_key_sh.png",
+    "codes": "mm_bosskey_sh,mm_bk_sh"
+  },
+  {
+    "name": "MM Boss Key Great Bay",
+    "type": "toggle",
+    "img": "images/mm_boss_key_gb.png",
+    "codes": "mm_bosskey_gb,mm_bk_gb"
+  },
+  {
+    "name": "MM Boss Key Stone Tower",
+    "type": "toggle",
+    "img": "images/mm_boss_key_st.png",
+    "codes": "mm_bosskey_st,mm_bk_st"
+  },
+  {
+    "name": "MM Notebook Code",
+    "type": "progressive",
+    "loop": false,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_notebook.png",
+        "codes": "mm_nobombercode",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/mm_notebook.png",
+        "codes": "mm_bombercode"
+      }
+    ]
+  },
+  {
+    "name": "MM Code 1",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_number_1.png",
+        "codes": "mm_code1-1"
+      },
+      {
+        "img": "images/mm_number_2.png",
+        "codes": "mm_code1-2"
+      },
+      {
+        "img": "images/mm_number_3.png",
+        "codes": "mm_code1-3"
+      },
+      {
+        "img": "images/mm_number_4.png",
+        "codes": "mm_code1-4"
+      },
+      {
+        "img": "images/mm_number_5.png",
+        "codes": "mm_code1-5"
+      }
+    ]
+  },
+  {
+    "name": "MM Code 2",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_number_1.png",
+        "codes": "mm_code2-1"
+      },
+      {
+        "img": "images/mm_number_2.png",
+        "codes": "mm_code2-2"
+      },
+      {
+        "img": "images/mm_number_3.png",
+        "codes": "mm_code2-3"
+      },
+      {
+        "img": "images/mm_number_4.png",
+        "codes": "mm_code2-4"
+      },
+      {
+        "img": "images/mm_number_5.png",
+        "codes": "mm_code2-5"
+      }
+    ]
+  },
+  {
+    "name": "MM Code 3",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_number_1.png",
+        "codes": "mm_code3-1"
+      },
+      {
+        "img": "images/mm_number_2.png",
+        "codes": "mm_code3-2"
+      },
+      {
+        "img": "images/mm_number_3.png",
+        "codes": "mm_code3-3"
+      },
+      {
+        "img": "images/mm_number_4.png",
+        "codes": "mm_code3-4"
+      },
+      {
+        "img": "images/mm_number_5.png",
+        "codes": "mm_code3-5"
+      }
+    ]
+  },
+  {
+    "name": "MM Code 4",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_number_1.png",
+        "codes": "mm_code4-1"
+      },
+      {
+        "img": "images/mm_number_2.png",
+        "codes": "mm_code4-2"
+      },
+      {
+        "img": "images/mm_number_3.png",
+        "codes": "mm_code4-3"
+      },
+      {
+        "img": "images/mm_number_4.png",
+        "codes": "mm_code4-4"
+      },
+      {
+        "img": "images/mm_number_5.png",
+        "codes": "mm_code4-5"
+      }
+    ]
+  },
+  {
+    "name": "MM Code 5",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_number_1.png",
+        "codes": "mm_code5-1"
+      },
+      {
+        "img": "images/mm_number_2.png",
+        "codes": "mm_code5-2"
+      },
+      {
+        "img": "images/mm_number_3.png",
+        "codes": "mm_code5-3"
+      },
+      {
+        "img": "images/mm_number_4.png",
+        "codes": "mm_code5-4"
+      },
+      {
+        "img": "images/mm_number_5.png",
+        "codes": "mm_code5-5"
+      }
+    ]
+  },
+  {
+    "name": "MM Seahorse Photo Shown",
+    "type": "toggle",
+    "img": "images/mm_bottle_horse.png",
+    "codes": "mm_seahorse_photo_shown"
+  },
+  {
+    "name": "MM Odolwa's Remains",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_odolwa.png",
+    "codes": "mm_odolwaremains,mm_odolwa"
+  },
+  {
+    "name": "MM Woodfall Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_unknown.png",
+        "codes": "mm_wftaccess"
+      },
+      {
+        "img": "images/mm_woodfallaccess.png",
+        "codes": "mm_wftwoodfall",
+      	"inherit_codes": false
+      },
+      {
+        "img": "images/mm_snowheadaccess.png",
+        "codes": "mm_wftsnowhead",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_greatbayaccess.png",
+        "codes": "mm_wftgreatbay",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_stonetoweraccess.png",
+        "codes": "mm_wftstonetower",
+	      "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Goht's Remains",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_goht.png",
+    "codes": "mm_gohtremains,mm_goht"
+  },
+  {
+    "name": "MM Snowhead Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_unknown.png",
+        "codes": "mm_shtaccess"
+      },
+      {
+        "img": "images/mm_woodfallaccess.png",
+        "codes": "mm_shtwoodfall",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_snowheadaccess.png",
+        "codes": "mm_shtsnowhead",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_greatbayaccess.png",
+        "codes": "mm_shtgreatbay",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_stonetoweraccess.png",
+        "codes": "mm_shtstonetower",
+	      "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Gyorg's Remains",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_gyorg.png",
+    "codes": "mm_gyorgremains,mm_gyorg"
+  },
+  {
+    "name": "MM Great Bay Access",
+    "type": "progressive",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/mm_unknown.png",
+        "codes": "mm_gbtaccess"
+      },
+      {
+        "img": "images/mm_woodfallaccess.png",
+        "codes": "mm_gbtwoodfall",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_snowheadaccess.png",
+        "codes": "mm_gbtsnowhead",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_greatbayaccess.png",
+        "codes": "mm_gbtgreatbay",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_stonetoweraccess.png",
+        "codes": "mm_gbtstonetower",
+	      "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Twinmold's Remains",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/mm_twinmold.png",
+    "codes": "mm_twinmoldremains,mm_twinmold"
+  },
+  {
+    "name": "MM Clear Woodfall",
+    "type": "toggle_badged",
+    "base_item": "odolwa",
+    "img": "images/mm_check.png",
+    "codes": "mm_wf_clear"
+  },
+  {
+    "name": "MM Clear Snowhead",
+    "type": "toggle_badged",
+    "base_item": "goht",
+    "img": "images/mm_check.png",
+    "codes": "mm_sh_clear"
+  },
+  {
+    "name": "MM Clear Great Bay",
+    "type": "toggle_badged",
+    "base_item": "gyorg",
+    "img": "images/mm_check.png",
+    "codes": "mm_gb_clear"
+  },
+  {
+    "name": "MM Clear Stone Tower",
+    "type": "toggle_badged",
+    "base_item": "twinmold",
+    "img": "images/mm_check.png",
+    "codes": "mm_st_clear"
+  },
+  {
+    "name": "MM Stonetower Access",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/mm_unknown.png",
+        "codes": "mm_sttaccess"
+      },
+      {
+        "img": "images/mm_woodfallaccess.png",
+        "codes": "mm_sttwoodfall",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_snowheadaccess.png",
+        "codes": "mm_sttsnowhead",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_greatbayaccess.png",
+        "codes": "mm_sttgreatbay",
+	      "inherit_codes": false
+      },
+      {
+        "img": "images/mm_stonetoweraccess.png",
+        "codes": "mm_sttstonetower",
+	      "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name":  "Clocktown Stray Fairy",
+    "type":  "toggle",
+    "img": "images/mm_fairy_ct.png",
+    "codes": "mm_fairy_ct"
+  },
+  {
+    "name":  "Swamp Stray Fairies",
+    "type":  "consumable",
+    "img": "images/mm_fairy_wf.png",
+    "codes": "mm_fairy_wf",
+    "max_quantity": 15
+  },
+  {
+    "name":  "Snowhead Stray Fairies",
+    "type":  "consumable",
+    "img": "images/mm_fairy_sh.png",
+    "codes": "mm_fairy_sh",
+    "max_quantity": 15
+  },
+  {
+    "name":  "Great Bay Stray Fairies",
+    "type":  "consumable",
+    "img": "images/mm_fairy_gb.png",
+    "codes": "mm_fairy_gb",
+    "max_quantity": 15
+  },
+  {
+    "name":  "Stone Tower Stray Fairies",
+    "type":  "consumable",
+    "img": "images/mm_fairy_st.png",
+    "codes": "mm_fairy_st",
+    "max_quantity": 15
+  },
+  {
+    "name":  "Swamp Skull Tokens",
+    "type":  "consumable",
+    "img": "images/mm_skull_ss.png",
+    "codes": "mm_skull_ss",
+    "max_quantity": 30
+  },
+  {
+    "name":  "Ocean Skull Tokens",
+    "type":  "consumable",
+    "img": "images/mm_skull_gb.png",
+    "codes": "mm_skull_gb",
+    "max_quantity": 30
+  },
+  {
+    "name": "MM Small Key Woodfall",
+    "type": "toggle",
+    "img": "images/mm_small_key_wf.png",
+    "codes": "mm_smallkey_wf,mm_sk_wf"
+  },
+  {
+    "name": "MM Small Key Snowhead",
+    "type": "consumable",
+    "img": "images/mm_small_key_sh.png",
+    "codes": "mm_smallkey_sh,mm_sk_sh",
+    "max_quantity": 3
+  },
+  {
+    "name": "MM Small Key Great Bay",
+    "type": "toggle",
+    "img": "images/mm_small_key_gb.png",
+    "codes": "mm_smallkey_gb,mm_sk_gb"
+  },
+  {
+    "name": "MM Small Key Stone Tower",
+    "type": "consumable",
+    "img": "images/mm_small_key_st.png",
+    "codes": "mm_smallkey_st,mm_sk_st",
+    "max_quantity": 4
   }
 ]
