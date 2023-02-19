@@ -30,7 +30,11 @@ local rewards = {
   "forestmed",
   "noct_meds",
   "lacs_meds",
-  "lightmed"
+  "lightmed",
+  "mm_odolwa_remains",
+  "mm_gyorg_remains",
+  "mm_goth_remains",
+  "mm_twinmold_remains"
 }
 
 local images = {
@@ -39,7 +43,11 @@ local images = {
   "images/forestmedallion.png",
   "images/nocturne_medallions.png",
   "images/lacs_medallions.png",
-  "images/lightmedallion.png"
+  "images/lightmedallion.png",
+  "images/mm_odolwa.png",
+  "images/mm_gyorg.png",
+  "images/mm_goht.png",
+  "images/mm_twinmold.png"
 }
 
 local quickModeOrder = {6, 3, 4, 4, 5, 5}
