@@ -6,7 +6,8 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "item_margin": "1,2",
+        "item_margin": "1,1",
+        "scale": 0.9,
         "rows": [
           [
             "bombs",
@@ -158,7 +159,7 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "item_margin": "1,2",
+        "item_margin": "1,1",
         "rows": [
           [
             "bombs",
@@ -215,7 +216,7 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "item_margin": "1,2",
+        "item_margin": "1,1",
         "rows": [
           [
             "mm_bow",
