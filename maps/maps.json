@@ -1,0 +1,14 @@
+﻿[
+  {
+    "name": "oot",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/map_spawns.png"
+  },
+  {
+    "name": "mm",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/termina.png"
+  }
+]

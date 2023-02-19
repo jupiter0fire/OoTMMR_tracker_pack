@@ -1,0 +1,232 @@
+{
+  "item_grid_tall": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "sticks",
+            "nuts",
+            "bombs",
+            "bow",
+            "firearrow",
+            "dinsfire"
+          ],
+          [
+            "slingshot",
+            "ocarinacrow",
+            "bombchu",
+            "hookshot",
+            "icearrow",
+            "faroreswind"
+          ],
+          [
+            "boomerang",
+            "lens",
+            "beans",
+            "hammer",
+            "lightarrow",
+            "nayruslove"
+          ],
+          [
+            "bottle1",
+            "bottle2",
+            "bottle3",
+            "bottle4",
+            "adulttrade",
+            "kidtrade"
+          ],
+          [
+            "lift1",
+            "redtunic",
+            "bluetunic",
+            "sword1",
+            "sword2",
+            "sword3"
+          ],
+          [
+            "scale1",
+            "ironboots",
+            "hoverboots",
+            "shield1",
+            "shield2",
+            "shield3"
+          ],
+          [
+            "wallet1",
+            "magic",
+            "card",
+            "agony",
+            "triforce",
+            "skulltula"
+          ],
+          [
+            "lullaby",
+            "epona",
+            "saria",
+            "sun",
+            "time",
+            "storm"
+          ],
+          [
+            "minuet",
+            "bolero",
+            "serenade",
+            "requiem",
+            "nocturne",
+            "prelude"
+          ]
+        ]
+      },
+      {
+        "type": "layout",
+        "key": "dungeon_grid_tall"
+      }
+    ]
+  },
+  "item_grid_wide": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "sticks",
+            "nuts",
+            "bombs",
+            "bow",
+            "firearrow",
+            "dinsfire",
+            "sword1",
+            "sword2",
+            "sword3"
+          ],
+          [
+            "slingshot",
+            "ocarinacrow",
+            "bombchu",
+            "hookshot",
+            "icearrow",
+            "faroreswind",
+            "shield1",
+            "shield2",
+            "shield3"
+          ],
+          [
+            "boomerang",
+            "lens",
+            "beans",
+            "hammer",
+            "lightarrow",
+            "nayruslove",
+            "lift1",
+            "redtunic",
+            "bluetunic"
+          ],
+          [
+            "bottle1",
+            "bottle2",
+            "bottle3",
+            "bottle4",
+            "adulttrade",
+            "kidtrade",
+            "scale1",
+            "ironboots",
+            "hoverboots"
+          ],
+          [
+            "lullaby",
+            "epona",
+            "saria",
+            "sun",
+            "time",
+            "storm",
+            "wallet1",
+            "magic",
+            "skulltula"
+          ],
+          [
+            "minuet",
+            "bolero",
+            "serenade",
+            "requiem",
+            "nocturne",
+            "prelude",
+            "card",
+            "agony",
+            "triforce"
+          ]
+        ]
+      },
+      {
+        "type": "layout",
+        "key": "dungeon_grid_wide"
+      }
+    ]
+  },
+  "item_grid_mini": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0,0,10",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "bombs",
+            "bombchu",
+            "slingshot",
+            "bow",
+            "firearrow",
+            "lightarrow"
+          ],
+          [
+            "lift1",
+            "hammer",
+            "boomerang",
+            "hookshot",
+            "dinsfire",
+            "faroreswind"
+          ],
+          [
+            "scale1",
+            "lens",
+            "sword1",
+            "shield3",
+            "boots",
+            "bottleminimal"
+          ],
+          [
+            "lullaby",
+            "epona",
+            "saria",
+            "sun",
+            "time",
+            "storm"
+          ],
+          [
+            "minuet",
+            "bolero",
+            "serenade",
+            "requiem",
+            "nocturne",
+            "prelude"
+          ]
+        ]
+      },
+      {
+        "type": "layout",
+        "key": "dungeon_grid_tall_centered"
+      }
+    ]
+  }
+}

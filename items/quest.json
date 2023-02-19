@@ -1,0 +1,469 @@
+[
+  {
+    "name": "Stone of Agony",
+    "type": "toggle",
+    "img": "images/agony.png",
+    "codes": "agony,soa"
+  },
+  {
+    "name": "Gerudo Card",
+    "type": "toggle",
+    "img": "images/gerudocard.png",
+    "codes": "gerudocard,card"
+  },
+  {
+    "name": "Gold Skulltula Tokens",
+    "type": "consumable",
+    "img": "images/skulltula_token.png",
+    "codes": "skulltula,goldskulltula,token",
+    "max_quantity": 100
+  },
+  {
+    "name": "Wallet Upgrades",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/wallet.png"
+      },
+      {
+        "img": "images/wallet1.png",
+        "codes": "adultswallet,wallet1,wallet"
+      },
+      {
+        "img": "images/wallet2.png",
+        "codes": "giantswallet,wallet2"
+      },
+      {
+        "img": "images/wallet3.png",
+        "codes": "tycoonswallet,wallet3"
+      }
+    ]
+  },
+  {
+    "name": "Magic Meter",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/magic1.png",
+        "codes": "magic,magic1"
+      },
+      {
+        "img": "images/magic2.png",
+        "codes": "magic2"
+      }
+    ]
+  },
+  {
+    "name": "Heart Pieces",
+    "type": "consumable",
+    "img": "images/HP.png",
+    "codes": "HP,PoH",
+    "max_quantity": 36
+  },
+  {
+    "name": "Heart Containers",
+    "type": "consumable",
+    "img": "images/HC.png",
+    "codes": "HC",
+    "max_quantity": 8
+  },
+  {
+    "name": "Ice Traps",
+    "type": "consumable",
+    "img": "images/icetrap.png",
+    "codes": "icetrap",
+    "max_quantity": 999
+  },
+  {
+    "name": "Triforce Piece",
+    "type": "consumable",
+    "img": "images/triforce_piece.png",
+    "codes": "triforce",
+    "max_quantity": 999
+  },
+  {
+    "name": "Rupee",
+    "type": "toggle",
+    "img": "images/rupee.png",
+    "codes": "rupee"
+  },
+  {
+    "name": "Forest Medallion",
+    "type": "toggle",
+    "img": "images/forestmedallion.png",
+    "codes": "forestmed"
+  },
+  {
+    "name": "Fire Medallion",
+    "type": "toggle",
+    "img": "images/firemedallion.png",
+    "codes": "firemed"
+  },
+  {
+    "name": "Water Medallion",
+    "type": "toggle",
+    "img": "images/watermedallion.png",
+    "codes": "watermed"
+  },
+  {
+    "name": "Spirit Medallion",
+    "type": "toggle",
+    "img": "images/spiritmedallion.png",
+    "codes": "spiritmed"
+  },
+  {
+    "name": "Shadow Medallion",
+    "type": "toggle",
+    "img": "images/shadowmedallion.png",
+    "codes": "shadowmed"
+  },
+  {
+    "name": "Light Medallion",
+    "type": "toggle",
+    "img": "images/lightmedallion.png",
+    "codes": "lightmed"
+  },
+  {
+    "name": "Kokiri's Emerald",
+    "type": "toggle",
+    "img": "images/emerald.png",
+    "codes": "emerald"
+  },
+  {
+    "name": "Goron's Ruby",
+    "type": "toggle",
+    "img": "images/ruby.png",
+    "codes": "ruby"
+  },
+  {
+    "name": "Zora's Sapphire",
+    "type": "toggle",
+    "img": "images/sapphire.png",
+    "codes": "sapphire"
+  },
+  {
+    "name": "Forest Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "forestmedlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Fire Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "firemedlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Water Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "watermedlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Spirit Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "spiritmedlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Shadow Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "shadowmedlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Light Medallion Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "lightmedlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Kokiri's Emerald Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "emeraldlabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Goron's Ruby Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "rubylabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  },
+  {
+    "name": "Zora's Sapphire Label",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_unknown.png",
+        "codes": "sapphirelabel"
+      },
+      {
+        "img": "images/label_deku.png"
+      },
+      {
+        "img": "images/label_dodongo.png"
+      },
+      {
+        "img": "images/label_jabu.png"
+      },
+      {
+        "img": "images/label_forest.png"
+      },
+      {
+        "img": "images/label_fire.png"
+      },
+      {
+        "img": "images/label_water.png"
+      },
+      {
+        "img": "images/label_spirit.png"
+      },
+      {
+        "img": "images/label_shadow.png"
+      }
+    ]
+  }
+]
