@@ -14,7 +14,7 @@
           "content": [
             {
               "type": "group",
-              "header": "Items",
+              "header": "Items OOT",
               "dock": "top",
               "header_content": {
                 "type": "button_popup",
@@ -24,9 +24,18 @@
               },
               "content": {
                 "type": "layout",
-                "key": "item_grid_tall"
+                "key": "item_grid_tall_oot"
               }
-            }
+            },
+            {
+              "type": "group",
+              "header": "Items MM",
+              "dock": "top",
+              "content": {
+                "type": "layout",
+                "key": "item_grid_mini_mm"
+              }
+            }            
           ]
         },
         {
@@ -55,25 +64,7 @@
                       "mm"
                     ]
                   }
-                }/*,
-                {
-                  "title": "Two Maps",
-                  "icon": "images/map.png",
-                  "content": {
-                    "type": "array",
-                    "orientation": "vertical",
-                    "content": [
-                      {
-                        "type": "map",
-                        "orientation": "vertical",
-                        "maps": [
-                          "child",
-                          "adult"
-                        ]
-                      }
-                    ]
-                  }
-                }*/
+                }
               ]
             },
             {
@@ -111,7 +102,7 @@
               "content": [
                 {
                   "type": "group",
-                  "header": "Items",
+                  "header": "Items OOT",
                   "dock": "top",
                   "header_content": {
                     "type": "button_popup",
@@ -121,7 +112,7 @@
                   },
                   "content": {
                     "type": "layout",
-                    "key": "item_grid_wide"
+                    "key": "item_grid_wide_oot"
                   }
                 }
               ]

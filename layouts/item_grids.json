@@ -1,5 +1,5 @@
 {
-  "item_grid_tall": {
+  "item_grid_tall_oot": {
     "type": "array",
     "orientation": "vertical",
     "content": [
@@ -88,7 +88,7 @@
       }
     ]
   },
-  "item_grid_wide": {
+  "item_grid_wide_oot": {
     "type": "array",
     "orientation": "vertical",
     "content": [
@@ -171,7 +171,7 @@
       }
     ]
   },
-  "item_grid_mini": {
+  "item_grid_mini_oot": {
     "type": "array",
     "orientation": "vertical",
     "margin": "0,0,0,10",
@@ -226,6 +226,121 @@
       {
         "type": "layout",
         "key": "dungeon_grid_tall_centered"
+      }
+    ]
+  }
+}
+{
+  "item_grid_mini_mm": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,2",
+        "rows": [
+          [
+            "bow",
+            "firearrow",
+            "icearrow",
+            "lightarrow",
+            "roomkey",
+            "moontear"
+          ],
+          [
+            "bombs",
+            "bombchus",
+            "sticks",
+            "beans",
+            "kafeiletter",
+            "landdeed"
+          ],
+          [
+            "powderkeg",
+            "pictobox",
+            "lensoftruth",
+            "hookshot",
+            "pendant",
+            "swampdeed"
+          ],
+          [
+            "princess_toggle",
+            "dust_toggle",
+            "bottle_count",
+            "gfs",
+            "express",
+            "mountaindeed"
+          ],
+          [
+            "sword",
+            "shield1",
+            "magic",
+            "ocarina",
+            "wallet",
+            "oceandeed"
+          ],
+          [
+            "timecheck",
+            "healingcheck",
+            "eponacheck",
+            "soaringcheck",
+            "stormcheck"
+          ],
+          [
+            "sonatacheck",
+            "lullabycheck",
+            "newwavecheck",
+            "elegycheck",
+            "oathcheck"
+          ],
+          [
+            "postmanhat",
+            "allnightmask",
+            "blastmask",
+            "stonemask",
+            "fairymask",
+            "dekumask"
+          ],
+          [
+            "keatonmask",
+            "bremenmask",
+            "bunnyhood",
+            "dongeromask",
+            "maskofscents",
+            "goronmask"
+          ],
+          [
+            "romanimask",
+            "circusleadermask",
+            "kafeimask",
+            "couplesmask",
+            "maskoftruth",
+            "zoramask"
+          ],
+          [
+            "kamaromask",
+            "gibdomask",
+            "garomask",
+            "captainhat",
+            "giantmask",
+            "fiercedeitymask"
+          ],
+          [
+            "odolwaremains",
+            "wftaccess",
+            "",
+            "gohtremains",
+            "shtaccess"
+          ],
+          [
+            "gyorgremains",
+            "gbtaccess",
+            "",
+            "twinmoldremains",
+            "sttaccess"
+          ]
+        ]
       }
     ]
   }
