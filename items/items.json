@@ -686,14 +686,14 @@
     "codes": "dummy"
   }
   {
-    "name": "Ocarina of Time",
+    "name": "MM Ocarina of Time",
     "type": "toggle",
     "img": "images/mm_ocarina.png",
     "initial_active_state": "true",
     "codes": "mm_ocarina"
   },
   {
-    "name": "Bow",
+    "name": "MM Bow",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -719,55 +719,55 @@
     ]
   },
   {
-    "name": "Fire Arrows",
+    "name": "MM Fire Arrows",
     "type": "toggle",
     "img": "images/mm_fire_arrow.png",
     "codes": "mm_firearrow,mm_fire,mm_farrow,mm_fa"
   },
   {
-    "name": "Ice Arrows",
+    "name": "MM Ice Arrows",
     "type": "toggle",
     "img": "images/mm_ice_arrow.png",
     "codes": "mm_icearrow,mm_ice,mm_iarrow,mm_ia"
   },
   {
-    "name": "Light Arrows",
+    "name": "MM Light Arrows",
     "type": "toggle",
     "img": "images/mm_light_arrow.png",
     "codes": "mm_lightarrow,mm_light,mm_larrow,mm_la"
   },
   {
-    "name": "Moon Tear",
+    "name": "MM Moon Tear",
     "type": "toggle",
     "img": "images/mm_moon_tear.png",
     "codes": "mm_moontear"
   },
   {
-    "name": "Land Deed",
+    "name": "MM Land Deed",
     "type": "toggle",
     "img": "images/mm_land_deed.png",
     "codes": "mm_landdeed"
   },
   {
-    "name": "Swamp Deed",
+    "name": "MM Swamp Deed",
     "type": "toggle",
     "img": "images/mm_swamp_deed.png",
     "codes": "mm_swampdeed"
   },
   {
-    "name": "Mountain Deed",
+    "name": "MM Mountain Deed",
     "type": "toggle",
     "img": "images/mm_mountain_deed.png",
     "codes": "mm_mountaindeed"
   },
   {
-    "name": "Ocean Deed",
+    "name": "MM Ocean Deed",
     "type": "toggle",
     "img": "images/mm_ocean_deed.png",
     "codes": "mm_oceandeed"
   },
   {
-    "name": "Bombs",
+    "name": "MM Bombs",
     "type": "progressive",
     "allow_disabled": false,
     "stages":
@@ -792,189 +792,189 @@
     ]
   },
   {
-    "name": "Bombchu",
+    "name": "MM Bombchu",
     "type": "toggle",
     "img": "images/mm_bombchu.png",
     "codes": "mm_bombchu,mm_bombchus,mm_chus"
   },
   {
-    "name": "Deku Sticks",
+    "name": "MM Deku Sticks",
     "type": "toggle",
     "img": "images/mm_stick.png",
     "codes": "mm_dekusticks,mm_sticks,mm_ds"
   },
   {
-    "name": "Deku Nuts",
+    "name": "MM Deku Nuts",
     "type": "toggle",
     "img": "images/mm_nut.png",
     "codes": "mm_dekunuts,mm_nuts,mm_dn"
   },
   {
-    "name": "Magic Beans",
+    "name": "MM Magic Beans",
     "type": "consumable",
     "img": "images/mm_bean.png",
     "codes": "mm_magicbeans,mm_beans",
     "max_quantity": 10
   },
   {
-    "name": "Room Key",
+    "name": "MM Room Key",
     "type": "toggle",
     "img": "images/mm_room_key.png",
     "codes": "mm_roomkey"
   },
   {
-    "name": "Express Letter",
+    "name": "MM Express Letter",
     "type": "toggle",
     "img": "images/mm_express.png",
     "codes": "mm_express,mm_mamaletter"
   },
   {
-    "name": "Powder Keg",
+    "name": "MM Powder Keg",
     "type": "toggle",
     "img": "images/mm_keg.png",
     "codes": "mm_powderkeg,mm_keg"
   },
   {
-    "name": "Pictobox",
+    "name": "MM Pictobox",
     "type": "toggle",
     "img": "images/mm_camera.png",
     "codes": "mm_pictobox,mm_picto"
   },
   {
-    "name": "Lens of Truth",
+    "name": "MM Lens of Truth",
     "type": "toggle",
     "img": "images/mm_lens.png",
     "codes": "mm_lensoftruth,mm_lens,mm_lot"
   },
   {
-    "name": "Hookshot",
+    "name": "MM Hookshot",
     "type": "toggle",
     "img": "images/mm_hookshot.png",
     "codes": "mm_hookshot,mm_hs"
   },
   {
-    "name": "Great Fairy Sword",
+    "name": "MM Great Fairy Sword",
     "type": "toggle",
     "img": "images/mm_fairy_sword.png",
     "codes": "mm_fairysword,mm_gfs"
   },
   {
-    "name": "Letter to Kafei",
+    "name": "MM Letter to Kafei",
     "type": "toggle",
     "img": "images/mm_kafei_letter.png",
     "codes": "mm_kafeiletter"
   },
   {
-    "name": "Pendant of Memories",
+    "name": "MM Pendant of Memories",
     "type": "toggle",
     "img": "images/mm_pendant.png",
     "codes": "mm_memoriespendant,mm_pendant"
   },
   {
-    "name": "Deku Princess",
+    "name": "MM Deku Princess",
     "type": "toggle",
     "img": "images/mm_bottle_princess.png",
     "codes": "mm_princess_toggle,mm_dekuprincess"
   },
   {
-    "name": "Gold Dust",
+    "name": "MM Gold Dust",
     "type": "toggle",
     "img": "images/mm_bottle_golddust.png",
     "codes": "mm_dust_toggle,mm_golddust"
   },
   {
-    "name": "Bottles",
+    "name": "MM Bottles",
     "type": "consumable",
     "img": "images/mm_bottle.png",
     "codes": "mm_bottle_count,mm_bottle",
     "max_quantity": 6
   },
   {
-    "name": "Big Poe",
+    "name": "MM Big Poe",
     "type": "toggle",
     "img": "images/mm_bottle_bigpoe.png",
     "codes": "mm_bigpoe"
   },
   {
-    "name": "Blue Potion",
+    "name": "MM Blue Potion",
     "type": "toggle",
     "img": "images/mm_bottle_blue.png",
     "codes": "mm_bluepotion"
   },
   {
-    "name": "Bug",
+    "name": "MM Bug",
     "type": "toggle",
     "img": "images/mm_bottle_bug.png",
     "codes": "mm_bugs"
   },
   {
-    "name": "Egg",
+    "name": "MM Egg",
     "type": "toggle",
     "img": "images/mm_bottle_egg.png",
     "codes": "mm_egg,mm_zoraegg"
   },
   {
-    "name": "Fairy",
+    "name": "MM Fairy",
     "type": "toggle",
     "img": "images/mm_bottle_fairy.png",
     "codes": "mm_fairy"
   },
   {
-    "name": "Fish",
+    "name": "MM Fish",
     "type": "toggle",
     "img": "images/mm_bottle_fish.png",
     "codes": "mm_fish"
   },
   {
-    "name": "Green Potion",
+    "name": "MM Green Potion",
     "type": "toggle",
     "img": "images/mm_bottle_green.png",
     "codes": "mm_greenpotion"
   },
   {
-    "name": "Milk",
+    "name": "MM Milk",
     "type": "toggle",
     "img": "images/mm_bottle_milk.png",
     "codes": "mm_milk"
   },
   {
-    "name": "Seahorse",
+    "name": "MM Seahorse",
     "type": "toggle",
     "img": "images/mm_bottle_horse.png",
     "codes": "mm_seahorse"
   },
   {
-    "name": "Poe",
+    "name": "MM Poe",
     "type": "toggle",
     "img": "images/mm_bottle_poe.png",
     "codes": "mm_poe"
   },
   {
-    "name": "Red Potion",
+    "name": "MM Red Potion",
     "type": "toggle",
     "img": "images/mm_bottle_red.png",
     "codes": "mm_redpotion"
   },
   {
-    "name": "Shroom",
+    "name": "MM Shroom",
     "type": "toggle",
     "img": "images/mm_bottle_shroom.png",
     "codes": "mm_shroom,mm_mushroom"
   },
   {
-    "name": "Hot Spring Water",
+    "name": "MM Hot Spring Water",
     "type": "toggle",
     "img": "images/mm_bottle_hotspring.png",
     "codes": "mm_hotspringwater,mm_hsw"
   },
   {
-    "name": "Chateau Romani",
+    "name": "MM Chateau Romani",
     "type": "toggle",
     "img": "images/mm_chateau.png",
     "codes": "mm_chateau"
   },
   {
-    "name": "Spring Water",
+    "name": "MM Spring Water",
     "type": "toggle",
     "img": "images/mm_bottle_spring.png",
     "codes": "mm_springwater"
