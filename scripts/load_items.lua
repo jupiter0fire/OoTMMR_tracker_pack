@@ -26,7 +26,7 @@ for i = 1, 12 do
 end
 
 ScriptHost:LoadScript("scripts/custom_dungeon_reward.lua")
-for i = 1, 9 do
+for i = 1, 13 do
   DungeonReward(i)
 end
 

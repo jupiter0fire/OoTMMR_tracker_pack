@@ -730,5 +730,113 @@
         ]
       }
     ]
+  },
+  "mm_dungeon_grid_tall": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0",
+        "content": [
+          {
+            "type": "item",
+            "item": "mm_woodfall",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "mm_snowpeak",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "mm_great_bay",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "mm_stone_tower",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0",
+        "content": [
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "forest_label",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "fire_label",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "water_label",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "spirit_label",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }  
 }

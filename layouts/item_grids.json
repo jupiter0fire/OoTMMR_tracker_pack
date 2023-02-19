@@ -304,22 +304,12 @@
             "mm_captainhat",
             "mm_giantmask",
             "mm_fiercedeitymask"
-          ],
-          [
-            "mm_odolwaremains",
-            "mm_wftaccess",
-            "",
-            "mm_gohtremains",
-            "mm_shtaccess"
-          ],
-          [
-            "mm_gyorgremains",
-            "mm_gbtaccess",
-            "",
-            "mm_twinmoldremains",
-            "mm_sttaccess"
           ]
         ]
+      },
+      {
+        "type": "layout",
+        "key": "mm_dungeon_grid_tall"
       }
     ]
   }

@@ -9,7 +9,11 @@ local names = {
   "Fire Temple Reward",
   "Water Temple Reward",
   "Spirit Temple Reward",
-  "Shadow Temple Reward"
+  "Shadow Temple Reward",
+  "MM Woodfall Temple Reward",
+  "MM Snowpeak Temple Reward",
+  "MM Great Bay Temple Reward",
+  "MM Stone Tower Temple Reward"
 }
 
 local codes = {
@@ -21,7 +25,11 @@ local codes = {
   "fire",
   "water",
   "spirit",
-  "shadow"
+  "shadow",
+  "mm_woodfall",
+  "mm_snowpeak",
+  "mm_great_bay",
+  "mm_stone_tower"
 }
 
 local rewards = {
