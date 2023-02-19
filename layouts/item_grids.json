@@ -228,9 +228,7 @@
         "key": "dungeon_grid_tall_centered"
       }
     ]
-  }
-}
-{
+  },
   "item_grid_mini_mm": {
     "type": "array",
     "orientation": "vertical",
