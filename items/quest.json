@@ -639,7 +639,7 @@
   {
     "name": "MM Song of Time Check",
     "type": "toggle_badged",
-    "base_item": "time",
+    "base_item": "mm_time",
     "img": "images/mm_check.png",
     "codes": "mm_timecheck,mm_sotcheck"
   },
@@ -653,7 +653,7 @@
   {
     "name": "MM Song of Healing Check",
     "type": "toggle_badged",
-    "base_item": "healing",
+    "base_item": "mm_healing",
     "img": "images/mm_check.png",
     "codes": "mm_healingcheck,mm_sohcheck"
   },
@@ -667,7 +667,7 @@
   {
     "name": "MM Epona's Song Check",
     "type": "toggle_badged",
-    "base_item": "epona",
+    "base_item": "mm_epona",
     "img": "images/mm_check.png",
     "codes": "mm_eponacheck"
   },
@@ -681,7 +681,7 @@
   {
     "name": "MM Song of Soaring Check",
     "type": "toggle_badged",
-    "base_item": "soaring",
+    "base_item": "mm_soaring",
     "img": "images/mm_check.png",
     "codes": "mm_soaringcheck"
   },
@@ -695,7 +695,7 @@
   {
     "name": "MM Song of Storms Check",
     "type": "toggle_badged",
-    "base_item": "storm",
+    "base_item": "mm_storm",
     "img": "images/mm_check.png",
     "codes": "mm_stormcheck"
   },
@@ -709,7 +709,7 @@
   {
     "name": "MM Sonata of Awakening Check",
     "type": "toggle_badged",
-    "base_item": "sonata",
+    "base_item": "mm_sonata",
     "img": "images/mm_check.png",
     "codes": "mm_sonatacheck,mm_soacheck"
   },
@@ -723,7 +723,7 @@
   {
     "name": "MM Goron's Lullaby Check",
     "type": "toggle_badged",
-    "base_item": "goronlullaby",
+    "base_item": "mm_goronlullaby",
     "img": "images/mm_check.png",
     "codes": "mm_lullabycheck"
   },
@@ -737,7 +737,7 @@
   {
     "name": "MM New Bossa Nova Check",
     "type": "toggle_badged",
-    "base_item": "newwave",
+    "base_item": "mm_newwave",
     "img": "images/mm_check.png",
     "codes": "mm_newwavecheck,mm_bossanovacheck,mm_nwbn"
   },
@@ -751,7 +751,7 @@
   {
     "name": "MM Elegy of Emptiness Check",
     "type": "toggle_badged",
-    "base_item": "elegy",
+    "base_item": "mm_elegy",
     "img": "images/mm_check.png",
     "codes": "mm_elegycheck,mm_eoecheck"
   },
@@ -765,7 +765,7 @@
   {
     "name": "MM Oath to Order Check",
     "type": "toggle_badged",
-    "base_item": "oathtoorder",
+    "base_item": "mm_oathtoorder",
     "img": "images/mm_check.png",
     "codes": "mm_oathcheck"
   },
