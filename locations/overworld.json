@@ -5178,12 +5178,12 @@
                   {
                     "name": "Clock Town Tunnels Deku Nut - Not in Casual Logic",
                     "access_rules": [
-                      "bombs,shield1,sword1,nut_yes,[nut_no]",
-                      "bombs,shield1,sticks,nut_yes,[nut_no]",
-                      "bombs,shield1,fairysword,sword1,nut_yes,[nut_no]",
-                      "blastmask,shield1,sword1,nut_yes,[nut_no]",
-                      "blastmask,shield1,sticks,nut_yes,[nut_no]",
-                      "blastmask,shield1,fairysword,sword1,nut_yes,[nut_no]"
+                      "mm_bombs,mm_shield1,mm_sword1,mm_nut_yes,[mm_nut_no]",
+                      "mm_bombs,mm_shield1,mm_sticks,mm_nut_yes,[mm_nut_no]",
+                      "mm_bombs,mm_shield1,mm_fairysword,mm_sword1,mm_nut_yes,[mm_nut_no]",
+                      "mm_blastmask,mm_shield1,mm_sword1,mm_nut_yes,[mm_nut_no]",
+                      "mm_blastmask,mm_shield1,mm_sticks,mm_nut_yes,[mm_nut_no]",
+                      "mm_blastmask,mm_shield1,mm_fairysword,mm_sword1,mm_nut_yes,[mm_nut_no]"
                     ],
                     "visibility_rules": [
                       "nut_yes"
@@ -5210,7 +5210,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "keaton"
+                      "mm_keaton"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5240,7 +5240,7 @@
                     "chest_unopened_img": "images/mm_heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "postman"
+                      "mm_postman"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5286,7 +5286,7 @@
                   {
                     "name": "Give him Moon's Tear",
                     "access_rules": [
-                      "moontear"
+                      "mm_moontear"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5307,11 +5307,11 @@
                   {
                     "name": "South Clock Town Lower Chest",
                     "access_rules": [
-                      "moontear,deku",
-                      "hookshot",
-                      "sticks,[geometryjump]",
-                      "sword1,[geometryjump]",
-                      "fairysword,[geometryjump]"
+                      "mm_moontear,mm_deku",
+                      "mm_hookshot",
+                      "mm_sticks,[mm_geometryjump]",
+                      "mm_sword1,[mm_geometryjump]",
+                      "mm_fairysword,[mm_geometryjump]"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5333,8 +5333,8 @@
                   {
                     "name": "Open On Final Day",
                     "access_rules": [
-                      "moontear,deku",
-                      "hookshot"
+                      "mm_moontear,mm_deku",
+                      "mm_hookshot"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5356,9 +5356,9 @@
                   {
                     "name": "Map: Clock Town",
                     "access_rules": [
-                      "$has_projectile",
-                      "[towntinglejump],sword1",
-                      "[towntinglejump],fairysword"
+                      "$mm_has_projectile",
+                      "[mm_towntinglejump],mm_sword1",
+                      "[mm_towntinglejump],mm_fairysword"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5366,9 +5366,9 @@
                   {
                     "name": "Map: Swamp",
                     "access_rules": [
-                      "$has_projectile",
-                      "[towntinglejump],sword1",
-                      "[towntinglejump],fairysword"
+                      "$mm_has_projectile",
+                      "[mm_towntinglejump],mm_sword1",
+                      "[mm_towntinglejump],mm_fairysword"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5392,10 +5392,10 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "sword1",
-                      "goron",
-                      "zora",
-                      "fairysword"
+                      "mm_sword1",
+                      "mm_goron",
+                      "mm_zora",
+                      "mm_fairysword"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5417,8 +5417,8 @@
                   {
                     "name": "Catch The Bombers",
                     "access_rules": [
-                      "$has_projectile",
-                      "bombernothing"
+                      "$mm_has_projectile",
+                      "mm_bombernothing"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5463,7 +5463,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "deku"
+                      "mm_deku"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5473,7 +5473,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "deku"
+                      "mm_deku"
                     ],
                     "visibility_rules": [
                       "misc_yes"
@@ -5500,7 +5500,7 @@
                   {
                     "name": "Stray Fairy",
                     "access_rules": [
-                      "clocktown_strayfairy"
+                      "mm_clocktown_strayfairy"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5510,9 +5510,9 @@
                     "chest_unopened_img": "images/system/chest_brown_closed.png",
                     "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
-                      "deku,clocktown_strayfairy",
-                      "goron,clocktown_strayfairy",
-                      "zora,clocktown_strayfairy"
+                      "mm_deku,mm_clocktown_strayfairy",
+                      "mm_goron,mm_clocktown_strayfairy",
+                      "mm_zora,mm_clocktown_strayfairy"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5563,7 +5563,7 @@
                   {
                     "name": "Inn Guest Room Chest",
                     "access_rules": [
-                      "roomkey"
+                      "mm_roomkey"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5571,7 +5571,7 @@
                   {
                     "name": "Midnight Item From Anju - Night 1: 11:30 PM",
                     "access_rules": [
-                      "[$night_inn_access],kafeimask"
+                      "[$mm_night_inn_access],mm_kafeimask"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5581,7 +5581,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "allnightmask"
+                      "mm_allnightmask"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5591,7 +5591,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "allnightmask"
+                      "mm_allnightmask"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5601,12 +5601,12 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "towndeed,[$night_inn_access]",
-                      "woodfall_deed,[$night_inn_access]",
-                      "snowhead_deed,[$night_inn_access]",
-                      "great_bay_deed,[$night_inn_access]",
-                      "lettertokafei,[$night_inn_access]",
-                      "deliverytomama,[$night_inn_access],[queststorage]"
+                      "mm_towndeed,[$mm_night_inn_access]",
+                      "mm_woodfall_deed,[$mm_night_inn_access]",
+                      "mm_snowhead_deed,[$mm_night_inn_access]",
+                      "mm_great_bay_deed,[$mm_night_inn_access]",
+                      "mm_lettertokafei,[$mm_night_inn_access]",
+                      "mm_deliverytomama,[$mm_night_inn_access],[mm_queststorage]"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5616,9 +5616,9 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "{maskoftruth}",
-                      "kafeimask,pendantofmemories,lettertokafei,ocarina,eponasong,gibdomask,hookshot,[$night_inn_access]",
-                      "kafeimask,pendantofmemories,lettertokafei,ocarina,eponasong,garomask,hookshot,[$night_inn_access]"
+                      "{mm_maskoftruth}",
+                      "mm_kafeimask,mm_pendantofmemories,mm_lettertokafei,mm_ocarina,mm_eponasong,mm_gibdomask,mm_hookshot,[$mm_night_inn_access]",
+                      "mm_kafeimask,mm_pendantofmemories,mm_lettertokafei,mm_ocarina,mm_eponasong,mm_garomask,mm_hookshot,[$mm_night_inn_access]"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5641,7 +5641,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "deku,goron,zora,romanimask"
+                      "mm_deku,mm_goron,mm_zora,mm_romanimask"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5649,7 +5649,7 @@
                   {
                     "name": "Delivery To Madame Aroma - Final Night",
                     "access_rules": [
-                      "kafeimask,deliverytomama"
+                      "mm_kafeimask,mm_deliverytomama"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5659,7 +5659,7 @@
                     "chest_unopened_img": "images/system/chest_brown_closed.png",
                     "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
-                      "romanimask,adultwallet"
+                      "mm_romanimask,mm_adultwallet"
                     ],
                     "visibility_rules": [
                       "shopsanity_yes"
@@ -5672,7 +5672,7 @@
                     "chest_unopened_img": "images/system/chest_brown_closed.png",
                     "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
-                      "romanimask"
+                      "mm_romanimask"
                     ],
                     "visibility_rules": [
                       "shopsanity_yes"
@@ -5705,7 +5705,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "couple"
+                      "mm_couple"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5728,7 +5728,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "bomb,bow"
+                      "mm_bomb,mm_bow"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5741,9 +5741,9 @@
                       "misc_yes"
                     ],
                     "access_rules": [
-                      "bomb",
-                      "bow",
-                      "deku,magic"
+                      "mm_bomb",
+                      "mm_bow",
+                      "mm_deku,mm_magic"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5765,7 +5765,7 @@
                   {
                     "name": "40 Points Prize",
                     "access_rules": [
-                      "bow"
+                      "mm_bow"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5775,7 +5775,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "bow"
+                      "mm_bow"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5798,7 +5798,7 @@
                     "chest_unopened_img": "images/system/chest_unopened_big.png",
                     "chest_opened_img": "images/system/chest_open_big.png",
                     "access_rules": [
-                      "goron"
+                      "mm_goron"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5818,7 +5818,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "deku"
+                      "mm_deku"
                     ],
                     "visibility_rules": [
                       "misc_yes"
@@ -5831,7 +5831,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "zora"
+                      "mm_zora"
                     ],
                     "visibility_rules": [
                       "misc_yes"
@@ -5856,11 +5856,11 @@
                   {
                     "name": "Bombers' Hidden Treasure",
                     "access_rules": [
-                      "$has_explosives,deku,[bomberback]",
-                      "$has_explosives,[$has_projectile]",
-                      "$has_explosives,[deku]",
-                      "bombernothing,$has_explosives",
-                      "guardskip,$has_explosives"
+                      "$mm_has_explosives,mm_deku,[mm_bomberback]",
+                      "$mm_has_explosives,[$mm_has_projectile]",
+                      "$mm_has_explosives,[mm_deku]",
+                      "mm_bombernothing,$mm_has_explosives",
+                      "mm_guardskip,$mm_has_explosives"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5884,7 +5884,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "kamaro"
+                      "mm_kamaro"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5947,7 +5947,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "[adultwallet]"
+                      "[mm_adultwallet]"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5970,7 +5970,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "sword1"
+                      "mm_sword1"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5993,8 +5993,8 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "[bunnyhood]",
-                      "postmanhood"
+                      "[mm_bunnyhood]",
+                      "mm_postmanhood"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6004,7 +6004,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "deliverytomama"
+                      "mm_deliverytomama"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6048,14 +6048,14 @@
                     "name": "Big Bomb Bag (90 Rupees, 100 if stolen)",
                     "access_rules": [
                       "{}",
-                      "sword1",
-                      "goron",
-                      "zora",
-                      "fairysword",
-                      "[sword1],adultwallet",
-                      "[goron],adultwallet",
-                      "[zora],adultwallet",
-                      "[fairysword],adultwallet"
+                      "mm_sword1",
+                      "mm_goron",
+                      "mm_zora",
+                      "mm_fairysword",
+                      "[mm_sword1],mm_adultwallet",
+                      "[mm_goron],mm_adultwallet",
+                      "[mm_zora],mm_adultwallet",
+                      "[mm_fairysword],mm_adultwallet"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6073,7 +6073,7 @@
               {
                 "name": "Trading Post - Not Available Final Night",
                 "access_rules": [
-                  "shopsanity_yes"
+                  "mm_shopsanity_yes"
                 ],
                 "sections": [
                   {
@@ -6159,13 +6159,13 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "giantwallet,sword1",
-                      "giantwallet,fairysword",
-                      "giantwallet,goron",
-                      "giantwallet,zora",
-                      "giantwallet,bow",
-                      "giantwallet,hookshot",
-                      "giantwallet,$has_explosives"
+                      "mm_giantwallet,mm_sword1",
+                      "mm_giantwallet,mm_fairysword",
+                      "mm_giantwallet,mm_goron",
+                      "mm_giantwallet,mm_zora",
+                      "mm_giantwallet,mm_bow",
+                      "mm_giantwallet,mm_hookshot",
+                      "mm_giantwallet,$mm_has_explosives"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6175,15 +6175,15 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "bottle,bottlesanity_yes,mushroom",
-                      "bottle,bottlesanity_no,scents",
-                      "bottle,shopsanity_no",
-                      "bottle,milklocated",
-                      "bottle,cowsanity_no,$has_explosives,ocarina,eponasong",
-                      "bottle,cowsanity_no,ocarina,eponasong,[zora],hookshot",
-                      "bottle,cowsanity_no,goron,keg,bow,ocarina,eponasong",
-                      "bottle,cowsanity_no,ocarina,eponasong,gibdomask,hookshot,[bow],[magic],[icearrows],[soaring],$can_bottle_hotspringwater,beans",
-                      "bottle,cowsanity_no,ocarina,eponasong,gibdomask,hookshot,bow,magic,[icearrows],[soaring],$can_bottle_hotspringwater,lightarrows"
+                      "mm_bottle,mm_bottlesanity_yes,mm_mushroom",
+                      "mm_bottle,mm_bottlesanity_no,mm_scents",
+                      "mm_bottle,mm_shopsanity_no",
+                      "mm_bottle,mm_milklocated",
+                      "mm_bottle,mm_cowsanity_no,$mm_has_explosives,mm_ocarina,mm_eponasong",
+                      "mm_bottle,mm_cowsanity_no,mm_ocarina,mm_eponasong,[mm_zora],mm_hookshot",
+                      "mm_bottle,mm_cowsanity_no,mm_goron,mm_keg,mm_bow,mm_ocarina,mm_eponasong",
+                      "mm_bottle,mm_cowsanity_no,mm_ocarina,mm_eponasong,mm_gibdomask,mm_hookshot,[mm_bow],[mm_magic],[mm_icearrows],[mm_soaring],$mm_can_bottle_hotspringwater,mm_beans",
+                      "mm_bottle,mm_cowsanity_no,mm_ocarina,mm_eponasong,mm_gibdomask,mm_hookshot,mm_bow,mm_magic,[mm_icearrows],[mm_soaring],$mm_can_bottle_hotspringwater,mm_lightarrows"
                     ],
                     "visibility_rules": [
                       "misc_yes"
@@ -6196,16 +6196,16 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "bottlesanity_no,bottle",
-                      "bottle,bottlesanity_yes,redpotionlocated",
-                      "bottle,bottlesanity_yes,bluepotionlocated",
-                      "bottle,bottlesanity_yes,milklocated",
-                      "bottle,bottlesanity_yes,bugs",
-                      "bottle,bottlesanity_yes,fish",
-                      "bottle,bottlesanity_yes,fairy",
-                      "bottle,bottlesanity_yes,hotspringwater",
-                      "bottle,bottlesanity_yes,water",
-                      "bottle,bottlesanity_yes,zoraegg"
+                      "mm_bottlesanity_no,mm_bottle",
+                      "mm_bottle,mm_bottlesanity_yes,mm_redpotionlocated",
+                      "mm_bottle,mm_bottlesanity_yes,mm_bluepotionlocated",
+                      "mm_bottle,mm_bottlesanity_yes,mm_milklocated",
+                      "mm_bottle,mm_bottlesanity_yes,mm_bugs",
+                      "mm_bottle,mm_bottlesanity_yes,mm_fish",
+                      "mm_bottle,mm_bottlesanity_yes,mm_fairy",
+                      "mm_bottle,mm_bottlesanity_yes,mm_hotspringwater",
+                      "mm_bottle,mm_bottlesanity_yes,mm_water",
+                      "mm_bottle,mm_bottlesanity_yes,mm_zoraegg"
                     ],
                     "visibility_rules": [
                       "misc_yes"
@@ -6218,10 +6218,10 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "bottlesanity_yes,poe,misc_yes",
-                      "bottlesanity_no,garomask,bottle,hookshot,ocarina,eponasong,deku,goron,zora,elegy,lightarrows,bow,magic,stonetower_small_keys:1,misc_yes,twinstone,$can_deal_damage",
-                      "bottlesanity_no,gibdomask,bottle,hookshot,ocarina,eponasong,deku,goron,zora,elegy,lightarrows,bow,magic,stonetower_small_keys:1,misc_yes,twinstone,$can_deal_damage",
-                      "bow,lightarrows,magic,hookshot,stonetower_small_keys:1,hookshot,bottle,$inverted_access,bottlesanity_no"
+                      "mm_bottlesanity_yes,mm_poe,mm_misc_yes",
+                      "mm_bottlesanity_no,mm_garomask,mm_bottle,mm_hookshot,mm_ocarina,mm_eponasong,mm_deku,mm_goron,mm_zora,mm_elegy,mm_lightarrows,mm_bow,mm_magic,mm_stonetower_small_keys:mm_1,mm_misc_yes,mm_twinstone,$mm_can_deal_damage",
+                      "mm_bottlesanity_no,mm_gibdomask,mm_bottle,mm_hookshot,mm_ocarina,mm_eponasong,mm_deku,mm_goron,mm_zora,mm_elegy,mm_lightarrows,mm_bow,mm_magic,mm_stonetower_small_keys:mm_1,mm_misc_yes,mm_twinstone,$mm_can_deal_damage",
+                      "mm_bow,mm_lightarrows,mm_magic,mm_hookshot,mm_stonetower_small_keys:mm_1,mm_hookshot,mm_bottle,$mm_inverted_access,mm_bottlesanity_no"
                     ],
                     "visibility_rules": [
                       "misc_yes"
@@ -6234,13 +6234,13 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "bottle,captainshat,bow,misc_yes,eponasong,bottlesanity_no",
-                      "bottle,captainshat,zora,misc_yes,eponasong,bottlesanity_no",
-                      "bottle,gibdomask,hookshot,bombs,nuts,beans,misc_yes,eponasong,bottlesanity_no",
-                      "bottle,bottlesanity_yes,bigpoe,misc_yes",
-                      "bottle,shopsanity_no,romanimask,adultwallet,misc_yes",
-                      "bottle,chateaulocated,misc_yes",
-                      "bottle,dustlocated,misc_yes"
+                      "mm_bottle,mm_captainshat,mm_bow,mm_misc_yes,mm_eponasong,mm_bottlesanity_no",
+                      "mm_bottle,mm_captainshat,mm_zora,mm_misc_yes,mm_eponasong,mm_bottlesanity_no",
+                      "mm_bottle,mm_gibdomask,mm_hookshot,mm_bombs,mm_nuts,mm_beans,mm_misc_yes,mm_eponasong,mm_bottlesanity_no",
+                      "mm_bottle,mm_bottlesanity_yes,mm_bigpoe,mm_misc_yes",
+                      "mm_bottle,mm_shopsanity_no,mm_romanimask,mm_adultwallet,mm_misc_yes",
+                      "mm_bottle,mm_chateaulocated,mm_misc_yes",
+                      "mm_bottle,mm_dustlocated,mm_misc_yes"
                     ],
                     "visibility_rules": [
                       "misc_yes"
@@ -6316,7 +6316,7 @@
                   {
                     "name": "Gift From Kafei - Day 2: 4:30 PM",
                     "access_rules": [
-                      "lettertokafei"
+                      "mm_lettertokafei"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6324,7 +6324,7 @@
                   {
                     "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM First Item",
                     "access_rules": [
-                      "lettertokafei"
+                      "mm_lettertokafei"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6332,7 +6332,7 @@
                   {
                     "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM Second Item",
                     "access_rules": [
-                      "lettertokafei"
+                      "mm_lettertokafei"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6367,9 +6367,9 @@
               {
                 "name": "Chest on a stump",
                 "access_rules": [
-                  "[$can_grow_magic_plant]",
-                  "[hookshot]",
-                  "nostump"
+                  "[$mm_can_grow_magic_plant]",
+                  "[mm_hookshot]",
+                  "mm_nostump"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6415,7 +6415,7 @@
               {
                 "name": "Open it",
                 "access_rules": [
-                  "zora"
+                  "mm_zora"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6439,9 +6439,9 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "$can_deal_damage",
-                  "bow",
-                  "deku"
+                  "$mm_can_deal_damage",
+                  "mm_bow",
+                  "mm_deku"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6465,7 +6465,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "ocarina,eponasong,$has_explosives"
+                  "mm_ocarina,mm_eponasong,$mm_has_explosives"
                 ],
                 "visibility_rules": [
                   "cowsanity_yes"
@@ -6478,7 +6478,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "ocarina,eponasong,$has_explosives"
+                  "mm_ocarina,mm_eponasong,$mm_has_explosives"
                 ],
                 "visibility_rules": [
                   "cowsanity_yes"
@@ -6505,12 +6505,12 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "sword1",
-                  "fairysword",
-                  "sticks,[stickfighting]",
-                  "bombs",
-                  "goron",
-                  "bow"
+                  "mm_sword1",
+                  "mm_fairysword",
+                  "mm_sticks,[mm_stickfighting]",
+                  "mm_bombs",
+                  "mm_goron",
+                  "mm_bow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6534,9 +6534,9 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$can_break_rocks,zora",
-                  "$can_break_rocks,hookshot,[babahive]",
-                  "$can_break_rocks,bombs,[babahive]"
+                  "$mm_can_break_rocks,mm_zora",
+                  "$mm_can_break_rocks,mm_hookshot,[mm_babahive]",
+                  "$mm_can_break_rocks,mm_bombs,[mm_babahive]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6560,7 +6560,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "ocarina,songofhealing"
+                  "mm_ocarina,mm_songofhealing"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6584,20 +6584,20 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "adultwallet,deku",
-                  "adultwallet,hookshot",
-                  "adultwallet,zora",
-                  "adultwallet,bow",
-                  "adultwallet,[guardskip]",
-                  "adultwallet,[bombernothing]",
-                  "adultwallet,[$goron_fence_jump]",
-                  "{},deku",
-                  "{},hookshot",
-                  "{},zora",
-                  "{},bow",
-                  "{},[guardskip]",
-                  "{},[bombernothing]",
-                  "{},[$goron_fence_jump]"
+                  "mm_adultwallet,mm_deku",
+                  "mm_adultwallet,mm_hookshot",
+                  "mm_adultwallet,mm_zora",
+                  "mm_adultwallet,mm_bow",
+                  "mm_adultwallet,[mm_guardskip]",
+                  "mm_adultwallet,[mm_bombernothing]",
+                  "mm_adultwallet,[$mm_goron_fence_jump]",
+                  "{},mm_deku",
+                  "{},mm_hookshot",
+                  "{},mm_zora",
+                  "{},mm_bow",
+                  "{},[mm_guardskip]",
+                  "{},[mm_bombernothing]",
+                  "{},[$mm_goron_fence_jump]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6619,11 +6619,11 @@
               {
                 "name": "Look at Skull Kid through the telescope",
                 "access_rules": [
-                  "[$has_projectile]",
-                  "[$goron_fence_jump]",
-                  "deku",
-                  "[bombernothing]",
-                  "[guardskip]"
+                  "[$mm_has_projectile]",
+                  "[$mm_goron_fence_jump]",
+                  "mm_deku",
+                  "[mm_bombernothing]",
+                  "[mm_guardskip]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6647,9 +6647,9 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$can_break_rocks,ocarina,deku,sonata",
-                  "$can_break_rocks,ocarina,zora,bossanova",
-                  "ocarina,goron,lullaby"
+                  "$mm_can_break_rocks,mm_ocarina,mm_deku,mm_sonata",
+                  "$mm_can_break_rocks,mm_ocarina,mm_zora,mm_bossanova",
+                  "mm_ocarina,mm_goron,mm_lullaby"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6689,7 +6689,7 @@
               {
                 "name": "Hookshot it",
                 "access_rules": [
-                  "hookshot"
+                  "mm_hookshot"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6711,7 +6711,7 @@
               {
                 "name": "Get in",
                 "access_rules": [
-                  "goron"
+                  "mm_goron"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6739,7 +6739,7 @@
               {
                 "name": "Map: Ranch",
                 "access_rules": [
-                  "$has_projectile"
+                  "$mm_has_projectile"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6747,7 +6747,7 @@
               {
                 "name": "Map: Ocean",
                 "access_rules": [
-                  "$has_projectile"
+                  "$mm_has_projectile"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6771,7 +6771,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "ocarina,eponasong"
+                  "mm_ocarina,mm_eponasong"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6803,12 +6803,12 @@
               {
                 "name": "Chest On Shed Roof",
                 "access_rules": [
-                  "[$can_grow_magic_plant]",
-                  "[hookshot]",
-                  "[zoramask]",
-                  "sticks,[geometryjump]",
-                  "sword1,[geometryjump]",
-                  "fairysword,[geometryjump]"
+                  "[$mm_can_grow_magic_plant]",
+                  "[mm_hookshot]",
+                  "[mm_zoramask]",
+                  "mm_sticks,[mm_geometryjump]",
+                  "mm_sword1,[mm_geometryjump]",
+                  "mm_fairysword,[mm_geometryjump]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6818,8 +6818,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "[maskoftruth]",
-                  "racenomask"
+                  "[mm_maskoftruth]",
+                  "mm_racenomask"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6843,7 +6843,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "goron,powderkeg,ocarina,eponasong"
+                  "mm_goron,mm_powderkeg,mm_ocarina,mm_eponasong"
                 ],
                 "visibility_rules": [
                   "cowsanity_yes"
@@ -6856,7 +6856,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "goron,powderkeg,ocarina,eponasong"
+                  "mm_goron,mm_powderkeg,mm_ocarina,mm_eponasong"
                 ],
                 "visibility_rules": [
                   "cowsanity_yes"
@@ -6869,7 +6869,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "goron,powderkeg,ocarina,eponasong,cowsanity_yes"
+                  "mm_goron,mm_powderkeg,mm_ocarina,mm_eponasong,mm_cowsanity_yes"
                 ],
                 "visibility_rules": [
                   "cowsanity_yes,closecows"
@@ -6896,7 +6896,7 @@
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
-                  "goron,powderkeg"
+                  "mm_goron,mm_powderkeg"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6904,8 +6904,8 @@
               {
                 "name": "Night 1: 2:30 AM - 3:45 AM - Save the Cows",
                 "access_rules": [
-                  "goron,powderkeg,bow",
-                  "goron,powderkeg,bowlessaliens"
+                  "mm_goron,mm_powderkeg,mm_bow",
+                  "mm_goron,mm_powderkeg,mm_bowlessaliens"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6915,8 +6915,8 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "goron,powderkeg,bow",
-                  "goron,powderkeg,bowlessaliens"
+                  "mm_goron,mm_powderkeg,mm_bow",
+                  "mm_goron,mm_powderkeg,mm_bowlessaliens"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6940,7 +6940,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "bremenmask"
+                  "mm_bremenmask"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6970,8 +6970,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "[$has_projectile]",
-                  "swamptree"
+                  "[$mm_has_projectile]",
+                  "mm_swamptree"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7012,7 +7012,7 @@
               {
                 "name": "Map: Swamp",
                 "access_rules": [
-                  "$has_projectile"
+                  "$mm_has_projectile"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7020,7 +7020,7 @@
               {
                 "name": "Map: Mountain",
                 "access_rules": [
-                  "$has_projectile"
+                  "$mm_has_projectile"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7042,7 +7042,7 @@
               {
                 "name": "Perfect Score",
                 "access_rules": [
-                  "bow"
+                  "mm_bow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7052,7 +7052,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "bow"
+                  "mm_bow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7074,7 +7074,7 @@
               {
                 "name": "Give Land Title Deed",
                 "access_rules": [
-                  "towndeed"
+                  "mm_towndeed"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7084,8 +7084,8 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "access_rules": [
-                  "deku",
-                  "moontear,towndeed",
+                  "mm_deku",
+                  "mm_moontear,mm_towndeed",
                   "{}"
                 ],
                 "visibility_rules": [
@@ -7099,8 +7099,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "deku,towndeed",
-                  "goron,[goronledge]",
+                  "mm_deku,mm_towndeed",
+                  "mm_goron,[mm_goronledge]",
                   "{}"
                 ],
                 "capture_item": true,
@@ -7123,8 +7123,8 @@
               {
                 "name": "Gift From Saving Koume",
                 "access_rules": [
-                  "redpotionlocated,bottle",
-                  "bluepotionlocated,bottle"
+                  "mm_redpotionlocated,mm_bottle",
+                  "mm_bluepotionlocated,mm_bottle"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7134,7 +7134,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "pictobox"
+                  "mm_pictobox"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7144,7 +7144,7 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "access_rules": [
-                  "pictobox"
+                  "mm_pictobox"
                 ],
                 "visibility_rules": [
                   "misc_yes"
@@ -7157,7 +7157,7 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "access_rules": [
-                  "pictobox"
+                  "mm_pictobox"
                 ],
                 "visibility_rules": [
                   "misc_yes"
@@ -7170,14 +7170,14 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "redpotionlocated,odolwa,bottle,odolwawood",
-                  "bluepotionlocated,odolwa,bottle,odolwawood",
-                  "redpotionlocated,goht,bottle,gohtwood",
-                  "bluepotionlocated,goht,bottle,gohtwood",
-                  "redpotionlocated,gyorg,bottle,gyorgwood",
-                  "bluepotionlocated,gyorg,bottle,gyorgwood",
-                  "redpotionlocated,twinmold,bottle,twinwood",
-                  "bluepotionlocated,twinmold,bottle,twinwood"
+                  "mm_redpotionlocated,mm_odolwa,mm_bottle,mm_odolwawood",
+                  "mm_bluepotionlocated,mm_odolwa,mm_bottle,mm_odolwawood",
+                  "mm_redpotionlocated,mm_goht,mm_bottle,mm_gohtwood",
+                  "mm_bluepotionlocated,mm_goht,mm_bottle,mm_gohtwood",
+                  "mm_redpotionlocated,mm_gyorg,mm_bottle,mm_gyorgwood",
+                  "mm_bluepotionlocated,mm_gyorg,mm_bottle,mm_gyorgwood",
+                  "mm_redpotionlocated,mm_twinmold,mm_bottle,mm_twinwood",
+                  "mm_bluepotionlocated,mm_twinmold,mm_bottle,mm_twinwood"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7244,8 +7244,8 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "access_rules": [
-                  "bottlesanity_no,scents,bottle",
-                  "bottlesanity_yes,mushroom"
+                  "mm_bottlesanity_no,mm_scents,mm_bottle",
+                  "mm_bottlesanity_yes,mm_mushroom"
                 ],
                 "visibility_rules": [
                   "misc_yes"
@@ -7285,20 +7285,20 @@
           {
             "name": "Poison Swamp Area",
             "access_rules": [
-              "zora,[poisonzora],[damage]",
-              "[poisongoron],goron,[damage]",
-              "deku,hookshot",
-              "deku,pictobox",
-              "deku,bow",
-              "deku,redpotionlocated,bottle",
-              "deku,bluepotionlocated,bottle"
+              "mm_zora,[mm_poisonzora],[mm_damage]",
+              "[mm_poisongoron],mm_goron,[mm_damage]",
+              "mm_deku,mm_hookshot",
+              "mm_deku,mm_pictobox",
+              "mm_deku,mm_bow",
+              "mm_deku,mm_redpotionlocated,mm_bottle",
+              "mm_deku,mm_bluepotionlocated,mm_bottle"
             ],
             "children": [
               {
                 "name": "Deku Palace Area",
                 "access_rules": [
-                  "deku",
-                  "dekuskip"
+                  "mm_deku",
+                  "mm_dekuskip"
                 ],
                 "children": [
                   {
@@ -7310,8 +7310,8 @@
                         "chest_unopened_img": "images/system/unknownsong.png",
                         "chest_opened_img": "images/system/unknownsong_check.png",
                         "access_rules": [
-                          "ocarina,[$can_grow_magic_plant],deku",
-                          "ocarina,beanskip,deku"
+                          "mm_ocarina,[$mm_can_grow_magic_plant],mm_deku",
+                          "mm_ocarina,mm_beanskip,mm_deku"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -7359,8 +7359,8 @@
                       {
                         "name": "Get to the chest",
                         "access_rules": [
-                          "$can_grow_magic_plant",
-                          "hookshot"
+                          "$mm_can_grow_magic_plant",
+                          "mm_hookshot"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -7386,8 +7386,8 @@
                     "chest_unopened_img": "images/system/unknownsong.png",
                     "chest_opened_img": "images/system/unknownsong_check.png",
                     "access_rules": [
-                      "deku",
-                      "zora,$longjump"
+                      "mm_deku",
+                      "mm_zora,$mm_longjump"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7406,9 +7406,9 @@
                 "name": "Southern Swamp Grotto",
                 "short_name": "Swamp Grotto",
                 "access_rules": [
-                  "deku",
-                  "zora",
-                  "$longjump"
+                  "mm_deku",
+                  "mm_zora",
+                  "$mm_longjump"
                 ],
                 "sections": [
                   {
@@ -7435,27 +7435,27 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "bottlesanity_no,bottle,hookshot,deku,bow,firearrows,magic,token_no,sword1",
-                      "bottlesanity_no,bottle,hookshot,deku,bow,firearrows,magic,token_no,fairysword",
-                      "bottlesanity_no,bottle,hookshot,deku,sticks,token_no,sword1",
-                      "bottlesanity_no,bottle,hookshot,deku,sticks,token_no,fairysword",
-                      "bottlesanity_no,bottle,zora,bow,firearrows,magic,token_no,sword1",
-                      "bottlesanity_no,bottle,zora,bow,firearrows,magic,token_no,fairysword",
-                      "bottlesanity_no,bottle,zora,sticks,token_no,sword1",
-                      "bottlesanity_no,bottle,zora,sticks,token_no,fairysword",
-                      "bottlesanity_yes,bugs,hookshot,deku,bow,firearrows,magic,token_no,sword1",
-                      "bottlesanity_yes,bugs,hookshot,deku,bow,firearrows,magic,token_no,fairysword",
-                      "bottlesanity_yes,bugs,hookshot,deku,sticks,token_no,sword1",
-                      "bottlesanity_yes,bugs,hookshot,deku,sticks,token_no,fairysword",
-                      "bottlesanity_yes,bugs,zora,bow,firearrows,magic,token_no,sword1",
-                      "bottlesanity_yes,bugs,zora,bow,firearrows,magic,token_no,fairysword",
-                      "bottlesanity_yes,bugs,zora,sticks,token_no,sword1",
-                      "bottlesanity_yes,bugs,zora,sticks,token_no,fairysword",
-                      "bottlesanity_no,$can_grow_magic_plant,sword1,bottle,token_no,bow",
-                      "bottlesanity_no,$can_grow_magic_plant,fairysword,bottle,token_no,bow",
-                      "bottlesanity_yes,$can_grow_magic_plant,sword1,bottle,token_no,bugs,bow",
-                      "bottlesanity_yes,$can_grow_magic_plant,fairysword,bottle,token_no,bugs,bow",
-                      "token_yes,skulltulla_woodfall:30"
+                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_sticks,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_sticks,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_sticks,mm_token_no,mm_sword1",
+                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_sticks,mm_token_no,mm_fairysword",
+                      "mm_bottlesanity_no,$mm_can_grow_magic_plant,mm_sword1,mm_bottle,mm_token_no,mm_bow",
+                      "mm_bottlesanity_no,$mm_can_grow_magic_plant,mm_fairysword,mm_bottle,mm_token_no,mm_bow",
+                      "mm_bottlesanity_yes,$mm_can_grow_magic_plant,mm_sword1,mm_bottle,mm_token_no,mm_bugs,mm_bow",
+                      "mm_bottlesanity_yes,$mm_can_grow_magic_plant,mm_fairysword,mm_bottle,mm_token_no,mm_bugs,mm_bow",
+                      "mm_token_yes,mm_skulltulla_woodfall:mm_30"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7474,8 +7474,8 @@
                 "name": "Swamp Spider House Skulltullas First 15",
                 "short_name": "Swamp Spiders",
                 "access_rules": [
-                  "token_yes,$can_deal_damage,sticks",
-                  "token_yes,$can_deal_damage,bow"
+                  "mm_token_yes,$mm_can_deal_damage,mm_sticks",
+                  "mm_token_yes,$mm_can_deal_damage,mm_bow"
                 ],
                 "sections": [
                   {
@@ -7495,8 +7495,8 @@
                     "chest_unopened_img": "images/system/skulltula_token.png",
                     "chest_opened_img": "images/system/skulltula_token_gray.png",
                     "access_rules": [
-                      "bottle,bottlesanity_no",
-                      "bottle,bugs,bottlesanity_yes"
+                      "mm_bottle,mm_bottlesanity_no",
+                      "mm_bottle,mm_bugs,mm_bottlesanity_yes"
                     ],
                     "visibility_rules": [
                       "token_yes"
@@ -7510,8 +7510,8 @@
                     "chest_unopened_img": "images/system/skulltula_token.png",
                     "chest_opened_img": "images/system/skulltula_token_gray.png",
                     "access_rules": [
-                      "bottle,bottlesanity_no",
-                      "bottle,bugs,bottlesanity_yes"
+                      "mm_bottle,mm_bottlesanity_no",
+                      "mm_bottle,mm_bugs,mm_bottlesanity_yes"
                     ],
                     "visibility_rules": [
                       "token_yes"
@@ -7572,10 +7572,10 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "hookshot",
-                      "zora",
-                      "goron,$can_grow_magic_plant",
-                      "$has_explosives,$can_grow_magic_plant"
+                      "mm_hookshot",
+                      "mm_zora",
+                      "mm_goron,$mm_can_grow_magic_plant",
+                      "$mm_has_explosives,$mm_can_grow_magic_plant"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7622,11 +7622,11 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "hookshot",
-                      "deku,bow",
-                      "deku,magic",
-                      "zora",
-                      "deku,$has_explosives"
+                      "mm_hookshot",
+                      "mm_deku,mm_bow",
+                      "mm_deku,mm_magic",
+                      "mm_zora",
+                      "mm_deku,$mm_has_explosives"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7640,8 +7640,8 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "bottle,bottlesanity_no",
-                      "bottle,bugs,bottlesanity_yes"
+                      "mm_bottle,mm_bottlesanity_no",
+                      "mm_bottle,mm_bugs,mm_bottlesanity_yes"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7655,10 +7655,10 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "deku,magic",
-                      "bow",
-                      "hookshot",
-                      "zora"
+                      "mm_deku,mm_magic",
+                      "mm_bow",
+                      "mm_hookshot",
+                      "mm_zora"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7672,10 +7672,10 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "deku,magic",
-                      "bow",
-                      "hookshot",
-                      "zora"
+                      "mm_deku,mm_magic",
+                      "mm_bow",
+                      "mm_hookshot",
+                      "mm_zora"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7694,8 +7694,8 @@
                 "name": "Swamp Spider House Skulltullas Second 15",
                 "short_name": "Swamp Spiders",
                 "access_rules": [
-                  "token_yes,$can_deal_damage,sticks",
-                  "token_yes,$can_deal_damage,bow"
+                  "mm_token_yes,$mm_can_deal_damage,mm_sticks",
+                  "mm_token_yes,$mm_can_deal_damage,mm_bow"
                 ],
                 "sections": [
                   {
@@ -7740,8 +7740,8 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "sword1",
-                      "fairysword"
+                      "mm_sword1",
+                      "mm_fairysword"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7761,10 +7761,10 @@
                     "name": "Gold Room Hive",
                     "short_name": "Gold Room Beehive",
                     "access_rules": [
-                      "deku,magic",
-                      "bow",
-                      "hookshot",
-                      "zora"
+                      "mm_deku,mm_magic",
+                      "mm_bow",
+                      "mm_hookshot",
+                      "mm_zora"
                     ],
                     "chest_unopened_img": "images/system/skulltula_token.png",
                     "chest_opened_img": "images/system/skulltula_token_gray.png",
@@ -7794,9 +7794,9 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "hookshot",
-                      "zora",
-                      "deku,$can_grow_magic_plant"
+                      "mm_hookshot",
+                      "mm_zora",
+                      "mm_deku,$mm_can_grow_magic_plant"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7854,10 +7854,10 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "deku,magic",
-                      "bow",
-                      "hookshot",
-                      "zora"
+                      "mm_deku,mm_magic",
+                      "mm_bow",
+                      "mm_hookshot",
+                      "mm_zora"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7898,7 +7898,7 @@
                 "name": "Woodfall Chests",
                 "short_name": "Woodfall Chests",
                 "access_rules": [
-                  "deku"
+                  "mm_deku"
                 ],
                 "sections": [
                   {
@@ -7935,8 +7935,8 @@
                   {
                     "name": "15 Stray Fairies in Woodfall Temple",
                     "access_rules": [
-                      "{greatfairymask}",
-                      "woodfall_stray_fairies:15,deku"
+                      "{mm_greatfairymask}",
+                      "mm_woodfall_stray_fairies:mm_15,mm_deku"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7962,7 +7962,7 @@
                       "$woodfall_not_known_but_odolwa_found"
                     ],
                     "access_rules": [
-                      "{deku,sonata}"
+                      "{mm_deku,mm_sonata}"
                     ]
                   },
                   {
@@ -7972,7 +7972,7 @@
                       "$woodfall_not_known_but_goht_found"
                     ],
                     "access_rules": [
-                      "{deku,sonata}"
+                      "{mm_deku,mm_sonata}"
                     ]
                   },
                   {
@@ -7982,7 +7982,7 @@
                       "$woodfall_not_known_but_gyorg_found"
                     ],
                     "access_rules": [
-                      "{deku,sonata}"
+                      "{mm_deku,mm_sonata}"
                     ]
                   },
                   {
@@ -7992,7 +7992,7 @@
                     ],
                     "hosted_item": "twinlocwood",
                     "access_rules": [
-                      "{deku,sonata}"
+                      "{mm_deku,mm_sonata}"
                     ]
                   }
                 ],
@@ -8014,28 +8014,28 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "bottlesanity_no,bottle,woodfall,deku,odolwawood",
-                      "bottlesanity_yes,bottle,dekuprincess,woodfall,deku,odolwawood",
-                      "bottlesanity_yes,dekuprincess,deku,[woodfall],bow,odolwawood",
-                      "bottlesanity_yes,dekuprincess,deku,[woodfall],hookshot,odolwawood",
-                      "bottlesanity_yes,dekuprincess,deku,[woodfall],zora,odolwawood",
-                      "bottlesanity_no,bottle,goht,deku,gohtwood",
-                      "bottlesanity_yes,bottle,dekuprincess,goht,deku,gohtwood",
-                      "bottlesanity_yes,dekuprincess,deku,[goht],bow,gohtwood",
-                      "bottlesanity_yes,dekuprincess,deku,[goht],hookshot,gohtwood",
-                      "bottlesanity_yes,dekuprincess,deku,[goht],zora,gohtwood",
-                      "bottlesanity_no,bottle,gyorg,deku,gyorgwood",
-                      "bottlesanity_yes,bottle,dekuprincess,gyorg,deku,gyorgwood",
-                      "bottlesanity_yes,dekuprincess,deku,[gyorg],bow,odolwawood",
-                      "bottlesanity_yes,dekuprincess,deku,[gyorg],hookshot,gyorgwood",
-                      "bottlesanity_yes,dekuprincess,deku,[gyorg],zora,gyorgwood",
-                      "bottlesanity_no,bottle,twinmold,deku,twinwood",
-                      "bottlesanity_yes,bottle,dekuprincess,twinmold,deku,twinwood",
-                      "bottlesanity_yes,dekuprincess,deku,[twinmold],bow,twinwood",
-                      "bottlesanity_yes,dekuprincess,deku,[twinmold],hookshot,twinwood",
-                      "bottlesanity_yes,dekuprincess,deku,[twinmold],zora,twinwood",
-                      "bottlesanity_yes,dekuprincess,deku,shrineocto,bow",
-                      "bottlesanity_yes,dekuprincess,deku,shrineocto,zora"
+                      "mm_bottlesanity_no,mm_bottle,mm_woodfall,mm_deku,mm_odolwawood",
+                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_woodfall,mm_deku,mm_odolwawood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_woodfall],mm_bow,mm_odolwawood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_woodfall],mm_hookshot,mm_odolwawood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_woodfall],mm_zora,mm_odolwawood",
+                      "mm_bottlesanity_no,mm_bottle,mm_goht,mm_deku,mm_gohtwood",
+                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_goht,mm_deku,mm_gohtwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_goht],mm_bow,mm_gohtwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_goht],mm_hookshot,mm_gohtwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_goht],mm_zora,mm_gohtwood",
+                      "mm_bottlesanity_no,mm_bottle,mm_gyorg,mm_deku,mm_gyorgwood",
+                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_gyorg,mm_deku,mm_gyorgwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_gyorg],mm_bow,mm_odolwawood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_gyorg],mm_hookshot,mm_gyorgwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_gyorg],mm_zora,mm_gyorgwood",
+                      "mm_bottlesanity_no,mm_bottle,mm_twinmold,mm_deku,mm_twinwood",
+                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_twinmold,mm_deku,mm_twinwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_twinmold],mm_bow,mm_twinwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_twinmold],mm_hookshot,mm_twinwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_twinmold],mm_zora,mm_twinwood",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,mm_shrineocto,mm_bow",
+                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,mm_shrineocto,mm_zora"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -8058,9 +8058,9 @@
         "name": "Mountain",
         "color": "#af0a0a",
         "access_rules": [
-          "bow,$can_break_rocks",
-          "bow,firearrows,magic",
-          "$can_bottle_hotspringwater,[soaring],$can_break_rocks,bottlesanity_yes"
+          "mm_bow,$mm_can_break_rocks",
+          "mm_bow,mm_firearrows,mm_magic",
+          "$mm_can_bottle_hotspringwater,[mm_soaring],$mm_can_break_rocks,mm_bottlesanity_yes"
         ],
         "children": [
           {
@@ -8070,12 +8070,12 @@
               {
                 "name": "Melt the ice and buy it for 100 Rupees - Day 1",
                 "access_rules": [
-                  "firearrows,adultwallet,magic,bow",
-                  "snowhead,adultwallet,gohtsnow",
-                  "woodfall,adultwallet,odolwasnow",
-                  "gyorg,adultwallet,gyorgsnow",
-                  "twinmold,adultwallet,twinsnow",
-                  "$can_bottle_hotspringwater,adultwallet,[soaring]"
+                  "mm_firearrows,mm_adultwallet,mm_magic,mm_bow",
+                  "mm_snowhead,mm_adultwallet,mm_gohtsnow",
+                  "mm_woodfall,mm_adultwallet,mm_odolwasnow",
+                  "mm_gyorg,mm_adultwallet,mm_gyorgsnow",
+                  "mm_twinmold,mm_adultwallet,mm_twinsnow",
+                  "$mm_can_bottle_hotspringwater,mm_adultwallet,[mm_soaring]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8083,12 +8083,12 @@
               {
                 "name": "Show the Gold Dust - Day 2",
                 "access_rules": [
-                  "bow,firearrows,magic,dustlocated,bottle",
-                  "$can_bottle_hotspringwater,dustlocated,bottle,[soaring]",
-                  "snowhead,gohtsnow,dustlocated,bottle",
-                  "woodfall,odolwasnow,dustlocated,bottle",
-                  "gyorg,gyorgsnow,dustlocated,bottle",
-                  "twinmold,twinsnow,dustlocated,bottle"
+                  "mm_bow,mm_firearrows,mm_magic,mm_dustlocated,mm_bottle",
+                  "$mm_can_bottle_hotspringwater,mm_dustlocated,mm_bottle,[mm_soaring]",
+                  "mm_snowhead,mm_gohtsnow,mm_dustlocated,mm_bottle",
+                  "mm_woodfall,mm_odolwasnow,mm_dustlocated,mm_bottle",
+                  "mm_gyorg,mm_gyorgsnow,mm_dustlocated,mm_bottle",
+                  "mm_twinmold,mm_twinsnow,mm_dustlocated,mm_bottle"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8112,7 +8112,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "ocarina,songofhealing,lens,magic"
+                  "mm_ocarina,mm_songofhealing,mm_lens,mm_magic"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8136,8 +8136,8 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "goron,sticks,magic,",
-                  "goron,bow,firearrows,magic"
+                  "mm_goron,mm_sticks,mm_magic,",
+                  "mm_goron,mm_bow,mm_firearrows,mm_magic"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8161,15 +8161,15 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "{maskoftruth}",
-                  "dongero,snowhead,zora,bossanova,hookshot,deku,sonata,bow,icearrows,magic,eponasong,odolwawood,gohtsnow,gyorgbay,[sword1]",
-                  "dongero,odolwa,odolwasnow,$has_greatbay_frog_access,$has_woodfall_frog_access,[sword1]",
-                  "dongero,gyorg,gyorgsnow,$has_greatbay_frog_access,$has_woodfall_frog_access,[sword1]",
-                  "dongero,twinmold,twinsnow,$has_greatbay_frog_access,$has_woodfall_frog_access,[sword1]",
-                  "dongero,snowhead,zora,bossanova,hookshot,deku,sonata,bow,icearrows,magic,eponasong,odolwawood,gohtsnow,gyorgbay,[fairysword]",
-                  "dongero,odolwa,odolwasnow,$has_greatbay_frog_access,$has_woodfall_frog_access,[fairysword]",
-                  "dongero,gyorg,gyorgsnow,$has_greatbay_frog_access,$has_woodfall_frog_access,[fairysword]",
-                  "dongero,twinmold,twinsnow,$has_greatbay_frog_access,$has_woodfall_frog_access,[fairysword]"
+                  "{mm_maskoftruth}",
+                  "mm_dongero,mm_snowhead,mm_zora,mm_bossanova,mm_hookshot,mm_deku,mm_sonata,mm_bow,mm_icearrows,mm_magic,mm_eponasong,mm_odolwawood,mm_gohtsnow,mm_gyorgbay,[mm_sword1]",
+                  "mm_dongero,mm_odolwa,mm_odolwasnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_sword1]",
+                  "mm_dongero,mm_gyorg,mm_gyorgsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_sword1]",
+                  "mm_dongero,mm_twinmold,mm_twinsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_sword1]",
+                  "mm_dongero,mm_snowhead,mm_zora,mm_bossanova,mm_hookshot,mm_deku,mm_sonata,mm_bow,mm_icearrows,mm_magic,mm_eponasong,mm_odolwawood,mm_gohtsnow,mm_gyorgbay,[mm_fairysword]",
+                  "mm_dongero,mm_odolwa,mm_odolwasnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_fairysword]",
+                  "mm_dongero,mm_gyorg,mm_gyorgsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_fairysword]",
+                  "mm_dongero,mm_twinmold,mm_twinsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_fairysword]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8191,14 +8191,14 @@
               {
                 "name": "After beating Snowhead Temple",
                 "access_rules": [
-                  "snowhead,gohtsnow,[$can_see_with_lens]",
-                  "woodfall,odolwasnow,[$can_see_with_lens]",
-                  "gyorg,gyorgsnow,[$can_see_with_lens]",
-                  "twinmold,twinsnow,[$can_see_with_lens]",
-                  "snowhead,gohtsnow,lens_chests",
-                  "woodfall,odolwasnow,lens_chests",
-                  "gyorg,gyorgsnow,lens_chests",
-                  "twinmold,twinsnow,lens_chests"
+                  "mm_snowhead,mm_gohtsnow,[$mm_can_see_with_lens]",
+                  "mm_woodfall,mm_odolwasnow,[$mm_can_see_with_lens]",
+                  "mm_gyorg,mm_gyorgsnow,[$mm_can_see_with_lens]",
+                  "mm_twinmold,mm_twinsnow,[$mm_can_see_with_lens]",
+                  "mm_snowhead,mm_gohtsnow,mm_lens_chests",
+                  "mm_woodfall,mm_odolwasnow,mm_lens_chests",
+                  "mm_gyorg,mm_gyorgsnow,mm_lens_chests",
+                  "mm_twinmold,mm_twinsnow,mm_lens_chests"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8220,10 +8220,10 @@
               {
                 "name": "After beating Snowhead Temple",
                 "access_rules": [
-                  "snowhead,gohtsnow",
-                  "gyorg,gyorgsnow",
-                  "twinmold,twinsnow",
-                  "woodfall,odolwasnow"
+                  "mm_snowhead,mm_gohtsnow",
+                  "mm_gyorg,mm_gyorgsnow",
+                  "mm_twinmold,mm_twinsnow",
+                  "mm_woodfall,mm_odolwasnow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8242,7 +8242,7 @@
             "name": "Mountain Tingle Maps",
             "short_name": "Mountain Tingle",
             "access_rules": [
-              "$has_projectile"
+              "$mm_has_projectile"
             ],
             "sections": [
               {
@@ -8272,12 +8272,12 @@
               {
                 "name": "Melt the ice",
                 "access_rules": [
-                  "firearrows,magic,bow,$has_explosives",
-                  "$can_bottle_hotspringwater,$has_explosives,[soaring]",
-                  "snowhead,$has_explosives,gohtsnow",
-                  "gyorg,$has_explosives,gyorgsnow",
-                  "twinmold,$has_explosives,twinsnow",
-                  "odolwa,$has_explosives,odolwasnow"
+                  "mm_firearrows,mm_magic,mm_bow,$mm_has_explosives",
+                  "$mm_can_bottle_hotspringwater,$mm_has_explosives,[mm_soaring]",
+                  "mm_snowhead,$mm_has_explosives,mm_gohtsnow",
+                  "mm_gyorg,$mm_has_explosives,mm_gyorgsnow",
+                  "mm_twinmold,$mm_has_explosives,mm_twinsnow",
+                  "mm_odolwa,$mm_has_explosives,mm_odolwasnow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8299,8 +8299,8 @@
               {
                 "name": "Bomb the tree near the ramps",
                 "access_rules": [
-                  "$has_explosives,goron",
-                  "$has_explosives,hookshot,ocarina,[scarecrow]"
+                  "$mm_has_explosives,mm_goron",
+                  "$mm_has_explosives,mm_hookshot,mm_ocarina,[mm_scarecrow]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8319,10 +8319,10 @@
             "name": "Twin Islands Spring Chests",
             "short_name": "Twin Islands Chests",
             "access_rules": [
-              "snowhead,zora,gohtsnow",
-              "gyorg,zora,gyorgsnow",
-              "woodfall,zora,odolwasnow",
-              "twinmold,zora,twinsnow"
+              "mm_snowhead,mm_zora,mm_gohtsnow",
+              "mm_gyorg,mm_zora,mm_gyorgsnow",
+              "mm_woodfall,mm_zora,mm_odolwasnow",
+              "mm_twinmold,mm_zora,mm_twinsnow"
             ],
             "sections": [
               {
@@ -8354,10 +8354,10 @@
               {
                 "name": "Win Race After Beating Snowhead Temple",
                 "access_rules": [
-                  "snowhead,goron,magic,gohtsnow",
-                  "woodfall,goron,magic,odolwasnow",
-                  "gyorg,goron,magic,gyorgsnow",
-                  "twinmold,goron,magic,twinsnow"
+                  "mm_snowhead,mm_goron,mm_magic,mm_gohtsnow",
+                  "mm_woodfall,mm_goron,mm_magic,mm_odolwasnow",
+                  "mm_gyorg,mm_goron,mm_magic,mm_gyorgsnow",
+                  "mm_twinmold,mm_goron,mm_magic,mm_twinsnow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8379,7 +8379,7 @@
               {
                 "name": "Give Swamp Title Deed",
                 "access_rules": [
-                  "woodfall_deed,deku"
+                  "mm_woodfall_deed,mm_deku"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8387,10 +8387,10 @@
               {
                 "name": "Buy Bomb Bag",
                 "access_rules": [
-                  "goron,adultwallet",
-                  "moontear,deed1,deed2,deku,adultwallet",
-                  "{goron}",
-                  "{deku}"
+                  "mm_goron,mm_adultwallet",
+                  "mm_moontear,mm_deed1,mm_deed2,mm_deku,mm_adultwallet",
+                  "{mm_goron}",
+                  "{mm_deku}"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8400,7 +8400,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "woodfall_deed,deku"
+                  "mm_woodfall_deed,mm_deku"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8424,9 +8424,9 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "[soaring]",
-                  "$can_see_with_lens",
-                  "lens_jump"
+                  "[mm_soaring]",
+                  "$mm_can_see_with_lens",
+                  "mm_lens_jump"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8434,9 +8434,9 @@
               {
                 "name": "Invisible chest",
                 "access_rules": [
-                  "$can_see_with_lens",
-                  "[soaring],lens_chests",
-                  "lens_jump"
+                  "$mm_can_see_with_lens",
+                  "[mm_soaring],mm_lens_chests",
+                  "mm_lens_jump"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8444,8 +8444,8 @@
               {
                 "name": "Chest inside rock",
                 "access_rules": [
-                  "$has_explosives,[soaring]",
-                  "$has_explosives,[$can_see_with_lens]"
+                  "$mm_has_explosives,[mm_soaring]",
+                  "$mm_has_explosives,[$mm_can_see_with_lens]"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8469,7 +8469,7 @@
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
-                  "ocarina,goron"
+                  "mm_ocarina,mm_goron"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8488,7 +8488,7 @@
             "name": "Goron Shrine Shop",
             "short_name": "Goron Shop",
             "access_rules": [
-              "shopsanity_yes"
+              "mm_shopsanity_yes"
             ],
             "sections": [
               {
@@ -8532,11 +8532,11 @@
               {
                 "name": "Talk to him after opening the track",
                 "access_rules": [
-                  "firearrows,magic,goron",
-                  "snowhead,goron,gohtsnow",
-                  "odolwa,goron,odolwasnow",
-                  "gyorg,goron,gyorgsnow",
-                  "twinmold,goron,twinsnow"
+                  "mm_firearrows,mm_magic,mm_goron",
+                  "mm_snowhead,mm_goron,mm_gohtsnow",
+                  "mm_odolwa,mm_goron,mm_odolwasnow",
+                  "mm_gyorg,mm_goron,mm_gyorgsnow",
+                  "mm_twinmold,mm_goron,mm_twinsnow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8558,8 +8558,8 @@
               {
                 "name": "Get in the secret grotto",
                 "access_rules": [
-                  "goron,$has_explosives,[magic]",
-                  "goron,$has_explosives,snowheadmagic"
+                  "mm_goron,$mm_has_explosives,[mm_magic]",
+                  "mm_goron,$mm_has_explosives,mm_snowheadmagic"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8569,9 +8569,9 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "hookshot,ocarina,goron,$can_see_with_lens",
-                  "hookshot,ocarina,magic,lens_jump",
-                  "hookshot,ocarina,lens_jump,snowheadmagic"
+                  "mm_hookshot,mm_ocarina,mm_goron,$mm_can_see_with_lens",
+                  "mm_hookshot,mm_ocarina,mm_magic,mm_lens_jump",
+                  "mm_hookshot,mm_ocarina,mm_lens_jump,mm_snowheadmagic"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -8589,9 +8589,9 @@
           {
             "name": "Snowhead Area",
             "access_rules": [
-              "goron,ocarina,lullaby,magic",
-              "goron,ocarina,lullaby,snowheadmagic",
-              "goron,magic,lullabyskip"
+              "mm_goron,mm_ocarina,mm_lullaby,mm_magic",
+              "mm_goron,mm_ocarina,mm_lullaby,mm_snowheadmagic",
+              "mm_goron,mm_magic,mm_lullabyskip"
             ],
             "children": [
               {
@@ -8601,7 +8601,7 @@
                   {
                     "name": "15 Stray Fairies in Snowhead Temple",
                     "access_rules": [
-                      "snowhead_stray_fairies:15"
+                      "mm_snowhead_stray_fairies:mm_15"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -8681,8 +8681,8 @@
     "name": "Great Bay",
     "color": "#3f46ff",
     "access_rules": [
-      "ocarina,eponasong",
-      "$goron_fence_jump"
+      "mm_ocarina,mm_eponasong",
+      "$mm_goron_fence_jump"
     ],
     "children": [
       {
@@ -8715,7 +8715,7 @@
           {
             "name": "Show Photo of Gerudo Pirate",
             "access_rules": [
-              "zora,pictobox"
+              "mm_zora,mm_pictobox"
             ],
             "visibility_rules": [
               "misc_yes"
@@ -8739,17 +8739,17 @@
         "chest_opened_img": "images/system/chest_brown_open.png",
         "short_name": "Ocean Spiders",
         "access_rules": [
-          "$has_explosives,[goron]",
-          "$has_explosives,oshbw"
+          "$mm_has_explosives,[mm_goron]",
+          "$mm_has_explosives,mm_oshbw"
         ],
         "sections": [
           {
             "name": "Collect 30 Tokens- Day 1",
             "access_rules": [
-              "{maskoftruth}",
-              "hookshot,bow,firearrows,magic,token_no",
-              "hookshot,oshfl,token_no",
-              "token_yes, skulltulla_greatbay:30"
+              "{mm_maskoftruth}",
+              "mm_hookshot,mm_bow,mm_firearrows,mm_magic,mm_token_no",
+              "mm_hookshot,mm_oshfl,mm_token_no",
+              "mm_token_yes,mm_skulltulla_greatbay:mm_30"
             ],
             "capture_item": true,
             "item_count": 1
@@ -8759,10 +8759,10 @@
             "chest_unopened_img": "images/system/blue.png",
             "chest_opened_img": "images/system/blue_check.png",
             "access_rules": [
-              "{maskoftruth}",
-              "hookshot,bow,firearrows,magic,token_no",
-              "hookshot,oshfl,token_no",
-              "token_yes, skulltulla_greatbay:30"
+              "{mm_maskoftruth}",
+              "mm_hookshot,mm_bow,mm_firearrows,mm_magic,mm_token_no",
+              "mm_hookshot,mm_oshfl,mm_token_no",
+              "mm_token_yes,mm_skulltulla_greatbay:mm_30"
             ],
             "visibility_rules": [
               "misc_yes"
@@ -8775,10 +8775,10 @@
             "chest_unopened_img": "images/system/blue.png",
             "chest_opened_img": "images/system/blue_check.png",
             "access_rules": [
-              "{maskoftruth}",
-              "hookshot,bow,firearrows,magic,token_no",
-              "hookshot,oshfl,token_no",
-              "token_yes, skulltulla_greatbay:30"
+              "{mm_maskoftruth}",
+              "mm_hookshot,mm_bow,mm_firearrows,mm_magic,mm_token_no",
+              "mm_hookshot,mm_oshfl,mm_token_no",
+              "mm_token_yes,mm_skulltulla_greatbay:mm_30"
             ],
             "visibility_rules": [
               "misc_yes"
@@ -8791,10 +8791,10 @@
             "chest_unopened_img": "images/system/chest_unopened_big.png",
             "chest_opened_img": "images/system/chest_open_big.png",
             "access_rules": [
-              "bow,[captainshat],hookshot",
-              "bow,oshbf,hookshot",
-              "bow,oshbf,$goron_fence_jump",
-              "bow,[captainshat],$goron_fence_jump"
+              "mm_bow,[mm_captainshat],mm_hookshot",
+              "mm_bow,mm_oshbf,mm_hookshot",
+              "mm_bow,mm_oshbf,$mm_goron_fence_jump",
+              "mm_bow,[mm_captainshat],$mm_goron_fence_jump"
             ],
             "capture_item": true,
             "item_count": 1
@@ -8813,7 +8813,7 @@
         "name": "Oceanside Spider House Skulltullas First 15",
         "short_name": "Ocean Spiders",
         "access_rules": [
-          "token_yes,$has_explosives"
+          "mm_token_yes,$mm_has_explosives"
         ],
         "sections": [
           {
@@ -8824,8 +8824,8 @@
             "capture_item": true,
             "item_count": 1,
             "access_rules": [
-              "[hookshot]",
-              "[zora]"
+              "[mm_hookshot]",
+              "[mm_zora]"
             ],
             "visibility_rules": [
               "token_yes"
@@ -8839,8 +8839,8 @@
             "capture_item": true,
             "item_count": 1,
             "access_rules": [
-              "[hookshot]",
-              "[zora]"
+              "[mm_hookshot]",
+              "[mm_zora]"
             ],
             "visibility_rules": [
               "token_yes"
@@ -8852,10 +8852,10 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot,bow,[magic],[firearrows]",
-              "zora,bow,[magic],[firearrows]",
-              "hookshot,oshfl",
-              "zora,oshfl"
+              "mm_hookshot,mm_bow,[mm_magic],[mm_firearrows]",
+              "mm_zora,mm_bow,[mm_magic],[mm_firearrows]",
+              "mm_hookshot,mm_oshfl",
+              "mm_zora,mm_oshfl"
             ],
             "capture_item": true,
             "item_count": 1,
@@ -8868,8 +8868,8 @@
             "short_name": "Behind Skull on Wall",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "hookshot",
-              "zora,$goron_fence_jump"
+              "mm_hookshot",
+              "mm_zora,$mm_goron_fence_jump"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -8884,8 +8884,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump"
+              "mm_hookshot",
+              "$mm_goron_fence_jump"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -8899,8 +8899,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump"
+              "mm_hookshot",
+              "$mm_goron_fence_jump"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -8914,8 +8914,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump,zora"
+              "mm_hookshot",
+              "$mm_goron_fence_jump,mm_zora"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -8929,8 +8929,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump"
+              "mm_hookshot",
+              "$mm_goron_fence_jump"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -8944,8 +8944,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump,zora"
+              "mm_hookshot",
+              "$mm_goron_fence_jump,mm_zora"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -8959,8 +8959,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump,zora"
+              "mm_hookshot",
+              "$mm_goron_fence_jump,mm_zora"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -8974,8 +8974,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump"
+              "mm_hookshot",
+              "$mm_goron_fence_jump"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -8989,8 +8989,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump"
+              "mm_hookshot",
+              "$mm_goron_fence_jump"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -9004,8 +9004,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump"
+              "mm_hookshot",
+              "$mm_goron_fence_jump"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -9019,7 +9019,7 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot"
+              "mm_hookshot"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -9033,8 +9033,8 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot",
-              "$goron_fence_jump,zora"
+              "mm_hookshot",
+              "$mm_goron_fence_jump,mm_zora"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -9056,8 +9056,8 @@
         "name": "Oceanside Spider House Skulltullas Second 15",
         "short_name": "Ocean Spiders",
         "access_rules": [
-          "token_yes,$has_explosives,hookshot",
-          "token_yes,$has_explosives,$goron_fence_jump"
+          "mm_token_yes,$mm_has_explosives,mm_hookshot",
+          "mm_token_yes,$mm_has_explosives,$mm_goron_fence_jump"
         ],
         "sections": [
           {
@@ -9078,8 +9078,8 @@
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
             "access_rules": [
-              "hookshot",
-              "zora,$goron_fence_jump"
+              "mm_hookshot",
+              "mm_zora,$mm_goron_fence_jump"
             ],
             "visibility_rules": [
               "token_yes"
@@ -9092,7 +9092,7 @@
             "chest_unopened_img": "images/system/skulltula_token.png",
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "access_rules": [
-              "hookshot"
+              "mm_hookshot"
             ],
             "capture_item": true,
             "visibility_rules": [
@@ -9105,7 +9105,7 @@
             "short_name": "Basement Pot on Crates",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "hookshot"
+              "mm_hookshot"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -9130,8 +9130,8 @@
             "short_name": "Storage Room Alcove",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "hookshot",
-              "zora"
+              "mm_hookshot",
+              "mm_zora"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -9145,7 +9145,7 @@
             "short_name": "Behind Boat",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "hookshot"
+              "mm_hookshot"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -9159,8 +9159,8 @@
             "short_name": "Storage Room Rafters",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "hookshot",
-              "oshstorage"
+              "mm_hookshot",
+              "mm_oshstorage"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -9174,8 +9174,8 @@
             "short_name": "Storage Room Behind Web",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "bow,magic,firearrows",
-              "oshfl"
+              "mm_bow,mm_magic,mm_firearrows",
+              "mm_oshfl"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -9225,8 +9225,8 @@
             "short_name": "Mask Room Painting",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "hookshot",
-              "zora"
+              "mm_hookshot",
+              "mm_zora"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -9240,8 +9240,8 @@
             "short_name": "Mask Room Black Space",
             "chest_unopened_img": "images/system/skulltula_token.png",
             "access_rules": [
-              "hookshot",
-              "zora"
+              "mm_hookshot",
+              "mm_zora"
             ],
             "chest_opened_img": "images/system/skulltula_token_gray.png",
             "capture_item": true,
@@ -9281,7 +9281,7 @@
             "chest_unopened_img": "images/system/unknownmask.png",
             "chest_opened_img": "images/system/unknownmask_grey.png",
             "access_rules": [
-              "ocarina,songofhealing"
+              "mm_ocarina,mm_songofhealing"
             ],
             "capture_item": true,
             "item_count": 1
@@ -9308,8 +9308,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "hookshot,ocarina,$can_grow_magic_plant",
-                  "hookshot,$longjump"
+                  "mm_hookshot,mm_ocarina,$mm_can_grow_magic_plant",
+                  "mm_hookshot,$mm_longjump"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9319,7 +9319,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "hookshot,ocarina,eponasong"
+                  "mm_hookshot,mm_ocarina,mm_eponasong"
                 ],
                 "visibility_rules": [
                   "cowsanity_yes"
@@ -9332,7 +9332,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "hookshot,ocarina,eponasong"
+                  "mm_hookshot,mm_ocarina,mm_eponasong"
                 ],
                 "visibility_rules": [
                   "cowsanity_yes"
@@ -9359,8 +9359,8 @@
               {
                 "name": "Map: Ocean",
                 "access_rules": [
-                  "bow",
-                  "hookshot"
+                  "mm_bow",
+                  "mm_hookshot"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9368,8 +9368,8 @@
               {
                 "name": "Map: Canyon",
                 "access_rules": [
-                  "bow",
-                  "hookshot"
+                  "mm_bow",
+                  "mm_hookshot"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9393,8 +9393,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "bottlesanity_no,bottle",
-                  "bottlesanity_yes,fish"
+                  "mm_bottlesanity_no,mm_bottle",
+                  "mm_bottlesanity_yes,mm_fish"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9404,12 +9404,12 @@
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
-                  "bottlesanity_no,ocarina,bow,hookshot,zora,bottle,misc_yes,seahorselocated",
-                  "bottlesanity_no,ocarina,hookshot,deku,magic,bottle,zora,pictobox",
-                  "bottlesanity_no,ocarina,hookshot,bow,bottle,zora,pictobox",
-                  "bottlesanity_no,ocarina,bow,hookshot,zora,bottle,pinnaclehorse",
-                  "bottlesanity_no,ocarina,hookshot,deku,magic,bottle,zora,pinnaclehorse",
-                  "bottlesanity_yes,ocarina,zora,zoraegg"
+                  "mm_bottlesanity_no,mm_ocarina,mm_bow,mm_hookshot,mm_zora,mm_bottle,mm_misc_yes,mm_seahorselocated",
+                  "mm_bottlesanity_no,mm_ocarina,mm_hookshot,mm_deku,mm_magic,mm_bottle,mm_zora,mm_pictobox",
+                  "mm_bottlesanity_no,mm_ocarina,mm_hookshot,mm_bow,mm_bottle,mm_zora,mm_pictobox",
+                  "mm_bottlesanity_no,mm_ocarina,mm_bow,mm_hookshot,mm_zora,mm_bottle,mm_pinnaclehorse",
+                  "mm_bottlesanity_no,mm_ocarina,mm_hookshot,mm_deku,mm_magic,mm_bottle,mm_zora,mm_pinnaclehorse",
+                  "mm_bottlesanity_yes,mm_ocarina,mm_zora,mm_zoraegg"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9430,8 +9430,8 @@
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "ZH",
             "access_rules": [
-              "[zora]",
-              "zoraswim"
+              "[mm_zora]",
+              "mm_zoraswim"
             ],
             "sections": [
               {
@@ -9439,7 +9439,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "zora,ocarina"
+                  "mm_zora,mm_ocarina"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9447,7 +9447,7 @@
               {
                 "name": "Give Ocean Scrub The Mountain Title Deed - Fourth Room Down",
                 "access_rules": [
-                  "snowhead_deed,goron,zora"
+                  "mm_snowhead_deed,mm_goron,mm_zora"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9457,7 +9457,7 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "access_rules": [
-                  "zora"
+                  "mm_zora"
                 ],
                 "visibility_rules": [
                   "shopsanity_yes"
@@ -9470,7 +9470,7 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "access_rules": [
-                  "pictobox,zora"
+                  "mm_pictobox,mm_zora"
                 ],
                 "visibility_rules": [
                   "misc_yes"
@@ -9483,7 +9483,7 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "access_rules": [
-                  "pictobox,zora"
+                  "mm_pictobox,mm_zora"
                 ],
                 "visibility_rules": [
                   "misc_yes"
@@ -9496,7 +9496,7 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "access_rules": [
-                  "bow,firearrows,magic,misc_yes"
+                  "mm_bow,mm_firearrows,mm_magic,mm_misc_yes"
                 ],
                 "visibility_rules": [
                   "misc_yes"
@@ -9509,9 +9509,9 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "goron,snowhead_deed,deku,zora",
-                  "goron,zora,goronledge",
-                  "zora,zoraledge"
+                  "mm_goron,mm_snowhead_deed,mm_deku,mm_zora",
+                  "mm_goron,mm_zora,mm_goronledge",
+                  "mm_zora,mm_zoraledge"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9532,8 +9532,8 @@
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "Zora Shop",
             "access_rules": [
-              "[zora]",
-              "zoraswim"
+              "[mm_zora]",
+              "mm_zoraswim"
             ],
             "sections": [
               {
@@ -9581,7 +9581,7 @@
                   "$bay_not_known_but_odolwa_found"
                 ],
                 "access_rules": [
-                  "{zora,hookshot,nova}"
+                  "{mm_zora,mm_hookshot,mm_nova}"
                 ]
               },
               {
@@ -9591,7 +9591,7 @@
                   "$bay_not_known_but_goht_found"
                 ],
                 "access_rules": [
-                  "{zora,hookshot,nova}"
+                  "{mm_zora,mm_hookshot,mm_nova}"
                 ]
               },
               {
@@ -9601,7 +9601,7 @@
                   "$bay_not_known_but_gyorg_found"
                 ],
                 "access_rules": [
-                  "{zora,hookshot,nova}"
+                  "{mm_zora,mm_hookshot,mm_nova}"
                 ]
               },
               {
@@ -9611,7 +9611,7 @@
                 ],
                 "hosted_item": "twinlocbay",
                 "access_rules": [
-                  "{zora,hookshot,nova}"
+                  "{mm_zora,mm_hookshot,mm_nova}"
                 ]
               }
             ],
@@ -9629,15 +9629,15 @@
       {
         "name": "GB Requires Zora",
         "access_rules": [
-          "zora"
+          "mm_zora"
         ],
         "children": [
           {
             "name": "Pinnacle Rock",
             "access_rules": [
-              "misc_yes,seahorselocated,bottle",
-              "[pinnaclehorse]",
-              "misc_no,pictobox,bottle"
+              "mm_misc_yes,mm_seahorselocated,mm_bottle",
+              "[mm_pinnaclehorse]",
+              "mm_misc_no,mm_pictobox,mm_bottle"
             ],
             "chest_unopened_img": "images/system/chest_brown_closed.png",
             "chest_opened_img": "images/system/chest_brown_open.png",
@@ -9658,8 +9658,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "misc_no,bottle,pictobox",
-                  "misc_yes,seahorselocated,bottle"
+                  "mm_misc_no,mm_bottle,mm_pictobox",
+                  "mm_misc_yes,mm_seahorselocated,mm_bottle"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9711,7 +9711,7 @@
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "PF Tunnel",
             "access_rules": [
-              "goron"
+              "mm_goron"
             ],
             "sections": [
               {
@@ -9752,8 +9752,8 @@
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "PF",
             "access_rules": [
-              "goron",
-              "hookshot"
+              "mm_goron",
+              "mm_hookshot"
             ],
             "sections": [
               {
@@ -9764,7 +9764,7 @@
               {
                 "name": "Upper Chest",
                 "access_rules": [
-                  "hookshot"
+                  "mm_hookshot"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9774,8 +9774,8 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "bow",
-                  "deku,magic"
+                  "mm_bow",
+                  "mm_deku,mm_magic"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9785,8 +9785,8 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "hookshot",
-                  "pfguard"
+                  "mm_hookshot",
+                  "mm_pfguard"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9794,7 +9794,7 @@
               {
                 "name": "Fish Tank Chest",
                 "access_rules": [
-                  "hookshot"
+                  "mm_hookshot"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -9862,7 +9862,7 @@
           {
             "name": "Under The Rock By The Fairy Shrine",
             "access_rules": [
-              "$can_break_rocks"
+              "$mm_can_break_rocks"
             ],
             "capture_item": true,
             "item_count": 1
@@ -9886,7 +9886,7 @@
           {
             "name": "15 Stray Fairies in Great Bay Temple",
             "access_rules": [
-              "greatbay_stray_fairies:15,hookshot,ocarina,$has_explosives"
+              "mm_greatbay_stray_fairies:mm_15,mm_hookshot,mm_ocarina,$mm_has_explosives"
             ],
             "capture_item": true,
             "item_count": 1
@@ -9907,7 +9907,7 @@
         "chest_opened_img": "images/system/chest_brown_open.png",
         "short_name": "Rapids",
         "access_rules": [
-          "zora,hookshot"
+          "mm_zora,mm_hookshot"
         ],
         "sections": [
           {
@@ -9938,7 +9938,7 @@
         "chest_opened_img": "images/system/chest_brown_open.png",
         "short_name": "Cape Ledge",
         "access_rules": [
-          "hookshot"
+          "mm_hookshot"
         ],
         "sections": [
           {
@@ -9949,7 +9949,7 @@
           {
             "name": "Zora Cape Ledge Lower Chest",
             "access_rules": [
-              "hookshot"
+              "mm_hookshot"
             ],
             "capture_item": true,
             "item_count": 1
@@ -9973,10 +9973,10 @@
             "chest_unopened_img": "images/system/heartpiece.png",
             "chest_opened_img": "images/system/heartpiece_grey.png",
             "access_rules": [
-              "greatbay,gyorgbay,hookshot,",
-              "twinmold,twinbay,hookshot,",
-              "woodfall,odolwabay,hookshot",
-              "goht,gohtbay,hookshot"
+              "mm_greatbay,mm_gyorgbay,mm_hookshot,",
+              "mm_twinmold,mm_twinbay,mm_hookshot,",
+              "mm_woodfall,mm_odolwabay,mm_hookshot",
+              "mm_goht,mm_gohtbay,mm_hookshot"
             ],
             "capture_item": true,
             "item_count": 1
@@ -9997,8 +9997,8 @@
     "name": "Ikana",
     "color": "#ad7143",
     "access_rules": [
-      "ocarina,eponasong",
-      "$goron_fence_jump"
+      "mm_ocarina,mm_eponasong",
+      "$mm_goron_fence_jump"
     ],
     "children": [
       {
@@ -10010,8 +10010,8 @@
             "chest_unopened_img": "images/system/unknownmask.png",
             "chest_opened_img": "images/system/unknownmask_grey.png",
             "access_rules": [
-              "lens,magic,redpotionlocated,bottle",
-              "lens,magic,bluepotionlocated,bottle"
+              "mm_lens,mm_magic,mm_redpotionlocated,mm_bottle",
+              "mm_lens,mm_magic,mm_bluepotionlocated,mm_bottle"
             ],
             "capture_item": true,
             "item_count": 1
@@ -10032,15 +10032,15 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Captain's Hat Chest",
         "access_rules": [
-          "ocarina,sonata,[bow],$can_deal_damage",
-          "ocarina,sonata,bombs,$can_deal_damage,keetabomb"
+          "mm_ocarina,mm_sonata,[mm_bow],$mm_can_deal_damage",
+          "mm_ocarina,mm_sonata,mm_bombs,$mm_can_deal_damage,mm_keetabomb"
         ],
         "sections": [
           {
             "name": "Defeat Captain Keeta",
             "access_rules": [
-              "[zora]",
-              "[hookshot]"
+              "[mm_zora]",
+              "[mm_hookshot]"
             ],
             "capture_item": true,
             "item_count": 1
@@ -10064,7 +10064,7 @@
           {
             "name": "Bomb the circle of rocks",
             "access_rules": [
-              "$has_explosives"
+              "$mm_has_explosives"
             ],
             "capture_item": true,
             "item_count": 1
@@ -10088,8 +10088,8 @@
           {
             "name": "Defeat all bats",
             "access_rules": [
-              "captainshat,$can_deal_damage",
-              "captainshat,deku"
+              "mm_captainshat,$mm_can_deal_damage",
+              "mm_captainshat,mm_deku"
             ],
             "capture_item": true,
             "item_count": 1
@@ -10099,10 +10099,10 @@
             "chest_unopened_img": "images/system/unknownsong.png",
             "chest_opened_img": "images/system/unknownsong_check.png",
             "access_rules": [
-              "captainshat,sword1",
-              "captainshat,fairysword",
-              "captainshat,goron",
-              "captainshat,zora"
+              "mm_captainshat,mm_sword1",
+              "mm_captainshat,mm_fairysword",
+              "mm_captainshat,mm_goron",
+              "mm_captainshat,mm_zora"
             ],
             "capture_item": true,
             "item_count": 1
@@ -10126,10 +10126,10 @@
           {
             "name": "Defeat Iron Knuckle",
             "access_rules": [
-              "captainshat,$has_explosives,sword1,$can_see_with_lens",
-              "captainshat,$has_explosives,fairysword,$can_see_with_lens",
-              "captainshat,$has_explosives,sword1,lens_walk,lens_walls",
-              "captainshat,$has_explosives,fairysword,lens_walk,lens_walls"
+              "mm_captainshat,$mm_has_explosives,mm_sword1,$mm_can_see_with_lens",
+              "mm_captainshat,$mm_has_explosives,mm_fairysword,$mm_can_see_with_lens",
+              "mm_captainshat,$mm_has_explosives,mm_sword1,mm_lens_walk,mm_lens_walls",
+              "mm_captainshat,$mm_has_explosives,mm_fairysword,mm_lens_walk,mm_lens_walls"
             ],
             "capture_item": true,
             "item_count": 1
@@ -10153,8 +10153,8 @@
           {
             "name": "Defeat Big Poe",
             "access_rules": [
-              "captainshat,bow",
-              "captainshat,zora"
+              "mm_captainshat,mm_bow",
+              "mm_captainshat,mm_zora"
             ],
             "capture_item": true,
             "item_count": 1
@@ -10172,8 +10172,8 @@
       {
         "name": "Ikana Valley",
         "access_rules": [
-          "gibdomask,hookshot",
-          "garomask,hookshot"
+          "mm_gibdomask,mm_hookshot",
+          "mm_garomask,mm_hookshot"
         ],
         "children": [
           {
@@ -10185,7 +10185,7 @@
               {
                 "name": "Give Ocean Title Deed",
                 "access_rules": [
-                  "great_bay_deed,zora"
+                  "mm_great_bay_deed,mm_zora"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -10195,7 +10195,7 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "access_rules": [
-                  "adultwallet",
+                  "mm_adultwallet",
                   "{}"
                 ],
                 "visibility_rules": [
@@ -10209,7 +10209,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "great_bay_deed,zora,deku",
+                  "mm_great_bay_deed,mm_zora,mm_deku",
                   "{}"
                 ],
                 "capture_item": true,
@@ -10252,7 +10252,7 @@
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "Boss Gauntlet",
             "access_rules": [
-              "$can_LA,$can_deal_damage"
+              "$mm_can_LA,$mm_can_deal_damage"
             ],
             "sections": [
               {
@@ -10295,8 +10295,8 @@
           {
             "name": "Ikana Canyon",
             "access_rules": [
-              "hookshot,[bow],[icearrows],[magic]",
-              "hookshot,icelesscanyon"
+              "mm_hookshot,[mm_bow],[mm_icearrows],[mm_magic]",
+              "mm_hookshot,mm_icelesscanyon"
             ],
             "children": [
               {
@@ -10334,7 +10334,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "ocarina,songofhealing,songofstorms"
+                      "mm_ocarina,mm_songofhealing,mm_songofstorms"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10358,7 +10358,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "bow, $can_deal_damage"
+                      "mm_bow,$mm_can_deal_damage"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10382,7 +10382,7 @@
                   {
                     "name": "15 Stray Fairies in Stone Tower Temple",
                     "access_rules": [
-                      "stonetower_stray_fairies:15"
+                      "mm_stonetower_stray_fairies:mm_15"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10408,10 +10408,10 @@
                     "chest_unopened_img": "images/system/chest_unopened_big.png",
                     "chest_opened_img": "images/system/chest_open_big.png",
                     "access_rules": [
-                      "bottlesanity_no,gibdomask,magicbeans,bottle,bow,firearrows,magic,[bombs],[nuts]",
-                      "bottlesanity_yes,gibdomask,bottle,magicbeans,bigpoe,fish,milklocated,bow,firearrows,magic",
-                      "bottlesanity_yes,gibdomask,bottle,magicbeans,bigpoe,fish,chateaulocated,bow,firearrows,magic",
-                      "bow,lightarrows,magic,firearrows"
+                      "mm_bottlesanity_no,mm_gibdomask,mm_magicbeans,mm_bottle,mm_bow,mm_firearrows,mm_magic,[mm_bombs],[mm_nuts]",
+                      "mm_bottlesanity_yes,mm_gibdomask,mm_bottle,mm_magicbeans,mm_bigpoe,mm_fish,mm_milklocated,mm_bow,mm_firearrows,mm_magic",
+                      "mm_bottlesanity_yes,mm_gibdomask,mm_bottle,mm_magicbeans,mm_bigpoe,mm_fish,mm_chateaulocated,mm_bow,mm_firearrows,mm_magic",
+                      "mm_bow,mm_lightarrows,mm_magic,mm_firearrows"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10419,11 +10419,11 @@
                   {
                     "name": "Right Side Well Chest",
                     "access_rules": [
-                      "bottlesanity_no,gibdomask,beans,bottle,bow,firearrows,magic",
-                      "bottlesanity_no,gibdomask,beans,bugs,bow,firearrows,magic,bottle",
-                      "bottlesanity_yes,fish,beans,gibdomask,bug",
-                      "bow,lightarrows,magic,firearrows,bottlesanity_no,gibdomask",
-                      "bow,lightarrows,magic,firearrows,bottlesanity_yes,bug,gibdomask"
+                      "mm_bottlesanity_no,mm_gibdomask,mm_beans,mm_bottle,mm_bow,mm_firearrows,mm_magic",
+                      "mm_bottlesanity_no,mm_gibdomask,mm_beans,mm_bugs,mm_bow,mm_firearrows,mm_magic,mm_bottle",
+                      "mm_bottlesanity_yes,mm_fish,mm_beans,mm_gibdomask,mm_bug",
+                      "mm_bow,mm_lightarrows,mm_magic,mm_firearrows,mm_bottlesanity_no,mm_gibdomask",
+                      "mm_bow,mm_lightarrows,mm_magic,mm_firearrows,mm_bottlesanity_yes,mm_bug,mm_gibdomask"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10431,12 +10431,12 @@
                   {
                     "name": "Left Side Well Chest",
                     "access_rules": [
-                      "bottlesanity_no,gibdomask,bottle,bluepotionlocated,$can_see_with_lens",
-                      "bottlesanity_yes,gibdomask,water,bluepotionlocated,bugs,$can_see_with_lens",
-                      "bottlesanity_yes,gibdomask,hotspringwater,bluepotionlocated,bugs,$can_see_with_lens",
-                      "bottlesanity_no,gibdomask,bottle,bluepotionlocated,lens_chests",
-                      "bottlesanity_yes,gibdomask,water,bluepotionlocated,bugs,lens_chests",
-                      "bottlesanity_yes,gibdomask,hotspringwater,bluepotionlocated,bugs,lens_chests"
+                      "mm_bottlesanity_no,mm_gibdomask,mm_bottle,mm_bluepotionlocated,$mm_can_see_with_lens",
+                      "mm_bottlesanity_yes,mm_gibdomask,mm_water,mm_bluepotionlocated,mm_bugs,$mm_can_see_with_lens",
+                      "mm_bottlesanity_yes,mm_gibdomask,mm_hotspringwater,mm_bluepotionlocated,mm_bugs,$mm_can_see_with_lens",
+                      "mm_bottlesanity_no,mm_gibdomask,mm_bottle,mm_bluepotionlocated,mm_lens_chests",
+                      "mm_bottlesanity_yes,mm_gibdomask,mm_water,mm_bluepotionlocated,mm_bugs,mm_lens_chests",
+                      "mm_bottlesanity_yes,mm_gibdomask,mm_hotspringwater,mm_bluepotionlocated,mm_bugs,mm_lens_chests"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10446,8 +10446,8 @@
                     "chest_unopened_img": "images/system/cow.png",
                     "chest_opened_img": "images/system/milk.png",
                     "access_rules": [
-                      "ocarina,eponasong,gibdomask,$can_bottle_hotspringwater,bow,magic,lightarrows,[soaring]",
-                      "ocarina,eponasong,gibdomask,$can_bottle_hotspringwater,beans,[soaring]"
+                      "mm_ocarina,mm_eponasong,mm_gibdomask,$mm_can_bottle_hotspringwater,mm_bow,mm_magic,mm_lightarrows,[mm_soaring]",
+                      "mm_ocarina,mm_eponasong,mm_gibdomask,$mm_can_bottle_hotspringwater,mm_beans,[mm_soaring]"
                     ],
                     "visibility_rules": [
                       "cowsanity_yes"
@@ -10474,11 +10474,11 @@
                     "chest_unopened_img": "images/system/unknownsong.png",
                     "chest_opened_img": "images/system/unknownsong_check.png",
                     "access_rules": [
-                      "bow,firearrows,magic,mirrorshield,lightarrows,$can_deal_damage",
-                      "bow,firearrows,magic,mirrorshield,deku,keg,$can_deal_damage,goron,lens_jump",
-                      "bow,firearrows,magic,mirrorshield,keg,$can_deal_damage,goron,$can_see_with_lens,ikanaceiling",
-                      "bow,firearrows,magic,mirrorshield,deku,keg,$can_deal_damage,goron,$can_see_with_lens",
-                      "bow,firearrows,magic,mirrorshield,keg,$can_deal_damage,goron,lens_jump,ikanaceiling"
+                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_lightarrows,$mm_can_deal_damage",
+                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_deku,mm_keg,$mm_can_deal_damage,mm_goron,mm_lens_jump",
+                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_keg,$mm_can_deal_damage,mm_goron,$mm_can_see_with_lens,mm_ikanaceiling",
+                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_deku,mm_keg,$mm_can_deal_damage,mm_goron,$mm_can_see_with_lens",
+                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_keg,$mm_can_deal_damage,mm_goron,mm_lens_jump,mm_ikanaceiling"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10488,12 +10488,12 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "deku,bow,magic,firearrows,lightarrows,lens_jump",
-                      "deku,bow,magic,firearrows,mirrorshield,lens_jump",
-                      "deku,bow,magic,firearrows,lightarrows,$can_see_with_lens",
-                      "deku,bow,magic,firearrows,mirrorshield,$can_see_with_lens",
-                      "deku,bow,magic,firearrows,zora,gainer,lens_jump",
-                      "deku,bow,magic,firearrows,zora,gainer,$can_see_with_lens"
+                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_lightarrows,mm_lens_jump",
+                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_mirrorshield,mm_lens_jump",
+                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_lightarrows,$mm_can_see_with_lens",
+                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_mirrorshield,$mm_can_see_with_lens",
+                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_zora,mm_gainer,mm_lens_jump",
+                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_zora,mm_gainer,$mm_can_see_with_lens"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -10511,9 +10511,9 @@
               {
                 "name": "Stone Tower",
                 "access_rules": [
-                  "ocarina,elegy,goron,zora,hookshot",
-                  "ocarina,elegy,ostt,zora,hookshot",
-                  "ocarina,elegy,goron,ostt,hookshot"
+                  "mm_ocarina,mm_elegy,mm_goron,mm_zora,mm_hookshot",
+                  "mm_ocarina,mm_elegy,mm_ostt,mm_zora,mm_hookshot",
+                  "mm_ocarina,mm_elegy,mm_goron,mm_ostt,mm_hookshot"
                 ],
                 "children": [
                   {
@@ -10525,7 +10525,7 @@
                       {
                         "name": "Left Chest",
                         "access_rules": [
-                          "$can_grow_magic_plant,bow,lightarrows,magic"
+                          "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -10533,7 +10533,7 @@
                       {
                         "name": "Middle Chest",
                         "access_rules": [
-                          "$can_grow_magic_plant,bow,lightarrows,magic"
+                          "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -10541,7 +10541,7 @@
                       {
                         "name": "Right Chest",
                         "access_rules": [
-                          "$can_grow_magic_plant,bow,lightarrows,magic"
+                          "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -10567,7 +10567,7 @@
                           "$stone_not_known_but_odolwa_found"
                         ],
                         "access_rules": [
-                          "{bow,lightarrows,magic,elegy}"
+                          "{mm_bow,mm_lightarrows,mm_magic,mm_elegy}"
                         ]
                       },
                       {
@@ -10577,7 +10577,7 @@
                           "$stone_not_known_but_goht_found"
                         ],
                         "access_rules": [
-                          "{bow,lightarrows,magic,elegy}"
+                          "{mm_bow,mm_lightarrows,mm_magic,mm_elegy}"
                         ]
                       },
                       {
@@ -10587,7 +10587,7 @@
                           "$stone_not_known_but_gyorg_found"
                         ],
                         "access_rules": [
-                          "{bow,lightarrows,magic,elegy}"
+                          "{mm_bow,mm_lightarrows,mm_magic,mm_elegy}"
                         ]
                       },
                       {
@@ -10597,7 +10597,7 @@
                         ],
                         "hosted_item": "twinlocstone",
                         "access_rules": [
-                          "{bow,lightarrows,magic,elegy}"
+                          "{mm_bow,mm_lightarrows,mm_magic,mm_elegy}"
                         ]
                       }
                     ],
