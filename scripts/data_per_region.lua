@@ -6669,7 +6669,7 @@ data_per_region = {
     ["locations"] = {
       ["Bottom of the Well Front Left Fake Wall Chest"] = {
         ["child_access"] = function()
-          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+          if has("logic_lens") or (has("lens") and has("magic")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -6688,7 +6688,7 @@ data_per_region = {
       },
       ["Bottom of the Well Right Bottom Fake Wall Chest"] = {
         ["child_access"] = function()
-          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+          if has("logic_lens") or (has("lens") and has("magic")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -6699,7 +6699,7 @@ data_per_region = {
       },
       ["Bottom of the Well Compass Chest"] = {
         ["child_access"] = function()
-          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+          if has("logic_lens") or (has("lens") and has("magic")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -6710,7 +6710,7 @@ data_per_region = {
       },
       ["Bottom of the Well Center Skulltula Chest"] = {
         ["child_access"] = function()
-          if has("logic_lens_botw") or (has("lens") and has("magic")) then
+          if has("logic_lens") or (has("lens") and has("magic")) then
             return AccessibilityLevel.Normal
           end
           return AccessibilityLevel.SequenceBreak
@@ -6722,7 +6722,7 @@ data_per_region = {
       ["Bottom of the Well Back Left Bombable Chest"] = {
         ["child_access"] = function()
           local lens =
-            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            (has("logic_lens") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
           return and_accessibility(has_explosives(), lens)
         end,
@@ -6763,7 +6763,7 @@ data_per_region = {
       ["Bottom of the Well Invisible Chest"] = {
         ["child_access"] = function()
           if has("ocarina") and has("lullaby") then
-            if has("logic_lens_botw") or (has("lens") and has("magic")) then
+            if has("logic_lens") or (has("lens") and has("magic")) then
               return AccessibilityLevel.Normal
             end
             return AccessibilityLevel.SequenceBreak
@@ -6806,7 +6806,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
           local lens =
-            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            (has("logic_lens") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
           local df = (has("dinsfire") and has("magic")) and AccessibilityLevel.Normal or AccessibilityLevel.None
           local trick = AccessibilityLevel.None
@@ -6836,7 +6836,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
           local lens =
-            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            (has("logic_lens") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
           return and_accessibility(keys, lens)
@@ -6854,7 +6854,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
           local lens =
-            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            (has("logic_lens") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
           return and_accessibility(keys, lens)
@@ -6873,7 +6873,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
           local lens =
-            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            (has("logic_lens") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
           return and_accessibility(rang, lens, keys)
@@ -6892,7 +6892,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
           local lens =
-            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            (has("logic_lens") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
           return and_accessibility(rang, lens, keys)
@@ -6911,7 +6911,7 @@ data_per_region = {
             keys = AccessibilityLevel.SequenceBreak
           end
           local lens =
-            (has("logic_lens_botw") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
+            (has("logic_lens") or (has("lens") and has("magic"))) and AccessibilityLevel.Normal or
             AccessibilityLevel.SequenceBreak
 
           return and_accessibility(rang, lens, keys)

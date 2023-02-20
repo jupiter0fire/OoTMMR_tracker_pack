@@ -966,6 +966,13 @@
     "codes": "logic_lens_botw"
   },
   {
+  "name": "Fewer Lens Requirements (OOT)",
+  "type": "toggle",
+  "initial_active_state": false,
+  "img": "images/logic_lens_botw.png",
+  "codes": "logic_lens"
+  },
+  {
     "name": "Ganon's Castle MQ without Lens of Truth",
     "type": "toggle",
     "initial_active_state": false,
