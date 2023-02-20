@@ -13,6 +13,7 @@ if HAS_MAP then
     ScriptHost:LoadScript("scripts/add_section_objects.lua")
   else
     ScriptHost:LoadScript("scripts/logic_helpers.lua")
+    ScriptHost:LoadScript("scripts/logic_mm.lua")
 
     Tracker:AddMaps("maps/maps.json")
 
