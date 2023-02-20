@@ -241,21 +241,21 @@
             "mm_kokirisword"
           ],
           [
-            "mm_songoftime_check",
-            "mm_healing_check",
-            "mm_epona_check",
-            "mm_soaring_check",
-            "mm_storms_check",
+            "mm_songoftime",
+            "mm_healing",
+            "mm_epona",
+            "mm_soaring",
+            "mm_storms",
             "mm_wallet",
             "mm_bottle1",
             "mm_box"
           ],
           [
-            "mm_sonata_check",
-            "mm_lullaby_check",
-            "mm_bossanova_check",
-            "mm_elegy_check",
-            "mm_oath_check",
+            "mm_sonata",
+            "mm_lullaby",
+            "mm_bossanova",
+            "mm_elegy",
+            "mm_oath",
             "mm_beans",
             "mm_bottle2",
             "mm_moontear"
