@@ -6,7 +6,7 @@
     "img": "images/map_spawns.png"
   },
   {
-    "name": "mm",
+    "name": "termina",
     "location_size": 35,
     "location_border_thickness": 5,
     "img": "images/mm_overworld.png"

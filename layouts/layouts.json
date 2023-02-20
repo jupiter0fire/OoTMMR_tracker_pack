@@ -61,7 +61,7 @@
                   "content": {
                     "type": "map",
                     "maps": [
-                      "mm"
+                      "termina"
                     ]
                   }
                 }
@@ -150,7 +150,7 @@
               "content": {
                 "type": "map",
                 "maps": [
-                  "mm"
+                  "termina"
                 ]
               }
             }
