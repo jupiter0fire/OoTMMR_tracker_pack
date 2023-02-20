@@ -1,0 +1,3510 @@
+[
+  // Bow
+  {
+    "name": "MM Bow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_bow.png",
+        "img_mods": "@disabled",
+      },
+      {
+        "img": "images/items/mm_bow.png",
+        "img_mods": "overlay|images/system/overlay_30.png",
+        "codes": "mm_bow"
+      },
+      {
+        "img": "images/items/mm_bow.png",
+        "img_mods": "overlay|images/system/overlay_40.png"
+      },
+      {
+        "img": "images/items/mm_bow.png",
+        "img_mods": "overlay|images/system/overlay_50_green.png"
+      }
+    ]
+  },
+  // Fire Arrows
+  {
+    "name": "MM Fire Arrows",
+    "type": "toggle",
+    "img": "images/items/mm_firearrow.png",
+    "codes": "mm_firearrow,mm_firearrows,mm_farrow,mm_farrows"
+  },
+  // Ice Arrows
+  {
+    "name": "MM Ice Arrows",
+    "type": "toggle",
+    "img": "images/items/mm_icearrow.png",
+    "codes": "mm_icearrow,mm_icearrows,mm_iarrow,mm_iarrows"
+  },
+  // Light Arrows
+  {
+    "name": "MM Light Arrows",
+    "type": "toggle",
+    "img": "images/items/mm_lightarrow.png",
+    "codes": "mm_lightarrow,mm_lightarrows,mm_larrow,mm_larrows"
+  },
+  // Magic Beans
+  {
+    "name": "MM Magic Beans",
+    "type": "toggle",
+    "img": "images/items/mm_bean.png",
+    "codes": "mm_bean,mm_beans,mm_magicbeans"
+  },
+  // Deku Sticks
+  {
+    "name": "MM Deku Sticks",
+    "type": "toggle",
+    "img": "images/items/mm_stick.png",
+    "codes": "mm_sticks,mm_dekusticks,mm_stick,mm_dekustick"
+  },
+  // Deku Nuts
+  {
+    "name": "MM Deku Nuts",
+    "type": "toggle",
+    "img": "images/items/mm_nut.png",
+    "codes": "mm_nut,mm_nuts,mm_dekunuts"
+  },
+  // Bombs
+  {
+    "name": "MM Bombs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_bomb.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_bomb.png",
+        "img_mods": "overlay|images/system/overlay_20.png",
+        "codes": "mm_bombs,mm_bombbag,mm_bomb"
+      },
+      {
+        "img": "images/items/mm_bomb.png",
+        "img_mods": "overlay|images/system/overlay_30.png"
+      },
+      {
+        "img": "images/items/mm_bomb.png",
+        "img_mods": "overlay|images/system/overlay_40_green.png"
+      },
+    ]
+  },
+  // Hookshot
+  {
+    "name": "MM Hookshot",
+    "type": "toggle",
+    "img": "images/items/mm_hookshot.png",
+    "codes": "mm_hookshot,mm_hs,mm_hook"
+  },
+  {
+    "name": "MM Milk",
+    "type": "toggle",
+    "img": "images/items/mm_milk.png",
+    "codes": "mm_milklocated"
+  },
+  {
+    "name": "MM Gold Dust",
+    "type": "toggle",
+    "img": "images/items/mm_dust.png",
+    "codes": "mm_dustlocated"
+  },
+  {
+    "name": "MM Chateau Romani",
+    "type": "toggle",
+    "img": "images/items/mm_chateau.png",
+    "codes": "mm_chateaulocated"
+  },
+  {
+    "name": "MM Seahorse",
+    "type": "toggle",
+    "img": "images/items/mm_seahorse.png",
+    "codes": "mm_seahorselocated"
+  },
+  // Bombchu
+  {
+    "name": "MM Bombchu",
+    "type": "toggle",
+    "img": "images/items/mm_bombchu.png",
+    "codes": "mm_bombchu,mm_bombchus"
+  },
+  // Powder Keg
+  {
+    "name": "MM Powder Keg",
+    "type": "toggle",
+    "img": "images/items/mm_keg.png",
+    "codes": "mm_powderkeg,mm_powder,mm_keg,mm_powder_keg"
+  },
+  // Lens of Truth
+  {
+    "name": "MM Lens of Truth",
+    "type": "toggle",
+    "img": "images/items/mm_lens.png",
+    "codes": "mm_lens,mm_lensoftruth,mm_lot"
+  },
+  {
+    "name": "MM Lens of Truth and Magic",
+    "type": "composite_toggle",
+    "codes": "mm_lensmagic",
+    "item_left": "lens",
+    "item_right": "magic",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/lens_magic.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/lens_magic.png",
+        "img_mods": "@disabled,overlay|images/lens.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/magic_lens.png",
+        "img_mods": "@disabled,overlay|images/magic1.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/lens_magic.png"
+      }
+    ]
+  },
+  // Song of Time
+  {
+    "name": "MM Song of Time",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_songoftime.png",
+    "initial_active_state": true,
+    "codes": "mm_songoftime,mm_time,mm_sot"
+  },
+  {
+    "name": "MM Song of Time Check",
+    "type": "toggle_badged",
+    "base_item": "songoftime",
+    "img": "images/system/check.png",
+    "initial_active_state": true,
+    "codes": "mm_songoftime_check,mm_time_check,mm_sot_check"
+  },
+  // Song of Healing
+  {
+    "name": "MM Song of Healing",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_healing.png",
+    "initial_active_state": false,
+    "codes": "mm_healing,mm_soh,mm_songofhealing,mm_heal"
+  },
+  {
+    "name": "MM Song of Healing Check",
+    "type": "toggle_badged",
+    "base_item": "healing",
+    "img": "images/system/check.png",
+    "initial_active_state": true,
+    "codes": "mm_healing_check,mm_soh_check,mm_songofhealing_check,mm_heal_check"
+  },
+  // Epona's Song
+  {
+    "name": "MM Epona's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_epona.png",
+    "codes": "mm_epona,mm_eponas,mm_epona_song,mm_eponasong"
+  },
+  {
+    "name": "MM Epona's Song Check",
+    "type": "toggle_badged",
+    "base_item": "epona",
+    "img": "images/system/check.png",
+    "codes": "mm_epona_check,mm_eponas_check,mm_epona_song_check,mm_eponasong_check"
+  },
+  // Song of Storms
+  {
+    "name": "MM Song of Storms",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_songofstorms.png",
+    "codes": "mm_songofstorms,mm_storm,mm_storms,mm_sos"
+  },
+  {
+    "name": "MM Song of Storms Check",
+    "type": "toggle_badged",
+    "base_item": "songofstorms",
+    "img": "images/system/check.png",
+    "codes": "mm_songofstorms_check,mm_storm_check,mm_storms_check,mm_sos_check"
+  },
+  // Song of Soaring
+  {
+    "name": "MM Song of Soaring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_soaring.png",
+    "codes": "mm_soaring,mm_sos,mm_songofsoaring,mm_song_of_soaring,mm_soar"
+  },
+  {
+    "name": "MM Song of Soaring",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_soaring.png",
+    "initial_active_state": true,
+    "codes": "mm_soaringaccessible"
+  },
+  {
+    "name": "MM Song of Soaring Check",
+    "type": "toggle_badged",
+    "base_item": "soaringaccessible",
+    "img": "images/system/check.png",
+    "initial_active_state": true,
+    "codes": "mm_soaringaccessible_check"
+  },
+  {
+    "name": "MM Song of Soaring Check",
+    "type": "toggle_badged",
+    "base_item": "soaring",
+    "img": "images/system/check.png",
+    "codes": "mm_soaring_check,mm_sos_check,mm_songofsoaring_check,mm_song_of_soaring_check,mm_soar_check,mm_soaringaccessible"
+  },
+  // Sonata of Awakening
+  {
+    "name": "MM Sonata of Awakening",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_sonata.png",
+    "codes": "mm_sonata,mm_awakening,mm_soa,mm_sonata_of_awakening,mm_awake"
+  },
+  {
+    "name": "MM Sonata of Awakening Check",
+    "type": "toggle_badged",
+    "base_item": "sonata",
+    "img": "images/system/check.png",
+    "codes": "mm_sonata_check,mm_awakening_check,mm_soa_check,mm_sonata_of_awakening_check,mm_awake_check"
+  },
+  // Goron Lullaby
+  {
+    "name": "MM Goron Lullaby",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_lullaby.png",
+    "codes": "mm_lullaby,mm_goronslullaby,mm_goronlullaby,mm_goron_lullaby"
+  },
+  {
+    "name": "MM Goron Lullaby Check",
+    "type": "toggle_badged",
+    "base_item": "lullaby",
+    "img": "images/system/check.png",
+    "codes": "mm_lullaby_check,mm_goronslullaby_check,mm_goronlullaby_check,mm_goron_lullaby_check"
+  },
+  // New Wave Bossa Nova
+  {
+    "name": "MM New Wave Bossa Nova",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_bossanova.png",
+    "codes": "mm_bossanova,mm_newwavebossanova,mm_nova,mm_bossa,mm_wave"
+  },
+  {
+    "name": "MM New Wave Bossa Nova Check",
+    "type": "toggle_badged",
+    "base_item": "bossanova",
+    "img": "images/system/check.png",
+    "codes": "mm_bossanova_check,mm_newwavebossanova_check,mm_nova_check,mm_bossa_check,mm_wave_check"
+  },
+  // Elegy of Emptiness
+  {
+    "name": "MM Elegy of Emptiness",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_elegy.png",
+    "codes": "mm_elegy,mm_emptiness,mm_elegyofemptiness,mm_eoe,mm_elegy_of_emptiness"
+  },
+  {
+    "name": "MM Elegy of Emptiness Check",
+    "type": "toggle_badged",
+    "base_item": "elegy",
+    "img": "images/system/check.png",
+    "codes": "mm_elegy_check,mm_emptiness_check,mm_elegyofemptiness_check,mm_eoe_check,mm_elegy_of_emptiness_check"
+  },
+  // Oath to Order
+  {
+    "name": "MM Oath to Order",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_oath.png",
+    "codes": "mm_oath,mm_order,mm_oto,mm_oath_to_order"
+  },
+  {
+    "name": "MM Oath to Order Check",
+    "type": "toggle_badged",
+    "base_item": "oath",
+    "img": "images/system/check.png",
+    "codes": "mm_oath_check,mm_oathcheck,mm_ordercheck,mm_otocheck,mm_oath_to_order_check"
+  },
+  // Great Fairy Sword
+  {
+    "name": "MM Great Fairy Sword",
+    "type": "toggle",
+    "img": "images/items/mm_fairysword.png",
+    "codes": "mm_fairysword,mm_greatfairysword,mm_fairy_sword,mm_sword4"
+  },
+  // Pictograph Box
+  {
+    "name": "MM Pictograph Box",
+    "type": "toggle",
+    "img": "images/items/mm_box.png",
+    "codes": "mm_box,mm_pictograph,mm_pictobox,mm_pictographbox"
+  },
+  // Bomber Notebook
+  {
+    "name": "MM Bomber Notebook",
+    "type": "toggle",
+    "img": "images/items/mm_bomber.png",
+    "codes": "mm_bomber,mm_bombernotebook,mm_notebook,mm_book"
+  },
+  // Progressive Sword
+  {
+    "name": "MM Sword",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_kokiri.png",
+        "codes": "mm_kokirisword,mm_kokiri,mm_sword1"
+      },
+      {
+        "img": "images/items/mm_razor.png"
+      },
+      {
+        "img": "images/items/mm_gilded.png"
+      }
+    ]
+  },
+  {
+    "name": "MM Sword",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/items/mm_kokiri.png",
+        "codes": "mm_kokirisword,mm_kokiri,mm_sword0"
+      },
+      {
+        "img": "images/items/mm_razor.png"
+      },
+      {
+        "img": "images/items/mm_gilded.png"
+      }
+    ]
+  },
+  // Progressive Shield
+  {
+    "name": "MM Shield",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_shield.png",
+        "codes": "mm_shield,mm_shield1,mm_heroshield,mm_hylianshield"
+      },
+      {
+        "img": "images/items/mm_mirror.png",
+        "codes": "mm_mirror,mm_mirrorshield,mm_mirror_shield,mm_shield2"
+      }
+    ]
+  },
+  {
+    "name": "MM Shield",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/items/mm_shield.png",
+        "codes": "mm_shield,mm_shield0,mm_heroshield,mm_hylianshield"
+      },
+      {
+        "img": "images/items/mm_mirror.png",
+        "codes": "mm_mirror,mm_mirrorshield,mm_mirror_shield,mm_shield2"
+      }
+    ]
+  },
+  // Ocarina
+  {
+    "name": "MM Ocarina",
+    "type": "toggle",
+    "img": "images/items/mm_ocarina.png",
+    "initial_active_state": true,
+    "codes": "mm_ocarina,mm_oot,mm_ocarinaoftime,mm_ocarina_of_time"
+  },
+  // Bottles
+  {
+    "name": "MM Bottle 1",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,mm_bottle1,mm_emptybottle"
+      },
+      {
+        "img": "images/items/mm_bigpoe.png",
+        "codes": "mm_bottle,mm_bottle1,mm_bigpoe,mm_big_poe",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,mm_bottle1,mm_zoraegg,mm_zoraegg_bottle,mm_bottle_egg,mm_bottlezoraegg,mm_bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,mm_bottle1,mm_dekuprincess,mm_bottledekuprincess,mm_bottledeku,mm_bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,mm_bottle1,mm_mushroom,mm_mush,mm_bottled_mushroom,mm_bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,mm_bottle1,mm_hotspringwater,mm_hot_spring_water,mm_hot,hotwater,mm_hot_water,mm_spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,mm_bottle1,mm_water,mm_bottledwater,mm_bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,mm_bottle1,mm_fish,mm_bottledfish,mm_bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,mm_bottle1,mm_bug,mm_bugs,mm_bottledbugs,mm_bottled_bugs",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fairy.png",
+        "codes": "mm_bottle,mm_bottle1,mm_fairy,mm_bottled_fairy,mm_bottledfairy",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bottle_poe.png",
+        "codes": "mm_bottle,mm_bottle1,mm_poe",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Bottle 1",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle1a,emptybottle"
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "mm_bottle,bottle1,dust",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+        "codes": "mm_bottle,bottle1,redpotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+        "codes": "mm_bottle,bottle1,bluepotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle1,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle1,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle1,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle1,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle1,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle1,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle1,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  // Bottles
+  {
+    "name": "MM Bottle 2",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle2,emptybottle"
+      },
+      {
+        "img": "images/items/mm_bigpoe.png",
+        "codes": "mm_bottle,bottle2,bigpoe,big_poe",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle2,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle2,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle2,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle2,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle2,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle2,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle2,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fairy.png",
+        "codes": "mm_bottle,bottle2,fairy,bottled_fairy,bottledfairy",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bottle_poe.png",
+        "codes": "mm_bottle,bottle2,poe",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Bottle 2",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle2a,emptybottle"
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "mm_bottle,bottle2,dustlocated",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+        "codes": "mm_bottle,bottle2,redpotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+        "codes": "mm_bottle,bottle2,bluepotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle2,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle2,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle2,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle2,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle2,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle2,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle2,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  // Bottles
+  {
+    "name": "MM Bottle 3",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle3,emptybottle"
+      },
+      {
+        "img": "images/items/mm_bigpoe.png",
+        "codes": "mm_bottle,bottle3,bigpoe,big_poe",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle3,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle3,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle3,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle3,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle3,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle3,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle3,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fairy.png",
+        "codes": "mm_bottle,bottle3,fairy,bottled_fairy,bottledfairy",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bottle_poe.png",
+        "codes": "mm_bottle,bottle3,poe",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Bottle 3",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle3a,emptybottle"
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "mm_bottle,bottle3,dust",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+        "codes": "mm_bottle,bottle3,redpotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+        "codes": "mm_bottle,bottle3,bluepotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle3,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle3,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle3,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle3,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle3,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle3,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle3,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  // Bottles
+  {
+    "name": "MM Bottle 4",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle4,emptybottle"
+      },
+      {
+        "img": "images/items/mm_bigpoe.png",
+        "codes": "mm_bottle,bottle4,bigpoe,big_poe",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle4,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle4,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle4,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle4,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle4,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle4,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle4,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fairy.png",
+        "codes": "mm_bottle,bottle4,fairy,bottled_fairy,bottledfairy",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bottle_poe.png",
+        "codes": "mm_bottle,bottle4,poe",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Bottle 4",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle4a,emptybottle"
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "mm_bottle,bottle4,dust",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+        "codes": "mm_bottle,bottle4,redpotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+        "codes": "mm_bottle,bottle4,bluepotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle4,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle4,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle4,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle4,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle4,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle4,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle4,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  // Bottles
+  {
+    "name": "MM Bottle 5",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle5,emptybottle"
+      },
+      {
+        "img": "images/items/mm_bigpoe.png",
+        "codes": "mm_bottle,bottle5,bigpoe,big_poe",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle5,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle5,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle5,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle5,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle5,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle5,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle5,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fairy.png",
+        "codes": "mm_bottle,bottle5,fairy,bottled_fairy,bottledfairy",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bottle_poe.png",
+        "codes": "mm_bottle,bottle5,poe",
+        "inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "MM Bottle 5",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle5a,emptybottle"
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "mm_bottle,bottle5,dust",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+        "codes": "mm_bottle,bottle5,redpotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+        "codes": "mm_bottle,bottle5,bluepotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle5,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle5,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle5,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle5,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle5,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle5,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle5,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  // Bottles
+  {
+    "name": "MM Bottle 6",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle6,emptybottle"
+      },
+      {
+        "img": "images/items/mm_bigpoe.png",
+        "codes": "mm_bottle,bottle6,bigpoe,big_poe",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle6,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle6,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle6,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle6,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle6,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle6,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle6,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fairy.png",
+        "codes": "mm_bottle,bottle6,fairy,bottled_fairy,bottledfairy",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bottle_poe.png",
+        "codes": "mm_bottle,bottle6,poe",
+        "inherit_codes": false
+      },
+    ]
+  },
+  {
+    "name": "MM Bottle 6",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "mm_bottle,bottle6a,emptybottle"
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "mm_bottle,bottle6,dust",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+        "codes": "mm_bottle,bottle6,redpotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+        "codes": "mm_bottle,bottle6,bluepotionlocateda",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_bottle,bottle6,zoraegg,zoraegg_bottle,bottle_egg,bottlezoraegg,bottleegg",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dekuprincess.png",
+        "codes": "mm_bottle,bottle6,dekuprincess,bottledekuprincess,bottledeku,bottle_deku_princess",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_mushroom.png",
+        "codes": "mm_bottle,bottle6,mushroom,mush,bottled_mushroom,bottledmushroom",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_springwater.png",
+        "codes": "mm_bottle,bottle6,hotspringwater,hot_spring_water,hot,hotwater,hot_water,spring_water_hot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_water.png",
+        "codes": "mm_bottle,bottle6,water,bottledwater,bottled_water",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_fish.png",
+        "codes": "mm_bottle,bottle6,fish,bottledfish,bottled_fish",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bug.png",
+        "codes": "mm_bottle,bottle6,bug,bugs,bottledbugs,bottled_bugs",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Woodfall Temple Location",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/odolwaun.png",
+        "codes": "mm_odolwaunknown",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/odolwa_woodfall.png",
+        "codes": "mm_odolwawood,woodent"
+      },
+      {
+        "img": "images/settings/odolwa_snowhead.png",
+        "codes": "mm_odolwasnow",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/odolwa_greatbay.png",
+        "codes": "mm_odolwabay",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/odolwa_stonetower.png",
+        "codes": "mm_odolwastone",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Woodfall Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_odolwa.png",
+    "stages": [
+      {
+        "img": "images/items/mm_odolwa.png",
+        "codes": "mm_odolwalocwood"
+      },
+      {
+        "img": "images/items/mm_odolwacheck.png",
+        "codes": "mm_odolwaloccheck"
+      },
+    ]
+  },
+  {
+    "name": "MM Woodfall Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_goht.png",
+    "stages": [
+      {
+        "img": "images/items/mm_goht.png",
+        "codes": "mm_gohtlocwood"
+      },
+      {
+        "img": "images/items/mm_gohtcheck.png",
+        "codes": "mm_gohtloccheck"
+      },
+    ]
+  },
+  {
+    "name": "MM Woodfall Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_gyorg.png",
+    "stages": [
+      {
+        "img": "images/items/mm_gyorg.png",
+        "codes": "mm_gyorglocwood"
+      },
+      {
+        "img": "images/items/mm_gyorgcheck.png",
+        "codes": "mm_gyorgloccheck"
+      },
+    ]
+  },
+  {
+    "name": "MM Woodfall Temple Host",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_twinmold.png",
+        "codes": "mm_twinlocwood"
+      },
+      {
+        "img": "images/items/mm_twinmoldcheck.png",
+        "codes": "mm_twinloccheck"
+      },
+    ]
+  },
+  {
+    "name": "MM Snowhead Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_odolwa.png",
+    "stages": [
+      {
+        "img": "images/items/mm_odolwa.png",
+        "codes": "mm_odolwalocsnow"
+      },
+      {
+        "img": "images/items/mm_odolwacheck.png",
+        "codes": "mm_odolwaloccheck2"
+      },
+    ]
+  },
+  {
+    "name": "MM Snowhead Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_goht.png",
+    "stages": [
+      {
+        "img": "images/items/mm_goht.png",
+        "codes": "mm_gohtlocsnow"
+      },
+      {
+        "img": "images/items/mm_gohtcheck.png",
+        "codes": "mm_gohtloccheck2"
+      },
+    ]
+  },
+  {
+    "name": "MM Snowhead Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_gyorg.png",
+    "stages": [
+      {
+        "img": "images/items/mm_gyorg.png",
+        "codes": "mm_gyorglocsnow"
+      },
+      {
+        "img": "images/items/mm_gyorgcheck.png",
+        "codes": "mm_gyorgloccheck2"
+      },
+    ]
+  },
+  {
+    "name": "MM Snowhead Temple Host",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_twinmold.png",
+        "codes": "mm_twinlocsnow"
+      },
+      {
+        "img": "images/items/mm_twinmoldcheck.png",
+        "codes": "mm_twinloccheck2"
+      },
+    ]
+  },
+  {
+    "name": "MM Great Bay Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_odolwa.png",
+    "stages": [
+      {
+        "img": "images/items/mm_odolwa.png",
+        "codes": "mm_odolwalocbay"
+      },
+      {
+        "img": "images/items/mm_odolwacheck.png",
+        "codes": "mm_odolwaloccheck3"
+      },
+    ]
+  },
+  {
+    "name": "MM Great Bay Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_goht.png",
+    "stages": [
+      {
+        "img": "images/items/mm_goht.png",
+        "codes": "mm_gohtlocbay"
+      },
+      {
+        "img": "images/items/mm_gohtcheck.png",
+        "codes": "mm_gohtloccheck3"
+      },
+    ]
+  },
+  {
+    "name": "MM Great Bay Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_gyorg.png",
+    "stages": [
+      {
+        "img": "images/items/mm_gyorg.png",
+        "codes": "mm_gyorglocbay"
+      },
+      {
+        "img": "images/items/mm_gyorgcheck.png",
+        "codes": "mm_gyorgloccheck3"
+      },
+    ]
+  },
+  {
+    "name": "MM Great Bay Temple Host",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_twinmold.png",
+        "codes": "mm_twinlocbay"
+      },
+      {
+        "img": "images/items/mm_twinmoldcheck.png",
+        "codes": "mm_twinloccheck3"
+      },
+    ]
+  },
+  {
+    "name": "MM Inverted Stone Tower Host",
+    "type": "progressive",
+    "img": "images/items/mm_odolwa.png",
+    "stages": [
+      {
+        "img": "images/items/mm_odolwa.png",
+        "codes": "mm_odolwalocstone"
+      },
+      {
+        "img": "images/items/mm_odolwacheck.png",
+        "codes": "mm_odolwaloccheck4"
+      },
+    ]
+  },
+  {
+    "name": "MM Inverted Stone Tower Host",
+    "type": "progressive",
+    "img": "images/items/mm_goht.png",
+    "stages": [
+      {
+        "img": "images/items/mm_goht.png",
+        "codes": "mm_gohtlocstone"
+      },
+      {
+        "img": "images/items/mm_gohtcheck.png",
+        "codes": "mm_gohtloccheck4"
+      }
+    ]
+  },
+  {
+    "name": "MM Inverted Stone Tower Temple Host",
+    "type": "progressive",
+    "img": "images/items/mm_gyorg.png",
+    "stages": [
+      {
+        "img": "images/items/mm_gyorg.png",
+        "codes": "mm_gyorglocstone"
+      },
+      {
+        "img": "images/items/mm_gyorgcheck.png",
+        "codes": "mm_gyorgloccheck4"
+      }
+    ]
+  },
+  {
+    "name": "MM Inverted Stone Tower Temple Host",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_twinmold.png",
+        "codes": "mm_twinlocstone"
+      },
+      {
+        "img": "images/items/mm_twinmoldcheck.png",
+        "codes": "mm_twinloccheck4"
+      },
+    ]
+  },
+  {
+    "name": "MM Snowhead Temple Location",
+    "type": "progressive",
+    "initial_stage_idx": 3,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/goht_snowhead.png",
+        "codes": "mm_gohtsnow"
+      },
+      {
+        "img": "images/settings/goht_greatbay.png",
+        "codes": "mm_gohtbay,snowent",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/goht_stonetower.png",
+        "codes": "mm_gohtstone",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/gohtun.png",
+        "codes": "mm_gohtunknown",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/goht_woodfall.png",
+        "codes": "mm_gohtwood",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Great Bay Temple Location",
+    "type": "progressive",
+    "initial_stage_idx": 2,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/gyorgbay.png",
+        "codes": "mm_gyorgbay,bayent"
+      },
+      {
+        "img": "images/settings/gyorgstone.png",
+        "codes": "mm_gyorgstone,gyorg4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/gyorgun.png",
+        "codes": "mm_gyorgun",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/gyorgwood.png",
+        "codes": "mm_gyorgwood",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/gyorgsnow.png",
+        "codes": "mm_gyorgsnow",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Inverted Stone Tower Location",
+    "type": "progressive",
+    "initial_stage_idx": 1,
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/settings/twin_stone.png",
+        "codes": "mm_twinstone,stoneent"
+      },
+      {
+        "img": "images/settings/twinmoldun.png",
+        "codes": "mm_twinun",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/twin_wood.png",
+        "codes": "mm_twinwood",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/twin_snow.png",
+        "codes": "mm_twinsnow",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/settings/twin_bay.png",
+        "codes": "mm_twinbay",
+        "inherit_codes": false
+      }
+    ]
+  },
+  // Woodfall Skulltulla
+  {
+    "name": "MM Woodfall Skulltullas",
+    "type": "consumable",
+    "display_as_fraction_of_max": true,
+    "img": "images/items/mm_skulltulla_woodfall.png",
+    "codes": "mm_skulltulla_woodfall,token_woodfall,woodfall_skulltulla,woodfall_skull,woodfall_token",
+    "max_quantity": 30
+  },
+  // Double Defense
+  {
+    "name": "MM Red Potion",
+    "type": "toggle",
+    "img": "images/items/mm_redpotion.png",
+    "codes": "mm_redpotionlocated"
+  },
+  {
+    "name": "MM Red and Blue Potion",
+    "type": "composite_toggle",
+    "codes": "mm_potionredblue",
+    "item_left": "redpotionlocated",
+    "item_right": "bluepotionlocated",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/mm_redbluepotion.png"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/mm_redpotion.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/mm_bluepotion.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/mm_redbluepotion.png"
+      }
+    ]
+  },
+  // Spin Attack
+  {
+    "name": "MM Blue Potion",
+    "type": "toggle",
+    "img": "images/items/mm_bluepotion.png",
+    "codes": "mm_bluepotionlocated"
+  },
+  // Great Bay Skulltulla
+  {
+    "name": "MM Great Bay Skulltullas",
+    "type": "consumable",
+    "display_as_fraction_of_max": true,
+    "img": "images/items/mm_skulltulla_greatbay.png",
+    "codes": "mm_skulltulla_greatbay,token_greatbay,greatbay_skulltulla,greatbay_skull,greatbay_token,great_bay_skulltulla",
+    "max_quantity": 30
+  },
+  // Progressive Wallet
+  {
+    "name": "MM Wallet",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_wallet99.png",
+        "img_mods": "@disabled,overlay|images/system/overlay_99.png",
+        "codes": "mm_wallet"
+      },
+      {
+        "img": "images/items/mm_wallet.png",
+        "img_mods": "overlay|images/system/overlay_200.png",
+        "codes": "mm_adultwallet"
+      },
+      {
+        "img": "images/items/mm_giantwallet.png",
+        "img_mods": "overlay|images/system/overlay_500_green.png",
+        "codes": "mm_giantwallet"
+      }
+    ]
+  },
+  // Progressive Magic
+  {
+    "name": "MM Magic",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_magic1.png",
+        "codes": "mm_magic"
+      },
+      {
+        "img": "images/items/mm_magic2.png",
+        "codes": "mm_doublemagic,magic2"
+      }
+    ]
+  },
+  // Deku Mask
+  {
+    "name": "MM Deku Mask",
+    "type": "toggle",
+    "img": "images/items/mm_deku.png",
+    "codes": "mm_deku,dekumask,deku_mask"
+  },
+  // Goron Mask
+  {
+    "name": "MM Goron Mask",
+    "type": "toggle",
+    "img": "images/items/mm_goron.png",
+    "codes": "mm_goron,goronmask,goron_mask"
+  },
+  // Zora Mask
+  {
+    "name": "MM Zora Mask",
+    "type": "toggle",
+    "img": "images/items/mm_zora.png",
+    "codes": "mm_zora,zoramask,zora_mask"
+  },
+  // Fierce Deity Mask
+  {
+    "name": "MM Fierce Deity Mask",
+    "type": "toggle",
+    "img": "images/items/mm_fiercedeity.png",
+    "codes": "mm_fiercedeity,fiercedeitymask,fierce_deity_mask,fd,fierce,deity"
+  },
+  // Giant Mask
+  {
+    "name": "MM Giant Mask",
+    "type": "toggle",
+    "img": "images/items/mm_giant.png",
+    "codes": "mm_giant,giantmask,giantsmask,giant_mask,giants_mask"
+  },
+  // Blast Mask
+  {
+    "name": "MM Blast Mask",
+    "type": "toggle",
+    "img": "images/items/mm_blast.png",
+    "codes": "mm_blast,blastmask,blast_mask"
+  },
+  // All Night Mask
+  {
+    "name": "MM All Night Mask",
+    "type": "toggle",
+    "img": "images/items/mm_allnight.png",
+    "codes": "mm_allnight,allnightmask,all_night_mask,allnight_mask"
+  },
+  // Bremen Mask
+  {
+    "name": "MM Bremen Mask",
+    "type": "toggle",
+    "img": "images/items/mm_bremen.png",
+    "codes": "mm_bremen,bremenmask,bremen_mask"
+  },
+  // Bunny Hood
+  {
+    "name": "MM Bunny Hood",
+    "type": "toggle",
+    "img": "images/items/mm_bunny.png",
+    "codes": "mm_bunny,bunnyhood,bunny_hood"
+  },
+  // Captain Hat
+  {
+    "name": "MM Captain Hat",
+    "type": "toggle",
+    "img": "images/items/mm_captain.png",
+    "codes": "mm_captain,captainhat,captainshat,captain_hat,captains_hat"
+  },
+  // Couple Mask
+  {
+    "name": "MM Couple Mask",
+    "type": "toggle",
+    "img": "images/items/mm_couple.png",
+    "codes": "mm_couple,couplemask,couple_mask"
+  },
+  // Don Gero Mask
+  {
+    "name": "MM Don Gero Mask",
+    "type": "toggle",
+    "img": "images/items/mm_dongero.png",
+    "codes": "mm_dongero,don_gero,dongeromask,dongero_mask,don_gero_mask,frog"
+  },
+  // Don Gero Mask
+  {
+    "name": "MM Don Gero Mask",
+    "type": "toggle",
+    "img": "images/items/mm_dongero.png",
+    "codes": "mm_dongero,don_gero,dongeromask,dongero_mask,don_gero_mask,frog"
+  },
+  // Garo Mask
+  {
+    "name": "MM Garo Mask",
+    "type": "toggle",
+    "img": "images/items/mm_garo.png",
+    "codes": "mm_garo,garomask,garomaster,garosmask"
+  },
+  // Gibdo Mask
+  {
+    "name": "MM Gibdo Mask",
+    "type": "toggle",
+    "img": "images/items/mm_gibdo.png",
+    "codes": "mm_gibdo,gibdomask,gibdosmask"
+  },
+  // Great Fairy Mask
+  {
+    "name": "MM Great Fairy Mask",
+    "type": "toggle",
+    "img": "images/items/mm_greatfairy.png",
+    "codes": "mm_fairymask,greatfairymask,great_fairy_mask,fairy_mask"
+  },
+  // Keaton Mask
+  {
+    "name": "MM Keaton Mask",
+    "type": "toggle",
+    "img": "images/items/mm_keaton.png",
+    "codes": "mm_keaton,keatonmask,keaton_mask"
+  },
+  // Kafei Mask
+  {
+    "name": "MM Kafei Mask",
+    "type": "toggle",
+    "img": "images/items/mm_kafeimask.png",
+    "codes": "mm_kafeimask,kafei_mask"
+  },
+  // Kamaro Mask
+  {
+    "name": "MM Kamaro Mask",
+    "type": "toggle",
+    "img": "images/items/mm_kamaro.png",
+    "codes": "mm_kamaro,kamaromask,kamaro_mask"
+  },
+  // Mask of Truth
+  {
+    "name": "MM Mask of Truth",
+    "type": "toggle",
+    "img": "images/items/mm_maskoftruth.png",
+    "codes": "mm_maskoftruth,mot,mask_of_truth,truthmask"
+  },
+  // Postman Hat
+  {
+    "name": "MM Postman Hat",
+    "type": "toggle",
+    "img": "images/items/mm_postman.png",
+    "codes": "mm_postman,postmanhat,postmanshat,postmans_hat"
+  },
+  // Romani Mask
+  {
+    "name": "MM Romani Mask",
+    "type": "toggle",
+    "img": "images/items/mm_romanimask.png",
+    "codes": "mm_romanimask,romani_mask,cowmask,cow_mask,romanismask,romanis_mask"
+  },
+  // Mask of Scents
+  {
+    "name": "MM Mask of Scents",
+    "type": "toggle",
+    "img": "images/items/mm_scents.png",
+    "codes": "mm_scents,maskofscents,mos,mask_of_scents"
+  },
+  // Stone Mask
+  {
+    "name": "MM Stone Mask",
+    "type": "toggle",
+    "img": "images/items/mm_stone.png",
+    "codes": "mm_stone,stonemask,stone_mask"
+  },
+  // Troupe Leader Mask
+  {
+    "name": "MM Troupe Leader Mask",
+    "type": "toggle",
+    "img": "images/items/mm_troupe.png",
+    "codes": "mm_troupe,troupeleader,troupe_leader_mask,troupemask,troupe_mask"
+  },
+  // Odolwa Remains
+  {
+    "name": "MM Odolwa Remains",
+    "type": "toggle",
+    "img": "images/items/mm_odolwa.png",
+    "codes": "mm_odolwa,odolwaremains,odolwa_remains"
+  },
+  // Goht Remains
+  {
+    "name": "MM Goht Remains",
+    "type": "toggle",
+    "img": "images/items/mm_goht.png",
+    "codes": "mm_goht,gohtremains,goht_remains"
+  },
+  // Gyorg Remains
+  {
+    "name": "MM Gyorg Remains",
+    "type": "toggle",
+    "img": "images/items/mm_gyorg.png",
+    "codes": "mm_gyorg,gyorgremains,gyorg_remains"
+  },
+  // Twinmold Remains
+  {
+    "name": "MM Twinmold Remains",
+    "type": "toggle",
+    "img": "images/items/mm_twinmold.png",
+    "codes": "mm_twinmold,twinmoldremains,twin,twinmold_remains,twinremains"
+  },
+  /*// Moon Tear Trade Sequence
+  {
+    "name": "MM Moon Tear Trade",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/tear.png",
+        "codes": "mm_moontear,tear,moonstear,moon_tear"
+      },
+      {
+        "img": "images/deed1.png",
+        "codes": "mm_deed1,towndeed,clockdeed,clocktowndeed",
+        "inherit_codes": false
+      },
+	  {
+        "img": "images/deed2.png",
+        "codes": "mm_deed2,dekudeed,woodfalldeed,woodfall_deed,swampdeed",
+        "inherit_codes": false
+      },
+	  {
+        "img": "images/deed3.png",
+        "codes": "mm_deed3,snowheaddeed,snowhead_deed,mountaindeed",
+        "inherit_codes": false
+      },
+	  {
+        "img": "images/deed4.png",
+        "codes": "mm_deed4,baydeed,greatbaydeed,great_bay_deed,zoradeed,oceandeed",
+        "inherit_codes": false
+      },
+    ]
+  },
+  
+  // Anju Trade Sequence
+  {
+    "name": "MM Anju Trade",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/roomkey.png",
+        "codes": "mm_roomkey,anjukey,room_key"
+      },
+      {
+        "img": "images/delivery.png",
+		"codes": "mm_delivery,deliverytomama,delivery_to_mama,specialdelivery,special_delivery",
+        "inherit_codes": false
+      }
+    ]
+  },
+  
+  // Kafei Trade Sequence
+  {
+    "name": "MM Kafei Trade",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/letter.png",
+        "codes": "mm_letter,letterkafei,lettertokafei,anjuletter,anjusletter,letter_to_kafei"
+      },
+      {
+        "img": "images/pendant.png",
+		"codes": "mm_pendant,pendantofmemories,pom,pendant_of_memories,kafeipendant,pendantkafei",
+        "inherit_codes": false
+      }
+    ]
+  },*/
+  // Woodfall Label
+  {
+    "name": "MM Woodfall Label",
+    "type": "static",
+    "allow_disabled": false,
+    "img": "images/system/label_woodfall.png",
+    "codes": "mm_woodfall_label,woodfall_reg"
+  },
+  // Woodfall Stray Fairies
+  {
+    "name": "MM Woodfall Stray Fairies",
+    "type": "consumable",
+    "display_as_fraction_of_max": true,
+    "img": "images/items/mm_woodfall_stray_fairy.png",
+    "codes": "mm_woodfall_stray_fairies,woodfall_strayfairies,woodfall_stray_fairy,woodfall_strayfairy,woodfall_stray",
+    "max_quantity": 15
+  },
+  // Woodfall Small Keys
+  {
+    "name": "MM Woodfall Small Keys",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/keys/small_key.png",
+        "codes": "mm_woodfall_small_keys,woodfallsmall,woodfallsk"
+      }
+    ]
+  },
+  // Woodfall Boss Key
+  {
+    "name": "MM Woodfall Boss Key",
+    "type": "toggle",
+    "img": "images/keys/bosskey_woodfall.png",
+    "codes": "mm_woodfall_boss_key,woodfallboss,woodfallbk"
+  },
+  // Woodfall Prize
+  {
+    "name": "MM Woodfall Prize",
+    "type": "toggle",
+    "img": "images/items/mm_odolwa.png",
+    "codes": "mm_woodfall,odolwa"
+  },
+  // Snowhead Label
+  {
+    "name": "MM Snowhead Label",
+    "type": "static",
+    "allow_disabled": false,
+    "img": "images/system/label_snowhead.png",
+    "codes": "mm_snowhead_label,snowhead_reg"
+  },
+  // Snowhead Stray Fairies
+  {
+    "name": "MM Snowhead Stray Fairies",
+    "type": "consumable",
+    "display_as_fraction_of_max": true,
+    "img": "images/items/mm_snowhead_stray_fairy.png",
+    "codes": "mm_snowhead_stray_fairies,snowhead_strayfairies,snowhead_stray_fairy,snowhead_strayfairy,snowhead_stray",
+    "max_quantity": 15
+  },
+  // Snowhead Small Keys
+  {
+    "name": "MM Snowhead Small Keys",
+    "type": "consumable",
+    "img": "images/keys/small_key.png",
+    "codes": "mm_snowhead_small_keys,snowheadsmall,snowheadsk",
+    "max_quantity": 3
+  },
+  // Snowhead Boss Key
+  {
+    "name": "MM Snowhead Boss Key",
+    "type": "toggle",
+    "img": "images/keys/boss_key.png",
+    "codes": "mm_snowhead_boss_key,snowheadboss,snowheadbk"
+  },
+  // Snowhead Prize
+  {
+    "name": "MM Snowhead Prize",
+    "type": "toggle",
+    "img": "images/items/mm_goht.png",
+    "codes": "mm_snowhead,goht",
+    "secondary_codes": "goht"
+  },
+  // Great Bay Label
+  {
+    "name": "MM Great Bay Label",
+    "type": "static",
+    "allow_disabled": false,
+    "img": "images/system/label_greatbay.png",
+    "codes": "mm_greatbay_label,greatbay_reg,great_bay_label"
+  },
+  // Great Bay Stray Fairies
+  {
+    "name": "MM Great Bay Stray Fairies",
+    "type": "consumable",
+    "display_as_fraction_of_max": true,
+    "img": "images/items/mm_greatbay_stray_fairy.png",
+    "codes": "mm_greatbay_stray_fairies,greatbay_strayfairies,greatbay_stray_fairy,greatbay_strayfairy,greatbay_stray,great_bay_stray_fairies",
+    "max_quantity": 15
+  },
+  // Great Bay Small Keys
+  {
+    "name": "MM Great Bay Small Keys",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/keys/small_key.png",
+        "codes": "mm_greatbay_small_keys,greatbaysmall,greatbaysk,great_bay_small_keys,great_bay_small"
+      }
+    ]
+  },
+  // Great Bay Boss Key
+  {
+    "name": "MM Great Bay Boss Key",
+    "type": "toggle",
+    "img": "images/keys/bosskey_greatbay.png",
+    "codes": "mm_greatbay_boss_key,greatbayboss,greatbaybk,great_bay_boss_key,great_bay_bk"
+  },
+  // Great Bay Prize
+  {
+    "name": "MM Great Bay Prize",
+    "type": "toggle",
+    "img": "images/items/mm_gyorg.png",
+    "codes": "mm_greatbay,gyorg",
+    "secondary_codes": "gyorg"
+  },
+  // Stone Tower Label
+  {
+    "name": "MM Stone Tower Label",
+    "type": "static",
+    "allow_disabled": false,
+    "img": "images/system/label_stonetower.png",
+    "codes": "mm_stonetower_label,stonetower_reg,stone_tower_label"
+  },
+  // Stone Tower Stray Fairies
+  {
+    "name": "MM Stone Tower Stray Fairies",
+    "type": "consumable",
+    "display_as_fraction_of_max": true,
+    "img": "images/items/mm_stonetower_stray_fairy.png",
+    "codes": "mm_stonetower_stray_fairies,stonetower_strayfairies,stonetower_stray_fairy,stonetower_strayfairy,stonetower_stray,stone_tower_stray_fairies",
+    "max_quantity": 15
+  },
+  // Stone Tower Small Keys
+  {
+    "name": "MM Stone Tower Small Keys",
+    "type": "consumable",
+    "img": "images/keys/small_key.png",
+    "codes": "mm_stonetower_small_keys,stonetowersmall,stonetowersk,stone_tower_small_keys,stone_tower_small",
+    "max_quantity": 4
+  },
+  // Stone Tower Boss Key
+  {
+    "name": "MM Stone Tower Boss Key",
+    "type": "toggle",
+    "img": "images/keys/bosskey_stonetower.png",
+    "codes": "mm_stonetower_boss_key,stonetowerboss,stonetowerbk,stone_tower_boss_key,stone_tower_boss"
+  },
+  // Stone Tower Prize
+  {
+    "name": "MM Stone Tower Prize",
+    "type": "toggle",
+    "img": "images/items/mm_twinmold.png",
+    "codes": "mm_stonetower,twinmold",
+    "secondary_codes": "twinmold"
+  },
+  // Clock Town Stray Fairies
+  {
+    "name": "MM Clock Town Stray Fairies",
+    "type": "toggle",
+    "img": "images/items/mm_clocktown_stray_fairy.png",
+    "codes": "mm_clocktown_stray_fairies,clocktown_strayfairies,clocktown_stray_fairy,clocktown_strayfairy,clocktown_stray"
+  },
+  // Bombers Code 1
+  {
+    "name": "MM Bombers Code Digit 1",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/0.png",
+        "img_mods": "@disabled",
+        "codes": "mm_bomber1,bomberdigit1,bomber_digit_1,bombercode1,bomberscode1,bombers_code1"
+      },
+      {
+        "img": "images/system/1.png"
+      },
+      {
+        "img": "images/system/2.png"
+      },
+      {
+        "img": "images/system/3.png"
+      },
+      {
+        "img": "images/system/4.png"
+      },
+      {
+        "img": "images/system/5.png"
+      }
+    ]
+  },
+  // Bombers Code 2
+  {
+    "name": "MM Bombers Code Digit 2",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/0.png",
+        "img_mods": "@disabled",
+        "codes": "mm_bomber2,bomberdigit2,bomber_digit_2,bombercode2,bomberscode2,bombers_code2"
+      },
+      {
+        "img": "images/system/1.png"
+      },
+      {
+        "img": "images/system/2.png"
+      },
+      {
+        "img": "images/system/3.png"
+      },
+      {
+        "img": "images/system/4.png"
+      },
+      {
+        "img": "images/system/5.png"
+      }
+    ]
+  },
+  // Bombers Code 3
+  {
+    "name": "MM Bombers Code Digit 3",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/0.png",
+        "img_mods": "@disabled",
+        "codes": "mm_bomber3,bomberdigit3,bomber_digit_3,bombercode3,bomberscode3,bombers_code3"
+      },
+      {
+        "img": "images/system/1.png"
+      },
+      {
+        "img": "images/system/2.png"
+      },
+      {
+        "img": "images/system/3.png"
+      },
+      {
+        "img": "images/system/4.png"
+      },
+      {
+        "img": "images/system/5.png"
+      }
+    ]
+  },
+  // Bombers Code 4
+  {
+    "name": "MM Bombers Code Digit 4",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/0.png",
+        "img_mods": "@disabled",
+        "codes": "mm_bomber4,bomberdigit4,bomber_digit_4,bombercode4,bomberscode4,bombers_code4"
+      },
+      {
+        "img": "images/system/1.png"
+      },
+      {
+        "img": "images/system/2.png"
+      },
+      {
+        "img": "images/system/3.png"
+      },
+      {
+        "img": "images/system/4.png"
+      },
+      {
+        "img": "images/system/5.png"
+      }
+    ]
+  },
+  // Bombers Code 5
+  {
+    "name": "MM Bombers Code Digit 5",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/system/0.png",
+        "img_mods": "@disabled",
+        "codes": "mm_bomber5,bomberdigit5,bomber_digit_5,bombercode5,bomberscode5,bombers_code5"
+      },
+      {
+        "img": "images/system/1.png"
+      },
+      {
+        "img": "images/system/2.png"
+      },
+      {
+        "img": "images/system/3.png"
+      },
+      {
+        "img": "images/system/4.png"
+      },
+      {
+        "img": "images/system/5.png"
+      }
+    ]
+  },
+  // Heart Pieces
+  {
+    "name": "MM Heart Pieces",
+    "type": "consumable",
+    "img": "images/heartpiece.png",
+    "codes": "mm_heartpiece,poh,pieceofheart,piece",
+    "max_quantity": 52
+  },
+  // Heart Pieces Progressive
+  {
+    "name": "MM Pieces Progressive",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/heartpiece.png",
+        "img_mods": "@disabled",
+        "codes": "mm_heartpiece"
+      },
+      {
+        "img": "images/heartpiece.png"
+      },
+      {
+        "img": "images/heartpiece.png"
+      },
+      {
+        "img": "images/heartpiece.png"
+      },
+      {
+        "img": "images/heartpiece.png"
+      },
+      {
+        "img": "images/heartpiece.png"
+      }
+    ]
+  },
+  // Heart Container
+  {
+    "name": "MM Heart Container",
+    "type": "consumable",
+    "img": "images/heartcontainer.png",
+    "codes": "mm_heartcontainer,container,HC",
+    "max_quantity": 4
+  },
+  // Vanilla Button
+  {
+    "name": "MM Press for Vanilla dungeon locations (use when not playing dungeon shuffle)",
+    "type": "progressive",
+    "allow_disabled": true,
+    "initial_stage_idx": 2,
+    "loop": "true",
+    "stages": [
+      {
+        "img": "images/settings/vanilla.png",
+        "codes": "mm_vnladung",
+      }
+    ]
+  },
+  // Icons for Minimal Layout
+  // Bombs or Blast Mask
+  {
+    "name": "MM Bombs or Blast Mask",
+    "type": "toggle",
+    "img": "images/items/mm_blastbomb.png",
+    "codes": "mm_bombsblast,bombs_blast,blastbombs,bombs_blastmask,blastmask_bombs,blast_bombs"
+  },
+  // Fire Arrows and Ice Arrows
+  {
+    "name": "MM Fire Arrows and Ice Arrows",
+    "type": "composite_toggle",
+    "codes": "mm_fireicearrow,fireicearrows,fireice_arrows,fire_ice_arrows,elemental_arrows",
+    "item_left": "firearrows",
+    "item_right": "icearrows",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/mm_fireicearrow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/mm_fireicearrow.png",
+        "img_mods": "@disabled,overlay|images/firearrow_half.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/mm_fireicearrow.png",
+        "img_mods": "@disabled,overlay|images/icearrow_half.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/mm_fireicearrow.png"
+      }
+    ]
+  },
+  // Bow without Arrows Display
+  {
+    "name": "MM Bow",
+    "type": "toggle",
+    "img": "images/items/mm_bow.png",
+    "codes": "mm_bownoammo,bow_no_ammo,bow_noammo,bow_minimal,bowminimal"
+  },
+  // Bombs without Ammo Display
+  {
+    "name": "MM Bombs",
+    "type": "toggle",
+    "img": "images/items/mm_bomb.png",
+    "codes": "mm_bombsnoammo,bombbagnoammo,bombnoammo,bombs_no_ammo,bombs_noammo"
+  },
+  // Hero Shield Static
+  {
+    "name": "MM Hero Shield",
+    "type": "toggle",
+    "img": "images/items/mm_shield.png",
+    "codes": "mm_shield_static,shield1_static,heroshield_static,hylianshield_static"
+  },
+  // Mirror Shield Static
+  {
+    "name": "MM Mirror Shield",
+    "type": "toggle",
+    "img": "images/items/mm_mirror.png",
+    "codes": "mm_mirror_static,mirrorshield_static,mirror_shield_static,shield2_static"
+  },
+  // Kokiri Sword Static
+  {
+    "name": "MM Kokiri Sword",
+    "type": "toggle",
+    "img": "images/items/mm_kokiri.png",
+    "codes": "mm_kokirisword_static,kokiri_static,sword1_static"
+  },
+  // Razor Sword Static
+  {
+    "name": "MM Razor Sword",
+    "type": "toggle",
+    "img": "images/items/mm_razor.png",
+    "codes": "mm_razorsword,razor,sword2"
+  },
+  // Gilded Sword Static
+  {
+    "name": "MM Gilded Sword",
+    "type": "toggle",
+    "img": "images/items/mm_gilded.png",
+    "codes": "mm_gildedsword,gilded,sword3"
+  },
+  // Gibdo Mask and Garo Mask
+  {
+    "name": "MM Gibdo Mask and Garo Mask",
+    "type": "composite_toggle",
+    "codes": "mm_gibdogaro,gibdo_garo,garogibdo,garo_gibdo,gibdoomask_garomask",
+    "item_left": "gibdo",
+    "item_right": "garo",
+    "images": [
+      {
+        "left": false,
+        "right": false,
+        "img": "images/items/mm_gibdo_garo.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "left": true,
+        "right": false,
+        "img": "images/items/mm_gibdo_garo.png",
+        "img_mods": "@disabled,overlay|images/gibdo_half.png"
+      },
+      {
+        "left": false,
+        "right": true,
+        "img": "images/items/mm_gibdo_garo.png",
+        "img_mods": "@disabled,overlay|images/garo_half.png"
+      },
+      {
+        "left": true,
+        "right": true,
+        "img": "images/items/mm_gibdo_garo.png"
+      }
+    ]
+  },
+  // Zora Egg Static
+  {
+    "name": "MM Zora Egg",
+    "type": "toggle",
+    "img": "images/items/mm_zoraegg.png",
+    "codes": "mm_zoraegg_static,zoraegg_bottle_static,bottle_egg_static,bottlezoraegg_static,bottleegg_static"
+  },
+  // Red Potion Static
+  {
+    "name": "MM Red Potion",
+    "type": "toggle",
+    "img": "images/items/mm_redpotion.png",
+    "codes": "mm_redpotion_static,bottle_red_static,bottlered_static,bottle_red_potion_static,bottle_redpotion_static"
+  },
+  {
+    "name": "MM Blue Potion",
+    "type": "toggle",
+    "img": "images/items/mm_bluepotion.png",
+    "codes": "mm_bluepotion_static"
+  },
+  {
+    "name": "MM Chateau",
+    "type": "toggle",
+    "img": "images/items/mm_chateau.png",
+    "codes": "mm_chateau_static"
+  },
+  {
+    "name": "MM Seahorse",
+    "type": "toggle",
+    "img": "images/items/mm_seahorse.png",
+    "codes": "mm_seahorse_static"
+  },
+  // Deku Princess Static
+  {
+    "name": "MM Deku Princess",
+    "type": "toggle",
+    "img": "images/items/mm_dekuprincess.png",
+    "codes": "mm_dekuprincess_static,bottledekuprincess_static,bottledeku_static,bottle_deku_princess_static"
+  },
+  {
+    "name": "MM Poe",
+    "type": "toggle",
+    "img": "images/items/mm_bottle_poe.png",
+    "codes": "mm_poe"
+  },
+  // Gold Dust Static
+  {
+    "name": "MM Gold Dust",
+    "type": "toggle",
+    "img": "images/items/mm_dust.png",
+    "codes": "mm_bottledust_static,bottle_dust_static,golddust_static,gold_dust_static"
+  },
+  // Hot Spring Water Static
+  {
+    "name": "MM Hot Spring Water",
+    "type": "toggle",
+    "img": "images/items/mm_springwater.png",
+    "codes": "mm_hotspringwater_static,hot_spring_water_static,hot_static,hotwater_static,hot_water_static,spring_water_hot_static"
+  },
+  // Big Poe Static
+  {
+    "name": "MM Big Poe",
+    "type": "toggle",
+    "img": "images/items/mm_bigpoe.png",
+    "codes": "mm_bigpoe_static,big_poe_static"
+  },
+  // Small Key Generic
+  {
+    "name": "MM Small Keys",
+    "type": "toggle",
+    "img": "images/keys/small_key.png",
+    "codes": "mm_generic_small_key,small_key_generic,smallkey_generic,generic_smallkey"
+  },
+  // Boss Key Generic
+  {
+    "name": "MM Boss Key",
+    "type": "toggle",
+    "img": "images/keys/boss_key.png",
+    "codes": "mm_generic_boss_key,boss_key_generic,bosskey_generic,generic_bosskey"
+  },
+  // Woodfall Small Keys Static
+  {
+    "name": "MM Woodfall Small Keys",
+    "type": "toggle",
+    "img": "images/keys/smallkey_woodfall.png",
+    "codes": "mm_woodfall_small_keys_static,woodfallsmall_static,woodfallsk_static"
+  },
+  // Woodfall Boss Key Static
+  {
+    "name": "MM Woodfall Boss Key",
+    "type": "toggle",
+    "img": "images/keys/bosskey_woodfall.png",
+    "codes": "mm_woodfall_boss_key_static,woodfallboss_static,woodfallbk_static"
+  },
+  // Snowhead Small Keys Static
+  {
+    "name": "MM Snowhead Small Keys",
+    "type": "toggle",
+    "img": "images/keys/smallkey_snowhead.png",
+    "codes": "mm_snowhead_small_keys_static,snowheadsmall_static,snowheadsk_static"
+  },
+  // Snowhead Boss Key Static
+  {
+    "name": "MM Snowhead Boss Key",
+    "type": "toggle",
+    "img": "images/keys/boss_key.png",
+    "codes": "mm_snowhead_boss_key_static,snowheadboss_static,snowheadbk_static"
+  },
+  // Great Bay Small Keys Static
+  {
+    "name": "MM Great Bay Small Keys",
+    "type": "toggle",
+    "img": "images/keys/smallkey_greatbay.png",
+    "codes": "mm_greatbay_small_keys_static,greatbaysmall_static,greatbaysk_static,great_bay_small_keys_static,great_bay_small_static"
+  },
+  // Great Bay Boss Key Static
+  {
+    "name": "MM Great Bay Boss Key",
+    "type": "toggle",
+    "img": "images/keys/bosskey_greatbay.png",
+    "codes": "mm_greatbay_boss_key_static,greatbayboss_static,greatbaybk_static,great_bay_boss_key_static,great_bay_bk_static"
+  },
+  // Stone Tower Small Keys Static
+  {
+    "name": "MM Stone Tower Small Keys",
+    "type": "toggle",
+    "img": "images/keys/smallkey_stonetower.png",
+    "codes": "mm_stonetower_small_keys_static,stonetowersmall_static,stonetowersk_static,stone_tower_small_keys_static,stone_tower_small_static"
+  },
+  // Stone Tower Boss Key Static
+  {
+    "name": "MM Stone Tower Boss Key",
+    "type": "toggle",
+    "img": "images/keys/bosskey_stonetower.png",
+    "codes": "mm_stonetower_boss_key_static,stonetowerboss_static,stonetowerbk_static,stone_tower_boss_key_static,stone_tower_boss_static"
+  },
+  // Moon Tear Static
+  {
+    "name": "MM Moon Tear",
+    "type": "toggle",
+    "img": "images/items/mm_tear.png",
+    "codes": "mm_moontear,tear,moonstear,moon_tear"
+  },
+  // Town Title Deed Static
+  {
+    "name": "MM Town Title Deed",
+    "type": "toggle",
+    "img": "images/items/mm_deed1.png",
+    "codes": "mm_deed1,towndeed,clockdeed,clocktowndeed"
+  },
+  // Swamp Title Deed Static
+  {
+    "name": "MM Swamp Title Deed",
+    "type": "toggle",
+    "img": "images/items/mm_deed2.png",
+    "codes": "mm_deed2,dekudeed,woodfalldeed,woodfall_deed,swampdeed"
+  },
+  // Mountain Title Deed Static
+  {
+    "name": "MM Mountain Title Deed",
+    "type": "toggle",
+    "img": "images/items/mm_deed3.png",
+    "codes": "mm_deed3,snowheaddeed,snowhead_deed,mountaindeed"
+  },
+  // Ocean Title Deed Static
+  {
+    "name": "MM Ocean Title Deed",
+    "type": "toggle",
+    "img": "images/items/mm_deed4.png",
+    "codes": "mm_deed4,baydeed,greatbaydeed,great_bay_deed,zoradeed,oceandeed"
+  },
+  // Room Key Static
+  {
+    "name": "MM Room Key Static",
+    "type": "toggle",
+    "img": "images/items/mm_roomkey.png",
+    "codes": "mm_roomkey,anjukey,room_key"
+  },
+  // Special Delivery Static
+  {
+    "name": "MM Special Delivery",
+    "type": "toggle",
+    "img": "images/items/mm_delivery.png",
+    "codes": "mm_delivery,deliverytomama,delivery_to_mama,specialdelivery,special_delivery"
+  },
+  // Letter to Kafei Static
+  {
+    "name": "MM Letter to Kafei",
+    "type": "toggle",
+    "img": "images/items/mm_letter.png",
+    "codes": "mm_letter,letterkafei,lettertokafei,anjuletter,anjusletter,letter_to_kafei"
+  },
+  // Pendant Static
+  {
+    "name": "MM Pendant of Memories",
+    "type": "toggle",
+    "img": "images/items/mm_pendant.png",
+    "codes": "mm_pendant,pendantofmemories,pom,pendant_of_memories,kafeipendant,pendantkafei"
+  },
+  // Adult Wallet Static
+  {
+    "name": "MM Adult Wallet",
+    "type": "toggle",
+    "img": "images/items/mm_wallet.png",
+    "codes": "mm_adultwallet_static,adultwalletstatic,walletstatic"
+  },
+  // Giant Wallet Static
+  {
+    "name": "MM Giant Wallet",
+    "type": "toggle",
+    "img": "images/items/mm_giantwallet.png",
+    "codes": "mm_giantwallet_static,giantwalletstatic"
+  },
+  //Tricks
+  {
+    "name": "MM Climb around the bat blocking the swamp path tree.",
+    "type": "toggle",
+    "img": "images/tricks/swamp_tree.png",
+    "codes": "mm_swamptree"
+  },
+  {
+    "name": "MM Hookshot the beehive in the Baba grotto.",
+    "type": "toggle",
+    "img": "images/tricks/baba_hive.png",
+    "codes": "mm_babahive"
+  },
+  {
+    "name": "MM Backflip over the bomber guarding the Clock Town tunnel.",
+    "type": "toggle",
+    "img": "images/tricks/guard_skip.png",
+    "codes": "mm_guardskip"
+  },
+  {
+    "name": "MM Pause until 5:15 AM.",
+    "type": "toggle",
+    "img": "images/tricks/bowless_aliens.png",
+    "codes": "mm_bowlessaliens"
+  },
+  {
+    "name": "MM Ocean Spider House mask code with brute force.",
+    "type": "toggle",
+    "img": "images/tricks/bfosh.png",
+    "codes": "mm_oshbf"
+  },
+  {
+    "name": "MM Stone Tower with one transformation mask. Can be done with good hookshot and block use.",
+    "type": "toggle",
+    "img": "images/tricks/ostt.png",
+    "codes": "mm_ostt"
+  },
+  {
+    "name": "MM Clip through the balloon leading to the Clock Town tunnels from behind.",
+    "type": "toggle",
+    "img": "images/tricks/bomberback.png",
+    "codes": "mm_bomberback"
+  },
+  {
+    "name": "MM The corner cow in Romani Ranch's barn. Not in logic otherwise.",
+    "type": "toggle",
+    "img": "images/tricks/closecows.png",
+    "codes": "mm_closecows"
+  },
+  {
+    "name": "MM Jump over the guards outside Deku Palace.",
+    "type": "toggle",
+    "img": "images/tricks/dekuskip.png",
+    "codes": "mm_dekuskip"
+  },
+  {
+    "name": "MM Deku Palace back shortcut. Backflip onto the doorframe/wall to skip the flyover.",
+    "type": "toggle",
+    "img": "images/tricks/beanskip.png",
+    "codes": "mm_beanskip"
+  },
+  {
+    "name": "MM Combat with only Deku Sticks.",
+    "type": "toggle",
+    "img": "images/tricks/stickfighting.png",
+    "codes": "mm_stickfighting"
+  },
+  {
+    "name": "MM Expects dog race to have good RNG.",
+    "type": "toggle",
+    "img": "images/tricks/racenomask.png",
+    "codes": "mm_racenomask"
+  },
+  {
+    "name": "MM Backwalk up the slope leading out of the spider house.",
+    "type": "toggle",
+    "img": "images/tricks/oshbw.png",
+    "codes": "mm_oshbw"
+  },
+  {
+    "name": "MM Backflip, then retarget and press forward one frame later.",
+    "type": "toggle",
+    "img": "images/tricks/gainer.png",
+    "codes": "mm_gainer"
+  },
+  {
+    "name": "MM Great Bay Fire Arrow Skip.",
+    "type": "toggle",
+    "img": "images/tricks/gbtfa.png",
+    "codes": "mm_gbtfa"
+  },
+  {
+    "name": "MM Jump to the Boss Key chest.",
+    "type": "toggle",
+    "img": "images/tricks/gbtbkfl.png",
+    "codes": "mm_gbtbkfl"
+  },
+  {
+    "name": "MM Skip the Ice Arrows in Great Bay Temple.",
+    "type": "toggle",
+    "img": "images/tricks/gbtia.png",
+    "codes": "mm_gbtia"
+  },
+  {
+    "name": "MM Boss Key jump without Ice Arrows.",
+    "type": "toggle",
+    "img": "images/tricks/gbtbkil.png",
+    "codes": "mm_gbtbkil"
+  },
+  {
+    "name": "MM Use Goron and Bombs to blast over fences.",
+    "type": "toggle",
+    "img": "images/tricks/goronfence.png",
+    "codes": "mm_goronfence"
+  },
+  {
+    "name": "MM Clip through geometry using a Goron pound. Swamp and Bay scrub Heart Pieces.",
+    "type": "toggle",
+    "img": "images/tricks/goronledge.png",
+    "codes": "mm_goronledge"
+  },
+  {
+    "name": "MM Only 125 combinations!",
+    "type": "toggle",
+    "img": "images/tricks/bombernothing.png",
+    "codes": "mm_bombernothing"
+  },
+  {
+    "name": "MM Bomb switches behind walls.",
+    "type": "toggle",
+    "img": "images/tricks/switchwall.png",
+    "codes": "mm_switchwalls"
+  },
+  {
+    "name": "MM Hookshot the tree from across the river.",
+    "type": "toggle",
+    "img": "images/tricks/icelesscanyon.png",
+    "codes": "mm_icelesscanyon"
+  },
+  {
+    "name": "MM Skip the falling ceiling room in Ikana Castle.",
+    "type": "toggle",
+    "img": "images/tricks/ikanaceiling.png",
+    "codes": "mm_ikanaceiling"
+  },
+  {
+    "name": "MM Get to the balcony of Stock Pot Inn as a Zora.",
+    "type": "toggle",
+    "img": "images/tricks/balconyzora.png",
+    "codes": "mm_balconyzora"
+  },
+  {
+    "name": "MM Inverted Stone Tower Temple Boss Key Early",
+    "type": "toggle",
+    "img": "images/tricks/isttbkearly.png",
+    "codes": "mm_isttbkearly"
+  },
+  {
+    "name": "MM Inverted Stone Tower Temple Eyegore Hookshot",
+    "type": "toggle",
+    "img": "images/tricks/istteyehook.png",
+    "codes": "mm_istteyehook"
+  },
+  {
+    "name": "MM Inverted Stone Tower Temple Updraft Room as Human",
+    "type": "toggle",
+    "img": "images/tricks/isttuphuman.png",
+    "codes": "mm_isttuphuman"
+  },
+  {
+    "name": "MM Jump Slash Through One Sided Collision",
+    "type": "toggle",
+    "img": "images/tricks/geometryjump.png",
+    "codes": "mm_geometryjump"
+  },
+  {
+    "name": "MM Knock Tingle down with a jump slash.",
+    "type": "toggle",
+    "img": "images/tricks/towntinglejump.png",
+    "codes": "mm_towntinglejump"
+  },
+  {
+    "name": "MM Bow or Boomerang the Big Octo to access the shrine early.",
+    "type": "toggle",
+    "img": "images/tricks/shrineocto.png",
+    "codes": "mm_shrineocto"
+  },
+  {
+    "name": "MM Open invisible chests without the Lens of Truth.",
+    "type": "toggle",
+    "img": "images/tricks/lens_chests.png",
+    "codes": "mm_lens_chests"
+  },
+  {
+    "name": "MM Climb invisible walls without the Lens of Truth.",
+    "type": "toggle",
+    "img": "images/tricks/lens_climb.png",
+    "codes": "mm_lens_climb"
+  },
+  {
+    "name": "MM Cross invisible platforms without the Lens of Truth.",
+    "type": "toggle",
+    "img": "images/tricks/lens_walk.png",
+    "codes": "mm_lens_walk"
+  },
+  {
+    "name": "MM Jump across invisible platforms without the Lens of Truth.",
+    "type": "toggle",
+    "img": "images/tricks/lens_jump.png",
+    "codes": "mm_lens_jump"
+  },
+  {
+    "name": "MM Shoot through invisible walls and ceilings without the Lens of Truth.",
+    "type": "toggle",
+    "img": "images/tricks/lens_walls.png",
+    "codes": "mm_lens_walls"
+  },
+  {
+    "name": "MM Use Bombs at the edge of a ledge to gain distance.",
+    "type": "toggle",
+    "img": "images/tricks/longjump.png",
+    "codes": "mm_longjump"
+  },
+  {
+    "name": "MM Snowhead Temple without Goron Lullaby",
+    "type": "toggle",
+    "img": "images/tricks/lullabyskip.png",
+    "codes": "mm_lullabyskip"
+  },
+  {
+    "name": "MM Ocean Spider House without Fire Arrows",
+    "type": "toggle",
+    "img": "images/tricks/oshfl.png",
+    "codes": "mm_oshfl"
+  },
+  {
+    "name": "MM Clip through the rafters in the storage room in the Ocean Spider House",
+    "type": "toggle",
+    "img": "images/tricks/oshstorageclip.png",
+    "codes": "mm_oshstorage"
+  },
+  {
+    "name": "MM Roll on the snow along the sides.",
+    "type": "toggle",
+    "img": "images/tricks/snowheadmagic.png",
+    "codes": "mm_snowheadmagic"
+  },
+  {
+    "name": "MM Pirate Fortress Guard Room Rear Entry",
+    "type": "toggle",
+    "img": "images/tricks/pfguard.png",
+    "codes": "mm_pfguard"
+  },
+  {
+    "name": "MM Pinnacle Rock Sign Maze without Seahorse",
+    "type": "toggle",
+    "img": "images/tricks/pinnaclehorse.png",
+    "codes": "mm_pinnaclehorse"
+  },
+  {
+    "name": "MM Poison Swamp Access with Goron",
+    "type": "toggle",
+    "img": "images/tricks/poisongoron.png",
+    "codes": "mm_poisongoron"
+  },
+  {
+    "name": "MM Run through the Poison Swamp as Zora.",
+    "type": "toggle",
+    "img": "images/tricks/poisonzora.png",
+    "codes": "mm_poisonzora"
+  },
+  {
+    "name": "MM Count to 10.",
+    "type": "toggle",
+    "img": "images/tricks/postmanhood.png",
+    "codes": "mm_postmanhood"
+  },
+  {
+    "name": "MM Toilet Hand with Letter to Mama. Usually gets replaced by Room Key.",
+    "type": "toggle",
+    "img": "images/tricks/queststorage.png",
+    "codes": "mm_queststorage"
+  },
+  {
+    "name": "MM Scarecrow's Song in obscure locations.",
+    "type": "toggle",
+    "img": "images/tricks/scarecrow.png",
+    "codes": "mm_scarecrow"
+  },
+  {
+    "name": "MM Twinmold with bow.",
+    "type": "toggle",
+    "img": "images/tricks/twinbow.png",
+    "codes": "mm_twinbow"
+  },
+  {
+    "name": "MM Snowhead Temple Stray Fairy Jumps",
+    "type": "toggle",
+    "img": "images/tricks/shtfairy.png",
+    "codes": "mm_shtfairy"
+  },
+  {
+    "name": "MM Snowhead Temple Pillar Skip",
+    "type": "toggle",
+    "img": "images/tricks/pillarskip.png",
+    "codes": "mm_pillarskip"
+  },
+  {
+    "name": "MM Jumps in Snowhead Temple as Zora.",
+    "type": "toggle",
+    "img": "images/tricks/shtzora.png",
+    "codes": "mm_shtzora"
+  },
+  {
+    "name": "MM Freeze the water, then light the sun.",
+    "type": "toggle",
+    "img": "images/tricks/stice.png",
+    "codes": "mm_stice"
+  },
+  {
+    "name": "MM Bomb Captain Keeta to stun him.",
+    "type": "toggle",
+    "img": "images/tricks/keetabomb.png",
+    "codes": "mm_keetabomb"
+  },
+  {
+    "name": "MM Swim side to side to avoid the fish.",
+    "type": "toggle",
+    "img": "images/tricks/zoraswim.png",
+    "codes": "mm_zoraswim"
+  },
+  {
+    "name": "MM Take Damage/Damage Boosting",
+    "type": "toggle",
+    "img": "images/tricks/damage.png",
+    "codes": "mm_damage"
+  },
+  {
+    "name": "MM Walk up the stump in Termina Field.",
+    "type": "toggle",
+    "img": "images/tricks/nostump.png",
+    "codes": "mm_nostump"
+  },
+  {
+    "name": "MM Hookshot the torch on the second floor.",
+    "type": "toggle",
+    "img": "images/tricks/wft2f.png",
+    "codes": "mm_wft2f"
+  },
+  {
+    "name": "MM Climb the furniture in Lulu's room.",
+    "type": "toggle",
+    "img": "images/tricks/zoraledge.png",
+    "codes": "mm_zoraledge"
+  },
+  // Purple Rupee
+  {
+    "name": "MM Purple Rupee",
+    "type": "toggle",
+    "img": "images/purple.png",
+    "codes": "mm_50rupees,50rupee,purplerupee,purple_rupee"
+  },
+  // Silver Rupee
+  {
+    "name": "MM Silver Rupee",
+    "type": "toggle",
+    "img": "images/silver.png",
+    "codes": "mm_100rupees,100rupee,silverrupee,silver_rupee"
+  },
+  {
+    "name": "MM Town Title Deed Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/deed1.png",
+    "codes": "mm_deed1cap"
+  },
+  {
+    "name": "MM Swamp Title Deed Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/deed2.png",
+    "codes": "mm_deed2cap"
+  },
+  {
+    "name": "MM Mountain Title Deed Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/deed3.png",
+    "codes": "mm_deed3cap"
+  },
+  {
+    "name": "MM Ocean Title Deed Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/deed4.png",
+    "codes": "mm_deed4cap"
+  },
+  {
+    "name": "MM Chateau Romani Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/chateau.png",
+    "codes": "mm_chateau_staticcap"
+  },
+  {
+    "name": "MM Woodfall Small Keys Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/smallkey_woodfall.png",
+    "codes": "mm_woodfall_small_keys_staticcap,woodfallsmall_static,woodfallsk_static"
+  },
+  {
+    "name": "MM Woodfall Boss Key Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/bosskey_woodfall.png",
+    "codes": "mm_woodfall_boss_key_staticcap,woodfallboss_static,woodfallbk_static"
+  },
+  {
+    "name": "MM Snowhead Small Keys Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/smallkey_snowhead.png",
+    "codes": "mm_snowhead_small_keys_staticcap"
+  },
+  {
+    "name": "MM Snowhead Boss Key Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/boss_key.png",
+    "codes": "mm_snowhead_boss_key_staticcap"
+  },
+  {
+    "name": "MM Great Bay Small Keys Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/smallkey_greatbay.png",
+    "codes": "mm_greatbay_small_keys_staticcap"
+  },
+  {
+    "name": "MM Great Bay Boss Key Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/bosskey_greatbay.png",
+    "codes": "mm_greatbay_boss_key_staticcap"
+  },
+  {
+    "name": "MM Stone Tower Small Keys Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/smallkey_stonetower.png",
+    "codes": "mm_stonetower_small_keys_staticcap"
+  },
+  {
+    "name": "MM Stone Tower Boss Key Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/bosskey_stonetower.png",
+    "codes": "mm_stonetower_boss_key_staticcap"
+  },
+  {
+    "name": "MM Moon Tear Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/tear.png",
+    "codes": "mm_moontearcap,tear,moonstear,moon_tear"
+  },
+  {
+    "name": "MM Seahorse Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/seahorse.png",
+    "codes": "mm_seahorse_staticcap"
+  },
+  {
+    "name": "MM Blue Potion Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/bluepotion.png",
+    "codes": "mm_bluepotion_staticcap"
+  },
+  {
+    "name": "MM Red Potion Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/redpotion.png",
+    "codes": "mm_redpotion_staticcap"
+  },
+  {
+    "name": "MM Letter Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/letter.png",
+    "codes": "mm_lettercap"
+  },
+  {
+    "name": "MM Pendant Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/pendant.png",
+    "codes": "mm_pendantcap"
+  },
+  {
+    "name": "MM Dust Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/dust.png",
+    "codes": "mm_golddust_staticcap"
+  },
+  {
+    "name": "MM Milk Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/milk.png",
+    "codes": "mm_milklocatedcap"
+  },
+  {
+    "name": "MM Room Key Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/roomkey.png",
+    "codes": "mm_roomkeycap"
+  },
+  {
+    "name": "MM Delivery Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/delivery.png",
+    "codes": "mm_deliverycap"
+  },
+  {
+    "name": "MM All Night Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/allnight.png",
+    "codes": "mm_allnightcap"
+  },
+  {
+    "name": "MM Magic Bean Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/bean.png",
+    "codes": "mm_beancap"
+  },
+  {
+    "name": "MM Blast Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/blast.png",
+    "codes": "mm_blastcap"
+  },
+  {
+    "name": "MM Bombs Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/bomb.png",
+    "codes": "mm_bombscap"
+  },
+  {
+    "name": "MM Bombchus Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/bombchu.png",
+    "codes": "mm_bombchucap"
+  },
+  {
+    "name": "MM Kafei Mask Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/kafeimask.png",
+    "codes": "mm_kafeicap"
+  },
+  {
+    "name": "MM Light Arrows Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/lightarrow.png",
+    "codes": "mm_lightarrowscap"
+  },
+  {
+    "name": "MM Fire Arrows Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/firearrow.png",
+    "codes": "mm_firearrowscap"
+  },
+  {
+    "name": "MM Ice Arrows Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/icearrow.png",
+    "codes": "mm_icearrowscap"
+  },
+  {
+    "name": "MM Kokiri Sword Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/kokiri.png",
+    "codes": "mm_kokiriswordstaticcap"
+  },
+  {
+    "name": "MM Mirror Shield Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/mirror.png",
+    "codes": "mm_mirrorshieldcap"
+  },
+  {
+    "name": "MM Razor Sword Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/razor.png",
+    "codes": "mm_razorswordcap"
+  },
+  {
+    "name": "MM Gilded Sword Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/gilded.png",
+    "codes": "mm_gildedswordcap"
+  },
+  {
+    "name": "MM Fairy Sword Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/fairysword.png",
+    "codes": "mm_fairyswordcap"
+  },
+  {
+    "name": "MM Postman's Hat Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/postman.png",
+    "codes": "mm_postmancap"
+  },
+  {
+    "name": "MM Hookshot Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/hookshot.png",
+    "codes": "mm_hookshotcap"
+  },
+  {
+    "name": "MM Stone Mask Capturable",
+    "type": "toggle",
+    "img": "images/items_capture/stone.png",
+    "codes": "mm_stonecap"
+  },
+  {
+    "name": "MM Bow",
+    "type": "toggle",
+    "img": "images/items_capture/bow.png",
+    "codes": "mm_bowcap"
+  },
+  {
+    "name": "MM Keaton Mask",
+    "type": "toggle",
+    "img": "images/items_capture/keaton.png",
+    "codes": "mm_keatoncap"
+  },
+  {
+    "name": "MM Magic",
+    "type": "toggle",
+    "img": "images/items_capture/magic.png",
+    "codes": "mm_magiccap"
+  },
+  {
+    "name": "MM Keg",
+    "type": "toggle",
+    "img": "images/items_capture/keg.png",
+    "codes": "mm_kegcap"
+  },
+  {
+    "name": "MM Fairy Mask",
+    "type": "toggle",
+    "img": "images/items_capture/greatfairy.png",
+    "codes": "mm_fairymaskcap"
+  },
+  {
+    "name": "MM Lens",
+    "type": "toggle",
+    "img": "images/items_capture/lens.png",
+    "codes": "mm_lenscap"
+  },
+  {
+    "name": "MM Bremen Mask",
+    "type": "toggle",
+    "img": "images/items_capture/bremen.png",
+    "codes": "mm_brememncap"
+  },
+  {
+    "name": "MM Bunny Hood",
+    "type": "toggle",
+    "img": "images/items_capture/bunny.png",
+    "codes": "mm_bunnycap"
+  },
+  {
+    "name": "MM Don Gero's Mask Cap",
+    "type": "toggle",
+    "img": "images/items_capture/dongero.png",
+    "codes": "mm_dongerocap"
+  },
+  {
+    "name": "MM Scents Mask Cap",
+    "type": "toggle",
+    "img": "images/items_capture/scents.png",
+    "codes": "mm_scentscap"
+  },
+  {
+    "name": "MM Clock Town Stray Fairy",
+    "type": "toggle",
+    "img": "images/items_capture/clocktown_stray_fairy.png",
+    "codes": "mm_clocktown_stray_fairycap"
+  },
+  {
+    "name": "MM Woodfall Stray Fairy",
+    "type": "toggle",
+    "img": "images/items_capture/woodfall_stray_fairy.png",
+    "codes": "mm_woodfall_stray_fairiescap"
+  },
+  {
+    "name": "MM Snowhead Stray Fairy",
+    "type": "toggle",
+    "img": "images/items_capture/snowhead_stray_fairy.png",
+    "codes": "mm_snowhead_stray_fairiescap"
+  },
+  {
+    "name": "MM Great Bay Stray Fairy",
+    "type": "toggle",
+    "img": "images/items_capture/greatbay_stray_fairy.png",
+    "codes": "mm_greatbay_stray_fairiescap"
+  },
+  {
+    "name": "MM Stone Tower Stray Fairy",
+    "type": "toggle",
+    "img": "images/items_capture/stonetower_stray_fairy.png",
+    "codes": "mm_stonetower_stray_fairiescap"
+  },
+  {
+    "name": "MM Romani Mask",
+    "type": "toggle",
+    "img": "images/items_capture/romanimask.png",
+    "codes": "mm_romanicap"
+  },
+  {
+    "name": "MM Circus Leader Mask",
+    "type": "toggle",
+    "img": "images/items_capture/troupe.png",
+    "codes": "mm_troupecap"
+  },
+  {
+    "name": "MM Couple's Mask",
+    "type": "toggle",
+    "img": "images/items_capture/couple.png",
+    "codes": "mm_couplecap"
+  },
+  {
+    "name": "MM Bottle",
+    "type": "toggle",
+    "img": "images/items_capture/bottle.png",
+    "codes": "mm_bottlecap"
+  },
+  {
+    "name": "MM Bottle",
+    "type": "toggle",
+    "img": "images/items_capture/bottle.png",
+    "codes": "mm_bottlecap"
+  },
+  {
+    "name": "MM Kamaro Mask",
+    "type": "toggle",
+    "img": "images/items_capture/kamaro.png",
+    "codes": "mm_kamarocap"
+  },
+  {
+    "name": "MM Mask of Truth",
+    "type": "toggle",
+    "img": "images/items_capture/maskoftruth.png",
+    "codes": "mm_truthcap"
+  },
+  {
+    "name": "MM Woodfall Token",
+    "type": "toggle",
+    "img": "images/items_capture/skulltulla_woodfall.png",
+    "codes": "mm_woodskullcap"
+  },
+  {
+    "name": "MM Bay Token",
+    "type": "toggle",
+    "img": "images/items_capture/skulltulla_greatbay.png",
+    "codes": "mm_bayskullcap"
+  },
+  {
+    "name": "MM Garo Mask",
+    "type": "toggle",
+    "img": "images/items_capture/garo.png",
+    "codes": "mm_garocap"
+  },
+  {
+    "name": "MM Gibdo Mask",
+    "type": "toggle",
+    "img": "images/items_capture/gibdo.png",
+    "codes": "mm_gibdocap"
+  },
+  {
+    "name": "MM Song of Time",
+    "type": "toggle",
+    "img": "images/items_capture/songoftime.png",
+    "codes": "mm_timecap"
+  },
+  {
+    "name": "MM Song of Healing",
+    "type": "toggle",
+    "img": "images/items_capture/healing.png",
+    "codes": "mm_healcap"
+  },
+  {
+    "name": "MM Epona's Song",
+    "type": "toggle",
+    "img": "images/items_capture/epona.png",
+    "codes": "mm_eponacap"
+  },
+  {
+    "name": "MM Song of Soaring",
+    "type": "toggle",
+    "img": "images/items_capture/soaring.png",
+    "codes": "mm_soaringcap"
+  },
+  {
+    "name": "MM Song of Storms",
+    "type": "toggle",
+    "img": "images/items_capture/songofstorms.png",
+    "codes": "mm_stormscap"
+  },
+  {
+    "name": "MM Captain's Hat",
+    "type": "toggle",
+    "img": "images/items_capture/captain.png",
+    "codes": "mm_captaincap"
+  },
+  {
+    "name": "MM Giant's Mask",
+    "type": "toggle",
+    "img": "images/items_capture/giant.png",
+    "codes": "mm_giantcap"
+  },
+  {
+    "name": "MM Sonata of Awakening",
+    "type": "toggle",
+    "img": "images/items_capture/sonata.png",
+    "codes": "mm_sonatacap"
+  },
+  {
+    "name": "MM Goron Lullaby",
+    "type": "toggle",
+    "img": "images/items_capture/lullaby.png",
+    "codes": "mm_lullabycap"
+  },
+  {
+    "name": "MM New Wave Bossa Nova",
+    "type": "toggle",
+    "img": "images/items_capture/bossanova.png",
+    "codes": "mm_novacap"
+  },
+  {
+    "name": "MM Elegy of Emptiness",
+    "type": "toggle",
+    "img": "images/items_capture/elegy.png",
+    "codes": "mm_elegycap"
+  },
+  {
+    "name": "MM Oath to Order",
+    "type": "toggle",
+    "img": "images/items_capture/oath.png",
+    "codes": "mm_oathcap"
+  },
+  {
+    "name": "MM Deku Mask",
+    "type": "toggle",
+    "img": "images/items_capture/deku.png",
+    "codes": "mm_dekucap"
+  },
+  {
+    "name": "MM Goron Mask",
+    "type": "toggle",
+    "img": "images/items_capture/goron.png",
+    "codes": "mm_goroncap"
+  },
+  {
+    "name": "MM Zora Mask",
+    "type": "toggle",
+    "img": "images/items_capture/zora.png",
+    "codes": "mm_zoracap"
+  },
+  {
+    "name": "MM Fierce Deity's Mask",
+    "type": "toggle",
+    "img": "images/items_capture/fiercedeity.png",
+    "codes": "mm_deitycap"
+  },
+  {
+    "name": "MM Pictobox",
+    "type": "toggle",
+    "img": "images/items_capture/box.png",
+    "codes": "mm_pictocap"
+  },
+  {
+    "name": "MM Magic Bean",
+    "type": "toggle",
+    "img": "images/items_capture/bean.png",
+    "codes": "mm_beancap"
+  },
+  {
+    "name": "MM Giant Wallet",
+    "type": "toggle",
+    "img": "images/items_capture/giantwallet.png",
+    "codes": "mm_giantwcap"
+  },
+  {
+    "name": "MM Adult Wallet",
+    "type": "toggle",
+    "img": "images/items_capture/wallet.png",
+    "codes": "mm_adultwcap"
+  },
+]

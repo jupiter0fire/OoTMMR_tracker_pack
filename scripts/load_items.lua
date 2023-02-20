@@ -10,7 +10,7 @@ if HAS_MAP then
   Tracker:AddItems("items/options.json")
 end
 Tracker:AddItems("items/quest.json")
-Tracker:AddItems("items/masks.json")
+Tracker:AddItems("items/mm_items.json")
 Tracker:AddItems("items/equipment.json")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/dungeons.json")
