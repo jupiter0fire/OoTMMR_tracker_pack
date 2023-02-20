@@ -5167,7 +5167,7 @@
                     "map": "termina",
                     "x": 117,
                     "y": 129,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -5197,7 +5197,7 @@
                     "map": "termina",
                     "x": 115,
                     "y": 95,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -5221,13 +5221,13 @@
                     "map": "termina",
                     "x": 143,
                     "y": 16,
-                    "size": 25
+                    "size": 19
                   },
                   {
                     "map": "termina",
                     "x": 457,
                     "y": 367,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -5249,31 +5249,31 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 210,
                     "y": 77
                   },
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 225,
                     "y": 170
                   },
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 97,
                     "y": 206
                   },
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 148,
                     "y": 116
                   },
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 157,
                     "y": 58
                   }
@@ -5295,7 +5295,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 90,
                     "y": 156
                   }
@@ -5320,7 +5320,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 138,
                     "y": 209
                   }
@@ -5343,7 +5343,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 117,
                     "y": 184
                   }
@@ -5377,7 +5377,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 120,
                     "y": 35
                   }
@@ -5404,7 +5404,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 145,
                     "y": 70
                   }
@@ -5427,7 +5427,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 98,
                     "y": 55
                   }
@@ -5448,7 +5448,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 150,
                     "y": 26
                   }
@@ -5485,7 +5485,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 62,
                     "y": 72
                   }
@@ -5521,7 +5521,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 56,
                     "y": 55
                   }
@@ -5540,7 +5540,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 170,
                     "y": 210
                   }
@@ -5627,7 +5627,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 185,
                     "y": 115
                   }
@@ -5684,7 +5684,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 216,
                     "y": 111
                   }
@@ -5714,7 +5714,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 214,
                     "y": 41
                   }
@@ -5752,7 +5752,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 235,
                     "y": 157
                   }
@@ -5784,7 +5784,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 211,
                     "y": 191
                   }
@@ -5843,7 +5843,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 175,
                     "y": 166
                   }
@@ -5869,7 +5869,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 235,
                     "y": 62
                   }
@@ -5893,7 +5893,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 38,
                     "y": 111
                   }
@@ -5917,7 +5917,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 50,
                     "y": 125
                   }
@@ -5956,7 +5956,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 48,
                     "y": 155
                   }
@@ -5979,7 +5979,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 30,
                     "y": 91
                   }
@@ -6013,7 +6013,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 44,
                     "y": 91
                   }
@@ -6064,7 +6064,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 22,
                     "y": 148
                   }
@@ -6144,7 +6144,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 34,
                     "y": 168
                   }
@@ -6252,7 +6252,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 51,
                     "y": 181
                   }
@@ -6273,7 +6273,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 50,
                     "y": 214
                   }
@@ -6297,13 +6297,13 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 25,
                     "y": 195
                   },
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 175,
                     "y": 130
                   }
@@ -6341,7 +6341,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 21,
                     "y": 173
                   }
@@ -6383,7 +6383,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 563,
                 "y": 352
               }
@@ -6402,7 +6402,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 582,
                 "y": 302
               }
@@ -6424,7 +6424,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 507,
                 "y": 339
               }
@@ -6450,7 +6450,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 520,
                 "y": 355
               }
@@ -6490,7 +6490,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 525,
                 "y": 340
               }
@@ -6519,7 +6519,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 525,
                 "y": 260
               }
@@ -6545,7 +6545,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 475,
                 "y": 310
               }
@@ -6569,7 +6569,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 513,
                 "y": 260
               }
@@ -6606,7 +6606,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 590,
                 "y": 335
               }
@@ -6632,7 +6632,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 590,
                 "y": 347
               }
@@ -6658,25 +6658,25 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 536,
                 "y": 360
               },
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 596,
                 "y": 326
               },
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 550,
                 "y": 276
               },
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 496,
                 "y": 300
               }
@@ -6698,7 +6698,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 636,
                 "y": 300
               }
@@ -6720,7 +6720,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 684,
                 "y": 300
               }
@@ -6756,7 +6756,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 469,
                 "y": 366
               }
@@ -6790,7 +6790,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 470,
                 "y": 376
               }
@@ -6828,7 +6828,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 365,
                 "y": 369
               }
@@ -6881,7 +6881,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 388,
                 "y": 350
               }
@@ -6925,7 +6925,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 400,
                 "y": 350
               }
@@ -6949,7 +6949,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 369,
                 "y": 351
               }
@@ -6980,7 +6980,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 537,
                 "y": 389
               }
@@ -6999,7 +6999,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 525,
                 "y": 389
               }
@@ -7029,7 +7029,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 537,
                 "y": 401
               }
@@ -7061,7 +7061,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 563,
                 "y": 414
               }
@@ -7110,7 +7110,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 565,
                 "y": 438
               }
@@ -7186,7 +7186,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 553,
                 "y": 438
               }
@@ -7205,7 +7205,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 645,
                 "y": 423
               }
@@ -7257,7 +7257,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 633,
                 "y": 423
               }
@@ -7276,7 +7276,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 650,
                 "y": 440
               }
@@ -7320,7 +7320,7 @@
                     "map_locations": [
                       {
                         "map": "termina",
-                        "size": 25,
+                        "size": 19,
                         "x": 488,
                         "y": 552
                       }
@@ -7341,7 +7341,7 @@
                     "map_locations": [
                       {
                         "map": "termina",
-                        "size": 25,
+                        "size": 19,
                         "x": 514,
                         "y": 558
                       }
@@ -7369,7 +7369,7 @@
                     "map_locations": [
                       {
                         "map": "termina",
-                        "size": 25,
+                        "size": 19,
                         "x": 481,
                         "y": 537
                       }
@@ -7396,7 +7396,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 534,
                     "y": 504
                   }
@@ -7420,7 +7420,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 482,
                     "y": 506
                   }
@@ -7464,7 +7464,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 494,
                     "y": 518
                   }
@@ -7684,7 +7684,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 485,
                     "y": 518
                   }
@@ -7888,7 +7888,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 505,
                     "y": 518
                   }
@@ -7922,7 +7922,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 542,
                     "y": 466
                   }
@@ -7945,7 +7945,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 554,
                     "y": 466
                   }
@@ -8001,7 +8001,7 @@
                     "map": "termina",
                     "x": 542,
                     "y": 478,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -8044,7 +8044,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 526,
                     "y": 556
                   }
@@ -8097,7 +8097,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 532,
                 "y": 158
               }
@@ -8121,7 +8121,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 542,
                 "y": 182
               }
@@ -8146,7 +8146,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 531,
                 "y": 139
               }
@@ -8178,7 +8178,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 529,
                 "y": 147
               }
@@ -8207,7 +8207,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 510,
                 "y": 150
               }
@@ -8232,7 +8232,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 527,
                 "y": 184
               }
@@ -8259,7 +8259,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 582,
                 "y": 165
               }
@@ -8286,7 +8286,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 594,
                 "y": 165
               }
@@ -8309,7 +8309,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 578,
                 "y": 155
               }
@@ -8341,7 +8341,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 597,
                 "y": 155
               }
@@ -8366,7 +8366,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 578,
                 "y": 143
               }
@@ -8409,7 +8409,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 674,
                 "y": 144
               }
@@ -8456,7 +8456,7 @@
                 "map": "termina",
                 "x": 697,
                 "y": 62,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -8478,7 +8478,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 658,
                 "y": 140
               }
@@ -8521,7 +8521,7 @@
                 "map": "termina",
                 "x": 646,
                 "y": 140,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -8547,7 +8547,7 @@
                 "map": "termina",
                 "x": 654,
                 "y": 129,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -8580,7 +8580,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 499,
                 "y": 138
               }
@@ -8610,7 +8610,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 503,
                     "y": 42
                   }
@@ -8664,7 +8664,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "size": 25,
+                    "size": 19,
                     "x": 488,
                     "y": 35
                   }
@@ -8700,7 +8700,7 @@
         "map_locations": [
           {
             "map": "termina",
-            "size": 25,
+            "size": 19,
             "x": 300,
             "y": 360
           }
@@ -8727,7 +8727,7 @@
         "map_locations": [
           {
             "map": "termina",
-            "size": 25,
+            "size": 19,
             "x": 280,
             "y": 360
           }
@@ -8803,7 +8803,7 @@
         "map_locations": [
           {
             "map": "termina",
-            "size": 25,
+            "size": 19,
             "x": 300,
             "y": 340
           }
@@ -9046,7 +9046,7 @@
         "map_locations": [
           {
             "map": "termina",
-            "size": 25,
+            "size": 19,
             "x": 290,
             "y": 340
           }
@@ -9266,7 +9266,7 @@
         "map_locations": [
           {
             "map": "termina",
-            "size": 25,
+            "size": 19,
             "x": 310,
             "y": 340
           }
@@ -9290,7 +9290,7 @@
         "map_locations": [
           {
             "map": "termina",
-            "size": 25,
+            "size": 19,
             "x": 260,
             "y": 350
           }
@@ -9344,7 +9344,7 @@
             "map_locations": [
               {
                 "map": "termina",
-                "size": 25,
+                "size": 19,
                 "x": 320,
                 "y": 300
               }
@@ -9380,7 +9380,7 @@
                 "map": "termina",
                 "x": 205,
                 "y": 300,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9420,7 +9420,7 @@
                 "map": "termina",
                 "x": 218,
                 "y": 282,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9522,7 +9522,7 @@
                 "map": "termina",
                 "x": 220,
                 "y": 410,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9566,7 +9566,7 @@
                 "map": "termina",
                 "x": 210,
                 "y": 380,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9620,7 +9620,7 @@
                 "map": "termina",
                 "x": 100,
                 "y": 350,
-                "size": 25
+                "size": 19
               }
             ]
           }
@@ -9670,7 +9670,7 @@
                 "map": "termina",
                 "x": 146,
                 "y": 300,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9701,7 +9701,7 @@
                 "map": "termina",
                 "x": 300,
                 "y": 250,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9742,7 +9742,7 @@
                 "map": "termina",
                 "x": 320,
                 "y": 260,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9805,7 +9805,7 @@
                 "map": "termina",
                 "x": 330,
                 "y": 240,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9826,7 +9826,7 @@
                 "map": "termina",
                 "x": 260,
                 "y": 404,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -9847,7 +9847,7 @@
                 "map": "termina",
                 "x": 370,
                 "y": 405,
-                "size": 25
+                "size": 19
               }
             ]
           }
@@ -9873,7 +9873,7 @@
             "map": "termina",
             "x": 270,
             "y": 420,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -9897,7 +9897,7 @@
             "map": "termina",
             "x": 270,
             "y": 430,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -9928,7 +9928,7 @@
             "map": "termina",
             "x": 352,
             "y": 420,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -9960,7 +9960,7 @@
             "map": "termina",
             "x": 340,
             "y": 420,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -9987,7 +9987,7 @@
             "map": "termina",
             "x": 295,
             "y": 300,
-            "size": 25
+            "size": 19
           }
         ]
       }
@@ -10022,7 +10022,7 @@
             "map": "termina",
             "x": 681,
             "y": 312,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -10051,7 +10051,7 @@
             "map": "termina",
             "x": 710,
             "y": 226,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -10075,7 +10075,7 @@
             "map": "termina",
             "x": 684,
             "y": 235,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -10113,7 +10113,7 @@
             "map": "termina",
             "x": 678,
             "y": 270,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -10140,7 +10140,7 @@
             "map": "termina",
             "x": 696,
             "y": 251,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -10165,7 +10165,7 @@
             "map": "termina",
             "x": 673,
             "y": 253,
-            "size": 25
+            "size": 19
           }
         ]
       },
@@ -10221,7 +10221,7 @@
                 "map": "termina",
                 "x": 795,
                 "y": 300,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -10242,7 +10242,7 @@
                 "map": "termina",
                 "x": 790,
                 "y": 220,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -10288,7 +10288,7 @@
                 "map": "termina",
                 "x": 777,
                 "y": 228,
-                "size": 25
+                "size": 19
               }
             ]
           },
@@ -10321,7 +10321,7 @@
                     "map": "termina",
                     "x": 800,
                     "y": 264,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -10345,7 +10345,7 @@
                     "map": "termina",
                     "x": 846,
                     "y": 256,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -10369,7 +10369,7 @@
                     "map": "termina",
                     "x": 856,
                     "y": 234,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -10393,7 +10393,7 @@
                     "map": "termina",
                     "x": 868,
                     "y": 270,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -10461,7 +10461,7 @@
                     "map": "termina",
                     "x": 836,
                     "y": 238,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -10504,7 +10504,7 @@
                     "map": "termina",
                     "x": 831,
                     "y": 300,
-                    "size": 25
+                    "size": 19
                   }
                 ]
               },
@@ -10552,7 +10552,7 @@
                         "map": "termina",
                         "x": 952,
                         "y": 240,
-                        "size": 25
+                        "size": 19
                       }
                     ]
                   },
@@ -10606,7 +10606,7 @@
                         "map": "termina",
                         "x": 956,
                         "y": 223,
-                        "size": 25
+                        "size": 19
                       }
                     ]
                   }

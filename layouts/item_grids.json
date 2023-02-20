@@ -215,10 +215,9 @@
     "content": [
       {
         "type": "itemgrid",
-        "h_alignment": "center",
-        "item_size": 28,
-        "margin": "0,0",
+        "h_alignment": "left",
         "item_margin": "1,1",
+        "item_size": 28,
         "rows": [
           [
             "mm_stick",
@@ -257,7 +256,7 @@
             "mm_elegy",
             "mm_oath",
             "mm_beans",
-            "mm_bottle2",
+            "mm_roomkey",
             "mm_moontear"
           ],
           [
@@ -267,7 +266,7 @@
             "mm_stone",
             "mm_fairymask",
             "mm_deku",
-            "mm_bottle3",
+            "mm_deliverytomama",
             "mm_deed1"
           ],
           [
@@ -277,7 +276,7 @@
             "mm_dongero",
             "mm_scents",
             "mm_goron",
-            "mm_bottle4",
+            "mm_pendant",
             "mm_deed2"
           ],
           [
@@ -287,7 +286,7 @@
             "mm_couple",
             "mm_mot",
             "mm_zora",
-            "mm_bottle5",
+            "mm_letter",
             "mm_deed3"
           ],
           [
@@ -297,7 +296,7 @@
             "mm_captain",
             "mm_giant",
             "mm_fiercedeity",
-            "mm_bottle6",
+            "mm_clocktown_strayfairy",
             "mm_deed4"
           ]
         ]
@@ -308,157 +307,22 @@
         "content": [
           {
             "type": "array",
-            "h_alignment": "left",
             "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [
-              {
-                "type": "array",
-                "orientation": "horizontal",
-                "h_alignment": "right",
-                "margin": "3,4",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "mm_clocktown_strayfairy",
-                    "margin": "3,4",
-                    "width": 32,
-                    "height": 32
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_bomber",
-                    "margin": "3,4",
-                    "width": 32,
-                    "height": 32
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_bomber1",
-                    "margin": "3,4",
-                    "width": 12,
-                    "height": 16
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_bomber2",
-                    "margin": "3,4",
-                    "width": 12,
-                    "height": 16
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_bomber3",
-                    "margin": "3,4",
-                    "width": 12,
-                    "height": 16
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_bomber4",
-                    "margin": "3,4",
-                    "width": 12,
-                    "height": 16
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_bomber5",
-                    "margin": "3,4",
-                    "width": 12,
-                    "height": 16
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_letter",
-                    "margin": "3,4",
-                    "width": 32,
-                    "height": 32
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_pendant",
-                    "margin": "3,4",
-                    "width": 32,
-                    "height": 32
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_deliverytomama",
-                    "margin": "3,4",
-                    "width": 32,
-                    "height": 32
-                  },
-                  {
-                    "type": "item",
-                    "item": "mm_roomkey",
-                    "margin": "3,4",
-                    "width": 32,
-                    "height": 32
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "3,4",
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "mm_skulltulla_woodfall",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
               },
               {
                 "type": "item",
                 "item": "mm_skulltulla_greatbay",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_redpotionlocated",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_bluepotionlocated",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_milklocated",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_seahorselocated",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_dustlocated",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_chateaulocated",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
               }
             ]
           },
@@ -470,9 +334,9 @@
               {
                 "type": "item",
                 "item": "mm_woodfall",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
               },
               {
                 "type": "item",
@@ -484,9 +348,9 @@
               {
                 "type": "item",
                 "item": "mm_snowhead",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
               },
               {
                 "type": "item",
@@ -497,10 +361,10 @@
               },
               {
                 "type": "item",
-                "item": "mm_greatbay",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+                "item": "mm_great_bay",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
               },
               {
                 "type": "item",
@@ -511,10 +375,10 @@
               },
               {
                 "type": "item",
-                "item": "mm_stonetower",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+                "item": "mm_stone_tower",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
               },
               {
                 "type": "item",
@@ -645,10 +509,6 @@
             ]
           }
         ]
-      },
-      {
-        "type": "layout",
-        "key": "mm_dungeon_grid_tall"
       }
     ]
   }

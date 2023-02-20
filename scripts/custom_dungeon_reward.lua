@@ -27,7 +27,7 @@ local codes = {
   "spirit",
   "shadow",
   "mm_woodfall",
-  "mm_snowpeak",
+  "mm_snowhead",
   "mm_great_bay",
   "mm_stone_tower"
 }
@@ -52,10 +52,10 @@ local images = {
   "images/nocturne_medallions.png",
   "images/lacs_medallions.png",
   "images/lightmedallion.png",
-  "images/mm_odolwa.png",
-  "images/mm_gyorg.png",
-  "images/mm_goht.png",
-  "images/mm_twinmold.png"
+  "images/items/mm_odolwa.png",
+  "images/items/mm_gyorg.png",
+  "images/items/mm_goht.png",
+  "images/items/mm_twinmold.png"
 }
 
 local quickModeOrder = {6, 3, 4, 4, 5, 5}
