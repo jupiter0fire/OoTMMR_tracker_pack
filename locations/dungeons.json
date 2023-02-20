@@ -3,8 +3,8 @@
     "name": "Deku Tree",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "deku_reg,$has_age|child,setting_forest_open",
-      "deku_reg,$has_age|child,sword1,shield1"
+      "$has_age|child,setting_forest_open",
+      "$has_age|child,sword1"
     ],
     "sections": [
       {
@@ -16,9 +16,6 @@
       {
         "name": "Slingshot Room Chests",
         "short_name": "Slingshot",
-        "access_rules": [
-          "shield1"
-        ],
         "item_count": 2
       },
       {
@@ -30,9 +27,6 @@
       {
         "name": "GS Compass Room",
         "short_name": "Compass",
-        "access_rules": [
-          "$can_child_attack"
-        ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
@@ -43,19 +37,13 @@
       {
         "name": "Basement Chest",
         "short_name": "Basement",
-        "access_rules": [
-          "$can_child_attack",
-          "nuts"
-        ],
         "item_count": 1
       },
       {
         "name": "GS Basement Vines",
         "short_name": "Vines",
         "access_rules": [
-          "sling",
-          "$has_explosives",
-          "boomerang",
+          "$has_ranged_weapon",
           "dinsfire,magic",
           "sticks,[logic_deku_basement_gs]",
           "sword1,[logic_deku_basement_gs]"
@@ -70,9 +58,6 @@
       {
         "name": "GS Basement Gate",
         "short_name": "Gate",
-        "access_rules": [
-          "$can_child_attack"
-        ],
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
@@ -84,12 +69,8 @@
         "name": "GS Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
-          "$has_explosives,boomerang,sticks,sling",
-          "$has_explosives,boomerang,sticks,[logic_deku_b1_skip]",
-          "$has_explosives,boomerang,dinsfire,magic,sling",
-          "$has_explosives,boomerang,dinsfire,magic,[logic_deku_b1_skip]",
-          "{$has_explosives,sticks}",
-          "{$has_explosives,dinsfire,magic}"
+          "$can_hit_triggers_distance,$has_explosives_or_hammer,$can_collect_distance",
+          "[logic_deku_b1_skip],$has_explosives_or_hammer,$can_collect_distance"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -102,10 +83,8 @@
       {
         "name": "Queen Gohma",
         "access_rules": [
-          "shield1,sticks,sling",
-          "shield1,sticks,nuts,[logic_deku_b1_skip]",
-          "shield1,sword1,dinsfire,magic,sling",
-          "shield1,sword1,dinsfire,magic,nuts,[logic_deku_b1_skip]"
+          "$can_hit_triggers_distance,$has_age|child",
+          "[logic_deku_b1_skip],$has_age|child"
         ],
         "hosted_item": "deku",
         "chest_unopened_img": "images/HC.png",

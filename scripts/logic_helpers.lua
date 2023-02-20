@@ -1,3 +1,13 @@
+function has(item, amount)
+  local count = Tracker:ProviderCountForCode(item)
+  amount = tonumber(amount)
+  if not amount then
+    return count > 0
+  else
+    return count == amount
+  end
+end
+
 function can_time_travel()
   if has("setting_door_open") or (has("ocarina") and has("time")) then
     return 1, AccessibilityLevel.Normal
@@ -27,6 +37,62 @@ function has_age(age)
   end
 
   return 0, AccessibilityLevel.None
+end
+
+function can_use_slingshot()
+  return has_age("child") == 1 and has("slingshot")
+end  
+
+function can_use_boomerang()
+  return has_age("child") == 1 and has("boomerang")
+end  
+
+function can_use_bow()
+  return has_age("adult") == 1 and has("bow")
+end  
+
+function can_use_hookshot()
+  return has_age("adult") == 1 and has("hookshot")
+end  
+
+function can_use_hammer()
+  return has_age("adult") == 1 and has("hammer")
+end  
+
+function has_ranged_weapon_child()
+  return can_use_slingshot() or can_use_boomerang()
+end  
+
+function has_ranged_weapon_adult()
+  return can_use_bow() or can_use_hookshot()
+end  
+
+function has_ranged_weapon()
+  return has_ranged_weapon_child() or has_ranged_weapon_adult()
+end
+
+function has_explosives()
+  local bombs = Tracker:ProviderCountForCode("bombs")
+  local chus_count, chus_level = has_bombchus()
+  if bombs > 0 then
+    return bombs, AccessibilityLevel.Normal
+  elseif chus_count > 0 then
+    return chus_count, chus_level
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
+function can_hit_triggers_distance()
+  return can_use_bow() or can_use_slingshot()
+end  
+
+function has_explosives_or_hammer()
+  return has_explosives() or can_use_hammer()
+end
+
+function can_collect_distance()
+  return can_use_hookshot() or can_use_boomerang()
 end
 
 function spawn_access(region, age)
@@ -116,18 +182,6 @@ function has_bombchus()
     end
   end
   return 0, AccessibilityLevel.None
-end
-
-function has_explosives()
-  local bombs = Tracker:ProviderCountForCode("bombs")
-  local chus_count, chus_level = has_bombchus()
-  if bombs > 0 then
-    return bombs, AccessibilityLevel.Normal
-  elseif chus_count > 0 then
-    return chus_count, chus_level
-  else
-    return 0, AccessibilityLevel.None
-  end
 end
 
 function can_blast()
@@ -900,3 +954,4 @@ function trials_barrier_dispelled()
   end
   return 0, AccessibilityLevel.None
 end
+
