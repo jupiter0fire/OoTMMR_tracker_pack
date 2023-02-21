@@ -16,6 +16,9 @@
       {
         "name": "Slingshot Room Chests",
         "short_name": "Slingshot",
+        "access_rules": [
+          "$has_shield"
+        ],
         "item_count": 2
       },
       {
@@ -83,8 +86,8 @@
       {
         "name": "Queen Gohma",
         "access_rules": [
-          "$can_hit_triggers_distance,$has_age|child",
-          "[logic_deku_b1_skip],$has_age|child"
+          "$can_hit_triggers_distance,$has_age|child,$has_shield",
+          "[logic_deku_b1_skip],$has_age|child,$has_shield"
         ],
         "hosted_item": "deku",
         "chest_unopened_img": "images/HC.png",
@@ -350,16 +353,15 @@
     "name": "Dodongos Cavern",
     "parent": "Death Mountain",
     "access_rules": [
-      "dodongo_reg,$has_age|adult",
-      "dodongo_reg,$has_explosives",
-      "dodongo_reg,$child_death_mountain,lift1"
+      "$has_age|adult",
+      "$has_bombflowers"
     ],
     "sections": [
       {
         "name": "Lobby",
         "access_rules": [
-          "$can_blast",
-          "lift1"
+          "$has_bombflowers",
+          "$can_use_hammer"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -370,10 +372,7 @@
         "name": "Staircase Room",
         "access_rules": [
           "@Dodongos Cavern/Lobby,$has_age|adult",
-          "@Dodongos Cavern/Lobby,$has_age|child,sticks",
-          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sling",
-          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,$has_explosives",
-          "@Dodongos Cavern/Lobby,$has_age|child,dinsfire,magic,sword1"
+          "@Dodongos Cavern/Lobby,$has_bombflowers"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -383,16 +382,8 @@
       {
         "name": "Climb",
         "access_rules": [
-          "@Dodongos Cavern/Staircase Room,$has_age|adult,$has_explosives",
-          "@Dodongos Cavern/Staircase Room,$has_age|adult,lift1",
-          "@Dodongos Cavern/Staircase Room,$has_age|adult,dinsfire,magic",
-          "@Dodongos Cavern/Staircase Room,$has_age|adult,[logic_dc_staircase],bow",
-          "@Dodongos Cavern/Staircase Room,$has_age|child,sticks,$has_explosives",
-          "@Dodongos Cavern/Staircase Room,$has_age|child,sticks,lift1",
-          "@Dodongos Cavern/Staircase Room,$has_age|child,sticks,dinsfire,magic",
-          "@Dodongos Cavern/Staircase Room,$has_age|child,dinsfire,magic,sling",
-          "@Dodongos Cavern/Staircase Room,$has_age|child,dinsfire,magic,$has_explosives",
-          "@Dodongos Cavern/Staircase Room,$has_age|child,dinsfire,magic,sword1"
+          "@Dodongos Cavern/Staircase Room,$has_bombflowers",
+          "@Dodongos Cavern/Staircase Room,$can_use_dins"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -402,15 +393,9 @@
       {
         "name": "Far Bridge",
         "access_rules": [
-          "@Dodongos Cavern/Climb,$has_age|child,sling,$has_explosives",
-          "@Dodongos Cavern/Climb,$has_age|child,sling,lift1",
-          "@Dodongos Cavern/Climb,$has_age|child,[logic_dc_slingshot_skip],lift1,sticks",
-          "@Dodongos Cavern/Climb,$has_age|child,[logic_dc_slingshot_skip],$has_explosives",
-          "@Dodongos Cavern/Climb,$has_age|child,[logic_dc_slingshot_skip],lift1,sword1",
-          "@Dodongos Cavern/Climb,$has_age|adult,bow",
-          "@Dodongos Cavern/Climb,$has_age|adult,hoverboots",
-          "@Dodongos Cavern/Climb,$has_age|adult,longshot",
-          "@Dodongos Cavern/Climb,$has_age|adult,[logic_dc_jump]"
+          "@Dodongos Cavern/Climb,$can_longshot",
+          "@Dodongos Cavern/Climb,$has_hover_boots",
+          "@Dodongos Cavern/Climb,$can_hit_triggers_distance"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -420,7 +405,7 @@
       {
         "name": "Boss Area",
         "access_rules": [
-          "@Dodongos Cavern/Far Bridge,$has_explosives"
+          "@Dodongos Cavern/Far Bridge,$has_explosives_bool"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -431,12 +416,7 @@
         "name": "GS Side Room Near Lower Lizalfos",
         "short_name": "East Side",
         "access_rules": [
-          "@Dodongos Cavern/Lobby,$has_explosives",
-          "@Dodongos Cavern/Lobby,$has_age|adult",
-          "@Dodongos Cavern/Lobby,$has_age|child,sling",
-          "@Dodongos Cavern/Lobby,$has_age|child,boomerang",
-          "@Dodongos Cavern/Lobby,$has_age|child,sticks",
-          "@Dodongos Cavern/Lobby,$has_age|child,sword1"
+          "@Dodongos Cavern/Lobby"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -449,10 +429,7 @@
         "name": "GS Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
-          "@Dodongos Cavern/Lobby,$has_age|adult,ocarina,scarecrow,hookshot",
-          "@Dodongos Cavern/Lobby,$has_age|adult,longshot",
-          "@Dodongos Cavern/Lobby,[logic_dc_scarecrow_gs],$has_age|adult",
-          "@Dodongos Cavern/Lobby,[logic_dc_scarecrow_gs],$can_child_attack"
+          "@Dodongos Cavern/Lobby,$can_hookshot_scarecrow()"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -514,14 +491,8 @@
         "name": "GS Alcove Above Stairs",
         "short_name": "Above Stairs",
         "access_rules": [
-          "@Dodongos Cavern/Far Bridge,$has_age|child,boomerang,$has_explosives",
-          "@Dodongos Cavern/Far Bridge,$has_age|child,boomerang,lift1",
-          "@Dodongos Cavern/Far Bridge,$has_age|adult,hookshot",
-          "{@Dodongos Cavern/Far Bridge,dinsfire,magic}",
-          "{@Dodongos Cavern/Far Bridge,$has_explosives}",
-          "{@Dodongos Cavern/Climb,$has_bombchus}",
-          "{@Dodongos Cavern/Climb,$has_age|child,sling}",
-          "{@Dodongos Cavern/Climb,$has_age|adult,bow}"
+          "@Dodongos Cavern/Far Bridge,$can_use_boomerang",
+          "@Dodongos Cavern/Far Bridge,$can_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -535,7 +506,6 @@
         "name": "GS Vines Above Stairs",
         "short_name": "Vines",
         "access_rules": [
-          "@Dodongos Cavern/Staircase Room,[logic_dc_vines_gs],longshot",
           "@Dodongos Cavern/Climb"
         ],
         "visibility_rules": [
@@ -580,7 +550,7 @@
         "name": "End of Bridge Chest",
         "short_name": "Bridge",
         "access_rules": [
-          "@Dodongos Cavern/Far Bridge,$can_blast"
+          "@Dodongos Cavern/Far Bridge,$has_explosives_or_hammer"
         ],
         "item_count": 1
       },
@@ -608,14 +578,7 @@
       {
         "name": "King Dodongo",
         "access_rules": [
-          "@Dodongos Cavern/Boss Area,lift1,$has_age|adult",
-          "@Dodongos Cavern/Boss Area,lift1,$has_age|child,sticks",
-          "@Dodongos Cavern/Boss Area,lift1,$has_age|child,sword1",
-          "@Dodongos Cavern/Boss Area,bombs,$has_age|adult",
-          "@Dodongos Cavern/Boss Area,bombs,$has_age|child,sticks",
-          "@Dodongos Cavern/Boss Area,bombs,$has_age|child,sword1",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield2,$has_age|adult",
-          "@Dodongos Cavern/Boss Area,[bombs],bombchu,shield3,$has_age|adult"
+          "@Dodongos Cavern/Boss Area,$has_explosives_bool"
         ],
         "hosted_item": "dodongo",
         "chest_unopened_img": "images/HC.png",
@@ -4702,7 +4665,7 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "$has_age|child,ocarina,storm"
+      "$has_age|child,$can_play|storms"
     ],
     "sections": [
       {
@@ -4815,7 +4778,7 @@
         "name": "Front Center Bombable Chest",
         "short_name": "Front Bombable",
         "access_rules": [
-          "$has_explosives"
+          "$has_explosives_bool"
         ],
         "item_count": 1
       },
@@ -4823,8 +4786,8 @@
         "name": "Back Left Bombable Chest",
         "short_name": "Back Bombable",
         "access_rules": [
-          "$has_explosives,[logic_lens]",
-          "$has_explosives,$can_use_lens"
+          "$has_explosives_bool,[logic_lens]",
+          "$has_explosives_bool,$can_use_lens"
         ],
         "item_count": 1
       },
@@ -4832,11 +4795,9 @@
         "name": "Map Chest",
         "short_name": "Basement",
         "access_rules": [
-          "$has_explosives",
-          "lift1,botw_small_keys:1,[botw_small_keys:3],[logic_lens]",
-          "lift1,botw_small_keys:1,[botw_small_keys:3],$can_use_lens",
-          "lift1,dinsfire,magic",
-          "lift1,sticks,[logic_botw_basement]"
+          "$has_explosives_bool",
+          "$has_bombflowers,botw_small_keys:1,[botw_small_keys:3]",
+          "$has_bombflowers,$can_use_dins"          
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -4845,7 +4806,7 @@
         "name": "Underwater Left Chest",
         "short_name": "Underwater Left",
         "access_rules": [
-          "ocarina,lullaby"
+          "$can_play|lullaby"
         ],
         "item_count": 1
       },
@@ -4853,7 +4814,7 @@
         "name": "Underwater Front Chest",
         "short_name": "Underwater Front",
         "access_rules": [
-          "ocarina,lullaby"
+          "$can_play|lullaby"
         ],
         "item_count": 1
       },
@@ -4861,16 +4822,16 @@
         "name": "Lens of Truth Chest",
         "short_name": "Dead Hand",
         "access_rules": [
-          "ocarina,lullaby,sword1",
-          "ocarina,lullaby,sticks,[logic_child_deadhand]"
+          "$can_play|lullaby,sword1",
+          "$can_play|lullaby,sticks,[logic_child_deadhand]"
         ],
         "item_count": 1
       },
       {
         "name": "Invisible Chest",
         "access_rules": [
-          "ocarina,lullaby,[logic_lens]",
-          "ocarina,lullaby,$can_use_lens"
+          "$can_play|lullaby,[logic_lens]",
+          "$can_play|lullaby,$can_use_lens"
         ],
         "item_count": 1
       }

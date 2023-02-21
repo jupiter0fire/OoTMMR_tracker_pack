@@ -8,6 +8,10 @@ function has(item, amount)
   end
 end
 
+function has_shield()
+  return true
+end  
+
 function can_time_travel()
   if has("setting_door_open") or (has("ocarina") and has("time")) then
     return 1, AccessibilityLevel.Normal
@@ -38,6 +42,10 @@ function has_age(age)
 
   return 0, AccessibilityLevel.None
 end
+
+function can_play(song)
+  return has("ocarina") and has(song)
+end  
 
 function can_use_slingshot()
   return has_age("child") == 1 and has("slingshot")
@@ -71,6 +79,10 @@ function has_ranged_weapon()
   return has_ranged_weapon_child() or has_ranged_weapon_adult()
 end
 
+function has_explosives_bool()
+  return has("bombs")
+end  
+
 function has_explosives()
   local bombs = Tracker:ProviderCountForCode("bombs")
   local chus_count, chus_level = has_bombchus()
@@ -80,7 +92,23 @@ function has_explosives()
     return chus_count, chus_level
   else
     return 0, AccessibilityLevel.None
-  end
+  end  
+end
+
+function has_bombflowers()
+  return has_explosives_bool() or has("lift1")
+end
+
+function can_use_dins()
+  return has("magic") and has("dinsfire")
+end 
+
+function can_longshot()
+  return has_age("adult") == 1 and has("longshot")
+end  
+
+function has_hover_boots()
+  return has_age("adult") == 1 and has("hoverboots")
 end
 
 function can_hit_triggers_distance()
@@ -94,6 +122,10 @@ end
 function can_collect_distance()
   return can_use_hookshot() or can_use_boomerang()
 end
+
+function can_hookshot_scarecrow()
+  return can_use_hookshot() and has("scarecrow")
+end  
 
 function spawn_access(region, age)
   region = region or ""
