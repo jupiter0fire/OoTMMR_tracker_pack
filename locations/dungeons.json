@@ -429,7 +429,7 @@
         "name": "GS Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
-          "@Dodongos Cavern/Lobby,$can_hookshot_scarecrow()"
+          "@Dodongos Cavern/Lobby,$can_hookshot_scarecrow"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
