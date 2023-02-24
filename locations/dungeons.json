@@ -492,7 +492,7 @@
         "short_name": "Above Stairs",
         "access_rules": [
           "@Dodongos Cavern/Far Bridge,$can_use_boomerang",
-          "@Dodongos Cavern/Far Bridge,$can_hookshot"
+          "@Dodongos Cavern/Far Bridge,$can_use_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2118,13 +2118,13 @@
     "name": "Fire Temple",
     "parent": "Death Mountain Crater",
     "access_rules": [
-      "fire_reg,$dmc_central,$FTR_or_goron"
+      "$has_goron_tunic"
     ],
     "sections": [
       {
-        "name": "Boss Key Region",
+        "name": "Fire Temple Boss Key Region",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:8],$has_age|adult,hammer"
+          "fire_small_keys:1,[fire_small_keys:8],$can_use_hammer"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2134,7 +2134,7 @@
       {
         "name": "Big Lava Room",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:2],$FTR_or_goron"
+          "fire_small_keys:1"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2142,14 +2142,11 @@
         "item_count": 1
       },
       {
-        "name": "Maze Lower",
+        "name": "Fire Temple After Elevator",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[$goron_tunic],$has_explosives",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[$goron_tunic],$has_explosives",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[$goron_tunic],bow",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[$goron_tunic],bow",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],lift1,[$goron_tunic],hookshot",
-          "@Fire Temple/Big Lava Room,fire_small_keys:3,[fire_small_keys:4],[logic_fire_strength],[$goron_tunic],hookshot"
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,lift1,$has_explosives_bool,$has_goron_tunic_strict",
+          "@Fire Temple/Big Lava Room,fire_small_keys:3,lift1,$has_ranged_weapon_adult,$has_goron_tunic_strict"
+
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2157,9 +2154,9 @@
         "item_count": 1
       },
       {
-        "name": "Maze Upper",
+        "name": "Fire Temple Ring",
         "access_rules": [
-          "@Fire Temple/Maze Lower,fire_small_keys:5,[fire_small_keys:6]"
+          "@Fire Temple/Fire Temple After Elevator,fire_small_keys:5,[fire_small_keys:6]"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2167,10 +2164,9 @@
         "item_count": 1
       },
       {
-        "name": "East Tower",
+        "name": "Fire Temple Scarecrow",
         "access_rules": [
-          "@Fire Temple/Maze Upper,ocarina,scarecrow,hookshot",
-          "@Fire Temple/Maze Upper,[logic_fire_scarecrow],longshot"
+          "@Fire Temple/Fire Temple After Elevator,fire_small_keys:5,$can_hookshot_scarecrow"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2178,11 +2174,31 @@
         "item_count": 1
       },
       {
-        "name": "West Tower",
+        "name": "Fire Temple Pillar Ledge",
         "access_rules": [
-          "@Fire Temple/Maze Upper,fire_small_keys:7,[fire_small_keys:8]",
-          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],hammer,hoverboots",
-          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7],[logic_fire_flame_maze]"
+          "@Fire Temple/Fire Temple Ring,$has_hover_boots",
+          "@Fire Temple/Fire Temple Before Miniboss, $can_play|time"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Fire Temple Before Miniboss",
+        "access_rules": [
+          "@Fire Temple/Fire Temple Ring,fire_small_keys:7",
+          "@Fire Temple/Fire Temple Pillar Ledge,$can_use_hammer"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Fire Temple After Miniboss",
+        "access_rules": [
+          "@Fire Temple/Fire Temple Before Miniboss,$has_explosives_bool"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -2192,9 +2208,6 @@
       {
         "name": "Near Boss Chest",
         "short_name": "Near Boss",
-        "access_rules": [
-          "$FTR_or_goron"
-        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -2202,7 +2215,7 @@
         "name": "GS Boss Key Loop",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Fire Temple/Boss Key Region"
+          "@Fire Temple/Fire Temple Boss Key Region"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2215,7 +2228,7 @@
         "name": "Flare Dancer Chest",
         "short_name": "Flare Dancer",
         "access_rules": [
-          "@Fire Temple/Boss Key Region"
+          "@Fire Temple/Fire Temple Boss Key Region"
         ],
         "item_count": 1
       },
@@ -2223,7 +2236,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Fire Temple/Boss Key Region"
+          "@Fire Temple/Fire Temple Boss Key Region"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -2233,8 +2246,7 @@
         "name": "GS Song of Time Room",
         "short_name": "Time Block",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,$has_age|adult,ocarina,time",
-          "@Fire Temple/Big Lava Room,$has_age|adult,[logic_fire_song_of_time]"
+          "@Fire Temple/Big Lava Room,$can_play|time"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2256,7 +2268,7 @@
         "name": "Big Lava Room Blocked Door Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,$has_age|adult,$has_explosives"
+          "@Fire Temple/Big Lava Room,$has_explosives"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2265,7 +2277,7 @@
         "name": "Boulder Maze Lower Chest",
         "short_name": "Boulder Maze Lower",
         "access_rules": [
-          "@Fire Temple/Maze Lower"
+          "@Fire Temple/Fire Temple After Elevator"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2274,7 +2286,7 @@
         "name": "Boulder Maze Side Room Chest",
         "short_name": "Boulder Maze Side",
         "access_rules": [
-          "@Fire Temple/Maze Lower"
+          "@Fire Temple/Fire Temple After Elevator"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2283,7 +2295,7 @@
         "name": "GS Boulder Maze",
         "short_name": "Boulder Maze",
         "access_rules": [
-          "@Fire Temple/Maze Lower,$has_explosives"
+          "@Fire Temple/Fire Temple After Elevator,$has_explosives_bool"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2296,8 +2308,8 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Fire Temple/Maze Lower,fire_small_keys:4,[fire_small_keys:5],bow",
-          "@Fire Temple/Maze Upper"
+          "@Fire Temple/Fire Temple After Elevator,fire_small_keys:4,$can_use_bow",
+          "@Fire Temple/Fire Temple After Elevator,fire_small_keys:5"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -2306,7 +2318,7 @@
         "name": "Boulder Maze Upper Chest",
         "short_name": "Boulder Maze Upper",
         "access_rules": [
-          "@Fire Temple/Maze Upper"
+          "@Fire Temple/Fire Temple After Elevator,fire_small_keys:5"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2315,7 +2327,7 @@
         "name": "Boulder Maze Shortcut Chest",
         "short_name": "Shortcut",
         "access_rules": [
-          "@Fire Temple/Maze Upper,$has_explosives"
+          "@Fire Temple/Fire Temple After Elevator,fire_small_keys:5,$has_explosives_bool"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2324,7 +2336,7 @@
         "name": "GS Scarecrow Climb",
         "short_name": "Scarecrow 1",
         "access_rules": [
-          "@Fire Temple/East Tower"
+          "@Fire Temple/Fire Temple Scarecrow,$has_ranged_weapon_adult"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2337,7 +2349,7 @@
         "name": "GS Scarecrow Top",
         "short_name": "Scarecrow 2",
         "access_rules": [
-          "@Fire Temple/East Tower"
+          "@Fire Temple/Fire Temple Scarecrow,$can_collect_distance"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2350,8 +2362,7 @@
         "name": "Scarecrow Chest",
         "short_name": "Scarecrow",
         "access_rules": [
-          "@Fire Temple/East Tower",
-          "{$hintable}"
+          "@Fire Temple/Fire Temple Scarecrow"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2360,7 +2371,7 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "@Fire Temple/Maze Upper,fire_small_keys:6,[fire_small_keys:7]"
+          "@Fire Temple/Fire Temple Ring"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -2369,9 +2380,7 @@
         "name": "Highest Goron Chest",
         "short_name": "Highest Goron",
         "access_rules": [
-          "@Fire Temple/West Tower,hammer,ocarina,time",
-          "@Fire Temple/West Tower,hammer,[logic_rusted_switches],hoverboots",
-          "@Fire Temple/West Tower,hammer,[logic_rusted_switches],$has_explosives"
+          "@Fire Temple/Fire Temple Before Miniboss,$can_use_hammer,$can_play|time"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2380,8 +2389,7 @@
         "name": "Megaton Hammer Chest",
         "short_name": "Hammer",
         "access_rules": [
-          "@Fire Temple/West Tower,$has_explosives",
-          "{$hintable}"
+          "@Fire Temple/Fire Temple After Miniboss"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2389,10 +2397,8 @@
       {
         "name": "Volvagia",
         "access_rules": [
-          "[$goron_tunic],hammer,fire_boss_key,[logic_fire_boss_door_jump]",
-          "[$goron_tunic],hammer,fire_boss_key,hoverboots",
-          "[$goron_tunic],hammer,fire_boss_key,@Fire Temple/West Tower,ocarina,time",
-          "[$goron_tunic],hammer,fire_boss_key,@Fire Temple/West Tower,$has_explosives"
+          "fire_boss_key,$has_hover_boots,$has_goron_tunic_strict,$can_use_hammer",
+          "fire_boss_key,@Fire Temple/Fire Temple Pillar Ledge,$has_goron_tunic_strict,$can_use_hammer"
         ],
         "hosted_item": "fire",
         "chest_unopened_img": "images/HC.png",
@@ -4665,7 +4671,8 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "$has_age|child,$can_play|storms"
+      "$has_age|child,$can_play|storm,[logic_lens]",
+      "$has_age|child,$can_play|storm,$can_use_lens"
     ],
     "sections": [
       {
