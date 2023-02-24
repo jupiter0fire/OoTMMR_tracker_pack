@@ -538,6 +538,14 @@ function goron_tunic()
   return 0, AccessibilityLevel.None
 end
 
+function has_goron_tunic()
+  return (has("logic_fewer_tunic_requirements") or has("redtunic")) and has_age("adult") == 1
+end  
+
+function has_goron_tunic_strict()
+  return has("redtunic") and has_age("adult") == 1
+end  
+
 function FTR_or_goron()
   if has("logic_fewer_tunic_requirements") then
     return 1, AccessibilityLevel.Normal
