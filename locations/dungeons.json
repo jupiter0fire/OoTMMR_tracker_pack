@@ -8,6 +8,43 @@
     ],
     "sections": [
       {
+        "name": "Deku Tree Slingshot Room",
+        "access_rules": [
+          "$has_shield"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Basement",
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Basement Back Room",
+        "access_rules": [
+          "@Deku Tree/Deku Tree Basement,$can_hit_triggers_distance_child"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Basement Ledge",
+        "access_rules": [
+          "@Deku Tree/Deku Tree Basement Back Room,$has_age|child"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "chest_unopened_img": "images/chest_brown_map.png",
@@ -17,7 +54,7 @@
         "name": "Slingshot Room Chests",
         "short_name": "Slingshot",
         "access_rules": [
-          "$has_shield"
+          "@Deku Tree/Deku Tree Slingshot Room"
         ],
         "item_count": 2
       },
@@ -46,10 +83,8 @@
         "name": "GS Basement Vines",
         "short_name": "Vines",
         "access_rules": [
-          "$has_ranged_weapon",
-          "dinsfire,magic",
-          "sticks,[logic_deku_basement_gs]",
-          "sword1,[logic_deku_basement_gs]"
+          "$has_ranged_weapon_child",
+          "$can_use_dins"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -72,8 +107,7 @@
         "name": "GS Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
-          "$can_hit_triggers_distance,$has_explosives_or_hammer,$can_collect_distance",
-          "[logic_deku_b1_skip],$has_explosives_or_hammer,$can_collect_distance"
+          "@Deku Tree/Deku Tree Basement Back Room,$has_explosives_bool,$can_collect_distance_child"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -86,8 +120,7 @@
       {
         "name": "Queen Gohma",
         "access_rules": [
-          "$can_hit_triggers_distance,$has_age|child,$has_shield",
-          "[logic_deku_b1_skip],$has_age|child,$has_shield"
+          "@Deku Tree/Deku Tree Basement Ledge,$has_shield"
         ],
         "hosted_item": "deku",
         "chest_unopened_img": "images/HC.png",

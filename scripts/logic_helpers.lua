@@ -123,6 +123,10 @@ function can_hit_triggers_distance()
   return can_use_bow() or can_use_slingshot()
 end  
 
+function can_hit_triggers_distance_child()
+  return can_use_slingshot()
+end  
+
 function has_explosives_or_hammer()
   return has_explosives() or can_use_hammer()
 end
@@ -133,6 +137,10 @@ end
 
 function can_collect_distance()
   return can_use_hookshot() or can_use_boomerang()
+end
+
+function can_collect_distance_child()
+  return can_use_boomerang()
 end
 
 function can_hookshot_scarecrow()
