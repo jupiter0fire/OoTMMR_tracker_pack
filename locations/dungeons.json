@@ -98,9 +98,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "deku_mq"
-        ],
         "size": 50,
         "x": 2420,
         "y": 880
@@ -347,9 +344,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "dodongo_mq"
-        ],
         "size": 50,
         "x": 1675,
         "y": 240
@@ -508,9 +502,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "jabu_mq"
-        ],
         "size": 50,
         "x": 2475,
         "y": 330
@@ -621,9 +612,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "ice_mq"
-        ],
         "size": 50,
         "x": 2505,
         "y": 275
@@ -642,8 +630,8 @@
         "access_rules": [
           "$can_hit_triggers_distance",
           "$can_play|time",
-          "forest_small_key:2,lift1,$can_hit_triggers_distance",
-          "forest_small_key:1,$has_hover_boots"
+          "forest_small_keys:2,lift1,$can_hit_triggers_distance",
+          "forest_small_keys:1,$has_hover_boots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -656,8 +644,8 @@
           "$can_play|time",
           "@Forest Temple/Forest Temple Garden East,$can_dive_big",
           "@Forest Temple/Forest Temple Garden East,$can_longshot",
-          "forest_small_key:2,lift1,$can_hit_triggers_distance",
-          "forest_small_key:1,$has_hover_boots"
+          "forest_small_keys:2,lift1,$can_hit_triggers_distance",
+          "forest_small_keys:1,$has_hover_boots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -667,8 +655,8 @@
       {
         "name": "Forest Temple Garden West Ledge",
         "access_rules": [
-          "forest_small_key:2,lift1,$can_hit_triggers_distance",
-          "forest_small_key:1,$has_hover_boots"
+          "forest_small_keys:2,lift1,$can_hit_triggers_distance",
+          "forest_small_keys:1,$has_hover_boots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -679,7 +667,7 @@
         "name": "Forest Temple Garden West",
         "access_rules": [
           "$can_play|time",
-          "@Forest Temple/Forest Temple Garden East,@Forest Temple/Forest Temple Garden East Ledge,$can_hookshot",
+          "@Forest Temple/Forest Temple Garden East,@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot",
           "@Forest Temple/Forest Temple Garden East,$can_dive_big",
           "@Forest Temple/Forest Temple Garden West Ledge"
         ],
@@ -701,9 +689,9 @@
       {
         "name": "Forest Temple Well",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden East,@Forest Temple/Forest Temple Garden East Ledge,$can_hookshot",
+          "@Forest Temple/Forest Temple Garden East,@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot",
           "@Forest Temple/Forest Temple Garden East,$can_dive_big",
-          "@Forest Temple/Forest Temple Garden West,@Forest Temple/Forest Temple Garden East Ledge,$can_hookshot",
+          "@Forest Temple/Forest Temple Garden West,@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot",
           "@Forest Temple/Forest Temple Garden West,$can_dive_big"
         ],
         "visibility_rules": [
@@ -714,7 +702,7 @@
       {
         "name": "Forest Temple Maze",
         "access_rules": [
-          "forest_small_key:1"
+          "forest_small_keys:1"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -724,7 +712,7 @@
       {
         "name": "Forest Temple Twisted 1 Normal",
         "access_rules": [
-          "@Forest Temple/Forest Temple Maze,forest_small_key:2,lift1",
+          "@Forest Temple/Forest Temple Maze,forest_small_keys:2,lift1",
           "@Forest Temple/Falling Room"
         ],
         "visibility_rules": [
@@ -735,7 +723,7 @@
       {
         "name": "Forest Temple Twisted 1 Alt",
         "access_rules": [
-          "@Forest Temple/Forest Temple Maze,forest_small_key:2,lift1,$can_hit_triggers_distance"
+          "@Forest Temple/Forest Temple Maze,forest_small_keys:2,lift1,$can_hit_triggers_distance"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -745,7 +733,7 @@
       {
         "name": "Forest Temple Poe 1",
         "access_rules": [
-          "@Forest Temple/Forest Temple Twisted 1 Normal,forest_small_key:3"
+          "@Forest Temple/Forest Temple Twisted 1 Normal,forest_small_keys:3"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -850,7 +838,7 @@
         "name": "Raised Island Courtyard Chest",
         "short_name": "Island",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden East,$can_hookshot"
+          "@Forest Temple/Forest Temple Garden East,$can_use_hookshot"
         ],
         "item_count": 1
       },
@@ -858,7 +846,7 @@
         "name": "GS Raised Island Courtyard",
         "short_name": "Island",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden East,$can_hookshot"
+          "@Forest Temple/Forest Temple Garden East,$can_use_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -880,7 +868,7 @@
         "name": "Well Chest",
         "short_name": "Well",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden East Ledge,$can_hookshot"
+          "@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -997,9 +985,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "forest_mq"
-        ],
         "size": 50,
         "x": 2145,
         "y": 595
@@ -1301,9 +1286,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "fire_mq"
-        ],
         "size": 50,
         "x": 1930,
         "y": 60
@@ -1623,9 +1605,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "water_mq"
-        ],
         "size": 50,
         "x": 1020,
         "y": 1370
@@ -1916,9 +1895,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "shadow_mq"
-        ],
         "size": 50,
         "x": 2145,
         "y": 345
@@ -2319,9 +2295,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "spirit_mq"
-        ],
         "size": 50,
         "x": 115,
         "y": 300
@@ -2507,9 +2480,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "botw_mq"
-        ],
         "size": 50,
         "x": 1870,
         "y": 385
@@ -2703,9 +2673,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "gc_mq"
-        ],
         "size": 50,
         "x": 1435,
         "y": 205
@@ -2977,9 +2944,6 @@
     "map_locations": [
       {
         "map": "oot",
-        "force_invisibility_rules": [
-          "gtg_mq"
-        ],
         "size": 50,
         "x": 470,
         "y": 445
