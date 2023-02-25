@@ -2785,8 +2785,8 @@
       {
         "name": "Gerudo Training Grounds Water",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_hookshot,$has_hover_boots",
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_hookshot,$can_play|time"         
+          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_use_hookshot,$has_hover_boots",
+          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_use_hookshot,$can_play|time"         
         ],
         "visibility_rules": [
           "hidden_region"
