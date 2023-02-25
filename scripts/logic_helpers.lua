@@ -147,6 +147,10 @@ function can_hookshot_scarecrow()
   return can_use_hookshot() and has("scarecrow")
 end  
 
+function has_fire_arrows()
+  return has_age("adult") == 1 and has("bow") and has("firearrow") and has("magic")
+end  
+
 function spawn_access(region, age)
   region = region or ""
   age = age or ""
@@ -308,11 +312,7 @@ function can_LA()
 end
 
 function has_fire()
-  if has_age("adult") == 1 and has("magic") and has("bow") and has("firearrow") or has("dinsfire") and has("magic") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end
+  return has("magic") and ((has_age("adult") and has("bow") and has("firearrow")) or has("dins"))
 end
 
 function can_leave_forest()
@@ -390,7 +390,7 @@ function _quicksand()
 end
 
 function _wasteland_forward()
-  if has("logic_lens_wasteland") or has("lens") and has("magic") then
+  if has("logic_lens_oot") or has("lens") and has("magic") then
     return 1, AccessibilityLevel.Normal
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -564,6 +564,14 @@ end
 
 function has_goron_tunic_strict()
   return has("redtunic") and has_age("adult") == 1
+end  
+
+function has_lens_strict()
+  return has("magic") and has("lens")
+end  
+
+function has_lens()
+  return has_lens_strict() or has("logic_lens_oot")
 end  
 
 function FTR_or_goron()
