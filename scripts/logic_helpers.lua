@@ -566,6 +566,14 @@ function has_goron_tunic_strict()
   return has("redtunic") and has_age("adult") == 1
 end  
 
+function has_zora_tunic()
+  return (has("logic_fewer_tunic_requirements") or has("bluetunic")) and has_age("adult") == 1
+end  
+
+function has_zora_tunic_strict()
+  return has("bluetunic") and has_age("adult") == 1
+end  
+
 function has_lens_strict()
   return has("magic") and has("lens")
 end  
