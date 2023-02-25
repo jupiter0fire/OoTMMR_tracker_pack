@@ -107,6 +107,14 @@ function can_longshot()
   return has_age("adult") == 1 and has("longshot")
 end  
 
+function has_iron_boots()
+  return has("ironboots")
+end  
+
+function can_dive_big()
+  return has("goldscale") or has_iron_boots()
+end  
+
 function has_hover_boots()
   return has_age("adult") == 1 and has("hoverboots")
 end
@@ -118,6 +126,10 @@ end
 function has_explosives_or_hammer()
   return has_explosives() or can_use_hammer()
 end
+
+function has_weapon()
+  return (has_age("child") == 1 and has("sowrd1")) or has_age("adult") == 1
+end  
 
 function can_collect_distance()
   return can_use_hookshot() or can_use_boomerang()
