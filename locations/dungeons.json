@@ -2338,16 +2338,14 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "$has_age|child,$can_play|storm,[logic_lens_oot]",
-      "$has_age|child,$can_play|storm,$can_use_lens"
+      "$has_age|child,$can_play|storm,$has_lens"
     ],
     "sections": [
       {
         "name": "Front Left Fake Wall Chest",
         "short_name": "Front Hidden",
         "access_rules": [
-          "[logic_lens_oot]",
-          "$can_use_lens"
+          "$has_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2356,8 +2354,7 @@
         "name": "Right Bottom Fake Wall Chest",
         "short_name": "Right Hidden",
         "access_rules": [
-          "[logic_lens_oot]",
-          "$can_use_lens"
+          "$has_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2366,8 +2363,7 @@
         "name": "Compass Chest",
         "short_name": "Center Large",
         "access_rules": [
-          "[logic_lens_oot]",
-          "$can_use_lens"
+          "$has_lens"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -2376,8 +2372,7 @@
         "name": "Center Skulltula Chest",
         "short_name": "Center Small",
         "access_rules": [
-          "[logic_lens_oot]",
-          "$can_use_lens"
+          "$has_lens"
         ],
         "item_count": 1
       },
@@ -2385,8 +2380,7 @@
         "name": "GS West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_oot]",
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_use_lens"
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,$has_lens"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2400,8 +2394,7 @@
         "name": "GS East Inner Room",
         "short_name": "East Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_oot]",
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_use_lens"
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,$has_lens"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2414,8 +2407,7 @@
       {
         "name": "Fire Keese Chest",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],[logic_lens_oot]",
-          "botw_small_keys:1,[botw_small_keys:3],$can_use_lens"
+          "botw_small_keys:1,[botw_small_keys:3],$has_lens"
         ],
         "item_count": 1
       },
@@ -2460,8 +2452,7 @@
         "name": "Back Left Bombable Chest",
         "short_name": "Back Bombable",
         "access_rules": [
-          "$has_explosives_bool,[logic_lens_oot]",
-          "$has_explosives_bool,$can_use_lens"
+          "$has_explosives_bool,$has_lens"
         ],
         "item_count": 1
       },
@@ -2504,8 +2495,7 @@
       {
         "name": "Invisible Chest",
         "access_rules": [
-          "$can_play|lullaby,[logic_lens_oot]",
-          "$can_play|lullaby,$can_use_lens"
+          "$can_play|lullaby,$has_lens"
         ],
         "item_count": 1
       }
