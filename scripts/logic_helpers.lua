@@ -103,7 +103,7 @@ function can_use_dins()
   return has("magic") and has("dinsfire")
 end 
 
-function can_longshot()
+function can_use_longshot()
   return has_age("adult") == 1 and has("longshot")
 end  
 

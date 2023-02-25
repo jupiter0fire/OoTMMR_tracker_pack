@@ -181,7 +181,7 @@
       {
         "name": "Far Bridge",
         "access_rules": [
-          "@Dodongos Cavern/Climb,$can_longshot",
+          "@Dodongos Cavern/Climb,$can_use_longshot",
           "@Dodongos Cavern/Climb,$has_hover_boots",
           "@Dodongos Cavern/Climb,$can_hit_triggers_distance"
         ],
@@ -676,7 +676,7 @@
         "access_rules": [
           "$can_play|time",
           "@Forest Temple/Forest Temple Garden East,$can_dive_big",
-          "@Forest Temple/Forest Temple Garden East,$can_longshot",
+          "@Forest Temple/Forest Temple Garden East,$can_use_longshot",
           "forest_small_keys:2,lift1,$can_hit_triggers_distance",
           "forest_small_keys:1,$has_hover_boots"
         ],
@@ -910,7 +910,7 @@
         "name": "GS Level Island Courtyard",
         "short_name": "Outdoor West",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden West,$can_longshot",
+          "@Forest Temple/Forest Temple Garden West,$can_use_longshot",
           "@Forest Temple/Forest Temple Garden West Ledge,$can_collect_distance"
         ],
         "visibility_rules": [
