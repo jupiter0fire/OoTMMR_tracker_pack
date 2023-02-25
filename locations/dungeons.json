@@ -1657,8 +1657,8 @@
       {
         "name": "Beginning",
         "access_rules": [
-          "[logic_lens_shadow],$has_age|adult,hoverboots",
-          "[logic_lens_shadow],$has_age|adult,hookshot",
+          "[logic_lens_oot],$has_age|adult,hoverboots",
+          "[logic_lens_oot],$has_age|adult,hookshot",
           "$can_use_lens,$has_age|adult,hoverboots",
           "$can_use_lens,$has_age|adult,hookshot"
         ],
@@ -1690,7 +1690,7 @@
       {
         "name": "Wind Tunnel",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:3,hookshot,[logic_lens_shadow_back]",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:3,hookshot,[logic_lens_oot]",
           "@Shadow Temple/Huge Pit,shadow_small_keys:3,hookshot,$can_use_lens"
         ],
         "visibility_rules": [
@@ -1804,7 +1804,7 @@
         "name": "Invisible Spikes Chest",
         "short_name": "Invisible Spikes",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,[logic_lens_shadow_back]",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,[logic_lens_oot]",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,$can_use_lens"
         ],
         "item_count": 1
@@ -1813,9 +1813,9 @@
         "name": "Freestanding Key",
         "short_name": "Skull Pot",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back],bombs",
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back],lift1",
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back],[logic_shadow_freestanding_key],$has_bombchus",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_oot],bombs",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_oot],lift1",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_oot],[logic_shadow_freestanding_key],$has_bombchus",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,bombs",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,lift1",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens,[logic_shadow_freestanding_key],$has_bombchus",
@@ -1830,7 +1830,7 @@
         "name": "GS Single Giant Pot",
         "short_name": "Single Skull",
         "access_rules": [
-          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_shadow_back]",
+          "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,[logic_lens_oot]",
           "@Shadow Temple/Huge Pit,shadow_small_keys:2,hookshot,$can_use_lens"
         ],
         "visibility_rules": [
@@ -2281,7 +2281,7 @@
         "name": "Hallway Invisible Chests",
         "short_name": "Invisible Hallway",
         "access_rules": [
-          "@Spirit Temple/Beyond Central Locked Door,$has_explosives,[logic_lens_spirit]",
+          "@Spirit Temple/Beyond Central Locked Door,$has_explosives,[logic_lens_oot]",
           "@Spirit Temple/Beyond Central Locked Door,$has_explosives,$can_use_lens"
         ],
         "item_count": 2
@@ -2338,7 +2338,7 @@
     "name": "Bottom of the Well",
     "parent": "Kakariko Village",
     "access_rules": [
-      "$has_age|child,$can_play|storm,[logic_lens]",
+      "$has_age|child,$can_play|storm,[logic_lens_oot]",
       "$has_age|child,$can_play|storm,$can_use_lens"
     ],
     "sections": [
@@ -2346,7 +2346,7 @@
         "name": "Front Left Fake Wall Chest",
         "short_name": "Front Hidden",
         "access_rules": [
-          "[logic_lens]",
+          "[logic_lens_oot]",
           "$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
@@ -2356,7 +2356,7 @@
         "name": "Right Bottom Fake Wall Chest",
         "short_name": "Right Hidden",
         "access_rules": [
-          "[logic_lens]",
+          "[logic_lens_oot]",
           "$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
@@ -2366,7 +2366,7 @@
         "name": "Compass Chest",
         "short_name": "Center Large",
         "access_rules": [
-          "[logic_lens]",
+          "[logic_lens_oot]",
           "$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
@@ -2376,7 +2376,7 @@
         "name": "Center Skulltula Chest",
         "short_name": "Center Small",
         "access_rules": [
-          "[logic_lens]",
+          "[logic_lens_oot]",
           "$can_use_lens"
         ],
         "item_count": 1
@@ -2385,7 +2385,7 @@
         "name": "GS West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens]",
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_oot]",
           "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_use_lens"
         ],
         "visibility_rules": [
@@ -2400,7 +2400,7 @@
         "name": "GS East Inner Room",
         "short_name": "East Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens]",
+          "botw_small_keys:1,[botw_small_keys:3],boomerang,[logic_lens_oot]",
           "botw_small_keys:1,[botw_small_keys:3],boomerang,$can_use_lens"
         ],
         "visibility_rules": [
@@ -2414,7 +2414,7 @@
       {
         "name": "Fire Keese Chest",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],[logic_lens]",
+          "botw_small_keys:1,[botw_small_keys:3],[logic_lens_oot]",
           "botw_small_keys:1,[botw_small_keys:3],$can_use_lens"
         ],
         "item_count": 1
@@ -2460,7 +2460,7 @@
         "name": "Back Left Bombable Chest",
         "short_name": "Back Bombable",
         "access_rules": [
-          "$has_explosives_bool,[logic_lens]",
+          "$has_explosives_bool,[logic_lens_oot]",
           "$has_explosives_bool,$can_use_lens"
         ],
         "item_count": 1
@@ -2504,7 +2504,7 @@
       {
         "name": "Invisible Chest",
         "access_rules": [
-          "$can_play|lullaby,[logic_lens]",
+          "$can_play|lullaby,[logic_lens_oot]",
           "$can_play|lullaby,$can_use_lens"
         ],
         "item_count": 1
@@ -2523,7 +2523,7 @@
     "name": "Ganons Castle",
     "parent": "Ganons Castle Grounds",
     "access_rules": [
-      "gc_reg,$has_age|adult,$can_spawn_rainbow_bridge"
+      "$has_age|adult,$can_spawn_rainbow_bridge"
     ],
     "sections": [
       {
@@ -2562,10 +2562,10 @@
         "name": "Shadow Trial Front Chest",
         "short_name": "Shadow Trial 1",
         "access_rules": [
-          "hookshot",
-          "hoverboots",
-          "ocarina,time",
-          "magic,bow,firearrow"
+          "$can_use_hookshot",
+          "$has_hover_boots",
+          "$can_play|time",
+          "$has_fire_arrows"
         ],
         "item_count": 1
       },
@@ -2573,10 +2573,10 @@
         "name": "Shadow Trial Golden Gauntlets Chest",
         "short_name": "Shadow Trial 2",
         "access_rules": [
-          "longshot,hoverboots",
-          "longshot,magic,dinsfire",
-          "magic,bow,firearrow",
-          "{$hintable}"
+          "$can_use_longshot,$has_hover_boots",
+          "$can_use_longshot,$has_fire",
+          "$has_fire_arrows,$has_fire",
+          "$has_fire_arrows,$has_hover_boots"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2585,10 +2585,10 @@
         "name": "Shadow Trial Clear",
         "short_name": "Shadow Trial",
         "access_rules": [
-          "$can_LA,hammer,firearrow,[logic_lens_castle]",
+          "$can_LA,hammer,firearrow,[logic_lens_oot]",
           "$can_LA,hammer,firearrow,$can_use_lens",
           "$can_LA,hammer,longshot,hoverboots",
-          "$can_LA,hammer,longshot,dinsfire,[logic_lens_castle]",
+          "$can_LA,hammer,longshot,dinsfire,[logic_lens_oot]",
           "$can_LA,hammer,longshot,dinsfire,$can_use_lens"
         ],
         "visibility_rules": [
@@ -2619,8 +2619,7 @@
         "name": "Light Trial Invisible Enemies Chest",
         "short_name": "Light Trial Enemies",
         "access_rules": [
-          "lift3,[logic_lens_castle]",
-          "lift3,$can_use_lens"
+          "lift3,$has_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2629,7 +2628,7 @@
         "name": "Light Trial Lullaby Chest",
         "short_name": "Light Trial Lullaby",
         "access_rules": [
-          "lift3,gc_small_keys:1,ocarina,lullaby"
+          "lift3,gc_small_keys:1,$can_play|lullaby"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2638,7 +2637,7 @@
         "name": "Light Trial Clear",
         "short_name": "Light Trial",
         "access_rules": [
-          "lift3,$can_LA,hookshot,gc_small_keys:2,[logic_lens_castle]",
+          "lift3,$can_LA,hookshot,gc_small_keys:2,[logic_lens_oot]",
           "lift3,$can_LA,hookshot,gc_small_keys:2,$can_use_lens"
         ],
         "visibility_rules": [
@@ -2650,8 +2649,7 @@
         "name": "Spirit Trial Crystal Switch Chest",
         "short_name": "Spirit Trial 1",
         "access_rules": [
-          "[logic_spirit_trial_hookshot]",
-          "hookshot"
+          "$can_use_hookshot"
         ],
         "item_count": 1
       },
@@ -2659,10 +2657,7 @@
         "name": "Spirit Trial Invisible Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "$has_bombchus,[logic_lens_castle],[logic_spirit_trial_hookshot]",
-          "$has_bombchus,[logic_lens_castle],hookshot",
-          "$has_bombchus,$can_use_lens,[logic_spirit_trial_hookshot]",
-          "$has_bombchus,$can_use_lens,hookshot"
+          "$can_use_hookshot,$has_explosives_bool,$has_lens"
         ],
         "item_count": 1
       },
@@ -2681,7 +2676,7 @@
       {
         "name": "Deku Scrubs",
         "access_rules": [
-          "[logic_lens_castle]",
+          "[logic_lens_oot]",
           "$can_use_lens"
         ],
         "visibility_rules": [
@@ -2696,7 +2691,7 @@
         "name": "Ganons Tower Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "$trials_barrier_dispelled"
+          "$trials_barrier_dispelled,$has_weapon"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -2750,10 +2745,10 @@
       {
         "name": "Eye Statue Upper",
         "access_rules": [
-          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],hookshot",
-          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[logic_gtg_fake_wall],hoverboots",
-          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield2",
-          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_gtg],[hookshot],bombs,shield3",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_oot],hookshot",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_oot],[logic_gtg_fake_wall],hoverboots",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_oot],[hookshot],bombs,shield2",
+          "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,[logic_lens_oot],[hookshot],bombs,shield3",
           "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,$can_use_lens,hookshot",
           "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,$can_use_lens,[logic_gtg_fake_wall],hoverboots",
           "@Gerudo Training Ground/Heavy Block Room,$has_age|adult,$can_use_lens,[hookshot],bombs,shield2",
@@ -2933,7 +2928,7 @@
         "name": "Hidden Ceiling Chest",
         "short_name": "Hidden Ceiling",
         "access_rules": [
-          "@Gerudo Training Ground/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],[logic_lens_gtg]",
+          "@Gerudo Training Ground/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],[logic_lens_oot]",
           "@Gerudo Training Ground/Central Maze,gtg_small_keys:1,[gtg_small_keys:3],$can_use_lens"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
