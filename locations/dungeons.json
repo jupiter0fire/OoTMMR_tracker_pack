@@ -545,17 +545,14 @@
     "name": "Ice Cavern",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "ice_reg,$adult_fountain,$has_bottle"
+      "$adult_fountain,$has_bottle"
     ],
     "sections": [
       {
         "name": "GS Spinning Scythe Room",
         "short_name": "Spinning Scythe",
         "access_rules": [
-          "hookshot",
-          "{bow}",
-          "{dinsfire,magic}",
-          "{$has_explosives}"
+          "$can_use_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -588,10 +585,7 @@
         "name": "GS Heart Piece Room",
         "short_name": "Compass",
         "access_rules": [
-          "hookshot",
-          "{bow}",
-          "{dinsfire,magic}",
-          "{$has_explosives}"
+          "$can_use_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -605,11 +599,7 @@
         "name": "GS Push Block Room",
         "short_name": "Push Block",
         "access_rules": [
-          "hookshot",
-          "[logic_ice_block_gs],hoverboots",
-          "{bow}",
-          "{dinsfire,magic}",
-          "{$has_explosives}"
+          "$can_use_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -622,20 +612,12 @@
       {
         "name": "Iron Boots Chest",
         "short_name": "Iron Boots",
-        "access_rules": [
-          "$has_bottle",
-          "{$hintable}"
-        ],
         "capture_item": true,
         "item_count": 1
       },
       {
         "name": "Sheik in Ice Cavern",
         "short_name": "Song",
-        "access_rules": [
-          "$has_bottle",
-          "{$hintable}"
-        ],
         "capture_item": true,
         "chest_unopened_img": "images/grey_note.png",
         "chest_opened_img": "images/grey_note_check.png",
