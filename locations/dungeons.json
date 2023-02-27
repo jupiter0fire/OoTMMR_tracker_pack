@@ -387,36 +387,14 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain",
     "access_rules": [
-      "jabu_reg,$child_fountain,bottle"
+      "$child_fountain,bottle"
     ],
     "sections": [
       {
         "name": "Main",
         "access_rules": [
-          "$has_explosives",
-          "sling",
-          "boomerang"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Depths",
-        "access_rules": [
-          "@Jabu Jabus Belly/Main,boomerang"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Boss Area",
-        "access_rules": [
-          "@Jabu Jabus Belly/Depths,sticks",
-          "@Jabu Jabus Belly/Depths,sword1"
+          "$has_explosives_bool",
+          "$has_ranged_weapon"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -427,7 +405,8 @@
         "name": "GS Water Switch Room",
         "short_name": "Water Switch",
         "access_rules": [
-          "@Jabu Jabus Belly/Main"
+          "@Jabu Jabus Belly/Main,$has_ranged_weapon",
+          "@Jabu Jabus Belly/Main,$has_explosives_bool"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -452,8 +431,7 @@
         "name": "Boomerang Chest",
         "short_name": "Boomerang",
         "access_rules": [
-          "@Jabu Jabus Belly/Main",
-          "{$hintable}"
+          "@Jabu Jabus Belly/Main"
         ],
         "capture_item": true,
         "item_count": 1
@@ -462,7 +440,7 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Jabu Jabus Belly/Depths"
+          "@Jabu Jabus Belly/Main,$can_use_boomerang"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -471,7 +449,7 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "@Jabu Jabus Belly/Depths"
+          "@Jabu Jabus Belly/Main,$can_use_boomerang"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -480,9 +458,7 @@
         "name": "GS Lobby Basement Lower",
         "short_name": "Basement 1",
         "access_rules": [
-          "@Jabu Jabus Belly/Main,boomerang",
-          "{@Jabu Jabus Belly/Main,sling}",
-          "{@Jabu Jabus Belly/Main,$has_bombchus}"
+          "@Jabu Jabus Belly/Main,$can_use_boomerang"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -496,9 +472,7 @@
         "name": "GS Lobby Basement Upper",
         "short_name": "Basement 2",
         "access_rules": [
-          "@Jabu Jabus Belly/Main,boomerang",
-          "{@Jabu Jabus Belly/Main,sling}",
-          "{@Jabu Jabus Belly/Main,$has_bombchus}"
+          "@Jabu Jabus Belly/Main,$can_use_boomerang"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -512,7 +486,7 @@
         "name": "GS Near Boss",
         "short_name": "Near Boss",
         "access_rules": [
-          "@Jabu Jabus Belly/Boss Area"
+          "@Jabu Jabus Belly/Main,$can_use_boomerang"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -524,7 +498,7 @@
       {
         "name": "Barinade",
         "access_rules": [
-          "@Jabu Jabus Belly/Boss Area,boomerang"
+          "@Jabu Jabus Belly/Main,$can_use_boomerang"
         ],
         "hosted_item": "jabu",
         "chest_unopened_img": "images/HC.png",
