@@ -147,9 +147,30 @@ function can_hookshot_scarecrow()
   return can_use_hookshot() and has("scarecrow")
 end  
 
+function can_longshot_scarecrow()
+  return can_use_longshot() and has("scarecrow")
+end  
+
+
 function has_fire_arrows()
   return has_age("adult") == 1 and has("bow") and has("firearrow") and has("magic")
 end  
+
+function spirit_child_door()
+  return has_age("child") and has("spirit_small_key",5)
+end
+
+function spirit_adult_door()
+  return has_age("adult") and adult_colossus() and has("spirit_small_key",3) and has("lift2")
+end  
+
+function has_fire_spirit()
+  return has("magic") and ((has("bow") and has("firearrow")) or has("dins")) and (has_explosives_bool() or has("spirit_small_key",2))
+end  
+
+function can_collect_ageless()
+  return can_use_hookshot() and can_use_boomerang()
+end    
 
 function spawn_access(region, age)
   region = region or ""
