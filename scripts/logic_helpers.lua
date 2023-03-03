@@ -157,15 +157,15 @@ function has_fire_arrows()
 end  
 
 function spirit_child_door()
-  return has_age("child") and has("spirit_small_key",5)
+  return has_age("child") and has("spirit_small_keys",5)
 end
 
 function spirit_adult_door()
-  return has_age("adult") and adult_colossus() and has("spirit_small_key",3) and has("lift2")
+  return has_age("adult") and adult_colossus() and has("spirit_small_keys",3) and has("lift2")
 end  
 
 function has_fire_spirit()
-  return has("magic") and ((has("bow") and has("firearrow")) or has("dins")) and (has_explosives_bool() or has("spirit_small_key",2))
+  return has("magic") and ((has("bow") and has("firearrow")) or has("dins")) and (has_explosives_bool() or has("spirit_small_keys",2))
 end  
 
 function can_collect_ageless()

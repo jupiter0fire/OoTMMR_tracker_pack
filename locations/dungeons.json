@@ -2079,7 +2079,7 @@
         "name": "GS Hall After Sun Block Room",
         "short_name": "Before Knuckle",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Upper,$spirit_child_door,$can_boomerang",
+          "@Spirit Temple/Spirit Temple Child Upper,$spirit_child_door,$can_use_boomerang",
           "@Spirit Temple/Spirit Temple Child Upper,$spirit_adult_door,$can_use_hookshot",
           "@Spirit Temple/Spirit Temple Child Upper,$can_collect_ageless,spirit_small_keys:2",
           "@Spirit Temple/Spirit Temple Child Upper,$can_collect_ageless,$has_explosives_bool"
