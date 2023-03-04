@@ -172,6 +172,14 @@ function can_collect_ageless()
   return can_use_hookshot() and can_use_boomerang()
 end    
 
+function water_level_low()
+  return has("ironboots") and can_play("lullaby")
+end  
+
+function water_level_middle()
+  return can_use_hookshot() and can_play("lullaby")
+end  
+
 function spawn_access(region, age)
   region = region or ""
   age = age or ""

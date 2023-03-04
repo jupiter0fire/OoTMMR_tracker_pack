@@ -1285,32 +1285,22 @@
     "name": "Water Temple",
     "parent": "Lake Hylia",
     "access_rules": [
-      "water_reg,$has_age|adult,hookshot,ironboots",
-      "water_reg,$has_age|adult,hookshot,longshot,scale2",
-      "water_reg,$has_age|adult,hookshot,[logic_water_hookshot_entry],scale2"
+      "$has_iron_boots,$has_tunic_zora,$can_use_hookshot"
     ],
     "sections": [
       {
-        "name": "Lobby",
+        "name": "Water Temple Main",
         "visibility_rules": [
           "hidden_region"
         ],
         "item_count": 1
       },
       {
-        "name": "Highest Water Level",
+        "name": "Water Temple Elevator",
         "access_rules": [
-          "@Water Temple/Lobby,$has_age|adult,hookshot"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Falling Platform Room",
-        "access_rules": [
-          "@Water Temple/Highest Water Level,water_small_keys:1,[water_small_keys:4]"
+          "@Water Temple/Water Temple Main,water_small_keys:5",
+          "@Water Temple/Water Temple Main,$can_use_din",
+          "@Water Temple/Water Temple Main,$can_use_bow"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1318,9 +1308,11 @@
         "item_count": 1
       },
       {
-        "name": "Dark Link Region",
+        "name": "Water Temple Main Ledge",
         "access_rules": [
-          "@Water Temple/Falling Platform Room,water_small_keys:2,[water_small_keys:5],hookshot"
+          "@Water Temple/Water Temple Main,$has_hover_boots",
+          "@Water Temple/Water Temple Elevator,$has_ranged_weapon_adult",
+          "@Water Temple/Water Temple Elevator,$has_explosives_bool"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1328,10 +1320,9 @@
         "item_count": 1
       },
       {
-        "name": "Dive",
+        "name": "Water Temple Ruto Room",
         "access_rules": [
-          "@Water Temple/Lobby,$FTR_or_zora,ironboots",
-          "@Water Temple/Lobby,$FTR_or_zora,[logic_water_temple_torch_longshot],longshot"
+          "@Water Temple/Water Temple Main,$has_iron_boots"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1339,11 +1330,10 @@
         "item_count": 1
       },
       {
-        "name": "Middle Water Level",
+        "name": "Water Temple Shell Room",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,bow",
-          "@Water Temple/Dive,ocarina,lullaby,dinsfire,magic",
-          "@Water Temple/Dive,ocarina,lullaby,water_small_keys:1,[water_small_keys:5],hookshot"
+          "@Water Temple/Water Temple Ruto Room,$water_level_low,$can_use_bow",
+          "@Water Temple/Water Temple Ruto Room,$water_level_low,$has_fire"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1351,13 +1341,11 @@
         "item_count": 1
       },
       {
-        "name": "Cracked Wall",
+        "name": "Water Temple Center",
         "access_rules": [
-          "@Water Temple/Middle Water Level",
-          "[@Water Temple/Middle Water Level],@Water Temple/Dive,$has_bombchus,ironboots,hookshot",
-          "@Water Temple/Dive,ocarina,lullaby,hookshot,[logic_water_cracked_wall_nothing]",
-          "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_nothing]",
-          "@Water Temple/Dive,ocarina,lullaby,hoverboots,[logic_water_cracked_wall_hovers]"
+          "@Water Temple/Water Temple Main,$water_level_low,water_small_keys:5",
+          "@Water Temple/Water Temple Main,$water_level_low,$can_use_din",
+          "@Water Temple/Water Temple Main,$water_level_low,$can_use_bow"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1365,12 +1353,123 @@
         "item_count": 1
       },
       {
-        "name": "North Basement",
+        "name": "Water Temple Under Center",
         "access_rules": [
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ironboots",
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],longshot,ocarina,lullaby",
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[logic_water_boss_key_region],hoverboots,ironboots",
-          "@Water Temple/Dive,water_small_keys:1,[water_small_keys:4],[logic_water_boss_key_region],hoverboots,ocarina,lullaby"
+          "@Water Temple/Water Temple Center,$water_level_middle,$has_iron_boots,$has_zora_tunic_strict"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Compass Room",
+        "access_rules": [
+          "@Water Temple/Water Temple Main,$can_play|lullaby,$can_use_hookshot",
+          "@Water Temple/Water Temple Main,$has_iron_boots,$can_use_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Corridor",
+        "access_rules": [
+          "@Water Temple/Water Temple Main,$can_use_longshot,$can_use_bow,$water_level_low",
+          "@Water Temple/Water Temple Main,$has_hover_boots,$can_use_bow,$water_level_low"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Waterfalls",
+        "access_rules": [
+          "@Water Temple/Water Temple Main,water_small_keys:4,$can_use_longshot,$has_iron_boots"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Waterfalls Ledge",
+        "access_rules": [
+          "@Water Temple/Water Temple Waterfalls,$has_hover_boots",
+          "@Water Temple/Water Temple Waterfalls,$has_explosives_bool,lift1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Large Pit",
+        "access_rules": [
+          "@Water Temple/Water Temple Main,water_small_keys:4"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Before Dark Link",
+        "access_rules": [
+          "@Water Temple/Water Temple Large Pit,water_small_keys:5,$can_use_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Longshot Room",
+        "access_rules": [
+          "@Water Temple/Water Temple Before Dark Link,$has_weapon"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple River",
+        "access_rules": [
+          "@Water Temple/Water Temple Longshot Room,$can_play|time"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Dragon Room",
+        "access_rules": [
+          "@Water Temple/Water Temple Main,$water_level_low,lift1",
+          "@Water Temple/Water Temple River,$can_use_bow"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Cage Room",
+        "access_rules": [
+          "@Water Temple/Water Temple Main,$water_level_low,$has_explosives_bool,$has_iron_boots"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Temple Antichamber",
+        "access_rules": [
+          "@Water Temple/Water Temple Main,$can_use_hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1381,7 +1480,7 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Water Temple/Dive,@Water Temple/Highest Water Level"
+          "@Water Temple/Water Level Ruto Room"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -1390,7 +1489,7 @@
         "name": "Cracked Wall Chest",
         "short_name": "Cracked Wall",
         "access_rules": [
-          "@Water Temple/Cracked Wall,$has_explosives"
+          "@Water Temple/Water Temple Ruto Room,$has_explosives_bool,$water_level_middle"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1399,8 +1498,7 @@
         "name": "Torches Chest",
         "short_name": "Torches",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,bow",
-          "@Water Temple/Dive,ocarina,lullaby,dinsfire,magic"
+          "@Water Temple/Water Temple Shell Room"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1409,11 +1507,7 @@
         "name": "GS Behind Gate",
         "short_name": "South Basement",
         "access_rules": [
-          "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,ironboots",
-          "@Water Temple/Dive,hookshot,$has_explosives,ocarina,lullaby,scale",
-          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,ironboots",
-          "@Water Temple/Dive,hoverboots,$has_explosives,ocarina,lullaby,scale",
-          "{$hintable}"
+          "@Water Temple/Water Temple Cage Room,$can_use_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1427,8 +1521,7 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "@Water Temple/Dive,hookshot,ironboots",
-          "@Water Temple/Dive,hookshot,ocarina,lullaby"
+          "@Water Temple/Water Temple Compass Room,$can_use_hookshot"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -1437,9 +1530,7 @@
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,[logic_water_central_bow]",
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,hoverboots",
-          "@Water Temple/Dive,lift1,ocarina,lullaby,bow,longshot"
+          "@Water Temple/Water Temple Corridor"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1448,15 +1539,7 @@
         "name": "GS Central Pillar",
         "short_name": "Central Pillar",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,longshot,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Dive,ocarina,lullaby,longshot,bow",
-          "@Water Temple/Dive,ocarina,lullaby,longshot,dinsfire,magic",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,bow",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_fw],hookshot,faroreswind,magic,dinsfire",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,bow",
-          "@Water Temple/Dive,ocarina,lullaby,[logic_water_central_gs_irons],hookshot,ironboots,dinsfire,magic",
-          "{@Water Temple/Middle Water Level,bow}"
+          "@Water Temple/Water Temple Center,$water_level_middle,$can_use_longshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1470,10 +1553,7 @@
         "name": "Central Pillar Chest",
         "short_name": "Central Pillar",
         "access_rules": [
-          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,water_small_keys:1,[water_small_keys:5]",
-          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,bow",
-          "@Water Temple/Middle Water Level,ironboots,[$zora_tunic],hookshot,dinsfire,magic",
-          "{$hintable}"
+          "@Water Temple/Water Temple Under Center,$can_use_hookshot"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
@@ -1483,9 +1563,7 @@
         "name": "GS Falling Platform Room",
         "short_name": "Platform Room",
         "access_rules": [
-          "@Water Temple/Falling Platform Room,longshot",
-          "@Water Temple/Falling Platform Room,[logic_water_falling_platform_gs_hookshot],hookshot",
-          "{@Water Temple/Falling Platform Room,bow}"
+          "@Water Temple/Water Temple Large Pit,$can_use_longshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1499,7 +1577,7 @@
         "name": "Longshot Chest",
         "short_name": "Longshot",
         "access_rules": [
-          "@Water Temple/Dark Link Region"
+          "@Water Temple/Water Temple Longshot Room"
         ],
         "item_count": 1
       },
@@ -1507,11 +1585,7 @@
         "name": "GS River",
         "short_name": "River",
         "access_rules": [
-          "@Water Temple/Dark Link Region,ocarina,time,ironboots,$FTR_or_zora",
-          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,bow",
-          "@Water Temple/Dark Link Region,ocarina,time,[logic_water_river_gs],longshot,$has_bombchus",
-          "{@Water Temple/Dark Link Region,ocarina,time,bow}",
-          "{@Water Temple/Dark Link Region,ocarina,time,$has_bombchus}"
+          "@Water Temple/Water Temple River,$can_use_longshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1525,7 +1599,7 @@
         "name": "River Chest",
         "short_name": "River",
         "access_rules": [
-          "@Water Temple/Dark Link Region,ocarina,time,bow",
+          "@Water Temple/Water Temple River,$can_use_bow",
           "{$hintable}"
         ],
         "capture_item": true,
@@ -1536,16 +1610,7 @@
         "name": "Dragon Chest",
         "short_name": "Dragon",
         "access_rules": [
-          "@Water Temple/Dive,ocarina,lullaby,lift1,ironboots,hookshot",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,scale",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],$has_bombchus,ironboots",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],bow,scale",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],bow,ironboots",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,scale",
-          "@Water Temple/Dive,ocarina,lullaby,lift1,[logic_water_dragon_adult],hookshot,ironboots",
-          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,ironboots",
-          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,[logic_water_dragon_jump_dive]",
-          "@Water Temple/Dark Link Region,$FTR_or_zora,ocarina,time,bow,[logic_water_dragon_adult]"
+          "@Water Temple/Water Temple Dragon Room,$can_use_hookshot,$has_iron_boots"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1554,7 +1619,7 @@
         "name": "GS Near Boss Key Chest",
         "short_name": "Near Boss Key",
         "access_rules": [
-          "@Water Temple/North Basement"
+          "@Water Temple/Water Temple Waterfall Ledge,$can_use_hookshot"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1567,13 +1632,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,[logic_water_north_basement_ledge_jump]",
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,$has_explosives,lift1",
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],ironboots,hoverboots",
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[logic_water_bk_jump_dive],[logic_water_north_basement_ledge_jump]",
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[logic_water_bk_jump_dive],$has_explosives,lift1",
-          "@Water Temple/North Basement,water_small_keys:2,[water_small_keys:5],[logic_water_bk_jump_dive],hoverboots",
-          "{$hintable}"
+          "@Water Temple/Water Temple Waterfall Ledge,water_small_keys:5"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
@@ -1583,7 +1642,7 @@
       {
         "name": "Morpha",
         "access_rules": [
-          "@Water Temple/Highest Water Level,water_boss_key,longshot"
+          "@Water Temple/Water Temple Antichamber,water_boss_key,$can_use_hookshot,$has_weapon"
         ],
         "hosted_item": "water",
         "chest_unopened_img": "images/HC.png",
