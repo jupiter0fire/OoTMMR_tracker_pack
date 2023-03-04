@@ -78,7 +78,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "forest_small_keys,forestsmall,forestsk",
-    "max_quantity": 99
+    "max_quantity": 5
   },
   {
     "name": "Forest Temple Boss Key",
@@ -108,7 +108,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "fire_small_keys,firesmall,firesk",
-    "max_quantity": 99
+    "max_quantity": 8
   },
   {
     "name": "Fire Temple Boss Key",
@@ -138,7 +138,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "water_small_keys,watersmall,watersk",
-    "max_quantity": 99
+    "max_quantity": 6
   },
   {
     "name": "Water Temple Boss Key",
@@ -168,7 +168,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "spirit_small_keys,spiritsmall,spiritsk",
-    "max_quantity": 99
+    "max_quantity": 5
   },
   {
     "name": "Spirit Temple Boss Key",
@@ -198,7 +198,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "shadow_small_keys,shadowsmall,shadowsk",
-    "max_quantity": 99
+    "max_quantity": 5
   },
   {
     "name": "Shadow Temple Boss Key",
@@ -228,7 +228,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "botw_small_keys,botwsmall,botwsk",
-    "max_quantity": 99
+    "max_quantity": 3
   },
   {
     "name": "Ice Cavern Label",
@@ -258,7 +258,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "th_small_keys,thsmall,thsk",
-    "max_quantity": 99
+    "max_quantity": 4
   },
   {
     "name": "Gerudo Training Ground Label",
@@ -282,7 +282,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "gtg_small_keys,gtgsmall,gtgsk",
-    "max_quantity": 99
+    "max_quantity": 9
   },
   {
     "name": "Ganons Castle Label",
@@ -306,7 +306,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "gc_small_keys,gcsmall,gcsk",
-    "max_quantity": 99
+    "max_quantity": 2
   },
   {
     "name": "Ganons Castle Boss Key",

@@ -1,10 +1,10 @@
-if HAS_MAP then
-  Tracker:AddItems("items/capture_spawns.json")
-  Tracker:AddItems("items/sequences.json")
-  Tracker:AddItems("items/capture_items.json")
-  Tracker:AddItems("items/tricks.json")
-  Tracker:AddItems("items/options.json")
-end
+
+Tracker:AddItems("items/capture_spawns.json")
+Tracker:AddItems("items/sequences.json")
+Tracker:AddItems("items/capture_items.json")
+Tracker:AddItems("items/tricks.json")
+Tracker:AddItems("items/options.json")
+
 Tracker:AddItems("items/quest.json")
 Tracker:AddItems("items/mm_items.json")
 Tracker:AddItems("items/equipment.json")
