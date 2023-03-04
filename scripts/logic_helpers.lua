@@ -193,7 +193,7 @@ function gs_night()
 end  
 
 function hidden_grotto_storms()
-  return stone_of_agony() and can_play("storms")
+  return stone_of_agony() and can_play("storm")
 end  
 
 function spawn_access(region, age)
