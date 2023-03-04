@@ -4,7 +4,7 @@ function has(item, amount)
   if not amount then
     return count > 0
   else
-    return count == amount
+    return count >= amount
   end
 end
 

@@ -8,50 +8,26 @@
   {
     "name": "Deku Tree Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_deku.png",
-        "codes": "deku_label,deku_reg"
-      }
-    ]
+    "img": "images/label_deku.png",
+    "codes": "deku_label,deku_reg"
   },
   {
     "name": "Dodongos Cavern Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_dodongo.png",
-        "codes": "dodongo_label,dodongo_reg"
-      }
-    ]
+    "img": "images/label_dodongo.png",
+    "codes": "dodongo_label,dodongo_reg"
   },
   {
     "name": "Jabu Jabu Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_jabu.png",
-        "codes": "jabu_label,jabu_reg"
-      }
-    ]
+    "img": "images/label_jabu.png",
+    "codes": "jabu_label,jabu_reg"
   },
   {
     "name": "Forest Temple Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_forest.png",
-        "codes": "forest_label,forest_reg"
-      }
-    ]
+    "img": "images/label_forest.png",
+    "codes": "forest_label,forest_reg"
   },
   {
     "name": "Forest Temple Small Keys",
@@ -69,14 +45,8 @@
   {
     "name": "Fire Temple Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_fire.png",
-        "codes": "fire_label,fire_reg"
-      }
-    ]
+    "img": "images/label_fire.png",
+    "codes": "fire_label,fire_reg"
   },
   {
     "name": "Fire Temple Small Keys",
@@ -94,14 +64,8 @@
   {
     "name": "Water Temple Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_water.png",
-        "codes": "water_label,water_reg"
-      }
-    ]
+    "img": "images/label_water.png",
+    "codes": "water_label,water_reg"
   },
   {
     "name": "Water Temple Small Keys",
@@ -119,14 +83,8 @@
   {
     "name": "Spirit Temple Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_spirit.png",
-        "codes": "spirit_label,spirit_reg"
-      }
-    ]
+    "img": "images/label_spirit.png",
+    "codes": "spirit_label,spirit_reg"
   },
   {
     "name": "Spirit Temple Small Keys",
@@ -144,14 +102,8 @@
   {
     "name": "Shadow Temple Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_shadow.png",
-        "codes": "shadow_label,shadow_reg"
-      }
-    ]
+    "img": "images/label_shadow.png",
+    "codes": "shadow_label,shadow_reg"
   },
   {
     "name": "Shadow Temple Small Keys",
@@ -169,14 +121,8 @@
   {
     "name": "Bottom of the Well Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_botw.png",
-        "codes": "botw_label,botw_reg"
-      }
-    ]
+    "img": "images/label_botw.png",
+    "codes": "botw_label,botw_reg"
   },
   {
     "name": "Bottom of the Well Small Keys",
@@ -188,14 +134,8 @@
   {
     "name": "Ice Cavern Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_ice.png",
-        "codes": "ice_label,ice_reg"
-      }
-    ]
+    "img": "images/label_ice.png",
+    "codes": "ice_label,ice_reg"
   },
   {
     "name": "Thieves Hideout Label",
@@ -213,14 +153,8 @@
   {
     "name": "Gerudo Training Ground Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_gtg.png",
-        "codes": "gtg_label,gtg_reg"
-      }
-    ]
+    "img": "images/label_gtg.png",
+    "codes": "gtg_label,gtg_reg"
   },
   {
     "name": "Gerudo Training Ground Small Keys",
@@ -232,14 +166,8 @@
   {
     "name": "Ganons Castle Label",
     "type": "static",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/label_gc.png",
-        "codes": "gc_label,gc_reg"
-      }
-    ]
+    "img": "images/label_gc.png",
+    "codes": "gc_label,gc_reg"
   },
   {
     "name": "Ganons Castle Small Keys",
