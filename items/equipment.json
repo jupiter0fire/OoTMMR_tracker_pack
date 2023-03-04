@@ -162,5 +162,53 @@
         "codes": "goldgauntlets,lift3,gg,golds"
       }
     ]
+  },
+  {
+    "name": "Zelda's Lullaby",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_zelda.png",
+    "initial_active_state": false,
+    "codes": "lullaby"
+  },
+  {
+    "name": "Zelda's Lullaby Check",
+    "type": "toggle_badged",
+    "base_item": "lullaby",
+    "img": "images/system/mm_check.png",
+    "initial_active_state": false,
+    "codes": "lullaby_check"
+  },
+  {
+    "name": "Epona's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_epona.png",
+    "initial_active_state": false,
+    "codes": "epona"
+  },
+  {
+    "name": "Epona's Song Check",
+    "type": "toggle_badged",
+    "base_item": "epona",
+    "img": "images/system/mm_check.png",
+    "initial_active_state": false,
+    "codes": "epona_check"
+  },
+  {
+    "name": "Saria's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_saria.png",
+    "initial_active_state": false,
+    "codes": "saria"
+  },
+  {
+    "name": "Saria's Song Check",
+    "type": "toggle_badged",
+    "base_item": "saria",
+    "img": "images/system/mm_check.png",
+    "initial_active_state": false,
+    "codes": "saria_check"
   }
 ]

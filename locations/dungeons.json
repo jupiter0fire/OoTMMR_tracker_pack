@@ -1954,9 +1954,9 @@
         "access_rules": [
           "@Spirit Temple/Spirit Temple Adult Climb"
         ],
-        //"visibility_rules": [
-        //  "hidden_region"
-        //],
+        "visibility_rules": [
+          "hidden_region"
+        ],
         "item_count": 1
       },
       {

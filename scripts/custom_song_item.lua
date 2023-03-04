@@ -1,9 +1,6 @@
 SongItem = ProgBadgeItem:extend()
 
 local names = {
-  "Zelda's Lullaby",
-  "Epona's Song",
-  "Saria's Song",
   "Sun's Song",
   "Song of Time",
   "Song of Storms",
@@ -16,9 +13,6 @@ local names = {
 }
 
 local codes = {
-  "lullaby",
-  "epona",
-  "saria",
   "sun",
   "time",
   "storm",
@@ -31,9 +25,6 @@ local codes = {
 }
 
 local full_images = {
-  "images/song_zelda.png",
-  "images/song_epona.png",
-  "images/song_saria.png",
   "images/song_sun.png",
   "images/song_time.png",
   "images/song_storms.png",

@@ -174,7 +174,7 @@
   {
     "name": "MM Song of Time Check",
     "type": "toggle_badged",
-    "base_item": "mm:_songoftime",
+    "base_item": "mm_songoftime",
     "img": "images/system/mm_check.png",
     "initial_active_state": true,
     "codes": "mm_songoftime_check,mm_time_check,mm_sot_check"
@@ -190,7 +190,7 @@
   {
     "name": "MM Song of Healing Check",
     "type": "toggle_badged",
-    "base_item": "mm:_healing",
+    "base_item": "mm_healing",
     "img": "images/system/mm_check.png",
     "initial_active_state": true,
     "codes": "mm_healing_check,mm_soh_check,mm_songofhealing_check,mm_heal_check"
@@ -205,7 +205,7 @@
   {
     "name": "MM Epona's Song Check",
     "type": "toggle_badged",
-    "base_item": "mm:_epona",
+    "base_item": "mm_epona",
     "img": "images/system/mm_check.png",
     "codes": "mm_epona_check,mm_eponas_check,mm_epona_song_check,mm_eponasong_check"
   },
@@ -219,7 +219,7 @@
   {
     "name": "MM Song of Storms Check",
     "type": "toggle_badged",
-    "base_item": "mm:_songofstorms",
+    "base_item": "mm_songofstorms",
     "img": "images/system/mm_check.png",
     "codes": "mm_songofstorms_check,mm_storm_check,mm_storms_check,mm_sos_check"
   },
@@ -241,7 +241,7 @@
   {
     "name": "MM Song of Soaring Check",
     "type": "toggle_badged",
-    "base_item": "mm:_soaringaccessible",
+    "base_item": "mm_soaringaccessible",
     "img": "images/system/mm_check.png",
     "initial_active_state": true,
     "codes": "mm_soaringaccessible_check"
@@ -249,7 +249,7 @@
   {
     "name": "MM Song of Soaring Check",
     "type": "toggle_badged",
-    "base_item": "mm:_soaring",
+    "base_item": "mm_soaring",
     "img": "images/system/mm_check.png",
     "codes": "mm_soaring_check,mm_sos_check,mm_songofsoaring_check,mm_song_of_soaring_check,mm_soar_check,mm_soaringaccessible"
   },
@@ -263,7 +263,7 @@
   {
     "name": "MM Sonata of Awakening Check",
     "type": "toggle_badged",
-    "base_item": "mm:_sonata",
+    "base_item": "mm_sonata",
     "img": "images/system/mm_check.png",
     "codes": "mm_sonata_check,mm_awakening_check,mm_soa_check,mm_sonata_of_awakening_check,mm_awake_check"
   },
@@ -277,7 +277,7 @@
   {
     "name": "MM Goron Lullaby Check",
     "type": "toggle_badged",
-    "base_item": "mm:_lullaby",
+    "base_item": "mm_lullaby",
     "img": "images/system/mm_check.png",
     "codes": "mm_lullaby_check,mm_goronslullaby_check,mm_goronlullaby_check,mm_goron_lullaby_check"
   },
@@ -291,7 +291,7 @@
   {
     "name": "MM New Wave Bossa Nova Check",
     "type": "toggle_badged",
-    "base_item": "mm:_bossanova",
+    "base_item": "mm_bossanova",
     "img": "images/system/mm_check.png",
     "codes": "mm_bossanova_check,mm_newwavebossanova_check,mm_nova_check,mm_bossa_check,mm_wave_check"
   },
@@ -305,7 +305,7 @@
   {
     "name": "MM Elegy of Emptiness Check",
     "type": "toggle_badged",
-    "base_item": "mm:_elegy",
+    "base_item": "mm_elegy",
     "img": "images/system/mm_check.png",
     "codes": "mm_elegy_check,mm_emptiness_check,mm_elegyofemptiness_check,mm_eoe_check,mm_elegy_of_emptiness_check"
   },
@@ -319,7 +319,7 @@
   {
     "name": "MM Oath to Order Check",
     "type": "toggle_badged",
-    "base_item": "mm:_oath",
+    "base_item": "mm_oath",
     "img": "images/system/mm_check.png",
     "codes": "mm_oath_check,mm_oathcheck,mm_ordercheck,mm_otocheck,mm_oath_to_order_check"
   },
