@@ -7,69 +7,49 @@
   },
   {
     "name": "Deku Tree Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_deku.png",
         "codes": "deku_label,deku_reg"
-      },
-      {
-        "img": "images/label_deku_red.png",
-        "codes": "deku_label",
-        "inherit_codes": false
       }
     ]
   },
   {
     "name": "Dodongos Cavern Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_dodongo.png",
         "codes": "dodongo_label,dodongo_reg"
-      },
-      {
-        "img": "images/label_dodongo_red.png",
-        "codes": "dodongo_label",
-        "inherit_codes": false
       }
     ]
   },
   {
     "name": "Jabu Jabu Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_jabu.png",
         "codes": "jabu_label,jabu_reg"
-      },
-      {
-        "img": "images/label_jabu_red.png",
-        "codes": "jabu_label",
-        "inherit_codes": false
       }
     ]
   },
   {
     "name": "Forest Temple Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_forest.png",
         "codes": "forest_label,forest_reg"
-      },
-      {
-        "img": "images/label_forest_red.png",
-        "codes": "forest_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -88,18 +68,13 @@
   },
   {
     "name": "Fire Temple Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_fire.png",
         "codes": "fire_label,fire_reg"
-      },
-      {
-        "img": "images/label_fire_red.png",
-        "codes": "fire_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -118,18 +93,13 @@
   },
   {
     "name": "Water Temple Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_water.png",
         "codes": "water_label,water_reg"
-      },
-      {
-        "img": "images/label_water_red.png",
-        "codes": "water_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -148,18 +118,13 @@
   },
   {
     "name": "Spirit Temple Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_spirit.png",
         "codes": "spirit_label,spirit_reg"
-      },
-      {
-        "img": "images/label_spirit_red.png",
-        "codes": "spirit_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -178,18 +143,13 @@
   },
   {
     "name": "Shadow Temple Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_shadow.png",
         "codes": "shadow_label,shadow_reg"
-      },
-      {
-        "img": "images/label_shadow_red.png",
-        "codes": "shadow_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -208,18 +168,13 @@
   },
   {
     "name": "Bottom of the Well Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_botw.png",
         "codes": "botw_label,botw_reg"
-      },
-      {
-        "img": "images/label_botw_red.png",
-        "codes": "botw_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -232,18 +187,13 @@
   },
   {
     "name": "Ice Cavern Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_ice.png",
         "codes": "ice_label,ice_reg"
-      },
-      {
-        "img": "images/label_ice_red.png",
-        "codes": "ice_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -262,18 +212,13 @@
   },
   {
     "name": "Gerudo Training Ground Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_gtg.png",
         "codes": "gtg_label,gtg_reg"
-      },
-      {
-        "img": "images/label_gtg_red.png",
-        "codes": "gtg_label",
-        "inherit_codes": false
       }
     ]
   },
@@ -286,18 +231,13 @@
   },
   {
     "name": "Ganons Castle Label",
-    "type": "progressive",
+    "type": "static",
     "allow_disabled": false,
     "loop": true,
     "stages": [
       {
         "img": "images/label_gc.png",
         "codes": "gc_label,gc_reg"
-      },
-      {
-        "img": "images/label_gc_red.png",
-        "codes": "gc_label",
-        "inherit_codes": false
       }
     ]
   },
