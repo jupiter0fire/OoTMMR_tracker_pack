@@ -11,44 +11,44 @@
           {
             "type": "item",
             "item": "forest",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "fire",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "water",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "spirit",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "shadow",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "free",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           }
         ]
       },
@@ -59,16 +59,16 @@
         "content": [
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "forest_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -76,8 +76,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -85,23 +85,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "fire_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -109,8 +109,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -118,23 +118,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "water_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -142,8 +142,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -151,23 +151,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "spirit_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -175,8 +175,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -184,23 +184,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "shadow_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -208,8 +208,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -217,17 +217,17 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "item",
             "item": "free_label",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           }
         ]
       },
@@ -239,36 +239,36 @@
           {
             "type": "item",
             "item": "deku",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "dodongo",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "jabu",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "gc_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -276,8 +276,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -285,23 +285,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "gtg_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -309,23 +309,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "th_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -333,8 +333,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           }
@@ -348,36 +348,36 @@
           {
             "type": "item",
             "item": "deku_label",
-            "margin": "1,2",
-            "width": 32,
-            "height": 12
+            "margin": "1,1",
+            "width": 28,
+            "height": 10.5
           },
           {
             "type": "item",
             "item": "dodongo_label",
-            "margin": "1,2",
-            "width": 32,
-            "height": 12
+            "margin": "1,1",
+            "width": 28,
+            "height": 10.5
           },
           {
             "type": "item",
             "item": "jabu_label",
-            "margin": "1,2",
-            "width": 32,
-            "height": 12
+            "margin": "1,1",
+            "width": 28,
+            "height": 10.5
           },
           {
             "type": "item",
             "item": "ice_label",
-            "margin": "1,2",
-            "width": 32,
-            "height": 12
+            "margin": "1,1",
+            "width": 28,
+            "height": 10.5
           },
           {
             "type": "canvas",
             "width": 66,
-            "height": 16,
-            "margin": "1,2",
+            "height": 14,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
@@ -385,8 +385,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 2,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -394,8 +394,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 34,
                 "canvas_top": 0,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           }
@@ -415,65 +415,65 @@
           {
             "type": "item",
             "item": "forest",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "fire",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "water",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "spirit",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "shadow",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "free",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "deku",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "dodongo",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
             "type": "item",
             "item": "jabu",
-            "margin": "1,2",
-            "width": 32,
-            "height": 32
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           }
         ]
       },
@@ -484,16 +484,16 @@
         "content": [
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "forest_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -501,8 +501,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -510,23 +510,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "fire_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -534,8 +534,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -543,23 +543,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "water_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -567,8 +567,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -576,23 +576,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "spirit_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -600,8 +600,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -609,23 +609,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "shadow_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -633,8 +633,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 0,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -642,68 +642,68 @@
                 "canvas_depth": 1,
                 "canvas_left": 16,
                 "canvas_top": 16,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "free_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "deku_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "dodongo_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 32,
-            "margin": "1,2",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "jabu_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               }
             ]
           }
@@ -717,15 +717,15 @@
           {
             "type": "canvas",
             "width": 66,
-            "height": 16,
-            "margin": "1,2",
+            "height": 14,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "gc_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -733,8 +733,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 34,
                 "canvas_top": 0,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               },
               {
                 "type": "item",
@@ -742,38 +742,38 @@
                 "canvas_depth": 1,
                 "canvas_left": 50,
                 "canvas_top": 0,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
-            "width": 32,
-            "height": 16,
-            "margin": "1,2",
+            "width": 28,
+            "height": 14,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "ice_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               }
             ]
           },
           {
             "type": "canvas",
             "width": 66,
-            "height": 16,
-            "margin": "1,2",
+            "height": 14,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "botw_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -781,23 +781,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 34,
                 "canvas_top": 0,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
             "width": 66,
-            "height": 16,
-            "margin": "1,2",
+            "height": 14,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "th_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -805,23 +805,23 @@
                 "canvas_depth": 1,
                 "canvas_left": 34,
                 "canvas_top": 0,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
             "type": "canvas",
             "width": 66,
-            "height": 16,
-            "margin": "1,2",
+            "height": 14,
+            "margin": "1,1",
             "content": [
               {
                 "type": "item",
                 "item": "gtg_label",
                 "canvas_depth": 1,
-                "width": 32,
-                "height": 12
+                "width": 28,
+                "height": 10.5
               },
               {
                 "type": "item",
@@ -829,8 +829,8 @@
                 "canvas_depth": 1,
                 "canvas_left": 34,
                 "canvas_top": 0,
-                "width": 16,
-                "height": 16
+                "width": 14,
+                "height": 14
               }
             ]
           }

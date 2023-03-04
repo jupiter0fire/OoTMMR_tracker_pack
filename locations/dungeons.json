@@ -1910,16 +1910,25 @@
         "item_count": 1
       },
       {
-        "name": "Spirit Temple Child Climb",
+        "name": "Spirit Temple Child Climb As Child",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Entrance,$has_age|child,spirit_small_keys:1",
-          "@Spirit Temple/Spirit Temple Adult Entrance,spirit_small_keys:1"
+          "@Spirit Temple/Spirit Temple Child Entrance,spirit_small_keys:1"
         ],
         "visibility_rules": [
           "hidden_region"
         ],
         "item_count": 1
       },
+      {
+        "name": "Spirit Temple Child Climb As Adult",
+        "access_rules": [
+          "@Spirit Temple/Spirit Temple Adult Entrance,spirit_small_keys:1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },      
       {
         "name": "Spirit Temple Adult Climb",
         "access_rules": [
@@ -1931,14 +1940,23 @@
         "item_count": 1
       },
       {
-        "name": "Spirit Temple Statue",
+        "name": "Spirit Temple Statue As Child",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Climb,$has_explosives_bool",
-          "@Spirit Temple/Spirit Temple Adult Climb"
+          "@Spirit Temple/Spirit Temple Child Climb As Child,$has_explosives_bool"
         ],
         "visibility_rules": [
           "hidden_region"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Temple Statue As Adult",
+        "access_rules": [
+          "@Spirit Temple/Spirit Temple Adult Climb"
+        ],
+        //"visibility_rules": [
+        //  "hidden_region"
+        //],
         "item_count": 1
       },
       {
@@ -1952,9 +1970,9 @@
         "item_count": 1
       },
       {
-        "name": "Spirit Temple Child Upper",
+        "name": "Spirit Temple Child Upper As Child",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Statue"
+          "@Spirit Temple/Spirit Temple Statue As Child"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1962,9 +1980,29 @@
         "item_count": 1
       },
       {
-        "name": "Spirit Temple Child Hand",
+        "name": "Spirit Temple Child Upper As Adult",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Upper,spirit_small_keys:5",
+          "@Spirit Temple/Spirit Temple Statue As Adult"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Temple Child Hand As Child",
+        "access_rules": [
+          "@Spirit Temple/Spirit Temple Child Upper As Child,spirit_small_keys:5"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Temple Child Hand As Adult",
+        "access_rules": [
+          "@Spirit Temple/Spirit Temple Child Upper As Adult,spirit_small_keys:5",
           "@Spirit Temple/Spirit Temple Statue Adult,spirit_small_keys:4,$has_explosives_bool,$can_use_longshot"
         ],
         "visibility_rules": [
@@ -2046,9 +2084,12 @@
         "name": "Child Climb Chests",
         "short_name": "Child Climb",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Climb,$has_ranged_weapon_child,$has_ranged_weapon_adult",
-          "@Spirit Temple/Spirit Temple Child Climb,$has_ranged_weapon_child,$spirit_child_door",
-          "@Spirit Temple/Spirit Temple Child Climb,$has_ranged_weapon_adult,$spirit_adult_door"
+          "@Spirit Temple/Spirit Temple Child Climb As Child,$has_ranged_weapon_child,$has_ranged_weapon_adult",
+          "@Spirit Temple/Spirit Temple Child Climb As Child,$has_ranged_weapon_child,$spirit_child_door",
+          "@Spirit Temple/Spirit Temple Child Climb As Child,$has_ranged_weapon_adult,$spirit_adult_door",
+          "@Spirit Temple/Spirit Temple Child Climb As Adult,$has_ranged_weapon_child,$has_ranged_weapon_adult",
+          "@Spirit Temple/Spirit Temple Child Climb As Adult,$has_ranged_weapon_child,$spirit_child_door",
+          "@Spirit Temple/Spirit Temple Child Climb As Adult,$has_ranged_weapon_adult,$spirit_adult_door"
         ],
         "item_count": 2
       },
@@ -2056,7 +2097,8 @@
         "name": "GS Sun on Floor Room",
         "short_name": "Child Climb",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Climb"
+          "@Spirit Temple/Spirit Temple Child Climb As Child",
+          "@Spirit Temple/Spirit Temple Child Climb As Adult"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2069,8 +2111,9 @@
         "name": "Sun Block Room Chest",
         "short_name": "Sun Block",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Upper,$spirit_child_door,$has_age|child",
-          "@Spirit Temple/Spirit Temple Child Upper,$has_fire_spirit"
+          "@Spirit Temple/Spirit Temple Child Upper As Child,$spirit_child_door",
+          "@Spirit Temple/Spirit Temple Child Upper As Child,$has_fire_spirit",
+          "@Spirit Temple/Spirit Temple Child Upper As Adult,$has_fire_spirit"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2079,10 +2122,12 @@
         "name": "GS Hall After Sun Block Room",
         "short_name": "Before Knuckle",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Upper,$spirit_child_door,$can_use_boomerang",
-          "@Spirit Temple/Spirit Temple Child Upper,$spirit_adult_door,$can_use_hookshot",
-          "@Spirit Temple/Spirit Temple Child Upper,$can_collect_ageless,spirit_small_keys:2",
-          "@Spirit Temple/Spirit Temple Child Upper,$can_collect_ageless,$has_explosives_bool"
+          "@Spirit Temple/Spirit Temple Child Upper As Child,$spirit_child_door,$can_use_boomerang",
+          "@Spirit Temple/Spirit Temple Child Upper As Child,$can_collect_ageless,spirit_small_keys:2",
+          "@Spirit Temple/Spirit Temple Child Upper As Child,$can_collect_ageless,$has_explosives_bool",
+          "@Spirit Temple/Spirit Temple Child Upper As Adult,$spirit_adult_door,$can_use_hookshot",
+          "@Spirit Temple/Spirit Temple Child Upper As Adult,$can_collect_ageless,spirit_small_keys:2",
+          "@Spirit Temple/Spirit Temple Child Upper As Adult,$can_collect_ageless,$has_explosives_bool"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -2096,7 +2141,8 @@
         "name": "Silver Gauntlets Chest",
         "short_name": "Right Hand",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Child Hand"
+          "@Spirit Temple/Spirit Temple Child Hand As Child",
+          "@Spirit Temple/Spirit Temple Child Hand As Adult"
         ],
         "capture_item": true,
         "item_count": 1
@@ -2105,8 +2151,9 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Statue,$spirit_child_door,$has_explosives_bool",
-          "@Spirit Temple/Spirit Temple Statue,$has_fire_spirit"
+          "@Spirit Temple/Spirit Temple Statue As Child,$spirit_child_door,$has_explosives_bool",
+          "@Spirit Temple/Spirit Temple Statue As Child,$has_fire_spirit",
+          "@Spirit Temple/Spirit Temple Statue As Adult,$has_fire_spirit"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -2115,8 +2162,8 @@
         "name": "GS Lobby",
         "short_name": "Lobby",
         "access_rules": [
-          "@Spirit Temple/Spirit Temple Statue,$spirit_adult_door,$can_use_hookshot",
-          "@Spirit Temple/Spirit Temple Statue,$spirit_adult_door,$has_hover_boots"
+          "@Spirit Temple/Spirit Temple Statue As Adult,$spirit_adult_door,$can_use_hookshot",
+          "@Spirit Temple/Spirit Temple Statue As Adult,$spirit_adult_door,$has_hover_boots"
         ],
         "capture_item": true,
         "visibility_rules": [
