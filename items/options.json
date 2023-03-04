@@ -322,25 +322,6 @@
       }
     ]
   },
-  {
-    "name": "Randomize Overworld Spawns",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_entrance_spawn_off.png",
-        "img_mods": "@disabled",
-        "codes": "setting_entrance_spawn,setting_entrance_spawn_off"
-      },
-      {
-        "img": "images/setting_entrance_spawn_shuffle.png",
-        "codes": "setting_entrance_spawn,setting_entrance_spawn_shuffle",
-        "inherits_codes": false
-      }
-    ]
-  },
   {	
     "name": "Bombchus Are Considered in Logic",	
     "type": "progressive",	

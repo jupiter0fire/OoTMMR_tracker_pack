@@ -69,205 +69,196 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Kokiri Village",
-            "children": [
+            "name": "KF Kokiri Sword Chest",
+            "sections": [
               {
-                "name": "KF Kokiri Sword Chest",
-                "sections": [
-                  {
-                    "name": "Dodge Boulder",
-                    "access_rules": [
-                      "$has_age|child"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2090,
-                    "y": 990
-                  }
-                ]
-              },
-              {
-                "name": "KF Midos House",
-                "sections": [
-                  {
-                    "name": "KF Midos Chests",
-                    "item_count": 4
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2135,
-                    "y": 900
-                  }
-                ]
-              },
-              {
-                "name": "KF Storms Grotto",
+                "name": "Dodge Boulder",
                 "access_rules": [
-                  "$hidden_grotto,ocarina,storm"
+                  "$has_age|child"
                 ],
-                "sections": [
-                  {
-                    "name": "KF Storms Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2120,
-                    "y": 845
-                  }
-                ]
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2090,
+                "y": 990
+              }
+            ]
+          },
+          {
+            "name": "KF Midos House",
+            "sections": [
+              {
+                "name": "KF Midos Chests",
+                "item_count": 4
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2135,
+                "y": 900
+              }
+            ]
+          },
+          {
+            "name": "KF Storms Grotto",
+            "access_rules": [
+              "$hidden_grotto_storms"
+            ],
+            "sections": [
+              {
+                "name": "KF Storms Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2120,
+                "y": 845
+              }
+            ]
+          },
+          {
+            "name": "KF Kokiri Shop",
+            "sections": [
+              {
+                "name": "Item 1",
+                "capture_item": true,
+                "item_count": 1
               },
               {
-                "name": "KF Kokiri Shop",
-                "sections": [
-                  {
-                    "name": "Item 1",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Item 2",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Item 3",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Item 4",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_shopsanity_no"
-                    ],
-                    "x": 2220,
-                    "y": 915
-                  }
-                ]
+                "name": "Item 2",
+                "capture_item": true,
+                "item_count": 1
               },
               {
-                "name": "KF Links House",
-                "sections": [
-                  {
-                    "name": "KF Links House Cow",
-                    "short_name": "Cow",
-                    "access_rules": [
-                      "$has_age|adult,ocarina,epona",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_cowsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/cow.png",
-                    "chest_opened_img": "images/bottle_milk.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2175,
-                    "y": 1000
-                  }
-                ]
+                "name": "Item 3",
+                "capture_item": true,
+                "item_count": 1
               },
               {
-                "name": "KF Know It All House",
-                "sections": [
-                  {
-                    "name": "KF GS Know It All House (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$night_gs,$can_child_attack,$can_leave_forest",
-                      "$has_age|child,$night_gs,$can_child_attack,ocarina,sun"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2055,
-                    "y": 960
-                  }
-                ]
-              },
+                "name": "Item 4",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "KF Bean Patch",
-                "sections": [
-                  {
-                    "name": "KF GS Bean Patch",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$has_bottle,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2255,
-                    "y": 915
-                  }
-                ]
-              },
+                "x": 2220,
+                "y": 915
+              }
+            ]
+          },
+          {
+            "name": "KF Links House",
+            "sections": [
               {
-                "name": "KF House of Twins",
-                "sections": [
-                  {
-                    "name": "KF GS House of Twins (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|adult,$night_gs,hookshot",
-                      "$has_age|adult,$night_gs,hoverboots,[logic_adult_kokiri_gs]",
-                      "{$has_age|adult,$night_gs,bow}",
-                      "{$has_age|adult,$night_gs,dinsfire,magic}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "name": "KF Links House Cow",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$has_age|adult,ocarina,epona",
+                  "{$hintable}"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2260,
-                    "y": 980
-                  }
-                ]
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2175,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "KF Know It All House",
+            "sections": [
+              {
+                "name": "KF GS Know It All House (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_age|child,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2055,
+                "y": 960
+              }
+            ]
+          },
+          {
+            "name": "KF Bean Patch",
+            "sections": [
+              {
+                "name": "KF GS Bean Patch",
+                "short_name": "GS",
+                "access_rules": [
+                  "$gs_soil"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2255,
+                "y": 915
+              }
+            ]
+          },
+          {
+            "name": "KF House of Twins",
+            "sections": [
+              {
+                "name": "KF GS House of Twins (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$gs_night,$can_use_hookshot"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2260,
+                "y": 980
               }
             ]
           },

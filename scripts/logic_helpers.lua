@@ -180,6 +180,22 @@ function water_level_middle()
   return can_use_hookshot() and can_play("lullaby")
 end  
 
+function stone_of_agony()
+  return has("agony") or has("logic_grottos_without_agony")
+end  
+
+function gs_soil()
+  return has_age("child") and has("bottle")
+end
+
+function gs_night()
+  return has("setting_skulltulas_sun_off") or can_play("sun")
+end  
+
+function hidden_grotto_storms()
+  return stone_of_agony() and can_play("storms")
+end  
+
 function spawn_access(region, age)
   region = region or ""
   age = age or ""
