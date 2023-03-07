@@ -261,502 +261,676 @@
                 "y": 980
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Lost Woods",
+        "color": "#18a50e",
+        "children": [
           {
-            "name": "Lost Woods",
-            "children": [
+            "name": "LW Near Shortcuts Grotto",
+            "access_rules": [
+              "$has_explosives_or_hammer"
+            ],
+            "sections": [
               {
-                "name": "LW Skull Kid",
-                "sections": [
-                  {
-                    "name": "Play Sarias Song",
-                    "access_rules": [
-                      "$has_age|child,ocarina,saria",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Sell Skull Mask",
-                    "access_rules": [
-                      "$has_age|child,ocarina,saria,skull"
-                    ],
-                    "visibility_rules": [
-                      "skull"
-                    ],
-                    "hosted_item": "capture_skullsold"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2085,
-                    "y": 785
-                  }
-                ]
-              },
+                "name": "LW Near Shortcuts Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "LW Near Shortcuts Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
-                "sections": [
-                  {
-                    "name": "LW Near Shortcuts Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2150,
-                    "y": 775
-                  }
-                ]
-              },
-              {
-                "name": "LW Ocarina Memory Game",
-                "short_name": "Ocarina Game",
-                "sections": [
-                  {
-                    "name": "ResidentSleeper",
-                    "access_rules": [
-                      "$has_age|child,ocarina"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2190,
-                    "y": 810
-                  }
-                ]
-              },
-              {
-                "name": "LW Target in Woods",
-                "sections": [
-                  {
-                    "name": "Shoot it",
-                    "access_rules": [
-                      "$has_age|child,sling",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2190,
-                    "y": 775
-                  }
-                ]
-              },
-              {
-                "name": "Deku Theater",
-                "sections": [
-                  {
-                    "name": "Deku Theater Skull Mask",
-                    "short_name": "Skull Mask",
-                    "access_rules": [
-                      "$has_age|child,skullmask",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Deku Theater Mask of Truth",
-                    "short_name": "Mask of Truth",
-                    "access_rules": [
-                      "$has_age|child,maskoftruth",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2080,
-                    "y": 740
-                  }
-                ]
-              },
-              {
-                "name": "Grog",
-                "sections": [
-                  {
-                    "name": "Give Cojiro",
-                    "access_rules": [
-                      "$has_age|adult,cojiro"
-                    ],
-                    "visibility_rules": [
-                      "cojiro"
-                    ],
-                    "hosted_item": "capture_mushroom"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2085,
-                    "y": 785
-                  }
-                ]
-              },
-              {
-                "name": "Fado",
-                "sections": [
-                  {
-                    "name": "Give Odd Potion",
-                    "access_rules": [
-                      "$has_age|adult,oddpotion"
-                    ],
-                    "visibility_rules": [
-                      "oddpotion"
-                    ],
-                    "hosted_item": "capture_saw"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2085,
-                    "y": 785
-                  }
-                ]
-              },
-              {
-                "name": "LW Deku Scrub Near Bridge",
-                "sections": [
-                  {
-                    "name": "Stick upgrade",
-                    "access_rules": [
-                      "$has_age|child,$can_child_attack",
-                      "$has_age|child,nuts",
-                      "$has_age|child,shield1"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2015,
-                    "y": 925
-                  }
-                ]
-              },
-              {
-                "name": "LW Scrubs Grotto",
-                "access_rules": [
-                  "$has_age|child,$has_explosives",
-                  "$has_age|adult,$can_blast,$beyond_mido"
-                ],
-                "sections": [
-                  {
-                    "name": "LW Deku Scrub Grotto Front",
-                    "short_name": "Front",
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "LW Deku Scrub Grotto Rear",
-                    "short_name": "Rear",
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2190,
-                    "y": 725
-                  }
-                ]
-              },
-              {
-                "name": "LW Deku Scrubs Near Deku Theater",
-                "short_name": "LW Deku Scrubs",
-                "sections": [
-                  {
-                    "name": "Deku Nuts / Deku Sticks",
-                    "access_rules": [
-                      "$has_age|child,$can_child_attack",
-                      "$has_age|child,nuts",
-                      "$has_age|child,shield1"
-                    ],
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 2
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2110,
-                    "y": 740
-                  }
-                ]
-              },
-              {
-                "name": "LW Bean Patch Near Bridge",
-                "sections": [
-                  {
-                    "name": "LW GS Bean Patch Near Bridge",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$has_bottle,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2060,
-                    "y": 825
-                  }
-                ]
-              },
-              {
-                "name": "LW Bean Patch Near Theater",
-                "sections": [
-                  {
-                    "name": "Plant Bean",
-                    "access_rules": [
-                      "$has_age|child,beans,bean_stage_no"
-                    ],
-                    "visibility_rules": [
-                      "$bean_planting|yes"
-                    ],
-                    "hosted_item": "bean_stage_yes"
-                  },
-                  {
-                    "name": "LW GS Bean Patch Near Theater",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$has_bottle,$can_child_attack",
-                      "$has_age|child,$has_bottle,shield1,setting_scrub_shuffle_no"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2140,
-                    "y": 740
-                  }
-                ]
-              },
-              {
-                "name": "LW Above Theater",
-                "access_rules": [
-                  "$night_gs,$has_age|adult,$beyond_mido"
-                ],
-                "sections": [
-                  {
-                    "name": "LW GS Above Theater (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$bean_planting|no,beans",
-                      "$has_age|child,bean_stage_yes",
-                      "[logic_lost_woods_gs_bean],longshot",
-                      "[logic_lost_woods_gs_bean],hookshot,bow",
-                      "[logic_lost_woods_gs_bean],hookshot,$has_bombchus",
-                      "[logic_lost_woods_gs_bean],hookshot,dinsfire,magic",
-                      "{bow}",
-                      "{$has_bombchus}",
-                      "{dinsfire,magic}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2140,
-                    "y": 740
-                  }
-                ]
+                "map": "oot",
+                "x": 2150,
+                "y": 775
               }
             ]
           },
           {
-            "name": "Sacred Forest Meadow",
-            "children": [
+            "name": "LW Ocarina Memory Game",
+            "short_name": "Ocarina Game",
+            "sections": [
               {
-                "name": "SFM Wolfos Grotto",
+                "name": "ResidentSleeper",
                 "access_rules": [
-                  "$hidden_grotto,$has_age|child,$has_explosives",
-                  "$hidden_grotto,$has_age|adult,$can_blast,$beyond_mido"
+                  "$has_age|child,ocarina"
                 ],
-                "sections": [
-                  {
-                    "name": "SFM Wolfos Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2185,
-                    "y": 685
-                  }
-                ]
-              },
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "Saria",
-                "sections": [
-                  {
-                    "name": "Song from Saria",
-                    "short_name": "Song",
-                    "access_rules": [
-                      "$has_age|child,postzelda,sling",
-                      "$has_age|child,postzelda,sticks",
-                      "$has_age|child,postzelda,[sticks],$has_explosives",
-                      "$has_age|child,postzelda,sword1",
-                      "$has_age|child,postzelda,dinsfire,magic"
-                    ],
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2155,
-                    "y": 635
-                  }
-                ]
-              },
+                "map": "oot",
+                "x": 2190,
+                "y": 810
+              }
+            ]
+          },
+          {
+            "name": "LW Target in Woods",
+            "sections": [
               {
-                "name": "Sheik in Forest",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "access_rules": [
-                      "$has_age|adult,$beyond_mido",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2155,
-                    "y": 635
-                  }
-                ]
-              },
-              {
-                "name": "SFM Storms Grotto",
+                "name": "Shoot it",
                 "access_rules": [
-                  "$hidden_grotto,ocarina,storm"
+                  "$can_use_slingshot"
                 ],
-                "sections": [
-                  {
-                    "name": "SFM Deku Scrubs Grotto",
-                    "short_name": "Deku Scrubs",
-                    "access_rules": [
-                      "$has_age|adult,$beyond_mido",
-                      "$has_age|child,minuet,nuts",
-                      "$has_age|child,minuet,shield1",
-                      "$has_age|child,[minuet],$has_explosives",
-                      "$has_age|child,sling",
-                      "$has_age|child,sticks",
-                      "$has_age|child,sword1",
-                      "$has_age|child,dinsfire,magic"
-                    ],
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 2
-                  }
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2190,
+                "y": 775
+              }
+            ]
+          },
+          {
+            "name": "Skull Kid Meadow",
+            "sections": [
+              {
+                "name": "Give Cojiro",
+                "access_rules": [
+                  "$has_age|adult,cojiro"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2190,
-                    "y": 635
-                  }
-                ]
+                "capture_item": true,
+                "item_count": 1
               },
               {
-                "name": "SFM Maze",
+                "name": "Give Odd Potion",
                 "access_rules": [
-                  "$night_gs,$has_age|adult,$beyond_mido"
+                  "$has_age|adult,oddpotion"
                 ],
-                "sections": [
-                  {
-                    "name": "SFM GS (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "{bow}",
-                      "{dinsfire,magic}",
-                      "{$has_explosives}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Play Sarias Song",
+                "access_rules": [
+                  "$has_age|child,$can_play|saria"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2230,
-                    "y": 665
-                  }
-                ]
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2085,
+                "y": 785
+              }
+            ]
+          },
+          {
+            "name": "LW Deku Scrub Near Bridge",
+            "sections": [
+              {
+                "name": "Stick upgrade",
+                "access_rules": [
+                  "$has_age|child"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2015,
+                "y": 925
+              }
+            ]
+          },
+          {
+            "name": "LW Bean Patch Near Bridge",
+            "sections": [
+              {
+                "name": "LW GS Bean Patch Near Bridge",
+                "short_name": "GS",
+                "access_rules": [
+                  "$gs_soil"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2060,
+                "y": 825
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lost Woods Bridge",
+        "color": "#18a50e",
+        "children": [
+          {
+            "name": "LW Bridge From Forest",
+            "color": "#18a50e",
+            "sections": [
+              {
+                "name": "LW Gift from Saria",                
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2030,
+                "y": 880
+              }
+            ]
+          }
+        ]
+      },    
+      {
+        "name": "Lost Woods Deep",
+        "color": "#18a50e",
+        "children": [
+          {
+            "name": "Lost Woods Deep As Child"
+          },
+          {
+            "name": "Lost Woods Deep As Adult",
+            "access_rules":[
+              "$can_play|saria",
+              "$can_play|minuet"
+            ]
+          },
+          {
+            "name": "LW Deku Scrubs Near Deku Theater",
+            "short_name": "LW Deku Scrubs",
+            "sections": [
+              {
+                "name": "Deku Nuts / Deku Sticks",
+                "access_rules": [
+                  "$has_age|child,$can_child_attack",
+                  "$has_age|child,nuts",
+                  "$has_age|child,shield1"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2110,
+                "y": 740
+              }
+            ]
+          },
+          {
+            "name": "LW Scrubs Grotto",
+            "access_rules": [
+              "@Lost Woods Deep As Child,$has_explosives_bool",
+              "@Lost Woods Deep As Adult,$has_explosives_or_hammer"
+            ],
+            "sections": [
+              {
+                "name": "LW Deku Scrub Grotto Front",
+                "short_name": "Front",
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "LW Deku Scrub Grotto Rear",
+                "short_name": "Rear",
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2190,
+                "y": 725
+              }
+            ]
+          },
+          {
+            "name": "LW Bean Patch Near Theater",
+            "sections": [
+              {
+                "name": "LW GS Bean Patch Near Theater",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Lost Woods Deep As Child,$gs_soil"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2140,
+                "y": 740
+              }
+            ]
+          },
+          {
+            "name": "LW Above Theater",
+            "access_rules": [
+              "$gs_night,@Lost Woods Deep As Child,beans,@Lost Woods Deep As Adult"
+            ],
+            "sections": [
+              {
+                "name": "LW GS Above Theater (N)",
+                "short_name": "GS",
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2140,
+                "y": 740
+              }
+            ]
+          },
+          {
+            "name": "Deku Theater",
+            "sections": [
+              {
+                "name": "Deku Theater Skull Mask",
+                "short_name": "Skull Mask",
+                "access_rules": [
+                  "@Lost Woods Deep As Child,skullmask"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Deku Theater Mask of Truth",
+                "short_name": "Mask of Truth",
+                "access_rules": [
+                  "@Lost Woods Deep As Child,maskoftruth"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2080,
+                "y": 740
+              }
+            ]
+          }
+        ]  
+      },
+      {
+        "name": "Sacred Meadow",
+        "color": "#18a50e",
+        "children": [
+          {
+            "name": "Sacred Meadow As Child"
+          },
+          {
+            "name": "Sacred Meadow As Adult",
+            "access_rules":[
+              "@Lost Woods Deep As Adult",
+              "$can_play|minuet"
+            ]
+          },
+          {
+            "name": "Songs in Forest",
+            "sections": [
+              {
+                "name": "Song from Saria",
+                "short_name": "Song",
+                "access_rules": [
+                  "@Sacred Meadow As Child,childcucco"
+                ],
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Song from Sheik",
+                "access_rules": [
+                  "@Sacred Meadow As Adult"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2155,
+                "y": 635
+              }
+            ]
+          },
+          {
+            "name": "SFM Wolfos Grotto",
+            "access_rules": [
+              "@Sacred Meadow As Child,$has_explosives_bool,$stone_of_agony",
+              "@Sacred Meadow As Adult,$hidden_grotto_bomb"
+            ],
+            "sections": [
+              {
+                "name": "SFM Wolfos Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2185,
+                "y": 685
+              }
+            ]
+          },
+          {
+            "name": "SFM Storms Grotto",
+            "access_rules": [
+              "$hidden_grotto,ocarina,storm"
+            ],
+            "sections": [
+              {
+                "name": "SFM Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$has_age|adult,$beyond_mido",
+                  "$has_age|child,minuet,nuts",
+                  "$has_age|child,minuet,shield1",
+                  "$has_age|child,[minuet],$has_explosives",
+                  "$has_age|child,sling",
+                  "$has_age|child,sticks",
+                  "$has_age|child,sword1",
+                  "$has_age|child,dinsfire,magic"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2190,
+                "y": 635
+              }
+            ]
+          },
+          {
+            "name": "SFM Maze",
+            "sections": [
+              {
+                "name": "SFM GS (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Sacred Meadow As Adult,$can_use_hookshot,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2230,
+                "y": 665
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Field",
+        "color": "#09a09d",
+        "children": [
+          {
+            "name": "HF Inside Fence Grotto",
+            "access_rules": [
+              "$hidden_grotto_bomb"
+            ],
+            "sections": [
+              {
+                "name": "HF Deku Scrub Grotto",
+                "short_name": "Deku Scrub",
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1140,
+                "y": 1000
+              }
+            ]
+          },
+          {
+            "name": "HF Ocarina of Time",
+            "access_rules": [
+              "$has_age|child,stones:3"
+            ],
+            "sections": [
+              {
+                "name": "HF Ocarina of Time Item",
+                "short_name": "Item",
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Song from Ocarina of Time",
+                "short_name": "Song",
+                "capture_item": true,
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1440,
+                "y": 465
+              }
+            ]
+          },
+          {
+            "name": "HF Southeast Grotto",
+            "access_rules": [
+              "$has_explosives_or_hammer"
+            ],
+            "sections": [
+              {
+                "name": "HF Southeast Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1430,
+                "y": 925
+              }
+            ]
+          },
+          {
+            "name": "HF Open Grotto",
+            "sections": [
+              {
+                "name": "HF Open Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1205,
+                "y": 995
+              }
+            ]
+          },
+          {
+            "name": "HF Near Market Grotto",
+            "short_name": "Boulda",
+            "access_rules": [
+              "$has_explosives_or_hammer"
+            ],
+            "sections": [
+              {
+                "name": "HF Near Market Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1370,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "name": "HF Tektite Grotto",
+            "access_rules": [
+              "$hidden_grotto_bomb"
+            ],
+            "sections": [
+              {
+                "name": "HF Tektite Grotto Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$can_dive_big"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1150,
+                "y": 480
+              }
+            ]
+          },
+          {
+            "name": "HF Near Kak Grotto",
+            "sections": [
+              {
+                "name": "HF GS Near Kak Grotto",
+                "short_name": "GS",
+                "access_rules": [
+                  "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child",
+                  "$stone_of_agony,$has_explosives_or_hammer,$can_collect_distance_adult"                  
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1550,
+                "y": 405
+              }
+            ]
+          },
+          {
+            "name": "HF Cow Grotto",
+            "sections": [
+              {
+                "name": "HF GS Cow Grotto",
+                "short_name": "GS",
+                "access_rules": [
+                  "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child,magic,dins",
+                  "$can_use_hammer,$can_collect_distance_adult,$has_fire"  
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              },
+              {
+                "name": "HF Cow Grotto Cow",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$has_age|child,$has_explosives,dinsfire,magic,ocarina,epona",
+                  "$has_age|adult,hammer,$has_fire,ocarina,epona",
+                  "{$hintable}"
+                ],
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 970,
+                "y": 660
               }
             ]
           }
@@ -772,270 +946,6 @@
             "name": "Hyrule Field",
             "color": "#09a09d",
             "children": [
-              {
-                "name": "LW Bridge From Forest",
-                "color": "#18a50e",
-                "sections": [
-                  {
-                    "name": "LW Gift from Saria",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2030,
-                    "y": 880
-                  }
-                ]
-              },
-              {
-                "name": "HF Ocarina of Time",
-                "access_rules": [
-                  "$has_age|child,stones:3",
-                  "{$hintable}"
-                ],
-                "sections": [
-                  {
-                    "name": "HF Ocarina of Time Item",
-                    "short_name": "Item",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Song from Ocarina of Time",
-                    "short_name": "Song",
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1440,
-                    "y": 465
-                  }
-                ]
-              },
-              {
-                "name": "HF Tektite Grotto",
-                "access_rules": [
-                  "$hidden_grotto,$can_blast"
-                ],
-                "sections": [
-                  {
-                    "name": "HF Tektite Grotto Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "scale2",
-                      "$has_age|adult,ironboots",
-                      "{}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1150,
-                    "y": 480
-                  }
-                ]
-              },
-              {
-                "name": "HF Inside Fence Grotto",
-                "access_rules": [
-                  "$hidden_grotto,$can_blast"
-                ],
-                "sections": [
-                  {
-                    "name": "HF Deku Scrub Grotto",
-                    "short_name": "Deku Scrub",
-                    "access_rules": [
-                      "$can_stun_deku"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1140,
-                    "y": 1000
-                  }
-                ]
-              },
-              {
-                "name": "HF Open Grotto",
-                "sections": [
-                  {
-                    "name": "HF Open Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1205,
-                    "y": 995
-                  }
-                ]
-              },
-              {
-                "name": "HF Near Market Grotto",
-                "short_name": "Boulda",
-                "access_rules": [
-                  "$can_blast"
-                ],
-                "sections": [
-                  {
-                    "name": "HF Near Market Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1370,
-                    "y": 440
-                  }
-                ]
-              },
-              {
-                "name": "HF Southeast Grotto",
-                "access_rules": [
-                  "$can_blast"
-                ],
-                "sections": [
-                  {
-                    "name": "HF Southeast Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1430,
-                    "y": 925
-                  }
-                ]
-              },
-              {
-                "name": "Running Man",
-                "sections": [
-                  {
-                    "name": "Sell Bunny Hood",
-                    "access_rules": [
-                      "$has_age|child,bunny,stones:3"
-                    ],
-                    "visibility_rules": [
-                      "bunny"
-                    ],
-                    "hosted_item": "capture_bunnysold"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1155,
-                    "y": 555
-                  }
-                ]
-              },
-              {
-                "name": "HF Near Kak Grotto",
-                "access_rules": [
-                  "$hidden_grotto,$can_blast"
-                ],
-                "sections": [
-                  {
-                    "name": "HF GS Near Kak Grotto",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives,boomerang",
-                      "$has_age|adult,hookshot",
-                      "{$has_age|child,$has_explosives}",
-                      "{$has_age|adult,bow}",
-                      "{$has_age|adult,$has_explosives}",
-                      "{dinsfire,magic}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1550,
-                    "y": 405
-                  }
-                ]
-              },
-              {
-                "name": "HF Cow Grotto",
-                "access_rules": [
-                  "$hidden_grotto"
-                ],
-                "sections": [
-                  {
-                    "name": "HF GS Cow Grotto",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives,dinsfire,magic,boomerang",
-                      "{$has_age|child,$has_explosives,dinsfire,magic}",
-                      "$has_age|adult,hammer,$has_fire,hookshot",
-                      "{$has_age|adult,hammer,$has_fire}",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "HF Cow Grotto Cow",
-                    "short_name": "Cow",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives,dinsfire,magic,ocarina,epona",
-                      "$has_age|adult,hammer,$has_fire,ocarina,epona",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_cowsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/cow.png",
-                    "chest_opened_img": "images/bottle_milk.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 970,
-                    "y": 660
-                  }
-                ]
-              },
               {
                 "name": "Lake Hylia",
                 "color": "#0936a0",

@@ -200,154 +200,88 @@
     "codes": "nayruslove,nayrus,nl"
   },
   {
-    "name": "Child Trade",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/egg.png",
-        "img_mods": "@disabled,overlay|images/overlay_child.png",
-        "codes": "nokidtrade"
-      },
-      {
-        "img": "images/egg.png",
-        "img_mods": "overlay|images/overlay_child.png",
-        "codes": "kidtrade,childegg,weirdegg",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/cucco.png",
-        "img_mods": "overlay|images/overlay_child.png",
-        "codes": "kidtrade,childcucco",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/letter.png",
-        "codes": "kidtrade,letter,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sold_out.png",
-        "codes": "kidtrade,lettershown,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/keaton.png",
-        "codes": "kidtrade,keaton,keatonmask,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sold_out.png",
-        "codes": "kidtrade,keatonsold,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/skull.png",
-        "codes": "kidtrade,skullmask,skull,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sold_out.png",
-        "codes": "kidtrade,skullsold,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/spooky.png",
-        "codes": "kidtrade,spooky,spookymask,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sold_out.png",
-        "codes": "kidtrade,spookysold,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bunny.png",
-        "codes": "kidtrade,bunny,bunnyhood,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/sold_out.png",
-        "codes": "kidtrade,bunnysold,postguard,postzelda",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/truth.png",
-        "codes": "kidtrade,truth,maskoftruth,mot,postguard,postzelda",
-        "inherit_codes": false
-      }
-    ]
+    "name": "Child Cucco",
+    "type": "toggle",
+    "img": "images/cucco.png",
+    "codes": "childcucco"
   },
   {
-    "name": "Adult Trade",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/egg.png",
-        "img_mods": "@disabled,overlay|images/overlay_adult.png",
-        "codes": "noadulttrade"
-      },
-      {
-        "img": "images/egg.png",
-        "img_mods": "overlay|images/overlay_adult.png",
-        "codes": "adulttrade,adultegg,pocketegg",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/cucco.png",
-        "img_mods": "overlay|images/overlay_adult.png",
-        "codes": "adulttrade,adultcucco,pocketcucco",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/cojiro.png",
-        "codes": "adulttrade,cojiro",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/mushroom.png",
-        "codes": "adulttrade,mushroom,oddmushroom",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/medicine.png",
-        "codes": "adulttrade,oddpotion,oddpoultice",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/saw.png",
-        "codes": "adulttrade,saw,poachersaw",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/broken_sword.png",
-        "codes": "adulttrade,brokensword",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/perscription.png",
-        "codes": "adulttrade,prescription",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/frog.png",
-        "codes": "adulttrade,frog,eyeballfrog,speedfrog",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/eyedrops.png",
-        "codes": "adulttrade,eyedrops,drops",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/claim.png",
-        "codes": "adulttrade,claim,claimcheck",
-        "inherit_codes": false
-      }
-    ]
+    "name": "Zelda's Letter",
+    "type": "toggle",
+    "img": "images/letter.png",
+    "codes": "letter,postzelda"
+  },
+  {
+    "name": "Skull Mask",
+    "type": "toggle",
+    "img": "images/skull.png",
+    "codes": "skullmask,skull"
+  },
+  {
+    "name": "Mask of Truth",
+    "type": "toggle",
+    "img": "images/truth.png",
+    "codes": "truth,maskoftruth,mot"
+  },
+  {
+    "name": "Pocket Cucco",
+    "type": "toggle",
+    "img": "images/cucco.png",
+    "codes": "adultcucco,pocketcucco"
+  },
+  {
+    "name": "Cojiro",
+    "type": "toggle",
+    "img": "images/cojiro.png",
+    "codes": "cojiro"
+  },
+  {
+    "name": "Mushroom",
+    "type": "toggle",
+    "img": "images/mushroom.png",
+    "codes": "mushroom,oddmushroom"
+  },
+  {
+    "name": "Medicin",
+    "type": "toggle",
+    "img": "images/medicine.png",
+    "codes": "oddpotion,oddpoultice"
+  },
+  {
+    "name": "Saw",
+    "type": "toggle",
+    "img": "images/saw.png",
+    "codes": "saw,poachersaw"
+  },
+  {
+    "name": "Broken Sword",
+    "type": "toggle",
+    "img": "images/broken_sword.png",
+    "codes": "brokensword"
+  },
+  {
+    "name": "Prescription",
+    "type": "toggle",
+    "img": "images/perscription.png",
+    "codes": "prescription"
+  },
+  {
+    "name": "Frog",
+    "type": "toggle",
+    "img": "images/frog.png",
+    "codes": "frog,eyeballfrog,speedfrog"
+  },
+  {
+    "name": "Eyedrops",
+    "type": "toggle",
+    "img": "images/eyedrops.png",
+    "codes": "eyedrops,drops"
+  },
+  {
+    "name": "Claim Check",
+    "type": "toggle",
+    "img": "images/claim.png",
+    "codes": "claim,claimcheck"
   },
   {
     "name": "Hammer",

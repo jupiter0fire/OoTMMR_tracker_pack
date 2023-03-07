@@ -32,20 +32,6 @@ function get_first_free_bottle()
   end
   return nil
 end
-function get_kid_trade()
-  local trade = get_object("kidtrade")
-  if trade then
-    return trade
-  end
-  return nil
-end
-function get_adult_trade()
-  local trade = get_object("adulttrade")
-  if trade then
-    return trade
-  end
-  return nil
-end
 local capture_mappings = {
   ["capture_bottle"] = {
     1,
@@ -54,102 +40,6 @@ local capture_mappings = {
   ["capture_ruto"] = {
     2,
     get_first_free_bottle
-  },
-  ["capture_childegg"] = {
-    1,
-    get_kid_trade
-  },
-  ["capture_childcucco"] = {
-    2,
-    get_kid_trade
-  },
-  ["capture_letter"] = {
-    3,
-    get_kid_trade
-  },
-  ["capture_lettershown"] = {
-    4,
-    get_kid_trade
-  },
-  ["capture_keaton"] = {
-    5,
-    get_kid_trade
-  },
-  ["capture_keatonsold"] = {
-    6,
-    get_kid_trade
-  },
-  ["capture_skullmask"] = {
-    7,
-    get_kid_trade
-  },
-  ["capture_skullsold"] = {
-    8,
-    get_kid_trade
-  },
-  ["capture_spooky"] = {
-    9,
-    get_kid_trade
-  },
-  ["capture_spookysold"] = {
-    10,
-    get_kid_trade
-  },
-  ["capture_bunny"] = {
-    11,
-    get_kid_trade
-  },
-  ["capture_bunnysold"] = {
-    12,
-    get_kid_trade
-  },
-  ["capture_truth"] = {
-    13,
-    get_kid_trade
-  },
-  ["capture_adultegg"] = {
-    1,
-    get_adult_trade
-  },
-  ["capture_adultcucco"] = {
-    2,
-    get_adult_trade
-  },
-  ["capture_cojiro"] = {
-    3,
-    get_adult_trade
-  },
-  ["capture_mushroom"] = {
-    4,
-    get_adult_trade
-  },
-  ["capture_oddpotion"] = {
-    5,
-    get_adult_trade
-  },
-  ["capture_saw"] = {
-    6,
-    get_adult_trade
-  },
-  ["capture_brokensword"] = {
-    7,
-    get_adult_trade
-  },
-  ["capture_prescription"] = {
-    8,
-    get_adult_trade
-  },
-  ["capture_frog"] = {
-    9,
-    get_adult_trade
-  },
-  ["capture_eyedrops"] = {
-    10,
-    get_adult_trade
-  },
-  ["capture_claim"] = {
-    11,
-    get_adult_trade
   }
 }
 function update_collected_capture()
@@ -175,14 +65,6 @@ function update_minimal_bottle()
     else
       minimal_bottle.CurrentStage = 0
     end
-  end
-end
-
-function update_free_zelda()
-  local kid_trade = get_kid_trade()
-  local setting_zelda = has("setting_zelda_free")
-  if kid_trade and not_like_cache("setting_zelda_free", setting_zelda) and setting_zelda then
-    kid_trade.CurrentStage = 3
   end
 end
 
@@ -228,6 +110,5 @@ function update_maps()
   update_gerudo_card()
   update_collected_capture()
   update_minimal_bottle()
-  update_free_zelda()
   update_vanilla_captures()
 end

@@ -108,7 +108,7 @@ function can_use_longshot()
 end  
 
 function has_iron_boots()
-  return has("ironboots")
+  return has_age("adult") == 1 and has("ironboots")
 end  
 
 function can_dive_big()
@@ -128,7 +128,7 @@ function can_hit_triggers_distance_child()
 end  
 
 function has_explosives_or_hammer()
-  return has_explosives() or can_use_hammer()
+  return has_explosives_bool() or can_use_hammer()
 end
 
 function has_weapon()
@@ -141,6 +141,10 @@ end
 
 function can_collect_distance_child()
   return can_use_boomerang()
+end
+
+function can_collect_distance_adult()
+  return can_use_hookshot()
 end
 
 function can_hookshot_scarecrow()
@@ -194,6 +198,10 @@ end
 
 function hidden_grotto_storms()
   return stone_of_agony() and can_play("storm")
+end  
+
+function hidden_grotto_bomb()
+  return stone_of_agony() and (has_explosives_bool() or can_use_hammer())
 end  
 
 function spawn_access(region, age)

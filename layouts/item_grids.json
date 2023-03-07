@@ -16,27 +16,25 @@
             "dinsfire",
             "slingshot",
             "ocarinacrow",
-            "hookshot"
-          ],
-          [
+            "hookshot",
             "boomerang",
             "lens",
-            "beans",
+            "beans"
+          ],
+          [
             "hammer",
             "lightarrow",
             "bottle1",
-            "lift1"   
-          ],
-          [
+            "lift1",  
             "redtunic",
             "bluetunic",
             "sword1",
             "sword2",
             "scale1",
-            "ironboots",
-            "hoverboots"
+            "ironboots"
           ],
           [
+            "hoverboots",
             "shield3",
             "wallet1",
             "magic",
@@ -45,12 +43,26 @@
             "skulltula"
           ],
           [
+            "pocketcucco",
+            "cojiro",
+            "mushroom",
+            "oddpotion",
+            "saw",
+            "brokensword",
+            "prescription",
+            "frog",
+            "eyedrops",
+            "claimcheck"
+          ],
+          [
             "lullaby",
             "epona",
             "saria",
             "sun",
             "time",
-            "storm"
+            "storm",
+            "childcucco",
+            "letter"
           ],
           [
             "minuet",
@@ -58,7 +70,9 @@
             "serenade",
             "requiem",
             "nocturne",
-            "prelude"
+            "prelude",
+            "skullmask",
+            "maskoftruth"
           ]
         ]
       },
@@ -115,8 +129,6 @@
             "bottle2",
             "bottle3",
             "bottle4",
-            "adulttrade",
-            "kidtrade",
             "scale1",
             "ironboots",
             "hoverboots"
