@@ -615,7 +615,7 @@
                 "name": "Song from Saria",
                 "short_name": "Song",
                 "access_rules": [
-                  "@Sacred Meadow As Child,childcucco"
+                  "@Sacred Meadow As Child,meet_zelda"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1232,7 +1232,7 @@
                 "name": "Song from Malon",
                 "short_name": "Song",
                 "access_rules": [
-                  "$has_age|child,postzelda,ocarina"
+                  "$has_age|child,ocarina,meet_malon"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1253,7 +1253,7 @@
               {
                 "name": "LLR Talons Chickens",
                 "access_rules": [
-                  "$has_age|child,postzelda"
+                  "$has_age|child,meet_zelda"
                 ],
                 "item_count": 1
               }
@@ -1374,7 +1374,7 @@
                 "name": "LLR GS Rain Shed (N)",
                 "short_name": "Rain Shed",
                 "access_rules": [
-                  "$has_age|child,$night_gs"
+                  "$has_age|child,$gs_night"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1387,9 +1387,7 @@
                 "name": "LLR GS House Window (N)",
                 "short_name": "House Window",
                 "access_rules": [
-                  "$has_age|child,$night_gs,boomerang",
-                  "{$has_age|child,sling}",
-                  "{$has_age|child,$has_bombchus}"
+                  "$can_use_boomerang,$gs_night"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1403,10 +1401,7 @@
                 "name": "LLR GS Back Wall (N)",
                 "short_name": "Back Wall",
                 "access_rules": [
-                  "$has_age|child,$night_gs,boomerang",
-                  "{$has_age|child,sling}",
-                  "{$has_age|child,dinsfire,magic}",
-                  "{$has_age|child,$has_explosives}"
+                  "$can_use_boomerang,$gs_night"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3385,11 +3380,7 @@
                     "access_rules": [
                       "$has_age|child"
                     ],
-                    "visibility_rules": [
-                      "setting_zelda_off"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
+                    "hosted_item": "meet_malon"
                   }
                 ],
                 "map_locations": [
@@ -3431,19 +3422,13 @@
                   {
                     "name": "Song from Impa",
                     "short_name": "Song",
-                    "visibility_rules": [
-                      "setting_zelda_off,childcucco"
-                    ],
                     "chest_unopened_img": "images/grey_note.png",
                     "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
                   },
                   {
                     "name": "HC Zeldas Letter",
-                    "visibility_rules": [
-                      "setting_zelda_off,childcucco"
-                    ],
-                    "hosted_item": "capture_letter"
+                    "hosted_item": "meet_zelda"
                   }
                 ],
                 "map_locations": [

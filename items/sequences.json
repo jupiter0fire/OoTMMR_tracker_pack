@@ -113,6 +113,38 @@
     ]
   },
   {
+    "name": "Meet Zelda",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/letter.png",
+        "img_mods": "@disabled",
+        "codes": "meet_zelda_no"
+      },
+      {
+        "img": "images/letter.png",
+        "codes": "meet_zelda"
+      }
+    ]
+  },
+  {
+    "name": "Meet Malon",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/egg.png",
+        "img_mods": "@disabled",
+        "codes": "meet_malon_no"
+      },
+      {
+        "img": "images/egg.png",
+        "codes": "meet_malon"
+      }
+    ]
+  },
+  {
     "name": "Forest Trial Clear",
     "type": "progressive",
     "allow_disabled": false,
