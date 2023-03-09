@@ -1429,18 +1429,12 @@
           {
             "name": "Kak Redead Grotto",
             "access_rules": [
-              "$hidden_grotto,$can_blast"
+              "$hidden_grotto_bomb"
             ],
             "sections": [
               {
                 "name": "Kak Redead Grotto Chest",
                 "short_name": "Chest",
-                "access_rules": [
-                  "$has_age|adult",
-                  "$has_age|child,sticks",
-                  "$has_age|child,sword1",
-                  "$has_age|child,dinsfire,magic"
-                ],
                 "item_count": 1
               }
             ],
@@ -1471,6 +1465,10 @@
           },
           {
             "name": "Kak Impas House Back",
+            "access_rules": [
+              "$has_age|child",
+              "$can_use_hookshot"
+            ],
             "sections": [
               {
                 "name": "Kak Impas House Freestanding PoH",
@@ -1507,8 +1505,8 @@
               {
                 "name": "Talk to him",
                 "access_rules": [
-                  "$has_age|adult,hookshot",
-                  "[logic_man_on_roof]"
+                  "$can_use_hookshot",
+                  "logic_man_on_roof"
                 ],
                 "item_count": 1
               }
@@ -1528,7 +1526,7 @@
                 "name": "Kak Shooting Gallery Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$has_age|adult,bow"
+                  "$can_use_bow"
                 ],
                 "item_count": 1
               }
@@ -1548,10 +1546,8 @@
                 "name": "Kak Windmill Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$has_age|child,boomerang",
-                  "$has_age|adult,[logic_windmill_poh]",
-                  "$has_age|adult,ocarina,time",
-                  "{}"
+                  "$can_use_boomerang",
+                  "$has_age|adult,$can_play|time"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
@@ -1583,8 +1579,7 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$has_age|adult,forestmed,noct_meds:2",
-                  "{$hintable}"
+                  "$has_age|adult,forestmed,noct_meds:2"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -1601,31 +1596,18 @@
             ]
           },
           {
-            "name": "Kak Anju as Child",
+            "name": "Anju",
             "sections": [
               {
                 "name": "Chickens",
                 "access_rules": [
-                  "$has_age|child",
-                  "{$hintable}"
+                  "$has_age|child"
                 ],
                 "capture_item": true,
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
+              },
               {
-                "map": "oot",
-                "x": 1865,
-                "y": 430
-              }
-            ]
-          },
-          {
-            "name": "Kak Anju as Adult",
-            "sections": [
-              {
-                "name": "Talk to her",
+                "name": "Anju Adult",
                 "access_rules": [
                   "$has_age|adult"
                 ],
@@ -1635,11 +1617,7 @@
                 "name": "Show Happy Cucco",
                 "access_rules": [
                   "$has_age|adult,pocketcucco"
-                ],
-                "visibility_rules": [
-                  "pocketcucco"
-                ],
-                "hosted_item": "capture_cojiro"
+                ]
               }
             ],
             "map_locations": [
@@ -1647,35 +1625,6 @@
                 "map": "oot",
                 "x": 1865,
                 "y": 430
-              }
-            ]
-          },
-          {
-            "name": "Guard",
-            "access_rules": [
-              "$has_age|child"
-            ],
-            "sections": [
-              {
-                "name": "Show Letter",
-                "visibility_rules": [
-                  "setting_kak_closed,letter"
-                ],
-                "hosted_item": "capture_lettershown"
-              },
-              {
-                "name": "Sell Keaton Mask",
-                "visibility_rules": [
-                  "keaton"
-                ],
-                "hosted_item": "capture_keatonsold"
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1780,
-                "y": 305
               }
             ]
           },
@@ -1686,11 +1635,7 @@
                 "name": "Give Mushroom",
                 "access_rules": [
                   "$has_age|adult,mushroom"
-                ],
-                "visibility_rules": [
-                  "mushroom"
-                ],
-                "hosted_item": "capture_oddpotion"
+                ]
               }
             ],
             "map_locations": [
@@ -1716,8 +1661,7 @@
                 "name": "Kak 20 Gold Skulltula Reward",
                 "short_name": "20 Tokens",
                 "access_rules": [
-                  "skulltula:20",
-                  "{$hintable}"
+                  "skulltula:20"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1726,8 +1670,7 @@
                 "name": "Kak 30 Gold Skulltula Reward",
                 "short_name": "30 Tokens",
                 "access_rules": [
-                  "skulltula:30",
-                  "{$hintable}"
+                  "skulltula:30"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1736,8 +1679,7 @@
                 "name": "Kak 40 Gold Skulltula Reward",
                 "short_name": "40 Tokens",
                 "access_rules": [
-                  "skulltula:40",
-                  "{$hintable}"
+                  "skulltula:40"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1746,8 +1688,7 @@
                 "name": "Kak 50 Gold Skulltula Reward",
                 "short_name": "50 Tokens",
                 "access_rules": [
-                  "skulltula:50",
-                  "{$hintable}"
+                  "skulltula:50"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -1844,8 +1785,7 @@
                 "name": "Kak GS Above Impas House (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|adult,$night_gs,hookshot",
-                  "$has_age|adult,$night_gs,[logic_kakariko_rooftop_gs],hoverboots"
+                  "$gs_night,$can_use_hookshot"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1870,7 +1810,7 @@
                 "name": "Kak GS Tree (N)",
                 "short_name": "Tree",
                 "access_rules": [
-                  "$has_age|child,$night_gs"
+                  "$has_age|child,$gs_night"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1883,7 +1823,7 @@
                 "name": "Kak GS Skulltula House (N)",
                 "short_name": "Skulltula House",
                 "access_rules": [
-                  "$has_age|child,$night_gs"
+                  "$has_age|child,$gs_night"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1896,7 +1836,7 @@
                 "name": "Kak GS House Under Construction (N)",
                 "short_name": "Construction",
                 "access_rules": [
-                  "$has_age|child,$night_gs"
+                  "$has_age|child,$gs_night"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1909,7 +1849,7 @@
                 "name": "Kak GS Guards House (N)",
                 "short_name": "Guards House",
                 "access_rules": [
-                  "$has_age|child,$night_gs"
+                  "$has_age|child,$gs_night"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1922,10 +1862,8 @@
                 "name": "Kak GS Watchtower (N)",
                 "short_name": "Watchtower",
                 "access_rules": [
-                  "$has_age|child,$night_gs,sling",
-                  "$has_age|child,$night_gs,$has_bombchus",
-                  "$has_age|child,$night_gs,[logic_kakariko_tower_gs],sticks,$damage_single_instance_ohko",
-                  "$has_age|child,$night_gs,[logic_kakariko_tower_gs],sword1,$damage_single_instance_ohko"
+                  "$gs_night,$can_use_slingshot",
+                  "$has_age|child,$gs_night,$has_explosives_bool"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2022,8 +1960,7 @@
                     "name": "Graveyard Heart Piece Grave Chest",
                     "short_name": "Play Suns Song",
                     "access_rules": [
-                      "ocarina,sun",
-                      "{$hintable}"
+                      "$can_play|sun"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -2044,11 +1981,8 @@
                     "name": "Graveyard Freestanding PoH",
                     "short_name": "Box HP",
                     "access_rules": [
-                      "$has_age|adult,$bean_planting|no,beans",
-                      "$has_age|adult,bean_graveyard_yes",
-                      "$has_age|adult,longshot",
-                      "$has_age|child,boomerang,[logic_graveyard_poh]",
-                      "{}"
+                      "$has_age|child,$has_age|adult,beans",
+                      "$can_use_longshot"
                     ],
                     "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
@@ -2068,22 +2002,12 @@
                 "name": "Royal Familys Tomb",
                 "short_name": "Royal Tomb",
                 "access_rules": [
-                  "ocarina,lullaby",
-                  "{$hintable}"
+                  "can_play|lullaby"
                 ],
                 "sections": [
                   {
                     "name": "Song from Royal Familys Tomb",
                     "short_name": "Song",
-                    "access_rules": [
-                      "$has_age|adult",
-                      "$has_age|child,sword1",
-                      "$has_age|child,sticks",
-                      "$has_age|child,sling",
-                      "$has_age|child,boomerang",
-                      "$has_age|child,$has_explosives",
-                      "{$hintable}"
-                    ],
                     "capture_item": true,
                     "chest_unopened_img": "images/grey_note.png",
                     "chest_opened_img": "images/grey_note_check.png",
@@ -2093,9 +2017,7 @@
                     "name": "Royal Familys Tomb Chest",
                     "short_name": "Chest",
                     "access_rules": [
-                      "$has_fire",
-                      "$has_age|child,sticks,[$has_fire]",
-                      "{$hintable}"
+                      "$has_fire"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -2110,28 +2032,6 @@
                 ]
               },
               {
-                "name": "Spooky Kid",
-                "sections": [
-                  {
-                    "name": "Sell Spooky Mask",
-                    "access_rules": [
-                      "$has_age|child,spooky"
-                    ],
-                    "visibility_rules": [
-                      "spooky"
-                    ],
-                    "hosted_item": "capture_spookysold"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2000,
-                    "y": 370
-                  }
-                ]
-              },
-              {
                 "name": "Graveyard Wall",
                 "access_rules": [
                   "$has_age|child,$night_gs"
@@ -2141,10 +2041,7 @@
                     "name": "Graveyard GS Wall (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "boomerang",
-                      "{sling}",
-                      "{dinsfire,magic}",
-                      "{$has_explosives}"
+                      "$gs_night,$can_use_boomerang"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2167,20 +2064,10 @@
                 "name": "Graveyard Bean Patch",
                 "sections": [
                   {
-                    "name": "Plant Bean",
-                    "access_rules": [
-                      "$has_age|child,beans,bean_graveyard_no"
-                    ],
-                    "visibility_rules": [
-                      "$bean_planting|yes"
-                    ],
-                    "hosted_item": "bean_graveyard_yes"
-                  },
-                  {
                     "name": "Graveyard GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|child,$has_bottle,$can_child_attack"
+                      "$gs_soil"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
