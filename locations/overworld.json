@@ -2096,282 +2096,16 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Goron City",
-            "children": [
-              {
-                "name": "GC Maze",
-                "sections": [
-                  {
-                    "name": "Right and Center Chests",
-                    "access_rules": [
-                      "$can_blast",
-                      "$has_age|adult,lift2"
-                    ],
-                    "item_count": 2
-                  },
-                  {
-                    "name": "Left Chest",
-                    "access_rules": [
-                      "$has_age|adult,hammer",
-                      "$has_age|adult,lift2",
-                      "$has_age|adult,[logic_goron_city_leftmost],$has_explosives,hoverboots",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "GC GS Boulder Maze",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1600,
-                    "y": 75
-                  }
-                ]
-              },
-              {
-                "name": "GC Rolling Goron as Adult",
-                "short_name": "Link the Goron",
-                "sections": [
-                  {
-                    "name": "Stop him",
-                    "access_rules": [
-                      "$link_the_goron"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1635,
-                    "y": 110
-                  }
-                ]
-              },
-              {
-                "name": "GC Rolling Goron as Child",
-                "short_name": "Hot Rodder",
-                "sections": [
-                  {
-                    "name": "Blow him up",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives",
-                      "$child_death_mountain,lift1,[logic_child_rolling_with_strength]"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1635,
-                    "y": 75
-                  }
-                ]
-              },
-              {
-                "name": "GC Medigoron",
-                "short_name": "Medigoron",
-                "sections": [
-                  {
-                    "name": "Pay 200",
-                    "access_rules": [
-                      "$has_age|adult,wallet,$can_blast",
-                      "$has_age|adult,wallet,lift1"
-                    ],
-                    "visibility_rules": [
-                      "setting_shuffle_merchants_yes"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1600,
-                    "y": 145
-                  }
-                ]
-              },
-              {
-                "name": "GC Pot",
-                "sections": [
-                  {
-                    "name": "Freestanding PoH",
-                    "short_name": "HP :)",
-                    "access_rules": [
-                      "$has_age|child,ocarina,lullaby,sticks,bombs",
-                      "$has_age|child,ocarina,lullaby,sticks,bombchu,[bombs]",
-                      "$has_age|child,ocarina,lullaby,sticks,$has_bombchus,[logic_goron_city_pot]",
-                      "$child_death_mountain,ocarina,lullaby,sticks,lift1,[logic_goron_city_pot_with_strength]",
-                      "$spawn_access|DMC Lower|child,sticks,bombs",
-                      "$spawn_access|DMC Lower|child,sticks,bombchu,[bombs]",
-                      "$spawn_access|DMC Lower|child,sticks,$has_bombchus,[logic_goron_city_pot]",
-                      "$spawn_access|DMC Lower|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
-                      "$spawn_access|DMC Fairy|child,sticks,bombs",
-                      "$spawn_access|DMC Fairy|child,sticks,bombchu,[bombs]",
-                      "$spawn_access|DMC Fairy|child,sticks,$has_bombchus,[logic_goron_city_pot]",
-                      "$spawn_access|DMC Fairy|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
-                      "$has_age|child,dinsfire,magic,bombs",
-                      "$has_age|child,dinsfire,magic,bombchu,[bombs]",
-                      "$has_age|child,dinsfire,magic,$has_bombchus,[logic_goron_city_pot]",
-                      "$has_age|child,dinsfire,magic,lift1,[logic_goron_city_pot_with_strength]",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1670,
-                    "y": 110
-                  }
-                ]
-              },
-              {
-                "name": "GC Darunias Joy",
-                "sections": [
-                  {
-                    "name": "Play Sarias Song",
-                    "access_rules": [
-                      "$child_death_mountain,ocarina,lullaby,saria",
-                      "$spawn_access|DMC Lower|child,ocarina,saria",
-                      "$spawn_access|DMC Fairy|child,ocarina,saria",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1670,
-                    "y": 75
-                  }
-                ]
-              },
-              {
-                "name": "GC Grotto",
-                "access_rules": [
-                  "$has_age|adult"
-                ],
-                "sections": [
-                  {
-                    "name": "GC Deku Scrubs Grotto",
-                    "short_name": "Deku Scrubs",
-                    "access_rules": [
-                      "ocarina,time,$damage_below_quadruple",
-                      "ocarina,time,$goron_tunic",
-                      "ocarina,time,longshot",
-                      "ocarina,time,nayrus,magic",
-                      "hookshot,$damage_below_ohko,$goron_tunic",
-                      "hookshot,nayrus,magic",
-                      "hookshot,$damage_below_quadruple,[logic_goron_grotto]"
-                    ],
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 3
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1705,
-                    "y": 75
-                  }
-                ]
-              },
-              {
-                "name": "GC Center Platform",
-                "sections": [
-                  {
-                    "name": "GC GS Center Platform",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|adult"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1635,
-                    "y": 145
-                  }
-                ]
-              },
-              {
-                "name": "GC Shop",
-                "access_rules": [
-                  "$link_the_goron",
-                  "$spawn_access|GC Shop|adult",
-                  "$has_age|child,$has_explosives",
-                  "$has_age|child,dinsfire,magic",
-                  "$child_death_mountain,lift1",
-                  "$child_death_mountain,ocarina,lullaby,sticks"
-                ],
-                "sections": [
-                  {
-                    "name": "Item 1",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Item 2",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Item 3",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Item 4",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_shopsanity_no"
-                    ],
-                    "x": 1600,
-                    "y": 110
-                  }
-                ]
-              }
+            "name": "Death Mountain As Child",
+            "access_rules":[
+              "$has_age|child,letter",
+              "$has_age|child,$has_explosives_bool"
+            ]
+          },
+          {
+            "name": "Death Mountain As Adult",
+            "access_rules":[
+              "$has_age|adult"
             ]
           },
           {
@@ -2383,15 +2117,6 @@
                   {
                     "name": "DMT Freestanding PoH",
                     "short_name": "HP",
-                    "access_rules": [
-                      "$damage_below_ohko",
-                      "nayrus,magic",
-                      "$has_bottle",
-                      "$has_age|adult,hoverboots",
-                      "$has_age|both,$bean_planting|no,beans,$has_explosives",
-                      "$has_age|both,$bean_planting|no,beans,lift1,$child_death_mountain",
-                      "$has_age|both,bean_trail_yes"
-                    ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
@@ -2411,8 +2136,8 @@
                   {
                     "name": "Blast wall",
                     "access_rules": [
-                      "$can_blast",
-                      "$child_death_mountain,lift1,[logic_dmt_bombable]"
+                      "@Death Mountain As Child,$has_explosives_bool",
+                      "@Death Mountain As Adult,$has_explosives_or_hammer"
                     ],
                     "item_count": 1
                   }
@@ -2428,16 +2153,12 @@
               {
                 "name": "DMT Storms Grotto",
                 "access_rules": [
-                  "$hidden_grotto,ocarina,storm"
+                  "$hidden_grotto_storms"
                 ],
                 "sections": [
                   {
                     "name": "DMT Storms Grotto Chest",
                     "short_name": "Chest",
-                    "access_rules": [
-                      "$has_age|adult",
-                      "$child_death_mountain"
-                    ],
                     "item_count": 1
                   }
                 ],
@@ -2446,76 +2167,6 @@
                     "map": "oot",
                     "x": 1705,
                     "y": 160
-                  }
-                ]
-              },
-              {
-                "name": "DMT Great Fairy Fountain",
-                "access_rules": [
-                  "$can_blast",
-                  "$spawn_access|DMT Fairy|child",
-                  "$spawn_access|DMT Fairy|adult"
-                ],
-                "sections": [
-                  {
-                    "name": "DMT Great Fairy Reward",
-                    "short_name": "Reward",
-                    "access_rules": [
-                      "ocarina,lullaby"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1785,
-                    "y": 110
-                  }
-                ]
-              },
-              {
-                "name": "DMT Biggoron",
-                "access_rules": [
-                  "$dmc_upper",
-                  "{$hintable}"
-                ],
-                "sections": [
-                  {
-                    "name": "Give Broken Sword",
-                    "access_rules": [
-                      "brokensword"
-                    ],
-                    "visibility_rules": [
-                      "brokensword"
-                    ],
-                    "hosted_item": "capture_prescription"
-                  },
-                  {
-                    "name": "Give Eyedrops",
-                    "access_rules": [
-                      "eyedrops"
-                    ],
-                    "visibility_rules": [
-                      "eyedrops"
-                    ],
-                    "hosted_item": "capture_claim"
-                  },
-                  {
-                    "name": "Help him",
-                    "access_rules": [
-                      "claimcheck",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1825,
-                    "y": 110
                   }
                 ]
               },
@@ -2552,12 +2203,7 @@
                     "name": "DMT GS Above Dodongos Cavern (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|adult,$night_gs,hammer",
-                      "$has_age|adult,$night_gs,[logic_trail_gs_lower_hookshot],hookshot",
-                      "$has_age|adult,$night_gs,[logic_trail_gs_lower_hovers],hoverboots",
-                      "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,$has_explosives",
-                      "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],$bean_planting|no,beans,lift1",
-                      "$has_age|both,$night_gs,[logic_trail_gs_lower_bean],bean_trail_yes"
+                      "$gs_night,$can_use_hammer"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2576,52 +2222,13 @@
                 ]
               },
               {
-                "name": "DMT Falling Rocks Path",
-                "sections": [
-                  {
-                    "name": "DMT GS Falling Rocks Path (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|adult,$night_gs,hammer",
-                      "$has_age|adult,$night_gs,$dmc_upper,[logic_trail_gs_upper]"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1805,
-                    "y": 150
-                  }
-                ]
-              },
-              {
                 "name": "DMT Bean Patch",
                 "sections": [
-                  {
-                    "name": "Plant Bean",
-                    "access_rules": [
-                      "$has_age|child,beans,bean_trail_no,$has_explosives",
-                      "$child_death_mountain,beans,bean_trail_no,lift1"
-                    ],
-                    "visibility_rules": [
-                      "$bean_planting|yes"
-                    ],
-                    "hosted_item": "bean_trail_yes"
-                  },
                   {
                     "name": "DMT GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|child,$has_bottle,$can_child_attack,$has_explosives",
-                      "$child_death_mountain,$has_bottle,$can_child_attack,lift1",
-                      "$child_death_mountain,$has_bottle,$can_child_attack,[logic_dmt_soil_gs],boomerang"
+                      "@Death Mountain As Child,$gs_soil,$has_bombflowers"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2646,7 +2253,7 @@
                     "name": "DMT GS Near Kak",
                     "short_name": "GS",
                     "access_rules": [
-                      "$can_blast"
+                      "$has_explosives_or_hammer"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2665,258 +2272,641 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain Summit",
+        "color": "#a01009",
+        "children": [
+          {
+            "name": "Death Mountain Summit As Child",
+            "access_rules":[
+              "@Death Mountain As Child,$has_explosives_bool"
+            ]
           },
           {
-            "name": "Death Mountain Crater",
-            "children": [
+            "name": "Death Mountain Summit As Adult",
+            "access_rules":[
+              "@Death Mountain As Adult,$has_explosives_or_hammer",
+              "@Death Mountain As Child,@Death Mountain As Adult,beans" //DMC access
+            ]
+          },
+          {
+            "name": "DMT Great Fairy Fountain",
+            "access_rules": [
+              "@Death Mountain Summit As Child,$has_explosives_bool",
+              "@Death Mountain Summit As Adult,$has_explosives_or_hammer"
+            ],
+            "sections": [
               {
-                "name": "DMC Upper Grotto",
-                "sections": [
-                  {
-                    "name": "DMC Upper Grotto Chest",
-                    "short_name": "Chest",
-                    "access_rules": [
-                      "$can_blast"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1815,
-                    "y": 70
-                  }
-                ]
-              },
-              {
-                "name": "DMC Wall",
-                "sections": [
-                  {
-                    "name": "DMC Wall Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$spawn_access|Death Mountain Summit|child",
-                      "$spawn_access|DMT Fairy|child",
-                      "$dmc_upper",
-                      "{ocarina,bolero}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1850,
-                    "y": 70
-                  }
-                ]
-              },
-              {
-                "name": "DMC Volcano",
-                "sections": [
-                  {
-                    "name": "DMC Volcano Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$has_age|both,ocarina,bolero,$bean_planting|no,beans",
-                      "$has_age|both,ocarina,bolero,bean_crater_yes",
-                      "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
-                      "{ocarina,bolero}",
-                      "{$link_the_goron}",
-                      "{$has_age|adult,hammer}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1745,
-                    "y": 15
-                  }
-                ]
-              },
-              {
-                "name": "DMC Great Fairy Fountain",
+                "name": "DMT Great Fairy Reward",
+                "short_name": "Reward",
                 "access_rules": [
-                  "$dmc_lower,hammer",
-                  "$spawn_access|DMC Fairy|child",
-                  "$spawn_access|DMC Fairy|adult"
+                  "$can_play|lullaby"
                 ],
-                "sections": [
-                  {
-                    "name": "DMC Great Fairy Reward",
-                    "short_name": "Reward",
-                    "access_rules": [
-                      "ocarina,lullaby"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1780,
-                    "y": 70
-                  }
-                ]
-              },
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "DMC Hammer Grotto",
+                "map": "oot",
+                "x": 1785,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "DMT Biggoron",
+            "access_rules": [
+              "@Death Mountain Summit As Adult"
+            ],
+            "sections": [
+              {
+                "name": "Give Broken Sword",
                 "access_rules": [
-                  "$dmc_lower,hammer"
+                  "brokensword"
                 ],
-                "sections": [
-                  {
-                    "name": "DMC Deku Scrubs Grotto",
-                    "short_name": "Deku Scrubs",
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 3
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1780,
-                    "y": 35
-                  }
-                ]
+                "item_count": 1
               },
               {
-                "name": "Sheik in Crater",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "access_rules": [
-                      "$dmc_central",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1885,
-                    "y": 70
-                  }
-                ]
-              },
-              {
-                "name": "DMC Deku Scrub",
-                "sections": [
-                  {
-                    "name": "Bombs",
-                    "access_rules": [
-                      "$can_blast,$has_age|child,$can_child_attack",
-                      "$can_blast,$has_age|child,nuts",
-                      "$can_blast,$has_age|child,shield1",
-                      "$spawn_access|Death Mountain Summit|child,$can_child_attack",
-                      "$spawn_access|Death Mountain Summit|child,nuts",
-                      "$spawn_access|Death Mountain Summit|child,shield1",
-                      "$spawn_access|DMT Fairy|child,$can_child_attack",
-                      "$spawn_access|DMT Fairy|child,nuts",
-                      "$spawn_access|DMT Fairy|child,shield1",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1815,
-                    "y": 35
-                  }
-                ]
-              },
-              {
-                "name": "DMC Crate",
-                "sections": [
-                  {
-                    "name": "DMC GS Crate",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$can_blast,$has_age|child,$can_child_attack",
-                      "$spawn_access|Death Mountain Summit|child,$can_child_attack",
-                      "$spawn_access|DMT Fairy|child,$can_child_attack",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1850,
-                    "y": 35
-                  }
-                ]
-              },
-              {
-                "name": "DMC Bean Patch",
+                "name": "Give Eyedrops",
                 "access_rules": [
-                  "$has_age|child,ocarina,bolero"
+                  "eyedrops"
                 ],
-                "sections": [
-                  {
-                    "name": "Plant Bean",
-                    "access_rules": [
-                      "beans,bean_crater_no"
-                    ],
-                    "visibility_rules": [
-                      "$bean_planting|yes"
-                    ],
-                    "hosted_item": "bean_crater_yes"
-                  },
-                  {
-                    "name": "DMC GS Bean Patch",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_bottle,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "item_count": 1
+              },
+              {
+                "name": "Help him",
+                "access_rules": [
+                  "claimcheck"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1885,
-                    "y": 35
-                  }
-                ]
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1825,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "DMT Falling Rocks Path",
+            "sections": [
+              {
+                "name": "DMT GS Falling Rocks Path (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Death Mountain Summit As Adult,$gs_night,$can_use_hammer"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1805,
+                "y": 150
+              }
+            ]
+          }
+        ]
+      },  
+      {
+        "name": "Goron City",
+        "children": [
+          {
+            "name": "GC Maze",
+            "sections": [
+              {
+                "name": "Right and Center Chests",
+                "access_rules": [
+                  "$can_blast",
+                  "$has_age|adult,lift2"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Left Chest",
+                "access_rules": [
+                  "$has_age|adult,hammer",
+                  "$has_age|adult,lift2",
+                  "$has_age|adult,[logic_goron_city_leftmost],$has_explosives,hoverboots",
+                  "{$hintable}"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "GC GS Boulder Maze",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_age|child,$has_explosives"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1600,
+                "y": 75
+              }
+            ]
+          },
+          {
+            "name": "GC Rolling Goron as Adult",
+            "short_name": "Link the Goron",
+            "sections": [
+              {
+                "name": "Stop him",
+                "access_rules": [
+                  "$link_the_goron"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1635,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "GC Rolling Goron as Child",
+            "short_name": "Hot Rodder",
+            "sections": [
+              {
+                "name": "Blow him up",
+                "access_rules": [
+                  "$has_age|child,$has_explosives",
+                  "$child_death_mountain,lift1,[logic_child_rolling_with_strength]"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1635,
+                "y": 75
+              }
+            ]
+          },
+          {
+            "name": "GC Medigoron",
+            "short_name": "Medigoron",
+            "sections": [
+              {
+                "name": "Pay 200",
+                "access_rules": [
+                  "$has_age|adult,wallet,$can_blast",
+                  "$has_age|adult,wallet,lift1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffle_merchants_yes"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1600,
+                "y": 145
+              }
+            ]
+          },
+          {
+            "name": "GC Pot",
+            "sections": [
+              {
+                "name": "Freestanding PoH",
+                "short_name": "HP :)",
+                "access_rules": [
+                  "$has_age|child,ocarina,lullaby,sticks,bombs",
+                  "$has_age|child,ocarina,lullaby,sticks,bombchu,[bombs]",
+                  "$has_age|child,ocarina,lullaby,sticks,$has_bombchus,[logic_goron_city_pot]",
+                  "$child_death_mountain,ocarina,lullaby,sticks,lift1,[logic_goron_city_pot_with_strength]",
+                  "$spawn_access|DMC Lower|child,sticks,bombs",
+                  "$spawn_access|DMC Lower|child,sticks,bombchu,[bombs]",
+                  "$spawn_access|DMC Lower|child,sticks,$has_bombchus,[logic_goron_city_pot]",
+                  "$spawn_access|DMC Lower|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
+                  "$spawn_access|DMC Fairy|child,sticks,bombs",
+                  "$spawn_access|DMC Fairy|child,sticks,bombchu,[bombs]",
+                  "$spawn_access|DMC Fairy|child,sticks,$has_bombchus,[logic_goron_city_pot]",
+                  "$spawn_access|DMC Fairy|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
+                  "$has_age|child,dinsfire,magic,bombs",
+                  "$has_age|child,dinsfire,magic,bombchu,[bombs]",
+                  "$has_age|child,dinsfire,magic,$has_bombchus,[logic_goron_city_pot]",
+                  "$has_age|child,dinsfire,magic,lift1,[logic_goron_city_pot_with_strength]",
+                  "{$hintable}"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1670,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "name": "GC Darunias Joy",
+            "sections": [
+              {
+                "name": "Play Sarias Song",
+                "access_rules": [
+                  "$child_death_mountain,ocarina,lullaby,saria",
+                  "$spawn_access|DMC Lower|child,ocarina,saria",
+                  "$spawn_access|DMC Fairy|child,ocarina,saria",
+                  "{$hintable}"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1670,
+                "y": 75
+              }
+            ]
+          },
+          {
+            "name": "GC Grotto",
+            "access_rules": [
+              "$has_age|adult"
+            ],
+            "sections": [
+              {
+                "name": "GC Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "ocarina,time,$damage_below_quadruple",
+                  "ocarina,time,$goron_tunic",
+                  "ocarina,time,longshot",
+                  "ocarina,time,nayrus,magic",
+                  "hookshot,$damage_below_ohko,$goron_tunic",
+                  "hookshot,nayrus,magic",
+                  "hookshot,$damage_below_quadruple,[logic_goron_grotto]"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1705,
+                "y": 75
+              }
+            ]
+          },
+          {
+            "name": "GC Center Platform",
+            "sections": [
+              {
+                "name": "GC GS Center Platform",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_age|adult"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1635,
+                "y": 145
+              }
+            ]
+          },
+          {
+            "name": "GC Shop",
+            "access_rules": [
+              "$link_the_goron",
+              "$spawn_access|GC Shop|adult",
+              "$has_age|child,$has_explosives",
+              "$has_age|child,dinsfire,magic",
+              "$child_death_mountain,lift1",
+              "$child_death_mountain,ocarina,lullaby,sticks"
+            ],
+            "sections": [
+              {
+                "name": "Item 1",
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 2",
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 3",
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Item 4",
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 1600,
+                "y": 110
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Death Mountain Crater",
+        "children": [
+          {
+            "name": "DMC Upper Grotto",
+            "sections": [
+              {
+                "name": "DMC Upper Grotto Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$can_blast"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1815,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "DMC Wall",
+            "sections": [
+              {
+                "name": "DMC Wall Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$spawn_access|Death Mountain Summit|child",
+                  "$spawn_access|DMT Fairy|child",
+                  "$dmc_upper",
+                  "{ocarina,bolero}"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1850,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "DMC Volcano",
+            "sections": [
+              {
+                "name": "DMC Volcano Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "$has_age|both,ocarina,bolero,$bean_planting|no,beans",
+                  "$has_age|both,ocarina,bolero,bean_crater_yes",
+                  "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
+                  "{ocarina,bolero}",
+                  "{$link_the_goron}",
+                  "{$has_age|adult,hammer}"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1745,
+                "y": 15
+              }
+            ]
+          },
+          {
+            "name": "DMC Great Fairy Fountain",
+            "access_rules": [
+              "$dmc_lower,hammer",
+              "$spawn_access|DMC Fairy|child",
+              "$spawn_access|DMC Fairy|adult"
+            ],
+            "sections": [
+              {
+                "name": "DMC Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "ocarina,lullaby"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1780,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "DMC Hammer Grotto",
+            "access_rules": [
+              "$dmc_lower,hammer"
+            ],
+            "sections": [
+              {
+                "name": "DMC Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1780,
+                "y": 35
+              }
+            ]
+          },
+          {
+            "name": "Sheik in Crater",
+            "sections": [
+              {
+                "name": "Song",
+                "access_rules": [
+                  "$dmc_central",
+                  "{$hintable}"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1885,
+                "y": 70
+              }
+            ]
+          },
+          {
+            "name": "DMC Deku Scrub",
+            "sections": [
+              {
+                "name": "Bombs",
+                "access_rules": [
+                  "$can_blast,$has_age|child,$can_child_attack",
+                  "$can_blast,$has_age|child,nuts",
+                  "$can_blast,$has_age|child,shield1",
+                  "$spawn_access|Death Mountain Summit|child,$can_child_attack",
+                  "$spawn_access|Death Mountain Summit|child,nuts",
+                  "$spawn_access|Death Mountain Summit|child,shield1",
+                  "$spawn_access|DMT Fairy|child,$can_child_attack",
+                  "$spawn_access|DMT Fairy|child,nuts",
+                  "$spawn_access|DMT Fairy|child,shield1",
+                  "{$hintable}"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1815,
+                "y": 35
+              }
+            ]
+          },
+          {
+            "name": "DMC Crate",
+            "sections": [
+              {
+                "name": "DMC GS Crate",
+                "short_name": "GS",
+                "access_rules": [
+                  "$can_blast,$has_age|child,$can_child_attack",
+                  "$spawn_access|Death Mountain Summit|child,$can_child_attack",
+                  "$spawn_access|DMT Fairy|child,$can_child_attack",
+                  "{$hintable}"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1850,
+                "y": 35
+              }
+            ]
+          },
+          {
+            "name": "DMC Bean Patch",
+            "access_rules": [
+              "$has_age|child,ocarina,bolero"
+            ],
+            "sections": [
+              {
+                "name": "Plant Bean",
+                "access_rules": [
+                  "beans,bean_crater_no"
+                ],
+                "visibility_rules": [
+                  "$bean_planting|yes"
+                ],
+                "hosted_item": "bean_crater_yes"
+              },
+              {
+                "name": "DMC GS Bean Patch",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_bottle,$can_child_attack"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1885,
+                "y": 35
               }
             ]
           }
