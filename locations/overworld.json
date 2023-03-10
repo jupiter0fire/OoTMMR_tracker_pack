@@ -2383,23 +2383,36 @@
         "name": "Goron City",
         "children": [
           {
+            "name": "Goron City As Child",
+            "access_rules":[
+              "@Death Mountain As Child",
+              "$has_explosives_bool"
+            ]
+          },
+          {
+            "name": "Goron City As Adult",
+            "access_rules":[
+              "@Death Mountain As Adult",
+              "$has_explosives_bool"
+            ]
+          },
+          {  
             "name": "GC Maze",
             "sections": [
               {
                 "name": "Right and Center Chests",
                 "access_rules": [
-                  "$can_blast",
-                  "$has_age|adult,lift2"
+                  "@Goron City As Child,$has_explosives_bool",
+                  "@Goron City As Adult,$has_explosives_or_hammer",
+                  "@Goron City As Adult,lift2"
                 ],
                 "item_count": 2
               },
               {
                 "name": "Left Chest",
                 "access_rules": [
-                  "$has_age|adult,hammer",
-                  "$has_age|adult,lift2",
-                  "$has_age|adult,[logic_goron_city_leftmost],$has_explosives,hoverboots",
-                  "{$hintable}"
+                  "@Goron City As Adult,lift2",
+                  "@Goron City As Adult,$can_use_hammer"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2408,7 +2421,7 @@
                 "name": "GC GS Boulder Maze",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$has_explosives"
+                  "@Goron City As Child,$has_explosives_bool"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2433,7 +2446,9 @@
               {
                 "name": "Stop him",
                 "access_rules": [
-                  "$link_the_goron"
+                  "@Goron City As Adult,$has_explosives_bool",
+                  "@Goron City As Adult,$can_use_bow",
+                  "@Goron City As Adult,lift1"
                 ],
                 "item_count": 1
               }
@@ -2453,8 +2468,7 @@
               {
                 "name": "Blow him up",
                 "access_rules": [
-                  "$has_age|child,$has_explosives",
-                  "$child_death_mountain,lift1,[logic_child_rolling_with_strength]"
+                  "@Goron City As Child,$has_explosives_bool"
                 ],
                 "item_count": 1
               }
@@ -2474,11 +2488,8 @@
               {
                 "name": "Pay 200",
                 "access_rules": [
-                  "$has_age|adult,wallet,$can_blast",
-                  "$has_age|adult,wallet,lift1"
-                ],
-                "visibility_rules": [
-                  "setting_shuffle_merchants_yes"
+                  "@Goron City As Adult,wallet,$has_bombflowers",
+                  "@Goron City As Adult,wallet,$can_use_hammer"
                 ],
                 "item_count": 1
               }
@@ -2498,23 +2509,8 @@
                 "name": "Freestanding PoH",
                 "short_name": "HP :)",
                 "access_rules": [
-                  "$has_age|child,ocarina,lullaby,sticks,bombs",
-                  "$has_age|child,ocarina,lullaby,sticks,bombchu,[bombs]",
-                  "$has_age|child,ocarina,lullaby,sticks,$has_bombchus,[logic_goron_city_pot]",
-                  "$child_death_mountain,ocarina,lullaby,sticks,lift1,[logic_goron_city_pot_with_strength]",
-                  "$spawn_access|DMC Lower|child,sticks,bombs",
-                  "$spawn_access|DMC Lower|child,sticks,bombchu,[bombs]",
-                  "$spawn_access|DMC Lower|child,sticks,$has_bombchus,[logic_goron_city_pot]",
-                  "$spawn_access|DMC Lower|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
-                  "$spawn_access|DMC Fairy|child,sticks,bombs",
-                  "$spawn_access|DMC Fairy|child,sticks,bombchu,[bombs]",
-                  "$spawn_access|DMC Fairy|child,sticks,$has_bombchus,[logic_goron_city_pot]",
-                  "$spawn_access|DMC Fairy|child,sticks,lift1,[logic_goron_city_pot_with_strength]",
-                  "$has_age|child,dinsfire,magic,bombs",
-                  "$has_age|child,dinsfire,magic,bombchu,[bombs]",
-                  "$has_age|child,dinsfire,magic,$has_bombchus,[logic_goron_city_pot]",
-                  "$has_age|child,dinsfire,magic,lift1,[logic_goron_city_pot_with_strength]",
-                  "{$hintable}"
+                  "@Goron City As Child,$has_explosives_bool,$can_play|lullaby",
+                  "@Goron City As Child,$has_explosives_bool,$has_fire"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
@@ -2536,10 +2532,7 @@
               {
                 "name": "Play Sarias Song",
                 "access_rules": [
-                  "$child_death_mountain,ocarina,lullaby,saria",
-                  "$spawn_access|DMC Lower|child,ocarina,saria",
-                  "$spawn_access|DMC Fairy|child,ocarina,saria",
-                  "{$hintable}"
+                  "@Goron City As Child,$can_play|lullaby,$can_play|saria"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -2595,7 +2588,7 @@
                 "name": "GC GS Center Platform",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|adult"
+                  "@Goron City As Adult"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
