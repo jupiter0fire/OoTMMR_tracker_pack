@@ -2655,13 +2655,55 @@
         "name": "Death Mountain Crater",
         "children": [
           {
+            "name": "Death Mountain Crater Bottom As Adult",
+            "access_rules":[
+              "@Goron City As Adult,$has_explosives_bool",
+              "@Goron City As Adult,$can_use_bow",
+              "@Goron City As Adult,lift1",
+              "@Death Mountain Summit As Adult,$has_hover_boots",
+              "$has_age|adult,$can_play|bolero,$can_use_hookshot",
+              "$has_age|adult,$can_play|bolero,$has_hover_boots",
+              "$has_age|adult,$can_play|bolero,beans",
+              "@Death Mountain Summit As Adult,$has_goron_tunic_strict,$can_longshot_scarecrow"
+            ]
+          },
+          {
+            "name": "Death Mountain Crater Top As Child",
+            "access_rules":[
+              "@Death Mountain Summit As Child"
+            ]
+          },
+          {
+            "name": "Death Mountain Crater Top As Adult",
+            "access_rules":[
+              "@Death Mountain Summit As Adult",
+              "@Death Mountain Crater Bottom As Adult,$can_use_hammer"
+            ]
+          },
+          {
+            "name": "Death Mountain Crater Warp As Child",
+            "access_rules":[
+              "$has_age|child,$can_play|bolero"
+            ]
+          },
+          {
+            "name": "Death Mountain Crater Warp As Adult",
+            "access_rules":[
+              "$has_age|adult,$can_play|bolero",
+              "@Death Mountain Crater Top As Adult,$has_goron_tunic_strict,$can_longshot_scarecrow",
+              "@Death Mountain Crater Bottom As Adult,$has_hover_boots",
+              "@Death Mountain Crater Bottom As Adult,$can_use_hookshot"
+            ]
+          },
+          {
             "name": "DMC Upper Grotto",
             "sections": [
               {
                 "name": "DMC Upper Grotto Chest",
                 "short_name": "Chest",
                 "access_rules": [
-                  "$can_blast"
+                  "@Death Mountain Crater Top As Child,$has_explosives_bool",
+                  "@Death Mountain Crater Top As Adult,$has_explosives_or_hammer"        
                 ],
                 "item_count": 1
               }
@@ -2681,10 +2723,8 @@
                 "name": "DMC Wall Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$spawn_access|Death Mountain Summit|child",
-                  "$spawn_access|DMT Fairy|child",
-                  "$dmc_upper",
-                  "{ocarina,bolero}"
+                  "@Death Mountain Crater Top As Child",
+                  "@Death Mountain Crater Top As Adult"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
@@ -2707,12 +2747,7 @@
                 "name": "DMC Volcano Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$has_age|both,ocarina,bolero,$bean_planting|no,beans",
-                  "$has_age|both,ocarina,bolero,bean_crater_yes",
-                  "$dmc_lower,[logic_crater_bean_poh_with_hovers],hoverboots",
-                  "{ocarina,bolero}",
-                  "{$link_the_goron}",
-                  "{$has_age|adult,hammer}"
+                  "@Death Mountain Crater Warp As Adult,@Death Mountain Crater Warp As Child,beans"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
@@ -2731,16 +2766,14 @@
           {
             "name": "DMC Great Fairy Fountain",
             "access_rules": [
-              "$dmc_lower,hammer",
-              "$spawn_access|DMC Fairy|child",
-              "$spawn_access|DMC Fairy|adult"
+              "@Death Mountain Crater Bottom As Adult,$can_use_hammer"
             ],
             "sections": [
               {
                 "name": "DMC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "ocarina,lullaby"
+                  "$can_play|lullaby"
                 ],
                 "item_count": 1
               }
@@ -2785,8 +2818,7 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$dmc_central",
-                  "{$hintable}"
+                  "@Death Mountain Crater Warp As Adult"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
@@ -2843,10 +2875,7 @@
                 "name": "DMC GS Crate",
                 "short_name": "GS",
                 "access_rules": [
-                  "$can_blast,$has_age|child,$can_child_attack",
-                  "$spawn_access|Death Mountain Summit|child,$can_child_attack",
-                  "$spawn_access|DMT Fairy|child,$can_child_attack",
-                  "{$hintable}"
+                  "@Death Mountain Crater Top As Child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2868,24 +2897,14 @@
           {
             "name": "DMC Bean Patch",
             "access_rules": [
-              "$has_age|child,ocarina,bolero"
+              "@Death Mountain Crater Warp As Child"
             ],
             "sections": [
-              {
-                "name": "Plant Bean",
-                "access_rules": [
-                  "beans,bean_crater_no"
-                ],
-                "visibility_rules": [
-                  "$bean_planting|yes"
-                ],
-                "hosted_item": "bean_crater_yes"
-              },
               {
                 "name": "DMC GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_bottle,$can_child_attack"
+                  "$gs_soil"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
