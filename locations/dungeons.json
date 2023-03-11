@@ -2722,7 +2722,7 @@
     "name": "Gerudo Training Ground",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "$gerudo_valley_far_side,$gerudo_card"
+      "$gerudo_card"
     ],
     "sections": [
       {
