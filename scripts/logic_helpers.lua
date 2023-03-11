@@ -366,35 +366,6 @@ function has_fire()
   return has("magic") and ((has_age("adult") and has("bow") and has("firearrow")) or has("dins"))
 end
 
-function can_leave_forest()
-  if has("setting_forest_open") or has("setting_forest_deku") or has("setting_age_adult") then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  if has("shield1") and has("sword1") then
-    if has("sling") or has("logic_deku_b1_skip") then
-      return 1, AccessibilityLevel.Normal
-    end
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-
-  if has("deku") then
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-
-  return 0, AccessibilityLevel.None
-end
-
-function mask_shop_open()
-  if
-    (has("setting_kak_open") and has("postzelda")) or (has("setting_kak_letter") and has("postzelda")) or
-      (has("setting_kak_closed") and has("postguard"))
-   then
-    return 1, AccessibilityLevel.Normal
-  end
-  return 0, AccessibilityLevel.None
-end
-
 function beyond_mido()
   if
     (has("ocarina") and (has("saria") or has("minuet"))) or has("logic_mido_backflip") or
@@ -535,34 +506,6 @@ function adult_colossus()
   end
 
   return 1, level
-end
-
-function child_death_mountain()
-  if has_age("child") == 0 then
-    return 0, AccessibilityLevel.None
-  end
-
-  if
-    has("setting_kak_open") or (has("setting_kak_letter") and has("postzelda")) or
-      (has("setting_kak_closed") and has("postguard")) or
-      (has("dinsfire") and has("magic"))
-   then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  if has_age("adult") > 0 and (has("lift1") or has("bow") or has("hammer")) then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  if
-    spawn_access("DMC Lower", "child") > 0 or spawn_access("Death Mountain Summit", "child") > 0 or
-      spawn_access("DMC Fairy", "child") > 0 or
-      spawn_access("DMT Fairy", "child") > 0
-   then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  return has_explosives()
 end
 
 function link_the_goron()

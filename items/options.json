@@ -1,42 +1,5 @@
 [
   {
-    "name": "Forest",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_forest_open.png",
-        "codes": "setting_forest,setting_forest_open",
-        "inherits_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Kakariko Gate",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_kak_open.png",
-        "codes": "setting_kak,setting_kak_open"
-      },
-      {
-        "img": "images/setting_kak_letter.png",
-        "codes": "setting_kak,setting_kak_letter",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_kak_closed.png",
-        "codes": "setting_kak,setting_kak_closed",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Door of Time",
     "type": "progressive",
     "allow_disabled": false,

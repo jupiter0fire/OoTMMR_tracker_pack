@@ -2619,8 +2619,6 @@
               "$spawn_access|GC Shop|adult",
               "$has_age|child,$has_explosives",
               "$has_age|child,dinsfire,magic",
-              "$child_death_mountain,lift1",
-              "$child_death_mountain,ocarina,lullaby,sticks"
             ],
             "sections": [
               {

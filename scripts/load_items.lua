@@ -26,6 +26,5 @@ for i = 1, 13 do
   DungeonReward(i)
 end
 
-ScriptHost:LoadScript("scripts/user_presets.lua")
 ScriptHost:LoadScript("scripts/custom_presets.lua")
 PresetLoader()

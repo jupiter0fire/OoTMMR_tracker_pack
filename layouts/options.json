@@ -6,18 +6,6 @@
     "content": [
       {
         "type": "item",
-        "item": "setting_forest",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_kak",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_door",
         "width": 200,
         "height": 16
