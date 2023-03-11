@@ -989,7 +989,8 @@
       {
         "name": "Fire Temple Boss Key Region",
         "access_rules": [
-          "fire_small_keys:1,[fire_small_keys:8],$can_use_hammer"
+          "fire_small_keys:8,$can_use_hammer",
+          "$has|setting_shuffle_smallkeys_no,$can_use_hammer"
         ],
         "visibility_rules": [
           "hidden_region"

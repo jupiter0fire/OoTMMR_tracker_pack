@@ -60,21 +60,8 @@ function update_minimal_bottle()
 end
 
 local vanilla_captures = {
-  ["setting_shuffle_sword1_yes"] = {
-    ["@KF Kokiri Sword Chest/Dodge Boulder"] = "sword1"
-  },
-  ["setting_shuffle_ocarinas_yes"] = {
-    ["@LW Bridge From Forest/LW Gift from Saria"] = "ocarina",
-    ["@HF Ocarina of Time/HF Ocarina of Time Item"] = "ocarina"
-  },
-  ["setting_shuffle_egg_yes"] = {
-    ["@Malon at Castle/HC Malon Egg"] = "capture_childegg"
-  },
   ["setting_shuffle_card_yes"] = {
     ["@Carpenter Rescue/Hideout Gerudo Membership Card"] = "gerudocard"
-  },
-  ["setting_shuffle_beans_yes"] = {
-    ["@ZR Magic Bean Salesman/Buy Item"] = "beans"
   }
 }
 function update_vanilla_captures()

@@ -25,43 +25,7 @@
       },
       {
         "type": "item",
-        "item": "setting_cowsanity",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_sword1",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_ocarinas",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_egg",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_shuffle_card",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_beans",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_merchants",
         "width": 200,
         "height": 16
       }
@@ -75,12 +39,6 @@
       {
         "type": "item",
         "item": "setting_shuffle_smallkeys",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_hideoutkeys",
         "width": 200,
         "height": 16
       },
