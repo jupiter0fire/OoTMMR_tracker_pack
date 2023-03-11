@@ -12,30 +12,6 @@
       },
       {
         "type": "item",
-        "item": "setting_fountain",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_gerudo",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bridge",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bridge_amount",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_trials",
         "width": 200,
         "height": 16

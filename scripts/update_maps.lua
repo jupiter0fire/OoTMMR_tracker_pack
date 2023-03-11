@@ -1,12 +1,3 @@
-local max_amount_per_bridge_stage = {0, 0, 3, 6, 9, 100}
-function update_bridge_amount_max()
-  local setting_bridge = get_object("setting_bridge")
-  local setting_bridge_amount = get_object("setting_bridge_amount")
-  if setting_bridge and setting_bridge.CurrentStage and setting_bridge_amount then
-    setting_bridge_amount.MaxCount = max_amount_per_bridge_stage[setting_bridge.CurrentStage + 1] or 0
-  end
-end
-
 function update_gerudo_card()
   local setting_card = has("setting_shuffle_card_yes")
   local setting_open = has("gerudo_fortress_open")
@@ -106,7 +97,6 @@ function update_vanilla_captures()
 end
 
 function update_maps()
-  update_bridge_amount_max()
   update_gerudo_card()
   update_collected_capture()
   update_minimal_bottle()

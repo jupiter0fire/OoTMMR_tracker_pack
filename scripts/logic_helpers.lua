@@ -806,7 +806,7 @@ function child_fountain()
     return 0, AccessibilityLevel.None
   end
 
-  if has_exact("ruto", 0) and has_exact("setting_fountain_open", 0) then
+  if has_exact("ruto", 0) then
     return 0, AccessibilityLevel.None
   end
 
@@ -841,10 +841,6 @@ function adult_fountain()
   local domain, level = adult_domain()
   if domain == 0 then
     return 0, AccessibilityLevel.None
-  end
-
-  if has("setting_fountain_open") or has("setting_fountain_adult") then
-    return 1, level
   end
 
   --handing in letter
@@ -884,9 +880,7 @@ function has_bottle()
 end
 
 blue_fire_locations = {
-  "@Ganons Castle/Water Trial Chests",
-  "@Ganons Castle MQ/Water Trial Chest",
-  "@Gerudo Training Ground MQ/Before Heavy Block Chest"
+  "@Ganons Castle/Water Trial Chests"
 }
 function has_blue_fire()
   local bottle_count, bottle_level = has_bottle()
@@ -986,37 +980,8 @@ function damage_single_instance_ohko()
 end
 
 function can_spawn_rainbow_bridge()
-  local setting_bridge_amount =
-    get_object("setting_bridge_amount") and get_object("setting_bridge_amount").AcquiredCount or 0
-  local stones = Tracker:ProviderCountForCode("stones")
-  local medallions = Tracker:ProviderCountForCode("medallions")
-  local tokens = Tracker:ProviderCountForCode("token")
-
-  if has("setting_bridge_open") then
-    return 1, AccessibilityLevel.Normal
-  elseif has("setting_bridge_vanilla") then
-    if has("lightarrow") and Tracker:ProviderCountForCode("lacs_meds") >= 2 then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_bridge_stones") then
-    if stones >= setting_bridge_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_bridge_medallions") then
-    if medallions >= setting_bridge_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_bridge_dungeons") then
-    if (stones + medallions) >= setting_bridge_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif has("setting_bridge_gs") then
-    if tokens >= setting_bridge_amount then
-      return 1, AccessibilityLevel.Normal
-    end
-  end
-
-  return 0, AccessibilityLevel.None
+  
+  return has("forestmed") and has("noct_meds",2) and has("lacs_meds",2)
 end
 
 function trials_barrier_dispelled()
