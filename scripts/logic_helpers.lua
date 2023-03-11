@@ -13,7 +13,7 @@ function has_shield()
 end  
 
 function can_time_travel()
-  if has("setting_door_open") or (has("ocarina") and has("time")) then
+  if (has("setting_door_open") or (has("ocarina") and has("time"))) and has("mastersword") then
     return 1, AccessibilityLevel.Normal
   end
   return 0, AccessibilityLevel.None
@@ -25,14 +25,8 @@ function has_age(age)
   end
 
   if age == "child" then
-    if has("setting_age_child") then
-      return 1, AccessibilityLevel.Normal
-    end
-    return can_time_travel()
+    return 1, AccessibilityLevel.Normal
   elseif age == "adult" then
-    if has("setting_age_adult") then
-      return 1, AccessibilityLevel.Normal
-    end
     return can_time_travel()
   elseif age == "both" then
     return can_time_travel()

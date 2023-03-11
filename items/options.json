@@ -6,15 +6,6 @@
     "loop": true,
     "initial_stage_idx": 0,
     "stages": [
-      /*{
-        "img": "images/setting_forest_closed.png",
-        "codes": "setting_forest,setting_forest_closed"
-      },
-      {
-        "img": "images/setting_forest_deku.png",
-        "codes": "setting_forest,setting_forest_deku",
-        "inherits_codes": false
-      },*/
       {
         "img": "images/setting_forest_open.png",
         "codes": "setting_forest,setting_forest_open",
