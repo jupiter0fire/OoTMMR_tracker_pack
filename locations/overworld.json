@@ -2044,6 +2044,10 @@
                   {
                     "name": "DMT Freestanding PoH",
                     "short_name": "HP",
+                    "access_rules":[
+                      "@Death Mountain As Child",
+                      "@Death Mountain As Adult"
+                    ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
@@ -2535,9 +2539,6 @@
           },
           {
             "name": "GC Shop",
-            "visibility_rules": [
-              "hidden_region"
-            ],
             "access_rules": [
               "$link_the_goron",
               "$spawn_access|GC Shop|adult",
@@ -2564,13 +2565,6 @@
                 "name": "Item 4",
                 "capture_item": true,
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1600,
-                "y": 110
               }
             ]
           }
