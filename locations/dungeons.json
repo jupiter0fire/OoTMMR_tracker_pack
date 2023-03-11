@@ -3,8 +3,7 @@
     "name": "Deku Tree",
     "parent": "Kokiri Forest",
     "access_rules": [
-      "$has_age|child,setting_forest_open",
-      "$has_age|child,sword1"
+      "$has_age|child"
     ],
     "sections": [
       {
@@ -385,9 +384,9 @@
   },
   {
     "name": "Jabu Jabus Belly",
-    "parent": "Zoras Fountain",
+    "parent": "Zoras Fountain As Child",
     "access_rules": [
-      "$child_fountain,bottle"
+      "bottle"
     ],
     "sections": [
       {
@@ -517,9 +516,9 @@
   },
   {
     "name": "Ice Cavern",
-    "parent": "Zoras Fountain",
+    "parent": "Zoras Fountain As Adult",
     "access_rules": [
-      "$adult_fountain,$has_bottle"
+      "$has_bottle"
     ],
     "sections": [
       {
@@ -609,9 +608,9 @@
   },
   {
     "name": "Forest Temple",
-    "parent": "Sacred Forest Meadow",
+    "parent": "Sacred Meadow As Adult",
     "access_rules": [
-      "$can_use_hookshot,$beyond_mido"
+      "$can_use_hookshot"
     ],
     "sections": [
       {
@@ -982,7 +981,7 @@
   },
   {
     "name": "Fire Temple",
-    "parent": "Death Mountain Crater",
+    "parent": "Death Mountain Crater Warp As Adult",
     "access_rules": [
       "$has_goron_tunic"
     ],
@@ -1661,7 +1660,7 @@
   },
   {
     "name": "Shadow Temple",
-    "parent": "Graveyard",
+    "parent": "Graveyard Warp",
     "access_rules": [
       "$has_age|adult,$can_use_dins"
     ],
@@ -1951,7 +1950,7 @@
       {
         "name": "Spirit Temple Child Entrance",
         "access_rules": [
-          "$child_colossus"
+          "@Dessert Colossus As Child"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -1961,7 +1960,7 @@
       {
         "name": "Spirit Temple Adult Entrance",
         "access_rules": [
-          "$adult_colossus,lift2"
+          "@Dessert Colossus As Adult,lift2"
         ],
         "visibility_rules": [
           "hidden_region"

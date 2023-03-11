@@ -2092,6 +2092,12 @@
         ]
       },
       {
+        "name": "Graveyard Warp",
+        "access_rules":[
+          "$can_play|nocturne"
+        ]
+      },
+      {
         "name": "Death Mountain",
         "color": "#a01009",
         "children": [
