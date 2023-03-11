@@ -6,12 +6,6 @@
     "codes": "agony,soa"
   },
   {
-    "name": "Gerudo Card",
-    "type": "toggle",
-    "img": "images/gerudocard.png",
-    "codes": "gerudocard,card"
-  },
-  {
     "name": "Gold Skulltula Tokens",
     "type": "consumable",
     "img": "images/skulltula_token.png",

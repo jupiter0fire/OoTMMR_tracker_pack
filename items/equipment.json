@@ -90,6 +90,12 @@
     "codes": "kokiriboots"
   },
   {
+    "name": "Gerudo Membership Card",
+    "type": "toggle",
+    "img": "images/gerudocard.png",
+    "codes": "card"
+  },
+  {
     "name": "Iron Boots",
     "type": "toggle",
     "img": "images/ironboots.png",

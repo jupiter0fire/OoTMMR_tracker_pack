@@ -37,24 +37,6 @@
     ]
   },
   {
-    "name": "Shuffle Gerudo Card",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/setting_shuffle_card_no.png",
-        "img_mods": "@disabled",
-        "codes": "setting_shuffle_card,setting_shuffle_card_no"
-      },
-      {
-        "img": "images/setting_shuffle_card_yes.png",
-        "codes": "setting_shuffle_card,setting_shuffle_card_yes",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Shuffle Small Keys",
     "type": "progressive",
     "allow_disabled": false,

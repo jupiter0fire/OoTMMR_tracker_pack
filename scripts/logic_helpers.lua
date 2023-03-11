@@ -369,11 +369,7 @@ function gerudo_card()
   if has("card") then
     return 1, AccessibilityLevel.Normal
   end
-  if has("setting_shuffle_card_yes") then
-    return 0, AccessibilityLevel.None
-  else
-    return 1, AccessibilityLevel.SequenceBreak
-  end
+  return 0, AccessibilityLevel.None
 end
 
 function _gerudo_bridge()
