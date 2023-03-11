@@ -3963,773 +3963,637 @@
         ]
       },
       {
-        "name": "Gerudo Area",
-        "color": "#a09509",
+        "name": "Gerudo Valley",
         "children": [
           {
-            "name": "Gerudo Valley",
-            "children": [
+            "name": "GV Crate",
+            "sections": [
               {
-                "name": "GV Crate",
-                "sections": [
-                  {
-                    "name": "GV Crate Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$has_age|child",
-                      "$has_age|adult,longshot",
-                      "$gerudo_valley_far_side,[logic_valley_crate_hovers],hoverboots,$damage_single_instance_ohko"
-                    ],
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 655,
-                    "y": 635
-                  }
-                ]
-              },
-              {
-                "name": "GV Waterfall",
-                "sections": [
-                  {
-                    "name": "GV Waterfall Freestanding PoH",
-                    "short_name": "HP",
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 700,
-                    "y": 520
-                  }
-                ]
-              },
-              {
-                "name": "GV Cow",
-                "sections": [
-                  {
-                    "name": "Cow",
-                    "access_rules": [
-                      "$has_age|child,ocarina,epona",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_cowsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/cow.png",
-                    "chest_opened_img": "images/bottle_milk.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 670,
-                    "y": 600
-                  }
-                ]
-              },
-              {
-                "name": "GV Small Bridge",
+                "name": "GV Crate Freestanding PoH",
+                "short_name": "HP",
                 "access_rules": [
-                  "$has_age|child,$night_gs"
+                  "$has_age|child",
+                  "$has_age|adult,$can_use_longshot"
                 ],
-                "sections": [
-                  {
-                    "name": "GV GS Small Bridge (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "boomerang",
-                      "{sling}",
-                      "{dinsfire,magic}",
-                      "{$has_explosives}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 805,
-                    "y": 560
-                  }
-                ]
-              },
-              {
-                "name": "GV Bean Patch",
-                "sections": [
-                  {
-                    "name": "GV GS Bean Patch",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$has_bottle,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 640,
-                    "y": 600
-                  }
-                ]
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
               }
-            ]
-          },
-          {
-            "name": "GV Fortress Side",
-            "access_rules": [
-              "$gerudo_valley_far_side"
             ],
-            "children": [
+            "map_locations": [
               {
-                "name": "GV Chest",
-                "sections": [
-                  {
-                    "name": "Smash 'em",
-                    "access_rules": [
-                      "hammer",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 600,
-                    "y": 580
-                  }
-                ]
-              },
-              {
-                "name": "Master Carpenter",
-                "sections": [
-                  {
-                    "name": "Give Saw",
-                    "access_rules": [
-                      "saw"
-                    ],
-                    "visibility_rules":[
-                      "saw"
-                    ],
-                    "hosted_item": "capture_brokensword"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 640,
-                    "y": 545
-                  }
-                ]
-              },
-              {
-                "name": "GV Storms Grotto",
-                "access_rules": [
-                  "$hidden_grotto,ocarina,storm"
-                ],
-                "sections": [
-                  {
-                    "name": "GV Deku Scrubs Grotto",
-                    "short_name": "Deku Scrubs",
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 2
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 605,
-                    "y": 530
-                  }
-                ]
-              },
-              {
-                "name": "GV Behind Tent",
-                "access_rules": [
-                  "$night_gs"
-                ],
-                "sections": [
-                  {
-                    "name": "GV GS Behind Tent (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "{bow}",
-                      "{dinsfire,magic}",
-                      "{$has_explosives}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 635,
-                    "y": 515
-                  }
-                ]
-              },
-              {
-                "name": "GV Pillar",
-                "access_rules": [
-                  "$night_gs"
-                ],
-                "sections": [
-                  {
-                    "name": "GV GS Pillar (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "{bow}",
-                      "{$has_bombchus}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 570,
-                    "y": 580
-                  }
-                ]
+                "map": "oot",
+                "x": 655,
+                "y": 635
               }
             ]
           },
           {
-            "name": "Gerudo Fortress",
-            "children": [
+            "name": "GV Waterfall",
+            "sections": [
               {
-                "name": "GF Chest",
-                "access_rules": [
-                  "$gerudo_valley_far_side"
-                ],
-                "sections": [
-                  {
-                    "name": "Open it",
-                    "access_rules": [
-                      "hoverboots",
-                      "ocarina,scarecrow,hookshot",
-                      "longshot"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 545,
-                    "y": 360
-                  }
-                ]
-              },
+                "name": "GV Waterfall Freestanding PoH",
+                "short_name": "HP",
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "GF HBA",
-                "access_rules": [
-                  "ocarina,epona,bow,$gerudo_card,$gerudo_valley_far_side"
-                ],
-                "sections": [
-                  {
-                    "name": "1000 Points",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "1500 Points",
-                    "access_rules": [
-                      "bow",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 620,
-                    "y": 440
-                  }
-                ]
-              },
-              {
-                "name": "Carpenter Rescue",
-                "sections": [
-                  {
-                    "name": "Hideout Jail Guard (1 Torch)",
-                    "short_name": "1 Torch",
-                    "access_rules": [
-                      "$gerudo_valley_far_side",
-                      "$spawn_access|Gerudo Fortress|child,sword1",
-                      "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
-                    ],
-                    "chest_unopened_img": "images/chest_brown_small_key.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Hideout Jail Guard (2 Torches)",
-                    "short_name": "2 Torches",
-                    "access_rules": [
-                      "$gerudo_valley_far_side",
-                      "$spawn_access|Gerudo Fortress|child,sword1",
-                      "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
-                    ],
-                    "visibility_rules": [
-                      "gerudo_fortress_normal"
-                    ],
-                    "chest_unopened_img": "images/chest_brown_small_key.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Hideout Jail Guard (3 Torches)",
-                    "short_name": "3 Torches",
-                    "access_rules": [
-                      "$gerudo_valley_far_side,$gerudo_card",
-                      "$gerudo_valley_far_side,bow",
-                      "$gerudo_valley_far_side,hookshot",
-                      "$gerudo_valley_far_side,hoverboots",
-                      "$gerudo_valley_far_side,[logic_gerudo_kitchen]",
-                      "$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
-                      "$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]"
-                    ],
-                    "visibility_rules": [
-                      "gerudo_fortress_normal"
-                    ],
-                    "chest_unopened_img": "images/chest_brown_small_key.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Hideout Jail Guard (4 Torches)",
-                    "short_name": "4 Torches",
-                    "access_rules": [
-                      "$gerudo_valley_far_side",
-                      "$spawn_access|Gerudo Fortress|child,sword1",
-                      "$spawn_access|Gerudo Fortress|child,[sword1],sticks"
-                    ],
-                    "visibility_rules": [
-                      "gerudo_fortress_normal"
-                    ],
-                    "chest_unopened_img": "images/chest_brown_small_key.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Hideout Gerudo Membership Card",
-                    "short_name": "Gerudo Card",
-                    "access_rules": [
-                      "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,$gerudo_card",
-                      "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,bow",
-                      "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,hookshot",
-                      "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,hoverboots",
-                      "gerudo_fortress_normal,th_small_keys:4,$gerudo_valley_far_side,[logic_gerudo_kitchen]",
-                      "gerudo_fortress_fast,th_small_keys:1,$gerudo_valley_far_side",
-                      "gerudo_fortress_normal,th_small_keys:4,$spawn_access|Gerudo Fortress|child,sword1,[logic_gerudo_kitchen]",
-                      "gerudo_fortress_normal,th_small_keys:4,$spawn_access|Gerudo Fortress|child,[sword1],sticks,[logic_gerudo_kitchen]",
-                      "gerudo_fortress_fast,th_small_keys:1,$spawn_access|Gerudo Fortress|child,sword1",
-                      "gerudo_fortress_fast,th_small_keys:1,$spawn_access|Gerudo Fortress|child,[sword1],sticks"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "gerudo_fortress_open"
-                    ],
-                    "x": 505,
-                    "y": 390
-                  }
-                ]
-              },
-              {
-                "name": "GF Archery Range",
-                "access_rules": [
-                  "$night_gs,$gerudo_card,$gerudo_valley_far_side"
-                ],
-                "sections": [
-                  {
-                    "name": "GF GS Archery Range (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "{bow}",
-                      "{$has_explosives}",
-                      "{dinsfire,magic}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 660,
-                    "y": 305
-                  }
-                ]
-              },
-              {
-                "name": "GF Top Floor",
-                "access_rules": [
-                  "$night_gs,$gerudo_valley_far_side"
-                ],
-                "sections": [
-                  {
-                    "name": "GF GS Top Floor (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$gerudo_card",
-                      "bow",
-                      "hookshot",
-                      "hoverboots",
-                      "[logic_gerudo_kitchen]"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 545,
-                    "y": 390
-                  }
-                ]
+                "map": "oot",
+                "x": 700,
+                "y": 520
               }
             ]
           },
           {
-            "name": "Haunted Wasteland",
-            "children": [
+            "name": "GV Cow",
+            "sections": [
               {
-                "name": "Wasteland Structure",
+                "name": "Cow",
                 "access_rules": [
-                  "$wasteland",
+                  "$has_age|child,ocarina,epona",
                   "{$hintable}"
                 ],
-                "sections": [
-                  {
-                    "name": "Wasteland Chest",
-                    "short_name": "Chest",
-                    "access_rules": [
-                      "$has_fire",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Wasteland GS",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|adult,hookshot",
-                      "$has_age|adult,[hookshot],bombs,shield2",
-                      "$has_age|adult,[hookshot],bombs,shield3",
-                      "$has_age|child,ocarina,requiem,[logic_reverse_wasteland],boomerang",
-                      "{$has_age|adult}",
-                      "{$has_age|child,ocarina,requiem}",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "visibility_rules": [
+                  "setting_cowsanity_yes"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 360,
-                    "y": 285
-                  }
-                ]
-              },
+                "capture_item": true,
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "Wasteland Bombchu Salesman",
-                "short_name": "Carpet Salesman",
-                "access_rules": [
-                  "$wasteland,wallet"
-                ],
-                "sections": [
-                  {
-                    "name": "Pay 200",
-                    "access_rules": [
-                      "$has_age|adult",
-                      "$has_age|child,sticks",
-                      "$has_age|child,sword1"
-                    ],
-                    "visibility_rules": [
-                      "setting_shuffle_merchants_yes"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 380,
-                    "y": 350
-                  }
-                ]
+                "map": "oot",
+                "x": 670,
+                "y": 600
               }
             ]
           },
           {
-            "name": "Desert Colossus",
-            "children": [
+            "name": "GV Small Bridge",
+            "sections": [
               {
-                "name": "Colossus Great Fairy Fountain",
+                "name": "GV GS Small Bridge (N)",
+                "short_name": "GS",
                 "access_rules": [
-                  "$adult_colossus,$has_explosives"
+                  "$has_age|child,$gs_night,$can_use_boomerang"
                 ],
-                "sections": [
-                  {
-                    "name": "Colossus Great Fairy Reward",
-                    "short_name": "Reward",
-                    "access_rules": [
-                      "ocarina,lullaby"
-                    ],
-                    "item_count": 1
-                  }
+                "visibility_rules": [
+                  "setting_tokens_overworld"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 275,
-                    "y": 300
-                  }
-                ]
-              },
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "Colossus Arch",
-                "sections": [
-                  {
-                    "name": "Colossus Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$child_colossus,$bean_planting|no,beans,$has_age|adult",
-                      "$child_colossus,bean_colossus_yes,$has_age|adult",
-                      "{$adult_colossus}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 160,
-                    "y": 305
-                  }
-                ]
-              },
+                "map": "oot",
+                "x": 805,
+                "y": 560
+              }
+            ]
+          },
+          {
+            "name": "GV Bean Patch",
+            "sections": [
               {
-                "name": "Sheik at Colossus",
-                "sections": [
-                  {
-                    "name": "Song",
-                    "access_rules": [
-                      "$adult_colossus",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 130,
-                    "y": 345
-                  }
-                ]
-              },
-              {
-                "name": "Colossus Grotto",
+                "name": "GV GS Bean Patch",
+                "short_name": "GS",
                 "access_rules": [
-                  "$adult_colossus,$has_age|adult,lift2"
+                  "$has_age|child,$gs_soil"
                 ],
-                "sections": [
-                  {
-                    "name": "Colossus Deku Scrubs Grotto",
-                    "short_name": "Deku Scrubs",
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 2
-                  }
+                "visibility_rules": [
+                  "setting_tokens_overworld"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 195,
-                    "y": 305
-                  }
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 640,
+                "y": 600
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GV Fortress Side",
+        "access_rules": [
+          "$can_use_longshot",
+          "$has_age|adult,$can_play|epona"
+        ],
+        "children": [
+          {
+            "name": "GV Chest",
+            "sections": [
+              {
+                "name": "Smash 'em",
+                "access_rules": [
+                  "$can_use_hammer"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 600,
+                "y": 580
+              }
+            ]
+          },
+          {
+            "name": "Master Carpenter",
+            "sections": [
+              {
+                "name": "Give Saw",
+                "access_rules": [
+                  "saw"
                 ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 640,
+                "y": 545
+              }
+            ]
+          },
+          {
+            "name": "GV Storms Grotto",
+            "access_rules": [
+              "$hidden_grotto,ocarina,storm"
+            ],
+            "sections": [
+              {
+                "name": "GV Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 605,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "name": "GV Behind Tent",
+            "sections": [
+              {
+                "name": "GV GS Behind Tent (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$can_use_hookshot,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 635,
+                "y": 515
+              }
+            ]
+          },
+          {
+            "name": "GV Pillar",
+            "sections": [
+              {
+                "name": "GV GS Pillar (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$can_use_hookshot,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 570,
+                "y": 580
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gerudo Fortress",
+        "access_rules":[
+          "@GV Fortress Side"
+        ],
+        "children": [
+          {
+            "name": "GF Chest",
+            "sections": [
+              {
+                "name": "Open it",
+                "access_rules": [
+                  "$has_hover_boots",
+                  "$can_use_longshot",
+                  "$can_hookshot_scarecrow"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 545,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "GF HBA",
+            "access_rules": [
+              "$has_age|adult,$can_play|epona,$can_use_bow,$gerudo_card"
+            ],
+            "sections": [
+              {
+                "name": "1000 Points",
+                "item_count": 1
               },
               {
-                "name": "Colossus Bean Patch",
-                "access_rules": [
-                  "$child_colossus"
-                ],
-                "sections": [
-                  {
-                    "name": "Plant Bean",
-                    "access_rules": [
-                      "beans,bean_colossus_no"
-                    ],
-                    "visibility_rules": [
-                      "$bean_planting|yes"
-                    ],
-                    "hosted_item": "bean_colossus_yes"
-                  },
-                  {
-                    "name": "Colossus GS Bean Patch",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_bottle,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 90,
-                    "y": 345
-                  }
-                ]
+                "name": "1500 Points",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 620,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "name": "Carpenter Rescue",
+            "sections": [
+              {
+                "name": "Hideout Jail Guard (1 Torch)",
+                "short_name": "1 Torch",
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
               },
               {
-                "name": "Colossus Tree",
-                "access_rules": [
-                  "$adult_colossus,$has_age|adult,$night_gs"
-                ],
-                "sections": [
-                  {
-                    "name": "Colossus GS Tree (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "{bow}",
-                      "{$has_explosives}",
-                      "{dinsfire,magic}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 155,
-                    "y": 435
-                  }
-                ]
+                "name": "Hideout Jail Guard (2 Torches)",
+                "short_name": "2 Torches",
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
               },
               {
-                "name": "Colossus Hill",
+                "name": "Hideout Jail Guard (3 Torches)",
+                "short_name": "3 Torches",
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Hideout Jail Guard (4 Torches)",
+                "short_name": "4 Torches",
                 "access_rules": [
-                  "$has_age|adult,$night_gs"
+                  "$can_use_hookshot",
+                  "$can_use_bow",
+                  "$has_hover_boots",
+                  "$gerudo_card"
                 ],
-                "sections": [
-                  {
-                    "name": "Colossus GS Hill (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$child_colossus,$bean_planting|no,beans",
-                      "$child_colossus,bean_colossus_yes",
-                      "$adult_colossus,longshot",
-                      "$adult_colossus,hookshot,[logic_colossus_gs]",
-                      "{$adult_colossus,bow}",
-                      "{$adult_colossus,$has_bombchus}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "chest_unopened_img": "images/chest_brown_small_key.png",
+                "item_count": 1
+              },
+              {
+                "name": "Hideout Gerudo Membership Card",
+                "short_name": "Gerudo Card",
+                "access_rules": [
+                  "th_small_keys:4"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 235,
-                    "y": 320
-                  }
-                ]
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 505,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "name": "GF Archery Range",
+            "sections": [
+              {
+                "name": "GF GS Archery Range (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$gs_night,$can_use_hookshot,$gerudo_card"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 660,
+                "y": 305
+              }
+            ]
+          },
+          {
+            "name": "GF Top Floor",
+            "access_rules": [
+              "$night_gs,$gerudo_valley_far_side"
+            ],
+            "sections": [
+              {
+                "name": "GF GS Top Floor (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$can_use_hookshot,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 545,
+                "y": 390
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Haunted Wasteland",
+        "access_rules":[
+          "@Gerudo Fortress,$gerudo_card,$can_use_longshot",
+          "@Gerudo Fortress,$gerudo_card,$has_hover_boots"
+        ],
+        "children": [
+          {
+            "name": "Wasteland Structure",
+            "sections": [
+              {
+                "name": "Wasteland Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$has_fire"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Wasteland GS",
+                "short_name": "GS",
+                "access_rules": [
+                  "$can_collect_distance_adult"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 360,
+                "y": 285
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Desert Colossus",
+        "children": [
+          {
+            "name": "Dessert Colossus As Child",
+            "access_rules":[
+              "$can_play|requiem"
+            ] 
+          },
+          {
+            "name": "Dessert Colossus As Adult",
+            "access_rules":[
+              "@Haunted Wasteland,$has_lens_strict",
+              "@Haunted Wasteland,$has|logic_wasteland_crossing_lens",
+              "$can_play|requiem"
+            ] 
+          },
+          {
+            "name": "Colossus Great Fairy Fountain",
+            "access_rules": [
+              "@Dessert Colossus As Child,$has_explosives_bool",
+              "@Dessert Colossus As Adult,$has_explosives_bool"
+            ],
+            "sections": [
+              {
+                "name": "Colossus Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$can_play|lullaby"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 275,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Colossus Arch",
+            "sections": [
+              {
+                "name": "Colossus Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "@Desser Colossus As Child,@Dessert Colossus As Adult,beans"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 160,
+                "y": 305
+              }
+            ]
+          },
+          {
+            "name": "Sheik at Colossus",
+            "sections": [
+              {
+                "name": "Song",
+                "access_rules": [
+                  "@Dessert Colossus As Child",
+                  "@Dessert Colossus As Adult"
+                ],
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 130,
+                "y": 345
+              }
+            ]
+          },
+          {
+            "name": "Colossus Grotto",
+            "access_rules": [
+              "$adult_colossus,$has_age|adult,lift2"
+            ],
+            "sections": [
+              {
+                "name": "Colossus Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 195,
+                "y": 305
+              }
+            ]
+          },
+          {
+            "name": "Colossus Bean Patch",
+            "sections": [
+              {
+                "name": "Colossus GS Bean Patch",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Dessert Colossus As Child,$gs_soil"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 90,
+                "y": 345
+              }
+            ]
+          },
+          {
+            "name": "Colossus Tree",
+            "sections": [
+              {
+                "name": "Colossus GS Tree (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Dessert Colossus As Adult,$can_use_hookshot,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 155,
+                "y": 435
+              }
+            ]
+          },
+          {
+            "name": "Colossus Hill",
+            "sections": [
+              {
+                "name": "Colossus GS Hill (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Dessert Colossus As Adult,$gs_night,$can_use_longshot",
+                  "@Dessert Colossus As Adult,@Dessert Colossus As Child,beans,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 235,
+                "y": 320
               }
             ]
           }

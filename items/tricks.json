@@ -399,6 +399,13 @@
     "codes": "logic_wasteland_crossing"
   },
   {
+    "name": "Wasteland Crossing without Lens",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_wasteland_crossing.png",
+    "codes": "logic_wasteland_crossing_lens"
+  },
+  {
     "name": "Desert Colossus Hill GS with Hookshot",
     "type": "toggle",
     "initial_active_state": false,
