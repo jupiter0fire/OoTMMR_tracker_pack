@@ -1,5 +1,5 @@
 {
-  "layout_main_open": {
+  "layout_main_oot": {
     "type": "array",
     "orientation": "vertical",
     "item_margin": "1,2",
@@ -9,14 +9,7 @@
         "item": "setting_door",
         "width": 200,
         "height": 16
-      }
-    ]
-  },
-  "layout_main_shuffle": {
-    "type": "array",
-    "orientation": "vertical",
-    "item_margin": "1,2",
-    "content": [
+      },
       {
         "type": "item",
         "item": "setting_tokens_off",
@@ -28,27 +21,13 @@
         "item": "setting_shuffle_card",
         "width": 200,
         "height": 16
-      }
-    ]
-  },
-  "layout_main_dungeon": {
-    "type": "array",
-    "orientation": "vertical",
-    "item_margin": "1,2",
-    "content": [
+      },
       {
         "type": "item",
         "item": "setting_shuffle_smallkeys",
         "width": 200,
         "height": 16
-      }
-    ]
-  },
-  "layout_other_misc": {
-    "type": "array",
-    "orientation": "vertical",
-    "item_margin": "1,2",
-    "content": [
+      },
       {
         "type": "item",
         "item": "setting_skulltulas_sun",
@@ -890,34 +869,10 @@
     "type": "tabbed",
     "tabs": [
       {
-        "title": "Open",
+        "title": "OOT",
         "content": {
           "type": "layout",
-          "key": "layout_main_open",
-          "h_alignment": "left"
-        }
-      },
-      {
-        "title": "Shuffle",
-        "content": {
-          "type": "layout",
-          "key": "layout_main_shuffle",
-          "h_alignment": "left"
-        }
-      },
-      {
-        "title": "Dungeon Items",
-        "content": {
-          "type": "layout",
-          "key": "layout_main_dungeon",
-          "h_alignment": "left"
-        }
-      },
-      {
-        "title": "Other",
-        "content": {
-          "type": "layout",
-          "key": "layout_other_misc",
+          "key": "layout_main_oot",
           "h_alignment": "left"
         }
       },
