@@ -237,7 +237,7 @@
           "@Dodongos Cavern/Lobby,$has_age|child,sword1"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes"
+          "hidden_region"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -259,7 +259,7 @@
           "@Dodongos Cavern/Lobby"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes"
+          "hidden_region"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -318,7 +318,7 @@
           "@Dodongos Cavern/Climb,[logic_dc_scrub_room],$has_age|adult,lift1"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes"
+          "hidden_region"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -420,7 +420,7 @@
           "@Jabu Jabus Belly/Main"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes"
+          "hidden_region"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -2543,31 +2543,9 @@
         "item_count": 1
       },
       {
-        "name": "Forest Trial Clear",
-        "short_name": "Forest Trial",
-        "access_rules": [
-          "$can_LA,$has_fire"
-        ],
-        "visibility_rules": [
-          "setting_trials:1"
-        ],
-        "hosted_item": "trial_forest"
-      },
-      {
         "name": "Water Trial Chests",
         "short_name": "Water Trial",
         "item_count": 2
-      },
-      {
-        "name": "Water Trial Clear",
-        "short_name": "Water Trial",
-        "access_rules": [
-          "$has_bottle,hammer,$can_LA"
-        ],
-        "visibility_rules": [
-          "setting_trials:1"
-        ],
-        "hosted_item": "trial_water"
       },
       {
         "name": "Shadow Trial Front Chest",
@@ -2591,32 +2569,6 @@
         ],
         "capture_item": true,
         "item_count": 1
-      },
-      {
-        "name": "Shadow Trial Clear",
-        "short_name": "Shadow Trial",
-        "access_rules": [
-          "$can_LA,hammer,firearrow,[logic_lens_oot]",
-          "$can_LA,hammer,firearrow,$can_use_lens",
-          "$can_LA,hammer,longshot,hoverboots",
-          "$can_LA,hammer,longshot,dinsfire,[logic_lens_oot]",
-          "$can_LA,hammer,longshot,dinsfire,$can_use_lens"
-        ],
-        "visibility_rules": [
-          "setting_trials:1"
-        ],
-        "hosted_item": "trial_shadow"
-      },
-      {
-        "name": "Fire Trial Clear",
-        "short_name": "Fire Trial",
-        "access_rules": [
-          "$FTR_or_goron,lift3,$can_LA,longshot"
-        ],
-        "visibility_rules": [
-          "setting_trials:1"
-        ],
-        "hosted_item": "trial_fire"
       },
       {
         "name": "Light Trial Chests",
@@ -2645,18 +2597,6 @@
         "item_count": 1
       },
       {
-        "name": "Light Trial Clear",
-        "short_name": "Light Trial",
-        "access_rules": [
-          "lift3,$can_LA,hookshot,gc_small_keys:2,[logic_lens_oot]",
-          "lift3,$can_LA,hookshot,gc_small_keys:2,$can_use_lens"
-        ],
-        "visibility_rules": [
-          "setting_trials:1"
-        ],
-        "hosted_item": "trial_light"
-      },
-      {
         "name": "Spirit Trial Crystal Switch Chest",
         "short_name": "Spirit Trial 1",
         "access_rules": [
@@ -2673,25 +2613,13 @@
         "item_count": 1
       },
       {
-        "name": "Spirit Trial Clear",
-        "short_name": "Spirit Trial",
-        "access_rules": [
-          "$can_LA,shield3,$has_bombchus,[logic_spirit_trial_hookshot]",
-          "$can_LA,shield3,$has_bombchus,hookshot"
-        ],
-        "visibility_rules": [
-          "setting_trials:1"
-        ],
-        "hosted_item": "trial_spirit"
-      },
-      {
         "name": "Deku Scrubs",
         "access_rules": [
           "[logic_lens_oot]",
           "$can_use_lens"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes"
+          "hidden_region"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -2702,7 +2630,7 @@
         "name": "Ganons Tower Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "$trials_barrier_dispelled,$has_weapon"
+          "$has_weapon"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",

@@ -541,9 +541,6 @@ function goron_tunic()
   if has("redtunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet") then
-    if has("setting_shopsanity_yes") then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
     if spawn_access("GC Shop", "adult") > 0 then
       return 1, AccessibilityLevel.Normal
     end
@@ -916,9 +913,6 @@ function zora_tunic()
   if has("bluetunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet2") then
-    if has("setting_shopsanity_yes") then
-      return 1, AccessibilityLevel.SequenceBreak
-    end
     if spawn_access("ZD Shop", "adult") > 0 then
       return 1, AccessibilityLevel.Normal
     end
@@ -982,15 +976,5 @@ end
 function can_spawn_rainbow_bridge()
   
   return has("forestmed") and has("noct_meds",2) and has("lacs_meds",2)
-end
-
-function trials_barrier_dispelled()
-  local trials_cleared = Tracker:ProviderCountForCode("trial_cleared")
-  local setting_trials = get_object("setting_trials") and get_object("setting_trials").AcquiredCount or 0
-
-  if setting_trials == 0 or trials_cleared >= setting_trials then
-    return 1, AccessibilityLevel.Normal
-  end
-  return 0, AccessibilityLevel.None
 end
 

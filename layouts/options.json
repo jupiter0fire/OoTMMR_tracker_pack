@@ -9,79 +9,6 @@
         "item": "setting_door",
         "width": 200,
         "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_trials",
-        "width": 200,
-        "height": 16
-      }
-    ]
-  },
-  "layout_main_world": {
-    "type": "array",
-    "orientation": "vertical",
-    "item_margin": "1,2",
-    "content": [
-      {
-        "type": "item",
-        "item": "setting_age",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_interiors",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_grottos",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_dungeons",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_overworld",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_mixed",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_owl",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_warpsong",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_entrance_spawn",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_logic_chus",
-        "width": 200,
-        "height": 16
       }
     ]
   },
@@ -92,19 +19,7 @@
     "content": [
       {
         "type": "item",
-        "item": "setting_shopsanity",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_tokens_off",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_scrub_shuffle",
         "width": 200,
         "height": 16
       },
@@ -1057,14 +972,6 @@
         "content": {
           "type": "layout",
           "key": "layout_main_open",
-          "h_alignment": "left"
-        }
-      },
-      {
-        "title": "World",
-        "content": {
-          "type": "layout",
-          "key": "layout_main_world",
           "h_alignment": "left"
         }
       },
