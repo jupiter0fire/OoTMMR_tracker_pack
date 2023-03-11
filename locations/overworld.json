@@ -3238,28 +3238,6 @@
             ]
           },
           {
-            "name": "Talon",
-            "sections": [
-              {
-                "name": "Wake him up",
-                "access_rules": [
-                  "$has_age|child,childegg"
-                ],
-                "visibility_rules": [
-                  "setting_zelda_off,childegg"
-                ],
-                "hosted_item": "capture_childcucco"
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1480,
-                "y": 175
-              }
-            ]
-          },
-          {
             "name": "HC Garden",
             "access_rules": [
               "$has_age|child,childcucco"
@@ -3292,11 +3270,8 @@
                 "name": "HC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$has_age|child,$has_explosives,ocarina,lullaby",
-                  "$spawn_access|HC Fairy|child,ocarina,lullaby",
-                  "{$hintable}"
+                  "$has_age|child,$has_explosives_bool,$can_play|lullaby"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -3315,7 +3290,7 @@
                 "name": "HC GS Tree",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$can_child_attack"
+                  "$has_age|child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3336,22 +3311,18 @@
           {
             "name": "HC Storms Grotto",
             "access_rules": [
-              "$hidden_grotto,$has_age|child,ocarina,storm"
+              "$hidden_grotto_storms,$has_age|child"
             ],
             "sections": [
               {
                 "name": "HC GS Storms Grotto",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_explosives,boomerang",
-                  "[logic_castle_storms_gs],boomerang",
-                  "{$has_explosives}",
-                  "{$hintable}"
+                  "$can_use_boomerang,$has_explosives_bool"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -3402,11 +3373,8 @@
                 "name": "OGC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$has_age|adult,lift3,ocarina,lullaby",
-                  "$spawn_access|OGC Fairy|adult,ocarina,lullaby",
-                  "{$hintable}"
+                  "$has_age|adult,lift3,$can_play|lullaby"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
