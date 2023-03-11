@@ -247,14 +247,7 @@ function hidden_grotto()
 end
 
 function hintable()
-  if
-    has("setting_hints_on") or has("setting_hints_truth") and has("maskoftruth") or
-      has("setting_hints_agony") and has("agony")
-   then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end
+  return 1, AccessibilityLevel.Normal
 end
 
 function bean_planting(state)
@@ -942,19 +935,11 @@ function FTR_or_zora()
 end
 
 function damage_below_quadruple()
-  if has_exact("setting_damage_ohko", 0) and has_exact("setting_damage_quadruple", 0) then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end
+  return 1, AccessibilityLevel.Normal
 end
 
 function damage_below_ohko()
-  if has_exact("setting_damage_ohko", 0) then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end
+  return 1, AccessibilityLevel.Normal
 end
 
 function damage_single_instance_quadruple()

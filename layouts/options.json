@@ -41,18 +41,6 @@
         "item": "setting_shuffle_smallkeys",
         "width": 200,
         "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_bosskeys",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffle_ganon_bosskey",
-        "width": 200,
-        "height": 16
       }
     ]
   },
@@ -61,30 +49,6 @@
     "orientation": "vertical",
     "item_margin": "1,2",
     "content": [
-      {
-        "type": "item",
-        "item": "setting_zelda",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_masks",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_hints",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_damage",
-        "width": 200,
-        "height": 16
-      },
       {
         "type": "item",
         "item": "setting_skulltulas_sun",
