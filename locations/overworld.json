@@ -2289,7 +2289,7 @@
             "name": "Death Mountain Summit As Adult",
             "access_rules":[
               "@Death Mountain As Adult,$has_explosives_or_hammer",
-              "@Death Mountain As Child,@Death Mountain As Adult,beans" //DMC access
+              "@Death Mountain As Child,@Death Mountain As Adult,beans"
             ]
           },
           {
@@ -2929,6 +2929,15 @@
         "color": "#09a09d",
         "children": [
           {
+            "name": "Hyrule Town As Child"
+          },
+          {
+            "name": "Hyrule Town As Adult",
+            "access_rules":[
+              "$has_age|adult"
+            ]
+          },
+          { 
             "name": "Market",
             "children": [
               {
@@ -2937,7 +2946,7 @@
                   {
                     "name": "Market Lost Dog",
                     "access_rules": [
-                      "$has_age|child"
+                      "@Hyrule Town As Child"
                     ],
                     "item_count": 1
                   }
@@ -2957,7 +2966,7 @@
                     "name": "Market Shooting Gallery Reward",
                     "short_name": "Reward",
                     "access_rules": [
-                      "$has_age|child"
+                      "@Hyrule Town As Child"
                     ],
                     "item_count": 1
                   }
@@ -2971,67 +2980,9 @@
                 ]
               },
               {
-                "name": "Market Mask Shop",
+                "name": "Market Bomchu Bowling",
                 "access_rules": [
-                  "$has_age|child"
-                ],
-                "sections": [
-                  {
-                    "name": "Get Keaton Mask",
-                    "visibility_rules": [
-                      "setting_masks_off,setting_kak_open,letter",
-                      "setting_masks_off,setting_kak_letter,letter",
-                      "setting_masks_off,setting_kak_closed,lettershown",
-                      "setting_masks_complete,$mask_shop_open"
-                    ],
-                    "hosted_item": "capture_keaton"
-                  },
-                  {
-                    "name": "Get Skull Mask",
-                    "visibility_rules": [
-                      "keatonsold",
-                      "setting_masks_complete,$mask_shop_open"
-                    ],
-                    "hosted_item": "capture_skullmask"
-                  },
-                  {
-                    "name": "Get Spooky Mask",
-                    "visibility_rules": [
-                      "skullsold",
-                      "setting_masks_complete,$mask_shop_open"
-                    ],
-                    "hosted_item": "capture_spooky"
-                  },
-                  {
-                    "name": "Get Bunny Hood",
-                    "visibility_rules": [
-                      "spookysold",
-                      "setting_masks_complete,$mask_shop_open"
-                    ],
-                    "hosted_item": "capture_bunny"
-                  },
-                  {
-                    "name": "Get Mask of Truth",
-                    "visibility_rules": [
-                      "bunnysold",
-                      "setting_masks_complete,$mask_shop_open"
-                    ],
-                    "hosted_item": "capture_truth"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1465,
-                    "y": 290
-                  }
-                ]
-              },
-              {
-                "name": "Market Bombchu Bowling",
-                "access_rules": [
-                  "$has_age|child,setting_logic_chus_yes,bombchu",
-                  "$has_age|child,setting_logic_chus_no,bombs"
+                  "@Hyrule Town As Child,$has_explosives_bool"
                 ],
                 "sections": [
                   {
@@ -3062,8 +3013,7 @@
                     "name": "Market Treasure Chest Game Reward",
                     "short_name": "Reward",
                     "access_rules": [
-                      "$has_age|child,[$can_use_lens]",
-                      "{$hintable}"
+                      "@Hyrule Town As Child,$has_lens_strict"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -3192,46 +3142,13 @@
                 ]
               },
               {
-                "name": "Temple of Time",
-                "sections": [
-                  {
-                    "name": "Sheik at Temple",
-                    "access_rules": [
-                      "$can_time_travel,forestmed",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "ToT Light Arrows Cutscene",
-                    "short_name": "LACS",
-                    "access_rules": [
-                      "$has_age|adult,lacs_meds:2"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1535,
-                    "y": 295
-                  }
-                ]
-              },
-              {
                 "name": "Market Guard House",
                 "sections": [
                   {
                     "name": "Market 10 Big Poes",
                     "short_name": "Big Poes",
                     "access_rules": [
-                      "$has_age|adult,bow,[ocarina],[epona],$has_bottle",
-                      "$has_age|adult,[bow],ocarina,epona,$has_bottle",
-                      "{$hintable}"
+                      "@Hyrule Town As Adult,$can_play|epona,$can_use_bow,bottle"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -3240,7 +3157,7 @@
                     "name": "Market GS Guard House",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_age|child"
+                      "@Hyrule Town As Child"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -3259,209 +3176,245 @@
                 ]
               }
             ]
+          }
+        ]
+      }  ,  
+      {
+        "name": "Temple of Time",
+        "sections": [
+          {
+            "name": "Sheik at Temple",
+            "access_rules": [
+              "$has_age|adult,forestmed,$open_door_of_time"
+            ],
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
           },
           {
-            "name": "Hyrule Castle Grounds",
-            "children": [
+            "name": "ToT Light Arrows Cutscene",
+            "short_name": "LACS",
+            "access_rules": [
+              "$has_age|adult,lacs_meds:2"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Master Sword",
+            "access_rules": [
+              "$has_age|child,$open_door_of_time"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1535,
+            "y": 295
+          }
+        ]
+      },
+      {
+        "name": "Hyrule Castle Grounds",
+        "children": [
+          {
+            "name": "Malon at Castle",
+            "sections": [
               {
-                "name": "Malon at Castle",
-                "sections": [
-                  {
-                    "name": "HC Malon Egg",
-                    "access_rules": [
-                      "$has_age|child"
-                    ],
-                    "hosted_item": "meet_malon"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1440,
-                    "y": 245
-                  }
-                ]
-              },
-              {
-                "name": "Talon",
-                "sections": [
-                  {
-                    "name": "Wake him up",
-                    "access_rules": [
-                      "$has_age|child,childegg"
-                    ],
-                    "visibility_rules": [
-                      "setting_zelda_off,childegg"
-                    ],
-                    "hosted_item": "capture_childcucco"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1480,
-                    "y": 175
-                  }
-                ]
-              },
-              {
-                "name": "HC Garden",
+                "name": "HC Malon Egg",
                 "access_rules": [
-                  "$has_age|child,childcucco"
+                  "$has_age|child"
                 ],
-                "sections": [
-                  {
-                    "name": "Song from Impa",
-                    "short_name": "Song",
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "HC Zeldas Letter",
-                    "hosted_item": "meet_zelda"
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1420,
-                    "y": 175
-                  }
-                ]
-              },
+                "hosted_item": "meet_malon"
+              }
+            ],
+            "map_locations": [
               {
-                "name": "HC Great Fairy Fountain",
-                "sections": [
-                  {
-                    "name": "HC Great Fairy Reward",
-                    "short_name": "Reward",
-                    "access_rules": [
-                      "$has_age|child,$has_explosives,ocarina,lullaby",
-                      "$spawn_access|HC Fairy|child,ocarina,lullaby",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1490,
-                    "y": 240
-                  }
-                ]
-              },
-              {
-                "name": "HC Tree",
-                "sections": [
-                  {
-                    "name": "HC GS Tree",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1410,
-                    "y": 245
-                  }
-                ]
-              },
-              {
-                "name": "HC Storms Grotto",
-                "access_rules": [
-                  "$hidden_grotto,$has_age|child,ocarina,storm"
-                ],
-                "sections": [
-                  {
-                    "name": "HC GS Storms Grotto",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_explosives,boomerang",
-                      "[logic_castle_storms_gs],boomerang",
-                      "{$has_explosives}",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1465,
-                    "y": 205
-                  }
-                ]
+                "map": "oot",
+                "x": 1440,
+                "y": 245
               }
             ]
           },
           {
-            "name": "Ganons Castle Grounds",
-            "children": [
+            "name": "Talon",
+            "sections": [
               {
-                "name": "OGC",
-                "sections": [
-                  {
-                    "name": "OGC GS",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|adult"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "name": "Wake him up",
+                "access_rules": [
+                  "$has_age|child,childegg"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1500,
-                    "y": 205
-                  }
-                ]
+                "visibility_rules": [
+                  "setting_zelda_off,childegg"
+                ],
+                "hosted_item": "capture_childcucco"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1480,
+                "y": 175
+              }
+            ]
+          },
+          {
+            "name": "HC Garden",
+            "access_rules": [
+              "$has_age|child,childcucco"
+            ],
+            "sections": [
+              {
+                "name": "Song from Impa",
+                "short_name": "Song",
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
               },
               {
-                "name": "OGC Great Fairy Fountain",
-                "sections": [
-                  {
-                    "name": "OGC Great Fairy Reward",
-                    "short_name": "Reward",
-                    "access_rules": [
-                      "$has_age|adult,lift3,ocarina,lullaby",
-                      "$spawn_access|OGC Fairy|adult,ocarina,lullaby",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
+                "name": "HC Zeldas Letter",
+                "hosted_item": "meet_zelda"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1420,
+                "y": 175
+              }
+            ]
+          },
+          {
+            "name": "HC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "HC Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$has_age|child,$has_explosives,ocarina,lullaby",
+                  "$spawn_access|HC Fairy|child,ocarina,lullaby",
+                  "{$hintable}"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1530,
-                    "y": 205
-                  }
-                ]
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1490,
+                "y": 240
+              }
+            ]
+          },
+          {
+            "name": "HC Tree",
+            "sections": [
+              {
+                "name": "HC GS Tree",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_age|child,$can_child_attack"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1410,
+                "y": 245
+              }
+            ]
+          },
+          {
+            "name": "HC Storms Grotto",
+            "access_rules": [
+              "$hidden_grotto,$has_age|child,ocarina,storm"
+            ],
+            "sections": [
+              {
+                "name": "HC GS Storms Grotto",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_explosives,boomerang",
+                  "[logic_castle_storms_gs],boomerang",
+                  "{$has_explosives}",
+                  "{$hintable}"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1465,
+                "y": 205
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ganons Castle Grounds",
+        "children": [
+          {
+            "name": "OGC",
+            "sections": [
+              {
+                "name": "OGC GS",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_age|adult"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1500,
+                "y": 205
+              }
+            ]
+          },
+          {
+            "name": "OGC Great Fairy Fountain",
+            "sections": [
+              {
+                "name": "OGC Great Fairy Reward",
+                "short_name": "Reward",
+                "access_rules": [
+                  "$has_age|adult,lift3,ocarina,lullaby",
+                  "$spawn_access|OGC Fairy|adult,ocarina,lullaby",
+                  "{$hintable}"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1530,
+                "y": 205
               }
             ]
           }

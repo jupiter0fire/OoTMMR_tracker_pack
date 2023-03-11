@@ -635,6 +635,10 @@ function has_lens()
   return has_lens_strict() or has("logic_lens_oot")
 end  
 
+function open_door_of_time()
+  return has("setting_door_open") or can_play("time")
+end  
+
 function FTR_or_goron()
   if has("logic_fewer_tunic_requirements") then
     return 1, AccessibilityLevel.Normal
