@@ -111,6 +111,10 @@ function has_iron_boots()
   return has_age("adult") == 1 and has("ironboots")
 end  
 
+function can_dive_small()
+  return has("silverscale") or has_iron_boots()
+end  
+
 function can_dive_big()
   return has("goldscale") or has_iron_boots()
 end  

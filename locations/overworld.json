@@ -3389,394 +3389,371 @@
         ]
       },
       {
-        "name": "Zora Area",
-        "color": "#0936a0",
+        "name": "Zora River",
         "children": [
           {
-            "name": "Zora River",
-            "children": [
+            "name": "Zora River As Child",
+            "access_rules":[
+              "$has_explosives_bool",
+              "$can_dive_small"
+            ]
+          },
+          {
+            "name": "Zora River As Adult"
+          },
+          {
+            "name": "ZR Frogs",
+            "sections": [
               {
-                "name": "ZR Frogs",
-                "sections": [
-                  {
-                    "name": "ZR Frogs in the Rain",
-                    "access_rules": [
-                      "$child_river,ocarina,storm",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "ZR Frogs Ocarina Game",
-                    "access_rules": [
-                      "$child_river,ocarina,lullaby,saria,epona,sun,time,storm",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2095,
-                    "y": 480
-                  }
-                ]
-              },
-              {
-                "name": "ZR Magic Bean Salesman",
+                "name": "ZR Frogs in the Rain",
                 "access_rules": [
-                  "$child_river"
+                  "@Zora River As Child,$can_play|storm"
                 ],
-                "sections": [
-                  {
-                    "name": "Buy Item",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2000,
-                    "y": 505
-                  }
-                ]
+                "item_count": 1
               },
               {
-                "name": "ZR Open Grotto",
+                "name": "ZR Frogs Ocarina Game",
                 "access_rules": [
-                  "$child_river",
-                  "$has_age|adult"
+                  "@Zora River As Child,$can_play|lullaby,$can_play|epona,$can_play|saria,$can_play|sun,$can_play|time,$can_play|storm"
                 ],
-                "sections": [
-                  {
-                    "name": "ZR Open Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2090,
-                    "y": 540
-                  }
-                ]
-              },
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "ZR Near Open Grotto",
-                "sections": [
-                  {
-                    "name": "ZR Near Open Grotto Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$child_river",
-                      "$has_age|adult,hoverboots",
-                      "$has_age|adult,[logic_zora_river_lower]"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2035,
-                    "y": 475
-                  }
-                ]
-              },
-              {
-                "name": "ZR Near Domain",
-                "sections": [
-                  {
-                    "name": "ZR Near Domain Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$child_river",
-                      "$has_age|adult,hoverboots",
-                      "$has_age|adult,[logic_zora_river_upper]"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2345,
-                    "y": 425
-                  }
-                ]
-              },
-              {
-                "name": "ZR Storms Grotto",
-                "access_rules": [
-                  "$hidden_grotto,ocarina,storm"
-                ],
-                "sections": [
-                  {
-                    "name": "ZR Deku Scrubs Grotto",
-                    "short_name": "Deku Scrubs",
-                    "access_rules": [
-                      "$child_river,$can_stun_deku",
-                      "$has_age|adult,$can_stun_deku"
-                    ],
-                    "visibility_rules": [
-                      "setting_scrub_shuffle_yes"
-                    ],
-                    "chest_unopened_img": "images/deku_scrub.png",
-                    "chest_opened_img": "images/deku_scrub_grey.png",
-                    "clear_as_group": false,
-                    "item_count": 2
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1940,
-                    "y": 505
-                  }
-                ]
-              },
-              {
-                "name": "ZR Tree",
-                "sections": [
-                  {
-                    "name": "ZR GS Tree",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$has_age|child,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1935,
-                    "y": 545
-                  }
-                ]
-              },
-              {
-                "name": "ZR Ladder",
-                "access_rules": [
-                  "$has_age|child,$night_gs"
-                ],
-                "sections": [
-                  {
-                    "name": "ZR GS Ladder (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$child_river,$can_child_attack"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2360,
-                    "y": 460
-                  }
-                ]
-              },
-              {
-                "name": "ZR Near Raised Grottos",
-                "access_rules": [
-                  "$night_gs,$has_age|adult"
-                ],
-                "sections": [
-                  {
-                    "name": "ZR GS Near Raised Grottos (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "{bow}",
-                      "{dinsfire,magic}",
-                      "{$has_explosives}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2060,
-                    "y": 540
-                  }
-                ]
-              },
-              {
-                "name": "ZR Above Bridge",
-                "access_rules": [
-                  "$night_gs,$has_age|adult"
-                ],
-                "sections": [
-                  {
-                    "name": "ZR GS Above Bridge (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "{bow}",
-                      "{$has_bombchus}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2280,
-                    "y": 465
-                  }
-                ]
+                "map": "oot",
+                "x": 2095,
+                "y": 480
               }
             ]
           },
           {
-            "name": "Zoras Domain",
+            "name": "ZR Magic Bean Salesman",
             "access_rules": [
-              "$child_domain"
+              "@Zora River As Child"
             ],
-            "children": [
+            "sections": [
               {
-                "name": "ZD Chest",
-                "sections": [
-                  {
-                    "name": "Torches",
-                    "access_rules": [
-                      "sticks"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2550,
-                    "y": 450
-                  }
-                ]
-              },
+                "name": "Buy Item",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "ZD Diving Minigame",
-                "sections": [
-                  {
-                    "name": "Dive down",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2550,
-                    "y": 410
-                  }
-                ]
+                "map": "oot",
+                "x": 2000,
+                "y": 505
               }
             ]
           },
           {
-            "name": "Zoras Domain Frozen",
+            "name": "ZR Open Grotto",
             "access_rules": [
-              "$adult_domain"
+              "$child_river",
+              "$has_age|adult"
             ],
-            "children": [
+            "sections": [
               {
-                "name": "King Zora",
+                "name": "ZR Open Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2090,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "name": "ZR Near Open Grotto",
+            "sections": [
+              {
+                "name": "ZR Near Open Grotto Freestanding PoH",
+                "short_name": "HP",
                 "access_rules": [
-                  "$has_blue_fire"
+                  "@Zora River As Child",
+                  "@Zora River As Adult,$has_hover_boots"
                 ],
-                "sections": [
-                  {
-                    "name": "ZD King Zora Thawed",
-                    "access_rules": [
-                      "$has_age|adult",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Give Prescription",
-                    "access_rules": [
-                      "prescription"
-                    ],
-                    "visibility_rules": [
-                      "prescription"
-                    ],
-                    "hosted_item": "capture_frog"
-                  }
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2035,
+                "y": 475
+              }
+            ]
+          },
+          {
+            "name": "ZR Near Domain",
+            "sections": [
+              {
+                "name": "ZR Near Domain Freestanding PoH",
+                "short_name": "HP",
+                "access_rules": [
+                  "@Zora River As Child",
+                  "@Zora River As Adult,$has_hover_boots"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2625,
-                    "y": 365
-                  }
-                ]
+                "capture_item": true,
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2345,
+                "y": 425
+              }
+            ]
+          },
+          {
+            "name": "ZR Storms Grotto",
+            "access_rules": [
+              "$hidden_grotto,ocarina,storm"
+            ],
+            "sections": [
+              {
+                "name": "ZR Deku Scrubs Grotto",
+                "short_name": "Deku Scrubs",
+                "access_rules": [
+                  "$child_river,$can_stun_deku",
+                  "$has_age|adult,$can_stun_deku"
+                ],
+                "visibility_rules": [
+                  "setting_scrub_shuffle_yes"
+                ],
+                "chest_unopened_img": "images/deku_scrub.png",
+                "chest_opened_img": "images/deku_scrub_grey.png",
+                "clear_as_group": false,
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1940,
+                "y": 505
+              }
+            ]
+          },
+          {
+            "name": "ZR Tree",
+            "sections": [
+              {
+                "name": "ZR GS Tree",
+                "short_name": "GS",
+                "access_rules": [
+                  "$has_age|child"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1935,
+                "y": 545
+              }
+            ]
+          },
+          {
+            "name": "ZR Ladder",
+            "sections": [
+              {
+                "name": "ZR GS Ladder (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Zora River As Child,$gs_night"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2360,
+                "y": 460
+              }
+            ]
+          },
+          {
+            "name": "ZR Near Raised Grottos",
+            "sections": [
+              {
+                "name": "ZR GS Near Raised Grottos (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$gs_night,$can_use_hookshot"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2060,
+                "y": 540
+              }
+            ]
+          },
+          {
+            "name": "ZR Above Bridge",
+            "sections": [
+              {
+                "name": "ZR GS Above Bridge (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "$gs_night,$can_use_hookshot"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "capture_item": true,
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2280,
+                "y": 465
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Zoras Domain",
+
+        "children": [
+          {
+            "name": "Zoras Domain As Child",
+            "access_rules":[
+              "@Zora River As Child,$can_play|lullaby",
+              "$can_dive_small"
+            ]
+          },
+          {
+            "name": "Zoras Domain As Adult",
+            "access_rules":[
+              "@Zora River As Adult,$can_play|lullaby"
+            ]
+          },
+          {
+            "name": "ZD Chest",
+            "sections": [
+              {
+                "name": "Torches",
+                "access_rules": [
+                  "@Zoras Domain As Child"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2550,
+                "y": 450
+              }
+            ]
+          },
+          {
+            "name": "ZD Diving Minigame",
+            "sections": [
+              {
+                "name": "Dive down",
+                "access_rules": [
+                  "@Zoras Domain As Child"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2550,
+                "y": 410
+              }
+            ]
+          },
+          {
+            "name": "King Zora",
+            "access_rules": [
+              "$has_blue_fire"
+            ],
+            "sections": [
+              {
+                "name": "ZD King Zora Thawed",
+                "access_rules": [
+                  "@Zoras Domain As Adult"
+                ],
+                "item_count": 1
               },
               {
-                "name": "ZD Frozen Waterfall",
+                "name": "Give Prescription",
                 "access_rules": [
-                  "$night_gs"
-                ],
-                "sections": [
-                  {
-                    "name": "ZD GS Frozen Waterfall (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "hookshot",
-                      "bow",
-                      "magic",
-                      "[logic_domain_gs]"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2590,
-                    "y": 410
-                  }
+                  "@Zoras Domain As Adult,prescription"
                 ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2625,
+                "y": 365
+              }
+            ]
+          },
+          {
+            "name": "ZD Frozen Waterfall",
+            "sections": [
+              {
+                "name": "ZD GS Frozen Waterfall (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Zoras Domain As Adult,$gs_night,$has_ranged_weapon_adult",
+                  "@Zoras Domain As Adult,$gs_night,magic"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2590,
+                "y": 410
               }
             ]
           },
@@ -3819,169 +3796,167 @@
                 "y": 500
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Zoras Fountain",
+        "children": [
+          {
+            "name": "Zoras Fountain As Child",
+            "access_rules":[
+              "@Zoras Domain As Child,ruto"
+            ]
           },
           {
-            "name": "Zoras Fountain",
-            "children": [
+            "name": "Zoras Fountain As Adult",
+            "access_rules":[
+              "@Zoras Domain As Child,ruto,@Zoras Domain As Adult"
+            ]
+          },
+          {
+            "name": "ZF Great Fairy Fountain",
+            "access_rules": [
+              "@Zoras Fountain As Child,$has_explosives_bool",
+              "@Zoras Fountain As Adult,$has_explosives_bool"
+            ],
+            "sections": [
               {
-                "name": "ZF Great Fairy Fountain",
+                "name": "ZF Great Fairy Reward",
+                "short_name": "Reward",
                 "access_rules": [
-                  "$child_fountain,$has_explosives",
-                  "$adult_fountain,$has_explosives"
+                  "$can_play|lullaby"
                 ],
-                "sections": [
-                  {
-                    "name": "ZF Great Fairy Reward",
-                    "short_name": "Reward",
-                    "access_rules": [
-                      "ocarina,lullaby"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2585,
-                    "y": 325
-                  }
-                ]
-              },
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "ZF Bottom",
-                "sections": [
-                  {
-                    "name": "ZF Bottom Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$adult_fountain,ironboots,$FTR_or_zora",
-                      "{$hintable}"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2520,
-                    "y": 320
-                  }
-                ]
-              },
+                "map": "oot",
+                "x": 2585,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "ZF Bottom",
+            "sections": [
               {
-                "name": "ZF Iceberg",
-                "sections": [
-                  {
-                    "name": "ZF Iceberg Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$adult_fountain"
-                    ],
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2550,
-                    "y": 290
-                  }
-                ]
-              },
-              {
-                "name": "ZF Hidden Cave",
+                "name": "ZF Bottom Freestanding PoH",
+                "short_name": "HP",
                 "access_rules": [
-                  "$night_gs"
+                  "@Zoras Fountain As Adult,$has_iron_boots,$has_zora_tunic"
                 ],
-                "sections": [
-                  {
-                    "name": "ZF GS Hidden Cave (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$adult_fountain,lift2,$can_blast,hookshot",
-                      "{$adult_fountain,lift2,$has_explosives}",
-                      "{$adult_fountain,lift2,hammer,bow}",
-                      "{$adult_fountain,lift2,hammer,dinsfire,magic}",
-                      "{$hintable}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2585,
-                    "y": 290
-                  }
-                ]
-              },
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
               {
-                "name": "ZF Tree",
-                "sections": [
-                  {
-                    "name": "ZF GS Tree",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$child_fountain"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2550,
-                    "y": 325
-                  }
-                ]
-              },
+                "map": "oot",
+                "x": 2520,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "name": "ZF Iceberg",
+            "sections": [
               {
-                "name": "ZF Above the Log",
+                "name": "ZF Iceberg Freestanding PoH",
+                "short_name": "HP",
                 "access_rules": [
-                  "$night_gs,$child_fountain"
+                  "@Zoras Fountain As Adult"
                 ],
-                "sections": [
-                  {
-                    "name": "ZF GS Above the Log (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "boomerang",
-                      "{sling}",
-                      "{dinsfire,magic}",
-                      "{$has_explosives}"
-                    ],
-                    "visibility_rules": [
-                      "setting_tokens_overworld"
-                    ],
-                    "capture_item": true,
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2550,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "name": "ZF Hidden Cave",
+            "sections": [
+              {
+                "name": "ZF GS Hidden Cave (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Zoras Fountain As Adult,$gs_night,$has_explosives_or_hammer,$can_use_hookshot,lift2"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2520,
-                    "y": 350
-                  }
-                ]
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2585,
+                "y": 290
+              }
+            ]
+          },
+          {
+            "name": "ZF Tree",
+            "sections": [
+              {
+                "name": "ZF GS Tree",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Zoras Fountain As Child"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2550,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "ZF Above the Log",
+            "access_rules": [
+              "$night_gs,$child_fountain"
+            ],
+            "sections": [
+              {
+                "name": "ZF GS Above the Log (N)",
+                "short_name": "GS",
+                "access_rules": [
+                  "@Zoras Fountain As Child,$gs_night,$can_use_boomerang"
+                ],
+                "visibility_rules": [
+                  "setting_tokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2520,
+                "y": 350
               }
             ]
           }
