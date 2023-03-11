@@ -1,67 +1,9 @@
 [
   {
-    "name": "World",
+    "name": "OOT",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "children": [
-      {
-        "name": "Root",
-        "color": "#ffffff",
-        "children": [
-          {
-            "name": "Child Spawn -> KF Links House",
-            "short_name": "Child Spawn",
-            "sections": [
-              {
-                "name": "Capture",
-                "access_rules": [
-                  "$has_age|child"
-                ],
-                "visibility_rules": [
-                  "setting_entrance_spawn_shuffle"
-                ],
-                "capture_item": true,
-                "capture_item_layout": "tracker_capture_spawn_child",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "size": 40,
-                "x": 58,
-                "y": 1475
-              }
-            ]
-          },
-          {
-            "name": "Adult Spawn -> Temple of Time",
-            "short_name": "Adult Spawn",
-            "sections": [
-              {
-                "name": "Capture",
-                "access_rules": [
-                  "$has_age|adult"
-                ],
-                "visibility_rules": [
-                  "setting_entrance_spawn_shuffle"
-                ],
-                "capture_item": true,
-                "capture_item_layout": "tracker_capture_spawn_adult",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "size": 40,
-                "x": 158,
-                "y": 1475
-              }
-            ]
-          }
-        ]
-      },
       {
         "name": "Kokiri Forest",
         "color": "#18a50e",
@@ -4541,7 +4483,17 @@
             ]
           }
         ]
-      },
+      }
+    ]
+  },    
+  {
+    "name": "MM",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "access_rules":[
+      "$mm_can_play|mm_songoftime"
+    ],
+    "children": [      
       {
         "name": "Clock Town",
         "color": "#c475c1",

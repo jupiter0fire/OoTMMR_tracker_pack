@@ -41,6 +41,10 @@ function can_play(song)
   return has("ocarina") and has(song)
 end  
 
+function mm_can_play(song)
+  return has("mm_ocarina") and has(song)
+end  
+
 function can_use_slingshot()
   return has_age("child") == 1 and has("slingshot")
 end  
@@ -211,15 +215,6 @@ function spawn_access(region, age)
   end
 
   local spawn_object = nil
-
-  if age == "child" then
-    spawn_object = get_object("@Child Spawn -> KF Links House/Capture")
-  elseif age == "adult" then
-    spawn_object = get_object("@Adult Spawn -> Temple of Time/Capture")
-  else
-    print("error! spawn_access invalid age:", age)
-    return 0, AccessibilityLevel.None
-  end
 
   if
     spawn_object and spawn_object.CapturedItem and spawn_object.CapturedItem.Name and

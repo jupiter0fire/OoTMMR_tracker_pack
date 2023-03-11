@@ -168,7 +168,7 @@
     "type": "toggle",
     "loop": true,
     "img": "images/items/mm_songoftime.png",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "codes": "mm_songoftime,mm_time,mm_sot"
   },
   {
@@ -407,7 +407,7 @@
     "name": "MM Ocarina",
     "type": "toggle",
     "img": "images/items/mm_ocarina.png",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "codes": "mm_ocarina,mm_oot,mm_ocarinaoftime,mm_ocarina_of_time"
   },
   {

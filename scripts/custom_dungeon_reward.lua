@@ -66,9 +66,6 @@ function DungeonReward:init(number)
   self.number = number
   self.code = codes[number]
   self:setProperty("active", false)
-  if number == 1 then
-    self:setProperty("active", true)
-  end
   self:setProperty("stage", 1)
   self.imageBase = ImageReference:FromPackRelativePath(images[1])
   self.ItemInstance.PotentialIcon = self.imageBase
