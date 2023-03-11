@@ -435,7 +435,8 @@
             "name": "Lost Woods Deep As Adult",
             "access_rules":[
               "$can_play|saria",
-              "$can_play|minuet"
+              "$can_play|minuet",
+              "$has|logic_mido_backflip"
             ]
           },
           {
@@ -4309,7 +4310,8 @@
         "name": "Haunted Wasteland",
         "access_rules":[
           "@Gerudo Fortress,$gerudo_card,$can_use_longshot",
-          "@Gerudo Fortress,$gerudo_card,$has_hover_boots"
+          "@Gerudo Fortress,$gerudo_card,$has_hover_boots",
+          "$has_age|adult,$can_play|requiem,$has|logic_wasteland_crossing"
         ],
         "children": [
           {
