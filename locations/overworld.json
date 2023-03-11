@@ -4297,7 +4297,6 @@
                 "access_rules": [
                   "th_small_keys:4"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -4455,7 +4454,7 @@
                 "name": "Colossus Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Desser Colossus As Child,@Dessert Colossus As Adult,beans"
+                  "@Dessert Colossus As Child,@Dessert Colossus As Adult,beans"
                 ],
                 "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
