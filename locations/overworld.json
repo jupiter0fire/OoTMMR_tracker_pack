@@ -5287,7 +5287,12 @@
                     "y": 91
                   }
                 ]
-              },
+              }
+            ]
+          },
+          { 
+            "name": "Laundry Pool",
+            "children":[
               {
                 "name": "Listen To Guru Guru",
                 "short_name": "Guru Guru",
@@ -5342,28 +5347,22 @@
               {
                 "name": "Curiosity Shop Backroom",
                 "short_name": "Backroom",
+                "access_rules":[
+                  "mm_lettertokafei"
+                ],
                 "sections": [
                   {
                     "name": "Gift From Kafei - Day 2: 4:30 PM",
-                    "access_rules": [
-                      "mm_lettertokafei"
-                    ],
                     "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM First Item",
-                    "access_rules": [
-                      "mm_lettertokafei"
-                    ],
                     "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM Second Item",
-                    "access_rules": [
-                      "mm_lettertokafei"
-                    ],
                     "capture_item": true,
                     "item_count": 1
                   }
@@ -5374,6 +5373,41 @@
                     "size": 19,
                     "x": 21,
                     "y": 173
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Clock Tower Roof",
+            "children":[
+              {
+                "name": "Skull Kid",
+                "short_name": "Skull Kid",
+                "sections": [
+                  {
+                    "name": "Ocarina",
+                    "access_rules":[
+                      "$mm_has_weapon_range"
+                    ],  
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Song of Time",
+                    "access_rules":[
+                      "$mm_has_weapon_range"
+                    ],  
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 117,
+                    "y": 100,
+                    "size": 19
                   }
                 ]
               }
