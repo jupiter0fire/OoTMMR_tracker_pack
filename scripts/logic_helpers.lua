@@ -206,38 +206,6 @@ function hidden_grotto_bomb()
   return stone_of_agony() and (has_explosives_bool() or can_use_hammer())
 end  
 
-function mm_can_use_deku_bubble()
-  if has("mm_dekumask") and has("mm_magic") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None      
-  end
-end  
-
-function mm_has_weapon_range()
-  if has("mm_bow") or has("mm_hookshot") or has("mm_zoramask") or mm_can_use_deku_bubble() == 1 then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end  
-end   
-
-function mm_has_weapon()
-  if has("mm_sword") or has("mm_fairysword") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None    
-  end
-end
-
-function mm_can_fight()
-  if mm_has_weapon() == 1 or has("mm_zoramask") or has("mm_goronmask") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end   
-end
-
 function spawn_access(region, age)
   region = region or ""
   age = age or ""

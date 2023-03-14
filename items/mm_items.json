@@ -386,7 +386,7 @@
       },
       {
         "img": "images/items/mm_mirror.png",
-        "codes": "mm_mirror,mm_mirrorshield,mm_mirror_shield,mm_shield2"
+        "codes": "mm_mirror,mm_mirrorshield,mm_mirror_shield,mm_shield2,mm_shield"
       }
     ]
   },

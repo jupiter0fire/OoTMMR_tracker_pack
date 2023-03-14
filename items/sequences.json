@@ -145,6 +145,22 @@
     ]
   },
   {
+    "name": "Bomber's Code",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_bomber.png",
+        "img_mods": "@disabled",
+        "codes": "bombers_code_no"
+      },
+      {
+        "img": "images/items/mm_bomber.png",
+        "codes": "bombers_code"
+      }
+    ]
+  },
+  {
     "name": "Forest Trial Clear",
     "type": "progressive",
     "allow_disabled": false,

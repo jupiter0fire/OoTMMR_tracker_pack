@@ -8,22 +8,61 @@ function mm_has(item, amount)
   end
 end
 
-function mm_has_explosives()
-  local bombs = Tracker:ProviderCountForCode("bombs")
-  if bombs > 0 then
-    return bombs
-  elseif (mm_has("mm_blastmask") and mm_has("mm_shield1")) then
-    return 1
-  elseif (mm_has("mm_blastmask") and mm_has("mm_damage")) then
-    return 1
-  elseif mm_has("mm_blastmask") then
-    return 1, AccessibilityLevel.SequenceBreak
-  elseif (mm_has("mm_powderkeg") and mm_has("mm_goron")) then
-    return 1, AccessibilityLevel.SequenceBreak
+function mm_can_use_deku_bubble()
+  if has("mm_dekumask") and has("mm_magic") then
+    return 1, AccessibilityLevel.Normal
   else
-    return 0
+    return 0, AccessibilityLevel.None      
+  end
+end  
+
+function mm_has_weapon_range()
+  if has("mm_bow") or has("mm_hookshot") or has("mm_zoramask") or mm_can_use_deku_bubble() == 1 then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end  
+end   
+
+function mm_has_weapon()
+  if has("mm_sword") or has("mm_fairysword") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None    
   end
 end
+
+function mm_can_fight()
+  if mm_has_weapon() == 1 or has("mm_zoramask") or has("mm_goronmask") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end   
+end
+
+function mm_meet_anju()
+  if has("mm_kafeimask") and (has("mm_roomkey") or has("mm_dekumask")) then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None    
+  end
+end
+
+function mm_has_paper()
+  if has("mm_towndeed") or has("mm_woodfall_deed") or has("mm_snowhead_deed") or has("mm_great_bay_deed") or has("mm_lettertokafei") or has("mm_deliverytomama") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None    
+  end  
+end
+
+function mm_has_explosives()
+  if has("mm_bombs") or (has("mm_blastmask") and has("mm_shield")) then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None    
+  end  
+end  
 
 function mm_can_break_rocks()
   if mm_has("mm_goronmask")

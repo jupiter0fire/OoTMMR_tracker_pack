@@ -4670,8 +4670,7 @@
                     "access_rules": [
                       "$mm_has_weapon_range"
                     ],
-                    "capture_item": true,
-                    "item_count": 1
+                    "hosted_item": "bombers_code"
                   }
                 ],
                 "map_locations": [
@@ -4836,7 +4835,7 @@
             ]
           },
           {
-            "name": "Clock Town West",
+            "name": "Clock Town East",
             "children":[             
               {
                 "name": "East Clock Town",
@@ -4854,150 +4853,6 @@
                     "size": 19,
                     "x": 170,
                     "y": 210
-                  }
-                ]
-              },
-              {
-                "name": "Stock Pot Inn",
-                "short_name": "Inn",
-                "sections": [
-                  {
-                    "name": "Inn Employee Room Chest - Final Night",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Room Reservation Mixup - Day 1: from 1:45 PM to 4 PM",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Inn Guest Room Chest",
-                    "access_rules": [
-                      "mm_roomkey"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Midnight Item From Anju - Night 1: 11:30 PM",
-                    "access_rules": [
-                      "[$mm_night_inn_access],mm_kafeimask"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Grandma Story Time - Day 1 or 2 - Carnival of Time",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "access_rules": [
-                      "mm_allnightmask"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Grandma Story Time - Day 1 or 2 - Four Giants",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "access_rules": [
-                      "mm_allnightmask"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Toilet Hand Gift - Midnight - 6 AM",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "access_rules": [
-                      "mm_towndeed,[$mm_night_inn_access]",
-                      "mm_woodfall_deed,[$mm_night_inn_access]",
-                      "mm_snowhead_deed,[$mm_night_inn_access]",
-                      "mm_great_bay_deed,[$mm_night_inn_access]",
-                      "mm_lettertokafei,[$mm_night_inn_access]",
-                      "mm_deliverytomama,[$mm_night_inn_access],[mm_queststorage]"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Couple's Mask - Final Night 4:30 AM",
-                    "chest_unopened_img": "images/system/unknownmask.png",
-                    "chest_opened_img": "images/system/unknownmask_grey.png",
-                    "access_rules": [
-                      "{mm_maskoftruth}",
-                      "mm_kafeimask,mm_pendantofmemories,mm_lettertokafei,mm_ocarina,mm_eponasong,mm_gibdomask,mm_hookshot,[$mm_night_inn_access]",
-                      "mm_kafeimask,mm_pendantofmemories,mm_lettertokafei,mm_ocarina,mm_eponasong,mm_garomask,mm_hookshot,[$mm_night_inn_access]"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 185,
-                    "y": 115
-                  }
-                ]
-              },
-              {
-                "name": "Milk Bar - Open 10 PM PM - 5 AM",
-                "sections": [
-                  {
-                    "name": "Milk Bar Performance - Night 1 or 2 10 PM - 5 AM",
-                    "chest_unopened_img": "images/system/unknownmask.png",
-                    "chest_opened_img": "images/system/unknownmask_grey.png",
-                    "access_rules": [
-                      "mm_deku,mm_goron,mm_zora,mm_romanimask"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Delivery To Madame Aroma - Final Night",
-                    "access_rules": [
-                      "mm_kafeimask,mm_deliverytomama"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Chateau Purchase - 200 Rupees",
-                    "chest_unopened_img": "images/system/chest_brown_closed.png",
-                    "chest_opened_img": "images/system/chest_brown_open.png",
-                    "access_rules": [
-                      "mm_romanimask,mm_adultwallet"
-                    ],
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Milk Purchase - 20 Rupees",
-                    "chest_unopened_img": "images/system/chest_brown_closed.png",
-                    "chest_opened_img": "images/system/chest_brown_open.png",
-                    "access_rules": [
-                      "mm_romanimask"
-                    ],
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 216,
-                    "y": 111
                   }
                 ]
               },
@@ -5028,44 +4883,6 @@
                     "size": 19,
                     "x": 214,
                     "y": 41
-                  }
-                ]
-              },
-              {
-                "name": "Honey and Darling - Open 6 AM - 10 PM",
-                "sections": [
-                  {
-                    "name": "Beat All Three Days",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "access_rules": [
-                      "mm_bomb,mm_bow"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Beat Any Day",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "access_rules": [
-                      "mm_bomb",
-                      "mm_bow",
-                      "mm_deku,mm_magic"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 235,
-                    "y": 157
                   }
                 ]
               },
@@ -5113,42 +4930,6 @@
                     ],
                     "capture_item": true,
                     "item_count": 1
-                  },
-                  {
-                    "name": "Treasure Chest Game Human Prize",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Treasure Chest Game Deku Prize",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules": [
-                      "mm_deku"
-                    ],
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Treasure Chest Game Zora Prize",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules": [
-                      "mm_zora"
-                    ],
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -5161,17 +4942,162 @@
                 ]
               },
               {
+                "name": "Honey and Darling - Open 6 AM - 10 PM",
+                "sections": [
+                  {
+                    "name": "Beat All Three Days",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_bomb,mm_bow"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Beat Any Day",
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
+                    "access_rules": [
+                      "mm_bomb",
+                      "mm_bow",
+                      "$mm_can_use_deku_bubble"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 235,
+                    "y": 157
+                  }
+                ]
+              },
+              {
+                "name": "Stock Pot Inn",
+                "short_name": "Inn",
+                "sections": [
+                  {
+                    "name": "Inn Guest Room Chest",
+                    "access_rules": [
+                      "mm_roomkey"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Inn Employee Room Chest - Final Night",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Room Reservation Mixup - Day 1: from 1:45 PM to 4 PM",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Midnight Item From Anju - Night 1: 11:30 PM",
+                    "access_rules": [
+                      "$mm_meet_anju"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Couple's Mask - Final Night 4:30 AM",
+                    "chest_unopened_img": "images/system/unknownmask.png",
+                    "chest_opened_img": "images/system/unknownmask_grey.png",
+                    "access_rules": [
+                      "$has|mm_pendant,$mm_meet_anju" //TODO add sun mask
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Grandma Story Time - Day 1 or 2 - Carnival of Time",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_allnightmask"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Grandma Story Time - Day 1 or 2 - Four Giants",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_allnightmask"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Toilet Hand Gift - Midnight - 6 AM",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "$mm_has_paper"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 185,
+                    "y": 115
+                  }
+                ]
+              },
+              {
+                "name": "Milk Bar - Open 10 PM PM - 5 AM",
+                "sections": [
+                  {
+                    "name": "Milk Bar Performance - Night 1 or 2 10 PM - 5 AM",
+                    "chest_unopened_img": "images/system/unknownmask.png",
+                    "chest_opened_img": "images/system/unknownmask_grey.png",
+                    "access_rules": [
+                      "mm_ocarina,mm_deku,mm_goron,mm_zora,mm_romanimask"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Delivery To Madame Aroma - Final Night",
+                    "access_rules": [
+                      "mm_kafeimask,mm_deliverytomama"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 216,
+                    "y": 111
+                  }
+                ]
+              },
+              {
                 "name": "Bomber's Secret Tunnel",
                 "short_name": "Bomber Tunnel",
+                "access_rules":[
+                  "bombers_code"
+                ],
                 "sections": [
                   {
                     "name": "Bombers' Hidden Treasure",
                     "access_rules": [
-                      "$mm_has_explosives,mm_deku,[mm_bomberback]",
-                      "$mm_has_explosives,[$mm_has_projectile]",
-                      "$mm_has_explosives,[mm_deku]",
-                      "mm_bombernothing,$mm_has_explosives",
-                      "mm_guardskip,$mm_has_explosives"
+                      "$mm_has_explosives"
                     ],
                     "capture_item": true,
                     "item_count": 1
