@@ -347,13 +347,15 @@
     "stages": [
       {
         "img": "images/items/mm_kokiri.png",
-        "codes": "mm_kokirisword,mm_kokiri,mm_sword1"
+        "codes": "mm_kokirisword,mm_kokiri,mm_sword1,mm_sword"
       },
       {
-        "img": "images/items/mm_razor.png"
+        "img": "images/items/mm_razor.png",
+        "codes": "mm_sword"
       },
       {
-        "img": "images/items/mm_gilded.png"
+        "img": "images/items/mm_gilded.png",
+        "codes": "mm_sword"
       }
     ]
   },

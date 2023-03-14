@@ -386,7 +386,7 @@
     "name": "Jabu Jabus Belly",
     "parent": "Zoras Fountain As Child",
     "access_rules": [
-      "bottle"
+      "$has_bottle"
     ],
     "sections": [
       {

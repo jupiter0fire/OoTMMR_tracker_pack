@@ -4496,14 +4496,18 @@
             "name": "Clock Town South",
             "children": [
               {
-                "name": "Clock Tower Balcony",
-                "short_name": "Clock Tower Balcony",
+                "name": "Clock Tower",
+                "short_name": "Clock Tower",
                 "sections": [
                   {
                     "name": "Clock Tower HP",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Initial Song of Healing",
                     "item_count": 1
                   }
                 ],
@@ -4517,21 +4521,13 @@
                 ]
               },
               {
-                "name": "Clock Town Tunnels",
-                "short_name": "Beneath The Clock Tower",
+                "name": "South Clock Town Nook",
                 "sections": [
                   {
-                    "name": "Clock Town Tunnels Deku Nut - Not in Casual Logic",
+                    "name": "South Clock Town Lower Chest",
                     "access_rules": [
-                      "mm_bombs,mm_shield1,mm_sword1,mm_nut_yes,[mm_nut_no]",
-                      "mm_bombs,mm_shield1,mm_sticks,mm_nut_yes,[mm_nut_no]",
-                      "mm_bombs,mm_shield1,mm_fairysword,mm_sword1,mm_nut_yes,[mm_nut_no]",
-                      "mm_blastmask,mm_shield1,mm_sword1,mm_nut_yes,[mm_nut_no]",
-                      "mm_blastmask,mm_shield1,mm_sticks,mm_nut_yes,[mm_nut_no]",
-                      "mm_blastmask,mm_shield1,mm_fairysword,mm_sword1,mm_nut_yes,[mm_nut_no]"
-                    ],
-                    "visibility_rules": [
-                      "nut_yes"
+                      "mm_moontear,mm_deku",
+                      "mm_hookshot"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -4540,22 +4536,21 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 115,
-                    "y": 95,
-                    "size": 19
+                    "size": 19,
+                    "x": 138,
+                    "y": 209
                   }
                 ]
               },
               {
-                "name": "Keaton Grass Circle",
-                "short_name": "Keaton",
+                "name": "Carnival Tower Chest",
+                "short_name": "Carnival Tower",
                 "sections": [
                   {
-                    "name": "Keaton Quiz Reward",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "name": "Open On Final Day",
                     "access_rules": [
-                      "mm_keaton"
+                      "mm_moontear,mm_deku",
+                      "mm_hookshot"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -4564,15 +4559,31 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 143,
-                    "y": 16,
-                    "size": 19
-                  },
+                    "size": 19,
+                    "x": 117,
+                    "y": 184
+                  }
+                ]
+              },
+              {
+                "name": "Clock Town Business Scrub",
+                "short_name": "CT Scrub",
+                "sections": [
+                  {
+                    "name": "Give him Moon's Tear",
+                    "access_rules": [
+                      "mm_moontear"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
                   {
                     "map": "termina",
-                    "x": 457,
-                    "y": 367,
-                    "size": 19
+                    "size": 19,
+                    "x": 90,
+                    "y": 156
                   }
                 ]
               },
@@ -4623,161 +4634,12 @@
                     "y": 58
                   }
                 ]
-              },
-              {
-                "name": "Clock Town Business Scrub",
-                "short_name": "CT Scrub",
-                "sections": [
-                  {
-                    "name": "Give him Moon's Tear",
-                    "access_rules": [
-                      "mm_moontear"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 90,
-                    "y": 156
-                  }
-                ]
-              },
-              {
-                "name": "South Clock Town Nook",
-                "sections": [
-                  {
-                    "name": "South Clock Town Lower Chest",
-                    "access_rules": [
-                      "mm_moontear,mm_deku",
-                      "mm_hookshot",
-                      "mm_sticks,[mm_geometryjump]",
-                      "mm_sword1,[mm_geometryjump]",
-                      "mm_fairysword,[mm_geometryjump]"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 138,
-                    "y": 209
-                  }
-                ]
-              },
-              {
-                "name": "Carnival Tower Chest",
-                "short_name": "Carnival Tower",
-                "sections": [
-                  {
-                    "name": "Open On Final Day",
-                    "access_rules": [
-                      "mm_moontear,mm_deku",
-                      "mm_hookshot"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 117,
-                    "y": 184
-                  }
-                ]
-              },
-              {
-                "name": "Clock Town Tingle Maps",
-                "short_name": "Town Tingle",
-                "sections": [
-                  {
-                    "name": "Map: Clock Town",
-                    "access_rules": [
-                      "$mm_has_projectile",
-                      "[mm_towntinglejump],mm_sword1",
-                      "[mm_towntinglejump],mm_fairysword"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Map: Swamp",
-                    "access_rules": [
-                      "$mm_has_projectile",
-                      "[mm_towntinglejump],mm_sword1",
-                      "[mm_towntinglejump],mm_fairysword"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 120,
-                    "y": 35
-                  }
-                ]
-              },
-              {
-                "name": "Save The Old Lady",
-                "short_name": "Old Lady",
-                "sections": [
-                  {
-                    "name": "Night 1: 12:20",
-                    "chest_unopened_img": "images/system/unknownmask.png",
-                    "chest_opened_img": "images/system/unknownmask_grey.png",
-                    "access_rules": [
-                      "mm_sword1",
-                      "mm_goron",
-                      "mm_zora",
-                      "mm_fairysword"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 145,
-                    "y": 70
-                  }
-                ]
-              },
-              {
-                "name": "Red Bomber",
-                "short_name": "Jimmie",
-                "sections": [
-                  {
-                    "name": "Catch The Bombers",
-                    "access_rules": [
-                      "$mm_has_projectile",
-                      "mm_bombernothing"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 98,
-                    "y": 55
-                  }
-                ]
-              },
+              }
+            ]
+          },
+          {
+            "name": "Clock Town North",
+            "children": [
               {
                 "name": "North Clock Town Tree",
                 "short_name": "NCT Tree",
@@ -4796,6 +4658,82 @@
                     "size": 19,
                     "x": 150,
                     "y": 26
+                  }
+                ]
+              },
+              {
+                "name": "Red Bomber",
+                "short_name": "Jimmie",
+                "sections": [
+                  {
+                    "name": "Catch The Bombers",
+                    "access_rules": [
+                      "$mm_has_weapon_range"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 98,
+                    "y": 55
+                  }
+                ]
+              },
+              {
+                "name": "Save The Old Lady",
+                "short_name": "Old Lady",
+                "sections": [
+                  {
+                    "name": "Night 1: 12:20",
+                    "chest_unopened_img": "images/system/unknownmask.png",
+                    "chest_opened_img": "images/system/unknownmask_grey.png",
+                    "access_rules": [
+                      "$mm_can_fight"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 145,
+                    "y": 70
+                  }
+                ]
+              },
+              {
+                "name": "Keaton Grass Circle",
+                "short_name": "Keaton",
+                "sections": [
+                  {
+                    "name": "Keaton Quiz Reward",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_keaton"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 143,
+                    "y": 16,
+                    "size": 19
+                  },
+                  {
+                    "map": "termina",
+                    "x": 457,
+                    "y": 367,
+                    "size": 19
                   }
                 ]
               },
@@ -4819,9 +4757,6 @@
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
                       "mm_deku"
-                    ],
-                    "visibility_rules": [
-                      "misc_yes"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -4872,6 +4807,37 @@
                   }
                 ]
               },
+              {
+                "name": "Clock Town Tingle Maps",
+                "short_name": "Town Tingle",
+                "sections": [
+                  {
+                    "name": "Map: Clock Town",
+                    "access_rules": [
+                      "$mm_has_projectile",
+                      "[mm_towntinglejump],mm_sword1",
+                      "[mm_towntinglejump],mm_fairysword"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Map: Swamp",
+                    "access_rules": [
+                      "$mm_has_projectile",
+                      "[mm_towntinglejump],mm_sword1",
+                      "[mm_towntinglejump],mm_fairysword"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Clock Town West",
+            "children":[             
               {
                 "name": "East Clock Town",
                 "short_name": "ECT",
