@@ -5011,7 +5011,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "$has|mm_pendant,$mm_meet_anju" //TODO add sun mask
+                      "mm_pendant,$mm_meet_anju" //TODO add sun mask
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5420,6 +5420,28 @@
         "color": "#ffa449",
         "children": [
           {
+            "name": "Underwater Chest",
+            "short_name": "Water Chest",
+            "sections": [
+              {
+                "name": "Open it",
+                "access_rules": [
+                  "mm_zora"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 507,
+                "y": 339
+              }
+            ]
+          },
+          {
             "name": "Southeast Termina Field",
             "short_name": "SE Termina Field",
             "sections": [
@@ -5431,9 +5453,8 @@
               {
                 "name": "Chest on a stump",
                 "access_rules": [
-                  "[$mm_can_grow_magic_plant]",
-                  "[mm_hookshot]",
-                  "mm_nostump"
+                  "$mm_can_use_beans",
+                  "mm_hookshot"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5469,28 +5490,6 @@
                 "size": 19,
                 "x": 582,
                 "y": 302
-              }
-            ]
-          },
-          {
-            "name": "Underwater Chest",
-            "short_name": "Water Chest",
-            "sections": [
-              {
-                "name": "Open it",
-                "access_rules": [
-                  "mm_zora"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 507,
-                "y": 339
               }
             ]
           },

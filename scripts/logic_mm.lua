@@ -64,6 +64,22 @@ function mm_has_explosives()
   end  
 end  
 
+function mm_can_play(song)
+  if has("mm_ocarina") and has(song) then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None        
+  end
+end  
+
+function mm_can_use_beans()
+  if has("mm_beans") and (has("mm_bottle") or mm_can_play("mm_songofstorms")) then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None       
+  end
+end
+
 function mm_can_break_rocks()
   if mm_has("mm_goronmask")
   then
