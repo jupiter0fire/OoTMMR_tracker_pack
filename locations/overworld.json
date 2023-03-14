@@ -5111,10 +5111,54 @@
                     "y": 62
                   }
                 ]
+              }
+            ]
+          },
+          {
+            "name": "West Clock Town",
+            "children":[
+              {
+                "name": "Clock Town Bank",
+                "short_name": "Bank",
+                "sections": [
+                  {
+                    "name": "200 Rupees Deposit",
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "500 Rupees Deposit",
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
+                    "access_rules":[
+                      "mm_adultwallet"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  },
+                  {
+                    "name": "1000 Rupees Deposit",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_giantwallet"
+                    ],
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 48,
+                    "y": 155
+                  }
+                ]
               },
               {
-                "name": "West Clock Town",
-                "short_name": "WCT",
+                "name": "Rosa Sisters",
+                "short_name": "Rosa Sis",
                 "sections": [
                   {
                     "name": "Rosa Sisters Gift - Night 1 or 2",
@@ -5137,54 +5181,19 @@
                 ]
               },
               {
-                "name": "Lottery Shop",
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "short_name": "Lottery",
+                "name": "Bomb Shop",
+                "short_name": "Bomb Shop",
                 "sections": [
                   {
-                    "name": "Win the Lottery",
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 50,
-                    "y": 125
-                  }
-                ]
-              },
-              {
-                "name": "Clock Town Bank",
-                "short_name": "Bank",
-                "sections": [
-                  {
-                    "name": "200 Rupees Deposit",
+                    "name": "Bomb Bag (50 Rupees)",
                     "capture_item": true,
                     "item_count": 1
                   },
                   {
-                    "name": "500 Rupees Deposit",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "1000 Rupees Deposit",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "name": "Big Bomb Bag (90 Rupees, 100 if stolen)",
                     "access_rules": [
-                      "[mm_adultwallet]"
+                      "$mm_can_fight",
+                      "mm_adultwallet"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5194,20 +5203,21 @@
                   {
                     "map": "termina",
                     "size": 19,
-                    "x": 48,
-                    "y": 155
+                    "x": 22,
+                    "y": 148
                   }
                 ]
               },
               {
-                "name": "Swordsman's School",
+                "name": "Curiosity Shop - Open 10 PM - 5 AM",
+                "short_name": "CS",
                 "sections": [
                   {
-                    "name": "Expert Swordsman Prize",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "name": "500 Rupees Purchase - Final Night",
+                    "chest_unopened_img": "images/system/unknownmask.png",
+                    "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "mm_sword1"
+                      "$mm_can_fight,mm_giantwallet"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5217,8 +5227,8 @@
                   {
                     "map": "termina",
                     "size": 19,
-                    "x": 30,
-                    "y": 91
+                    "x": 51,
+                    "y": 181
                   }
                 ]
               },
@@ -5230,8 +5240,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "[mm_bunnyhood]",
-                      "mm_postmanhood"
+                      "mm_bunnyhood"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5257,42 +5266,14 @@
                 ]
               },
               {
-                "name": "Bomb Shop",
-                "short_name": "Bomb Shop",
+                "name": "Swordsman's School",
                 "sections": [
                   {
-                    "name": "10 Bombs (30 Rupees)",
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "10 Bombchus (40 Rupees)",
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Bomb Bag (50 Rupees)",
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Big Bomb Bag (90 Rupees, 100 if stolen)",
+                    "name": "Expert Swordsman Prize",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "{}",
-                      "mm_sword1",
-                      "mm_goron",
-                      "mm_zora",
-                      "mm_fairysword",
-                      "[mm_sword1],mm_adultwallet",
-                      "[mm_goron],mm_adultwallet",
-                      "[mm_zora],mm_adultwallet",
-                      "[mm_fairysword],mm_adultwallet"
+                      "mm_sword"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -5302,196 +5283,8 @@
                   {
                     "map": "termina",
                     "size": 19,
-                    "x": 22,
-                    "y": 148
-                  }
-                ]
-              },
-              {
-                "name": "Trading Post - Not Available Final Night",
-                "access_rules": [
-                  "mm_shopsanity_yes"
-                ],
-                "sections": [
-                  {
-                    "name": "Red Potion (30 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Green Potion (30 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Hylian Shield (80 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Fairy (50 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Deku Stick (10 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "30 Arrows (30 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "10 Deku Nuts (30 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "50 Arrows (40 Rupees)",
-                    "capture_item": true,
-                    "visibility_rules": [
-                      "shopsanity_yes"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 34,
-                    "y": 168
-                  }
-                ]
-              },
-              {
-                "name": "Curiosity Shop - Open 10 PM - 5 AM",
-                "short_name": "CS",
-                "sections": [
-                  {
-                    "name": "500 Rupees Purchase - Final Night",
-                    "chest_unopened_img": "images/system/unknownmask.png",
-                    "chest_opened_img": "images/system/unknownmask_grey.png",
-                    "access_rules": [
-                      "mm_giantwallet,mm_sword1",
-                      "mm_giantwallet,mm_fairysword",
-                      "mm_giantwallet,mm_goron",
-                      "mm_giantwallet,mm_zora",
-                      "mm_giantwallet,mm_bow",
-                      "mm_giantwallet,mm_hookshot",
-                      "mm_giantwallet,$mm_has_explosives"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "5 Rupee Sale - Mushroom or Half Milk",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules": [
-                      "mm_bottle,mm_bottlesanity_yes,mm_mushroom",
-                      "mm_bottle,mm_bottlesanity_no,mm_scents",
-                      "mm_bottle,mm_shopsanity_no",
-                      "mm_bottle,mm_milklocated",
-                      "mm_bottle,mm_cowsanity_no,$mm_has_explosives,mm_ocarina,mm_eponasong",
-                      "mm_bottle,mm_cowsanity_no,mm_ocarina,mm_eponasong,[mm_zora],mm_hookshot",
-                      "mm_bottle,mm_cowsanity_no,mm_goron,mm_keg,mm_bow,mm_ocarina,mm_eponasong",
-                      "mm_bottle,mm_cowsanity_no,mm_ocarina,mm_eponasong,mm_gibdomask,mm_hookshot,[mm_bow],[mm_magic],[mm_icearrows],[mm_soaring],$mm_can_bottle_hotspringwater,mm_beans",
-                      "mm_bottle,mm_cowsanity_no,mm_ocarina,mm_eponasong,mm_gibdomask,mm_hookshot,mm_bow,mm_magic,[mm_icearrows],[mm_soaring],$mm_can_bottle_hotspringwater,mm_lightarrows"
-                    ],
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "20 Rupee Sale - Fish, Bugs, Fairy, Milk, Potions, or Water",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules": [
-                      "mm_bottlesanity_no,mm_bottle",
-                      "mm_bottle,mm_bottlesanity_yes,mm_redpotionlocated",
-                      "mm_bottle,mm_bottlesanity_yes,mm_bluepotionlocated",
-                      "mm_bottle,mm_bottlesanity_yes,mm_milklocated",
-                      "mm_bottle,mm_bottlesanity_yes,mm_bugs",
-                      "mm_bottle,mm_bottlesanity_yes,mm_fish",
-                      "mm_bottle,mm_bottlesanity_yes,mm_fairy",
-                      "mm_bottle,mm_bottlesanity_yes,mm_hotspringwater",
-                      "mm_bottle,mm_bottlesanity_yes,mm_water",
-                      "mm_bottle,mm_bottlesanity_yes,mm_zoraegg"
-                    ],
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "50 Rupee Sale - Poe",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules": [
-                      "mm_bottlesanity_yes,mm_poe,mm_misc_yes",
-                      "mm_bottlesanity_no,mm_garomask,mm_bottle,mm_hookshot,mm_ocarina,mm_eponasong,mm_deku,mm_goron,mm_zora,mm_elegy,mm_lightarrows,mm_bow,mm_magic,mm_stonetower_small_keys:mm_1,mm_misc_yes,mm_twinstone,$mm_can_deal_damage",
-                      "mm_bottlesanity_no,mm_gibdomask,mm_bottle,mm_hookshot,mm_ocarina,mm_eponasong,mm_deku,mm_goron,mm_zora,mm_elegy,mm_lightarrows,mm_bow,mm_magic,mm_stonetower_small_keys:mm_1,mm_misc_yes,mm_twinstone,$mm_can_deal_damage",
-                      "mm_bow,mm_lightarrows,mm_magic,mm_hookshot,mm_stonetower_small_keys:mm_1,mm_hookshot,mm_bottle,$mm_inverted_access,mm_bottlesanity_no"
-                    ],
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "200 Rupee Sale - Big Poe, Chateau, or Gold Dust",
-                    "chest_unopened_img": "images/system/blue.png",
-                    "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules": [
-                      "mm_bottle,mm_captainshat,mm_bow,mm_misc_yes,mm_eponasong,mm_bottlesanity_no",
-                      "mm_bottle,mm_captainshat,mm_zora,mm_misc_yes,mm_eponasong,mm_bottlesanity_no",
-                      "mm_bottle,mm_gibdomask,mm_hookshot,mm_bombs,mm_nuts,mm_beans,mm_misc_yes,mm_eponasong,mm_bottlesanity_no",
-                      "mm_bottle,mm_bottlesanity_yes,mm_bigpoe,mm_misc_yes",
-                      "mm_bottle,mm_shopsanity_no,mm_romanimask,mm_adultwallet,mm_misc_yes",
-                      "mm_bottle,mm_chateaulocated,mm_misc_yes",
-                      "mm_bottle,mm_dustlocated,mm_misc_yes"
-                    ],
-                    "visibility_rules": [
-                      "misc_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 51,
-                    "y": 181
+                    "x": 30,
+                    "y": 91
                   }
                 ]
               },
