@@ -5722,55 +5722,11 @@
                 "y": 347
               }
             ]
-          },
-          {
-            "name": "Chest on Ikana Pillar",
-            "short_name": "Pillar Chest",
-            "sections": [
-              {
-                "name": "Hookshot it",
-                "access_rules": [
-                  "mm_hookshot"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 636,
-                "y": 300
-              }
-            ]
-          },
-          {
-            "name": "Road to Ikana Grotto",
-            "short_name": "Ikana Road Grotto",
-            "sections": [
-              {
-                "name": "Get in",
-                "access_rules": [
-                  "mm_goron"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 684,
-                "y": 300
-              }
-            ]
           }
         ]
       },
       {
-        "name": "Romani Ranch",
+        "name": "Milk Road",
         "color": "#e0ef0e",
         "children": [
           {
@@ -5793,14 +5749,6 @@
                 "capture_item": true,
                 "item_count": 1
               }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 469,
-                "y": 366
-              }
             ]
           },
           {
@@ -5812,7 +5760,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "mm_ocarina,mm_eponasong"
+                  "$mm_can_play|mm_epona"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5836,6 +5784,78 @@
                 "y": 376
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Romani Ranch",
+        "color": "#e0ef0e",
+        "children": [
+          {
+            "name": "Romani Ranch Aliens Quest",
+            "short_name": "Romani Ranch Aliens",
+            "sections": [
+              {
+                "name": "Day 1 - Romani Ranch Archery Training",
+                "chest_unopened_img": "images/system/unknownsong.png",
+                "chest_opened_img": "images/system/unknownsong_check.png",
+                "access_rules": [
+                  "$mm_can_use_keg"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Night 1: 2:30 AM - 3:45 AM - Save the Cows",
+                "access_rules": [
+                  "$mm_can_use_keg,mm_bow"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              },
+              {
+                "name": "Night 2: 6 PM - 7 PM - Escort Cremia after defeating Them",
+                "chest_unopened_img": "images/system/unknownmask.png",
+                "chest_opened_img": "images/system/unknownmask_grey.png",
+                "access_rules": [
+                  "$mm_can_use_keg,mm_bow"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 400,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "name": "Romani Ranch Cucco Shack",
+            "short_name": "Cucco Shack",
+            "sections": [
+              {
+                "name": "March with Bremen Mask",
+                "chest_unopened_img": "images/system/unknownmask.png",
+                "chest_opened_img": "images/system/unknownmask_grey.png",
+                "access_rules": [
+                  "mm_bremenmask"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 369,
+                "y": 351
+              }
+            ]
           },
           {
             "name": "Doggy Racetrack - Open 6AM to 8PM",
@@ -5844,12 +5864,9 @@
               {
                 "name": "Chest On Shed Roof",
                 "access_rules": [
-                  "[$mm_can_grow_magic_plant]",
-                  "[mm_hookshot]",
-                  "[mm_zoramask]",
-                  "mm_sticks,[mm_geometryjump]",
-                  "mm_sword1,[mm_geometryjump]",
-                  "mm_fairysword,[mm_geometryjump]"
+                  "$mm_can_use_beans",
+                  "mm_hookshot",
+                  "mm_zoramask"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5859,8 +5876,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "[mm_maskoftruth]",
-                  "mm_racenomask"
+                  "mm_maskoftruth"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5927,37 +5943,20 @@
                 "y": 350
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "Road to Ikana Grotto",
+        "children":[
           {
-            "name": "Romani Ranch Aliens Quest",
-            "short_name": "Romani Ranch Aliens",
+            "name": "Chest on Ikana Pillar",
+            "short_name": "Pillar Chest",
             "sections": [
               {
-                "name": "Day 1 - Romani Ranch Archery Training",
-                "chest_unopened_img": "images/system/unknownsong.png",
-                "chest_opened_img": "images/system/unknownsong_check.png",
+                "name": "Hookshot it",
                 "access_rules": [
-                  "mm_goron,mm_powderkeg"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              },
-              {
-                "name": "Night 1: 2:30 AM - 3:45 AM - Save the Cows",
-                "access_rules": [
-                  "mm_goron,mm_powderkeg,mm_bow",
-                  "mm_goron,mm_powderkeg,mm_bowlessaliens"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              },
-              {
-                "name": "Night 2: 6 PM - 7 PM - Escort Cremia after defeating Them",
-                "chest_unopened_img": "images/system/unknownmask.png",
-                "chest_opened_img": "images/system/unknownmask_grey.png",
-                "access_rules": [
-                  "mm_goron,mm_powderkeg,mm_bow",
-                  "mm_goron,mm_powderkeg,mm_bowlessaliens"
+                  "mm_hookshot"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5967,21 +5966,19 @@
               {
                 "map": "termina",
                 "size": 19,
-                "x": 400,
-                "y": 350
+                "x": 636,
+                "y": 300
               }
             ]
           },
           {
-            "name": "Romani Ranch Cucco Shack",
-            "short_name": "Cucco Shack",
+            "name": "Road to Ikana Grotto",
+            "short_name": "Ikana Road Grotto",
             "sections": [
               {
-                "name": "March with Bremen Mask",
-                "chest_unopened_img": "images/system/unknownmask.png",
-                "chest_opened_img": "images/system/unknownmask_grey.png",
+                "name": "Get in",
                 "access_rules": [
-                  "mm_bremenmask"
+                  "mm_goron"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5991,8 +5988,8 @@
               {
                 "map": "termina",
                 "size": 19,
-                "x": 369,
-                "y": 351
+                "x": 684,
+                "y": 300
               }
             ]
           }

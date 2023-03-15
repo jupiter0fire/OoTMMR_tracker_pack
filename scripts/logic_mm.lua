@@ -48,6 +48,10 @@ function mm_can_break_boulders()
   return has("mm_bombs") or has("mm_goron")
 end  
 
+function mm_can_use_keg()
+  return has("mm_goron") and has("mm_keg")
+end
+
 function mm_can_break_rocks()
   if mm_has("mm_goronmask")
   then
