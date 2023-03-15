@@ -5453,8 +5453,7 @@
               {
                 "name": "Chest on a stump",
                 "access_rules": [
-                  "$mm_can_use_beans",
-                  "mm_hookshot"
+                  "$mm_can_use_beans"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5471,6 +5470,30 @@
                 "size": 19,
                 "x": 563,
                 "y": 352
+              }
+            ]
+          },
+          {
+            "name": "Learn Kamaro Dance",
+            "short_name": "Kamaro Dance",
+            "sections": [
+              {
+                "name": "From Midnight to 6 AM",
+                "chest_unopened_img": "images/system/unknownmask.png",
+                "chest_opened_img": "images/system/unknownmask_grey.png",
+                "access_rules": [
+                  "$mm_can_play|mm_songofhealing"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 513,
+                "y": 260
               }
             ]
           },
@@ -5502,7 +5525,7 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "$mm_can_deal_damage",
+                  "$mm_can_fight",
                   "mm_bow",
                   "mm_deku"
                 ],
@@ -5516,6 +5539,33 @@
                 "size": 19,
                 "x": 520,
                 "y": 355
+              }
+            ]
+          },
+          {
+            "name": "Termina Field North Grotto",
+            "short_name": "Dodongo Grotto",
+            "sections": [
+              {
+                "name": "Kill the Dodongos",
+                "chest_unopened_img": "images/system/chest_unopened_big.png",
+                "chest_opened_img": "images/system/chest_open_big.png",
+                "access_rules": [
+                  "$mm_has_weapon",
+                  "mm_bombs",
+                  "mm_goron",
+                  "mm_bow"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 525,
+                "y": 260
               }
             ]
           },
@@ -5560,35 +5610,6 @@
             ]
           },
           {
-            "name": "Termina Field North Grotto",
-            "short_name": "Dodongo Grotto",
-            "sections": [
-              {
-                "name": "Kill the Dodongos",
-                "chest_unopened_img": "images/system/chest_unopened_big.png",
-                "chest_opened_img": "images/system/chest_open_big.png",
-                "access_rules": [
-                  "mm_sword1",
-                  "mm_fairysword",
-                  "mm_sticks,[mm_stickfighting]",
-                  "mm_bombs",
-                  "mm_goron",
-                  "mm_bow"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 525,
-                "y": 260
-              }
-            ]
-          },
-          {
             "name": "West Termina Field Grotto",
             "short_name": "Beehive Grotto",
             "sections": [
@@ -5597,9 +5618,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm_can_break_rocks,mm_zora",
-                  "$mm_can_break_rocks,mm_hookshot,[mm_babahive]",
-                  "$mm_can_break_rocks,mm_bombs,[mm_babahive]"
+                  "$mm_can_break_boulders,mm_zora"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5615,30 +5634,6 @@
             ]
           },
           {
-            "name": "Learn Kamaro Dance",
-            "short_name": "Kamaro Dance",
-            "sections": [
-              {
-                "name": "From Midnight to 6 AM",
-                "chest_unopened_img": "images/system/unknownmask.png",
-                "chest_opened_img": "images/system/unknownmask_grey.png",
-                "access_rules": [
-                  "mm_ocarina,mm_songofhealing"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 513,
-                "y": 260
-              }
-            ]
-          },
-          {
             "name": "Empty Grotto By Observatory",
             "short_name": "Business Scrub Grotto",
             "sections": [
@@ -5647,20 +5642,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_adultwallet,mm_deku",
-                  "mm_adultwallet,mm_hookshot",
-                  "mm_adultwallet,mm_zora",
-                  "mm_adultwallet,mm_bow",
-                  "mm_adultwallet,[mm_guardskip]",
-                  "mm_adultwallet,[mm_bombernothing]",
-                  "mm_adultwallet,[$mm_goron_fence_jump]",
-                  "{},mm_deku",
-                  "{},mm_hookshot",
-                  "{},mm_zora",
-                  "{},mm_bow",
-                  "{},[mm_guardskip]",
-                  "{},[mm_bombernothing]",
-                  "{},[$mm_goron_fence_jump]"
+                  "mm_adultwallet,bombers_code"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5676,32 +5658,6 @@
             ]
           },
           {
-            "name": "Moon's Tear",
-            "short_name": "Moon's Tear",
-            "sections": [
-              {
-                "name": "Look at Skull Kid through the telescope",
-                "access_rules": [
-                  "[$mm_has_projectile]",
-                  "[$mm_goron_fence_jump]",
-                  "mm_deku",
-                  "[mm_bombernothing]",
-                  "[mm_guardskip]"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 590,
-                "y": 347
-              }
-            ]
-          },
-          {
             "name": "Gossip Stones Puzzle Grottos",
             "short_name": "Gossips Grottos",
             "sections": [
@@ -5710,9 +5666,9 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm_can_break_rocks,mm_ocarina,mm_deku,mm_sonata",
-                  "$mm_can_break_rocks,mm_ocarina,mm_zora,mm_bossanova",
-                  "mm_ocarina,mm_goron,mm_lullaby"
+                  "$mm_can_break_boulders,mm_ocarina,mm_deku,mm_sonata",
+                  "$mm_can_break_boulders,mm_ocarina,mm_zora,mm_bossanova",
+                  "$mm_can_break_boulders,mm_goron,mm_lullaby"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -5742,6 +5698,28 @@
                 "size": 19,
                 "x": 496,
                 "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Moon's Tear",
+            "short_name": "Moon's Tear",
+            "sections": [
+              {
+                "name": "Look at Skull Kid through the telescope",
+                "access_rules": [
+                  "bombers_code"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 590,
+                "y": 347
               }
             ]
           },

@@ -269,10 +269,25 @@
   },
   {
     "name": "MM Goron Lullaby",
-    "type": "toggle",
+    "type": "progressive",
     "loop": true,
-    "img": "images/items/mm_lullaby.png",
-    "codes": "mm_lullaby,mm_goronslullaby,mm_goronlullaby,mm_goron_lullaby"
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_lullaby.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "img_mods": "overlay|images/system/mm_overlay_30.png",
+        "codes": "mm_lullaby_half"
+      },
+      {
+        "img": "images/items/mm_lullaby.png",
+        "img_mods": "overlay|images/system/mm_overlay_40.png",
+        "codes": "mm_lullaby,mm_goronslullaby,mm_goronlullaby,mm_goron_lullaby"
+      }
+    ]
   },
   {
     "name": "MM Goron Lullaby Check",
@@ -3207,7 +3222,7 @@
   },
   {
     "name": "MM Goron Lullaby",
-    "type": "toggle",
+    "type": "progressive",
     "img": "images/items_capture/mm_lullaby.png",
     "codes": "mm_lullabycap"
   },

@@ -41,10 +41,6 @@ function can_play(song)
   return has("ocarina") and has(song)
 end  
 
-function mm_can_play(song)
-  return has("mm_ocarina") and has(song)
-end  
-
 function can_use_slingshot()
   return has_age("child") == 1 and has("slingshot")
 end  
