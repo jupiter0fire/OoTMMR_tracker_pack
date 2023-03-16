@@ -6008,8 +6008,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "[$mm_has_projectile]",
-                  "mm_swamptree"
+                  "$mm_has_weapon_range"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6062,14 +6061,6 @@
                 ],
                 "capture_item": true,
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 537,
-                "y": 401
               }
             ]
           },
@@ -6137,9 +6128,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_deku,mm_towndeed",
-                  "mm_goron,[mm_goronledge]",
-                  "{}"
+                  "mm_deku,mm_towndeed"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6161,8 +6150,7 @@
               {
                 "name": "Gift From Saving Koume",
                 "access_rules": [
-                  "mm_redpotionlocated,mm_bottle",
-                  "mm_bluepotionlocated,mm_bottle"
+                  "mm_bottle"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6208,14 +6196,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_redpotionlocated,mm_odolwa,mm_bottle,mm_odolwawood",
-                  "mm_bluepotionlocated,mm_odolwa,mm_bottle,mm_odolwawood",
-                  "mm_redpotionlocated,mm_goht,mm_bottle,mm_gohtwood",
-                  "mm_bluepotionlocated,mm_goht,mm_bottle,mm_gohtwood",
-                  "mm_redpotionlocated,mm_gyorg,mm_bottle,mm_gyorgwood",
-                  "mm_bluepotionlocated,mm_gyorg,mm_bottle,mm_gyorgwood",
-                  "mm_redpotionlocated,mm_twinmold,mm_bottle,mm_twinwood",
-                  "mm_bluepotionlocated,mm_twinmold,mm_bottle,mm_twinwood"
+                  "mm_woodfall,mm_bottle,mm_bow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -6323,20 +6304,38 @@
           {
             "name": "Poison Swamp Area",
             "access_rules": [
-              "mm_zora,[mm_poisonzora],[mm_damage]",
-              "[mm_poisongoron],mm_goron,[mm_damage]",
-              "mm_deku,mm_hookshot",
-              "mm_deku,mm_pictobox",
+              "$mm_boat_ride",
               "mm_deku,mm_bow",
-              "mm_deku,mm_redpotionlocated,mm_bottle",
-              "mm_deku,mm_bluepotionlocated,mm_bottle"
+              "mm_deku,mm_hookshot",
+              "mm_deku,mm_zora"
             ],
             "children": [
               {
+                "name": "Southern Swamp Grotto",
+                "short_name": "Swamp Grotto",
+                "access_rules": [
+                  "mm_deku"
+                ],
+                "sections": [
+                  {
+                    "name": "Get in",
+                    "capture_item": true,
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 482,
+                    "y": 506
+                  }
+                ]
+              },
+              {
                 "name": "Deku Palace Area",
                 "access_rules": [
-                  "mm_deku",
-                  "mm_dekuskip"
+                  "mm_deku"
                 ],
                 "children": [
                   {
@@ -6348,8 +6347,7 @@
                         "chest_unopened_img": "images/system/unknownsong.png",
                         "chest_opened_img": "images/system/unknownsong_check.png",
                         "access_rules": [
-                          "mm_ocarina,[$mm_can_grow_magic_plant],mm_deku",
-                          "mm_ocarina,mm_beanskip,mm_deku"
+                          "mm_ocarina,$mm_can_use_beans"
                         ],
                         "capture_item": true,
                         "item_count": 1
@@ -6390,14 +6388,9 @@
                     "short_name": "Bean Seller Grotto",
                     "sections": [
                       {
-                        "name": "Free Sample",
-                        "capture_item": true,
-                        "item_count": 1
-                      },
-                      {
                         "name": "Get to the chest",
                         "access_rules": [
-                          "$mm_can_grow_magic_plant",
+                          "$mm_can_use_beans",
                           "mm_hookshot"
                         ],
                         "capture_item": true,
@@ -6412,6 +6405,70 @@
                         "y": 537
                       }
                     ]
+                  },
+                  {
+                    "name": "Deku Shrine Race",
+                    "short_name": "Deku Shrine",
+                    "sections": [
+                      {
+                        "name": "Race with Deku Butler",
+                        "chest_unopened_img": "images/system/unknownmask.png",
+                        "chest_opened_img": "images/system/unknownmask_grey.png",
+                        "access_rules": [
+                          "mm_deku,$mm_open_woodfall,mm_woodfall,$mm_deku_princess"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Test 1",
+                        "chest_unopened_img": "images/system/unknownmask.png",
+                        "chest_opened_img": "images/system/unknownmask_grey.png",
+                        "access_rules": [
+                          "mm_deku"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Test 2",
+                        "chest_unopened_img": "images/system/unknownmask.png",
+                        "chest_opened_img": "images/system/unknownmask_grey.png",
+                        "access_rules": [
+                          "mm_woodfall"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Test 3",
+                        "chest_unopened_img": "images/system/unknownmask.png",
+                        "chest_opened_img": "images/system/unknownmask_grey.png",
+                        "access_rules": [
+                          "$mm_open_woodfall"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Test 4",
+                        "chest_unopened_img": "images/system/unknownmask.png",
+                        "chest_opened_img": "images/system/unknownmask_grey.png",
+                        "access_rules": [
+                          "$mm_deku_princess"
+                        ],
+                        "capture_item": true,
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "size": 19,
+                        "x": 526,
+                        "y": 556
+                      }
+                    ]
                   }
                 ]
               },
@@ -6424,8 +6481,7 @@
                     "chest_unopened_img": "images/system/unknownsong.png",
                     "chest_opened_img": "images/system/unknownsong_check.png",
                     "access_rules": [
-                      "mm_deku",
-                      "mm_zora,$mm_longjump"
+                      "mm_deku"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6441,59 +6497,18 @@
                 ]
               },
               {
-                "name": "Southern Swamp Grotto",
-                "short_name": "Swamp Grotto",
-                "access_rules": [
-                  "mm_deku",
-                  "mm_zora",
-                  "$mm_longjump"
-                ],
-                "sections": [
-                  {
-                    "name": "Get in",
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 482,
-                    "y": 506
-                  }
-                ]
-              },
-              {
                 "name": "Swamp Spider House",
                 "short_name": "Swamp Spiders",
+                "access_rules":[
+                  "mm_deku"
+                ],
                 "sections": [
                   {
                     "name": "Collect 30 Tokens",
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_no,mm_bottle,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_sticks,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_no,mm_bottle,mm_zora,mm_sticks,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_yes,mm_bugs,mm_hookshot,mm_deku,mm_sticks,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_bow,mm_firearrows,mm_magic,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_sticks,mm_token_no,mm_sword1",
-                      "mm_bottlesanity_yes,mm_bugs,mm_zora,mm_sticks,mm_token_no,mm_fairysword",
-                      "mm_bottlesanity_no,$mm_can_grow_magic_plant,mm_sword1,mm_bottle,mm_token_no,mm_bow",
-                      "mm_bottlesanity_no,$mm_can_grow_magic_plant,mm_fairysword,mm_bottle,mm_token_no,mm_bow",
-                      "mm_bottlesanity_yes,$mm_can_grow_magic_plant,mm_sword1,mm_bottle,mm_token_no,mm_bugs,mm_bow",
-                      "mm_bottlesanity_yes,$mm_can_grow_magic_plant,mm_fairysword,mm_bottle,mm_token_no,mm_bugs,mm_bow",
-                      "mm_token_yes,mm_skulltulla_woodfall:mm_30"
+                      "mm_skulltulla_woodfall:30"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6511,9 +6526,8 @@
               {
                 "name": "Swamp Spider House Skulltullas First 15",
                 "short_name": "Swamp Spiders",
-                "access_rules": [
-                  "mm_token_yes,$mm_can_deal_damage,mm_sticks",
-                  "mm_token_yes,$mm_can_deal_damage,mm_bow"
+                "access_rules":[
+                  "mm_deku"
                 ],
                 "sections": [
                   {
@@ -6533,8 +6547,7 @@
                     "chest_unopened_img": "images/system/skulltula_token.png",
                     "chest_opened_img": "images/system/skulltula_token_gray.png",
                     "access_rules": [
-                      "mm_bottle,mm_bottlesanity_no",
-                      "mm_bottle,mm_bugs,mm_bottlesanity_yes"
+                      "mm_bottle"
                     ],
                     "visibility_rules": [
                       "token_yes"
@@ -6548,8 +6561,7 @@
                     "chest_unopened_img": "images/system/skulltula_token.png",
                     "chest_opened_img": "images/system/skulltula_token_gray.png",
                     "access_rules": [
-                      "mm_bottle,mm_bottlesanity_no",
-                      "mm_bottle,mm_bugs,mm_bottlesanity_yes"
+                      "mm_bottle"
                     ],
                     "visibility_rules": [
                       "token_yes"
@@ -6612,8 +6624,7 @@
                     "access_rules": [
                       "mm_hookshot",
                       "mm_zora",
-                      "mm_goron,$mm_can_grow_magic_plant",
-                      "$mm_has_explosives,$mm_can_grow_magic_plant"
+                      "$mm_can_use_beans,$mm_can_break_boulders"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6661,10 +6672,10 @@
                     ],
                     "access_rules": [
                       "mm_hookshot",
+                      "mm_zora",
                       "mm_deku,mm_bow",
                       "mm_deku,mm_magic",
-                      "mm_zora",
-                      "mm_deku,$mm_has_explosives"
+                      "mm_deku,mm_bombs"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6678,8 +6689,7 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "mm_bottle,mm_bottlesanity_no",
-                      "mm_bottle,mm_bugs,mm_bottlesanity_yes"
+                      "mm_bottle"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6693,10 +6703,7 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "mm_deku,mm_magic",
-                      "mm_bow",
-                      "mm_hookshot",
-                      "mm_zora"
+                      "$mm_has_weapon_range"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6710,10 +6717,7 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "mm_deku,mm_magic",
-                      "mm_bow",
-                      "mm_hookshot",
-                      "mm_zora"
+                      "$mm_has_weapon_range"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6731,9 +6735,8 @@
               {
                 "name": "Swamp Spider House Skulltullas Second 15",
                 "short_name": "Swamp Spiders",
-                "access_rules": [
-                  "mm_token_yes,$mm_can_deal_damage,mm_sticks",
-                  "mm_token_yes,$mm_can_deal_damage,mm_bow"
+                "access_rules":[
+                  "mm_deku"
                 ],
                 "sections": [
                   {
@@ -6778,8 +6781,7 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "mm_sword1",
-                      "mm_fairysword"
+                      "$mm_has_weapon"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6799,10 +6801,7 @@
                     "name": "Gold Room Hive",
                     "short_name": "Gold Room Beehive",
                     "access_rules": [
-                      "mm_deku,mm_magic",
-                      "mm_bow",
-                      "mm_hookshot",
-                      "mm_zora"
+                      "$mm_has_weapon_range"
                     ],
                     "chest_unopened_img": "images/system/skulltula_token.png",
                     "chest_opened_img": "images/system/skulltula_token_gray.png",
@@ -6834,7 +6833,7 @@
                     "access_rules": [
                       "mm_hookshot",
                       "mm_zora",
-                      "mm_deku,$mm_can_grow_magic_plant"
+                      "$mm_can_use_beans"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6892,10 +6891,7 @@
                       "token_yes"
                     ],
                     "access_rules": [
-                      "mm_deku,mm_magic",
-                      "mm_bow",
-                      "mm_hookshot",
-                      "mm_zora"
+                      "$mm_has_weapon_range"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6943,17 +6939,29 @@
                     "name": "Tall Stump",
                     "chest_unopened_img": "images/system/chest_unopened_big.png",
                     "chest_opened_img": "images/system/chest_open_big.png",
+                    "access_rules":[
+                      "mm_deku",
+                      "mm_hookshot"
+                    ],
                     "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Behind Temple Platform",
                     "capture_item": true,
+                    "access_rules":[
+                      "mm_deku",
+                      "mm_hookshot,$mm_can_play|mm_soaring"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Water Level Stump",
                     "capture_item": true,
+                    "access_rules":[
+                      "mm_deku",
+                      "mm_hookshot"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -6973,8 +6981,7 @@
                   {
                     "name": "15 Stray Fairies in Woodfall Temple",
                     "access_rules": [
-                      "{mm_greatfairymask}",
-                      "mm_woodfall_stray_fairies:mm_15,mm_deku"
+                      "mm_woodfall_stray_fairies:15,mm_deku"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6986,105 +6993,6 @@
                     "size": 19,
                     "x": 554,
                     "y": 466
-                  }
-                ]
-              },
-              {
-                "name": "What temple is this?",
-                "short_name": "Woodfall Temple",
-                "sections": [
-                  {
-                    "name": "Woodfall Temple",
-                    "hosted_item": "odolwalocwood",
-                    "visibility_rules": [
-                      "$woodfall_not_known_but_odolwa_found"
-                    ],
-                    "access_rules": [
-                      "{mm_deku,mm_sonata}"
-                    ]
-                  },
-                  {
-                    "name": "Snowhead Temple",
-                    "hosted_item": "gohtlocwood",
-                    "visibility_rules": [
-                      "$woodfall_not_known_but_goht_found"
-                    ],
-                    "access_rules": [
-                      "{mm_deku,mm_sonata}"
-                    ]
-                  },
-                  {
-                    "name": "Great Bay Temple",
-                    "hosted_item": "gyorglocwood",
-                    "visibility_rules": [
-                      "$woodfall_not_known_but_gyorg_found"
-                    ],
-                    "access_rules": [
-                      "{mm_deku,mm_sonata}"
-                    ]
-                  },
-                  {
-                    "name": "Inverted Stone Tower Temple",
-                    "visibility_rules": [
-                      "$woodfall_not_known_but_twinmold_found"
-                    ],
-                    "hosted_item": "twinlocwood",
-                    "access_rules": [
-                      "{mm_deku,mm_sonata}"
-                    ]
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 542,
-                    "y": 478,
-                    "size": 19
-                  }
-                ]
-              },
-              {
-                "name": "Deku Shrine Race",
-                "short_name": "Deku Shrine",
-                "sections": [
-                  {
-                    "name": "Race with Deku Butler",
-                    "chest_unopened_img": "images/system/unknownmask.png",
-                    "chest_opened_img": "images/system/unknownmask_grey.png",
-                    "access_rules": [
-                      "mm_bottlesanity_no,mm_bottle,mm_woodfall,mm_deku,mm_odolwawood",
-                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_woodfall,mm_deku,mm_odolwawood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_woodfall],mm_bow,mm_odolwawood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_woodfall],mm_hookshot,mm_odolwawood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_woodfall],mm_zora,mm_odolwawood",
-                      "mm_bottlesanity_no,mm_bottle,mm_goht,mm_deku,mm_gohtwood",
-                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_goht,mm_deku,mm_gohtwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_goht],mm_bow,mm_gohtwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_goht],mm_hookshot,mm_gohtwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_goht],mm_zora,mm_gohtwood",
-                      "mm_bottlesanity_no,mm_bottle,mm_gyorg,mm_deku,mm_gyorgwood",
-                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_gyorg,mm_deku,mm_gyorgwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_gyorg],mm_bow,mm_odolwawood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_gyorg],mm_hookshot,mm_gyorgwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_gyorg],mm_zora,mm_gyorgwood",
-                      "mm_bottlesanity_no,mm_bottle,mm_twinmold,mm_deku,mm_twinwood",
-                      "mm_bottlesanity_yes,mm_bottle,mm_dekuprincess,mm_twinmold,mm_deku,mm_twinwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_twinmold],mm_bow,mm_twinwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_twinmold],mm_hookshot,mm_twinwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,[mm_twinmold],mm_zora,mm_twinwood",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,mm_shrineocto,mm_bow",
-                      "mm_bottlesanity_yes,mm_dekuprincess,mm_deku,mm_shrineocto,mm_zora"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 526,
-                    "y": 556
                   }
                 ]
               }

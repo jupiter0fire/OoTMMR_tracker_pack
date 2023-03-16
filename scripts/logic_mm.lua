@@ -52,6 +52,18 @@ function mm_can_use_keg()
   return has("mm_goron") and has("mm_keg")
 end
 
+function mm_boat_ride()
+  return has("mm_pictograph") or has("mm_bottle")
+end
+
+function mm_open_woodfall()
+  return has("mm_deku") and mm_can_play("mm_sonata")
+end  
+
+function mm_deku_princess()
+  return mm_has_weapon() and has("mm_bottle")
+end
+
 function mm_can_break_rocks()
   if mm_has("mm_goronmask")
   then
