@@ -64,6 +64,34 @@ function mm_deku_princess()
   return mm_has_weapon() and has("mm_bottle")
 end
 
+function mm_can_use_fire_arrows()
+  return has("mm_magic") and has("mm_bow") and has("mm_firearrows")
+end  
+
+function mm_can_use_lens_strict()
+  return has("mm_magic") and has("mm_lens")
+end  
+
+function mm_can_use_lens()
+  return mm_can_use_lens_strict() or has("logic_lens_mm")
+end  
+
+function mm_goron_graveyard_hot_water()
+  return false
+end
+
+function mm_sun_mask()
+  return false
+end  
+
+function mm_goron_food()
+  return false
+end  
+
+function mm_blacksmith_enabled()
+  return has("mm_snowhead") or mm_can_use_fire_arrows() or mm_goron_graveyard_hot_water()
+end
+
 function mm_can_break_rocks()
   if mm_has("mm_goronmask")
   then

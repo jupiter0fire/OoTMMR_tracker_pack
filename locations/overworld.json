@@ -5011,7 +5011,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "mm_pendant,$mm_meet_anju" //TODO add sun mask
+                      "mm_pendant,$mm_meet_anju,$mm_sun_mask"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -6419,46 +6419,6 @@
                         ],
                         "capture_item": true,
                         "item_count": 1
-                      },
-                      {
-                        "name": "Test 1",
-                        "chest_unopened_img": "images/system/unknownmask.png",
-                        "chest_opened_img": "images/system/unknownmask_grey.png",
-                        "access_rules": [
-                          "mm_deku"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Test 2",
-                        "chest_unopened_img": "images/system/unknownmask.png",
-                        "chest_opened_img": "images/system/unknownmask_grey.png",
-                        "access_rules": [
-                          "mm_woodfall"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Test 3",
-                        "chest_unopened_img": "images/system/unknownmask.png",
-                        "chest_opened_img": "images/system/unknownmask_grey.png",
-                        "access_rules": [
-                          "$mm_open_woodfall"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
-                      },
-                      {
-                        "name": "Test 4",
-                        "chest_unopened_img": "images/system/unknownmask.png",
-                        "chest_opened_img": "images/system/unknownmask_grey.png",
-                        "access_rules": [
-                          "$mm_deku_princess"
-                        ],
-                        "capture_item": true,
-                        "item_count": 1
                       }
                     ],
                     "map_locations": [
@@ -7004,11 +6964,111 @@
         "name": "Mountain",
         "color": "#af0a0a",
         "access_rules": [
-          "mm_bow,$mm_can_break_rocks",
-          "mm_bow,mm_firearrows,mm_magic",
-          "$mm_can_bottle_hotspringwater,[mm_soaring],$mm_can_break_rocks,mm_bottlesanity_yes"
+          "mm_bow,$mm_can_break_boulders",
+          "mm_bow,$mm_can_use_fire_arrows"
         ],
         "children": [
+          {
+            "name": "Goron Graveyard",
+            "access_rules":[
+              "$mm_can_use_lens_strict",
+              "mm_snowhead,mm_goron",
+              "mm_snowhead,mm_zora"
+            ]
+          },
+          {
+            "name": "Deliver Rock Sirloin to hungry Goron",
+            "short_name": "Rock Sirloin",
+            "sections": [
+              {
+                "name": "Get it from Goron Shrine",
+                "chest_unopened_img": "images/system/unknownmask.png",
+                "chest_opened_img": "images/system/unknownmask_grey.png",
+                "access_rules": [
+                  "$mm_goron_food"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 531,
+                "y": 139
+              }
+            ]
+          },
+          {
+            "name": "Frog Choir",
+            "short_name": "Frogs",
+            "sections": [
+              {
+                "name": "Gather the 5 frogs and beat Snowhead Temple",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "mm_snowhead,$mm_frog1,$mm_frog2,$mm_frog3,$mm_frog4"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 529,
+                "y": 147
+              }
+            ]
+          },
+          {
+            "name": "Mountain Village Hidden Waterfall Chest",
+            "short_name": "Mountain Village Chest",
+            "sections": [
+              {
+                "name": "After beating Snowhead Temple",
+                "access_rules": [
+                  "mm_snowhead,$mm_can_use_lens"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 510,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "name": "Path to Goron Graveyard Grotto",
+            "short_name": "Path to Graveyard Grotto",
+            "sections": [
+              {
+                "name": "After beating Snowhead Temple",
+                "access_rules": [
+                  "mm_snowhead,mm_goron",
+                  "mm_snowhead,mm_zora"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 527,
+                "y": 184
+              }
+            ]
+          },
           {
             "name": "Mountain Smithy",
             "short_name": "Mountain Smithy",
@@ -7016,6 +7076,7 @@
               {
                 "name": "Melt the ice and buy it for 100 Rupees - Day 1",
                 "access_rules": [
+                  "$mm_goron_graveyard_hot_water",
                   "mm_firearrows,mm_adultwallet,mm_magic,mm_bow",
                   "mm_snowhead,mm_adultwallet,mm_gohtsnow",
                   "mm_woodfall,mm_adultwallet,mm_odolwasnow",
@@ -7070,117 +7131,6 @@
                 "size": 19,
                 "x": 542,
                 "y": 182
-              }
-            ]
-          },
-          {
-            "name": "Deliver Rock Sirloin to hungry Goron",
-            "short_name": "Rock Sirloin",
-            "sections": [
-              {
-                "name": "Get it from Goron Shrine",
-                "chest_unopened_img": "images/system/unknownmask.png",
-                "chest_opened_img": "images/system/unknownmask_grey.png",
-                "access_rules": [
-                  "mm_goron,mm_sticks,mm_magic,",
-                  "mm_goron,mm_bow,mm_firearrows,mm_magic"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 531,
-                "y": 139
-              }
-            ]
-          },
-          {
-            "name": "Frog Choir",
-            "short_name": "Frogs",
-            "sections": [
-              {
-                "name": "Gather the 5 frogs and beat Snowhead Temple",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "{mm_maskoftruth}",
-                  "mm_dongero,mm_snowhead,mm_zora,mm_bossanova,mm_hookshot,mm_deku,mm_sonata,mm_bow,mm_icearrows,mm_magic,mm_eponasong,mm_odolwawood,mm_gohtsnow,mm_gyorgbay,[mm_sword1]",
-                  "mm_dongero,mm_odolwa,mm_odolwasnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_sword1]",
-                  "mm_dongero,mm_gyorg,mm_gyorgsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_sword1]",
-                  "mm_dongero,mm_twinmold,mm_twinsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_sword1]",
-                  "mm_dongero,mm_snowhead,mm_zora,mm_bossanova,mm_hookshot,mm_deku,mm_sonata,mm_bow,mm_icearrows,mm_magic,mm_eponasong,mm_odolwawood,mm_gohtsnow,mm_gyorgbay,[mm_fairysword]",
-                  "mm_dongero,mm_odolwa,mm_odolwasnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_fairysword]",
-                  "mm_dongero,mm_gyorg,mm_gyorgsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_fairysword]",
-                  "mm_dongero,mm_twinmold,mm_twinsnow,$mm_has_greatbay_frog_access,$mm_has_woodfall_frog_access,[mm_fairysword]"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 529,
-                "y": 147
-              }
-            ]
-          },
-          {
-            "name": "Mountain Village Hidden Waterfall Chest",
-            "short_name": "Mountain Village Chest",
-            "sections": [
-              {
-                "name": "After beating Snowhead Temple",
-                "access_rules": [
-                  "mm_snowhead,mm_gohtsnow,[$mm_can_see_with_lens]",
-                  "mm_woodfall,mm_odolwasnow,[$mm_can_see_with_lens]",
-                  "mm_gyorg,mm_gyorgsnow,[$mm_can_see_with_lens]",
-                  "mm_twinmold,mm_twinsnow,[$mm_can_see_with_lens]",
-                  "mm_snowhead,mm_gohtsnow,mm_lens_chests",
-                  "mm_woodfall,mm_odolwasnow,mm_lens_chests",
-                  "mm_gyorg,mm_gyorgsnow,mm_lens_chests",
-                  "mm_twinmold,mm_twinsnow,mm_lens_chests"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 510,
-                "y": 150
-              }
-            ]
-          },
-          {
-            "name": "Path to Goron Graveyard Grotto",
-            "short_name": "Path to Graveyard Grotto",
-            "sections": [
-              {
-                "name": "After beating Snowhead Temple",
-                "access_rules": [
-                  "mm_snowhead,mm_gohtsnow",
-                  "mm_gyorg,mm_gyorgsnow",
-                  "mm_twinmold,mm_twinsnow",
-                  "mm_woodfall,mm_odolwasnow"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 527,
-                "y": 184
               }
             ]
           },
