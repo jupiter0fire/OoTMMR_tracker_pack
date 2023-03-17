@@ -3222,7 +3222,7 @@
   },
   {
     "name": "MM Goron Lullaby",
-    "type": "progressive",
+    "type": "toggle",
     "img": "images/items_capture/mm_lullaby.png",
     "codes": "mm_lullabycap"
   },
