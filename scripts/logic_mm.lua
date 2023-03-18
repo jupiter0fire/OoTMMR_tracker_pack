@@ -77,19 +77,51 @@ function mm_can_use_lens()
 end  
 
 function mm_goron_graveyard_hot_water()
-  return false
+  return false --TODO
+end
+
+function mm_well_hot_water()
+  return false --TODO
 end
 
 function mm_sun_mask()
-  return false
+  return false --TODO
 end  
 
 function mm_goron_food()
-  return false
+  return false --TODO
+end  
+
+function mm_frog1()
+  return false --TODO
+end  
+
+function mm_frog2()
+  return false --TODO
+end  
+
+function mm_frog3()
+  return false --TODO
+end  
+
+function mm_frog4()
+  return false --TODO
 end  
 
 function mm_blacksmith_enabled()
-  return has("mm_snowhead") or mm_can_use_fire_arrows() or mm_goron_graveyard_hot_water()
+  return has("mm_snowhead") or mm_can_use_fire_arrows() or mm_goron_graveyard_hot_water() or (mm_well_hot_water() and mm_can_play("mm_soaring"))
+end
+
+function mm_can_hookshot_scarecrow()
+  return has("mm_ocarina") and has("mm_hookshot")
+end
+
+function mm_powder_keg_trial()
+  return false
+end
+
+function mm_goron_fast_roll()
+  return has("mm_goron") and has("mm_magic")
 end
 
 function mm_can_break_rocks()

@@ -7076,13 +7076,7 @@
               {
                 "name": "Melt the ice and buy it for 100 Rupees - Day 1",
                 "access_rules": [
-                  "$mm_goron_graveyard_hot_water",
-                  "mm_firearrows,mm_adultwallet,mm_magic,mm_bow",
-                  "mm_snowhead,mm_adultwallet,mm_gohtsnow",
-                  "mm_woodfall,mm_adultwallet,mm_odolwasnow",
-                  "mm_gyorg,mm_adultwallet,mm_gyorgsnow",
-                  "mm_twinmold,mm_adultwallet,mm_twinsnow",
-                  "$mm_can_bottle_hotspringwater,mm_adultwallet,[mm_soaring]"
+                  "$mm_blacksmith_enabled,mm_adultwallet"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7090,12 +7084,7 @@
               {
                 "name": "Show the Gold Dust - Day 2",
                 "access_rules": [
-                  "mm_bow,mm_firearrows,mm_magic,mm_dustlocated,mm_bottle",
-                  "$mm_can_bottle_hotspringwater,mm_dustlocated,mm_bottle,[mm_soaring]",
-                  "mm_snowhead,mm_gohtsnow,mm_dustlocated,mm_bottle",
-                  "mm_woodfall,mm_odolwasnow,mm_dustlocated,mm_bottle",
-                  "mm_gyorg,mm_gyorgsnow,mm_dustlocated,mm_bottle",
-                  "mm_twinmold,mm_twinsnow,mm_dustlocated,mm_bottle"
+                  "$mm_blacksmith_enabled,mm_adultwallet,mm_bottledust_static"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7119,7 +7108,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "mm_ocarina,mm_songofhealing,mm_lens,mm_magic"
+                  "$mm_can_use_lens_strict,$mm_can_play|mm_healing"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7151,14 +7140,6 @@
                 "capture_item": true,
                 "item_count": 1
               }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 582,
-                "y": 165
-              }
             ]
           },
           {
@@ -7168,12 +7149,10 @@
               {
                 "name": "Melt the ice",
                 "access_rules": [
-                  "mm_firearrows,mm_magic,mm_bow,$mm_has_explosives",
-                  "$mm_can_bottle_hotspringwater,$mm_has_explosives,[mm_soaring]",
-                  "mm_snowhead,$mm_has_explosives,mm_gohtsnow",
-                  "mm_gyorg,$mm_has_explosives,mm_gyorgsnow",
-                  "mm_twinmold,$mm_has_explosives,mm_twinsnow",
-                  "mm_odolwa,$mm_has_explosives,mm_odolwasnow"
+                  "$mm_goron_graveyard_hot_water,$mm_has_explosives",
+                  "$mm_can_use_fire_arrows,$mm_has_explosives",
+                  "mm_snowhead,$mm_has_explosives",
+                  "$mm_well_hot_water,$mm_can_play|mm_soaring,$mm_has_explosives"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7196,7 +7175,7 @@
                 "name": "Bomb the tree near the ramps",
                 "access_rules": [
                   "$mm_has_explosives,mm_goron",
-                  "$mm_has_explosives,mm_hookshot,mm_ocarina,[mm_scarecrow]"
+                  "$mm_has_explosives,$mm_can_hookshot_scarecrow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7212,13 +7191,34 @@
             ]
           },
           {
+            "name": "Gorn Elder",
+            "short_name": "Goron Elder",
+            "sections": [
+              {
+                "name": "Unfreeze him",
+                "access_rules": [
+                  "mm_goron,mm_ocarina,$mm_goron_graveyard_hot_water",
+                  "mm_goron,mm_ocarina,$mm_can_use_fire_arrows",
+                  "mm_goron,mm_ocarina,$mm_well_hot_water,$mm_can_play|mm_soaring"                  
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 597,
+                "y": 143
+              }
+            ]
+          },
+          {
             "name": "Twin Islands Spring Chests",
             "short_name": "Twin Islands Chests",
             "access_rules": [
-              "mm_snowhead,mm_zora,mm_gohtsnow",
-              "mm_gyorg,mm_zora,mm_gyorgsnow",
-              "mm_woodfall,mm_zora,mm_odolwasnow",
-              "mm_twinmold,mm_zora,mm_twinsnow"
+              "mm_snowhead,mm_zora"
             ],
             "sections": [
               {
@@ -7245,15 +7245,16 @@
           },
           {
             "name": "Goron Racetrack",
+            "access_rules":[
+              "$mm_can_use_keg",
+              "$mm_powder_keg_trial"
+            ],
             "short_name": "Goron Race",
             "sections": [
               {
                 "name": "Win Race After Beating Snowhead Temple",
                 "access_rules": [
-                  "mm_snowhead,mm_goron,mm_magic,mm_gohtsnow",
-                  "mm_woodfall,mm_goron,mm_magic,mm_odolwasnow",
-                  "mm_gyorg,mm_goron,mm_magic,mm_gyorgsnow",
-                  "mm_twinmold,mm_goron,mm_magic,mm_twinsnow"
+                  "mm_snowhead,$mm_goron_fast_roll"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7283,10 +7284,7 @@
               {
                 "name": "Buy Bomb Bag",
                 "access_rules": [
-                  "mm_goron,mm_adultwallet",
-                  "mm_moontear,mm_deed1,mm_deed2,mm_deku,mm_adultwallet",
-                  "{mm_goron}",
-                  "{mm_deku}"
+                  "mm_goron,mm_adultwallet"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7312,6 +7310,29 @@
             ]
           },
           {
+            "name": "Medigoron Powder Keg",
+            "short_name": "Medigoron",
+            "sections": [
+              {
+                "name": "Talk to him after opening the track",
+                "access_rules": [
+                  "$mm_can_use_fire_arrows,mm_goron",
+                  "mm_snowhead,mm_goron"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 654,
+                "y": 129,
+                "size": 19
+              }
+            ]
+          },
+          {
             "name": "Lens Cave Chests",
             "short_name": "Lens Grotto",
             "sections": [
@@ -7319,20 +7340,13 @@
                 "name": "Lens chest",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
-                "access_rules": [
-                  "[mm_soaring]",
-                  "$mm_can_see_with_lens",
-                  "mm_lens_jump"
-                ],
                 "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Invisible chest",
                 "access_rules": [
-                  "$mm_can_see_with_lens",
-                  "[mm_soaring],mm_lens_chests",
-                  "mm_lens_jump"
+                  "$mm_can_use_lens"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7340,8 +7354,7 @@
               {
                 "name": "Chest inside rock",
                 "access_rules": [
-                  "$mm_has_explosives,[mm_soaring]",
-                  "$mm_has_explosives,[$mm_can_see_with_lens]"
+                  "$mm_has_explosives"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7365,7 +7378,7 @@
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
-                  "mm_ocarina,mm_goron"
+                  "$mm_can_play|mm_lullaby_half,mm_goron"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7383,79 +7396,35 @@
           {
             "name": "Goron Shrine Shop",
             "short_name": "Goron Shop",
-            "access_rules": [
-              "mm_shopsanity_yes"
-            ],
             "sections": [
               {
                 "name": "10 Bombs (40 Rupees)",
                 "capture_item": true,
-                "visibility_rules": [
-                  "shopsanity_yes"
-                ],
                 "item_count": 1
               },
               {
                 "name": "10 Arrows (40 Rupees)",
                 "capture_item": true,
-                "visibility_rules": [
-                  "shopsanity_yes"
-                ],
                 "item_count": 1
               },
               {
                 "name": "Red Potion (80 Rupees)",
                 "capture_item": true,
-                "visibility_rules": [
-                  "shopsanity_yes"
-                ],
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 646,
-                "y": 140,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Medigoron Powder Keg",
-            "short_name": "Medigoron",
-            "sections": [
-              {
-                "name": "Talk to him after opening the track",
-                "access_rules": [
-                  "mm_firearrows,mm_magic,mm_goron",
-                  "mm_snowhead,mm_goron,mm_gohtsnow",
-                  "mm_odolwa,mm_goron,mm_odolwasnow",
-                  "mm_gyorg,mm_goron,mm_gyorgsnow",
-                  "mm_twinmold,mm_goron,mm_twinsnow"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 654,
-                "y": 129,
-                "size": 19
               }
             ]
           },
           {
             "name": "Road to Snowhead",
             "short_name": "Road to Snowhead",
+            "access_rules":[
+              "$mm_can_goron_role_fast"
+            ],
             "sections": [
               {
                 "name": "Get in the secret grotto",
                 "access_rules": [
-                  "mm_goron,$mm_has_explosives,[mm_magic]",
-                  "mm_goron,$mm_has_explosives,mm_snowheadmagic"
+                  "$mm_has_explosives"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7465,9 +7434,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_hookshot,mm_ocarina,mm_goron,$mm_can_see_with_lens",
-                  "mm_hookshot,mm_ocarina,mm_magic,mm_lens_jump",
-                  "mm_hookshot,mm_ocarina,mm_lens_jump,mm_snowheadmagic"
+                  "$mm_can_use_lens,$mm_can_hookshot_scarecrow"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7484,10 +7451,8 @@
           },
           {
             "name": "Snowhead Area",
-            "access_rules": [
-              "mm_goron,mm_ocarina,mm_lullaby,mm_magic",
-              "mm_goron,mm_ocarina,mm_lullaby,mm_snowheadmagic",
-              "mm_goron,mm_magic,mm_lullabyskip"
+            "access_rules":[
+              "$mm_can_goron_role_fast"
             ],
             "children": [
               {
@@ -7497,7 +7462,7 @@
                   {
                     "name": "15 Stray Fairies in Snowhead Temple",
                     "access_rules": [
-                      "mm_snowhead_stray_fairies:mm_15"
+                      "$mm_can_play|lullaby,mm_snowhead_stray_fairies:15"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7509,60 +7474,6 @@
                     "size": 19,
                     "x": 503,
                     "y": 42
-                  }
-                ]
-              },
-              {
-                "name": "What temple is this?",
-                "short_name": "Snowhead Temple",
-                "sections": [
-                  {
-                    "name": "Woodfall Temple",
-                    "hosted_item": "odolwalocsnow",
-                    "visibility_rules": [
-                      "$snowhead_not_known_but_odolwa_found"
-                    ],
-                    "access_rules": [
-                      "{}"
-                    ]
-                  },
-                  {
-                    "name": "Snowhead Temple",
-                    "hosted_item": "gohtlocsnow",
-                    "visibility_rules": [
-                      "$snowhead_not_known_but_goht_found"
-                    ],
-                    "access_rules": [
-                      "{}"
-                    ]
-                  },
-                  {
-                    "name": "Great Bay Temple",
-                    "hosted_item": "gyorglocsnow",
-                    "visibility_rules": [
-                      "$snowhead_not_known_but_gyorg_found"
-                    ],
-                    "access_rules": [
-                      "{}"
-                    ]
-                  },
-                  {
-                    "name": "Inverted Stone Tower Temple",
-                    "visibility_rules": [
-                      "$snowhead_not_known_but_twinmold_found"
-                    ],
-                    "hosted_item": "twinlocsnow",
-                    "access_rules": [
-                      "{}"
-                    ]
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "size": 19,
-                    "x": 488,
-                    "y": 35
                   }
                 ]
               }
