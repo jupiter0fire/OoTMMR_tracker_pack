@@ -124,6 +124,34 @@ function mm_goron_fast_roll()
   return has("mm_goron") and has("mm_magic")
 end
 
+function mm_can_goron_bomb_jump()
+  return has("mm_goron_bomb_jump") and has("mm_goron") and has("bombs")
+end
+
+function mm_zora_eggs_hookshot_room()
+  return false
+end
+
+function mm_zora_eggs_barrel_maze()
+  return false
+end
+
+function mm_zora_eggs_lone_guard()
+  return false
+end
+
+function mm_zora_eggs_treasure_room()
+  return false
+end
+
+function mm_zora_eggs_pinnacle_rock()
+  return false
+end
+
+function mm_seahorse()
+  return false
+end
+
 function mm_can_break_rocks()
   if mm_has("mm_goronmask")
   then

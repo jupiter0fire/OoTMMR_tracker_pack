@@ -2935,5 +2935,942 @@
         "y": 445
       }
     ]
+  },
+  {
+    "name": "Swamp Spider House",
+    "short_name": "Swamp Spiders",
+    "access_rules":[
+      "@Poison Swamp Area,mm_deku"
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 25,
+        "x": 494,
+        "y": 518
+      }
+    ],
+    "sections": [
+      {
+        "name": "Collect 30 Tokens",
+        "chest_unopened_img": "images/system/unknownmask.png",
+        "chest_opened_img": "images/system/unknownmask_grey.png",
+        "access_rules": [
+          "mm_skulltulla_woodfall:30"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {  
+        "name": "Main Room in Water",
+        "short_name": "Main Room Water",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Dirt Patch Left",
+        "short_name": "Lower Dirt Patch Left",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_bottle"
+        ],
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Dirt Patch Right",
+        "short_name": "Lower Dirt Patch Right",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_bottle"
+        ],
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Pillar",
+        "short_name": "Main Room Pillar",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Pot",
+        "short_name": "Main Room Pot",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Stone Room Left Crate",
+        "short_name": "Stone Room Crate Left",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Stone Room Right Crate",
+        "short_name": "Stone Room Crate Right",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Stone Room on Wall",
+        "short_name": "Stone Room Wall",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora",
+          "$mm_can_use_beans,$mm_can_break_boulders"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Stone Room on Monument",
+        "short_name": "On Monument",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Stone Room Behind Torch",
+        "short_name": "Stone Room Torch",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Upper Pillar",
+        "short_name": "2nd Floor Pillar",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Upper Wall",
+        "short_name": "2nd Floor on Wall",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora",
+          "mm_deku,mm_bow",
+          "mm_deku,mm_magic",
+          "mm_deku,mm_bombs"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Dirt Patch Upper",
+        "short_name": "Dirt Patch 2nd Floor",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "mm_bottle"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room Beehive 1",
+        "short_name": "Pot Room Beehive",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "$mm_has_weapon_range"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room Beehive 2",
+        "short_name": "Pot Room Beehive 2",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "$mm_has_weapon_range"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room Left Big Jar",
+        "short_name": "Large Pot Left",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room Right Big Jar",
+        "short_name": "Large Pot Right",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room Pile of Pots",
+        "short_name": "Pile of Small Pots",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room Vine Alcove",
+        "short_name": "Behind Vines",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "$mm_has_weapon"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Jar Room on Wall",
+        "short_name": "Pot Room Far Wall",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Gold Room Hive",
+        "short_name": "Gold Room Beehive",
+        "access_rules": [
+          "$mm_has_weapon_range"
+        ],
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Gold Room Pillar",
+        "short_name": "Gold Room Pillar",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Gold Room on Wall",
+        "short_name": "Gold Room Wall",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora",
+          "$mm_can_use_beans"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Gold Room Ladder",
+        "short_name": "Gold Room on Ladder",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Tree Room Tree 1",
+        "short_name": "Tree Room in Tree",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Tree Room Tree 2",
+        "short_name": "Tree Room in Tree 2",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Tree Room Tree 3",
+        "short_name": "Tree Room in Tree 3",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Tree Room Beehive",
+        "short_name": "Tree Room Beehive",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "access_rules": [
+          "$mm_has_weapon_range"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Tree Room Tall Grass 1",
+        "short_name": "Tree Room Tall Grass",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Tree Room Tall Grass 2",
+        "short_name": "Tree Room Tall Grass 2",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ]
+  },
+  {
+    "name": "Oceanside Spider House",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "short_name": "Ocean Spiders",
+    "access_rules": [
+      "$mm_has_explosives,[mm_goron]",
+      "$mm_has_explosives,mm_oshbw"
+    ],
+    "sections": [
+      {
+        "name": "Collect 30 Tokens- Day 1",
+        "access_rules": [
+          "{mm_maskoftruth}",
+          "mm_hookshot,mm_bow,mm_firearrows,mm_magic,mm_token_no",
+          "mm_hookshot,mm_oshfl,mm_token_no",
+          "mm_token_yes,mm_skulltulla_greatbay:mm_30"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Collect 30 Tokens- Day 2",
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "access_rules": [
+          "{mm_maskoftruth}",
+          "mm_hookshot,mm_bow,mm_firearrows,mm_magic,mm_token_no",
+          "mm_hookshot,mm_oshfl,mm_token_no",
+          "mm_token_yes,mm_skulltulla_greatbay:mm_30"
+        ],
+        "visibility_rules": [
+          "misc_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Collect 30 Tokens- Day 3",
+        "chest_unopened_img": "images/system/blue.png",
+        "chest_opened_img": "images/system/blue_check.png",
+        "access_rules": [
+          "{mm_maskoftruth}",
+          "mm_hookshot,mm_bow,mm_firearrows,mm_magic,mm_token_no",
+          "mm_hookshot,mm_oshfl,mm_token_no",
+          "mm_token_yes,mm_skulltulla_greatbay:mm_30"
+        ],
+        "visibility_rules": [
+          "misc_yes"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Ocean Spider Treasure",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "mm_bow,[mm_captainshat],mm_hookshot",
+          "mm_bow,mm_oshbf,mm_hookshot",
+          "mm_bow,mm_oshbf,$mm_goron_fence_jump",
+          "mm_bow,[mm_captainshat],$mm_goron_fence_jump"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 19,
+        "x": 300,
+        "y": 340
+      }
+    ]
+  },
+  {
+    "name": "Oceanside Spider House Skulltullas First 15",
+    "short_name": "Ocean Spiders",
+    "access_rules": [
+      "mm_token_yes,$mm_has_explosives"
+    ],
+    "sections": [
+      {
+        "name": "Entrance Slope Left",
+        "short_name": "Slope Left",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "[mm_hookshot]",
+          "[mm_zora]"
+        ],
+        "visibility_rules": [
+          "token_yes"
+        ]
+      },
+      {
+        "name": "Entrance Slope Right",
+        "short_name": "Slope Right",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "item_count": 1,
+        "access_rules": [
+          "[mm_hookshot]",
+          "[mm_zora]"
+        ],
+        "visibility_rules": [
+          "token_yes"
+        ]
+      },
+      {
+        "name": "Entrance Web",
+        "short_name": "Behind Web",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot,mm_bow,[mm_magic],[mm_firearrows]",
+          "mm_zora,mm_bow,[mm_magic],[mm_firearrows]",
+          "mm_hookshot,mm_oshfl",
+          "mm_zora,mm_oshfl"
+        ],
+        "capture_item": true,
+        "item_count": 1,
+        "visibility_rules": [
+          "token_yes"
+        ]
+      },
+      {
+        "name": "Main Room Behind Skull",
+        "short_name": "Behind Skull on Wall",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora,$mm_goron_fence_jump"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Webbed Pot",
+        "short_name": "Web Covered Pot 1F",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Pot Upper",
+        "short_name": "Uncovered Pot Main Room",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Wooden Beam",
+        "short_name": "Main Room Wood Beam",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump,mm_zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Corner Bookshelf",
+        "short_name": "On Bookshelf",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Hole Behind Cabinets",
+        "short_name": "Behind Cabinets",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump,mm_zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Ceiling Black Space",
+        "short_name": "Library Black Space",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump,mm_zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Hole Behind Painting",
+        "short_name": "Hole Behind Painting",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Behind Painting",
+        "short_name": "Library Behind Painting",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Behind Bookshelf 1",
+        "short_name": "Behind Bookshelf Left",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Behind Bookshelf 2",
+        "short_name": "Behind Bookshelf Right",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Black Space",
+        "short_name": "Basement Black Space",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot",
+          "$mm_goron_fence_jump,mm_zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 19,
+        "x": 290,
+        "y": 340
+      }
+    ]
+  },
+  {
+    "name": "Oceanside Spider House Skulltullas Second 15",
+    "short_name": "Ocean Spiders",
+    "access_rules": [
+      "mm_token_yes,$mm_has_explosives,mm_hookshot",
+      "mm_token_yes,$mm_has_explosives,$mm_goron_fence_jump"
+    ],
+    "sections": [
+      {
+        "name": "Main Room Basement Vase",
+        "short_name": "Vase in Basement",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Behind Skull",
+        "short_name": "Behind Skull in Basement",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora,$mm_goron_fence_jump"
+        ],
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Web Hole",
+        "short_name": "Basement Hole",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "mm_hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Pot",
+        "short_name": "Basement Pot on Crates",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_hookshot"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Crate",
+        "short_name": "Storage Room Crate",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Crate Alcove",
+        "short_name": "Storage Room Alcove",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Behind Boat",
+        "short_name": "Behind Boat",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_hookshot"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Rafters",
+        "short_name": "Storage Room Rafters",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_hookshot",
+          "mm_oshstorage"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Web",
+        "short_name": "Storage Room Behind Web",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_bow,mm_magic,mm_firearrows",
+          "mm_oshfl"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Chandelier 1",
+        "short_name": "Mask Room Chandelier 1",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Chandelier 2",
+        "short_name": "Mask Room Chandelier 2",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Chandelier 3",
+        "short_name": "Mask Room Chandelier 3",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Painting",
+        "short_name": "Mask Room Painting",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Black Space",
+        "short_name": "Mask Room Black Space",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "mm_hookshot",
+          "mm_zora"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Vase",
+        "short_name": "Mask Room Pot",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "capture_item": true,
+        "visibility_rules": [
+          "token_yes"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 19,
+        "x": 310,
+        "y": 340
+      }
+    ]
   }
 ]

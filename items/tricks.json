@@ -46,5 +46,26 @@
     "initial_active_state": false,
     "img": "images/logic_lens_botw.png",
     "codes": "logic_lens_mm"
+  },
+  {
+    "name": "Goron Bomb Jump",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_botw.png",
+    "codes": "mm_goron_bomb_jump"
+  },
+  {
+    "name": "Zora Hall as Human",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_botw.png",
+    "codes": "mm_zora_hall_human"
+  },
+  {
+    "name": "Pinnacle Rock without Seahorse",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/logic_lens_botw.png",
+    "codes": "mm_no_seahorse"
   }
 ]
