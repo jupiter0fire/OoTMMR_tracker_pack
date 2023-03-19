@@ -21,10 +21,17 @@
         "item": "setting_shuffle_smallkeys",
         "width": 200,
         "height": 16
-      },
+      }
+    ]
+  },
+  "layout_main_mm": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
       {
         "type": "item",
-        "item": "setting_skulltulas_sun",
+        "item": "house_skull_shuffle",
         "width": 200,
         "height": 16
       }
@@ -68,6 +75,12 @@
       {
         "type": "item",
         "item": "trick_oot_blind_wasteland",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_night_skull_sun_song",
         "width": 200,
         "height": 16
       }
@@ -116,19 +129,11 @@
         }
       },
       {
-        "title": "Logic Tricks MM",
+        "title": "Settings MM",
         "content": {
-          "type": "scroll",
-          "horizontal_scrollbar_visibility": "auto",
-          "vertical_scrollbar_visibility": "auto",
-          "max_height": 500,
-          "content": [
-            {
-              "type": "layout",
-              "key": "layout_logic_tricks_mm",
-              "h_alignment": "left"
-            }
-          ]
+          "type": "layout",
+          "key": "layout_main_mm",
+          "h_alignment": "left"
         }
       },
       {
@@ -142,6 +147,22 @@
             {
               "type": "layout",
               "key": "layout_logic_tricks_oot",
+              "h_alignment": "left"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Logic Tricks MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": [
+            {
+              "type": "layout",
+              "key": "layout_logic_tricks_mm",
               "h_alignment": "left"
             }
           ]

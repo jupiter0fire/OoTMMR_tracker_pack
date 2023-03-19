@@ -67,5 +67,12 @@
     "initial_active_state": false,
     "img": "images/trick_mm_no_seahorse.png",
     "codes": "trick_mm_no_seahorse"
+  },
+  {
+    "name": "Nighttime Skulltulas Expect Sun's Song",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/trick_night_skull_sun_song.png",
+    "codes": "trick_night_skull_sun_song"
   }
 ]
