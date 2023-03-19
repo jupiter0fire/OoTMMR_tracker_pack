@@ -2616,7 +2616,7 @@
       {
         "name": "Deku Scrubs",
         "access_rules": [
-          "[logic_lens_oot]",
+          "[trick_oot_fewer_lens]",
           "$can_use_lens"
         ],
         "visibility_rules": [

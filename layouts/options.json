@@ -37,37 +37,68 @@
     "content": [
       {
         "type": "item",
-        "item": "logic_lens_oot",
+        "item": "trick_oot_fewer_lens",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_fewer_tunic_requirements",
+        "item": "trick_oot_fewer_tunic",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_grottos_without_agony",
+        "item": "trick_oot_hidden_grottos",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_mido_backflip",
+        "item": "trick_oot_mido_skip",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_man_on_roof",
+        "item": "trick_oot_man_on_roof",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "logic_wasteland_crossing",
+        "item": "trick_oot_blind_wasteland",
+        "width": 200,
+        "height": 16
+      }
+    ]
+  },
+  "layout_logic_tricks_mm": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "trick_mm_fewer_lens",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "mm_goron_bomb_jump",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_mm_zora_hall_human",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_mm_no_seahorse",
         "width": 200,
         "height": 16
       }
@@ -82,6 +113,22 @@
           "type": "layout",
           "key": "layout_main_oot",
           "h_alignment": "left"
+        }
+      },
+      {
+        "title": "Logic Tricks MM",
+        "content": {
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": [
+            {
+              "type": "layout",
+              "key": "layout_logic_tricks_mm",
+              "h_alignment": "left"
+            }
+          ]
         }
       },
       {

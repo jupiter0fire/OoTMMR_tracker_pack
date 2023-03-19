@@ -2,70 +2,70 @@
   "name": "Fewer Lens Requirements (OOT)",
   "type": "toggle",
   "initial_active_state": false,
-  "img": "images/logic_lens_botw.png",
-  "codes": "logic_lens_oot"
+  "img": "images/trick_oot_fewer_lens.png",
+  "codes": "trick_oot_fewer_lens"
   },
   {
     "name": "Fewer Tunic Requirements",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_fewer_tunic_requirements.png",
-    "codes": "logic_fewer_tunic_requirements"
+    "img": "images/trick_oot_fewer_tunic.png",
+    "codes": "trick_oot_fewer_tunic"
   },
   {
     "name": "Hidden Grottos without Stone of Agony",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_grottos_without_agony.png",
-    "codes": "logic_grottos_without_agony"
+    "img": "images/trick_oot_hidden_grottos.png",
+    "codes": "trick_oot_hidden_grottos"
   },
   {
     "name": "Backflip over Mido as Adult",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_mido_backflip.png",
-    "codes": "logic_mido_backflip"
+    "img": "images/trick_oot_mido_skip.png",
+    "codes": "trick_oot_mido_skip"
   },
   {
     "name": "Man on Roof without Hookshot",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_man_on_roof.png",
-    "codes": "logic_man_on_roof"
+    "img": "images/trick_oot_man_on_roof.png",
+    "codes": "trick_oot_man_on_roof"
   }, 
   {
     "name": "Wasteland Crossing without Hover Boots or Longshot",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_wasteland_crossing.png",
-    "codes": "logic_wasteland_crossing"
+    "img": "images/trick_oot_blind_wasteland.png",
+    "codes": "trick_oot_blind_wasteland"
   },
   {
     "name": "Fewer Lens Requirements (MM)",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_lens_botw.png",
-    "codes": "logic_lens_mm"
+    "img": "images/trick_mm_fewer_lens.png",
+    "codes": "trick_mm_fewer_lens"
   },
   {
     "name": "Goron Bomb Jump",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_lens_botw.png",
+    "img": "images/trick_mm_goron_bomb_jump.png",
     "codes": "mm_goron_bomb_jump"
   },
   {
     "name": "Zora Hall as Human",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_lens_botw.png",
-    "codes": "mm_zora_hall_human"
+    "img": "images/trick_mm_zora_hall_human.png",
+    "codes": "trick_mm_zora_hall_human"
   },
   {
     "name": "Pinnacle Rock without Seahorse",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/logic_lens_botw.png",
-    "codes": "mm_no_seahorse"
+    "img": "images/trick_mm_no_seahorse.png",
+    "codes": "trick_mm_no_seahorse"
   }
 ]

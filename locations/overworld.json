@@ -378,7 +378,7 @@
             "access_rules":[
               "$can_play|saria",
               "$can_play|minuet",
-              "$has|logic_mido_backflip"
+              "$has|trick_oot_mido_skip"
             ]
           },
           {
@@ -1437,7 +1437,7 @@
                 "name": "Talk to him",
                 "access_rules": [
                   "$can_use_hookshot",
-                  "logic_man_on_roof"
+                  "trick_oot_man_on_roof"
                 ],
                 "item_count": 1
               }
@@ -4247,7 +4247,7 @@
         "access_rules":[
           "@Gerudo Fortress,$gerudo_card,$can_use_longshot",
           "@Gerudo Fortress,$gerudo_card,$has_hover_boots",
-          "$has_age|adult,$can_play|requiem,$has|logic_wasteland_crossing"
+          "$has_age|adult,$can_play|requiem,$has|trick_oot_blind_wasteland"
         ],
         "children": [
           {
@@ -4299,7 +4299,7 @@
             "name": "Dessert Colossus As Adult",
             "access_rules":[
               "@Haunted Wasteland,$has_lens_strict",
-              "@Haunted Wasteland,$has|logic_wasteland_crossing_lens",
+              "@Haunted Wasteland,$has|trick_oot_blind_wasteland_lens",
               "$can_play|requiem"
             ] 
           },
@@ -6986,7 +6986,7 @@
             "name": "Road to Snowhead",
             "short_name": "Road to Snowhead",
             "access_rules":[
-              "$mm_can_goron_role_fast"
+              "$mm_goron_fast_roll"
             ],
             "sections": [
               {
@@ -7020,7 +7020,7 @@
           {
             "name": "Snowhead Area",
             "access_rules":[
-              "$mm_can_goron_role_fast"
+              "$mm_goron_fast_roll"
             ],
             "children": [
               {
@@ -7057,7 +7057,7 @@
     "color": "#3f46ff",
     "access_rules": [
       "mm_ocarina,mm_eponasong",
-      "$mm_goron_bomb_jump"
+      "mm_goron_bomb_jump"
     ],
     "children": [
       {
@@ -7238,7 +7238,7 @@
         "name": "Pinnacle Rock",
         "access_rules": [
           "mm_zora,$mm_seahorse",
-          "mm_zora,$has|mm_no_seahorse"          
+          "mm_zora,$has|trick_mm_no_seahorse"          
         ],
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
@@ -7491,7 +7491,7 @@
             "short_name": "ZH",
             "access_rules": [
               "mm_zora",
-              "$has|mm_zora_hall_human"
+              "$has|trick_mm_zora_hall_human"
             ],
             "sections": [
               {

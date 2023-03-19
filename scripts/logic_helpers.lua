@@ -183,7 +183,7 @@ function water_level_middle()
 end  
 
 function stone_of_agony()
-  return has("agony") or has("logic_grottos_without_agony")
+  return has("agony") or has("trick_oot_hidden_grottos")
 end  
 
 function gs_soil()
@@ -230,7 +230,7 @@ function night_gs()
 end
 
 function hidden_grotto()
-  if has("logic_grottos_without_agony") or has("agony") then
+  if has("trick_oot_hidden_grottos") or has("agony") then
     return 1, AccessibilityLevel.Normal
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -352,7 +352,7 @@ end
 
 function beyond_mido()
   if
-    (has("ocarina") and (has("saria") or has("minuet"))) or has("logic_mido_backflip") or
+    (has("ocarina") and (has("saria") or has("minuet"))) or has("trick_oot_mido_skip") or
       spawn_access("Sacred Forest Meadow", "adult") > 0
    then
     return 1, AccessibilityLevel.Normal
@@ -384,7 +384,7 @@ function _gerudo_bridge()
 end
 
 function _quicksand()
-  if has("longshot") or has("hoverboots") or has("logic_wasteland_crossing") then
+  if has("longshot") or has("hoverboots") or has("trick_oot_blind_wasteland") then
     return 1, AccessibilityLevel.Normal
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -392,7 +392,7 @@ function _quicksand()
 end
 
 function _wasteland_forward()
-  if has("logic_lens_oot") or has("lens") and has("magic") then
+  if has("trick_oot_fewer_lens") or has("lens") and has("magic") then
     return 1, AccessibilityLevel.Normal
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -530,7 +530,7 @@ function goron_tunic()
 end
 
 function has_goron_tunic()
-  return (has("logic_fewer_tunic_requirements") or has("redtunic")) and has_age("adult") == 1
+  return (has("trick_oot_fewer_tunic") or has("redtunic")) and has_age("adult") == 1
 end  
 
 function has_goron_tunic_strict()
@@ -538,7 +538,7 @@ function has_goron_tunic_strict()
 end  
 
 function has_zora_tunic()
-  return (has("logic_fewer_tunic_requirements") or has("bluetunic")) and has_age("adult") == 1
+  return (has("trick_oot_fewer_tunic") or has("bluetunic")) and has_age("adult") == 1
 end  
 
 function has_zora_tunic_strict()
@@ -550,7 +550,7 @@ function has_lens_strict()
 end  
 
 function has_lens()
-  return has_lens_strict() or has("logic_lens_oot")
+  return has_lens_strict() or has("trick_oot_fewer_lens")
 end  
 
 function open_door_of_time()
@@ -558,7 +558,7 @@ function open_door_of_time()
 end  
 
 function FTR_or_goron()
-  if has("logic_fewer_tunic_requirements") then
+  if has("trick_oot_fewer_tunic") then
     return 1, AccessibilityLevel.Normal
   else
     local goron_count, goron_level = goron_tunic()
@@ -910,7 +910,7 @@ function zora_tunic()
 end
 
 function FTR_or_zora()
-  if has("logic_fewer_tunic_requirements") then
+  if has("trick_oot_fewer_tunic") then
     return 1, AccessibilityLevel.Normal
   else
     local zora_count, zora_level = zora_tunic()

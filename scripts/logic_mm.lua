@@ -73,7 +73,7 @@ function mm_can_use_lens_strict()
 end  
 
 function mm_can_use_lens()
-  return mm_can_use_lens_strict() or has("logic_lens_mm")
+  return mm_can_use_lens_strict() or has("trick_mm_fewer_lens")
 end  
 
 function mm_goron_graveyard_hot_water()
