@@ -125,7 +125,7 @@ function mm_goron_fast_roll()
 end
 
 function mm_can_goron_bomb_jump()
-  return has("mm_goron_bomb_jump") and has("mm_goron") and has("bombs")
+  return has("trick_mm_goron_bomb_jump") and has("mm_goron") and has("bombs")
 end
 
 function mm_zora_eggs_hookshot_room()

@@ -52,7 +52,7 @@
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_mm_goron_bomb_jump.png",
-    "codes": "mm_goron_bomb_jump"
+    "codes": "trick_mm_goron_bomb_jump"
   },
   {
     "name": "Zora Hall as Human",
@@ -72,7 +72,7 @@
     "name": "Nighttime Skulltulas Expect Sun's Song",
     "type": "toggle",
     "initial_active_state": true,
-    "img": "images/trick_night_skull_sun_song.png",
-    "codes": "trick_night_skull_sun_song"
+    "img": "images/trick_oot_night_skull_sun_song.png",
+    "codes": "trick_oot_night_skull_sun_song"
   }
 ]

@@ -80,7 +80,7 @@
       },
       {
         "type": "item",
-        "item": "trick_night_skull_sun_song",
+        "item": "trick_oot_night_skull_sun_song",
         "width": 200,
         "height": 16
       }
@@ -99,7 +99,7 @@
       },
       {
         "type": "item",
-        "item": "mm_goron_bomb_jump",
+        "item": "trick_mm_goron_bomb_jump",
         "width": 200,
         "height": 16
       },

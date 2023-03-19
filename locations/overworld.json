@@ -7057,7 +7057,7 @@
     "color": "#3f46ff",
     "access_rules": [
       "mm_ocarina,mm_eponasong",
-      "mm_goron_bomb_jump"
+      "$mm_can_goron_bomb_jump"
     ],
     "children": [
       {

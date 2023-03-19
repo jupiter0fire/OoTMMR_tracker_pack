@@ -191,7 +191,7 @@ function gs_soil()
 end
 
 function gs_night()
-  return has("trick_night_skull_sun_song") or can_play("sun")
+  return has("trick_oot_night_skull_sun_song") or can_play("sun")
 end  
 
 function hidden_grotto_storms()
@@ -223,7 +223,7 @@ function spawn_access(region, age)
 end
 
 function night_gs()
-  if has("trick_night_skull_sun_song") or (has("ocarina") and has("sun")) then
+  if has("trick_oot_night_skull_sun_song") or (has("ocarina") and has("sun")) then
     return 1, AccessibilityLevel.Normal
   end
   return 1, AccessibilityLevel.SequenceBreak
