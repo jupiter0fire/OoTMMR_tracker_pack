@@ -5947,55 +5947,6 @@
         ]
       },
       {
-        "name": "Road to Ikana Grotto",
-        "children":[
-          {
-            "name": "Chest on Ikana Pillar",
-            "short_name": "Pillar Chest",
-            "sections": [
-              {
-                "name": "Hookshot it",
-                "access_rules": [
-                  "mm_hookshot"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 636,
-                "y": 300
-              }
-            ]
-          },
-          {
-            "name": "Road to Ikana Grotto",
-            "short_name": "Ikana Road Grotto",
-            "sections": [
-              {
-                "name": "Get in",
-                "access_rules": [
-                  "mm_goron"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 684,
-                "y": 300
-              }
-            ]
-          }
-        ]
-      },
-      {
         "name": "Swamp",
         "color": "#058e2e",
         "children": [
@@ -7048,8 +6999,7 @@
             ]
           }
         ]
-      },
-      {}
+      }
     ]
   },
   {
@@ -7531,11 +7481,63 @@
   {
     "name": "Ikana",
     "color": "#ad7143",
-    "access_rules": [
-      "mm_ocarina,mm_eponasong",
-      "$mm_goron_fence_jump"
-    ],
     "children": [
+      {
+        "name": "Road to Ikana Grotto",
+        "children":[
+          {
+            "name": "Chest on Ikana Pillar",
+            "short_name": "Pillar Chest",
+            "sections": [
+              {
+                "name": "Hookshot it",
+                "access_rules": [
+                  "mm_hookshot"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 636,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Road to Ikana Grotto",
+            "short_name": "Ikana Road Grotto",
+            "sections": [
+              {
+                "name": "Get in",
+                "access_rules": [
+                  "mm_goron"
+                ],
+                "capture_item": true,
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 684,
+                "y": 300
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Road to Ikana Center",
+        "access_rules": [
+          "$mm_can_play|mm_epona",
+          "$mm_can_goron_bomb_jump"
+        ]
+      },
       {
         "name": "Shiro the Invisible Soldier",
         "short_name": "Invisible Soldier",
@@ -7545,8 +7547,7 @@
             "chest_unopened_img": "images/system/unknownmask.png",
             "chest_opened_img": "images/system/unknownmask_grey.png",
             "access_rules": [
-              "mm_lens,mm_magic,mm_redpotionlocated,mm_bottle",
-              "mm_lens,mm_magic,mm_bluepotionlocated,mm_bottle"
+              "@Ikana/Road to Ikana Center,$mm_can_use_lens_strict,mm_bottle"
             ],
             "capture_item": true,
             "item_count": 1
@@ -7562,21 +7563,22 @@
         ]
       },
       {
+        "name": "Ikana Graveyard",
+        "access_rules":[
+          "@Ikana/Road to Ikana Center"
+        ]
+      },
+      {
         "name": "Captain Keeta's Hat Chest",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Captain's Hat Chest",
         "access_rules": [
-          "mm_ocarina,mm_sonata,[mm_bow],$mm_can_deal_damage",
-          "mm_ocarina,mm_sonata,mm_bombs,$mm_can_deal_damage,mm_keetabomb"
+          "@Ikana/Ikana Graveyard,$mm_can_play|mm_awakening,mm_bow,$mm_can_fight"
         ],
         "sections": [
           {
             "name": "Defeat Captain Keeta",
-            "access_rules": [
-              "[mm_zora]",
-              "[mm_hookshot]"
-            ],
             "capture_item": true,
             "item_count": 1
           }
@@ -7599,7 +7601,7 @@
           {
             "name": "Bomb the circle of rocks",
             "access_rules": [
-              "$mm_has_explosives"
+              "@Ikana/Ikana Graveyard,$mm_has_explosives"
             ],
             "capture_item": true,
             "item_count": 1
@@ -7616,6 +7618,9 @@
       },
       {
         "name": "Ikana Graveyard Graves Night 1",
+        "access_rules":[
+          "@Ikana/Ikana Graveyard,mm_captainshat"
+        ],
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
         "short_name": "Graves Night 1",
@@ -7623,8 +7628,11 @@
           {
             "name": "Defeat all bats",
             "access_rules": [
-              "mm_captainshat,$mm_can_deal_damage",
-              "mm_captainshat,mm_deku"
+              "$mm_can_fight",
+              "$mm_has_explosives",
+              "mm_bow",
+              "mm_hookshot",
+              "mm_deku"
             ],
             "capture_item": true,
             "item_count": 1
@@ -7634,10 +7642,8 @@
             "chest_unopened_img": "images/system/unknownsong.png",
             "chest_opened_img": "images/system/unknownsong_check.png",
             "access_rules": [
-              "mm_captainshat,mm_sword1",
-              "mm_captainshat,mm_fairysword",
-              "mm_captainshat,mm_goron",
-              "mm_captainshat,mm_zora"
+              "$mm_can_fight",
+              "$mm_has_explosives"
             ],
             "capture_item": true,
             "item_count": 1
@@ -7654,6 +7660,9 @@
       },
       {
         "name": "Ikana Graveyard Graves Night 2",
+        "access_rules":[
+          "@Ikana/Ikana Graveyard,mm_captainshat"
+        ],
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Graves Night 2",
@@ -7661,10 +7670,7 @@
           {
             "name": "Defeat Iron Knuckle",
             "access_rules": [
-              "mm_captainshat,$mm_has_explosives,mm_sword1,$mm_can_see_with_lens",
-              "mm_captainshat,$mm_has_explosives,mm_fairysword,$mm_can_see_with_lens",
-              "mm_captainshat,$mm_has_explosives,mm_sword1,mm_lens_walk,mm_lens_walls",
-              "mm_captainshat,$mm_has_explosives,mm_fairysword,mm_lens_walk,mm_lens_walls"
+              "$mm_can_fight,$mm_has_explosives,$mm_can_use_lens"
             ],
             "capture_item": true,
             "item_count": 1
@@ -7681,6 +7687,9 @@
       },
       {
         "name": "Ikana Graveyard Graves Night 3",
+        "access_rules":[
+          "@Ikana/Ikana Graveyard,mm_captainshat"
+        ],
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Graves Night 3",
@@ -7688,8 +7697,7 @@
           {
             "name": "Defeat Big Poe",
             "access_rules": [
-              "mm_captainshat,mm_bow",
-              "mm_captainshat,mm_zora"
+              "$mm_has_weapon_range"
             ],
             "capture_item": true,
             "item_count": 1
