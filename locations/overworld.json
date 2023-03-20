@@ -7547,7 +7547,7 @@
             "chest_unopened_img": "images/system/unknownmask.png",
             "chest_opened_img": "images/system/unknownmask_grey.png",
             "access_rules": [
-              "@Ikana/Road to Ikana Center,$mm_can_use_lens_strict,mm_bottle"
+              "@Road to Ikana Center,$mm_can_use_lens_strict,mm_bottle"
             ],
             "capture_item": true,
             "item_count": 1
@@ -7565,7 +7565,7 @@
       {
         "name": "Ikana Graveyard",
         "access_rules":[
-          "@Ikana/Road to Ikana Center"
+          "@Road to Ikana Center"
         ]
       },
       {
@@ -7574,7 +7574,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Captain's Hat Chest",
         "access_rules": [
-          "@Ikana/Ikana Graveyard,$mm_can_play|mm_awakening,mm_bow,$mm_can_fight"
+          "@Ikana Graveyard,$mm_can_play|mm_awakening,mm_bow,$mm_can_fight"
         ],
         "sections": [
           {
@@ -7601,7 +7601,7 @@
           {
             "name": "Bomb the circle of rocks",
             "access_rules": [
-              "@Ikana/Ikana Graveyard,$mm_has_explosives"
+              "@Ikana Graveyard,$mm_has_explosives"
             ],
             "capture_item": true,
             "item_count": 1
@@ -7619,7 +7619,7 @@
       {
         "name": "Ikana Graveyard Graves Night 1",
         "access_rules":[
-          "@Ikana/Ikana Graveyard,mm_captainshat"
+          "@Ikana Graveyard,mm_captainshat"
         ],
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
@@ -7661,7 +7661,7 @@
       {
         "name": "Ikana Graveyard Graves Night 2",
         "access_rules":[
-          "@Ikana/Ikana Graveyard,mm_captainshat"
+          "@Ikana Graveyard,mm_captainshat"
         ],
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
@@ -7688,7 +7688,7 @@
       {
         "name": "Ikana Graveyard Graves Night 3",
         "access_rules":[
-          "@Ikana/Ikana Graveyard,mm_captainshat"
+          "@Ikana Graveyard,mm_captainshat"
         ],
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
