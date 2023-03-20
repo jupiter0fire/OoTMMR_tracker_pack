@@ -3818,5 +3818,320 @@
         "y": 340
       }
     ]
+  },
+  {
+    "name": "Pirate Fortress",
+    "parent": "Great Bay",
+    "access_rules": [
+      "mm_zora"
+    ],
+    "sections":[
+      {
+        "name": "Pirate Fortress Entrance",
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Sewers",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Entrance,mm_zora,mm_goron"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Sewers End",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Entrance,mm_hookshot",
+          "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Entrance Balcony",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Sewers End",
+          "@Pirate Fortress/Pirate Fortress Entrance,mm_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Interior",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Entrance Balcony"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Hookshot Room Upper",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Interior,$mm_can_evade_gerudo"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Hookshot Room Lower",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Interior"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Barrel Maze Entry",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Interior,mm_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Entrance Lookout",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Barrel Maze Entry"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },
+      {
+        "name": "Pirate Fortress Barrel Maze",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Barrel Maze Entry"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      }, 
+      {
+        "name": "Pirate Fortress Barrel Maze Aquarium",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Barrel Maze,$mm_has_weapon,$mm_can_evade_gerudo"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      }, 
+      {
+        "name": "Pirate Fortress Barrel Maze Exit",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Barrel Maze Aquarium"
+
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      }, 
+      {
+        "name": "Pirate Fortress Lone Guard Entry",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Interior,mm_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      }, 
+      {
+        "name": "Pirate Fortress Lone Guard",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Lone Guard Entry"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      }, 
+      {
+        "name": "Pirate Fortress Lone Guard Aquarium",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Lone Guard,$mm_has_weapon,$mm_can_evade_gerudo"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      }, 
+      {
+        "name": "Pirate Fortress Lone Guard Exit",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      }, 
+      {
+        "name": "Pirate Fortress Treasure Room Entry",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Lone Guard Entry,mm_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },  
+      {
+        "name": "Pirate Fortress Treasure Room",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Treasure Room Entry"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },      
+      {
+        "name": "Pirate Fortress Treasure Room Aquarium",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Treasure Room,$mm_has_weapon,$mm_can_evade_gerudo"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },  
+      {
+        "name": "Pirate Fortress Treasure Room Exit",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Treasure Room Aquarium"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },  
+      {
+        "name": "Pirate Fortress Entrance Captured",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Treasure Room Entry",
+          "@Pirate Fortress/Pirate Fortress Treasure Room",
+          "@Pirate Fortress/Pirate Fortress Lone Guard",
+          "@Pirate Fortress/Pirate Fortress Barrel Maze",
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Lower",
+          "@Pirate Fortress/Pirate Fortress Interior"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ]
+      },  
+      {
+        "name": "Near Gate",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Entrance,mm_zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "In Corner",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Entrance,mm_zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Under Log",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Entrance,mm_zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "PF Underwater Maze Chest",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "PF Jail Room Underwater Chest 1",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "PF Jail Room Underwater Chest 2",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "PF Jail Room PoH",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
+        ],
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Lower Chest",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Interior"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Upper Chest",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Interior,mm_hookshot"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Hookshot Chest",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Upper,mm_bow,$mm_can_use_deku_bubble,@Pirate Fortress/Pirate Fortress Hookshot Room Lower",
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_stone,mm_hookshot,mm_bow",
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_stone,mm_hookshot,$mm_can_use_deku_bubble"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Well Guarded Chest",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Treasure Room,$mm_can_evade_gerudo"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Fish Tank Chest",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_zora,mm_hookshot"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 320,
+        "y": 260,
+        "size": 25
+      }
+    ]
   }
 ]

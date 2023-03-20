@@ -5323,7 +5323,7 @@
                     "chest_unopened_img": "images/system/clocktown_stray_fairy.png",
                     "chest_opened_img": "images/system/stray_fairy.png",
                     "visibility_rules": [
-                      "fairy_yes"
+                      "setting_shuffle_townfairy_yes"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7275,141 +7275,6 @@
         ]
       },
       {
-        "name": "Pirates' Fortress Exterior",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "PF Exterior",
-        "sections": [
-          {
-            "name": "Near Gate",
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "In Corner",
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "Under Log",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 300,
-            "y": 250,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Pirates' Fortress Tunnel",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "PF Tunnel",
-        "access_rules": [
-          "mm_goron"
-        ],
-        "sections": [
-          {
-            "name": "PF Underwater Maze Chest",
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "PF Jail Room Underwater Chest 1",
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "PF Jail Room Underwater Chest 2",
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "PF Jail Room PoH",
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "capture_item": true,
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 320,
-            "y": 260,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Pirates' Fortress",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "PF",
-        "access_rules": [
-          "mm_goron",
-          "mm_hookshot"
-        ],
-        "sections": [
-          {
-            "name": "Lower Chest",
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "Upper Chest",
-            "access_rules": [
-              "mm_hookshot"
-            ],
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "Hookshot Chest",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "access_rules": [
-              "mm_bow",
-              "mm_deku,mm_magic"
-            ],
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "Well Guarded Chest",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "access_rules": [
-              "mm_hookshot",
-              "mm_pfguard"
-            ],
-            "capture_item": true,
-            "item_count": 1
-          },
-          {
-            "name": "Fish Tank Chest",
-            "access_rules": [
-              "mm_hookshot"
-            ],
-            "capture_item": true,
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 330,
-            "y": 240,
-            "size": 19
-          }
-        ]
-      },
-      {
         "name": "Zora Cape",
         "children": [
           {
@@ -7659,15 +7524,6 @@
               }
             ]
           }
-        ]
-      },
-      {
-        "name": "GB Requires Zora",
-        "access_rules": [
-          "mm_zora"
-        ],
-        "children": [
-          
         ]
       }
     ]

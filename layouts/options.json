@@ -34,6 +34,12 @@
         "item": "house_skull_shuffle",
         "width": 200,
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_townfairy",
+        "width": 200,
+        "height": 16        
       }
     ]
   },

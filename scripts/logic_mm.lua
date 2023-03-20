@@ -152,6 +152,10 @@ function mm_seahorse()
   return false
 end
 
+function mm_can_evade_gerudo()
+  return has("mm_bow") or has("mm_hookshot") or has("mm_zora") or has("mm_stone")
+end  
+
 function mm_can_break_rocks()
   if mm_has("mm_goronmask")
   then
