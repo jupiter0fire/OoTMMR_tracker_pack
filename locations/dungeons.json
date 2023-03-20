@@ -3830,7 +3830,8 @@
         "name": "Pirate Fortress Entrance",
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Sewers",
@@ -3839,7 +3840,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Sewers End",
@@ -3849,7 +3851,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Entrance Balcony",
@@ -3859,7 +3862,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Interior",
@@ -3868,7 +3872,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Hookshot Room Upper",
@@ -3877,7 +3882,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Hookshot Room Lower",
@@ -3886,7 +3892,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Barrel Maze Entry",
@@ -3895,7 +3902,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Entrance Lookout",
@@ -3904,7 +3912,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },
       {
         "name": "Pirate Fortress Barrel Maze",
@@ -3913,7 +3922,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       }, 
       {
         "name": "Pirate Fortress Barrel Maze Aquarium",
@@ -3922,7 +3932,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       }, 
       {
         "name": "Pirate Fortress Barrel Maze Exit",
@@ -3932,7 +3943,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       }, 
       {
         "name": "Pirate Fortress Lone Guard Entry",
@@ -3941,7 +3953,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       }, 
       {
         "name": "Pirate Fortress Lone Guard",
@@ -3950,7 +3963,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       }, 
       {
         "name": "Pirate Fortress Lone Guard Aquarium",
@@ -3959,7 +3973,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       }, 
       {
         "name": "Pirate Fortress Lone Guard Exit",
@@ -3968,7 +3983,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       }, 
       {
         "name": "Pirate Fortress Treasure Room Entry",
@@ -3977,7 +3993,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },  
       {
         "name": "Pirate Fortress Treasure Room",
@@ -3986,7 +4003,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },      
       {
         "name": "Pirate Fortress Treasure Room Aquarium",
@@ -3995,7 +4013,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },  
       {
         "name": "Pirate Fortress Treasure Room Exit",
@@ -4004,7 +4023,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },  
       {
         "name": "Pirate Fortress Entrance Captured",
@@ -4018,7 +4038,8 @@
         ],
         "visibility_rules": [
           "hidden_region"
-        ]
+        ],
+        "item_count": 1
       },  
       {
         "name": "Near Gate",
