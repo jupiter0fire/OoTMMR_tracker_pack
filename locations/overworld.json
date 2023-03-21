@@ -7734,26 +7734,11 @@
                 "item_count": 1
               },
               {
-                "name": "Buy Blue Potion - 100 Rupees",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
-                "access_rules": [
-                  "mm_adultwallet",
-                  "{}"
-                ],
-                "visibility_rules": [
-                  "shopsanity_yes"
-                ],
-                "capture_item": true,
-                "item_count": 1
-              },
-              {
                 "name": "Cross Canyon",
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_great_bay_deed,mm_zora,mm_deku",
-                  "{}"
+                  "mm_great_bay_deed,mm_zora,mm_deku"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7795,7 +7780,7 @@
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "Boss Gauntlet",
             "access_rules": [
-              "$mm_can_LA,$mm_can_deal_damage"
+              "$mm_can_use_light_arrows"
             ],
             "sections": [
               {
@@ -7838,8 +7823,8 @@
           {
             "name": "Ikana Canyon",
             "access_rules": [
-              "mm_hookshot,[mm_bow],[mm_icearrows],[mm_magic]",
-              "mm_hookshot,mm_icelesscanyon"
+              "$mm_can_use_ice_arrows,mm_hookshot",
+              "$has|trick_mm_iceless_ikana,mm_hookshot"
             ],
             "children": [
               {
@@ -7858,14 +7843,6 @@
                     "capture_item": true,
                     "item_count": 1
                   }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 800,
-                    "y": 264,
-                    "size": 19
-                  }
                 ]
               },
               {
@@ -7877,7 +7854,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "mm_ocarina,mm_songofhealing,mm_songofstorms"
+                      "$mm_can_play|mm_songofstorms,$mm_can_play|mm_healing"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7901,7 +7878,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_bow,$mm_can_deal_damage"
+                      "mm_bow,mm_hookshot,$mm_can_use_deku_bubble"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7925,7 +7902,7 @@
                   {
                     "name": "15 Stray Fairies in Stone Tower Temple",
                     "access_rules": [
-                      "mm_stonetower_stray_fairies:mm_15"
+                      "mm_stonetower_stray_fairies:15"
                     ],
                     "capture_item": true,
                     "item_count": 1
@@ -7936,74 +7913,6 @@
                     "map": "termina",
                     "x": 868,
                     "y": 270,
-                    "size": 19
-                  }
-                ]
-              },
-              {
-                "name": "Beneath the Well",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
-                "short_name": "Well",
-                "sections": [
-                  {
-                    "name": "Mirror Shield Chest",
-                    "chest_unopened_img": "images/system/chest_unopened_big.png",
-                    "chest_opened_img": "images/system/chest_open_big.png",
-                    "access_rules": [
-                      "mm_bottlesanity_no,mm_gibdomask,mm_magicbeans,mm_bottle,mm_bow,mm_firearrows,mm_magic,[mm_bombs],[mm_nuts]",
-                      "mm_bottlesanity_yes,mm_gibdomask,mm_bottle,mm_magicbeans,mm_bigpoe,mm_fish,mm_milklocated,mm_bow,mm_firearrows,mm_magic",
-                      "mm_bottlesanity_yes,mm_gibdomask,mm_bottle,mm_magicbeans,mm_bigpoe,mm_fish,mm_chateaulocated,mm_bow,mm_firearrows,mm_magic",
-                      "mm_bow,mm_lightarrows,mm_magic,mm_firearrows"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Right Side Well Chest",
-                    "access_rules": [
-                      "mm_bottlesanity_no,mm_gibdomask,mm_beans,mm_bottle,mm_bow,mm_firearrows,mm_magic",
-                      "mm_bottlesanity_no,mm_gibdomask,mm_beans,mm_bugs,mm_bow,mm_firearrows,mm_magic,mm_bottle",
-                      "mm_bottlesanity_yes,mm_fish,mm_beans,mm_gibdomask,mm_bug",
-                      "mm_bow,mm_lightarrows,mm_magic,mm_firearrows,mm_bottlesanity_no,mm_gibdomask",
-                      "mm_bow,mm_lightarrows,mm_magic,mm_firearrows,mm_bottlesanity_yes,mm_bug,mm_gibdomask"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Left Side Well Chest",
-                    "access_rules": [
-                      "mm_bottlesanity_no,mm_gibdomask,mm_bottle,mm_bluepotionlocated,$mm_can_see_with_lens",
-                      "mm_bottlesanity_yes,mm_gibdomask,mm_water,mm_bluepotionlocated,mm_bugs,$mm_can_see_with_lens",
-                      "mm_bottlesanity_yes,mm_gibdomask,mm_hotspringwater,mm_bluepotionlocated,mm_bugs,$mm_can_see_with_lens",
-                      "mm_bottlesanity_no,mm_gibdomask,mm_bottle,mm_bluepotionlocated,mm_lens_chests",
-                      "mm_bottlesanity_yes,mm_gibdomask,mm_water,mm_bluepotionlocated,mm_bugs,mm_lens_chests",
-                      "mm_bottlesanity_yes,mm_gibdomask,mm_hotspringwater,mm_bluepotionlocated,mm_bugs,mm_lens_chests"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Beneath the Well Cow",
-                    "chest_unopened_img": "images/system/cow.png",
-                    "chest_opened_img": "images/system/milk.png",
-                    "access_rules": [
-                      "mm_ocarina,mm_eponasong,mm_gibdomask,$mm_can_bottle_hotspringwater,mm_bow,mm_magic,mm_lightarrows,[mm_soaring]",
-                      "mm_ocarina,mm_eponasong,mm_gibdomask,$mm_can_bottle_hotspringwater,mm_beans,[mm_soaring]"
-                    ],
-                    "visibility_rules": [
-                      "cowsanity_yes"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 836,
-                    "y": 238,
                     "size": 19
                   }
                 ]

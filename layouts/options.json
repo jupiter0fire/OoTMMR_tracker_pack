@@ -120,6 +120,18 @@
         "item": "trick_mm_no_seahorse",
         "width": 200,
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_mm_iceless_ikana",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_mm_one_mask_stone_tower",
+        "width": 200,
+        "height": 16
       }
     ]
   },

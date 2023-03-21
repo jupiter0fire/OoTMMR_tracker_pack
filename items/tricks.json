@@ -74,5 +74,19 @@
     "initial_active_state": true,
     "img": "images/trick_oot_night_skull_sun_song.png",
     "codes": "trick_oot_night_skull_sun_song"
+  },
+  {
+    "name": "Ikana Canyon w/ Ice Arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_iceless_ikana.png",
+    "codes": "trick_mm_iceless_ikana"
+  },
+  {
+    "name": "Stone Tower with one Mask",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_one_mask_stone_tower.png",
+    "codes": "trick_mm_one_mask_stone_tower"
   }
 ]
