@@ -161,7 +161,11 @@ function mm_can_use_light_arrows()
 end  
 
 function mm_can_use_ice_arrows()
-  return has("mm_magic") and has("mm_bow") and has("mm_lightarrows")
+  return has("mm_magic") and has("mm_bow") and has("mm_icearrows")
+end  
+
+function mm_can_activate_crystal()
+  return mm_can_break_boulders() or mm_has_weapon() or has("mm_bow") or has("mm_hookshot") or has("mm_deku") or has("mm_zora")
 end  
 
 function mm_can_break_rocks()

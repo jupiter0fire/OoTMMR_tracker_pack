@@ -7918,49 +7918,6 @@
                 ]
               },
               {
-                "name": "Ancient Castle of Ikana",
-                "short_name": "Ikana Castle",
-                "sections": [
-                  {
-                    "name": "Defeat Igos Du Ikana",
-                    "chest_unopened_img": "images/system/unknownsong.png",
-                    "chest_opened_img": "images/system/unknownsong_check.png",
-                    "access_rules": [
-                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_lightarrows,$mm_can_deal_damage",
-                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_deku,mm_keg,$mm_can_deal_damage,mm_goron,mm_lens_jump",
-                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_keg,$mm_can_deal_damage,mm_goron,$mm_can_see_with_lens,mm_ikanaceiling",
-                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_deku,mm_keg,$mm_can_deal_damage,mm_goron,$mm_can_see_with_lens",
-                      "mm_bow,mm_firearrows,mm_magic,mm_mirrorshield,mm_keg,$mm_can_deal_damage,mm_goron,mm_lens_jump,mm_ikanaceiling"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Castle PoH",
-                    "chest_unopened_img": "images/system/heartpiece.png",
-                    "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "access_rules": [
-                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_lightarrows,mm_lens_jump",
-                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_mirrorshield,mm_lens_jump",
-                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_lightarrows,$mm_can_see_with_lens",
-                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_mirrorshield,$mm_can_see_with_lens",
-                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_zora,mm_gainer,mm_lens_jump",
-                      "mm_deku,mm_bow,mm_magic,mm_firearrows,mm_zora,mm_gainer,$mm_can_see_with_lens"
-                    ],
-                    "capture_item": true,
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 831,
-                    "y": 300,
-                    "size": 19
-                  }
-                ]
-              },
-              {
                 "name": "Stone Tower",
                 "access_rules": [
                   "mm_ocarina,mm_elegy,mm_goron,mm_zora,mm_hookshot",
