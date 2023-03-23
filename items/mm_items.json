@@ -1624,19 +1624,19 @@
     "name": "MM Deku Mask",
     "type": "toggle",
     "img": "images/items/mm_deku.png",
-    "codes": "mm_deku,mm_dekumask,mm_deku_mask"
+    "codes": "mm_deku,mm_dekumask,mm_deku_mask,mm_mask"
   },
   {
     "name": "MM Goron Mask",
     "type": "toggle",
     "img": "images/items/mm_goron.png",
-    "codes": "mm_goron,mm_goronmask,mm_goron_mask"
+    "codes": "mm_goron,mm_goronmask,mm_goron_mask,mm_mask"
   },
   {
     "name": "MM Zora Mask",
     "type": "toggle",
     "img": "images/items/mm_zora.png",
-    "codes": "mm_zora,mm_zoramask,mm_zora_mask"
+    "codes": "mm_zora,mm_zoramask,mm_zora_mask,mm_mask"
   },
   {
     "name": "MM Fierce Deity Mask",
@@ -1648,127 +1648,127 @@
     "name": "MM Giant Mask",
     "type": "toggle",
     "img": "images/items/mm_giant.png",
-    "codes": "mm_giant,mm_giantmask,mm_giantsmask,mm_giant_mask,mm_giants_mask"
+    "codes": "mm_giant,mm_giantmask,mm_giantsmask,mm_giant_mask,mm_giants_mask,mm_mask"
   },
   {
     "name": "MM Blast Mask",
     "type": "toggle",
     "img": "images/items/mm_blast.png",
-    "codes": "mm_blast,mm_blastmask,mm_blast_mask"
+    "codes": "mm_blast,mm_blastmask,mm_blast_mask,mm_mask"
   },
   {
     "name": "MM All Night Mask",
     "type": "toggle",
     "img": "images/items/mm_allnight.png",
-    "codes": "mm_allnight,mm_allnightmask,mm_all_night_mask,mm_allnight_mask"
+    "codes": "mm_allnight,mm_allnightmask,mm_all_night_mask,mm_allnight_mask,mm_mask"
   },
   {
     "name": "MM Bremen Mask",
     "type": "toggle",
     "img": "images/items/mm_bremen.png",
-    "codes": "mm_bremen,mm_bremenmask,mm_bremen_mask"
+    "codes": "mm_bremen,mm_bremenmask,mm_bremen_mask,mm_mask"
   },
   {
     "name": "MM Bunny Hood",
     "type": "toggle",
     "img": "images/items/mm_bunny.png",
-    "codes": "mm_bunny,mm_bunnyhood,mm_bunny_hood"
+    "codes": "mm_bunny,mm_bunnyhood,mm_bunny_hood,mm_mask"
   },
   {
     "name": "MM Captain Hat",
     "type": "toggle",
     "img": "images/items/mm_captain.png",
-    "codes": "mm_captain,mm_captainhat,mm_captainshat,mm_captain_hat,mm_captains_hat"
+    "codes": "mm_captain,mm_captainhat,mm_captainshat,mm_captain_hat,mm_captains_hat,mm_mask"
   },
   {
     "name": "MM Couple Mask",
     "type": "toggle",
     "img": "images/items/mm_couple.png",
-    "codes": "mm_couple,mm_couplemask,mm_couple_mask"
+    "codes": "mm_couple,mm_couplemask,mm_couple_mask,mm_mask"
   },
   {
     "name": "MM Don Gero Mask",
     "type": "toggle",
     "img": "images/items/mm_dongero.png",
-    "codes": "mm_dongero,mm_don_gero,mm_dongeromask,mm_dongero_mask,mm_don_gero_mask,mm_frog"
+    "codes": "mm_dongero,mm_don_gero,mm_dongeromask,mm_dongero_mask,mm_don_gero_mask,mm_frog,mm_mask"
   },
   {
     "name": "MM Don Gero Mask",
     "type": "toggle",
     "img": "images/items/mm_dongero.png",
-    "codes": "mm_dongero,mm_don_gero,mm_dongeromask,mm_dongero_mask,mm_don_gero_mask,mm_frog"
+    "codes": "mm_dongero,mm_don_gero,mm_dongeromask,mm_dongero_mask,mm_don_gero_mask,mm_frog,mm_mask"
   },
   {
     "name": "MM Garo Mask",
     "type": "toggle",
     "img": "images/items/mm_garo.png",
-    "codes": "mm_garo,mm_garomask,mm_garomaster,mm_garosmask"
+    "codes": "mm_garo,mm_garomask,mm_garomaster,mm_garosmask,mm_mask"
   },
   {
     "name": "MM Gibdo Mask",
     "type": "toggle",
     "img": "images/items/mm_gibdo.png",
-    "codes": "mm_gibdo,mm_gibdomask,mm_gibdosmask"
+    "codes": "mm_gibdo,mm_gibdomask,mm_gibdosmask,mm_mask"
   },
   {
     "name": "MM Great Fairy Mask",
     "type": "toggle",
     "img": "images/items/mm_greatfairy.png",
-    "codes": "mm_fairymask,mm_greatfairymask,mm_great_fairy_mask,mm_fairy_mask"
+    "codes": "mm_fairymask,mm_greatfairymask,mm_great_fairy_mask,mm_fairy_mask,mm_mask"
   },
   {
     "name": "MM Keaton Mask",
     "type": "toggle",
     "img": "images/items/mm_keaton.png",
-    "codes": "mm_keaton,mm_keatonmask,mm_keaton_mask"
+    "codes": "mm_keaton,mm_keatonmask,mm_keaton_mask,mm_mask"
   },
   {
     "name": "MM Kafei Mask",
     "type": "toggle",
     "img": "images/items/mm_kafeimask.png",
-    "codes": "mm_kafeimask,mm_kafei_mask"
+    "codes": "mm_kafeimask,mm_kafei_mask,mm_mask"
   },
   {
     "name": "MM Kamaro Mask",
     "type": "toggle",
     "img": "images/items/mm_kamaro.png",
-    "codes": "mm_kamaro,mm_kamaromask,mm_kamaro_mask"
+    "codes": "mm_kamaro,mm_kamaromask,mm_kamaro_mask,mm_mask"
   },
   {
     "name": "MM Mask of Truth",
     "type": "toggle",
     "img": "images/items/mm_maskoftruth.png",
-    "codes": "mm_maskoftruth,mm_mot,mm_mask_of_truth,mm_truthmask"
+    "codes": "mm_maskoftruth,mm_mot,mm_mask_of_truth,mm_truthmask,mm_mask"
   },
   {
     "name": "MM Postman Hat",
     "type": "toggle",
     "img": "images/items/mm_postman.png",
-    "codes": "mm_postman,mm_postmanhat,mm_postmanshat,mm_postmans_hat"
+    "codes": "mm_postman,mm_postmanhat,mm_postmanshat,mm_postmans_hat,mm_mask"
   },
   {
     "name": "MM Romani Mask",
     "type": "toggle",
     "img": "images/items/mm_romanimask.png",
-    "codes": "mm_romanimask,mm_romani_mask,mm_cowmask,mm_cow_mask,mm_romanismask,mm_romanis_mask"
+    "codes": "mm_romanimask,mm_romani_mask,mm_cowmask,mm_cow_mask,mm_romanismask,mm_romanis_mask,mm_mask"
   },
   {
     "name": "MM Mask of Scents",
     "type": "toggle",
     "img": "images/items/mm_scents.png",
-    "codes": "mm_scents,mm_maskofscents,mm_mos,mm_mask_of_scents"
+    "codes": "mm_scents,mm_maskofscents,mm_mos,mm_mask_of_scents,mm_mask"
   },
   {
     "name": "MM Stone Mask",
     "type": "toggle",
     "img": "images/items/mm_stone.png",
-    "codes": "mm_stone,mm_stonemask,mm_stone_mask"
+    "codes": "mm_stone,mm_stonemask,mm_stone_mask,mm_mask"
   },
   {
     "name": "MM Troupe Leader Mask",
     "type": "toggle",
     "img": "images/items/mm_troupe.png",
-    "codes": "mm_troupe,mm_troupeleader,mm_troupe_leader_mask,mm_troupemask,mm_troupe_mask"
+    "codes": "mm_troupe,mm_troupeleader,mm_troupe_leader_mask,mm_troupemask,mm_troupe_mask,mm_mask"
   },
   {
     "name": "MM Odolwa Remains",

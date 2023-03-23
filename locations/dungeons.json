@@ -4272,7 +4272,8 @@
         "name": "Ancient Castle of Ikana Exterior",
         "access_rules": [
           "@Ancient Castle of Ikana/Ancient Castle of Ikana Entrance,$mm_can_activate_crystal,mm_mirror",
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Entrance,$mm_can_use_light_arrows"
+          "@Ancient Castle of Ikana/Ancient Castle of Ikana Entrance,$mm_can_use_light_arrows",
+          "$mm_ikana_through_well"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4390,6 +4391,125 @@
         "x": 831,
         "y": 300,
         "size": 19
+      }
+    ]
+  },
+  {
+    "name": "Moon",
+    "short_name": "Moon",
+    "parent": "Clock Town South",
+    "access_rules":[
+      "$mm_can_play|mm_oath,mm_odolwa_remains,mm_gyorg_remains,mm_goth_remains,mm_twinmold_remains"
+    ],
+    "sections": [
+      {
+        "name": "Moon Trial Deku",
+        "access_rules": [
+          "@Moon,$has|mm_mask|1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Moon Trial Goron",
+        "access_rules": [
+          "@Moon,$has|mm_mask|2"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Moon Trial Zora",
+        "access_rules": [
+          "@Moon,$has|mm_mask|3"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Moon Trial Link",
+        "access_rules": [
+          "@Moon,$has|mm_mask|4"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Fierce Deity Mask",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "@Moon,@Moon/Moon Trial Deku,@Moon/Moon Trial Goron,@Moon/Moon Trial Zora,@Moon/Moon Trial Link,$has|mm_mask|20,mm_deku,mm_goron,mm_zora,$mm_moon_trial_link"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Trial Deku HP",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "@Moon/Moon Trial Deku,mm_deku"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Trial Goron HP",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "@Moon/Moon Trial Goron,$mm_goron_fast_roll"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Trial Zora HP",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "@Moon/Moon Trial Zora,mm_zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Trial Link Chest 1",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Trial Link Chest 2",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2,$mm_can_fight",
+          "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2,mm_bow"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 25,
+        "x": 540,
+        "y": 302
       }
     ]
   }

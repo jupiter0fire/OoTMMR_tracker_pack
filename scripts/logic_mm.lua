@@ -160,12 +160,52 @@ function mm_can_use_light_arrows()
   return has("mm_magic") and has("mm_bow") and has("mm_lightarrows")
 end  
 
+function mm_has_bombchu()
+  return has("mm_bombs")
+end  
+
 function mm_can_use_ice_arrows()
   return has("mm_magic") and has("mm_bow") and has("mm_icearrows")
 end  
 
 function mm_can_activate_crystal()
   return mm_can_break_boulders() or mm_has_weapon() or has("mm_bow") or has("mm_hookshot") or has("mm_deku") or has("mm_zora")
+end  
+
+function mm_ikana_through_well_part1()
+  return has("mm_gibdomask") and has("mm_beans")
+end  
+
+function mm_ikana_through_well_part2()
+  return has("mm_bottle") and has("mm_bombs") and (has("mm_bow") or has("mm_zora"))
+end  
+
+function mm_ikana_through_well_part3()
+  return has("mm_mirror") or mm_can_use_light_arrows()
+end  
+
+function mm_ikana_through_well()
+  return mm_ikana_through_well_part1() and mm_ikana_through_well_part2() and mm_ikana_through_well_part3()
+end  
+
+function mm_moon_trial_link_part1()
+  return mm_can_fight() or has("mm_bow")
+end  
+
+function mm_moon_trial_link_part2()
+  return has("mm_hookshot") and (mm_can_fight() or has("mm_bow"))
+end  
+
+function mm_moon_trial_link_part3()
+  return mm_has_bombchu() and has("mm_bow")
+end 
+
+function mm_moon_trial_link_part4()
+  return mm_has_bombchu() and mm_can_use_fire_arrows()
+end 
+
+function mm_moon_trial_link()
+  return mm_moon_trial_link_part1() and mm_moon_trial_link_part2() and mm_moon_trial_link_part3() and mm_moon_trial_link_part4()
 end  
 
 function mm_can_break_rocks()

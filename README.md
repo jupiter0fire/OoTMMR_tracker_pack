@@ -13,9 +13,9 @@ Things that need to be done:
 - [x] Logic for MM Swamp and Milk Road
 - [x] Logic for MM Snowhead
 - [x] Logic for MM Great Bay
-- [ ] Logic for MM Ikana Castle
+- [x] Logic for MM Ikana Castle
 - [ ] Logic for MM major dungeons
-- [ ] Logic for MM Moon
+- [x] Logic for MM Moon
 - [ ] Add Seahorse and Eggs as Checks
 - [ ] Fix layout
 - [ ] Update logic to the current stable version of the randomizer
