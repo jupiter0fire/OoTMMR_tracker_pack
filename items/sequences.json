@@ -161,6 +161,102 @@
     ]
   },
   {
+    "name": "Seahorse",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_seahorse.png",
+        "img_mods": "@disabled",
+        "codes": "mm_seahorse_no"
+      },
+      {
+        "img": "images/items/mm_seahorse.png",
+        "codes": "mm_seahorse"
+      }
+    ]
+  },
+  {
+    "name": "Zora Egg Hookshot Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "img_mods": "@disabled",
+        "codes": "mm_zoraegg_hookshot_room_no"
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_zoraegg_hookshot_room"
+      }
+    ]
+  },
+  {
+    "name": "Zora Egg Barrel Maze",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "img_mods": "@disabled",
+        "codes": "mm_zoraegg_barrel_maze_no"
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_zoraegg_barrel_maze"
+      }
+    ]
+  },
+  {
+    "name": "Zora Egg Lone Guard",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "img_mods": "@disabled",
+        "codes": "mm_zoraegg_lone_guard_no"
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_zoraegg_lone_guard"
+      }
+    ]
+  },
+  {
+    "name": "Zora Egg Treasure Room",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "img_mods": "@disabled",
+        "codes": "mm_zoraegg_treasure_room_no"
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_zoraegg_treasure_room"
+      }
+    ]
+  },
+  {
+    "name": "Zora Eggs Pinnacle Rock",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "img_mods": "@disabled",
+        "codes": "mm_zoraegg_pinnacle_rock_no"
+      },
+      {
+        "img": "images/items/mm_zoraegg.png",
+        "codes": "mm_zoraegg_pinnacle_rock"
+      }
+    ]
+  },
+  {
     "name": "Forest Trial Clear",
     "type": "progressive",
     "allow_disabled": false,

@@ -128,30 +128,6 @@ function mm_can_goron_bomb_jump()
   return has("trick_mm_goron_bomb_jump") and has("mm_goron") and has("bombs")
 end
 
-function mm_zora_eggs_hookshot_room()
-  return false
-end
-
-function mm_zora_eggs_barrel_maze()
-  return false
-end
-
-function mm_zora_eggs_lone_guard()
-  return false
-end
-
-function mm_zora_eggs_treasure_room()
-  return false
-end
-
-function mm_zora_eggs_pinnacle_rock()
-  return false
-end
-
-function mm_seahorse()
-  return false
-end
-
 function mm_can_evade_gerudo()
   return has("mm_bow") or has("mm_hookshot") or has("mm_zora") or has("mm_stone")
 end  

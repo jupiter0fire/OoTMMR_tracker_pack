@@ -16,7 +16,7 @@ Things that need to be done:
 - [x] Logic for MM Ikana Castle
 - [ ] Logic for MM major dungeons
 - [x] Logic for MM Moon
-- [ ] Add Seahorse and Eggs as Checks
+- [x] Add Seahorse and Eggs as Checks
 - [ ] Fix layout
 - [ ] Update logic to the current stable version of the randomizer
 - [ ] Add settings that were added after v1.2.0

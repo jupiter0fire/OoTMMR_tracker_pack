@@ -4128,6 +4128,36 @@
         "item_count": 1
       },
       {
+        "name": "Zora Egg 1",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Upper,mm_bow,$mm_can_use_deku_bubble,@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,mm_bottle",
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,mm_bottle,mm_stone"
+        ],
+        "hosted_item": "mm_zoraegg_hookshot_room"
+      },
+      {
+        "name": "Zora Egg 2",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Barrel Maze Aquarium,mm_hookshot,mm_zora,mm_bottle"
+        ],
+        "hosted_item": "mm_zoraegg_barrel_maze"
+      },
+      {
+        "name": "Fish Tank Chest",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_zora,mm_hookshot"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Zora Egg 3",
+        "access_rules": [
+          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_hookshot,mm_zora,mm_bottle"
+        ],
+        "hosted_item": "mm_zoraegg_lone_guard"
+      },
+      {
         "name": "Well Guarded Chest",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
@@ -4138,12 +4168,11 @@
         "item_count": 1
       },
       {
-        "name": "Fish Tank Chest",
+        "name": "Zora Egg 4",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_zora,mm_hookshot"
+          "@Pirate Fortress/Pirate Fortress Treasure Room Aquarium,mm_hookshot,mm_zora,mm_bottle"
         ],
-        "capture_item": true,
-        "item_count": 1
+        "hosted_item": "mm_zoraegg_treasure_room"
       }
     ],
     "map_locations": [

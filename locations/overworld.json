@@ -7033,8 +7033,6 @@
       },
       {
         "name": "Fisherman's House",
-        "chest_unopened_img": "images/system/blue.png",
-        "chest_opened_img": "images/system/blue_check.png",
         "short_name": "Fisherman Hut",
         "sections": [
           {
@@ -7042,10 +7040,17 @@
             "access_rules": [
               "mm_zora,mm_pictobox"
             ],
-            "capture_item": true,
-            "item_count": 1
+            "hosted_item": "mm_seahorse"
           }
-        ]
+        ],
+        "map_locations": [
+          {
+            "map": "termina", 
+            "size": 19,
+            "x": 280,
+            "y": 360
+          }
+        ]       
       },
       {
         "name": "Great Bay Coast",
@@ -7167,7 +7172,7 @@
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
-                  "mm_ocarina,mm_zora,$mm_zora_eggs_hookshot_room,$mm_zora_eggs_barrel_maze,$mm_zora_eggs_lone_guard,$mm_zora_eggs_treasure_room,$mm_zora_eggs_pinnacle_rock"
+                  "mm_ocarina,mm_zora,mm_zoraegg_hookshot_room,mm_zoraegg_barrel_maze,mm_zoraegg_lone_guard,mm_zoraegg_treasure_room,mm_zoraegg_pinnacle_rock"
                 ],
                 "capture_item": true,
                 "item_count": 1
@@ -7187,7 +7192,7 @@
       {
         "name": "Pinnacle Rock",
         "access_rules": [
-          "mm_zora,$mm_seahorse",
+          "mm_zora,mm_seahorse",
           "mm_zora,$has|trick_mm_no_seahorse"          
         ],
         "chest_unopened_img": "images/system/chest_brown_closed.png",
@@ -7213,6 +7218,13 @@
             ],
             "capture_item": true,
             "item_count": 1
+          },
+          {
+            "name": "Zora Eggs 5,6,7",
+            "access_rules": [
+              "mm_zora,mm_bottle"
+            ],
+            "hosted_item": "mm_zoraegg_pinnacle_rock"
           }
         ],
         "map_locations": [
