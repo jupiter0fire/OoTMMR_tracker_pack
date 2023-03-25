@@ -93,13 +93,37 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_shuffle_smallkeys_no.png",
+        "img": "images/setting_mm_shuffle_townfairy_no.png",
         "img_mods": "@disabled",
-        "codes": "setting_shuffle_townfairy,setting_shuffle_townfairy_no"
+        "codes": "setting_mm_shuffle_townfairy,setting_mm_shuffle_townfairy_no"
       },
       {
-        "img": "images/setting_shuffle_smallkeys_yes.png",
-        "codes": "setting_shuffle_townfairy,setting_shuffle_townfairy_yes",
+        "img": "images/setting_mm_shuffle_townfairy_yes.png",
+        "codes": "setting_mm_shuffle_townfairy,setting_mm_shuffle_townfairy_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Dungeon Fairies",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_mm_shuffle_dungeonfairy_no.png",
+        "img_mods": "@disabled",
+        "codes": "setting_mm_shuffle_dungeonfairy,setting_mm_shuffle_dungeonfairy_no"
+      },
+      {
+        "img": "images/setting_mm_shuffle_dungeonfairy_chest.png",
+        "codes": "setting_mm_shuffle_dungeonfairy,setting_mm_shuffle_dungeonfairy_chest",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_mm_shuffle_dungeonfairy_all.png",
+        "codes": "setting_mm_shuffle_dungeonfairy,setting_mm_shuffle_dungeonfairy_all,setting_mm_shuffle_dungeonfairy_chest",
         "inherit_codes": false
       }
     ]

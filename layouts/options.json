@@ -37,7 +37,13 @@
       },
       {
         "type": "item",
-        "item": "setting_shuffle_townfairy",
+        "item": "setting_mm_shuffle_townfairy",
+        "width": 200,
+        "height": 16        
+      },
+      {
+        "type": "item",
+        "item": "setting_mm_shuffle_dungeonfairy",
         "width": 200,
         "height": 16        
       }
