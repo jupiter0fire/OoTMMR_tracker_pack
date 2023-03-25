@@ -378,7 +378,7 @@
             "access_rules":[
               "$can_play|saria",
               "$can_play|minuet",
-              "$has|trick_oot_mido_skip"
+              "$has|trick_oot_mido_skip,$has_age|adult"
             ]
           },
           {
@@ -2317,14 +2317,14 @@
             "name": "Goron City As Child",
             "access_rules":[
               "@Death Mountain As Child",
-              "$has_explosives_bool"
+              "$has_explosives_bool,$has_age|child"
             ]
           },
           {
             "name": "Goron City As Adult",
             "access_rules":[
               "@Death Mountain As Adult",
-              "$has_explosives_bool"
+              "$has_explosives_bool,$has_age|adult"
             ]
           },
           {  

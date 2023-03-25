@@ -74,22 +74,50 @@ end
 
 function mm_can_use_lens()
   return mm_can_use_lens_strict() or has("trick_mm_fewer_lens")
-end  
+end 
+
+function mm_grab_water_in_graveyrad()
+  return has("mm_bottle") and has("mm_goron")
+end
+
+function mm_mountain_village_to_goron_graveyard()
+  return mm_can_use_lens_strict() or (has("mm_snowhead") and (has("mm_goron") or has("mm_zora")))
+end
+
+function mm_to_mountain_village()
+  return (mm_can_break_boulders() or mm_can_use_fire_arrows()) and has("mm_bow")
+end
 
 function mm_goron_graveyard_hot_water()
-  return false --TODO
+  return mm_grab_water_in_graveyrad() and mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village()
+end
+
+function mm_ikana_canyon_to_well_hot_water()
+  return (mm_has_explosives() or has("mm_zora")) and (has("mm_gibdo") and has("mm_bottle") and has("mm_scents"))
+end
+
+function  mm_ikana_valley_to_canyon()
+  return mm_can_use_ice_arrows() or has("trick_mm_iceless_ikana") and has("mm_hookshot")
+end
+
+function mm_to_ikana_valley()
+  return (has("mm_garo") or has("mm_gibdo") and has("mm_hookshot")) and (mm_can_play("mm_epona") or has("trick_mm_goron_bomb_jump"))
 end
 
 function mm_well_hot_water()
-  return false --TODO
+  return mm_ikana_canyon_to_well_hot_water() and mm_ikana_valley_to_canyon() and mm_to_ikana_valley()
 end
 
 function mm_sun_mask()
-  return false --TODO
+  return has("mm_lettertokafei") and mm_to_ikana_valley()
+end  
+
+function mm_get_goron_food_in_goron_village()
+  return has("mm_goron") and has("mm_magic") and (mm_can_use_fire_arrows() or mm_can_play("mm_lullaby_half"))
 end  
 
 function mm_goron_food()
-  return false --TODO
+  return mm_to_mountain_village() and mm_get_goron_food_in_goron_village()
 end  
 
 function mm_frog1()
@@ -117,7 +145,7 @@ function mm_can_hookshot_scarecrow()
 end
 
 function mm_powder_keg_trial()
-  return false
+  return mm_to_mountain_village() and ((has("mm_snowhead") or mm_can_use_fire_arrows()) and has("mm_goron"))
 end
 
 function mm_goron_fast_roll()
