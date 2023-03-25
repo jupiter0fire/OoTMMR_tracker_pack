@@ -4688,8 +4688,8 @@
       {
         "name": "Entrance Platform Chest",
         "short_name": "Entrance Chest",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Entrance,mm_deku",
           "@Woodfall Temple/Woodfall Temple Entrance,mm_hookshot"
@@ -4702,8 +4702,8 @@
       },
       {
         "name": "Entrance Fairy",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "short_name": "By Entrance Platform",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Entrance"
@@ -4717,8 +4717,8 @@
       {
         "name": "Pots in Main Room",
         "short_name": "Main Room Pots",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main"
         ],
@@ -4731,8 +4731,8 @@
       {
         "name": "Kill Deku Baba in Main Room",
         "short_name": "Kill Deku Baba",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main"
         ],
@@ -4757,8 +4757,8 @@
       {
         "name": "Platform Room Beehive",
         "short_name": "Wall Beehive",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Water Room,mm_bow",
           "@Woodfall Temple/Woodfall Temple Water Room,$mm_can_use_deku_bubble",
@@ -4788,8 +4788,8 @@
       {
         "name": "Kill Skulltula in Bridge Room",
         "short_name": "Bridge Room Skulltula",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Maze,$mm_can_fight",
           "@Woodfall Temple/Woodfall Temple Maze,$mm_bow",
@@ -4805,8 +4805,8 @@
       {
         "name": "Bridge Room Beehive",
         "short_name": "Bridge Beehive",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Maze,$mm_has_weapon_range"
         ],
@@ -4819,8 +4819,8 @@
       {
         "name": "Bridge Room Bubble",
         "short_name": "Bubble under Bridge",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Maze,mm_fairymask,mm_bow",
           "@Woodfall Temple/Woodfall Temple Maze,mm_fairymask,mm_hookshot",
@@ -4847,8 +4847,8 @@
       {
         "name": "Dark Room Black Boes",
         "short_name": "Dark Room Boes",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Dark Room"
         ],
@@ -4861,8 +4861,8 @@
       {
         "name": "Main Room Bubble",
         "short_name": "Main Room Bubble",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main Ledge"
         ],
@@ -4875,8 +4875,8 @@
       {
         "name": "Main Room Switch",
         "short_name": "Main Room Switch Chest",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main Ledge,mm_deku"
         ],
@@ -4912,8 +4912,8 @@
       {
         "name": "Final Room Lower Right Bubble",
         "short_name": "Final Room Right Bubble",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Pre-Boss"
         ],
@@ -4926,8 +4926,8 @@
       {
         "name": "Final Room Upper Right Bubble",
         "short_name": "Final Room Right Upper Bubble",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Pre-Boss"
         ],
@@ -4940,8 +4940,8 @@
       {
         "name": "Final Room Upper Left Bubble",
         "short_name": "Final Room Left Bubble",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_deku",
           "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_fairymask"
@@ -4955,8 +4955,8 @@
       {
         "name": "Final Room Pillar Bubble",
         "short_name": "Final Room Pillar",
-        "chest_unopened_img": "images/system/woodfall_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_deku,mm_bow"
         ],
@@ -4986,6 +4986,457 @@
         "size": 25,
         "x": 542,
         "y": 478
+      }
+    ]
+  },
+  {
+    "name": "Great Bay Temple",
+    "short_name": "GBT",
+    "parent": "Zora Hall",
+    "access_rules": [
+      "mm_zora,mm_hookshot,$mm_can_play|mm_bossanova"
+    ],
+    "sections": [
+      {
+        "name": "Great Bay Temple Entrance",
+        "access_rules": [
+          "@Great Bay Temple"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Water Wheel",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Entrance"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Central Room",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_zora"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Map Room",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Central Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Baba Room",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Map Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Compass Room",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Central Room,@Great Bay Temple/Great Bay Temple Water Wheel,@Great Bay Temple/Great Bay Temple Map Room,$mm_can_use_ice_arrows,mm_hookshot",
+          "@Great Bay Temple/Great Bay Temple Baba Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Red Pipe 1",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Central Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Ice Arrow Room",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Red Pipe 1,greatbay_small_keys:1"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Red Pipe 2",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Map Room,$mm_can_use_ice_arrows"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Boss Key Room",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Compass Room,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Green Pipe 1",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Central Room,$mm_can_use_ice_arrows"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Green Pipe 2",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Compass Room,@Great Bay Temple/Great Bay Temple Water Wheel,@Great Bay Temple/Great Bay Temple Red Pipe 1,@Great Bay Temple/Great Bay Temple Red Pipe 2,$mm_can_use_ice_arrows,mm_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Green Pipe 3",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Green Pipe 2,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Pre-Boss",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Central Room,@Great Bay Temple/Great Bay Temple Water Wheel,@Great Bay Temple/Great Bay Temple Red Pipe 1,@Great Bay Temple/Great Bay Temple Red Pipe 2,$mm_can_use_ice_arrows,mm_hookshot"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Great Bay Temple Boss",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Pre-Boss,@Great Bay Temple/Great Bay Temple Green Pipe 1,@Great Bay Temple/Great Bay Temple Green Pipe 3,$mm_can_use_fire_arrows,$mm_can_use_ice_arrows,greatbay_boss_key"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Torches",
+        "short_name": "Light Torches",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Entrance"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pinwheel Room Underwater Bubble",
+        "short_name": "Under Platform",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_zora",
+          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_fairymask,mm_bow",
+          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_fairymask,mm_hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pinwheel Room Skulltula",
+        "short_name": "Pinwheel Skulltula",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Water Wheel"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Barrel",
+        "short_name": "Main Room Barrel",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Central Room"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Underwater Pot",
+        "short_name": "Pot in Center",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Central Room,mm_zora",
+          "@Great Bay Temple/Great Bay Temple Central Room,mm_fairymask,mm_bow"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest in Room with Ledges - Map",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Map",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Map Room,mm_hookshot",
+          "@Great Bay Temple/Great Bay Temple Map Room,$mm_can_use_ice_arrows"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Pot",
+        "short_name": "Pot in Ledge Room",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Map Room"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Hallway Bio Babas",
+        "short_name": "Bio Baba Hallway",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Baba Room"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Room Alcove - Compass",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Compass",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Compass Room"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Chest - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Small Key",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Compass Room"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Dexihand Pot",
+        "short_name": "Pot by Dexihands",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Compass Room"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wart Miniboss - Ice Arrow",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Ice Arrows",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Ice Arrow Room"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "chest_unopened_img": "images/system/chest_golden_closed.png",
+        "chest_opened_img": "images/system/chest_golden_open.png",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Boss Key Room"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Green Valve Ceiling",
+        "short_name": "Green Room Ceiling",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Green Pipe 1,mm_hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Waterwheel Room Lower",
+        "short_name": "Waterwheel Lower Chest",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Green Pipe 2,mm_hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Waterwheel Room Upper",
+        "short_name": "Waterwheel Upper Chest",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Green Pipe 2,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Seesaw Room Underwater Barrel",
+        "short_name": "Seesaw Barrel",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Green Pipe 3,mm_zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Seesaw Room Chest",
+        "short_name": "Seesaw Chest",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Green Pipe 3,mm_hookshot,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pre-Boss Exit Bubble",
+        "short_name": "By Boss Exit Fairy",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Pre-Boss"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pre-Boss Bubble",
+        "short_name": "Boss Room Bubble",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Pre-Boss,$mm_can_use_ice_arrows",
+          "@Great Bay Temple/Great Bay Temple Pre-Boss,mm_fairymask,mm_bow",
+          "@Great Bay Temple/Great Bay Temple Pre-Boss,mm_fairymask,mm_hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Gyorg",
+        "chest_unopened_img": "images/system/heartcontainer.png",
+        "chest_opened_img": "images/system/heartcontainer_grey.png",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Boss,mm_magic,mm_zora,mm_bow",
+          "@Great Bay Temple/Great Bay Temple Boss,mm_magic,mm_fiercedeity,mm_bow"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 25,
+        "x": 100,
+        "y": 350
       }
     ]
   }

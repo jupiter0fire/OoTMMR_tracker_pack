@@ -4487,28 +4487,34 @@
     "access_rules":[
       "$mm_can_play|mm_songoftime"
     ],
-    "children": [ 
+    "children": [  
       {
         "name": "Oath to Order",
-        "chest_unopened_img": "images/system/unknownsong.png",
-        "chest_opened_img": "images/system/unknownsong_check.png",
-        "access_rules": [
-          "mm_woodfall",
-          "mm_snowhead",
-          "mm_great_bay",
-          "mm_stone_tower"
+        "short_name": "Oath to Order",
+        "sections": [
+          {
+            "name": "Beat a dungeon",
+            "access_rules": [
+              "mm_woodfall",
+              "mm_snowhead",
+              "mm_great_bay",
+              "mm_stone_tower"
+            ],
+            "chest_unopened_img": "images/system/unknownsong.png",
+            "chest_opened_img": "images/system/unknownsong_check.png",
+            "capture_item": true,
+            "item_count": 1
+          }
         ],
-        "capture_item": true,
-        "item_count": 1,
         "map_locations": [
           {
             "map": "termina",
-            "x": 117,
-            "y": 129,
+            "x": 110,
+            "y": 552,
             "size": 19
           }
         ]
-      },     
+      }, 
       {
         "name": "Clock Town",
         "color": "#c475c1",
