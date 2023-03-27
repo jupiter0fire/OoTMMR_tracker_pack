@@ -7681,9 +7681,8 @@
               {
                 "name": "Stone Tower",
                 "access_rules": [
-                  "mm_ocarina,mm_elegy,mm_goron,mm_zora,mm_hookshot",
-                  "mm_ocarina,mm_elegy,mm_ostt,mm_zora,mm_hookshot",
-                  "mm_ocarina,mm_elegy,mm_goron,mm_ostt,mm_hookshot"
+                  "$mm_can_use_elegy3,mm_hookshot",
+                  "$mm_can_use_elegy2,has|trick_mm_one_mask_stone_tower,mm_hookshot"
                 ],
                 "children": [
                   {
@@ -7691,26 +7690,20 @@
                     "chest_unopened_img": "images/system/chest_brown_closed.png",
                     "chest_opened_img": "images/system/chest_brown_open.png",
                     "short_name": "Stone Tower Chests",
+                    "access_rules":[
+                      "$mm_can_use_light_arrows,$mm_can_use_beans"
+                    ],
                     "sections": [
                       {
                         "name": "Left Chest",
-                        "access_rules": [
-                          "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
-                        ],
                         "item_count": 1
                       },
                       {
                         "name": "Middle Chest",
-                        "access_rules": [
-                          "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
-                        ],
                         "item_count": 1
                       },
                       {
                         "name": "Right Chest",
-                        "access_rules": [
-                          "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
-                        ],
                         "item_count": 1
                       }
                     ],
