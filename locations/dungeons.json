@@ -5279,8 +5279,244 @@
     "name": "Stone Tower Temple",
     "short_name": "STT",
     "parent": "Stone Tower",
-    "access_rules": [],
     "sections": [
+      {
+        "name": "Stone Tower Temple Entrance",
+        "access_rules": [
+          "@Stone Tower Temple"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple West",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Entrance",
+          "@Stone Tower Temple/Stone Tower Temple Entrance"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      }, 
+      {
+        "name": "Stone Tower Temple West Garden",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple West,$mm_can_play|elegy,mm_goron,$mm_has_explosives",
+          "@Stone Tower Temple/Stone Tower Temple Under West Garden",
+          "@Stone Tower Temple/Stone Tower Temple Center,stonetower_small_keys:4",
+          "@Stone Tower Temple/Stone Tower Temple Center,stonetower_small_keys:3,mm_goron,$mm_has_explosives,$mm_can_play|mm_elegy"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      }, 
+      {
+        "name": "Stone Tower Temple Under West Garden",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple West Garden"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      }, 
+      {
+        "name": "Stone Tower Temple Center",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple West Garden,stonetower_small_keys:4",
+          "@Stone Tower Temple/Stone Tower Temple West Garden,stonetower_small_keys:3,mm_zora",
+          "@Stone Tower Temple/Stone Tower Temple Water Room,mm_zora"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      }, 
+      {
+        "name": "Stone Tower Temple Water Room",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Entrance,$mm_can_use_light_arrows",
+          "@Stone Tower Temple/Stone Tower Temple Center,mm_zora",
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,stonetower_small_keys:4"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      }, 
+      {
+        "name": "Stone Tower Temple Mirrors Room",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Wind Room",
+          "@Stone Tower Temple/Stone Tower Temple Water Room,stonetower_small_keys:4"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      }, 
+      {
+        "name": "Stone Tower Temple Wind Room",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,mm_goron,mm_mirrorshield",
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,$mm_can_use_light_arrows"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Light Arrow Room",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Wind Room,mm_deku",
+          "@Stone Tower Temple/Stone Tower Temple Wind Room,$mm_can_use_light_arrows"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Before Water Bridge",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Light Arrow Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Water Bridge",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Before Water Bridge"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Entrance",
+        "access_rules": [
+          "@Stone Tower Temple,$mm_can_use_light_arrows"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted East",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Entrance",
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe,$mm_can_use_light_arrows,stonetower_small_keys:4"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Wizzrobe",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_can_use_light_arrows,stonetower_small_keys:3",
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe Ledge"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Wizzrobe Ledge",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe,mm_hookshot,$mm_can_fight",
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe,mm_hookshot,mm_bow",
+          "@Stone Tower Temple/Stone Tower Temple Inverted Death Armos Maze,mm_deku"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Death Armos Maze",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe Ledge,mm_deku",
+          "@Stone Tower Temple/Stone Tower Temple Inverted Center"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Center",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Death Armos Maze",
+          "@Stone Tower Temple/Stone Tower Temple Inverted Boss Key Room,$mm_has_weapon_range,mm_deku"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Boss Key Room",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Center,$mm_has_weapon_range,mm_deku"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Entrance Ledge",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Center"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Bridge",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Entrance Ledge,mm_hookshot,stonetower_small_keys:4"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Inverted Bridge 2",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Bridge"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stone Tower Temple Boss",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Bridge 2,mm_hookshot,stonetower_boss_key"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
       {
         "name": "Lava Room Behind Sun Block - Map",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
