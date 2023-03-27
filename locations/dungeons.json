@@ -111,7 +111,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -221,7 +220,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -284,7 +282,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -432,7 +429,6 @@
         "access_rules": [
           "@Jabu Jabus Belly/Main"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -462,7 +458,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -476,7 +471,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -530,7 +524,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -563,7 +556,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -577,7 +569,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -585,13 +576,11 @@
       {
         "name": "Iron Boots Chest",
         "short_name": "Iron Boots",
-        "capture_item": true,
         "item_count": 1
       },
       {
         "name": "Sheik in Ice Cavern",
         "short_name": "Song",
-        "capture_item": true,
         "chest_unopened_img": "images/grey_note.png",
         "chest_opened_img": "images/grey_note_check.png",
         "item_count": 1
@@ -871,7 +860,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1229,7 +1217,6 @@
         "access_rules": [
           "@Fire Temple/Fire Temple Scarecrow"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1256,7 +1243,6 @@
         "access_rules": [
           "@Fire Temple/Fire Temple After Miniboss"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -1511,7 +1497,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1543,7 +1528,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1554,7 +1538,6 @@
         "access_rules": [
           "@Water Temple/Water Temple Under Center,$can_use_hookshot"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -1567,7 +1550,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1589,7 +1571,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1601,7 +1582,6 @@
           "@Water Temple/Water Temple River,$can_use_bow",
           "{$hintable}"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -1633,7 +1613,6 @@
         "access_rules": [
           "@Water Temple/Water Temple Waterfalls Ledge,water_small_keys:5"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
@@ -1797,7 +1776,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -1825,7 +1803,6 @@
         "access_rules": [
           "@Shadow Temple/Shadow Temple Open,shadow_small_keys:2,$can_use_hookshot,$has_lens,$has_explosives_bool"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
@@ -1878,7 +1855,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2190,7 +2166,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2202,7 +2177,6 @@
           "@Spirit Temple/Spirit Temple Child Hand As Child",
           "@Spirit Temple/Spirit Temple Child Hand As Adult"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2223,7 +2197,6 @@
           "@Spirit Temple/Spirit Temple Statue As Adult,$spirit_adult_door,$can_use_hookshot",
           "@Spirit Temple/Spirit Temple Statue As Adult,$spirit_adult_door,$has_hover_boots"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
@@ -2260,7 +2233,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2314,7 +2286,6 @@
         "access_rules": [
           "@Spirit Temple/Spirit Temple Adult Hand"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2406,7 +2377,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2420,7 +2390,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2449,7 +2418,6 @@
         "visibility_rules": [
           "setting_tokens_dungeons"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2567,7 +2535,6 @@
           "$has_fire_arrows,$has_fire",
           "$has_fire_arrows,$has_hover_boots"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2860,7 +2827,6 @@
         "access_rules": [
           "@Gerudo Training Ground/Gerudo Training Grounds Maze Side"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
@@ -2879,7 +2845,6 @@
         "access_rules": [
           "@Gerudo Training Ground/Gerudo Training Grounds Water,$can_play|time,$has_zora_tunic,$has_iron_boots"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -2922,7 +2887,6 @@
         "access_rules": [
           "@Gerudo Training Ground/Central Maze,gtg_small_keys:7,[gtg_small_keys:9]"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -2957,7 +2921,6 @@
         "access_rules": [
           "mm_skulltulla_woodfall:30"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2965,7 +2928,6 @@
         "short_name": "Main Room Water",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -2982,7 +2944,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2996,7 +2957,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3007,7 +2967,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3018,7 +2977,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3029,7 +2987,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3040,7 +2997,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3056,7 +3012,6 @@
           "mm_zora",
           "$mm_can_use_beans,$mm_can_break_boulders"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3067,7 +3022,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3078,7 +3032,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3089,7 +3042,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3107,7 +3059,6 @@
           "mm_deku,mm_magic",
           "mm_deku,mm_bombs"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3121,7 +3072,6 @@
         "access_rules": [
           "mm_bottle"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3135,7 +3085,6 @@
         "access_rules": [
           "$mm_has_weapon_range"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3149,7 +3098,6 @@
         "access_rules": [
           "$mm_has_weapon_range"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3160,7 +3108,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3171,7 +3118,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3182,7 +3128,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3196,7 +3141,6 @@
         "access_rules": [
           "$mm_has_weapon"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3207,7 +3151,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3221,7 +3164,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3232,7 +3174,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3248,7 +3189,6 @@
           "mm_zora",
           "$mm_can_use_beans"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3259,7 +3199,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3270,7 +3209,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3281,7 +3219,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3292,7 +3229,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3306,7 +3242,6 @@
         "access_rules": [
           "$mm_has_weapon_range"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3317,7 +3252,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3328,7 +3262,6 @@
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ]
@@ -3347,7 +3280,6 @@
         "access_rules": [
           "mmm_skulltulla_greatbay:30"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3355,7 +3287,6 @@
         "short_name": "Slope Left",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "item_count": 1,
         "access_rules": [
           "mm_hookshot,$mm_has_explosives"
@@ -3369,7 +3300,6 @@
         "short_name": "Slope Right",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "item_count": 1,
         "access_rules": [
           "mm_hookshot,$mm_has_explosives"
@@ -3387,7 +3317,6 @@
           "$mm_has_explosives,mm_hookshot",
           "$mm_has_explosives,$mm_can_use_fire_arrows,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1,
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -3412,7 +3341,6 @@
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3426,7 +3354,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3440,7 +3367,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3455,7 +3381,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
           "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3469,7 +3394,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3483,7 +3407,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3498,7 +3421,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
           "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3512,7 +3434,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3529,7 +3450,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_zora",
           "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_deku_bubble"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3543,7 +3463,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3557,7 +3476,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3572,7 +3490,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
           "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3586,7 +3503,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3597,7 +3513,6 @@
         "short_name": "Behind Skull in Basement",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
           "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
@@ -3615,7 +3530,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3629,7 +3543,6 @@
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3643,7 +3556,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3661,7 +3573,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_has_explosives"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3675,7 +3586,6 @@
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3689,7 +3599,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3704,7 +3613,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_fire_arrows,mm_zora"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3718,7 +3626,6 @@
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3732,7 +3639,6 @@
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3746,7 +3652,6 @@
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3763,7 +3668,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_can_use_deku_bubble"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3778,7 +3682,6 @@
           "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3792,7 +3695,6 @@
           "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "capture_item": true,
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -3805,7 +3707,6 @@
         "access_rules": [
           "@Oceanside Spider House/Ocean Spider House Back,mm_bow,mm_captain"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -4044,7 +3945,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Entrance,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4052,7 +3952,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Entrance,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4060,7 +3959,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Entrance,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4068,7 +3966,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4076,7 +3973,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4084,7 +3980,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Sewers,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4094,7 +3989,6 @@
         ],
         "chest_unopened_img": "images/system/heartpiece.png",
         "chest_opened_img": "images/system/heartpiece_grey.png",
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4102,7 +3996,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Interior"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4110,7 +4003,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Interior,mm_hookshot"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4122,7 +4014,6 @@
           "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_stone,mm_hookshot,mm_bow",
           "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_stone,mm_hookshot,$mm_can_use_deku_bubble"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4145,7 +4036,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_zora,mm_hookshot"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4162,7 +4052,6 @@
         "access_rules": [
           "@Pirate Fortress/Pirate Fortress Treasure Room,$mm_can_evade_gerudo"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4237,7 +4126,6 @@
         "access_rules": [
           "@Beneath the Well/Beneath the Well End"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4245,7 +4133,6 @@
         "access_rules": [
           "@Beneath the Well/Beneath the Well East Section,mm_gibdo,mm_bottle"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4253,7 +4140,6 @@
         "access_rules": [
           "@Beneath the Well/Beneath the Well North Section,$mm_can_use_lens"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4267,7 +4153,6 @@
         "visibility_rules": [
           "cowsanity_yes"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -4397,7 +4282,6 @@
         "access_rules": [
           "@Ancient Castle of Ikana/Ancient Castle of Ikana Boss,mm_mirror,$mm_can_use_fire_arrows,$mm_can_fight"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4408,7 +4292,6 @@
           "@Ancient Castle of Ikana/Ancient Castle of Ikana Roof Exterior,mm_bow,mm_deku",
           "@Ancient Castle of Ikana/Ancient Castle of Ikana Roof Exterior,mm_hookshot,mm_deku"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -4476,7 +4359,6 @@
         "access_rules": [
           "@Moon,@Moon/Moon Trial Deku,@Moon/Moon Trial Goron,@Moon/Moon Trial Zora,@Moon/Moon Trial Link,$has|mm_mask|20,mm_deku,mm_goron,mm_zora,$mm_moon_trial_link"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4486,7 +4368,6 @@
         "access_rules": [
           "@Moon/Moon Trial Deku,mm_deku"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4496,7 +4377,6 @@
         "access_rules": [
           "@Moon/Moon Trial Goron,$mm_goron_fast_roll"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4506,7 +4386,6 @@
         "access_rules": [
           "@Moon/Moon Trial Zora,mm_zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4516,7 +4395,6 @@
         "access_rules": [
           "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4527,7 +4405,6 @@
           "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2,$mm_can_fight",
           "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2,mm_bow"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -4694,7 +4571,6 @@
           "@Woodfall Temple/Woodfall Temple Entrance,mm_deku",
           "@Woodfall Temple/Woodfall Temple Entrance,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -4708,7 +4584,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Entrance"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4722,7 +4597,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4736,7 +4610,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4751,7 +4624,6 @@
           "@Woodfall Temple/Woodfall Temple Water Room,mm_deku",
           "@Woodfall Temple/Woodfall Temple Water Room,mm_hookshot"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4766,7 +4638,6 @@
           "@Woodfall Temple/Woodfall Temple Water Room,mm_fairymask,mm_zora",
           "@Woodfall Temple/Woodfall Temple Water Room,mm_fairymask,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4782,7 +4653,6 @@
           "@Woodfall Temple/Woodfall Temple Map Room,mm_deku,mm_has_explosives",
           "@Woodfall Temple/Woodfall Temple Map Room,mm_goron"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4796,7 +4666,6 @@
           "@Woodfall Temple/Woodfall Temple Maze,$mm_can_use_deku_bubble",
           "@Woodfall Temple/Woodfall Temple Maze,$mm_has_explosives"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4810,7 +4679,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Maze,$mm_has_weapon_range"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4827,7 +4695,6 @@
           "@Woodfall Temple/Woodfall Temple Maze,@Woodfall Temple/Woodfall Temple Main,$mm_can_use_fire_arrows",
           "@Woodfall Temple/Woodfall Temple Maze,@Woodfall Temple/Woodfall Temple Main Ledge,mm_bow"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4841,7 +4708,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Compass Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4852,7 +4718,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Dark Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -4866,7 +4731,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main Ledge"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4880,7 +4744,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Main Ledge,mm_deku"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -4895,7 +4758,6 @@
           "@Woodfall Temple/Woodfall Temple Bow Room,$mm_can_fight",
           "@Woodfall Temple/Woodfall Temple Bow Room,mm_bow"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4906,7 +4768,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Boss Key Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -4917,7 +4778,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Pre-Boss"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4931,7 +4791,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Pre-Boss"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4946,7 +4805,6 @@
           "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_deku",
           "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_fairymask"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4960,7 +4818,6 @@
         "access_rules": [
           "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_deku,mm_bow"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -4976,7 +4833,6 @@
           "@Woodfall Temple/Woodfall Temple Pre-Boss,woodfall_boss_key,mm_deku,mm_bow,$mm_has_weapon",
           "@Woodfall Temple/Woodfall Temple Pre-Boss,woodfall_boss_key,mm_hookshot,mm_bow,$mm_has_weapon"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -5156,7 +5012,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Entrance"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -5172,7 +5027,6 @@
           "@Great Bay Temple/Great Bay Temple Water Wheel,mm_fairymask,mm_bow",
           "@Great Bay Temple/Great Bay Temple Water Wheel,mm_fairymask,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5186,7 +5040,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Water Wheel"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5200,7 +5053,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Central Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5215,7 +5067,6 @@
           "@Great Bay Temple/Great Bay Temple Central Room,mm_zora",
           "@Great Bay Temple/Great Bay Temple Central Room,mm_fairymask,mm_bow"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5230,7 +5081,6 @@
           "@Great Bay Temple/Great Bay Temple Map Room,mm_hookshot",
           "@Great Bay Temple/Great Bay Temple Map Room,$mm_can_use_ice_arrows"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5241,7 +5091,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Map Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5255,7 +5104,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Baba Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -5269,7 +5117,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Compass Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5280,7 +5127,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Compass Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5291,7 +5137,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Compass Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5305,7 +5150,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Ice Arrow Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5316,7 +5160,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Boss Key Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5327,7 +5170,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Green Pipe 1,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -5341,7 +5183,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Green Pipe 2,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -5355,7 +5196,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Green Pipe 2,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -5369,7 +5209,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Green Pipe 3,mm_zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5383,7 +5222,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Green Pipe 3,mm_hookshot,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
         ],
@@ -5397,7 +5235,6 @@
         "access_rules": [
           "@Great Bay Temple/Great Bay Temple Pre-Boss"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5413,7 +5250,6 @@
           "@Great Bay Temple/Great Bay Temple Pre-Boss,mm_fairymask,mm_bow",
           "@Great Bay Temple/Great Bay Temple Pre-Boss,mm_fairymask,mm_hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -5427,7 +5263,6 @@
           "@Great Bay Temple/Great Bay Temple Boss,mm_magic,mm_zora,mm_bow",
           "@Great Bay Temple/Great Bay Temple Boss,mm_magic,mm_fiercedeity,mm_bow"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -5456,7 +5291,6 @@
           "bow,lightarrows,magic,$has_explosives,goron",
           "stonetower_small_keys:1,bow,lightarrows,magic,zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5469,7 +5303,6 @@
           "bow,lightarrows,magic,$has_explosives,goron",
           "stonetower_small_keys:1,bow,lightarrows,magic,zora"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5481,7 +5314,6 @@
           "lightarrows,bow,magic,zora",
           "$has_explosives,stonetower_small_keys:1,goron"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5493,7 +5325,6 @@
           "stonetower_small_keys:1,mirrorshield,goron,zora",
           "bow,lightarrows,magic"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5505,7 +5336,6 @@
           "$has_explosives,mirrorshield,deku,stonetower_small_keys:2,goron,zora",
           "bow,lightarrows,magic,stonetower_small_keys:1"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -5539,7 +5369,6 @@
           "bow,lightarrows,magic,deku",
           "bow,lightarrows,magic,isttuphuman"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5554,7 +5383,6 @@
           "deku,bow,lightarrows,magic,stonetower_small_keys:1,hookshot",
           "deku,bow,lightarrows,magic,isttbkearly,damage"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5568,7 +5396,6 @@
         "access_rules": [
           "bow,lightarrows,magic,hookshot,deku,$istteyegore"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5584,7 +5411,6 @@
           "bow,lightarrows,magic,deku,stonetower_small_keys:1,hookshot",
           "bow,lightarrows,magic,isttuphuman,isttbkearly,damage"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5599,7 +5425,6 @@
           "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,[twinbow]",
           "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,giantmask,sword1"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -5613,7 +5438,6 @@
           "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,[twinbow]",
           "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,giantmask,sword1"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
@@ -5642,7 +5466,6 @@
         "access_rules": [
           "bow"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5657,7 +5480,6 @@
           "$has_explosives,goron",
           "lightarrows,bow,magic,stonetower_small_keys:1,zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5672,7 +5494,6 @@
           "lightarrows,bow,magic,stonetower_small_keys:1",
           "mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5687,7 +5508,6 @@
           "lightarrows,bow,magic,stonetower_small_keys:1",
           "mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5702,7 +5522,6 @@
           "lightarrows,bow,magic,stonetower_small_keys:1,goron",
           "deku,mirrorshield,$has_explosives,stonetower_small_keys:2,goron"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5717,7 +5536,6 @@
           "lightarrows,bow,magic,stonetower_small_keys:1,deku",
           "deku,mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5732,7 +5550,6 @@
           "bow,lightarrows,magic,stonetower_small_keys:1",
           "deku,mirrorshield,goron,zora,$has_explosives,stonetower_small_keys:2"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5750,7 +5567,6 @@
           "bow,lightarrows,magic,zora,twinstone,isttuphuman",
           "bow,lightarrows,magic,stice"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5775,7 +5591,6 @@
           "$inverted_access,lightarrows,bow,magic,isttbkearly,deku,damage",
           "$inverted_access,hookshot,bow,lightarrows,magic,$istteyegore,isttuphuman,damage"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5789,7 +5604,6 @@
         "access_rules": [
           "bow,lightarrows,magic,zora"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5808,7 +5622,6 @@
           "deku,bow,magic,lightarrows,stonetower_small_keys:3,damage,twinstone",
           "deku,bow,magic,lightarrows,stonetower_small_keys:3,damage,$inverted_access"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes"
         ],
@@ -5840,7 +5653,6 @@
         "access_rules": [
           "bow,lightarrows,magic"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes,twinstone"
         ],
@@ -5857,7 +5669,6 @@
           "bow,lightarrows,magic,deku,elegy,ostt,zora,[icearrows],eponasong,gibdo",
           "bow,lightarrows,magic,deku,elegy,ostt,zora,[icearrows],eponasong,garo"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes,twinstone"
         ],
@@ -5872,7 +5683,6 @@
           "bow,lightarrows,magic,firearrows,deku",
           "bow,lightarrows,magic,firearrows,hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes,twinstone"
         ],
@@ -5889,7 +5699,6 @@
           "deku,lightarrows,bow,magic,hookshot,stonetower_small_keys:1,damage",
           "deku,$longjump,hookshot"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "fairy_yes,twinstone"
         ],

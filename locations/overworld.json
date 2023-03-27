@@ -16,7 +16,6 @@
                 "access_rules": [
                   "$has_age|child"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -69,22 +68,18 @@
             "sections": [
               {
                 "name": "Item 1",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 2",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 3",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 4",
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -102,7 +97,6 @@
                 "visibility_rules": [
                   "hidden_region"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
@@ -178,7 +172,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -246,7 +239,6 @@
                 "access_rules": [
                   "$can_use_slingshot"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -266,7 +258,6 @@
                 "access_rules": [
                   "$has_age|adult,cojiro"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -274,7 +265,6 @@
                 "access_rules": [
                   "$has_age|adult,oddpotion"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -282,7 +272,6 @@
                 "access_rules": [
                   "$has_age|child,$can_play|saria"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -352,7 +341,6 @@
             "sections": [
               {
                 "name": "LW Gift from Saria",                
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -479,7 +467,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -502,7 +489,6 @@
                 "access_rules": [
                   "@Lost Woods Deep As Child,skullmask"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -511,7 +497,6 @@
                 "access_rules": [
                   "@Lost Woods Deep As Child,maskoftruth"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -557,7 +542,6 @@
                 "access_rules": [
                   "@Sacred Meadow As Adult"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
                 "item_count": 1
@@ -640,7 +624,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -691,13 +674,11 @@
               {
                 "name": "HF Ocarina of Time Item",
                 "short_name": "Item",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Song from Ocarina of Time",
                 "short_name": "Song",
-                "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
                 "item_count": 1
@@ -781,7 +762,6 @@
                 "access_rules": [
                   "$can_dive_big"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -808,7 +788,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -835,7 +814,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -851,7 +829,6 @@
                 "visibility_rules": [
                   "hidden_region"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
@@ -879,7 +856,6 @@
                 "access_rules": [
                   "$has_age|child,scale1"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -899,7 +875,6 @@
                 "access_rules": [
                   "$has_age|child"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -929,7 +904,6 @@
                   "$can_use_bow,$can_longshot_scarecrow",
                   "$can_use_bow,water"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -985,7 +959,6 @@
                 "access_rules": [
                   "scale2"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -993,7 +966,6 @@
                 "access_rules": [
                   "$has_age|adult,speedfrog"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -1110,7 +1082,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -1136,7 +1107,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -1323,7 +1293,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -1337,7 +1306,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -1480,7 +1448,6 @@
                   "$can_use_boomerang",
                   "$has_age|adult,$can_play|time"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -1512,7 +1479,6 @@
                 "access_rules": [
                   "$has_age|adult,forestmed,noct_meds:2"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
                 "item_count": 1
@@ -1534,7 +1500,6 @@
                 "access_rules": [
                   "$has_age|child"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -1596,7 +1561,6 @@
                 "access_rules": [
                   "skulltula:20"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -1605,7 +1569,6 @@
                 "access_rules": [
                   "skulltula:30"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -1614,7 +1577,6 @@
                 "access_rules": [
                   "skulltula:40"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -1623,7 +1585,6 @@
                 "access_rules": [
                   "skulltula:50"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -1646,22 +1607,18 @@
             "sections": [
               {
                 "name": "Item 1",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 2",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 3",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 4",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -1681,22 +1638,18 @@
             "sections": [
               {
                 "name": "Item 1",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 2",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 3",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 4",
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -1885,7 +1838,6 @@
                     "access_rules": [
                       "$can_play|sun"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -1907,7 +1859,6 @@
                       "$has_age|child,$has_age|adult,beans",
                       "$can_use_longshot"
                     ],
-                    "capture_item": true,
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
@@ -1931,7 +1882,6 @@
                   {
                     "name": "Song from Royal Familys Tomb",
                     "short_name": "Song",
-                    "capture_item": true,
                     "chest_unopened_img": "images/grey_note.png",
                     "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
@@ -1942,7 +1892,6 @@
                     "access_rules": [
                       "$has_fire"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -1969,7 +1918,6 @@
                     "visibility_rules": [
                       "setting_tokens_overworld"
                     ],
-                    "capture_item": true,
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
@@ -2345,7 +2293,6 @@
                   "@Goron City As Adult,lift2",
                   "@Goron City As Adult,$can_use_hammer"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -2443,7 +2390,6 @@
                   "@Goron City As Child,$has_explosives_bool,$can_play|lullaby",
                   "@Goron City As Child,$has_explosives_bool,$has_fire"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -2465,7 +2411,6 @@
                 "access_rules": [
                   "@Goron City As Child,$can_play|lullaby,$can_play|saria"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -2548,22 +2493,18 @@
             "sections": [
               {
                 "name": "Item 1",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 2",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 3",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 4",
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -2645,7 +2586,6 @@
                   "@Death Mountain Crater Top As Child",
                   "@Death Mountain Crater Top As Adult"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -2668,7 +2608,6 @@
                 "access_rules": [
                   "@Death Mountain Crater Warp As Adult,@Death Mountain Crater Warp As Child,beans"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -2739,7 +2678,6 @@
                 "access_rules": [
                   "@Death Mountain Crater Warp As Adult"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
                 "item_count": 1
@@ -2773,7 +2711,6 @@
                 "visibility_rules": [
                   "hidden_region"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/deku_scrub.png",
                 "chest_opened_img": "images/deku_scrub_grey.png",
                 "item_count": 1
@@ -2799,7 +2736,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -2907,13 +2843,11 @@
                   {
                     "name": "Market Bombchu Bowling First Prize",
                     "short_name": "1st prize",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Market Bombchu Bowling Second Prize",
                     "short_name": "2nd prize",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -2934,7 +2868,6 @@
                     "access_rules": [
                       "@Hyrule Town As Child,$has_lens_strict"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -2954,22 +2887,18 @@
                 "sections": [
                   {
                     "name": "Item 1",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 2",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 3",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 4",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ]
@@ -2982,22 +2911,18 @@
                 "sections": [
                   {
                     "name": "Item 1",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 2",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 3",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 4",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ]
@@ -3010,22 +2935,18 @@
                 "sections": [
                   {
                     "name": "Item 1",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 2",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 3",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Item 4",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ]
@@ -3039,7 +2960,6 @@
                     "access_rules": [
                       "@Hyrule Town As Adult,$can_play|epona,$can_use_bow,bottle"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -3389,7 +3309,6 @@
                   "@Zora River As Child",
                   "@Zora River As Adult,$has_hover_boots"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -3495,7 +3414,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -3521,7 +3439,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -3656,22 +3573,18 @@
             "sections": [
               {
                 "name": "Item 1",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 2",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 3",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Item 4",
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -3898,7 +3811,6 @@
                 "visibility_rules": [
                   "hidden_region"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
@@ -3924,7 +3836,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -4270,7 +4181,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -4336,7 +4246,6 @@
                 "access_rules": [
                   "@Dessert Colossus As Child,@Dessert Colossus As Adult,beans"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -4435,7 +4344,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -4462,7 +4370,6 @@
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
-                "capture_item": true,
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
@@ -4502,7 +4409,6 @@
             ],
             "chest_unopened_img": "images/system/unknownsong.png",
             "chest_opened_img": "images/system/unknownsong_check.png",
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -4530,7 +4436,6 @@
                     "name": "Clock Tower HP",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -4556,7 +4461,6 @@
                       "mm_moontear,mm_deku",
                       "mm_hookshot"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4579,7 +4483,6 @@
                       "mm_moontear,mm_deku",
                       "mm_hookshot"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4601,7 +4504,6 @@
                     "access_rules": [
                       "mm_moontear"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4625,7 +4527,6 @@
                     "access_rules": [
                       "mm_postman"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4675,7 +4576,6 @@
                     "name": "North Clock Town Tree HP",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4720,7 +4620,6 @@
                     "access_rules": [
                       "$mm_can_fight"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4744,7 +4643,6 @@
                     "access_rules": [
                       "mm_keaton"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4774,7 +4672,6 @@
                     "access_rules": [
                       "mm_deku"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -4784,7 +4681,6 @@
                     "access_rules": [
                       "mm_deku"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4808,7 +4704,6 @@
                     "access_rules": [
                       "mm_clocktown_strayfairy"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -4820,7 +4715,6 @@
                       "mm_goron,mm_clocktown_strayfairy",
                       "mm_zora,mm_clocktown_strayfairy"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4844,7 +4738,6 @@
                       "[mm_towntinglejump],mm_sword1",
                       "[mm_towntinglejump],mm_fairysword"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -4854,7 +4747,6 @@
                       "[mm_towntinglejump],mm_sword1",
                       "[mm_towntinglejump],mm_fairysword"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ]
@@ -4870,7 +4762,6 @@
                 "sections": [
                   {
                     "name": "East Clock Town Chest",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4890,7 +4781,6 @@
                     "name": "Gift From Madame Aroma",
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -4900,7 +4790,6 @@
                     "access_rules": [
                       "mm_couple"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4922,7 +4811,6 @@
                     "access_rules": [
                       "mm_bow"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -4932,7 +4820,6 @@
                     "access_rules": [
                       "mm_bow"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4955,7 +4842,6 @@
                     "access_rules": [
                       "mm_goron"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -4978,7 +4864,6 @@
                     "access_rules": [
                       "mm_bomb,mm_bow"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -4990,7 +4875,6 @@
                       "mm_bow",
                       "$mm_can_use_deku_bubble"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5012,17 +4896,14 @@
                     "access_rules": [
                       "mm_roomkey"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Inn Employee Room Chest - Final Night",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Room Reservation Mixup - Day 1: from 1:45 PM to 4 PM",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5030,7 +4911,6 @@
                     "access_rules": [
                       "$mm_meet_anju"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5040,7 +4920,6 @@
                     "access_rules": [
                       "mm_pendant,$mm_meet_anju,$mm_sun_mask"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5050,7 +4929,6 @@
                     "access_rules": [
                       "mm_allnightmask"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5060,7 +4938,6 @@
                     "access_rules": [
                       "mm_allnightmask"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5070,7 +4947,6 @@
                     "access_rules": [
                       "$mm_has_paper"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5093,7 +4969,6 @@
                     "access_rules": [
                       "mm_ocarina,mm_deku,mm_goron,mm_zora,mm_romanimask"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5101,7 +4976,6 @@
                     "access_rules": [
                       "mm_kafeimask,mm_deliverytomama"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5126,7 +5000,6 @@
                     "access_rules": [
                       "$mm_has_explosives"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5150,7 +5023,6 @@
                 "sections": [
                   {
                     "name": "200 Rupees Deposit",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5160,7 +5032,6 @@
                     "access_rules":[
                       "mm_adultwallet"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5170,7 +5041,6 @@
                     "access_rules": [
                       "mm_giantwallet"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5194,7 +5064,6 @@
                     "access_rules": [
                       "mm_kamaro"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5213,7 +5082,6 @@
                 "sections": [
                   {
                     "name": "Bomb Bag (50 Rupees)",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5222,7 +5090,6 @@
                       "$mm_can_fight",
                       "mm_adultwallet"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5246,7 +5113,6 @@
                     "access_rules": [
                       "$mm_can_fight,mm_giantwallet"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5269,7 +5135,6 @@
                     "access_rules": [
                       "mm_bunnyhood"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5279,7 +5144,6 @@
                     "access_rules": [
                       "mm_deliverytomama"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5302,7 +5166,6 @@
                     "access_rules": [
                       "mm_sword"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5328,7 +5191,6 @@
                     "name": "Night 1 or 2",
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5352,7 +5214,6 @@
                     "visibility_rules": [
                       "setting_mm_shuffle_townfairy_yes"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5380,17 +5241,14 @@
                 "sections": [
                   {
                     "name": "Gift From Kafei - Day 2: 4:30 PM",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM First Item",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM Second Item",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5417,7 +5275,6 @@
                     "access_rules":[
                       "$mm_has_weapon_range"
                     ],  
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
@@ -5425,7 +5282,6 @@
                     "access_rules":[
                       "$mm_has_weapon_range"
                     ],  
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -5455,7 +5311,6 @@
                 "access_rules": [
                   "mm_zora"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5474,7 +5329,6 @@
             "sections": [
               {
                 "name": "Chest in the grass",
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5482,12 +5336,10 @@
                 "access_rules": [
                   "$mm_can_use_beans"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Grotto near stump",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5511,7 +5363,6 @@
                 "access_rules": [
                   "$mm_can_play|mm_songofhealing"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5530,7 +5381,6 @@
             "sections": [
               {
                 "name": "Climb the pillar",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5556,7 +5406,6 @@
                   "mm_bow",
                   "mm_deku"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5583,7 +5432,6 @@
                   "mm_goron",
                   "mm_bow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5610,7 +5458,6 @@
                 "visibility_rules": [
                   "cowsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5623,7 +5470,6 @@
                 "visibility_rules": [
                   "cowsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5647,7 +5493,6 @@
                 "access_rules": [
                   "$mm_can_break_boulders,mm_zora"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5671,7 +5516,6 @@
                 "access_rules": [
                   "mm_adultwallet,bombers_code"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5697,7 +5541,6 @@
                   "$mm_can_break_boulders,mm_ocarina,mm_zora,mm_bossanova",
                   "$mm_can_break_boulders,mm_goron,mm_lullaby"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5737,7 +5580,6 @@
                 "access_rules": [
                   "bombers_code"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5765,7 +5607,6 @@
                 "access_rules": [
                   "$mm_has_projectile"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5773,7 +5614,6 @@
                 "access_rules": [
                   "$mm_has_projectile"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -5789,7 +5629,6 @@
                 "access_rules": [
                   "$mm_can_play|mm_epona"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5799,7 +5638,6 @@
                 "visibility_rules": [
                   "shopsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5829,7 +5667,6 @@
                 "access_rules": [
                   "$mm_can_use_keg"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5837,7 +5674,6 @@
                 "access_rules": [
                   "$mm_can_use_keg,mm_bow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5847,7 +5683,6 @@
                 "access_rules": [
                   "$mm_can_use_keg,mm_bow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5871,7 +5706,6 @@
                 "access_rules": [
                   "mm_bremenmask"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5895,7 +5729,6 @@
                   "mm_hookshot",
                   "mm_zoramask"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5905,7 +5738,6 @@
                 "access_rules": [
                   "mm_maskoftruth"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5932,7 +5764,6 @@
                 "visibility_rules": [
                   "cowsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5945,7 +5776,6 @@
                 "visibility_rules": [
                   "cowsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -5958,7 +5788,6 @@
                 "visibility_rules": [
                   "cowsanity_yes,closecows"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -5988,7 +5817,6 @@
                 "access_rules": [
                   "$mm_has_weapon_range"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6007,7 +5835,6 @@
             "sections": [
               {
                 "name": "Get in",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6029,7 +5856,6 @@
                 "access_rules": [
                   "$mm_has_projectile"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6037,7 +5863,6 @@
                 "access_rules": [
                   "$mm_has_projectile"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -6051,7 +5876,6 @@
                 "access_rules": [
                   "mm_bow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6061,7 +5885,6 @@
                 "access_rules": [
                   "mm_bow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6083,7 +5906,6 @@
                 "access_rules": [
                   "mm_towndeed"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6098,7 +5920,6 @@
                 "visibility_rules": [
                   "shopsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6108,7 +5929,6 @@
                 "access_rules": [
                   "mm_deku,mm_towndeed"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6130,7 +5950,6 @@
                 "access_rules": [
                   "mm_bottle"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6140,7 +5959,6 @@
                 "access_rules": [
                   "mm_pictobox"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6153,7 +5971,6 @@
                 "visibility_rules": [
                   "misc_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6166,7 +5983,6 @@
                 "visibility_rules": [
                   "misc_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6176,7 +5992,6 @@
                 "access_rules": [
                   "mm_woodfall,mm_bottle,mm_bow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6195,7 +6010,6 @@
             "sections": [
               {
                 "name": "Talk to Kotake after seeing Koume in Woods",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6217,7 +6031,6 @@
                 "visibility_rules": [
                   "shopsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6225,7 +6038,6 @@
                 "visibility_rules": [
                   "shopsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6233,7 +6045,6 @@
                 "visibility_rules": [
                   "shopsanity_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6247,7 +6058,6 @@
                 "visibility_rules": [
                   "misc_yes"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6266,7 +6076,6 @@
             "sections": [
               {
                 "name": "Day 2",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6297,7 +6106,6 @@
                 "sections": [
                   {
                     "name": "Get in",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -6327,7 +6135,6 @@
                         "access_rules": [
                           "mm_ocarina,$mm_can_use_beans"
                         ],
-                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -6348,7 +6155,6 @@
                         "name": "Get it",
                         "chest_unopened_img": "images/system/heartpiece.png",
                         "chest_opened_img": "images/system/heartpiece_grey.png",
-                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -6371,7 +6177,6 @@
                           "$mm_can_use_beans",
                           "mm_hookshot"
                         ],
-                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -6395,7 +6200,6 @@
                         "access_rules": [
                           "mm_deku,$mm_open_woodfall,mm_woodfall,$mm_deku_princess"
                         ],
-                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
@@ -6421,7 +6225,6 @@
                     "access_rules": [
                       "mm_deku"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -6449,12 +6252,10 @@
                       "mm_deku",
                       "mm_hookshot"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Behind Temple Platform",
-                    "capture_item": true,
                     "access_rules":[
                       "mm_deku",
                       "mm_hookshot,$mm_can_play|mm_soaring"
@@ -6463,7 +6264,6 @@
                   },
                   {
                     "name": "Water Level Stump",
-                    "capture_item": true,
                     "access_rules":[
                       "mm_deku",
                       "mm_hookshot"
@@ -6489,7 +6289,6 @@
                     "access_rules": [
                       "mm_woodfall_stray_fairies:15,mm_deku"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -6533,7 +6332,6 @@
                 "access_rules": [
                   "$mm_goron_food"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6557,7 +6355,6 @@
                 "access_rules": [
                   "mm_snowhead,$mm_frog1,$mm_frog2,$mm_frog3,$mm_frog4"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6579,7 +6376,6 @@
                 "access_rules": [
                   "mm_snowhead,$mm_can_use_lens"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6602,7 +6398,6 @@
                   "mm_snowhead,mm_goron",
                   "mm_snowhead,mm_zora"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6624,7 +6419,6 @@
                 "access_rules": [
                   "$mm_blacksmith_enabled,mm_adultwallet"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6632,7 +6426,6 @@
                 "access_rules": [
                   "$mm_blacksmith_enabled,mm_adultwallet,mm_bottledust_static"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6656,7 +6449,6 @@
                 "access_rules": [
                   "$mm_can_use_lens_strict,$mm_can_play|mm_healing"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6678,12 +6470,10 @@
             "sections": [
               {
                 "name": "Map: Mountain",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Map: Ranch",
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -6700,7 +6490,6 @@
                   "mm_snowhead,$mm_has_explosives",
                   "$mm_well_hot_water,$mm_can_play|mm_soaring,$mm_has_explosives"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6723,7 +6512,6 @@
                   "$mm_has_explosives,mm_goron",
                   "$mm_has_explosives,$mm_can_hookshot_scarecrow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6747,7 +6535,6 @@
                   "mm_goron,mm_ocarina,$mm_can_use_fire_arrows",
                   "mm_goron,mm_ocarina,$mm_well_hot_water,$mm_can_play|mm_soaring"                  
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6771,12 +6558,10 @@
                 "name": "Gold Chest",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Chest Inside Nook",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6802,7 +6587,6 @@
                 "access_rules": [
                   "mm_snowhead,$mm_goron_fast_roll"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6824,7 +6608,6 @@
                 "access_rules": [
                   "mm_woodfall_deed,mm_deku"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6832,7 +6615,6 @@
                 "access_rules": [
                   "mm_goron,mm_adultwallet"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6842,7 +6624,6 @@
                 "access_rules": [
                   "mm_woodfall_deed,mm_deku"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6865,7 +6646,6 @@
                   "$mm_can_use_fire_arrows,mm_goron",
                   "mm_snowhead,mm_goron"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6886,7 +6666,6 @@
                 "name": "Lens chest",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6894,7 +6673,6 @@
                 "access_rules": [
                   "$mm_can_use_lens"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6902,7 +6680,6 @@
                 "access_rules": [
                   "$mm_has_explosives"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6926,7 +6703,6 @@
                 "access_rules": [
                   "$mm_can_play|mm_lullaby_half,mm_goron"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -6945,17 +6721,14 @@
             "sections": [
               {
                 "name": "10 Bombs (40 Rupees)",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "10 Arrows (40 Rupees)",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Red Potion (80 Rupees)",
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -6972,7 +6745,6 @@
                 "access_rules": [
                   "$mm_has_explosives"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -6982,7 +6754,6 @@
                 "access_rules": [
                   "$mm_can_use_lens,$mm_can_hookshot_scarecrow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7010,7 +6781,6 @@
                     "access_rules": [
                       "$mm_can_play|lullaby,mm_snowhead_stray_fairies:15"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -7045,7 +6815,6 @@
         "sections": [
           {
             "name": "Grotto Behind Fisherman Hut",
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7090,7 +6859,6 @@
             "access_rules": [
               "$mm_can_play|mm_healing"
             ],
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7117,7 +6885,6 @@
                 "access_rules": [
                   "$mm_can_use_beans,$mm_can_hookshot_scarecrow"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7141,7 +6908,6 @@
                 "access_rules": [
                   "mm_great_bay,mm_hookshot"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7166,7 +6932,6 @@
                   "mm_bow",
                   "mm_hookshot"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -7175,7 +6940,6 @@
                   "mm_bow",
                   "mm_hookshot"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -7191,7 +6955,6 @@
                 "access_rules": [
                   "mm_bottle"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -7201,7 +6964,6 @@
                 "access_rules": [
                   "mm_ocarina,mm_zora,mm_zoraegg_hookshot_room,mm_zoraegg_barrel_maze,mm_zoraegg_lone_guard,mm_zoraegg_treasure_room,mm_zoraegg_pinnacle_rock"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7228,12 +6990,10 @@
         "sections": [
           {
             "name": "Sea Snake Upper Chest",
-            "capture_item": true,
             "item_count": 1
           },
           {
             "name": "Sea Snake Lower Chest",
-            "capture_item": true,
             "item_count": 1
           },
           {
@@ -7243,7 +7003,6 @@
             "access_rules": [
               "mm_seahorse"
             ],
-            "capture_item": true,
             "item_count": 1
           },
           {
@@ -7277,7 +7036,6 @@
                 "access_rules":[
                   "mm_zora"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7301,7 +7059,6 @@
                 "name": "Zora Cape Like Like Treasure",
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7325,7 +7082,6 @@
                 "access_rules": [
                   "$mm_can_break_boulders"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7355,7 +7111,6 @@
                 "access_rules": [
                   "mm_zora,mm_ocarina"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -7363,7 +7118,6 @@
                 "access_rules": [
                   "mm_snowhead_deed,mm_goron,mm_zora"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -7373,7 +7127,6 @@
                 "access_rules": [
                   "$mm_can_use_fire_arrows"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -7383,7 +7136,6 @@
                 "access_rules": [
                   "mm_goron,mm_snowhead_deed,mm_deku,mm_zora"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7408,17 +7160,14 @@
             "sections": [
               {
                 "name": "Shield (90 Rupees)",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "10 Arrows (20 Rupees)",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Red Potion (60 Rupees)",
-                "capture_item": true,
                 "item_count": 1
               }
             ]
@@ -7434,7 +7183,6 @@
                 "access_rules": [
                   "mm_greatbay_stray_fairies:15,mm_hookshot,$mm_has_explosives"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7458,14 +7206,12 @@
             "sections": [
               {
                 "name": "Beaver Brothers Race Prize",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Beaver Brothers Race Rematch",
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7492,7 +7238,6 @@
                 "access_rules": [
                   "mm_hookshot"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -7500,7 +7245,6 @@
                 "access_rules": [
                   "mm_hookshot"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7533,7 +7277,6 @@
                 "access_rules": [
                   "mm_hookshot"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7555,7 +7298,6 @@
                 "access_rules": [
                   "mm_goron"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7588,7 +7330,6 @@
             "access_rules": [
               "@Road to Ikana Center,$mm_can_use_lens_strict,mm_bottle"
             ],
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7618,7 +7359,6 @@
         "sections": [
           {
             "name": "Defeat Captain Keeta",
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7642,7 +7382,6 @@
             "access_rules": [
               "@Ikana Graveyard,$mm_has_explosives"
             ],
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7673,7 +7412,6 @@
               "mm_hookshot",
               "mm_deku"
             ],
-            "capture_item": true,
             "item_count": 1
           },
           {
@@ -7684,7 +7422,6 @@
               "$mm_can_fight",
               "$mm_has_explosives"
             ],
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7711,7 +7448,6 @@
             "access_rules": [
               "$mm_can_fight,$mm_has_explosives,$mm_can_use_lens"
             ],
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7738,7 +7474,6 @@
             "access_rules": [
               "$mm_has_weapon_range"
             ],
-            "capture_item": true,
             "item_count": 1
           }
         ],
@@ -7769,7 +7504,6 @@
                 "access_rules": [
                   "mm_great_bay_deed,mm_zora"
                 ],
-                "capture_item": true,
                 "item_count": 1
               },
               {
@@ -7779,7 +7513,6 @@
                 "access_rules": [
                   "mm_great_bay_deed,mm_zora,mm_deku"
                 ],
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7800,7 +7533,6 @@
             "sections": [
               {
                 "name": "Behind the waterfall",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7824,29 +7556,24 @@
             "sections": [
               {
                 "name": "Dinolfos",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Wizrobe",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Wart",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Garo Master",
-                "capture_item": true,
                 "item_count": 1
               },
               {
                 "name": "Defeat all four minibosses",
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
-                "capture_item": true,
                 "item_count": 1
               }
             ],
@@ -7874,12 +7601,10 @@
                 "sections": [
                   {
                     "name": "Map: Canyon",
-                    "capture_item": true,
                     "item_count": 1
                   },
                   {
                     "name": "Map: Clock Town",
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ]
@@ -7895,7 +7620,6 @@
                     "access_rules": [
                       "$mm_can_play|mm_songofstorms,$mm_can_play|mm_healing"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -7919,7 +7643,6 @@
                     "access_rules": [
                       "mm_bow,mm_hookshot,$mm_can_use_deku_bubble"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -7943,7 +7666,6 @@
                     "access_rules": [
                       "mm_stonetower_stray_fairies:15"
                     ],
-                    "capture_item": true,
                     "item_count": 1
                   }
                 ],
@@ -7975,7 +7697,6 @@
                         "access_rules": [
                           "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
                         ],
-                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -7983,7 +7704,6 @@
                         "access_rules": [
                           "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
                         ],
-                        "capture_item": true,
                         "item_count": 1
                       },
                       {
@@ -7991,7 +7711,6 @@
                         "access_rules": [
                           "$mm_can_grow_magic_plant,mm_bow,mm_lightarrows,mm_magic"
                         ],
-                        "capture_item": true,
                         "item_count": 1
                       }
                     ],
