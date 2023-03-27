@@ -3409,7 +3409,7 @@
         "short_name": "Behind Skull on Wall",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3424,7 +3424,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3438,7 +3438,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3452,8 +3452,8 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3467,7 +3467,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3481,7 +3481,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3495,8 +3495,8 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3510,7 +3510,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3524,10 +3524,10 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_bow",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora",
-          "@Ocean Spider House/Ocean Spider House Back,$mm_can_use_deku_bubble"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_bow",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora",
+          "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_deku_bubble"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3541,7 +3541,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3555,7 +3555,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3569,8 +3569,8 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3584,7 +3584,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3599,8 +3599,8 @@
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -3613,7 +3613,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3626,7 +3626,7 @@
         "short_name": "Basement Pot on Crates",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3641,7 +3641,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "capture_item": true,
         "visibility_rules": [
@@ -3654,11 +3654,11 @@
         "short_name": "Storage Room Alcove",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora",
-          "@Ocean Spider House/Ocean Spider House Back,mm_goron,mm_bow",
-          "@Ocean Spider House/Ocean Spider House Back,mm_goron,$mm_can_use_deku_bubble",
-          "@Ocean Spider House/Ocean Spider House Back,mm_goron,$mm_has_explosives"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,mm_bow",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_can_use_deku_bubble",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_has_explosives"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3672,7 +3672,7 @@
         "short_name": "Behind Boat",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3686,7 +3686,7 @@
         "short_name": "Storage Room Rafters",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3700,8 +3700,8 @@
         "short_name": "Storage Room Behind Web",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,$mm_can_use_fire_arrows,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,$mm_can_use_fire_arrows,mm_zora"
+          "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_fire_arrows,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_fire_arrows,mm_zora"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3715,7 +3715,7 @@
         "short_name": "Mask Room Chandelier 1",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3729,7 +3729,7 @@
         "short_name": "Mask Room Chandelier 2",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3743,7 +3743,7 @@
         "short_name": "Mask Room Chandelier 3",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3757,10 +3757,10 @@
         "short_name": "Mask Room Painting",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora",
-          "@Ocean Spider House/Ocean Spider House Back,mm_goron,mm_bow",
-          "@Ocean Spider House/Ocean Spider House Back,mm_goron,$mm_can_use_deku_bubble"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,mm_bow",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_can_use_deku_bubble"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3774,8 +3774,8 @@
         "short_name": "Mask Room Black Space",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Ocean Spider House/Ocean Spider House Back,mm_zora"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
+          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3789,7 +3789,7 @@
         "short_name": "Mask Room Pot",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back"
+          "@Oceanside Spider House/Ocean Spider House Back"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "capture_item": true,
@@ -3803,7 +3803,7 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "access_rules": [
-          "@Ocean Spider House/Ocean Spider House Back,mm_bow,mm_captain"
+          "@Oceanside Spider House/Ocean Spider House Back,mm_bow,mm_captain"
         ],
         "capture_item": true,
         "item_count": 1
@@ -5437,6 +5437,471 @@
         "size": 25,
         "x": 100,
         "y": 350
+      }
+    ]
+  },
+  {
+    "name": "Stone Tower Temple",
+    "short_name": "STT",
+    "parent": "Stone Tower",
+    "access_rules": [],
+    "sections": [
+      {
+        "name": "Lava Room Behind Sun Block - Map",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Map",
+        "access_rules": [
+          "mirrorshield,$has_explosives,goron",
+          "bow,lightarrows,magic,$has_explosives,goron",
+          "stonetower_small_keys:1,bow,lightarrows,magic,zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Kill Armos in Lava Room - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Stone Tower Small Key 1",
+        "access_rules": [
+          "mirrorshield,$has_explosives,goron",
+          "bow,lightarrows,magic,$has_explosives,goron",
+          "stonetower_small_keys:1,bow,lightarrows,magic,zora"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Across Water in Bridge Room - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Stone Tower Small Key 2",
+        "access_rules": [
+          "lightarrows,bow,magic,zora",
+          "$has_explosives,stonetower_small_keys:1,goron"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Behind Sun Block - Compass",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Compass",
+        "access_rules": [
+          "stonetower_small_keys:1,mirrorshield,goron,zora",
+          "bow,lightarrows,magic"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Garo Master Miniboss - Light Arrow",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Light Arrows",
+        "access_rules": [
+          "$has_explosives,mirrorshield,deku,stonetower_small_keys:2,goron,zora",
+          "bow,lightarrows,magic,stonetower_small_keys:1"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "badge_size": 21,
+        "x": 956,
+        "y": 213
+      }
+    ]
+  },
+  {
+    "name": "Inverted Stone Tower Temple",
+    "short_name": "ISTT",
+    "parent": "Stone Tower",
+    "access_rules": [
+      "bow,lightarrows,magic,[sword1]",
+      "bow,lightarrows,magic,[fairysword]"
+    ],
+    "sections": [
+      {
+        "name": "Across Bridge - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Inverted Tower Small Key 3",
+        "visibility_rules": [
+          "twinstone"
+        ],
+        "access_rules": [
+          "bow,lightarrows,magic,deku",
+          "bow,lightarrows,magic,isttuphuman"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Chest on Fire - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Inverted Tower Small Key 4",
+        "visibility_rules": [
+          "twinstone"
+        ],
+        "access_rules": [
+          "deku,bow,lightarrows,magic,stonetower_small_keys:1,hookshot",
+          "deku,bow,lightarrows,magic,isttbkearly,damage"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Defeat Eyegore - Giant's Mask",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Giant's Mask",
+        "visibility_rules": [
+          "twinstone"
+        ],
+        "access_rules": [
+          "bow,lightarrows,magic,hookshot,deku,$istteyegore"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Inverted Stone Tower Temple Boss Key Chest",
+        "chest_unopened_img": "images/system/chest_golden_closed.png",
+        "chest_opened_img": "images/system/chest_golden_open.png",
+        "short_name": "Boss Key",
+        "visibility_rules": [
+          "twinstone"
+        ],
+        "access_rules": [
+          "bow,lightarrows,magic,deku,isttbkearly,damage",
+          "bow,lightarrows,magic,deku,stonetower_small_keys:1,hookshot",
+          "bow,lightarrows,magic,isttuphuman,isttbkearly,damage"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Twinmold",
+        "hosted_item": "stonetower",
+        "chest_unopened_img": "images/system/heartcontainer.png",
+        "chest_opened_img": "images/system/heartcontainer_grey.png",
+        "visibility_rules": [
+          "twinstone"
+        ],
+        "access_rules": [
+          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,[twinbow]",
+          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,giantmask,sword1"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Oath to Order",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "visibility_rules": [
+          "twinstone"
+        ],
+        "access_rules": [
+          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,[twinbow]",
+          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,giantmask,sword1"
+        ],
+        "capture_item": true,
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "badge_size": 21,
+        "x": 956,
+        "y": 223
+      }
+    ]
+  },
+  {
+    "name": "Stone Tower Temple Stray Fairies",
+    "short_name": "Stone Tower Fairies",
+    "parent": "Stone Tower",
+    "access_rules": [
+      "fairy_yes"
+    ],
+    "sections": [
+      {
+        "name": "Shoot the Statue Eye",
+        "short_name": "Entrance Eye Switch",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "bow"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Ceiling Chest",
+        "short_name": "Basement Fairy",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "$has_explosives,goron",
+          "lightarrows,bow,magic,stonetower_small_keys:1,zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Room Sun Switch",
+        "short_name": "Sun in Mirror Room",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "lightarrows,bow,magic,stonetower_small_keys:1",
+          "mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Room Right Block",
+        "short_name": "Mirror Room Sun Block",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "lightarrows,bow,magic,stonetower_small_keys:1",
+          "mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Fire Ring",
+        "short_name": "Lava Room Fire Ring",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "lightarrows,bow,magic,stonetower_small_keys:1,goron",
+          "deku,mirrorshield,$has_explosives,stonetower_small_keys:2,goron"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Ledge",
+        "short_name": "Lava Room Chest",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "lightarrows,bow,magic,stonetower_small_keys:1,deku",
+          "deku,mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eyegore Chest",
+        "short_name": "Defeat Eyegore",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "bow,lightarrows,magic,stonetower_small_keys:1",
+          "deku,mirrorshield,goron,zora,$has_explosives,stonetower_small_keys:2"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Chest",
+        "short_name": "Underwater Chest",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "bow,lightarrows,magic,zora,$inverted_access,deku",
+          "bow,lightarrows,magic,zora,twinstone,deku",
+          "bow,lightarrows,magic,zora,$inverted_access,isttuphuman",
+          "bow,lightarrows,magic,zora,twinstone,isttuphuman",
+          "bow,lightarrows,magic,stice"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Death Armos Switch Chest in Inverted",
+        "short_name": "Inverted Death Armos",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "twinstone,$longjump",
+          "twinstone,lightarrows,bow,magic,isttbkearly,deku,damage",
+          "twinstone,deku,lightarrows,hookshot,goron,bow,magic,stonetower_small_keys:1",
+          "twinstone,deku,bow,lightarrows,hookshot,magic,stonetower_small_keys:1,damage",
+          "twinstone,lightarrows,bow,magic,isttbkearly,deku,damage",
+          "twinstone,hookshot,bow,lightarrows,magic,$istteyegore,isttuphuman,damage",
+          "$inverted_access,$longjump",
+          "$inverted_access,lightarrows,bow,magic,isttbkearly,deku,damage",
+          "$inverted_access,deku,lightarrows,hookshot,goron,bow,magic,stonetower_small_keys:1",
+          "$inverted_access,deku,bow,lightarrows,hookshot,magic,stonetower_small_keys:1,damage",
+          "$inverted_access,lightarrows,bow,magic,isttbkearly,deku,damage",
+          "$inverted_access,hookshot,bow,lightarrows,magic,$istteyegore,isttuphuman,damage"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bridge Room Crystal Switch",
+        "short_name": "Bridge Room Switch",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "bow,lightarrows,magic,zora"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pre-Boss Crystal Switch",
+        "short_name": "Pre Boss Crystal Switch",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "lightarrows,$has_explosives,bow,magic,stonetower_small_keys:1,switchwalls",
+          "deku,lightarrows,goron,stonetower_small_keys:3,bow,magic,twinstone",
+          "deku,lightarrows,goron,stonetower_small_keys:3,bow,magic,$inverted_access",
+          "deku,mirrorshield,goron,zora,$has_explosives,stonetower_small_keys:2,switchwalls",
+          "deku,bow,magic,lightarrows,stonetower_small_keys:3,damage,twinstone",
+          "deku,bow,magic,lightarrows,stonetower_small_keys:3,damage,$inverted_access"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "badge_size": 21,
+        "x": 970,
+        "y": 213
+      }
+    ]
+  },
+  {
+    "name": "Inverted Stone Tower Temple Stray Fairies",
+    "short_name": "Inverted Stone Tower Fairies",
+    "parent": "Stone Tower",
+    "access_rules": [
+      "fairy_yes,bow,magic,lightarrows"
+    ],
+    "sections": [
+      {
+        "name": "Inverted Entrance Sun",
+        "short_name": "Entrance Sun",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "bow,lightarrows,magic"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes,twinstone"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Updraft Room Flaming Chest",
+        "short_name": "Updraft Flaming Chest",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "bow,lightarrows,magic,deku,elegy,goron,zora,[icearrows],eponasong,gibdo",
+          "bow,lightarrows,magic,deku,elegy,goron,zora,[icearrows],eponasong,garo",
+          "bow,lightarrows,magic,deku,elegy,ostt,zora,[icearrows],eponasong,gibdo",
+          "bow,lightarrows,magic,deku,elegy,ostt,zora,[icearrows],eponasong,garo"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes,twinstone"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Updraft Frozen Eye Chest",
+        "short_name": "Frozen Eye Chest",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "bow,lightarrows,magic,firearrows,deku",
+          "bow,lightarrows,magic,firearrows,hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes,twinstone"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "After Wizrobe Chest",
+        "short_name": "Defeat Wizrobe",
+        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/stray_fairy.png",
+        "access_rules": [
+          "deku,lightarrows,bow,magic,isttbkearly,damage",
+          "deku,lightarrows,bow,magic,goron,hookshot,stonetower_small_keys:1",
+          "deku,lightarrows,bow,magic,hookshot,stonetower_small_keys:1,damage",
+          "deku,$longjump,hookshot"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "fairy_yes,twinstone"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "badge_size": 21,
+        "x": 970,
+        "y": 223
       }
     ]
   }
