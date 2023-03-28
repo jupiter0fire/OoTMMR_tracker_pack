@@ -212,15 +212,15 @@ function mm_moon_trial_link()
   return mm_moon_trial_link_part1() and mm_moon_trial_link_part2() and mm_moon_trial_link_part3() and mm_moon_trial_link_part4()
 end  
 
-function can_use_elegy()
+function mm_can_use_elegy()
   return mm_can_play("mm_elegy")
 end
 
-function can_use_elegy2()
+function mm_can_use_elegy2()
   return mm_can_play("mm_elegy") or (has("mm_zora") or has("mm_goron"))
 end
 
-function can_use_elegy3()
+function mm_can_use_elegy3()
   return mm_can_play("mm_elegy") and has("mm_zora") and has("mm_goron")
 end
 
