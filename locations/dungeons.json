@@ -5305,7 +5305,6 @@
         "name": "Stone Tower Temple West Garden",
         "access_rules": [
           "@Stone Tower Temple/Stone Tower Temple West,$mm_can_play|elegy,mm_goron,$mm_has_explosives",
-          "@Stone Tower Temple/Stone Tower Temple Under West Garden",
           "@Stone Tower Temple/Stone Tower Temple Center,stonetower_small_keys:4",
           "@Stone Tower Temple/Stone Tower Temple Center,stonetower_small_keys:3,mm_goron,$mm_has_explosives,$mm_can_play|mm_elegy"
         ],
@@ -5351,7 +5350,6 @@
       {
         "name": "Stone Tower Temple Mirrors Room",
         "access_rules": [
-          "@Stone Tower Temple/Stone Tower Temple Wind Room",
           "@Stone Tower Temple/Stone Tower Temple Water Room,stonetower_small_keys:4"
         ],
         "visibility_rules": [
@@ -5426,7 +5424,7 @@
         "name": "Stone Tower Temple Inverted Wizzrobe",
         "access_rules": [
           "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_can_use_light_arrows,stonetower_small_keys:3",
-          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe Ledge"
+          "@Stone Tower Temple/Stone Tower Temple Inverted Death Armos Maze,mm_deku"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5449,7 +5447,7 @@
         "name": "Stone Tower Temple Inverted Death Armos Maze",
         "access_rules": [
           "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe Ledge,mm_deku",
-          "@Stone Tower Temple/Stone Tower Temple Inverted Center"
+          "@Stone Tower Temple/Stone Tower Temple Inverted Boss Key Room,$mm_has_weapon_range,mm_deku"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5518,14 +5516,15 @@
         "item_count": 1
       },
       {
-        "name": "Lava Room Behind Sun Block - Map",
-        "chest_unopened_img": "images/system/chest_unopened_big.png",
-        "chest_opened_img": "images/system/chest_open_big.png",
-        "short_name": "Map",
+        "name": "Shoot the Statue Eye",
+        "short_name": "Entrance Eye Switch",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "mirrorshield,$has_explosives,goron",
-          "bow,lightarrows,magic,$has_explosives,goron",
-          "stonetower_small_keys:1,bow,lightarrows,magic,zora"
+          "@Stone Tower Temple/Stone Tower Temple Entrance,mm_bow"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
         ],
         "item_count": 1
       },
@@ -5535,9 +5534,32 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Stone Tower Small Key 1",
         "access_rules": [
-          "mirrorshield,$has_explosives,goron",
-          "bow,lightarrows,magic,$has_explosives,goron",
-          "stonetower_small_keys:1,bow,lightarrows,magic,zora"
+          "@Stone Tower Temple/Stone Tower Temple Under West Garden,$mm_can_use_light_arrows",
+          "@Stone Tower Temple/Stone Tower Temple Under West Garden,@Stone Tower Temple/Stone Tower Temple West Garden,$mm_has_explosives,mm_mirrorshield"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Behind Sun Block - Map",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Map",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Under West Garden,$mm_can_use_light_arrows",
+          "@Stone Tower Temple/Stone Tower Temple Under West Garden,@Stone Tower Temple/Stone Tower Temple West Garden,$mm_has_explosives,mm_mirrorshield"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Ceiling Chest",
+        "short_name": "Basement Fairy",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Under West Garden,mm_hookshot"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
         ],
         "item_count": 1
       },
@@ -5547,8 +5569,25 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Stone Tower Small Key 2",
         "access_rules": [
-          "lightarrows,bow,magic,zora",
-          "$has_explosives,stonetower_small_keys:1,goron"
+          "@Stone Tower Temple/Stone Tower Temple Center"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bridge Room Crystal Switch",
+        "short_name": "Bridge Room Switch",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_zora",
+          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_deku",
+          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,$mm_has_explosives",
+          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_magic,$mm_has_weapon,mm_spin",
+          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_magic,mm_sword3",
+          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_magic,mm_fairysword"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
         ],
         "item_count": 1
       },
@@ -5558,8 +5597,76 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Compass",
         "access_rules": [
-          "stonetower_small_keys:1,mirrorshield,goron,zora",
-          "bow,lightarrows,magic"
+          "@Stone Tower Temple/Stone Tower Temple Water Room,mm_mirrorshield",
+          "@Stone Tower Temple/Stone Tower Temple Water Room,$mm_can_use_light_arrows"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Chest",
+        "short_name": "Underwater Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Water Room,@Stone Tower Temple/Stone Tower Temple Inverted East,mm_zora,$mm_can_use_light_arrows"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Room Sun Switch",
+        "short_name": "Sun in Mirror Room",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,mm_goron,mm_mirrorshield",
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,$mm_can_use_light_arrows"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Room Right Block",
+        "short_name": "Mirror Room Sun Block",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,mm_goron,mm_mirrorshield",
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,$mm_can_use_light_arrows"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Fire Ring",
+        "short_name": "Lava Room Fire Ring",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Wind Room,mm_deku,mm_goron",
+          "@Stone Tower Temple/Stone Tower Temple Wind Room,$mm_can_use_light_arrows,mm_goron"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Ledge",
+        "short_name": "Lava Room Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Wind Room,mm_deku"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
         ],
         "item_count": 1
       },
@@ -5569,41 +5676,97 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Light Arrows",
         "access_rules": [
-          "$has_explosives,mirrorshield,deku,stonetower_small_keys:2,goron,zora",
-          "bow,lightarrows,magic,stonetower_small_keys:1"
+          "@Stone Tower Temple/Stone Tower Temple Light Arrow Room"
         ],
         "item_count": 1
-      }
-    ],
-    "map_locations": [
+      },
       {
-        "map": "termina",
-        "badge_size": 21,
-        "x": 956,
-        "y": 213
-      }
-    ]
-  },
-  {
-    "name": "Inverted Stone Tower Temple",
-    "short_name": "ISTT",
-    "parent": "Stone Tower",
-    "access_rules": [
-      "bow,lightarrows,magic,[sword1]",
-      "bow,lightarrows,magic,[fairysword]"
-    ],
-    "sections": [
+        "name": "Pre-Boss Crystal Switch",
+        "short_name": "Pre Boss Crystal Switch",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Before Water Bridge,$mm_has_explosives",
+          "@Stone Tower Temple/Stone Tower Temple Before Water Bridge,@Stone Tower Temple/Stone Tower Temple Inverted Bridge 2"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eyegore Chest",
+        "short_name": "Defeat Eyegore",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Water Bridge"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Inverted Entrance Sun",
+        "short_name": "Entrance Sun",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Entrance,$mm_can_use_light_arrows"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Updraft Frozen Eye Chest",
+        "short_name": "Frozen Eye Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_can_shoot_fire_arrows"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
       {
         "name": "Across Bridge - Small Key",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Inverted Tower Small Key 3",
-        "visibility_rules": [
-          "twinstone"
-        ],
         "access_rules": [
-          "bow,lightarrows,magic,deku",
-          "bow,lightarrows,magic,isttuphuman"
+          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Updraft Room Flaming Chest",
+        "short_name": "Updraft Flaming Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_can_use_elegy"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "After Wizrobe Chest",
+        "short_name": "Defeat Wizrobe",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe,mm_hookshot,$mm_can_fight",
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe,mm_hookshot,mm_bow"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
         ],
         "item_count": 1
       },
@@ -5612,25 +5775,8 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Inverted Tower Small Key 4",
-        "visibility_rules": [
-          "twinstone"
-        ],
         "access_rules": [
-          "deku,bow,lightarrows,magic,stonetower_small_keys:1,hookshot",
-          "deku,bow,lightarrows,magic,isttbkearly,damage"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Defeat Eyegore - Giant's Mask",
-        "chest_unopened_img": "images/system/chest_unopened_big.png",
-        "chest_opened_img": "images/system/chest_open_big.png",
-        "short_name": "Giant's Mask",
-        "visibility_rules": [
-          "twinstone"
-        ],
-        "access_rules": [
-          "bow,lightarrows,magic,hookshot,deku,$istteyegore"
+          "@Stone Tower Temple/Stone Tower Temple Inverted Death Armos Maze,$mm_can_use_elegy"
         ],
         "item_count": 1
       },
@@ -5639,13 +5785,31 @@
         "chest_unopened_img": "images/system/chest_golden_closed.png",
         "chest_opened_img": "images/system/chest_golden_open.png",
         "short_name": "Boss Key",
-        "visibility_rules": [
-          "twinstone"
-        ],
         "access_rules": [
-          "bow,lightarrows,magic,deku,isttbkearly,damage",
-          "bow,lightarrows,magic,deku,stonetower_small_keys:1,hookshot",
-          "bow,lightarrows,magic,isttuphuman,isttbkearly,damage"
+          "@Stone Tower Temple/Stone Tower Temple Inverted Boss Key Room,$mm_can_use_light_arrows"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Death Armos Switch Chest in Inverted",
+        "short_name": "Inverted Death Armos",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Entrance,@Stone Tower Temple/Stone Tower Temple Inverted Entrance Ledge"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Defeat Eyegore - Giant's Mask",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Giant's Mask",
+        "access_rules": [
+          "@Stone Tower Temple/Stone Tower Temple Inverted Bridge"
         ],
         "item_count": 1
       },
@@ -5654,25 +5818,9 @@
         "hosted_item": "stonetower",
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
-        "visibility_rules": [
-          "twinstone"
-        ],
         "access_rules": [
-          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,[twinbow]",
-          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,giantmask,sword1"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Oath to Order",
-        "chest_unopened_img": "images/system/unknownsong.png",
-        "chest_opened_img": "images/system/unknownsong_check.png",
-        "visibility_rules": [
-          "twinstone"
-        ],
-        "access_rules": [
-          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,[twinbow]",
-          "hookshot,bow,lightarrows,stonetower_boss_key,magic,$istteyegore,giantmask,sword1"
+          "@Stone Tower Temple/Stone Tower Temple Boss,mm_magic,mm_giant,mm_sword",
+          "@Stone Tower Temple/Stone Tower Temple Boss,mm_magic,mm_fiercedeity"
         ],
         "item_count": 1
       }
@@ -5680,273 +5828,9 @@
     "map_locations": [
       {
         "map": "termina",
-        "badge_size": 21,
+        "size": 25,
         "x": 956,
-        "y": 223
-      }
-    ]
-  },
-  {
-    "name": "Stone Tower Temple Stray Fairies",
-    "short_name": "Stone Tower Fairies",
-    "parent": "Stone Tower",
-    "access_rules": [
-      "fairy_yes"
-    ],
-    "sections": [
-      {
-        "name": "Shoot the Statue Eye",
-        "short_name": "Entrance Eye Switch",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Basement Ceiling Chest",
-        "short_name": "Basement Fairy",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "$has_explosives,goron",
-          "lightarrows,bow,magic,stonetower_small_keys:1,zora"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Mirror Room Sun Switch",
-        "short_name": "Sun in Mirror Room",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "lightarrows,bow,magic,stonetower_small_keys:1",
-          "mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Mirror Room Right Block",
-        "short_name": "Mirror Room Sun Block",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "lightarrows,bow,magic,stonetower_small_keys:1",
-          "mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Lava Room Fire Ring",
-        "short_name": "Lava Room Fire Ring",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "lightarrows,bow,magic,stonetower_small_keys:1,goron",
-          "deku,mirrorshield,$has_explosives,stonetower_small_keys:2,goron"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Lava Room Ledge",
-        "short_name": "Lava Room Chest",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "lightarrows,bow,magic,stonetower_small_keys:1,deku",
-          "deku,mirrorshield,$has_explosives,stonetower_small_keys:2,goron,zora"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Eyegore Chest",
-        "short_name": "Defeat Eyegore",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,lightarrows,magic,stonetower_small_keys:1",
-          "deku,mirrorshield,goron,zora,$has_explosives,stonetower_small_keys:2"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Underwater Chest",
-        "short_name": "Underwater Chest",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,lightarrows,magic,zora,$inverted_access,deku",
-          "bow,lightarrows,magic,zora,twinstone,deku",
-          "bow,lightarrows,magic,zora,$inverted_access,isttuphuman",
-          "bow,lightarrows,magic,zora,twinstone,isttuphuman",
-          "bow,lightarrows,magic,stice"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Death Armos Switch Chest in Inverted",
-        "short_name": "Inverted Death Armos",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "twinstone,$longjump",
-          "twinstone,lightarrows,bow,magic,isttbkearly,deku,damage",
-          "twinstone,deku,lightarrows,hookshot,goron,bow,magic,stonetower_small_keys:1",
-          "twinstone,deku,bow,lightarrows,hookshot,magic,stonetower_small_keys:1,damage",
-          "twinstone,lightarrows,bow,magic,isttbkearly,deku,damage",
-          "twinstone,hookshot,bow,lightarrows,magic,$istteyegore,isttuphuman,damage",
-          "$inverted_access,$longjump",
-          "$inverted_access,lightarrows,bow,magic,isttbkearly,deku,damage",
-          "$inverted_access,deku,lightarrows,hookshot,goron,bow,magic,stonetower_small_keys:1",
-          "$inverted_access,deku,bow,lightarrows,hookshot,magic,stonetower_small_keys:1,damage",
-          "$inverted_access,lightarrows,bow,magic,isttbkearly,deku,damage",
-          "$inverted_access,hookshot,bow,lightarrows,magic,$istteyegore,isttuphuman,damage"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Bridge Room Crystal Switch",
-        "short_name": "Bridge Room Switch",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,lightarrows,magic,zora"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Pre-Boss Crystal Switch",
-        "short_name": "Pre Boss Crystal Switch",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "lightarrows,$has_explosives,bow,magic,stonetower_small_keys:1,switchwalls",
-          "deku,lightarrows,goron,stonetower_small_keys:3,bow,magic,twinstone",
-          "deku,lightarrows,goron,stonetower_small_keys:3,bow,magic,$inverted_access",
-          "deku,mirrorshield,goron,zora,$has_explosives,stonetower_small_keys:2,switchwalls",
-          "deku,bow,magic,lightarrows,stonetower_small_keys:3,damage,twinstone",
-          "deku,bow,magic,lightarrows,stonetower_small_keys:3,damage,$inverted_access"
-        ],
-        "visibility_rules": [
-          "fairy_yes"
-        ],
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "badge_size": 21,
-        "x": 970,
         "y": 213
-      }
-    ]
-  },
-  {
-    "name": "Inverted Stone Tower Temple Stray Fairies",
-    "short_name": "Inverted Stone Tower Fairies",
-    "parent": "Stone Tower",
-    "access_rules": [
-      "fairy_yes,bow,magic,lightarrows"
-    ],
-    "sections": [
-      {
-        "name": "Inverted Entrance Sun",
-        "short_name": "Entrance Sun",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,lightarrows,magic"
-        ],
-        "visibility_rules": [
-          "fairy_yes,twinstone"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Updraft Room Flaming Chest",
-        "short_name": "Updraft Flaming Chest",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,lightarrows,magic,deku,elegy,goron,zora,[icearrows],eponasong,gibdo",
-          "bow,lightarrows,magic,deku,elegy,goron,zora,[icearrows],eponasong,garo",
-          "bow,lightarrows,magic,deku,elegy,ostt,zora,[icearrows],eponasong,gibdo",
-          "bow,lightarrows,magic,deku,elegy,ostt,zora,[icearrows],eponasong,garo"
-        ],
-        "visibility_rules": [
-          "fairy_yes,twinstone"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Updraft Frozen Eye Chest",
-        "short_name": "Frozen Eye Chest",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,lightarrows,magic,firearrows,deku",
-          "bow,lightarrows,magic,firearrows,hookshot"
-        ],
-        "visibility_rules": [
-          "fairy_yes,twinstone"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "After Wizrobe Chest",
-        "short_name": "Defeat Wizrobe",
-        "chest_unopened_img": "images/system/stonetower_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "deku,lightarrows,bow,magic,isttbkearly,damage",
-          "deku,lightarrows,bow,magic,goron,hookshot,stonetower_small_keys:1",
-          "deku,lightarrows,bow,magic,hookshot,stonetower_small_keys:1,damage",
-          "deku,$longjump,hookshot"
-        ],
-        "visibility_rules": [
-          "fairy_yes,twinstone"
-        ],
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "badge_size": 21,
-        "x": 970,
-        "y": 223
       }
     ]
   }

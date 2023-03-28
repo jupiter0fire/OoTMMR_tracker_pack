@@ -357,6 +357,12 @@
     "codes": "mm_bomber,mm_bombernotebook,mm_notebook,mm_book"
   },
   {
+    "name": "Spin Attack",
+    "type": "toggle",
+    "img": "images/items/mm_springwater.png",
+    "codes": "mm_spin"
+  },
+  {
     "name": "MM Sword",
     "type": "progressive",
     "stages": [
@@ -366,11 +372,11 @@
       },
       {
         "img": "images/items/mm_razor.png",
-        "codes": "mm_sword"
+        "codes": "mm_sword,mm_sword2"
       },
       {
         "img": "images/items/mm_gilded.png",
-        "codes": "mm_sword"
+        "codes": "mm_sword,mm_sword3"
       }
     ]
   },
