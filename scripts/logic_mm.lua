@@ -76,7 +76,7 @@ function mm_can_use_lens()
   return mm_can_use_lens_strict() or has("trick_mm_fewer_lens")
 end 
 
-function mm_grab_water_in_graveyrad()
+function mm_grab_water_in_graveyard()
   return has("mm_bottle") and has("mm_goron")
 end
 
@@ -89,11 +89,15 @@ function mm_to_mountain_village()
 end
 
 function mm_goron_graveyard_hot_water()
-  return mm_grab_water_in_graveyrad() and mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village()
+  return mm_grab_water_in_graveyard() and mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village()
 end
 
 function mm_ikana_canyon_to_well_hot_water()
   return (mm_has_explosives() or has("mm_zora")) and (has("mm_gibdo") and has("mm_bottle") and has("mm_scents"))
+end
+
+function mm_twin_island_hot_water()
+  return mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village() and (mm_can_use_fire_arrows() or has("mm_snowhead")) and has("mm_bottle")
 end
 
 function  mm_ikana_valley_to_canyon()
@@ -107,6 +111,10 @@ end
 function mm_well_hot_water()
   return mm_ikana_canyon_to_well_hot_water() and mm_ikana_valley_to_canyon() and mm_to_ikana_valley()
 end
+
+function mm_has_hot_water()
+  return mm_goron_graveyard_hot_water() or mm_well_hot_water() or mm_twin_island_hot_water()
+end  
 
 function mm_sun_mask()
   return has("mm_lettertokafei") and mm_to_ikana_valley()
