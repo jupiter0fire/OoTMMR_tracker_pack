@@ -6007,12 +6007,120 @@
         "item_count": 1
       },
       {
-        "name": "Snowhead Temple Icicles",
+        "name": "Snowhead Temple Dual Switches",
         "access_rules": [
-          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:3",
-          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives",
-          "@Snowhead Temple/Snowhead Temple Block Room Upper",
-          "@Snowhead Temple/Snowhead Temple Icicles,$mm_can_explosives"
+          "@Snowhead Temple/Snowhead Temple Icicles,snowhead_small_keys:3",
+          "@Snowhead Temple/Snowhead Temple Icicles,snowhead_small_keys:2,$mm_has_explosives",
+          "@Snowhead Temple/Snowhead Temple Center Level 2 Dual"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Center Level 2 Dual",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Dual Switches,$mm_can_use_fire_arrows",
+          "@Snowhead Temple/Snowhead Temple Dual Switches,mm_goron",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,$mm_has_weapon",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_zora",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_goron"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Fire Arrow",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_goron_fast_roll",
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow,mm_deku",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Center Level 3 Snow",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Fire Arrow,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_goron",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Snow Room,snowhead_small_keys:3",
+          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Center Level 3 Iced",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,mm_goron",
+          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Snow Room",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,snowhead_small_keys:3",
+          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Dinolfos Room",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Snow Room,$mm_can_use_fire_arrows",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,@Snowhead Temple/Snowhead Temple Pillars Room,mm_goron"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Boss Key Room",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Dinolfos Room,@Snowhead Temple/Snowhead Temple Pillars Room,mm_goron",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,@Snowhead Temple/Snowhead Temple Pillars Room,mm_goron"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Center Level 4",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,@Snowhead Temple/Snowhead Temple Pillars Room,mm_goron"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snowhead Temple Boss",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Center Level 4,$mm_goron_fast_roll,snowhead_boss_key"
         ],
         "visibility_rules": [
           "hidden_region"
