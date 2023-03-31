@@ -6054,7 +6054,7 @@
           "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_goron",
           "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Snow Room,snowhead_small_keys:3",
-          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
+          "@Snowhead Temple/Snowhead Temple Snow Room,$mm_can_use_fire_arrows"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6067,7 +6067,7 @@
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,mm_goron",
-          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
+          "@Snowhead Temple/Snowhead Temple Snow Room,$mm_can_use_fire_arrows"    
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6078,7 +6078,7 @@
         "name": "Snowhead Temple Snow Room",
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,snowhead_small_keys:3",
-          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,@Snowhead Temple/Snowhead Temple Pillars Room,mm_goron"
         ],
         "visibility_rules": [
           "hidden_region"
