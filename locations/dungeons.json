@@ -5908,9 +5908,7 @@
           "@Snowhead Temple/Snowhead Temple Map Room,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Center Level 1,$mm_can_hookshot_scarecrow",
           "@Snowhead Temple/Snowhead Temple Center Level 2 Dual,$mm_goron_fast_roll",
-          "@Snowhead Temple/Snowhead Temple Center Level 2 Dual,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Fire Arrow,$mm_goron_fast_roll",
-          "@Snowhead Temple/Snowhead Temple Fire Arrow,mm_hookshot"
+          "@Snowhead Temple/Snowhead Temple Center Level 2 Dual,mm_hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5927,8 +5925,7 @@
           "@Snowhead Temple/Snowhead Temple Pillars Room",
           "@Snowhead Temple/Snowhead Temple Center Level 0",
           "@Snowhead Temple/Snowhead Temple Block Room",
-          "@Snowhead Temple/Snowhead Temple Center Level 2 Dual",
-          "@Snowhead Temple/Snowhead Temple Fire Arrow"
+          "@Snowhead Temple/Snowhead Temple Center Level 2 Dual"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6026,7 +6023,7 @@
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_goron",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow",
-          "@Snowhead Temple/Snowhead Temple Fire Arrow,mm_hookshot"
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_goron_fast_roll,mm_hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
