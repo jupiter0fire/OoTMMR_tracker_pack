@@ -5911,8 +5911,7 @@
           "@Snowhead Temple/Snowhead Temple Center Level 2 Dual,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Fire Arrow,$mm_goron_fast_roll",
           "@Snowhead Temple/Snowhead Temple Fire Arrow,$mm_can_use_lens,$mm_can_hookshot_scarecrow,mm_deku",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced"
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6024,9 +6023,9 @@
           "@Snowhead Temple/Snowhead Temple Dual Switches,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Dual Switches,mm_goron",
           "@Snowhead Temple/Snowhead Temple Center Level 3 Snow",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,$mm_has_weapon",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_zora",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_goron"
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,$mm_has_weapon",
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_zora",
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_goron"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6039,7 +6038,7 @@
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_goron_fast_roll",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow,mm_deku",
           "@Snowhead Temple/Snowhead Temple Center Level 3 Snow",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced"
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows" 
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6051,8 +6050,8 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow",
           "@Snowhead Temple/Snowhead Temple Fire Arrow,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_goron",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,mm_hookshot"        
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_goron",
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
