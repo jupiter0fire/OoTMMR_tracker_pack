@@ -5864,11 +5864,7 @@
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_goron,$mm_has_explosives,snowhead_small_keys:2",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_hookshot,$mm_has_explosives,snowhead_small_keys:2",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow,$mm_has_explosives,snowhead_small_keys:2",
-          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_goron_fast_roll,mm_hookshot,$mm_has_explosives,snowhead_small_keys:2",
-          "@Snowhead Temple/Snowhead Temple Block Room,mm_hookshot,snowhead_small_keys:3",
-          "@Snowhead Temple/Snowhead Temple Block Room,mm_zora,snowhead_small_keys:3",
-          "@Snowhead Temple/Snowhead Temple Block Room,mm_hookshot,snowhead_small_keys:2,$mm_has_explosives",
-          "@Snowhead Temple/Snowhead Temple Block Room,mm_zora,snowhead_small_keys:2,$mm_has_explosives"
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_goron_fast_roll,mm_hookshot,$mm_has_explosives,snowhead_small_keys:2"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5915,13 +5911,13 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Map Room,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Center Level 1,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Center Level 1,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot,$mm_goron_fast_roll",
+          "@Snowhead Temple/Snowhead Temple Center Level 1,snowhead_small_keys:2,$mm_has_explosives,mm_zora,$mm_goron_fast_roll",
+          "@Snowhead Temple/Snowhead Temple Center Level 1,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot,$mm_can_use_fire_arrows",
+          "@Snowhead Temple/Snowhead Temple Center Level 1,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot,mm_goron",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,$mm_goron_fast_rolls",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,$mm_can_use_fire_arrows,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_goron,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Block Room,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot,$mm_goron_fast_roll",
-          "@Snowhead Temple/Snowhead Temple Block Room,snowhead_small_keys:2,$mm_has_explosives,mm_zora,$mm_goron_fast_roll",
-          "@Snowhead Temple/Snowhead Temple Block Room,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot,$mm_can_use_fire_arrows",
-          "@Snowhead Temple/Snowhead Temple Block Room,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot,mm_goron"
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_goron,mm_hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5934,12 +5930,12 @@
           "@Snowhead Temple/Snowhead Temple Main,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Main,$mm_has_hot_water",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_goron",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:3,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Bridge Back",
           "@Snowhead Temple/Snowhead Temple Map Room Upper",
           "@Snowhead Temple/Snowhead Temple Pillars Room",
-          "@Snowhead Temple/Snowhead Temple Center Level 0",
-          "@Snowhead Temple/Snowhead Temple Block Room"
-
+          "@Snowhead Temple/Snowhead Temple Center Level 0"
         ],
         "visibility_rules": [
           "hidden_region"
