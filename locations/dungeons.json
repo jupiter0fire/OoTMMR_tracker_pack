@@ -5933,8 +5933,7 @@
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:3,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Bridge Back",
-          "@Snowhead Temple/Snowhead Temple Map Room Upper",
-          "@Snowhead Temple/Snowhead Temple Pillars Room"
+          "@Snowhead Temple/Snowhead Temple Map Room Upper"
         ],
         "visibility_rules": [
           "hidden_region"
