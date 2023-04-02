@@ -5857,8 +5857,7 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Entrance,mm_zora",
           "@Snowhead Temple/Snowhead Temple Entrance,mm_goron",
-          "@Snowhead Temple/Snowhead Temple Bridge Front",
-          "@Snowhead Temple/Snowhead Temple Bridge Back"
+          "@Snowhead Temple/Snowhead Temple Bridge Front"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5868,8 +5867,7 @@
       {
         "name": "Snowhead Temple Bridge Front",
         "access_rules": [
-          "@Snowhead Temple/Snowhead Temple Main",
-          "@Snowhead Temple/Snowhead Temple Bridge Back"
+          "@Snowhead Temple/Snowhead Temple Main"
         ],
         "visibility_rules": [
           "hidden_region"
