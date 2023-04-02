@@ -257,6 +257,70 @@
     ]
   },
   {
+    "name": "Frog 1",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/frog.png",
+        "img_mods": "@disabled",
+        "codes": "mm_frog_1_no"
+      },
+      {
+        "img": "images/frog.png",
+        "codes": "mm_frog_1"
+      }
+    ]
+  },
+  {
+    "name": "Frog 2",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/frog.png",
+        "img_mods": "@disabled",
+        "codes": "mm_frog_2_no"
+      },
+      {
+        "img": "images/frog.png",
+        "codes": "mm_frog_2"
+      }
+    ]
+  },
+  {
+    "name": "Frog 3",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/frog.png",
+        "img_mods": "@disabled",
+        "codes": "mm_frog_3_no"
+      },
+      {
+        "img": "images/frog.png",
+        "codes": "mm_frog_3"
+      }
+    ]
+  },
+  {
+    "name": "Frog 4",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/frog.png",
+        "img_mods": "@disabled",
+        "codes": "mm_frog_4_no"
+      },
+      {
+        "img": "images/frog.png",
+        "codes": "mm_frog_4"
+      }
+    ]
+  },
+  {
     "name": "Forest Trial Clear",
     "type": "progressive",
     "allow_disabled": false,

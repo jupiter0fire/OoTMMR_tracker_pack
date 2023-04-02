@@ -5204,13 +5204,34 @@
                 ]
               },
               {
+                "name": "Laundry Pool Frog",
+                "short_name": "Laundry Pool Frog",
+                "sections": [
+                  {
+                    "name": "Frog 1",
+                    "hosted_item": "mm_frog_1",
+                    "access_rules":[
+                      "mm_dongero,mm_snowhead"
+                    ]
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 25,
+                    "y": 214
+                  }
+                ]
+              },
+              {
                 "name": "Clock Town Stray Fairy",
                 "short_name": "Stray Fairy",
                 "sections": [
                   {
                     "name": "Get It",
-                    "chest_unopened_img": "images/system/clocktown_stray_fairy.png",
-                    "chest_opened_img": "images/system/stray_fairy.png",
+                    "chest_unopened_img": "images/system/mm_clocktown_stray_fairy.png",
+                    "chest_opened_img": "images/system/mm_stray_fairy.png",
                     "visibility_rules": [
                       "setting_mm_shuffle_townfairy_yes"
                     ],
@@ -6089,6 +6110,27 @@
             ]
           },
           {
+            "name": "Swamp Frog",
+            "short_name": "Swamp Frog",
+            "sections": [
+              {
+                "name": "Frog 3",
+                "hosted_item": "mm_frog_3",
+                "access_rules":[
+                  "mm_dongero,mm_snowhead"
+                ]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 645,
+                "y": 504
+              }
+            ]
+          },
+          {
             "name": "Poison Swamp Area",
             "access_rules": [
               "$mm_boat_ride",
@@ -6353,7 +6395,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_snowhead,$mm_frog1,$mm_frog2,$mm_frog3,$mm_frog4"
+                  "mm_snowhead,mm_frog_1,mm_frog_2,mm_frog_3,mm_frog_4"
                 ],
                 "item_count": 1
               }

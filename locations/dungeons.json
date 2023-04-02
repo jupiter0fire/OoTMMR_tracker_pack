@@ -4771,6 +4771,13 @@
         "item_count": 1
       },
       {
+        "name": "Frog 2",
+        "hosted_item": "mm_frog_2",
+        "access_rules": [
+          "@Woodfall Temple/Woodfall Temple Boss Key Room,mm_dongero,mm_snowhead"
+        ]
+      },
+      {
         "name": "Final Room Lower Right Bubble",
         "short_name": "Final Room Right Bubble",
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
@@ -5161,6 +5168,13 @@
           "@Great Bay Temple/Great Bay Temple Boss Key Room"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Frog 4",
+        "hosted_item": "mm_frog_4",
+        "access_rules": [
+          "@Great Bay Temple/Great Bay Temple Boss Key Room,mm_dongero,mm_snowhead"
+        ]
       },
       {
         "name": "Green Valve Ceiling",
@@ -5582,7 +5596,7 @@
           "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_zora",
           "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_deku",
           "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,$mm_has_explosives",
-          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_magic,$mm_has_weapon,mm_spin",
+          "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_magic,$mm_has_weapon,mm_spinattack",
           "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_magic,mm_sword3",
           "@Stone Tower Temple/Stone Tower Temple Center,$mm_can_use_light_arrows,mm_magic,mm_fairysword"
         ],
@@ -5974,7 +5988,7 @@
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:3,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:3,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot", 
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,$mm_has_weapon,snowhead_small_keys:2,$mm_has_explosives",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_zora,snowhead_small_keys:2,$mm_has_explosives",
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows,mm_goron,snowhead_small_keys:2,$mm_has_explosives",
@@ -6113,7 +6127,7 @@
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,mm_hookshot",
           "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,mm_goron",
-          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,snowhead_small_keys:3,$mm_can_use_fire_arrows" 
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,snowhead_small_keys:3,$mm_can_use_fire_arrows"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6182,7 +6196,6 @@
           "@Snowhead Temple/Snowhead Temple Bridge Front,mm_hookshot,mm_fairymask",
           "@Snowhead Temple/Snowhead Temple Bridge Front,mm_bow,mm_fairymask"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -6197,7 +6210,6 @@
           "@Snowhead Temple/Snowhead Temple Bridge Front,mm_hookshot,mm_fairymask,$mm_can_use_lens",
           "@Snowhead Temple/Snowhead Temple Bridge Front,mm_bow,mm_fairymask,mm_can_use_lens"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -6211,7 +6223,6 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Map Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -6222,7 +6233,6 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Map Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -6411,7 +6421,6 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Dinolfos Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -6425,7 +6434,6 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Dinolfos Room"
         ],
-        "capture_item": true,
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
         ],
@@ -6439,7 +6447,6 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Boss Key Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -6466,7 +6473,6 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Boss,$mm_can_use_fire_arrows"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],

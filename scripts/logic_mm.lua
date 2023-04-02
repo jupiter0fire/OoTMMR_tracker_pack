@@ -1,13 +1,3 @@
-function mm_has(item, amount)
-  local count = Tracker:ProviderCountForCode(item)
-  amount = tonumber(amount)
-  if not amount then
-    return count > 0
-  else
-    return count == amount
-  end
-end
-
 function mm_can_use_deku_bubble()
   return has("mm_dekumask") and has("mm_magic")
 end  
@@ -128,22 +118,6 @@ function mm_goron_food()
   return mm_to_mountain_village() and mm_get_goron_food_in_goron_village()
 end  
 
-function mm_frog1()
-  return false --TODO
-end  
-
-function mm_frog2()
-  return false --TODO
-end  
-
-function mm_frog3()
-  return false --TODO
-end  
-
-function mm_frog4()
-  return false --TODO
-end  
-
 function mm_blacksmith_enabled()
   return has("mm_snowhead") or mm_can_use_fire_arrows() or mm_goron_graveyard_hot_water() or (mm_well_hot_water() and mm_can_play("mm_soaring"))
 end
@@ -233,7 +207,7 @@ function mm_can_use_elegy3()
 end
 
 function mm_can_break_rocks()
-  if mm_has("mm_goronmask")
+  if has("mm_goronmask")
   then
     return 1
   else
@@ -242,7 +216,7 @@ function mm_can_break_rocks()
 end
 
 function mm_can_break_snowballs()
-  if (mm_has("mm_bow") and mm_has("mm_firearrows"))
+  if (has("mm_bow") and has("mm_firearrows"))
   then
     return 1
   else
@@ -251,14 +225,14 @@ function mm_can_break_snowballs()
 end
 
 function mm_night_inn_access()
-  if mm_has("mm_deku")
-  or mm_has("mm_roomkey")
-  or (mm_has("mm_zora") and mm_has("mm_gainer"))
-  or (mm_has("mm_zora") and mm_has("mm_balconyzora"))
-  or mm_has("mm_$longjump")
+  if has("mm_deku")
+  or has("mm_roomkey")
+  or (has("mm_zora") and has("mm_gainer"))
+  or (has("mm_zora") and has("mm_balconyzora"))
+  or has("mm_$longjump")
   then
     return 1
-  elseif mm_has("mm_zora") then
+  elseif has("mm_zora") then
     return 1, AccessibilityLevel.SequenceBreak
   else
     return 0
@@ -268,8 +242,8 @@ end
 
 
 function mm_longjump()
-  if (mm_has("mm_bombs")and mm_has("mm_longjump") and mm_has("mm_damage"))
-  or (mm_has("mm_blastmask") and mm_has("mm_longjump") and mm_has("mm_damage"))
+  if (has("mm_bombs")and has("mm_longjump") and has("mm_damage"))
+  or (has("mm_blastmask") and has("mm_longjump") and has("mm_damage"))
   then
     return 1
   else
@@ -278,11 +252,11 @@ function mm_longjump()
 end
 
 function mm_istteyegore()
-  if (mm_has("mm_istteyehook") and mm_has("mm_isttuphuman"))
-  or (mm_has("mm_istteyehook") and mm_has("mm_deku"))
-  or (mm_has("mm_deku") and mm_has("mm_stonetower_small_keys", 2))
-    or (mm_has("mm_deku") and mm_has("mm_stonetower_small_keys", 3))
-    or (mm_has("mm_deku") and mm_has("mm_stonetower_small_keys", 4))
+  if (has("mm_istteyehook") and has("mm_isttuphuman"))
+  or (has("mm_istteyehook") and has("mm_deku"))
+  or (has("mm_deku") and has("mm_stonetower_small_keys", 2))
+    or (has("mm_deku") and has("mm_stonetower_small_keys", 3))
+    or (has("mm_deku") and has("mm_stonetower_small_keys", 4))
   then
     return 1
   else
@@ -292,7 +266,7 @@ end
 
 
 function mm_goron_fence_jump()
-  if (mm_has("mm_bombs") and mm_has("mm_goron") and mm_has("mm_goronfence"))
+  if (has("mm_bombs") and has("mm_goron") and has("mm_goronfence"))
   then
     return 1
   else
@@ -303,15 +277,15 @@ end
 
 
 function mm_can_deal_damage()
-  if mm_has("mm_sword1")
-  or (mm_has("mm_sticks") and mm_has("mm_stickfighting"))
-  or mm_has("mm_bow")
-  or mm_has("mm_fairysword")
-  or mm_has("mm_goronmask")
-  or mm_has("mm_zoramask")
+  if has("mm_sword1")
+  or (has("mm_sticks") and has("mm_stickfighting"))
+  or has("mm_bow")
+  or has("mm_fairysword")
+  or has("mm_goronmask")
+  or has("mm_zoramask")
   then
     return 1
-  elseif mm_has("mm_sticks") then
+  elseif has("mm_sticks") then
     return 1, AccessibilityLevel.SequenceBreak
   else
     return mm_has_explosives(), AccessibilityLevel.SequenceBreak
@@ -319,10 +293,10 @@ function mm_can_deal_damage()
 end
 
 function mm_has_projectile()
-   if mm_has("mm_hookshot")
-   or mm_has("mm_bow")
-   or mm_has("mm_zoramask")
-   or (mm_has("mm_dekumask") and mm_has("mm_magic"))
+   if has("mm_hookshot")
+   or has("mm_bow")
+   or has("mm_zoramask")
+   or (has("mm_dekumask") and has("mm_magic"))
   then
     return 1
   else
@@ -331,8 +305,8 @@ function mm_has_projectile()
 end
 
 function mm_can_see_with_lens()
-   if mm_has("mm_lens") 
-  and mm_has("mm_magic") then
+   if has("mm_lens") 
+  and has("mm_magic") then
     return 1
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -340,10 +314,10 @@ function mm_can_see_with_lens()
 end
 
 function mm_can_grow_magic_plant()
-  if (mm_has("mm_bottlesanity_no")  and mm_has("mm_beans") and mm_has("mm_bottle"))
-  or (mm_has("mm_bottlesanity_yes") and mm_has("mm_beans") and mm_has("mm_water"))
-  or (mm_has("mm_bottlesanity_yes") and mm_has("mm_beans") and mm_has("mm_hotspringwater"))
-  or (mm_has("mm_beans") and mm_has("mm_songofstorms") and mm_has("mm_ocarina"))
+  if (has("mm_bottlesanity_no")  and has("mm_beans") and has("mm_bottle"))
+  or (has("mm_bottlesanity_yes") and has("mm_beans") and has("mm_water"))
+  or (has("mm_bottlesanity_yes") and has("mm_beans") and has("mm_hotspringwater"))
+  or (has("mm_beans") and has("mm_songofstorms") and has("mm_ocarina"))
   then
     return 1
   else
@@ -352,13 +326,13 @@ function mm_can_grow_magic_plant()
 end
 
 function mm_can_bottle_hotspringwater()
-  if (mm_has("mm_bottlesanity_yes") and mm_has("mm_hotspringwater"))
-  or (mm_has("mm_bottlesanity_no") and mm_has("mm_bottle") and mm_has("mm_goron") and mm_has("mm_lens") and mm_has("mm_magic"))
-  or (mm_has("mm_bottlesanity_no") and mm_has("mm_bottle") and mm_has("mm_goron") and mm_has("mm_lens_climb"))
-  or (mm_has("mm_bottlesanity_no") and mm_has("mm_firearrows") and mm_has("mm_bow") and mm_has("mm_magic"))
+  if (has("mm_bottlesanity_yes") and has("mm_hotspringwater"))
+  or (has("mm_bottlesanity_no") and has("mm_bottle") and has("mm_goron") and has("mm_lens") and has("mm_magic"))
+  or (has("mm_bottlesanity_no") and has("mm_bottle") and has("mm_goron") and has("mm_lens_climb"))
+  or (has("mm_bottlesanity_no") and has("mm_firearrows") and has("mm_bow") and has("mm_magic"))
   then
   return 1
-  elseif (mm_has("mm_bottlesanity_no") and mm_has("mm_bottle") and mm_has("mm_goron"))
+  elseif (has("mm_bottlesanity_no") and has("mm_bottle") and has("mm_goron"))
   then return 1,AccessibilityLevel.SequenceBreak
   else
 	return 0
@@ -367,16 +341,16 @@ end
 
 
 function mm_has_greatbay_frog_access()
-  if (mm_has("mm_epona") and mm_has("mm_zora") and mm_has("mm_ocarina") and mm_has("mm_nova") and mm_has("mm_hookshot") and has ("icearrows") and mm_has("mm_magic") and mm_has("mm_bow") and mm_has("mm_firearrows") and mm_has("mm_gyorgbay"))
-  or (mm_has("mm_epona") and mm_has("mm_zora") and mm_has("mm_ocarina") and mm_has("mm_nova") and mm_has("mm_hookshot") and has ("bow") and mm_has("mm_icearrows") and mm_has("mm_magic") and mm_has("mm_gbtbkfl")and mm_has("mm_gyorgbay"))
-  or (mm_has("mm_deku") and mm_has("mm_sonata") and mm_has("mm_ocarina") and mm_has("mm_bow") and mm_has("mm_magic") and mm_has("mm_icearrows") and mm_has("mm_firearrows") and mm_has("mm_zora") and mm_has("mm_gyorgwood"))
-  or (mm_has("mm_deku") and mm_has("mm_sonata") and mm_has("mm_ocarina") and mm_has("mm_bow") and mm_has("mm_magic") and mm_has("mm_icearrows") and mm_has("mm_gbtbkfl") and mm_has("mm_zora") and mm_has("mm_gyorgwood"))
-  or (mm_has("mm_bow") and mm_has("mm_goron") and mm_has("mm_zora") and mm_has("mm_lullaby") and mm_has("mm_ocarina") and mm_has("mm_magic") and mm_has("mm_gyorgsnow") and mm_has("mm_icearrows") and mm_has("mm_firearrows"))
-  or (mm_has("mm_bow") and mm_has("mm_goron") and mm_has("mm_zora") and mm_has("mm_lullaby") and mm_has("mm_ocarina") and mm_has("mm_magic") and mm_has("mm_gyorgsnow") and mm_has("mm_icearrows") and mm_has("mm_gbtbkfl"))
-  or (mm_has("mm_ocarina") and mm_has("mm_eponasong") and mm_has("mm_hookshot") and mm_has("mm_gibdomask") and mm_has("mm_goron") and mm_has("mm_icearrows") and mm_has("mm_bow") and mm_has("mm_firearrows") and mm_has("mm_lightarrows") and mm_has("mm_magic") and mm_has("mm_zora") and mm_has("mm_elegy") and mm_has("mm_gyorgstone"))
-  or (mm_has("mm_ocarina") and mm_has("mm_eponasong") and mm_has("mm_hookshot") and mm_has("mm_garomask") and mm_has("mm_goron") and mm_has("mm_icearrows") and mm_has("mm_bow") and mm_has("mm_firearrows") and mm_has("mm_lightarrows") and mm_has("mm_magic") and mm_has("mm_zora") and mm_has("mm_elegy") and mm_has("mm_gyorgstone"))
-  or (mm_has("mm_ocarina") and mm_has("mm_eponasong") and mm_has("mm_hookshot") and mm_has("mm_gibdomask") and mm_has("mm_goron") and mm_has("mm_icearrows") and mm_has("mm_bow") and mm_has("mm_gbtbkfl") and mm_has("mm_lightarrows") and mm_has("mm_magic") and mm_has("mm_zora") and mm_has("mm_elegy") and mm_has("mm_gyorgstone"))
-  or (mm_has("mm_ocarina") and mm_has("mm_eponasong") and mm_has("mm_hookshot") and mm_has("mm_garomask") and mm_has("mm_goron") and mm_has("mm_icearrows") and mm_has("mm_bow") and mm_has("mm_gbtbkfl") and mm_has("mm_lightarrows") and mm_has("mm_magic") and mm_has("mm_zora") and mm_has("mm_elegy") and mm_has("mm_gyorgstone"))
+  if (has("mm_epona") and has("mm_zora") and has("mm_ocarina") and has("mm_nova") and has("mm_hookshot") and has ("icearrows") and has("mm_magic") and has("mm_bow") and has("mm_firearrows") and has("mm_gyorgbay"))
+  or (has("mm_epona") and has("mm_zora") and has("mm_ocarina") and has("mm_nova") and has("mm_hookshot") and has ("bow") and has("mm_icearrows") and has("mm_magic") and has("mm_gbtbkfl")and has("mm_gyorgbay"))
+  or (has("mm_deku") and has("mm_sonata") and has("mm_ocarina") and has("mm_bow") and has("mm_magic") and has("mm_icearrows") and has("mm_firearrows") and has("mm_zora") and has("mm_gyorgwood"))
+  or (has("mm_deku") and has("mm_sonata") and has("mm_ocarina") and has("mm_bow") and has("mm_magic") and has("mm_icearrows") and has("mm_gbtbkfl") and has("mm_zora") and has("mm_gyorgwood"))
+  or (has("mm_bow") and has("mm_goron") and has("mm_zora") and has("mm_lullaby") and has("mm_ocarina") and has("mm_magic") and has("mm_gyorgsnow") and has("mm_icearrows") and has("mm_firearrows"))
+  or (has("mm_bow") and has("mm_goron") and has("mm_zora") and has("mm_lullaby") and has("mm_ocarina") and has("mm_magic") and has("mm_gyorgsnow") and has("mm_icearrows") and has("mm_gbtbkfl"))
+  or (has("mm_ocarina") and has("mm_eponasong") and has("mm_hookshot") and has("mm_gibdomask") and has("mm_goron") and has("mm_icearrows") and has("mm_bow") and has("mm_firearrows") and has("mm_lightarrows") and has("mm_magic") and has("mm_zora") and has("mm_elegy") and has("mm_gyorgstone"))
+  or (has("mm_ocarina") and has("mm_eponasong") and has("mm_hookshot") and has("mm_garomask") and has("mm_goron") and has("mm_icearrows") and has("mm_bow") and has("mm_firearrows") and has("mm_lightarrows") and has("mm_magic") and has("mm_zora") and has("mm_elegy") and has("mm_gyorgstone"))
+  or (has("mm_ocarina") and has("mm_eponasong") and has("mm_hookshot") and has("mm_gibdomask") and has("mm_goron") and has("mm_icearrows") and has("mm_bow") and has("mm_gbtbkfl") and has("mm_lightarrows") and has("mm_magic") and has("mm_zora") and has("mm_elegy") and has("mm_gyorgstone"))
+  or (has("mm_ocarina") and has("mm_eponasong") and has("mm_hookshot") and has("mm_garomask") and has("mm_goron") and has("mm_icearrows") and has("mm_bow") and has("mm_gbtbkfl") and has("mm_lightarrows") and has("mm_magic") and has("mm_zora") and has("mm_elegy") and has("mm_gyorgstone"))
     then
     return 1
   else
@@ -385,11 +359,11 @@ function mm_has_greatbay_frog_access()
 end
 
 function mm_has_woodfall_frog_access()
-  if (mm_has("mm_deku") and mm_has("mm_ocarina") and mm_has("mm_sonata") and mm_has("mm_bow") and mm_has("mm_odolwawood"))
-  or (mm_has("mm_epona") and mm_has("mm_zora") and mm_has("mm_ocarina") and mm_has("mm_hookshot") and mm_has("mm_nova") and mm_has("mm_deku") and mm_has("mm_bow") and mm_has("mm_odolwabay"))
-  or (mm_has("mm_goron") and mm_has("mm_ocarina") and mm_has("mm_lullaby") and mm_has("mm_magic") and mm_has("mm_deku") and mm_has("mm_bow") and mm_has("mm_odolwasnow"))
-  or (mm_has("mm_ocarina") and mm_has("mm_eponasong") and mm_has("mm_hookshot") and mm_has("mm_gibdomask") and mm_has("mm_goron") and mm_has("mm_icearrows") and mm_has("mm_bow") and mm_has("mm_lightarrows") and mm_has("mm_magic") and mm_has("mm_zora") and mm_has("mm_elegy") and mm_has("mm_deku") and mm_has("mm_odolwastone"))
-  or (mm_has("mm_ocarina") and mm_has("mm_eponasong") and mm_has("mm_hookshot") and mm_has("mm_garomask") and mm_has("mm_goron") and mm_has("mm_icearrows") and mm_has("mm_bow") and mm_has("mm_lightarrows") and mm_has("mm_magic") and mm_has("mm_zora") and mm_has("mm_elegy") and mm_has("mm_deku") and mm_has("mm_odolwastone"))
+  if (has("mm_deku") and has("mm_ocarina") and has("mm_sonata") and has("mm_bow") and has("mm_odolwawood"))
+  or (has("mm_epona") and has("mm_zora") and has("mm_ocarina") and has("mm_hookshot") and has("mm_nova") and has("mm_deku") and has("mm_bow") and has("mm_odolwabay"))
+  or (has("mm_goron") and has("mm_ocarina") and has("mm_lullaby") and has("mm_magic") and has("mm_deku") and has("mm_bow") and has("mm_odolwasnow"))
+  or (has("mm_ocarina") and has("mm_eponasong") and has("mm_hookshot") and has("mm_gibdomask") and has("mm_goron") and has("mm_icearrows") and has("mm_bow") and has("mm_lightarrows") and has("mm_magic") and has("mm_zora") and has("mm_elegy") and has("mm_deku") and has("mm_odolwastone"))
+  or (has("mm_ocarina") and has("mm_eponasong") and has("mm_hookshot") and has("mm_garomask") and has("mm_goron") and has("mm_icearrows") and has("mm_bow") and has("mm_lightarrows") and has("mm_magic") and has("mm_zora") and has("mm_elegy") and has("mm_deku") and has("mm_odolwastone"))
       then
         return 1
       else
@@ -399,9 +373,9 @@ end
 
 
 function mm_inverted_access()
-  if (mm_has("mm_deku") and mm_has("mm_ocarina") and mm_has("mm_sonata") and mm_has("mm_bow") and mm_has("mm_twinwood"))
-  or (mm_has("mm_goron") and mm_has("mm_lullaby") and mm_has("mm_bow") and mm_has("mm_magic") and mm_has("mm_ocarina") and mm_has("mm_twinsnow"))
-  or (mm_has("mm_zora") and mm_has("mm_nova") and mm_has("mm_ocarina") and mm_has("mm_hookshot") and mm_has("mm_eponasong") and mm_has("mm_twinbay"))
+  if (has("mm_deku") and has("mm_ocarina") and has("mm_sonata") and has("mm_bow") and has("mm_twinwood"))
+  or (has("mm_goron") and has("mm_lullaby") and has("mm_bow") and has("mm_magic") and has("mm_ocarina") and has("mm_twinsnow"))
+  or (has("mm_zora") and has("mm_nova") and has("mm_ocarina") and has("mm_hookshot") and has("mm_eponasong") and has("mm_twinbay"))
   then
     return 1
   else
@@ -411,9 +385,9 @@ end
 
 
 function mm_can_LA()
-   if mm_has("mm_magic")
-  and mm_has("mm_bow")
-  and mm_has("mm_lightarrows")
+   if has("mm_magic")
+  and has("mm_bow")
+  and has("mm_lightarrows")
   then
     return 1
   else
@@ -422,9 +396,9 @@ function mm_can_LA()
 end
 
 function mm_has_fire()
-   if mm_has("mm_magic")
-  and mm_has("mm_bow")
-  and mm_has("mm_firearrows")
+   if has("mm_magic")
+  and has("mm_bow")
+  and has("mm_firearrows")
   then
     return 1
   else
@@ -433,9 +407,9 @@ function mm_has_fire()
 end
 
 function mm_can_IA()
-   if mm_has("mm_magic")
-  and mm_has("mm_bow")
-  and mm_has("mm_icearrows")
+   if has("mm_magic")
+  and has("mm_bow")
+  and has("mm_icearrows")
   then
     return 1
   else
@@ -446,9 +420,9 @@ end
 
 
 function mm_woodfall_not_known_but_odolwa_found()
-  if mm_has("mm_odolwawood") or mm_has("mm_gohtwood") or mm_has("mm_gyorgwood") or mm_has("mm_twinwood")then
+  if has("mm_odolwawood") or has("mm_gohtwood") or has("mm_gyorgwood") or has("mm_twinwood")then
       return 0
-  elseif mm_has("mm_odolwawood") or mm_has("mm_odolwasnow") or mm_has("mm_odolwabay") or mm_has("mm_odolwastone") then
+  elseif has("mm_odolwawood") or has("mm_odolwasnow") or has("mm_odolwabay") or has("mm_odolwastone") then
     return 0
   else
       return 1
@@ -456,27 +430,27 @@ function mm_woodfall_not_known_but_odolwa_found()
 end
 
 function mm_woodfall_not_known_but_goht_found()
-  if mm_has("mm_odolwawood") or mm_has("mm_gohtwood") or mm_has("mm_gyorgwood") or mm_has("mm_twinwood")then
+  if has("mm_odolwawood") or has("mm_gohtwood") or has("mm_gyorgwood") or has("mm_twinwood")then
       return 0
-  elseif mm_has("mm_gohtwood") or mm_has("mm_gohtsnow") or mm_has("mm_gohtbay") or mm_has("mm_gohtstone") then
+  elseif has("mm_gohtwood") or has("mm_gohtsnow") or has("mm_gohtbay") or has("mm_gohtstone") then
     return 0
   else
       return 1
   end
 end
 function mm_woodfall_not_known_but_gyorg_found()
-  if mm_has("mm_odolwawood") or mm_has("mm_gohtwood") or mm_has("mm_gyorgwood") or mm_has("mm_twinwood")then
+  if has("mm_odolwawood") or has("mm_gohtwood") or has("mm_gyorgwood") or has("mm_twinwood")then
       return 0
-  elseif mm_has("mm_gyorgwood") or mm_has("mm_gyorgsnow") or mm_has("mm_gyorgbay") or mm_has("mm_gyorgstone") then
+  elseif has("mm_gyorgwood") or has("mm_gyorgsnow") or has("mm_gyorgbay") or has("mm_gyorgstone") then
     return 0
   else
       return 1
   end
 end
 function mm_woodfall_not_known_but_twinmold_found()
-  if mm_has("mm_odolwawood") or mm_has("mm_gohtwood") or mm_has("mm_gyorgwood") or mm_has("mm_twinwood")then
+  if has("mm_odolwawood") or has("mm_gohtwood") or has("mm_gyorgwood") or has("mm_twinwood")then
       return 0
-  elseif mm_has("mm_twingwood") or mm_has("mm_twinsnow") or mm_has("mm_twinbay") or mm_has("mm_twinstone") then
+  elseif has("mm_twingwood") or has("mm_twinsnow") or has("mm_twinbay") or has("mm_twinstone") then
     return 0
   else
       return 1
@@ -486,9 +460,9 @@ end
 
 
 function mm_snowhead_not_known_but_odolwa_found()
-  if mm_has("mm_odolwasnow") or mm_has("mm_gohtsnow") or mm_has("mm_gyorgsnow") or mm_has("mm_twinsnow")then
+  if has("mm_odolwasnow") or has("mm_gohtsnow") or has("mm_gyorgsnow") or has("mm_twinsnow")then
       return 0
-  elseif mm_has("mm_odolwawood") or mm_has("mm_odolwasnow") or mm_has("mm_odolwabay") or mm_has("mm_odolwastone") then
+  elseif has("mm_odolwawood") or has("mm_odolwasnow") or has("mm_odolwabay") or has("mm_odolwastone") then
     return 0
   else
       return 1
@@ -496,9 +470,9 @@ function mm_snowhead_not_known_but_odolwa_found()
 end
 
 function mm_snowhead_not_known_but_goht_found()
-  if mm_has("mm_odolwasnow") or mm_has("mm_gohtsnow") or mm_has("mm_gyorgsnow") or mm_has("mm_twinsnow")then
+  if has("mm_odolwasnow") or has("mm_gohtsnow") or has("mm_gyorgsnow") or has("mm_twinsnow")then
       return 0
-  elseif mm_has("mm_gohtwood") or mm_has("mm_gohtsnow") or mm_has("mm_gohtbay") or mm_has("mm_gohtstone") then
+  elseif has("mm_gohtwood") or has("mm_gohtsnow") or has("mm_gohtbay") or has("mm_gohtstone") then
     return 0
   else
       return 1
@@ -506,27 +480,27 @@ function mm_snowhead_not_known_but_goht_found()
 end
 
 function mm_snowhead_not_known_but_gyorg_found()
-  if mm_has("mm_odolwasnow") or mm_has("mm_gohtsnow") or mm_has("mm_gyorgsnow") or mm_has("mm_twinsnow")then
+  if has("mm_odolwasnow") or has("mm_gohtsnow") or has("mm_gyorgsnow") or has("mm_twinsnow")then
       return 0
-  elseif mm_has("mm_gyorgwood") or mm_has("mm_gyorgsnow") or mm_has("mm_gyorgbay") or mm_has("mm_gyorg4") then
+  elseif has("mm_gyorgwood") or has("mm_gyorgsnow") or has("mm_gyorgbay") or has("mm_gyorg4") then
     return 0
   else
       return 1
   end
 end
 function mm_snowhead_not_known_but_twinmold_found()
-  if mm_has("mm_odolwasnow") or mm_has("mm_gohtsnow") or mm_has("mm_gyorgsnow") or mm_has("mm_twinsnow")then
+  if has("mm_odolwasnow") or has("mm_gohtsnow") or has("mm_gyorgsnow") or has("mm_twinsnow")then
       return 0
-  elseif mm_has("mm_twinwood") or mm_has("mm_twinsnow") or mm_has("mm_twinbay") or mm_has("mm_twinstone") then
+  elseif has("mm_twinwood") or has("mm_twinsnow") or has("mm_twinbay") or has("mm_twinstone") then
     return 0
   else
       return 1
   end
 end
 function mm_bay_not_known_but_odolwa_found()
-  if mm_has("mm_odolwabay") or mm_has("mm_gohtbay") or mm_has("mm_gyorgbay") or mm_has("mm_twinbay")then
+  if has("mm_odolwabay") or has("mm_gohtbay") or has("mm_gyorgbay") or has("mm_twinbay")then
       return 0
-  elseif mm_has("mm_odolwawood") or mm_has("mm_odolwasnow") or mm_has("mm_odolwabay") or mm_has("mm_odolwastone") then
+  elseif has("mm_odolwawood") or has("mm_odolwasnow") or has("mm_odolwabay") or has("mm_odolwastone") then
     return 0
   else
       return 1
@@ -534,9 +508,9 @@ function mm_bay_not_known_but_odolwa_found()
 end
 
 function mm_bay_not_known_but_goht_found()
-  if mm_has("mm_odolwabay") or mm_has("mm_gohtbay") or mm_has("mm_gyorgbay") or mm_has("mm_twinbay")then
+  if has("mm_odolwabay") or has("mm_gohtbay") or has("mm_gyorgbay") or has("mm_twinbay")then
       return 0
-  elseif mm_has("mm_gohtwood") or mm_has("mm_gohtsnow") or mm_has("mm_gohtbay") or mm_has("mm_gohtstone") then
+  elseif has("mm_gohtwood") or has("mm_gohtsnow") or has("mm_gohtbay") or has("mm_gohtstone") then
     return 0
   else
       return 1
@@ -544,27 +518,27 @@ function mm_bay_not_known_but_goht_found()
 end
 
 function mm_bay_not_known_but_gyorg_found()
-  if mm_has("mm_odolwabay") or mm_has("mm_gohtbay") or mm_has("mm_gyorgbay") or mm_has("mm_twinbay")then
+  if has("mm_odolwabay") or has("mm_gohtbay") or has("mm_gyorgbay") or has("mm_twinbay")then
       return 0
-  elseif mm_has("mm_gyorgwood") or mm_has("mm_gyorgsnow") or mm_has("mm_gyorgbay") or mm_has("mm_gyorg4") then
+  elseif has("mm_gyorgwood") or has("mm_gyorgsnow") or has("mm_gyorgbay") or has("mm_gyorg4") then
     return 0
   else
       return 1
   end
 end
 function mm_bay_not_known_but_twinmold_found()
-  if mm_has("mm_odolwabay") or mm_has("mm_gohtbay") or mm_has("mm_gyorgbay") or mm_has("mm_twinbay")then
+  if has("mm_odolwabay") or has("mm_gohtbay") or has("mm_gyorgbay") or has("mm_twinbay")then
       return 0
-  elseif mm_has("mm_twinwood") or mm_has("mm_twinsnow") or mm_has("mm_twinbay") or mm_has("mm_twinstone") then
+  elseif has("mm_twinwood") or has("mm_twinsnow") or has("mm_twinbay") or has("mm_twinstone") then
     return 0
   else
       return 1
   end
 end
 function mm_stone_not_known_but_odolwa_found()
-  if mm_has("mm_odolwastone") or mm_has("mm_gohtstone") or mm_has("mm_gyorgstone") or mm_has("mm_twinstone")then
+  if has("mm_odolwastone") or has("mm_gohtstone") or has("mm_gyorgstone") or has("mm_twinstone")then
       return 0
-  elseif mm_has("mm_odolwawood") or mm_has("mm_odolwasnow") or mm_has("mm_odolwabay") or mm_has("mm_odolwastone") then
+  elseif has("mm_odolwawood") or has("mm_odolwasnow") or has("mm_odolwabay") or has("mm_odolwastone") then
     return 0
   else
       return 1
@@ -572,9 +546,9 @@ function mm_stone_not_known_but_odolwa_found()
 end
 
 function mm_stone_not_known_but_goht_found()
-  if mm_has("mm_odolwastone") or mm_has("mm_gohtstone") or mm_has("mm_gyorgstone") or mm_has("mm_twinstone")then
+  if has("mm_odolwastone") or has("mm_gohtstone") or has("mm_gyorgstone") or has("mm_twinstone")then
       return 0
-  elseif mm_has("mm_gohtwood") or mm_has("mm_gohtsnow") or mm_has("mm_gohtbay") or mm_has("mm_gohtstone") then
+  elseif has("mm_gohtwood") or has("mm_gohtsnow") or has("mm_gohtbay") or has("mm_gohtstone") then
     return 0
   else
       return 1
@@ -582,18 +556,18 @@ function mm_stone_not_known_but_goht_found()
 end
 
 function mm_stone_not_known_but_gyorg_found()
-  if mm_has("mm_odolwastone") or mm_has("mm_gohtstone") or mm_has("mm_gyorgstone") or mm_has("mm_twinstone")then
+  if has("mm_odolwastone") or has("mm_gohtstone") or has("mm_gyorgstone") or has("mm_twinstone")then
       return 0
-  elseif mm_has("mm_gyorgwood") or mm_has("mm_gyorgsnow") or mm_has("mm_gyorgbay") or mm_has("mm_gyorg4") then
+  elseif has("mm_gyorgwood") or has("mm_gyorgsnow") or has("mm_gyorgbay") or has("mm_gyorg4") then
     return 0
   else
       return 1
   end
 end
 function mm_stone_not_known_but_twinmold_found()
-  if mm_has("mm_odolwastone") or mm_has("mm_gohtstone") or mm_has("mm_gyorgstone") or mm_has("mm_twinstone")then
+  if has("mm_odolwastone") or has("mm_gohtstone") or has("mm_gyorgstone") or has("mm_twinstone")then
       return 0
-  elseif mm_has("mm_twinwood") or mm_has("mm_twinsnow") or mm_has("mm_twinbay") or mm_has("mm_twinstone") then
+  elseif has("mm_twinwood") or has("mm_twinsnow") or has("mm_twinbay") or has("mm_twinstone") then
     return 0
   else
       return 1

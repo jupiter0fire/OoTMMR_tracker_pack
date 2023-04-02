@@ -16,6 +16,7 @@ amount_cache = {}
 function clear_amount_cache()
   amount_cache = {}
 end
+
 function has(item, amount)
   if not amount_cache[item] then
     amount_cache[item] = Tracker:ProviderCountForCode(item)
@@ -27,6 +28,7 @@ function has(item, amount)
   end
   return count >= amount
 end
+
 function has_exact(item, amount)
   if not amount_cache[item] then
     amount_cache[item] = Tracker:ProviderCountForCode(item)

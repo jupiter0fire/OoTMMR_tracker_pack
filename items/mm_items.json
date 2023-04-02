@@ -357,14 +357,9 @@
     "codes": "mm_bomber,mm_bombernotebook,mm_notebook,mm_book"
   },
   {
-    "name": "Spin Attack",
-    "type": "toggle",
-    "img": "images/items/mm_springwater.png",
-    "codes": "mm_spin"
-  },
-  {
     "name": "MM Sword",
     "type": "progressive",
+    "loop": true,
     "stages": [
       {
         "img": "images/items/mm_kokiri.png",
@@ -381,21 +376,11 @@
     ]
   },
   {
-    "name": "MM Sword",
-    "type": "progressive",
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/items/mm_kokiri.png",
-        "codes": "mm_kokirisword,mm_kokiri,mm_sword0"
-      },
-      {
-        "img": "images/items/mm_razor.png"
-      },
-      {
-        "img": "images/items/mm_gilded.png"
-      }
-    ]
+    "name": "MM Spin Attack",
+    "type": "toggle_badged",
+    "base_item": "mm_kokirisword",
+    "img": "images/items/mm_spin.png",
+    "codes": "mm_spinattack"
   },
   {
     "name": "MM Shield",
@@ -2181,12 +2166,6 @@
     "codes": "mm_mirror_static,mm_mirrorshield_static,mm_mirror_shield_static,mm_shield2_static"
   },
   {
-    "name": "MM Kokiri Sword",
-    "type": "toggle",
-    "img": "images/items/mm_kokiri.png",
-    "codes": "mm_kokirisword_static,mm_kokiri_static,mm_sword1_static"
-  },
-  {
     "name": "MM Razor Sword",
     "type": "toggle",
     "img": "images/items/mm_razor.png",
@@ -2973,12 +2952,6 @@
     "type": "toggle",
     "img": "images/items_capture/mm_icearrow.png",
     "codes": "mm_icearrowscap"
-  },
-  {
-    "name": "MM Kokiri Sword Capturable",
-    "type": "toggle",
-    "img": "images/items_capture/mm_kokiri.png",
-    "codes": "mm_kokiriswordstaticcap"
   },
   {
     "name": "MM Mirror Shield Capturable",
