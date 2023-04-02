@@ -5858,8 +5858,7 @@
           "@Snowhead Temple/Snowhead Temple Entrance,mm_zora",
           "@Snowhead Temple/Snowhead Temple Entrance,mm_goron",
           "@Snowhead Temple/Snowhead Temple Bridge Front",
-          "@Snowhead Temple/Snowhead Temple Bridge Back",
-          "@Snowhead Temple/Snowhead Temple Map Room,$mm_can_use_fire_arrows"
+          "@Snowhead Temple/Snowhead Temple Bridge Back"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5882,7 +5881,6 @@
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Bridge Front,$mm_goron_fast_roll",
           "@Snowhead Temple/Snowhead Temple Bridge Front,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Map Room",
           "@Snowhead Temple/Snowhead Temple Main,$mm_can_use_fire_arrows",
           "@Snowhead Temple/Snowhead Temple Main,$mm_has_hot_water",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_goron",
