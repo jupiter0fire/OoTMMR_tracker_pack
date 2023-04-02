@@ -138,16 +138,11 @@
   {
     "name": "Dodongos Cavern",
     "parent": "Death Mountain",
-    "access_rules": [
-      "$has_age|adult",
-      "$has_bombflowers"
-    ],
     "sections": [
       {
-        "name": "Lobby",
+        "name": "Lobby as Child",
         "access_rules": [
-          "$has_bombflowers",
-          "$can_use_hammer"
+          "$dodongos_cavern_child_access"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -155,10 +150,9 @@
         "item_count": 1
       },
       {
-        "name": "Staircase Room",
+        "name": "Lobby as Adult",
         "access_rules": [
-          "@Dodongos Cavern/Lobby,$has_age|adult",
-          "@Dodongos Cavern/Lobby,$has_bombflowers"
+          "$dodongos_cavern_adult_access"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -166,10 +160,9 @@
         "item_count": 1
       },
       {
-        "name": "Climb",
+        "name": "Staircase Room as Child",
         "access_rules": [
-          "@Dodongos Cavern/Staircase Room,$has_bombflowers",
-          "@Dodongos Cavern/Staircase Room,$can_use_dins"
+          "@Dodongos Cavern/Lobby as Child,$has_bombflowers"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -177,11 +170,53 @@
         "item_count": 1
       },
       {
-        "name": "Far Bridge",
+        "name": "Staircase Room as Adult",
         "access_rules": [
-          "@Dodongos Cavern/Climb,$can_use_longshot",
-          "@Dodongos Cavern/Climb,$has_hover_boots",
-          "@Dodongos Cavern/Climb,$can_hit_triggers_distance"
+          "@Dodongos Cavern/Lobby as Adult"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Climb as Child",
+        "access_rules": [
+          "@Dodongos Cavern/Staircase Room as Child,$has_bombflowers",
+          "@Dodongos Cavern/Staircase Room as Child,$can_use_dins"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Climb as Adult",
+        "access_rules": [
+          "@Dodongos Cavern/Staircase Room as Adult,$has_bombflowers",
+          "@Dodongos Cavern/Staircase Room as Adult,$can_use_dins"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Far Bridge as Child",
+        "access_rules": [
+          "@Dodongos Cavern/Climb as Child,$can_hit_triggers_distance_child"
+        ],
+        "visibility_rules": [
+          "hidden_region"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Far Bridge as Adult",
+        "access_rules": [
+          "@Dodongos Cavern/Climb as Adult,$can_use_longshot",
+          "@Dodongos Cavern/Climb as Adult,$has_hover_boots",
+          "@Dodongos Cavern/Climb as Adult,$can_hit_triggers_distance_adult"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -191,7 +226,8 @@
       {
         "name": "Boss Area",
         "access_rules": [
-          "@Dodongos Cavern/Far Bridge,$has_explosives_bool"
+          "@Dodongos Cavern/Far Bridge as Child,$has_explosives_bool",
+          "@Dodongos Cavern/Far Bridge as Adult,$has_explosives_bool"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -202,7 +238,8 @@
         "name": "GS Side Room Near Lower Lizalfos",
         "short_name": "East Side",
         "access_rules": [
-          "@Dodongos Cavern/Lobby"
+          "@Dodongos Cavern/Lobby as Child,$has_bombflowers",
+          "@Dodongos Cavern/Lobby as Adult,$has_bombflowers"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"

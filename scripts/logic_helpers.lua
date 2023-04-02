@@ -125,6 +125,10 @@ function can_hit_triggers_distance_child()
   return can_use_slingshot()
 end  
 
+function can_hit_triggers_distance_adult()
+  return can_use_bow()
+end  
+
 function has_explosives_or_hammer()
   return has_explosives_bool() or can_use_hammer()
 end
@@ -200,6 +204,14 @@ end
 
 function hidden_grotto_bomb()
   return stone_of_agony() and (has_explosives_bool() or can_use_hammer())
+end 
+
+function dodongos_cavern_child_access()
+  return has_age("child") and (has("letter") and has_explosives_bool()) and has_bombflowers()
+end  
+
+function dodongos_cavern_adult_access()
+  return has_age("adult") and (has_bombflowers() or can_use_hammer())
 end  
 
 function spawn_access(region, age)

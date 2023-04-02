@@ -4734,7 +4734,6 @@
                   {
                     "name": "Map: Clock Town",
                     "access_rules": [
-                      "$mm_has_projectile",
                       "[mm_towntinglejump],mm_sword1",
                       "[mm_towntinglejump],mm_fairysword"
                     ],
@@ -4743,7 +4742,6 @@
                   {
                     "name": "Map: Swamp",
                     "access_rules": [
-                      "$mm_has_projectile",
                       "[mm_towntinglejump],mm_sword1",
                       "[mm_towntinglejump],mm_fairysword"
                     ],
@@ -5625,16 +5623,10 @@
             "sections": [
               {
                 "name": "Map: Ranch",
-                "access_rules": [
-                  "$mm_has_projectile"
-                ],
                 "item_count": 1
               },
               {
                 "name": "Map: Ocean",
-                "access_rules": [
-                  "$mm_has_projectile"
-                ],
                 "item_count": 1
               }
             ]
@@ -5874,16 +5866,10 @@
             "sections": [
               {
                 "name": "Map: Swamp",
-                "access_rules": [
-                  "$mm_has_projectile"
-                ],
                 "item_count": 1
               },
               {
                 "name": "Map: Mountain",
-                "access_rules": [
-                  "$mm_has_projectile"
-                ],
                 "item_count": 1
               }
             ]
@@ -6506,9 +6492,6 @@
           {
             "name": "Mountain Tingle Maps",
             "short_name": "Mountain Tingle",
-            "access_rules": [
-              "$mm_has_projectile"
-            ],
             "sections": [
               {
                 "name": "Map: Mountain",
