@@ -47,7 +47,7 @@
               "tabs": [
                 {
                   "title": "OOT",
-                  "icon": "images/sword2.png",
+                  "icon": "images/ocarina.png",
                   "content": {
                     "type": "map",
                     "maps": [
@@ -57,7 +57,7 @@
                 },
                 {
                   "title": "MM",
-                  "icon": "images/mm_sword1.png",
+                  "icon": "images/items/mm_fiercedeity.png",
                   "content": {
                     "type": "map",
                     "maps": [

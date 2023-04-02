@@ -17,21 +17,17 @@
             "slingshot",
             "ocarinacrow",
             "hookshot",
-            "boomerang",
-            "lens",
-            "beans"
+            "boomerang"
           ],
           [
-            "hammer",
             "lightarrow",
             "bottle1",
-            "lift1",  
+            "ruto",
+            "lift1",
             "redtunic",
             "bluetunic",
             "sword1",
-            "sword2",
-            "scale1",
-            "ironboots"
+            "sword2"
           ],
           [
             "hoverboots",
@@ -40,19 +36,14 @@
             "magic",
             "card",
             "agony",
-            "skulltula"
+            "skulltula",
+            "lens"
           ],
           [
-            "pocketcucco",
-            "cojiro",
-            "mushroom",
-            "oddpotion",
-            "saw",
-            "brokensword",
-            "prescription",
-            "frog",
-            "eyedrops",
-            "claimcheck"
+            "beans",
+            "scale1",
+            "ironboots",
+            "hammer"
           ],
           [
             "lullaby",
@@ -73,6 +64,26 @@
             "prelude",
             "skullmask",
             "maskoftruth"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,1",
+        "scale": 0.7,
+        "rows": [
+          [
+            "pocketcucco",
+            "cojiro",
+            "mushroom",
+            "oddpotion",
+            "saw",
+            "brokensword",
+            "prescription",
+            "frog",
+            "eyedrops",
+            "claimcheck"
           ]
         ]
       },
@@ -232,8 +243,8 @@
         "item_size": 28,
         "rows": [
           [
-            "mm_stick",
-            "mm_nut",
+            "mm_fairysword",
+            "mm_spinattack",
             "mm_bow",
             "mm_firearrow",
             "mm_icearrow",
@@ -248,8 +259,8 @@
             "mm_hookshot",
             "mm_lens",
             "mm_magic",
-            "mm_fairysword",
-            "mm_spinattack"
+            "mm_bottle1",
+            "mm_box"
           ],
           [
             "mm_songoftime",
@@ -258,8 +269,8 @@
             "mm_soaring",
             "mm_storms",
             "mm_wallet",
-            "mm_bottle1",
-            "mm_box"
+            "mm_roomkey",
+            "mm_moontear"
           ],
           [
             "mm_sonata",
@@ -268,8 +279,8 @@
             "mm_elegy",
             "mm_oath",
             "mm_beans",
-            "mm_roomkey",
-            "mm_moontear"
+            "mm_deliverytomama",
+            "mm_deed1"
           ],
           [
             "mm_postman",
@@ -278,8 +289,8 @@
             "mm_stone",
             "mm_fairymask",
             "mm_deku",
-            "mm_deliverytomama",
-            "mm_deed1"
+            "mm_pendant",
+            "mm_deed2"
           ],
           [
             "mm_keaton",
@@ -288,8 +299,8 @@
             "mm_dongero",
             "mm_scents",
             "mm_goron",
-            "mm_pendant",
-            "mm_deed2"
+            "mm_letter",
+            "mm_deed3"
           ],
           [
             "mm_romanimask",
@@ -298,8 +309,8 @@
             "mm_couple",
             "mm_mot",
             "mm_zora",
-            "mm_letter",
-            "mm_deed3"
+            "mm_clocktown_strayfairy",
+            "mm_deed4"
           ],
           [
             "mm_kamaro",
@@ -308,8 +319,8 @@
             "mm_captain",
             "mm_giant",
             "mm_fiercedeity",
-            "mm_clocktown_strayfairy",
-            "mm_deed4"
+            "mm_skulltulla_woodfall",
+            "mm_skulltulla_greatbay"
           ]
         ]
       },
@@ -320,28 +331,8 @@
           {
             "type": "array",
             "orientation": "horizontal",
-            "margin": "1,1",
-            "content": [
-              {
-                "type": "item",
-                "item": "mm_skulltulla_woodfall",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "mm_skulltulla_greatbay",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              }
-            ]
-          },
-          {
-            "type": "array",
-            "orientation": "horizontal",
             "margin": "0,0",
+            "scale": 0.9,
             "content": [
               {
                 "type": "item",
@@ -404,6 +395,7 @@
           {
             "type": "array",
             "orientation": "horizontal",
+            "scale": 0.8,
             "margin": "0,0",
             "content": [
               {
