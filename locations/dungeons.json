@@ -6174,24 +6174,58 @@
         "item_count": 1
       },
       {
+        "name": "Bridge Room Ledge Bubble",
+        "short_name": "Bridge Room Bubble",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Bridge Front,mm_hookshot,mm_fairymask",
+          "@Snowhead Temple/Snowhead Temple Bridge Front,mm_bow,mm_fairymask"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bridge Room Pillar Bubble",
+        "short_name": "Bridge Room Pillar",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Bridge Front,mm_hookshot,mm_fairymask,$mm_can_use_lens",
+          "@Snowhead Temple/Snowhead Temple Bridge Front,mm_bow,mm_fairymask,mm_can_use_lens"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Chest Past Bridge Room - Map",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Map",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "goron,magic",
-          "goron,hookshot",
-          "goron,$has_explosives,snowhead_small_keys:2",
-          "goron,$longjump",
-          "zora,$longjump",
-          "zora,hookshot",
-          "$has_explosives,zora,snowhead_small_keys:2",
-          "shtzora"
+          "@Snowhead Temple/Snowhead Temple Map Room"
         ],
         "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Ground Fairy",
+        "short_name": "Room with Map Chest",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Map Room"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
         "item_count": 1
       },
       {
@@ -6199,17 +6233,9 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Small Key 1",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "goron,magic",
-          "zora,shtzora",
-          "firearrows,bow,magic,zora",
-          "goron,$longjump",
-          "zora,$longjump"
+          "@Snowhead Temple/Snowhead Temple Block Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -6217,18 +6243,9 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Compass",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "goron,hookshot,magic",
-          "goron,snowhead_small_keys:1",
-          "zora,hookshot",
-          "zora,snowhead_small_keys:1",
-          "zora,shtzora",
-          "zora,$longjump"
+          "@Snowhead Temple/Snowhead Temple Compass Room"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -6236,21 +6253,38 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Small Key 2",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "goron,hookshot,$has_explosives,magic",
-          "zora,$has_explosives,shtzora",
-          "zora,$has_explosives,$longjump",
-          "magic,goron,hookshot,snowhead_small_keys:1,scarecrow",
-          "$has_explosives,goron,snowhead_small_keys:1",
-          "bow,firearrows,magic,goron,snowhead_small_keys:1",
-          "bow,firearrows,magic,zora,snowhead_small_keys:1",
-          "$has_explosives,zora,bow,magic,firearrows",
-          "$has_explosives,zora,snowhead_small_keys:1"
+          "@Snowhead Temple/Snowhead Temple Icicles,mm_bow,$mm_can_break_boulders",
+          "@Snowhead Temple/Snowhead Temple Icicles,mm_zora,$mm_can_break_boulders",
+          "@Snowhead Temple/Snowhead Temple Icicles,$mm_can_use_lens,$mm_can_break_boulders",
+          "@Snowhead Temple/Snowhead Temple Icicles,mm_hookshot,$mm_has_explosives"
         ],
-        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Icicle Room Fake Wall",
+        "short_name": "Ice Room Fake Wall",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Icicles,$mm_can_use_lens"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Fake Ceiling Bubble Fairy",
+        "short_name": "Fake Ceiling Bubble",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Dual Switches,$mm_can_use_lens,mm_bow,mm_fairymask"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
         "item_count": 1
       },
       {
@@ -6258,20 +6292,76 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Fire Arrows",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "goron,bow,firearrows,magic",
-          "firearrows,bow,magic,zora",
-          "hookshot,scarecrow,goron",
-          "hookshot,scarecrow,zora",
-          "goron,$has_explosives,magic,snowhead_small_keys:2",
-          "zora,$has_explosives,snowhead_small_keys:2,$longjump",
-          "goron,$has_explosives,magic,snowhead_small_keys:1,zora",
-          "zora,$has_explosives,snowhead_small_keys:1,$longjump"
+          "@Snowhead Temple/Snowhead Temple Fire Arrow"
         ],
-        "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Chest in Basement",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Center Level 0,mm_goron"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pillar Freezards",
+        "short_name": "Kill Freezards in Pillar Room",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/nowhead Temple Pillars Room"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Crate Fairy",
+        "short_name": "In Crate",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Compass Room,$mm_can_use_fire_arrows,$mm_has_explosives",
+          "@Snowhead Temple/Snowhead Temple Compass Room,$mm_can_use_fire_arrows,mm_goron",
+          "@Snowhead Temple/Snowhead Temple Compass Room,mm_fairymask,mm_bombs"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Ice Puzzle Chest",
+        "short_name": "Ice Switch Puzzle",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Compass Room,$mm_can_use_fire_arrows"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Double Block Chest",
+        "short_name": "Push Double BLocks",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Block Room Upper,@Snowhead Temple/Snowhead Temple Block Room"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
         "item_count": 1
       },
       {
@@ -6279,18 +6369,66 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Small Key 3",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "goron,hookshot",
-          "goron,bow,firearrows,magic",
-          "zora,shtzora",
-          "zora,$longjump",
-          "goron,$longjump",
-          "firearrows,bow,magic,zora"
+          "@Snowhead Temple/Snowhead Temple Bridge Front,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Bridge Back,$mm_can_use_fire_arrows"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Ledge Chest",
+        "short_name": "Ledge in Map Room",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snow Room Fake Wall",
+        "short_name": "Snow Fake Wall",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Snow Room,$mm_can_use_lens,mm_bow,mm_fairymask",
+          "@Snowhead Temple/Snowhead Temple Snow Room,$mm_can_use_lens,mm_hookshot,mm_fairymask"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dinolfos 1",
+        "short_name": "Dinolfos 1",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
         ],
         "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dinolfos 2",
+        "short_name": "Dinolfos 2",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Dinolfos Room"
+        ],
+        "capture_item": true,
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_all"
+        ],
         "item_count": 1
       },
       {
@@ -6298,14 +6436,26 @@
         "chest_unopened_img": "images/system/chest_golden_closed.png",
         "chest_opened_img": "images/system/chest_golden_open.png",
         "short_name": "Boss Key",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "bow,firearrows,magic,goron",
-          "zora,bow,firearrows,magic,snowhead_small_keys:1,shtzora,pillarskip"
+          "@Snowhead Temple/Snowhead Temple Boss Key Room"
         ],
         "capture_item": true,
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Fake Wall",
+        "short_name": "Main Room Fake Wall",
+        "chest_unopened_img": "images/system/mmsnowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Fire Arrow,$mm_can_use_lens,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Snow,$mm_can_use_lens",
+          "@Snowhead Temple/Snowhead Temple Center Level 3 Iced,$mm_can_use_lens"
+        ],
+        "visibility_rules": [
+          "setting_mm_shuffle_dungeonfairy_chest"
+        ],
         "item_count": 1
       },
       {
@@ -6313,24 +6463,8 @@
         "hosted_item": "snowhead",
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
         "access_rules": [
-          "snowhead_boss_key,goron,bow,firearrows,magic"
-        ],
-        "capture_item": true,
-        "item_count": 1
-      },
-      {
-        "name": "Oath to Order",
-        "chest_unopened_img": "images/system/unknownsong.png",
-        "chest_opened_img": "images/system/unknownsong_check.png",
-        "visibility_rules": [
-          "gohtsnow"
-        ],
-        "access_rules": [
-          "snowhead_boss_key,goron,bow,firearrows,magic"
+          "@Snowhead Temple/Snowhead Temple Boss,$mm_can_use_fire_arrows"
         ],
         "capture_item": true,
         "item_count": 1
@@ -6339,318 +6473,8 @@
     "map_locations": [
       {
         "map": "termina",
-        "badge_size": 21,
+        "size": 25,
         "x": 488,
-        "y": 35
-      }
-    ]
-  },
-  {
-    "name": "Snowhead Temple Stray Fairies",
-    "short_name": "Snowhead Fairies",
-    "parent": "Snowhead Area",
-    "access_rules": [
-      "fairy_yes,goron",
-      "fairy_yes,zora"
-    ],
-    "sections": [
-      {
-        "name": "Bridge Room Ledge Bubble",
-        "short_name": "Bridge Room Bubble",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "greatfairymask,goron,bow",
-          "goron,hookshot,greatfairymask",
-          "goron,hookshot,shtfairy",
-          "goron,shtfairy,$longjump",
-          "goron,magic,greatfairymask",
-          "goron,magic,shtfairy",
-          "zora,greatfairymask,$longjump",
-          "zora,greatfairymask,shtzora",
-          "zora,shtfairy,$longjump",
-          "zora,shtfairy,shtzora"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Bridge Room Pillar Bubble",
-        "short_name": "Bridge Room Pillar",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "greatfairymask,goron,bow",
-          "goron,hookshot,greatfairymask",
-          "goron,hookshot,shtfairy",
-          "goron,shtfairy,$longjump",
-          "goron,magic,greatfairymask",
-          "goron,magic,shtfairy",
-          "zora,greatfairymask,$longjump",
-          "zora,greatfairymask,shtzora",
-          "zora,shtfairy,$longjump",
-          "zora,shtfairy,shtzora"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Map Room Ground Fairy",
-        "short_name": "Room with Map Chest",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "goron,magic",
-          "goron,hookshot",
-          "goron,snowhead_small_keys:2,$has_explosives",
-          "zora,snowhead_small_keys:2,$has_explosives",
-          "shtzora",
-          "zora,hookshot",
-          "zora,$longjump",
-          "goron,$longjump"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Crate Fairy",
-        "short_name": "In Crate",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "goron,firearrows,magic,bombbag,snowhead_small_keys:1",
-          "goron,greatfairymask,snowhead_small_keys:1,bombbag",
-          "hookshot",
-          "goron,zora",
-          "zora,$has_explosives"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Icicle Room Fake Wall",
-        "short_name": "Ice Room Fake Wall",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "$has_explosives,snowhead_small_keys:1,lens_walls",
-          "goron,magic,firearrows,bow,snowhead_small_keys:1,lens_walls",
-          "goron,$has_explosives,hookshot,lens_walls",
-          "zora,shtzora,lens_walls",
-          "zora,$has_explosives,$longjump,lens_walls",
-          "$has_explosives,snowhead_small_keys:1,$can_see_with_lens",
-          "goron,magic,firearrows,bow,snowhead_small_keys:1,$can_see_with_lens",
-          "goron,$has_explosives,hookshot,$can_see_with_lens",
-          "zora,shtzora,$can_see_with_lens",
-          "zora,$has_explosives,$longjump,$can_see_with_lens"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Fake Ceiling Bubble Fairy",
-        "short_name": "Fake Ceiling Bubble",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "goron,$has_explosives,bow,snowhead_small_keys:2,greatfairymask,lens_walls",
-          "goron,hookshot,$has_explosives,snowhead_small_keys:1,greatfairymask,lens_walls",
-          "zora,$has_explosives,bow,snowhead_small_keys:1,greatfairymask,lens_walls",
-          "firearrows,bow,magic,goron,greatfairymask,lens_walls",
-          "firearrows,bow,magic,zora,greatfairymask,lens_walls",
-          "goron,$has_explosives,bow,snowhead_small_keys:2,greatfairymask,$can_see_with_lens",
-          "goron,hookshot,$has_explosives,snowhead_small_keys:1,greatfairymask,$can_see_with_lens",
-          "zora,$has_explosives,bow,snowhead_small_keys:1,greatfairymask,$can_see_with_lens",
-          "firearrows,bow,magic,goron,greatfairymask,$can_see_with_lens",
-          "firearrows,bow,magic,zora,greatfairymask,$can_see_with_lens"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Map Room Ledge Chest",
-        "short_name": "Ledge in Map Room",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "hookshot,scarecrow",
-          "firearrows,bow,magic,hookshot",
-          "firearrows,bow,magic,lens_jump",
-          "firearrows,bow,magic,$can_see_with_lens",
-          "hookshot,$has_explosives,snowhead_small_keys:2",
-          "hookshot,zora,$has_explosives,snowhead_small_keys:1",
-          "$has_explosives,snowhead_small_keys:2,$longjump,$can_see_with_lens",
-          "$has_explosives,snowhead_small_keys:2,$longjump,lens_jump",
-          "$has_explosives,$longjump,zora,snowhead_small_keys:1,$can_see_with_lens",
-          "$has_explosives,$longjump,zora,snowhead_small_keys:1,lens_jump",
-          "goron,$has_explosives,magic,snowhead_small_keys:2,$can_see_with_lens",
-          "goron,$has_explosives,magic,snowhead_small_keys:2,lens_jump"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Basement Chest",
-        "short_name": "Chest in Basement",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "goron,magic",
-          "goron,hookshot",
-          "goron,$has_explosives,snowhead_small_keys:2",
-          "goron,zora,shtzora",
-          "goron,$longjump"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ice Puzzle Chest",
-        "short_name": "Ice Switch Puzzle",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,magic,firearrows,zora",
-          "bow,magic,firearrows,snowhead_small_keys:1",
-          "bow,magic,firearrows,hookshot"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Double Block Chest",
-        "short_name": "Push Double BLocks",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "hookshot",
-          "zora,$longjump",
-          "zora,shtzora",
-          "firearrows,magic,bow,snowhead_small_keys:1"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Pillar Freezards",
-        "short_name": "Kill Freezards in Pillar Room",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "bow,magic,firearrows"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Snow Room Fake Wall",
-        "short_name": "Snow Fake Wall",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "greatfairymask,$can_see_with_lens,firearrows,zora,bow,magic,snowhead_small_keys:1,shtzora",
-          "greatfairymask,lens_jump,firearrows,zora,bow,magic,snowhead_small_keys:1,shtzora",
-          "greatfairymask,$can_see_with_lens,firearrows,zora,bow,magic,snowhead_small_keys:1,hookshot",
-          "greatfairymask,lens_jump,firearrows,zora,bow,magic,snowhead_small_keys:1,hookshot",
-          "greatfairymask,lens_jump,goron,firearrows,magic",
-          "greatfairymask,$can_see_with_lens,goron,firearrows,magic",
-          "greatfairymask,$can_see_with_lens,scarecrow,hookshot,goron,snowhead_small_keys:1",
-          "greatfairymask,lens_jump,scarecrow,hookshot,goron,snowhead_small_keys:1",
-          "greatfairymask,$can_see_with_lens,scarecrow,hookshot,zora,snowhead_small_keys:1",
-          "greatfairymask,lens_jump,scarecrow,hookshot,zora,snowhead_small_keys:1"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Dinolfos 1",
-        "short_name": "Dinolfos 1",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "magic,firearrows,bow,goron",
-          "magic,firearrows,bow,zora,shtzora,snowhead_small_keys:1"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Dinolfos 2",
-        "short_name": "Dinolfos 2",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "magic,firearrows,bow,goron",
-          "magic,firearrows,bow,zora,shtzora,snowhead_small_keys:1"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Main Room Fake Wall",
-        "short_name": "Main Room Fake Wall",
-        "chest_unopened_img": "images/system/snowhead_stray_fairy.png",
-        "chest_opened_img": "images/system/stray_fairy.png",
-        "access_rules": [
-          "hookshot,scarecrow,$can_see_with_lens",
-          "hookshot,scarecrow,lens_walls",
-          "bow,magic,firearrows,lens_walls",
-          "bow,magic,firearrows,$can_see_with_lens"
-        ],
-        "capture_item": true,
-        "visibility_rules": [
-          "fairy_yes,gohtsnow"
-        ],
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "badge_size": 21,
-        "x": 476,
         "y": 35
       }
     ]
