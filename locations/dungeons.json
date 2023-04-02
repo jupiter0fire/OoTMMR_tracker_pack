@@ -5859,7 +5859,7 @@
           "@Snowhead Temple/Snowhead Temple Entrance,mm_goron",
           "@Snowhead Temple/Snowhead Temple Bridge Front",
           "@Snowhead Temple/Snowhead Temple Bridge Back",
-          "@Snowhead Temple/Snowhead Temple Map Room Upper"
+          "@Snowhead Temple/Snowhead Temple Map Room,$mm_can_use_fire_arrows"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5887,8 +5887,7 @@
           "@Snowhead Temple/Snowhead Temple Main,$mm_has_hot_water",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_goron",
           "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:3,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot",
-          "@Snowhead Temple/Snowhead Temple Map Room Upper"
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5899,7 +5898,15 @@
         "name": "Snowhead Temple Map Room",
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Bridge Back",
-          "@Snowhead Temple/Snowhead Temple Map Room Upper"
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,$mm_goron_fast_rolls",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,$mm_can_use_fire_arrows,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_goron,mm_hookshot",
+          "@Snowhead Temple/Snowhead Temple Main,$mm_can_use_fire_arrows,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Main,$mm_has_hot_water,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:3,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,$mm_can_hookshot_scarecrow",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_zora,$mm_goron_fast_roll",
+          "@Snowhead Temple/Snowhead Temple Main,snowhead_small_keys:2,$mm_has_explosives,mm_hookshot,mm_goron"
         ],
         "visibility_rules": [
           "hidden_region"
