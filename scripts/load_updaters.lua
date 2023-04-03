@@ -1,5 +1,4 @@
 ScriptHost:LoadScript("scripts/update_maps.lua")
-ScriptHost:LoadScript("scripts/update.lua")
 
 function tracker_on_begin_loading_save_file()
   PACK_READY = false
