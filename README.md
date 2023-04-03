@@ -15,12 +15,12 @@ Things that need to be done:
 - [x] Logic for MM Great Bay
 - [x] Logic for MM Ikana Castle
 - [x] Logic for Woodfall Temple
-- [ ] Logic for Snowhead Temple
+- [x] Logic for Snowhead Temple
 - [x] Logic for Great Bay Temple
-- [ ] Logic for Stone Tower Temple
+- [x] Logic for Stone Tower Temple
 - [x] Logic for MM Moon
 - [x] Add Seahorse and Eggs as Checks
-- [ ] Fix layout
+- [x] Fix layout
 - [ ] Update logic to the current stable version of the randomizer
 - [ ] Add settings that were added after v1.2.0
 - [ ] Add tricks that were added after v1.2.0
