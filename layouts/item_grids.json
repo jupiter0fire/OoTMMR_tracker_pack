@@ -10,40 +10,34 @@
         "scale": 0.875,
         "rows": [
           [
+            "slingshot",
+            "ocarinacrow",
             "bombs",
             "bow",
             "firearrow",
+            "lightarrow",
             "dinsfire",
-            "slingshot",
-            "ocarinacrow",
-            "hookshot",
-            "boomerang"
+            "ruto"
           ],
           [
-            "lightarrow",
-            "bottle1",
-            "ruto",
-            "lift1",
+            "boomerang",
+            "lens",
+            "beans",
+            "hammer",
+            "hookshot",
             "redtunic",
             "bluetunic",
-            "sword1",
-            "sword2"
+            "bottle1"
           ],
           [
             "hoverboots",
-            "shield3",
-            "wallet1",
-            "magic",
-            "card",
-            "agony",
-            "skulltula",
-            "lens"
-          ],
-          [
-            "beans",
-            "scale1",
             "ironboots",
-            "hammer"
+            "sword1",
+            "sword2",
+            "shield3",
+            "magic",
+            "scale1",
+            "lift1"
           ],
           [
             "lullaby",
@@ -88,8 +82,436 @@
         ]
       },
       {
-        "type": "layout",
-        "key": "dungeon_grid_tall"
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "5,0",
+        "content": [
+          {
+            "type": "array",
+            "orientation": "vertical",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "forest",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "fire",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "water",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "spirit",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "shadow",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "free",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "forest_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "forest_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "forest_boss_key",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "fire_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "fire_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "fire_boss_key",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "water_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "water_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "water_boss_key",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "spirit_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "spirit_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "spirit_boss_key",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "shadow_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "shadow_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "shadow_boss_key",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "item",
+                    "item": "free_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "deku",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "dodongo",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "jabu",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "gc_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "gc_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "gc_boss_key",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "gtg_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "gtg_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "th_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "th_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "deku_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "dodongo_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "jabu_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "ice_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 66,
+                    "height": 14,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "botw_label",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 2,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "botw_small_keys",
+                        "canvas_depth": 1,
+                        "canvas_left": 34,
+                        "canvas_top": 0,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "itemgrid",
+            "h_alignment": "left",
+            "item_margin": "1,1",
+            "scale": 0.7,
+            "rows": [
+              [
+                "agony"
+              ],
+              [
+                "card"
+              ],
+              [
+                "skulltula"
+              ],
+              [
+                "wallet1"
+              ]
+            ]
+          }
+        ]
       }
     ]
   },

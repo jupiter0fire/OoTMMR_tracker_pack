@@ -1,4 +1,3 @@
-Tracker:AddLayouts("layouts/dungeon_grids_keysanity.json")
 Tracker:AddLayouts("layouts/item_grids.json")
 Tracker:AddLayouts("layouts/options.json")
 Tracker:AddLayouts("layouts/layouts.json")
