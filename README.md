@@ -24,6 +24,6 @@ Things that need to be done:
 - [ ] Update logic to the current stable version of the randomizer
 - [ ] Add settings that were added after v1.2.0
 - [ ] Add tricks that were added after v1.2.0
-- [ ] Delete unused images
+- [x] Delete unused images
 - [ ] Delete unused lua/json parts
 - [ ] General cleanup
