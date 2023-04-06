@@ -3060,7 +3060,7 @@
         "name": "Maze Path First Chest",
         "short_name": "Maze 1",
         "access_rules": [
-          "@Gerudo Training Ground/Central Maze,gtg_small_keys:2,[gtg_small_keys:4]"
+          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:2,[gtg_small_keys:4]"
         ],
         "item_count": 1
       },
@@ -3068,7 +3068,7 @@
         "name": "Maze Path Second Chest",
         "short_name": "Maze 2",
         "access_rules": [
-          "@Gerudo Training Ground/Central Maze,gtg_small_keys:4,[gtg_small_keys:6]"
+          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:4,[gtg_small_keys:6]"
         ],
         "item_count": 1
       },
@@ -3076,7 +3076,7 @@
         "name": "Maze Path Third Chest",
         "short_name": "Maze 3",
         "access_rules": [
-          "@Gerudo Training Ground/Central Maze,gtg_small_keys:5,[gtg_small_keys:7]"
+          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:5,[gtg_small_keys:7]"
         ],
         "item_count": 1
       },
@@ -3084,7 +3084,7 @@
         "name": "Maze Path Final Chest",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "@Gerudo Training Ground/Central Maze,gtg_small_keys:7,[gtg_small_keys:9]"
+          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:7,[gtg_small_keys:9]"
         ],
         "item_count": 1
       }

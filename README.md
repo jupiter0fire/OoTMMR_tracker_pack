@@ -27,3 +27,11 @@ Things that need to be done:
 - [x] Delete unused images
 - [ ] Delete unused lua/json parts
 - [ ] General cleanup
+
+## Usage
+
+OOT Malon, OOT Zelda's Letter, MM Bomber's notebook, MM seahorse, MM zora eggs and MM frogs are locations in the map tracker and need to be checked manually for the checks depending on them to be available (e.g. checks in Pinnacle Rock depending on getting MM seahorse).
+Goron Lullaby is a progressive item with two stages: First Half of Goron Lullaby and Full Goron Lullaby.
+Small Key Sanity is a tracker setting because OOT Fire Temple logic depends on that setting. You still need to track your small keys manually even if Small Key Sanity is not activated.
+Having MM Spin Attacks can be tracked by right clicking on the Kokiri Sword.
+You can activate the Scarecrow song in OOT by right clicking on the ocarina. In MM you don't need to track it.

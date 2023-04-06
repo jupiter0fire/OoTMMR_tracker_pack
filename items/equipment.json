@@ -216,5 +216,77 @@
     "img": "images/system/mm_check.png",
     "initial_active_state": false,
     "codes": "saria_check"
+  },
+  {
+    "name": "Sun's Song",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_sun.png",
+    "initial_active_state": false,
+    "codes": "sun"
+  },
+  {
+    "name": "Song of Time",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_time.png",
+    "initial_active_state": false,
+    "codes": "time"
+  },
+  {
+    "name": "Song of Storms",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_storms.png",
+    "initial_active_state": false,
+    "codes": "storm"
+  },
+  {
+    "name": "Minuet of Forest",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_minuet.png",
+    "initial_active_state": false,
+    "codes": "minuet"
+  },
+  {
+    "name": "Bolero of Fire",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_bolero.png",
+    "initial_active_state": false,
+    "codes": "bolero"
+  },
+  {
+    "name": "Serenade of Water",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_serenade.png",
+    "initial_active_state": false,
+    "codes": "serenade"
+  },
+  {
+    "name": "Requiem of Spirit",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_requiem.png",
+    "initial_active_state": false,
+    "codes": "requiem"
+  },
+  {
+    "name": "Nocturne of Shadow",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_nocturne.png",
+    "initial_active_state": false,
+    "codes": "nocturne"
+  },
+  {
+    "name": "Prelude of Light",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/song_prelude.png",
+    "initial_active_state": false,
+    "codes": "prelude"
   }
 ]

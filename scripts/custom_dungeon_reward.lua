@@ -86,19 +86,7 @@ function DungeonReward:updateIcon()
 end
 
 function DungeonReward:onLeftClick()
-  if self.number == 1 then
-    if ALTAR_QUICK_MARK then
-      quickModeActive = 1
-    else
-      if self:getProperty("stage") <= 1 then
-        self:setProperty("stage", #rewards)
-      else
-        self:setProperty("stage", self:getProperty("stage") - 1)
-      end
-    end
-  else
-    self:setProperty("active", not self:getProperty("active"))
-  end
+  self:setProperty("active", not self:getProperty("active"))
 end
 
 function DungeonReward:onRightClick()

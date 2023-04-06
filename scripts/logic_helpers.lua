@@ -958,7 +958,6 @@ function damage_single_instance_ohko()
 end
 
 function can_spawn_rainbow_bridge()
-  
-  return has("forestmed") and has("noct_meds",2) and has("lacs_meds",2)
+  return has("forestmed") and has("noct_meds",2) and has("lacs_meds",2) and has("lightmed")
 end
 
