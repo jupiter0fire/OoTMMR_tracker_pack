@@ -340,7 +340,7 @@
             "color": "#18a50e",
             "sections": [
               {
-                "name": "LW Gift from Saria",                
+                "name": "LW Gift from Saria",
                 "item_count": 1
               }
             ],
@@ -353,7 +353,7 @@
             ]
           }
         ]
-      },    
+      },
       {
         "name": "Lost Woods Deep",
         "color": "#18a50e",
@@ -363,7 +363,7 @@
           },
           {
             "name": "Lost Woods Deep As Adult",
-            "access_rules":[
+            "access_rules": [
               "$can_play|saria",
               "$can_play|minuet",
               "$has|trick_oot_mido_skip,$has_age|adult"
@@ -508,7 +508,7 @@
               }
             ]
           }
-        ]  
+        ]
       },
       {
         "name": "Sacred Meadow",
@@ -519,7 +519,7 @@
           },
           {
             "name": "Sacred Meadow As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Lost Woods Deep As Adult",
               "$can_play|minuet"
             ]
@@ -783,7 +783,7 @@
                 "short_name": "GS",
                 "access_rules": [
                   "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child",
-                  "$stone_of_agony,$has_explosives_or_hammer,$can_collect_distance_adult"                  
+                  "$stone_of_agony,$has_explosives_or_hammer,$can_collect_distance_adult"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -809,7 +809,7 @@
                 "short_name": "GS",
                 "access_rules": [
                   "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child,magic,dins",
-                  "$can_use_hammer,$can_collect_distance_adult,$has_fire"  
+                  "$can_use_hammer,$can_collect_distance_adult,$has_fire"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1962,7 +1962,7 @@
       },
       {
         "name": "Graveyard Warp",
-        "access_rules":[
+        "access_rules": [
           "$can_play|nocturne"
         ]
       },
@@ -1972,14 +1972,14 @@
         "children": [
           {
             "name": "Death Mountain As Child",
-            "access_rules":[
+            "access_rules": [
               "$has_age|child,letter",
               "$has_age|child,$has_explosives_bool"
             ]
           },
           {
             "name": "Death Mountain As Adult",
-            "access_rules":[
+            "access_rules": [
               "$has_age|adult"
             ]
           },
@@ -1992,7 +1992,7 @@
                   {
                     "name": "DMT Freestanding PoH",
                     "short_name": "HP",
-                    "access_rules":[
+                    "access_rules": [
                       "@Death Mountain As Child",
                       "@Death Mountain As Adult"
                     ],
@@ -2160,13 +2160,13 @@
         "children": [
           {
             "name": "Death Mountain Summit As Child",
-            "access_rules":[
+            "access_rules": [
               "@Death Mountain As Child,$has_explosives_bool"
             ]
           },
           {
             "name": "Death Mountain Summit As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Death Mountain As Adult,$has_explosives_or_hammer",
               "@Death Mountain As Child,@Death Mountain As Adult,beans"
             ]
@@ -2257,25 +2257,25 @@
             ]
           }
         ]
-      },  
+      },
       {
         "name": "Goron City",
         "children": [
           {
             "name": "Goron City As Child",
-            "access_rules":[
+            "access_rules": [
               "@Death Mountain As Child",
               "$has_explosives_bool,$has_age|child"
             ]
           },
           {
             "name": "Goron City As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Death Mountain As Adult",
               "$has_explosives_bool,$has_age|adult"
             ]
           },
-          {  
+          {
             "name": "GC Maze",
             "sections": [
               {
@@ -2516,7 +2516,7 @@
         "children": [
           {
             "name": "Death Mountain Crater Bottom As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Goron City As Adult,$has_explosives_bool",
               "@Goron City As Adult,$can_use_bow",
               "@Goron City As Adult,lift1",
@@ -2529,26 +2529,26 @@
           },
           {
             "name": "Death Mountain Crater Top As Child",
-            "access_rules":[
+            "access_rules": [
               "@Death Mountain Summit As Child"
             ]
           },
           {
             "name": "Death Mountain Crater Top As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Death Mountain Summit As Adult",
               "@Death Mountain Crater Bottom As Adult,$can_use_hammer"
             ]
           },
           {
             "name": "Death Mountain Crater Warp As Child",
-            "access_rules":[
+            "access_rules": [
               "$has_age|child,$can_play|bolero"
             ]
           },
           {
             "name": "Death Mountain Crater Warp As Adult",
-            "access_rules":[
+            "access_rules": [
               "$has_age|adult,$can_play|bolero",
               "@Death Mountain Crater Top As Adult,$has_goron_tunic_strict,$can_longshot_scarecrow",
               "@Death Mountain Crater Bottom As Adult,$has_hover_boots",
@@ -2563,7 +2563,7 @@
                 "short_name": "Chest",
                 "access_rules": [
                   "@Death Mountain Crater Top As Child,$has_explosives_bool",
-                  "@Death Mountain Crater Top As Adult,$has_explosives_or_hammer"        
+                  "@Death Mountain Crater Top As Adult,$has_explosives_or_hammer"
                 ],
                 "item_count": 1
               }
@@ -2788,11 +2788,11 @@
           },
           {
             "name": "Hyrule Town As Adult",
-            "access_rules":[
+            "access_rules": [
               "$has_age|adult"
             ]
           },
-          { 
+          {
             "name": "Market",
             "children": [
               {
@@ -2987,7 +2987,7 @@
             ]
           }
         ]
-      }  ,  
+      },
       {
         "name": "Temple of Time",
         "sections": [
@@ -3202,7 +3202,7 @@
         "children": [
           {
             "name": "Zora River As Child",
-            "access_rules":[
+            "access_rules": [
               "$has_explosives_bool",
               "$can_dive_small"
             ]
@@ -3456,18 +3456,17 @@
       },
       {
         "name": "Zoras Domain",
-
         "children": [
           {
             "name": "Zoras Domain As Child",
-            "access_rules":[
+            "access_rules": [
               "@Zora River As Child,$can_play|lullaby",
               "$can_dive_small"
             ]
           },
           {
             "name": "Zoras Domain As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Zora River As Adult,$can_play|lullaby"
             ]
           },
@@ -3596,13 +3595,13 @@
         "children": [
           {
             "name": "Zoras Fountain As Child",
-            "access_rules":[
+            "access_rules": [
               "@Zoras Domain As Child,ruto"
             ]
           },
           {
             "name": "Zoras Fountain As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Zoras Domain As Child,ruto,@Zoras Domain As Adult"
             ]
           },
@@ -4000,7 +3999,7 @@
       },
       {
         "name": "Gerudo Fortress",
-        "access_rules":[
+        "access_rules": [
           "@GV Fortress Side"
         ],
         "children": [
@@ -4155,7 +4154,7 @@
       },
       {
         "name": "Haunted Wasteland",
-        "access_rules":[
+        "access_rules": [
           "@Gerudo Fortress,$gerudo_card,$can_use_longshot",
           "@Gerudo Fortress,$gerudo_card,$has_hover_boots",
           "$has_age|adult,$can_play|requiem,$has|trick_oot_blind_wasteland"
@@ -4201,17 +4200,17 @@
         "children": [
           {
             "name": "Dessert Colossus As Child",
-            "access_rules":[
+            "access_rules": [
               "$can_play|requiem"
-            ] 
+            ]
           },
           {
             "name": "Dessert Colossus As Adult",
-            "access_rules":[
+            "access_rules": [
               "@Haunted Wasteland,$has_lens_strict",
               "@Haunted Wasteland,$has|trick_oot_blind_wasteland_lens",
               "$can_play|requiem"
-            ] 
+            ]
           },
           {
             "name": "Colossus Great Fairy Fountain",
@@ -4386,15 +4385,15 @@
         ]
       }
     ]
-  },    
+  },
   {
     "name": "MM",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
-    "access_rules":[
+    "access_rules": [
       "$mm_can_play|mm_songoftime"
     ],
-    "children": [  
+    "children": [
       {
         "name": "Oath to Order",
         "short_name": "Oath to Order",
@@ -4416,11 +4415,10 @@
           {
             "map": "termina",
             "x": 110,
-            "y": 552,
-            "size": 19
+            "y": 552
           }
         ]
-      }, 
+      },
       {
         "name": "Clock Town",
         "color": "#c475c1",
@@ -4431,6 +4429,7 @@
               {
                 "name": "Clock Tower",
                 "short_name": "Clock Tower",
+                "location_border_thickness": "2",
                 "sections": [
                   {
                     "name": "Clock Tower HP",
@@ -4440,6 +4439,8 @@
                   },
                   {
                     "name": "Initial Song of Healing",
+                    "chest_unopened_img": "images/system/unknownsong.png",
+                    "chest_opened_img": "images/system/unknownsong_check.png",
                     "item_count": 1
                   }
                 ],
@@ -4753,7 +4754,7 @@
           },
           {
             "name": "Clock Town East",
-            "children":[             
+            "children": [
               {
                 "name": "East Clock Town",
                 "short_name": "ECT",
@@ -4989,7 +4990,7 @@
               {
                 "name": "Bomber's Secret Tunnel",
                 "short_name": "Bomber Tunnel",
-                "access_rules":[
+                "access_rules": [
                   "bombers_code"
                 ],
                 "sections": [
@@ -5014,7 +5015,7 @@
           },
           {
             "name": "West Clock Town",
-            "children":[
+            "children": [
               {
                 "name": "Clock Town Bank",
                 "short_name": "Bank",
@@ -5027,7 +5028,7 @@
                     "name": "500 Rupees Deposit",
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
-                    "access_rules":[
+                    "access_rules": [
                       "mm_adultwallet"
                     ],
                     "item_count": 1
@@ -5178,9 +5179,9 @@
               }
             ]
           },
-          { 
+          {
             "name": "Laundry Pool",
-            "children":[
+            "children": [
               {
                 "name": "Listen To Guru Guru",
                 "short_name": "Guru Guru",
@@ -5208,7 +5209,7 @@
                   {
                     "name": "Frog 1",
                     "hosted_item": "mm_frog_1",
-                    "access_rules":[
+                    "access_rules": [
                       "mm_dongero,mm_snowhead"
                     ]
                   }
@@ -5254,7 +5255,7 @@
               {
                 "name": "Curiosity Shop Backroom",
                 "short_name": "Backroom",
-                "access_rules":[
+                "access_rules": [
                   "mm_lettertokafei"
                 ],
                 "sections": [
@@ -5284,23 +5285,25 @@
           },
           {
             "name": "Clock Tower Roof",
-            "children":[
+            "children": [
               {
                 "name": "Skull Kid",
                 "short_name": "Skull Kid",
                 "sections": [
                   {
                     "name": "Ocarina",
-                    "access_rules":[
+                    "access_rules": [
                       "$mm_has_weapon_range"
-                    ],  
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Song of Time",
-                    "access_rules":[
+                    "chest_unopened_img": "images/system/unknownsong.png",
+                    "chest_opened_img": "images/system/unknownsong_check.png",
+                    "access_rules": [
                       "$mm_has_weapon_range"
-                    ],  
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -6102,7 +6105,7 @@
               {
                 "name": "Frog 3",
                 "hosted_item": "mm_frog_3",
-                "access_rules":[
+                "access_rules": [
                   "mm_dongero,mm_snowhead"
                 ]
               }
@@ -6276,7 +6279,7 @@
                     "name": "Tall Stump",
                     "chest_unopened_img": "images/system/chest_unopened_big.png",
                     "chest_opened_img": "images/system/chest_open_big.png",
-                    "access_rules":[
+                    "access_rules": [
                       "mm_deku",
                       "mm_hookshot"
                     ],
@@ -6284,7 +6287,7 @@
                   },
                   {
                     "name": "Behind Temple Platform",
-                    "access_rules":[
+                    "access_rules": [
                       "mm_deku",
                       "mm_hookshot,$mm_can_play|mm_soaring"
                     ],
@@ -6292,7 +6295,7 @@
                   },
                   {
                     "name": "Water Level Stump",
-                    "access_rules":[
+                    "access_rules": [
                       "mm_deku",
                       "mm_hookshot"
                     ],
@@ -6343,7 +6346,7 @@
         "children": [
           {
             "name": "Goron Graveyard",
-            "access_rules":[
+            "access_rules": [
               "$mm_can_use_lens_strict",
               "mm_snowhead,mm_goron",
               "mm_snowhead,mm_zora"
@@ -6558,7 +6561,7 @@
                 "access_rules": [
                   "mm_goron,mm_ocarina,$mm_goron_graveyard_hot_water",
                   "mm_goron,mm_ocarina,$mm_can_use_fire_arrows",
-                  "mm_goron,mm_ocarina,$mm_well_hot_water,$mm_can_play|mm_soaring"                  
+                  "mm_goron,mm_ocarina,$mm_well_hot_water,$mm_can_play|mm_soaring"
                 ],
                 "item_count": 1
               }
@@ -6601,7 +6604,7 @@
           },
           {
             "name": "Goron Racetrack",
-            "access_rules":[
+            "access_rules": [
               "$mm_can_use_keg",
               "$mm_powder_keg_trial"
             ],
@@ -6761,7 +6764,7 @@
           {
             "name": "Road to Snowhead",
             "short_name": "Road to Snowhead",
-            "access_rules":[
+            "access_rules": [
               "$mm_goron_fast_roll"
             ],
             "sections": [
@@ -6793,7 +6796,7 @@
           },
           {
             "name": "Snowhead Area",
-            "access_rules":[
+            "access_rules": [
               "$mm_goron_fast_roll"
             ],
             "children": [
@@ -6821,829 +6824,92 @@
             ]
           }
         ]
-      }
-    ]
-  },
-  {
-    "name": "Great Bay",
-    "color": "#3f46ff",
-    "access_rules": [
-      "mm_ocarina,mm_eponasong",
-      "$mm_can_goron_bomb_jump"
-    ],
-    "children": [
-      {
-        "name": "Great Bay Coast Grotto",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "Great Bay Grotto",
-        "sections": [
-          {
-            "name": "Grotto Behind Fisherman Hut",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 19,
-            "x": 300,
-            "y": 360
-          }
-        ]
       },
       {
-        "name": "Fisherman's House",
-        "short_name": "Fisherman Hut",
-        "sections": [
-          {
-            "name": "Show Photo of Gerudo Pirate",
-            "access_rules": [
-              "mm_zora,mm_pictobox"
-            ],
-            "hosted_item": "mm_seahorse"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina", 
-            "size": 19,
-            "x": 280,
-            "y": 360
-          }
-        ]       
-      },
-      {
-        "name": "Great Bay Coast",
-        "short_name": "Coast",
-        "sections": [
-          {
-            "name": "Heal Mikau",
-            "chest_unopened_img": "images/system/unknownmask.png",
-            "chest_opened_img": "images/system/unknownmask_grey.png",
-            "access_rules": [
-              "$mm_can_play|mm_healing"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 19,
-            "x": 260,
-            "y": 350
-          }
-        ]
-      },
-      {
-        "name": "GB Easy To Swim To",
-        "children": [
-          {
-            "name": "Great Bay Coast Ledge",
-            "short_name": "Coast Ledge",
-            "sections": [
-              {
-                "name": "Great Bay Coast PoH",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "$mm_can_use_beans,$mm_can_hookshot_scarecrow"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 320,
-                "y": 300
-              }
-            ]
-          },
-          {
-            "name": "Fisherman Island",
-            "short_name": "Fisherman Game",
-            "sections": [
-              {
-                "name": "Win it",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "mm_great_bay,mm_hookshot"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 295,
-                "y": 300,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Ocean Tingle Maps",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "GB Tingle",
-            "sections": [
-              {
-                "name": "Map: Ocean",
-                "access_rules": [
-                  "mm_bow",
-                  "mm_hookshot"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Map: Canyon",
-                "access_rules": [
-                  "mm_bow",
-                  "mm_hookshot"
-                ],
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Marine Lab",
-            "short_name": "Marine Lab",
-            "sections": [
-              {
-                "name": "Feed The Fish",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "mm_bottle"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Song From Zora Eggs",
-                "chest_unopened_img": "images/system/unknownsong.png",
-                "chest_opened_img": "images/system/unknownsong_check.png",
-                "access_rules": [
-                  "mm_ocarina,mm_zora,mm_zoraegg_hookshot_room,mm_zoraegg_barrel_maze,mm_zoraegg_lone_guard,mm_zoraegg_treasure_room,mm_zoraegg_pinnacle_rock"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 218,
-                "y": 282,
-                "size": 19
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Pinnacle Rock",
+        "name": "Great Bay",
+        "color": "#3f46ff",
         "access_rules": [
-          "mm_zora,mm_seahorse",
-          "mm_zora,$has|trick_mm_no_seahorse"          
-        ],
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "PRock",
-        "sections": [
-          {
-            "name": "Sea Snake Upper Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Sea Snake Lower Chest",
-            "item_count": 1
-          },
-          {
-            "name": "Reunite The Seahorses",
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "access_rules": [
-              "mm_seahorse"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Zora Eggs 5,6,7",
-            "access_rules": [
-              "mm_zora,mm_bottle"
-            ],
-            "hosted_item": "mm_zoraegg_pinnacle_rock"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 146,
-            "y": 300,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Zora Cape",
-        "children": [
-          {
-            "name": "Underwater Near Fairy Shrine",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "ZC Water",
-            "sections": [
-              {
-                "name": "Zora Cape Underwater Chest",
-                "access_rules":[
-                  "mm_zora"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 260,
-                "y": 404,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Under The Waterfall",
-            "short_name": "ZC Waterfall",
-            "access_rules":[
-              "mm_zora"
-            ],
-            "sections": [
-              {
-                "name": "Zora Cape Like Like Treasure",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 370,
-                "y": 405,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Zora Cape Grotto",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "ZC Grotto",
-            "sections": [
-              {
-                "name": "Under The Rock By The Fairy Shrine",
-                "access_rules": [
-                  "$mm_can_break_boulders"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 270,
-                "y": 420,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Zora Hall",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "ZH",
-            "access_rules": [
-              "mm_zora",
-              "$has|trick_mm_zora_hall_human"
-            ],
-            "sections": [
-              {
-                "name": "> > v A A v > A < < > v v > < v On Ocarina - Third Room Down",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "mm_zora,mm_ocarina"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Give Ocean Scrub The Mountain Title Deed - Fourth Room Down",
-                "access_rules": [
-                  "mm_snowhead_deed,mm_goron,mm_zora"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Light the Upper Torches",
-                "chest_unopened_img": "images/system/blue.png",
-                "chest_opened_img": "images/system/blue_check.png",
-                "access_rules": [
-                  "$mm_can_use_fire_arrows"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Use Ocean Scrub Flower - Fourth Room Down",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "mm_goron,mm_snowhead_deed,mm_deku,mm_zora"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 220,
-                "y": 410,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Zora Hall Shop",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "Zora Shop",
-            "access_rules": [
-              "[mm_zora]",
-              "mm_zoraswim"
-            ],
-            "sections": [
-              {
-                "name": "Shield (90 Rupees)",
-                "item_count": 1
-              },
-              {
-                "name": "10 Arrows (20 Rupees)",
-                "item_count": 1
-              },
-              {
-                "name": "Red Potion (60 Rupees)",
-                "item_count": 1
-              }
-            ]
-          },
-          {
-            "name": "Great Bay Great Fairy Fountain",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "Great Bay Great Fairy",
-            "sections": [
-              {
-                "name": "15 Stray Fairies in Great Bay Temple",
-                "access_rules": [
-                  "mm_greatbay_stray_fairies:15,mm_hookshot,$mm_has_explosives"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 270,
-                "y": 430,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Waterfall Rapids",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "Rapids",
-            "access_rules": [
-              "mm_hookshot,mm_zora"
-            ],
-            "sections": [
-              {
-                "name": "Beaver Brothers Race Prize",
-                "item_count": 1
-              },
-              {
-                "name": "Beaver Brothers Race Rematch",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 352,
-                "y": 420,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Zora Cape Ledge",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "Cape Ledge",
-            "access_rules": [
-              "mm_hookshot"
-            ],
-            "sections": [
-              {
-                "name": "Zora Cape Ledge Chest",
-                "access_rules": [
-                  "mm_hookshot"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Zora Cape Ledge Lower Chest",
-                "access_rules": [
-                  "mm_hookshot"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 340,
-                "y": 420,
-                "size": 19
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Ikana",
-    "color": "#ad7143",
-    "children": [
-      {
-        "name": "Road to Ikana Grotto",
-        "children":[
-          {
-            "name": "Chest on Ikana Pillar",
-            "short_name": "Pillar Chest",
-            "sections": [
-              {
-                "name": "Hookshot it",
-                "access_rules": [
-                  "mm_hookshot"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 636,
-                "y": 300
-              }
-            ]
-          },
-          {
-            "name": "Road to Ikana Grotto",
-            "short_name": "Ikana Road Grotto",
-            "sections": [
-              {
-                "name": "Get in",
-                "access_rules": [
-                  "mm_goron"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "size": 19,
-                "x": 684,
-                "y": 300
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Road to Ikana Center",
-        "access_rules": [
-          "$mm_can_play|mm_epona",
+          "mm_ocarina,mm_eponasong",
           "$mm_can_goron_bomb_jump"
-        ]
-      },
-      {
-        "name": "Shiro the Invisible Soldier",
-        "short_name": "Invisible Soldier",
-        "sections": [
-          {
-            "name": "Give him a red potion",
-            "chest_unopened_img": "images/system/unknownmask.png",
-            "chest_opened_img": "images/system/unknownmask_grey.png",
-            "access_rules": [
-              "@Road to Ikana Center,$mm_can_use_lens_strict,mm_bottle"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 681,
-            "y": 312,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Ikana Graveyard",
-        "access_rules":[
-          "@Road to Ikana Center"
-        ]
-      },
-      {
-        "name": "Captain Keeta's Hat Chest",
-        "chest_unopened_img": "images/system/chest_unopened_big.png",
-        "chest_opened_img": "images/system/chest_open_big.png",
-        "short_name": "Captain's Hat Chest",
-        "access_rules": [
-          "@Ikana Graveyard,$mm_can_play|mm_awakening,mm_bow,$mm_can_fight"
-        ],
-        "sections": [
-          {
-            "name": "Defeat Captain Keeta",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 710,
-            "y": 226,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Ikana Graveyard Grotto",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "Graveyard Grotto",
-        "sections": [
-          {
-            "name": "Bomb the circle of rocks",
-            "access_rules": [
-              "@Ikana Graveyard,$mm_has_explosives"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 684,
-            "y": 235,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Ikana Graveyard Graves Night 1",
-        "access_rules":[
-          "@Ikana Graveyard,mm_captainshat"
-        ],
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "Graves Night 1",
-        "sections": [
-          {
-            "name": "Defeat all bats",
-            "access_rules": [
-              "$mm_can_fight",
-              "$mm_has_explosives",
-              "mm_bow",
-              "mm_hookshot",
-              "mm_deku"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Defeat Iron Knuckle",
-            "chest_unopened_img": "images/system/unknownsong.png",
-            "chest_opened_img": "images/system/unknownsong_check.png",
-            "access_rules": [
-              "$mm_can_fight",
-              "$mm_has_explosives"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 678,
-            "y": 270,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Ikana Graveyard Graves Night 2",
-        "access_rules":[
-          "@Ikana Graveyard,mm_captainshat"
-        ],
-        "chest_unopened_img": "images/system/chest_unopened_big.png",
-        "chest_opened_img": "images/system/chest_open_big.png",
-        "short_name": "Graves Night 2",
-        "sections": [
-          {
-            "name": "Defeat Iron Knuckle",
-            "access_rules": [
-              "$mm_can_fight,$mm_has_explosives,$mm_can_use_lens"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 696,
-            "y": 251,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Ikana Graveyard Graves Night 3",
-        "access_rules":[
-          "@Ikana Graveyard,mm_captainshat"
-        ],
-        "chest_unopened_img": "images/system/chest_unopened_big.png",
-        "chest_opened_img": "images/system/chest_open_big.png",
-        "short_name": "Graves Night 3",
-        "sections": [
-          {
-            "name": "Defeat Big Poe",
-            "access_rules": [
-              "$mm_has_weapon_range"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 673,
-            "y": 253,
-            "size": 19
-          }
-        ]
-      },
-      {
-        "name": "Ikana Valley",
-        "access_rules": [
-          "mm_gibdomask,mm_hookshot",
-          "mm_garomask,mm_hookshot"
         ],
         "children": [
           {
-            "name": "Ikana Canyon Business Scrub",
+            "name": "Great Bay Coast Grotto",
             "chest_unopened_img": "images/system/chest_brown_closed.png",
             "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "Ikana Business Scrub",
+            "short_name": "Great Bay Grotto",
             "sections": [
               {
-                "name": "Give Ocean Title Deed",
+                "name": "Grotto Behind Fisherman Hut",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 300,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Fisherman's House",
+            "short_name": "Fisherman Hut",
+            "sections": [
+              {
+                "name": "Show Photo of Gerudo Pirate",
                 "access_rules": [
-                  "mm_great_bay_deed,mm_zora"
+                  "mm_zora,mm_pictobox"
+                ],
+                "hosted_item": "mm_seahorse"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "size": 19,
+                "x": 280,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Great Bay Coast",
+            "short_name": "Coast",
+            "sections": [
+              {
+                "name": "Heal Mikau",
+                "chest_unopened_img": "images/system/unknownmask.png",
+                "chest_opened_img": "images/system/unknownmask_grey.png",
+                "access_rules": [
+                  "$mm_can_play|mm_healing"
                 ],
                 "item_count": 1
-              },
-              {
-                "name": "Cross Canyon",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "mm_great_bay_deed,mm_zora,mm_deku"
-                ],
-                "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "x": 795,
-                "y": 300,
-                "size": 19
+                "size": 19,
+                "x": 260,
+                "y": 350
               }
             ]
           },
           {
-            "name": "Ikana Canyon Grotto",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "Canyon Grotto",
-            "sections": [
-              {
-                "name": "Behind the waterfall",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 790,
-                "y": 220,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Secret Shrine Miniboss Gauntlet",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "short_name": "Boss Gauntlet",
-            "access_rules": [
-              "$mm_can_use_light_arrows"
-            ],
-            "sections": [
-              {
-                "name": "Dinolfos",
-                "item_count": 1
-              },
-              {
-                "name": "Wizrobe",
-                "item_count": 1
-              },
-              {
-                "name": "Wart",
-                "item_count": 1
-              },
-              {
-                "name": "Garo Master",
-                "item_count": 1
-              },
-              {
-                "name": "Defeat all four minibosses",
-                "chest_unopened_img": "images/system/chest_unopened_big.png",
-                "chest_opened_img": "images/system/chest_open_big.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 777,
-                "y": 228,
-                "size": 19
-              }
-            ]
-          },
-          {
-            "name": "Ikana Canyon",
-            "access_rules": [
-              "$mm_can_use_ice_arrows,mm_hookshot",
-              "$has|trick_mm_iceless_ikana,mm_hookshot"
-            ],
+            "name": "GB Easy To Swim To",
             "children": [
               {
-                "name": "Ikana Canyon Tingle Maps",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
-                "short_name": "Canyon",
+                "name": "Great Bay Coast Ledge",
+                "short_name": "Coast Ledge",
                 "sections": [
                   {
-                    "name": "Map: Canyon",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Map: Clock Town",
-                    "item_count": 1
-                  }
-                ]
-              },
-              {
-                "name": "Music Box House",
-                "short_name": "Music Box House",
-                "sections": [
-                  {
-                    "name": "Heal Pamela's father",
-                    "chest_unopened_img": "images/system/unknownmask.png",
-                    "chest_opened_img": "images/system/unknownmask_grey.png",
+                    "name": "Great Bay Coast PoH",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm_can_play|mm_songofstorms,$mm_can_play|mm_healing"
+                      "$mm_can_use_beans,$mm_can_hookshot_scarecrow"
                     ],
                     "item_count": 1
                   }
@@ -7651,22 +6917,22 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 846,
-                    "y": 256,
-                    "size": 19
+                    "size": 19,
+                    "x": 320,
+                    "y": 300
                   }
                 ]
               },
               {
-                "name": "Poe Shooting Game",
-                "short_name": "Poe Shooting Game",
+                "name": "Fisherman Island",
+                "short_name": "Fisherman Game",
                 "sections": [
                   {
                     "name": "Win it",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_bow,mm_hookshot,$mm_can_use_deku_bubble"
+                      "mm_great_bay,mm_hookshot"
                     ],
                     "item_count": 1
                   }
@@ -7674,22 +6940,55 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 856,
-                    "y": 234,
+                    "x": 295,
+                    "y": 300,
                     "size": 19
                   }
                 ]
               },
               {
-                "name": "Ikana Great Fairy Fountain",
+                "name": "Ocean Tingle Maps",
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
-                "short_name": "Ikana Great Fairy",
+                "short_name": "GB Tingle",
                 "sections": [
                   {
-                    "name": "15 Stray Fairies in Stone Tower Temple",
+                    "name": "Map: Ocean",
                     "access_rules": [
-                      "mm_stonetower_stray_fairies:15"
+                      "mm_bow",
+                      "mm_hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Map: Canyon",
+                    "access_rules": [
+                      "mm_bow",
+                      "mm_hookshot"
+                    ],
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Marine Lab",
+                "short_name": "Marine Lab",
+                "sections": [
+                  {
+                    "name": "Feed The Fish",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_bottle"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Song From Zora Eggs",
+                    "chest_unopened_img": "images/system/unknownsong.png",
+                    "chest_opened_img": "images/system/unknownsong_check.png",
+                    "access_rules": [
+                      "mm_ocarina,mm_zora,mm_zoraegg_hookshot_room,mm_zoraegg_barrel_maze,mm_zoraegg_lone_guard,mm_zoraegg_treasure_room,mm_zoraegg_pinnacle_rock"
                     ],
                     "item_count": 1
                   }
@@ -7697,47 +6996,751 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 868,
-                    "y": 270,
+                    "x": 218,
+                    "y": 282,
+                    "size": 19
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Pinnacle Rock",
+            "access_rules": [
+              "mm_zora,mm_seahorse",
+              "mm_zora,$has|trick_mm_no_seahorse"
+            ],
+            "chest_unopened_img": "images/system/chest_brown_closed.png",
+            "chest_opened_img": "images/system/chest_brown_open.png",
+            "short_name": "PRock",
+            "sections": [
+              {
+                "name": "Sea Snake Upper Chest",
+                "item_count": 1
+              },
+              {
+                "name": "Sea Snake Lower Chest",
+                "item_count": 1
+              },
+              {
+                "name": "Reunite The Seahorses",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "mm_seahorse"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Zora Eggs 5,6,7",
+                "access_rules": [
+                  "mm_zora,mm_bottle"
+                ],
+                "hosted_item": "mm_zoraegg_pinnacle_rock"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 146,
+                "y": 300,
+                "size": 19
+              }
+            ]
+          },
+          {
+            "name": "Zora Cape",
+            "children": [
+              {
+                "name": "Underwater Near Fairy Shrine",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "ZC Water",
+                "sections": [
+                  {
+                    "name": "Zora Cape Underwater Chest",
+                    "access_rules": [
+                      "mm_zora"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 260,
+                    "y": 404,
                     "size": 19
                   }
                 ]
               },
               {
-                "name": "Stone Tower",
+                "name": "Under The Waterfall",
+                "short_name": "ZC Waterfall",
                 "access_rules": [
-                  "$mm_can_use_elegy3,mm_hookshot",
-                  "$mm_can_use_elegy2,has|trick_mm_one_mask_stone_tower,mm_hookshot"
+                  "mm_zora"
+                ],
+                "sections": [
+                  {
+                    "name": "Zora Cape Like Like Treasure",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 370,
+                    "y": 405,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Zora Cape Grotto",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "ZC Grotto",
+                "sections": [
+                  {
+                    "name": "Under The Rock By The Fairy Shrine",
+                    "access_rules": [
+                      "$mm_can_break_boulders"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 270,
+                    "y": 420,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Zora Hall",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "ZH",
+                "access_rules": [
+                  "mm_zora",
+                  "$has|trick_mm_zora_hall_human"
+                ],
+                "sections": [
+                  {
+                    "name": "> > v A A v > A < < > v v > < v On Ocarina - Third Room Down",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_zora,mm_ocarina"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Give Ocean Scrub The Mountain Title Deed - Fourth Room Down",
+                    "access_rules": [
+                      "mm_snowhead_deed,mm_goron,mm_zora"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Light the Upper Torches",
+                    "chest_unopened_img": "images/system/blue.png",
+                    "chest_opened_img": "images/system/blue_check.png",
+                    "access_rules": [
+                      "$mm_can_use_fire_arrows"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Use Ocean Scrub Flower - Fourth Room Down",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_goron,mm_snowhead_deed,mm_deku,mm_zora"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 220,
+                    "y": 410,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Zora Hall Shop",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "Zora Shop",
+                "access_rules": [
+                  "[mm_zora]",
+                  "mm_zoraswim"
+                ],
+                "sections": [
+                  {
+                    "name": "Shield (90 Rupees)",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "10 Arrows (20 Rupees)",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Red Potion (60 Rupees)",
+                    "item_count": 1
+                  }
+                ]
+              },
+              {
+                "name": "Great Bay Great Fairy Fountain",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "Great Bay Great Fairy",
+                "sections": [
+                  {
+                    "name": "15 Stray Fairies in Great Bay Temple",
+                    "access_rules": [
+                      "mm_greatbay_stray_fairies:15,mm_hookshot,$mm_has_explosives"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 270,
+                    "y": 430,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Waterfall Rapids",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "Rapids",
+                "access_rules": [
+                  "mm_hookshot,mm_zora"
+                ],
+                "sections": [
+                  {
+                    "name": "Beaver Brothers Race Prize",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Beaver Brothers Race Rematch",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 352,
+                    "y": 420,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Zora Cape Ledge",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "Cape Ledge",
+                "access_rules": [
+                  "mm_hookshot"
+                ],
+                "sections": [
+                  {
+                    "name": "Zora Cape Ledge Chest",
+                    "access_rules": [
+                      "mm_hookshot"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Zora Cape Ledge Lower Chest",
+                    "access_rules": [
+                      "mm_hookshot"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 340,
+                    "y": 420,
+                    "size": 19
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ikana",
+        "color": "#ad7143",
+        "children": [
+          {
+            "name": "Road to Ikana Grotto",
+            "children": [
+              {
+                "name": "Chest on Ikana Pillar",
+                "short_name": "Pillar Chest",
+                "sections": [
+                  {
+                    "name": "Hookshot it",
+                    "access_rules": [
+                      "mm_hookshot"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 636,
+                    "y": 300
+                  }
+                ]
+              },
+              {
+                "name": "Road to Ikana Grotto",
+                "short_name": "Ikana Road Grotto",
+                "sections": [
+                  {
+                    "name": "Get in",
+                    "access_rules": [
+                      "mm_goron"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "size": 19,
+                    "x": 684,
+                    "y": 300
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Road to Ikana Center",
+            "access_rules": [
+              "$mm_can_play|mm_epona",
+              "$mm_can_goron_bomb_jump"
+            ]
+          },
+          {
+            "name": "Shiro the Invisible Soldier",
+            "short_name": "Invisible Soldier",
+            "sections": [
+              {
+                "name": "Give him a red potion",
+                "chest_unopened_img": "images/system/unknownmask.png",
+                "chest_opened_img": "images/system/unknownmask_grey.png",
+                "access_rules": [
+                  "@Road to Ikana Center,$mm_can_use_lens_strict,mm_bottle"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 681,
+                "y": 312,
+                "size": 19
+              }
+            ]
+          },
+          {
+            "name": "Ikana Graveyard",
+            "access_rules": [
+              "@Road to Ikana Center"
+            ]
+          },
+          {
+            "name": "Captain Keeta's Hat Chest",
+            "chest_unopened_img": "images/system/chest_unopened_big.png",
+            "chest_opened_img": "images/system/chest_open_big.png",
+            "short_name": "Captain's Hat Chest",
+            "access_rules": [
+              "@Ikana Graveyard,$mm_can_play|mm_awakening,mm_bow,$mm_can_fight"
+            ],
+            "sections": [
+              {
+                "name": "Defeat Captain Keeta",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 710,
+                "y": 226,
+                "size": 19
+              }
+            ]
+          },
+          {
+            "name": "Ikana Graveyard Grotto",
+            "chest_unopened_img": "images/system/chest_brown_closed.png",
+            "chest_opened_img": "images/system/chest_brown_open.png",
+            "short_name": "Graveyard Grotto",
+            "sections": [
+              {
+                "name": "Bomb the circle of rocks",
+                "access_rules": [
+                  "@Ikana Graveyard,$mm_has_explosives"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 684,
+                "y": 235,
+                "size": 19
+              }
+            ]
+          },
+          {
+            "name": "Ikana Graveyard Graves Night 1",
+            "access_rules": [
+              "@Ikana Graveyard,mm_captainshat"
+            ],
+            "chest_unopened_img": "images/system/chest_brown_closed.png",
+            "chest_opened_img": "images/system/chest_brown_open.png",
+            "short_name": "Graves Night 1",
+            "sections": [
+              {
+                "name": "Defeat all bats",
+                "access_rules": [
+                  "$mm_can_fight",
+                  "$mm_has_explosives",
+                  "mm_bow",
+                  "mm_hookshot",
+                  "mm_deku"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Defeat Iron Knuckle",
+                "chest_unopened_img": "images/system/unknownsong.png",
+                "chest_opened_img": "images/system/unknownsong_check.png",
+                "access_rules": [
+                  "$mm_can_fight",
+                  "$mm_has_explosives"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 678,
+                "y": 270,
+                "size": 19
+              }
+            ]
+          },
+          {
+            "name": "Ikana Graveyard Graves Night 2",
+            "access_rules": [
+              "@Ikana Graveyard,mm_captainshat"
+            ],
+            "chest_unopened_img": "images/system/chest_unopened_big.png",
+            "chest_opened_img": "images/system/chest_open_big.png",
+            "short_name": "Graves Night 2",
+            "sections": [
+              {
+                "name": "Defeat Iron Knuckle",
+                "access_rules": [
+                  "$mm_can_fight,$mm_has_explosives,$mm_can_use_lens"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 696,
+                "y": 251,
+                "size": 19
+              }
+            ]
+          },
+          {
+            "name": "Ikana Graveyard Graves Night 3",
+            "access_rules": [
+              "@Ikana Graveyard,mm_captainshat"
+            ],
+            "chest_unopened_img": "images/system/chest_unopened_big.png",
+            "chest_opened_img": "images/system/chest_open_big.png",
+            "short_name": "Graves Night 3",
+            "sections": [
+              {
+                "name": "Defeat Big Poe",
+                "access_rules": [
+                  "$mm_has_weapon_range"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 673,
+                "y": 253,
+                "size": 19
+              }
+            ]
+          },
+          {
+            "name": "Ikana Valley",
+            "access_rules": [
+              "mm_gibdomask,mm_hookshot",
+              "mm_garomask,mm_hookshot"
+            ],
+            "children": [
+              {
+                "name": "Ikana Canyon Business Scrub",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "Ikana Business Scrub",
+                "sections": [
+                  {
+                    "name": "Give Ocean Title Deed",
+                    "access_rules": [
+                      "mm_great_bay_deed,mm_zora"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Cross Canyon",
+                    "chest_unopened_img": "images/system/heartpiece.png",
+                    "chest_opened_img": "images/system/heartpiece_grey.png",
+                    "access_rules": [
+                      "mm_great_bay_deed,mm_zora,mm_deku"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 795,
+                    "y": 300,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Ikana Canyon Grotto",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "Canyon Grotto",
+                "sections": [
+                  {
+                    "name": "Behind the waterfall",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 790,
+                    "y": 220,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Secret Shrine Miniboss Gauntlet",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
+                "short_name": "Boss Gauntlet",
+                "access_rules": [
+                  "$mm_can_use_light_arrows"
+                ],
+                "sections": [
+                  {
+                    "name": "Dinolfos",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Wizrobe",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Wart",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Garo Master",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Defeat all four minibosses",
+                    "chest_unopened_img": "images/system/chest_unopened_big.png",
+                    "chest_opened_img": "images/system/chest_open_big.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 777,
+                    "y": 228,
+                    "size": 19
+                  }
+                ]
+              },
+              {
+                "name": "Ikana Canyon",
+                "access_rules": [
+                  "$mm_can_use_ice_arrows,mm_hookshot",
+                  "$has|trick_mm_iceless_ikana,mm_hookshot"
                 ],
                 "children": [
                   {
-                    "name": "Inverted Stone Tower Chests",
+                    "name": "Ikana Canyon Tingle Maps",
                     "chest_unopened_img": "images/system/chest_brown_closed.png",
                     "chest_opened_img": "images/system/chest_brown_open.png",
-                    "short_name": "Stone Tower Chests",
-                    "access_rules":[
-                      "$mm_can_use_light_arrows,$mm_can_use_beans"
-                    ],
+                    "short_name": "Canyon",
                     "sections": [
                       {
-                        "name": "Left Chest",
+                        "name": "Map: Canyon",
                         "item_count": 1
                       },
                       {
-                        "name": "Middle Chest",
+                        "name": "Map: Clock Town",
                         "item_count": 1
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Music Box House",
+                    "short_name": "Music Box House",
+                    "sections": [
                       {
-                        "name": "Right Chest",
+                        "name": "Heal Pamela's father",
+                        "chest_unopened_img": "images/system/unknownmask.png",
+                        "chest_opened_img": "images/system/unknownmask_grey.png",
+                        "access_rules": [
+                          "$mm_can_play|mm_songofstorms,$mm_can_play|mm_healing"
+                        ],
                         "item_count": 1
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "termina",
-                        "x": 952,
-                        "y": 240,
+                        "x": 846,
+                        "y": 256,
                         "size": 19
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Poe Shooting Game",
+                    "short_name": "Poe Shooting Game",
+                    "sections": [
+                      {
+                        "name": "Win it",
+                        "chest_unopened_img": "images/system/heartpiece.png",
+                        "chest_opened_img": "images/system/heartpiece_grey.png",
+                        "access_rules": [
+                          "mm_bow,mm_hookshot,$mm_can_use_deku_bubble"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 856,
+                        "y": 234,
+                        "size": 19
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ikana Great Fairy Fountain",
+                    "chest_unopened_img": "images/system/chest_brown_closed.png",
+                    "chest_opened_img": "images/system/chest_brown_open.png",
+                    "short_name": "Ikana Great Fairy",
+                    "sections": [
+                      {
+                        "name": "15 Stray Fairies in Stone Tower Temple",
+                        "access_rules": [
+                          "mm_stonetower_stray_fairies:15"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 868,
+                        "y": 270,
+                        "size": 19
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Stone Tower",
+                    "access_rules": [
+                      "$mm_can_use_elegy3,mm_hookshot",
+                      "$mm_can_use_elegy2,has|trick_mm_one_mask_stone_tower,mm_hookshot"
+                    ],
+                    "children": [
+                      {
+                        "name": "Inverted Stone Tower Chests",
+                        "chest_unopened_img": "images/system/chest_brown_closed.png",
+                        "chest_opened_img": "images/system/chest_brown_open.png",
+                        "short_name": "Stone Tower Chests",
+                        "access_rules": [
+                          "$mm_can_use_light_arrows,$mm_can_use_beans"
+                        ],
+                        "sections": [
+                          {
+                            "name": "Left Chest",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Middle Chest",
+                            "item_count": 1
+                          },
+                          {
+                            "name": "Right Chest",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina",
+                            "x": 952,
+                            "y": 240,
+                            "size": 19
+                          }
+                        ]
                       }
                     ]
                   }
@@ -7749,4 +7752,4 @@
       }
     ]
   }
-]
+]  

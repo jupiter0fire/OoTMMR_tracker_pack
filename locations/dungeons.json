@@ -3477,7 +3477,7 @@
       {
         "name": "Collect 30 Tokens",
         "access_rules": [
-          "mmm_skulltulla_greatbay:30"
+          "mm_skulltulla_greatbay:30"
         ],
         "item_count": 1
       },
@@ -4290,7 +4290,7 @@
       {
         "name": "Beneath the Well North Section",
         "access_rules": [
-          "@Beneath the Well/Beneath the Well Entrance,mm_bottle,mm_scentscap,mm_gibdo"
+          "@Beneath the Well/Beneath the Well Entrance,mm_bottle,mm_scents,mm_gibdo"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4466,7 +4466,7 @@
       {
         "name": "Ancient Castle of Ikana Boss",
         "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior,@Ancient Castle of Ikana/ncient Castle of Ikana Roof Interior,$mm_can_use_keg,mm_mirror",
+          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior,@Ancient Castle of Ikana/Ancient Castle of Ikana Roof Interior,$mm_can_use_keg,mm_mirror",
           "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior,$mm_can_use_light_arrows"
         ],
         "visibility_rules": [
@@ -5034,10 +5034,10 @@
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,woodfall_boss_key,mm_deku,mm_fiercedeity",
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,woodfall_boss_key,mm_hookshot,mm_fiercedeity",
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,woodfall_boss_key,mm_deku,mm_bow,$mm_has_weapon",
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,woodfall_boss_key,mm_hookshot,mm_bow,$mm_has_weapon"
+          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_deku,mm_fiercedeity",
+          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_hookshot,mm_fiercedeity",
+          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_deku,mm_bow,$mm_has_weapon",
+          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_hookshot,mm_bow,$mm_has_weapon"
         ],
         "item_count": 1
       }
@@ -5133,7 +5133,7 @@
       {
         "name": "Great Bay Temple Ice Arrow Room",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Red Pipe 1,greatbay_small_keys:1"
+          "@Great Bay Temple/Great Bay Temple Red Pipe 1,mm_greatbay_small_keys:1"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5518,8 +5518,8 @@
         "name": "Stone Tower Temple West Garden",
         "access_rules": [
           "@Stone Tower Temple/Stone Tower Temple West,$mm_can_play|elegy,mm_goron,$mm_has_explosives",
-          "@Stone Tower Temple/Stone Tower Temple Center,stonetower_small_keys:4",
-          "@Stone Tower Temple/Stone Tower Temple Center,stonetower_small_keys:3,mm_goron,$mm_has_explosives,$mm_can_play|mm_elegy"
+          "@Stone Tower Temple/Stone Tower Temple Center,mm_stonetower_small_keys:4",
+          "@Stone Tower Temple/Stone Tower Temple Center,mm_stonetower_small_keys:3,mm_goron,$mm_has_explosives,$mm_can_play|mm_elegy"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5539,8 +5539,8 @@
       {
         "name": "Stone Tower Temple Center",
         "access_rules": [
-          "@Stone Tower Temple/Stone Tower Temple West Garden,stonetower_small_keys:4",
-          "@Stone Tower Temple/Stone Tower Temple West Garden,stonetower_small_keys:3,mm_zora",
+          "@Stone Tower Temple/Stone Tower Temple West Garden,mm_stonetower_small_keys:4",
+          "@Stone Tower Temple/Stone Tower Temple West Garden,mm_stonetower_small_keys:3,mm_zora",
           "@Stone Tower Temple/Stone Tower Temple Water Room,mm_zora"
         ],
         "visibility_rules": [
@@ -5553,7 +5553,7 @@
         "access_rules": [
           "@Stone Tower Temple/Stone Tower Temple Entrance,$mm_can_use_light_arrows",
           "@Stone Tower Temple/Stone Tower Temple Center,mm_zora",
-          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,stonetower_small_keys:4"
+          "@Stone Tower Temple/Stone Tower Temple Mirrors Room,mm_stonetower_small_keys:4"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5563,7 +5563,7 @@
       {
         "name": "Stone Tower Temple Mirrors Room",
         "access_rules": [
-          "@Stone Tower Temple/Stone Tower Temple Water Room,stonetower_small_keys:4"
+          "@Stone Tower Temple/Stone Tower Temple Water Room,mm_stonetower_small_keys:4"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5626,7 +5626,7 @@
         "name": "Stone Tower Temple Inverted East",
         "access_rules": [
           "@Stone Tower Temple/Stone Tower Temple Inverted Entrance",
-          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe,$mm_can_use_light_arrows,stonetower_small_keys:4"
+          "@Stone Tower Temple/Stone Tower Temple Inverted Wizzrobe,$mm_can_use_light_arrows,mm_stonetower_small_keys:4"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5636,7 +5636,7 @@
       {
         "name": "Stone Tower Temple Inverted Wizzrobe",
         "access_rules": [
-          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_can_use_light_arrows,stonetower_small_keys:3",
+          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_can_use_light_arrows,mm_stonetower_small_keys:3",
           "@Stone Tower Temple/Stone Tower Temple Inverted Death Armos Maze,mm_deku"
         ],
         "visibility_rules": [
@@ -5701,7 +5701,7 @@
       {
         "name": "Stone Tower Temple Inverted Bridge",
         "access_rules": [
-          "@Stone Tower Temple/Stone Tower Temple Inverted Entrance Ledge,mm_hookshot,stonetower_small_keys:4"
+          "@Stone Tower Temple/Stone Tower Temple Inverted Entrance Ledge,mm_hookshot,mm_stonetower_small_keys:4"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -6651,7 +6651,7 @@
       {
         "name": "Main Room Fake Wall",
         "short_name": "Main Room Fake Wall",
-        "chest_unopened_img": "images/system/mmsnowhead_stray_fairy.png",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
           "@Snowhead Temple/Snowhead Temple Map Room Upper,$mm_can_use_lens,$mm_can_hookshot_scarecrow",

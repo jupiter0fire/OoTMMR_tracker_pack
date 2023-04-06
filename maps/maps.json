@@ -7,8 +7,8 @@
   },
   {
     "name": "termina",
-    "location_size": 35,
-    "location_border_thickness": 5,
+    "location_size": 15,
+    "location_border_thickness": 3,
     "img": "images/mm_overworld.png"
   }
 ]
