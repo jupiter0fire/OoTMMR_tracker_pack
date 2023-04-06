@@ -30,8 +30,12 @@ Things that need to be done:
 
 ## Usage
 
-OOT Malon, OOT Zelda's Letter, MM Bomber's notebook, MM seahorse, MM zora eggs and MM frogs are locations in the map tracker and need to be checked manually for the checks depending on them to be available (e.g. checks in Pinnacle Rock depending on getting MM seahorse).
+OOT Malon, OOT Zelda's Letter, MM Bomber's Notebook, MM Seahorse, MM Zora Eggs and MM Frogs are locations in the map tracker and need to be checked manually for the checks depending on them to be available (e.g. checks in Pinnacle Rock depending on getting MM Seahorse).
+
 Goron Lullaby is a progressive item with two stages: First Half of Goron Lullaby and Full Goron Lullaby.
-Small Key Sanity is a tracker setting because OOT Fire Temple logic depends on that setting. You still need to track your small keys manually even if Small Key Sanity is not activated.
-Having MM Spin Attacks can be tracked by right clicking on the Kokiri Sword.
-You can activate the Scarecrow song in OOT by right clicking on the ocarina. In MM you don't need to track it.
+
+Small Key Sanity is a tracker setting because OOT Fire Temple logic depends on that setting. You still need to track your Small Keys manually even if Small Key Sanity is not activated.
+
+Having MM Spin Attack can be tracked by right clicking on the Kokiri Sword.
+
+You can activate the Scarecrow Song in OOT by right clicking on the Ocarina. In MM you don't need to track it.
