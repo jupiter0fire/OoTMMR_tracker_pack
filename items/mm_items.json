@@ -310,7 +310,7 @@
     "name": "MM Great Fairy Sword",
     "type": "toggle",
     "img": "images/items/mm_fairysword.png",
-    "codes": "mm_fairysword,mm_greatfairysword,mm_fairy_sword,mm_sword4"
+    "codes": "mm_fairysword,mm_greatfairysword,mm_fairy_sword,mm_sword4,mm_sword"
   },
   {
     "name": "MM Pictograph Box",

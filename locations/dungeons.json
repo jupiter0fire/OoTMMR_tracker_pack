@@ -3107,7 +3107,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "size": 25,
+        "size": 20,
         "x": 494,
         "y": 518
       }
@@ -3912,7 +3912,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "size": 25,
+        "size": 20,
         "x": 290,
         "y": 340
       }
@@ -4266,7 +4266,7 @@
         "map": "termina",
         "x": 320,
         "y": 260,
-        "size": 25
+        "size": 20
       }
     ]
   },
@@ -4360,7 +4360,7 @@
         "map": "termina",
         "x": 836,
         "y": 238,
-        "size": 25
+        "size": 20
       }
     ]
   },
@@ -4610,7 +4610,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "size": 25,
+        "size": 20,
         "x": 540,
         "y": 302
       }
@@ -5045,7 +5045,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "size": 25,
+        "size": 20,
         "x": 542,
         "y": 478
       }
@@ -5482,7 +5482,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "size": 25,
+        "size": 20,
         "x": 100,
         "y": 350
       }
@@ -5721,7 +5721,7 @@
       {
         "name": "Stone Tower Temple Boss",
         "access_rules": [
-          "@Stone Tower Temple/Stone Tower Temple Inverted Bridge 2,mm_hookshot,stonetower_boss_key"
+          "@Stone Tower Temple/Stone Tower Temple Inverted Bridge 2,mm_hookshot,mm_stonetower_boss_key"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -5939,7 +5939,7 @@
         "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_can_shoot_fire_arrows"
+          "@Stone Tower Temple/Stone Tower Temple Inverted East,mm_deku,$mm_use_shoot_fire_arrows"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -6041,7 +6041,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "size": 25,
+        "size": 20,
         "x": 956,
         "y": 213
       }
@@ -6678,7 +6678,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "size": 25,
+        "size": 20,
         "x": 488,
         "y": 35
       }
