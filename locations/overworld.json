@@ -4490,7 +4490,7 @@
                 "sections": [
                   {
                     "name": "Postbox Item",
-                    "chest_unopened_img": "images/mm_heartpiece.png",
+                    "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
                       "mm_postman"
