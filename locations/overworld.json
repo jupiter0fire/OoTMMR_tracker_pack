@@ -991,35 +991,6 @@
             ]
           },
           {
-            "name": "Scarecrow",
-            "sections": [
-              {
-                "name": "Play Song",
-                "access_rules": [
-                  "$has_age|child,ocarina,scarecrow_kid"
-                ],
-                "hosted_item": "scarecrow_adult"
-              },
-              {
-                "name": "Repeat Song",
-                "access_rules": [
-                  "$has_age|adult,ocarina,scarecrow_adult"
-                ],
-                "hosted_item": "scarecrow"
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "scarecrow"
-                ],
-                "x": 1150,
-                "y": 1180
-              }
-            ]
-          },
-          {
             "name": "LH Grotto",
             "sections": [
               {
@@ -1358,7 +1329,7 @@
               {
                 "map": "oot",
                 "x": 1870,
-                "y": 325
+                "y": 305
               }
             ]
           },
@@ -1540,7 +1511,7 @@
               {
                 "map": "oot",
                 "x": 1860,
-                "y": 360
+                "y": 340
               }
             ]
           },
@@ -3068,7 +3039,7 @@
               {
                 "map": "oot",
                 "x": 1420,
-                "y": 175
+                "y": 160
               }
             ]
           },
@@ -4574,8 +4545,8 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 150,
-                    "y": 26
+                    "x": 152,
+                    "y": 28
                   }
                 ]
               },
@@ -5530,7 +5501,7 @@
               {
                 "map": "termina",
                 "x": 596,
-                "y": 326
+                "y": 322
               },
               {
                 "map": "termina",
@@ -6079,8 +6050,8 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 482,
-                    "y": 506
+                    "x": 480,
+                    "y": 504
                   }
                 ]
               },
@@ -6236,7 +6207,7 @@
                   {
                     "map": "termina",
                     "x": 542,
-                    "y": 466
+                    "y": 462
                   }
                 ]
               },
@@ -6256,7 +6227,7 @@
                   {
                     "map": "termina",
                     "x": 554,
-                    "y": 466
+                    "y": 462
                   }
                 ]
               }
@@ -6298,7 +6269,7 @@
               {
                 "map": "termina",
                 "x": 531,
-                "y": 139
+                "y": 134
               }
             ]
           },
@@ -6379,7 +6350,7 @@
               {
                 "name": "Show the Gold Dust - Day 2",
                 "access_rules": [
-                  "$mm_blacksmith_enabled,mm_adultwallet,mm_bottledust_static"
+                  "$mm_blacksmith_enabled,mm_adultwallet,mm_bottledust"
                 ],
                 "item_count": 1
               }
@@ -6388,7 +6359,7 @@
               {
                 "map": "termina",
                 "x": 532,
-                "y": 158
+                "y": 162
               }
             ]
           },
@@ -6434,6 +6405,8 @@
             "sections": [
               {
                 "name": "Melt the ice",
+                "chest_unopened_img": "images/system/unknownsong.png",
+                "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
                   "$mm_goron_graveyard_hot_water,$mm_has_explosives",
                   "$mm_can_use_fire_arrows,$mm_has_explosives",
@@ -6447,7 +6420,7 @@
               {
                 "map": "termina",
                 "x": 594,
-                "y": 165
+                "y": 170
               }
             ]
           },
@@ -6597,7 +6570,7 @@
               {
                 "map": "termina",
                 "x": 654,
-                "y": 129
+                "y": 127
               }
             ]
           },
@@ -6719,7 +6692,7 @@
                   {
                     "name": "15 Stray Fairies in Snowhead Temple",
                     "access_rules": [
-                      "$mm_can_play|lullaby,mm_snowhead_stray_fairies:15"
+                      "$mm_can_play|mm_lullaby,mm_snowhead_stray_fairies:15"
                     ],
                     "item_count": 1
                   }

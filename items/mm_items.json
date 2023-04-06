@@ -246,13 +246,11 @@
         "img_mods": "@disabled"
       },
       {
-        "img": "images/items/mm_lullaby.png",
-        "img_mods": "overlay|images/system/mm_overlay_30.png",
+        "img": "images/items/mm_half_lullaby.png",
         "codes": "mm_lullaby_half"
       },
       {
         "img": "images/items/mm_lullaby.png",
-        "img_mods": "overlay|images/system/mm_overlay_40.png",
         "codes": "mm_lullaby,mm_goronslullaby,mm_goronlullaby,mm_goron_lullaby"
       }
     ]
@@ -372,11 +370,16 @@
     "codes": "mm_ocarina,mm_oot,mm_ocarinaoftime,mm_ocarina_of_time"
   },
   {
-    "name": "MM Bottle 1",
+    "name": "MM Bottle",
     "type": "toggle",
-    "loop": true,
     "img": "images/items/mm_bottle.png",
     "codes": "mm_bottle,mm_bottle1,mm_emptybottle"
+  },
+  {
+    "name": "MM Gold Dust",
+    "type": "toggle",
+    "img": "images/items/mm_dust.png",
+    "codes": "mm_bottledust"
   },
   {
     "name": "MM Woodfall Skulltullas",
