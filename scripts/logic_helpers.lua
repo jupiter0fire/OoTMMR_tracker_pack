@@ -159,7 +159,7 @@ end
 
 
 function has_fire_arrows()
-  return has_age("adult") == 1 and has("bow") and has("firearrow") and has("magic")
+  return can_use_bow() and has("firearrow") and has("magic")
 end  
 
 function spirit_child_door()
@@ -171,7 +171,7 @@ function spirit_adult_door()
 end  
 
 function has_fire_spirit()
-  return has("magic") and ((has("bow") and has("firearrow")) or has("dins")) and (has_explosives_bool() or has("spirit_small_keys",2))
+  return has("magic") and ((has("bow") and has("firearrow") and has("sticks")) or has("dins")) and (has_explosives_bool() or has("spirit_small_keys",2))
 end  
 
 function can_collect_ageless()
@@ -203,7 +203,7 @@ function hidden_grotto_storms()
 end  
 
 function hidden_grotto_bomb()
-  return stone_of_agony() and (has_explosives_bool() or can_use_hammer())
+  return stone_of_agony() and has_explosives_or_hammer()
 end 
 
 function dodongo_cavern_child_access()
@@ -251,21 +251,6 @@ end
 
 function hintable()
   return 1, AccessibilityLevel.Normal
-end
-
-function bean_planting(state)
-  if state == "yes" then
-    if BEAN_PLANTING then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif state == "no" then
-    if not BEAN_PLANTING then
-      return 1, AccessibilityLevel.Normal
-    end
-  else
-    print("error! bean_planting - invalid state")
-  end
-  return 0, AccessibilityLevel.None
 end
 
 function has_bombchus()
@@ -358,9 +343,17 @@ function can_LA()
   end
 end
 
+function can_use_sticks()
+  return has_age("child") == 1 and has("sticks")
+end  
+
 function has_fire()
-  return has("magic") and ((has_age("adult") and has("bow") and has("firearrow")) or has("dins"))
+  return has("firearrow") or can_use_dins()
 end
+
+function has_fire_or_sticks()
+  return can_use_sticks() or has_fire()
+end  
 
 function beyond_mido()
   if
@@ -542,7 +535,7 @@ function goron_tunic()
 end
 
 function has_goron_tunic()
-  return (has("trick_oot_fewer_tunic") or has("redtunic")) and has_age("adult") == 1
+  return has("trick_oot_fewer_tunic") or (has("redtunic") and has_age("adult") == 1)
 end  
 
 function has_goron_tunic_strict()
@@ -579,183 +572,6 @@ function FTR_or_goron()
     end
   end
   return 1, AccessibilityLevel.SequenceBreak
-end
-
-function _dmt_climb()
-  if spawn_access("Death Mountain Summit", "adult") > 0 or spawn_access("DMT Fairy", "adult") > 0 then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  if has_age("both") > 0 and has("lift1") and (has("bean_trail_yes") or (has("beans") and not BEAN_PLANTING)) then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  local count = 0
-  local level = AccessibilityLevel.None
-
-  if has_age("adult") > 0 and has("hoverboots") then
-    if has("logic_dmt_climb_hovers") then
-      return 1, AccessibilityLevel.Normal
-    end
-    count = 1
-    level = AccessibilityLevel.SequenceBreak
-  end
-
-  local blast_count, blast_level = can_blast()
-  if blast_count > 0 then
-    return blast_count, blast_level
-  end
-
-  return count, level
-end
-
-function _dmc_upper_to_lower()
-  if has_age("adult") == 0 then
-    return 0, AccessibilityLevel.None
-  end
-  if has("hoverboots") then
-    return 1, AccessibilityLevel.Normal
-  end
-  if has("hammer") then
-    if has("logic_crater_upper_to_lower") then
-      return 1, AccessibilityLevel.Normal
-    end
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-  return 0, AccessibilityLevel.None
-end
-
-function _dmc_upper_to_central()
-  if has_age("adult") > 0 and has("redtunic") and has("longshot") and damage_single_instance_quadruple() > 0 then
-    return 1, AccessibilityLevel.Normal
-  end
-  return 0, AccessibilityLevel.None
-end
-
-function _dmc_lower_to_central()
-  if has_age("adult") == 0 then
-    return 0, AccessibilityLevel.None
-  end
-  if has("hoverboots") or has("hookshot") then
-    return 1, AccessibilityLevel.Normal
-  end
-  return 0, AccessibilityLevel.None
-end
-
-function _dmc_central_to_lower()
-  if has_age("adult") == 0 then
-    return 0, AccessibilityLevel.None
-  end
-  if has("hoverboots") or has("hookshot") or (has_age("both") > 0 and has("ocarina") and has("bolero") and has("beans")) then
-    return 1, AccessibilityLevel.Normal
-  end
-  return 0, AccessibilityLevel.None
-end
-
-function dmc_upper()
-  if
-    spawn_access("DMC Lower", "adult") > 0 or spawn_access("Death Mountain Summit", "adult") > 0 or
-      spawn_access("DMC Fairy", "adult") > 0 or
-      spawn_access("DMT Fairy", "adult") > 0
-   then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  if has("ocarina") and has("bolero") and _dmc_central_to_lower() > 0 then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  local climb_count, climb_level = _dmt_climb()
-  local goron_count, goron_level = link_the_goron()
-
-  if climb_count > 0 or goron_count > 0 then
-    if climb_level == AccessibilityLevel.Normal or goron_level == AccessibilityLevel.Normal then
-      return 1, AccessibilityLevel.Normal
-    end
-    return 1, AccessibilityLevel.SequenceBreak
-  end
-  return 0, AccessibilityLevel.None
-end
-
-function dmc_lower()
-  if spawn_access("DMC Lower", "adult") > 0 or spawn_access("DMC Fairy", "adult") > 0 then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  if has("ocarina") and has("bolero") and _dmc_central_to_lower() > 0 then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  local count = 0
-  local level = AccessibilityLevel.None
-
-  local goron_count, goron_level = link_the_goron()
-  if goron_count > 0 then
-    if goron_level == AccessibilityLevel.Normal then
-      return 1, AccessibilityLevel.Normal
-    else
-      count = 1
-      level = AccessibilityLevel.SequenceBreak
-    end
-  end
-
-  local climb_count, climb_level = _dmt_climb()
-  local upper_to_lower_count, upper_to_lower_level = _dmc_upper_to_lower()
-  local upper_to_central_count, upper_to_central_level = _dmc_upper_to_central()
-  if climb_count > 0 and (upper_to_lower_count > 0 or upper_to_central_count > 0) then
-    if
-      climb_level == AccessibilityLevel.Normal and
-        (upper_to_lower_level == AccessibilityLevel.Normal or upper_to_central_level == AccessibilityLevel.Normal)
-     then
-      return 1, AccessibilityLevel.Normal
-    else
-      count = 1
-      level = AccessibilityLevel.SequenceBreak
-    end
-  end
-
-  return count, level
-end
-
-function dmc_central()
-  if has("ocarina") and has("bolero") then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  local count = 0
-  local level = AccessibilityLevel.None
-
-  local goron_count, goron_level = link_the_goron()
-  if spawn_access("DMC Lower", "adult") > 0 or spawn_access("DMC Fairy", "adult") > 0 then
-    goron_count, goron_level = 1, AccessibilityLevel.Normal
-  end
-  local lower_to_central_count, lower_to_central_level = _dmc_lower_to_central()
-  if goron_count > 0 and lower_to_central_count > 0 then
-    if goron_level == AccessibilityLevel.Normal and lower_to_central_level == AccessibilityLevel.Normal then
-      return 1, AccessibilityLevel.Normal
-    else
-      count = 1
-      level = AccessibilityLevel.SequenceBreak
-    end
-  end
-
-  local climb_count, climb_level = _dmt_climb()
-  local upper_to_lower_count, upper_to_lower_level = _dmc_upper_to_lower()
-  local upper_to_central_count, upper_to_central_level = _dmc_upper_to_central()
-  if climb_count > 0 and ((upper_to_lower_count > 0 and lower_to_central_count > 0) or upper_to_central_count > 0) then
-    if
-      climb_level == AccessibilityLevel.Normal and
-        ((upper_to_lower_level == AccessibilityLevel.Normal and lower_to_central_level == AccessibilityLevel.Normal) or
-          upper_to_central_level == AccessibilityLevel.Normal)
-     then
-      return 1, AccessibilityLevel.Normal
-    else
-      count = 1
-      level = AccessibilityLevel.SequenceBreak
-    end
-  end
-
-  return count, level
 end
 
 function child_river()
@@ -848,15 +664,10 @@ end
 function has_bottle()
   local bottles = Tracker:ProviderCountForCode("bottle")
   local ruto = Tracker:ProviderCountForCode("ruto")
-  local bigpoe = Tracker:ProviderCountForCode("bigpoe")
   local kz_count, kz_level = child_fountain()
   local level = AccessibilityLevel.Normal
 
-  local usable_bottles = bottles - ruto - bigpoe
-
-  if has_age("adult") == 1 then
-    usable_bottles = usable_bottles + bigpoe
-  end
+  local usable_bottles = bottles - ruto
 
   if kz_count > 0 and ruto > 0 then
     if usable_bottles == 0 then

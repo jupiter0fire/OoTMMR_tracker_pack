@@ -2618,7 +2618,7 @@
           {
             "name": "DMC Hammer Grotto",
             "access_rules": [
-              "$dmc_lower,hammer"
+              "hammer"
             ],
             "sections": [
               {
@@ -2929,7 +2929,7 @@
                     "name": "Market 10 Big Poes",
                     "short_name": "Big Poes",
                     "access_rules": [
-                      "@Hyrule Town As Adult,$can_play|epona,$can_use_bow,bottle"
+                      "@Hyrule Town As Adult,$can_play|epona,$can_use_bow,$has_bottle"
                     ],
                     "item_count": 1
                   },
