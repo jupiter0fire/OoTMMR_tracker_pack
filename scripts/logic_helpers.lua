@@ -191,7 +191,7 @@ function stone_of_agony()
 end  
 
 function gs_soil()
-  return has_age("child") and has("bottle")
+  return has_age("child") and has_bottle()
 end
 
 function gs_night()
