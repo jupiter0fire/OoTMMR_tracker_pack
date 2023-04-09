@@ -133,7 +133,7 @@ function mm_well_hot_water()
   local tc_count, tc_level = mm_ikana_valley_to_canyon()
   local tv_count, tv_level = mm_to_ikana_valley()
   local whw_count, whw_level = mm_ikana_canyon_to_well_hot_water()
-  if min(tc_count,tv_count,whw_count) == 0 then
+  if math.min(tc_count,tv_count,whw_count) == 0 then
     return 0, AccessibilityLevel.None
   elseif tc_level == AccessibilityLevel.SequenceBreak or tv_level == AccessibilityLevel.SequenceBreak or whw_level == AccessibilityLevel.SequenceBreak then
     return 1, AccessibilityLevel.SequenceBreak
@@ -237,7 +237,7 @@ function mm_moon_trial_link_part4()
 end
 
 function mm_moon_trial_link()
-  return mm_moon_trial_link_part1() and mm_moon_trial_link_part2() and mm_moon_trial_link_part3() and moon_trial_link_part4()
+  return mm_moon_trial_link_part1() and mm_moon_trial_link_part2() and mm_moon_trial_link_part3() and mm_moon_trial_link_part4()
 end
 
 function mm_can_use_elegy()
