@@ -3181,7 +3181,7 @@
                 "name": "HC GS Tree",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child"
+                  "$has_age|child,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
