@@ -3138,7 +3138,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "mm_bottle"
+          "$mm_has_bottle"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -3151,7 +3151,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "mm_bottle"
+          "$mm_has_bottle"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -3269,7 +3269,7 @@
           "house_skull_shuffle_on"
         ],
         "access_rules": [
-          "mm_bottle"
+          "$mm_has_bottle"
         ],
         "item_count": 1
       },
@@ -4218,15 +4218,15 @@
       {
         "name": "Zora Egg 1",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Hookshot Room Upper,mm_bow,$mm_can_use_deku_bubble,@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,mm_bottle",
-          "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,mm_bottle,mm_stone"
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Upper,mm_bow,$mm_can_use_deku_bubble,@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,$mm_has_bottle",
+          "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,$mm_has_bottle,mm_stone"
         ],
         "hosted_item": "mm_zoraegg_hookshot_room"
       },
       {
         "name": "Zora Egg 2",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Barrel Maze Aquarium,mm_hookshot,mm_zora,mm_bottle"
+          "@Pirate Fortress/Pirate Fortress Barrel Maze Aquarium,mm_hookshot,mm_zora,$mm_has_bottle"
         ],
         "hosted_item": "mm_zoraegg_barrel_maze"
       },
@@ -4240,7 +4240,7 @@
       {
         "name": "Zora Egg 3",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_hookshot,mm_zora,mm_bottle"
+          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_hookshot,mm_zora,$mm_has_bottle"
         ],
         "hosted_item": "mm_zoraegg_lone_guard"
       },
@@ -4256,7 +4256,7 @@
       {
         "name": "Zora Egg 4",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Treasure Room Aquarium,mm_hookshot,mm_zora,mm_bottle"
+          "@Pirate Fortress/Pirate Fortress Treasure Room Aquarium,mm_hookshot,mm_zora,$mm_has_bottle"
         ],
         "hosted_item": "mm_zoraegg_treasure_room"
       }
@@ -4290,7 +4290,7 @@
       {
         "name": "Beneath the Well North Section",
         "access_rules": [
-          "@Beneath the Well/Beneath the Well Entrance,mm_bottle,mm_scents,mm_gibdo"
+          "@Beneath the Well/Beneath the Well Entrance,$mm_has_bottle,mm_scents,mm_gibdo"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4310,8 +4310,8 @@
       {
         "name": "Beneath the Well End",
         "access_rules": [
-          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,mm_bottle,mm_bombs,mm_bow",
-          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,mm_bottle,mm_bombs,mm_zora"
+          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,$mm_has_bottle,mm_bombs,mm_bow",
+          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,$mm_has_bottle,mm_bombs,mm_zora"
         ],
         "visibility_rules": [
           "hidden_region"
@@ -4330,7 +4330,7 @@
       {
         "name": "Right Side Well Chest",
         "access_rules": [
-          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,mm_bottle"
+          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,$mm_has_bottle"
         ],
         "item_count": 1
       },

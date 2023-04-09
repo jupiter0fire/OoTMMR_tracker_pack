@@ -379,7 +379,7 @@
     "name": "MM Gold Dust",
     "type": "toggle",
     "img": "images/items/mm_dust.png",
-    "codes": "mm_bottledust"
+    "codes": "mm_bottledust,mm_bottle"
   },
   {
     "name": "MM Woodfall Skulltullas",

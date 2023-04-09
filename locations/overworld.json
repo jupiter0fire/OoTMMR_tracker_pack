@@ -5871,7 +5871,7 @@
               {
                 "name": "Gift From Saving Koume",
                 "access_rules": [
-                  "mm_bottle"
+                  "$mm_has_bottle"
                 ],
                 "item_count": 1
               },
@@ -5913,7 +5913,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_woodfall,mm_bottle,mm_bow"
+                  "mm_woodfall,$mm_has_bottle,mm_bow"
                 ],
                 "item_count": 1
               }
@@ -5973,7 +5973,7 @@
                 "chest_unopened_img": "images/system/blue.png",
                 "chest_opened_img": "images/system/blue_check.png",
                 "access_rules": [
-                  "mm_bottlesanity_no,mm_scents,mm_bottle",
+                  "mm_bottlesanity_no,mm_scents,$mm_has_bottle",
                   "mm_bottlesanity_yes,mm_mushroom"
                 ],
                 "visibility_rules": [
@@ -6859,7 +6859,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_bottle"
+                      "$mm_has_bottle"
                     ],
                     "item_count": 1
                   },
@@ -6913,7 +6913,7 @@
               {
                 "name": "Zora Eggs 5,6,7",
                 "access_rules": [
-                  "mm_zora,mm_bottle"
+                  "mm_zora,$mm_has_bottle"
                 ],
                 "hosted_item": "mm_zoraegg_pinnacle_rock"
               }
@@ -7223,7 +7223,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "@Road to Ikana Center,$mm_can_use_lens_strict,mm_bottle"
+                  "@Road to Ikana Center,$mm_can_use_lens_strict,$mm_has_bottle"
                 ],
                 "item_count": 1
               }

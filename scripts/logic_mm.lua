@@ -31,7 +31,7 @@ function mm_can_play(song)
 end
 
 function mm_can_use_beans()
-  return has("mm_beans") and (has("mm_bottle") or mm_can_play("mm_songofstorms"))
+  return has("mm_beans") and (mm_has_bottle() == 1 or mm_can_play("mm_songofstorms"))
 end
 
 function mm_can_break_boulders()
@@ -43,7 +43,7 @@ function mm_can_use_keg()
 end
 
 function mm_boat_ride()
-  return has("mm_pictograph") or has("mm_bottle")
+  return has("mm_pictograph") or mm_has_bottle() == 1
 end
 
 function mm_open_woodfall()
@@ -51,7 +51,7 @@ function mm_open_woodfall()
 end
 
 function mm_deku_princess()
-  return mm_has_weapon() and has("mm_bottle")
+  return mm_has_weapon() and mm_has_bottle() == 1
 end
 
 function mm_can_use_fire_arrows()
@@ -76,7 +76,7 @@ function mm_can_use_lens()
 end
 
 function mm_grab_water_in_graveyard()
-  return has("mm_bottle") and has("mm_goron")
+  return mm_has_bottle() == 1 and has("mm_goron")
 end
 
 function mm_mountain_village_to_goron_graveyard()
@@ -89,15 +89,19 @@ function mm_mountain_village_to_goron_graveyard()
 end
 
 function mm_to_mountain_village()
-  return (mm_can_break_boulders() or mm_can_use_fire_arrows()) and has("mm_bow")
+  if (mm_can_break_boulders() or mm_can_use_fire_arrows()) and has("mm_bow") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None  
+  end
 end
 
 function mm_goron_graveyard_hot_water()
-  return mm_grab_water_in_graveyard() and mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village()
+  return mm_grab_water_in_graveyard() and mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village() == 1
 end
 
 function mm_ikana_canyon_to_well_hot_water()
-  if (mm_has_explosives() or has("mm_zora")) and (has("mm_gibdo") and has("mm_bottle") and has("mm_scents")) then
+  if (mm_has_explosives() or has("mm_zora")) and (has("mm_gibdo") and mm_has_bottle() == 1 and has("mm_scents")) then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None  
@@ -105,7 +109,7 @@ function mm_ikana_canyon_to_well_hot_water()
 end
 
 function mm_twin_island_hot_water()
-  return mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village() and (mm_can_use_fire_arrows() or has("mm_snowhead")) and has("mm_bottle")
+  return mm_mountain_village_to_goron_graveyard() and mm_to_mountain_village() == 1 and (mm_can_use_fire_arrows() or has("mm_snowhead")) and mm_has_bottle() == 1
 end
 
 function mm_ikana_valley_to_canyon()
@@ -155,11 +159,14 @@ function mm_get_goron_food_in_goron_village()
 end
 
 function mm_goron_food()
-  return mm_to_mountain_village() and mm_get_goron_food_in_goron_village()
+  return mm_to_mountain_village() == 1 and mm_get_goron_food_in_goron_village()
 end
 
 function mm_blacksmith_enabled()
-  return has("mm_snowhead") or mm_can_use_fire_arrows() or mm_goron_graveyard_hot_water() or (mm_well_hot_water() and mm_can_play("mm_soaring"))
+  if has("mm_snowhead") or mm_can_use_fire_arrows() or mm_goron_graveyard_hot_water() or (mm_well_hot_water() and mm_can_play("mm_soaring")) then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
 end
 
 function mm_can_hookshot_scarecrow()
@@ -167,7 +174,7 @@ function mm_can_hookshot_scarecrow()
 end
 
 function mm_powder_keg_trial()
-  return mm_to_mountain_village() and ((has("mm_snowhead") or mm_can_use_fire_arrows()) and has("mm_goron"))
+  return mm_to_mountain_village() == 1 and ((has("mm_snowhead") or mm_can_use_fire_arrows()) and has("mm_goron"))
 end
 
 function mm_goron_fast_roll()
@@ -209,7 +216,7 @@ function mm_ikana_through_well_part1()
 end
 
 function mm_ikana_through_well_part2()
-  return has("mm_bottle") and has("mm_bombs") and (has("mm_bow") or has("mm_zora"))
+  return mm_has_bottle() == 1 and has("mm_bombs") and (has("mm_bow") or has("mm_zora"))
 end
 
 function mm_ikana_through_well_part3()
@@ -250,4 +257,27 @@ end
 
 function mm_can_use_elegy3()
   return mm_can_play("mm_elegy") and has("mm_zora") and has("mm_goron")
+end
+
+function mm_has_bottle()
+  local bottles = Tracker:ProviderCountForCode("mm_bottle")
+  local dust = Tracker:ProviderCountForCode("mm_bottledust")
+  local mv_count, mv_level = mm_to_mountain_village()
+  local bs_count, bs_level = mm_blacksmith_enabled()
+  local level = AccessibilityLevel.Normal
+
+  local usable_bottles = bottles - dust
+
+  if math.min(mv_count,bs_count) > 0 and dust > 0 and has("mm_adultwallet") then
+    if usable_bottles == 0 then
+      if mv_level == AccessibilityLevel.SequenceBreak or bs_level == AccessibilityLevel.SequenceBreak then
+        level = AccessibilityLevel.SequenceBreak
+      else
+        level =  AccessibilityLevel.Normal
+      end
+    end
+    usable_bottles = usable_bottles + dust
+  end
+
+  return usable_bottles, level
 end
