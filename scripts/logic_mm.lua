@@ -169,6 +169,13 @@ function mm_blacksmith_enabled()
   return 0, AccessibilityLevel.None
 end
 
+function mm_blacksmith_enabled_without_bottle()
+  if has("mm_snowhead") or mm_can_use_fire_arrows() then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
 function mm_can_hookshot_scarecrow()
   return has("mm_ocarina") and has("mm_hookshot")
 end
@@ -263,7 +270,7 @@ function mm_has_bottle()
   local bottles = Tracker:ProviderCountForCode("mm_bottle")
   local dust = Tracker:ProviderCountForCode("mm_bottledust")
   local mv_count, mv_level = mm_to_mountain_village()
-  local bs_count, bs_level = mm_blacksmith_enabled()
+  local bs_count, bs_level = mm_blacksmith_enabled_without_bottle()
   local level = AccessibilityLevel.Normal
 
   local usable_bottles = bottles - dust

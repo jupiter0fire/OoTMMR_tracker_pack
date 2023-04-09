@@ -142,7 +142,7 @@
                 "name": "KF GS Know It All House (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_night,$can_damage_skull_child"
+                  "$has_age|child,$gs_night,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -167,7 +167,7 @@
                 "name": "KF GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil,$can_damage_skull_child"
+                  "$gs_soil,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"

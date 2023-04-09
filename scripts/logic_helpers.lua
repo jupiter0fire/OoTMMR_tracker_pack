@@ -178,11 +178,11 @@ function has_fire_arrows()
 end
 
 function spirit_child_door()
-  return has_age("child") and has("spirit_small_keys", 5)
+  return has_age("child") == 1 and has("spirit_small_keys", 5)
 end
 
 function spirit_adult_door()
-  return has_age("adult") and adult_colossus() and has("spirit_small_keys", 3) and has("lift2")
+  return has_age("adult") == 1 and adult_colossus() == 1 and has("spirit_small_keys", 3) and has("lift2")
 end
 
 function has_fire_spirit()
@@ -211,7 +211,7 @@ function stone_of_agony()
 end
 
 function gs_soil()
-  return has_age("child") and has_bottle()
+  return has_age("child") == 1 and has_bottle() == 1
 end
 
 function gs_night()
@@ -243,11 +243,11 @@ function hidden_grotto_bomb()
 end
 
 function dodongo_cavern_child_access()
-  return has_age("child") and (has("letter") or has_explosives_bool()) and has_bombflowers()
+  return has_age("child") == 1 and (has("letter") or has_explosives_bool()) and has_bombflowers()
 end
 
 function dodongo_cavern_adult_access()
-  return has_age("adult") and (has_bombflowers() or can_use_hammer())
+  return has_age("adult") == 1 and (has_bombflowers() or can_use_hammer())
 end
 
 function spawn_access(region, age)
