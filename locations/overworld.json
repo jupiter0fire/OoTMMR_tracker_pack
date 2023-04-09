@@ -6517,8 +6517,6 @@
             "sections": [
               {
                 "name": "Melt the ice",
-                "chest_unopened_img": "images/system/unknownsong.png",
-                "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
                   "$mm_goron_graveyard_hot_water,$mm_has_explosives",
                   "$mm_can_use_fire_arrows,$mm_has_explosives",
@@ -6568,6 +6566,8 @@
                   "mm_goron,mm_ocarina,$mm_can_use_fire_arrows",
                   "mm_goron,mm_ocarina,$mm_well_hot_water,$mm_can_play|mm_soaring"
                 ],
+                "chest_unopened_img": "images/system/unknownsong.png",
+                "chest_opened_img": "images/system/unknownsong_check.png",
                 "item_count": 1
               }
             ],
