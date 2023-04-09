@@ -103,7 +103,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_shopsanity_no"
+                  "setting_oot_shuffle_shops_no"
                 ],
                 "x": 2220,
                 "y": 915
@@ -120,7 +120,7 @@
                   "$has_age|adult,$can_play|epona"
                 ],
                 "visibility_rules": [
-                  "setting_shuffle_cows_yes"
+                  "setting_oot_shuffle_cows_yes"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
