@@ -81,6 +81,32 @@
               {
                 "name": "Item 4",
                 "item_count": 1
+              },
+              {
+                "name": "Item 5",
+                "item_count": 1
+              },
+              {
+                "name": "Item 6",
+                "item_count": 1
+              },
+              {
+                "name": "Item 7",
+                "item_count": 1
+              },
+              {
+                "name": "Item 8",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_shopsanity_no"
+                ],
+                "x": 2220,
+                "y": 915
               }
             ]
           },
@@ -91,11 +117,10 @@
                 "name": "KF Links House Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$has_age|adult,ocarina,epona",
-                  "{$hintable}"
+                  "$has_age|adult,$can_play|epona"
                 ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_shuffle_cows_yes"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -117,7 +142,7 @@
                 "name": "KF GS Know It All House (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_night"
+                  "$has_age|child,$gs_night,$can_damage_skull_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -142,7 +167,7 @@
                 "name": "KF GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil"
+                  "$gs_soil,$can_damage_skull_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"

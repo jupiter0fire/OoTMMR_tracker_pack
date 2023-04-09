@@ -10,7 +10,7 @@ end
 
 function has_shield()
   return true
-end  
+end
 
 function can_time_travel()
   if (has("setting_door_open") or (has("ocarina") and has("time"))) and has("mastersword") then
@@ -39,35 +39,35 @@ end
 
 function can_play(song)
   return has("ocarina") and has(song)
-end  
+end
 
 function can_use_slingshot()
   return has_age("child") == 1 and has("slingshot")
-end  
+end
 
 function can_use_boomerang()
   return has_age("child") == 1 and has("boomerang")
-end  
+end
 
 function can_use_bow()
   return has_age("adult") == 1 and has("bow")
-end  
+end
 
 function can_use_hookshot()
   return has_age("adult") == 1 and has("hookshot")
-end  
+end
 
 function can_use_hammer()
   return has_age("adult") == 1 and has("hammer")
-end  
+end
 
 function has_ranged_weapon_child()
   return can_use_slingshot() or can_use_boomerang()
-end  
+end
 
 function has_ranged_weapon_adult()
   return can_use_bow() or can_use_hookshot()
-end  
+end
 
 function has_ranged_weapon()
   return has_ranged_weapon_child() or has_ranged_weapon_adult()
@@ -75,7 +75,7 @@ end
 
 function has_explosives_bool()
   return has("bombs")
-end  
+end
 
 function has_explosives()
   local bombs = Tracker:ProviderCountForCode("bombs")
@@ -86,7 +86,7 @@ function has_explosives()
     return chus_count, chus_level
   else
     return 0, AccessibilityLevel.None
-  end  
+  end
 end
 
 function has_bombflowers()
@@ -95,23 +95,23 @@ end
 
 function can_use_dins()
   return has("magic") and has("dinsfire")
-end 
+end
 
 function can_use_longshot()
   return has_age("adult") == 1 and has("longshot")
-end  
+end
 
 function has_iron_boots()
   return has_age("adult") == 1 and has("ironboots")
-end  
+end
 
 function can_dive_small()
   return has("silverscale") or has_iron_boots()
-end  
+end
 
 function can_dive_big()
   return has("goldscale") or has_iron_boots()
-end  
+end
 
 function has_hover_boots()
   return has_age("adult") == 1 and has("hoverboots")
@@ -119,15 +119,15 @@ end
 
 function can_hit_triggers_distance()
   return can_use_bow() or can_use_slingshot()
-end  
+end
 
 function can_hit_triggers_distance_child()
   return can_use_slingshot()
-end  
+end
 
 function can_hit_triggers_distance_adult()
   return can_use_bow()
-end  
+end
 
 function has_explosives_or_hammer()
   return has_explosives_bool() or can_use_hammer()
@@ -135,7 +135,23 @@ end
 
 function has_weapon()
   return (has_age("child") == 1 and has("sowrd1")) or has_age("adult") == 1
-end  
+end
+
+function has_weapon_child()
+  if has_age("child") == 1 and has("sowrd1") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
+function has_weapon_adult()
+  if has_age("adult") == 1 then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
 
 function can_collect_distance()
   return can_use_hookshot() or can_use_boomerang()
@@ -151,40 +167,40 @@ end
 
 function can_hookshot_scarecrow()
   return can_use_hookshot() and has("scarecrow")
-end  
+end
 
 function can_longshot_scarecrow()
   return can_use_longshot() and has("scarecrow")
-end  
-
+end
 
 function has_fire_arrows()
   return can_use_bow() and has("firearrow") and has("magic")
-end  
+end
 
 function spirit_child_door()
-  return has_age("child") and has("spirit_small_keys",5)
+  return has_age("child") and has("spirit_small_keys", 5)
 end
 
 function spirit_adult_door()
-  return has_age("adult") and adult_colossus() and has("spirit_small_keys",3) and has("lift2")
-end  
+  return has_age("adult") and adult_colossus() and has("spirit_small_keys", 3) and has("lift2")
+end
 
 function has_fire_spirit()
-  return has("magic") and ((has("bow") and has("firearrow") and has("sticks")) or has("dins")) and (has_explosives_bool() or has("spirit_small_keys",2))
-end  
+  return has("magic") and ((has("bow") and has("firearrow") and has("sticks")) or has("dins")) and
+      (has_explosives_bool() or has("spirit_small_keys", 2))
+end
 
 function can_collect_ageless()
   return can_use_hookshot() and can_use_boomerang()
-end    
+end
 
 function water_level_low()
   return has("ironboots") and can_play("lullaby")
-end  
+end
 
 function water_level_middle()
   return can_use_hookshot() and can_play("lullaby")
-end  
+end
 
 function stone_of_agony()
   if has("agony") or has("trick_oot_hidden_grottos") then
@@ -192,7 +208,7 @@ function stone_of_agony()
   else
     return 1, AccessibilityLevel.SequenceBreak
   end
-end  
+end
 
 function gs_soil()
   return has_age("child") and has_bottle()
@@ -204,36 +220,35 @@ function gs_night()
   else
     return 1, AccessibilityLevel.SequenceBreak
   end
-end  
+end
 
 function hidden_grotto_storms()
   local sa_count, sa_level = stone_of_agony()
 
-  if not(can_play("storm")) then
+  if not (can_play("storm")) then
     return 0, AccessibilityLevel.None
   else
-    return sa_count, sa_level  
+    return sa_count, sa_level
   end
-
-end  
+end
 
 function hidden_grotto_bomb()
   local sa_count, sa_level = stone_of_agony()
 
-  if not(has_explosives_or_hammer()) then
+  if not (has_explosives_or_hammer()) then
     return 0, AccessibilityLevel.None
   else
-    return sa_count, sa_level  
+    return sa_count, sa_level
   end
-end 
+end
 
 function dodongo_cavern_child_access()
   return has_age("child") and (has("letter") or has_explosives_bool()) and has_bombflowers()
-end  
+end
 
 function dodongo_cavern_adult_access()
   return has_age("adult") and (has_bombflowers() or can_use_hammer())
-end  
+end
 
 function spawn_access(region, age)
   region = region or ""
@@ -246,9 +261,9 @@ function spawn_access(region, age)
   local spawn_object = nil
 
   if
-    spawn_object and spawn_object.CapturedItem and spawn_object.CapturedItem.Name and
+      spawn_object and spawn_object.CapturedItem and spawn_object.CapturedItem.Name and
       spawn_object.CapturedItem.Name == region
-   then
+  then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -359,7 +374,7 @@ end
 
 function can_use_sticks()
   return has_age("child") == 1 and has("sticks")
-end  
+end
 
 function has_fire()
   return has("firearrow") or can_use_dins()
@@ -367,13 +382,13 @@ end
 
 function has_fire_or_sticks()
   return can_use_sticks() or has_fire()
-end  
+end
 
 function beyond_mido()
   if
-    (has("ocarina") and (has("saria") or has("minuet"))) or has("trick_oot_mido_skip") or
+      (has("ocarina") and (has("saria") or has("minuet"))) or has("trick_oot_mido_skip") or
       spawn_access("Sacred Forest Meadow", "adult") > 0
-   then
+  then
     return 1, AccessibilityLevel.Normal
   else
     return 1, AccessibilityLevel.SequenceBreak
@@ -392,10 +407,10 @@ function _gerudo_bridge()
     return 0, AccessibilityLevel.None
   end
   if
-    has("longshot") or has("ocarina") and has("epona") or has("gerudo_fortress_open") or
+      has("longshot") or has("ocarina") and has("epona") or has("gerudo_fortress_open") or
       (has("setting_shuffle_card_no") and has("card")) or
       spawn_access("Gerudo Fortress", "adult") > 0
-   then
+  then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None
@@ -552,54 +567,86 @@ function has_goron_tunic()
   if has("trick_oot_fewer_tunic") or (has("redtunic") and has_age("adult") == 1) then
     return 1, AccessibilityLevel.Normal
   else
-    return 1, AccessibilityLevel.SequenceBreak  
+    return 1, AccessibilityLevel.SequenceBreak
   end
-end  
+end
 
 function has_goron_tunic_strict()
   if has("redtunic") and has_age("adult") == 1 then
     return 1, AccessibilityLevel.Normal
   else
-    return 1, AccessibilityLevel.SequenceBreak  
+    return 1, AccessibilityLevel.SequenceBreak
   end
-end  
+end
 
 function has_zora_tunic()
   if (has("trick_oot_fewer_tunic") or has("bluetunic")) and has_age("adult") == 1 then
     return 1, AccessibilityLevel.Normal
-  else 
-    return 1, AccessibilityLevel.SequenceBreak  
+  else
+    return 1, AccessibilityLevel.SequenceBreak
   end
-end  
+end
 
 function has_zora_tunic_strict()
   if has("bluetunic") and has_age("adult") == 1 then
     return 1, AccessibilityLevel.Normal
   else
-    return 1, AccessibilityLevel.SequenceBreak  
+    return 1, AccessibilityLevel.SequenceBreak
   end
-end  
+end
 
 function has_lens_strict()
   if has("magic") and has("lens") then
     return 1, AccessibilityLevel.Normal
   else
-    return 1, AccessibilityLevel.SequenceBreak  
+    return 1, AccessibilityLevel.SequenceBreak
   end
-end  
+end
 
 function has_lens()
   local ls_count, ls_level = has_lens_strict()
   if has("trick_oot_fewer_lens") then
     return 1, AccessibilityLevel.Normal
-  else 
-    return ls_count, ls_level  
+  else
+    return ls_count, ls_level
   end
-end  
+end
 
 function open_door_of_time()
   return has("setting_door_open") or can_play("time")
-end  
+end
+
+function can_damage_child()
+  if has_weapon_child() == 1 or has("sticks") or has_explosives_bool() == 1 or can_use_slingshot() or can_use_dins() then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
+function can_damage_adult()
+  if has_weapon_adult() == 1 or has_explosives_bool() == 1 or can_use_dins() then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
+function can_damage_skulls_child()
+  if can_damage_child() == 1 or can_collect_distance_child() then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
+
+function can_damage_skulls_adult()
+  if can_damage_adult() == 1 or can_collect_distance_adult() then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 0, AccessibilityLevel.None
+  end
+end
 
 function child_river()
   if has_age("child") == 0 then
@@ -651,9 +698,9 @@ function adult_domain()
   end
 
   if
-    (has("ocarina") and has("lullaby")) or spawn_access("Zoras Domain", "adult") > 0 or
+      (has("ocarina") and has("lullaby")) or spawn_access("Zoras Domain", "adult") > 0 or
       spawn_access("ZD Shop", "adult") > 0
-   then
+  then
     return 1, AccessibilityLevel.Normal
   elseif has("hoverboots") then
     if has("logic_zora_with_hovers") then
@@ -728,9 +775,9 @@ function has_blue_fire()
   for _, location in ipairs(blue_fire_locations) do
     local location_object = get_object(location)
     if
-      location_object and location_object.AccessibilityLevel and
+        location_object and location_object.AccessibilityLevel and
         location_object.AccessibilityLevel == AccessibilityLevel.Normal
-     then
+    then
       --TODO: trigger dummy update
       return 1, bottle_level
     end
@@ -784,6 +831,5 @@ function damage_single_instance_ohko()
 end
 
 function can_spawn_rainbow_bridge()
-  return has("forestmed") and has("noct_meds",2) and has("lacs_meds",2) and has("lightmed")
+  return has("forestmed") and has("noct_meds", 2) and has("lacs_meds", 2) and has("lightmed")
 end
-

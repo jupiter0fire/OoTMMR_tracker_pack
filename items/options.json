@@ -127,5 +127,43 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Shuffle Cows OOT",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_oot_shuffle_cows_no.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffle_cows,setting_shuffle_cows_no"
+      },
+      {
+        "img": "images/setting_shuffle_cows_yes.png",
+        "codes": "setting_shuffle_cows,setting_shuffle_cows_yes",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shuffle Shops OOT",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_oot_shuffle_shops_no.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffle_shops,setting_shuffle_shops_no"
+      },
+      {
+        "img": "images/setting_shuffle_shops_yes.png",
+        "codes": "setting_shuffle_shops,setting_shuffle_shops_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]
