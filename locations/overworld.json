@@ -1182,10 +1182,10 @@
                 "name": "LLR Tower Cows",
                 "short_name": "Cows",
                 "access_rules": [
-                  "ocarina,epona"
+                  "$can_play|epona"
                 ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_oot_shuffle_cows_yes"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -1207,10 +1207,10 @@
                 "name": "LLR Stables Cows",
                 "short_name": "Cows",
                 "access_rules": [
-                  "ocarina,epona"
+                  "$can_play|epona"
                 ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_oot_shuffle_cows_yes"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
