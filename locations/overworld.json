@@ -366,7 +366,7 @@
             "access_rules": [
               "$can_play|saria",
               "$can_play|minuet",
-              "$has|trick_oot_mido_skip,$has_age|adult"
+              "[trick_oot_mido_skip],$has_age|adult"
             ]
           },
           {
@@ -1376,7 +1376,7 @@
                 "name": "Talk to him",
                 "access_rules": [
                   "$can_use_hookshot",
-                  "trick_oot_man_on_roof"
+                  "[trick_oot_man_on_roof]"
                 ],
                 "item_count": 1
               }
@@ -1877,7 +1877,7 @@
               {
                 "name": "Graveyard Wall",
                 "access_rules": [
-                  "$has_age|child,$night_gs"
+                  "$has_age|child,$gs_night"
                 ],
                 "sections": [
                   {
@@ -3697,7 +3697,7 @@
           {
             "name": "ZF Above the Log",
             "access_rules": [
-              "$night_gs,$child_fountain"
+              "$gs_night,$child_fountain"
             ],
             "sections": [
               {
@@ -4096,7 +4096,7 @@
           {
             "name": "GF Top Floor",
             "access_rules": [
-              "$night_gs,$gerudo_valley_far_side"
+              "$gs_night,$gerudo_valley_far_side"
             ],
             "sections": [
               {
@@ -4128,7 +4128,7 @@
         "access_rules": [
           "@Gerudo Fortress,$gerudo_card,$can_use_longshot",
           "@Gerudo Fortress,$gerudo_card,$has_hover_boots",
-          "$has_age|adult,$can_play|requiem,$has|trick_oot_blind_wasteland"
+          "$has_age|adult,$can_play|requiem,[trick_oot_blind_wasteland]"
         ],
         "children": [
           {
@@ -4179,7 +4179,7 @@
             "name": "Dessert Colossus As Adult",
             "access_rules": [
               "@Haunted Wasteland,$has_lens_strict",
-              "@Haunted Wasteland,$has|trick_oot_blind_wasteland_lens",
+              "@Haunted Wasteland,[trick_oot_blind_wasteland_lens]",
               "$can_play|requiem"
             ]
           },
@@ -6886,7 +6886,7 @@
             "name": "Pinnacle Rock",
             "access_rules": [
               "mm_zora,mm_seahorse",
-              "mm_zora,$has|trick_mm_no_seahorse"
+              "mm_zora,[trick_mm_no_seahorse]"
             ],
             "chest_unopened_img": "images/system/chest_brown_closed.png",
             "chest_opened_img": "images/system/chest_brown_open.png",
@@ -7001,7 +7001,7 @@
                 "short_name": "ZH",
                 "access_rules": [
                   "mm_zora",
-                  "$has|trick_mm_zora_hall_human"
+                  "[trick_mm_zora_hall_human]"
                 ],
                 "sections": [
                   {
@@ -7475,7 +7475,7 @@
                 "name": "Ikana Canyon",
                 "access_rules": [
                   "$mm_can_use_ice_arrows,mm_hookshot",
-                  "$has|trick_mm_iceless_ikana,mm_hookshot"
+                  "[trick_mm_iceless_ikana],mm_hookshot"
                 ],
                 "children": [
                   {
@@ -7564,7 +7564,7 @@
                     "name": "Stone Tower",
                     "access_rules": [
                       "$mm_can_use_elegy3,mm_hookshot",
-                      "$mm_can_use_elegy2,has|trick_mm_one_mask_stone_tower,mm_hookshot"
+                      "$mm_can_use_elegy2,[trick_mm_one_mask_stone_tower],mm_hookshot"
                     ],
                     "children": [
                       {

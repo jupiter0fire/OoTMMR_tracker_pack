@@ -187,7 +187,11 @@ function water_level_middle()
 end  
 
 function stone_of_agony()
-  return has("agony") or has("trick_oot_hidden_grottos")
+  if has("agony") or has("trick_oot_hidden_grottos") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
 end  
 
 function gs_soil()
@@ -195,15 +199,32 @@ function gs_soil()
 end
 
 function gs_night()
-  return has("trick_oot_night_skull_sun_song") or can_play("sun")
+  if has("trick_oot_night_skull_sun_song") or can_play("sun") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak
+  end
 end  
 
 function hidden_grotto_storms()
-  return stone_of_agony() and can_play("storm")
+  local sa_count, sa_level = stone_of_agony()
+
+  if not(can_play("storm")) then
+    return 0, AccessibilityLevel.None
+  else
+    return sa_count, sa_level  
+  end
+
 end  
 
 function hidden_grotto_bomb()
-  return stone_of_agony() and has_explosives_or_hammer()
+  local sa_count, sa_level = stone_of_agony()
+
+  if not(has_explosives_or_hammer()) then
+    return 0, AccessibilityLevel.None
+  else
+    return sa_count, sa_level  
+  end
 end 
 
 function dodongo_cavern_child_access()
@@ -232,13 +253,6 @@ function spawn_access(region, age)
   end
 
   return 0, AccessibilityLevel.None
-end
-
-function night_gs()
-  if has("trick_oot_night_skull_sun_song") or (has("ocarina") and has("sun")) then
-    return 1, AccessibilityLevel.Normal
-  end
-  return 1, AccessibilityLevel.SequenceBreak
 end
 
 function hidden_grotto()
@@ -535,44 +549,57 @@ function goron_tunic()
 end
 
 function has_goron_tunic()
-  return has("trick_oot_fewer_tunic") or (has("redtunic") and has_age("adult") == 1)
+  if has("trick_oot_fewer_tunic") or (has("redtunic") and has_age("adult") == 1) then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak  
+  end
 end  
 
 function has_goron_tunic_strict()
-  return has("redtunic") and has_age("adult") == 1
+  if has("redtunic") and has_age("adult") == 1 then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak  
+  end
 end  
 
 function has_zora_tunic()
-  return (has("trick_oot_fewer_tunic") or has("bluetunic")) and has_age("adult") == 1
+  if (has("trick_oot_fewer_tunic") or has("bluetunic")) and has_age("adult") == 1 then
+    return 1, AccessibilityLevel.Normal
+  else 
+    return 1, AccessibilityLevel.SequenceBreak  
+  end
 end  
 
 function has_zora_tunic_strict()
-  return has("bluetunic") and has_age("adult") == 1
+  if has("bluetunic") and has_age("adult") == 1 then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak  
+  end
 end  
 
 function has_lens_strict()
-  return has("magic") and has("lens")
+  if has("magic") and has("lens") then
+    return 1, AccessibilityLevel.Normal
+  else
+    return 1, AccessibilityLevel.SequenceBreak  
+  end
 end  
 
 function has_lens()
-  return has_lens_strict() or has("trick_oot_fewer_lens")
+  local ls_count, ls_level = has_lens_strict()
+  if has("trick_oot_fewer_lens") then
+    return 1, AccessibilityLevel.Normal
+  else 
+    return ls_count, ls_level  
+  end
 end  
 
 function open_door_of_time()
   return has("setting_door_open") or can_play("time")
 end  
-
-function FTR_or_goron()
-  if has("trick_oot_fewer_tunic") then
-    return 1, AccessibilityLevel.Normal
-  else
-    local goron_count, goron_level = goron_tunic()
-    if goron_count > 0 then
-      return goron_count, goron_level
-    end
-  end
-  return 1, AccessibilityLevel.SequenceBreak
-end
 
 function child_river()
   if has_age("child") == 0 then
@@ -730,18 +757,6 @@ function zora_tunic()
     end
   end
   return 0, AccessibilityLevel.None
-end
-
-function FTR_or_zora()
-  if has("trick_oot_fewer_tunic") then
-    return 1, AccessibilityLevel.Normal
-  else
-    local zora_count, zora_level = zora_tunic()
-    if zora_count > 0 then
-      return zora_count, zora_level
-    end
-  end
-  return 1, AccessibilityLevel.SequenceBreak
 end
 
 function damage_below_quadruple()
