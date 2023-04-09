@@ -2880,7 +2880,7 @@
               {
                 "name": "Market Bombchu Shop",
                 "access_rules": [
-                  "$has_age|child"
+                  "$has_age|child,wallet1"
                 ],
                 "sections": [
                   {
@@ -2898,6 +2898,32 @@
                   {
                     "name": "Item 4",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Item 5",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 6",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 7",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 8",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "force_invisibility_rules": [
+                      "setting_oot_shuffle_shops_no"
+                    ],
+                    "x": 1390,
+                    "y": 365
                   }
                 ]
               },
@@ -2909,7 +2935,10 @@
                 "sections": [
                   {
                     "name": "Item 1",
-                    "item_count": 1
+                    "item_count": 1,
+                    "access_rules": [
+                      "wallet1"
+                    ]
                   },
                   {
                     "name": "Item 2",
@@ -2922,6 +2951,35 @@
                   {
                     "name": "Item 4",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Item 5",
+                    "item_count": 1,
+                    "access_rules": [
+                      "wallet2"
+                    ]
+                  },
+                  {
+                    "name": "Item 6",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 7",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 8",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "force_invisibility_rules": [
+                      "setting_oot_shuffle_shops_no"
+                    ],
+                    "x": 1475,
+                    "y": 325
                   }
                 ]
               },
@@ -2946,6 +3004,32 @@
                   {
                     "name": "Item 4",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Item 5",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 6",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 7",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Item 8",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "force_invisibility_rules": [
+                      "setting_oot_shuffle_shops_no"
+                    ],
+                    "x": 1475,
+                    "y": 365
                   }
                 ]
               },
