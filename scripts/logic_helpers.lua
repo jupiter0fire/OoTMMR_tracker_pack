@@ -12,6 +12,27 @@ function has_shield()
   return true
 end
 
+function has_shield_for_scrubs()
+  if has("shield1") or has("shield2") then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
+function has_shield_for_scrubs_child()
+  if has("shield1") then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
+function has_shield_for_scrubs_adult()
+  if has("shield2") then
+    return 1, AccessibilityLevel.Normal
+  end
+  return 0, AccessibilityLevel.None
+end
+
 function can_time_travel()
   if (has("setting_door_open") or (has("ocarina") and has("time"))) and has("mastersword") then
     return 1, AccessibilityLevel.Normal
@@ -138,7 +159,7 @@ function has_weapon()
 end
 
 function has_weapon_child()
-  if has_age("child") == 1 and has("sowrd1") then
+  if has_age("child") == 1 and has("sword1") then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None
@@ -233,6 +254,26 @@ function hidden_grotto_storms()
 end
 
 function hidden_grotto_bomb()
+  local sa_count, sa_level = stone_of_agony()
+
+  if not (has_explosives_or_hammer()) then
+    return 0, AccessibilityLevel.None
+  else
+    return sa_count, sa_level
+  end
+end
+
+function hidden_grotto_bomb_child()
+  local sa_count, sa_level = stone_of_agony()
+
+  if not (has_explosives_bool()) then
+    return 0, AccessibilityLevel.None
+  else
+    return sa_count, sa_level
+  end
+end
+
+function hidden_grotto_bomb_adult()
   local sa_count, sa_level = stone_of_agony()
 
   if not (has_explosives_or_hammer()) then
@@ -617,7 +658,7 @@ function open_door_of_time()
 end
 
 function can_damage_child()
-  if has_weapon_child() == 1 or has("sticks") or has_explosives_bool() == 1 or can_use_slingshot() or can_use_dins() then
+  if has_weapon_child() == 1 or has("sticks") or has_explosives_bool() or can_use_slingshot() or can_use_dins() then
     return 1, AccessibilityLevel.Normal
   else
     return 0, AccessibilityLevel.None

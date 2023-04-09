@@ -671,7 +671,10 @@
           {
             "name": "HF Inside Fence Grotto",
             "access_rules": [
-              "$hidden_grotto_bomb"
+              "$hidden_grotto_bomb,nuts",
+              "$hidden_grotto_bomb_child,$has_shield_for_scrubs_child",
+              "$hidden_grotto_bomb_adult,$has_shield_for_scrubs_adult",
+              "$hidden_grotto_bomb_adult,$can_use_hammer"
             ],
             "sections": [
               {
@@ -833,7 +836,7 @@
                 "name": "HF GS Cow Grotto",
                 "short_name": "GS",
                 "access_rules": [
-                  "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child,magic,dins",
+                  "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child,$has_fire",
                   "$can_use_hammer,$can_collect_distance_adult,$has_fire"
                 ],
                 "visibility_rules": [
@@ -847,12 +850,11 @@
                 "name": "HF Cow Grotto Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$has_age|child,$has_explosives,dinsfire,magic,ocarina,epona",
-                  "$has_age|adult,hammer,$has_fire,ocarina,epona",
-                  "{$hintable}"
+                  "$stone_of_agony,$has_explosives_bool,$has_fire,$can_play|epona",
+                  "$can_use_hammer,$has_fire,$can_play|epona"
                 ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_oot_shuffle_cows_yes"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
