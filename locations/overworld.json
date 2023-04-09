@@ -5290,7 +5290,8 @@
               {
                 "name": "Chest on a stump",
                 "access_rules": [
-                  "$mm_can_use_beans"
+                  "$mm_can_use_beans",
+                  "mm_hookshot"
                 ],
                 "item_count": 1
               },
@@ -7162,7 +7163,7 @@
         "color": "#ad7143",
         "children": [
           {
-            "name": "Road to Ikana Grotto",
+            "name": "Road to Ikana",
             "children": [
               {
                 "name": "Chest on Ikana Pillar",
