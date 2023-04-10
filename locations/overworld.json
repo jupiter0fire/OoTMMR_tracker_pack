@@ -2099,31 +2099,6 @@
                 ]
               },
               {
-                "name": "DMT Cow Grotto",
-                "sections": [
-                  {
-                    "name": "DMT Cow Grotto Cow",
-                    "short_name": "Cow",
-                    "access_rules": [
-                      "$can_blast,ocarina,epona"
-                    ],
-                    "visibility_rules": [
-                      "hidden_region"
-                    ],
-                    "chest_unopened_img": "images/cow.png",
-                    "chest_opened_img": "images/bottle_milk.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1765,
-                    "y": 175
-                  }
-                ]
-              },
-              {
                 "name": "DMT Above Dodongos Cavern",
                 "short_name": "Rock Above DC",
                 "sections": [
@@ -2156,7 +2131,7 @@
                     "name": "DMT GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "@Death Mountain As Child,$gs_soil,$has_bombflowers"
+                      "@Death Mountain As Child,$gs_soil,$has_bombflowers,$can_damage_skulls_child"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2218,6 +2193,32 @@
             "access_rules": [
               "@Death Mountain As Adult,$has_explosives_or_hammer",
               "@Death Mountain As Child,@Death Mountain As Adult,beans"
+            ]
+          },
+          {
+            "name": "DMT Cow Grotto",
+            "sections": [
+              {
+                "name": "DMT Cow Grotto Cow",
+                "short_name": "Cow",
+                "access_rules": [
+                  "@Death Mountain Summit As Child,$has_explosives_bool,$can_play|epona",
+                  "@Death Mountain Summit As Adult,$has_explosives_or_hammer,$can_play|epona",                  
+                ],
+                "visibility_rules": [
+                  "setting_oot_shuffle_cows_yes"
+                ],
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1765,
+                "y": 175
+              }
             ]
           },
           {
