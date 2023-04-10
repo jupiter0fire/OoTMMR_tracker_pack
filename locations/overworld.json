@@ -1381,10 +1381,10 @@
                 "name": "Kak Impas House Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "ocarina,epona"
+                  "$can_play|epona"
                 ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_oot_shuffle_cows_yes"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -1599,15 +1599,15 @@
           },
           {
             "name": "Kak Potion Shop",
-            "visibility_rules": [
-              "hidden_region"
-            ],
             "access_rules": [
               "$has_age|adult"
             ],
             "sections": [
               {
                 "name": "Item 1",
+                "access_rules":[
+                  "wallet1"
+                ],
                 "item_count": 1
               },
               {
@@ -1621,11 +1621,33 @@
               {
                 "name": "Item 4",
                 "item_count": 1
+              },
+              {
+                "name": "Item 5",
+                "access_rules":[
+                  "wallet2"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Item 6",
+                "item_count": 1
+              },
+              {
+                "name": "Item 7",
+                "item_count": 1
+              },
+              {
+                "name": "Item 8",
+                "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_oot_shuffle_shops_no"
+                ],
                 "x": 1795,
                 "y": 340
               }
@@ -1652,6 +1674,32 @@
               {
                 "name": "Item 4",
                 "item_count": 1
+              },
+              {
+                "name": "Item 5",
+                "item_count": 1
+              },
+              {
+                "name": "Item 6",
+                "item_count": 1
+              },
+              {
+                "name": "Item 7",
+                "item_count": 1
+              },
+              {
+                "name": "Item 8",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_oot_shuffle_shops_no"
+                ],
+                "x": 1760,
+                "y": 340
               }
             ]
           },
@@ -1939,7 +1987,7 @@
                     "name": "Graveyard GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "$gs_soil"
+                      "$gs_soil,$can_damage_skulls_child"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
