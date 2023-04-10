@@ -2203,7 +2203,7 @@
                 "short_name": "Cow",
                 "access_rules": [
                   "@Death Mountain Summit As Child,$has_explosives_bool,$can_play|epona",
-                  "@Death Mountain Summit As Adult,$has_explosives_or_hammer,$can_play|epona",                  
+                  "@Death Mountain Summit As Adult,$has_explosives_or_hammer,$can_play|epona"                
                 ],
                 "visibility_rules": [
                   "setting_oot_shuffle_cows_yes"
@@ -2535,10 +2535,10 @@
           {
             "name": "GC Shop",
             "access_rules": [
-              "$link_the_goron",
-              "$spawn_access|GC Shop|adult",
-              "$has_age|child,$has_explosives",
-              "$has_age|child,dinsfire,magic"
+              "@Goron City As Child,$has_bombflowers",
+              "@Goron City As Adult,$has_explosives_bool",
+              "@Goron City As Adult,lift1",
+              "@Goron City As Adult,bow"         
             ],
             "sections": [
               {
@@ -2555,6 +2555,28 @@
               },
               {
                 "name": "Item 4",
+                "access_rules":[
+                  "wallet1"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Item 5",
+                "item_count": 1
+              },
+              {
+                "name": "Item 6",
+                "item_count": 1
+              },
+              {
+                "name": "Item 7",
+                "item_count": 1
+              },
+              {
+                "name": "Item 8",
+                "access_rules":[
+                  "wallet1"
+                ],
                 "item_count": 1
               }
             ]
