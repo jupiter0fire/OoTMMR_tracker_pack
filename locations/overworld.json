@@ -4064,7 +4064,8 @@
                 "name": "Give Saw",
                 "access_rules": [
                   "saw"
-                ]
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
