@@ -291,47 +291,6 @@ function hintable()
   return 1, AccessibilityLevel.Normal
 end
 
-function has_projectile(age)
-  local sling = has("sling")
-  local rang = has("boomerang")
-  local bow = has("bow")
-  local hook = has("hookshot")
-
-  if age == "child" then
-    if sling or rang then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif age == "adult" then
-    if bow or hook then
-      return 1, AccessibilityLevel.Normal
-    end
-  elseif age == "both" then
-    if (bow or hook) and (sling or rang) then
-      return 1, AccessibilityLevel.Normal
-    end
-  else
-    if (bow or hook) or (sling or rang) then
-      return 1, AccessibilityLevel.Normal
-    end
-  end
-end
-
-function can_use_lens()
-  if has("lens") and has("magic") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end
-end
-
-function can_LA()
-  if has_age("adult") == 1 and has("magic") and has("bow") and has("lightarrow") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end
-end
-
 function can_use_sticks()
   return has_age("child") == 1 and has("sticks")
 end
@@ -342,16 +301,6 @@ end
 
 function has_fire_or_sticks()
   return can_use_sticks() or has_fire()
-end
-
-function beyond_mido()
-  if
-      (has("ocarina") and (has("saria") or has("minuet"))) or has("trick_oot_mido_skip")
-  then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 1, AccessibilityLevel.SequenceBreak
-  end
 end
 
 function gerudo_card()
@@ -464,15 +413,6 @@ function link_the_goron()
     end
   end
   return count, level
-end
-
-function goron_tunic()
-  if has("redtunic") then
-    return 1, AccessibilityLevel.Normal
-  elseif has("wallet") then
-    return link_the_goron()
-  end
-  return 0, AccessibilityLevel.None
 end
 
 function has_goron_tunic()
@@ -695,47 +635,6 @@ function has_blue_fire()
   end
 
   return 1, AccessibilityLevel.SequenceBreak
-end
-
-function zora_tunic()
-  if has("bluetunic") then
-    return 1, AccessibilityLevel.Normal
-  elseif has("wallet2") then
-    local bottle_count, bottle_level = has_bottle()
-    local domain_count, domain_level = adult_domain()
-    if bottle_count > 0 and domain_count > 0 then
-      if bottle_level == AccessibilityLevel.SequenceBreak or domain_level == AccessibilityLevel.SequenceBreak then
-        return 1, AccessibilityLevel.SequenceBreak
-      else
-        return 1, AccessibilityLevel.Normal
-      end
-    end
-  end
-  return 0, AccessibilityLevel.None
-end
-
-function damage_below_quadruple()
-  return 1, AccessibilityLevel.Normal
-end
-
-function damage_below_ohko()
-  return 1, AccessibilityLevel.Normal
-end
-
-function damage_single_instance_quadruple()
-  if damage_below_quadruple() > 0 or has("nayrus") and has("magic") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return has_bottle()
-  end
-end
-
-function damage_single_instance_ohko()
-  if damage_below_ohko() > 0 or has("nayrus") and has("magic") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return has_bottle()
-  end
 end
 
 function can_spawn_rainbow_bridge()

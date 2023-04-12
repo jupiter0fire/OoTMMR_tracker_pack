@@ -2778,10 +2778,6 @@
       },
       {
         "name": "Deku Scrubs",
-        "access_rules": [
-          "[trick_oot_fewer_lens]",
-          "$can_use_lens"
-        ],
         "visibility_rules": [
           "hidden_region"
         ],
@@ -2814,7 +2810,7 @@
     "name": "Gerudo Training Ground",
     "parent": "Gerudo Fortress",
     "access_rules": [
-      "$gerudo_card"
+      "card"
     ],
     "sections": [
       {

@@ -614,7 +614,6 @@
                 "name": "SFM Deku Scrubs Grotto",
                 "short_name": "Deku Scrubs",
                 "access_rules": [
-                  "$has_age|adult,$beyond_mido",
                   "$has_age|child,minuet,nuts",
                   "$has_age|child,minuet,shield1",
                   "$has_age|child,sling",
@@ -2477,13 +2476,9 @@
                 "name": "GC Deku Scrubs Grotto",
                 "short_name": "Deku Scrubs",
                 "access_rules": [
-                  "ocarina,time,$damage_below_quadruple",
-                  "ocarina,time,$goron_tunic",
                   "ocarina,time,longshot",
                   "ocarina,time,nayrus,magic",
-                  "hookshot,$damage_below_ohko,$goron_tunic",
-                  "hookshot,nayrus,magic",
-                  "hookshot,$damage_below_quadruple,[logic_goron_grotto]"
+                  "hookshot,nayrus,magic"
                 ],
                 "visibility_rules": [
                   "hidden_region"
@@ -4185,7 +4180,7 @@
           {
             "name": "GF HBA",
             "access_rules": [
-              "$has_age|adult,$can_play|epona,$can_use_bow,$gerudo_card"
+              "$has_age|adult,$can_play|epona,$can_use_bow,card"
             ],
             "sections": [
               {
@@ -4233,7 +4228,7 @@
                   "$can_use_hookshot",
                   "$can_use_bow",
                   "$has_hover_boots",
-                  "$gerudo_card"
+                  "card"
                 ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
@@ -4262,7 +4257,7 @@
                 "name": "GF GS Archery Range (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_hookshot,$gerudo_card"
+                  "$gs_night,$can_use_hookshot,card"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -4313,9 +4308,9 @@
       {
         "name": "Haunted Wasteland",
         "access_rules": [
-          "@Gerudo Fortress,$gerudo_card,$can_use_longshot",
-          "@Gerudo Fortress,$gerudo_card,$has_hover_boots",
-          "@Gerudo Fortress,$gerudo_card,[trick_oot_wasteland_sand_river]",
+          "@Gerudo Fortress,card,$can_use_longshot",
+          "@Gerudo Fortress,card,$has_hover_boots",
+          "@Gerudo Fortress,card,[trick_oot_wasteland_sand_river]",
           "$has_age|adult,$can_play|requiem,[trick_oot_blind_wasteland]"
         ],
         "children": [
