@@ -940,7 +940,7 @@
                 "name": "LH GS Small Island (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_night"
+                  "$has_age|child,$gs_night,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1053,7 +1053,7 @@
                 "name": "LH GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil"
+                  "$gs_soil,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3884,7 +3884,7 @@
                 "name": "ZF GS Tree",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Zoras Fountain As Child"
+                  "@Zoras Fountain As Child,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
