@@ -98,18 +98,6 @@ function has_explosives_bool()
   return has("bombs")
 end
 
-function has_explosives()
-  local bombs = Tracker:ProviderCountForCode("bombs")
-  local chus_count, chus_level = has_bombchus()
-  if bombs > 0 then
-    return bombs, AccessibilityLevel.Normal
-  elseif chus_count > 0 then
-    return chus_count, chus_level
-  else
-    return 0, AccessibilityLevel.None
-  end
-end
-
 function has_bombflowers()
   return has_explosives_bool() or has("lift1")
 end
@@ -291,26 +279,6 @@ function dodongo_cavern_adult_access()
   return has_age("adult") == 1 and (has_bombflowers() or can_use_hammer())
 end
 
-function spawn_access(region, age)
-  region = region or ""
-  age = age or ""
-
-  if has_age(age) == 0 then
-    return 0, AccessibilityLevel.None
-  end
-
-  local spawn_object = nil
-
-  if
-      spawn_object and spawn_object.CapturedItem and spawn_object.CapturedItem.Name and
-      spawn_object.CapturedItem.Name == region
-  then
-    return 1, AccessibilityLevel.Normal
-  end
-
-  return 0, AccessibilityLevel.None
-end
-
 function hidden_grotto()
   if has("trick_oot_hidden_grottos") or has("agony") then
     return 1, AccessibilityLevel.Normal
@@ -321,33 +289,6 @@ end
 
 function hintable()
   return 1, AccessibilityLevel.Normal
-end
-
-function has_bombchus()
-  local bombs = Tracker:ProviderCountForCode("bombs")
-  local chus = Tracker:ProviderCountForCode("bombchu")
-  if has("setting_logic_chus_yes") then
-    if chus > 0 then
-      return chus, AccessibilityLevel.Normal
-    else
-      return 0, AccessibilityLevel.None
-    end
-  else
-    if bombs > 0 then
-      return bombs, AccessibilityLevel.Normal
-    elseif chus > 0 then
-      return chus, AccessibilityLevel.SequenceBreak
-    end
-  end
-  return 0, AccessibilityLevel.None
-end
-
-function can_blast()
-  if has_age("adult") == 1 and has("hammer") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return has_explosives()
-  end
 end
 
 function has_projectile(age)
@@ -372,28 +313,6 @@ function has_projectile(age)
     if (bow or hook) or (sling or rang) then
       return 1, AccessibilityLevel.Normal
     end
-  end
-
-  return has_explosives()
-end
-
-function can_child_attack()
-  if has_age("child") == 0 then
-    return 0, AccessibilityLevel.None
-  end
-
-  if has("sling") or has("boomerang") or has("sticks") or has("sword1") or (has("dinsfire") and has("magic")) then
-    return 1, AccessibilityLevel.Normal
-  else
-    return has_explosives()
-  end
-end
-
-function can_stun_deku()
-  if has_age("adult") == 1 or has("nuts") or has("shield1") then
-    return 1, AccessibilityLevel.Normal
-  else
-    return can_child_attack()
   end
 end
 
@@ -427,8 +346,7 @@ end
 
 function beyond_mido()
   if
-      (has("ocarina") and (has("saria") or has("minuet"))) or has("trick_oot_mido_skip") or
-      spawn_access("Sacred Forest Meadow", "adult") > 0
+      (has("ocarina") and (has("saria") or has("minuet"))) or has("trick_oot_mido_skip")
   then
     return 1, AccessibilityLevel.Normal
   else
@@ -441,21 +359,6 @@ function gerudo_card()
     return 1, AccessibilityLevel.Normal
   end
   return 0, AccessibilityLevel.None
-end
-
-function _gerudo_bridge()
-  if has_age("adult") == 0 then
-    return 0, AccessibilityLevel.None
-  end
-  if
-      has("longshot") or has("ocarina") and has("epona") or has("gerudo_fortress_open") or
-      (has("setting_shuffle_card_no") and has("card")) or
-      spawn_access("Gerudo Fortress", "adult") > 0
-  then
-    return 1, AccessibilityLevel.Normal
-  else
-    return 0, AccessibilityLevel.None
-  end
 end
 
 function _quicksand()
@@ -487,10 +390,6 @@ function gerudo_valley_far_side()
     return 0, AccessibilityLevel.None
   end
 
-  if _gerudo_bridge() > 0 then
-    return 1, AccessibilityLevel.Normal
-  end
-
   if has("ocarina") and has("requiem") then
     local _, reverse_level = _wasteland_reverse()
     local _, quicksand_level = _quicksand()
@@ -508,20 +407,6 @@ end
 function wasteland()
   local forward_count = 0
   local forward_level = AccessibilityLevel.Normal
-
-  local bridge_count = _gerudo_bridge()
-  local card_count, card_level = gerudo_card()
-  local _, quicksand_level = _quicksand()
-
-  if bridge_count > 0 and card_count > 0 then
-    forward_count = 1
-
-    if card_level == AccessibilityLevel.SequenceBreak or quicksand_level == AccessibilityLevel.SequenceBreak then
-      forward_level = AccessibilityLevel.SequenceBreak
-    else
-      return 1, AccessibilityLevel.Normal
-    end
-  end
 
   if has("ocarina") and has("requiem") then
     return _wasteland_reverse()
@@ -541,11 +426,6 @@ end
 function adult_colossus()
   if has("ocarina") and has("requiem") then
     return 1, AccessibilityLevel.Normal
-  end
-
-  local bridge_count = _gerudo_bridge()
-  if bridge_count == 0 then
-    return 0, AccessibilityLevel.None
   end
 
   local card_count, card_level = gerudo_card()
@@ -583,12 +463,6 @@ function link_the_goron()
       level = AccessibilityLevel.SequenceBreak
     end
   end
-
-  local explo_count, explo_level = has_explosives()
-  if explo_count > 0 then
-    return explo_count, explo_level
-  end
-
   return count, level
 end
 
@@ -596,9 +470,6 @@ function goron_tunic()
   if has("redtunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet") then
-    if spawn_access("GC Shop", "adult") > 0 then
-      return 1, AccessibilityLevel.Normal
-    end
     return link_the_goron()
   end
   return 0, AccessibilityLevel.None
@@ -694,11 +565,11 @@ function child_river()
     return 0, AccessibilityLevel.None
   end
 
-  if has("scale1") or spawn_access("Zora River", "child") > 0 or spawn_access("Zoras Domain", "child") > 0 then
+  if has("scale1") then
     return 1, AccessibilityLevel.Normal
   end
 
-  return has_explosives()
+  return has_explosives_bool()
 end
 
 function child_domain()
@@ -706,7 +577,7 @@ function child_domain()
     return 0, AccessibilityLevel.None
   end
 
-  if has("scale1") or spawn_access("Zoras Domain", "child") > 0 then
+  if has("scale1") then
     return 1, AccessibilityLevel.Normal
   end
 
@@ -729,7 +600,7 @@ function child_fountain()
   if has_exact("ruto", 0) then
     return 0, AccessibilityLevel.None
   end
-
+  
   return child_domain()
 end
 
@@ -739,8 +610,7 @@ function adult_domain()
   end
 
   if
-      (has("ocarina") and has("lullaby")) or spawn_access("Zoras Domain", "adult") > 0 or
-      spawn_access("ZD Shop", "adult") > 0
+      (has("ocarina") and has("lullaby"))
   then
     return 1, AccessibilityLevel.Normal
   elseif has("hoverboots") then
@@ -831,9 +701,6 @@ function zora_tunic()
   if has("bluetunic") then
     return 1, AccessibilityLevel.Normal
   elseif has("wallet2") then
-    if spawn_access("ZD Shop", "adult") > 0 then
-      return 1, AccessibilityLevel.Normal
-    end
     local bottle_count, bottle_level = has_bottle()
     local domain_count, domain_level = adult_domain()
     if bottle_count > 0 and domain_count > 0 then

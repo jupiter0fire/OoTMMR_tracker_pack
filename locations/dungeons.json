@@ -420,7 +420,6 @@
           "@Dodongo Cavern/Lobby,$has_age|adult",
           "@Dodongo Cavern/Lobby,$has_age|child,sling",
           "@Dodongo Cavern/Lobby,$has_age|child,sticks",
-          "@Dodongo Cavern/Lobby,$has_age|child,$has_explosives",
           "@Dodongo Cavern/Lobby,$has_age|child,sword1"
         ],
         "visibility_rules": [
@@ -505,7 +504,6 @@
         "name": "Deku Scrubs Near Bomb Bag",
         "short_name": "Near Bomb Bag",
         "access_rules": [
-          "@Dodongo Cavern/Climb,$can_blast",
           "@Dodongo Cavern/Climb,[logic_dc_scrub_room],$has_age|adult,lift1"
         ],
         "visibility_rules": [
@@ -1320,7 +1318,7 @@
         "name": "Big Lava Room Blocked Door Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "@Fire Temple/Big Lava Room,$has_explosives"
+          "@Fire Temple/Big Lava Room,$has_explosives_bool"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1

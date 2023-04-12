@@ -617,7 +617,6 @@
                   "$has_age|adult,$beyond_mido",
                   "$has_age|child,minuet,nuts",
                   "$has_age|child,minuet,shield1",
-                  "$has_age|child,[minuet],$has_explosives",
                   "$has_age|child,sling",
                   "$has_age|child,sticks",
                   "$has_age|child,sword1",
@@ -1026,9 +1025,6 @@
               {
                 "name": "LH Deku Scrubs Grotto",
                 "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$can_stun_deku"
-                ],
                 "visibility_rules": [
                   "hidden_region"
                 ],
@@ -1235,7 +1231,6 @@
                 "name": "LLR Deku Scrubs Grotto",
                 "short_name": "Deku Scrubs",
                 "access_rules": [
-                  "$has_age|child,$can_child_attack",
                   "$has_age|child,nuts",
                   "$has_age|child,shield1"
                 ],
@@ -2770,15 +2765,6 @@
               {
                 "name": "Bombs",
                 "access_rules": [
-                  "$can_blast,$has_age|child,$can_child_attack",
-                  "$can_blast,$has_age|child,nuts",
-                  "$can_blast,$has_age|child,shield1",
-                  "$spawn_access|Death Mountain Summit|child,$can_child_attack",
-                  "$spawn_access|Death Mountain Summit|child,nuts",
-                  "$spawn_access|Death Mountain Summit|child,shield1",
-                  "$spawn_access|DMT Fairy|child,$can_child_attack",
-                  "$spawn_access|DMT Fairy|child,nuts",
-                  "$spawn_access|DMT Fairy|child,shield1",
                   "{$hintable}"
                 ],
                 "visibility_rules": [
@@ -3415,7 +3401,6 @@
           {
             "name": "ZR Open Grotto",
             "access_rules": [
-              "$child_river",
               "$has_age|adult"
             ],
             "sections": [
@@ -3488,10 +3473,6 @@
               {
                 "name": "ZR Deku Scrubs Grotto",
                 "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$child_river,$can_stun_deku",
-                  "$has_age|adult,$can_stun_deku"
-                ],
                 "visibility_rules": [
                   "hidden_region"
                 ],
@@ -3905,9 +3886,6 @@
           },
           {
             "name": "ZF Above the Log",
-            "access_rules": [
-              "$gs_night,$child_fountain"
-            ],
             "sections": [
               {
                 "name": "ZF GS Above the Log (N)",
