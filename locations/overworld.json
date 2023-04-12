@@ -3515,7 +3515,7 @@
                 "name": "ZR GS Tree",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child"
+                  "$has_age|child,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3540,7 +3540,7 @@
                 "name": "ZR GS Ladder (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Zora River As Child,$gs_night"
+                  "@Zora River As Child,$gs_night,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3617,13 +3617,15 @@
             "name": "Zoras Domain As Child",
             "access_rules": [
               "@Zora River As Child,$can_play|lullaby",
-              "$can_dive_small"
+              "$can_dive_small",
+              "@Zora River As Child,[trick_oot_zora_domain_child]"
             ]
           },
           {
             "name": "Zoras Domain As Adult",
             "access_rules": [
-              "@Zora River As Adult,$can_play|lullaby"
+              "@Zora River As Adult,$can_play|lullaby",
+              "@Zora River As Adult,$has_hover_boots,[trick_oot_zora_domain_adult]"
             ]
           },
           {
@@ -3721,9 +3723,8 @@
           {
             "name": "ZD Shop",
             "access_rules": [
-              "$child_domain",
-              "$adult_domain,$has_blue_fire",
-              "$spawn_access|ZD Shop|adult"
+              "@Zoras Domain As Child",
+              "$has_blue_fire"
             ],
             "sections": [
               {
@@ -3736,10 +3737,32 @@
               },
               {
                 "name": "Item 3",
+                "access_rules":[
+                  "wallet1"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 4",
+                "item_count": 1
+              },
+              {
+                "name": "Item 5",
+                "item_count": 1
+              },
+              {
+                "name": "Item 6",
+                "item_count": 1
+              },
+              {
+                "name": "Item 7",
+                "access_rules":[
+                  "wallet2"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Item 8",
                 "item_count": 1
               }
             ]

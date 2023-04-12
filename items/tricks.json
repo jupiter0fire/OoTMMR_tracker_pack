@@ -41,6 +41,20 @@
     "codes": "trick_oot_blind_wasteland"
   },
   {
+    "name": "Zora's Domain Entry Child with Cucco",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_zora_domain_child.png",
+    "codes": "trick_oot_zora_domain_child"
+  },
+  {
+    "name": "Zora's Domain Entry Adult with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_zora_domain_adult.png",
+    "codes": "trick_oot_zora_domain_adult"
+  },
+  {
     "name": "Fewer Lens Requirements (MM)",
     "type": "toggle",
     "initial_active_state": false,

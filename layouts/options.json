@@ -107,6 +107,18 @@
         "item": "trick_oot_night_skull_sun_song",
         "width": 200,
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_oot_zora_domain_child",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_oot_zora_domain_adult",
+        "width": 200,
+        "height": 16
       }
     ]
   },
