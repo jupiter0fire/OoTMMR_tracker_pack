@@ -342,7 +342,7 @@
     ]
   },
   {
-    "name": "Sword w/ Spin Attack",
+    "name": "Sword with Spin Attack",
     "type": "toggle_badged",
     "base_item": "mm_kokirisword",
     "img": "images/items/mm_spin.png",

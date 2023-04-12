@@ -3984,8 +3984,7 @@
               {
                 "name": "Cow",
                 "access_rules": [
-                  "$has_age|child,ocarina,epona",
-                  "{$hintable}"
+                  "$has_age|child,$can_play|epona"
                 ],
                 "visibility_rules": [
                   "hidden_region"
@@ -4035,7 +4034,7 @@
                 "name": "GV GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_soil"
+                  "$has_age|child,$gs_soil,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -4338,6 +4337,7 @@
         "access_rules": [
           "@Gerudo Fortress,$gerudo_card,$can_use_longshot",
           "@Gerudo Fortress,$gerudo_card,$has_hover_boots",
+          "@Gerudo Fortress,$gerudo_card,[trick_oot_wasteland_sand_river]",
           "$has_age|adult,$can_play|requiem,[trick_oot_blind_wasteland]"
         ],
         "children": [
@@ -4494,7 +4494,7 @@
                 "name": "Colossus GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Dessert Colossus As Child,$gs_soil"
+                  "@Dessert Colossus As Child,$gs_soil,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"

@@ -62,6 +62,13 @@
     "codes": "trick_oot_volcano_heart_piece"
   },
   {
+    "name": "Wasteland Sand River with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_wasteland_sand_river.png",
+    "codes": "trick_oot_wasteland_sand_river"
+  },
+  {
     "name": "Fewer Lens Requirements (MM)",
     "type": "toggle",
     "initial_active_state": false,
