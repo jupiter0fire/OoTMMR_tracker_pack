@@ -2678,7 +2678,8 @@
                 "name": "DMC Volcano Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Death Mountain Crater Warp As Adult,@Death Mountain Crater Warp As Child,beans"
+                  "@Death Mountain Crater Warp As Adult,@Death Mountain Crater Warp As Child,beans",
+                  "@Death Mountain Crater Bottom As Adult,$has_hover_boots,[trick_oot_volcano_heart_piece]"  
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -2803,7 +2804,7 @@
                 "name": "DMC GS Crate",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Death Mountain Crater Top As Child"
+                  "@Death Mountain Crater Top As Child,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2831,7 +2832,7 @@
                 "name": "DMC GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil"
+                  "$gs_soil,$can_damage_skulls_child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"

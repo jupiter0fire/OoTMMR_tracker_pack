@@ -55,6 +55,13 @@
     "codes": "trick_oot_zora_domain_adult"
   },
   {
+    "name": "Volcano Heart Piece with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_volcano_heart_piece.png",
+    "codes": "trick_oot_volcano_heart_piece"
+  },
+  {
     "name": "Fewer Lens Requirements (MM)",
     "type": "toggle",
     "initial_active_state": false,
