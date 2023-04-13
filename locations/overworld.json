@@ -473,6 +473,9 @@
               {
                 "name": "LW GS Above Theater (N)",
                 "short_name": "GS",
+                "access_rules": [
+                  "$gs_night,@Lost Woods Deep As Child,beans,@Lost Woods Deep As Adult"
+                ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
                 ],
