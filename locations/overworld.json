@@ -431,7 +431,7 @@
             ]
           },
           {
-            "name": "LW Bean Patch Near Theater",
+            "name": "LW Near Deku Theater",
             "sections": [
               {
                 "name": "LW GS Bean Patch Near Theater",
@@ -445,22 +445,7 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2140,
-                "y": 740
-              }
-            ]
-          },
-          {
-            "name": "LW Above Theater",
-            "access_rules": [
-              "$gs_night,@Lost Woods Deep As Child,beans,@Lost Woods Deep As Adult"
-            ],
-            "sections": [
+              },
               {
                 "name": "LW GS Above Theater (N)",
                 "short_name": "GS",
