@@ -3474,7 +3474,8 @@
                 "name": "Give Prescription",
                 "access_rules": [
                   "@Zoras Domain As Adult,prescription"
-                ]
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
