@@ -1,5 +1,11 @@
 # Releases
 
+## v0.1.2
+
+Bug fixes for:
+
+- Ikana Valley access needing epona's and ocarina
+
 ## v0.1.1
 
 Bug fixes for:
