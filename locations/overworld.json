@@ -7361,8 +7361,8 @@
           {
             "name": "Ikana Valley",
             "access_rules": [
-              "mm_gibdomask,mm_hookshot",
-              "mm_garomask,mm_hookshot"
+              "@Road to Ikana Center,mm_gibdomask,mm_hookshot",
+              "@Road to Ikana Center,mm_garomask,mm_hookshot"
             ],
             "children": [
               {
