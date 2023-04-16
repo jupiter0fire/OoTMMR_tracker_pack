@@ -5541,7 +5541,7 @@
                 "name": "Chest on a stump",
                 "access_rules": [
                   "$mm_can_use_beans",
-                  "mm_hookshot"
+                  "mm_short_hookshot"
                 ],
                 "item_count": 1
               },
@@ -5655,10 +5655,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "mm_ocarina,mm_eponasong,$mm_has_explosives"
-                ],
-                "visibility_rules": [
-                  "cowsanity_yes"
+                  "$mm_can_play|mm_eponasong,$mm_has_explosives"
                 ],
                 "item_count": 1
               },
@@ -5667,10 +5664,7 @@
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "mm_ocarina,mm_eponasong,$mm_has_explosives"
-                ],
-                "visibility_rules": [
-                  "cowsanity_yes"
+                  "$mm_can_play|mm_eponasong,$mm_has_explosives"
                 ],
                 "item_count": 1
               }
@@ -5678,6 +5672,9 @@
             "map_locations": [
               {
                 "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_mm_shuffle_cows_no"
+                ],
                 "x": 525,
                 "y": 340
               }

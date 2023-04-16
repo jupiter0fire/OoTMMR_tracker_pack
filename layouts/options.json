@@ -70,6 +70,12 @@
         "item": "setting_mm_shuffle_shops",
         "width": 200,
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_mm_shuffle_cows",
+        "width": 200,
+        "height": 16
       }
     ]
   },

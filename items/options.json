@@ -203,5 +203,24 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Shuffle Cows MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_mm_shuffle_cows_no.png",
+        "img_mods": "@disabled",
+        "codes": "setting_mm_shuffle_cows,setting_mm_shuffle_cows_no"
+      },
+      {
+        "img": "images/setting_mm_shuffle_cows_yes.png",
+        "codes": "setting_mm_shuffle_cows,setting_mm_shuffle_cows_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]
