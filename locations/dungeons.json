@@ -3096,7 +3096,9 @@
     "name": "Swamp Spider House",
     "short_name": "Swamp Spiders",
     "access_rules": [
-      "@Poison Swamp Area,mm_deku"
+      "@Poison Swamp Area,mm_deku",
+      "@Poison Swamp Area,mm_zora",
+      "@Poison Swamp Area,mm_woodfall"
     ],
     "map_locations": [
       {

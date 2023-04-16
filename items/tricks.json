@@ -128,7 +128,7 @@
     "name": "Guess Bomber Code",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_mm_guess_bomber",
+    "img": "images/trick_mm_guess_bomber.png",
     "codes": "trick_mm_guess_bomber"
   }
 ]

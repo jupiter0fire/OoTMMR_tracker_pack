@@ -6280,16 +6280,19 @@
             "name": "Poison Swamp Area",
             "access_rules": [
               "$mm_boat_ride",
+              "mm_zora",
+              "mm_woodfall",
               "mm_deku,mm_bow",
-              "mm_deku,mm_hookshot",
-              "mm_deku,mm_zora"
+              "mm_deku,mm_short_hookshot"
             ],
             "children": [
               {
                 "name": "Southern Swamp Grotto",
                 "short_name": "Swamp Grotto",
                 "access_rules": [
-                  "mm_deku"
+                  "mm_deku",
+                  "mm_zora",
+                  "mm_woodfall"
                 ],
                 "sections": [
                   {
