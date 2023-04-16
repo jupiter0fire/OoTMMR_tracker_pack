@@ -4614,7 +4614,9 @@
                     "name": "South Clock Town Lower Chest",
                     "access_rules": [
                       "mm_moontear,mm_deku",
-                      "mm_hookshot"
+                      "mm_hookshot",
+                      "[trick_mm_sct_nothing]",
+                      "$mm_can_goron_bomb_jump"
                     ],
                     "item_count": 1
                   }
@@ -4635,7 +4637,8 @@
                     "name": "Open On Final Day",
                     "access_rules": [
                       "mm_moontear,mm_deku",
-                      "mm_hookshot"
+                      "mm_hookshot",
+                      "$mm_can_goron_bomb_jump,mm_short_hookshot"
                     ],
                     "item_count": 1
                   }

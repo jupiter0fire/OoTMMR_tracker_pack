@@ -116,5 +116,12 @@
     "initial_active_state": false,
     "img": "images/trick_mm_one_mask_stone_tower.png",
     "codes": "trick_mm_one_mask_stone_tower"
+  },
+  {
+    "name": "South Clock Town Chest with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/setting_mm_sct_nothing.png",
+    "codes": "trick_mm_sct_nothing"
   }
 ]

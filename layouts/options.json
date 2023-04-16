@@ -180,6 +180,12 @@
         "item": "trick_mm_one_mask_stone_tower",
         "width": 200,
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_mm_sct_nothing",
+        "width": 200,
+        "height": 16
       }
     ]
   },
