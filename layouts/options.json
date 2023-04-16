@@ -186,6 +186,12 @@
         "item": "trick_mm_sct_nothing",
         "width": 200,
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "trick_mm_guess_bomber",
+        "width": 200,
+        "height": 16
       }
     ]
   },

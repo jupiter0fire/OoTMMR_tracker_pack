@@ -4744,7 +4744,8 @@
                   {
                     "name": "Catch The Bombers",
                     "access_rules": [
-                      "$mm_has_weapon_range"
+                      "$mm_has_weapon_range",
+                      "[trick_mm_guess_bomber]"
                     ],
                     "hosted_item": "bombers_code"
                   }
