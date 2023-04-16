@@ -165,5 +165,24 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Cross Warps OOT",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_oot_cross_warps_no.png",
+        "img_mods": "@disabled",
+        "codes": "setting_oot_cross_warps,setting_oot_cross_warps_no"
+      },
+      {
+        "img": "images/setting_oot_cross_warps_yes.png",
+        "codes": "setting_oot_cross_warps,setting_oot_cross_warps_yes",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

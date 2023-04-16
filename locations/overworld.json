@@ -392,6 +392,7 @@
             "access_rules": [
               "$can_play|saria",
               "$can_play|minuet",
+              "$mm_can_play|minuet,setting_oot_cross_warps_yes",
               "[trick_oot_mido_skip],$has_age|adult"
             ]
           },
@@ -536,7 +537,8 @@
             "name": "Sacred Meadow As Adult",
             "access_rules": [
               "@Lost Woods Deep As Adult",
-              "$can_play|minuet"
+              "$can_play|minuet",
+              "$mm_can_play|minuet,setting_oot_cross_warps_yes"
             ]
           },
           {
@@ -547,6 +549,7 @@
                 "short_name": "Song",
                 "access_rules": [
                   "@Sacred Meadow As Child,meet_zelda,can_play|minuet",
+                  "@Sacred Meadow As Child,meet_zelda,$mm_can_play|minuet,setting_oot_cross_warps_yes",
                   "@Sacred Meadow As Child,meet_zelda,$can_damage_child"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
@@ -1994,7 +1997,8 @@
       {
         "name": "Graveyard Warp",
         "access_rules": [
-          "$can_play|nocturne"
+          "$can_play|nocturne",
+          "$mm_can_play|nocturne,setting_oot_cross_warps_yes"
         ]
       },
       {
@@ -2574,6 +2578,9 @@
               "$has_age|adult,$can_play|bolero,$can_use_hookshot",
               "$has_age|adult,$can_play|bolero,$has_hover_boots",
               "$has_age|adult,$can_play|bolero,beans",
+              "$has_age|adult,$mm_can_play|bolero,$can_use_hookshot,setting_oot_cross_warps_yes",
+              "$has_age|adult,$mm_can_play|bolero,$has_hover_boots,setting_oot_cross_warps_yes",
+              "$has_age|adult,$mm_can_play|bolero,beans,setting_oot_cross_warps_yes",
               "@Death Mountain Summit As Adult,$has_goron_tunic_strict,$can_longshot_scarecrow"
             ]
           },
@@ -2593,13 +2600,15 @@
           {
             "name": "Death Mountain Crater Warp As Child",
             "access_rules": [
-              "$has_age|child,$can_play|bolero"
+              "$has_age|child,$can_play|bolero",
+              "$has_age|child,$mm_can_play|bolero,setting_oot_cross_warps_yes"
             ]
           },
           {
             "name": "Death Mountain Crater Warp As Adult",
             "access_rules": [
               "$has_age|adult,$can_play|bolero",
+              "$has_age|adult,$mm_can_play|bolero,setting_oot_cross_warps_yes",
               "@Death Mountain Crater Top As Adult,$has_goron_tunic_strict,$can_longshot_scarecrow",
               "@Death Mountain Crater Bottom As Adult,$has_hover_boots",
               "@Death Mountain Crater Bottom As Adult,$can_use_hookshot"
@@ -4300,7 +4309,8 @@
           "@Gerudo Fortress,card,$can_use_longshot",
           "@Gerudo Fortress,card,$has_hover_boots",
           "@Gerudo Fortress,card,[trick_oot_wasteland_sand_river]",
-          "$has_age|adult,$can_play|requiem,[trick_oot_blind_wasteland]"
+          "$has_age|adult,$can_play|requiem,[trick_oot_blind_wasteland]",
+          "$has_age|adult,$mm_can_play|requiem,[trick_oot_blind_wasteland],setting_oot_cross_warps_yes"
         ],
         "children": [
           {
@@ -4344,7 +4354,8 @@
           {
             "name": "Dessert Colossus As Child",
             "access_rules": [
-              "$can_play|requiem"
+              "$can_play|requiem",
+              "$mm_can_play|requiem,setting_oot_cross_warps_yes"
             ]
           },
           {
@@ -4352,7 +4363,8 @@
             "access_rules": [
               "@Haunted Wasteland,$has_lens_strict",
               "@Haunted Wasteland,[trick_oot_blind_wasteland_lens]",
-              "$can_play|requiem"
+              "$can_play|requiem",
+              "$mm_can_play|requiem,setting_oot_cross_warps_yes"
             ]
           },
           {
@@ -4530,6 +4542,37 @@
     ]
   },
   {
+    "name": "Songs",
+    "short_name": "Songs",
+    "sections": [
+      {
+        "name": "Initial Song of Healing",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Oath to Order",
+        "access_rules": [
+          "mm_woodfall",
+          "mm_snowhead",
+          "mm_great_bay",
+          "mm_stone_tower"
+        ],
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 110,
+        "y": 552
+      }
+    ]
+  },
+  {
     "name": "MM",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
@@ -4537,31 +4580,6 @@
       "$mm_can_play|mm_songoftime"
     ],
     "children": [
-      {
-        "name": "Oath to Order",
-        "short_name": "Oath to Order",
-        "sections": [
-          {
-            "name": "Beat a dungeon",
-            "access_rules": [
-              "mm_woodfall",
-              "mm_snowhead",
-              "mm_great_bay",
-              "mm_stone_tower"
-            ],
-            "chest_unopened_img": "images/system/unknownsong.png",
-            "chest_opened_img": "images/system/unknownsong_check.png",
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 110,
-            "y": 552
-          }
-        ]
-      },
       {
         "name": "Clock Town",
         "color": "#c475c1",
@@ -4578,12 +4596,6 @@
                     "name": "Clock Tower HP",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Initial Song of Healing",
-                    "chest_unopened_img": "images/system/unknownsong.png",
-                    "chest_opened_img": "images/system/unknownsong_check.png",
                     "item_count": 1
                   }
                 ],
