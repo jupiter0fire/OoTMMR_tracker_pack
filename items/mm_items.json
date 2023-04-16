@@ -85,9 +85,22 @@
   },
   {
     "name": "MM Hookshot",
-    "type": "toggle",
-    "img": "images/items/mm_hookshot.png",
-    "codes": "mm_hookshot,mm_hs,mm_hook"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/hookshotd.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/hookshotd.png",
+        "codes": "mm_short_hookshot,mm_shs,mm_shook"
+      },
+      {
+        "img": "images/items/mm_hookshot.png",
+        "codes": "mm_hookshot,mm_hs,mm_hook"
+      }
+    ]
   },
   {
     "name": "MM Milk",
