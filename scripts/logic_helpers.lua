@@ -358,6 +358,10 @@ function can_LA()
   end
 end
 
+function has_fire_child()
+  return can_use_dins()
+end
+
 function has_fire()
   return has("magic") and ((has_age("adult") and has("bow") and has("firearrow")) or has("dins"))
 end
