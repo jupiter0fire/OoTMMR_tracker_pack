@@ -10,14 +10,14 @@
         "scale": 0.875,
         "rows": [
           [
-            "slingshot",
+            "OOT_SLINGSHOT",
             "ocarinacrow",
-            "bombs",
+            "OOT_BOMB_BAG",
             "bow",
             "firearrow",
             "lightarrow",
-            "dinsfire",
-            "ruto"
+            "OOT_SPELL_FIRE",
+            "OOT_RUTO_LETTER"
           ],
           [
             "boomerang",
@@ -27,20 +27,20 @@
             "hookshot",
             "redtunic",
             "bluetunic",
-            "bottle1"
+            "OOT_BOTTLE_EMPTY"
           ],
           [
             "hoverboots",
             "ironboots",
-            "sword1",
+            "OOT_SWORD_KOKIRI",
             "sword2",
             "shield3",
-            "magic",
+            "OOT_MAGIC_UPGRADE",
             "scale1",
             "lift1"
           ],
           [
-            "sticks",
+            "OOT_STICK",
             "nuts",
             "shield1",
             "shield2"
@@ -51,7 +51,7 @@
             "saria",
             "sun",
             "time",
-            "storm",
+            "OOT_SONG_STORMS",
             "childcucco",
             "letter"
           ],
@@ -504,7 +504,7 @@
             "scale": 0.7,
             "rows": [
               [
-                "agony"
+                "OOT_STONE_OF_AGONY"
               ],
               [
                 "card"
