@@ -295,6 +295,10 @@ function can_use_sticks()
   return has_age("child") == 1 and has("sticks")
 end
 
+function has_fire_child()
+  return can_use_dins()
+end
+
 function has_fire()
   return has("firearrow") or can_use_dins()
 end

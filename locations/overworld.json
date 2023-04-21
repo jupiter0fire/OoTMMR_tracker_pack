@@ -2424,7 +2424,7 @@
                 "short_name": "HP :)",
                 "access_rules": [
                   "@Goron City As Child,$has_explosives_bool,$can_play|lullaby",
-                  "@Goron City As Child,$has_explosives_bool,$has_fire"
+                  "@Goron City As Child,$has_explosives_bool,$has_fire_child"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
