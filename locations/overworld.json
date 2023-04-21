@@ -14,7 +14,7 @@
               {
                 "name": "Dodge Boulder",
                 "access_rules": [
-                  "$has_age|child"
+                  "$oot|Kokiri Forest Kokiri Sword Chest"
                 ],
                 "item_count": 1
               }
@@ -32,6 +32,9 @@
             "sections": [
               {
                 "name": "KF Midos Chests",
+                "access_rules": [
+                  "$oot|Kokiri Forest Mido Top Left"
+                ],
                 "item_count": 4
               }
             ],
@@ -45,13 +48,13 @@
           },
           {
             "name": "KF Storms Grotto",
-            "access_rules": [
-              "$hidden_grotto_storms"
-            ],
             "sections": [
               {
                 "name": "KF Storms Grotto Chest",
                 "short_name": "Chest",
+                "access_rules": [
+                  "$oot|Kokiri Forest Storms Grotto"
+                ],
                 "item_count": 1
               }
             ],
@@ -65,6 +68,9 @@
           },
           {
             "name": "KF Kokiri Shop",
+            "access_rules": [
+              "$oot|Kokiri Shop Item 1"
+            ],
             "sections": [
               {
                 "name": "Item 1",
@@ -117,7 +123,7 @@
                 "name": "KF Links House Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$has_age|adult,$can_play|epona"
+                  "$oot|Kokiri Forest Cow"
                 ],
                 "visibility_rules": [
                   "setting_oot_shuffle_cows_yes"
@@ -142,7 +148,7 @@
                 "name": "KF GS Know It All House (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_night,$can_damage_skulls_child"
+                  "$oot|Kokiri Forest GS Night Child"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -167,7 +173,7 @@
                 "name": "KF GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil,$can_damage_skulls_child"
+                  "$oot|Kokiri Forest GS Soil"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -192,7 +198,7 @@
                 "name": "KF GS House of Twins (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_hookshot"
+                  "$oot|Kokiri Forest GS Night Adult"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"

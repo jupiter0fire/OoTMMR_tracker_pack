@@ -35,7 +35,7 @@
       {
         "img": "images/slingshot.png",
         "img_mods": "overlay|images/overlay_30.png",
-        "codes": "slingshot,sling,ss"
+        "codes": "OOT_SLINGSHOT"
       },
       {
         "img": "images/slingshot.png",
@@ -108,7 +108,7 @@
       {
         "img": "images/stick.png",
         "img_mods": "overlay|images/overlay_10.png",
-        "codes": "sticks,dekusticks,ds"
+        "codes": "OOT_STICK"
       },
       {
         "img": "images/stick.png",
@@ -132,7 +132,7 @@
       {
         "img": "images/bomb.png",
         "img_mods": "overlay|images/overlay_20.png",
-        "codes": "bombs,bombbag"
+        "codes": "OOT_BOMB_BAG"
       },
       {
         "img": "images/bomb.png",
@@ -185,7 +185,7 @@
     "name": "Din's Fire",
     "type": "toggle",
     "img": "images/din.png",
-    "codes": "dinsfire,dins,df"
+    "codes": "OOT_SPELL_FIRE"
   },
   {
     "name": "Farore's Wind",
@@ -296,18 +296,17 @@
     "stages": [
       {
         "img": "images/fairyocarina.png",
-        "codes": "ocarina,fairyocarina,fo"
+        "codes": "OOT_OCARINA"
       },
       {
-        "img": "images/ocarina.png",
-        "codes": "ocarinaoftime,oot"
+        "img": "images/ocarina.png"
       }
     ]
   },
   {
     "name": "Ocarina w/ Scarecrow",
     "type": "toggle_badged",
-    "base_item": "ocarina",
+    "base_item": "OOT_OCARINA",
     "img": "images/overlay_scarecrow.png",
     "codes": "ocarinacrow,scarecrow,pierre"
   },
@@ -316,14 +315,14 @@
     "type": "toggle",
     "loop": true,
     "img": "images/bottle.png",
-    "codes": "bottle,bottle1"
+    "codes": "OOT_BOTTLE_EMPTY"
   },
   {
     "name": "Ruto's Letter",
     "type": "toggle",
     "loop": true,
     "img": "images/bottle_letter.png",
-    "codes": "bottle,bottle2,ruto,ruto2,rutosletter,rutosletter2"
+    "codes": "OOT_RUTO_LETTER"
   },
   {
     "name": "Bottle Minimal",

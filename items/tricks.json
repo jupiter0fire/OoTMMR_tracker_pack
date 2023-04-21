@@ -17,7 +17,7 @@
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_oot_hidden_grottos.png",
-    "codes": "trick_oot_hidden_grottos"
+    "codes": "OOT_HIDDEN_GROTTOS"
   },
   {
     "name": "Backflip over Mido as Adult",

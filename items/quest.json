@@ -3,7 +3,7 @@
     "name": "Stone of Agony",
     "type": "toggle",
     "img": "images/agony.png",
-    "codes": "agony,soa"
+    "codes": "OOT_STONE_OF_AGONY"
   },
   {
     "name": "Gold Skulltula Tokens",
@@ -40,11 +40,10 @@
     "stages": [
       {
         "img": "images/magic1.png",
-        "codes": "magic,magic1"
+        "codes": "OOT_MAGIC_UPGRADE"
       },
       {
-        "img": "images/magic2.png",
-        "codes": "magic2"
+        "img": "images/magic2.png"
       }
     ]
   },

@@ -3,7 +3,7 @@
     "name": "Kokiri Sword",
     "type": "toggle",
     "img": "images/sword1.png",
-    "codes": "sword1,kokirisword,ksword"
+    "codes": "OOT_SWORD_KOKIRI"
   },
   {
     "name": "Master Sword",
@@ -239,7 +239,7 @@
     "loop": true,
     "img": "images/song_storms.png",
     "initial_active_state": false,
-    "codes": "storm"
+    "codes": "OOT_SONG_STORMS"
   },
   {
     "name": "Minuet of Forest",
