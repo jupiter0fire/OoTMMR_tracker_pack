@@ -4553,6 +4553,9 @@
     "sections": [
       {
         "name": "Initial Song of Healing",
+        "access_rules": [
+          "$mm|Initial Song of Healing"
+        ],
         "chest_unopened_img": "images/system/unknownsong.png",
         "chest_opened_img": "images/system/unknownsong_check.png",
         "item_count": 1
@@ -4560,10 +4563,7 @@
       {
         "name": "Oath to Order",
         "access_rules": [
-          "mm_woodfall",
-          "mm_snowhead",
-          "mm_great_bay",
-          "mm_stone_tower"
+          "$mm|Oath to Order"
         ],
         "chest_unopened_img": "images/system/unknownsong.png",
         "chest_opened_img": "images/system/unknownsong_check.png",
@@ -4582,9 +4582,6 @@
     "name": "MM",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
-    "access_rules": [
-      "$mm_can_play|mm_songoftime"
-    ],
     "children": [
       {
         "name": "Clock Town",
@@ -4600,6 +4597,9 @@
                 "sections": [
                   {
                     "name": "Clock Tower HP",
+                    "access_rules": [
+                      "$mm|Clock Town Platform HP"
+                    ],
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
@@ -4619,10 +4619,7 @@
                   {
                     "name": "South Clock Town Lower Chest",
                     "access_rules": [
-                      "mm_moontear,mm_deku",
-                      "mm_hookshot",
-                      "[trick_mm_sct_nothing]",
-                      "$mm_can_goron_bomb_jump"
+                      "$mm|Clock Town South Chest Lower"
                     ],
                     "item_count": 1
                   }
@@ -4642,9 +4639,7 @@
                   {
                     "name": "Open On Final Day",
                     "access_rules": [
-                      "mm_moontear,mm_deku",
-                      "mm_hookshot",
-                      "$mm_can_goron_bomb_jump,mm_short_hookshot"
+                      "$mm|Clock Town South Chest Upper"
                     ],
                     "item_count": 1
                   }
@@ -4664,7 +4659,7 @@
                   {
                     "name": "Give him Moon's Tear",
                     "access_rules": [
-                      "mm_moontear"
+                      "$mm|Clock Town Business Scrub"
                     ],
                     "item_count": 1
                   }
@@ -4686,7 +4681,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_postman"
+                      "Clock Town Post Box"
                     ],
                     "item_count": 1
                   }
