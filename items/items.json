@@ -59,7 +59,7 @@
       {
         "img": "images/nut.png",
         "img_mods": "overlay|images/overlay_20.png",
-        "codes": "nuts,dekunuts,dn"
+        "codes": "OOT_NUTS"
       },
       {
         "img": "images/nut.png",
@@ -165,7 +165,7 @@
       },
       {
         "img": "images/longshot.png",
-        "codes": "longshot,ls"
+        "codes": "OOT_LONGSHOT"
       }
     ]
   },
