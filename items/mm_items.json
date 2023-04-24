@@ -570,7 +570,7 @@
     "name": "MM Postman Hat",
     "type": "toggle",
     "img": "images/items/mm_postman.png",
-    "codes": "mm_postman,mm_postmanhat,mm_postmanshat,mm_postmans_hat,mm_mask"
+    "codes": "MM_MASK_POSTMAN"
   },
   {
     "name": "MM Romani Mask",

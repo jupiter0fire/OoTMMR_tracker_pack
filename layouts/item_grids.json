@@ -13,18 +13,18 @@
             "OOT_SLINGSHOT",
             "ocarinacrow",
             "OOT_BOMB_BAG",
-            "bow",
-            "firearrow",
-            "lightarrow",
+            "OOT_BOW",
+            "OOT_ARROW_FIRE", 
+            "OOT_ARROW_LIGHT",
             "OOT_SPELL_FIRE",
             "OOT_RUTO_LETTER"
           ],
           [
-            "boomerang",
-            "lens",
-            "beans",
-            "hammer",
-            "hookshot",
+            "OOT_BOOMERANG",
+            "OOT_LENS",
+            "OOT_MAGIC_BEAN",
+            "OOT_HAMMER",
+            "OOT_HOOKSHOT",
             "redtunic",
             "bluetunic",
             "OOT_BOTTLE_EMPTY"
@@ -711,7 +711,7 @@
             "mm_deed1"
           ],
           [
-            "mm_postman",
+            "MM_MASK_POSTMAN",
             "mm_allnight",
             "mm_blast",
             "mm_stone",

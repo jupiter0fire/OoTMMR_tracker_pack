@@ -11,7 +11,7 @@
       {
         "img": "images/bow.png",
         "img_mods": "overlay|images/overlay_30.png",
-        "codes": "bow"
+        "codes": "OOT_BOW"
       },
       {
         "img": "images/bow.png",
@@ -75,7 +75,7 @@
     "name": "Fire Arrows",
     "type": "toggle",
     "img": "images/firearrow.png",
-    "codes": "firearrow,farrow,fa"
+    "codes": "OOT_ARROW_FIRE"
   },
   {
     "name": "Ice Arrows",
@@ -87,13 +87,13 @@
     "name": "Light Arrows",
     "type": "toggle",
     "img": "images/lightarrow.png",
-    "codes": "lightarrow,larrow,la"
+    "codes": "OOT_ARROW_LIGHT"
   },
   {
     "name": "Magic Beans",
     "type": "consumable",
     "img": "images/bean.png",
-    "codes": "beans",
+    "codes": "OOT_MAGIC_BEAN",
     "max_quantity": 10
   },
   {
@@ -148,7 +148,7 @@
     "name": "Boomerang",
     "type": "toggle",
     "img": "images/boomerang.png",
-    "codes": "boomerang,rang"
+    "codes": "OOT_BOOMERANG"
   },
   {
     "name": "Hookshot",
@@ -161,7 +161,7 @@
       },
       {
         "img": "images/hookshot.png",
-        "codes": "hookshot,hs"
+        "codes": "OOT_HOOKSHOT"
       },
       {
         "img": "images/longshot.png",
@@ -179,7 +179,7 @@
     "name": "Lens of Truth",
     "type": "toggle",
     "img": "images/lens.png",
-    "codes": "lens,lensoftruth,lot"
+    "codes": "OOT_LENS"
   },
   {
     "name": "Din's Fire",
@@ -287,7 +287,7 @@
     "name": "Hammer",
     "type": "toggle",
     "img": "images/hammer.png",
-    "codes": "hammer,mh,megatonhammer"
+    "codes": "OOT_HAMMER"
   },
   {
     "name": "Ocarina",
