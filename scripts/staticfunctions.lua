@@ -1,0 +1,280 @@
+
+EMO = false
+if Tracker then
+    EMO = true
+else
+    -- Define globals normally provided by EmoTracker
+    Tracker = {}
+    AccessibilityLevel = {
+        -- These might not be the values used by EmoTracker, but they're never used directly
+        None = 0,
+        SequenceBreak = 1,
+        Normal = 2,
+    }
+end
+
+OOTMM_DEBUG = false
+
+OOTMM_RESET_LOGIC_FLAG = {
+    ["oot"] = true,
+    ["mm"] = true,
+}
+
+function OOTMM_RESET_LOGIC()
+    for k, v in pairs(OOTMM_RESET_LOGIC_FLAG) do
+        OOTMM_RESET_LOGIC_FLAG[k] = true
+    end
+end
+
+-- OoTMM_core$ find . -iname '*.yml' -print0 | xargs -0 cat | grep -oE 'has\([^),]*' | cut -d '(' -f 2 | sort | uniq | while read line; do echo "[\"$line\"] = \"$line\","; done
+-- FIXME: This is incomplete, but useful for testing right now.
+OOTMM_CORE_ITEMS = {
+    ["ARROW_FIRE"] = "ARROW_FIRE",
+    ["ARROW_ICE"] = "ARROW_ICE",
+    ["ARROW_LIGHT"] = "ARROW_LIGHT",
+    ["BLUE_FIRE"] = "BLUE_FIRE",
+    ["BOMBCHU_10"] = "BOMBCHU_10",
+    ["BOMBCHU_20"] = "BOMBCHU_20",
+    ["BOMBCHU_5"] = "BOMBCHU_5",
+    ["BOMB_BAG"] = "BOMB_BAG",
+    ["BOOMERANG"] = "BOOMERANG",
+    ["BOOTS_HOVER"] = "BOOTS_HOVER",
+    ["BOOTS_IRON"] = "BOOTS_IRON",
+    ["BOSS_KEY_FIRE"] = "BOSS_KEY_FIRE",
+    ["BOSS_KEY_FOREST"] = "BOSS_KEY_FOREST",
+    ["BOSS_KEY_GANON"] = "BOSS_KEY_GANON",
+    ["BOSS_KEY_GB"] = "BOSS_KEY_GB",
+    ["BOSS_KEY_SH"] = "BOSS_KEY_SH",
+    ["BOSS_KEY_SHADOW"] = "BOSS_KEY_SHADOW",
+    ["BOSS_KEY_SPIRIT"] = "BOSS_KEY_SPIRIT",
+    ["BOSS_KEY_ST"] = "BOSS_KEY_ST",
+    ["BOSS_KEY_WATER"] = "BOSS_KEY_WATER",
+    ["BOSS_KEY_WF"] = "BOSS_KEY_WF",
+    ["BOTTLED_GOLD_DUST"] = "BOTTLED_GOLD_DUST",
+    ["BOTTLE_CHATEAU"] = "BOTTLE_CHATEAU",
+    ["BOTTLE_EMPTY"] = "BOTTLE_EMPTY",
+    ["BOTTLE_MILK"] = "BOTTLE_MILK",
+    ["BOTTLE_POTION_RED"] = "BOTTLE_POTION_RED",
+    ["BOW"] = "BOW",
+    ["CHICKEN"] = "CHICKEN",
+    ["DEED_LAND"] = "DEED_LAND",
+    ["DEED_MOUNTAIN"] = "DEED_MOUNTAIN",
+    ["DEED_OCEAN"] = "DEED_OCEAN",
+    ["DEED_SWAMP"] = "DEED_SWAMP",
+    ["GERUDO_CARD"] = "GERUDO_CARD",
+    ["GREAT_FAIRY_SWORD"] = "GREAT_FAIRY_SWORD",
+    ["GS_TOKEN"] = "GS_TOKEN",
+    ["GS_TOKEN_OCEAN"] = "GS_TOKEN_OCEAN",
+    ["GS_TOKEN_SWAMP"] = "GS_TOKEN_SWAMP",
+    ["HAMMER"] = "HAMMER",
+    ["HOOKSHOT"] = "HOOKSHOT",
+    ["LENS"] = "LENS",
+    ["LETTER_TO_KAFEI"] = "LETTER_TO_KAFEI",
+    ["LETTER_TO_MAMA"] = "LETTER_TO_MAMA",
+    ["MAGIC_BEAN"] = "MAGIC_BEAN",
+    ["MAGIC_UPGRADE"] = "MAGIC_UPGRADE",
+    ["MASK_ALL_NIGHT"] = "MASK_ALL_NIGHT",
+    ["MASK_BLAST"] = "MASK_BLAST",
+    ["MASK_BREMEN"] = "MASK_BREMEN",
+    ["MASK_BUNNY"] = "MASK_BUNNY",
+    ["MASK_CAPTAIN"] = "MASK_CAPTAIN",
+    ["MASK_COUPLE"] = "MASK_COUPLE",
+    ["MASK_DEKU"] = "MASK_DEKU",
+    ["MASK_DON_GERO"] = "MASK_DON_GERO",
+    ["MASK_FIERCE_DEITY"] = "MASK_FIERCE_DEITY",
+    ["MASK_GARO"] = "MASK_GARO",
+    ["MASK_GIANT"] = "MASK_GIANT",
+    ["MASK_GIBDO"] = "MASK_GIBDO",
+    ["MASK_GORON"] = "MASK_GORON",
+    ["MASK_GREAT_FAIRY"] = "MASK_GREAT_FAIRY",
+    ["MASK_KAFEI"] = "MASK_KAFEI",
+    ["MASK_KAMARO"] = "MASK_KAMARO",
+    ["MASK_KEATON"] = "MASK_KEATON",
+    ["MASK_POSTMAN"] = "MASK_POSTMAN",
+    ["MASK_ROMANI"] = "MASK_ROMANI",
+    ["MASK_SCENTS"] = "MASK_SCENTS",
+    ["MASK_SKULL"] = "MASK_SKULL",
+    ["MASK_STONE"] = "MASK_STONE",
+    ["MASK_TRUTH"] = "MASK_TRUTH",
+    ["MASK_ZORA"] = "MASK_ZORA",
+    ["MEDALLION_FIRE"] = "MEDALLION_FIRE",
+    ["MEDALLION_FOREST"] = "MEDALLION_FOREST",
+    ["MEDALLION_SHADOW"] = "MEDALLION_SHADOW",
+    ["MEDALLION_SPIRIT"] = "MEDALLION_SPIRIT",
+    ["MEDALLION_WATER"] = "MEDALLION_WATER",
+    ["MILK"] = "MILK",
+    ["MOON_TEAR"] = "MOON_TEAR",
+    ["NUT"] = "NUT",
+    ["NUTS_10"] = "NUTS_10",
+    ["NUTS_5"] = "NUTS_5",
+    ["OCARINA"] = "OCARINA",
+    ["PENDANT_OF_MEMORIES"] = "PENDANT_OF_MEMORIES",
+    ["PICTOGRAPH_BOX"] = "PICTOGRAPH_BOX",
+    ["POCKET_EGG"] = "POCKET_EGG",
+    ["POTION_BLUE"] = "POTION_BLUE",
+    ["POTION_RED"] = "POTION_RED",
+    ["POWDER_KEG"] = "POWDER_KEG",
+    ["ROOM_KEY"] = "ROOM_KEY",
+    ["RUTO_LETTER"] = "RUTO_LETTER",
+    ["SCALE"] = "SCALE",
+    ["SHIELD"] = "SHIELD",
+    ["SHIELD_DEKU"] = "SHIELD_DEKU",
+    ["SHIELD_HERO"] = "SHIELD_HERO",
+    ["SHIELD_HYLIAN"] = "SHIELD_HYLIAN",
+    ["SHIELD_MIRROR"] = "SHIELD_MIRROR",
+    ["SLINGSHOT"] = "SLINGSHOT",
+    ["SMALL_KEY_BOTW"] = "SMALL_KEY_BOTW",
+    ["SMALL_KEY_FIRE"] = "SMALL_KEY_FIRE",
+    ["SMALL_KEY_FOREST"] = "SMALL_KEY_FOREST",
+    ["SMALL_KEY_GANON"] = "SMALL_KEY_GANON",
+    ["SMALL_KEY_GB"] = "SMALL_KEY_GB",
+    ["SMALL_KEY_GF"] = "SMALL_KEY_GF",
+    ["SMALL_KEY_GTG"] = "SMALL_KEY_GTG",
+    ["SMALL_KEY_SH"] = "SMALL_KEY_SH",
+    ["SMALL_KEY_SHADOW"] = "SMALL_KEY_SHADOW",
+    ["SMALL_KEY_SPIRIT"] = "SMALL_KEY_SPIRIT",
+    ["SMALL_KEY_ST"] = "SMALL_KEY_ST",
+    ["SMALL_KEY_WATER"] = "SMALL_KEY_WATER",
+    ["SMALL_KEY_WF"] = "SMALL_KEY_WF",
+    ["SONG_AWAKENING"] = "SONG_AWAKENING",
+    ["SONG_GORON"] = "SONG_GORON",
+    ["SONG_GORON_HALF"] = "SONG_GORON_HALF",
+    ["SONG_SOARING"] = "SONG_SOARING",
+    ["SONG_TP_FIRE"] = "SONG_TP_FIRE",
+    ["SONG_TP_FOREST"] = "SONG_TP_FOREST",
+    ["SONG_TP_LIGHT"] = "SONG_TP_LIGHT",
+    ["SONG_TP_SHADOW"] = "SONG_TP_SHADOW",
+    ["SONG_TP_SPIRIT"] = "SONG_TP_SPIRIT",
+    ["SONG_TP_WATER"] = "SONG_TP_WATER",
+    ["SONG_ZORA"] = "SONG_ZORA",
+    ["SPELL_FIRE"] = "SPELL_FIRE",
+    ["SPIN_UPGRADE"] = "SPIN_UPGRADE",
+    ["STICK"] = "STICK",
+    ["STICKS_10"] = "STICKS_10",
+    ["STICKS_5"] = "STICKS_5",
+    ["STONE_EMERALD"] = "STONE_EMERALD",
+    ["STONE_OF_AGONY"] = "STONE_OF_AGONY",
+    ["STONE_RUBY"] = "STONE_RUBY",
+    ["STONE_SAPPHIRE"] = "STONE_SAPPHIRE",
+    ["STRAY_FAIRY_GB"] = "STRAY_FAIRY_GB",
+    ["STRAY_FAIRY_SH"] = "STRAY_FAIRY_SH",
+    ["STRAY_FAIRY_ST"] = "STRAY_FAIRY_ST",
+    ["STRAY_FAIRY_TOWN"] = "STRAY_FAIRY_TOWN",
+    ["STRAY_FAIRY_WF"] = "STRAY_FAIRY_WF",
+    ["STRENGTH"] = "STRENGTH",
+    ["SWORD"] = "SWORD",
+    ["SWORD_KOKIRI"] = "SWORD_KOKIRI",
+    ["SWORD_MASTER"] = "SWORD_MASTER",
+    ["TUNIC_GORON"] = "TUNIC_GORON",
+    ["TUNIC_ZORA"] = "TUNIC_ZORA",
+    ["WALLET"] = "WALLET",
+    ["WEIRD_EGG"] = "WEIRD_EGG",
+    ["ZELDA_LETTER"] = "ZELDA_LETTER",
+    ["ZORA"] = "ZORA",
+    -- FIXME: The following items were added by actually running a search; the list will need still more stuff in order to actually be useful for debugging.
+    -- NOTE: This isn't actually needed for production use, it's strictly here so we notice missing items/events/tricks etc.
+    ["BEAN_GRAVEYARD"] = "BEAN_GRAVEYARD",
+    ["BEAN_LAKE_HYLIA"] = "BEAN_LAKE_HYLIA",
+    ["BEAN_LOST_WOODS_EARLY"] = "BEAN_LOST_WOODS_EARLY",
+    ["COJIRO"] = "COJIRO",
+    ["DOOR_OF_TIME_OPEN"] = "DOOR_OF_TIME_OPEN",
+    ["EYEBALL_FROG"] = "EYEBALL_FROG",
+    ["GORON_CITY_SHORTCUT"] = "GORON_CITY_SHORTCUT",
+    ["KING_ZORA_LETTER"] = "KING_ZORA_LETTER",
+    ["MALON"] = "MALON",
+    ["MEET_ZELDA"] = "MEET_ZELDA",
+    ["NUTS"] = "NUTS",
+    ["ODD_MUSHROOM"] = "ODD_MUSHROOM",
+    ["ODD_POTION"] = "ODD_POTION",
+    ["OOT_DEKU_SKIP"] = "OOT_DEKU_SKIP",
+    ["OOT_HIDDEN_GROTTOS"] = "OOT_HIDDEN_GROTTOS",
+    ["OOT_MAN_ON_ROOF"] = "OOT_MAN_ON_ROOF",
+    ["OOT_NIGHT_GS"] = "OOT_NIGHT_GS",
+    ["POCKET_CUCCO"] = "POCKET_CUCCO",
+    ["SONG_EPONA"] = "SONG_EPONA",
+    ["SONG_SARIA"] = "SONG_SARIA",
+    ["SONG_STORMS"] = "SONG_STORMS",
+    ["SONG_SUN"] = "SONG_SUN",
+    ["SONG_ZELDA"] = "SONG_ZELDA",
+    ["TALON_CHILD"] = "TALON_CHILD",
+    ["progressive"] = "progressive",
+    ["progressiveSwordsOot"] = "progressiveSwordsOot",
+}
+
+local SWORD_KOKIRI = "SWORD_KOKIRI"
+local SHIELD_DEKU = "SHIELD_DEKU"
+
+local items = {
+    [SWORD_KOKIRI] = 1,
+    [SHIELD_DEKU] = 1,
+}
+
+ToInject = {}
+
+-- require() isn't working in EmoTracker; look into this some more, but see README.md
+-- This is a bad workaround, but it works for now
+oot_logic = {}
+if EMO then
+    ScriptHost:LoadScript("scripts/oot_logic.lua")
+else
+    dofile("generated/oot_logic.lua")
+end
+oot_logic = _oot_logic()
+
+mm_logic = {}
+if EMO then
+    ScriptHost:LoadScript("scripts/mm_logic.lua")
+else
+    dofile("generated/mm_logic.lua")
+end
+mm_logic = _mm_logic()
+
+-- FIXME:
+-- oot: Market -> exits -> MM SPAWN
+-- mm: SPAWN
+-- So only check mm if MM SPAWN is available, then start at SPAWN
+-- NOTE: Events will be needed to test mm properly, time travel stuff!
+
+oot_logic.inject({
+    items = items,
+})
+mm_logic.inject({
+    items = items,
+})
+
+-- inject everything from ToInject
+for k, v in pairs(ToInject) do
+    oot_logic.inject({ [k] = v })
+end
+
+oot_available_locations = oot_logic.find_available_locations(oot_logic.logic)
+
+function oot(location)
+    if OOTMM_DEBUG then
+        print("oot:", location)
+    end
+
+    if OOTMM_RESET_LOGIC_FLAG["oot"] then
+        print("oot: Resetting logic...")
+        oot_logic.OOTMM_RUNTIME_CACHE = {}
+        oot_available_locations = oot_logic.find_available_locations(oot_logic.logic)
+        OOTMM_RESET_LOGIC_FLAG["oot"] = false
+    end
+    return oot_available_locations[location] ~= nil
+end
+
+mm_available_locations = mm_logic.find_available_locations(mm_logic.logic)
+
+function mm(location)
+    if OOTMM_DEBUG then
+        print("mm:", location)
+    end
+
+    if OOTMM_RESET_LOGIC_FLAG["mm"] then
+        print("mm: Resetting logic...")
+        mm_logic.OOTMM_RUNTIME_CACHE = {}
+        mm_available_locations = mm_logic.find_available_locations(mm_logic.logic)
+        OOTMM_RESET_LOGIC_FLAG["mm"] = false
+    end
+    return mm_available_locations[location] ~= nil
+end
