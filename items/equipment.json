@@ -93,7 +93,7 @@
     "name": "Gerudo Membership Card",
     "type": "toggle",
     "img": "images/gerudocard.png",
-    "codes": "card"
+    "codes": "OOT_GERUDO_CARD"
   },
   {
     "name": "Iron Boots",
@@ -263,7 +263,7 @@
     "loop": true,
     "img": "images/song_serenade.png",
     "initial_active_state": false,
-    "codes": "serenade"
+    "codes": "OOT_SONG_TP_WATER"
   },
   {
     "name": "Requiem of Spirit",
@@ -271,7 +271,7 @@
     "loop": true,
     "img": "images/song_requiem.png",
     "initial_active_state": false,
-    "codes": "requiem"
+    "codes": "OOT_SONG_TP_SPIRIT"
   },
   {
     "name": "Nocturne of Shadow",
@@ -279,7 +279,7 @@
     "loop": true,
     "img": "images/song_nocturne.png",
     "initial_active_state": false,
-    "codes": "nocturne"
+    "codes": "OOT_SONG_TP_SHADOW"
   },
   {
     "name": "Prelude of Light",
@@ -287,6 +287,6 @@
     "loop": true,
     "img": "images/song_prelude.png",
     "initial_active_state": false,
-    "codes": "prelude"
+    "codes": "OOT_SONG_TP_LIGHT"
   }
 ]

@@ -52,18 +52,18 @@
             "OOT_SONG_SUN",
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
-            "childcucco",
-            "letter"
+            "OOT_CHICKEN",
+            "OOT_ZELDA_LETTER"
           ],
           [
             "OOT_SONG_TP_FOREST",
             "OOT_SONG_TP_FIRE",
             "OOT_SONG_TP_WATER",
-            "requiem",
-            "nocturne",
-            "prelude",
-            "skullmask",
-            "maskoftruth"
+            "OOT_SONG_TP_SPIRIT",
+            "OOT_SONG_TP_SHADOW",
+            "OOT_SONG_TP_LIGHT",
+            "OOT_MASK_SKULL",
+            "OOT_MASK_TRUTH"
           ]
         ]
       },
@@ -74,16 +74,16 @@
         "scale": 0.7,
         "rows": [
           [
-            "pocketcucco",
-            "cojiro",
-            "mushroom",
-            "oddpotion",
-            "saw",
-            "brokensword",
-            "prescription",
-            "frog",
-            "eyedrops",
-            "claimcheck"
+            "OOT_POCKET_CUCCO",
+            "OOT_COJIRO",
+            "OOT_ODD_MUSHROOM",
+            "OOT_ODD_POTION",
+            "OOT_POACHER_SAW",
+            "OOT_BROKEN_GORON_SWORD",
+            "OOT_PRESCRIPTION",
+            "OOT_EYEBALL_FROG",
+            "OOT_EYE_DROPS",
+            "OOT_CLAIM_CHECK"
           ]
         ]
       },
@@ -166,7 +166,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "forest_small_keys",
+                        "item": "OOT_SMALL_KEY_FOREST",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -175,7 +175,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "forest_boss_key",
+                        "item": "OOT_BOSS_KEY_FOREST",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -199,7 +199,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "fire_small_keys",
+                        "item": "OOT_SMALL_KEY_FIRE",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -208,7 +208,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "fire_boss_key",
+                        "item": "OOT_BOSS_KEY_FIRE",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -232,7 +232,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "water_small_keys",
+                        "item": "OOT_SMALL_KEY_WATER",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -241,7 +241,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "water_boss_key",
+                        "item": "OOT_BOSS_KEY_WATER",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -265,7 +265,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "spirit_small_keys",
+                        "item": "OOT_SMALL_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -274,7 +274,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "spirit_boss_key",
+                        "item": "OOT_BOSS_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -298,7 +298,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "shadow_small_keys",
+                        "item": "OOT_SMALL_KEY_SHADOW",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -307,7 +307,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "shadow_boss_key",
+                        "item": "OOT_BOSS_KEY_SHADOW",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -366,7 +366,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "gc_small_keys",
+                        "item": "OOT_SMALL_KEY_GANON",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -375,7 +375,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "gc_boss_key",
+                        "item": "OOT_BOSS_KEY_GANON",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -399,7 +399,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "gtg_small_keys",
+                        "item": "OOT_SMALL_KEY_GTG",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -423,7 +423,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "th_small_keys",
+                        "item": "OOT_SMALL_KEY_GF",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -484,7 +484,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "botw_small_keys",
+                        "item": "OOT_SMALL_KEY_BOTW",
                         "canvas_depth": 1,
                         "canvas_left": 34,
                         "canvas_top": 0,
@@ -507,13 +507,13 @@
                 "OOT_STONE_OF_AGONY"
               ],
               [
-                "card"
+                "OOT_GERUDO_CARD"
               ],
               [
-                "skulltula"
+                "OOT_GS_TOKEN"
               ],
               [
-                "wallet1"
+                "OOT_WALLET1"
               ]
             ]
           }

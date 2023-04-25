@@ -9,7 +9,7 @@
     "name": "Gold Skulltula Tokens",
     "type": "consumable",
     "img": "images/skulltula_token.png",
-    "codes": "skulltula,goldskulltula,token",
+    "codes": "OOT_GS_TOKEN",
     "max_quantity": 100
   },
   {
@@ -22,15 +22,15 @@
       },
       {
         "img": "images/wallet1.png",
-        "codes": "adultswallet,wallet1,wallet"
+        "codes": "OOT_WALLET1"
       },
       {
         "img": "images/wallet2.png",
-        "codes": "giantswallet,wallet2"
+        "codes": "OOT_WALLET2"
       },
       {
         "img": "images/wallet3.png",
-        "codes": "tycoonswallet,wallet3"
+        "codes": "OOT_WALLET3"
       }
     ]
   },

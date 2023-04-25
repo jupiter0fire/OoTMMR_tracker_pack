@@ -203,85 +203,85 @@
     "name": "Child Cucco",
     "type": "toggle",
     "img": "images/cucco.png",
-    "codes": "childcucco"
+    "codes": "OOT_CHICKEN"
   },
   {
     "name": "Zelda's Letter",
     "type": "toggle",
     "img": "images/letter.png",
-    "codes": "letter,postzelda"
+    "codes": "OOT_ZELDA_LETTER"
   },
   {
     "name": "Skull Mask",
     "type": "toggle",
     "img": "images/skull.png",
-    "codes": "skullmask,skull"
+    "codes": "OOT_MASK_SKULL"
   },
   {
     "name": "Mask of Truth",
     "type": "toggle",
     "img": "images/truth.png",
-    "codes": "truth,maskoftruth,mot"
+    "codes": "OOT_MASK_TRUTH"
   },
   {
     "name": "Pocket Cucco",
     "type": "toggle",
     "img": "images/cucco.png",
-    "codes": "adultcucco,pocketcucco"
+    "codes": "OOT_POCKET_CUCCO"
   },
   {
     "name": "Cojiro",
     "type": "toggle",
     "img": "images/cojiro.png",
-    "codes": "cojiro"
+    "codes": "OOT_COJIRO"
   },
   {
     "name": "Mushroom",
     "type": "toggle",
     "img": "images/mushroom.png",
-    "codes": "mushroom,oddmushroom"
+    "codes": "OOT_ODD_MUSHROOM"
   },
   {
     "name": "Medicin",
     "type": "toggle",
     "img": "images/medicine.png",
-    "codes": "oddpotion,oddpoultice"
+    "codes": "OOT_ODD_POTION"
   },
   {
     "name": "Saw",
     "type": "toggle",
     "img": "images/saw.png",
-    "codes": "saw,poachersaw"
+    "codes": "OOT_POACHER_SAW"
   },
   {
     "name": "Broken Sword",
     "type": "toggle",
     "img": "images/broken_sword.png",
-    "codes": "brokensword"
+    "codes": "OOT_BROKEN_GORON_SWORD"
   },
   {
     "name": "Prescription",
     "type": "toggle",
     "img": "images/perscription.png",
-    "codes": "prescription"
+    "codes": "OOT_PRESCRIPTION"
   },
   {
     "name": "Frog",
     "type": "toggle",
     "img": "images/frog.png",
-    "codes": "frog,eyeballfrog,speedfrog"
+    "codes": "OOT_EYEBALL_FROG"
   },
   {
     "name": "Eyedrops",
     "type": "toggle",
     "img": "images/eyedrops.png",
-    "codes": "eyedrops,drops"
+    "codes": "OOT_EYE_DROPS"
   },
   {
     "name": "Claim Check",
     "type": "toggle",
     "img": "images/claim.png",
-    "codes": "claim,claimcheck"
+    "codes": "OOT_CLAIM_CHECK"
   },
   {
     "name": "Hammer",
