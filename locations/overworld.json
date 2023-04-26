@@ -1085,7 +1085,7 @@
                 "name": "Song from Malon",
                 "short_name": "Song",
                 "access_rules": [
-                  "$has_age|child,ocarina,meet_malon"
+                  "$oot|Lon Lon Ranch Malon Song"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1106,7 +1106,7 @@
               {
                 "name": "LLR Talons Chickens",
                 "access_rules": [
-                  "$has_age|child,meet_zelda"
+                  "$oot|Lon Lon Ranch Malon Song"
                 ],
                 "item_count": 1
               }
@@ -1126,7 +1126,7 @@
                 "name": "LLR Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$has_age|child"
+                  "$oot|Lon Lon Ranch Silo HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -1136,7 +1136,7 @@
                 "name": "LLR Tower Cows",
                 "short_name": "Cows",
                 "access_rules": [
-                  "$can_play|epona"
+                  "$oot|Lon Lon Ranch Silo Cow Front"
                 ],
                 "visibility_rules": [
                   "setting_oot_shuffle_cows_yes"
@@ -1161,7 +1161,7 @@
                 "name": "LLR Stables Cows",
                 "short_name": "Cows",
                 "access_rules": [
-                  "$can_play|epona"
+                  "$oot|Lon Lon Ranch Stables Cow Left"
                 ],
                 "visibility_rules": [
                   "setting_oot_shuffle_cows_yes"
@@ -1213,7 +1213,7 @@
                 "name": "LLR GS Tree",
                 "short_name": "Tree",
                 "access_rules": [
-                  "$has_age|child"
+                  "$oot|Lon Lon Ranch GS Tree"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1226,7 +1226,7 @@
                 "name": "LLR GS Rain Shed (N)",
                 "short_name": "Rain Shed",
                 "access_rules": [
-                  "$has_age|child,$gs_night"
+                  "$oot|Lon Lon Ranch GS Rain Shed"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1239,7 +1239,7 @@
                 "name": "LLR GS House Window (N)",
                 "short_name": "House Window",
                 "access_rules": [
-                  "$can_use_boomerang,$gs_night"
+                  "$oot|Lon Lon Ranch GS House"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1252,7 +1252,7 @@
                 "name": "LLR GS Back Wall (N)",
                 "short_name": "Back Wall",
                 "access_rules": [
-                  "$can_use_boomerang,$gs_night"
+                  "$oot|Lon Lon Ranch GS Back Wall"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
