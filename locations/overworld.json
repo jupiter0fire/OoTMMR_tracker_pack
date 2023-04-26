@@ -638,10 +638,7 @@
           {
             "name": "HF Inside Fence Grotto",
             "access_rules": [
-              "$hidden_grotto_bomb,nuts",
-              "$hidden_grotto_bomb_child,$has_shield_for_scrubs_child",
-              "$hidden_grotto_bomb_adult,$has_shield_for_scrubs_adult",
-              "$hidden_grotto_bomb_adult,$can_use_hammer"
+              "$oot|Hyrule Field Grotto Scrub HP"
             ],
             "sections": [
               {
@@ -663,7 +660,7 @@
           {
             "name": "HF Ocarina of Time",
             "access_rules": [
-              "$has_age|child,stones:3"
+              "$oot|Hyrule Field Ocarina of Time"
             ],
             "sections": [
               {
@@ -690,7 +687,7 @@
           {
             "name": "HF Southeast Grotto",
             "access_rules": [
-              "$has_explosives_or_hammer"
+              "$oot|Hyrule Field Grotto Southeast"
             ],
             "sections": [
               {
@@ -709,6 +706,9 @@
           },
           {
             "name": "HF Open Grotto",
+            "access_rules": [
+              "$oot|Hyrule Field Grotto Open"
+            ],
             "sections": [
               {
                 "name": "HF Open Grotto Chest",
@@ -728,7 +728,7 @@
             "name": "HF Near Market Grotto",
             "short_name": "Boulda",
             "access_rules": [
-              "$has_explosives_or_hammer"
+              "$oot|Hyrule Field Grotto Market"
             ],
             "sections": [
               {
@@ -748,15 +748,12 @@
           {
             "name": "HF Tektite Grotto",
             "access_rules": [
-              "$hidden_grotto_bomb"
+              "$oot|Hyrule Field Grotto Tektite HP"
             ],
             "sections": [
               {
                 "name": "HF Tektite Grotto Freestanding PoH",
                 "short_name": "HP",
-                "access_rules": [
-                  "$can_dive_big"
-                ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -777,8 +774,7 @@
                 "name": "HF GS Near Kak Grotto",
                 "short_name": "GS",
                 "access_rules": [
-                  "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child",
-                  "$stone_of_agony,$has_explosives_or_hammer,$can_collect_distance_adult"
+                  "$oot|Hyrule Field Grotto Near Kakariko GS"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -803,8 +799,7 @@
                 "name": "HF GS Cow Grotto",
                 "short_name": "GS",
                 "access_rules": [
-                  "$stone_of_agony,$has_explosives_bool,$can_collect_distance_child,$has_fire",
-                  "$can_use_hammer,$can_collect_distance_adult,$has_fire"
+                  "$oot|Hyrule Field Grotto Near Gerudo GS"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -817,8 +812,7 @@
                 "name": "HF Cow Grotto Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$stone_of_agony,$has_explosives_bool,$has_fire,$can_play|epona",
-                  "$can_use_hammer,$has_fire,$can_play|epona"
+                  "$oot|Hyrule Field Cow"
                 ],
                 "visibility_rules": [
                   "setting_oot_shuffle_cows_yes"
