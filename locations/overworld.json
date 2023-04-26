@@ -842,7 +842,7 @@
               {
                 "name": "Dive down",
                 "access_rules": [
-                  "$has_age|child,scale1"
+                  "$oot|Lake Hylia Underwater Bottle"
                 ],
                 "item_count": 1
               }
@@ -861,16 +861,14 @@
               {
                 "name": "Child Fishing",
                 "access_rules": [
-                  "$has_age|child"
+                  "$oot|Fishing Pond Child"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Adult Fishing",
                 "access_rules": [
-                  "$has_age|adult,water",
-                  "$has_age|adult,$can_play|scarecrow,$can_use_hookshot",
-                  "$has_age|child,$has_age|adult,beans"
+                  "$oot|Fishing Pond Adult"
                 ],
                 "item_count": 1
               }
@@ -889,8 +887,7 @@
               {
                 "name": "Shoot the sun",
                 "access_rules": [
-                  "$can_use_bow,$can_longshot_scarecrow",
-                  "$can_use_bow,water"
+                  "$oot|Lake Hylia Fire Arrow"
                 ],
                 "item_count": 1
               },
@@ -898,7 +895,7 @@
                 "name": "LH GS Small Island (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_night,$can_damage_skulls_child"
+                  "$oot|Lake Hylia GS Island"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -923,8 +920,7 @@
                 "name": "LH Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$has_age|child,$has_age|adult,beans",
-                  "$has_age|adult,$can_hookshot_scarecrow"
+                  "$oot|Lake Hylia HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -945,14 +941,14 @@
               {
                 "name": "LH Lab Dive",
                 "access_rules": [
-                  "scale2"
+                  "$oot|Laboratory Dive"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Frog",
                 "access_rules": [
-                  "$has_age|adult,speedfrog"
+                  "$oot|Laboratory Eye Drops"
                 ],
                 "item_count": 1
               },
@@ -960,7 +956,7 @@
                 "name": "LH GS Lab Crate",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_iron_boots,$can_use_hookshot"
+                  "$oot|Laboratory GS Crate"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1008,7 +1004,7 @@
                 "name": "LH GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil,$can_damage_skulls_child"
+                  "$oot|Lake Hylia GS Soil"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1033,7 +1029,7 @@
                 "name": "LH GS Lab Wall (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_boomerang"
+                  "$oot|Lake Hylia GS Lab Wall"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1058,7 +1054,7 @@
                 "name": "LH GS Tree (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_longshot"
+                  "$oot|Lake Hylia GS Big Tree"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
