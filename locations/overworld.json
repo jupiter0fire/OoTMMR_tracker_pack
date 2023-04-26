@@ -1279,7 +1279,7 @@
           {
             "name": "Kak Redead Grotto",
             "access_rules": [
-              "$hidden_grotto_bomb"
+              "$oot|Kakariko Grotto Front"
             ],
             "sections": [
               {
@@ -1298,6 +1298,9 @@
           },
           {
             "name": "Kak Open Grotto",
+            "access_rules": [
+              "$oot|Kakariko Grotto Back"
+            ],
             "sections": [
               {
                 "name": "Kak Open Grotto Chest",
@@ -1315,14 +1318,13 @@
           },
           {
             "name": "Kak Impas House Back",
-            "access_rules": [
-              "$has_age|child",
-              "$can_use_hookshot"
-            ],
             "sections": [
               {
                 "name": "Kak Impas House Freestanding PoH",
                 "short_name": "HP",
+                "access_rules": [
+                  "$oot|Kakariko Impa House HP"
+                ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -1331,7 +1333,7 @@
                 "name": "Kak Impas House Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$can_play|epona"
+                  "$oot|Kakariko Cow"
                 ],
                 "visibility_rules": [
                   "setting_oot_shuffle_cows_yes"
@@ -1355,8 +1357,7 @@
               {
                 "name": "Talk to him",
                 "access_rules": [
-                  "$can_use_hookshot",
-                  "[trick_oot_man_on_roof]"
+                  "$oot|Kakariko Man on Roof"
                 ],
                 "item_count": 1
               }
@@ -1376,7 +1377,7 @@
                 "name": "Kak Shooting Gallery Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$can_use_bow"
+                  "$oot|Shooting Gallery Adult"
                 ],
                 "item_count": 1
               }
@@ -1396,8 +1397,7 @@
                 "name": "Kak Windmill Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$can_use_boomerang",
-                  "$has_age|adult,$can_play|time"
+                  "$oot|Windmill HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -1407,7 +1407,7 @@
                 "name": "Song from Windmill",
                 "short_name": "Guru-Guru",
                 "access_rules": [
-                  "$has_age|adult,ocarina"
+                  "$oot|Windmill Song of Storms"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1428,7 +1428,7 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$has_age|adult,forestmed,noct_meds:2"
+                  "$oot|Kakariko Song Shadow"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1449,21 +1449,21 @@
               {
                 "name": "Chickens",
                 "access_rules": [
-                  "$has_age|child"
+                  "$oot|Kakariko Anju Bottle"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Anju Adult",
                 "access_rules": [
-                  "$has_age|adult"
+                  "$oot|Kakariko Anju Egg"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Show Happy Cucco",
                 "access_rules": [
-                  "$has_age|adult,pocketcucco"
+                  "$oot|Kakariko Anju Cojiro"
                 ],
                 "item_count": 1
               }
@@ -1482,7 +1482,7 @@
               {
                 "name": "Give Mushroom",
                 "access_rules": [
-                  "$has_age|adult,mushroom"
+                  "$oot|Kakariko Potion Shop Odd Potion"
                 ],
                 "item_count": 1
               }
@@ -1502,7 +1502,7 @@
                 "name": "Kak 10 Gold Skulltula Reward",
                 "short_name": "10 Tokens",
                 "access_rules": [
-                  "skulltula:10"
+                  "$oot|Skulltula House 10 Tokens"
                 ],
                 "item_count": 1
               },
@@ -1510,7 +1510,7 @@
                 "name": "Kak 20 Gold Skulltula Reward",
                 "short_name": "20 Tokens",
                 "access_rules": [
-                  "skulltula:20"
+                  "$oot|Skulltula House 20 Tokens"
                 ],
                 "item_count": 1
               },
@@ -1518,7 +1518,7 @@
                 "name": "Kak 30 Gold Skulltula Reward",
                 "short_name": "30 Tokens",
                 "access_rules": [
-                  "skulltula:30"
+                  "$oot|Skulltula House 30 Tokens"
                 ],
                 "item_count": 1
               },
@@ -1526,7 +1526,7 @@
                 "name": "Kak 40 Gold Skulltula Reward",
                 "short_name": "40 Tokens",
                 "access_rules": [
-                  "skulltula:40"
+                  "$oot|Skulltula House 40 Tokens"
                 ],
                 "item_count": 1
               },
@@ -1534,7 +1534,7 @@
                 "name": "Kak 50 Gold Skulltula Reward",
                 "short_name": "50 Tokens",
                 "access_rules": [
-                  "skulltula:50"
+                  "$oot|Skulltula House 50 Tokens"
                 ],
                 "item_count": 1
               }
@@ -1549,46 +1549,61 @@
           },
           {
             "name": "Kak Potion Shop",
-            "access_rules": [
-              "$has_age|adult"
-            ],
             "sections": [
               {
                 "name": "Item 1",
-                "access_rules":[
-                  "wallet1"
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 1"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Item 2",
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 2"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 3",
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 3"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 4",
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 4"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 5",
-                "access_rules":[
-                  "wallet2"
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 5"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Item 6",
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 6"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 7",
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 7"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 8",
+                "access_rules": [
+                  "$oot|Kakariko Potion Shop Item 8"
+                ],
                 "item_count": 1
               }
             ],
@@ -1606,7 +1621,7 @@
           {
             "name": "Kak Bazaar",
             "access_rules": [
-              "$has_age|adult"
+              "$oot|Kakariko Bazaar Item 1"
             ],
             "sections": [
               {
@@ -1660,7 +1675,7 @@
                 "name": "Kak GS Above Impas House (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_hookshot"
+                  "$oot|Kakariko GS Roof"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1685,7 +1700,7 @@
                 "name": "Kak GS Tree (N)",
                 "short_name": "Tree",
                 "access_rules": [
-                  "$has_age|child,$gs_night"
+                  "$oot|Kakariko GS Tree"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1698,7 +1713,7 @@
                 "name": "Kak GS Skulltula House (N)",
                 "short_name": "Skulltula House",
                 "access_rules": [
-                  "$has_age|child,$gs_night"
+                  "$oot|Kakariko GS House of Skulltula"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1711,7 +1726,7 @@
                 "name": "Kak GS House Under Construction (N)",
                 "short_name": "Construction",
                 "access_rules": [
-                  "$has_age|child,$gs_night"
+                  "$oot|Kakariko GS Shooting Gallery"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1724,7 +1739,7 @@
                 "name": "Kak GS Guards House (N)",
                 "short_name": "Guards House",
                 "access_rules": [
-                  "$has_age|child,$gs_night"
+                  "$oot|Kakariko GS Bazaar"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -1737,8 +1752,7 @@
                 "name": "Kak GS Watchtower (N)",
                 "short_name": "Watchtower",
                 "access_rules": [
-                  "$gs_night,$can_use_slingshot",
-                  "$has_age|child,$gs_night,$has_explosives_bool"
+                  "$oot|Kakariko GS Ladder"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
