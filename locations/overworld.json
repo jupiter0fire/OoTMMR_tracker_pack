@@ -225,7 +225,7 @@
           {
             "name": "LW Near Shortcuts Grotto",
             "access_rules": [
-              "$has_explosives_or_hammer"
+              "$oot|Lost Woods Grotto Generic"
             ],
             "sections": [
               {
@@ -249,7 +249,7 @@
               {
                 "name": "ResidentSleeper",
                 "access_rules": [
-                  "$has_age|child,ocarina"
+                  "$oot|Lost Woods Memory Game"
                 ],
                 "item_count": 1
               }
@@ -268,7 +268,7 @@
               {
                 "name": "Shoot it",
                 "access_rules": [
-                  "$can_use_slingshot"
+                  "$oot|Lost Woods Target"
                 ],
                 "item_count": 1
               }
@@ -287,21 +287,21 @@
               {
                 "name": "Give Cojiro",
                 "access_rules": [
-                  "$has_age|adult,cojiro"
+                  "$oot|Lost Woods Odd Mushroom"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Odd Potion",
                 "access_rules": [
-                  "$has_age|adult,oddpotion"
+                  "$oot|Lost Woods Poacher's Saw"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Play Sarias Song",
                 "access_rules": [
-                  "$has_age|child,$can_play|saria"
+                  "$oot|Lost Woods Skull Kid"
                 ],
                 "item_count": 1
               }
@@ -320,8 +320,7 @@
               {
                 "name": "Stick upgrade",
                 "access_rules": [
-                  "$has_age|child,nuts",
-                  "$has_age|child,$has_shield_for_scrubs_child"
+                  "$oot|Lost Woods Scrub Sticks Upgrade"
                 ],
                 "chest_unopened_img": "images/deku_scrub.png",
                 "chest_opened_img": "images/deku_scrub_grey.png",
@@ -343,7 +342,7 @@
                 "name": "LW GS Bean Patch Near Bridge",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil,$can_damage_skulls_child"
+                  "$oot|Lost Woods GS Soil Bridge"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -373,6 +372,9 @@
             "sections": [
               {
                 "name": "LW Gift from Saria",
+                "access_rules": [
+                  "$oot|Lost Woods Gift from Saria"
+                ],
                 "item_count": 1
               }
             ],
@@ -390,18 +392,6 @@
         "name": "Lost Woods Deep",
         "color": "#18a50e",
         "children": [
-          {
-            "name": "Lost Woods Deep As Child"
-          },
-          {
-            "name": "Lost Woods Deep As Adult",
-            "access_rules": [
-              "$can_play|saria",
-              "$can_play|minuet",
-              "$mm_can_play|minuet,setting_oot_cross_warps_yes",
-              "[trick_oot_mido_skip],$has_age|adult"
-            ]
-          },
           {
             "name": "LW Deku Scrubs Near Deku Theater",
             "short_name": "LW Deku Scrubs",
@@ -428,11 +418,7 @@
           {
             "name": "LW Scrubs Grotto",
             "access_rules": [
-              "@Lost Woods Deep As Child,$has_explosives_bool,nuts",
-              "@Lost Woods Deep As Child,$has_explosives_bool,$has_shield_for_scrubs_child",
-              "@Lost Woods Deep As Adult,$has_explosives_or_hammer,nuts",
-              "@Lost Woods Deep As Adult,$has_explosives_or_hammer,$has_shield_for_scrubs_adult",
-              "@Lost Woods Deep As Adult,hammer"
+              "$oot|Lost Woods Grotto Scrub Nuts Upgrade"
             ],
             "sections": [
               {
@@ -468,7 +454,7 @@
                 "name": "LW GS Bean Patch Near Theater",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Lost Woods Deep As Child,$gs_soil,$can_damage_skulls_child"
+                  "$oot|Lost Woods GS Soil Theater"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -481,7 +467,7 @@
                 "name": "LW GS Above Theater (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,@Lost Woods Deep As Child,beans,@Lost Woods Deep As Adult"
+                  "$oot|Lost Woods GS Bean Ride"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -506,7 +492,7 @@
                 "name": "Deku Theater Skull Mask",
                 "short_name": "Skull Mask",
                 "access_rules": [
-                  "@Lost Woods Deep As Child,skullmask"
+                  "$oot|Deku Theater Sticks Upgrade"
                 ],
                 "item_count": 1
               },
@@ -514,7 +500,7 @@
                 "name": "Deku Theater Mask of Truth",
                 "short_name": "Mask of Truth",
                 "access_rules": [
-                  "@Lost Woods Deep As Child,maskoftruth"
+                  "$oot|Deku Theater Nuts Upgrade"
                 ],
                 "item_count": 1
               }
@@ -534,29 +520,13 @@
         "color": "#18a50e",
         "children": [
           {
-            "name": "Sacred Meadow As Child",
-            "access_rules":[
-              "$has_age|child"
-            ]
-          },
-          {
-            "name": "Sacred Meadow As Adult",
-            "access_rules": [
-              "@Lost Woods Deep As Adult",
-              "$can_play|minuet",
-              "$mm_can_play|minuet,setting_oot_cross_warps_yes"
-            ]
-          },
-          {
             "name": "Songs in Forest",
             "sections": [
               {
                 "name": "Song from Saria",
                 "short_name": "Song",
                 "access_rules": [
-                  "@Sacred Meadow As Child,meet_zelda,can_play|minuet",
-                  "@Sacred Meadow As Child,meet_zelda,$mm_can_play|minuet,setting_oot_cross_warps_yes",
-                  "@Sacred Meadow As Child,meet_zelda,$can_damage_child"
+                  "$oot|Saria's Song"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -565,7 +535,7 @@
               {
                 "name": "Song from Sheik",
                 "access_rules": [
-                  "@Sacred Meadow As Adult"
+                  "$oot|Sacred Meadow Sheik Song"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -583,8 +553,7 @@
           {
             "name": "SFM Wolfos Grotto",
             "access_rules": [
-              "@Sacred Meadow As Child,$has_explosives_bool,$stone_of_agony",
-              "@Sacred Meadow As Adult,$hidden_grotto_bomb"
+              "$oot|Sacred Meadow Grotto"
             ],
             "sections": [
               {
@@ -642,7 +611,7 @@
                 "name": "SFM GS (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Sacred Meadow As Adult,$can_use_hookshot,$gs_night"
+                  "$oot|Sacred Meadow GS Night Adult"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
