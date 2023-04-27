@@ -97,25 +97,21 @@ function _mm_logic()
             return items[item] >= count
         end
     end
-    function has(item, count)
-        return _has(item, count)
-    end
 
-    -- FIXME: This works, but is untested; reactivate it for a huge speedup in EmoTracker.
-    --        Tracker:ProviderCountForCode() seems to be excruciatingly slow, this caches the results.
-    -- function has(item, count)
-    --     if count == nil then
-    --         if OOTMM_RUNTIME_CACHE[item] == nil then
-    --             OOTMM_RUNTIME_CACHE[item] = _has(item, count)
-    --         end
-    --         return OOTMM_RUNTIME_CACHE[item]
-    --     else
-    --         if OOTMM_RUNTIME_CACHE[item .. ":" .. count] == nil then
-    --             OOTMM_RUNTIME_CACHE[item .. ":" .. count] = _has(item, count)
-    --         end
-    --         return OOTMM_RUNTIME_CACHE[item .. ":" .. count]
-    --     end
-    -- end
+    -- Tracker:ProviderCountForCode() calls are excruciatingly slow, this caches the results.
+    function has(item, count)
+        if count == nil then
+            if OOTMM_RUNTIME_CACHE[item] == nil then
+                OOTMM_RUNTIME_CACHE[item] = _has(item, count)
+            end
+            return OOTMM_RUNTIME_CACHE[item]
+        else
+            if OOTMM_RUNTIME_CACHE[item .. ":" .. count] == nil then
+                OOTMM_RUNTIME_CACHE[item .. ":" .. count] = _has(item, count)
+            end
+            return OOTMM_RUNTIME_CACHE[item .. ":" .. count]
+        end
+    end
 
     child = true
     adult = false
