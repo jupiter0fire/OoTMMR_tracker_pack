@@ -3204,29 +3204,19 @@
         "name": "Zora River",
         "children": [
           {
-            "name": "Zora River As Child",
-            "access_rules": [
-              "$has_explosives_bool",
-              "$can_dive_small"
-            ]
-          },
-          {
-            "name": "Zora River As Adult"
-          },
-          {
             "name": "ZR Frogs",
             "sections": [
               {
                 "name": "ZR Frogs in the Rain",
                 "access_rules": [
-                  "@Zora River As Child,$can_play|storm"
+                  "$oot|Zora River Frogs Storms"
                 ],
                 "item_count": 1
               },
               {
                 "name": "ZR Frogs Ocarina Game",
                 "access_rules": [
-                  "@Zora River As Child,$can_play|lullaby,$can_play|epona,$can_play|saria,$can_play|sun,$can_play|time,$can_play|storm"
+                  "$oot|Zora River Frogs Game"
                 ],
                 "item_count": 1
               }
@@ -3242,7 +3232,7 @@
           {
             "name": "ZR Magic Bean Salesman",
             "access_rules": [
-              "@Zora River As Child"
+              "$oot|Zora River Bean Seller"
             ],
             "sections": [
               {
@@ -3261,7 +3251,7 @@
           {
             "name": "ZR Open Grotto",
             "access_rules": [
-              "$has_age|adult"
+              "$oot|Zora River Grotto"
             ],
             "sections": [
               {
@@ -3285,8 +3275,7 @@
                 "name": "ZR Near Open Grotto Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Zora River As Child",
-                  "@Zora River As Adult,$has_hover_boots"
+                  "$oot|Zora River HP Pillar"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -3308,8 +3297,7 @@
                 "name": "ZR Near Domain Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Zora River As Child",
-                  "@Zora River As Adult,$has_hover_boots"
+                  "$oot|Zora River HP Platform"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -3326,9 +3314,6 @@
           },
           {
             "name": "ZR Storms Grotto",
-            "access_rules": [
-              "$hidden_grotto,ocarina,storm"
-            ],
             "sections": [
               {
                 "name": "ZR Deku Scrubs Grotto",
@@ -3357,7 +3342,7 @@
                 "name": "ZR GS Tree",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$can_damage_skulls_child"
+                  "$oot|Zora River GS Tree"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3382,7 +3367,7 @@
                 "name": "ZR GS Ladder (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Zora River As Child,$gs_night,$can_damage_skulls_child"
+                  "$oot|Zora River GS Ladder"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3407,7 +3392,7 @@
                 "name": "ZR GS Near Raised Grottos (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_hookshot"
+                  "$oot|Zora River GS Near Grotto"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3432,7 +3417,7 @@
                 "name": "ZR GS Above Bridge (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_hookshot"
+                  "$oot|Zora River GS Near Bridge"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3456,27 +3441,12 @@
         "name": "Zoras Domain",
         "children": [
           {
-            "name": "Zoras Domain As Child",
-            "access_rules": [
-              "@Zora River As Child,$can_play|lullaby",
-              "$can_dive_small",
-              "@Zora River As Child,[trick_oot_zora_domain_child]"
-            ]
-          },
-          {
-            "name": "Zoras Domain As Adult",
-            "access_rules": [
-              "@Zora River As Adult,$can_play|lullaby",
-              "@Zora River As Adult,$has_hover_boots,[trick_oot_zora_domain_adult]"
-            ]
-          },
-          {
             "name": "ZD Chest",
             "sections": [
               {
                 "name": "Torches",
                 "access_rules": [
-                  "@Zoras Domain As Child"
+                  "$oot|Zora Domain Waterfall Chest"
                 ],
                 "item_count": 1
               }
@@ -3495,7 +3465,7 @@
               {
                 "name": "Dive down",
                 "access_rules": [
-                  "@Zoras Domain As Child"
+                  "$oot|Zora Domain Diving Game"
                 ],
                 "item_count": 1
               }
@@ -3510,21 +3480,18 @@
           },
           {
             "name": "King Zora",
-            "access_rules": [
-              "$has_blue_fire"
-            ],
             "sections": [
               {
                 "name": "ZD King Zora Thawed",
                 "access_rules": [
-                  "@Zoras Domain As Adult"
+                  "$oot|Zora Domain Tunic"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Prescription",
                 "access_rules": [
-                  "@Zoras Domain As Adult,prescription"
+                  "$oot|Zora Domain Eyeball Frog"
                 ],
                 "item_count": 1
               }
@@ -3544,8 +3511,7 @@
                 "name": "ZD GS Frozen Waterfall (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Zoras Domain As Adult,$gs_night,$has_ranged_weapon_adult",
-                  "@Zoras Domain As Adult,$gs_night,magic"
+                  "$oot|Zora Domain GS Waterfall"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3565,47 +3531,61 @@
           },
           {
             "name": "ZD Shop",
-            "access_rules": [
-              "@Zoras Domain As Child",
-              "$has_blue_fire"
-            ],
             "sections": [
               {
                 "name": "Item 1",
+                "access_rules": [
+                  "$oot|Zora Shop Item 1"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 2",
+                "access_rules": [
+                  "$oot|Zora Shop Item 2"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 3",
-                "access_rules":[
-                  "wallet1"
+                "access_rules": [
+                  "$oot|Zora Shop Item 3"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Item 4",
+                "access_rules": [
+                  "$oot|Zora Shop Item 4"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 5",
+                "access_rules": [
+                  "$oot|Zora Shop Item 5"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 6",
+                "access_rules": [
+                  "$oot|Zora Shop Item 6"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 7",
-                "access_rules":[
-                  "wallet2"
+                "access_rules": [
+                  "$oot|Zora Shop Item 7"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Item 8",
+                "access_rules": [
+                  "$oot|Zora Shop Item 8"
+                ],
                 "item_count": 1
               }
             ]
@@ -3616,29 +3596,13 @@
         "name": "Zoras Fountain",
         "children": [
           {
-            "name": "Zoras Fountain As Child",
-            "access_rules": [
-              "@Zoras Domain As Child,ruto"
-            ]
-          },
-          {
-            "name": "Zoras Fountain As Adult",
-            "access_rules": [
-              "@Zoras Domain As Child,ruto,@Zoras Domain As Adult"
-            ]
-          },
-          {
             "name": "ZF Great Fairy Fountain",
-            "access_rules": [
-              "@Zoras Fountain As Child,$has_explosives_bool",
-              "@Zoras Fountain As Adult,$has_explosives_bool"
-            ],
             "sections": [
               {
                 "name": "ZF Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$can_play|lullaby"
+                  "$oot|Great Fairy Farore's Wind"
                 ],
                 "item_count": 1
               }
@@ -3658,7 +3622,7 @@
                 "name": "ZF Bottom Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Zoras Fountain As Adult,$has_iron_boots,$has_zora_tunic"
+                  "$oot|Zora Fountain Bottom HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -3680,7 +3644,7 @@
                 "name": "ZF Iceberg Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Zoras Fountain As Adult"
+                  "$oot|Zora Fountain Iceberg HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -3702,7 +3666,7 @@
                 "name": "ZF GS Hidden Cave (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Zoras Fountain As Adult,$gs_night,$has_explosives_or_hammer,$can_use_hookshot,lift2"
+                  "$oot|Zora Fountain GS Upper"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3727,7 +3691,7 @@
                 "name": "ZF GS Tree",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Zoras Fountain As Child,$can_damage_skulls_child"
+                  "$oot|Zora Fountain GS Tree"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3752,7 +3716,7 @@
                 "name": "ZF GS Above the Log (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Zoras Fountain As Child,$gs_night,$can_use_boomerang"
+                  "$oot|Zora Fountain GS Wall"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
