@@ -1,3 +1,10 @@
+-- Just in case anyone actually reads this, I'm sorry for the mess.
+-- There's basically nothing but anti-patterns here.
+-- I decided very early on that I wanted to keep the OoTMM logic as close to the source as possible,
+-- which resulted in a lot of weird workarounds and global variables EVERYWHERE.
+-- Those global variables also make functions have side effects, so it's awesomeness^2.
+--
+-- Don't copy any of this to new projects unless you want to see the world burn, in which case, go ahead.
 
 EMO = false
 if Tracker then
@@ -257,7 +264,8 @@ for k, v in pairs(ToInject) do
     oot_logic.inject({ [k] = v })
 end
 
-oot_available_locations = oot_logic.find_available_locations(oot_logic.logic)
+oot_available_locations = {}
+oot_available_locations_glitched = {}
 
 function oot(location)
     if OOTMM_DEBUG then
@@ -267,13 +275,31 @@ function oot(location)
     if OOTMM_RESET_LOGIC_FLAG["oot"] then
         print("oot: Resetting logic...")
         oot_logic.OOTMM_RUNTIME_CACHE = {}
+
+        oot_logic.set_trick_mode("selected")
         oot_available_locations = oot_logic.find_available_locations(oot_logic.logic)
+        oot_logic.set_trick_mode("all")
+        oot_available_locations_glitched = oot_logic.find_available_locations(oot_logic.logic)
+
         OOTMM_RESET_LOGIC_FLAG["oot"] = false
     end
-    return oot_available_locations[location] ~= nil
+
+    local reachable = false
+    local accessibility = AccessibilityLevel.None
+
+    reachable = oot_available_locations[location] ~= nil or oot_available_locations_glitched[location] ~= nil
+
+    if reachable and oot_available_locations[location] ~= nil then
+        accessibility = AccessibilityLevel.Normal
+    elseif reachable and oot_available_locations_glitched[location] ~= nil then
+        accessibility = AccessibilityLevel.SequenceBreak
+    end
+
+    return reachable, accessibility
 end
 
-mm_available_locations = mm_logic.find_available_locations(mm_logic.logic)
+mm_available_locations = {}
+mm_available_locations_glitched = {}
 
 function mm(location)
     if OOTMM_DEBUG then
@@ -283,8 +309,26 @@ function mm(location)
     if OOTMM_RESET_LOGIC_FLAG["mm"] then
         print("mm: Resetting logic...")
         mm_logic.OOTMM_RUNTIME_CACHE = {}
+
+        mm_logic.set_trick_mode("selected")
+        mm_available_locations = mm_logic.find_available_locations(mm_logic.logic, true)
+        mm_logic.set_trick_mode("all")
+        mm_available_locations_glitched = mm_logic.find_available_locations(mm_logic.logic, true)
+
         mm_available_locations = mm_logic.find_available_locations(mm_logic.logic)
         OOTMM_RESET_LOGIC_FLAG["mm"] = false
     end
-    return mm_available_locations[location] ~= nil
+
+    local reachable = false
+    local accessibility = AccessibilityLevel.None
+
+    reachable = mm_available_locations[location] ~= nil or mm_available_locations_glitched[location] ~= nil
+
+    if reachable and mm_available_locations[location] ~= nil then
+        accessibility = AccessibilityLevel.Normal
+    elseif reachable and mm_available_locations_glitched[location] ~= nil then
+        accessibility = AccessibilityLevel.SequenceBreak
+    end
+
+    return reachable, accessibility
 end

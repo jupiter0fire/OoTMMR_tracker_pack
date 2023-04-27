@@ -157,7 +157,34 @@ function _oot_logic()
         return reachable, accessibility
     end
 
+    function get_trick_mode()
+        if OOTMM_RUNTIME_ALL_TRICKS_ENABLED then
+            return "all"
+        else
+            return "selected"
+        end
+    end
+
+    -- Yet another global that enables side effects...
+    function set_trick_mode(mode)
+        if OOTMM_DEBUG then
+            print("set_trick_mode:", mode)
+        end
+
+        if mode == "all" then
+            OOTMM_RUNTIME_ALL_TRICKS_ENABLED = true
+        elseif mode == "selected" then
+            OOTMM_RUNTIME_ALL_TRICKS_ENABLED = false
+        else
+            error("Invalid trick mode: " .. mode)
+        end
+    end
+
     function trick(x)
+        if OOTMM_DEBUG then
+            print("trick:", x, has(OOTMM_TRICK_PREFIX .. "_" .. x), OOTMM_RUNTIME_ALL_TRICKS_ENABLED)
+        end
+
         return has(OOTMM_TRICK_PREFIX .. "_" .. x) or OOTMM_RUNTIME_ALL_TRICKS_ENABLED
     end
 
@@ -209,6 +236,11 @@ function _oot_logic()
         end
 
         return has(item_name)
+    end
+
+    function special(x)
+        -- FIXME: No idea what this is :)
+        return false
     end
 
     function oot_time(x)
