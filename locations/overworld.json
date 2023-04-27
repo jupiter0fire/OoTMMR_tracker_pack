@@ -1780,7 +1780,7 @@
                     "name": "Graveyard Dampe Gravedigging Tour",
                     "short_name": "HP",
                     "access_rules": [
-                      "$has_age|child"
+                      "$oot|Graveyard Dampe Game"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -1799,7 +1799,7 @@
                 "name": "Graveyard Dampes Grave",
                 "short_name": "Dampes Grave",
                 "access_rules": [
-                  "$has_age|adult"
+                  "$oot|Graveyard Dampe Tomb Reward 1"
                 ],
                 "sections": [
                   {
@@ -1830,6 +1830,9 @@
                   {
                     "name": "Graveyard Shield Grave Chest",
                     "short_name": "Chest",
+                    "access_rules": [
+                      "$oot|Graveyard Fairy Tomb"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -1849,7 +1852,7 @@
                     "name": "Graveyard Heart Piece Grave Chest",
                     "short_name": "Play Suns Song",
                     "access_rules": [
-                      "$can_play|sun"
+                      "$oot|Graveyard ReDead Tomb"
                     ],
                     "item_count": 1
                   }
@@ -1869,8 +1872,7 @@
                     "name": "Graveyard Freestanding PoH",
                     "short_name": "Box HP",
                     "access_rules": [
-                      "$has_age|child,$has_age|adult,beans",
-                      "$can_use_longshot"
+                      "$oot|Graveyard Crate HP"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -1888,13 +1890,13 @@
               {
                 "name": "Royal Familys Tomb",
                 "short_name": "Royal Tomb",
-                "access_rules": [
-                  "$can_play|lullaby"
-                ],
                 "sections": [
                   {
                     "name": "Song from Royal Familys Tomb",
                     "short_name": "Song",
+                    "access_rules": [
+                      "$oot|Graveyard Royal Tomb Song"
+                    ],
                     "chest_unopened_img": "images/grey_note.png",
                     "chest_opened_img": "images/grey_note_check.png",
                     "item_count": 1
@@ -1903,7 +1905,7 @@
                     "name": "Royal Familys Tomb Chest",
                     "short_name": "Chest",
                     "access_rules": [
-                      "$has_fire"
+                      "$oot|Graveyard Royal Tomb Chest"
                     ],
                     "item_count": 1
                   }
@@ -1918,15 +1920,12 @@
               },
               {
                 "name": "Graveyard Wall",
-                "access_rules": [
-                  "$has_age|child,$gs_night"
-                ],
                 "sections": [
                   {
                     "name": "Graveyard GS Wall (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$gs_night,$can_use_boomerang"
+                      "$oot|Graveyard GS Wall"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -1951,7 +1950,7 @@
                     "name": "Graveyard GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "$gs_soil,$can_damage_skulls_child"
+                      "$oot|Graveyard GS Soil"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -1974,29 +1973,9 @@
         ]
       },
       {
-        "name": "Graveyard Warp",
-        "access_rules": [
-          "$can_play|nocturne",
-          "$mm_can_play|nocturne,setting_oot_cross_warps_yes"
-        ]
-      },
-      {
         "name": "Death Mountain",
         "color": "#a01009",
         "children": [
-          {
-            "name": "Death Mountain As Child",
-            "access_rules": [
-              "$has_age|child,letter",
-              "$has_age|child,$has_explosives_bool"
-            ]
-          },
-          {
-            "name": "Death Mountain As Adult",
-            "access_rules": [
-              "$has_age|adult"
-            ]
-          },
           {
             "name": "Death Mountain Trail",
             "children": [
@@ -2007,8 +1986,7 @@
                     "name": "DMT Freestanding PoH",
                     "short_name": "HP",
                     "access_rules": [
-                      "@Death Mountain As Child",
-                      "@Death Mountain As Adult"
+                      "$oot|Death Mountain HP"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -2029,8 +2007,7 @@
                   {
                     "name": "Blast wall",
                     "access_rules": [
-                      "@Death Mountain As Child,$has_explosives_bool",
-                      "@Death Mountain As Adult,$has_explosives_or_hammer"
+                      "$oot|Death Mountain Chest"
                     ],
                     "item_count": 1
                   }
@@ -2046,7 +2023,7 @@
               {
                 "name": "DMT Storms Grotto",
                 "access_rules": [
-                  "$hidden_grotto_storms"
+                  "$oot|Death Mountain Grotto"
                 ],
                 "sections": [
                   {
@@ -2071,7 +2048,7 @@
                     "name": "DMT GS Above Dodongos Cavern (N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$gs_night,$can_use_hammer"
+                      "$oot|Death Mountain GS Above Dodongo"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2096,7 +2073,7 @@
                     "name": "DMT GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "@Death Mountain As Child,$gs_soil,$has_bombflowers,$can_damage_skulls_child"
+                      "$oot|Death Mountain GS Soil"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2121,7 +2098,7 @@
                     "name": "DMT GS Near Kak",
                     "short_name": "GS",
                     "access_rules": [
-                      "$has_explosives_or_hammer"
+                      "$oot|Death Mountain GS Entrance"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2148,27 +2125,13 @@
         "color": "#a01009",
         "children": [
           {
-            "name": "Death Mountain Summit As Child",
-            "access_rules": [
-              "@Death Mountain As Child,$has_explosives_bool"
-            ]
-          },
-          {
-            "name": "Death Mountain Summit As Adult",
-            "access_rules": [
-              "@Death Mountain As Adult,$has_explosives_or_hammer",
-              "@Death Mountain As Child,@Death Mountain As Adult,beans"
-            ]
-          },
-          {
             "name": "DMT Cow Grotto",
             "sections": [
               {
                 "name": "DMT Cow Grotto Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "@Death Mountain Summit As Child,$has_explosives_bool,$can_play|epona",
-                  "@Death Mountain Summit As Adult,$has_explosives_or_hammer,$can_play|epona"                
+                  "$oot|Death Mountain Cow"
                 ],
                 "visibility_rules": [
                   "setting_oot_shuffle_cows_yes"
@@ -2188,16 +2151,12 @@
           },
           {
             "name": "DMT Great Fairy Fountain",
-            "access_rules": [
-              "@Death Mountain Summit As Child,$has_explosives_bool",
-              "@Death Mountain Summit As Adult,$has_explosives_or_hammer"
-            ],
             "sections": [
               {
                 "name": "DMT Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$can_play|lullaby"
+                  "$oot|Great Fairy Magic Upgrade"
                 ],
                 "item_count": 1
               }
@@ -2212,28 +2171,25 @@
           },
           {
             "name": "DMT Biggoron",
-            "access_rules": [
-              "@Death Mountain Summit As Adult"
-            ],
             "sections": [
               {
                 "name": "Give Broken Sword",
                 "access_rules": [
-                  "brokensword"
+                  "$oot|Death Mountain Prescription"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Eyedrops",
                 "access_rules": [
-                  "eyedrops"
+                  "$oot|Death Mountain Claim Check"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Help him",
                 "access_rules": [
-                  "claimcheck"
+                  "$oot|Death Mountain Biggoron Sword"
                 ],
                 "item_count": 1
               }
@@ -2253,7 +2209,7 @@
                 "name": "DMT GS Falling Rocks Path (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Death Mountain Summit As Adult,$gs_night,$can_use_hammer"
+                  "$oot|Death Mountain GS Before Climb"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2277,36 +2233,19 @@
         "name": "Goron City",
         "children": [
           {
-            "name": "Goron City As Child",
-            "access_rules": [
-              "@Death Mountain As Child",
-              "$has_explosives_bool,$has_age|child"
-            ]
-          },
-          {
-            "name": "Goron City As Adult",
-            "access_rules": [
-              "@Death Mountain As Adult",
-              "$has_explosives_bool,$has_age|adult"
-            ]
-          },
-          {
             "name": "GC Maze",
             "sections": [
               {
                 "name": "Right and Center Chests",
                 "access_rules": [
-                  "@Goron City As Child,$has_explosives_bool",
-                  "@Goron City As Adult,$has_explosives_or_hammer",
-                  "@Goron City As Adult,lift2"
+                  "$oot|Goron City Maze Center 1"
                 ],
                 "item_count": 2
               },
               {
                 "name": "Left Chest",
                 "access_rules": [
-                  "@Goron City As Adult,lift2",
-                  "@Goron City As Adult,$can_use_hammer"
+                  "$oot|Goron City Maze Left"
                 ],
                 "item_count": 1
               },
@@ -2314,7 +2253,7 @@
                 "name": "GC GS Boulder Maze",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Goron City As Child,$has_explosives_bool"
+                  "$oot|Goron City GS Maze"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2339,9 +2278,7 @@
               {
                 "name": "Stop him",
                 "access_rules": [
-                  "@Goron City As Adult,$has_explosives_bool",
-                  "@Goron City As Adult,$can_use_bow",
-                  "@Goron City As Adult,lift1"
+                  "$oot|Goron City Tunic"
                 ],
                 "item_count": 1
               }
@@ -2361,7 +2298,7 @@
               {
                 "name": "Blow him up",
                 "access_rules": [
-                  "@Goron City As Child,$has_explosives_bool"
+                  "$oot|Goron City Bomb Bag"
                 ],
                 "item_count": 1
               }
@@ -2381,8 +2318,7 @@
               {
                 "name": "Pay 200",
                 "access_rules": [
-                  "@Goron City As Adult,wallet,$has_bombflowers",
-                  "@Goron City As Adult,wallet,$can_use_hammer"
+                  "$oot|Goron City Medigoron Giant Knife"
                 ],
                 "item_count": 1
               }
@@ -2402,8 +2338,7 @@
                 "name": "Freestanding PoH",
                 "short_name": "HP :)",
                 "access_rules": [
-                  "@Goron City As Child,$has_explosives_bool,$can_play|lullaby",
-                  "@Goron City As Child,$has_explosives_bool,$has_fire"
+                  "$oot|Goron City Big Pot HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -2424,7 +2359,7 @@
               {
                 "name": "Play Sarias Song",
                 "access_rules": [
-                  "@Goron City As Child,$can_play|lullaby,$can_play|saria"
+                  "$oot|Darunia"
                 ],
                 "item_count": 1
               }
@@ -2439,9 +2374,6 @@
           },
           {
             "name": "GC Grotto",
-            "access_rules": [
-              "$has_age|adult"
-            ],
             "sections": [
               {
                 "name": "GC Deku Scrubs Grotto",
@@ -2475,7 +2407,7 @@
                 "name": "GC GS Center Platform",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Goron City As Adult"
+                  "$oot|Goron City GS Platform"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2495,48 +2427,60 @@
           },
           {
             "name": "GC Shop",
-            "access_rules": [
-              "@Goron City As Child,$has_bombflowers",
-              "@Goron City As Adult,$has_explosives_bool",
-              "@Goron City As Adult,lift1",
-              "@Goron City As Adult,bow"         
-            ],
             "sections": [
               {
                 "name": "Item 1",
+                "access_rules": [
+                  "$oot|Goron Shop Item 1"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 2",
+                "access_rules": [
+                  "$oot|Goron Shop Item 2"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 3",
+                "access_rules": [
+                  "$oot|Goron Shop Item 3"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 4",
-                "access_rules":[
-                  "wallet1"
+                "access_rules": [
+                  "$oot|Goron Shop Item 4"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Item 5",
+                "access_rules": [
+                  "$oot|Goron Shop Item 5"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 6",
+                "access_rules": [
+                  "$oot|Goron Shop Item 6"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 7",
+                "access_rules": [
+                  "$oot|Goron Shop Item 7"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 8",
-                "access_rules":[
-                  "wallet1"
+                "access_rules": [
+                  "$oot|Goron Shop Item 8"
                 ],
                 "item_count": 1
               }
@@ -2548,60 +2492,13 @@
         "name": "Death Mountain Crater",
         "children": [
           {
-            "name": "Death Mountain Crater Bottom As Adult",
-            "access_rules": [
-              "@Goron City As Adult,$has_explosives_bool",
-              "@Goron City As Adult,$can_use_bow",
-              "@Goron City As Adult,lift1",
-              "@Death Mountain Summit As Adult,$has_hover_boots",
-              "$has_age|adult,$can_play|bolero,$can_use_hookshot",
-              "$has_age|adult,$can_play|bolero,$has_hover_boots",
-              "$has_age|adult,$can_play|bolero,beans",
-              "$has_age|adult,$mm_can_play|bolero,$can_use_hookshot,setting_oot_cross_warps_yes",
-              "$has_age|adult,$mm_can_play|bolero,$has_hover_boots,setting_oot_cross_warps_yes",
-              "$has_age|adult,$mm_can_play|bolero,beans,setting_oot_cross_warps_yes",
-              "@Death Mountain Summit As Adult,$has_goron_tunic_strict,$can_longshot_scarecrow"
-            ]
-          },
-          {
-            "name": "Death Mountain Crater Top As Child",
-            "access_rules": [
-              "@Death Mountain Summit As Child"
-            ]
-          },
-          {
-            "name": "Death Mountain Crater Top As Adult",
-            "access_rules": [
-              "@Death Mountain Summit As Adult",
-              "@Death Mountain Crater Bottom As Adult,$can_use_hammer"
-            ]
-          },
-          {
-            "name": "Death Mountain Crater Warp As Child",
-            "access_rules": [
-              "$has_age|child,$can_play|bolero",
-              "$has_age|child,$mm_can_play|bolero,setting_oot_cross_warps_yes"
-            ]
-          },
-          {
-            "name": "Death Mountain Crater Warp As Adult",
-            "access_rules": [
-              "$has_age|adult,$can_play|bolero",
-              "$has_age|adult,$mm_can_play|bolero,setting_oot_cross_warps_yes",
-              "@Death Mountain Crater Top As Adult,$has_goron_tunic_strict,$can_longshot_scarecrow",
-              "@Death Mountain Crater Bottom As Adult,$has_hover_boots",
-              "@Death Mountain Crater Bottom As Adult,$can_use_hookshot"
-            ]
-          },
-          {
             "name": "DMC Upper Grotto",
             "sections": [
               {
                 "name": "DMC Upper Grotto Chest",
                 "short_name": "Chest",
                 "access_rules": [
-                  "@Death Mountain Crater Top As Child,$has_explosives_bool",
-                  "@Death Mountain Crater Top As Adult,$has_explosives_or_hammer"
+                  "$oot|Death Mountain Crater Grotto"
                 ],
                 "item_count": 1
               }
@@ -2621,8 +2518,7 @@
                 "name": "DMC Wall Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Death Mountain Crater Top As Child",
-                  "@Death Mountain Crater Top As Adult"
+                  "$oot|Death Mountain Crater Alcove HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -2644,8 +2540,7 @@
                 "name": "DMC Volcano Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Death Mountain Crater Warp As Adult,@Death Mountain Crater Warp As Child,beans",
-                  "@Death Mountain Crater Bottom As Adult,$has_hover_boots,[trick_oot_volcano_heart_piece]"  
+                  "$oot|Death Mountain Crater Volcano HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -2662,15 +2557,12 @@
           },
           {
             "name": "DMC Great Fairy Fountain",
-            "access_rules": [
-              "@Death Mountain Crater Bottom As Adult,$can_use_hammer"
-            ],
             "sections": [
               {
                 "name": "DMC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$can_play|lullaby"
+                  "$oot|Great Fairy Magic Upgrade 2"
                 ],
                 "item_count": 1
               }
@@ -2685,9 +2577,6 @@
           },
           {
             "name": "DMC Hammer Grotto",
-            "access_rules": [
-              "hammer"
-            ],
             "sections": [
               {
                 "name": "DMC Deku Scrubs Grotto",
@@ -2715,7 +2604,7 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "@Death Mountain Crater Warp As Adult"
+                  "$oot|Death Mountain Crater Sheik Song"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -2761,7 +2650,7 @@
                 "name": "DMC GS Crate",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Death Mountain Crater Top As Child,$can_damage_skulls_child"
+                  "$oot|Death Mountain Crater GS Crate"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -2781,15 +2670,12 @@
           },
           {
             "name": "DMC Bean Patch",
-            "access_rules": [
-              "@Death Mountain Crater Warp As Child"
-            ],
             "sections": [
               {
                 "name": "DMC GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_soil,$can_damage_skulls_child"
+                  "$oot|Death Mountain Crater GS Soil"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
