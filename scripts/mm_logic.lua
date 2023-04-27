@@ -118,7 +118,7 @@ function _mm_logic()
     -- end
 
     child = true
-    adult = not child
+    adult = false
 
     function age(x)
         -- FIXME
@@ -166,14 +166,13 @@ function _mm_logic()
         if OOTMM_RUNTIME_ACTIVE_EVENTS[x] then
             return true
         end
-        if x == "TIME_TRAVEL" then
-            return true
-        end
+        -- if x == "TIME_TRAVEL" then
+        --     return true
+        -- end
         return false
     end
 
     function cond(x, y, z)
-        -- print("cond:", x, y, z)
         if x then
             return y
         else
@@ -218,18 +217,23 @@ function _mm_logic()
     end
 
     -- Starting at the spawn location, check all places for available locations
-    function find_available_locations(logic)
+    function find_available_locations(logic, child_only)
         -- Measure time taken in this function:
         -- local start_time = os.clock()
 
         -- FIXME: "logic" should be available without passing it from the outside,
         --        but it doesn't work; investigate!
         --        Once this is fixed, re-add the "local" keyword to it in main.py
+
         OOTMM_RUNTIME_ACTIVE_EVENTS = {}
         local places_to_check = { "SPAWN" }
         local places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
         local places_checked = {}
         local locations_available = {}
+
+        child = true
+        adult = false
+
         while #places_to_check > 0 do
             local place = table.remove(places_to_check, 1)
             if places_checked[place] then
@@ -251,7 +255,6 @@ function _mm_logic()
                 if logic[place].locations then
                     for k, v in pairs(logic[place].locations) do
                         if v() then
-                            -- table.insert(locations_available, k)
                             -- This will need to be mapped to accessibility levels later
                             locations_available[k] = 1
                         end
@@ -274,6 +277,8 @@ function _mm_logic()
 
                             -- Reset local state, and start over.
                             -- TODO: Handle events more efficiently (see README.md)
+                            child = true
+                            adult = false
                             places_to_check = { "SPAWN" }
                             places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
                             places_checked = {}
@@ -284,6 +289,16 @@ function _mm_logic()
                     end
                 end
             end
+
+            if #places_to_check == 0 and child and not child_only then
+                -- Child places depleted, start over as adult
+                child = false
+                adult = true
+                places_to_check = { "SPAWN" }
+                places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
+                places_checked = {}
+            end
+
             ::continue::
         end
 
