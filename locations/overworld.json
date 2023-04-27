@@ -1106,7 +1106,7 @@
               {
                 "name": "LLR Talons Chickens",
                 "access_rules": [
-                  "$oot|Lon Lon Ranch Malon Song"
+                  "$oot|Lon Lon Ranch Talon Bottle"
                 ],
                 "item_count": 1
               }
@@ -3746,8 +3746,7 @@
                 "name": "GV Crate Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$has_age|child",
-                  "$has_age|adult,$can_use_longshot"
+                  "$oot|Gerudo Valley Crate HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -3768,6 +3767,9 @@
               {
                 "name": "GV Waterfall Freestanding PoH",
                 "short_name": "HP",
+                "access_rules": [
+                  "$oot|Gerudo Valley Waterfall HP"
+                ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
@@ -3787,10 +3789,10 @@
               {
                 "name": "Cow",
                 "access_rules": [
-                  "$has_age|child,$can_play|epona"
+                  "$oot|Gerudo Valley Cow"
                 ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_oot_shuffle_cows_yes"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -3812,7 +3814,7 @@
                 "name": "GV GS Small Bridge (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_night,$can_use_boomerang"
+                  "$oot|Gerudo Valley GS Wall"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3837,7 +3839,7 @@
                 "name": "GV GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$gs_soil,$can_damage_skulls_child"
+                  "$oot|Gerudo Valley GS Soil"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3859,10 +3861,6 @@
       },
       {
         "name": "GV Fortress Side",
-        "access_rules": [
-          "$can_use_longshot",
-          "$has_age|adult,$can_play|epona"
-        ],
         "children": [
           {
             "name": "GV Chest",
@@ -3870,7 +3868,7 @@
               {
                 "name": "Smash 'em",
                 "access_rules": [
-                  "$can_use_hammer"
+                  "$oot|Gerudo Valley Chest"
                 ],
                 "item_count": 1
               }
@@ -3889,7 +3887,7 @@
               {
                 "name": "Give Saw",
                 "access_rules": [
-                  "saw"
+                  "$oot|Gerudo Valley Broken Goron Sword"
                 ],
                 "item_count": 1
               }
@@ -3904,9 +3902,6 @@
           },
           {
             "name": "GV Storms Grotto",
-            "access_rules": [
-              "$hidden_grotto,ocarina,storm"
-            ],
             "sections": [
               {
                 "name": "GV Deku Scrubs Grotto",
@@ -3935,7 +3930,7 @@
                 "name": "GV GS Behind Tent (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$can_use_hookshot,$gs_night"
+                  "$oot|Gerudo Valley GS Tent"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3960,7 +3955,7 @@
                 "name": "GV GS Pillar (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$can_use_hookshot,$gs_night"
+                  "$oot|Gerudo Valley GS Pillar"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3982,9 +3977,6 @@
       },
       {
         "name": "Gerudo Fortress",
-        "access_rules": [
-          "@GV Fortress Side"
-        ],
         "children": [
           {
             "name": "GF Chest",
@@ -3992,9 +3984,7 @@
               {
                 "name": "Open it",
                 "access_rules": [
-                  "$has_hover_boots",
-                  "$can_use_longshot",
-                  "$can_hookshot_scarecrow"
+                  "$oot|Gerudo Fortress Chest"
                 ],
                 "item_count": 1
               }
@@ -4010,7 +4000,7 @@
           {
             "name": "GF HBA",
             "access_rules": [
-              "$has_age|adult,$can_play|epona,$can_use_bow,card"
+              "$oot|Gerudo Fortress Archery Reward 1"
             ],
             "sections": [
               {
@@ -4036,18 +4026,27 @@
               {
                 "name": "Hideout Jail Guard (1 Torch)",
                 "short_name": "1 Torch",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Jail 1"
+                ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
               },
               {
                 "name": "Hideout Jail Guard (2 Torches)",
                 "short_name": "2 Torches",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Jail 2"
+                ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
               },
               {
                 "name": "Hideout Jail Guard (3 Torches)",
                 "short_name": "3 Torches",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Jail 3"
+                ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
               },
@@ -4055,10 +4054,7 @@
                 "name": "Hideout Jail Guard (4 Torches)",
                 "short_name": "4 Torches",
                 "access_rules": [
-                  "$can_use_hookshot",
-                  "$can_use_bow",
-                  "$has_hover_boots",
-                  "card"
+                  "$oot|Gerudo Fortress Jail 4"
                 ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
@@ -4067,7 +4063,7 @@
                 "name": "Hideout Gerudo Membership Card",
                 "short_name": "Gerudo Card",
                 "access_rules": [
-                  "th_small_keys:4"
+                  "$oot|Gerudo Member Card"
                 ],
                 "item_count": 1
               }
@@ -4087,7 +4083,7 @@
                 "name": "GF GS Archery Range (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$gs_night,$can_use_hookshot,card"
+                  "$oot|Gerudo Fortress GS Target"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -4107,15 +4103,12 @@
           },
           {
             "name": "GF Top Floor",
-            "access_rules": [
-              "$gs_night,$gerudo_valley_far_side"
-            ],
             "sections": [
               {
                 "name": "GF GS Top Floor (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$can_use_hookshot,$gs_night"
+                  "$oot|Gerudo Fortress GS Wall"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -4137,13 +4130,6 @@
       },
       {
         "name": "Haunted Wasteland",
-        "access_rules": [
-          "@Gerudo Fortress,card,$can_use_longshot",
-          "@Gerudo Fortress,card,$has_hover_boots",
-          "@Gerudo Fortress,card,[trick_oot_wasteland_sand_river]",
-          "$has_age|adult,$can_play|requiem,[trick_oot_blind_wasteland]",
-          "$has_age|adult,$mm_can_play|requiem,[trick_oot_blind_wasteland],setting_oot_cross_warps_yes"
-        ],
         "children": [
           {
             "name": "Wasteland Structure",
@@ -4152,7 +4138,7 @@
                 "name": "Wasteland Chest",
                 "short_name": "Chest",
                 "access_rules": [
-                  "$has_fire"
+                  "$oot|Haunted Wasteland Chest"
                 ],
                 "item_count": 1
               },
@@ -4160,7 +4146,7 @@
                 "name": "Wasteland GS",
                 "short_name": "GS",
                 "access_rules": [
-                  "$can_collect_distance_adult"
+                  "$oot|Haunted Wasteland GS"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -4184,33 +4170,13 @@
         "name": "Desert Colossus",
         "children": [
           {
-            "name": "Dessert Colossus As Child",
-            "access_rules": [
-              "$can_play|requiem",
-              "$mm_can_play|requiem,setting_oot_cross_warps_yes"
-            ]
-          },
-          {
-            "name": "Dessert Colossus As Adult",
-            "access_rules": [
-              "@Haunted Wasteland,$has_lens_strict",
-              "@Haunted Wasteland,[trick_oot_blind_wasteland_lens]",
-              "$can_play|requiem",
-              "$mm_can_play|requiem,setting_oot_cross_warps_yes"
-            ]
-          },
-          {
             "name": "Colossus Great Fairy Fountain",
-            "access_rules": [
-              "@Dessert Colossus As Child,$has_explosives_bool",
-              "@Dessert Colossus As Adult,$has_explosives_bool"
-            ],
             "sections": [
               {
                 "name": "Colossus Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$can_play|lullaby"
+                  "$oot|Great Fairy Nayru's Love"
                 ],
                 "item_count": 1
               }
@@ -4230,7 +4196,7 @@
                 "name": "Colossus Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "@Dessert Colossus As Child,@Dessert Colossus As Adult,beans"
+                  "$oot|Desert Colossus HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
@@ -4251,8 +4217,7 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "@Dessert Colossus As Child",
-                  "@Dessert Colossus As Adult"
+                  "$oot|Desert Colossus Song Spirit"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -4269,9 +4234,6 @@
           },
           {
             "name": "Colossus Grotto",
-            "access_rules": [
-              "$adult_colossus,$has_age|adult,lift2"
-            ],
             "sections": [
               {
                 "name": "Colossus Deku Scrubs Grotto",
@@ -4300,7 +4262,7 @@
                 "name": "Colossus GS Bean Patch",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Dessert Colossus As Child,$gs_soil,$can_damage_skulls_child"
+                  "$oot|Desert Colossus GS Soil"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -4325,7 +4287,7 @@
                 "name": "Colossus GS Tree (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Dessert Colossus As Adult,$can_use_hookshot,$gs_night"
+                  "$oot|Desert Colossus GS Tree"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -4350,8 +4312,7 @@
                 "name": "Colossus GS Hill (N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "@Dessert Colossus As Adult,$gs_night,$can_use_longshot",
-                  "@Dessert Colossus As Adult,@Dessert Colossus As Child,beans,$gs_night"
+                  "$oot|Desert Colossus GS Plateau"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
