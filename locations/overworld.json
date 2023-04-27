@@ -2700,15 +2700,6 @@
         "color": "#09a09d",
         "children": [
           {
-            "name": "Hyrule Town As Child"
-          },
-          {
-            "name": "Hyrule Town As Adult",
-            "access_rules": [
-              "$has_age|adult"
-            ]
-          },
-          {
             "name": "Market",
             "children": [
               {
@@ -2717,7 +2708,7 @@
                   {
                     "name": "Market Lost Dog",
                     "access_rules": [
-                      "@Hyrule Town As Child"
+                      "$oot|Market Dog Lady HP"
                     ],
                     "item_count": 1
                   }
@@ -2737,7 +2728,7 @@
                     "name": "Market Shooting Gallery Reward",
                     "short_name": "Reward",
                     "access_rules": [
-                      "@Hyrule Town As Child"
+                      "$oot|Shooting Gallery Child"
                     ],
                     "item_count": 1
                   }
@@ -2753,7 +2744,7 @@
               {
                 "name": "Market Bomchu Bowling",
                 "access_rules": [
-                  "@Hyrule Town As Child,$has_explosives_bool"
+                  "$oot|Bombchu Bowling Reward 1"
                 ],
                 "sections": [
                   {
@@ -2782,7 +2773,7 @@
                     "name": "Market Treasure Chest Game Reward",
                     "short_name": "Reward",
                     "access_rules": [
-                      "@Hyrule Town As Child,$has_lens_strict"
+                      "$oot|Treasure Game HP"
                     ],
                     "item_count": 1
                   }
@@ -2798,7 +2789,7 @@
               {
                 "name": "Market Bombchu Shop",
                 "access_rules": [
-                  "$has_age|child,wallet1"
+                  "$oot|Market Bombchu Shop Item 1"
                 ],
                 "sections": [
                   {
@@ -2847,47 +2838,62 @@
               },
               {
                 "name": "Market Potion Shop",
-                "access_rules": [
-                  "$has_age|child"
-                ],
                 "sections": [
                   {
                     "name": "Item 1",
                     "item_count": 1,
                     "access_rules": [
-                      "wallet1"
+                      "$oot|Market Potion Shop Item 1"
                     ]
                   },
                   {
                     "name": "Item 2",
-                    "item_count": 1
+                    "item_count": 1,
+                    "access_rules": [
+                      "$oot|Market Potion Shop Item 2"
+                    ]
                   },
                   {
                     "name": "Item 3",
-                    "item_count": 1
+                    "item_count": 1,
+                    "access_rules": [
+                      "$oot|Market Potion Shop Item 3"
+                    ]
                   },
                   {
                     "name": "Item 4",
-                    "item_count": 1
+                    "item_count": 1,
+                    "access_rules": [
+                      "$oot|Market Potion Shop Item 4"
+                    ]
                   },
                   {
                     "name": "Item 5",
                     "item_count": 1,
                     "access_rules": [
-                      "wallet2"
+                      "$oot|Market Potion Shop Item 5"
                     ]
                   },
                   {
                     "name": "Item 6",
-                    "item_count": 1
+                    "item_count": 1,
+                    "access_rules": [
+                      "$oot|Market Potion Shop Item 6"
+                    ]
                   },
                   {
                     "name": "Item 7",
-                    "item_count": 1
+                    "item_count": 1,
+                    "access_rules": [
+                      "$oot|Market Potion Shop Item 7"
+                    ]
                   },
                   {
                     "name": "Item 8",
-                    "item_count": 1
+                    "item_count": 1,
+                    "access_rules": [
+                      "$oot|Market Potion Shop Item 8"
+                    ]
                   }
                 ],
                 "map_locations": [
@@ -2904,7 +2910,7 @@
               {
                 "name": "Market Bazaar",
                 "access_rules": [
-                  "$has_age|child"
+                  "$oot|Market Bazaar Item 1"
                 ],
                 "sections": [
                   {
@@ -2958,7 +2964,7 @@
                     "name": "Market 10 Big Poes",
                     "short_name": "Big Poes",
                     "access_rules": [
-                      "@Hyrule Town As Adult,$can_play|epona,$can_use_bow,$has_bottle"
+                      "$oot|Market Pot House Big Poes"
                     ],
                     "item_count": 1
                   },
@@ -2966,7 +2972,7 @@
                     "name": "Market GS Guard House",
                     "short_name": "GS",
                     "access_rules": [
-                      "@Hyrule Town As Child"
+                      "$oot|Market Pot House GS"
                     ],
                     "visibility_rules": [
                       "setting_tokens_overworld"
@@ -2994,7 +3000,7 @@
           {
             "name": "Sheik at Temple",
             "access_rules": [
-              "$has_age|adult,forestmed,$open_door_of_time"
+              "$oot|Temple of Time Sheik Song"
             ],
             "chest_unopened_img": "images/grey_note.png",
             "chest_opened_img": "images/grey_note_check.png",
@@ -3004,14 +3010,14 @@
             "name": "ToT Light Arrows Cutscene",
             "short_name": "LACS",
             "access_rules": [
-              "$has_age|adult,lacs_meds:2"
+              "$oot|Temple of Time Light Arrows"
             ],
             "item_count": 1
           },
           {
             "name": "Master Sword",
             "access_rules": [
-              "$has_age|child,$open_door_of_time"
+              "$oot|Temple of Time Master Sword"
             ],
             "item_count": 1
           }
@@ -3033,9 +3039,9 @@
               {
                 "name": "HC Malon Egg",
                 "access_rules": [
-                  "$has_age|child"
+                  "$oot|Malon Egg"
                 ],
-                "hosted_item": "meet_malon"
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -3049,7 +3055,7 @@
           {
             "name": "HC Garden",
             "access_rules": [
-              "$has_age|child,childcucco"
+              "$oot|Zelda's Letter"
             ],
             "sections": [
               {
@@ -3061,7 +3067,7 @@
               },
               {
                 "name": "HC Zeldas Letter",
-                "hosted_item": "meet_zelda"
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -3079,7 +3085,7 @@
                 "name": "HC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$has_age|child,$has_explosives_bool,$can_play|lullaby"
+                  "$oot|Great Fairy Din's Fire"
                 ],
                 "item_count": 1
               }
@@ -3099,7 +3105,7 @@
                 "name": "HC GS Tree",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|child,$can_damage_skulls_child"
+                  "$oot|Hyrule Castle GS Tree"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3119,15 +3125,12 @@
           },
           {
             "name": "HC Storms Grotto",
-            "access_rules": [
-              "$hidden_grotto_storms,$has_age|child"
-            ],
             "sections": [
               {
                 "name": "HC GS Storms Grotto",
                 "short_name": "GS",
                 "access_rules": [
-                  "$can_use_boomerang,$has_explosives_bool"
+                  "$oot|Hyrule Castle GS Grotto"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3157,7 +3160,7 @@
                 "name": "OGC GS",
                 "short_name": "GS",
                 "access_rules": [
-                  "$has_age|adult"
+                  "$oot|Ganon Castle Exterior GS"
                 ],
                 "visibility_rules": [
                   "setting_tokens_overworld"
@@ -3182,7 +3185,7 @@
                 "name": "OGC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$has_age|adult,lift3,$can_play|lullaby"
+                  "$oot|Great Fairy Defense Upgrade"
                 ],
                 "item_count": 1
               }
