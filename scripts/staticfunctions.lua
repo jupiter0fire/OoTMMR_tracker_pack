@@ -201,12 +201,22 @@ OOTMM_CORE_ITEMS = {
     ["progressiveSwordsOot"] = "progressiveSwordsOot",
 }
 
+-- These are for testing basic child checks
 local SWORD_KOKIRI = "SWORD_KOKIRI"
 local SHIELD_DEKU = "SHIELD_DEKU"
+-- These are for testing basic adult checks
+local OCARINA = "OCARINA"
+local SWORD_MASTER = "SWORD_MASTER"
+local SONG_TIME = "SONG_TIME"
+-- local HOOKSHOT = "HOOKSHOT"
 
 local items = {
     [SWORD_KOKIRI] = 1,
     [SHIELD_DEKU] = 1,
+    [OCARINA] = 1,
+    [SWORD_MASTER] = 1,
+    [SONG_TIME] = 1,
+    -- [HOOKSHOT] = 1,
 }
 
 ToInject = {}
