@@ -1839,130 +1839,14 @@
   },
   {
     "name": "Gerudo Training Ground",
-    "parent": "Gerudo Fortress",
-    "access_rules": [
-      "card"
-    ],
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
-      {
-        "name": "Lobby",
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Maze",
-        "access_rules": [
-          "@Gerudo Training Ground/Lobby"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Left Side",
-        "access_rules": [
-          "@Gerudo Training Ground/Lobby,$can_use_hookshot,$has_weapon"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Right Side",
-        "access_rules": [
-          "@Gerudo Training Ground/Lobby,$has_explosives_bool,$has_weapon"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds After Block",
-        "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Left Side,lift2,$has_lens,$can_use_hookshot"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Upper",
-        "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Left Side,$can_use_hookshot,$has_lens"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Lava",
-        "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Right Side",
-          "@Gerudo Training Ground/Gerudo Training Grounds Upper"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Maze Side",
-        "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_play|time"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Water",
-        "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_use_hookshot,$has_hover_boots",
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_use_hookshot,$can_play|time"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Hammer",
-        "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_use_longshot",
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_use_hookshot,$has_hover_boots",
-          "@Gerudo Training Ground/Gerudo Training Grounds Lava,$can_use_hookshot,$can_play|time",
-          "@Gerudo Training Ground/Gerudo Training Grounds Upper"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Gerudo Training Grounds Statue",
-        "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Hammer,$can_use_hammer,$can_use_bow",
-          "@Gerudo Training Ground/Gerudo Training Grounds Upper"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
       {
         "name": "Lobby Chests",
         "short_name": "Lobby",
         "access_rules": [
-          "@Gerudo Training Ground/Lobby,$can_use_bow",
-          "@Gerudo Training Ground/Lobby,$can_use_slingshot"
+          "$oot|Gerudo Training Grounds Entrance 1"
         ],
         "item_count": 2
       },
@@ -1970,7 +1854,7 @@
         "name": "Beamos Chest",
         "short_name": "Beamos",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Right Side"
+          "$oot|Gerudo Training Grounds Lizalfos"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1979,7 +1863,7 @@
         "name": "Stalfos Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "@Gerudo Training Ground/Lobby,$has_weapon"
+          "$oot|Gerudo Training Grounds Stalfos"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1988,7 +1872,7 @@
         "name": "Before Heavy Block Chest",
         "short_name": "Wolfos",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Left Side"
+          "$oot|Gerudo Training Grounds Near Block"
         ],
         "item_count": 1
       },
@@ -1996,7 +1880,7 @@
         "name": "Heavy Block Chests",
         "short_name": "Like Like",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds After Block"
+          "$oot|Gerudo Training Grounds Behind Block Visible 1"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 3
@@ -2005,7 +1889,7 @@
         "name": "Heavy Block Chest Invisible",
         "short_name": "Like Like",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds After Block,$has_lens"
+          "$oot|Gerudo Training Grounds Behind Block Invisible"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2014,7 +1898,7 @@
         "name": "Eye Statue Chest",
         "short_name": "Eye Statue",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Statue,$can_use_bow"
+          "$oot|Gerudo Training Grounds Eye Statue"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2023,7 +1907,7 @@
         "name": "Near Scarecrow Chest",
         "short_name": "Near Scarecrow",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Upper,$can_use_bow"
+          "$oot|Gerudo Training Maze Upper Cage"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2032,7 +1916,7 @@
         "name": "Hammer Room Clear Chest",
         "short_name": "Flaming Enemies",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Hammer"
+          "$oot|Gerudo Training Grounds Hammer Room"
         ],
         "item_count": 1
       },
@@ -2040,7 +1924,7 @@
         "name": "Hammer Room Switch Chest",
         "short_name": "Hammer Switch",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Hammer,$can_use_hammer"
+          "$oot|Gerudo Training Grounds Hammer Room Switch"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2049,7 +1933,7 @@
         "name": "Freestanding Key",
         "short_name": "Ledge Key",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Maze Side"
+          "$oot|Gerudo Training Freestanding Key"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -2059,7 +1943,7 @@
         "name": "Maze Right Chests",
         "short_name": "Maze Right",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Maze Side"
+          "$oot|Gerudo Training Maze Side Chest 1"
         ],
         "item_count": 2
       },
@@ -2067,7 +1951,7 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Water,$can_play|time,$has_zora_tunic,$has_iron_boots"
+          "$oot|Gerudo Training Water"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2076,7 +1960,7 @@
         "name": "Hidden Ceiling Chest",
         "short_name": "Hidden Ceiling",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:1,[gtg_small_keys:3],$has_lens"
+          "$oot|Gerudo Training Maze Upper Fake Ceiling"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -2085,7 +1969,7 @@
         "name": "Maze Path First Chest",
         "short_name": "Maze 1",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:2,[gtg_small_keys:4]"
+          "$oot|Gerudo Training Maze Chest 1"
         ],
         "item_count": 1
       },
@@ -2093,7 +1977,7 @@
         "name": "Maze Path Second Chest",
         "short_name": "Maze 2",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:4,[gtg_small_keys:6]"
+          "$oot|Gerudo Training Maze Chest 2"
         ],
         "item_count": 1
       },
@@ -2101,7 +1985,7 @@
         "name": "Maze Path Third Chest",
         "short_name": "Maze 3",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:5,[gtg_small_keys:7]"
+          "$oot|Gerudo Training Maze Chest 3"
         ],
         "item_count": 1
       },
@@ -2109,7 +1993,7 @@
         "name": "Maze Path Final Chest",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "@Gerudo Training Ground/Gerudo Training Grounds Maze,gtg_small_keys:7,[gtg_small_keys:9]"
+          "$oot|Gerudo Training Maze Chest 4"
         ],
         "item_count": 1
       }
