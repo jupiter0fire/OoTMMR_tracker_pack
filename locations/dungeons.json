@@ -1730,29 +1730,30 @@
   },
   {
     "name": "Ganons Castle",
-    "parent": "Ganons Castle Grounds",
-    "access_rules": [
-      "$has_age|adult,$can_spawn_rainbow_bridge"
-    ],
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
         "name": "Forest Trial Chest",
         "short_name": "Forest Trial",
+        "access_rules": [
+          "$oot|Ganon Castle Forest Chest"
+        ],
         "item_count": 1
       },
       {
         "name": "Water Trial Chests",
         "short_name": "Water Trial",
+        "access_rules": [
+          "$oot|Ganon Castle Water Chest 1"
+        ],
         "item_count": 2
       },
       {
         "name": "Shadow Trial Front Chest",
         "short_name": "Shadow Trial 1",
         "access_rules": [
-          "$can_use_hookshot",
-          "$has_hover_boots",
-          "$can_play|time",
-          "$has_fire_arrows"
+          "$oot|Ganon Castle Shadow Chest 1"
         ],
         "item_count": 1
       },
@@ -1760,10 +1761,7 @@
         "name": "Shadow Trial Golden Gauntlets Chest",
         "short_name": "Shadow Trial 2",
         "access_rules": [
-          "$can_use_longshot,$has_hover_boots",
-          "$can_use_longshot,$has_fire",
-          "$has_fire_arrows,$has_fire",
-          "$has_fire_arrows,$has_hover_boots"
+          "$oot|Ganon Castle Shadow Chest 2"
         ],
         "item_count": 1
       },
@@ -1771,7 +1769,7 @@
         "name": "Light Trial Chests",
         "short_name": "Light Trial Front",
         "access_rules": [
-          "lift3"
+          "$oot|Ganon Castle Light Chest Around 1"
         ],
         "item_count": 6
       },
@@ -1779,7 +1777,7 @@
         "name": "Light Trial Invisible Enemies Chest",
         "short_name": "Light Trial Enemies",
         "access_rules": [
-          "lift3,$has_lens"
+          "$oot|Ganon Castle Light Chest Center"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1788,7 +1786,7 @@
         "name": "Light Trial Lullaby Chest",
         "short_name": "Light Trial Lullaby",
         "access_rules": [
-          "lift3,gc_small_keys:1,$can_play|lullaby"
+          "$oot|Ganon Castle Light Chest Lullaby"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1797,7 +1795,7 @@
         "name": "Spirit Trial Crystal Switch Chest",
         "short_name": "Spirit Trial 1",
         "access_rules": [
-          "$can_use_hookshot"
+          "$oot|Ganon Castle Spirit Chest 1"
         ],
         "item_count": 1
       },
@@ -1805,7 +1803,7 @@
         "name": "Spirit Trial Invisible Chest",
         "short_name": "Spirit Trial 2",
         "access_rules": [
-          "$can_use_hookshot,$has_explosives_bool,$has_lens"
+          "$oot|Ganon Castle Spirit Chest 2"
         ],
         "item_count": 1
       },
@@ -1823,7 +1821,7 @@
         "name": "Ganons Tower Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "$has_weapon"
+          "$oot|Ganon Castle Boss Key"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
