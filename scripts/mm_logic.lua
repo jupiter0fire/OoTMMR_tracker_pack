@@ -13,23 +13,22 @@ function _mm_logic()
         tonumber = tonumber,
         tostring = tostring,
         table = table,
+        debug = debug,
     }
 
     -- This is used for all items, events, settings, etc., but probably shouldn't be...
     setmetatable(M, {
         __index = function(table, key)
             if string.match(key, "^[A-Z0-9_]+$") and OOTMM_CORE_ITEMS[key] then
-                -- FIXME: This will break for items that are not in the list yet. Those exist.
-                --        We might just have to generate that list from python, too.
+                -- TODO: The list above is not exhaustive, and should really be removed once debugging is done.
                 return tostring(key)
             else
                 if OOTMM_DEBUG then
                     print("Unknown attribute accessed: " .. key)
                 end
+
                 return tostring(key)
             end
-
-            return nil
         end
     })
 
@@ -63,43 +62,53 @@ function _mm_logic()
         ["WALLET:3"] = "WALLET3",
     }
     if EMO then
-        function _has(item, amount)
+        function _has(item, min_count)
             if OOTMM_DEBUG then
-                print("EMO has:", item, amount)
+                print("EMO has:", item, min_count)
             end
 
-            if amount and OOTMM_HAS_EXCEPTIONS[item .. ":" .. amount] then
-                item = OOTMM_HAS_EXCEPTIONS[item .. ":" .. amount]
+            if min_count and OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count] then
+                item = OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count]
+                min_count = 1
             end
 
             local count = Tracker:ProviderCountForCode(OOTMM_ITEM_PREFIX .. "_" .. item)
-            amount = tonumber(amount)
 
-            if not amount then
+            if not min_count then
                 return count > 0
             else
-                return count >= amount
+                return count >= min_count
             end
         end
     else
-        function _has(item, count)
+        function _has(item, min_count)
             if OOTMM_DEBUG then
-                print("Debug has:", item, count)
+                print("Debug has:", item, min_count)
             end
-            if count == nil then
-                count = 1
+
+            if min_count and OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count] then
+                item = OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count]
+                min_count = 1
+            end
+
+            if min_count == nil then
+                min_count = 1
             end
 
             if items[item] == nil then
                 return false
             end
 
-            return items[item] >= count
+            return items[item] >= min_count
         end
     end
 
     -- Tracker:ProviderCountForCode() calls are excruciatingly slow, this caches the results.
     function has(item, count)
+        if OOTMM_DEBUG then
+            return _has(item, count)
+        end
+
         if count == nil then
             if OOTMM_RUNTIME_CACHE[item] == nil then
                 OOTMM_RUNTIME_CACHE[item] = _has(item, count)
@@ -131,7 +140,7 @@ function _mm_logic()
         [AccessibilityLevel.Normal] = 2,
     }
     function update_accessibility(reachable, accessibility)
-        -- FIXME: This is curretly unused; might be useful in find_available_locations()
+        -- FIXME: This is currently unused; might be useful in find_available_locations()
 
         -- These values are used by EmoTracker to color the map squares.
         --
@@ -244,11 +253,13 @@ function _mm_logic()
         return true
     end
 
+    function trace(event, line)
+        local s = debug.getinfo(2).short_src
+        print(s .. ":" .. line)
+    end
+
     -- Starting at the spawn location, check all places for available locations
     function find_available_locations(logic, child_only)
-        -- Measure time taken in this function:
-        -- local start_time = os.clock()
-
         -- FIXME: "logic" should be available without passing it from the outside,
         --        but it doesn't work; investigate!
         --        Once this is fixed, re-add the "local" keyword to it in main.py
@@ -264,6 +275,7 @@ function _mm_logic()
 
         while #places_to_check > 0 do
             local place = table.remove(places_to_check, 1)
+
             if places_checked[place] then
                 -- NOTE:
                 -- Preventing duplicates in the first place would be better, but it would also mean
@@ -272,7 +284,7 @@ function _mm_logic()
                 -- Unless this turns out to be a major performance bottleneck, it's not worth it.
                 goto continue
             end
-            -- table.insert(places_checked, place = true)
+
             places_checked[place] = true
 
             if OOTMM_DEBUG then
@@ -283,7 +295,6 @@ function _mm_logic()
                 if logic[place].locations then
                     for k, v in pairs(logic[place].locations) do
                         if v() then
-                            -- This will need to be mapped to accessibility levels later
                             locations_available[k] = 1
                         end
                     end
@@ -312,6 +323,10 @@ function _mm_logic()
                             places_checked = {}
                             locations_available = {}
 
+                            if OOTMM_DEBUG then
+                                print("Event triggered:", k)
+                            end
+
                             goto continue
                         end
                     end
@@ -329,8 +344,6 @@ function _mm_logic()
 
             ::continue::
         end
-
-        -- print("Time taken in mm_logic:find_available_locations():", os.clock() - start_time, "seconds")
 
         return locations_available
     end
