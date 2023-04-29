@@ -4335,41 +4335,32 @@
     ]
   },
   {
-    "name": "Songs",
-    "short_name": "Songs",
-    "sections": [
-      {
-        "name": "Initial Song of Healing",
-        "access_rules": [
-          "$mm|Initial Song of Healing"
-        ],
-        "chest_unopened_img": "images/system/unknownsong.png",
-        "chest_opened_img": "images/system/unknownsong_check.png",
-        "item_count": 1
-      },
-      {
-        "name": "Oath to Order",
-        "access_rules": [
-          "$mm|Oath to Order"
-        ],
-        "chest_unopened_img": "images/system/unknownsong.png",
-        "chest_opened_img": "images/system/unknownsong_check.png",
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "x": 110,
-        "y": 552
-      }
-    ]
-  },
-  {
     "name": "MM",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "children": [
+      {
+        "name": "Oath to Order",
+        "short_name": "Oath to Order",
+        "sections": [
+          {
+            "name": "Oath to Order",
+            "access_rules": [
+              "$mm|Oath to Order"
+            ],
+            "chest_unopened_img": "images/system/unknownsong.png",
+            "chest_opened_img": "images/system/unknownsong_check.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "x": 110,
+            "y": 552
+          }
+        ]
+      },
       {
         "name": "Clock Town",
         "color": "#c475c1",
@@ -4382,6 +4373,15 @@
                 "short_name": "Clock Tower",
                 "location_border_thickness": "2",
                 "sections": [
+                  {
+                    "name": "Initial Song of Healing",
+                    "access_rules": [
+                      "$mm|Initial Song of Healing"
+                    ],
+                    "chest_unopened_img": "images/system/unknownsong.png",
+                    "chest_opened_img": "images/system/unknownsong_check.png",
+                    "item_count": 1
+                  },
                   {
                     "name": "Clock Tower HP",
                     "access_rules": [
@@ -4512,6 +4512,9 @@
                 "sections": [
                   {
                     "name": "North Clock Town Tree HP",
+                    "access_rules": [
+                      "$mm|Clock Town Tree HP"
+                    ],
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
@@ -4532,10 +4535,9 @@
                   {
                     "name": "Catch The Bombers",
                     "access_rules": [
-                      "$mm_has_weapon_range",
-                      "[trick_mm_guess_bomber]"
+                      "$mm|Clock Town Bomber Notebook"
                     ],
-                    "hosted_item": "bombers_code"
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -4555,7 +4557,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "$mm_can_fight"
+                      "$mm|Clock Town Blast Mask"
                     ],
                     "item_count": 1
                   }
@@ -4577,7 +4579,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_keaton"
+                      "$mm|Clock Town Keaton HP"
                     ],
                     "item_count": 1
                   }
@@ -4604,7 +4606,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_deku"
+                      "$mm|Deku Playground Reward 1"
                     ],
                     "item_count": 1
                   },
@@ -4613,7 +4615,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "mm_deku"
+                      "$mm|Deku Playground Reward 2"
                     ],
                     "item_count": 1
                   }
@@ -4635,7 +4637,7 @@
                   {
                     "name": "Stray Fairy",
                     "access_rules": [
-                      "mm_clocktown_strayfairy"
+                      "$mm|Clock Town Great Fairy"
                     ],
                     "item_count": 1
                   },
@@ -4644,9 +4646,7 @@
                     "chest_unopened_img": "images/system/chest_brown_closed.png",
                     "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
-                      "mm_deku,mm_clocktown_strayfairy",
-                      "mm_goron,mm_clocktown_strayfairy",
-                      "mm_zora,mm_clocktown_strayfairy"
+                      "$mm|Clock Town Great Fairy Alt"
                     ],
                     "item_count": 1
                   }
@@ -4666,16 +4666,14 @@
                   {
                     "name": "Map: Clock Town",
                     "access_rules": [
-                      "[mm_towntinglejump],mm_sword1",
-                      "[mm_towntinglejump],mm_fairysword"
+                      "$mm|Clock Town Great Fairy Alt"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Map: Swamp",
                     "access_rules": [
-                      "[mm_towntinglejump],mm_sword1",
-                      "[mm_towntinglejump],mm_fairysword"
+                      "$mm|Clock Town Great Fairy Alt"
                     ],
                     "item_count": 1
                   }
@@ -4692,6 +4690,9 @@
                 "sections": [
                   {
                     "name": "East Clock Town Chest",
+                    "access_rules": [
+                      "$mm|Clock Town Silver Rupee Chest"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -4708,6 +4709,9 @@
                 "sections": [
                   {
                     "name": "Gift From Madame Aroma",
+                    "access_rules": [
+                      "$mm|Mayor's Office Kafei's Mask"
+                    ],
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "item_count": 1
@@ -4717,7 +4721,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_couple"
+                      "$mm|Mayor's Office HP"
                     ],
                     "item_count": 1
                   }
@@ -4737,7 +4741,7 @@
                   {
                     "name": "40 Points Prize",
                     "access_rules": [
-                      "mm_bow"
+                      "$mm|Town Archery Reward 1"
                     ],
                     "item_count": 1
                   },
@@ -4746,7 +4750,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_bow"
+                      "$mm|Town Archery Reward 2"
                     ],
                     "item_count": 1
                   }
@@ -4767,7 +4771,7 @@
                     "chest_unopened_img": "images/system/chest_unopened_big.png",
                     "chest_opened_img": "images/system/chest_open_big.png",
                     "access_rules": [
-                      "mm_goron"
+                      "$mm|Chest Game HP"
                     ],
                     "item_count": 1
                   }
@@ -4788,7 +4792,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_bomb,mm_bow"
+                      "$mm|Honey & Darling Reward 2"
                     ],
                     "item_count": 1
                   },
@@ -4797,9 +4801,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "mm_bomb",
-                      "mm_bow",
-                      "$mm_can_use_deku_bubble"
+                      "$mm|Honey & Darling Reward 1"
                     ],
                     "item_count": 1
                   }
@@ -4819,22 +4821,28 @@
                   {
                     "name": "Inn Guest Room Chest",
                     "access_rules": [
-                      "mm_roomkey"
+                      "$mm|Stock Pot Inn Guest Room Chest"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Inn Employee Room Chest - Final Night",
+                    "access_rules": [
+                      "$mm|Stock Pot Inn Staff Room Chest"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Room Reservation Mixup - Day 1: from 1:45 PM to 4 PM",
+                    "access_rules": [
+                      "$mm|Stock Pot Inn Room Key"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Midnight Item From Anju - Night 1: 11:30 PM",
                     "access_rules": [
-                      "$mm_meet_anju"
+                      "$mm|Stock Pot Inn Letter to Kafei"
                     ],
                     "item_count": 1
                   },
@@ -4843,7 +4851,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "mm_pendant,$mm_meet_anju,$mm_sun_mask"
+                      "$mm|Stock Pot Inn Couple's Mask"
                     ],
                     "item_count": 1
                   },
@@ -4852,7 +4860,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_allnightmask"
+                      "$mm|Stock Pot Inn Grandma HP 1"
                     ],
                     "item_count": 1
                   },
@@ -4861,7 +4869,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_allnightmask"
+                      "$mm|Stock Pot Inn Grandma HP 2"
                     ],
                     "item_count": 1
                   },
@@ -4870,7 +4878,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm_has_paper"
+                      "$mm|Stock Pot Inn ??? HP"
                     ],
                     "item_count": 1
                   }
@@ -4891,14 +4899,14 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "mm_ocarina,mm_deku,mm_goron,mm_zora,mm_romanimask"
+                      "$mm|Milk Bar Troupe Leader Mask"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Delivery To Madame Aroma - Final Night",
                     "access_rules": [
-                      "mm_kafeimask,mm_deliverytomama"
+                      "$mm|Milk Bar Madame Aroma Bottle"
                     ],
                     "item_count": 1
                   }
@@ -4914,15 +4922,11 @@
               {
                 "name": "Bomber's Secret Tunnel",
                 "short_name": "Bomber Tunnel",
-                "access_rules": [
-                  "bombers_code",
-                  "[trick_mm_guess_bomber]"
-                ],
                 "sections": [
                   {
                     "name": "Bombers' Hidden Treasure",
                     "access_rules": [
-                      "$mm_has_explosives"
+                      "$mm|Astral Observatory Passage Chest"
                     ],
                     "item_count": 1
                   }
@@ -4946,6 +4950,9 @@
                 "sections": [
                   {
                     "name": "200 Rupees Deposit",
+                    "access_rules": [
+                      "$mm|Clock Town Bank Reward 1"
+                    ],
                     "item_count": 1
                   },
                   {
@@ -4953,7 +4960,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "mm_adultwallet"
+                      "$mm|Clock Town Bank Reward 2"
                     ],
                     "item_count": 1
                   },
@@ -4962,7 +4969,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_giantwallet"
+                      "$mm|Clock Town Bank Reward 3"
                     ],
                     "item_count": 1
                   }
@@ -4984,7 +4991,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_kamaro"
+                      "$mm|Clock Town Rosa Sisters HP"
                     ],
                     "item_count": 1
                   }
@@ -5003,6 +5010,9 @@
                 "sections": [
                   {
                     "name": "Item 1",
+                    "access_rules": [
+                      "$mm|Bomb Shop Item 1"
+                    ],
                     "visibility_rules": [
                       "setting_mm_shuffle_shops_yes"
                     ],  
@@ -5010,6 +5020,9 @@
                   },                  
                   {
                     "name": "Item 2",
+                    "access_rules": [
+                      "$mm|Bomb Shop Item 2"
+                    ],
                     "visibility_rules": [
                        "setting_mm_shuffle_shops_yes"
                     ],
@@ -5017,13 +5030,15 @@
                   },
                   {
                     "name": "Bomb Bag (50 Rupees)",
+                    "access_rules": [
+                      "$mm|Bomb Shop Bomb Bag"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Big Bomb Bag (90 Rupees, 100 if stolen)",
                     "access_rules": [
-                      "$mm_can_fight",
-                      "mm_adultwallet"
+                      "$mm|Bomb Shop Bomb Bag 2"
                     ],
                     "item_count": 1
                   }
@@ -5041,34 +5056,58 @@
                 "sections": [
                   {
                     "name": "Item 1",
+                    "access_rules": [
+                      "$mm|Trading Post Item 1"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 2",
+                    "access_rules": [
+                      "$mm|Trading Post Item 2"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 3",
+                    "access_rules": [
+                      "$mm|Trading Post Item 3"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 4",
+                    "access_rules": [
+                      "$mm|Trading Post Item 4"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 5",
+                    "access_rules": [
+                      "$mm|Trading Post Item 5"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 6",
+                    "access_rules": [
+                      "$mm|Trading Post Item 6"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 7",
+                    "access_rules": [
+                      "$mm|Trading Post Item 7"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 8",
+                    "access_rules": [
+                      "$mm|Trading Post Item 8"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -5092,7 +5131,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "$mm_can_fight,mm_giantwallet"
+                      "$mm|Curiosity Shop All-Night Mask"
                     ],
                     "item_count": 1
                   }
@@ -5113,7 +5152,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_bunnyhood"
+                      "$mm|Post Office HP"
                     ],
                     "item_count": 1
                   },
@@ -5122,7 +5161,7 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "mm_deliverytomama"
+                      "$mm|Clock Town Postman Hat"
                     ],
                     "item_count": 1
                   }
@@ -5143,7 +5182,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_sword"
+                      "$mm|Swordsman School HP"
                     ],
                     "item_count": 1
                   }
@@ -5167,6 +5206,9 @@
                 "sections": [
                   {
                     "name": "Night 1 or 2",
+                    "access_rules": [
+                      "$mm|Clock Town Guru Guru Mask Bremen"
+                    ],
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "item_count": 1
@@ -5206,6 +5248,9 @@
                 "sections": [
                   {
                     "name": "Get It",
+                    "access_rules": [
+                      "$mm|Clock Town Stray Fairy"
+                    ],
                     "chest_unopened_img": "images/system/mm_clocktown_stray_fairy.png",
                     "chest_opened_img": "images/system/mm_stray_fairy.png",
                     "visibility_rules": [
@@ -5230,21 +5275,20 @@
               {
                 "name": "Curiosity Shop Backroom",
                 "short_name": "Backroom",
-                "access_rules": [
-                  "mm_lettertokafei"
-                ],
                 "sections": [
                   {
                     "name": "Gift From Kafei - Day 2: 4:30 PM",
+                    "access_rules": [
+                      "$mm|Curiosity Shop Back Room Pendant of Memories"
+                    ],
                     "item_count": 1
                   },
                   {
-                    "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM First Item",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Curiosity Shop Man Gift - Final Day: 1 PM - 9 PM Second Item",
-                    "item_count": 1
+                    "name": "Curiosity Shop Man Gifts - Final Day: 1 PM - 9 PM First Item",
+                    "access_rules": [
+                      "$mm|Curiosity Shop Back Room Owner Reward 1"
+                    ],
+                    "item_count": 2
                   }
                 ],
                 "map_locations": [
@@ -5267,7 +5311,7 @@
                   {
                     "name": "Ocarina",
                     "access_rules": [
-                      "$mm_has_weapon_range"
+                      "$mm|Clock Tower Roof Skull Kid Ocarina"
                     ],
                     "item_count": 1
                   },
@@ -5276,7 +5320,7 @@
                     "chest_unopened_img": "images/system/unknownsong.png",
                     "chest_opened_img": "images/system/unknownsong_check.png",
                     "access_rules": [
-                      "$mm_has_weapon_range"
+                      "$mm|Clock Tower Roof Skull Kid Song of Time"
                     ],
                     "item_count": 1
                   }
