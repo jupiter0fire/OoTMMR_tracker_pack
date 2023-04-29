@@ -511,178 +511,10 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
-        "name": "Forest Temple Garden East",
-        "access_rules": [
-          "$can_hit_triggers_distance",
-          "$can_play|time",
-          "forest_small_keys:2,lift1,$can_hit_triggers_distance",
-          "forest_small_keys:1,$has_hover_boots"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Garden East Ledge",
-        "access_rules": [
-          "$can_play|time",
-          "@Forest Temple/Forest Temple Garden East,$can_dive_big",
-          "@Forest Temple/Forest Temple Garden East,$can_use_longshot",
-          "forest_small_keys:2,lift1,$can_hit_triggers_distance",
-          "forest_small_keys:1,$has_hover_boots"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Garden West Ledge",
-        "access_rules": [
-          "forest_small_keys:2,lift1,$can_hit_triggers_distance",
-          "forest_small_keys:1,$has_hover_boots"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Garden West",
-        "access_rules": [
-          "$can_play|time",
-          "@Forest Temple/Forest Temple Garden East,@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot",
-          "@Forest Temple/Forest Temple Garden East,$can_dive_big",
-          "@Forest Temple/Forest Temple Garden West Ledge"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Map Room",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Garden West"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Well",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Garden East,@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot",
-          "@Forest Temple/Forest Temple Garden East,$can_dive_big",
-          "@Forest Temple/Forest Temple Garden West,@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot",
-          "@Forest Temple/Forest Temple Garden West,$can_dive_big"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Maze",
-        "access_rules": [
-          "forest_small_keys:1"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Twisted 1 Normal",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Maze,forest_small_keys:2,lift1",
-          "@Forest Temple/Falling Room"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Twisted 1 Alt",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Maze,forest_small_keys:2,lift1,$can_hit_triggers_distance"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Poe 1",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Twisted 1 Normal,forest_small_keys:3"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Poe 2",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Poe 1,$has_weapon"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Twisted 2 Normal",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Poe 2,forest_small_keys:4"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Rotating Room",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Twisted 2 Normal,forest_small_keys:5"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Twisted 2 Alt",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Rotating Room,$can_use_bow",
-          "@Forest Temple/Forest Temple Rotating Room,$can_use_dins"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Forest Temple Antichamber",
-        "access_rules": [
-          "@Forest Temple/Forest Temple Twisted 2 Alt,$can_use_bow"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "GS First Room",
         "short_name": "First Room",
         "access_rules": [
-          "$has_ranged_weapon",
-          "$has_explosives_bool",
-          "$can_use_dins"
+          "$oot|Forest Temple GS Entrance"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -694,6 +526,9 @@
       {
         "name": "First Room Chest",
         "short_name": "Tree",
+        "access_rules": [
+          "$oot|Forest Temple Tree Small Key"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -701,7 +536,7 @@
         "name": "GS Lobby",
         "short_name": "Lobby",
         "access_rules": [
-          "$can_collect_distance"
+          "$oot|Forest Temple GS Main"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -714,7 +549,7 @@
         "name": "First Stalfos Chest",
         "short_name": "Stalfos",
         "access_rules": [
-          "$has_weapon"
+          "$oot|Forest Temple Mini-Boss Key"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -723,7 +558,7 @@
         "name": "Raised Island Courtyard Chest",
         "short_name": "Island",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden East,$can_use_hookshot"
+          "$oot|Forest Temple Garden"
         ],
         "item_count": 1
       },
@@ -731,7 +566,7 @@
         "name": "GS Raised Island Courtyard",
         "short_name": "Island",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden East,$can_use_hookshot"
+          "$oot|Forest Temple GS Garden East"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -744,7 +579,7 @@
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
-          "@Forest Temple/Forest Temple Map Room"
+          "$oot|Forest Temple Map"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -753,7 +588,7 @@
         "name": "Well Chest",
         "short_name": "Well",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden East Ledge,$can_use_hookshot"
+          "$oot|Forest Temple Well"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -762,8 +597,7 @@
         "name": "GS Level Island Courtyard",
         "short_name": "Outdoor West",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden West,$can_use_longshot",
-          "@Forest Temple/Forest Temple Garden West Ledge,$can_collect_distance"
+          "$oot|Forest Temple GS Garden West"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -776,7 +610,7 @@
         "name": "Forest Temple Maze Chest",
         "short_name": "Block Push",
         "access_rules": [
-          "@Forest Temple/Forest Temple Maze,lift1,$can_hit_triggers_distance"
+          "$oot|Forest Temple Maze"
         ],
         "item_count": 1
       },
@@ -784,7 +618,7 @@
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Forest Temple/Forest Temple Twisted 1 Alt"
+          "$oot|Forest Temple Boss Key"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -794,7 +628,7 @@
         "name": "Floormaster Chest",
         "short_name": "Floormaster",
         "access_rules": [
-          "@Forest Temple/Forest Temple Garden West Ledge"
+          "$oot|Forest Temple Floormaster"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -803,7 +637,7 @@
         "name": "Red Poe Chest",
         "short_name": "Red Poe",
         "access_rules": [
-          "@Forest Temple/Forest Temple Poe 1,$can_use_bow"
+          "$oot|Forest Temple Poe Key"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -812,7 +646,7 @@
         "name": "Bow Chest",
         "short_name": "Bow",
         "access_rules": [
-          "@Forest Temple/Forest Temple Poe 1,$has_weapon"
+          "$oot|Forest Temple Bow"
         ],
         "item_count": 1
       },
@@ -820,7 +654,7 @@
         "name": "Blue Poe Chest",
         "short_name": "Blue Poe",
         "access_rules": [
-          "@Forest Temple/Forest Temple Poe 2,$can_use_bow"
+          "$oot|Forest Temple Compass"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -829,7 +663,7 @@
         "name": "Falling Ceiling Room Chest",
         "short_name": "Checkerboard",
         "access_rules": [
-          "@Forest Temple/Forest Temple Twisted 2 Alt"
+          "$oot|Forest Temple Checkerboard"
         ],
         "item_count": 1
       },
@@ -837,7 +671,7 @@
         "name": "Basement Chest",
         "short_name": "Basement",
         "access_rules": [
-          "@Forest Temple/Forest Temple Antichamber"
+          "$oot|Forest Temple Antichamber"
         ],
         "item_count": 1
       },
@@ -845,7 +679,7 @@
         "name": "GS Basement",
         "short_name": "Basement",
         "access_rules": [
-          "@Forest Temple/Forest Temple Antichamber,$can_collect_distance"
+          "$oot|Forest Temple GS Antichamber"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -857,8 +691,7 @@
       {
         "name": "Phantom Ganon",
         "access_rules": [
-          "@Forest Temple/Forest Temple Antichamber,forest_boss_key,$can_use_bow,$has_weapon",
-          "@Forest Temple/Forest Temple Antichamber,forest_boss_key,$can_use_slingshot,$has_weapon"
+          "$oot|Forest Temple Boss Container"
         ],
         "hosted_item": "forest",
         "chest_unopened_img": "images/HC.png",
