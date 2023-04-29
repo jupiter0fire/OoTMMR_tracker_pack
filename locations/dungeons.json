@@ -407,15 +407,14 @@
   },
   {
     "name": "Ice Cavern",
-    "access_rules": [
-      "$has_bottle"
-    ],
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
         "name": "GS Spinning Scythe Room",
         "short_name": "Spinning Scythe",
         "access_rules": [
-          "$can_use_hookshot"
+          "$oot|Ice Cavern GS Scythe Room"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -427,18 +426,27 @@
       {
         "name": "Map Chest",
         "short_name": "Map",
+        "access_rules": [
+          "$oot|Ice Cavern Map"
+        ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
       {
         "name": "Compass Chest",
         "short_name": "Compass",
+        "access_rules": [
+          "$oot|Ice Cavern Compass"
+        ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
         "name": "Freestanding PoH",
         "short_name": "Frozen HP",
+        "access_rules": [
+          "$oot|Ice Cavern HP"
+        ],
         "chest_unopened_img": "images/HP.png",
         "chest_opened_img": "images/HP_grey.png",
         "item_count": 1
@@ -447,7 +455,7 @@
         "name": "GS Heart Piece Room",
         "short_name": "Compass",
         "access_rules": [
-          "$can_use_hookshot"
+          "$oot|Ice Cavern GS HP Room"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -460,7 +468,7 @@
         "name": "GS Push Block Room",
         "short_name": "Push Block",
         "access_rules": [
-          "$can_use_hookshot"
+          "$oot|Ice Cavern GS Block Room"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -472,11 +480,17 @@
       {
         "name": "Iron Boots Chest",
         "short_name": "Iron Boots",
+        "access_rules": [
+          "$oot|Ice Cavern Iron Boots"
+        ],
         "item_count": 1
       },
       {
         "name": "Sheik in Ice Cavern",
         "short_name": "Song",
+        "access_rules": [
+          "$oot|Ice Cavern Sheik Song"
+        ],
         "chest_unopened_img": "images/grey_note.png",
         "chest_opened_img": "images/grey_note_check.png",
         "item_count": 1
@@ -493,10 +507,8 @@
   },
   {
     "name": "Forest Temple",
-    "parent": "Sacred Meadow As Adult",
-    "access_rules": [
-      "$can_use_hookshot"
-    ],
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
         "name": "Forest Temple Garden East",
