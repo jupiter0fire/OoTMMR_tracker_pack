@@ -14,9 +14,12 @@ else
     Tracker = {}
     AccessibilityLevel = {
         -- These might not be the values used by EmoTracker, but they're never used directly
-        None = 0,
-        SequenceBreak = 1,
-        Normal = 2,
+        -- None = 0,
+        -- SequenceBreak = 1,
+        -- Normal = 2,
+        None = "None",
+        SequenceBreak = "SequenceBreak",
+        Normal = "Normal",
     }
 end
 
@@ -216,17 +219,29 @@ local OCARINA = "OCARINA"
 local SWORD_MASTER = "SWORD_MASTER"
 local SONG_TIME = "SONG_TIME"
 -- local HOOKSHOT = "HOOKSHOT"
+local SLINGSHOT = "SLINGSHOT"
+local BOMB_BAG = "BOMB_BAG"
+local ZELDA_LETTER = "ZELDA_LETTER"
+local GOLDSCALE = "GOLDSCALE"
 
 local items = {
-    [SWORD_KOKIRI] = 1,
-    [SHIELD_DEKU] = 1,
-    [OCARINA] = 1,
-    [SWORD_MASTER] = 1,
-    [SONG_TIME] = 1,
-    -- [HOOKSHOT] = 1,
+    -- [SWORD_KOKIRI] = 1,
+    -- [SHIELD_DEKU] = 1,
+    -- [OCARINA] = 1,
+    -- [SWORD_MASTER] = 1,
+    -- [SONG_TIME] = 1,
+    [SLINGSHOT] = 1,
+    [BOMB_BAG] = 1,
+    [ZELDA_LETTER] = 1,
+    [GOLDSCALE] = 1,
 }
 
 ToInject = {}
+
+function trace(event, line)
+    local s = debug.getinfo(2).short_src
+    print(s .. ":" .. line)
+end
 
 -- require() isn't working in EmoTracker; look into this some more, but see README.md
 -- This is a bad workaround, but it works for now
@@ -245,12 +260,6 @@ else
     dofile("generated/mm_logic.lua")
 end
 mm_logic = _mm_logic()
-
--- FIXME:
--- oot: Market -> exits -> MM SPAWN
--- mm: SPAWN
--- So only check mm if MM SPAWN is available, then start at SPAWN
--- NOTE: Events will be needed to test mm properly, time travel stuff!
 
 oot_logic.inject({
     items = items,
