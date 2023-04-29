@@ -1560,16 +1560,14 @@
   },
   {
     "name": "Bottom of the Well",
-    "parent": "Kakariko Village",
-    "access_rules": [
-      "$has_age|child,$can_play|storm,$has_lens"
-    ],
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
         "name": "Front Left Fake Wall Chest",
         "short_name": "Front Hidden",
         "access_rules": [
-          "$has_lens"
+          "$oot|Bottom of the Well Front West"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1578,7 +1576,7 @@
         "name": "Right Bottom Fake Wall Chest",
         "short_name": "Right Hidden",
         "access_rules": [
-          "$has_lens"
+          "$oot|Bottom of the Well East"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1587,7 +1585,7 @@
         "name": "Compass Chest",
         "short_name": "Center Large",
         "access_rules": [
-          "$has_lens"
+          "$oot|Bottom of the Well Compass"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -1596,7 +1594,7 @@
         "name": "Center Skulltula Chest",
         "short_name": "Center Small",
         "access_rules": [
-          "$has_lens"
+          "$oot|Bottom of the Well Blood Chest"
         ],
         "item_count": 1
       },
@@ -1604,7 +1602,7 @@
         "name": "GS West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,$has_lens"
+          "$oot|Bottom of the Well GS Inner West"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1617,7 +1615,7 @@
         "name": "GS East Inner Room",
         "short_name": "East Inner",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],boomerang,$has_lens"
+          "$oot|Bottom of the Well GS Inner East"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1629,7 +1627,7 @@
       {
         "name": "Fire Keese Chest",
         "access_rules": [
-          "botw_small_keys:1,[botw_small_keys:3],$has_lens"
+          "$oot|Bottom of the Well Pits"
         ],
         "item_count": 1
       },
@@ -1637,7 +1635,7 @@
         "name": "Like Like Chest",
         "short_name": "Like Like",
         "access_rules": [
-          "@Bottom of the Well/Fire Keese Chest"
+          "$oot|Bottom of the Well East Cage"
         ],
         "item_count": 1
       },
@@ -1645,7 +1643,7 @@
         "name": "GS Like Like Cage",
         "short_name": "Like Like",
         "access_rules": [
-          "@Bottom of the Well/Like Like Chest,boomerang"
+          "$oot|Bottom of the Well GS East Cage"
         ],
         "visibility_rules": [
           "setting_tokens_dungeons"
@@ -1657,6 +1655,9 @@
       {
         "name": "Freestanding Key",
         "short_name": "Coffin Key",
+        "access_rules": [
+          "$oot|Bottom of the Well Coffin"
+        ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
@@ -1665,7 +1666,7 @@
         "name": "Front Center Bombable Chest",
         "short_name": "Front Bombable",
         "access_rules": [
-          "$has_explosives_bool"
+          "$oot|Bottom of the Well Under Debris"
         ],
         "item_count": 1
       },
@@ -1673,7 +1674,7 @@
         "name": "Back Left Bombable Chest",
         "short_name": "Back Bombable",
         "access_rules": [
-          "$has_explosives_bool,$has_lens"
+          "$oot|Bottom of the Well Back West"
         ],
         "item_count": 1
       },
@@ -1681,9 +1682,7 @@
         "name": "Map Chest",
         "short_name": "Basement",
         "access_rules": [
-          "$has_explosives_bool",
-          "$has_bombflowers,botw_small_keys:1,[botw_small_keys:3]",
-          "$has_bombflowers,$can_use_dins"
+          "$oot|Bottom of the Well Map"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -1692,7 +1691,7 @@
         "name": "Underwater Left Chest",
         "short_name": "Underwater Left",
         "access_rules": [
-          "$can_play|lullaby"
+          "$oot|Bottom of the Well Underwater"
         ],
         "item_count": 1
       },
@@ -1700,7 +1699,7 @@
         "name": "Underwater Front Chest",
         "short_name": "Underwater Front",
         "access_rules": [
-          "$can_play|lullaby"
+          "$oot|Bottom of the Well Underwater 2"
         ],
         "item_count": 1
       },
@@ -1708,15 +1707,14 @@
         "name": "Lens of Truth Chest",
         "short_name": "Dead Hand",
         "access_rules": [
-          "$can_play|lullaby,sword1",
-          "$can_play|lullaby,sticks,[logic_child_deadhand]"
+          "$oot|Bottom of the Well Lens"
         ],
         "item_count": 1
       },
       {
         "name": "Invisible Chest",
         "access_rules": [
-          "$can_play|lullaby,$has_lens"
+          "$oot|Bottom of the Well Lens Side Chest"
         ],
         "item_count": 1
       }
