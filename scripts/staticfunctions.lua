@@ -324,7 +324,6 @@ function mm(location)
         mm_logic.set_trick_mode("all")
         mm_available_locations_glitched = mm_logic.find_available_locations(mm_logic.logic, true)
 
-        mm_available_locations = mm_logic.find_available_locations(mm_logic.logic)
         OOTMM_RESET_LOGIC_FLAG["mm"] = false
     end
 
