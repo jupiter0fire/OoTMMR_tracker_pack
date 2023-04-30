@@ -245,98 +245,97 @@ end
 
 -- require() isn't working in EmoTracker; look into this some more, but see README.md
 -- This is a bad workaround, but it works for now
-oot_logic = {}
+OOTMM = {
+    ["oot"] = {
+        ["state"] = nil,
+        ["locations_normal"] = {},
+        ["locations_glitched"] = {}
+    },
+    ["mm"] = {
+        ["state"] = nil,
+        ["locations_normal"] = {},
+        ["locations_glitched"] = {}
+    }
+}
+
 if EMO then
     ScriptHost:LoadScript("scripts/oot_logic.lua")
-else
-    dofile("generated/oot_logic.lua")
-end
-oot_logic = _oot_logic()
-
-mm_logic = {}
-if EMO then
     ScriptHost:LoadScript("scripts/mm_logic.lua")
 else
+    dofile("generated/oot_logic.lua")
     dofile("generated/mm_logic.lua")
 end
-mm_logic = _mm_logic()
+OOTMM.oot.state = _oot_logic()
+OOTMM.mm.state = _mm_logic()
 
-oot_logic.inject({
+OOTMM.oot.state.inject({
     items = items,
 })
-mm_logic.inject({
+OOTMM.mm.state.inject({
     items = items,
 })
 
 -- inject everything from ToInject
 for k, v in pairs(ToInject) do
-    oot_logic.inject({ [k] = v })
+    OOTMM.oot.state.inject({ [k] = v })
+    OOTMM.mm.state.inject({ [k] = v })
 end
 
-oot_available_locations = {}
-oot_available_locations_glitched = {}
+local function reset_logic(world)
+    OOTMM[world].state.reset()
+
+    OOTMM[world].state.set_trick_mode("selected")
+    if world == "mm" then
+        -- child only
+        OOTMM[world].locations_normal = OOTMM[world].state.find_available_locations(true)
+    else
+        -- child + adult
+        OOTMM[world].locations_normal = OOTMM[world].state.find_available_locations()
+    end
+
+    OOTMM[world].state.set_trick_mode("all")
+    if world == "mm" then
+        -- child only
+        OOTMM[world].locations_glitched = OOTMM[world].state.find_available_locations(true)
+    else
+        -- child + adult
+        OOTMM[world].locations_glitched = OOTMM[world].state.find_available_locations()
+    end
+
+    OOTMM_RESET_LOGIC_FLAG[world] = false
+end
+
+local function get_availability(world, location)
+    if OOTMM_RESET_LOGIC_FLAG[world] then
+        reset_logic(world)
+    end
+
+    local reachable = false
+    local accessibility = AccessibilityLevel.None
+
+    reachable = OOTMM[world].locations_normal[location] ~= nil or OOTMM[world].locations_glitched[location] ~= nil
+
+    if reachable and OOTMM[world].locations_normal[location] ~= nil then
+        accessibility = AccessibilityLevel.Normal
+    elseif reachable and OOTMM[world].locations_glitched[location] ~= nil then
+        accessibility = AccessibilityLevel.SequenceBreak
+    end
+
+    return reachable, accessibility
+end
 
 function oot(location)
     if OOTMM_DEBUG then
         print("oot:", location)
     end
 
-    if OOTMM_RESET_LOGIC_FLAG["oot"] then
-        print("oot: Resetting logic...")
-        oot_logic.OOTMM_RUNTIME_CACHE = {}
-
-        oot_logic.set_trick_mode("selected")
-        oot_available_locations = oot_logic.find_available_locations(oot_logic.logic)
-        oot_logic.set_trick_mode("all")
-        oot_available_locations_glitched = oot_logic.find_available_locations(oot_logic.logic)
-
-        OOTMM_RESET_LOGIC_FLAG["oot"] = false
-    end
-
-    local reachable = false
-    local accessibility = AccessibilityLevel.None
-
-    reachable = oot_available_locations[location] ~= nil or oot_available_locations_glitched[location] ~= nil
-
-    if reachable and oot_available_locations[location] ~= nil then
-        accessibility = AccessibilityLevel.Normal
-    elseif reachable and oot_available_locations_glitched[location] ~= nil then
-        accessibility = AccessibilityLevel.SequenceBreak
-    end
-
-    return reachable, accessibility
+    return get_availability("oot", location)
 end
-
-mm_available_locations = {}
-mm_available_locations_glitched = {}
 
 function mm(location)
     if OOTMM_DEBUG then
         print("mm:", location)
     end
 
-    if OOTMM_RESET_LOGIC_FLAG["mm"] then
-        print("mm: Resetting logic...")
-        mm_logic.OOTMM_RUNTIME_CACHE = {}
-
-        mm_logic.set_trick_mode("selected")
-        mm_available_locations = mm_logic.find_available_locations(mm_logic.logic, true)
-        mm_logic.set_trick_mode("all")
-        mm_available_locations_glitched = mm_logic.find_available_locations(mm_logic.logic, true)
-
-        OOTMM_RESET_LOGIC_FLAG["mm"] = false
-    end
-
-    local reachable = false
-    local accessibility = AccessibilityLevel.None
-
-    reachable = mm_available_locations[location] ~= nil or mm_available_locations_glitched[location] ~= nil
-
-    if reachable and mm_available_locations[location] ~= nil then
-        accessibility = AccessibilityLevel.Normal
-    elseif reachable and mm_available_locations_glitched[location] ~= nil then
-        accessibility = AccessibilityLevel.SequenceBreak
-    end
-
-    return reachable, accessibility
+    return get_availability("mm", location)
 end

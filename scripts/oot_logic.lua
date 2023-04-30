@@ -41,6 +41,10 @@ function _oot_logic()
     OOTMM_RUNTIME_ACTIVE_EVENTS = {}
     OOTMM_RUNTIME_CACHE = {}
 
+    function reset()
+        OOTMM_RUNTIME_CACHE = {}
+    end
+
     OOTMM_ITEM_PREFIX = "OOT"
     OOTMM_TRICK_PREFIX = "TRICK"
 
@@ -126,7 +130,6 @@ function _oot_logic()
     adult = false
 
     function age(x)
-        -- FIXME
         return x
     end
 
@@ -258,20 +261,27 @@ function _oot_logic()
         print(s .. ":" .. line)
     end
 
-    -- Starting at the spawn location, check all places for available locations
-    function find_available_locations(logic, child_only)
-        -- FIXME: "logic" should be available without passing it from the outside,
-        --        but it doesn't work; investigate!
-        --        Once this is fixed, re-add the "local" keyword to it in main.py
+    function set_age(age)
+        if age == "child" then
+            child = true
+            adult = false
+        elseif age == "adult" then
+            child = false
+            adult = true
+        else
+            error("Invalid age: " .. age)
+        end
+    end
 
+    -- Starting at the spawn location, check all places for available locations
+    function find_available_locations(child_only)
         OOTMM_RUNTIME_ACTIVE_EVENTS = {}
         local places_to_check = { "SPAWN" }
         local places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
         local places_checked = {}
         local locations_available = {}
 
-        child = true
-        adult = false
+        set_age("child")
 
         while #places_to_check > 0 do
             local place = table.remove(places_to_check, 1)
@@ -316,8 +326,7 @@ function _oot_logic()
 
                             -- Reset local state, and start over.
                             -- TODO: Handle events more efficiently (see README.md)
-                            child = true
-                            adult = false
+                            set_age("child")
                             places_to_check = { "SPAWN" }
                             places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
                             places_checked = {}
@@ -335,8 +344,7 @@ function _oot_logic()
 
             if #places_to_check == 0 and child and not child_only then
                 -- Child places depleted, start over as adult
-                child = false
-                adult = true
+                set_age("adult")
                 places_to_check = { "SPAWN" }
                 places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
                 places_checked = {}
