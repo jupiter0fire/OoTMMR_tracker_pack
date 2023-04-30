@@ -792,7 +792,7 @@
                   },
                   {
                     "type": "item",
-                    "item": "mm_stonetoweMM_SMALL_KEY_STr_small_keys",
+                    "item": "MM_SMALL_KEY_ST",
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
