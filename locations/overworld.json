@@ -5348,7 +5348,7 @@
               {
                 "name": "Open it",
                 "access_rules": [
-                  "mm_zora"
+                  "$mm|Termina Field Water Chest"
                 ],
                 "item_count": 1
               }
@@ -5372,13 +5372,15 @@
               {
                 "name": "Chest on a stump",
                 "access_rules": [
-                  "$mm_can_use_beans",
-                  "mm_short_hookshot"
+                  "$mm|Termina Field Tree Stump Chest"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Grotto near stump",
+                "access_rules": [
+                  "$mm|Termina Field Tall Grass Grotto"
+                ],
                 "item_count": 1
               }
             ],
@@ -5399,7 +5401,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "$mm_can_play|mm_songofhealing"
+                  "$mm|Termina Field Kamaro Mask"
                 ],
                 "item_count": 1
               }
@@ -5418,6 +5420,9 @@
             "sections": [
               {
                 "name": "Climb the pillar",
+                "access_rules": [
+                  "$mm|Termina Field Pillar Grotto"
+                ],
                 "item_count": 1
               }
             ],
@@ -5438,9 +5443,7 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "$mm_can_fight",
-                  "mm_bow",
-                  "mm_deku"
+                  "$mm|Termina Field Peahat Grotto"
                 ],
                 "item_count": 1
               }
@@ -5462,10 +5465,7 @@
                 "chest_unopened_img": "images/system/chest_unopened_big.png",
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
-                  "$mm_has_weapon",
-                  "mm_bombs",
-                  "mm_goron",
-                  "mm_bow"
+                  "$mm|Termina Field Dodongo Grotto"
                 ],
                 "item_count": 1
               }
@@ -5483,22 +5483,13 @@
             "short_name": "Termina Field Cows",
             "sections": [
               {
-                "name": "Left Cow",
+                "name": "Cows",
                 "chest_unopened_img": "images/system/cow.png",
                 "chest_opened_img": "images/system/milk.png",
                 "access_rules": [
-                  "$mm_can_play|mm_eponasong,$mm_has_explosives"
+                  "$mm|Termina Field Cow Front"
                 ],
-                "item_count": 1
-              },
-              {
-                "name": "Right Cow",
-                "chest_unopened_img": "images/system/cow.png",
-                "chest_opened_img": "images/system/milk.png",
-                "access_rules": [
-                  "$mm_can_play|mm_eponasong,$mm_has_explosives"
-                ],
-                "item_count": 1
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -5521,7 +5512,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm_can_break_boulders,mm_zora"
+                  "$mm|Termina Field Cow Front"
                 ],
                 "item_count": 1
               }
@@ -5543,8 +5534,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_adultwallet,bombers_code",
-                  "mm_adultwallet,[trick_mm_guess_bomber]"
+                  "$mm|Termina Field Scrub"
                 ],
                 "item_count": 1
               }
@@ -5566,9 +5556,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm_can_break_boulders,mm_ocarina,mm_deku,mm_sonata",
-                  "$mm_can_break_boulders,mm_ocarina,mm_zora,mm_bossanova",
-                  "$mm_can_break_boulders,mm_goron,mm_lullaby"
+                  "$mm|Termina Field Gossip Stones HP"
                 ],
                 "item_count": 1
               }
@@ -5603,8 +5591,7 @@
               {
                 "name": "Look at Skull Kid through the telescope",
                 "access_rules": [
-                  "bombers_code",
-                  "[trick_mm_guess_bomber]"
+                  "$mm|Astral Observatory Moon Tear"
                 ],
                 "item_count": 1
               }
