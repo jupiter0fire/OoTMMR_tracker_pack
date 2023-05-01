@@ -2918,84 +2918,40 @@
   {
     "name": "Moon",
     "short_name": "Moon",
-    "parent": "Clock Town South",
-    "access_rules": [
-      "$mm_can_play|mm_oath,mm_odolwa_remains,mm_gyorg_remains,mm_goth_remains,mm_twinmold_remains"
-    ],
     "sections": [
-      {
-        "name": "Moon Trial Deku",
-        "access_rules": [
-          "@Moon,$has|mm_mask|1"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Moon Trial Goron",
-        "access_rules": [
-          "@Moon,$has|mm_mask|2"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Moon Trial Zora",
-        "access_rules": [
-          "@Moon,$has|mm_mask|3"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Moon Trial Link",
-        "access_rules": [
-          "@Moon,$has|mm_mask|4"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
       {
         "name": "Fierce Deity Mask",
         "chest_unopened_img": "images/system/unknownmask.png",
         "chest_opened_img": "images/system/unknownmask_grey.png",
         "access_rules": [
-          "@Moon,@Moon/Moon Trial Deku,@Moon/Moon Trial Goron,@Moon/Moon Trial Zora,@Moon/Moon Trial Link,$has|mm_mask|20,mm_deku,mm_goron,mm_zora,$mm_moon_trial_link"
+          "$mm|Moon Fierce Deity Mask"
         ],
         "item_count": 1
       },
       {
         "name": "Trial Deku HP",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
         "access_rules": [
-          "@Moon/Moon Trial Deku,mm_deku"
+          "$mm|Moon Trial Deku HP"
         ],
         "item_count": 1
       },
       {
         "name": "Trial Goron HP",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
         "access_rules": [
-          "@Moon/Moon Trial Goron,$mm_goron_fast_roll"
+          "$mm|Moon Trial Goron HP"
         ],
         "item_count": 1
       },
       {
         "name": "Trial Zora HP",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
         "access_rules": [
-          "@Moon/Moon Trial Zora,mm_zora"
+          "$mm|Moon Trial Zora HP"
         ],
         "item_count": 1
       },
@@ -3004,7 +2960,7 @@
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
         "access_rules": [
-          "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2"
+          "$mm|Moon Trial Link Chest 1"
         ],
         "item_count": 1
       },
@@ -3013,8 +2969,16 @@
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
         "access_rules": [
-          "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2,$mm_can_fight",
-          "@Moon/Moon Trial Link,$mm_moon_trial_link_part1,$mm_moon_trial_link_part2,mm_bow"
+          "$mm|Moon Trial Link Chest 2"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Trial Link HP",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "access_rules": [
+          "$mm|Moon Trial Link Chest 3"
         ],
         "item_count": 1
       }
