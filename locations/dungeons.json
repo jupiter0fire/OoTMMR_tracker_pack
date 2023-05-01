@@ -2886,119 +2886,13 @@
   {
     "name": "Ancient Castle of Ikana",
     "short_name": "Ikana Castle",
-    "parent": "Ikana Canyon",
     "sections": [
-      {
-        "name": "Ancient Castle of Ikana Entrance",
-        "access_rules": [
-          "@Ancient Castle of Ikana"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Exterior",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Entrance,$mm_can_activate_crystal,mm_mirror",
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Entrance,$mm_can_use_light_arrows",
-          "$mm_ikana_through_well"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Interior",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Exterior"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Interior North",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior,$mm_can_use_fire_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Interior North 2",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior North,mm_deku"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Roof Exterior",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior North 2,$mm_can_use_lens"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Interior South",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior,$mm_can_use_fire_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Wizzrobe",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior South,@Ancient Castle of Ikana/Ancient Castle of Ikana Roof Exterior,mm_deku,mm_mirror",
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior South,$mm_can_use_light_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Roof Interior",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Wizzrobe,$mm_can_fight",
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Wizzrobe,mm_bow"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ancient Castle of Ikana Boss",
-        "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior,@Ancient Castle of Ikana/Ancient Castle of Ikana Roof Interior,$mm_can_use_keg,mm_mirror",
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Interior,$mm_can_use_light_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
       {
         "name": "Defeat Igos Du Ikana",
         "chest_unopened_img": "images/system/unknownsong.png",
         "chest_opened_img": "images/system/unknownsong_check.png",
         "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Boss,mm_mirror,$mm_can_use_fire_arrows,$mm_can_fight"
+          "$mm|Ancient Castle of Ikana Song Emptiness"
         ],
         "item_count": 1
       },
@@ -3007,8 +2901,7 @@
         "chest_unopened_img": "images/system/heartpiece.png",
         "chest_opened_img": "images/system/heartpiece_grey.png",
         "access_rules": [
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Roof Exterior,mm_bow,mm_deku",
-          "@Ancient Castle of Ikana/Ancient Castle of Ikana Roof Exterior,mm_hookshot,mm_deku"
+          "$mm|Ancient Castle of Ikana HP"
         ],
         "item_count": 1
       }
