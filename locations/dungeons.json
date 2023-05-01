@@ -3272,169 +3272,16 @@
   {
     "name": "Great Bay Temple",
     "short_name": "GBT",
-    "parent": "Zora Hall",
-    "access_rules": [
-      "mm_zora,mm_hookshot,$mm_can_play|mm_bossanova"
-    ],
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
     "sections": [
-      {
-        "name": "Great Bay Temple Entrance",
-        "access_rules": [
-          "@Great Bay Temple"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Water Wheel",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Entrance"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Central Room",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_zora"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Map Room",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Central Room"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Baba Room",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Map Room"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Compass Room",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Central Room,@Great Bay Temple/Great Bay Temple Water Wheel,@Great Bay Temple/Great Bay Temple Map Room,$mm_can_use_ice_arrows,mm_hookshot",
-          "@Great Bay Temple/Great Bay Temple Baba Room"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Red Pipe 1",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Central Room"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Ice Arrow Room",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Red Pipe 1,mm_greatbay_small_keys:1"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Red Pipe 2",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Map Room,$mm_can_use_ice_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Boss Key Room",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Compass Room,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Green Pipe 1",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Central Room,$mm_can_use_ice_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Green Pipe 2",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Compass Room,@Great Bay Temple/Great Bay Temple Water Wheel,@Great Bay Temple/Great Bay Temple Red Pipe 1,@Great Bay Temple/Great Bay Temple Red Pipe 2,$mm_can_use_ice_arrows,mm_hookshot"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Green Pipe 3",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Green Pipe 2,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Pre-Boss",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Central Room,@Great Bay Temple/Great Bay Temple Water Wheel,@Great Bay Temple/Great Bay Temple Red Pipe 1,@Great Bay Temple/Great Bay Temple Red Pipe 2,$mm_can_use_ice_arrows,mm_hookshot"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Great Bay Temple Boss",
-        "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Pre-Boss,@Great Bay Temple/Great Bay Temple Green Pipe 1,@Great Bay Temple/Great Bay Temple Green Pipe 3,$mm_can_use_fire_arrows,$mm_can_use_ice_arrows,mm_greatbay_boss_key"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
       {
         "name": "Entrance Torches",
         "short_name": "Light Torches",
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Entrance"
+          "$mm|Great Bay Temple Entrance Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3447,9 +3294,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_zora",
-          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_fairymask,mm_bow",
-          "@Great Bay Temple/Great Bay Temple Water Wheel,mm_fairymask,mm_hookshot"
+          "$mm|Great Bay Temple SF Water Wheel Platform"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3462,7 +3307,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Water Wheel"
+          "$mm|Great Bay Temple SF Water Wheel Skulltula"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3475,7 +3320,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Central Room"
+          "$mm|Great Bay Temple SF Central Room Barrel"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3488,8 +3333,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Central Room,mm_zora",
-          "@Great Bay Temple/Great Bay Temple Central Room,mm_fairymask,mm_bow"
+          "$mm|Great Bay Temple SF Central Room Underwater Pot"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3502,8 +3346,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Map",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Map Room,mm_hookshot",
-          "@Great Bay Temple/Great Bay Temple Map Room,$mm_can_use_ice_arrows"
+          "$mm|Great Bay Temple Map"
         ],
         "item_count": 1
       },
@@ -3513,7 +3356,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Map Room"
+          "$mm|Great Bay Temple SF Map Room Pot"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3526,7 +3369,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Baba Room"
+          "$mm|Great Bay Temple Baba Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3539,7 +3382,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Compass",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Compass Room"
+          "$mm|Great Bay Temple Compass"
         ],
         "item_count": 1
       },
@@ -3549,7 +3392,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Small Key",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Compass Room"
+          "$mm|Great Bay Temple Compass Room Underwater"
         ],
         "item_count": 1
       },
@@ -3559,7 +3402,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Compass Room"
+          "$mm|Great Bay Temple SF Compass Room Pot"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3572,7 +3415,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Ice Arrow Room"
+          "$mm|Great Bay Temple Ice Arrow"
         ],
         "item_count": 1
       },
@@ -3582,7 +3425,7 @@
         "chest_opened_img": "images/system/chest_golden_open.png",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Boss Key Room"
+          "$mm|Great Bay Temple Boss Key"
         ],
         "item_count": 1
       },
@@ -3599,7 +3442,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Green Pipe 1,mm_hookshot"
+          "$mm|Great Bay Temple Green Pipe 1 Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3612,7 +3455,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Green Pipe 2,mm_hookshot"
+          "$mm|Great Bay Temple Green Pipe 2 Lower Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3625,7 +3468,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Green Pipe 2,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
+          "$mm|Great Bay Temple Green Pipe 2 Upper Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3638,7 +3481,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Green Pipe 3,mm_zora"
+          "$mm|Great Bay Temple SF Green Pipe 3 Barrel"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3651,7 +3494,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Green Pipe 3,mm_hookshot,$mm_can_use_ice_arrows,$mm_can_use_fire_arrows"
+          "$mm|Great Bay Temple Green Pipe 3 Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3664,7 +3507,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Pre-Boss"
+          "$mm|Great Bay Temple SF Pre-Boss Underwater"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3677,9 +3520,7 @@
         "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Pre-Boss,$mm_can_use_ice_arrows",
-          "@Great Bay Temple/Great Bay Temple Pre-Boss,mm_fairymask,mm_bow",
-          "@Great Bay Temple/Great Bay Temple Pre-Boss,mm_fairymask,mm_hookshot"
+          "$mm|Great Bay Temple SF Pre-Boss Above Water"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3691,8 +3532,7 @@
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Boss,mm_magic,mm_zora,mm_bow",
-          "@Great Bay Temple/Great Bay Temple Boss,mm_magic,mm_fiercedeity,mm_bow"
+          "$mm|Great Bay Temple Boss HC"
         ],
         "item_count": 1
       }
