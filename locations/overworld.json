@@ -6735,10 +6735,7 @@
       {
         "name": "Great Bay",
         "color": "#3f46ff",
-        "access_rules": [
-          "mm_ocarina,mm_eponasong",
-          "$mm_can_goron_bomb_jump"
-        ],
+
         "children": [
           {
             "name": "Great Bay Coast Grotto",
@@ -6748,6 +6745,9 @@
             "sections": [
               {
                 "name": "Grotto Behind Fisherman Hut",
+                "access_rules": [
+                  "$mm|Great Bay Coast Fisherman Grotto"
+                ],
                 "item_count": 1
               }
             ],
@@ -6788,7 +6788,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "$mm_can_play|mm_healing"
+                  "$mm|Great Bay Coast Zora Mask"
                 ],
                 "item_count": 1
               }
@@ -6813,7 +6813,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm_can_use_beans,$mm_can_hookshot_scarecrow"
+                      "$mm|Great Bay Coast HP"
                     ],
                     "item_count": 1
                   }
@@ -6835,7 +6835,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_great_bay,mm_hookshot"
+                      "$mm|Great Bay Coast Fisherman HP"
                     ],
                     "item_count": 1
                   }
@@ -6881,7 +6881,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm_has_bottle"
+                      "$mm|Laboratory Fish HP"
                     ],
                     "item_count": 1
                   },
@@ -6890,7 +6890,7 @@
                     "chest_unopened_img": "images/system/unknownsong.png",
                     "chest_opened_img": "images/system/unknownsong_check.png",
                     "access_rules": [
-                      "mm_ocarina,mm_zora,mm_zoraegg_hookshot_room,mm_zoraegg_barrel_maze,mm_zoraegg_lone_guard,mm_zoraegg_treasure_room,mm_zoraegg_pinnacle_rock"
+                      "$mm|Laboratory Zora Song"
                     ],
                     "item_count": 1
                   }
@@ -6907,28 +6907,23 @@
           },
           {
             "name": "Pinnacle Rock",
-            "access_rules": [
-              "mm_zora,mm_seahorse",
-              "mm_zora,[trick_mm_no_seahorse]"
-            ],
             "chest_unopened_img": "images/system/chest_brown_closed.png",
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "PRock",
             "sections": [
               {
-                "name": "Sea Snake Upper Chest",
-                "item_count": 1
-              },
-              {
-                "name": "Sea Snake Lower Chest",
-                "item_count": 1
+                "name": "Sea Snake Chests",
+                "access_rules": [
+                  "$mm|Pinnacle Rock Chest 1"
+                ],
+                "item_count": 2
               },
               {
                 "name": "Reunite The Seahorses",
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "mm_seahorse"
+                  "$mm|Pinnacle Rock HP"
                 ],
                 "item_count": 1
               },
@@ -6960,7 +6955,7 @@
                   {
                     "name": "Zora Cape Underwater Chest",
                     "access_rules": [
-                      "mm_zora"
+                      "$mm|Zora Cape Underwater Chest"
                     ],
                     "item_count": 1
                   }
@@ -6976,12 +6971,12 @@
               {
                 "name": "Under The Waterfall",
                 "short_name": "ZC Waterfall",
-                "access_rules": [
-                  "mm_zora"
-                ],
                 "sections": [
                   {
                     "name": "Zora Cape Like Like Treasure",
+                    "access_rules": [
+                      "$mm|Zora Cape Waterfall HP"
+                    ],
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
@@ -7004,7 +6999,7 @@
                   {
                     "name": "Under The Rock By The Fairy Shrine",
                     "access_rules": [
-                      "$mm_can_break_boulders"
+                      "$mm|Zora Cape Grotto"
                     ],
                     "item_count": 1
                   }
@@ -7022,24 +7017,20 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "ZH",
-                "access_rules": [
-                  "mm_zora",
-                  "[trick_mm_zora_hall_human]"
-                ],
                 "sections": [
                   {
                     "name": "> > v A A v > A < < > v v > < v On Ocarina - Third Room Down",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_zora,mm_ocarina"
+                      "$mm|Zora Hall Evan HP"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Give Ocean Scrub The Mountain Title Deed - Fourth Room Down",
                     "access_rules": [
-                      "mm_snowhead_deed,mm_goron,mm_zora"
+                      "$mm|Zora Hall Scrub Deed"
                     ],
                     "item_count": 1
                   },
@@ -7048,7 +7039,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "$mm_can_use_fire_arrows"
+                      "$mm|Zora Hall Scene Lights"
                     ],
                     "item_count": 1
                   },
@@ -7057,7 +7048,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_goron,mm_snowhead_deed,mm_deku,mm_zora"
+                      "$mm|Zora Hall Scrub HP"
                     ],
                     "item_count": 1
                   }
@@ -7075,22 +7066,37 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "Zora Shop",
-                "access_rules": [
-                  "[mm_zora]",
-                  "mm_zoraswim"
-                ],
                 "sections": [
                   {
                     "name": "Shield (90 Rupees)",
+                    "access_rules": [
+                      "$mm|Zora Shop Item 1"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "10 Arrows (20 Rupees)",
+                    "access_rules": [
+                      "$mm|Zora Shop Item 2"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Red Potion (60 Rupees)",
+                    "access_rules": [
+                      "$mm|Zora Shop Item 3"
+                    ],
                     "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 210,
+                    "y": 380,
+                    "force_invisibility_rules":[
+                      "setting_mm_shuffle_shops_no"
+                    ]
                   }
                 ]
               },
@@ -7103,7 +7109,7 @@
                   {
                     "name": "15 Stray Fairies in Great Bay Temple",
                     "access_rules": [
-                      "mm_greatbay_stray_fairies:15,mm_hookshot,$mm_has_explosives"
+                      "$mm|Great Bay Great Fairy"
                     ],
                     "item_count": 1
                   }
@@ -7121,16 +7127,19 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "Rapids",
-                "access_rules": [
-                  "mm_hookshot,mm_zora"
-                ],
                 "sections": [
                   {
                     "name": "Beaver Brothers Race Prize",
+                    "access_rules": [
+                      "$mm|Waterfall Rapids Beaver Race 1"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Beaver Brothers Race Rematch",
+                    "access_rules": [
+                      "$mm|Waterfall Rapids Beaver Race 2"
+                    ],
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
@@ -7149,23 +7158,13 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "Cape Ledge",
-                "access_rules": [
-                  "mm_hookshot"
-                ],
                 "sections": [
                   {
-                    "name": "Zora Cape Ledge Chest",
+                    "name": "Zora Cape Ledge Chests",
                     "access_rules": [
-                      "mm_hookshot"
+                      "$mm|Zora Cape Ledge Chest 1"
                     ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Zora Cape Ledge Lower Chest",
-                    "access_rules": [
-                      "mm_hookshot"
-                    ],
-                    "item_count": 1
+                    "item_count": 2
                   }
                 ],
                 "map_locations": [
