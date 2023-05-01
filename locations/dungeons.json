@@ -2837,69 +2837,27 @@
     "short_name": "Well",
     "chest_unopened_img": "images/system/chest_brown_closed.png",
     "chest_opened_img": "images/system/chest_brown_open.png",
-    "parent": "Ikana Canyon",
     "sections": [
-      {
-        "name": "Beneath the Well Entrance",
-        "access_rules": [
-          "@Beneath the Well"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Beneath the Well North Section",
-        "access_rules": [
-          "@Beneath the Well/Beneath the Well Entrance,$mm_has_bottle,mm_scents,mm_gibdo"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Beneath the Well East Section",
-        "access_rules": [
-          "@Beneath the Well/Beneath the Well Entrance,mm_gibdo,mm_beans"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Beneath the Well End",
-        "access_rules": [
-          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,$mm_has_bottle,mm_bombs,mm_bow",
-          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,$mm_has_bottle,mm_bombs,mm_zora"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
       {
         "name": "Mirror Shield Chest",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "access_rules": [
-          "@Beneath the Well/Beneath the Well End"
+          "$mm|Beneath the Well Mirror Shield"
         ],
         "item_count": 1
       },
       {
         "name": "Right Side Well Chest",
         "access_rules": [
-          "@Beneath the Well/Beneath the Well East Section,mm_gibdo,$mm_has_bottle"
+          "$mm|Beneath the Well Skulltulla Chest"
         ],
         "item_count": 1
       },
       {
         "name": "Left Side Well Chest",
         "access_rules": [
-          "@Beneath the Well/Beneath the Well North Section,$mm_can_use_lens"
+          "$mm|Beneath the Well Keese Chest"
         ],
         "item_count": 1
       },
@@ -2908,11 +2866,10 @@
         "chest_unopened_img": "images/system/cow.png",
         "chest_opened_img": "images/system/milk.png",
         "access_rules": [
-          "mm_ocarina,mm_eponasong,mm_gibdomask,mm_bow,mm_magic,mm_lightarrows,[mm_soaring]",
-          "mm_ocarina,mm_eponasong,mm_gibdomask,mm_beans,[mm_soaring]"
+          "$mm|Beneath the Well Cow"
         ],
         "visibility_rules": [
-          "cowsanity_yes"
+          "setting_mm_shuffle_cows_yes"
         ],
         "item_count": 1
       }
