@@ -2347,38 +2347,22 @@
     "chest_unopened_img": "images/system/chest_brown_closed.png",
     "chest_opened_img": "images/system/chest_brown_open.png",
     "short_name": "Ocean Spiders",
-    "access_rules": [
-      "@Great Bay"
-    ],
     "sections": [
       {
         "name": "Collect 30 Tokens",
         "access_rules": [
-          "mm_skulltulla_greatbay:30"
+          "$mm|Ocean Spider House Wallet"
         ],
         "item_count": 1
       },
       {
-        "name": "Entrance Slope Left",
-        "short_name": "Slope Left",
+        "name": "Entrance Slope",
+        "short_name": "Slope",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "item_count": 1,
+        "item_count": 2,
         "access_rules": [
-          "mm_hookshot,$mm_has_explosives"
-        ],
-        "visibility_rules": [
-          "house_skull_shuffle_on"
-        ]
-      },
-      {
-        "name": "Entrance Slope Right",
-        "short_name": "Slope Right",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "item_count": 1,
-        "access_rules": [
-          "mm_hookshot,$mm_has_explosives"
+          "$mm|Ocean Skulltula Entrance Right Wall"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2390,8 +2374,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "$mm_has_explosives,mm_hookshot",
-          "$mm_has_explosives,$mm_can_use_fire_arrows,mm_zora"
+          "$mm|Ocean Skulltula Entrance Web"
         ],
         "item_count": 1,
         "visibility_rules": [
@@ -2399,24 +2382,13 @@
         ]
       },
       {
-        "name": "Ocean Spider House Back",
-        "access_rules": [
-          "$mm_has_explosives,mm_hookshot",
-          "$mm_has_explosives,$mm_can_goron_bomb_jump"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Main Room Behind Skull",
         "short_name": "Behind Skull on Wall",
         "chest_unopened_img": "images/system/skulltula_token.png",
-        "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
-        ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Behind Skull 1"
+        ],
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
@@ -2428,7 +2400,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula 2nd Room Webbed Pot"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2441,7 +2413,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula 2nd Room Jar"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2454,8 +2426,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
+          "$mm|Ocean Skulltula 2nd Room Ceiling Plank"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2468,7 +2439,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula Library On Corner Bookshelf"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2481,7 +2452,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
+          "$mm|Ocean Skulltula Library Hole Behind Cabinet"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2494,8 +2465,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
+          "$mm|Ocean Skulltula Library Ceiling Edge"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2508,7 +2478,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
+          "$mm|Ocean Skulltula Library Hole Behind Picture"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2521,10 +2491,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_bow",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora",
-          "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_deku_bubble"
+          "$mm|Ocean Skulltula Library Behind Picture"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2532,30 +2499,17 @@
         "item_count": 1
       },
       {
-        "name": "Library Behind Bookshelf 1",
-        "short_name": "Behind Bookshelf Left",
+        "name": "Library Behind Bookshelf",
+        "short_name": "Behind Bookshelf",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula Library Behind Bookcase 1"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "item_count": 1
-      },
-      {
-        "name": "Library Behind Bookshelf 2",
-        "short_name": "Behind Bookshelf Right",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
-        ],
-        "visibility_rules": [
-          "house_skull_shuffle_on"
-        ],
-        "item_count": 1
+        "item_count": 2
       },
       {
         "name": "Main Room Basement Black Space",
@@ -2563,8 +2517,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
+          "$mm|Ocean Skulltula 2nd Room Ceiling Edge"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2577,7 +2530,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula 2nd Room Upper Pot"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2590,8 +2543,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
+          "$mm|Ocean Skulltula 2nd Room Behind Skull 2"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2604,7 +2556,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
+          "$mm|Ocean Skulltula 2nd Room Webbed Hole"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2616,7 +2568,7 @@
         "short_name": "Basement Pot on Crates",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula 2nd Room Lower Pot"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2630,7 +2582,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula Storage Room Crate"
         ],
         "visibility_rules": [
           "house_skull_shuffle_on"
@@ -2642,11 +2594,7 @@
         "short_name": "Storage Room Alcove",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,mm_bow",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_can_use_deku_bubble",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_has_explosives"
+          "$mm|Ocean Skulltula Storage Room Behind Crate"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2659,7 +2607,7 @@
         "short_name": "Behind Boat",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula Storage Room Behind Boat"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2672,7 +2620,7 @@
         "short_name": "Storage Room Rafters",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot"
+          "$mm|Ocean Skulltula Storage Room Jar"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2685,8 +2633,7 @@
         "short_name": "Storage Room Behind Web",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_fire_arrows,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,$mm_can_use_fire_arrows,mm_zora"
+          "$mm|Ocean Skulltula Storage Room Ceiling Web"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2695,53 +2642,24 @@
         "item_count": 1
       },
       {
-        "name": "Colored Mask Room Chandelier 1",
-        "short_name": "Mask Room Chandelier 1",
+        "name": "Colored Mask Room Chandelier",
+        "short_name": "Mask Room Chandelier",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula Colored Skulls Chandelier 1"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
           "house_skull_shuffle_on"
         ],
-        "item_count": 1
-      },
-      {
-        "name": "Colored Mask Room Chandelier 2",
-        "short_name": "Mask Room Chandelier 2",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
-        ],
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "visibility_rules": [
-          "house_skull_shuffle_on"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Colored Mask Room Chandelier 3",
-        "short_name": "Mask Room Chandelier 3",
-        "chest_unopened_img": "images/system/skulltula_token.png",
-        "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
-        ],
-        "chest_opened_img": "images/system/skulltula_token_gray.png",
-        "visibility_rules": [
-          "house_skull_shuffle_on"
-        ],
-        "item_count": 1
+        "item_count": 3
       },
       {
         "name": "Colored Mask Room Painting",
         "short_name": "Mask Room Painting",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,mm_bow",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_goron,$mm_can_use_deku_bubble"
+          "$mm|Ocean Skulltula Colored Skulls Behind Picture"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2754,8 +2672,7 @@
         "short_name": "Mask Room Black Space",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_hookshot",
-          "@Oceanside Spider House/Ocean Spider House Back,mm_zora"
+          "$mm|Ocean Skulltula Colored Skulls Ceiling Edge"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2768,7 +2685,7 @@
         "short_name": "Mask Room Pot",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back"
+          "$mm|Ocean Skulltula Colored Skulls Pot"
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
@@ -2781,7 +2698,7 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "access_rules": [
-          "@Oceanside Spider House/Ocean Spider House Back,mm_bow,mm_captain"
+          "$mm|Ocean Spider House Chest HP"
         ],
         "item_count": 1
       }
