@@ -2995,156 +2995,16 @@
   {
     "name": "Woodfall Temple",
     "short_name": "WFT",
-    "parent": "Poison Swamp Area",
-    "access_rules": [
-      "mm_deku,$mm_can_play|mm_sonata"
-    ],
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
     "sections": [
-      {
-        "name": "Woodfall Temple Entrance",
-        "access_rules": [
-          "@Woodfall Temple"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Main",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Entrance,mm_deku",
-          "@Woodfall Temple/Woodfall Temple Entrance,mm_hookshot"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Water Room",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Main"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Map Room",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_deku",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_hookshot"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Maze",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Main,mm_woodfall_small_keys:1",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_deku,mm_bow"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Compass Room",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Maze"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Dark Room",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Maze",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_deku,mm_bow"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Pits Room",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Dark Room",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_deku,mm_bow"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Main Ledge",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Pits Room,mm_deku",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_deku,mm_bow",
-          "@Woodfall Temple/Woodfall Temple Main,$mm_can_use_fire_arrows"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Water Room Upper",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_deku,mm_bow"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Bow Room",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Water Room Upper"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Boss Key Room",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Water Room Upper,mm_bow,mm_deku"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Woodfall Temple Pre-Boss",
-        "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Main Ledge,mm_bow"
-        ],
-        "visibility_rules": [
-          "hidden_region"
-        ],
-        "item_count": 1
-      },
       {
         "name": "Entrance Platform Chest",
         "short_name": "Entrance Chest",
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Entrance,mm_deku",
-          "@Woodfall Temple/Woodfall Temple Entrance,mm_hookshot"
+          "$mm|Woodfall Temple Entrance Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3157,7 +3017,7 @@
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "short_name": "By Entrance Platform",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Entrance"
+          "$mm|Woodfall Temple SF Entrance"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3170,7 +3030,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Main"
+          "$mm|Woodfall Temple SF Main Pot"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3183,7 +3043,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Main"
+          "$mm|Woodfall Temple SF Main Deku Baba"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3196,8 +3056,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Small Key",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_deku",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_hookshot"
+          "$mm|Woodfall Temple Water Chest"
         ],
         "item_count": 1
       },
@@ -3207,11 +3066,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_bow",
-          "@Woodfall Temple/Woodfall Temple Water Room,$mm_can_use_deku_bubble",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_fairymask,mm_bombs",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_fairymask,mm_zora",
-          "@Woodfall Temple/Woodfall Temple Water Room,mm_fairymask,mm_hookshot"
+          "$mm|Woodfall Temple SF Water Room Beehive"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3224,9 +3079,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Map",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Map Room,mm_deku",
-          "@Woodfall Temple/Woodfall Temple Map Room,mm_deku,mm_has_explosives",
-          "@Woodfall Temple/Woodfall Temple Map Room,mm_goron"
+          "$mm|Woodfall Temple Map"
         ],
         "item_count": 1
       },
@@ -3236,10 +3089,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Maze,$mm_can_fight",
-          "@Woodfall Temple/Woodfall Temple Maze,mm_bow",
-          "@Woodfall Temple/Woodfall Temple Maze,$mm_can_use_deku_bubble",
-          "@Woodfall Temple/Woodfall Temple Maze,$mm_has_explosives"
+          "$mm|Woodfall Temple SF Maze Skulltula"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3252,7 +3102,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Maze,$mm_has_weapon_range"
+          "$mm|Woodfall Temple SF Maze Beehive"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3265,10 +3115,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Maze,mm_fairymask,mm_bow",
-          "@Woodfall Temple/Woodfall Temple Maze,mm_fairymask,mm_hookshot",
-          "@Woodfall Temple/Woodfall Temple Maze,@Woodfall Temple/Woodfall Temple Main,$mm_can_use_fire_arrows",
-          "@Woodfall Temple/Woodfall Temple Maze,@Woodfall Temple/Woodfall Temple Main Ledge,mm_bow"
+          "$mm|Woodfall Temple SF Maze Bubble"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3281,7 +3128,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Compass",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Compass Room"
+          "$mm|Woodfall Temple Compass"
         ],
         "item_count": 1
       },
@@ -3291,7 +3138,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Dark Room"
+          "$mm|Woodfall Temple Dark Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3304,7 +3151,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Main Ledge"
+          "$mm|Woodfall Temple SF Main Bubble"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3317,7 +3164,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Main Ledge,mm_deku"
+          "$mm|Woodfall Temple Center Chest"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_chest"
@@ -3330,8 +3177,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Hero's Bow Chest",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Bow Room,$mm_can_fight",
-          "@Woodfall Temple/Woodfall Temple Bow Room,mm_bow"
+          "$mm|Woodfall Temple Bow"
         ],
         "item_count": 1
       },
@@ -3341,7 +3187,7 @@
         "chest_opened_img": "images/system/chest_golden_open.png",
         "short_name": "Boss Key",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Boss Key Room"
+          "$mm|Woodfall Temple Boss Key Chest"
         ],
         "item_count": 1
       },
@@ -3358,7 +3204,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Pre-Boss"
+          "$mm|Woodfall Temple SF Pre-Boss Bottom Right"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3371,7 +3217,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Pre-Boss"
+          "$mm|Woodfall Temple SF Pre-Boss Top Right"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3384,8 +3230,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_deku",
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_fairymask"
+          "$mm|Woodfall Temple SF Pre-Boss Left"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3398,7 +3243,7 @@
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_deku,mm_bow"
+          "$mm|Woodfall Temple SF Pre-Boss Pillar"
         ],
         "visibility_rules": [
           "setting_mm_shuffle_dungeonfairy_all"
@@ -3410,10 +3255,7 @@
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_deku,mm_fiercedeity",
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_hookshot,mm_fiercedeity",
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_deku,mm_bow,$mm_has_weapon",
-          "@Woodfall Temple/Woodfall Temple Pre-Boss,mm_woodfall_boss_key,mm_hookshot,mm_bow,$mm_has_weapon"
+          "$mm|Woodfall Temple Boss Container"
         ],
         "item_count": 1
       }
