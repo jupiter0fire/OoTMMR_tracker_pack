@@ -5367,6 +5367,9 @@
             "sections": [
               {
                 "name": "Chest in the grass",
+                "access_rules": [
+                  "$mm|Termina Field Tall Grass Chest"
+                ],
                 "item_count": 1
               },
               {
