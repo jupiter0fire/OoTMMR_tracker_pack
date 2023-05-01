@@ -7193,7 +7193,7 @@
                   {
                     "name": "Hookshot it",
                     "access_rules": [
-                      "mm_hookshot"
+                      "$mm|Road to Ikana Chest"
                     ],
                     "item_count": 1
                   }
@@ -7213,7 +7213,7 @@
                   {
                     "name": "Get in",
                     "access_rules": [
-                      "mm_goron"
+                      "$mm|Road to Ikana Grotto"
                     ],
                     "item_count": 1
                   }
@@ -7229,13 +7229,6 @@
             ]
           },
           {
-            "name": "Road to Ikana Center",
-            "access_rules": [
-              "$mm_can_play|mm_epona",
-              "$mm_can_goron_bomb_jump"
-            ]
-          },
-          {
             "name": "Shiro the Invisible Soldier",
             "short_name": "Invisible Soldier",
             "sections": [
@@ -7244,7 +7237,7 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "@Road to Ikana Center,$mm_can_use_lens_strict,$mm_has_bottle"
+                  "$mm|Road to Ikana Stone Mask"
                 ],
                 "item_count": 1
               }
@@ -7258,22 +7251,16 @@
             ]
           },
           {
-            "name": "Ikana Graveyard",
-            "access_rules": [
-              "@Road to Ikana Center"
-            ]
-          },
-          {
             "name": "Captain Keeta's Hat Chest",
             "chest_unopened_img": "images/system/chest_unopened_big.png",
             "chest_opened_img": "images/system/chest_open_big.png",
             "short_name": "Captain's Hat Chest",
-            "access_rules": [
-              "@Ikana Graveyard,$mm_can_play|mm_awakening,mm_bow,$mm_can_fight"
-            ],
             "sections": [
               {
                 "name": "Defeat Captain Keeta",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Captain Mask"
+                ],
                 "item_count": 1
               }
             ],
@@ -7294,7 +7281,7 @@
               {
                 "name": "Bomb the circle of rocks",
                 "access_rules": [
-                  "@Ikana Graveyard,$mm_has_explosives"
+                  "$mm|Ikana Graveyard Grotto"
                 ],
                 "item_count": 1
               }
@@ -7309,9 +7296,6 @@
           },
           {
             "name": "Ikana Graveyard Graves Night 1",
-            "access_rules": [
-              "@Ikana Graveyard,mm_captainshat"
-            ],
             "chest_unopened_img": "images/system/chest_brown_closed.png",
             "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "Graves Night 1",
@@ -7319,11 +7303,7 @@
               {
                 "name": "Defeat all bats",
                 "access_rules": [
-                  "$mm_can_fight",
-                  "$mm_has_explosives",
-                  "mm_bow",
-                  "mm_hookshot",
-                  "mm_deku"
+                  "$mm|Beneath The Graveyard Chest"
                 ],
                 "item_count": 1
               },
@@ -7332,8 +7312,7 @@
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
-                  "$mm_can_fight",
-                  "$mm_has_explosives"
+                  "$mm|Beneath The Graveyard Song of Storms"
                 ],
                 "item_count": 1
               }
@@ -7348,9 +7327,6 @@
           },
           {
             "name": "Ikana Graveyard Graves Night 2",
-            "access_rules": [
-              "@Ikana Graveyard,mm_captainshat"
-            ],
             "chest_unopened_img": "images/system/chest_unopened_big.png",
             "chest_opened_img": "images/system/chest_open_big.png",
             "short_name": "Graves Night 2",
@@ -7358,7 +7334,7 @@
               {
                 "name": "Defeat Iron Knuckle",
                 "access_rules": [
-                  "$mm_can_fight,$mm_has_explosives,$mm_can_use_lens"
+                  "$mm|Beneath The Graveyard HP"
                 ],
                 "item_count": 1
               }
@@ -7373,9 +7349,6 @@
           },
           {
             "name": "Ikana Graveyard Graves Night 3",
-            "access_rules": [
-              "@Ikana Graveyard,mm_captainshat"
-            ],
             "chest_unopened_img": "images/system/chest_unopened_big.png",
             "chest_opened_img": "images/system/chest_open_big.png",
             "short_name": "Graves Night 3",
@@ -7383,7 +7356,7 @@
               {
                 "name": "Defeat Big Poe",
                 "access_rules": [
-                  "$mm_has_weapon_range"
+                  "$mm|Beneath The Graveyard Dampe Chest"
                 ],
                 "item_count": 1
               }
@@ -7398,10 +7371,6 @@
           },
           {
             "name": "Ikana Valley",
-            "access_rules": [
-              "@Road to Ikana Center,mm_gibdomask,mm_hookshot",
-              "@Road to Ikana Center,mm_garomask,mm_hookshot"
-            ],
             "children": [
               {
                 "name": "Ikana Canyon Business Scrub",
@@ -7412,7 +7381,7 @@
                   {
                     "name": "Give Ocean Title Deed",
                     "access_rules": [
-                      "mm_great_bay_deed,mm_zora"
+                      "$mm|Ikana Valley Scrub Rupee"
                     ],
                     "item_count": 1
                   },
@@ -7421,7 +7390,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "mm_great_bay_deed,mm_zora,mm_deku"
+                      "$mm|Ikana Valley Scrub HP"
                     ],
                     "item_count": 1
                   }
@@ -7442,6 +7411,9 @@
                 "sections": [
                   {
                     "name": "Behind the waterfall",
+                    "access_rules": [
+                      "$mm|Ikana Valley Grotto"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -7458,28 +7430,40 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "Boss Gauntlet",
-                "access_rules": [
-                  "$mm_can_use_light_arrows"
-                ],
                 "sections": [
                   {
                     "name": "Dinolfos",
+                    "access_rules": [
+                      "$mm|Secret Shrine Boss 1 Chest"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Wizrobe",
+                    "access_rules": [
+                      "$mm|Secret Shrine Boss 2 Chest"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Wart",
+                    "access_rules": [
+                      "$mm|Secret Shrine Boss 3 Chest"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Garo Master",
+                    "access_rules": [
+                      "$mm|Secret Shrine Boss 4 Chest"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Defeat all four minibosses",
+                    "access_rules": [
+                      "$mm|Secret Shrine HP Chest"
+                    ],
                     "chest_unopened_img": "images/system/chest_unopened_big.png",
                     "chest_opened_img": "images/system/chest_open_big.png",
                     "item_count": 1
@@ -7495,10 +7479,6 @@
               },
               {
                 "name": "Ikana Canyon",
-                "access_rules": [
-                  "$mm_can_use_ice_arrows,mm_hookshot",
-                  "[trick_mm_iceless_ikana],mm_hookshot"
-                ],
                 "children": [
                   {
                     "name": "Ikana Canyon Tingle Maps",
@@ -7525,7 +7505,7 @@
                         "chest_unopened_img": "images/system/unknownmask.png",
                         "chest_opened_img": "images/system/unknownmask_grey.png",
                         "access_rules": [
-                          "$mm_can_play|mm_songofstorms,$mm_can_play|mm_healing"
+                          "$mm|Music Box House Gibdo Mask"
                         ],
                         "item_count": 1
                       }
@@ -7547,7 +7527,7 @@
                         "chest_unopened_img": "images/system/heartpiece.png",
                         "chest_opened_img": "images/system/heartpiece_grey.png",
                         "access_rules": [
-                          "mm_bow,mm_hookshot,$mm_can_use_deku_bubble"
+                          "$mm|Ghost Hut HP"
                         ],
                         "item_count": 1
                       }
@@ -7569,7 +7549,7 @@
                       {
                         "name": "15 Stray Fairies in Stone Tower Temple",
                         "access_rules": [
-                          "mm_stonetower_stray_fairies:15"
+                          "$mm|Ikana Great Fairy"
                         ],
                         "item_count": 1
                       }
@@ -7584,31 +7564,19 @@
                   },
                   {
                     "name": "Stone Tower",
-                    "access_rules": [
-                      "$mm_can_use_elegy3,mm_hookshot",
-                      "$mm_can_use_elegy2,[trick_mm_one_mask_stone_tower],mm_hookshot"
-                    ],
                     "children": [
                       {
                         "name": "Inverted Stone Tower Chests",
                         "chest_unopened_img": "images/system/chest_brown_closed.png",
                         "chest_opened_img": "images/system/chest_brown_open.png",
                         "short_name": "Stone Tower Chests",
-                        "access_rules": [
-                          "$mm_can_use_light_arrows,$mm_can_use_beans"
-                        ],
                         "sections": [
                           {
-                            "name": "Left Chest",
-                            "item_count": 1
-                          },
-                          {
-                            "name": "Middle Chest",
-                            "item_count": 1
-                          },
-                          {
-                            "name": "Right Chest",
-                            "item_count": 1
+                            "name": "Stone Tower Chests",
+                            "access_rules": [
+                              "$mm|Stone Tower Inverted Chest 1"
+                            ],
+                            "item_count": 3
                           }
                         ],
                         "map_locations": [
