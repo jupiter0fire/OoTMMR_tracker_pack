@@ -94,11 +94,11 @@
       },
       {
         "img": "images/hookshotd.png",
-        "codes": "MM_HOOKSHOT_SHORT"
+        "codes": "MM_HOOKSHOT"
       },
       {
         "img": "images/items/mm_hookshot.png",
-        "codes": "MM_HOOKSHOT"
+        "codes": "MM_LONGSHOT"
       }
     ]
   },
