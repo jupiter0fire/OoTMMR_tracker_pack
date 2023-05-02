@@ -6,37 +6,37 @@
     "content": [
       {
         "type": "item",
-        "item": "setting_door",
+        "item": "setting_goldSkulltulaTokens",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_oot_cross_warps",
+        "item": "setting_smallKeyShuffle",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_tokens_off",
+        "item": "setting_cowShuffleOot",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_shuffle_smallkeys",
+        "item": "setting_shopShuffleOot",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_oot_shuffle_cows",
+        "item": "setting_doorOfTime",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_oot_shuffle_shops",
+        "item": "setting_crossWarpOot",
         "width": 200,
         "height": 16
       }
@@ -49,31 +49,37 @@
     "content": [
       {
         "type": "item",
-        "item": "house_skull_shuffle",
+        "item": "setting_housesSkulltulaTokens",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_mm_shuffle_townfairy",
+        "item": "setting_townFairyShuffle",
         "width": 200,
         "height": 16        
       },
       {
         "type": "item",
-        "item": "setting_mm_shuffle_dungeonfairy",
+        "item": "setting_strayFairyShuffle",
         "width": 200,
         "height": 16        
       },
       {
         "type": "item",
-        "item": "setting_mm_shuffle_shops",
+        "item": "setting_cowShuffleMm",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_mm_shuffle_cows",
+        "item": "setting_shopShuffleMm",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crossWarpMm",
         "width": 200,
         "height": 16
       }
@@ -86,13 +92,13 @@
     "content": [
       {
         "type": "item",
-        "item": "trick_oot_fewer_lens",
+        "item": "TRICK_OOT_LENS",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_fewer_tunic",
+        "item": "TRICK_OOT_TUNICS",
         "width": 200,
         "height": 16
       },
@@ -104,49 +110,79 @@
       },
       {
         "type": "item",
-        "item": "trick_oot_mido_skip",
+        "item": "TRICK_OOT_MIDO_SKIP",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_man_on_roof",
+        "item": "TRICK_OOT_MAN_ON_ROOF",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_blind_wasteland",
+        "item": "TRICK_OOT_BLIND_WASTELAND",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_night_skull_sun_song",
+        "item": "TRICK_OOT_DEKU_SKIP",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_zora_domain_child",
+        "item": "TRICK_OOT_DC_JUMP",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_zora_domain_adult",
+        "item": "TRICK_OOT_FOREST_HOOK",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_volcano_heart_piece",
+        "item": "TRICK_OOT_HAMMER_WALLS",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_wasteland_sand_river",
+        "item": "TRICK_OOT_VOLCANO_HOVERS",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_NIGHT_GS",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_CHILD_DOMAIN",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_ADULT_DOMAIN",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_WATER_LONGSHOT",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_SAND_RIVER_NOTHING",
         "width": 200,
         "height": 16
       }
@@ -159,13 +195,13 @@
     "content": [
       {
         "type": "item",
-        "item": "trick_mm_fewer_lens",
+        "item": "TRICK_MM_SHORT_HOOK_HARD",
         "width": 200,
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_mm_goron_bomb_jump",
+        "item": "TRICK_MM_PFI_BOAT_HOOK",
         "width": 200,
         "height": 16
       },
