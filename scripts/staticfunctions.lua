@@ -249,12 +249,16 @@ OOTMM = {
     ["oot"] = {
         ["state"] = nil,
         ["locations_normal"] = {},
-        ["locations_glitched"] = {}
+        ["locations_glitched"] = {},
+        ["events_normal"] = {},
+        ["events_glitched"] = {}
     },
     ["mm"] = {
         ["state"] = nil,
         ["locations_normal"] = {},
-        ["locations_glitched"] = {}
+        ["locations_glitched"] = {},
+        ["events_normal"] = {},
+        ["events_glitched"] = {},
     }
 }
 
@@ -292,6 +296,7 @@ local function reset_logic(world)
         -- child + adult
         OOTMM[world].locations_normal = OOTMM[world].state.find_available_locations()
     end
+    OOTMM[world]["events_normal"] = OOTMM[world].state.get_reachable_events()
 
     OOTMM[world].state.set_trick_mode("all")
     if world == "mm" then
@@ -301,11 +306,12 @@ local function reset_logic(world)
         -- child + adult
         OOTMM[world].locations_glitched = OOTMM[world].state.find_available_locations()
     end
+    OOTMM[world]["events_glitched"] = OOTMM[world].state.get_reachable_events()
 
     OOTMM_RESET_LOGIC_FLAG[world] = false
 end
 
-local function get_availability(world, location)
+local function get_availability(type, world, name)
     if OOTMM_RESET_LOGIC_FLAG[world] then
         reset_logic(world)
     end
@@ -313,11 +319,11 @@ local function get_availability(world, location)
     local reachable = false
     local accessibility = AccessibilityLevel.None
 
-    reachable = OOTMM[world].locations_normal[location] ~= nil or OOTMM[world].locations_glitched[location] ~= nil
+    reachable = OOTMM[world][type .. "s_normal"][name] ~= nil or OOTMM[world][type .. "s_glitched"][name] ~= nil
 
-    if reachable and OOTMM[world].locations_normal[location] ~= nil then
+    if reachable and OOTMM[world][type .. "s_normal"][name] ~= nil then
         accessibility = AccessibilityLevel.Normal
-    elseif reachable and OOTMM[world].locations_glitched[location] ~= nil then
+    elseif reachable and OOTMM[world][type .. "s_glitched"][name] ~= nil then
         accessibility = AccessibilityLevel.SequenceBreak
     end
 
@@ -329,7 +335,7 @@ function oot(location)
         print("oot:", location)
     end
 
-    return get_availability("oot", location)
+    return get_availability("location", "oot", location)
 end
 
 function mm(location)
@@ -337,5 +343,21 @@ function mm(location)
         print("mm:", location)
     end
 
-    return get_availability("mm", location)
+    return get_availability("location", "mm", location)
+end
+
+function oot_event(event)
+    if OOTMM_DEBUG then
+        print("oot_event:", event)
+    end
+
+    return get_availability("event", "oot", event)
+end
+
+function mm_event(event)
+    if OOTMM_DEBUG then
+        print("mm_event:", event)
+    end
+
+    return get_availability("event", "mm", event)
 end

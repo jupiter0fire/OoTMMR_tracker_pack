@@ -45,6 +45,10 @@ function _mm_logic()
         OOTMM_RUNTIME_CACHE = {}
     end
 
+    function get_reachable_events()
+        return OOTMM_RUNTIME_ACTIVE_EVENTS
+    end
+
     OOTMM_ITEM_PREFIX = "MM"
     OOTMM_TRICK_PREFIX = "TRICK"
 
@@ -218,7 +222,7 @@ function _mm_logic()
             ["type"] = "return",
             ["value"] = false,
         },
-        ["MEET_ZELDA"] = {
+        ["FROG_1"] = {
             ["type"] = "has",
         },
     }
