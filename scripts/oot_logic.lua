@@ -76,7 +76,17 @@ function _oot_logic()
                 min_count = 1
             end
 
-            local count = Tracker:ProviderCountForCode(OOTMM_ITEM_PREFIX .. "_" .. item)
+            local item_code = ""
+            if string.match(item, "^setting_") or string.match(item, "^TRICK_") then
+                -- These are already prefixed as needed
+                item_code = item
+            else
+                -- Function got called from raw converted logic without an item prefix.
+                -- EmoTracker knows these items as "OOT_*"" / "MM_*"
+                item_code = OOTMM_ITEM_PREFIX .. "_" .. item
+            end
+
+            local count = Tracker:ProviderCountForCode(item_code)
 
             if not min_count then
                 return count > 0
@@ -196,14 +206,37 @@ function _oot_logic()
         return has(OOTMM_TRICK_PREFIX .. "_" .. x) or OOTMM_RUNTIME_ALL_TRICKS_ENABLED
     end
 
+    -- Events are active if they CAN LOGICALLY BE reached, not when they HAVE BEEN reached.
+    -- Checks show up as green when you actually need to do other things first,
+    -- and the sequence of tasks necessary is not obvious unless you're intimately familiar
+    -- with the randomizer's logic.
+    --
+    -- These exceptions are used to override the default behavior, and make the tracker more
+    -- user friendly.
+    OOTMM_EVENT_EXCEPTIONS = {
+        ["STICKS"] = {
+            ["type"] = "return",
+            ["value"] = false,
+        },
+        ["MEET_ZELDA"] = {
+            ["type"] = "has",
+        },
+    }
     function event(x)
-        -- FIXME
+        if OOTMM_EVENT_EXCEPTIONS[x] then
+            if OOTMM_EVENT_EXCEPTIONS[x]["type"] == "return" then
+                return OOTMM_EVENT_EXCEPTIONS[x]["value"]
+            elseif OOTMM_EVENT_EXCEPTIONS[x]["type"] == "has" then
+                return has("EVENT_" .. x)
+            else
+                error("Invalid event exception type: " .. OOTMM_EVENT_EXCEPTIONS[x]["type"])
+            end
+        end
+
         if OOTMM_RUNTIME_ACTIVE_EVENTS[x] then
             return true
         end
-        -- if x == "TIME_TRAVEL" then
-        --     return true
-        -- end
+
         return false
     end
 
@@ -229,7 +262,7 @@ function _oot_logic()
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for
-        -- setting(crossWarpMm, full) -> check if has(crossWarpMm_full)
+        -- setting(crossWarpMm, full) -> check if has(setting_crossWarpMm_full)
         local item_name = name
         if state then
             item_name = name .. "_" .. state
@@ -243,11 +276,11 @@ function _oot_logic()
             return OOTMM_SETTING_EXCEPTIONS[item_name]
         end
 
-        return has(item_name)
+        return has("setting_" .. item_name)
     end
 
     function special(x)
-        -- FIXME: No idea what this is :)
+        -- FIXME
         return false
     end
 
