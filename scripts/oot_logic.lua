@@ -225,6 +225,9 @@ function _oot_logic()
         ["FROG_1"] = {
             ["type"] = "has",
         },
+        ["MEET_ZELDA"] = {
+            ["type"] = "has",
+        },
     }
     function event(x)
         if OOTMM_EVENT_EXCEPTIONS[x] then

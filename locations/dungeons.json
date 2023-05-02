@@ -3195,7 +3195,7 @@
         "name": "Frog 2",
         "hosted_item": "mm_frog_2",
         "access_rules": [
-          "@Woodfall Temple/Woodfall Temple Boss Key Room,mm_dongero,mm_snowhead"
+          "$mm_event|FROG_2"
         ]
       },
       {
@@ -3433,7 +3433,7 @@
         "name": "Frog 4",
         "hosted_item": "mm_frog_4",
         "access_rules": [
-          "@Great Bay Temple/Great Bay Temple Boss Key Room,mm_dongero,mm_snowhead"
+          "$mm_event|FROG_4"
         ]
       },
       {

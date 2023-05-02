@@ -124,7 +124,7 @@
       },
       {
         "img": "images/letter.png",
-        "codes": "meet_zelda"
+        "codes": "EVENT_MEET_ZELDA"
       }
     ]
   },

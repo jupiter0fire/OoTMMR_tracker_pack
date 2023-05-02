@@ -3055,7 +3055,7 @@
           {
             "name": "HC Garden",
             "access_rules": [
-              "$oot|Zelda's Letter"
+              "$oot_event|MEET_ZELDA"
             ],
             "sections": [
               {
@@ -3067,7 +3067,8 @@
               },
               {
                 "name": "HC Zeldas Letter",
-                "item_count": 1
+                "item_count": 1,
+                "hosted_item": "EVENT_MEET_ZELDA"
               }
             ],
             "map_locations": [
@@ -5230,7 +5231,7 @@
                     "name": "Frog 1",
                     "hosted_item": "mm_frog_1",
                     "access_rules": [
-                      "mm_dongero,mm_snowhead"
+                      "$mm_event|FROG_1"
                     ]
                   }
                 ],
@@ -6061,7 +6062,7 @@
                 "name": "Frog 3",
                 "hosted_item": "mm_frog_3",
                 "access_rules": [
-                  "mm_dongero,mm_snowhead"
+                  "$mm_event|FROG_3"
                 ]
               }
             ],
