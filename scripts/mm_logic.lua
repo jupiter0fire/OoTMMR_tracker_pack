@@ -41,6 +41,10 @@ function _mm_logic()
     OOTMM_RUNTIME_ACTIVE_EVENTS = {}
     OOTMM_RUNTIME_CACHE = {}
 
+    function reset()
+        OOTMM_RUNTIME_CACHE = {}
+    end
+
     OOTMM_ITEM_PREFIX = "MM"
     OOTMM_TRICK_PREFIX = "TRICK"
 
@@ -72,7 +76,17 @@ function _mm_logic()
                 min_count = 1
             end
 
-            local count = Tracker:ProviderCountForCode(OOTMM_ITEM_PREFIX .. "_" .. item)
+            local item_code = ""
+            if string.match(item, "^setting_") or string.match(item, "^TRICK_") then
+                -- These are already prefixed as needed
+                item_code = item
+            else
+                -- Function got called from raw converted logic without an item prefix.
+                -- EmoTracker knows these items as "OOT_*"" / "MM_*"
+                item_code = OOTMM_ITEM_PREFIX .. "_" .. item
+            end
+
+            local count = Tracker:ProviderCountForCode(item_code)
 
             if not min_count then
                 return count > 0
@@ -126,7 +140,6 @@ function _mm_logic()
     adult = false
 
     function age(x)
-        -- FIXME
         return x
     end
 
@@ -193,14 +206,37 @@ function _mm_logic()
         return has(OOTMM_TRICK_PREFIX .. "_" .. x) or OOTMM_RUNTIME_ALL_TRICKS_ENABLED
     end
 
+    -- Events are active if they CAN LOGICALLY BE reached, not when they HAVE BEEN reached.
+    -- Checks show up as green when you actually need to do other things first,
+    -- and the sequence of tasks necessary is not obvious unless you're intimately familiar
+    -- with the randomizer's logic.
+    --
+    -- These exceptions are used to override the default behavior, and make the tracker more
+    -- user friendly.
+    OOTMM_EVENT_EXCEPTIONS = {
+        ["STICKS"] = {
+            ["type"] = "return",
+            ["value"] = false,
+        },
+        ["MEET_ZELDA"] = {
+            ["type"] = "has",
+        },
+    }
     function event(x)
-        -- FIXME
+        if OOTMM_EVENT_EXCEPTIONS[x] then
+            if OOTMM_EVENT_EXCEPTIONS[x]["type"] == "return" then
+                return OOTMM_EVENT_EXCEPTIONS[x]["value"]
+            elseif OOTMM_EVENT_EXCEPTIONS[x]["type"] == "has" then
+                return has("EVENT_" .. x)
+            else
+                error("Invalid event exception type: " .. OOTMM_EVENT_EXCEPTIONS[x]["type"])
+            end
+        end
+
         if OOTMM_RUNTIME_ACTIVE_EVENTS[x] then
             return true
         end
-        -- if x == "TIME_TRAVEL" then
-        --     return true
-        -- end
+
         return false
     end
 
@@ -226,7 +262,7 @@ function _mm_logic()
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for
-        -- setting(crossWarpMm, full) -> check if has(crossWarpMm_full)
+        -- setting(crossWarpMm, full) -> check if has(setting_crossWarpMm_full)
         local item_name = name
         if state then
             item_name = name .. "_" .. state
@@ -240,11 +276,11 @@ function _mm_logic()
             return OOTMM_SETTING_EXCEPTIONS[item_name]
         end
 
-        return has(item_name)
+        return has("setting_" .. item_name)
     end
 
     function special(x)
-        -- FIXME: No idea what this is :)
+        -- FIXME
         return false
     end
 
@@ -258,20 +294,27 @@ function _mm_logic()
         print(s .. ":" .. line)
     end
 
-    -- Starting at the spawn location, check all places for available locations
-    function find_available_locations(logic, child_only)
-        -- FIXME: "logic" should be available without passing it from the outside,
-        --        but it doesn't work; investigate!
-        --        Once this is fixed, re-add the "local" keyword to it in main.py
+    function set_age(age)
+        if age == "child" then
+            child = true
+            adult = false
+        elseif age == "adult" then
+            child = false
+            adult = true
+        else
+            error("Invalid age: " .. age)
+        end
+    end
 
+    -- Starting at the spawn location, check all places for available locations
+    function find_available_locations(child_only)
         OOTMM_RUNTIME_ACTIVE_EVENTS = {}
         local places_to_check = { "SPAWN" }
         local places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
         local places_checked = {}
         local locations_available = {}
 
-        child = true
-        adult = false
+        set_age("child")
 
         while #places_to_check > 0 do
             local place = table.remove(places_to_check, 1)
@@ -316,8 +359,7 @@ function _mm_logic()
 
                             -- Reset local state, and start over.
                             -- TODO: Handle events more efficiently (see README.md)
-                            child = true
-                            adult = false
+                            set_age("child")
                             places_to_check = { "SPAWN" }
                             places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
                             places_checked = {}
@@ -335,8 +377,7 @@ function _mm_logic()
 
             if #places_to_check == 0 and child and not child_only then
                 -- Child places depleted, start over as adult
-                child = false
-                adult = true
+                set_age("adult")
                 places_to_check = { "SPAWN" }
                 places_available = { "SPAWN" } -- FIXME: Remove this, for debugging only
                 places_checked = {}
