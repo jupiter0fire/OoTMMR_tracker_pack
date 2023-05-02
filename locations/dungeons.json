@@ -37,7 +37,7 @@
           "$oot|Deku Tree GS Compass"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -58,7 +58,7 @@
           "$oot|Deku Tree GS Basement Vines"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -71,7 +71,7 @@
           "$oot|Deku Tree GS Basement Gate"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -84,7 +84,7 @@
           "$oot|Deku Tree GS Basement Back Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -122,7 +122,7 @@
           "$oot|Dodongo Cavern GS Side Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -135,7 +135,7 @@
           "$oot|Dodongo Cavern GS Scarecrow"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -192,7 +192,7 @@
           "$oot|Dodongo Cavern GS Stairs Top"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -205,7 +205,7 @@
           "$oot|Dodongo Cavern GS Stairs Vines"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -256,7 +256,7 @@
           "$oot|Dodongo Cavern GS Near Boss"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -302,7 +302,7 @@
           "$oot|Jabu-Jabu GS Water Switch"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -353,7 +353,7 @@
           "$oot|Jabu-Jabu GS Bottom Lower"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -366,7 +366,7 @@
           "$oot|Jabu-Jabu GS Bottom Upper"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -379,7 +379,7 @@
           "$oot|Jabu-Jabu GS Water Switch"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -417,7 +417,7 @@
           "$oot|Ice Cavern GS Scythe Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -458,7 +458,7 @@
           "$oot|Ice Cavern GS HP Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -471,7 +471,7 @@
           "$oot|Ice Cavern GS Block Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -517,7 +517,7 @@
           "$oot|Forest Temple GS Entrance"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -539,7 +539,7 @@
           "$oot|Forest Temple GS Main"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -569,7 +569,7 @@
           "$oot|Forest Temple GS Garden East"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -600,7 +600,7 @@
           "$oot|Forest Temple GS Garden West"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -682,7 +682,7 @@
           "$oot|Forest Temple GS Antichamber"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -729,7 +729,7 @@
           "$oot|Fire Temple GS Hammer Statues"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -760,7 +760,7 @@
           "$oot|Fire Temple GS Lava Side Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -809,7 +809,7 @@
           "$oot|Fire Temple GS Maze"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -849,7 +849,7 @@
           "$oot|Fire Temple GS Scarecrow Wall"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -862,7 +862,7 @@
           "$oot|Fire Temple GS Scarecrow Top"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -961,7 +961,7 @@
           "$oot|Water Temple GS Cage"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -992,7 +992,7 @@
           "$oot|Water Temple GS Center"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1014,7 +1014,7 @@
           "$oot|Water Temple GS Large Pit"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1035,7 +1035,7 @@
           "$oot|Water Temple GS River"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1066,7 +1066,7 @@
           "$oot|Water Temple GS Waterfalls"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1165,7 +1165,7 @@
           "$oot|Shadow Temple GS Invisible Scythe"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1186,7 +1186,7 @@
           "$oot|Shadow Temple GS Falling Spikes"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1226,7 +1226,7 @@
           "$oot|Shadow Temple GS Skull Pot"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1265,7 +1265,7 @@
           "$oot|Shadow Temple GS Near Boat"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1296,7 +1296,7 @@
           "$oot|Shadow Temple GS Triple Skull Pot"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1360,7 +1360,7 @@
           "$oot|Spirit Temple GS Child Fence"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1381,7 +1381,7 @@
           "$oot|Spirit Temple GS Child Climb"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1403,7 +1403,7 @@
           "$oot|Spirit Temple GS Iron Knuckle"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1433,7 +1433,7 @@
           "$oot|Spirit Temple GS Statue"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1464,7 +1464,7 @@
           "$oot|Spirit Temple GS Boulders"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1605,7 +1605,7 @@
           "$oot|Bottom of the Well GS Inner West"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1618,7 +1618,7 @@
           "$oot|Bottom of the Well GS Inner East"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1646,7 +1646,7 @@
           "$oot|Bottom of the Well GS East Cage"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2037,7 +2037,7 @@
           "$mm|Swamp Skulltula Main Room Water"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2050,7 +2050,7 @@
           "$mm|Swamp Skulltula Main Room Lower Left Soft Soil"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2063,7 +2063,7 @@
           "$mm|Swamp Skulltula Main Room Lower Right Soft Soil"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2076,7 +2076,7 @@
           "$mm|Swamp Skulltula Main Room Pillar"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2089,7 +2089,7 @@
           "$mm|Swamp Skulltula Main Room Jar"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2102,7 +2102,7 @@
           "$mm|Swamp Skulltula Monument Room Crate 1"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 2
       },
@@ -2112,7 +2112,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "access_rules": [
           "$mm|Swamp Skulltula Monument Room Lower Wall"
@@ -2128,7 +2128,7 @@
           "$mm|Swamp Skulltula Monument Room On Monument"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2141,7 +2141,7 @@
           "$mm|Swamp Skulltula Monument Room Torch"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2154,7 +2154,7 @@
           "$mm|Swamp Skulltula Main Room Upper Pillar"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2164,7 +2164,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "access_rules": [
           "$mm|Swamp Skulltula Main Room Near Ceiling"
@@ -2177,7 +2177,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "access_rules": [
           "$mm|Swamp Skulltula Main Room Upper Soft Soil"
@@ -2190,7 +2190,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "access_rules": [
           "$mm|Swamp Skulltula Pot Room Hive 1"
@@ -2206,7 +2206,7 @@
           "$mm|Swamp Skulltula Pot Room Pot 1"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 2
       },
@@ -2219,7 +2219,7 @@
           "$mm|Swamp Skulltula Pot Room Jar"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2229,7 +2229,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "access_rules": [
           "$mm|Swamp Skulltula Pot Room Behind Vines"
@@ -2245,7 +2245,7 @@
           "$mm|Swamp Skulltula Pot Room Wall"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2258,7 +2258,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2271,7 +2271,7 @@
           "$mm|Swamp Skulltula Gold Room Pillar"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2281,7 +2281,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "access_rules": [
           "$mm|Swamp Skulltula Gold Room Wall"
@@ -2297,7 +2297,7 @@
           "$mm|Swamp Skulltula Gold Room Near Ceiling"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2310,7 +2310,7 @@
           "$mm|Swamp Skulltula Tree Room Tree 1"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 3
       },
@@ -2320,7 +2320,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "access_rules": [
           "$mm|Swamp Skulltula Tree Room Hive"
@@ -2336,7 +2336,7 @@
           "$mm|Swamp Skulltula Tree Room Grass 2"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 2
       }
@@ -2365,7 +2365,7 @@
           "$mm|Ocean Skulltula Entrance Right Wall"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ]
       },
       {
@@ -2378,7 +2378,7 @@
         ],
         "item_count": 1,
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ]
       },
       {
@@ -2390,7 +2390,7 @@
           "$mm|Ocean Skulltula 2nd Room Behind Skull 1"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2403,7 +2403,7 @@
           "$mm|Ocean Skulltula 2nd Room Webbed Pot"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2416,7 +2416,7 @@
           "$mm|Ocean Skulltula 2nd Room Jar"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2429,7 +2429,7 @@
           "$mm|Ocean Skulltula 2nd Room Ceiling Plank"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2442,7 +2442,7 @@
           "$mm|Ocean Skulltula Library On Corner Bookshelf"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2455,7 +2455,7 @@
           "$mm|Ocean Skulltula Library Hole Behind Cabinet"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2468,7 +2468,7 @@
           "$mm|Ocean Skulltula Library Ceiling Edge"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2481,7 +2481,7 @@
           "$mm|Ocean Skulltula Library Hole Behind Picture"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2494,7 +2494,7 @@
           "$mm|Ocean Skulltula Library Behind Picture"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2507,7 +2507,7 @@
           "$mm|Ocean Skulltula Library Behind Bookcase 1"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 2
       },
@@ -2520,7 +2520,7 @@
           "$mm|Ocean Skulltula 2nd Room Ceiling Edge"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2533,7 +2533,7 @@
           "$mm|Ocean Skulltula 2nd Room Upper Pot"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2546,7 +2546,7 @@
           "$mm|Ocean Skulltula 2nd Room Behind Skull 2"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2559,7 +2559,7 @@
           "$mm|Ocean Skulltula 2nd Room Webbed Hole"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2572,7 +2572,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2585,7 +2585,7 @@
           "$mm|Ocean Skulltula Storage Room Crate"
         ],
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2598,7 +2598,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2611,7 +2611,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2624,7 +2624,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2637,7 +2637,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2650,7 +2650,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 3
       },
@@ -2663,7 +2663,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2676,7 +2676,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2689,7 +2689,7 @@
         ],
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "visibility_rules": [
-          "house_skull_shuffle_on"
+          "setting_housesSkulltulaTokens_none"
         ],
         "item_count": 1
       },
@@ -2869,7 +2869,7 @@
           "$mm|Beneath the Well Cow"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_cows_yes"
+          "setting_cowShuffleMm_true"
         ],
         "item_count": 1
       }
@@ -3007,7 +3007,7 @@
           "$mm|Woodfall Temple Entrance Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3020,7 +3020,7 @@
           "$mm|Woodfall Temple SF Entrance"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3033,7 +3033,7 @@
           "$mm|Woodfall Temple SF Main Pot"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3046,7 +3046,7 @@
           "$mm|Woodfall Temple SF Main Deku Baba"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3069,7 +3069,7 @@
           "$mm|Woodfall Temple SF Water Room Beehive"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3092,7 +3092,7 @@
           "$mm|Woodfall Temple SF Maze Skulltula"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3105,7 +3105,7 @@
           "$mm|Woodfall Temple SF Maze Beehive"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3118,7 +3118,7 @@
           "$mm|Woodfall Temple SF Maze Bubble"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3141,7 +3141,7 @@
           "$mm|Woodfall Temple Dark Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3154,7 +3154,7 @@
           "$mm|Woodfall Temple SF Main Bubble"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3167,7 +3167,7 @@
           "$mm|Woodfall Temple Center Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3207,7 +3207,7 @@
           "$mm|Woodfall Temple SF Pre-Boss Bottom Right"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3220,7 +3220,7 @@
           "$mm|Woodfall Temple SF Pre-Boss Top Right"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3233,7 +3233,7 @@
           "$mm|Woodfall Temple SF Pre-Boss Left"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3246,7 +3246,7 @@
           "$mm|Woodfall Temple SF Pre-Boss Pillar"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3284,7 +3284,7 @@
           "$mm|Great Bay Temple Entrance Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3297,7 +3297,7 @@
           "$mm|Great Bay Temple SF Water Wheel Platform"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3310,7 +3310,7 @@
           "$mm|Great Bay Temple SF Water Wheel Skulltula"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3323,7 +3323,7 @@
           "$mm|Great Bay Temple SF Central Room Barrel"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3336,7 +3336,7 @@
           "$mm|Great Bay Temple SF Central Room Underwater Pot"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3359,7 +3359,7 @@
           "$mm|Great Bay Temple SF Map Room Pot"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3372,7 +3372,7 @@
           "$mm|Great Bay Temple Baba Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3405,7 +3405,7 @@
           "$mm|Great Bay Temple SF Compass Room Pot"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3445,7 +3445,7 @@
           "$mm|Great Bay Temple Green Pipe 1 Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3458,7 +3458,7 @@
           "$mm|Great Bay Temple Green Pipe 2 Lower Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3471,7 +3471,7 @@
           "$mm|Great Bay Temple Green Pipe 2 Upper Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3484,7 +3484,7 @@
           "$mm|Great Bay Temple SF Green Pipe 3 Barrel"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3497,7 +3497,7 @@
           "$mm|Great Bay Temple Green Pipe 3 Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3510,7 +3510,7 @@
           "$mm|Great Bay Temple SF Pre-Boss Underwater"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3523,7 +3523,7 @@
           "$mm|Great Bay Temple SF Pre-Boss Above Water"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3561,7 +3561,7 @@
           "$mm|Stone Tower Temple Entrance Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3594,7 +3594,7 @@
           "$mm|Stone Tower Temple Under West Garden Ledge Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3617,7 +3617,7 @@
           "$mm|Stone Tower Temple Center Sun Block Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3640,7 +3640,7 @@
           "$mm|Stone Tower Temple Water Sun Switch Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3653,7 +3653,7 @@
           "$mm|Stone Tower Temple Mirrors Room Center Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3666,7 +3666,7 @@
           "$mm|Stone Tower Temple Mirrors Room Right Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3679,7 +3679,7 @@
           "$mm|Stone Tower Temple Wind Room Jail Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3692,7 +3692,7 @@
           "$mm|Stone Tower Temple Wind Room Ledge Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3715,7 +3715,7 @@
           "$mm|Stone Tower Temple Before Water Bridge Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3728,7 +3728,7 @@
           "$mm|Stone Tower Temple Water Bridge Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3741,7 +3741,7 @@
           "$mm|Stone Tower Temple Inverted Entrance Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3754,7 +3754,7 @@
           "$mm|Stone Tower Temple Inverted East Lower Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3777,7 +3777,7 @@
           "$mm|Stone Tower Temple Inverted East Upper Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3790,7 +3790,7 @@
           "$mm|Stone Tower Temple Inverted Wizrobe Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3823,7 +3823,7 @@
           "$mm|Stone Tower Temple Entrance Switch Chest"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3872,7 +3872,7 @@
           "$mm|Snowhead Temple SF Bridge Under Platform"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3885,7 +3885,7 @@
           "$mm|Snowhead Temple SF Bridge Pillar"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3908,7 +3908,7 @@
           "$mm|Snowhead Temple SF Map Room"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3951,7 +3951,7 @@
           "$mm|Snowhead Temple Icicle Room Alcove"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -3964,7 +3964,7 @@
           "$mm|Snowhead Temple SF Dual Switches"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -3987,7 +3987,7 @@
           "$mm|Snowhead Temple Central Room Bottom"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -4000,7 +4000,7 @@
           "$mm|Snowhead Temple Pillars Room"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -4013,7 +4013,7 @@
           "$mm|Snowhead Temple SF Compass Room Crate"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -4026,7 +4026,7 @@
           "$mm|Snowhead Temple Compass Room Ledge"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -4039,7 +4039,7 @@
           "$mm|Snowhead Temple Block Room Ledge"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -4062,7 +4062,7 @@
           "$mm|Snowhead Temple Map Alcove"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },
@@ -4075,7 +4075,7 @@
           "$mm|Snowhead Temple SF Snow Room"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 1
       },
@@ -4088,7 +4088,7 @@
           "$mm|Snowhead Temple SF Dinolfos 1"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_all"
+          "setting_strayFairyShuffle_ownDungeon"
         ],
         "item_count": 2
       },
@@ -4111,7 +4111,7 @@
           "$mm|Snowhead Temple Central Room Alcove"
         ],
         "visibility_rules": [
-          "setting_mm_shuffle_dungeonfairy_chest"
+          "setting_strayFairyShuffle_mixed"
         ],
         "item_count": 1
       },

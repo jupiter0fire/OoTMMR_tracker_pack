@@ -195,6 +195,84 @@
     "content": [
       {
         "type": "item",
+        "item": "TRICK_MM_LENS",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_PALACE_BEAN_SKIP",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_DARMANI_WALL",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_NO_SEAHORSE",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ZORA_HALL_HUMAN",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ICELESS_IKANA",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ONE_MASK_STONE_TOWER",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ISTT_EYEGORE",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_SCT_NOTHING",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GORON_BOMB_JUMP",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_BOMBER_SKIP",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_CAPTAIN_SKIP",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ISTT_ENTRY_JUMP",
+        "width": 200,
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "TRICK_MM_SHORT_HOOK_HARD",
         "width": 200,
         "height": 16
@@ -207,37 +285,7 @@
       },
       {
         "type": "item",
-        "item": "trick_mm_zora_hall_human",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "trick_mm_no_seahorse",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "trick_mm_iceless_ikana",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "trick_mm_one_mask_stone_tower",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "trick_mm_sct_nothing",
-        "width": 200,
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "trick_mm_guess_bomber",
+        "item": "TRICK_MM_PALACE_GUARD_SKIP",
         "width": 200,
         "height": 16
       }

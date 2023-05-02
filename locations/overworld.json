@@ -109,7 +109,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_oot_shuffle_shops_no"
+                  "setting_shopShuffleOot_none"
                 ],
                 "x": 2220,
                 "y": 915
@@ -126,7 +126,7 @@
                   "$oot|Kokiri Forest Cow"
                 ],
                 "visibility_rules": [
-                  "setting_oot_shuffle_cows_yes"
+                  "setting_cowShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -151,7 +151,7 @@
                   "$oot|Kokiri Forest GS Night Child"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -176,7 +176,7 @@
                   "$oot|Kokiri Forest GS Soil"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -201,7 +201,7 @@
                   "$oot|Kokiri Forest GS Night Adult"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -345,7 +345,7 @@
                   "$oot|Lost Woods GS Soil Bridge"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -457,7 +457,7 @@
                   "$oot|Lost Woods GS Soil Theater"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -470,7 +470,7 @@
                   "$oot|Lost Woods GS Bean Ride"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -614,7 +614,7 @@
                   "$oot|Sacred Meadow GS Night Adult"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -777,7 +777,7 @@
                   "$oot|Hyrule Field Grotto Near Kakariko GS"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -802,7 +802,7 @@
                   "$oot|Hyrule Field Grotto Near Gerudo GS"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -815,7 +815,7 @@
                   "$oot|Hyrule Field Cow"
                 ],
                 "visibility_rules": [
-                  "setting_oot_shuffle_cows_yes"
+                  "setting_cowShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -898,7 +898,7 @@
                   "$oot|Lake Hylia GS Island"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -959,7 +959,7 @@
                   "$oot|Laboratory GS Crate"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1007,7 +1007,7 @@
                   "$oot|Lake Hylia GS Soil"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1032,7 +1032,7 @@
                   "$oot|Lake Hylia GS Lab Wall"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1057,7 +1057,7 @@
                   "$oot|Lake Hylia GS Big Tree"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1139,7 +1139,7 @@
                   "$oot|Lon Lon Ranch Silo Cow Front"
                 ],
                 "visibility_rules": [
-                  "setting_oot_shuffle_cows_yes"
+                  "setting_cowShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -1164,7 +1164,7 @@
                   "$oot|Lon Lon Ranch Stables Cow Left"
                 ],
                 "visibility_rules": [
-                  "setting_oot_shuffle_cows_yes"
+                  "setting_cowShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -1216,7 +1216,7 @@
                   "$oot|Lon Lon Ranch GS Tree"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1229,7 +1229,7 @@
                   "$oot|Lon Lon Ranch GS Rain Shed"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1242,7 +1242,7 @@
                   "$oot|Lon Lon Ranch GS House"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1255,7 +1255,7 @@
                   "$oot|Lon Lon Ranch GS Back Wall"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1336,7 +1336,7 @@
                   "$oot|Kakariko Cow"
                 ],
                 "visibility_rules": [
-                  "setting_oot_shuffle_cows_yes"
+                  "setting_cowShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -1611,7 +1611,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_oot_shuffle_shops_no"
+                  "setting_shopShuffleOot_none"
                 ],
                 "x": 1795,
                 "y": 340
@@ -1661,7 +1661,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_oot_shuffle_shops_no"
+                  "setting_shopShuffleOot_none"
                 ],
                 "x": 1760,
                 "y": 340
@@ -1678,7 +1678,7 @@
                   "$oot|Kakariko GS Roof"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1703,7 +1703,7 @@
                   "$oot|Kakariko GS Tree"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1716,7 +1716,7 @@
                   "$oot|Kakariko GS House of Skulltula"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1729,7 +1729,7 @@
                   "$oot|Kakariko GS Shooting Gallery"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1742,7 +1742,7 @@
                   "$oot|Kakariko GS Bazaar"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1755,7 +1755,7 @@
                   "$oot|Kakariko GS Ladder"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -1928,7 +1928,7 @@
                       "$oot|Graveyard GS Wall"
                     ],
                     "visibility_rules": [
-                      "setting_tokens_overworld"
+                      "setting_goldSkulltulaTokens_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -1953,7 +1953,7 @@
                       "$oot|Graveyard GS Soil"
                     ],
                     "visibility_rules": [
-                      "setting_tokens_overworld"
+                      "setting_goldSkulltulaTokens_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2051,7 +2051,7 @@
                       "$oot|Death Mountain GS Above Dodongo"
                     ],
                     "visibility_rules": [
-                      "setting_tokens_overworld"
+                      "setting_goldSkulltulaTokens_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2076,7 +2076,7 @@
                       "$oot|Death Mountain GS Soil"
                     ],
                     "visibility_rules": [
-                      "setting_tokens_overworld"
+                      "setting_goldSkulltulaTokens_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2101,7 +2101,7 @@
                       "$oot|Death Mountain GS Entrance"
                     ],
                     "visibility_rules": [
-                      "setting_tokens_overworld"
+                      "setting_goldSkulltulaTokens_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -2134,7 +2134,7 @@
                   "$oot|Death Mountain Cow"
                 ],
                 "visibility_rules": [
-                  "setting_oot_shuffle_cows_yes"
+                  "setting_cowShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -2212,7 +2212,7 @@
                   "$oot|Death Mountain GS Before Climb"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -2256,7 +2256,7 @@
                   "$oot|Goron City GS Maze"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -2410,7 +2410,7 @@
                   "$oot|Goron City GS Platform"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -2653,7 +2653,7 @@
                   "$oot|Death Mountain Crater GS Crate"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -2678,7 +2678,7 @@
                   "$oot|Death Mountain Crater GS Soil"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -2829,7 +2829,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_oot_shuffle_shops_no"
+                      "setting_shopShuffleOot_none"
                     ],
                     "x": 1390,
                     "y": 365
@@ -2900,7 +2900,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_oot_shuffle_shops_no"
+                      "setting_shopShuffleOot_none"
                     ],
                     "x": 1475,
                     "y": 325
@@ -2950,7 +2950,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_oot_shuffle_shops_no"
+                      "setting_shopShuffleOot_none"
                     ],
                     "x": 1475,
                     "y": 365
@@ -2975,7 +2975,7 @@
                       "$oot|Market Pot House GS"
                     ],
                     "visibility_rules": [
-                      "setting_tokens_overworld"
+                      "setting_goldSkulltulaTokens_overworld"
                     ],
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
@@ -3108,7 +3108,7 @@
                   "$oot|Hyrule Castle GS Tree"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3133,7 +3133,7 @@
                   "$oot|Hyrule Castle GS Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3163,7 +3163,7 @@
                   "$oot|Ganon Castle Exterior GS"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3345,7 +3345,7 @@
                   "$oot|Zora River GS Tree"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3370,7 +3370,7 @@
                   "$oot|Zora River GS Ladder"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3395,7 +3395,7 @@
                   "$oot|Zora River GS Near Grotto"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3420,7 +3420,7 @@
                   "$oot|Zora River GS Near Bridge"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3514,7 +3514,7 @@
                   "$oot|Zora Domain GS Waterfall"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3669,7 +3669,7 @@
                   "$oot|Zora Fountain GS Upper"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3694,7 +3694,7 @@
                   "$oot|Zora Fountain GS Tree"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3719,7 +3719,7 @@
                   "$oot|Zora Fountain GS Wall"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3792,7 +3792,7 @@
                   "$oot|Gerudo Valley Cow"
                 ],
                 "visibility_rules": [
-                  "setting_oot_shuffle_cows_yes"
+                  "setting_cowShuffleOot_true"
                 ],
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
@@ -3817,7 +3817,7 @@
                   "$oot|Gerudo Valley GS Wall"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3842,7 +3842,7 @@
                   "$oot|Gerudo Valley GS Soil"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3933,7 +3933,7 @@
                   "$oot|Gerudo Valley GS Tent"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -3958,7 +3958,7 @@
                   "$oot|Gerudo Valley GS Pillar"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -4086,7 +4086,7 @@
                   "$oot|Gerudo Fortress GS Target"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -4111,7 +4111,7 @@
                   "$oot|Gerudo Fortress GS Wall"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -4149,7 +4149,7 @@
                   "$oot|Haunted Wasteland GS"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -4265,7 +4265,7 @@
                   "$oot|Desert Colossus GS Soil"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -4290,7 +4290,7 @@
                   "$oot|Desert Colossus GS Tree"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -4315,7 +4315,7 @@
                   "$oot|Desert Colossus GS Plateau"
                 ],
                 "visibility_rules": [
-                  "setting_tokens_overworld"
+                  "setting_goldSkulltulaTokens_overworld"
                 ],
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
@@ -5014,7 +5014,7 @@
                       "$mm|Bomb Shop Item 1"
                     ],
                     "visibility_rules": [
-                      "setting_mm_shuffle_shops_yes"
+                      "setting_shopShuffleMm_full"
                     ],  
                     "item_count": 1
                   },                  
@@ -5024,7 +5024,7 @@
                       "$mm|Bomb Shop Item 2"
                     ],
                     "visibility_rules": [
-                       "setting_mm_shuffle_shops_yes"
+                       "setting_shopShuffleMm_full"
                     ],
                     "item_count": 1
                   },
@@ -5115,7 +5115,7 @@
                   {
                     "map": "termina",
                     "force_invisibility_rules":[
-                      "setting_mm_shuffle_shops_no"
+                      "setting_shopShuffleMm_none"
                     ],  
                     "x": 34,
                     "y": 168
@@ -5254,7 +5254,7 @@
                     "chest_unopened_img": "images/system/mm_clocktown_stray_fairy.png",
                     "chest_opened_img": "images/system/mm_stray_fairy.png",
                     "visibility_rules": [
-                      "setting_mm_shuffle_townfairy_yes"
+                      "setting_townFairyShuffle_anywhere"
                     ],
                     "item_count": 1
                   }
@@ -5499,7 +5499,7 @@
               {
                 "map": "termina",
                 "force_invisibility_rules": [
-                  "setting_mm_shuffle_cows_no"
+                  "setting_cowShuffleMm_false"
                 ],
                 "x": 525,
                 "y": 340
@@ -5771,7 +5771,7 @@
               {
                 "map": "termina",
                 "force_invisibility_rules": [
-                  "setting_mm_shuffle_cows_no"
+                  "setting_cowShuffleMm_false"
                 ],
                 "x": 388,
                 "y": 350
@@ -6026,7 +6026,7 @@
               {
                 "map": "termina",
                 "force_invisibility_rules": [
-                  "setting_mm_shuffle_shops_no"
+                  "setting_shopShuffleMm_none"
                 ],
                 "x": 633,
                 "y": 423
@@ -6672,7 +6672,7 @@
               {
                 "map": "termina",
                 "force_invisibility_rules":[
-                  "setting_mm_shuffle_shops_no"
+                  "setting_shopShuffleMm_none"
                 ],  
                 "x": 646,
                 "y": 140
@@ -7098,7 +7098,7 @@
                     "x": 210,
                     "y": 380,
                     "force_invisibility_rules":[
-                      "setting_mm_shuffle_shops_no"
+                      "setting_shopShuffleMm_none"
                     ]
                   }
                 ]
