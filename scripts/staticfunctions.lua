@@ -346,17 +346,19 @@ function mm(location)
     return get_availability("location", "mm", location)
 end
 
-function oot_event(event)
+-- Returns the "raw" availability of an event, without overrides
+function oot_event_raw(event)
     if OOTMM_DEBUG then
-        print("oot_event:", event)
+        print("oot_event_raw:", event)
     end
 
     return get_availability("event", "oot", event)
 end
 
-function mm_event(event)
+-- Returns the "raw" availability of an event, without overrides
+function mm_event_raw(event)
     if OOTMM_DEBUG then
-        print("mm_event:", event)
+        print("mm_event_raw:", event)
     end
 
     return get_availability("event", "mm", event)

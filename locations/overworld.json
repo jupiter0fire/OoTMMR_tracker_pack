@@ -3055,7 +3055,7 @@
           {
             "name": "HC Garden",
             "access_rules": [
-              "$oot_event|MEET_ZELDA"
+              "$oot_event_raw|MEET_ZELDA"
             ],
             "sections": [
               {
@@ -5231,7 +5231,7 @@
                     "name": "Frog 1",
                     "hosted_item": "mm_frog_1",
                     "access_rules": [
-                      "$mm_event|FROG_1"
+                      "$mm_event_raw|FROG_1"
                     ]
                   }
                 ],
@@ -6062,7 +6062,7 @@
                 "name": "Frog 3",
                 "hosted_item": "mm_frog_3",
                 "access_rules": [
-                  "$mm_event|FROG_3"
+                  "$mm_event_raw|FROG_3"
                 ]
               }
             ],
