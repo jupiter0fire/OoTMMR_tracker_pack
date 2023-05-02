@@ -81,7 +81,7 @@ function _oot_logic()
             end
 
             local item_code = ""
-            if string.match(item, "^setting_") or string.match(item, "^TRICK_") then
+            if string.match(item, "^setting_") or string.match(item, "^TRICK_") or string.match(item, "^EVENT_") then
                 -- These are already prefixed as needed
                 item_code = item
             else
