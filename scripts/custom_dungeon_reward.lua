@@ -53,8 +53,8 @@ local images = {
   "images/lacs_medallions.png",
   "images/lightmedallion.png",
   "images/items/mm_odolwa.png",
-  "images/items/mm_gyorg.png",
   "images/items/mm_goht.png",
+  "images/items/mm_gyorg.png",
   "images/items/mm_twinmold.png"
 }
 
