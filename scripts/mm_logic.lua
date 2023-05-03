@@ -218,16 +218,24 @@ function _mm_logic()
     -- These exceptions are used to override the default behavior, and make the tracker more
     -- user friendly.
     OOTMM_EVENT_EXCEPTIONS = {
-        ["STICKS"] = {
-            ["type"] = "return",
-            ["value"] = false,
-        },
-        ["FROG_1"] = {
-            ["type"] = "has",
-        },
-        ["MEET_ZELDA"] = {
-            ["type"] = "has",
-        },
+        ["BOMBER_CODE"] = { ["type"] = "has" },
+        ["BOSS_GREAT_BAY"] = { ["type"] = "has" },
+        ["BOSS_SNOWHEAD"] = { ["type"] = "has" },
+        ["FROG_1"] = { ["type"] = "has" },
+        ["FROG_2"] = { ["type"] = "has" },
+        ["FROG_3"] = { ["type"] = "has" },
+        ["FROG_4"] = { ["type"] = "has" },
+        ["MALON"] = { ["type"] = "has" },
+        ["MEET_ZELDA"] = { ["type"] = "has" },
+        ["NUTS"] = { ["type"] = "return", ["value"] = false },
+        ["STICKS"] = { ["type"] = "return", ["value"] = false },
+        ["TALON_CHILD"] = { ["type"] = "has" },
+        ["WATER_TEMPLE_CLEARED"] = { ["type"] = "has" },
+        ["ZORA_EGGS_BARREL_MAZE"] = { ["type"] = "has" },
+        ["ZORA_EGGS_HOOKSHOT_ROOM"] = { ["type"] = "has" },
+        ["ZORA_EGGS_LONE_GUARD"] = { ["type"] = "has" },
+        ["ZORA_EGGS_PINNACLE_ROCK"] = { ["type"] = "has" },
+        ["ZORA_EGGS_TREASURE_ROOM"] = { ["type"] = "has" },
     }
     function event(x)
         if OOTMM_EVENT_EXCEPTIONS[x] then
