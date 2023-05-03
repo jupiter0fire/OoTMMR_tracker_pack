@@ -119,8 +119,7 @@
     "stages": [
       {
         "img": "images/letter.png",
-        "img_mods": "@disabled",
-        "codes": "meet_zelda_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/letter.png",
@@ -135,12 +134,11 @@
     "stages": [
       {
         "img": "images/egg.png",
-        "img_mods": "@disabled",
-        "codes": "meet_malon_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/egg.png",
-        "codes": "meet_malon"
+        "codes": "EVENT_MALON"
       }
     ]
   },
@@ -151,12 +149,11 @@
     "stages": [
       {
         "img": "images/items/mm_bomber.png",
-        "img_mods": "@disabled",
-        "codes": "bombers_code_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_bomber.png",
-        "codes": "bombers_code"
+        "codes": "EVENT_BOMBER_CODE"
       }
     ]
   },
@@ -263,12 +260,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_1_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_1"
+        "codes": "EVENT_FROG_1"
       }
     ]
   },
@@ -279,12 +275,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_2_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_2"
+        "codes": "EVENT_FROG_2"
       }
     ]
   },
@@ -295,12 +290,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_3_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_3"
+        "codes": "EVENT_FROG_3"
       }
     ]
   },
@@ -311,108 +305,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_4_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_4"
-      }
-    ]
-  },
-  {
-    "name": "Forest Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "trial_forest"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Water Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/watermedallion.png",
-        "codes": "trial_water"
-      },
-      {
-        "img": "images/watermedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Shadow Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "trial_shadow"
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Fire Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/firemedallion.png",
-        "codes": "trial_fire"
-      },
-      {
-        "img": "images/firemedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Light Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "trial_light"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Spirit Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "trial_spirit"
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
+        "codes": "EVENT_FROG_4"
       }
     ]
   }

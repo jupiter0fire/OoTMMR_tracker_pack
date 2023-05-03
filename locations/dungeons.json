@@ -3193,7 +3193,7 @@
       },
       {
         "name": "Frog 2",
-        "hosted_item": "mm_frog_2",
+        "hosted_item": "EVENT_FROG_2",
         "access_rules": [
           "$mm_event_raw|FROG_2"
         ]
@@ -3431,7 +3431,7 @@
       },
       {
         "name": "Frog 4",
-        "hosted_item": "mm_frog_4",
+        "hosted_item": "EVENT_FROG_4",
         "access_rules": [
           "$mm_event_raw|FROG_4"
         ]

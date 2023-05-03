@@ -3039,9 +3039,9 @@
               {
                 "name": "HC Malon Egg",
                 "access_rules": [
-                  "$oot|Malon Egg"
+                  "$oot_event_raw|MALON"
                 ],
-                "item_count": 1
+                "hosted_item": "EVENT_MALON"
               }
             ],
             "map_locations": [
@@ -3067,7 +3067,6 @@
               },
               {
                 "name": "HC Zeldas Letter",
-                "item_count": 1,
                 "hosted_item": "EVENT_MEET_ZELDA"
               }
             ],
@@ -4536,9 +4535,10 @@
                   {
                     "name": "Catch The Bombers",
                     "access_rules": [
-                      "$mm|Clock Town Bomber Notebook"
+                      "$mm_event_raw|BOMBER_CODE",
+                      "$mm_event_raw|GUESS_BOMBER"
                     ],
-                    "item_count": 1
+                    "hosted_item": "EVENT_BOMBER_CODE"
                   }
                 ],
                 "map_locations": [
@@ -5229,7 +5229,7 @@
                 "sections": [
                   {
                     "name": "Frog 1",
-                    "hosted_item": "mm_frog_1",
+                    "hosted_item": "EVENT_FROG_1",
                     "access_rules": [
                       "$mm_event_raw|FROG_1"
                     ]
@@ -6060,7 +6060,7 @@
             "sections": [
               {
                 "name": "Frog 3",
-                "hosted_item": "mm_frog_3",
+                "hosted_item": "EVENT_FROG_3",
                 "access_rules": [
                   "$mm_event_raw|FROG_3"
                 ]
