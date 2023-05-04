@@ -381,21 +381,70 @@
     "codes": "MM_OCARINA"
   },
   {
-    "name": "MM Bottle",
-    "type": "toggle",
-    "img": "images/items/mm_bottle.png",
-    "codes": "MM_BOTTLE_EMPTY"
+    "name": "MM Bottle1",
+    "loop": true,
+    "type": "progressive",
+    "stages":[
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "MM_BOTTLE_EMPTY,mm_bottle1"
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+		    "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle1",
+		    "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+		    "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle1",
+		    "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_milk.png",
+		    "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle1",
+        "inherit_codes": false
+      }
+    ]
   },
   {
-    "name": "MM Gold Dust",
-    "type": "toggle",
-    "img": "images/items/mm_dust.png",
-    "codes": "MM_BOTTLED_GOLD_DUST"
+    "name": "MM Bottle2",
+    "loop": true,
+    "type": "progressive",
+    "stages":[
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "MM_BOTTLE_EMPTY,mm_bottle2"
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+		    "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle2",
+		    "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+		    "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle2",
+		    "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_milk.png",
+		    "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle2",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "MM Woodfall Skulltullas",
     "type": "consumable",
-    "display_as_fraction_of_max": true,
     "img": "images/items/mm_skulltulla_woodfall.png",
     "codes": "MM_GS_TOKEN_SWAMP",
     "max_quantity": 30
@@ -403,7 +452,6 @@
   {
     "name": "MM Great Bay Skulltullas",
     "type": "consumable",
-    "display_as_fraction_of_max": true,
     "img": "images/items/mm_skulltulla_greatbay.png",
     "codes": "MM_GS_TOKEN_OCEAN",
     "max_quantity": 30
@@ -621,7 +669,6 @@
   {
     "name": "MM Woodfall Stray Fairies",
     "type": "consumable",
-    "display_as_fraction_of_max": true,
     "img": "images/items/mm_woodfall_stray_fairy.png",
     "codes": "MM_STRAY_FAIRY_WF",
     "max_quantity": 15
@@ -652,7 +699,6 @@
   {
     "name": "MM Snowhead Stray Fairies",
     "type": "consumable",
-    "display_as_fraction_of_max": true,
     "img": "images/items/mm_snowhead_stray_fairy.png",
     "codes": "MM_STRAY_FAIRY_SH",
     "max_quantity": 15
@@ -680,7 +726,6 @@
   {
     "name": "MM Great Bay Stray Fairies",
     "type": "consumable",
-    "display_as_fraction_of_max": true,
     "img": "images/items/mm_greatbay_stray_fairy.png",
     "codes": "MM_STRAY_FAIRY_GB",
     "max_quantity": 15
@@ -711,7 +756,6 @@
   {
     "name": "MM Stone Tower Stray Fairies",
     "type": "consumable",
-    "display_as_fraction_of_max": true,
     "img": "images/items/mm_stonetower_stray_fairy.png",
     "codes": "MM_STRAY_FAIRY_ST",
     "max_quantity": 15

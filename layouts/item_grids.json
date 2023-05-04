@@ -547,8 +547,8 @@
             "MM_HOOKSHOT",
             "MM_LENS",
             "MM_MAGIC_UPGRADE",
-            "MM_BOTTLE_EMPTY",
-            "MM_BOTTLED_GOLD_DUST",
+            "mm_bottle1",
+            "mm_bottle2",
             "MM_PICTOGRAPH_BOX"
           ],
           [
