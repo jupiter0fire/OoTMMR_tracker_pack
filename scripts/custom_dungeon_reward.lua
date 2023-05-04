@@ -34,7 +34,7 @@ local codes = {
 
 local rewards = {
   "unknown",
-  "stones",
+  "OOT_SPIRITUAL_STONE",
   "forestmed",
   "noct_meds",
   "lacs_meds",
