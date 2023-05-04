@@ -14,6 +14,7 @@ function _oot_logic()
         tostring = tostring,
         table = table,
         debug = debug,
+        assert = assert,
     }
 
     -- This is used for all items, events, settings, etc., but probably shouldn't be...
@@ -69,7 +70,7 @@ function _oot_logic()
             item, min_count = string.match(item, "([^:]+):?(%d+)")
         end
 
-        return item, min_count
+        return item, assert(tonumber(min_count))
     end
 
     OOTMM_HAS_OVERRIDES = {
