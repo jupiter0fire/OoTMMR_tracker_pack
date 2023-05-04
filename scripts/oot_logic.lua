@@ -60,6 +60,18 @@ function _oot_logic()
         end
     end
 
+    -- "STRENGTH:3" ---> STRENGTH, 3
+    -- "HOOKSHOT" ---> HOOKSHOT, 1
+    local function parse_exceptions_string(item)
+        local min_count = 1
+
+        if string.find(item, ":") then
+            item, min_count = string.match(item, "([^:]+):?(%d+)")
+        end
+
+        return item, min_count
+    end
+
     OOTMM_HAS_EXCEPTIONS = {
         ["HOOKSHOT:2"] = "LONGSHOT",
         ["SCALE:2"] = "GOLDSCALE",
@@ -68,6 +80,10 @@ function _oot_logic()
         ["WALLET:1"] = "WALLET1",
         ["WALLET:2"] = "WALLET2",
         ["WALLET:3"] = "WALLET3",
+        ["SONG_GORON_HALF:2"] = "SONG_GORON",
+        ["STONE_EMERALD"] = "SPIRITUAL_STONE:1",  -- FIXME: This is entirely arbitrary; if individual stones end up being relevant,
+        ["STONE_RUBY"] = "SPIRITUAL_STONE:2",     -- FIXME: this will need to be changed to something more sensible or the
+        ["STONE_SAPPHIRE"] = "SPIRITUAL_STONE:3", -- FIXME: has_spiritual_stones() macro will have to be adjusted on the fly.
     }
     if EMO then
         function _has(item, min_count)
@@ -76,8 +92,9 @@ function _oot_logic()
             end
 
             if min_count and OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count] then
-                item = OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count]
-                min_count = 1
+                item, min_count = parse_exceptions_string(OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count])
+            elseif min_count == nil and OOTMM_HAS_EXCEPTIONS[item] then
+                item, min_count = parse_exceptions_string(OOTMM_HAS_EXCEPTIONS[item])
             end
 
             local item_code = ""
@@ -187,7 +204,7 @@ function _oot_logic()
         end
     end
 
-    -- Yet another global that enables side effects...
+    -- Yet another global with  side effects...
     function set_trick_mode(mode)
         if OOTMM_DEBUG then
             print("set_trick_mode:", mode)
@@ -219,8 +236,6 @@ function _oot_logic()
     -- user friendly.
     OOTMM_EVENT_EXCEPTIONS = {
         ["BOMBER_CODE"] = { ["type"] = "has" },
-        ["BOSS_GREAT_BAY"] = { ["type"] = "has" },
-        ["BOSS_SNOWHEAD"] = { ["type"] = "has" },
         ["FROG_1"] = { ["type"] = "has" },
         ["FROG_2"] = { ["type"] = "has" },
         ["FROG_3"] = { ["type"] = "has" },
@@ -228,9 +243,8 @@ function _oot_logic()
         ["MALON"] = { ["type"] = "has" },
         ["MEET_ZELDA"] = { ["type"] = "has" },
         ["NUTS"] = { ["type"] = "return", ["value"] = false },
+        ["SEAHORSE"] = { ["type"] = "has" },
         ["STICKS"] = { ["type"] = "return", ["value"] = false },
-        ["TALON_CHILD"] = { ["type"] = "has" },
-        ["WATER_TEMPLE_CLEARED"] = { ["type"] = "has" },
         ["ZORA_EGGS_BARREL_MAZE"] = { ["type"] = "has" },
         ["ZORA_EGGS_HOOKSHOT_ROOM"] = { ["type"] = "has" },
         ["ZORA_EGGS_LONE_GUARD"] = { ["type"] = "has" },
