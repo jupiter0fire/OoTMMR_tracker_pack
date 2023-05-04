@@ -62,7 +62,7 @@ function _mm_logic()
 
     -- "STRENGTH:3" ---> STRENGTH, 3
     -- "HOOKSHOT" ---> HOOKSHOT, 1
-    local function parse_exceptions_string(item)
+    local function parse_item_override(item)
         local min_count = 1
 
         if string.find(item, ":") then
@@ -72,7 +72,7 @@ function _mm_logic()
         return item, min_count
     end
 
-    OOTMM_HAS_EXCEPTIONS = {
+    OOTMM_HAS_OVERRIDES = {
         ["HOOKSHOT:2"] = "LONGSHOT",
         ["SCALE:2"] = "GOLDSCALE",
         ["STRENGTH:2"] = "STRENGTH2",
@@ -91,10 +91,10 @@ function _mm_logic()
                 print("EMO has:", item, min_count)
             end
 
-            if min_count and OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count] then
-                item, min_count = parse_exceptions_string(OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count])
-            elseif min_count == nil and OOTMM_HAS_EXCEPTIONS[item] then
-                item, min_count = parse_exceptions_string(OOTMM_HAS_EXCEPTIONS[item])
+            if min_count and OOTMM_HAS_OVERRIDES[item .. ":" .. min_count] then
+                item, min_count = parse_item_override(OOTMM_HAS_OVERRIDES[item .. ":" .. min_count])
+            elseif min_count == nil and OOTMM_HAS_OVERRIDES[item] then
+                item, min_count = parse_item_override(OOTMM_HAS_OVERRIDES[item])
             end
 
             local item_code = ""
@@ -121,8 +121,8 @@ function _mm_logic()
                 print("Debug has:", item, min_count)
             end
 
-            if min_count and OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count] then
-                item = OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count]
+            if min_count and OOTMM_HAS_OVERRIDES[item .. ":" .. min_count] then
+                item = OOTMM_HAS_OVERRIDES[item .. ":" .. min_count]
                 min_count = 1
             end
 
@@ -232,9 +232,9 @@ function _mm_logic()
     -- and the sequence of tasks necessary is not obvious unless you're intimately familiar
     -- with the randomizer's logic.
     --
-    -- These exceptions are used to override the default behavior, and make the tracker more
+    -- These are used to override the default behavior, and make the tracker more
     -- user friendly.
-    OOTMM_EVENT_EXCEPTIONS = {
+    OOTMM_EVENT_OVERRIDES = {
         ["BOMBER_CODE"] = { ["type"] = "has" },
         ["FROG_1"] = { ["type"] = "has" },
         ["FROG_2"] = { ["type"] = "has" },
@@ -252,13 +252,11 @@ function _mm_logic()
         ["ZORA_EGGS_TREASURE_ROOM"] = { ["type"] = "has" },
     }
     function event(x)
-        if OOTMM_EVENT_EXCEPTIONS[x] then
-            if OOTMM_EVENT_EXCEPTIONS[x]["type"] == "return" then
-                return OOTMM_EVENT_EXCEPTIONS[x]["value"]
-            elseif OOTMM_EVENT_EXCEPTIONS[x]["type"] == "has" then
+        if OOTMM_EVENT_OVERRIDES[x] then
+            if OOTMM_EVENT_OVERRIDES[x]["type"] == "return" then
+                return OOTMM_EVENT_OVERRIDES[x]["value"]
+            elseif OOTMM_EVENT_OVERRIDES[x]["type"] == "has" then
                 return has("EVENT_" .. x)
-            else
-                error("Invalid event exception type: " .. OOTMM_EVENT_EXCEPTIONS[x]["type"])
             end
         end
 
@@ -277,7 +275,7 @@ function _mm_logic()
         end
     end
 
-    OOTMM_SETTING_EXCEPTIONS = {
+    OOTMM_SETTING_OVERRIDES = {
         -- FIXME
         ["crossWarpMm_childOnly"] = false,
         ["crossWarpMm_full"] = false,
@@ -301,8 +299,8 @@ function _mm_logic()
             print("Checking for setting:", item_name)
         end
 
-        if OOTMM_SETTING_EXCEPTIONS[item_name] ~= nil then
-            return OOTMM_SETTING_EXCEPTIONS[item_name]
+        if OOTMM_SETTING_OVERRIDES[item_name] ~= nil then
+            return OOTMM_SETTING_OVERRIDES[item_name]
         end
 
         return has("setting_" .. item_name)
