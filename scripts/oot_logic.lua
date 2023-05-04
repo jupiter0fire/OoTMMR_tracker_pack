@@ -14,6 +14,7 @@ function _oot_logic()
         tostring = tostring,
         table = table,
         debug = debug,
+        assert = assert,
     }
 
     -- This is used for all items, events, settings, etc., but probably shouldn't be...
@@ -60,7 +61,19 @@ function _oot_logic()
         end
     end
 
-    OOTMM_HAS_EXCEPTIONS = {
+    -- "STRENGTH:3" ---> STRENGTH, 3
+    -- "HOOKSHOT" ---> HOOKSHOT, 1
+    local function parse_item_override(item)
+        local min_count = 1
+
+        if string.find(item, ":") then
+            item, min_count = string.match(item, "([^:]+):?(%d+)")
+        end
+
+        return item, assert(tonumber(min_count))
+    end
+
+    OOTMM_HAS_OVERRIDES = {
         ["HOOKSHOT:2"] = "LONGSHOT",
         ["SCALE:2"] = "GOLDSCALE",
         ["STRENGTH:2"] = "STRENGTH2",
@@ -68,6 +81,10 @@ function _oot_logic()
         ["WALLET:1"] = "WALLET1",
         ["WALLET:2"] = "WALLET2",
         ["WALLET:3"] = "WALLET3",
+        ["SONG_GORON_HALF:2"] = "SONG_GORON",
+        ["STONE_EMERALD"] = "SPIRITUAL_STONE:1",  -- FIXME: This is entirely arbitrary; if individual stones end up being relevant,
+        ["STONE_RUBY"] = "SPIRITUAL_STONE:2",     -- FIXME: this will need to be changed to something more sensible or the
+        ["STONE_SAPPHIRE"] = "SPIRITUAL_STONE:3", -- FIXME: has_spiritual_stones() macro will have to be adjusted on the fly.
     }
     if EMO then
         function _has(item, min_count)
@@ -75,9 +92,10 @@ function _oot_logic()
                 print("EMO has:", item, min_count)
             end
 
-            if min_count and OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count] then
-                item = OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count]
-                min_count = 1
+            if min_count and OOTMM_HAS_OVERRIDES[item .. ":" .. min_count] then
+                item, min_count = parse_item_override(OOTMM_HAS_OVERRIDES[item .. ":" .. min_count])
+            elseif min_count == nil and OOTMM_HAS_OVERRIDES[item] then
+                item, min_count = parse_item_override(OOTMM_HAS_OVERRIDES[item])
             end
 
             local item_code = ""
@@ -104,8 +122,8 @@ function _oot_logic()
                 print("Debug has:", item, min_count)
             end
 
-            if min_count and OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count] then
-                item = OOTMM_HAS_EXCEPTIONS[item .. ":" .. min_count]
+            if min_count and OOTMM_HAS_OVERRIDES[item .. ":" .. min_count] then
+                item = OOTMM_HAS_OVERRIDES[item .. ":" .. min_count]
                 min_count = 1
             end
 
@@ -187,7 +205,7 @@ function _oot_logic()
         end
     end
 
-    -- Yet another global that enables side effects...
+    -- Yet another global with  side effects...
     function set_trick_mode(mode)
         if OOTMM_DEBUG then
             print("set_trick_mode:", mode)
@@ -215,12 +233,10 @@ function _oot_logic()
     -- and the sequence of tasks necessary is not obvious unless you're intimately familiar
     -- with the randomizer's logic.
     --
-    -- These exceptions are used to override the default behavior, and make the tracker more
+    -- These are used to override the default behavior, and make the tracker more
     -- user friendly.
-    OOTMM_EVENT_EXCEPTIONS = {
+    OOTMM_EVENT_OVERRIDES = {
         ["BOMBER_CODE"] = { ["type"] = "has" },
-        ["BOSS_GREAT_BAY"] = { ["type"] = "has" },
-        ["BOSS_SNOWHEAD"] = { ["type"] = "has" },
         ["FROG_1"] = { ["type"] = "has" },
         ["FROG_2"] = { ["type"] = "has" },
         ["FROG_3"] = { ["type"] = "has" },
@@ -228,9 +244,8 @@ function _oot_logic()
         ["MALON"] = { ["type"] = "has" },
         ["MEET_ZELDA"] = { ["type"] = "has" },
         ["NUTS"] = { ["type"] = "return", ["value"] = false },
+        ["SEAHORSE"] = { ["type"] = "has" },
         ["STICKS"] = { ["type"] = "return", ["value"] = false },
-        ["TALON_CHILD"] = { ["type"] = "has" },
-        ["WATER_TEMPLE_CLEARED"] = { ["type"] = "has" },
         ["ZORA_EGGS_BARREL_MAZE"] = { ["type"] = "has" },
         ["ZORA_EGGS_HOOKSHOT_ROOM"] = { ["type"] = "has" },
         ["ZORA_EGGS_LONE_GUARD"] = { ["type"] = "has" },
@@ -238,13 +253,11 @@ function _oot_logic()
         ["ZORA_EGGS_TREASURE_ROOM"] = { ["type"] = "has" },
     }
     function event(x)
-        if OOTMM_EVENT_EXCEPTIONS[x] then
-            if OOTMM_EVENT_EXCEPTIONS[x]["type"] == "return" then
-                return OOTMM_EVENT_EXCEPTIONS[x]["value"]
-            elseif OOTMM_EVENT_EXCEPTIONS[x]["type"] == "has" then
+        if OOTMM_EVENT_OVERRIDES[x] then
+            if OOTMM_EVENT_OVERRIDES[x]["type"] == "return" then
+                return OOTMM_EVENT_OVERRIDES[x]["value"]
+            elseif OOTMM_EVENT_OVERRIDES[x]["type"] == "has" then
                 return has("EVENT_" .. x)
-            else
-                error("Invalid event exception type: " .. OOTMM_EVENT_EXCEPTIONS[x]["type"])
             end
         end
 
@@ -263,7 +276,7 @@ function _oot_logic()
         end
     end
 
-    OOTMM_SETTING_EXCEPTIONS = {
+    OOTMM_SETTING_OVERRIDES = {
         -- FIXME
         ["crossWarpMm_childOnly"] = false,
         ["crossWarpMm_full"] = false,
@@ -287,8 +300,8 @@ function _oot_logic()
             print("Checking for setting:", item_name)
         end
 
-        if OOTMM_SETTING_EXCEPTIONS[item_name] ~= nil then
-            return OOTMM_SETTING_EXCEPTIONS[item_name]
+        if OOTMM_SETTING_OVERRIDES[item_name] ~= nil then
+            return OOTMM_SETTING_OVERRIDES[item_name]
         end
 
         return has("setting_" .. item_name)
