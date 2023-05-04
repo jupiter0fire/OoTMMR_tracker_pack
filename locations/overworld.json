@@ -6934,9 +6934,9 @@
               {
                 "name": "Zora Eggs 5,6,7",
                 "access_rules": [
-                  "mm_zora,$mm_has_bottle"
+                  "$mm_event_raw|ZORA_EGGS_PINNACLE_ROCK"
                 ],
-                "hosted_item": "mm_zoraegg_pinnacle_rock"
+                "hosted_item": "EVENT_ZORA_EGGS_PINNACLE_ROCK"
               }
             ],
             "map_locations": [

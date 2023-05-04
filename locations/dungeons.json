@@ -2780,17 +2780,16 @@
       {
         "name": "Zora Egg 1",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Hookshot Room Upper,mm_bow,$mm_can_use_deku_bubble,@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,$mm_has_bottle",
-          "@Pirate Fortress/Pirate Fortress Hookshot Room Lower,mm_hookshot,mm_zora,$mm_has_bottle,mm_stone"
+          "@mm_event_raw|ZORA_EGGS_HOOKSHOT_ROOM"
         ],
-        "hosted_item": "mm_zoraegg_hookshot_room"
+        "hosted_item": "EVENT_ZORA_EGGS_HOOKSHOT_ROOM"
       },
       {
         "name": "Zora Egg 2",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Barrel Maze Aquarium,mm_hookshot,mm_zora,$mm_has_bottle"
+          "@mm_event_raw|ZORA_EGGS_BARREL_MAZE"
         ],
-        "hosted_item": "mm_zoraegg_barrel_maze"
+        "hosted_item": "EVENT_ZORA_EGGS_BARREL_MAZE"
       },
       {
         "name": "Fish Tank Chest",
@@ -2802,9 +2801,9 @@
       {
         "name": "Zora Egg 3",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Lone Guard Aquarium,mm_hookshot,mm_zora,$mm_has_bottle"
+          "@mm_event_raw|ZORA_EGGS_LONE_GUARD"
         ],
-        "hosted_item": "mm_zoraegg_lone_guard"
+        "hosted_item": "EVENT_ZORA_EGGS_LONE_GUARD"
       },
       {
         "name": "Well Guarded Chest",
@@ -2818,9 +2817,9 @@
       {
         "name": "Zora Egg 4",
         "access_rules": [
-          "@Pirate Fortress/Pirate Fortress Treasure Room Aquarium,mm_hookshot,mm_zora,$mm_has_bottle"
+          "@mm_event_raw|ZORA_EGGS_TREASURE_ROOM"
         ],
-        "hosted_item": "mm_zoraegg_treasure_room"
+        "hosted_item": "EVENT_ZORA_EGGS_TREASURE_ROOM"
       }
     ],
     "map_locations": [

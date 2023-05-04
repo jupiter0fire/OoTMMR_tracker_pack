@@ -1,118 +1,5 @@
 [
   {
-    "name": "Forest Stage Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_stage_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_stage_yes"
-      }
-    ]
-  },
-  {
-    "name": "Lake Hylia Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_lake_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_lake_yes"
-      }
-    ]
-  },
-  {
-    "name": "Graveyard Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_graveyard_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_graveyard_yes"
-      }
-    ]
-  },
-  {
-    "name": "DMT Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_trail_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_trail_yes"
-      }
-    ]
-  },
-  {
-    "name": "DMC Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_crater_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_crater_yes"
-      }
-    ]
-  },
-  {
-    "name": "Colossus Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_colossus_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_colossus_yes"
-      }
-    ]
-  },
-  {
-    "name": "Scarecrow",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/scarecrow.png",
-        "img_mods": "@disabled",
-        "codes": "scarecrow_kid"
-      },
-      {
-        "img": "images/scarecrow.png",
-        "codes": "scarecrow_adult",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Meet Zelda",
     "type": "progressive",
     "allow_disabled": false,
@@ -180,12 +67,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_hookshot_room_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_hookshot_room"
+        "codes": "EVENT_ZORA_EGGS_HOOKSHOT_ROOM"
       }
     ]
   },
@@ -196,12 +82,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_barrel_maze_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_barrel_maze"
+        "codes": "EVENT_ZORA_EGGS_BARREL_MAZE"
       }
     ]
   },
@@ -212,12 +97,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_lone_guard_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_lone_guard"
+        "codes": "EVENT_ZORA_EGGS_LONE_GUARD"
       }
     ]
   },
@@ -228,12 +112,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_treasure_room_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_treasure_room"
+        "codes": "EVENT_ZORA_EGGS_TREASURE_ROOM"
       }
     ]
   },
@@ -244,12 +127,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_pinnacle_rock_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_pinnacle_rock"
+        "codes": "EVENT_ZORA_EGGS_PINNACLE_ROCK"
       }
     ]
   },
