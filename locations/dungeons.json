@@ -3256,7 +3256,8 @@
         "access_rules": [
           "$mm|Woodfall Temple Boss Container"
         ],
-        "item_count": 1
+        "item_count": 1,
+        "hosted_item": "mm_woodfall"
       }
     ],
     "map_locations": [
@@ -3533,7 +3534,8 @@
         "access_rules": [
           "$mm|Great Bay Temple Boss HC"
         ],
-        "item_count": 1
+        "item_count": 1,
+        "hosted_item": "mm_great_bay"
       }
     ],
     "map_locations": [
@@ -3838,13 +3840,13 @@
       },
       {
         "name": "Twinmold",
-        "hosted_item": "stonetower",
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
         "access_rules": [
           "$mm|Stone Tower Boss HC"
         ],
-        "item_count": 1
+        "item_count": 1,
+        "hosted_item": "mm_stone_tower"
       }
     ],
     "map_locations": [
@@ -4116,13 +4118,13 @@
       },
       {
         "name": "Goht",
-        "hosted_item": "snowhead",
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
         "access_rules": [
           "$mm|Snowhead Temple Boss HC"
         ],
-        "item_count": 1
+        "item_count": 1,
+        "hosted_  item": "mm_snowhead"
       }
     ],
     "map_locations": [
