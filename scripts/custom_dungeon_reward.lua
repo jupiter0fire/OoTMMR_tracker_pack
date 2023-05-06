@@ -35,7 +35,7 @@ local codes = {
 local rewards = {
   "unknown",
   "oot_spiritual_stone",
-  "forestmed",
+  "oot_medallion_forest",
   "noct_meds",
   "lacs_meds",
   "lightmed",
@@ -112,7 +112,7 @@ function DungeonReward:canProvideCode(code)
   if
     self.code and self.code == code or
       self:getProperty("stage") and
-        (rewards[self:getProperty("stage")] == code or (self:getProperty("stage") >= 3 and code == "medallions"))
+        (rewards[self:getProperty("stage")] == code or (self:getProperty("stage") >= 3 and self:getProperty("stage") <= 6 and code == "oot_medallion") or (self:getProperty("stage") >= 7 and code == "mm_boss_remain"))
    then
     return true
   end
