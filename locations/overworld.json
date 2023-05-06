@@ -6770,9 +6770,9 @@
               {
                 "name": "Show Photo of Gerudo Pirate",
                 "access_rules": [
-                  "mm_zora,mm_pictobox"
+                  "$mm_event_raw|SEAHORSE"
                 ],
-                "hosted_item": "mm_seahorse"
+                "hosted_item": "EVENT_SEAHORSE"
               }
             ],
             "map_locations": [

@@ -56,7 +56,7 @@
       },
       {
         "img": "images/items/mm_seahorse.png",
-        "codes": "mm_seahorse"
+        "codes": "EVENT_SEAHORSE"
       }
     ]
   },
