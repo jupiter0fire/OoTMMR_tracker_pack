@@ -353,7 +353,7 @@ function _mm_logic()
     end
 
     function masks(amount)
-        return get_tracker_count(OOTMM_ITEM_PREFIX .. "MASK") >= amount
+        return get_tracker_count(OOTMM_ITEM_PREFIX .. "_" .. "MASK") >= amount
     end
 
     function oot_time(x)
