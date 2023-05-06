@@ -296,7 +296,7 @@ local function reset_logic(world)
         -- child + adult
         OOTMM[world].locations_normal = OOTMM[world].state.find_available_locations()
     end
-    OOTMM[world]["events_normal"] = OOTMM[world].state.get_reachable_events()
+    OOTMM[world].events_normal = OOTMM[world].state.get_reachable_events()
 
     OOTMM[world].state.set_trick_mode("all")
     if world == "mm" then
@@ -306,7 +306,7 @@ local function reset_logic(world)
         -- child + adult
         OOTMM[world].locations_glitched = OOTMM[world].state.find_available_locations()
     end
-    OOTMM[world]["events_glitched"] = OOTMM[world].state.get_reachable_events()
+    OOTMM[world].events_glitched = OOTMM[world].state.get_reachable_events()
 
     OOTMM_RESET_LOGIC_FLAG[world] = false
 end

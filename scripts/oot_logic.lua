@@ -87,7 +87,7 @@ function _oot_logic()
         ["STONE_SAPPHIRE"] = "SPIRITUAL_STONE:3", -- FIXME: has_spiritual_stones() macro will have to be adjusted on the fly.
     }
     if EMO then
-        function _has(item, min_count, use_prefix)
+        function has(item, min_count, use_prefix)
             if OOTMM_DEBUG then
                 print("EMO has:", item, min_count)
             end
@@ -112,7 +112,7 @@ function _oot_logic()
                 item_code = OOTMM_ITEM_PREFIX .. "_" .. item
             end
 
-            local count = Tracker:ProviderCountForCode(item_code)
+            local count = get_tracker_count(item_code)
 
             if not min_count then
                 return count > 0
@@ -121,7 +121,7 @@ function _oot_logic()
             end
         end
     else
-        function _has(item, min_count, use_prefix)
+        function has(item, min_count, use_prefix)
             if OOTMM_DEBUG then
                 print("Debug has:", item, min_count)
             end
@@ -148,31 +148,18 @@ function _oot_logic()
     end
 
     -- Tracker:ProviderCountForCode() calls are excruciatingly slow, this caches the results.
-    function has(item, count, use_prefix)
+    function get_tracker_count(item_code)
         if OOTMM_DEBUG then
-            return _has(item, count)
+            return Tracker:ProviderCountForCode(item_code)
         end
 
-        if use_prefix == nil then
-            use_prefix = true
+        local cache_key = "RAW:" .. item_code
+
+        if OOTMM_RUNTIME_CACHE[cache_key] == nil then
+            OOTMM_RUNTIME_CACHE[cache_key] = Tracker:ProviderCountForCode(item_code)
         end
 
-        local cache_key = tostring(use_prefix) .. ":" .. item
-        if count then
-            cache_key = cache_key .. ":" .. count
-        end
-
-        if count == nil then
-            if OOTMM_RUNTIME_CACHE[cache_key] == nil then
-                OOTMM_RUNTIME_CACHE[cache_key] = _has(item, count, use_prefix)
-            end
-            return OOTMM_RUNTIME_CACHE[cache_key]
-        else
-            if OOTMM_RUNTIME_CACHE[cache_key] == nil then
-                OOTMM_RUNTIME_CACHE[cache_key] = _has(item, count, use_prefix)
-            end
-            return OOTMM_RUNTIME_CACHE[cache_key]
-        end
+        return OOTMM_RUNTIME_CACHE[cache_key]
     end
 
     child = true
@@ -354,14 +341,19 @@ function _oot_logic()
         local sum = 0
         for _, item_name in pairs(item_names) do
             local setting_name = "setting_" .. case .. "_" .. item_name
-            if Tracker:ProviderCountForCode(setting_name) then
-                sum = sum + Tracker:ProviderCountForCode(item_name)
+
+            if get_tracker_count(setting_name) then
+                sum = sum + get_tracker_count(item_name)
             end
         end
 
-        local needed = Tracker:ProviderCountForCode(case)
+        local needed = get_tracker_count(case)
 
         return sum >= needed
+    end
+
+    function masks(amount)
+        return get_tracker_count(OOTMM_ITEM_PREFIX .. "MASK") >= amount
     end
 
     function oot_time(x)
