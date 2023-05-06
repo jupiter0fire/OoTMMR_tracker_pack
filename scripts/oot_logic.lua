@@ -342,7 +342,7 @@ function _oot_logic()
         for _, item_name in pairs(item_names) do
             local setting_name = "setting_" .. case .. "_" .. item_name
 
-            if get_tracker_count(setting_name) then
+            if get_tracker_count(setting_name) == 1 then
                 sum = sum + get_tracker_count(item_name)
             end
         end

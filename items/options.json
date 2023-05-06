@@ -964,13 +964,260 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_dungeonRewardShuffle_dungeonBlueWarps.png",
+        "img": "images/setting_special_spiritual_stone.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_dungeonRewardShuffle_anywhere.png",
-        "codes": "setting_bridge_oot_spiritual_stone",
+        "img": "images/setting_special_spiritual_stone.png",
+        "codes": "setting_BRIDGE_OOT_SPIRITUAL_STONE",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Medallions",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_special_medallions.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_medallions.png",
+        "codes": "setting_BRIDGE_OOT_MEDALLION",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Boss Remains",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_boss_remains.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_boss_remains.png",
+        "codes": "setting_BRIDGE_MM_BOSS_REMAIN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Gold Skulltula Tokens",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_gold_skulls.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_gold_skulls.png",
+        "codes": "setting_BRIDGE_OOT_GS_TOKEN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Swamp Skulltula Tokens",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_swamp_skulls.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_swamp_skulls.png",
+        "codes": "setting_BRIDGE_MM_GS_TOKEN_SWAMP",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Ocean Skulltula Tokens",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_ocean_skulls.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_ocean_skulls.png",
+        "codes": "setting_BRIDGE_MM_GS_TOKEN_OCEAN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Stray Fairy Clock Town",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_fairy_town.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_fairy_town.png",
+        "codes": "setting_BRIDGE_MM_STRAY_FAIRY_TOWN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Stray Fairies Woodfall",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_fairy_woodfall.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_fairy_woodfall.png",
+        "codes": "setting_BRIDGE_MM_STRAY_FAIRY_WF",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Stray Fairies Snowhead",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_fairy_snowhead.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_fairy_snowhead.png",
+        "codes": "setting_BRIDGE_MM_STRAY_FAIRY_SH",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Stray Fairies Great Bay",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_fairy_great_bay.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_fairy_great_bay.png",
+        "codes": "setting_BRIDGE_MM_STRAY_FAIRY_GB",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Stray Fairies Stone Tower",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_fairy_stone_tower.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_fairy_stone_tower.png",
+        "codes": "setting_BRIDGE_MM_STRAY_FAIRY_ST",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Regular Masks (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_regular_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_regular_masks.png",
+        "codes": "setting_BRIDGE_MM_MASK_REGULAR",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Transformation Masks (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_transformation_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_transformation_masks.png",
+        "codes": "setting_BRIDGE_MM_MASK_TRANSFORM",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Masks (OOT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_BRIDGE_OOT_MASK",
         "inherit_codes": false
       }
     ]
@@ -982,6 +1229,6 @@
     "codes": "bridge",
     "disabled_img_mods": "@enabled",
     "max_quantity": 100,
-    "initial_quantity": 0
+    "initial_quantity": 6
   }
 ]
