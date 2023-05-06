@@ -85,6 +85,10 @@ function _mm_logic()
         ["STONE_EMERALD"] = "SPIRITUAL_STONE:1",  -- FIXME: This is entirely arbitrary; if individual stones end up being relevant,
         ["STONE_RUBY"] = "SPIRITUAL_STONE:2",     -- FIXME: this will need to be changed to something more sensible or the
         ["STONE_SAPPHIRE"] = "SPIRITUAL_STONE:3", -- FIXME: has_spiritual_stones() macro will have to be adjusted on the fly.
+        ["MEDALLION_FIRE"] = "NOCTURNE_MED:1",
+        ["MEDALLION_WATER"] = "NOCTURNE_MED:2",
+        ["MEDALLION_SPIRIT"] = "LACS_MED:1",
+        ["MEDALLION_SHADOW"] = "LACS_MED:2",
     }
     if EMO then
         function has(item, min_count, use_prefix)

@@ -22,15 +22,15 @@
       },
       {
         "img": "images/wallet1.png",
-        "codes": "OOT_WALLET1"
+        "codes": "OOT_WALLET1,OOT_WALLET"
       },
       {
         "img": "images/wallet2.png",
-        "codes": "OOT_WALLET2"
+        "codes": "OOT_WALLET2,OOT_WALLET"
       },
       {
         "img": "images/wallet3.png",
-        "codes": "OOT_WALLET3"
+        "codes": "OOT_WALLET3,OOT_WALLET"
       }
     ]
   },
