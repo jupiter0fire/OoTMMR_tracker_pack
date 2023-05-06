@@ -307,9 +307,36 @@ function _oot_logic()
         return has("setting_" .. item_name)
     end
 
-    function special(x)
-        -- FIXME
-        return false
+    function special(case)
+        local item_names = {
+            "OOT_SPIRITUAL_STONE",
+            "OOT_MEDALLION",
+            "MM_BOSS_REMAIN",
+            "OOT_GS_TOKEN",
+            "MM_GS_TOKEN_SWAMP",
+            "MM_GS_TOKEN_OCEAN",
+            "MM_STRAY_FAIRY_TOWN",
+            "MM_STRAY_FAIRY_WF",
+            "MM_STRAY_FAIRY_SH",
+            "MM_STRAY_FAIRY_GB",
+            "MM_STRAY_FAIRY_ST",
+            "MM_MASK_REGULAR",
+            "MM_MASK_TRANSFORM",
+            "OOT_MASK",
+        }
+
+        local sum = 0
+        for _, item_name in pairs(item_names) do
+            local setting_name = string.lower("setting_" .. case .. "_" .. item_name)
+            if Tracker:ProviderCountForCode(setting_name) then
+                sum = sum + Tracker:ProviderCountForCode(item_name)
+            end
+        end
+
+        -- BRIDGE or MOON right now; + GANON_BK, LACS, MAJORA soon
+        local needed = Tracker:ProviderCountForCode(case)
+
+        return sum >= needed
     end
 
     function oot_time(x)
