@@ -955,5 +955,33 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Rainbow Bridge Spiritual Stones",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_dungeonRewardShuffle_dungeonBlueWarps.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_dungeonRewardShuffle_anywhere.png",
+        "codes": "setting_bridge_oot_spiritual_stone",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Amount",
+    "type": "consumable",
+    "img": "images/setting_bridge_amount.png",
+    "codes": "bridge",
+    "disabled_img_mods": "@enabled",
+    "max_quantity": 100,
+    "initial_quantity": 0
   }
 ]

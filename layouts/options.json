@@ -247,6 +247,23 @@
       }
     ]
   },
+  "layout_special_condition_bridge": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_bridge_oot_spiritual_stone",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "bridge",
+        "height": 16
+      }
+    ]
+  },
   "options_popup": {
     "type": "tabbed",
     "tabs": [
@@ -283,7 +300,7 @@
         }
       },
       {
-        "title": "Logic Tricks MM",
+         "title": "Logic Tricks MM",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -297,7 +314,23 @@
             }
           ]
         }
-      }
+      },
+      {
+        "title": "Special Condition Bridge",
+       "content": {
+         "type": "scroll",
+         "horizontal_scrollbar_visibility": "auto",
+         "vertical_scrollbar_visibility": "auto",
+         "max_height": 500,
+         "content": [
+           {
+             "type": "layout",
+             "key": "layout_special_condition_bridge",
+             "h_alignment": "left"
+           }
+         ]
+       }
+     }
     ]
   }
 }
