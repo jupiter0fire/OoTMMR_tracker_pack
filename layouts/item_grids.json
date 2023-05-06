@@ -40,20 +40,14 @@
             "OOT_STRENGTH"
           ],
           [
-            "OOT_STICK",
-            "OOT_NUT",
-            "OOT_SHIELD_DEKU",
-            "OOT_SHIELD_HYLIAN"
-          ],
-          [
             "OOT_SONG_ZELDA",
             "OOT_SONG_EPONA",
             "OOT_SONG_SARIA",
             "OOT_SONG_SUN",
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
-            "OOT_CHICKEN",
-            "OOT_ZELDA_LETTER"
+            "OOT_STICK",
+            "OOT_NUT"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -62,7 +56,16 @@
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_SHADOW",
             "OOT_SONG_TP_LIGHT",
+            "OOT_SHIELD_DEKU",
+            "OOT_SHIELD_HYLIAN"
+          ],
+          [
+            "OOT_CHICKEN",
+            "OOT_ZELDA_LETTER",
+            "OOT_MASK_KEATON",
             "OOT_MASK_SKULL",
+            "OOT_MASK_SPOOKY",
+            "OOT_MASK_BUNNY",
             "OOT_MASK_TRUTH"
           ]
         ]

@@ -212,16 +212,34 @@
     "codes": "OOT_ZELDA_LETTER"
   },
   {
+    "name": "Keaton Mask",
+    "type": "toggle",
+    "img": "images/keaton.png",
+    "codes": "OOT_MASK_KEATON,OOT_MASK"
+  },
+  {
     "name": "Skull Mask",
     "type": "toggle",
     "img": "images/skull.png",
-    "codes": "OOT_MASK_SKULL"
+    "codes": "OOT_MASK_SKULL,OOT_MASK"
+  },
+  {
+    "name": "Spooky Mask",
+    "type": "toggle",
+    "img": "images/spooky.png",
+    "codes": "OOT_MASK_SPOOKY,OOT_MASK"
+  },
+  {
+    "name": "Bunny Hood",
+    "type": "toggle",
+    "img": "images/bunny.png",
+    "codes": "OOT_MASK_BUNNY,OOT_MASK"
   },
   {
     "name": "Mask of Truth",
     "type": "toggle",
     "img": "images/truth.png",
-    "codes": "OOT_MASK_TRUTH"
+    "codes": "OOT_MASK_TRUTH,OOT_MASK"
   },
   {
     "name": "Pocket Cucco",
