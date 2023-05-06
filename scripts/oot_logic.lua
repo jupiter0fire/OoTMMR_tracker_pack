@@ -87,9 +87,13 @@ function _oot_logic()
         ["STONE_SAPPHIRE"] = "SPIRITUAL_STONE:3", -- FIXME: has_spiritual_stones() macro will have to be adjusted on the fly.
     }
     if EMO then
-        function _has(item, min_count)
+        function _has(item, min_count, use_prefix)
             if OOTMM_DEBUG then
                 print("EMO has:", item, min_count)
+            end
+
+            if use_prefix == nil then
+                use_prefix = true
             end
 
             if min_count and OOTMM_HAS_OVERRIDES[item .. ":" .. min_count] then
@@ -99,7 +103,7 @@ function _oot_logic()
             end
 
             local item_code = ""
-            if string.match(item, "^setting_") or string.match(item, "^TRICK_") or string.match(item, "^EVENT_") then
+            if not use_prefix or string.match(item, "^setting_") or string.match(item, "^TRICK_") or string.match(item, "^EVENT_") then
                 -- These are already prefixed as needed
                 item_code = item
             else
@@ -117,9 +121,13 @@ function _oot_logic()
             end
         end
     else
-        function _has(item, min_count)
+        function _has(item, min_count, use_prefix)
             if OOTMM_DEBUG then
                 print("Debug has:", item, min_count)
+            end
+
+            if use_prefix == nil then
+                use_prefix = true
             end
 
             if min_count and OOTMM_HAS_OVERRIDES[item .. ":" .. min_count] then
@@ -140,21 +148,30 @@ function _oot_logic()
     end
 
     -- Tracker:ProviderCountForCode() calls are excruciatingly slow, this caches the results.
-    function has(item, count)
+    function has(item, count, use_prefix)
         if OOTMM_DEBUG then
             return _has(item, count)
         end
 
+        if use_prefix == nil then
+            use_prefix = true
+        end
+
+        local cache_key = tostring(use_prefix) .. ":" .. item
+        if count then
+            cache_key = cache_key .. ":" .. count
+        end
+
         if count == nil then
-            if OOTMM_RUNTIME_CACHE[item] == nil then
-                OOTMM_RUNTIME_CACHE[item] = _has(item, count)
+            if OOTMM_RUNTIME_CACHE[cache_key] == nil then
+                OOTMM_RUNTIME_CACHE[cache_key] = _has(item, count, use_prefix)
             end
-            return OOTMM_RUNTIME_CACHE[item]
+            return OOTMM_RUNTIME_CACHE[cache_key]
         else
-            if OOTMM_RUNTIME_CACHE[item .. ":" .. count] == nil then
-                OOTMM_RUNTIME_CACHE[item .. ":" .. count] = _has(item, count)
+            if OOTMM_RUNTIME_CACHE[cache_key] == nil then
+                OOTMM_RUNTIME_CACHE[cache_key] = _has(item, count, use_prefix)
             end
-            return OOTMM_RUNTIME_CACHE[item .. ":" .. count]
+            return OOTMM_RUNTIME_CACHE[cache_key]
         end
     end
 
@@ -307,7 +324,16 @@ function _oot_logic()
         return has("setting_" .. item_name)
     end
 
+    OOTMM_SPECIAL_ACCESS_CASES = {
+        ["BRIDGE"] = true,
+        ["MOON"] = true,
+    }
     function special(case)
+        if not OOTMM_SPECIAL_ACCESS_CASES[case] then
+            print("Unknown special name: " .. case)
+            return false
+        end
+
         local item_names = {
             "OOT_SPIRITUAL_STONE",
             "OOT_MEDALLION",
@@ -327,13 +353,12 @@ function _oot_logic()
 
         local sum = 0
         for _, item_name in pairs(item_names) do
-            local setting_name = string.lower("setting_" .. case .. "_" .. item_name)
+            local setting_name = "setting_" .. case .. "_" .. item_name
             if Tracker:ProviderCountForCode(setting_name) then
                 sum = sum + Tracker:ProviderCountForCode(item_name)
             end
         end
 
-        -- BRIDGE or MOON right now; + GANON_BK, LACS, MAJORA soon
         local needed = Tracker:ProviderCountForCode(case)
 
         return sum >= needed
