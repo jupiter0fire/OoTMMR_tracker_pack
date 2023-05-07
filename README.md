@@ -1,4 +1,4 @@
-# Emotracker Pack for OOTMMR
+# Emotracker Pack for OoTMMR
 
 ## Usage
 
