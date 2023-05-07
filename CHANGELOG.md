@@ -1,6 +1,6 @@
 # Releases
 
-## v1.6.1-1
+## v1.6.1.1
 
 This is as close to a complete rewrite of the tracker pack as it's going to get without also changing its looks:
 
@@ -10,6 +10,12 @@ This is as close to a complete rewrite of the tracker pack as it's going to get 
 - Throw away a whole lot of manually created logic previously present in the JSON files
 - Update logic, tricks, settings, (...) to OoTMM v1.6.1 (latest stable soon, hopefully)
 - Switch to new versioning scheme tracking OoTMM's version
+- Added sequence break as an accessibility level for unselected tricks
+
+Newly supported settings:
+- Shop Shuffle (OoT + MM)
+- Cow Shuffle (OoT + MM)
+- Special Conditions for Rainbow Bridge and Moon
 
 No ER for now, because building an intuitive interface for this in EmoTracker is a bit of a headache. Suggestions welcome!
 
