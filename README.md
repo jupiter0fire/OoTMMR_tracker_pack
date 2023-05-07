@@ -1,41 +1,36 @@
 # Emotracker Pack for OOTMMR
 
-This is a work in progress!
-
-Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
-
-I'm currently on [OOTMMR](https://github.com/OoTMM/core) v1.2.0 until the logic overhaul is done. After that I will update the logic to the most recent release.
-
-Things that need to be done:
-
-- [x] Logic for OOT
-- [x] Logic for MM Clock Town
-- [x] Logic for MM Swamp and Milk Road
-- [x] Logic for MM Snowhead
-- [x] Logic for MM Great Bay
-- [x] Logic for MM Ikana Castle
-- [x] Logic for Woodfall Temple
-- [x] Logic for Snowhead Temple
-- [x] Logic for Great Bay Temple
-- [x] Logic for Stone Tower Temple
-- [x] Logic for MM Moon
-- [x] Add Seahorse and Eggs as Checks
-- [x] Fix layout
-- [ ] Update logic to the current stable version of the randomizer
-- [ ] Add settings that were added after v1.2.0
-- [ ] Add tricks that were added after v1.2.0
-- [x] Delete unused images
-- [ ] Delete unused lua/json parts
-- [ ] General cleanup
-
 ## Usage
 
-OOT Malon, OOT Zelda's Letter, MM Bomber's Notebook, MM Seahorse, MM Zora Eggs and MM Frogs are locations in the map tracker and need to be checked manually for the checks depending on them to be available (e.g. checks in Pinnacle Rock depending on getting MM Seahorse).
+- Install [Emotracker](https://emotracker.net/download/).
+- Download the current tracker pack version from [releases](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases) and place the OoTMMR_tracker_pack.zip in the packs subfolder in your user/documents/emotracker folder.
+- Open Emotracker and select "OotMM Randomizer" under Installed Packages -> Others in the settings menu.
+
+Green markings indicate that a check is logically reachable. Yellow markings mean that the check is reachable with a trick that is not enabled in the settings. Orange markings indicate that at a location some checks are reachable and others are not.
+
+The events for OOT Malon, OOT Zelda's Letter, MM Bomber's Notebook, MM Seahorse, MM Zora Eggs, and MM Frogs are depicted as locations in the tracker pack and must be manually tracked before the checks that depend on these events are shown as reachable (e.g. checks in Pinnacle Rock depending on getting MM Seahorse).
 
 Goron Lullaby is a progressive item with two stages: First Half of Goron Lullaby and Full Goron Lullaby.
+
+MM Hookshot is a progressive item with two stages: MM Short Hookshot and MM Hookshot.
+
+If you are playing with MM Full Lullaby Only or without MM Short Hookshot, simply double click on the corresponding symbols once you have found the respective item.
 
 Small Key Sanity is a tracker setting because OOT Fire Temple logic depends on that setting. You still need to track your Small Keys manually even if Small Key Sanity is not activated.
 
 Having MM Spin Attack can be tracked by right clicking on the Kokiri Sword.
 
 You can activate the Scarecrow Song in OOT by right clicking on the Ocarina. In MM you don't need to track it.
+
+Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
+
+## Unsupported Settings
+
+- Dungeon Reward Shuffle Anywhere
+- Boss Entrance Shuffle
+- Dungeon Entrance Shuffle
+
+
+Todos:
+
+- [ ] Delete unused lua/json parts
