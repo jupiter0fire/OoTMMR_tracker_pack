@@ -443,6 +443,37 @@
     ]
   },
   {
+    "name": "MM Bottle3",
+    "loop": true,
+    "type": "progressive",
+    "stages":[
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "MM_BOTTLE_EMPTY,mm_bottle3"
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+		    "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle3",
+		    "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+		    "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle3",
+		    "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_milk.png",
+		    "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle3",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "MM Woodfall Skulltullas",
     "type": "consumable",
     "img": "images/items/mm_skulltulla_woodfall.png",

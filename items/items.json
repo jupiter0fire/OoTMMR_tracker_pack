@@ -242,6 +242,18 @@
     "codes": "OOT_MASK_TRUTH,OOT_MASK"
   },
   {
+    "name": "Goron Mask",
+    "type": "toggle",
+    "img": "images/items/mm_goron.png",
+    "codes": "OOT_MASK_GORON,OOT_MASK"
+  },
+  {
+    "name": "Zora Mask",
+    "type": "toggle",
+    "img": "images/items/mm_zora.png",
+    "codes": "OOT_MASK_ZORA,OOT_MASK"
+  },
+  {
     "name": "Pocket Cucco",
     "type": "toggle",
     "img": "images/cucco.png",
@@ -329,18 +341,48 @@
     "codes": "ocarinacrow,scarecrow,pierre"
   },
   {
-    "name": "Bottle",
-    "type": "toggle",
+    "name": "Bottle 1",
+    "type": "progressive",
     "loop": true,
-    "img": "images/bottle.png",
-    "codes": "OOT_BOTTLE_EMPTY"
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle1,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+        },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle1,OOT_BLUE_FIRE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle1,OOT_RUTO_LETTER",
+        "inherit_codes": false
+      }
+    ]
   },
   {
-    "name": "Ruto's Letter",
-    "type": "toggle",
+    "name": "Bottle 2",
+    "type": "progressive",
     "loop": true,
-    "img": "images/bottle_letter.png",
-    "codes": "OOT_RUTO_LETTER"
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle2,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+        },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle2,OOT_BLUE_FIRE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle2,OOT_RUTO_LETTER",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Bottle Minimal",

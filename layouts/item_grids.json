@@ -10,34 +10,34 @@
         "scale": 0.875,
         "rows": [
           [
-            "OOT_SLINGSHOT",
-            "ocarinacrow",
+            "OOT_STICK",
+            "OOT_NUT",
             "OOT_BOMB_BAG",
             "OOT_BOW",
             "OOT_ARROW_FIRE", 
-            "OOT_ARROW_LIGHT",
             "OOT_SPELL_FIRE",
-            "OOT_RUTO_LETTER"
+            "OOT_SWORD_KOKIRI",
+            "OOT_SWORD_MASTER"
+          ],
+          [
+            "OOT_SLINGSHOT",
+            "ocarinacrow",
+            "OOT_SCALE",
+            "OOT_HOOKSHOT",
+            "OOT_MAGIC_UPGRADE",
+            "OOT_SHIELD_DEKU",
+            "OOT_SHIELD_HYLIAN",
+            "OOT_SHIELD_MIRROR"
           ],
           [
             "OOT_BOOMERANG",
             "OOT_LENS",
             "OOT_MAGIC_BEAN",
             "OOT_HAMMER",
-            "OOT_HOOKSHOT",
+            "OOT_ARROW_LIGHT",
+            "OOT_STRENGTH",
             "OOT_TUNIC_GORON",
-            "OOT_TUNIC_ZORA",
-            "OOT_BOTTLE_EMPTY"
-          ],
-          [
-            "OOT_BOOTS_HOVER",
-            "OOT_BOOTS_IRON",
-            "OOT_SWORD_KOKIRI",
-            "OOT_SWORD_MASTER",
-            "OOT_SHIELD_MIRROR",
-            "OOT_MAGIC_UPGRADE",
-            "OOT_SCALE",
-            "OOT_STRENGTH"
+            "OOT_TUNIC_ZORA"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -46,8 +46,8 @@
             "OOT_SONG_SUN",
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
-            "OOT_STICK",
-            "OOT_NUT"
+            "OOT_BOOTS_IRON",
+            "OOT_BOOTS_HOVER"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -56,9 +56,17 @@
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_SHADOW",
             "OOT_SONG_TP_LIGHT",
-            "OOT_SHIELD_DEKU",
-            "OOT_SHIELD_HYLIAN"
-          ],
+            "bottle1",
+            "bottle2"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,1",
+        "scale": 0.7,
+        "rows": [
           [
             "OOT_CHICKEN",
             "OOT_ZELDA_LETTER",
@@ -66,7 +74,9 @@
             "OOT_MASK_SKULL",
             "OOT_MASK_SPOOKY",
             "OOT_MASK_BUNNY",
-            "OOT_MASK_TRUTH"
+            "OOT_MASK_TRUTH",
+            "OOT_MASK_GORON",
+            "OOT_MASK_ZORA"
           ]
         ]
       },
@@ -535,24 +545,24 @@
         "item_size": 28,
         "rows": [
           [
-            "MM_GREAT_FAIRY_SWORD",
-            "mm_spinattack",
+            "MM_OCARINA",
             "MM_BOW",
             "MM_ARROW_FIRE",
             "MM_ARROW_ICE",
             "MM_ARROW_LIGHT",
-            "MM_OCARINA",
-            "MM_SHIELD_HERO"
+            "mm_spinattack",
+            "MM_SHIELD_HERO",
+            "MM_MAGIC_UPGRADE"
           ],
           [
             "MM_BOMB_BAG",
             "MM_POWDER_KEG",
-            "MM_HOOKSHOT",
+            "MM_PICTOGRAPH_BOX",
             "MM_LENS",
-            "MM_MAGIC_UPGRADE",
+            "MM_HOOKSHOT",
+            "MM_GREAT_FAIRY_SWORD",
             "mm_bottle1",
-            "mm_bottle2",
-            "MM_PICTOGRAPH_BOX"
+            "mm_bottle2"
           ],
           [
             "MM_SONG_TIME",
@@ -561,7 +571,7 @@
             "MM_SONG_SOARING",
             "MM_SONG_STORMS",
             "MM_WALLET",
-            "MM_ROOM_KEY",
+            "mm_bottle3",
             "MM_MOON_TEAR"
           ],
           [
@@ -570,8 +580,8 @@
             "MM_SONG_ZORA",
             "MM_SONG_EMPTINESS",
             "MM_SONG_ORDER",
-            "MM_MAGIC_BEAN",
             "MM_LETTER_TO_MAMA",
+            "MM_ROOM_KEY",
             "MM_DEED_LAND"
           ],
           [
