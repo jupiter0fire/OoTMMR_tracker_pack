@@ -254,6 +254,12 @@
     "codes": "OOT_MASK_ZORA,OOT_MASK"
   },
   {
+    "name": "Gerudo Mask",
+    "type": "toggle",
+    "img": "images/gerudo.png",
+    "codes": "OOT_MASK_GERUDO,OOT_MASK"
+  },
+  {
     "name": "Pocket Cucco",
     "type": "toggle",
     "img": "images/cucco.png",
