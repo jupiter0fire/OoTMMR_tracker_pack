@@ -14,7 +14,7 @@ Goron Lullaby is a progressive item with two stages: First Half of Goron Lullaby
 
 MM Hookshot is a progressive item with two stages: MM Short Hookshot and MM Hookshot.
 
-If you are playing with MM Full Lullaby Only or without MM Short Hookshot, simply double click on the corresponding symbols once you have found the respective item.
+If you are playing with MM Full Lullaby Only or without MM Short Hookshot, simply click twice on the corresponding symbols once you have found the respective item.
 
 Small Key Sanity is a tracker setting because OOT Fire Temple logic depends on that setting. You still need to track your Small Keys manually even if Small Key Sanity is not activated.
 
@@ -29,7 +29,7 @@ Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switc
 - Dungeon Reward Shuffle Anywhere
 - Boss Entrance Shuffle
 - Dungeon Entrance Shuffle
-
+- Cross Games OoT Warp Songs
 
 Todos:
 

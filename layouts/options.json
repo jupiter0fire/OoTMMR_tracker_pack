@@ -28,11 +28,6 @@
         "type": "item",
         "item": "setting_doorOfTime",
         "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_crossWarpOot",
-        "height": 16
       }
     ]
   },
@@ -64,11 +59,6 @@
       {
         "type": "item",
         "item": "setting_shopShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_crossWarpMm",
         "height": 16
       }
     ]
