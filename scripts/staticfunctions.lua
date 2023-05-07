@@ -1,3 +1,7 @@
+-- SPDX-FileCopyrightText: 2023 Wilhelm Schürmann <wimschuermann@googlemail.com>
+--
+-- SPDX-License-Identifier: MIT
+
 -- Just in case anyone actually reads this, I'm sorry for the mess.
 -- There's basically nothing but anti-patterns here.
 -- I decided very early on that I wanted to keep the OoTMM logic as close to the source as possible,
@@ -243,8 +247,6 @@ function trace(event, line)
     print(s .. ":" .. line)
 end
 
--- require() isn't working in EmoTracker; look into this some more, but see README.md
--- This is a bad workaround, but it works for now
 OOTMM = {
     ["oot"] = {
         ["state"] = nil,
@@ -262,6 +264,8 @@ OOTMM = {
     }
 }
 
+-- require() isn't working in EmoTracker; look into this some more, but see README.md
+-- This is a bad workaround, but it works for now
 if EMO then
     ScriptHost:LoadScript("scripts/oot_logic.lua")
     ScriptHost:LoadScript("scripts/mm_logic.lua")
