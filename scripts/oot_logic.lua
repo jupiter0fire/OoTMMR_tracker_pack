@@ -1,5 +1,9 @@
 -- NOTE: This file is auto-generated. Any changes will be overwritten.
 
+-- SPDX-FileCopyrightText: 2023 Wilhelm Schürmann <wimschuermann@googlemail.com>
+--
+-- SPDX-License-Identifier: MIT
+
 -- This is for namespacing only, because EmoTracker doesn't seem to properly support require()
 function _oot_logic()
     local M = {
@@ -357,7 +361,7 @@ function _oot_logic()
     end
 
     function masks(amount)
-        return get_tracker_count(OOTMM_ITEM_PREFIX .. "MASK") >= amount
+        return get_tracker_count(OOTMM_ITEM_PREFIX .. "_" .. "MASK") >= amount
     end
 
     function oot_time(x)
