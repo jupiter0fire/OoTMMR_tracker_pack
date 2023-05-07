@@ -3,13 +3,13 @@
     "name": "Stone of Agony",
     "type": "toggle",
     "img": "images/agony.png",
-    "codes": "agony,soa"
+    "codes": "OOT_STONE_OF_AGONY"
   },
   {
     "name": "Gold Skulltula Tokens",
     "type": "consumable",
     "img": "images/skulltula_token.png",
-    "codes": "skulltula,goldskulltula,token",
+    "codes": "OOT_GS_TOKEN",
     "max_quantity": 100
   },
   {
@@ -22,15 +22,15 @@
       },
       {
         "img": "images/wallet1.png",
-        "codes": "adultswallet,wallet1,wallet"
+        "codes": "OOT_WALLET1,OOT_WALLET"
       },
       {
         "img": "images/wallet2.png",
-        "codes": "giantswallet,wallet2"
+        "codes": "OOT_WALLET2,OOT_WALLET"
       },
       {
         "img": "images/wallet3.png",
-        "codes": "tycoonswallet,wallet3"
+        "codes": "OOT_WALLET3,OOT_WALLET"
       }
     ]
   },
@@ -40,11 +40,10 @@
     "stages": [
       {
         "img": "images/magic1.png",
-        "codes": "magic,magic1"
+        "codes": "OOT_MAGIC_UPGRADE"
       },
       {
-        "img": "images/magic2.png",
-        "codes": "magic2"
+        "img": "images/magic2.png"
       }
     ]
   },

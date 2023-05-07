@@ -15,11 +15,3 @@ ACCESS_LEVEL = {
   [AccessibilityLevel.Normal] = 6,
   [AccessibilityLevel.Cleared] = 7
 }
-
-ER_POOL_TYPES = {
-  ["DUNGEON"] = "dungeon",
-  ["GROTTO"] = "grotto",
-  ["INTERIOR"] = "interior",
-  ["OW"] = "ow",
-  ["ROOT"] = "root"
-}

@@ -34,11 +34,11 @@ local codes = {
 
 local rewards = {
   "unknown",
-  "stones",
-  "forestmed",
-  "noct_meds",
-  "lacs_meds",
-  "lightmed",
+  "oot_spiritual_stone",
+  "oot_medallion_forest",
+  "oot_nocturne_med",
+  "oot_lacs_med",
+  "oot_medallion_light",
   "mm_odolwa_remains",
   "mm_gyorg_remains",
   "mm_goth_remains",
@@ -53,8 +53,8 @@ local images = {
   "images/lacs_medallions.png",
   "images/lightmedallion.png",
   "images/items/mm_odolwa.png",
-  "images/items/mm_gyorg.png",
   "images/items/mm_goht.png",
+  "images/items/mm_gyorg.png",
   "images/items/mm_twinmold.png"
 }
 
@@ -112,7 +112,7 @@ function DungeonReward:canProvideCode(code)
   if
     self.code and self.code == code or
       self:getProperty("stage") and
-        (rewards[self:getProperty("stage")] == code or (self:getProperty("stage") >= 3 and code == "medallions"))
+        (rewards[self:getProperty("stage")] == code or (self:getProperty("stage") >= 3 and self:getProperty("stage") <= 6 and code == "oot_medallion") or (self:getProperty("stage") >= 7 and code == "mm_boss_remain"))
    then
     return true
   end
