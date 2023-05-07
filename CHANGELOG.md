@@ -1,10 +1,17 @@
 # Releases
 
-## v0.1.2
+## v1.6.1-1
 
-Bug fixes for:
+This is as close to a complete rewrite of the tracker pack as it's going to get without also changing its looks:
 
-- Ikana Valley access needing epona's and ocarina
+- Auto-generate ~90% of all required logic from OoTMM's logic YAML files
+  - This _should_ mean way easier maintenance and less bugs when OoTMM's logic changes
+  - This _should_ also mean that the logic is now 100% in sync with OoTMM's logic
+- Throw away a whole lot of manually created logic previously present in the JSON files
+- Update logic, tricks, settings, (...) to OoTMM v1.6.1 (latest stable soon, hopefully)
+- Switch to new versioning scheme tracking OoTMM's version
+
+No ER for now, because building an intuitive interface for this in EmoTracker is a bit of a headache. Suggestions welcome!
 
 ## v0.1.1
 
