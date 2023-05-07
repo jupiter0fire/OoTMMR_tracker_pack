@@ -1,10 +1,10 @@
-# Emotracker Pack for OoTMMR
+# EmoTracker Pack (map + items) for OoTMM
 
 ## Usage
 
-- Install [Emotracker](https://emotracker.net/download/).
-- Download the current tracker pack version from [releases](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases) and place the OoTMMR_tracker_pack.zip in the packs subfolder in your user/documents/emotracker folder.
-- Open Emotracker and select "OotMM Randomizer" under Installed Packages `->` Others in the settings menu.
+- Install [EmoTracker](https://emotracker.net/download/).
+- [Download the current tracker pack version](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases/latest/download/OoTMMR_tracker_pack.zip) from [releases](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases) and place the OoTMMR_tracker_pack.zip in the packs subfolder in your user/documents/emotracker folder.
+- Open EmoTracker and select "OotMM Randomizer" under Installed Packages `->` Others in the settings menu.
 
 Green markings indicate that a check is logically reachable. Yellow markings mean that the check is reachable with a trick that is not enabled in the settings. Orange markings indicate that at a location some checks are reachable and others are not.
 
@@ -31,7 +31,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Dungeon Entrance Shuffle
 - Cross Games OoT Warp Songs
 
-Todos:
+## TODOs:
 
 - [ ] Delete unused lua/json parts
 
