@@ -10,54 +10,54 @@
         "scale": 0.875,
         "rows": [
           [
-            "slingshot",
+            "OOT_STICK",
+            "OOT_NUT",
+            "OOT_BOMB_BAG",
+            "OOT_BOW",
+            "OOT_ARROW_FIRE", 
+            "OOT_SPELL_FIRE",
+            "OOT_SWORD_KOKIRI",
+            "OOT_SWORD_MASTER"
+          ],
+          [
+            "OOT_SLINGSHOT",
             "ocarinacrow",
-            "bombs",
-            "bow",
-            "firearrow",
-            "lightarrow",
-            "dinsfire",
-            "ruto"
+            "OOT_SCALE",
+            "OOT_HOOKSHOT",
+            "OOT_MAGIC_UPGRADE",
+            "OOT_SHIELD_DEKU",
+            "OOT_SHIELD_HYLIAN",
+            "OOT_SHIELD_MIRROR"
           ],
           [
-            "boomerang",
-            "lens",
-            "beans",
-            "hammer",
-            "hookshot",
-            "redtunic",
-            "bluetunic",
-            "bottle1"
+            "OOT_BOOMERANG",
+            "OOT_LENS",
+            "OOT_MAGIC_BEAN",
+            "OOT_HAMMER",
+            "OOT_ARROW_LIGHT",
+            "OOT_STRENGTH",
+            "OOT_TUNIC_GORON",
+            "OOT_TUNIC_ZORA"
           ],
           [
-            "hoverboots",
-            "ironboots",
-            "sword1",
-            "sword2",
-            "shield3",
-            "magic",
-            "scale1",
-            "lift1"
+            "OOT_SONG_ZELDA",
+            "OOT_SONG_EPONA",
+            "OOT_SONG_SARIA",
+            "OOT_SONG_SUN",
+            "OOT_SONG_TIME",
+            "OOT_SONG_STORMS",
+            "OOT_BOOTS_IRON",
+            "OOT_BOOTS_HOVER"
           ],
           [
-            "lullaby",
-            "epona",
-            "saria",
-            "sun",
-            "time",
-            "storm",
-            "childcucco",
-            "letter"
-          ],
-          [
-            "minuet",
-            "bolero",
-            "serenade",
-            "requiem",
-            "nocturne",
-            "prelude",
-            "skullmask",
-            "maskoftruth"
+            "OOT_SONG_TP_FOREST",
+            "OOT_SONG_TP_FIRE",
+            "OOT_SONG_TP_WATER",
+            "OOT_SONG_TP_SPIRIT",
+            "OOT_SONG_TP_SHADOW",
+            "OOT_SONG_TP_LIGHT",
+            "bottle1",
+            "bottle2"
           ]
         ]
       },
@@ -68,16 +68,36 @@
         "scale": 0.7,
         "rows": [
           [
-            "pocketcucco",
-            "cojiro",
-            "mushroom",
-            "oddpotion",
-            "saw",
-            "brokensword",
-            "prescription",
-            "frog",
-            "eyedrops",
-            "claimcheck"
+            "OOT_CHICKEN",
+            "OOT_ZELDA_LETTER",
+            "OOT_MASK_KEATON",
+            "OOT_MASK_SKULL",
+            "OOT_MASK_SPOOKY",
+            "OOT_MASK_BUNNY",
+            "OOT_MASK_TRUTH",
+            "OOT_MASK_GORON",
+            "OOT_MASK_ZORA",
+            "OOT_MASK_GERUDO"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,1",
+        "scale": 0.7,
+        "rows": [
+          [
+            "OOT_POCKET_CUCCO",
+            "OOT_COJIRO",
+            "OOT_ODD_MUSHROOM",
+            "OOT_ODD_POTION",
+            "OOT_POACHER_SAW",
+            "OOT_BROKEN_GORON_SWORD",
+            "OOT_PRESCRIPTION",
+            "OOT_EYEBALL_FROG",
+            "OOT_EYE_DROPS",
+            "OOT_CLAIM_CHECK"
           ]
         ]
       },
@@ -160,7 +180,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "forest_small_keys",
+                        "item": "OOT_SMALL_KEY_FOREST",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -169,7 +189,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "forest_boss_key",
+                        "item": "OOT_BOSS_KEY_FOREST",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -193,7 +213,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "fire_small_keys",
+                        "item": "OOT_SMALL_KEY_FIRE",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -202,7 +222,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "fire_boss_key",
+                        "item": "OOT_BOSS_KEY_FIRE",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -226,7 +246,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "water_small_keys",
+                        "item": "OOT_SMALL_KEY_WATER",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -235,7 +255,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "water_boss_key",
+                        "item": "OOT_BOSS_KEY_WATER",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -259,7 +279,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "spirit_small_keys",
+                        "item": "OOT_SMALL_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -268,7 +288,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "spirit_boss_key",
+                        "item": "OOT_BOSS_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -292,7 +312,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "shadow_small_keys",
+                        "item": "OOT_SMALL_KEY_SHADOW",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -301,7 +321,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "shadow_boss_key",
+                        "item": "OOT_BOSS_KEY_SHADOW",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -360,7 +380,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "gc_small_keys",
+                        "item": "OOT_SMALL_KEY_GANON",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -369,7 +389,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "gc_boss_key",
+                        "item": "OOT_BOSS_KEY_GANON",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -393,7 +413,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "gtg_small_keys",
+                        "item": "OOT_SMALL_KEY_GTG",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -417,7 +437,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "th_small_keys",
+                        "item": "OOT_SMALL_KEY_GF",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -478,7 +498,7 @@
                       },
                       {
                         "type": "item",
-                        "item": "botw_small_keys",
+                        "item": "OOT_SMALL_KEY_BOTW",
                         "canvas_depth": 1,
                         "canvas_left": 34,
                         "canvas_top": 0,
@@ -498,159 +518,20 @@
             "scale": 0.7,
             "rows": [
               [
-                "agony"
+                "OOT_STONE_OF_AGONY"
               ],
               [
-                "card"
+                "OOT_GERUDO_CARD"
               ],
               [
-                "skulltula"
+                "OOT_GS_TOKEN"
               ],
               [
-                "wallet1"
+                "OOT_WALLET1"
               ]
             ]
           }
         ]
-      }
-    ]
-  },
-  "item_grid_wide_oot": {
-    "type": "array",
-    "orientation": "vertical",
-    "content": [
-      {
-        "type": "itemgrid",
-        "h_alignment": "left",
-        "item_margin": "1,1",
-        "rows": [
-          [
-            "sticks",
-            "nuts",
-            "bombs",
-            "bow",
-            "firearrow",
-            "dinsfire",
-            "sword1",
-            "sword2",
-            "sword3"
-          ],
-          [
-            "slingshot",
-            "ocarinacrow",
-            "bombchu",
-            "hookshot",
-            "icearrow",
-            "faroreswind",
-            "shield1",
-            "shield2",
-            "shield3"
-          ],
-          [
-            "boomerang",
-            "lens",
-            "beans",
-            "hammer",
-            "lightarrow",
-            "nayruslove",
-            "lift1",
-            "redtunic",
-            "bluetunic"
-          ],
-          [
-            "bottle1",
-            "bottle2",
-            "bottle3",
-            "bottle4",
-            "scale1",
-            "ironboots",
-            "hoverboots"
-          ],
-          [
-            "lullaby",
-            "epona",
-            "saria",
-            "sun",
-            "time",
-            "storm",
-            "wallet1",
-            "magic",
-            "skulltula"
-          ],
-          [
-            "minuet",
-            "bolero",
-            "serenade",
-            "requiem",
-            "nocturne",
-            "prelude",
-            "card",
-            "agony",
-            "triforce"
-          ]
-        ]
-      },
-      {
-        "type": "layout",
-        "key": "dungeon_grid_wide"
-      }
-    ]
-  },
-  "item_grid_mini_oot": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0,0,10",
-    "content": [
-      {
-        "type": "itemgrid",
-        "h_alignment": "left",
-        "item_margin": "1,1",
-        "rows": [
-          [
-            "bombs",
-            "bombchu",
-            "slingshot",
-            "bow",
-            "firearrow",
-            "lightarrow"
-          ],
-          [
-            "lift1",
-            "hammer",
-            "boomerang",
-            "hookshot",
-            "dinsfire",
-            "faroreswind"
-          ],
-          [
-            "scale1",
-            "lens",
-            "sword1",
-            "shield3",
-            "boots",
-            "bottleminimal"
-          ],
-          [
-            "lullaby",
-            "epona",
-            "saria",
-            "sun",
-            "time",
-            "storm"
-          ],
-          [
-            "minuet",
-            "bolero",
-            "serenade",
-            "requiem",
-            "nocturne",
-            "prelude"
-          ]
-        ]
-      },
-      {
-        "type": "layout",
-        "key": "dungeon_grid_tall_centered"
       }
     ]
   },
@@ -665,84 +546,84 @@
         "item_size": 28,
         "rows": [
           [
-            "mm_fairysword",
+            "MM_OCARINA",
+            "MM_BOW",
+            "MM_ARROW_FIRE",
+            "MM_ARROW_ICE",
+            "MM_ARROW_LIGHT",
             "mm_spinattack",
-            "mm_bow",
-            "mm_firearrow",
-            "mm_icearrow",
-            "mm_lightarrow",
-            "mm_ocarina",
-            "mm_shield"
+            "MM_SHIELD_HERO",
+            "MM_MAGIC_UPGRADE"
           ],
           [
-            "mm_bombs",
-            "mm_keg",
-            "mm_hookshot",
-            "mm_lens",
-            "mm_magic",
+            "MM_BOMB_BAG",
+            "MM_POWDER_KEG",
+            "MM_PICTOGRAPH_BOX",
+            "MM_LENS",
+            "MM_HOOKSHOT",
+            "MM_GREAT_FAIRY_SWORD",
             "mm_bottle1",
-            "mm_bottledust",
-            "mm_box"
+            "mm_bottle2"
           ],
           [
-            "mm_songoftime",
-            "mm_healing",
-            "mm_epona",
-            "mm_soaring",
-            "mm_storms",
-            "mm_wallet",
-            "mm_roomkey",
-            "mm_moontear"
+            "MM_SONG_TIME",
+            "MM_SONG_HEALING",
+            "MM_SONG_EPONA",
+            "MM_SONG_SOARING",
+            "MM_SONG_STORMS",
+            "MM_WALLET",
+            "mm_bottle3",
+            "MM_MOON_TEAR"
           ],
           [
-            "mm_sonata",
-            "mm_lullaby",
-            "mm_bossanova",
-            "mm_elegy",
-            "mm_oath",
-            "mm_beans",
-            "mm_deliverytomama",
-            "mm_deed1"
+            "MM_SONG_AWAKENING",
+            "MM_SONG_GORON",
+            "MM_SONG_ZORA",
+            "MM_SONG_EMPTINESS",
+            "MM_SONG_ORDER",
+            "MM_LETTER_TO_MAMA",
+            "MM_ROOM_KEY",
+            "MM_DEED_LAND"
           ],
           [
-            "mm_postman",
-            "mm_allnight",
-            "mm_blast",
-            "mm_stone",
-            "mm_fairymask",
-            "mm_deku",
-            "mm_pendant",
-            "mm_deed2"
+            "MM_MASK_POSTMAN",
+            "MM_MASK_ALL_NIGHT",
+            "MM_MASK_BLAST",
+            "MM_MASK_STONE",
+            "MM_MASK_GREAT_FAIRY",
+            "MM_MASK_DEKU",
+            "MM_PENDANT_OF_MEMORIES",
+            "MM_DEED_SWAMP"
           ],
           [
-            "mm_keaton",
-            "mm_bremen",
-            "mm_bunny",
-            "mm_dongero",
-            "mm_scents",
-            "mm_goron",
-            "mm_letter",
-            "mm_deed3"
+            "MM_MASK_KEATON",
+            "MM_MASK_BREMEN",
+            "MM_MASK_BUNNY",
+            "MM_MASK_DON_GERO",
+            "MM_MASK_SCENTS",
+            "MM_MASK_GORON",
+            "MM_LETTER_TO_KAFEI",
+            "MM_DEED_MOUNTAIN"
           ],
           [
-            "mm_romanimask",
-            "mm_troupe",
-            "mm_kafeimask",
-            "mm_couple",
-            "mm_mot",
-            "mm_zora",
-            "mm_clocktown_strayfairy",
-            "mm_deed4"
+            "MM_MASK_ROMANI",
+            "MM_MASK_TROUPE_LEADER",
+            "MM_MASK_KAFEI",
+            "MM_MASK_COUPLE",
+            "MM_MASK_TRUTH",
+            "MM_MASK_ZORA",
+            "MM_STRAY_FAIRY_TOWN",
+            "MM_DEED_OCEAN"
           ],
           [
-            "mm_kamaro",
-            "mm_gibdo",
-            "mm_garo",
-            "mm_captain",
-            "mm_giant",
-            "mm_fiercedeity",
-            "mm_skulltulla_woodfall",
-            "mm_skulltulla_greatbay"
+            "MM_MASK_KAMARO",
+            "MM_MASK_GIBDO",
+            "MM_MASK_GARO",
+            "MM_MASK_CAPTAIN",
+            "MM_MASK_GIANT",
+            "MM_MASK_FIERCE_DEITY",
+            "MM_GS_TOKEN_SWAMP",
+            "MM_GS_TOKEN_OCEAN"
           ]
         ]
       },
@@ -765,7 +646,7 @@
               },
               {
                 "type": "item",
-                "item": "mm_woodfall_stray_fairies",
+                "item": "MM_STRAY_FAIRY_WF",
                 "margin": "3,4",
                 "width": 32,
                 "height": 32
@@ -779,7 +660,7 @@
               },
               {
                 "type": "item",
-                "item": "mm_snowhead_stray_fairies",
+                "item": "MM_STRAY_FAIRY_SH",
                 "margin": "3,4",
                 "width": 32,
                 "height": 32
@@ -793,7 +674,7 @@
               },
               {
                 "type": "item",
-                "item": "mm_greatbay_stray_fairies",
+                "item": "MM_STRAY_FAIRY_GB",
                 "margin": "3,4",
                 "width": 32,
                 "height": 32
@@ -807,7 +688,7 @@
               },
               {
                 "type": "item",
-                "item": "mm_stonetower_stray_fairies",
+                "item": "MM_STRAY_FAIRY_ST",
                 "margin": "3,4",
                 "width": 32,
                 "height": 32
@@ -827,7 +708,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "mm_woodfall_boss_key",
+                    "item": "MM_BOSS_KEY_WF",
                     "margin": "0,2",
                     "width": 16,
                     "height": 16
@@ -841,7 +722,7 @@
                   },
                   {
                     "type": "item",
-                    "item": "mm_woodfall_small_keys",
+                    "item": "MM_SMALL_KEY_WF",
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
@@ -855,7 +736,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "mm_snowhead_boss_key",
+                    "item": "MM_BOSS_KEY_SH",
                     "margin": "0,2",
                     "width": 16,
                     "height": 16
@@ -869,7 +750,7 @@
                   },
                   {
                     "type": "item",
-                    "item": "mm_snowhead_small_keys",
+                    "item": "MM_SMALL_KEY_SH",
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
@@ -883,7 +764,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "mm_greatbay_boss_key",
+                    "item": "MM_BOSS_KEY_GB",
                     "margin": "0,2",
                     "width": 16,
                     "height": 16
@@ -897,7 +778,7 @@
                   },
                   {
                     "type": "item",
-                    "item": "mm_greatbay_small_keys",
+                    "item": "MM_SMALL_KEY_GB",
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
@@ -911,7 +792,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "mm_stonetower_boss_key",
+                    "item": "MM_BOSS_KEY_ST",
                     "margin": "0,2",
                     "width": 16,
                     "height": 16
@@ -925,7 +806,7 @@
                   },
                   {
                     "type": "item",
-                    "item": "mm_stonetower_small_keys",
+                    "item": "MM_SMALL_KEY_ST",
                     "margin": "1,2",
                     "width": 16,
                     "height": 16

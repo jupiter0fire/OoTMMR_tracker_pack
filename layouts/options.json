@@ -6,20 +6,27 @@
     "content": [
       {
         "type": "item",
-        "item": "setting_door",
-        "width": 200,
+        "item": "setting_goldSkulltulaTokens",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_tokens_off",
-        "width": 200,
+        "item": "setting_smallKeyShuffle",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_shuffle_smallkeys",
-        "width": 200,
+        "item": "setting_cowShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shopShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_doorOfTime",
         "height": 16
       }
     ]
@@ -31,21 +38,28 @@
     "content": [
       {
         "type": "item",
-        "item": "house_skull_shuffle",
-        "width": 200,
+        "item": "setting_housesSkulltulaTokens",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_mm_shuffle_townfairy",
-        "width": 200,
+        "item": "setting_townFairyShuffle",
         "height": 16        
       },
       {
         "type": "item",
-        "item": "setting_mm_shuffle_dungeonfairy",
-        "width": 200,
+        "item": "setting_strayFairyShuffle",
         "height": 16        
+      },
+      {
+        "type": "item",
+        "item": "setting_cowShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shopShuffleMm",
+        "height": 16
       }
     ]
   },
@@ -56,44 +70,82 @@
     "content": [
       {
         "type": "item",
-        "item": "trick_oot_fewer_lens",
-        "width": 200,
+        "item": "TRICK_OOT_LENS",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_fewer_tunic",
-        "width": 200,
+        "item": "TRICK_OOT_TUNICS",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_hidden_grottos",
-        "width": 200,
+        "item": "TRICK_OOT_HIDDEN_GROTTOS",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_mido_skip",
-        "width": 200,
+        "item": "TRICK_OOT_MIDO_SKIP",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_man_on_roof",
-        "width": 200,
+        "item": "TRICK_OOT_MAN_ON_ROOF",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_blind_wasteland",
-        "width": 200,
+        "item": "TRICK_OOT_BLIND_WASTELAND",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_oot_night_skull_sun_song",
-        "width": 200,
+        "item": "TRICK_OOT_DEKU_SKIP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_DC_JUMP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_FOREST_HOOK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_HAMMER_WALLS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_VOLCANO_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_NIGHT_GS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_CHILD_DOMAIN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_ADULT_DOMAIN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_WATER_LONGSHOT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_SAND_RIVER_NOTHING",
         "height": 16
       }
     ]
@@ -105,38 +157,246 @@
     "content": [
       {
         "type": "item",
-        "item": "trick_mm_fewer_lens",
-        "width": 200,
+        "item": "TRICK_MM_LENS",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_mm_goron_bomb_jump",
-        "width": 200,
+        "item": "TRICK_MM_PALACE_BEAN_SKIP",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_mm_zora_hall_human",
-        "width": 200,
+        "item": "TRICK_MM_DARMANI_WALL",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_mm_no_seahorse",
-        "width": 200,
+        "item": "TRICK_MM_NO_SEAHORSE",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_mm_iceless_ikana",
-        "width": 200,
+        "item": "TRICK_MM_ZORA_HALL_HUMAN",
         "height": 16
       },
       {
         "type": "item",
-        "item": "trick_mm_one_mask_stone_tower",
-        "width": 200,
+        "item": "TRICK_MM_ICELESS_IKANA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ONE_MASK_STONE_TOWER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ISTT_EYEGORE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_SCT_NOTHING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GORON_BOMB_JUMP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_BOMBER_SKIP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_CAPTAIN_SKIP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ISTT_ENTRY_JUMP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_SHORT_HOOK_HARD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_PFI_BOAT_HOOK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_PALACE_GUARD_SKIP",
+        "height": 16
+      }
+    ]
+  },
+  "layout_special_condition_bridge": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_SPIRITUAL_STONE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_MEDALLION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_BOSS_REMAIN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_GS_TOKEN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_GS_TOKEN_SWAMP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_GS_TOKEN_OCEAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_STRAY_FAIRY_TOWN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_STRAY_FAIRY_WF",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_STRAY_FAIRY_SH",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_STRAY_FAIRY_GB",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_STRAY_FAIRY_ST",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_MASK_REGULAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_MM_MASK_TRANSFORM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_MASK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "BRIDGE",
+        "height": 16
+      }
+    ]
+  },
+  "layout_special_condition_moon": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_SPIRITUAL_STONE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_MEDALLION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_BOSS_REMAIN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_GS_TOKEN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_GS_TOKEN_SWAMP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_GS_TOKEN_OCEAN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_STRAY_FAIRY_TOWN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_STRAY_FAIRY_WF",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_STRAY_FAIRY_SH",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_STRAY_FAIRY_GB",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_STRAY_FAIRY_ST",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_MASK_REGULAR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_MM_MASK_TRANSFORM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_MASK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "MOON",
         "height": 16
       }
     ]
@@ -177,7 +437,7 @@
         }
       },
       {
-        "title": "Logic Tricks MM",
+         "title": "Logic Tricks MM",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -191,7 +451,39 @@
             }
           ]
         }
-      }
+      },
+      {
+        "title": "Special Condition Bridge",
+       "content": {
+         "type": "scroll",
+         "horizontal_scrollbar_visibility": "auto",
+         "vertical_scrollbar_visibility": "auto",
+         "max_height": 500,
+         "content": [
+           {
+             "type": "layout",
+             "key": "layout_special_condition_bridge",
+             "h_alignment": "left"
+           }
+         ]
+       }
+     },
+     {
+      "title": "Special Condition Moon",
+     "content": {
+       "type": "scroll",
+       "horizontal_scrollbar_visibility": "auto",
+       "vertical_scrollbar_visibility": "auto",
+       "max_height": 500,
+       "content": [
+         {
+           "type": "layout",
+           "key": "layout_special_condition_moon",
+           "h_alignment": "left"
+         }
+       ]
+     }
+   }
     ]
   }
 }

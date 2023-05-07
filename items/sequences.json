@@ -1,130 +1,16 @@
 [
   {
-    "name": "Forest Stage Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_stage_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_stage_yes"
-      }
-    ]
-  },
-  {
-    "name": "Lake Hylia Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_lake_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_lake_yes"
-      }
-    ]
-  },
-  {
-    "name": "Graveyard Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_graveyard_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_graveyard_yes"
-      }
-    ]
-  },
-  {
-    "name": "DMT Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_trail_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_trail_yes"
-      }
-    ]
-  },
-  {
-    "name": "DMC Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_crater_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_crater_yes"
-      }
-    ]
-  },
-  {
-    "name": "Colossus Bean",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/bean.png",
-        "img_mods": "@disabled",
-        "codes": "bean_colossus_no"
-      },
-      {
-        "img": "images/bean.png",
-        "codes": "bean_colossus_yes"
-      }
-    ]
-  },
-  {
-    "name": "Scarecrow",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/scarecrow.png",
-        "img_mods": "@disabled",
-        "codes": "scarecrow_kid"
-      },
-      {
-        "img": "images/scarecrow.png",
-        "codes": "scarecrow_adult",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Meet Zelda",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
         "img": "images/letter.png",
-        "img_mods": "@disabled",
-        "codes": "meet_zelda_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/letter.png",
-        "codes": "meet_zelda"
+        "codes": "EVENT_MEET_ZELDA"
       }
     ]
   },
@@ -135,12 +21,11 @@
     "stages": [
       {
         "img": "images/egg.png",
-        "img_mods": "@disabled",
-        "codes": "meet_malon_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/egg.png",
-        "codes": "meet_malon"
+        "codes": "EVENT_MALON"
       }
     ]
   },
@@ -151,12 +36,11 @@
     "stages": [
       {
         "img": "images/items/mm_bomber.png",
-        "img_mods": "@disabled",
-        "codes": "bombers_code_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_bomber.png",
-        "codes": "bombers_code"
+        "codes": "EVENT_BOMBER_CODE"
       }
     ]
   },
@@ -172,7 +56,7 @@
       },
       {
         "img": "images/items/mm_seahorse.png",
-        "codes": "mm_seahorse"
+        "codes": "EVENT_SEAHORSE"
       }
     ]
   },
@@ -183,12 +67,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_hookshot_room_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_hookshot_room"
+        "codes": "EVENT_ZORA_EGGS_HOOKSHOT_ROOM"
       }
     ]
   },
@@ -199,12 +82,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_barrel_maze_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_barrel_maze"
+        "codes": "EVENT_ZORA_EGGS_BARREL_MAZE"
       }
     ]
   },
@@ -215,12 +97,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_lone_guard_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_lone_guard"
+        "codes": "EVENT_ZORA_EGGS_LONE_GUARD"
       }
     ]
   },
@@ -231,12 +112,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_treasure_room_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_treasure_room"
+        "codes": "EVENT_ZORA_EGGS_TREASURE_ROOM"
       }
     ]
   },
@@ -247,12 +127,11 @@
     "stages": [
       {
         "img": "images/items/mm_zoraegg.png",
-        "img_mods": "@disabled",
-        "codes": "mm_zoraegg_pinnacle_rock_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "mm_zoraegg_pinnacle_rock"
+        "codes": "EVENT_ZORA_EGGS_PINNACLE_ROCK"
       }
     ]
   },
@@ -263,12 +142,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_1_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_1"
+        "codes": "EVENT_FROG_1"
       }
     ]
   },
@@ -279,12 +157,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_2_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_2"
+        "codes": "EVENT_FROG_2"
       }
     ]
   },
@@ -295,12 +172,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_3_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_3"
+        "codes": "EVENT_FROG_3"
       }
     ]
   },
@@ -311,108 +187,11 @@
     "stages": [
       {
         "img": "images/frog.png",
-        "img_mods": "@disabled",
-        "codes": "mm_frog_4_no"
+        "img_mods": "@disabled"
       },
       {
         "img": "images/frog.png",
-        "codes": "mm_frog_4"
-      }
-    ]
-  },
-  {
-    "name": "Forest Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/forestmedallion.png",
-        "codes": "trial_forest"
-      },
-      {
-        "img": "images/forestmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Water Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/watermedallion.png",
-        "codes": "trial_water"
-      },
-      {
-        "img": "images/watermedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Shadow Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/shadowmedallion.png",
-        "codes": "trial_shadow"
-      },
-      {
-        "img": "images/shadowmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Fire Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/firemedallion.png",
-        "codes": "trial_fire"
-      },
-      {
-        "img": "images/firemedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Light Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/lightmedallion.png",
-        "codes": "trial_light"
-      },
-      {
-        "img": "images/lightmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
-      }
-    ]
-  },
-  {
-    "name": "Spirit Trial Clear",
-    "type": "progressive",
-    "allow_disabled": false,
-    "stages": [
-      {
-        "img": "images/spiritmedallion.png",
-        "codes": "trial_spirit"
-      },
-      {
-        "img": "images/spiritmedallion.png",
-        "img_mods": "overlay|images/crossed_out.png",
-        "codes": "trial_cleared"
+        "codes": "EVENT_FROG_4"
       }
     ]
   }

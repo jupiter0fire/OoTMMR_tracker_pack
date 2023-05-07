@@ -1,92 +1,226 @@
-[  {
-  "name": "Fewer Lens Requirements (OOT)",
-  "type": "toggle",
-  "initial_active_state": false,
-  "img": "images/trick_oot_fewer_lens.png",
-  "codes": "trick_oot_fewer_lens"
+[
+  {
+    "name": "Fewer Lens Requirements (OoT)",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_lens.png",
+    "codes": "TRICK_OOT_LENS"
   },
   {
     "name": "Fewer Tunic Requirements",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_oot_fewer_tunic.png",
-    "codes": "trick_oot_fewer_tunic"
+    "img": "images/trick_oot_tunics.png",
+    "codes": "TRICK_OOT_TUNICS"
   },
   {
-    "name": "Hidden Grottos without Stone of Agony",
+    "name": "Hidden Grottos (OoT) without Stone of Agony",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_oot_hidden_grottos.png",
-    "codes": "trick_oot_hidden_grottos"
+    "codes": "TRICK_OOT_HIDDEN_GROTTOS"
   },
   {
-    "name": "Backflip over Mido as Adult",
+    "name": "Backflip Over Mido",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_oot_mido_skip.png",
-    "codes": "trick_oot_mido_skip"
+    "codes": "TRICK_OOT_MIDO_SKIP"
   },
   {
-    "name": "Man on Roof without Hookshot",
+    "name": "Man on Roof with Nothing",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_oot_man_on_roof.png",
-    "codes": "trick_oot_man_on_roof"
-  }, 
+    "codes": "TRICK_OOT_MAN_ON_ROOF"
+  },
   {
-    "name": "Wasteland Crossing without Hover Boots or Longshot",
+    "name": "Blind Wasteland Crossing",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_oot_blind_wasteland.png",
-    "codes": "trick_oot_blind_wasteland"
+    "codes": "TRICK_OOT_BLIND_WASTELAND"
+  },
+  {
+    "name": "Deku Tree B1 Skip",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_deku_skip.png",
+    "codes": "TRICK_OOT_DEKU_SKIP"
+  },
+  {
+    "name": "Dodongo's Cavern Upper Adult Jump",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_dc_jump.png",
+    "codes": "TRICK_OOT_DC_JUMP"
+  },
+  {
+    "name": "Forest Temple Garden Vines with Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_forest_hook.png",
+    "codes": "TRICK_OOT_FOREST_HOOK"
+  },
+  {
+    "name": "Hammer Through Walls",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_hammer_walls.png",
+    "codes": "TRICK_OOT_HAMMER_WALLS"
+  },
+  {
+    "name": "Volcano Item with Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_volcano_hovers.png",
+    "codes": "TRICK_OOT_VOLCANO_HOVERS"
+  },
+  {
+    "name": "Nighttime Gold Skulltulas without Sun's Song",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/trick_oot_night_gs.png",
+    "codes": "TRICK_OOT_NIGHT_GS"
+  },
+  {
+    "name": "Enter Child Zora's Domain with Cucco",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_child_domain.png",
+    "codes": "TRICK_OOT_CHILD_DOMAIN"
+  },
+  {
+    "name": "Enter Adult Zora's Domain using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_adult_domain.png",
+    "codes": "TRICK_OOT_ADULT_DOMAIN"
+  },
+  {
+    "name": "Drain Water Temple using Longshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_water_longshot.png",
+    "codes": "TRICK_OOT_WATER_LONGSHOT"
+  },
+  {
+    "name": "Cross the River of Sand with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_sand_river_nothing.png",
+    "codes": "TRICK_OOT_SAND_RIVER_NOTHING"
   },
   {
     "name": "Fewer Lens Requirements (MM)",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_mm_fewer_lens.png",
-    "codes": "trick_mm_fewer_lens"
+    "img": "images/trick_mm_lens.png",
+    "codes": "TRICK_MM_LENS"
   },
   {
-    "name": "Goron Bomb Jump",
+    "name": "Skip Planting Beans in Deku Palace",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_mm_goron_bomb_jump.png",
-    "codes": "trick_mm_goron_bomb_jump"
+    "img": "images/trick_mm_palace_bean_skip.png",
+    "codes": "TRICK_MM_PALACE_BEAN_SKIP"
   },
   {
-    "name": "Zora Hall as Human",
+    "name": "Climb Mountain Village Wall Blind",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_mm_zora_hall_human.png",
-    "codes": "trick_mm_zora_hall_human"
+    "img": "images/trick_mm_darmani_wall.png",
+    "codes": "TRICK_MM_DARMANI_WALL"
   },
   {
     "name": "Pinnacle Rock without Seahorse",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_mm_no_seahorse.png",
-    "codes": "trick_mm_no_seahorse"
+    "codes": "TRICK_MM_NO_SEAHORSE"
   },
   {
-    "name": "Nighttime Skulltulas Expect Sun's Song",
+    "name": "Swim to Zora Hall as Human",
     "type": "toggle",
-    "initial_active_state": true,
-    "img": "images/trick_oot_night_skull_sun_song.png",
-    "codes": "trick_oot_night_skull_sun_song"
+    "initial_active_state": false,
+    "img": "images/trick_mm_zora_hall_human.png",
+    "codes": "TRICK_MM_ZORA_HALL_HUMAN"
   },
   {
-    "name": "Ikana Canyon w/ Ice Arrows",
+    "name": "Climb Ikana Canyon without Ice Arrows",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_mm_iceless_ikana.png",
-    "codes": "trick_mm_iceless_ikana"
+    "codes": "TRICK_MM_ICELESS_IKANA"
   },
   {
-    "name": "Stone Tower with one Mask",
+    "name": "Climb Stone Tower with One Mask",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_mm_one_mask_stone_tower.png",
-    "codes": "trick_mm_one_mask_stone_tower"
+    "codes": "TRICK_MM_ONE_MASK_STONE_TOWER"
+  },
+  {
+    "name": "Inverted Stone Tower Temple Eyegore Skips",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_istt_eyegore.png",
+    "codes": "TRICK_MM_ISTT_EYEGORE"
+  },
+  {
+    "name": "South Clock Town Chest with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_sct_nothing.png",
+    "codes": "TRICK_MM_SCT_NOTHING"
+  },
+  {
+    "name": "Bomb Jump Fences as Goron",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_goron_bomb_jump.png",
+    "codes": "TRICK_MM_GORON_BOMB_JUMP"
+  },
+  {
+    "name": "Guess Bomber Code",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_bomber_skip.png",
+    "codes": "TRICK_MM_BOMBER_SKIP"
+  },
+  {
+    "name": "Guess Oceanside Spider House Code",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_captain_skip.png",
+    "codes": "TRICK_MM_CAPTAIN_SKIP"
+  },
+  {
+    "name": "Inverted Stone Tower Temple Long Jump to Death Armos",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_istt_entry_jump.png",
+    "codes": "TRICK_MM_ISTT_ENTRY_JUMP"
+  },
+  {
+    "name": "Precise Short Hookshot Usage",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_short_hook_hard.png",
+    "codes": "TRICK_MM_SHORT_HOOK_HARD"
+  },
+  {
+    "name": "Enter Pirate Fortress Interior using Hookshot from the Boats",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_pfi_boat_hook.png",
+    "codes": "TRICK_MM_PFI_BOAT_HOOK"
+  },
+  {
+    "name": "Backflip over Deku Palace Guards",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_palace_guard_skip.png",
+    "codes": "TRICK_MM_PALACE_GUARD_SKIP"
   }
 ]

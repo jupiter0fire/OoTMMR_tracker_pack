@@ -1,0 +1,25 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/items/*.json",
+      ],
+      "url": "https://emotracker.net/developers/schemas/items.json"
+    },
+    {
+      "fileMatch": [
+        "/layouts/*.json",
+      ],
+      "url": "https://emotracker.net/developers/schemas/layouts.json"
+    },
+    {
+      "fileMatch": [
+        "/locations/*.json",
+      ],
+      "url": "https://emotracker.net/developers/schemas/locations.json"
+    }
+  ],
+  "files.associations": {
+    "*.json": "jsonc"
+}
+}

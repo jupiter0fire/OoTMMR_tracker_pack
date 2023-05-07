@@ -11,7 +11,7 @@
       {
         "img": "images/bow.png",
         "img_mods": "overlay|images/overlay_30.png",
-        "codes": "bow"
+        "codes": "OOT_BOW"
       },
       {
         "img": "images/bow.png",
@@ -35,7 +35,7 @@
       {
         "img": "images/slingshot.png",
         "img_mods": "overlay|images/overlay_30.png",
-        "codes": "slingshot,sling,ss"
+        "codes": "OOT_SLINGSHOT"
       },
       {
         "img": "images/slingshot.png",
@@ -59,7 +59,7 @@
       {
         "img": "images/nut.png",
         "img_mods": "overlay|images/overlay_20.png",
-        "codes": "nuts,dekunuts,dn"
+        "codes": "OOT_NUT"
       },
       {
         "img": "images/nut.png",
@@ -75,7 +75,7 @@
     "name": "Fire Arrows",
     "type": "toggle",
     "img": "images/firearrow.png",
-    "codes": "firearrow,farrow,fa"
+    "codes": "OOT_ARROW_FIRE"
   },
   {
     "name": "Ice Arrows",
@@ -87,13 +87,13 @@
     "name": "Light Arrows",
     "type": "toggle",
     "img": "images/lightarrow.png",
-    "codes": "lightarrow,larrow,la"
+    "codes": "OOT_ARROW_LIGHT"
   },
   {
     "name": "Magic Beans",
     "type": "consumable",
     "img": "images/bean.png",
-    "codes": "beans",
+    "codes": "OOT_MAGIC_BEAN",
     "max_quantity": 10
   },
   {
@@ -108,7 +108,7 @@
       {
         "img": "images/stick.png",
         "img_mods": "overlay|images/overlay_10.png",
-        "codes": "sticks,dekusticks,ds"
+        "codes": "OOT_STICK"
       },
       {
         "img": "images/stick.png",
@@ -132,7 +132,7 @@
       {
         "img": "images/bomb.png",
         "img_mods": "overlay|images/overlay_20.png",
-        "codes": "bombs,bombbag"
+        "codes": "OOT_BOMB_BAG"
       },
       {
         "img": "images/bomb.png",
@@ -148,7 +148,7 @@
     "name": "Boomerang",
     "type": "toggle",
     "img": "images/boomerang.png",
-    "codes": "boomerang,rang"
+    "codes": "OOT_BOOMERANG"
   },
   {
     "name": "Hookshot",
@@ -161,11 +161,11 @@
       },
       {
         "img": "images/hookshot.png",
-        "codes": "hookshot,hs"
+        "codes": "OOT_HOOKSHOT"
       },
       {
         "img": "images/longshot.png",
-        "codes": "longshot,ls"
+        "codes": "OOT_LONGSHOT"
       }
     ]
   },
@@ -179,13 +179,13 @@
     "name": "Lens of Truth",
     "type": "toggle",
     "img": "images/lens.png",
-    "codes": "lens,lensoftruth,lot"
+    "codes": "OOT_LENS"
   },
   {
     "name": "Din's Fire",
     "type": "toggle",
     "img": "images/din.png",
-    "codes": "dinsfire,dins,df"
+    "codes": "OOT_SPELL_FIRE"
   },
   {
     "name": "Farore's Wind",
@@ -203,91 +203,127 @@
     "name": "Child Cucco",
     "type": "toggle",
     "img": "images/cucco.png",
-    "codes": "childcucco"
+    "codes": "OOT_CHICKEN"
   },
   {
     "name": "Zelda's Letter",
     "type": "toggle",
     "img": "images/letter.png",
-    "codes": "letter,postzelda"
+    "codes": "OOT_ZELDA_LETTER"
+  },
+  {
+    "name": "Keaton Mask",
+    "type": "toggle",
+    "img": "images/keaton.png",
+    "codes": "OOT_MASK_KEATON,OOT_MASK"
   },
   {
     "name": "Skull Mask",
     "type": "toggle",
     "img": "images/skull.png",
-    "codes": "skullmask,skull"
+    "codes": "OOT_MASK_SKULL,OOT_MASK"
+  },
+  {
+    "name": "Spooky Mask",
+    "type": "toggle",
+    "img": "images/spooky.png",
+    "codes": "OOT_MASK_SPOOKY,OOT_MASK"
+  },
+  {
+    "name": "Bunny Hood",
+    "type": "toggle",
+    "img": "images/bunny.png",
+    "codes": "OOT_MASK_BUNNY,OOT_MASK"
   },
   {
     "name": "Mask of Truth",
     "type": "toggle",
     "img": "images/truth.png",
-    "codes": "truth,maskoftruth,mot"
+    "codes": "OOT_MASK_TRUTH,OOT_MASK"
+  },
+  {
+    "name": "Goron Mask",
+    "type": "toggle",
+    "img": "images/items/mm_goron.png",
+    "codes": "OOT_MASK_GORON,OOT_MASK"
+  },
+  {
+    "name": "Zora Mask",
+    "type": "toggle",
+    "img": "images/items/mm_zora.png",
+    "codes": "OOT_MASK_ZORA,OOT_MASK"
+  },
+  {
+    "name": "Gerudo Mask",
+    "type": "toggle",
+    "img": "images/gerudo.png",
+    "codes": "OOT_MASK_GERUDO,OOT_MASK"
   },
   {
     "name": "Pocket Cucco",
     "type": "toggle",
     "img": "images/cucco.png",
-    "codes": "adultcucco,pocketcucco"
+    "codes": "OOT_POCKET_CUCCO"
   },
   {
     "name": "Cojiro",
     "type": "toggle",
     "img": "images/cojiro.png",
-    "codes": "cojiro"
+    "codes": "OOT_COJIRO"
   },
   {
     "name": "Mushroom",
     "type": "toggle",
     "img": "images/mushroom.png",
-    "codes": "mushroom,oddmushroom"
+    "codes": "OOT_ODD_MUSHROOM"
   },
   {
     "name": "Medicin",
     "type": "toggle",
     "img": "images/medicine.png",
-    "codes": "oddpotion,oddpoultice"
+    "codes": "OOT_ODD_POTION"
   },
   {
     "name": "Saw",
     "type": "toggle",
     "img": "images/saw.png",
-    "codes": "saw,poachersaw"
+    "codes": "OOT_POACHER_SAW"
   },
   {
     "name": "Broken Sword",
     "type": "toggle",
     "img": "images/broken_sword.png",
-    "codes": "brokensword"
+    "codes": "OOT_BROKEN_GORON_SWORD"
   },
   {
     "name": "Prescription",
     "type": "toggle",
     "img": "images/perscription.png",
-    "codes": "prescription"
+    "codes": "OOT_PRESCRIPTION"
   },
   {
     "name": "Frog",
     "type": "toggle",
     "img": "images/frog.png",
-    "codes": "frog,eyeballfrog,speedfrog"
+    "codes": "OOT_EYEBALL_FROG"
   },
   {
     "name": "Eyedrops",
     "type": "toggle",
     "img": "images/eyedrops.png",
-    "codes": "eyedrops,drops"
+    "codes": "OOT_EYE_DROPS"
   },
   {
     "name": "Claim Check",
     "type": "toggle",
     "img": "images/claim.png",
-    "codes": "claim,claimcheck"
+    "codes": "OOT_CLAIM_CHECK"
   },
   {
     "name": "Hammer",
     "type": "toggle",
     "img": "images/hammer.png",
-    "codes": "hammer,mh,megatonhammer"
+    "codes": "OOT_HAMMER"
   },
   {
     "name": "Ocarina",
@@ -296,34 +332,63 @@
     "stages": [
       {
         "img": "images/fairyocarina.png",
-        "codes": "ocarina,fairyocarina,fo"
+        "codes": "OOT_OCARINA"
       },
       {
-        "img": "images/ocarina.png",
-        "codes": "ocarinaoftime,oot"
+        "img": "images/ocarina.png"
       }
     ]
   },
   {
     "name": "Ocarina w/ Scarecrow",
     "type": "toggle_badged",
-    "base_item": "ocarina",
+    "base_item": "OOT_OCARINA",
     "img": "images/overlay_scarecrow.png",
     "codes": "ocarinacrow,scarecrow,pierre"
   },
   {
-    "name": "Bottle",
-    "type": "toggle",
+    "name": "Bottle 1",
+    "type": "progressive",
     "loop": true,
-    "img": "images/bottle.png",
-    "codes": "bottle,bottle1"
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle1,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+        },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle1,OOT_BLUE_FIRE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle1,OOT_RUTO_LETTER",
+        "inherit_codes": false
+      }
+    ]
   },
   {
-    "name": "Ruto's Letter",
-    "type": "toggle",
+    "name": "Bottle 2",
+    "type": "progressive",
     "loop": true,
-    "img": "images/bottle_letter.png",
-    "codes": "bottle,bottle2,ruto,ruto2,rutosletter,rutosletter2"
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle2,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+        },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle2,OOT_BLUE_FIRE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle2,OOT_RUTO_LETTER",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Bottle Minimal",
