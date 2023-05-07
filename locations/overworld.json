@@ -573,20 +573,12 @@
           {
             "name": "SFM Storms Grotto",
             "access_rules": [
-              "$hidden_grotto,ocarina,storm"
+              "ocarina,storm"
             ],
             "sections": [
               {
                 "name": "SFM Deku Scrubs Grotto",
                 "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$has_age|child,minuet,nuts",
-                  "$has_age|child,minuet,shield1",
-                  "$has_age|child,sling",
-                  "$has_age|child,sticks",
-                  "$has_age|child,sword1",
-                  "$has_age|child,dinsfire,magic"
-                ],
                 "visibility_rules": [
                   "hidden_region"
                 ],
@@ -1185,10 +1177,6 @@
               {
                 "name": "LLR Deku Scrubs Grotto",
                 "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$has_age|child,nuts",
-                  "$has_age|child,shield1"
-                ],
                 "visibility_rules": [
                   "hidden_region"
                 ],
@@ -2624,9 +2612,6 @@
             "sections": [
               {
                 "name": "Bombs",
-                "access_rules": [
-                  "{$hintable}"
-                ],
                 "visibility_rules": [
                   "hidden_region"
                 ],
