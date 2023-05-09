@@ -4663,6 +4663,17 @@
                     ],
                     "item_count": 1
                   }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 120,
+                    "y": 35,
+                    "force_invisibility_rules": 
+                    [
+                      "setting_tingleShuffle_vanilla"
+                    ]
+                  }
                 ]
               }
             ]
@@ -5611,6 +5622,17 @@
                 "name": "Map: Ocean",
                 "item_count": 1
               }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 469,
+                "y": 366,
+                "force_invisibility_rules": 
+                [
+                  "setting_tingleShuffle_vanilla"
+                ]
+              }
             ]
           },
           {
@@ -5823,6 +5845,17 @@
               {
                 "name": "Map: Mountain",
                 "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 537,
+                "y": 401,
+                "force_invisibility_rules": 
+                [
+                  "setting_tingleShuffle_vanilla"
+                ]
               }
             ]
           },
@@ -6404,6 +6437,17 @@
                 "name": "Map: Ranch",
                 "item_count": 1
               }
+            ],
+            "map_locations": [
+              {
+                "map": "termina", 
+                "x": 582,
+                "y": 165,
+                "force_invisibility_rules": 
+                [
+                  "setting_tingleShuffle_vanilla"
+                ]
+              }
             ]
           },
           {
@@ -6858,6 +6902,17 @@
                       "mm_hookshot"
                     ],
                     "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 205,
+                    "y": 300,
+                    "force_invisibility_rules": 
+                    [
+                      "setting_tingleShuffle_vanilla"
+                    ]
                   }
                 ]
               },
@@ -7482,6 +7537,17 @@
                       {
                         "name": "Map: Clock Town",
                         "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 800,
+                        "y": 264,
+                        "force_invisibility_rules": 
+                        [
+                          "setting_tingleShuffle_vanilla"
+                        ]
                       }
                     ]
                   },
