@@ -145,10 +145,10 @@
         "name": "Deku Scrub Side Room Near Dodongo",
         "short_name": "East Side",
         "access_rules": [
-          "$oot|Dodongo Cavern GS Scarecrow"
+          "$oot|Dodongo Cavern Green Side Room Scrub"
         ],
         "visibility_rules": [
-          "hidden_region"
+          "setting_scrubShuffleOot_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -167,10 +167,10 @@
         "name": "Deku Scrub Lobby",
         "short_name": "Lobby",
         "access_rules": [
-          "$oot|Dodongo Cavern Map Chest"
+          "$oot|Dodongo Cavern Lobby Scrub"
         ],
         "visibility_rules": [
-          "hidden_region"
+          "setting_scrubShuffleOot_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -223,10 +223,10 @@
         "name": "Deku Scrubs Near Bomb Bag",
         "short_name": "Near Bomb Bag",
         "access_rules": [
-          "$oot|Dodongo Cavern Bomb Bag Side Chest"
+          "$oot|Dodongo Cavern Bomb Bag Side Room Left Scrub"
         ],
         "visibility_rules": [
-          "hidden_region"
+          "setting_scrubShuffleOot_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -311,10 +311,10 @@
       {
         "name": "Deku Scrub",
         "access_rules": [
-          "$oot|Jabu-Jabu GS Water Switch"
+          "$oot|Jabu-Jabu Scrub"
         ],
         "visibility_rules": [
-          "hidden_region"
+          "setting_scrubShuffleOot_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -1809,8 +1809,11 @@
       },
       {
         "name": "Deku Scrubs",
+        "access_rules": [
+          "$oot|Ganon Castle Left-Center Scrub"
+        ],
         "visibility_rules": [
-          "hidden_region"
+          "setting_scrubShuffleOot_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",

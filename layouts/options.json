@@ -491,7 +491,8 @@
         "item": "LACS",
         "height": 16
       }
-    ],
+    ]
+  },
   "options_popup": {
     "type": "tabbed",
     "tabs": [
