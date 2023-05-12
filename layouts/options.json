@@ -28,6 +28,11 @@
         "type": "item",
         "item": "setting_doorOfTime",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scrubShuffleOot",
+        "height": 16
       }
     ]
   },
@@ -486,90 +491,7 @@
         "item": "LACS",
         "height": 16
       }
-    ]
-  },
-  "layout_special_condition_majora": {
-    "type": "array",
-    "orientation": "vertical",
-    "item_margin": "1,2",
-    "content": [
-      {
-        "type": "item",
-        "item": "setting_MAJORA_OOT_SPIRITUAL_STONE",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_OOT_MEDALLION",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_BOSS_REMAIN",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_OOT_GS_TOKEN",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_GS_TOKEN_SWAMP",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_GS_TOKEN_OCEAN",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_STRAY_FAIRY_TOWN",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_STRAY_FAIRY_WF",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_STRAY_FAIRY_SH",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_STRAY_FAIRY_GB",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_STRAY_FAIRY_ST",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_MASK_REGULAR",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_MM_MASK_TRANSFORM",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_MAJORA_OOT_MASK",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "MAJORA",
-        "height": 16
-      }
-    ]
-  },
+    ],
   "options_popup": {
     "type": "tabbed",
     "tabs": [
@@ -664,22 +586,6 @@
             {
               "type": "layout",
               "key": "layout_special_condition_lacs",
-              "h_alignment": "left"
-            }
-          ]
-        }
-      },
-      {
-        "title": "Special Condition Majora",
-        "content": {
-          "type": "scroll",
-          "horizontal_scrollbar_visibility": "auto",
-          "vertical_scrollbar_visibility": "auto",
-          "max_height": 500,
-          "content": [
-            {
-              "type": "layout",
-              "key": "layout_special_condition_majora",
               "h_alignment": "left"
             }
           ]
