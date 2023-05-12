@@ -79,7 +79,7 @@
   {
     "name": "Nighttime Gold Skulltulas without Sun's Song",
     "type": "toggle",
-    "initial_active_state": true,
+    "initial_active_state": false,
     "img": "images/trick_oot_night_gs.png",
     "codes": "TRICK_OOT_NIGHT_GS"
   },
@@ -110,6 +110,69 @@
     "initial_active_state": false,
     "img": "images/trick_oot_sand_river_nothing.png",
     "codes": "TRICK_OOT_SAND_RIVER_NOTHING"
+  },
+  {
+    "name": "Enter Shadow Temple using Fire Arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_shadow_fire_arrow.png",
+    "codes": "TRICK_OOT_SHADOW_FIRE_ARROW"
+  },
+  {
+    "name": "Skip King Zora as Adult",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_kz_skip.png",
+    "codes": "TRICK_OOT_KZ_SKIP"
+  },
+  {
+    "name": "Lost Woods Adult GS without Bean",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_lost_woods_adult_gs.png",
+    "codes": "TRICK_OOT_LOST_WOODS_ADULT_GS"
+  },
+  {
+    "name": "Windmill HP as Adult with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_windmill_hp_nothing.png",
+    "codes": "TRICK_OOT_WINDMILL_HP_NOTHING"
+  },
+  {
+    "name": "Laboratory Dive without Gold Scale",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_lab_dive_no_gold_scale.png",
+    "codes": "TRICK_OOT_LAB_DIVE_NO_GOLD_SCALE"
+  },
+  {
+    "name": "Laboratory Wall GS with Jump Slash",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_lab_wall_gs.png",
+    "codes": "TRICK_OOT_LAB_WALL_GS"
+  },
+  {
+    "name": "Pass through Visible One-Way Collisions",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_pass_collision.png",
+    "codes": "TRICK_OOT_PASS_COLLISION"
+  },
+  {
+    "name": "DMT Red Rock Skulls without Hammer",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_dmt_red_rock_gs.png",
+    "codes": "TRICK_OOT_DMT_RED_ROCK_GS"
+  },
+  {
+    "name": "Child Dead Hand without Kokiri Sword",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_dead_hand_sticks.png",
+    "codes": "TRICK_OOT_DEAD_HAND_STICKS"
   },
   {
     "name": "Fewer Lens Requirements (MM)",
@@ -222,5 +285,61 @@
     "initial_active_state": false,
     "img": "images/trick_mm_palace_guard_skip.png",
     "codes": "TRICK_MM_PALACE_GUARD_SKIP"
+  },
+  {
+    "name": "Complete Snowhead Temple without Fire Arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_sht_fireless.png",
+    "codes": "TRICK_MM_SHT_FIRELESS"
+  },
+  {
+    "name": "Use Powder Kegs as Explosives",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_keg_explosives.png",
+    "codes": "TRICK_MM_KEG_EXPLOSIVES"
+  },
+  {
+    "name": "Doggy Racetrack Chest with Nothing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_dog_race_chest_nothing.png",
+    "codes": "TRICK_MM_DOG_RACE_CHEST_NOTHING"
+  },
+  {
+    "name": "Fight Majora to Reset Time",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_majora_logic.png",
+    "codes": "TRICK_MM_MAJORA_LOGIC"
+  },
+  {
+    "name": "Southern Swamp Scrub HP as Goron",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_southern_swamp_scrub_hp_goron.png",
+    "codes": "TRICK_MM_SOUTHERN_SWAMP_SCRUB_HP_GORON"
+  },
+  {
+    "name": "Zora Hall Scrub HP without Deku",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_zora_hall_scrub_hp_no_deku.png",
+    "codes": "TRICK_MM_ZORA_HALL_SCRUB_HP_NO_DEKU"
+  },
+  {
+    "name": "Jump from Ikana Castle's Roof Interior to Exterior",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_ikana_roof_parkour.png",
+    "codes": "TRICK_MM_IKANA_ROOF_PARKOUR"
+  },
+  {
+    "name": "Post Office Timing Game without Bunny Hood",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_post_office_game.png",
+    "codes": "TRICK_MM_POST_OFFICE_GAME"
   }
 ]
