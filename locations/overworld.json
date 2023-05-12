@@ -2472,6 +2472,16 @@
                 ],
                 "item_count": 1
               }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_shopShuffleOot_none"
+                ],
+                "x": 1600,
+                "y": 110
+              }
             ]
           }
         ]
@@ -3572,6 +3582,16 @@
                   "$oot|Zora Shop Item 8"
                 ],
                 "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_shopShuffleOot_none"
+                ],
+                "x": 2625,
+                "y": 500
               }
             ]
           }
