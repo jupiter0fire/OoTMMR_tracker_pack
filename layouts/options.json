@@ -48,6 +48,26 @@
         "type": "item",
         "item": "setting_zoraKing",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_dekuTree",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_dekuTreeAdult",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fireChild",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_wellAdult",
+        "height": 16
       }
     ]
   },
@@ -84,6 +104,11 @@
       {
         "type": "item",
         "item": "setting_tingleShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bossWarpPads",
         "height": 16
       }
     ]
@@ -343,6 +368,11 @@
       {
         "type": "item",
         "item": "TRICK_MM_ZORA_HALL_SCRUB_HP_NO_DEKU",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_WELL_HSW",
         "height": 16
       }
     ]

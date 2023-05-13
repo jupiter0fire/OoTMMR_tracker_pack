@@ -341,5 +341,12 @@
     "initial_active_state": false,
     "img": "images/trick_mm_post_office_game.png",
     "codes": "TRICK_MM_POST_OFFICE_GAME"
+  },
+  {
+    "name": "Well's Hot Spring Water without Killing Dexihand",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_well_hsw.png",
+    "codes": "TRICK_MM_WELL_HSW"
   }
 ]

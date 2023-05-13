@@ -329,6 +329,106 @@
     ]
   },
   {
+    "name": "Deku Tree",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_dekuTree_closed.png",
+        "codes": "setting_dekuTree,setting_dekuTree_closed",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_dekuTree_open.png",
+        "codes": "setting_dekuTree,setting_dekuTree_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Boss Warp Pads",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_bossWarpPads_bossBeaten.png",
+        "codes": "setting_bossWarpPads,setting_bossWarpPads_bossBeaten",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_bossWarpPads_remains.png",
+        "codes": "setting_bossWarpPads,setting_bossWarpPads_remains",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Deku Tree as Adult",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_dekuTreeAdult_true.png",
+        "codes": "setting_dekuTreeAdult,setting_dekuTreeAdult_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_dekuTreeAdult_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_dekuTreeAdult,setting_dekuTreeAdult_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Fire Temple as Child",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_fireChild_true.png",
+        "codes": "setting_fireChild,setting_fireChild_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_fireChild_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_fireChild,setting_fireChild_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Well as Adult",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_wellAdult_true.png",
+        "codes": "setting_wellAdult,setting_wellAdult_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_wellAdult_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_wellAdult,setting_wellAdult_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Spiritual Stones",
     "type": "progressive",
     "allow_disabled": false,
