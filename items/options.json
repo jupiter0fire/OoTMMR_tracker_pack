@@ -264,6 +264,71 @@
     ]
   },
   {
+    "name": "Kakariko Gate",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_kakarikoGate_closed.png",
+        "codes": "setting_kakarikoGate,setting_kakarikoGate_closed",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_kakarikoGate_open.png",
+        "codes": "setting_kakarikoGate,setting_kakarikoGate_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Skip Child Zelda",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_skipZelda_true.png",
+        "codes": "setting_skipZelda,setting_skipZelda_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_skipZelda_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_skipZelda,setting_skipZelda_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Zora King",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_zoraKing_vanilla.png",
+        "codes": "setting_zoraKing,setting_zoraKing_vanilla",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_zoraKing_adult.png",
+        "codes": "setting_zoraKing,setting_zoraKing_adult",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_zoraKing_open.png",
+        "codes": "setting_zoraKing,setting_zoraKing_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Spiritual Stones",
     "type": "progressive",
     "allow_disabled": false,
