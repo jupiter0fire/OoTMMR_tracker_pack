@@ -1,5 +1,11 @@
 # Releases
 
+## v1.6.1.2
+
+Bugfixes for:
+
+- OOT Zora and Goron shops are not displayed when shop sanity is selected
+- Increase the maximum amount for Rainbow Bridge and Moon to 266
 ## v1.6.1.1
 
 This is as close to a complete rewrite of the tracker pack as it's going to get without also changing its looks:
