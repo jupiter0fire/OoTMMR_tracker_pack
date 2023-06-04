@@ -22,8 +22,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - Having **MM Spin Attack** can be tracked by right clicking on the MM Kokiri Sword.
 
-- You can activate the **Scarecrow Song** in OOT by right clicking on the Ocarina. In MM you don't need to track it.
-
 ## Unsupported Settings
 
 - Dungeon Reward Shuffle Anywhere
