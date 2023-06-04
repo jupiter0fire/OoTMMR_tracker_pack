@@ -16,20 +16,26 @@
     "name": "Wallet Upgrades",
     "type": "progressive",
     "allow_disabled": false,
+    "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/wallet.png"
+        "img": "images/items/mm_wallet.png",
+        "img_mods": "@disabled",
+        "codes": "OOT_WALLET,OOT_WALLET0"
       },
       {
-        "img": "images/wallet1.png",
+        "img": "images/items/mm_wallet.png",
+        "img_mods": "overlay|images/system/mm_overlay_99.png",
         "codes": "OOT_WALLET1,OOT_WALLET"
       },
       {
-        "img": "images/wallet2.png",
+        "img": "images/items/mm_wallet.png",
+        "img_mods": "overlay|images/system/mm_overlay_200.png",
         "codes": "OOT_WALLET2,OOT_WALLET"
       },
       {
-        "img": "images/wallet3.png",
+        "img": "images/items/mm_wallet.png",
+        "img_mods": "overlay|images/system/mm_overlay_500_green.png",
         "codes": "OOT_WALLET3,OOT_WALLET"
       }
     ]

@@ -491,21 +491,27 @@
     "name": "MM Wallet",
     "type": "progressive",
     "allow_disabled": false,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/items/mm_wallet99.png",
-        "img_mods": "@disabled,overlay|images/system/mm_overlay_99.png",
-        "codes": "MM_WALLET"
+        "img_mods": "@disabled",
+        "codes": "MM_WALLET0,MM_WALLET"
+      },
+      {
+        "img": "images/items/mm_wallet99.png",
+        "img_mods": "overlay|images/system/mm_overlay_99.png",
+        "codes": "MM_WALLET1"
       },
       {
         "img": "images/items/mm_wallet.png",
         "img_mods": "overlay|images/system/mm_overlay_200.png",
-        "codes": "MM_WALLET1"
+        "codes": "MM_WALLET2"
       },
       {
         "img": "images/items/mm_giantwallet.png",
         "img_mods": "overlay|images/system/mm_overlay_500_green.png",
-        "codes": "MM_WALLET2"
+        "codes": "MM_WALLET3"
       }
     ]
   },
