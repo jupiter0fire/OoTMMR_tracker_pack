@@ -30,6 +30,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Boss Entrance Shuffle
 - Dungeon Entrance Shuffle
 - Cross Games OoT Warp Songs
+- MQ Dungeons
 
 ## TODOs:
 

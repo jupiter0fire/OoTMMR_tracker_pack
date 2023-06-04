@@ -1,5 +1,11 @@
 # Releases
 
+## v1.6.1.3
+
+Bugfixes for:
+
+- Fix Snowhead Temple Dungeon boss hosted item
+- Add broadcast view to the tracker pack
 ## v1.6.1.2
 
 Bugfixes for:
