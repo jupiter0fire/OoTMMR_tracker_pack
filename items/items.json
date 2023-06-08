@@ -358,7 +358,7 @@
         },
       {
         "img": "images/bottle_fire.png",
-        "codes": "bottle1,OOT_BLUE_FIRE",
+        "codes": "bottle1,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
