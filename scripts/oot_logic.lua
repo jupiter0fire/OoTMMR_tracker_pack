@@ -385,6 +385,11 @@ function _oot_logic()
             return OOTMM_SETTING_OVERRIDES[item_name]
         end
 
+        -- EmoTracker knows boolean settings as progressive items with codes "setting_name_true" and "setting_name_false"
+        if not state then
+            item_name = item_name .. "_true"
+        end
+
         return has("setting_" .. item_name)
     end
 
