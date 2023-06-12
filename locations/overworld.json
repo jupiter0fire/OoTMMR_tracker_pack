@@ -4700,14 +4700,14 @@
                   {
                     "name": "Map: Clock Town",
                     "access_rules": [
-                      "$mm|Clock Town Great Fairy Alt"
+                      "$mm|Tingle Map Clock Town"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Map: Swamp",
                     "access_rules": [
-                      "$mm|Clock Town Great Fairy Alt"
+                      "$mm|Tingle Map Woodfall"
                     ],
                     "item_count": 1
                   }
@@ -5663,10 +5663,16 @@
             "sections": [
               {
                 "name": "Map: Ranch",
+                "access_rules": [
+                  "$mm|Tingle Map Ranch"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Map: Ocean",
+                "access_rules": [
+                  "$mm|Tingle Map Great Bay"
+                ],
                 "item_count": 1
               }
             ],
@@ -5886,10 +5892,16 @@
             "sections": [
               {
                 "name": "Map: Swamp",
+                "access_rules": [
+                  "$mm|Tingle Map Woodfall"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Map: Mountain",
+                "access_rules": [
+                  "$mm|Tingle Map Snowhead"
+                ],
                 "item_count": 1
               }
             ],
@@ -6476,10 +6488,16 @@
             "sections": [
               {
                 "name": "Map: Mountain",
+                "access_rules": [
+                  "$mm|Tingle Map Snowhead"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Map: Ranch",
+                "access_rules": [
+                  "$mm|Tingle Map Ranch"
+                ],
                 "item_count": 1
               }
             ],
@@ -6945,16 +6963,14 @@
                   {
                     "name": "Map: Ocean",
                     "access_rules": [
-                      "mm_bow",
-                      "mm_hookshot"
+                      "$mm|Tingle Map Great Bay"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Map: Canyon",
                     "access_rules": [
-                      "mm_bow",
-                      "mm_hookshot"
+                      "$mm|Tingle Map Ikana"
                     ],
                     "item_count": 1
                   }
@@ -7586,10 +7602,16 @@
                     "sections": [
                       {
                         "name": "Map: Canyon",
+                        "access_rules": [
+                          "$mm|Tingle Map Ikana"
+                        ],
                         "item_count": 1
                       },
                       {
                         "name": "Map: Clock Town",
+                        "access_rules": [
+                          "$mm|Tingle Map Clock Town"
+                        ],
                         "item_count": 1
                       }
                     ],
