@@ -39,10 +39,10 @@ local rewards = {
   "oot_nocturne_med",
   "oot_lacs_med",
   "oot_medallion_light",
-  "mm_odolwa_remains",
-  "mm_gyorg_remains",
-  "mm_goth_remains",
-  "mm_twinmold_remains"
+  "mm_remains_odolwa",
+  "mm_remains_gyorg",
+  "mm_remains_goth",
+  "mm_remains_twinmold"
 }
 
 local images = {
