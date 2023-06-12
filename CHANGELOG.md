@@ -1,5 +1,9 @@
 # Releases
 
+## v1.6.1.4
+
+- Add Great Bay Cows
+- Fix MM_WALLET item code
 ## v1.6.1.3
 
 Bugfixes for:
