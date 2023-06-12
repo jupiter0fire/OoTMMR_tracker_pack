@@ -494,13 +494,12 @@
     "stages": [
       {
         "img": "images/items/mm_wallet99.png",
-        "img_mods": "@disabled,overlay|images/system/mm_overlay_99.png",
-        "codes": "MM_WALLET"
+        "img_mods": "@disabled,overlay|images/system/mm_overlay_99.png"
       },
       {
         "img": "images/items/mm_wallet.png",
         "img_mods": "overlay|images/system/mm_overlay_200.png",
-        "codes": "MM_WALLET1"
+        "codes": "MM_WALLET1,MM_WALLET"
       },
       {
         "img": "images/items/mm_giantwallet.png",
