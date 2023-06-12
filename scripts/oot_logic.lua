@@ -332,8 +332,12 @@ function _oot_logic()
         ["MALON"] = { ["type"] = "has" },
         ["MEET_ZELDA"] = { ["type"] = "has" },
         ["NUTS"] = { ["type"] = "return", ["value"] = false },
+        ["OOT_NUTS"] = { ["type"] = "return", ["value"] = false },
+        ["MM_NUTS"] = { ["type"] = "return", ["value"] = false },
         ["SEAHORSE"] = { ["type"] = "has" },
         ["STICKS"] = { ["type"] = "return", ["value"] = false },
+        ["OOT_STICKS"] = { ["type"] = "return", ["value"] = false },
+        ["MM_STICKS"] = { ["type"] = "return", ["value"] = false },
         ["ZORA_EGGS_BARREL_MAZE"] = { ["type"] = "has" },
         ["ZORA_EGGS_HOOKSHOT_ROOM"] = { ["type"] = "has" },
         ["ZORA_EGGS_LONE_GUARD"] = { ["type"] = "has" },
@@ -369,7 +373,7 @@ function _oot_logic()
     end
 
     OOTMM_SETTING_OVERRIDES = {
-        ["childWallets"] = false,
+        ["childWallets"] = true,
         ["crossWarpMm_childOnly"] = false,
         ["crossWarpMm_full"] = false,
         ["fairyOcarinaMm"] = false,

@@ -132,8 +132,9 @@ function node_as_string(node)
     -- FIXME: This won't work if we save a "from" field that is a node in the other world
     --        Arguably, we should just save whether we were child or adult instead and avoid the whole issue altogether!
     return node.type ..
-    ":" ..
-    node.glitched .. ":" .. tostring(node.child) .. ":" .. tostring(node.adult) .. ":" .. node.rule .. ":" .. node.name
+        ":" ..
+        node.glitched ..
+        ":" .. tostring(node.child) .. ":" .. tostring(node.adult) .. ":" .. node.rule .. ":" .. node.name
 end
 
 -- require() isn't working in EmoTracker; look into this some more, but see README.md
@@ -165,6 +166,7 @@ local function run_search(mode)
         rule = function() return true end,
     }))
 
+    local opposite = { oot = "mm", mm = "oot", OOT = "MM", MM = "OOT" }
     local more_to_go = true
     while more_to_go do
         more_to_go = false
@@ -202,21 +204,14 @@ local function run_search(mode)
                         end
                     end
                 elseif node.type == "event" then
-                    -- events are returned as nodes with type "event" and name "EVENT_NAME"
-                    -- Names can start with "[world_name]_", e.g. MM_MAGIC or OOT_STICKS
-                    -- We need to add cross-world events to the corresponding queues
-                    -- FIXME: This isn't right! Instead, we need to inject all events from e.g. OOT into MM with an OOT_ prefix in order for checks like event(OOT_STICKS) to work in MM's logic!
+                    -- We need to inject all events from e.g. OOT into MM with an OOT_ prefix in order for checks like event(MM_ARROWS) to work in MM's logic
+                    -- Only add events that are not already prefixed with a world name
                     local split = node.name:find("_")
-                    if split then
-                        local node_world = node.name:sub(1, split - 1):lower()
-                        if node_world == "oot" or node_world == "mm" then -- FIXME: worlds are hardcoded here
-                            -- Insert into other world's queue
-                            local new_node = new_node(node)
-                            new_node.name = node.name:sub(split + 1)
-                            new_node.rule = function() return true end
-                            OOTMM[node_world].state.SearchQueue:push(new_node)
-                            -- FIXME: Put these into a higher priority queue for a bigger performance gain! (Check new event nodes first, avoid putting more things into the list of events to re-check)
-                        end
+                    if split and node.name:sub(1, split - 1):upper() ~= "OOT" and node.name:sub(1, split - 1):upper() ~= "MM" then
+                        local new_node = new_node(node)
+                        new_node.name = world:upper() .. "_" .. node.name
+                        new_node.rule = function() return true end
+                        OOTMM[opposite[world]].state.SearchQueue:push(new_node)
                     end
                 end
             end
