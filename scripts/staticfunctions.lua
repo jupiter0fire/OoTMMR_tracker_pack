@@ -109,8 +109,8 @@ function new_node(values)
     end
 
     local node = {
-        ["type"] = nil, -- "exit", "event", "location"
-        ["name"] = nil, -- name of the exit/event/location
+        ["type"] = nil,  -- "exit", "event", "location"
+        ["name"] = nil,  -- name of the exit/event/location
         ["glitched"] = false,
         ["child"] = nil, -- mm_time index, 1 to #MM_TIME_SLICES; alternatively, { start = 1, stop = #MM_TIME_SLICES }
         ["adult"] = nil, -- mm_time index, 1 to #MM_TIME_SLICES; alternatively, { start = 1, stop = #MM_TIME_SLICES }
@@ -131,7 +131,9 @@ end
 function node_as_string(node)
     -- FIXME: This won't work if we save a "from" field that is a node in the other world
     --        Arguably, we should just save whether we were child or adult instead and avoid the whole issue altogether!
-    return node.type .. ":" .. node.glitched .. ":" .. tostring(node.child) .. ":" .. tostring(node.adult) .. ":" .. node.rule ..  ":" .. node.name
+    return node.type ..
+    ":" ..
+    node.glitched .. ":" .. tostring(node.child) .. ":" .. tostring(node.adult) .. ":" .. node.rule .. ":" .. node.name
 end
 
 -- require() isn't working in EmoTracker; look into this some more, but see README.md
