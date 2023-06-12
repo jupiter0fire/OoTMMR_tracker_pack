@@ -4717,8 +4717,7 @@
                     "map": "termina",
                     "x": 120,
                     "y": 35,
-                    "force_invisibility_rules": 
-                    [
+                    "force_invisibility_rules": [
                       "setting_tingleShuffle_vanilla"
                     ]
                   }
@@ -5060,16 +5059,16 @@
                     ],
                     "visibility_rules": [
                       "setting_shopShuffleMm_full"
-                    ],  
+                    ],
                     "item_count": 1
-                  },                  
+                  },
                   {
                     "name": "Item 2",
                     "access_rules": [
                       "$mm|Bomb Shop Item 2"
                     ],
                     "visibility_rules": [
-                       "setting_shopShuffleMm_full"
+                      "setting_shopShuffleMm_full"
                     ],
                     "item_count": 1
                   },
@@ -5159,9 +5158,9 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "force_invisibility_rules":[
+                    "force_invisibility_rules": [
                       "setting_shopShuffleMm_none"
-                    ],  
+                    ],
                     "x": 34,
                     "y": 168
                   }
@@ -5676,8 +5675,7 @@
                 "map": "termina",
                 "x": 469,
                 "y": 366,
-                "force_invisibility_rules": 
-                [
+                "force_invisibility_rules": [
                   "setting_tingleShuffle_vanilla"
                 ]
               }
@@ -5900,8 +5898,7 @@
                 "map": "termina",
                 "x": 537,
                 "y": 401,
-                "force_invisibility_rules": 
-                [
+                "force_invisibility_rules": [
                   "setting_tingleShuffle_vanilla"
                 ]
               }
@@ -6488,11 +6485,10 @@
             ],
             "map_locations": [
               {
-                "map": "termina", 
+                "map": "termina",
                 "x": 582,
                 "y": 165,
-                "force_invisibility_rules": 
-                [
+                "force_invisibility_rules": [
                   "setting_tingleShuffle_vanilla"
                 ]
               }
@@ -6749,9 +6745,9 @@
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules":[
+                "force_invisibility_rules": [
                   "setting_shopShuffleMm_none"
-                ],  
+                ],
                 "x": 646,
                 "y": 140
               }
@@ -6816,7 +6812,6 @@
       {
         "name": "Great Bay",
         "color": "#3f46ff",
-
         "children": [
           {
             "name": "Great Bay Coast Grotto",
@@ -6897,6 +6892,18 @@
                       "$mm|Great Bay Coast HP"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Great Bay Ledge Grotto Cows",
+                    "chest_unopened_img": "images/system/cow.png",
+                    "chest_opened_img": "images/system/milk.png",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Cow Front"
+                    ],
+                    "visibility_rules": [
+                      "setting_cowShuffleMm_true"
+                    ],
+                    "item_count": 2
                   }
                 ],
                 "map_locations": [
@@ -6957,8 +6964,7 @@
                     "map": "termina",
                     "x": 205,
                     "y": 300,
-                    "force_invisibility_rules": 
-                    [
+                    "force_invisibility_rules": [
                       "setting_tingleShuffle_vanilla"
                     ]
                   }
@@ -7186,7 +7192,7 @@
                     "map": "termina",
                     "x": 210,
                     "y": 380,
-                    "force_invisibility_rules":[
+                    "force_invisibility_rules": [
                       "setting_shopShuffleMm_none"
                     ]
                   }
@@ -7592,8 +7598,7 @@
                         "map": "termina",
                         "x": 800,
                         "y": 264,
-                        "force_invisibility_rules": 
-                        [
+                        "force_invisibility_rules": [
                           "setting_tingleShuffle_vanilla"
                         ]
                       }
