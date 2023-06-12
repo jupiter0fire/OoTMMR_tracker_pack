@@ -36,6 +36,11 @@
       },
       {
         "type": "item",
+        "item": "setting_crossWarpOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_kakarikoGate",
         "height": 16
       },
@@ -109,6 +114,11 @@
       {
         "type": "item",
         "item": "setting_bossWarpPads",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crossWarpMm",
         "height": 16
       }
     ]
@@ -643,7 +653,7 @@
         }
       },
       {
-        "title": "Logic Tricks OOT",
+        "title": "Tricks OOT",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -659,7 +669,7 @@
         }
       },
       {
-        "title": "Logic Tricks MM",
+        "title": "Tricks MM",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -675,7 +685,7 @@
         }
       },
       {
-        "title": "Special Condition Bridge",
+        "title": "Special Bridge",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -691,7 +701,7 @@
         }
       },
       {
-        "title": "Special Condition Moon",
+        "title": "Special Moon",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
@@ -707,7 +717,7 @@
         }
       },
       {
-        "title": "Special Condition LACS",
+        "title": "Special LACS",
         "content": {
           "type": "scroll",
           "horizontal_scrollbar_visibility": "auto",
