@@ -406,6 +406,8 @@ function _mm_logic()
 
     OOTMM_SPECIAL_ACCESS_CASES = {
         ["BRIDGE"] = true,
+        ["LACS"] = true,
+        ["MAJORA"] = true,
         ["MOON"] = true,
     }
     function special(case)
