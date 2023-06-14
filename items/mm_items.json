@@ -51,13 +51,13 @@
     "name": "MM Deku Sticks",
     "type": "toggle",
     "img": "images/items/mm_stick.png",
-    "codes": "mm_sticks,mm_dekusticks,mm_stick,mm_dekustick"
+    "codes": "MM_STICK"
   },
   {
     "name": "MM Deku Nuts",
     "type": "toggle",
     "img": "images/items/mm_nut.png",
-    "codes": "mm_nut,mm_nuts,mm_dekunuts"
+    "codes": "MM_NUT"
   },
   {
     "name": "MM Bombs",
@@ -130,7 +130,7 @@
     "name": "MM Bombchu",
     "type": "toggle",
     "img": "images/items/mm_bombchu.png",
-    "codes": "mm_bombchu,mm_bombchus"
+    "codes": "MM_BOMBCHU"
   },
   {
     "name": "MM Powder Keg",

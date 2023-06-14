@@ -58,6 +58,12 @@
             "OOT_SONG_TP_LIGHT",
             "bottle1",
             "bottle2"
+          ],
+          [
+            "OOT_BOMBCHUS",
+            "OOT_SPELL_LOVE",
+            "bottle3",
+            "bottle4"
           ]
         ]
       },
@@ -624,6 +630,12 @@
             "MM_MASK_FIERCE_DEITY",
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN"
+          ],
+          [
+            "MM_BOMBCHU",
+            "MM_STICK",
+            "MM_NUT",
+            "MM_MAGIC_BEAN"
           ]
         ]
       },

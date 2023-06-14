@@ -173,7 +173,7 @@
     "name": "Bombchus",
     "type": "toggle",
     "img": "images/bombchu.png",
-    "codes": "bombchu,bombchus,chus"
+    "codes": "OOT_BOMBCHUS"
   },
   {
     "name": "Lens of Truth",
@@ -197,7 +197,7 @@
     "name": "Nayru's Love",
     "type": "toggle",
     "img": "images/nayru.png",
-    "codes": "nayruslove,nayrus,nl"
+    "codes": "OOT_SPELL_LOVE"
   },
   {
     "name": "Child Cucco",
@@ -365,6 +365,16 @@
         "img": "images/bottle_letter.png",
         "codes": "bottle1,OOT_RUTO_LETTER",
         "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle1,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle1,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
       }
     ]
   },
@@ -386,6 +396,80 @@
       {
         "img": "images/bottle_letter.png",
         "codes": "bottle2,OOT_RUTO_LETTER",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle2,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle2,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 3",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle3,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+        },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle3,OOT_BLUE_FIRE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle3,OOT_RUTO_LETTER",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle3,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle3,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bottle 4",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/bottle.png",
+        "codes": "bottle4,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+        },
+      {
+        "img": "images/bottle_fire.png",
+        "codes": "bottle4,OOT_BLUE_FIRE",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_letter.png",
+        "codes": "bottle4,OOT_RUTO_LETTER",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_bugs.png",
+        "codes": "bottle4,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_fish.png",
+        "codes": "bottle4,OOT_FISH,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
