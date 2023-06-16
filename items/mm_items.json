@@ -288,12 +288,7 @@
     "name": "MM Goron Lullaby",
     "type": "progressive",
     "loop": true,
-    "allow_disabled": false,
     "stages": [
-      {
-        "img": "images/items/mm_lullaby.png",
-        "img_mods": "@disabled"
-      },
       {
         "img": "images/items/mm_half_lullaby.png",
         "codes": "MM_SONG_GORON_HALF"
