@@ -874,6 +874,45 @@
     ]
   },
   {
+    "name": "Short Hookshot in MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shortHookshotMm_true.png",
+        "codes": "setting_shortHookshotMm,setting_shortHookshotMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shortHookshotMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shortHookshotMm,setting_shortHookshotMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Goron Lullaby",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_progressiveGoronLullaby_single.png",
+        "codes": "setting_progressiveGoronLullaby,setting_progressiveGoronLullaby_single",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_progressiveGoronLullaby_progressive.png",
+        "codes": "setting_progressiveGoronLullaby,setting_progressiveGoronLullaby_progressive",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Spiritual Stones",
     "type": "progressive",
     "allow_disabled": false,

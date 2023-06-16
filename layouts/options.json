@@ -135,6 +135,16 @@
         "type": "item",
         "item": "setting_fairyOcarinaMm",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shortHookshotMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_progressiveGoronLullaby",
+        "height": 16
       }
     ]
   },
