@@ -324,6 +324,9 @@ function _mm_logic()
     -- These are used to override the default behavior, and make the tracker more
     -- user friendly.
     OOTMM_EVENT_OVERRIDES = {
+        ["ARROWS"] = { ["type"] = "return", ["value"] = true },
+        ["BOMBCHUS"] = { ["type"] = "has" },
+        ["BOMBS"] = { ["type"] = "return", ["value"] = true },
         ["BOMBER_CODE"] = { ["type"] = "has" },
         ["FROG_1"] = { ["type"] = "has" },
         ["FROG_2"] = { ["type"] = "has" },
@@ -331,13 +334,18 @@ function _mm_logic()
         ["FROG_4"] = { ["type"] = "has" },
         ["MALON"] = { ["type"] = "has" },
         ["MEET_ZELDA"] = { ["type"] = "has" },
+        ["MM_ARROWS"] = { ["type"] = "return", ["value"] = true },
+        ["MM_BOMBS"] = { ["type"] = "return", ["value"] = true },
         ["NUTS"] = { ["type"] = "return", ["value"] = false },
         ["OOT_NUTS"] = { ["type"] = "return", ["value"] = false },
         ["MM_NUTS"] = { ["type"] = "return", ["value"] = false },
         ["SEAHORSE"] = { ["type"] = "has" },
         ["STICKS"] = { ["type"] = "return", ["value"] = false },
         ["OOT_STICKS"] = { ["type"] = "return", ["value"] = false },
+        ["OOT_ARROWS"] = { ["type"] = "return", ["value"] = true },
+        ["OOT_BOMBS"] = { ["type"] = "return", ["value"] = true },
         ["MM_STICKS"] = { ["type"] = "return", ["value"] = false },
+        ["SEEDS"] = { ["type"] = "return", ["value"] = true },
         ["ZORA_EGGS_BARREL_MAZE"] = { ["type"] = "has" },
         ["ZORA_EGGS_HOOKSHOT_ROOM"] = { ["type"] = "has" },
         ["ZORA_EGGS_LONE_GUARD"] = { ["type"] = "has" },
