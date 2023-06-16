@@ -409,10 +409,18 @@
   },
   {
     "name": "MM Ocarina",
-    "type": "toggle",
-    "img": "images/items/mm_ocarina.png",
-    "initial_active_state": false,
-    "codes": "MM_OCARINA"
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/fairyocarina.png",
+        "codes": "MM_OCARINA"
+      },
+      {
+        "img": "images/ocarina.png",
+        "codes": "MM_OCARINA2"
+      }
+    ]
   },
   {
     "name": "MM Bottle1",

@@ -335,7 +335,8 @@
         "codes": "OOT_OCARINA"
       },
       {
-        "img": "images/ocarina.png"
+        "img": "images/ocarina.png",
+        "codes": "OOT_OCARINA2"
       }
     ]
   },
