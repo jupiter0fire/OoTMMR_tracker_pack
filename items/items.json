@@ -355,7 +355,22 @@
         "img": "images/bottle.png",
         "codes": "bottle1,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
-        },
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "POTION_RED,BOTTLE_EMPTY,bottle1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle1",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle1",
+        "inherit_codes": false
+      },
       {
         "img": "images/bottle_fire.png",
         "codes": "bottle1,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
@@ -387,7 +402,22 @@
         "img": "images/bottle.png",
         "codes": "bottle2,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
-        },
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "POTION_RED,BOTTLE_EMPTY,bottle2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle2",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle2",
+        "inherit_codes": false
+      },
       {
         "img": "images/bottle_fire.png",
         "codes": "bottle2,OOT_BLUE_FIRE",
@@ -419,7 +449,22 @@
         "img": "images/bottle.png",
         "codes": "bottle3,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
-        },
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "POTION_RED,BOTTLE_EMPTY,bottle3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle3",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle3",
+        "inherit_codes": false
+      },
       {
         "img": "images/bottle_fire.png",
         "codes": "bottle3,OOT_BLUE_FIRE",
@@ -451,7 +496,22 @@
         "img": "images/bottle.png",
         "codes": "bottle4,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
-        },
+      },
+      {
+        "img": "images/bottle_red.png",
+        "codes": "POTION_RED,BOTTLE_EMPTY,bottle4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle4",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_blue.png",
+        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle4",
+        "inherit_codes": false
+      },
       {
         "img": "images/bottle_fire.png",
         "codes": "bottle4,OOT_BLUE_FIRE",
