@@ -130,6 +130,11 @@
         "type": "item",
         "item": "setting_majoraChild",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyOcarinaMm",
+        "height": 16
       }
     ]
   },

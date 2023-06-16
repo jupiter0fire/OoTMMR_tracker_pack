@@ -854,6 +854,26 @@
     ]
   },
   {
+    "name": "Fairy Ocarina in MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_fairyOcarinaMm_true.png",
+        "codes": "setting_fairyOcarinaMm,setting_fairyOcarinaMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_fairyOcarinaMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_fairyOcarinaMm,setting_fairyOcarinaMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Spiritual Stones",
     "type": "progressive",
     "allow_disabled": false,
