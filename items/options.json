@@ -907,6 +907,7 @@
       },
       {
         "img": "images/setting_progressiveGoronLullaby_progressive.png",
+        "img_mods": "@disabled",
         "codes": "setting_progressiveGoronLullaby,setting_progressiveGoronLullaby_progressive",
         "inherit_codes": false
       }
