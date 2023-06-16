@@ -49,15 +49,51 @@
   },
   {
     "name": "MM Deku Sticks",
-    "type": "toggle",
-    "img": "images/items/mm_stick.png",
-    "codes": "MM_STICK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/stick.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_10.png",
+        "codes": "MM_STICK"
+      },
+      {
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_20.png"
+      },
+      {
+        "img": "images/stick.png",
+        "img_mods": "overlay|images/overlay_30_green.png"
+      }
+    ]
   },
   {
     "name": "MM Deku Nuts",
-    "type": "toggle",
-    "img": "images/items/mm_nut.png",
-    "codes": "MM_NUT"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/nut.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_20.png",
+        "codes": "MM_NUT"
+      },
+      {
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_30.png"
+      },
+      {
+        "img": "images/nut.png",
+        "img_mods": "overlay|images/overlay_40_green.png"
+      }
+    ]
   },
   {
     "name": "MM Bombs",
