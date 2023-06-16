@@ -24,31 +24,30 @@ local OOTMM_SHARED_PREV = {
   ["Ocarina"] = {0},
   ["Wallets"] = {0},
 }
-local OOTMM_SKIP_PREV = {
-  ["MM_OCARINA"] = 0,
-  ["MM_SONG_GORON"] = 0,
-  ["MM_HOOKSHOT"] = 0,
-}
 local OOTMM_SKIP_STAGE = {
-  ["fairyOcarinaMm"] = {
+  ["fairyOcarinaMm_false"] = {
     ["item"] = "MM_OCARINA",
     ["rule"] = function () return Tracker:ProviderCountForCode("setting_sharedOcarina_false") > 0 end
   },
-  ["progressiveGoronLullaby"] = {
+  ["progressiveGoronLullaby_single"] = {
     ["item"] = "MM_SONG_GORON",
     ["rule"] = function () return true end
   },
-  ["shortHookshotMm"] = {
-    ["items"] = "MM_HOOKSHOT",
+  ["shortHookshotMm_false"] = {
+    ["item"] = "MM_HOOKSHOT",
     ["rule"] = function () return true end
   },
+}
+local OOTMM_SKIP_STAGE_PREV = {
+  ["MM_OCARINA"] = 0,
+  ["MM_SONG_GORON"] = 0,
+  ["MM_HOOKSHOT"] = 0,
 }
 function tracker_on_accessibility_updating()
   if PACK_READY then
     -- Handle shared items in EmoTracker's GUI
     for setting, items in pairs(OOTMM_SHARED) do
       if Tracker:ProviderCountForCode("setting_shared" .. setting .. "_true") > 0 then
-      -- if Tracker:ProviderCountForCode("setting_" .. "wellAdult" .. "_true") > 0 then
         for i, item in ipairs(items) do
           local oot_item = Tracker:FindObjectForCode("OOT_" .. item)
           local mm_item = Tracker:FindObjectForCode("MM_" .. item)
@@ -64,17 +63,15 @@ function tracker_on_accessibility_updating()
     end
 
     for setting, v in pairs(OOTMM_SKIP_STAGE) do
-      print(setting, v.item, v.rule())
-      if Tracker:ProviderCountForCode("setting_" .. setting .. "_true") > 0 then
+      if Tracker:ProviderCountForCode("setting_" .. setting) > 0 then
         if v.rule() then
           local item = Tracker:FindObjectForCode(v.item)
-          print(item, "stage", item.CurrentStage, "prev", OOTMM_SKIP_PREV[v.item])
-          if item.CurrentStage > OOTMM_SKIP_PREV[v.item] then
+          if item.CurrentStage > OOTMM_SKIP_STAGE_PREV[v.item] then
             item.CurrentStage = item.CurrentStage + 1
-            OOTMM_SKIP_PREV[v.item] = item.CurrentStage
-          elseif item.CurrentStage < OOTMM_SKIP_PREV[v.item] then
+            OOTMM_SKIP_STAGE_PREV[v.item] = item.CurrentStage
+          elseif item.CurrentStage < OOTMM_SKIP_STAGE_PREV[v.item] then
             item.CurrentStage = item.CurrentStage - 1
-            OOTMM_SKIP_PREV[v.item] = item.CurrentStage
+            OOTMM_SKIP_STAGE_PREV[v.item] = item.CurrentStage
           end
         end
       end
