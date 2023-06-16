@@ -358,13 +358,13 @@
       {
         "img": "images/setting_dekuTree_closed.png",
         "codes": "setting_dekuTree,setting_dekuTree_closed",
-        "inherit_codes": false,
-        "img_mods": "@disabled"
+        "inherit_codes": false
       },
       {
         "img": "images/setting_dekuTree_open.png",
         "codes": "setting_dekuTree,setting_dekuTree_open",
-        "inherit_codes": false
+        "inherit_codes": false,
+        "img_mods": "@disabled"
       }
     ]
   },
@@ -482,6 +482,7 @@
     "stages": [
       {
         "img": "images/setting_majoraChild_none.png",
+        "img_mods": "@disabled",
         "codes": "setting_majoraChild,setting_majoraChild_none",
         "inherit_codes": false
       },
@@ -501,6 +502,7 @@
     "stages": [
       {
         "img": "images/setting_lacs_vanilla.png",
+        "img_mods": "@disabled",
         "codes": "setting_lacs,setting_lacs_vanilla",
         "inherit_codes": false
       },
