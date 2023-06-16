@@ -514,6 +514,346 @@
     ]
   },
   {
+    "name": "Shared Nuts & Sticks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedNutsSticks_true.png",
+        "codes": "setting_sharedNutsSticks,setting_sharedNutsSticks_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedNutsSticks_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedNutsSticks,setting_sharedNutsSticks_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Bows",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedBows_true.png",
+        "codes": "setting_sharedBows,setting_sharedBows_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedBows_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedBows,setting_sharedBows_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Bomb Bags",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedBombBags_true.png",
+        "codes": "setting_sharedBombBags,setting_sharedBombBags_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedBombBags_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedBombBags,setting_sharedBombBags_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Magic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMagic_true.png",
+        "codes": "setting_sharedMagic,setting_sharedMagic_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMagic_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMagic,setting_sharedMagic_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Fire Arrow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMagicArrowFire_true.png",
+        "codes": "setting_sharedMagicArrowFire,setting_sharedMagicArrowFire_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMagicArrowFire_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMagicArrowFire,setting_sharedMagicArrowFire_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Ice Arrow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMagicArrowIce_true.png",
+        "codes": "setting_sharedMagicArrowIce,setting_sharedMagicArrowIce_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMagicArrowIce_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMagicArrowIce,setting_sharedMagicArrowIce_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Light Arrow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMagicArrowLight_true.png",
+        "codes": "setting_sharedMagicArrowLight,setting_sharedMagicArrowLight_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMagicArrowLight_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMagicArrowLight,setting_sharedMagicArrowLight_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Epona's Song",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSongEpona_true.png",
+        "codes": "setting_sharedSongEpona,setting_sharedSongEpona_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSongEpona_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSongEpona,setting_sharedSongEpona_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Song of Storms",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSongStorms_true.png",
+        "codes": "setting_sharedSongStorms,setting_sharedSongStorms_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSongStorms_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSongStorms,setting_sharedSongStorms_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Song of Time",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSongTime_true.png",
+        "codes": "setting_sharedSongTime,setting_sharedSongTime_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSongTime_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSongTime,setting_sharedSongTime_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Sun's Song",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSongSun_true.png",
+        "codes": "setting_sharedSongSun,setting_sharedSongSun_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSongSun_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSongSun,setting_sharedSongSun_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Hookshots",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedHookshot_true.png",
+        "codes": "setting_sharedHookshot,setting_sharedHookshot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedHookshot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedHookshot,setting_sharedHookshot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Lens of Truth",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedLens_true.png",
+        "codes": "setting_sharedLens,setting_sharedLens_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedLens_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedLens,setting_sharedLens_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Ocarina of Time",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedOcarina_true.png",
+        "codes": "setting_sharedOcarina,setting_sharedOcarina_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedOcarina_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedOcarina,setting_sharedOcarina_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Masks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMasks_true.png",
+        "codes": "setting_sharedMasks,setting_sharedMasks_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMasks_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMasks,setting_sharedMasks_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Wallets",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedWallets_true.png",
+        "codes": "setting_sharedWallets,setting_sharedWallets_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedWallets_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedWallets,setting_sharedWallets_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Health",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedHealth_true.png",
+        "codes": "setting_sharedHealth,setting_sharedHealth_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedHealth_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedHealth,setting_sharedHealth_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Spiritual Stones",
     "type": "progressive",
     "allow_disabled": false,
