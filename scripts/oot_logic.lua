@@ -182,6 +182,7 @@ function _oot_logic()
         ["MEDALLION_WATER"] = "NOCTURNE_MED:2",
         ["MEDALLION_SPIRIT"] = "LACS_MED:1",
         ["MEDALLION_SHADOW"] = "LACS_MED:2",
+        ["OCARINA:2"] = "OCARINA2",
     }
     OOTMM_HAS_PREFIXES = {
         ["setting"] = true,
@@ -382,14 +383,10 @@ function _oot_logic()
 
     OOTMM_SETTING_OVERRIDES = {
         ["childWallets"] = true,
-        ["crossWarpMm_childOnly"] = false,
-        ["crossWarpMm_full"] = false,
-        ["fairyOcarinaMm"] = false,
         ["progressiveGoronLullaby_progressive"] = true,
         ["progressiveShieldsMm_progressive"] = false,
         ["progressiveShieldsOot_progressive"] = false,
         ["progressiveSwordsOot_progressive"] = false,
-        ["sharedOcarina"] = false,
         ["shortHookshotMm"] = true,
     }
     function setting(name, state)
