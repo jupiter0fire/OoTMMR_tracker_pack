@@ -325,40 +325,49 @@ function _mm_logic()
     -- These are used to override the default behavior, and make the tracker more
     -- user friendly.
     OOTMM_EVENT_OVERRIDES = {
-        ["ARROWS"] = { ["type"] = "return", ["value"] = true },
-        ["BOMBCHUS"] = { ["type"] = "has" },
-        ["BOMBS"] = { ["type"] = "return", ["value"] = true },
-        ["BOMBER_CODE"] = { ["type"] = "has" },
-        ["FROG_1"] = { ["type"] = "has" },
-        ["FROG_2"] = { ["type"] = "has" },
-        ["FROG_3"] = { ["type"] = "has" },
-        ["FROG_4"] = { ["type"] = "has" },
-        ["MALON"] = { ["type"] = "has" },
-        ["MEET_ZELDA"] = { ["type"] = "has" },
-        ["MM_ARROWS"] = { ["type"] = "return", ["value"] = true },
-        ["MM_BOMBS"] = { ["type"] = "return", ["value"] = true },
-        ["NUTS"] = { ["type"] = "return", ["value"] = false },
-        ["OOT_NUTS"] = { ["type"] = "return", ["value"] = false },
-        ["MM_NUTS"] = { ["type"] = "return", ["value"] = false },
-        ["SEAHORSE"] = { ["type"] = "has" },
-        ["STICKS"] = { ["type"] = "return", ["value"] = false },
-        ["OOT_STICKS"] = { ["type"] = "return", ["value"] = false },
-        ["OOT_ARROWS"] = { ["type"] = "return", ["value"] = true },
-        ["OOT_BOMBS"] = { ["type"] = "return", ["value"] = true },
-        ["MM_STICKS"] = { ["type"] = "return", ["value"] = false },
-        ["SEEDS"] = { ["type"] = "return", ["value"] = true },
-        ["ZORA_EGGS_BARREL_MAZE"] = { ["type"] = "has" },
-        ["ZORA_EGGS_HOOKSHOT_ROOM"] = { ["type"] = "has" },
-        ["ZORA_EGGS_LONE_GUARD"] = { ["type"] = "has" },
-        ["ZORA_EGGS_PINNACLE_ROCK"] = { ["type"] = "has" },
-        ["ZORA_EGGS_TREASURE_ROOM"] = { ["type"] = "has" },
+        ["OOT"] = {
+            ["ARROWS"] = { ["type"] = "return", ["value"] = true },
+            ["BOMBCHUS"] = { ["type"] = "has" },
+            ["BOMBS"] = { ["type"] = "return", ["value"] = true },
+            ["MALON"] = { ["type"] = "has" },
+            ["MEET_ZELDA"] = { ["type"] = "has" },
+            ["MM_ARROWS"] = { ["type"] = "return", ["value"] = true },
+            ["MM_BOMBS"] = { ["type"] = "return", ["value"] = true },
+            ["NUTS"] = { ["type"] = "return", ["value"] = false },
+            ["MM_NUTS"] = { ["type"] = "return", ["value"] = false },
+            ["STICKS"] = { ["type"] = "return", ["value"] = false },
+            ["MM_STICKS"] = { ["type"] = "return", ["value"] = false },
+            ["SEEDS"] = { ["type"] = "return", ["value"] = true },
+        },
+        ["MM"] = {
+            ["ARROWS"] = { ["type"] = "return", ["value"] = true },
+            ["BOMBCHUS"] = { ["type"] = "has" },
+            ["BOMBS"] = { ["type"] = "return", ["value"] = true },
+            ["BOMBER_CODE"] = { ["type"] = "has" },
+            ["FROG_1"] = { ["type"] = "has" },
+            ["FROG_2"] = { ["type"] = "has" },
+            ["FROG_3"] = { ["type"] = "has" },
+            ["FROG_4"] = { ["type"] = "has" },
+            ["NUTS"] = { ["type"] = "return", ["value"] = false },
+            ["OOT_NUTS"] = { ["type"] = "return", ["value"] = false },
+            ["SEAHORSE"] = { ["type"] = "has" },
+            ["STICKS"] = { ["type"] = "return", ["value"] = false },
+            ["OOT_STICKS"] = { ["type"] = "return", ["value"] = false },
+            ["OOT_ARROWS"] = { ["type"] = "return", ["value"] = true },
+            ["OOT_BOMBS"] = { ["type"] = "return", ["value"] = true },
+            ["ZORA_EGGS_BARREL_MAZE"] = { ["type"] = "has" },
+            ["ZORA_EGGS_HOOKSHOT_ROOM"] = { ["type"] = "has" },
+            ["ZORA_EGGS_LONE_GUARD"] = { ["type"] = "has" },
+            ["ZORA_EGGS_PINNACLE_ROCK"] = { ["type"] = "has" },
+            ["ZORA_EGGS_TREASURE_ROOM"] = { ["type"] = "has" },
+        },
     }
     function event(x)
-        if OOTMM_EVENT_OVERRIDES[x] then
-            if OOTMM_EVENT_OVERRIDES[x]["type"] == "return" then
-                return OOTMM_EVENT_OVERRIDES[x]["value"]
-            elseif OOTMM_EVENT_OVERRIDES[x]["type"] == "has" then
-                return has("EVENT_" .. x)
+        if OOTMM_EVENT_OVERRIDES[OOTMM_ITEM_PREFIX][x] then
+            if OOTMM_EVENT_OVERRIDES[OOTMM_ITEM_PREFIX][x]["type"] == "return" then
+                return OOTMM_EVENT_OVERRIDES[OOTMM_ITEM_PREFIX][x]["value"]
+            elseif OOTMM_EVENT_OVERRIDES[OOTMM_ITEM_PREFIX][x]["type"] == "has" then
+                return has("EVENT_" .. OOTMM_ITEM_PREFIX .. '_' .. x)
             end
         end
 
