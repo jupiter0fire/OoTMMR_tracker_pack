@@ -12,11 +12,13 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - The events for **OOT Malon**, **OOT Zelda's Letter**, **MM Bomber's Notebook**, **MM Seahorse**, **MM Zora Eggs** and **MM Frogs** are depicted as locations in the tracker pack and must be manually tracked before the checks that depend on these events are shown as reachable (e.g. checks in Pinnacle Rock depending on getting MM Seahorse).
 
-- **Goron Lullaby** is a progressive item with two stages: First Half of Goron Lullaby and Full Goron Lullaby.
+- **Goron Lullaby** is a progressive item if the respective setting (progressive Goron Lullaby) is enabled.
 
-- **MM Hookshot** is a progressive item with two stages: MM Short Hookshot and MM Hookshot.
+- **MM Hookshot** is a progressive item if the respective setting (MM Short Hookshot) is enabled.
 
-- If you are playing with MM Full Lullaby Only or without MM Short Hookshot, simply click twice on the corresponding symbols once you have found the respective item.
+- **MM Ocarina** is a progressive item if the respective setting (MM Fairy Ocarina) is enabled.
+
+- If you play with the setting **shared Ocarinas** but without the **MM Fairy Ocarina**, once you receive the Fairy Ocarina, it will be displayed for Majora's Mask. However, you can only use an Ocarina in Majora's Mask once you have found the Ocarina of Time for both games.
 
 - **Small Key Sanity** is a tracker setting because OOT Fire Temple logic depends on that setting. You still need to track your Small Keys manually even if Small Key Sanity is not activated.
 
@@ -29,7 +31,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Dungeon Reward Shuffle Anywhere
 - Boss Entrance Shuffle
 - Dungeon Entrance Shuffle
-- Cross Games OoT Warp Songs
 - MQ Dungeons
 
 ## TODOs:
