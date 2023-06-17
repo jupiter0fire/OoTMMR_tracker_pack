@@ -1,5 +1,17 @@
 # Releases
 
+## v1.9.0.1
+
+Logic updated to version 1.9.0 of the OOTMM Randomizer.
+
+Major new settings:
+
+- Scrubs shuffle
+- Cross game warp songs
+- Tingle maps shuffle
+- Special conditions for LACS and Majora Child
+- Shared items supported and visually linked in the tracker
+- Skip unused item stages in the item grid (e.g. MM Short Hookshot) when the respective setting is disabled
 ## v1.6.1.4
 
 - Add Great Bay Cows
