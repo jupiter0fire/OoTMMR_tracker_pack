@@ -3087,6 +3087,10 @@
             "map_locations": [
               {
                 "map": "oot",
+                "force_invisibility_rules": 
+                [
+                  "setting_skipZelda_true"
+                ],
                 "x": 1420,
                 "y": 160
               }
