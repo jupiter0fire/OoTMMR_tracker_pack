@@ -383,11 +383,9 @@ function _mm_logic()
 
     OOTMM_SETTING_OVERRIDES = {
         ["childWallets"] = true,
-        ["progressiveGoronLullaby_progressive"] = true,
         ["progressiveShieldsMm_progressive"] = false,
         ["progressiveShieldsOot_progressive"] = false,
         ["progressiveSwordsOot_progressive"] = false,
-        ["shortHookshotMm"] = true,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for
