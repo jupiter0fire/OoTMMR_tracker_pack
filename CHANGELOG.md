@@ -1,5 +1,16 @@
 # Releases
 
+## v1.6.1.4
+
+- Add Great Bay Cows
+- Fix MM_WALLET item code
+## v1.6.1.3
+
+Bugfixes for:
+
+- Fix Snowhead Temple Dungeon boss hosted item
+- Add broadcast view to the tracker pack
+- Delete unused scarecrow icon for OOT
 ## v1.6.1.2
 
 Bugfixes for:
