@@ -578,9 +578,6 @@
           },
           {
             "name": "SFM Storms Grotto",
-            "access_rules": [
-              "ocarina,storm"
-            ],
             "sections": [
               {
                 "name": "SFM Deku Scrubs Grotto",
