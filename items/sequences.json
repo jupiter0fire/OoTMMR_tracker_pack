@@ -10,7 +10,7 @@
       },
       {
         "img": "images/letter.png",
-        "codes": "EVENT_MEET_ZELDA"
+        "codes": "EVENT_OOT_MEET_ZELDA"
       }
     ]
   },
@@ -25,7 +25,7 @@
       },
       {
         "img": "images/egg.png",
-        "codes": "EVENT_MALON"
+        "codes": "EVENT_OOT_MALON"
       }
     ]
   },
@@ -40,7 +40,7 @@
       },
       {
         "img": "images/items/mm_bomber.png",
-        "codes": "EVENT_BOMBER_CODE"
+        "codes": "EVENT_MM_BOMBER_CODE"
       }
     ]
   },
@@ -56,7 +56,7 @@
       },
       {
         "img": "images/items/mm_seahorse.png",
-        "codes": "EVENT_SEAHORSE"
+        "codes": "EVENT_MM_SEAHORSE"
       }
     ]
   },
@@ -71,7 +71,7 @@
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "EVENT_ZORA_EGGS_HOOKSHOT_ROOM"
+        "codes": "EVENT_MM_ZORA_EGGS_HOOKSHOT_ROOM"
       }
     ]
   },
@@ -86,7 +86,7 @@
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "EVENT_ZORA_EGGS_BARREL_MAZE"
+        "codes": "EVENT_MM_ZORA_EGGS_BARREL_MAZE"
       }
     ]
   },
@@ -101,7 +101,7 @@
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "EVENT_ZORA_EGGS_LONE_GUARD"
+        "codes": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
       }
     ]
   },
@@ -116,7 +116,7 @@
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "EVENT_ZORA_EGGS_TREASURE_ROOM"
+        "codes": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
       }
     ]
   },
@@ -131,7 +131,7 @@
       },
       {
         "img": "images/items/mm_zoraegg.png",
-        "codes": "EVENT_ZORA_EGGS_PINNACLE_ROCK"
+        "codes": "EVENT_MM_ZORA_EGGS_PINNACLE_ROCK"
       }
     ]
   },
@@ -146,7 +146,7 @@
       },
       {
         "img": "images/frog.png",
-        "codes": "EVENT_FROG_1"
+        "codes": "EVENT_MM_FROG_1"
       }
     ]
   },
@@ -161,7 +161,7 @@
       },
       {
         "img": "images/frog.png",
-        "codes": "EVENT_FROG_2"
+        "codes": "EVENT_MM_FROG_2"
       }
     ]
   },
@@ -176,7 +176,7 @@
       },
       {
         "img": "images/frog.png",
-        "codes": "EVENT_FROG_3"
+        "codes": "EVENT_MM_FROG_3"
       }
     ]
   },
@@ -191,7 +191,7 @@
       },
       {
         "img": "images/frog.png",
-        "codes": "EVENT_FROG_4"
+        "codes": "EVENT_MM_FROG_4"
       }
     ]
   }

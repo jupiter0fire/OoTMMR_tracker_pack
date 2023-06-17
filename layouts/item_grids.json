@@ -22,7 +22,7 @@
           [
             "OOT_SLINGSHOT",
             "OOT_OCARINA",
-            "OOT_BOMBCHUS",
+            "EVENT_OOT_BOMBCHUS",
             "OOT_HOOKSHOT",
             "OOT_MAGIC_UPGRADE",
             "OOT_SHIELD_DEKU",

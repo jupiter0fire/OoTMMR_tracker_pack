@@ -2785,14 +2785,14 @@
         "access_rules": [
           "$mm_event_raw|ZORA_EGGS_HOOKSHOT_ROOM"
         ],
-        "hosted_item": "EVENT_ZORA_EGGS_HOOKSHOT_ROOM"
+        "hosted_item": "EVENT_MM_ZORA_EGGS_HOOKSHOT_ROOM"
       },
       {
         "name": "Zora Egg 2",
         "access_rules": [
           "$mm_event_raw|ZORA_EGGS_BARREL_MAZE"
         ],
-        "hosted_item": "EVENT_ZORA_EGGS_BARREL_MAZE"
+        "hosted_item": "EVENT_MM_ZORA_EGGS_BARREL_MAZE"
       },
       {
         "name": "Fish Tank Chest",
@@ -2806,7 +2806,7 @@
         "access_rules": [
           "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
         ],
-        "hosted_item": "EVENT_ZORA_EGGS_LONE_GUARD"
+        "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
       },
       {
         "name": "Well Guarded Chest",
@@ -2822,7 +2822,7 @@
         "access_rules": [
           "$mm_event_raw|ZORA_EGGS_TREASURE_ROOM"
         ],
-        "hosted_item": "EVENT_ZORA_EGGS_TREASURE_ROOM"
+        "hosted_item": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
       }
     ],
     "map_locations": [
@@ -3195,7 +3195,7 @@
       },
       {
         "name": "Frog 2",
-        "hosted_item": "EVENT_FROG_2",
+        "hosted_item": "EVENT_MM_FROG_2",
         "access_rules": [
           "$mm_event_raw|FROG_2"
         ]
@@ -3434,7 +3434,7 @@
       },
       {
         "name": "Frog 4",
-        "hosted_item": "EVENT_FROG_4",
+        "hosted_item": "EVENT_MM_FROG_4",
         "access_rules": [
           "$mm_event_raw|FROG_4"
         ]
