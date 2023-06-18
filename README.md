@@ -3,8 +3,8 @@
 ## Usage
 
 - Install [EmoTracker](https://emotracker.net/download/).
-- [Download the current tracker pack version](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases/latest/download/OoTMMR_tracker_pack.zip) from [releases](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases) and place the OoTMMR_tracker_pack.zip in the packs subfolder in your user/documents/emotracker folder.
-- Open EmoTracker and select "OotMM Randomizer" under Installed Packages `->` Others in the settings menu.
+- [Download the current tracker pack version](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases/latest/download/OoTMMR_tracker_pack.zip) from [releases](https://github.com/jupiter0fire/OoTMMR_tracker_pack/releases) and place the `OoTMMR_tracker_pack.zip` in the "packs" subfolder in your `[user]/Documents/EmoTracker` folder. If you have not used EmoTracker before, it is safe to manually create the "packs" folder.
+- Open EmoTracker and select "OotMM Randomizer" under `"Installed Packages" -> "Others"` in the settings menu.
 
 Green markings indicate that a check is logically reachable. Yellow markings mean that the check is reachable with a trick that is not enabled in the settings. Orange markings indicate that at a location some checks are reachable and others are not.
 
