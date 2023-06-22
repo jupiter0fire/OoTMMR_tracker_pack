@@ -914,6 +914,46 @@
     ]
   },
   {
+    "name": "Owl Statue Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_owlShuffle_none.png",
+        "img_mods": "@disabled",
+        "codes": "setting_owlShuffle,setting_owlShuffle_none",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_owlShuffle_anywhere.png",
+        "codes": "setting_owlShuffle,setting_owlShuffle_anywhere",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Merchants Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleMerchantsMm_true.png",
+        "codes": "setting_shuffleMerchantsMm,setting_shuffleMerchantsMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleMerchantsMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleMerchantsMm,setting_shuffleMerchantsMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Spiritual Stones",
     "type": "progressive",
     "allow_disabled": false,

@@ -4405,7 +4405,6 @@
               {
                 "name": "Clock Tower",
                 "short_name": "Clock Tower",
-                "location_border_thickness": "2",
                 "sections": [
                   {
                     "name": "Initial Song of Healing",
@@ -4431,6 +4430,31 @@
                     "map": "termina",
                     "x": 117,
                     "y": 129
+                  }
+                ]
+              },
+              {
+                "name": "Clock Town Owl Statue",
+                "short_name": "Owl Statue",
+                "sections": [
+                  {
+                    "name": "Clock Town Owl Statue",
+                    "access_rules": [
+                      "$mm|Clock Town Owl Statue"
+                    ],
+                    "chest_unopened_img": "images/deactivated_owl_statue.png",
+                    "chest_opened_img": "images/activated_owl_statue.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "force_invisibility_rules": [
+                      "setting_owlShuffle_none"
+                    ],
+                    "x": 90,
+                    "y": 100
                   }
                 ]
               },
@@ -4952,6 +4976,26 @@
                     "name": "Delivery To Madame Aroma - Final Night",
                     "access_rules": [
                       "$mm|Milk Bar Madame Aroma Bottle"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Purchase Milk",
+                    "access_rules": [
+                      "$mm|Milk Bar Purchase Milk"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleMerchantsMm_true"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Purchase Chateau",
+                    "access_rules": [
+                      "$mm|Milk Bar Purchase Chateau"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleMerchantsMm_true"
                     ],
                     "item_count": 1
                   }
@@ -5680,10 +5724,35 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 469,
-                "y": 366,
+                "x": 475,
+                "y": 360,
                 "force_invisibility_rules": [
                   "setting_tingleShuffle_vanilla"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Milk Road Owl Statue",
+            "short_name": "Owl Statue",
+            "sections": [
+              {
+                "name": "Milk Road Owl Statue",
+                "chest_unopened_img": "images/deactivated_owl_statue.png",
+                "chest_opened_img": "images/activated_owl_statue.png",
+                "access_rules": [
+                  "$mm|Milk Road Owl Statue"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 485,
+                "y": 376,
+                "force_invisibility_rules": [
+                  "setting_owlShuffle_none"
                 ]
               }
             ]
@@ -5705,8 +5774,11 @@
                 "name": "Buy Milk",
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
+                "access_rules": [
+                  "$mm|Gorman Track Milk Purchase"
+                ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_shuffleMerchantsMm_true"
                 ],
                 "item_count": 1
               }
@@ -6992,6 +7064,19 @@
                 "short_name": "Marine Lab",
                 "sections": [
                   {
+                    "name": "Great Bay Coast Owl Statue",
+                    "short_name": "Owl Statue",
+                    "chest_unopened_img": "images/deactivated_owl_statue.png",
+                    "chest_opened_img": "images/activated_owl_statue.png",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Owl Statue"
+                    ],
+                    "visibility_rules": [
+                      "setting_owlShuffle_anywhere"
+                    ],
+                    "item_count": 1
+                  },
+                  {
                     "name": "Feed The Fish",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
@@ -7501,6 +7586,16 @@
                     "item_count": 1
                   },
                   {
+                    "name": "Scrub Shop",
+                    "access_rules": [
+                      "$mm|Ikana Valley Scrub Shop"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleMerchantsMm_true"
+                    ],
+                    "item_count": 1
+                  },
+                  {
                     "name": "Cross Canyon",
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
@@ -7624,6 +7719,31 @@
                         "force_invisibility_rules": [
                           "setting_tingleShuffle_vanilla"
                         ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ikana Canyon Owl Statue",
+                    "short_name": "Owl Statue",
+                    "sections": [
+                      {
+                        "name": "Ikana Canyon Owl Statue",
+                        "chest_unopened_img": "images/deactivated_owl_statue.png",
+                        "chest_opened_img": "images/activated_owl_statue.png",
+                        "access_rules": [
+                          "$mm|Ikana Canyon Owl Statue"
+                        ],
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "force_invisibility_rules": [
+                          "setting_owlShuffle_none"
+                        ],
+                        "x": 831,
+                        "y": 256
                       }
                     ]
                   },

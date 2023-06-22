@@ -145,6 +145,16 @@
         "type": "item",
         "item": "setting_progressiveGoronLullaby",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_owlShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleMerchantsMm",
+        "height": 16
       }
     ]
   },
