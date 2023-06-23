@@ -7,36 +7,39 @@
       "dropshadow": true,
       "content": [
         {
-          "type": "dock",
-          "dock": "left",
-          "v_alignment": "stretch",
-          "margin": "0,0,3,0",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items OOT",
-              "dock": "top",
-              "header_content": {
-                "type": "button_popup",
-                "style": "settings",
-                "popup_background": "#FF212121",
-                "layout": "options_popup"
+          "type": "scroll",
+          "content": {
+            "type": "dock",
+            "dock": "left",
+            "v_alignment": "stretch",
+            "margin": "0,0,3,0",
+            "content": [
+              {
+                "type": "group",
+                "header": "Items OOT",
+                "dock": "top",
+                "header_content": {
+                  "type": "button_popup",
+                  "style": "settings",
+                  "popup_background": "#FF212121",
+                  "layout": "options_popup"
+                },
+                "content": {
+                  "type": "layout",
+                  "key": "item_grid_tall_oot"
+                }
               },
-              "content": {
-                "type": "layout",
-                "key": "item_grid_tall_oot"
+              {
+                "type": "group",
+                "header": "Items MM",
+                "dock": "top",
+                "content": {
+                  "type": "layout",
+                  "key": "item_grid_mini_mm"
+                }
               }
-            },
-            {
-              "type": "group",
-              "header": "Items MM",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "item_grid_mini_mm"
-              }
-            }            
-          ]
+            ]
+          }
         },
         {
           "type": "dock",
