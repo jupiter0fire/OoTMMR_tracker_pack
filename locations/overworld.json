@@ -6034,12 +6034,10 @@
                 "chest_unopened_img": "images/system/chest_brown_closed.png",
                 "chest_opened_img": "images/system/chest_brown_open.png",
                 "access_rules": [
-                  "mm_deku",
-                  "mm_moontear,mm_towndeed",
-                  "{}"
+                  "$mm|Southern Swamp Scrub Shop"
                 ],
                 "visibility_rules": [
-                  "hidden_region"
+                  "setting_shuffleMerchantsMm_true"
                 ],
                 "item_count": 1
               },
@@ -6120,6 +6118,31 @@
                 "map": "termina",
                 "x": 553,
                 "y": 438
+              }
+            ]
+          },
+          {
+            "name": "Southern Swamp Owl Statue",
+            "short_name": "Owl Statue",
+            "sections": [
+              {
+                "name": "Southern Swamp Owl Statue",
+                "chest_unopened_img": "images/deactivated_owl_statue.png",
+                "chest_opened_img": "images/activated_owl_statue.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Owl Statue"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_owlShuffle_none"
+                ],
+                "x": 553,
+                "y": 425
               }
             ]
           },
@@ -6395,6 +6418,31 @@
                 ]
               },
               {
+                "name": "Woodfall Owl Statue",
+                "short_name": "Owl Statue",
+                "sections": [
+                  {
+                    "name": "Woodfall Owl Statue",
+                    "chest_unopened_img": "images/deactivated_owl_statue.png",
+                    "chest_opened_img": "images/activated_owl_statue.png",
+                    "access_rules": [
+                      "$mm|Woodfall Owl Statue"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "force_invisibility_rules": [
+                      "setting_owlShuffle_none"
+                    ],
+                    "x": 530,
+                    "y": 462
+                  }
+                ]
+              },
+              {
                 "name": "Woodfall Great Fairy Fountain",
                 "short_name": "Woodfall Great Fairy",
                 "sections": [
@@ -6529,6 +6577,31 @@
               {
                 "map": "termina",
                 "x": 532,
+                "y": 162
+              }
+            ]
+          },
+          {
+            "name": "Mountain Village Owl Statue",
+            "short_name": "Owl Statue",
+            "sections": [
+              {
+                "name": "Mountain Village Owl Statue",
+                "access_rules": [
+                  "$mm|Mountain Village Owl Statue"
+                ],
+                "chest_unopened_img": "images/deactivated_owl_statue.png",
+                "chest_opened_img": "images/activated_owl_statue.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_owlShuffle_none"
+                ],
+                "x": 517,
                 "y": 162
               }
             ]
@@ -6895,6 +6968,31 @@
                     "y": 42
                   }
                 ]
+              },
+              {
+                "name": "Snowhead Owl Statue",
+                "short_name": "Owl Statue",
+                "sections": [
+                  {
+                    "name": "Snowhead Owl Statue",
+                    "chest_unopened_img": "images/deactivated_owl_statue.png",
+                    "chest_opened_img": "images/activated_owl_statue.png",
+                    "access_rules": [
+                      "$mm|Snowhead Owl Statue"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "force_invisibility_rules": [
+                      "setting_owlShuffle_none"
+                    ],
+                    "x": 489,
+                    "y": 100
+                  }
+                ]
               }
             ]
           }
@@ -7251,12 +7349,47 @@
                       "$mm|Zora Hall Scrub HP"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Zora Hall Scrub Shop",
+                    "access_rules": [
+                      "$mm|Zora Hall Scrub Shop"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleMerchantsMm_true"
+                    ],
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "termina",
                     "x": 220,
+                    "y": 410
+                  }
+                ]
+              },
+              {
+                "name": "Zora Cape Owl Statue",
+                "short_name": "Owl Statue",
+                "sections": [
+                  {
+                    "name": "Zora Cape Owl Statue",
+                    "chest_unopened_img": "images/deactivated_owl_statue.png",
+                    "chest_opened_img": "images/activated_owl_statue.png",
+                    "access_rules": [
+                      "$mm|Zora Cape Owl Statue"
+                    ],
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "force_invisibility_rules": [
+                      "setting_owlShuffle_none"
+                    ],
+                    "x": 208,
                     "y": 410
                   }
                 ]
@@ -7835,6 +7968,31 @@
                             "map": "termina",
                             "x": 952,
                             "y": 240
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Stone Tower Owl Statue",
+                        "short_name": "Owl Statue",
+                        "sections": [
+                          {
+                            "name": "Stone Tower Owl Statue",
+                            "access_rules": [
+                              "$mm|Stone Tower Owl Statue"
+                            ],
+                            "chest_unopened_img": "images/deactivated_owl_statue.png",
+                            "chest_opened_img": "images/activated_owl_statue.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina",
+                            "force_invisibility_rules": [
+                              "setting_owlShuffle_none"
+                            ],
+                            "x": 952,
+                            "y": 255
                           }
                         ]
                       }
