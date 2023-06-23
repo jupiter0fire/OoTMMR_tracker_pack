@@ -4572,7 +4572,7 @@
                       "$mm_event_raw|BOMBER_CODE",
                       "$mm_event_raw|GUESS_BOMBER"
                     ],
-                    "hosted_item": "EVENT_BOMBER_CODE"
+                    "hosted_item": "EVENT_MM_BOMBER_CODE"
                   }
                 ],
                 "map_locations": [
