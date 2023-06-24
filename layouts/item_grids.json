@@ -622,6 +622,26 @@
         ]
       },
       {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,1",
+        "scale": 0.7,
+        "rows": [
+          [
+            "MM_OWL_CLOCK_TOWN",
+            "MM_OWL_SOUTHERN_SWAMP",
+            "MM_OWL_WOODFALL",
+            "MM_OWL_MILK_ROAD",
+            "MM_OWL_MOUNTAIN_VILLAGE",
+            "MM_OWL_SNOWHEAD",
+            "MM_OWL_GREAT_BAY",
+            "MM_OWL_ZORA_CAPE",
+            "MM_OWL_IKANA_CANYON",
+            "MM_OWL_STONE_TOWER"
+          ]
+        ]
+      },
+      {
         "type": "array",
         "orientation": "vertical",
         "content": [
