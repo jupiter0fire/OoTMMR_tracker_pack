@@ -708,10 +708,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_town_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_town_owl.png",
         "codes": "MM_OWL_CLOCK_TOWN"
       }
     ]
@@ -724,10 +725,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_swamp_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_swamp_owl.png",
         "codes": "MM_OWL_SOUTHERN_SWAMP"
       }
     ]
@@ -740,10 +742,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_wood_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_wood_owl.png",
         "codes": "MM_OWL_WOODFALL"
       }
     ]
@@ -756,10 +759,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_milk_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_milk_owl.png",
         "codes": "MM_OWL_MILK_ROAD"
       }
     ]
@@ -772,10 +776,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_mountain_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_mountain_owl.png",
         "codes": "MM_OWL_MOUNTAIN_VILLAGE"
       }
     ]
@@ -788,10 +793,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_snow_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_snow_owl.png",
         "codes": "MM_OWL_SNOWHEAD"
       }
     ]
@@ -804,10 +810,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_bay_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_bay_owl.png",
         "codes": "MM_OWL_GREAT_BAY"
       }
     ]
@@ -820,10 +827,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_cape_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_cape_owl.png",
         "codes": "MM_OWL_ZORA_CAPE"
       }
     ]
@@ -836,10 +844,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_ikana_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_ikana_owl.png",
         "codes": "MM_OWL_IKANA_CANYON"
       }
     ]
@@ -852,10 +861,11 @@
     "stages": [
       {
         "img": "images/deactivated_owl_statue.png",
-        "img_mods": "@disabled"
+        "img_mods": "@disabled,overlay|images/overlay_stone_owl.png"
       },
       {
         "img": "images/activated_owl_statue.png",
+        "img_mods": "overlay|images/overlay_stone_owl.png",
         "codes": "MM_OWL_STONE_TOWER"
       }
     ]

@@ -6037,7 +6037,7 @@
                   "$mm|Southern Swamp Scrub Shop"
                 ],
                 "visibility_rules": [
-                  "setting_shuffleMerchantsMm_true"
+                  "setting_scrubShuffleMm_true"
                 ],
                 "item_count": 1
               },
@@ -7356,7 +7356,7 @@
                       "$mm|Zora Hall Scrub Shop"
                     ],
                     "visibility_rules": [
-                      "setting_shuffleMerchantsMm_true"
+                      "setting_scrubShuffleMm_true"
                     ],
                     "item_count": 1
                   }
@@ -7724,7 +7724,7 @@
                       "$mm|Ikana Valley Scrub Shop"
                     ],
                     "visibility_rules": [
-                      "setting_shuffleMerchantsMm_true"
+                      "setting_scrubShuffleMm_true"
                     ],
                     "item_count": 1
                   },

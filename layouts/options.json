@@ -11,7 +11,17 @@
       },
       {
         "type": "item",
-        "item": "setting_smallKeyShuffle",
+        "item": "setting_smallKeyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bossKeyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scrubShuffleOot",
         "height": 16
       },
       {
@@ -31,31 +41,6 @@
       },
       {
         "type": "item",
-        "item": "setting_scrubShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_crossWarpOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_kakarikoGate",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_skipZelda",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_zoraKing",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_dekuTree",
         "height": 16
       },
@@ -66,19 +51,84 @@
       },
       {
         "type": "item",
+        "item": "setting_wellAdult",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_fireChild",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_wellAdult",
+        "item": "setting_kakarikoGate",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_zoraKing",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_gerudoFortress",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_skipZelda",
         "height": 16
       },
       {
         "type": "item",
         "item": "setting_lacs",
         "height": 16
-      }      
+      },
+      {
+        "type": "item",
+        "item": "setting_crossWarpOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessSwords",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessShields",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessTunics",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessBoots",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessSticks",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessBoomerang",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessHammer",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessChildTrade",
+        "height": 16
+      }
     ]
   },
   "layout_main_mm": {
@@ -93,12 +143,32 @@
       },
       {
         "type": "item",
+        "item": "setting_tingleShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_smallKeyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bossKeyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_townFairyShuffle",
         "height": 16
       },
       {
         "type": "item",
         "item": "setting_strayFairyShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scrubShuffleMm",
         "height": 16
       },
       {
@@ -113,7 +183,17 @@
       },
       {
         "type": "item",
-        "item": "setting_tingleShuffle",
+        "item": "setting_owlShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleMerchantsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_majoraChild",
         "height": 16
       },
       {
@@ -128,7 +208,7 @@
       },
       {
         "type": "item",
-        "item": "setting_majoraChild",
+        "item": "setting_progressiveGoronLullaby",
         "height": 16
       },
       {
@@ -139,21 +219,6 @@
       {
         "type": "item",
         "item": "setting_shortHookshotMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_progressiveGoronLullaby",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_owlShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleMerchantsMm",
         "height": 16
       }
     ]
