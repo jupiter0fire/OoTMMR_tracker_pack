@@ -145,7 +145,7 @@
             "name": "KF Know It All House",
             "sections": [
               {
-                "name": "KF GS Know It All House (N)",
+                "name": "KF GS Know It All House (Child, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Kokiri Forest GS Night Child"
@@ -195,7 +195,7 @@
             "name": "KF House of Twins",
             "sections": [
               {
-                "name": "KF GS House of Twins (N)",
+                "name": "KF GS House of Twins (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Kokiri Forest GS Night Adult"
@@ -606,7 +606,7 @@
             "name": "SFM Maze",
             "sections": [
               {
-                "name": "SFM GS (N)",
+                "name": "SFM GS (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Sacred Meadow GS Night Adult"
@@ -2045,7 +2045,7 @@
                 "short_name": "Rock Above DC",
                 "sections": [
                   {
-                    "name": "DMT GS Above Dodongos Cavern (N)",
+                    "name": "DMT GS Above Dodongos Cavern (Adult, N)",
                     "short_name": "GS",
                     "access_rules": [
                       "$oot|Death Mountain GS Above Dodongo"
@@ -2206,7 +2206,7 @@
             "name": "DMT Falling Rocks Path",
             "sections": [
               {
-                "name": "DMT GS Falling Rocks Path (N)",
+                "name": "DMT GS Falling Rocks Path (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Death Mountain GS Before Climb"
@@ -3407,7 +3407,7 @@
             "name": "ZR Near Raised Grottos",
             "sections": [
               {
-                "name": "ZR GS Near Raised Grottos (N)",
+                "name": "ZR GS Near Raised Grottos (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Zora River GS Near Grotto"
@@ -3432,7 +3432,7 @@
             "name": "ZR Above Bridge",
             "sections": [
               {
-                "name": "ZR GS Above Bridge (N)",
+                "name": "ZR GS Above Bridge (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Zora River GS Near Bridge"
@@ -3526,7 +3526,7 @@
             "name": "ZD Frozen Waterfall",
             "sections": [
               {
-                "name": "ZD GS Frozen Waterfall (N)",
+                "name": "ZD GS Frozen Waterfall (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Zora Domain GS Waterfall"
@@ -4318,7 +4318,7 @@
             "name": "Colossus Tree",
             "sections": [
               {
-                "name": "Colossus GS Tree (N)",
+                "name": "Colossus GS Tree (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Desert Colossus GS Tree"
