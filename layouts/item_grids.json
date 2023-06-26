@@ -36,8 +36,8 @@
             "OOT_HAMMER",
             "OOT_ARROW_LIGHT",
             "OOT_SPELL_LOVE",
-            "OOT_TUNIC_GORON",
-            "OOT_TUNIC_ZORA"
+            "OOT_SWORD_GORON",
+            "OOT_STRENGTH"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -56,18 +56,17 @@
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_SHADOW",
             "OOT_SONG_TP_LIGHT",
-            "OOT_SCALE",
-            "OOT_STRENGTH"
-
+            "OOT_TUNIC_GORON",
+            "OOT_TUNIC_ZORA"
           ],
           [
             "bottle1",
             "bottle2",
             "bottle3",
             "bottle4",
+            "OOT_SCALE",
             "OOT_STONE_OF_AGONY",
             "OOT_GERUDO_CARD",
-            "OOT_GS_TOKEN",
             "OOT_WALLET1"
           ]
         ]
@@ -114,405 +113,426 @@
       },
       {
         "type": "array",
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "margin": "5,0",
         "content": [
           {
             "type": "array",
-            "orientation": "horizontal",
+            "orientation": "vertical",
             "margin": "5,0",
             "content": [
               {
-                "type": "item",
-                "item": "forest",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "forest",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "fire",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "water",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "spirit",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "shadow",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "free",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  }
+                ]
               },
               {
-                "type": "item",
-                "item": "fire",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "forest_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_FOREST",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_FOREST",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "fire_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_FIRE",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_FIRE",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "water_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_WATER",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_WATER",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "spirit_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_SPIRIT",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_SPIRIT",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "shadow_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_SHADOW",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_SHADOW",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "item",
+                    "item": "free_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  }
+                ]
               },
               {
-                "type": "item",
-                "item": "water",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "deku",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "dodongo",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "jabu",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "gc_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GANON",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_GANON",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "gtg_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GTG",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "th_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GF",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "type": "item",
-                "item": "spirit",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "shadow",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "free",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "deku_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "dodongo_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "jabu_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "ice_label",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 66,
+                    "height": 14,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "botw_label",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 2,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_BOTW",
+                        "canvas_depth": 1,
+                        "canvas_left": 34,
+                        "canvas_top": 0,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "5,0",
-            "content": [
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "forest_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_FOREST",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_FOREST",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "fire_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_FIRE",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_FIRE",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "water_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_WATER",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_WATER",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "spirit_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_SPIRIT",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_SPIRIT",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "shadow_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_SHADOW",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_SHADOW",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "item",
-                "item": "free_label",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              }
-            ]
-          },
-          {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "5,0",
-            "content": [
-              {
-                "type": "item",
-                "item": "deku",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "dodongo",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "jabu",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "gc_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_GANON",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_GANON",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "gtg_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_GTG",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "th_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_GF",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "5,0",
-            "content": [
-              {
-                "type": "item",
-                "item": "deku_label",
-                "margin": "1,1",
-                "width": 28,
-                "height": 10.5
-              },
-              {
-                "type": "item",
-                "item": "dodongo_label",
-                "margin": "1,1",
-                "width": 28,
-                "height": 10.5
-              },
-              {
-                "type": "item",
-                "item": "jabu_label",
-                "margin": "1,1",
-                "width": 28,
-                "height": 10.5
-              },
-              {
-                "type": "item",
-                "item": "ice_label",
-                "margin": "1,1",
-                "width": 28,
-                "height": 10.5
-              },
-              {
-                "type": "canvas",
-                "width": 66,
-                "height": 14,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "botw_label",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 2,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_BOTW",
-                    "canvas_depth": 1,
-                    "canvas_left": 34,
-                    "canvas_top": 0,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              }
+            "type": "itemgrid",
+            "h_alignment": "left",
+            "item_margin": "1,1",
+            "scale": 0.7,
+            "rows": [
+              [
+                "OOT_GS_TOKEN"
+              ],
+              [
+                "triforce"
+              ]
             ]
           }
         ]

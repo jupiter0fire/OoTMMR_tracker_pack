@@ -15,7 +15,7 @@
     "name": "Biggoron Sword",
     "type": "toggle",
     "img": "images/sword3.png",
-    "codes": "sword3,biggoronsword,bgs"
+    "codes": "OOT_SWORD_GORON"
   },
   {
     "name": "Kokiri Shield",
