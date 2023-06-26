@@ -1,5 +1,20 @@
 # Releases
 
+## v1.11.0.1
+
+Logic updated to version 1.11.0 of the OOTMM Randomizer.
+
+Major new settings:
+
+- Ageless items
+- Owl statue shuffle
+- MM merchants shuffle
+- MM scrub shuffle
+- Triforce hunt
+
+Fixed some mislabled checks.
+
+Credits to: @V0rwArd
 ## v1.9.0.1
 
 Logic updated to version 1.9.0 of the OOTMM Randomizer.
