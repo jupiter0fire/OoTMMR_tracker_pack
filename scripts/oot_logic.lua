@@ -395,6 +395,7 @@ function _oot_logic()
         ["childWallets"] = true,
         ["progressiveShieldsMm_progressive"] = false,
         ["progressiveShieldsOot_progressive"] = false,
+        ["progressiveSwordsOot_goron"] = true,
         ["progressiveSwordsOot_progressive"] = false,
     }
     function setting(name, state)
