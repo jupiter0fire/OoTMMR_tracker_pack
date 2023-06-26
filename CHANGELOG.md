@@ -15,6 +15,16 @@ Major new settings:
 Fixed some mislabled checks.
 
 Credits to: @V0rwArd
+
+## v1.9.0.2
+
+The item grid is now scrollable.
+
+Bugfixes for:
+
+- MM Skull checks showing even when token shuffle is disabled
+- Vanished Bombers check
+
 ## v1.9.0.1
 
 Logic updated to version 1.9.0 of the OOTMM Randomizer.
