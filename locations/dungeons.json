@@ -376,7 +376,7 @@
         "name": "GS Near Boss",
         "short_name": "Near Boss",
         "access_rules": [
-          "$oot|Jabu-Jabu GS Water Switch"
+          "$oot|Jabu-Jabu GS Near Boss"
         ],
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons"
