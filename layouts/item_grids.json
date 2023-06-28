@@ -465,7 +465,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "deku_label",
+                    "item": "setting_mq_DekuTree",
                     "margin": "1,1",
                     "width": 28,
                     "height": 10.5

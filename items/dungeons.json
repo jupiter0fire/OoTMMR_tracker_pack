@@ -7,9 +7,20 @@
   },
   {
     "name": "Deku Tree Label",
-    "type": "static",
-    "img": "images/label_deku.png",
-    "codes": "deku_label,deku_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_deku.png",
+        "codes": "setting_mq_DekuTree,setting_mq_DekuTree_false"
+      },
+      {
+        "img": "images/label_deku_red.png",
+        "codes": "setting_mq_DekuTree,setting_mq_DekuTree_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Dodongos Cavern Label",
