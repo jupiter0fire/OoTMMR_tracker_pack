@@ -539,7 +539,7 @@
       }
     ]
   },
-  "item_grid_mini_mm": {
+  "item_grid_tall_mm": {
     "type": "array",
     "orientation": "vertical",
     "content": [
