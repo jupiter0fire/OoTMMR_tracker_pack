@@ -149,6 +149,23 @@ end
 OOTMM.oot.state = _oot_logic()
 OOTMM.mm.state = _mm_logic()
 
+local function deep_copy_table(t)
+    local copy = {}
+    for k, v in pairs(t) do
+        if type(v) == "table" then
+            copy[k] = deep_copy_table(v)
+        else
+            copy[k] = v
+        end
+    end
+    return copy
+end
+
+-- Prepare local copies of the original logic so we can reset later for MQ and/or ER
+OOTMM.original_logic = {}
+OOTMM.original_logic.oot = deep_copy_table(OOTMM.oot.state.logic)
+OOTMM.original_logic.mm = deep_copy_table(OOTMM.mm.state.logic)
+
 local function run_search(mode)
     local worlds = { "oot", "mm" }
     for _, world in ipairs(worlds) do
@@ -219,7 +236,84 @@ local function run_search(mode)
     end
 end
 
+-- Recursively replace all places reachable through exits with their MQ counterparts
+local function replace_with_mq_logic(place, replaced)
+    -- In order to avoid infinite recursion, we keep track of which places we've already replaced
+    if replaced == nil then
+        replaced = {}
+    end
+    if replaced[place] then
+        return
+    end
+
+    for exit, _ in pairs(OOTMM.oot.state.MQlogic[place].exits) do
+        if OOTMM.oot.state.MQlogic[exit] then
+            OOTMM.oot.state.logic[exit] = OOTMM.oot.state.MQlogic[exit]
+            replaced[exit] = true
+
+            if OOTMM.oot.state.MQlogic[exit].exits then
+                for further_exit, _ in pairs(OOTMM.oot.state.MQlogic[exit].exits) do
+                    if OOTMM.oot.state.MQlogic[further_exit] then
+                        OOTMM.oot.state.logic[further_exit] = OOTMM.oot.state.MQlogic[further_exit]
+                        replaced[further_exit] = true
+
+                        replace_with_mq_logic(further_exit, replaced)
+                    end
+                end
+            end
+        end
+    end
+end
+
+-- This is needed for testing; we could overwrite Tracker:ProviderCountForCode() here already instead, but then we'd lose the ability to override items per world
+local function get_provider_count(code)
+    if EMO then
+        return Tracker:ProviderCountForCode(code)
+    else
+        local count = items[code]
+        if count == nil then
+            count = 0
+        end
+        return count
+    end
+end
+
+local OOTMM_MQ_SETTING_PREVIOUS = {}
 local function reset_logic()
+    -- TODO: MQ override should be moved entirely into the OoT module instead of yanking logic out and replacing it here!
+    local mq_dungeons = {}
+    local mq_reset_needed = false
+
+    -- Check whether any MQ dungeons are active
+    for k, v in pairs(OOTMM.oot.state.MQlogic) do
+        local setting = "setting_mq_" .. k:gsub(" ", "") .. "_true"
+        local mq_active = get_provider_count(setting) > 0
+        if OOTMM_MQ_SETTING_PREVIOUS[setting] == nil then
+            OOTMM_MQ_SETTING_PREVIOUS[setting] = mq_active
+            mq_reset_needed = true
+        else
+            if OOTMM_MQ_SETTING_PREVIOUS[setting] ~= mq_active then
+                OOTMM_MQ_SETTING_PREVIOUS[setting] = mq_active
+                mq_reset_needed = true
+            end
+        end
+        if mq_active then
+            mq_dungeons[k] = mq_active
+        end
+    end
+
+    -- Overwrite OoT logic MQ dungeons where needed
+    if mq_reset_needed then
+        OOTMM.oot.state.logic = deep_copy_table(OOTMM.original_logic.oot)
+        OOTMM.mm.state.logic = deep_copy_table(OOTMM.original_logic.mm)
+
+        for k, v in pairs(mq_dungeons) do
+            OOTMM.oot.state.logic[k] = OOTMM.oot.state.MQlogic[k]
+            replace_with_mq_logic(k)
+        end
+    end
+
+    -- If there are no active MQ dungeons, this is all that's needed:
     run_search("normal")
     run_search("glitched")
 end
@@ -248,6 +342,10 @@ function oot(location)
     return get_availability("location", "oot", location)
 end
 
+function ootmq(location)
+    return get_availability("location", "oot", location)
+end
+
 function mm(location)
     return get_availability("location", "mm", location)
 end
@@ -257,7 +355,10 @@ function oot_event_raw(event)
     return get_availability("event", "oot", event)
 end
 
--- Returns the "raw" availability of an event, without overrides
+function ootmq_event_raw(event)
+    return get_availability("event", "oot", event)
+end
+
 function mm_event_raw(event)
     return get_availability("event", "mm", event)
 end
