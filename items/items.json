@@ -278,7 +278,7 @@
     "codes": "OOT_ODD_MUSHROOM"
   },
   {
-    "name": "Medicin",
+    "name": "Medicine",
     "type": "toggle",
     "img": "images/medicine.png",
     "codes": "OOT_ODD_POTION"
