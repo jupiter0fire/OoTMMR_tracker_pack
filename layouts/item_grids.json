@@ -486,7 +486,7 @@
                   },
                   {
                     "type": "item",
-                    "item": "ice_label",
+                    "item": "setting_mq_IceCavern",
                     "margin": "1,1",
                     "width": 28,
                     "height": 10.5

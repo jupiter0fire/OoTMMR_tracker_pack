@@ -166,9 +166,20 @@
   },
   {
     "name": "Ice Cavern Label",
-    "type": "static",
-    "img": "images/label_ice.png",
-    "codes": "ice_label,ice_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_ice.png",
+        "codes": "setting_mq_IceCavern,setting_mq_IceCavern_false"
+      },
+      {
+        "img": "images/label_ice_red.png",
+        "codes": "setting_mq_IceCavern,setting_mq_IceCavern_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Thieves Hideout Label",
