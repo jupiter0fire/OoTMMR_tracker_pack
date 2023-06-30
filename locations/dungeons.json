@@ -107,7 +107,7 @@
         "short_name": "Map",
         "chest_unopened_img": "images/chest_brown_map.png",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree Map Chest"
+          "$ootmq|MQ Deku Tree Map Chest"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -118,7 +118,7 @@
         "name": "GS Lobby",
         "short_name": "Lobby",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree GS Lobby Crate"
+          "$ootmq|MQ Deku Tree GS Lobby Crate"
         ],
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
@@ -131,7 +131,7 @@
         "name": "Slingshot Chest",
         "short_name": "Slingshot",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree Slingshot Chest"
+          "$ootmq|MQ Deku Tree Slingshot Chest"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -142,7 +142,7 @@
         "name": "Slingshot Room Back Chest",
         "short_name": "Slingshot Back",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree Slingshot Room Far Chest"
+          "$ootmq|MQ Deku Tree Slingshot Room Far Chest"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -153,7 +153,7 @@
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree Compass Chest"
+          "$ootmq|MQ Deku Tree Compass Chest"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -165,7 +165,7 @@
         "name": "GS Compass Room",
         "short_name": "Compass",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree GS Compass Room"
+          "$ootmq|MQ Deku Tree GS Compass Room"
         ],
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
@@ -178,7 +178,7 @@
         "name": "Basement Chest",
         "short_name": "Basement",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree Basement Chest"
+          "$ootmq|MQ Deku Tree Basement Chest"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -189,7 +189,7 @@
         "name": "Before Spinning Log Chest",
         "short_name": "Before Log",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree Before Water Platform Chest"
+          "$ootmq|MQ Deku Tree Before Water Platform Chest"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -200,7 +200,7 @@
         "name": "After Spinning Log Chest",
         "short_name": "After Log",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree After Water Platform Chest"
+          "$ootmq|MQ Deku Tree After Water Platform Chest"
         ],
         "visibility_rules": [
           "setting_mq_DekuTree_true"
@@ -211,7 +211,7 @@
         "name": "GS Basement Graves Room",
         "short_name": "Ceiling",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree GS Song of Time Blocks"
+          "$ootmq|MQ Deku Tree GS Song of Time Blocks"
         ],
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
@@ -224,7 +224,7 @@
         "name": "GS Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree GS Back Room"
+          "$ootmq|MQ Deku Tree GS Back Room"
         ],
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
@@ -236,7 +236,7 @@
       {
         "name": "Deku Scrub",
         "access_rules": [
-          "$oot_mq|MQ Deku Tree Scrub"
+          "$ootmq|MQ Deku Tree Scrub"
         ],
         "visibility_rules": [
           "setting_scrubShuffleOot_true,setting_mq_DekuTree_true"
