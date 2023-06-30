@@ -462,7 +462,7 @@
           "$ootmq|MQ Dodongo Cavern GS Poe Room Side"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+          " ,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -475,7 +475,7 @@
           "$ootmq|MQ Dodongo Cavern Tunnel Side Scrub"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes,setting_mq_DodongoCavern_true"
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -499,7 +499,7 @@
           "$ootmq|MQ Dodongo Cavern GS Upper Lizalfos"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -523,7 +523,7 @@
           "$ootmq|MQ Dodongo Cavern GS Larve Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -548,7 +548,7 @@
           "$ootmq|MQ Dodongo Cavern Staircase Scrub"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes,setting_mq_DodongoCavern_true"
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -561,7 +561,7 @@
           "$ootmq|MQ Dodongo Cavern GS Time Blocks"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -574,7 +574,7 @@
           "$ootmq|MQ Dodongo Cavern Lobby Scrub Front"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes,setting_mq_DodongoCavern_true"
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -588,7 +588,7 @@
           "$ootmq|MQ Dodongo Cavern GS Near Boss"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -815,7 +815,7 @@
           "$ootmq|MQ Jabu-Jabu GS SoT Block"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -839,7 +839,7 @@
           "$ootmq|MQ Jabu-Jabu GS Back"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -852,7 +852,7 @@
           "$ootmq|MQ Jabu-Jabu GS Basement Side Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -864,7 +864,7 @@
           "$ootmq|MQ Jabu-Jabu Cow"
         ],
         "visibility_rules": [
-          "setting_cowsanity_yes,setting_mq_Jabu-Jabu_true"
+          "setting_cowShuffleOot_true,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/cow.png",
         "chest_opened_img": "images/bottle_milk.png",
@@ -888,7 +888,7 @@
           "$ootmq|MQ Jabu-Jabu GS Pre-Boss"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1074,7 +1074,7 @@
           "$ootmq|MQ Ice Cavern GS Compass Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_IceCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1087,7 +1087,7 @@
           "$ootmq|MQ Ice Cavern GS Scarecrow"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_IceCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1100,7 +1100,7 @@
           "$ootmq|MQ Ice Cavern GS Clear Blocks"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_IceCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1152,7 +1152,7 @@
           "$oot|Forest Temple GS Entrance"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1164,6 +1164,9 @@
         "access_rules": [
           "$oot|Forest Temple Tree Small Key"
         ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -1174,7 +1177,7 @@
           "$oot|Forest Temple GS Main"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1186,6 +1189,9 @@
         "access_rules": [
           "$oot|Forest Temple Mini-Boss Key"
         ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -1194,6 +1200,9 @@
         "short_name": "Island",
         "access_rules": [
           "$oot|Forest Temple Garden"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
         ],
         "item_count": 1
       },
@@ -1204,7 +1213,7 @@
           "$oot|Forest Temple GS Garden East"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1216,6 +1225,9 @@
         "access_rules": [
           "$oot|Forest Temple Map"
         ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
@@ -1224,6 +1236,9 @@
         "short_name": "Well",
         "access_rules": [
           "$oot|Forest Temple Well"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1235,7 +1250,7 @@
           "$oot|Forest Temple GS Garden West"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1247,6 +1262,9 @@
         "access_rules": [
           "$oot|Forest Temple Maze"
         ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
         "item_count": 1
       },
       {
@@ -1254,6 +1272,9 @@
         "short_name": "Boss Key",
         "access_rules": [
           "$oot|Forest Temple Boss Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
@@ -1265,6 +1286,9 @@
         "access_rules": [
           "$oot|Forest Temple Floormaster"
         ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -1273,6 +1297,9 @@
         "short_name": "Red Poe",
         "access_rules": [
           "$oot|Forest Temple Poe Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -1283,6 +1310,9 @@
         "access_rules": [
           "$oot|Forest Temple Bow"
         ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
         "item_count": 1
       },
       {
@@ -1290,6 +1320,9 @@
         "short_name": "Blue Poe",
         "access_rules": [
           "$oot|Forest Temple Compass"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -1300,6 +1333,9 @@
         "access_rules": [
           "$oot|Forest Temple Checkerboard"
         ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
         "item_count": 1
       },
       {
@@ -1307,6 +1343,9 @@
         "short_name": "Basement",
         "access_rules": [
           "$oot|Forest Temple Antichamber"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
         ],
         "item_count": 1
       },
@@ -1317,12 +1356,219 @@
           "$oot|Forest Temple GS Antichamber"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
+      {
+        "name": "First Room Chest",
+        "short_name": "Tree",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple First Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS First Hallway",
+        "short_name": "First Hallway",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS Entryway"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Wolfos Chest",
+        "short_name": "Wolfos",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Wolfos Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Raised Island Courtyard",
+        "short_name": "Outdoor East",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS East Garden"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Raised Island Courtyard Upper Chest",
+        "short_name": "Balcony",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple East Garden High Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Well Chest",
+        "short_name": "Well",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Well Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Well",
+        "short_name": "Well",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS Well"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Level Island Courtyard",
+        "short_name": "Outdoor West",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS West Garden"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Block Push Room",
+        "short_name": "Block Push",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS Climb Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Redead Chest",
+        "short_name": "Redead",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple ReDead Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bow Chest",
+        "short_name": "Bow",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Bow Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Ceiling Room Chest",
+        "short_name": "Checkerboard",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Falling Ceiling Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Raised Island Courtyard Lower Chest",
+        "short_name": "Island",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple East Garden Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Antichamber"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "item_count": 1
+      },      
       {
         "name": "Phantom Ganon",
         "access_rules": [

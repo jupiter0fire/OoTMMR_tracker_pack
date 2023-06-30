@@ -183,7 +183,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "forest_label",
+                        "item": "setting_mq_ForestTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5

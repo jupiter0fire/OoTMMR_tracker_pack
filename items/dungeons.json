@@ -58,9 +58,20 @@
   },
   {
     "name": "Forest Temple Label",
-    "type": "static",
-    "img": "images/label_forest.png",
-    "codes": "forest_label,forest_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_forest.png",
+        "codes": "setting_mq_ForestTemple,setting_mq_ForestTemple_false"
+      },
+      {
+        "img": "images/label_forest_red.png",
+        "codes": "setting_mq_ForestTemple,setting_mq_ForestTemple_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Forest Temple Small Keys",
