@@ -650,7 +650,7 @@
           "$oot|Jabu-Jabu GS Water Switch"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -662,7 +662,7 @@
           "$oot|Jabu-Jabu Scrub"
         ],
         "visibility_rules": [
-          "setting_scrubShuffleOot_true"
+          "setting_scrubShuffleOot_true,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -674,6 +674,9 @@
         "access_rules": [
           "$oot|Jabu-Jabu Boomerang Chest"
         ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_false"
+        ],
         "item_count": 1
       },
       {
@@ -681,6 +684,9 @@
         "short_name": "Map",
         "access_rules": [
           "$oot|Jabu-Jabu Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
@@ -690,6 +696,9 @@
         "short_name": "Compass",
         "access_rules": [
           "$oot|Jabu-Jabu Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
@@ -701,7 +710,7 @@
           "$oot|Jabu-Jabu GS Bottom Lower"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -714,7 +723,7 @@
           "$oot|Jabu-Jabu GS Bottom Upper"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -727,10 +736,177 @@
           "$oot|Jabu-Jabu GS Near Boss"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Room Side Chest",
+        "short_name": "First Room",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Entry Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Second Room Lower Chest",
+        "short_name": "Second Room Lower",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Second Room B1 Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chests",
+        "short_name": "Basement",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Third Room West Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Boomerang Room Chests",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Boomerang Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "GS Boomerang Chest Room",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS SoT Block"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Like Like Room Chest",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Back Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Tailpasaran Room",
+        "short_name": "Tailpasaran",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS Back"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Invisible Enemies Room",
+        "short_name": "Invis Enemies",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS Basement Side Room"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Cow",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Cow"
+        ],
+        "visibility_rules": [
+          "setting_cowsanity_yes,setting_mq_Jabu-Jabu_true"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/cow.png",
+        "chest_opened_img": "images/bottle_milk.png",
+        "item_count": 1
+      },
+      {
+        "name": "Second Room Upper Chest",
+        "short_name": "Second Room Upper",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Second Room 1F Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Near Boss",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS Pre-Boss"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Near Boss Chest",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pre-Boss Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
         "item_count": 1
       },
       {

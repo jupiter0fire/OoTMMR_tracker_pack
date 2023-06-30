@@ -41,9 +41,20 @@
   },
   {
     "name": "Jabu Jabu Label",
-    "type": "static",
-    "img": "images/label_jabu.png",
-    "codes": "jabu_label,jabu_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_jabu.png",
+        "codes": "setting_mq_Jabu-Jabu,setting_mq_Jabu-Jabu_false"
+      },
+      {
+        "img": "images/label_jabu_red.png",
+        "codes": "setting_mq_Jabu-Jabu,setting_mq_Jabu-Jabu_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Forest Temple Label",
