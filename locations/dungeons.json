@@ -277,7 +277,7 @@
           "$oot|Dodongo Cavern GS Side Room"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -290,7 +290,7 @@
           "$oot|Dodongo Cavern GS Scarecrow"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -303,7 +303,7 @@
           "$oot|Dodongo Cavern Green Side Room Scrub"
         ],
         "visibility_rules": [
-          "setting_scrubShuffleOot_true"
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -315,6 +315,9 @@
         "access_rules": [
           "$oot|Dodongo Cavern Map Chest"
         ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
@@ -325,7 +328,7 @@
           "$oot|Dodongo Cavern Lobby Scrub"
         ],
         "visibility_rules": [
-          "setting_scrubShuffleOot_true"
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -337,6 +340,9 @@
         "access_rules": [
           "$oot|Dodongo Cavern Compass Chest"
         ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
@@ -347,7 +353,7 @@
           "$oot|Dodongo Cavern GS Stairs Top"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -360,7 +366,7 @@
           "$oot|Dodongo Cavern GS Stairs Vines"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -372,6 +378,9 @@
         "access_rules": [
           "$oot|Dodongo Cavern Bomb Bag Side Chest"
         ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
         "item_count": 1
       },
       {
@@ -381,7 +390,7 @@
           "$oot|Dodongo Cavern Bomb Bag Side Room Left Scrub"
         ],
         "visibility_rules": [
-          "setting_scrubShuffleOot_true"
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
@@ -394,6 +403,9 @@
         "access_rules": [
           "$oot|Dodongo Cavern Bomb Bag Chest"
         ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
         "item_count": 1
       },
       {
@@ -401,6 +413,9 @@
         "short_name": "Bridge",
         "access_rules": [
           "$oot|Dodongo Cavern Bridge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
         ],
         "item_count": 1
       },
@@ -411,10 +426,185 @@
           "$oot|Dodongo Cavern GS Near Boss"
         ],
         "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Bag Chest",
+        "short_name": "Bomb Bag",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Bomb Bag Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Scrub Room",
+        "short_name": "Scrub",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Poe Room Side"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub Side Room Near Lower Lizalfos",
+        "short_name": "East Side",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Tunnel Side Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Torch Puzzle Room Chest",
+        "short_name": "Platform",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Upper Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Lizalfos Room",
+        "short_name": "Lizalfos",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Upper Lizalfos"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Larvae Room Chest",
+        "short_name": "Larvae",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Larvae Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Larvae Room",
+        "short_name": "Larvae",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Larve Room"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub Staircase",
+        "short_name": "Above Stairs",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Staircase Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Song of Time Block Room",
+        "short_name": "Song of Time",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Time Blocks"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrubs Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Lobby Scrub Front"
+        ],
+        "visibility_rules": [
+          "setting_scrub_shuffle_yes,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 2
+      },
+      {
+        "name": "GS Back Area",
+        "short_name": "Back Area",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Near Boss"
+        ],
+        "visibility_rules": [
+          "setting_tokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Under Grave Chest",
+        "short_name": "Under Grave",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Chest Under Grave"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
         "item_count": 1
       },
       {
@@ -422,6 +612,9 @@
         "short_name": "Boss Room",
         "access_rules": [
           "$oot|Dodongo Cavern Boss Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
         ],
         "item_count": 1
       },

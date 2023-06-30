@@ -24,9 +24,20 @@
   },
   {
     "name": "Dodongos Cavern Label",
-    "type": "static",
-    "img": "images/label_dodongo.png",
-    "codes": "dodongo_label,dodongo_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_dodongo.png",
+        "codes": "setting_mq_DodongoCavern,setting_mq_DodongoCavern_false"
+      },
+      {
+        "img": "images/label_dodongo_red.png",
+        "codes": "setting_mq_DodongoCavern,setting_mq_DodongoCavern_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Jabu Jabu Label",

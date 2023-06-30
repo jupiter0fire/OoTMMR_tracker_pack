@@ -472,7 +472,7 @@
                   },
                   {
                     "type": "item",
-                    "item": "dodongo_label",
+                    "item": "setting_mq_DodongoCavern",
                     "margin": "1,1",
                     "width": 28,
                     "height": 10.5
