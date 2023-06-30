@@ -238,28 +238,27 @@ end
 
 -- Recursively replace all places reachable through exits with their MQ counterparts
 local function replace_with_mq_logic(place, replaced)
-    -- In order to avoid infinite recursion, we keep track of which places we've already replaced
     if replaced == nil then
         replaced = {}
     end
+
     if replaced[place] then
+        -- Already replaced, infinite recursion go brrr
         return
     end
 
-    for exit, _ in pairs(OOTMM.oot.state.MQlogic[place].exits) do
-        if OOTMM.oot.state.MQlogic[exit] then
-            OOTMM.oot.state.logic[exit] = OOTMM.oot.state.MQlogic[exit]
-            replaced[exit] = true
+    if not OOTMM.oot.state.MQlogic[place] then
+        -- No MQ counterpart, nothing to do here (e.g. exit back to overworld)
+        return
+    end
 
-            if OOTMM.oot.state.MQlogic[exit].exits then
-                for further_exit, _ in pairs(OOTMM.oot.state.MQlogic[exit].exits) do
-                    if OOTMM.oot.state.MQlogic[further_exit] then
-                        OOTMM.oot.state.logic[further_exit] = OOTMM.oot.state.MQlogic[further_exit]
-                        replaced[further_exit] = true
+    OOTMM.oot.state.logic[place] = OOTMM.oot.state.MQlogic[place]
+    replaced[place] = true
 
-                        replace_with_mq_logic(further_exit, replaced)
-                    end
-                end
+    if OOTMM.oot.state.MQlogic[place]["exits"] then
+        for exit, _ in pairs(OOTMM.oot.state.MQlogic[place]["exits"]) do
+            if OOTMM.oot.state.MQlogic[exit] then
+                replace_with_mq_logic(exit, replaced)
             end
         end
     end
@@ -308,7 +307,6 @@ local function reset_logic()
         OOTMM.mm.state.logic = deep_copy_table(OOTMM.original_logic.mm)
 
         for k, v in pairs(mq_dungeons) do
-            OOTMM.oot.state.logic[k] = OOTMM.oot.state.MQlogic[k]
             replace_with_mq_logic(k)
         end
     end
