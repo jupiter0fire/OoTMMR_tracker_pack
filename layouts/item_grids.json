@@ -416,7 +416,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "gtg_label",
+                        "item": "setting_mq_GerudoTrainingGrounds",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5

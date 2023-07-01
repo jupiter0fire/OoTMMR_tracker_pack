@@ -4113,6 +4113,9 @@
         "access_rules": [
           "$oot|Gerudo Training Grounds Entrance 1"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "item_count": 2
       },
       {
@@ -4120,6 +4123,9 @@
         "short_name": "Beamos",
         "access_rules": [
           "$oot|Gerudo Training Grounds Lizalfos"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -4130,6 +4136,9 @@
         "access_rules": [
           "$oot|Gerudo Training Grounds Stalfos"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -4139,6 +4148,9 @@
         "access_rules": [
           "$oot|Gerudo Training Grounds Near Block"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "item_count": 1
       },
       {
@@ -4146,6 +4158,9 @@
         "short_name": "Like Like",
         "access_rules": [
           "$oot|Gerudo Training Grounds Behind Block Visible 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 3
@@ -4156,6 +4171,9 @@
         "access_rules": [
           "$oot|Gerudo Training Grounds Behind Block Invisible"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -4164,6 +4182,9 @@
         "short_name": "Eye Statue",
         "access_rules": [
           "$oot|Gerudo Training Grounds Eye Statue"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -4174,6 +4195,9 @@
         "access_rules": [
           "$oot|Gerudo Training Maze Upper Cage"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -4183,6 +4207,9 @@
         "access_rules": [
           "$oot|Gerudo Training Grounds Hammer Room"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "item_count": 1
       },
       {
@@ -4190,6 +4217,9 @@
         "short_name": "Hammer Switch",
         "access_rules": [
           "$oot|Gerudo Training Grounds Hammer Room Switch"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -4199,6 +4229,9 @@
         "short_name": "Ledge Key",
         "access_rules": [
           "$oot|Gerudo Training Freestanding Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
@@ -4210,6 +4243,9 @@
         "access_rules": [
           "$oot|Gerudo Training Maze Side Chest 1"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "item_count": 2
       },
       {
@@ -4217,6 +4253,9 @@
         "short_name": "Toilet",
         "access_rules": [
           "$oot|Gerudo Training Water"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
@@ -4227,6 +4266,9 @@
         "access_rules": [
           "$oot|Gerudo Training Maze Upper Fake Ceiling"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -4236,6 +4278,9 @@
         "access_rules": [
           "$oot|Gerudo Training Maze Chest 1"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "item_count": 1
       },
       {
@@ -4243,6 +4288,9 @@
         "short_name": "Maze 2",
         "access_rules": [
           "$oot|Gerudo Training Maze Chest 2"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
         ],
         "item_count": 1
       },
@@ -4252,6 +4300,9 @@
         "access_rules": [
           "$oot|Gerudo Training Maze Chest 3"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
         "item_count": 1
       },
       {
@@ -4260,6 +4311,179 @@
         "access_rules": [
           "$oot|Gerudo Training Maze Chest 4"
         ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lobby Chests",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Entryway Left Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "First Iron Knuckle Chest",
+        "short_name": "Knuckle 1",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Left Side Iron Knuckle Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Before Heavy Block Chest",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Stalfos Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Heavy Block Chest",
+        "short_name": "Freezards",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Silver Block Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eye Statue Chest",
+        "short_name": "Eye Statue",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Spinning Statue Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Second Iron Knuckle Chest",
+        "short_name": "Knuckle 2",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Torch Slug Room Clear Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Flame Circle Chest",
+        "short_name": "Flame Circle",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Torch Slug Room Switch Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Maze Right Chests",
+        "short_name": "Maze Right",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Right Side Middle Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Dinolfos Chest",
+        "short_name": "Dinolfos",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Right Side Dinolfos Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Silver Rupee Chest",
+        "short_name": "Toilet",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Water Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "capture_item": true,
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hidden Ceiling Chest",
+        "short_name": "Hidden Ceiling",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze First Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path First Chest",
+        "short_name": "Maze 1",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Second Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Second Chest",
+        "short_name": "Maze 2",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Third Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Third Chest",
+        "short_name": "Maze 3",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Fourth Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Ice Arrows Chest",
+        "short_name": "Ice Arrows",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Ice Arrows Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "capture_item": true,
         "item_count": 1
       }
     ],

@@ -262,9 +262,20 @@
   },
   {
     "name": "Gerudo Training Ground Label",
-    "type": "static",
-    "img": "images/label_gtg.png",
-    "codes": "gtg_label,gtg_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_gtg.png",
+        "codes": "setting_mq_GerudoTrainingGrounds,setting_mq_GerudoTrainingGrounds_false"
+      },
+      {
+        "img": "images/label_gtg_red.png",
+        "codes": "setting_mq_GerudoTrainingGrounds,setting_mq_GerudoTrainingGrounds_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Gerudo Training Ground Small Keys",
