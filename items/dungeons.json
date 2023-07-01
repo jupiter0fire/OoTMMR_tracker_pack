@@ -275,9 +275,20 @@
   },
   {
     "name": "Ganons Castle Label",
-    "type": "static",
-    "img": "images/label_gc.png",
-    "codes": "gc_label,gc_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_gc.png",
+        "codes": "setting_mq_GanonCastle,setting_mq_GanonCastle_false"
+      },
+      {
+        "img": "images/label_gc_red.png",
+        "codes": "setting_mq_GanonCastle,setting_mq_GanonCastle_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Ganons Castle Small Keys",

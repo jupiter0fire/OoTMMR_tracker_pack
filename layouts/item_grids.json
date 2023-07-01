@@ -383,7 +383,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "gc_label",
+                        "item": "setting_mq_GanonCastle",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
