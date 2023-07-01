@@ -1903,7 +1903,7 @@
           "$ootmq|MQ Fire Temple GS 1f Lava Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_FireTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1962,7 +1962,7 @@
           "$ootmq|MQ Fire Temple GS Burning Block"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_FireTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1975,7 +1975,7 @@
           "$ootmq|MQ Fire Temple GS Fire Walls Side Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_FireTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1988,7 +1988,7 @@
           "$ootmq|MQ Fire Temple GS Fire Walls Middle"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_FireTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2026,7 +2026,7 @@
           "$ootmq|MQ Fire Temple GS Topmost"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_FireTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2284,7 +2284,7 @@
           "$ootmq|MQ Water Temple GS Lizalfos Hallway"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_WaterTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2297,7 +2297,7 @@
           "$ootmq|MQ Water Temple GS High Water Changer"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_WaterTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2322,7 +2322,7 @@
           "$ootmq|MQ Water Temple GS River"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_WaterTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2361,7 +2361,7 @@
           "$ootmq|MQ Water Temple GS Side Loop"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_WaterTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2374,7 +2374,7 @@
           "$ootmq|MQ Water Temple GS Three Torch"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_WaterTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2757,7 +2757,7 @@
           "$ootmq|MQ Shadow Temple GS Spike Curtain"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_ShadowTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -2818,7 +2818,7 @@
           "$ootmq|MQ Shadow Temple GS Wind Hint"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_ShadowTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2853,7 +2853,7 @@
           "$ootmq|MQ Shadow Temple GS After Wind Bomb"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_ShadowTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2866,7 +2866,7 @@
           "$ootmq|MQ Shadow Temple GS After Boat"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_ShadowTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -2928,7 +2928,7 @@
           "$ootmq|MQ Shadow Temple GS Pre-Boss"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_ShadowTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -3157,7 +3157,7 @@
           "$ootmq|MQ Spirit Temple GS Sun Block Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_SpiritTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -3353,7 +3353,7 @@
           "$ootmq|MQ Spirit Temple GS Leever Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_SpiritTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -3378,7 +3378,7 @@
           "$ootmq|MQ Spirit Temple GS Symphony Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_SpiritTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
         ],
         "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
@@ -3471,7 +3471,7 @@
           "$ootmq|MQ Spirit Temple GS Top Floor Left Wall"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_SpiritTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -3484,7 +3484,7 @@
           "$ootmq|MQ Spirit Temple GS Top Floor Back Wall"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_SpiritTemple_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -3743,7 +3743,7 @@
           "$ootmq|MQ Bottom of the Well GS West Middle Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_BottomoftheWell_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -3805,7 +3805,7 @@
           "$ootmq|MQ Bottom of the Well GS Basement"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_BottomoftheWell_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -3818,7 +3818,7 @@
           "$ootmq|MQ Bottom of the Well GS Coffin Room"
         ],
         "visibility_rules": [
-          "setting_tokens_dungeons,setting_mq_BottomoftheWell_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -4075,7 +4075,7 @@
           "$ootmq|MQ Ganon Castle Leftmost Scrub"
         ],
         "visibility_rules": [
-          "setting_scrub_shuffle_yes,setting_mq_GanonCastle_true"
+          "setting_scrubShuffleOot_true,setting_mq_GanonCastle_true"
         ],
         "chest_unopened_img": "images/deku_scrub.png",
         "chest_opened_img": "images/deku_scrub_grey.png",
