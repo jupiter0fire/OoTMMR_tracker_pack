@@ -3045,171 +3045,6 @@
         "item_count": 1
       },
       {
-        "name": "Silver Gauntlets Chest",
-        "short_name": "Right Hand",
-        "access_rules": [
-          "$oot|Spirit Temple Silver Gauntlets"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Map Chest",
-        "short_name": "Map",
-        "access_rules": [
-          "$oot|Spirit Temple Statue Base"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/chest_brown_map.png",
-        "item_count": 1
-      },
-      {
-        "name": "GS Lobby",
-        "short_name": "Lobby",
-        "access_rules": [
-          "$oot|Spirit Temple GS Statue"
-        ],
-        "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/skulltula.png",
-        "chest_opened_img": "images/skulltula_token.png",
-        "item_count": 1
-      },
-      {
-        "name": "Compass Chest",
-        "short_name": "Compass",
-        "access_rules": [
-          "$oot|Spirit Temple Adult Lullaby"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/chest_brown_compass.png",
-        "item_count": 1
-      },
-      {
-        "name": "Early Adult Right Chest",
-        "short_name": "Boulders",
-        "access_rules": [
-          "$oot|Spirit Temple Adult Silver Rupees"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/chest_brown_small_key.png",
-        "item_count": 1
-      },
-      {
-        "name": "GS Boulder Room",
-        "short_name": "Boulders",
-        "access_rules": [
-          "$oot|Spirit Temple GS Boulders"
-        ],
-        "visibility_rules": [
-          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/skulltula.png",
-        "chest_opened_img": "images/skulltula_token.png",
-        "item_count": 1
-      },
-      {
-        "name": "First Mirror Chests",
-        "short_name": "Mirror",
-        "access_rules": [
-          "$oot|Spirit Temple Adult Suns on Wall 1"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "item_count": 2
-      },
-      {
-        "name": "Statue Room Hand Chest",
-        "short_name": "Statue Hand",
-        "access_rules": [
-          "$oot|Spirit Temple Statue Hands"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/chest_brown_small_key.png",
-        "item_count": 1
-      },
-      {
-        "name": "Statue Room Northeast Chest",
-        "short_name": "Statue Ledge",
-        "access_rules": [
-          "$oot|Spirit Temple Statue Upper Right"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Near Four Armos Chest",
-        "short_name": "Near Armos",
-        "access_rules": [
-          "$oot|Spirit Temple Adult Late Sun on Wall"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/chest_brown_small_key.png",
-        "item_count": 1
-      },
-      {
-        "name": "Hallway Invisible Chests",
-        "short_name": "Invisible Hallway",
-        "access_rules": [
-          "$oot|Spirit Temple Adult Invisible 1"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "item_count": 2
-      },
-      {
-        "name": "Mirror Shield Chest",
-        "short_name": "Left Hand",
-        "access_rules": [
-          "$oot|Spirit Temple Mirror Shield"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Boss Key Chest",
-        "short_name": "Boss Key",
-        "access_rules": [
-          "$oot|Spirit Temple Adult Boss Key Chest"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "chest_unopened_img": "images/chest_golden_closed.png",
-        "chest_opened_img": "images/chest_golden_open.png",
-        "item_count": 1
-      },
-      {
-        "name": "Topmost Chest",
-        "short_name": "Topmost Sun",
-        "access_rules": [
-          "$oot|Spirit Temple Adult Topmost Sun on Wall"
-        ],
-        "visibility_rules": [
-          "setting_mq_SpiritTemple_false"
-        ],
-        "item_count": 1
-      },
-      {
         "name": "Entrance Front Left Chest",
         "short_name": "Entry Front Left",
         "access_rules": [
@@ -3334,10 +3169,126 @@
         "access_rules": [
           "$oot|Spirit Temple Silver Gauntlets"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Spirit Temple Statue Base"
+        ],
         "visibility_rules": [
-          "setting_mq_SpiritTemple_true"
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$oot|Spirit Temple GS Statue"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Lullaby"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Early Adult Right Chest",
+        "short_name": "Boulders",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Silver Rupees"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Boulder Room",
+        "short_name": "Boulders",
+        "access_rules": [
+          "$oot|Spirit Temple GS Boulders"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Mirror Chests",
+        "short_name": "Mirror",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Suns on Wall 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Statue Room Hand Chest",
+        "short_name": "Statue Hand",
+        "access_rules": [
+          "$oot|Spirit Temple Statue Hands"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Statue Room Northeast Chest",
+        "short_name": "Statue Ledge",
+        "access_rules": [
+          "$oot|Spirit Temple Statue Upper Right"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Near Four Armos Chest",
+        "short_name": "Near Armos",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Late Sun on Wall"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hallway Invisible Chests",
+        "short_name": "Invisible Hallway",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Invisible 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 2
       },
       {
         "name": "Child Climb North Chest",
@@ -3487,8 +3438,29 @@
         "access_rules": [
           "$oot|Spirit Temple Mirror Shield"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Boss Key Chest"
+        ],
         "visibility_rules": [
-          "setting_mq_SpiritTemple_true"
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Topmost Chest",
+        "short_name": "Topmost Sun",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Topmost Sun on Wall"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
         ],
         "item_count": 1
       },
