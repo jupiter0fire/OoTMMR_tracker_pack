@@ -88,9 +88,20 @@
   },
   {
     "name": "Fire Temple Label",
-    "type": "static",
-    "img": "images/label_fire.png",
-    "codes": "fire_label,fire_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_fire.png",
+        "codes": "setting_mq_FireTemple,setting_mq_FireTemple_false"
+      },
+      {
+        "img": "images/label_fire_red.png",
+        "codes": "setting_mq_FireTemple,setting_mq_FireTemple_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Fire Temple Small Keys",

@@ -216,7 +216,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "fire_label",
+                        "item": "setting_mq_FireTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
