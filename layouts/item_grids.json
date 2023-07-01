@@ -315,7 +315,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "shadow_label",
+                        "item": "setting_mq_ShadowTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5

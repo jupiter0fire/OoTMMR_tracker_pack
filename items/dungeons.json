@@ -167,9 +167,20 @@
   },
   {
     "name": "Shadow Temple Label",
-    "type": "static",
-    "img": "images/label_shadow.png",
-    "codes": "shadow_label,shadow_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_shadow.png",
+        "codes": "setting_mq_ShadowTemple,setting_mq_ShadowTemple_false"
+      },
+      {
+        "img": "images/label_shadow_red.png",
+        "codes": "setting_mq_ShadowTemple,setting_mq_ShadowTemple_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Shadow Temple Small Keys",
