@@ -249,7 +249,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "water_label",
+                        "item": "setting_mq_WaterTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5

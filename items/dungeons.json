@@ -118,9 +118,20 @@
   },
   {
     "name": "Water Temple Label",
-    "type": "static",
-    "img": "images/label_water.png",
-    "codes": "water_label,water_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_water.png",
+        "codes": "setting_mq_WaterTemple,setting_mq_WaterTemple_false"
+      },
+      {
+        "img": "images/label_water_red.png",
+        "codes": "setting_mq_WaterTemple,setting_mq_WaterTemple_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Water Temple Small Keys",
