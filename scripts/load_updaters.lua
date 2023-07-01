@@ -77,6 +77,13 @@ function tracker_on_accessibility_updating()
       end
     end
 
+    local ootSmallKeyFire = Tracker:FindObjectForCode("OOT_SMALL_KEY_FIRE")
+    if Tracker:ProviderCountForCode("setting_smallKeyShuffleOot_anywhere") > 0 then
+      ootSmallKeyFire.MaxCount = 8
+    else
+      ootSmallKeyFire.MaxCount = 7
+    end
+
     -- Reset internal logic for all worlds
     OOTMM_RESET_LOGIC()
   end
