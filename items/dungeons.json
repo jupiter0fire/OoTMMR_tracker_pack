@@ -208,9 +208,20 @@
   },
   {
     "name": "Bottom of the Well Label",
-    "type": "static",
-    "img": "images/label_botw.png",
-    "codes": "botw_label,botw_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_botw.png",
+        "codes": "setting_mq_BottomoftheWell,setting_mq_BottomoftheWell_false"
+      },
+      {
+        "img": "images/label_botw_red.png",
+        "codes": "setting_mq_BottomoftheWell,setting_mq_BottomoftheWell_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Bottom of the Well Small Keys",
