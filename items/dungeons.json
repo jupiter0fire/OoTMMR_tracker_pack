@@ -148,9 +148,20 @@
   },
   {
     "name": "Spirit Temple Label",
-    "type": "static",
-    "img": "images/label_spirit.png",
-    "codes": "spirit_label,spirit_reg"
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "stages": [
+      {
+        "img": "images/label_spirit.png",
+        "codes": "setting_mq_SpiritTemple,setting_mq_SpiritTemple_false"
+      },
+      {
+        "img": "images/label_spirit_red.png",
+        "codes": "setting_mq_SpiritTemple,setting_mq_SpiritTemple_true",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Spirit Temple Small Keys",
