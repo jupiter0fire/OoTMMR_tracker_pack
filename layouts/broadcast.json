@@ -27,7 +27,7 @@
               "dock": "top",
               "content": {
                 "type": "layout",
-                "key": "item_grid_tall_mm"
+                "key": "item_grid_small_mm"
               }
             }
           ]

@@ -3,6 +3,7 @@
     "type": "container",
     "background": "#212121",
     "width": 258,
+    "height": 580,
     "content": [
       {
         "type": "dock",
@@ -17,7 +18,7 @@
               "type": "button_popup",
               "style": "settings",
               "popup_background": "#FF212121",
-              "layout": "options_popup"
+              "layout": "options_popup_items_only"
             },
             "dock": "top",
             "content": {
@@ -31,7 +32,7 @@
             "dock": "top",
             "content": {
               "type": "layout",
-              "key": "item_grid_tall_mm"
+              "key": "item_grid_small_mm"
             }
           }
         ]

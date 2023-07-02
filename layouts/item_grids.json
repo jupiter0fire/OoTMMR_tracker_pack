@@ -1321,5 +1321,269 @@
         ]
       }
     ]
+  },
+  "item_grid_small_mm": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
+      {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "1,1",
+        "item_size": 28,
+        "rows": [
+          [
+            "MM_OCARINA",
+            "MM_BOW",
+            "MM_ARROW_FIRE",
+            "MM_ARROW_ICE",
+            "MM_ARROW_LIGHT",
+            "mm_spinattack",
+            "MM_SHIELD_HERO",
+            "MM_SHIELD_MIRROR"
+          ],
+          [
+            "MM_BOMB_BAG",
+            "MM_BOMBCHU",
+            "MM_MAGIC_BEAN",
+            "mm_bottle1",
+            "MM_POWDER_KEG",
+            "MM_PICTOGRAPH_BOX",
+            "MM_LENS",
+            "MM_HOOKSHOT"
+          ],
+          [
+            "MM_MOON_TEAR",
+            "MM_DEED_LAND",
+            "MM_DEED_SWAMP",
+            "MM_DEED_MOUNTAIN",
+            "MM_DEED_OCEAN",
+            "MM_ROOM_KEY",
+            "MM_LETTER_TO_KAFEI",
+            "MM_LETTER_TO_MAMA"
+          ],
+          [
+            "MM_SONG_TIME",
+            "MM_SONG_HEALING",
+            "MM_SONG_EPONA",
+            "MM_SONG_SOARING",
+            "MM_SONG_STORMS",
+            "MM_WALLET",
+            "MM_MAGIC_UPGRADE",
+            "MM_PENDANT_OF_MEMORIES"
+          ],
+          [
+            "MM_SONG_AWAKENING",
+            "MM_SONG_GORON",
+            "MM_SONG_ZORA",
+            "MM_SONG_EMPTINESS",
+            "MM_SONG_ORDER",
+            "MM_STRAY_FAIRY_TOWN",
+            "MM_GS_TOKEN_SWAMP",
+            "MM_GS_TOKEN_OCEAN",
+          ],
+          [
+            "MM_MASK_DEKU",
+            "MM_MASK_GORON",
+            "MM_MASK_ZORA",
+            "MM_MASK_GIBDO",
+            "MM_MASK_GARO",
+            "MM_MASK_CAPTAIN",
+            "MM_MASK_GIANT",
+            "MM_MASK_FIERCE_DEITY"
+          ]
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "0,0",
+            "scale": 0.9,
+            "content": [
+              {
+                "type": "item",
+                "item": "mm_woodfall",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_WF",
+                "margin": "3,4",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "mm_snowhead",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_SH",
+                "margin": "3,4",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "mm_great_bay",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_GB",
+                "margin": "3,4",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "mm_stone_tower",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_ST",
+                "margin": "3,4",
+                "width": 32,
+                "height": 32
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "horizontal",
+            "scale": 0.8,
+            "margin": "0,0",
+            "content": [
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "MM_BOSS_KEY_WF",
+                    "margin": "0,2",
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "mm_woodfall_label",
+                    "margin": "0,2",
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_SMALL_KEY_WF",
+                    "margin": "1,2",
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "MM_BOSS_KEY_SH",
+                    "margin": "0,2",
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "mm_snowhead_label",
+                    "margin": "0,2",
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_SMALL_KEY_SH",
+                    "margin": "1,2",
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "MM_BOSS_KEY_GB",
+                    "margin": "0,2",
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "mm_greatbay_label",
+                    "margin": "0,2",
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_SMALL_KEY_GB",
+                    "margin": "1,2",
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              },
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "5,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "MM_BOSS_KEY_ST",
+                    "margin": "0,2",
+                    "width": 16,
+                    "height": 16
+                  },
+                  {
+                    "type": "item",
+                    "item": "mm_stonetower_label",
+                    "margin": "0,2",
+                    "width": 32,
+                    "height": 12
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_SMALL_KEY_ST",
+                    "margin": "1,2",
+                    "width": 16,
+                    "height": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
