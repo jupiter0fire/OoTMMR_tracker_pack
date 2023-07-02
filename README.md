@@ -26,12 +26,13 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - If you are playing with **Child Wallets**, right click on the respective wallet. The tracker pack starts with the 99 rupee wallet by default.
 
+- Click on a dungeon name to mark it as a mq dungeon (white letters = regular dungeon, red letters = mq dungeon).
+
 ## Unsupported Settings
 
 - Dungeon Reward Shuffle Anywhere
 - Boss Entrance Shuffle
 - Dungeon Entrance Shuffle
-- MQ Dungeons
 
 ## TODOs:
 

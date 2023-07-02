@@ -1,5 +1,12 @@
 # Releases
 
+## v1.11.0.2
+
+Added Master Quest dungeons.
+
+Added items only variant.
+
+Fixed the issue where pinned locations don't resize the map in fullscreen.
 ## v1.11.0.1
 
 Logic updated to version 1.11.0 of the OOTMM Randomizer.
