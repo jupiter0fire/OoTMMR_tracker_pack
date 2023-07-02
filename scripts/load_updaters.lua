@@ -17,31 +17,81 @@ local OOTMM_SHARED = {
   ["Wallets"] = { "WALLET" },
 }
 local OOTMM_SHARED_PREV = {
-  ["BombBags"] = {0},
-  ["Bows"] = {0},
-  ["Magic"] = {0},
-  ["NutsSticks"] = {0, 0},
-  ["Ocarina"] = {0},
-  ["Wallets"] = {0},
+  ["BombBags"] = { 0 },
+  ["Bows"] = { 0 },
+  ["Magic"] = { 0 },
+  ["NutsSticks"] = { 0, 0 },
+  ["Ocarina"] = { 0 },
+  ["Wallets"] = { 0 },
 }
 local OOTMM_SKIP_STAGE = {
   ["fairyOcarinaMm_false"] = {
     ["item"] = "MM_OCARINA",
-    ["rule"] = function () return Tracker:ProviderCountForCode("setting_sharedOcarina_false") > 0 end
+    ["rule"] = function() return Tracker:ProviderCountForCode("setting_sharedOcarina_false") > 0 end
   },
   ["progressiveGoronLullaby_single"] = {
     ["item"] = "MM_SONG_GORON",
-    ["rule"] = function () return true end
+    ["rule"] = function() return true end
   },
   ["shortHookshotMm_false"] = {
     ["item"] = "MM_HOOKSHOT",
-    ["rule"] = function () return true end
+    ["rule"] = function() return true end
   },
 }
 local OOTMM_SKIP_STAGE_PREV = {
   ["MM_OCARINA"] = 0,
   ["MM_SONG_GORON"] = 0,
   ["MM_HOOKSHOT"] = 0,
+}
+local OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV = false
+local OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV = false
+local OOTMM_SMALL_KEY_AMOUNTS = {
+  ["OOT_SMALL_KEY_FOREST"] = {
+    dungeon_name = "Forest Temple",
+    vanilla = 5,
+    mq = 6,
+  },
+  ["OOT_SMALL_KEY_FIRE"] = {
+    dungeon_name = "Fire Temple",
+    vanilla = function()
+      if Tracker:ProviderCountForCode("setting_smallKeyShuffleOot_anywhere") > 0 then
+        return 8
+      else
+        return 7
+      end
+    end,
+    mq = 5,
+  },
+  ["OOT_SMALL_KEY_WATER"] = {
+    dungeon_name = "Water Temple",
+    vanilla = 6,
+    mq = 2,
+  },
+  ["OOT_SMALL_KEY_SPIRIT"] = {
+    dungeon_name = "Spirit Temple",
+    vanilla = 5,
+    mq = 7,
+  },
+  ["OOT_SMALL_KEY_SHADOW"] = {
+    dungeon_name = "Shadow Temple",
+    vanilla = 5,
+    mq = 6,
+  },
+  ["OOT_SMALL_KEY_BOTW"] = {
+    dungeon_name = "Bottom of the Well",
+    vanilla = 3,
+    mq = 2,
+  },
+  ["OOT_SMALL_KEY_GTG"] = {
+    dungeon_name = "Gerudo Training Grounds",
+    vanilla = 9,
+    mq = 3,
+  },
+  ["OOT_SMALL_KEY_GANON"] = {
+    dungeon_name = "Ganon Castle",
+    vanilla = 2,
+    mq = 3,
+  },
 }
 function tracker_on_accessibility_updating()
   if PACK_READY then
@@ -77,11 +127,51 @@ function tracker_on_accessibility_updating()
       end
     end
 
-    local ootSmallKeyFire = Tracker:FindObjectForCode("OOT_SMALL_KEY_FIRE")
-    if Tracker:ProviderCountForCode("setting_smallKeyShuffleOot_anywhere") > 0 then
-      ootSmallKeyFire.MaxCount = 8
-    else
-      ootSmallKeyFire.MaxCount = 7
+    -- Handle max amounts for small keys in EmoTracker's GUI
+    local oot_keysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleOot_removed") > 0
+    for key_code, key_data in pairs(OOTMM_SMALL_KEY_AMOUNTS) do
+      local item = Tracker:FindObjectForCode(key_code)
+      local mq_setting_name = "setting_mq_" .. key_data.dungeon_name:gsub(" ", "") .. '_true'
+      local is_mq = Tracker:ProviderCountForCode(mq_setting_name) > 0
+
+      local max_amount = key_data.vanilla
+
+      if is_mq then
+        max_amount = key_data.mq
+      end
+
+      if type(max_amount) == "function" then
+        max_amount = max_amount()
+      end
+
+      item.MaxCount = max_amount
+
+      -- Handle keysanity; if active, set all keys to their max amount
+      if oot_keysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV then
+        if oot_keysanity_active and item.AcquiredCount == 0 then
+          item.AcquiredCount = item.MaxCount
+        elseif not oot_keysanity_active and item.AcquiredCount == item.MaxCount then
+          -- Try to be smart about small key handling; users would not like having to manually
+          -- reset these to 0 if they're just cycling through small key settings.
+          item.AcquiredCount = 0
+        end
+      end
+    end
+    OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV = oot_keysanity_active
+
+    local mm_keysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleMm_removed") > 0
+    for _, key_code in pairs({ "MM_SMALL_KEY_WF", "MM_SMALL_KEY_SH", "MM_SMALL_KEY_GB", "MM_SMALL_KEY_ST" }) do
+      local item = Tracker:FindObjectForCode(key_code)
+      if mm_keysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV then
+        if mm_keysanity_active and item.AcquiredCount == 0 then
+          item.AcquiredCount = item.MaxCount
+        elseif not mm_keysanity_active and item.AcquiredCount == item.MaxCount then
+          item.AcquiredCount = 0
+        end
+      end
+    end
+    OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV = mm_keysanity_active
+
     end
 
     -- Reset internal logic for all worlds
