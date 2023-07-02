@@ -550,34 +550,34 @@
         "scale": 0.875,
         "rows": [
           [
+            "OOT_SWORD_KOKIRI",
+            "OOT_SWORD_MASTER",
             "OOT_BOMB_BAG",
             "OOT_BOW",
             "OOT_ARROW_FIRE",
-            "OOT_SPELL_FIRE",
-            "OOT_SWORD_KOKIRI",
-            "OOT_SWORD_MASTER",
+            "OOT_ARROW_LIGHT",
             "OOT_SLINGSHOT",
-            "OOT_OCARINA",
+            "OOT_OCARINA"
           ],
           [
-            "OOT_HOOKSHOT",
-            "OOT_MAGIC_UPGRADE",
             "OOT_SHIELD_DEKU",
             "OOT_SHIELD_HYLIAN",
             "OOT_SHIELD_MIRROR",
+            "OOT_HOOKSHOT",
+            "OOT_MAGIC_UPGRADE",
             "OOT_BOOMERANG",
             "OOT_HAMMER",
-            "OOT_ARROW_LIGHT",
+            "OOT_SPELL_FIRE"
           ],
           [
             "OOT_STRENGTH",
             "bottle1",
             "OOT_SCALE",
-            "OOT_GERUDO_CARD",
             "OOT_BOOTS_IRON",
             "OOT_BOOTS_HOVER",
-            "OOT_GS_TOKEN",
-            "triforce"
+            "OOT_GERUDO_CARD",
+            "OOT_WALLET1",
+            "OOT_MAGIC_BEAN"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -586,6 +586,8 @@
             "OOT_SONG_SUN",
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
+            "OOT_TUNIC_GORON",
+            "OOT_TUNIC_ZORA"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -594,6 +596,8 @@
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_SHADOW",
             "OOT_SONG_TP_LIGHT",
+            "OOT_GS_TOKEN",
+            "triforce"
           ]
         ]
       },
