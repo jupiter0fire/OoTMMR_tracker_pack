@@ -92,6 +92,18 @@ local OOTMM_SMALL_KEY_AMOUNTS = {
     vanilla = 2,
     mq = 3,
   },
+  ["OOT_SMALL_KEY_GF"] = {
+    dungeon_name = "NONE",
+    vanilla = function()
+      if Tracker:ProviderCountForCode("setting_gerudoFortress_vanilla") > 0 then
+        return 4
+      elseif Tracker:ProviderCountForCode("setting_gerudoFortress_single") > 0 then
+        return 1
+      else
+        return 0  
+      end
+    end,
+  },
 }
 function tracker_on_accessibility_updating()
   if PACK_READY then
