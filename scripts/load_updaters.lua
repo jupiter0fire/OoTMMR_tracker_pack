@@ -17,25 +17,25 @@ local OOTMM_SHARED = {
   ["Wallets"] = { "WALLET" },
 }
 local OOTMM_SHARED_PREV = {
-  ["BombBags"] = {0},
-  ["Bows"] = {0},
-  ["Magic"] = {0},
-  ["NutsSticks"] = {0, 0},
-  ["Ocarina"] = {0},
-  ["Wallets"] = {0},
+  ["BombBags"] = { 0 },
+  ["Bows"] = { 0 },
+  ["Magic"] = { 0 },
+  ["NutsSticks"] = { 0, 0 },
+  ["Ocarina"] = { 0 },
+  ["Wallets"] = { 0 },
 }
 local OOTMM_SKIP_STAGE = {
   ["fairyOcarinaMm_false"] = {
     ["item"] = "MM_OCARINA",
-    ["rule"] = function () return Tracker:ProviderCountForCode("setting_sharedOcarina_false") > 0 end
+    ["rule"] = function() return Tracker:ProviderCountForCode("setting_sharedOcarina_false") > 0 end
   },
   ["progressiveGoronLullaby_single"] = {
     ["item"] = "MM_SONG_GORON",
-    ["rule"] = function () return true end
+    ["rule"] = function() return true end
   },
   ["shortHookshotMm_false"] = {
     ["item"] = "MM_HOOKSHOT",
-    ["rule"] = function () return true end
+    ["rule"] = function() return true end
   },
 }
 local OOTMM_SKIP_STAGE_PREV = {
