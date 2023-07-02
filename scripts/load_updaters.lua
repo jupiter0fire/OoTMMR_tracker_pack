@@ -100,7 +100,7 @@ local OOTMM_SMALL_KEY_AMOUNTS = {
       elseif Tracker:ProviderCountForCode("setting_gerudoFortress_single") > 0 then
         return 1
       else
-        return 0  
+        return 0
       end
     end,
   },

@@ -257,7 +257,7 @@
         "type": "item",
         "item": "setting_sharedWallets",
         "height": 16
-      }   
+      }
     ]
   },
   "layout_logic_tricks_oot": {
@@ -901,7 +901,7 @@
         "type": "item",
         "item": "setting_sharedWallets",
         "height": 16
-      } 
+      }
     ]
   },
   "options_popup": {
@@ -1028,7 +1028,7 @@
         }
       }
     ]
-  },  
+  },
   "options_popup_items_only": {
     "type": "tabbed",
     "tabs": [
