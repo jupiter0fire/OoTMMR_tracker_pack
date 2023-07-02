@@ -2759,7 +2759,6 @@
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -2796,7 +2795,6 @@
         "visibility_rules": [
           "setting_mq_ShadowTemple_true"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -2918,7 +2916,6 @@
         "visibility_rules": [
           "setting_mq_ShadowTemple_true"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3111,7 +3108,6 @@
         "visibility_rules": [
           "setting_mq_SpiritTemple_true"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -3368,7 +3364,6 @@
         "visibility_rules": [
           "setting_mq_SpiritTemple_true"
         ],
-        "capture_item": true,
         "item_count": 1
       },
       {
@@ -3380,7 +3375,6 @@
         "visibility_rules": [
           "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
@@ -3962,7 +3956,6 @@
         "visibility_rules": [
           "setting_mq_GanonCastle_true"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
@@ -4020,7 +4013,6 @@
         "visibility_rules": [
           "setting_mq_GanonCastle_true"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -4426,7 +4418,6 @@
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_true"
         ],
-        "capture_item": true,
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
       },
@@ -4483,7 +4474,6 @@
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_true"
         ],
-        "capture_item": true,
         "item_count": 1
       }
     ],
