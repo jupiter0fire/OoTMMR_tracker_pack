@@ -1067,13 +1067,10 @@
   },
   {
     "name": "MM Woodfall Small Keys",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/keys/mm_small_key.png",
-        "codes": "MM_SMALL_KEY_WF"
-      }
-    ]
+    "type": "consumable",
+    "img": "images/keys/mm_small_key.png",
+    "codes": "MM_SMALL_KEY_WF",
+    "max_quantity": 1
   },
   {
     "name": "MM Woodfall Boss Key",
@@ -1124,13 +1121,10 @@
   },
   {
     "name": "MM Great Bay Small Keys",
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/keys/mm_small_key.png",
-        "codes": "MM_SMALL_KEY_GB"
-      }
-    ]
+    "type": "consumable",
+    "img": "images/keys/mm_small_key.png",
+    "codes": "MM_SMALL_KEY_GB",
+    "max_quantity": 1
   },
   {
     "name": "MM Great Bay Boss Key",

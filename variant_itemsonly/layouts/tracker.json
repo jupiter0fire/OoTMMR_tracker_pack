@@ -22,7 +22,7 @@
             "dock": "top",
             "content": {
               "type": "layout",
-              "key": "item_grid_tall_oot"
+              "key": "item_grid_small_oot"
             }
           },
           {
