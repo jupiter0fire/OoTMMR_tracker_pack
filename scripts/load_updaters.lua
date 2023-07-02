@@ -171,12 +171,10 @@ function tracker_on_accessibility_updating()
       end
     end
     OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV = mm_keysanity_active
-
-    end
-
-    -- Reset internal logic for all worlds
-    OOTMM_RESET_LOGIC()
   end
+
+  -- Reset internal logic for all worlds
+  OOTMM_RESET_LOGIC()
 end
 
 function tracker_on_accessibility_updated()
