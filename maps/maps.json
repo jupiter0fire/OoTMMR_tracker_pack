@@ -10,5 +10,23 @@
     "location_size": 15,
     "location_border_thickness": 3,
     "img": "images/mm_overworld.png"
+  },
+  {
+    "name": "oot_er_locations",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/map_entrance.png"
+  },
+  {
+    "name": "oot_er_exits",
+    "location_size": 35,
+    "location_border_thickness": 5,
+    "img": "images/map_entrance.png"
+  },
+  {
+    "name": "termina_er",
+    "location_size": 15,
+    "location_border_thickness": 3,
+    "img": "images/mm_overworld.png"
   }
 ]

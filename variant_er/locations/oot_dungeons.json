@@ -1,0 +1,4561 @@
+[
+  {
+    "name": "Deku Tree",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Deku Tree Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Room Chests",
+        "short_name": "Slingshot",
+        "access_rules": [
+          "$oot|Deku Tree Slingshot Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Compass Room Chests",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Deku Tree Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 2
+      },
+      {
+        "name": "GS Compass Room",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Deku Tree GS Compass"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "$oot|Deku Tree Basement Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Vines",
+        "short_name": "Vines",
+        "access_rules": [
+          "$oot|Deku Tree GS Basement Vines"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Gate",
+        "short_name": "Gate",
+        "access_rules": [
+          "$oot|Deku Tree GS Basement Gate"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Back Room",
+        "short_name": "Back Room",
+        "access_rules": [
+          "$oot|Deku Tree GS Basement Back Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree GS Lobby Crate"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Chest",
+        "short_name": "Slingshot",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Slingshot Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Room Back Chest",
+        "short_name": "Slingshot Back",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Slingshot Room Far Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Compass Room",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree GS Compass Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Basement Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Before Spinning Log Chest",
+        "short_name": "Before Log",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Before Water Platform Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "After Spinning Log Chest",
+        "short_name": "After Log",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree After Water Platform Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Graves Room",
+        "short_name": "Ceiling",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree GS Song of Time Blocks"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Back Room",
+        "short_name": "Back Room",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree GS Back Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Queen Gohma",
+        "access_rules": [
+          "$oot|Deku Tree Boss Container"
+        ],
+        "hosted_item": "deku",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 30,
+        "y": 1465
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 30,
+        "y": 1465
+      }
+    ]
+  },
+  {
+    "name": "Dodongo Cavern",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "GS Side Room Near Lower Lizalfos",
+        "short_name": "East Side",
+        "access_rules": [
+          "$oot|Dodongo Cavern GS Side Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Scarecrow",
+        "short_name": "Scarecrow",
+        "access_rules": [
+          "$oot|Dodongo Cavern GS Scarecrow"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub Side Room Near Dodongo",
+        "short_name": "East Side",
+        "access_rules": [
+          "$oot|Dodongo Cavern Green Side Room Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Dodongo Cavern Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$oot|Dodongo Cavern Lobby Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Alcove Above Stairs",
+        "short_name": "Above Stairs",
+        "access_rules": [
+          "$oot|Dodongo Cavern GS Stairs Top"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Vines Above Stairs",
+        "short_name": "Vines",
+        "access_rules": [
+          "$oot|Dodongo Cavern GS Stairs Vines"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Flower Platform Chest",
+        "short_name": "Bomb Flower",
+        "access_rules": [
+          "$oot|Dodongo Cavern Bomb Bag Side Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrubs Near Bomb Bag",
+        "short_name": "Near Bomb Bag",
+        "access_rules": [
+          "$oot|Dodongo Cavern Bomb Bag Side Room Left Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 2
+      },
+      {
+        "name": "Bomb Bag Chest",
+        "short_name": "Bomb Bag",
+        "access_rules": [
+          "$oot|Dodongo Cavern Bomb Bag Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "End of Bridge Chest",
+        "short_name": "Bridge",
+        "access_rules": [
+          "$oot|Dodongo Cavern Bridge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Back Room",
+        "short_name": "Back Room",
+        "access_rules": [
+          "$oot|Dodongo Cavern GS Near Boss"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Bag Chest",
+        "short_name": "Bomb Bag",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Bomb Bag Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Scrub Room",
+        "short_name": "Scrub",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Poe Room Side"
+        ],
+        "visibility_rules": [
+          " ,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub Side Room Near Lower Lizalfos",
+        "short_name": "East Side",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Tunnel Side Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Torch Puzzle Room Chest",
+        "short_name": "Platform",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Upper Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Lizalfos Room",
+        "short_name": "Lizalfos",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Upper Lizalfos"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Larvae Room Chest",
+        "short_name": "Larvae",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Larvae Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Larvae Room",
+        "short_name": "Larvae",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Larve Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub Staircase",
+        "short_name": "Above Stairs",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Staircase Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Song of Time Block Room",
+        "short_name": "Song of Time",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Time Blocks"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrubs Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Lobby Scrub Front"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 2
+      },
+      {
+        "name": "GS Back Area",
+        "short_name": "Back Area",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern GS Near Boss"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Under Grave Chest",
+        "short_name": "Under Grave",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Chest Under Grave"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Room Chest",
+        "short_name": "Boss Room",
+        "access_rules": [
+          "$oot|Dodongo Cavern Boss Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DodongoCavern_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "King Dodongo",
+        "access_rules": [
+          "$oot|Dodongo Cavern Boss Container"
+        ],
+        "hosted_item": "dodongo",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 130,
+        "y": 1465
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 130,
+        "y": 1465
+      }
+    ]
+  },
+  {
+    "name": "Jabu Jabus Belly",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "GS Water Switch Room",
+        "short_name": "Water Switch",
+        "access_rules": [
+          "$oot|Jabu-Jabu GS Water Switch"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrub",
+        "access_rules": [
+          "$oot|Jabu-Jabu Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boomerang Chest",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "$oot|Jabu-Jabu Boomerang Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Jabu-Jabu Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Jabu-Jabu Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Lobby Basement Lower",
+        "short_name": "Basement 1",
+        "access_rules": [
+          "$oot|Jabu-Jabu GS Bottom Lower"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Lobby Basement Upper",
+        "short_name": "Basement 2",
+        "access_rules": [
+          "$oot|Jabu-Jabu GS Bottom Upper"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Near Boss",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$oot|Jabu-Jabu GS Near Boss"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Room Side Chest",
+        "short_name": "First Room",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Entry Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Second Room Lower Chest",
+        "short_name": "Second Room Lower",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Second Room B1 Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chests",
+        "short_name": "Basement",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Third Room West Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Boomerang Room Chests",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Boomerang Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "GS Boomerang Chest Room",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS SoT Block"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Like Like Room Chest",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Back Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Tailpasaran Room",
+        "short_name": "Tailpasaran",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS Back"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Invisible Enemies Room",
+        "short_name": "Invis Enemies",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS Basement Side Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Cow",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Cow"
+        ],
+        "visibility_rules": [
+          "setting_cowShuffleOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/cow.png",
+        "chest_opened_img": "images/bottle_milk.png",
+        "item_count": 1
+      },
+      {
+        "name": "Second Room Upper Chest",
+        "short_name": "Second Room Upper",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Second Room 1F Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Near Boss",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu GS Pre-Boss"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Near Boss Chest",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pre-Boss Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_Jabu-Jabu_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Barinade",
+        "access_rules": [
+          "$oot|Jabu-Jabu Boss Container"
+        ],
+        "hosted_item": "jabu",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 230,
+        "y": 1465
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 230,
+        "y": 1465
+      }
+    ]
+  },
+  {
+    "name": "Ice Cavern",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "GS Spinning Scythe Room",
+        "short_name": "Spinning Scythe",
+        "access_rules": [
+          "$oot|Ice Cavern GS Scythe Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Ice Cavern Map"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Ice Cavern Compass"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding PoH",
+        "short_name": "Frozen HP",
+        "access_rules": [
+          "$oot|Ice Cavern HP"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/HP.png",
+        "chest_opened_img": "images/HP_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Heart Piece Room",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Ice Cavern GS HP Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Push Block Room",
+        "short_name": "Push Block",
+        "access_rules": [
+          "$oot|Ice Cavern GS Block Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Iron Boots Chest",
+        "short_name": "Iron Boots",
+        "access_rules": [
+          "$oot|Ice Cavern Iron Boots"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Sheik in Ice Cavern",
+        "short_name": "Song",
+        "access_rules": [
+          "$oot|Ice Cavern Sheik Song"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/grey_note.png",
+        "chest_opened_img": "images/grey_note_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding PoH",
+        "short_name": "Frozen HP",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Piece of Heart"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/HP.png",
+        "chest_opened_img": "images/HP_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Red Ice",
+        "short_name": "Red Ice",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern GS Compass Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Scarecrow",
+        "short_name": "Scarecrow",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern GS Scarecrow"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Ice Block",
+        "short_name": "Ice Block",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern GS Clear Blocks"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Iron Boots Chest",
+        "short_name": "Iron Boots",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Iron Boots"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Sheik in Ice Cavern",
+        "short_name": "Song",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Sheik Song"
+        ],
+        "visibility_rules": [
+          "setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/grey_note.png",
+        "chest_opened_img": "images/grey_note_check.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 530,
+        "y": 1465
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 530,
+        "y": 1465
+      }
+    ]
+  },
+  {
+    "name": "Forest Temple",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "GS First Room",
+        "short_name": "First Room",
+        "access_rules": [
+          "$oot|Forest Temple GS Entrance"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Room Chest",
+        "short_name": "Tree",
+        "access_rules": [
+          "$oot|Forest Temple Tree Small Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$oot|Forest Temple GS Main"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Stalfos Chest",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$oot|Forest Temple Mini-Boss Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Raised Island Courtyard Chest",
+        "short_name": "Island",
+        "access_rules": [
+          "$oot|Forest Temple Garden"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Raised Island Courtyard",
+        "short_name": "Island",
+        "access_rules": [
+          "$oot|Forest Temple GS Garden East"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Forest Temple Map"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Well Chest",
+        "short_name": "Well",
+        "access_rules": [
+          "$oot|Forest Temple Well"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Level Island Courtyard",
+        "short_name": "Outdoor West",
+        "access_rules": [
+          "$oot|Forest Temple GS Garden West"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Forest Temple Maze Chest",
+        "short_name": "Block Push",
+        "access_rules": [
+          "$oot|Forest Temple Maze"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Forest Temple Boss Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Floormaster Chest",
+        "short_name": "Floormaster",
+        "access_rules": [
+          "$oot|Forest Temple Floormaster"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Red Poe Chest",
+        "short_name": "Red Poe",
+        "access_rules": [
+          "$oot|Forest Temple Poe Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bow Chest",
+        "short_name": "Bow",
+        "access_rules": [
+          "$oot|Forest Temple Bow"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Blue Poe Chest",
+        "short_name": "Blue Poe",
+        "access_rules": [
+          "$oot|Forest Temple Compass"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Ceiling Room Chest",
+        "short_name": "Checkerboard",
+        "access_rules": [
+          "$oot|Forest Temple Checkerboard"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "$oot|Forest Temple Antichamber"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement",
+        "short_name": "Basement",
+        "access_rules": [
+          "$oot|Forest Temple GS Antichamber"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Room Chest",
+        "short_name": "Tree",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple First Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS First Hallway",
+        "short_name": "First Hallway",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS Entryway"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Wolfos Chest",
+        "short_name": "Wolfos",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Wolfos Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Raised Island Courtyard",
+        "short_name": "Outdoor East",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS East Garden"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Raised Island Courtyard Upper Chest",
+        "short_name": "Balcony",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple East Garden High Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Well Chest",
+        "short_name": "Well",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Well Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Well",
+        "short_name": "Well",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS Well"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Level Island Courtyard",
+        "short_name": "Outdoor West",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS West Garden"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Block Push Room",
+        "short_name": "Block Push",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple GS Climb Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Redead Chest",
+        "short_name": "Redead",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple ReDead Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bow Chest",
+        "short_name": "Bow",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Bow Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Ceiling Room Chest",
+        "short_name": "Checkerboard",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Falling Ceiling Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Raised Island Courtyard Lower Chest",
+        "short_name": "Island",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple East Garden Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Antichamber"
+        ],
+        "visibility_rules": [
+          "setting_mq_ForestTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Phantom Ganon",
+        "access_rules": [
+          "$oot|Forest Temple Boss Container"
+        ],
+        "hosted_item": "forest",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 30,
+        "y": 1350
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 30,
+        "y": 1350
+      }
+    ]
+  },
+  {
+    "name": "Fire Temple",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Near Boss Chest",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$oot|Fire Temple Jail 1 Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Boss Key Loop",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Fire Temple GS Hammer Statues"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Flare Dancer Chest",
+        "short_name": "Flare Dancer",
+        "access_rules": [
+          "$oot|Fire Temple Boss Key Side Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Fire Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Song of Time Room",
+        "short_name": "Time Block",
+        "access_rules": [
+          "$oot|Fire Temple GS Lava Side Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Big Lava Room Lower Open Door Chest",
+        "short_name": "Lava Room Open",
+        "access_rules": [
+          "$oot|Fire Temple Jail 2 Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Big Lava Room Blocked Door Chest",
+        "short_name": "Lava Room Bombable",
+        "access_rules": [
+          "$oot|Fire Temple Jail 3 Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boulder Maze Lower Chest",
+        "short_name": "Boulder Maze Lower",
+        "access_rules": [
+          "$oot|Fire Temple Maze Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boulder Maze Side Room Chest",
+        "short_name": "Boulder Maze Side",
+        "access_rules": [
+          "$oot|Fire Temple Jail 4 Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Boulder Maze",
+        "short_name": "Boulder Maze",
+        "access_rules": [
+          "$oot|Fire Temple GS Maze"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Fire Temple Map"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boulder Maze Upper Chest",
+        "short_name": "Boulder Maze Upper",
+        "access_rules": [
+          "$oot|Fire Temple Above Maze Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boulder Maze Shortcut Chest",
+        "short_name": "Shortcut",
+        "access_rules": [
+          "$oot|Fire Temple Below Maze Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Scarecrow Climb",
+        "short_name": "Scarecrow 1",
+        "access_rules": [
+          "$oot|Fire Temple GS Scarecrow Wall"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Scarecrow Top",
+        "short_name": "Scarecrow 2",
+        "access_rules": [
+          "$oot|Fire Temple GS Scarecrow Top"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Scarecrow Chest",
+        "short_name": "Scarecrow",
+        "access_rules": [
+          "$oot|Fire Temple Scarecrow Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Fire Temple Compass"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Highest Goron Chest",
+        "short_name": "Highest Goron",
+        "access_rules": [
+          "$oot|Fire Temple Ring Jail"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Megaton Hammer Chest",
+        "short_name": "Hammer",
+        "access_rules": [
+          "$oot|Fire Temple Hammer"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Near Boss Chest",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pre-Boss Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Side Chest",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Early Lower Left Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Megaton Hammer Chest",
+        "short_name": "Hammer",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Hammer Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Big Lava Room Blocked Door Chest",
+        "short_name": "Lava Room Bombable",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple 1f Lava Room Goron Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Big Lava Room Open Door",
+        "short_name": "Lava Room",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple GS 1f Lava Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lizalfos Maze Lower Chest",
+        "short_name": "Maze Lower",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Maze Lower Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lizalfos Maze Side Room Chest",
+        "short_name": "Maze Side",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Maze Side Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lizalfos Maze Upper Chest",
+        "short_name": "Maze Upper",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Maze Upper Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Skull On Fire",
+        "short_name": "East Tower Top",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple GS Burning Block"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Fire Wall Maze Side Room",
+        "short_name": "Fire Maze Side",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple GS Fire Walls Side Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Fire Wall Maze Center",
+        "short_name": "Fire Maze Center",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple GS Fire Walls Middle"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "short_name": "Flare Dancer 2",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Flare Dancer Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Chest On Fire",
+        "short_name": "West Tower Top",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Topmost Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Above Fire Wall Maze",
+        "short_name": "Above Fire Maze",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple GS Topmost"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Volvagia",
+        "access_rules": [
+          "$oot|Fire Temple Boss Container"
+        ],
+        "hosted_item": "fire",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 130,
+        "y": 1350
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 130,
+        "y": 1350
+      }
+    ]
+  },
+  {
+    "name": "Water Temple",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Water Temple Map"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Cracked Wall Chest",
+        "short_name": "Cracked Wall",
+        "access_rules": [
+          "$oot|Water Temple Bombable Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Torches Chest",
+        "short_name": "Torches",
+        "access_rules": [
+          "$oot|Water Temple Shell Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Behind Gate",
+        "short_name": "South Basement",
+        "access_rules": [
+          "$oot|Water Temple GS Cage"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Water Temple Compass"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Central Bow Target Chest",
+        "short_name": "Central Bow Target",
+        "access_rules": [
+          "$oot|Water Temple Corridor Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Central Pillar",
+        "short_name": "Central Pillar",
+        "access_rules": [
+          "$oot|Water Temple GS Center"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Central Pillar Chest",
+        "short_name": "Central Pillar",
+        "access_rules": [
+          "$oot|Water Temple Under Center"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Falling Platform Room",
+        "short_name": "Platform Room",
+        "access_rules": [
+          "$oot|Water Temple GS Large Pit"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Longshot Chest",
+        "short_name": "Longshot",
+        "access_rules": [
+          "$oot|Water Temple Longshot"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS River",
+        "short_name": "River",
+        "access_rules": [
+          "$oot|Water Temple GS River"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "River Chest",
+        "short_name": "River",
+        "access_rules": [
+          "$oot|Water Temple River Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Dragon Chest",
+        "short_name": "Dragon",
+        "access_rules": [
+          "$oot|Water Temple Dragon Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Near Boss Key Chest",
+        "short_name": "Near Boss Key",
+        "access_rules": [
+          "$oot|Water Temple GS Waterfalls"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Water Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Longshot Chest",
+        "short_name": "Longshot",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Longshot Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Lizalfos Hallway",
+        "short_name": "Lizalfos",
+        "access_rules": [
+          "$ootmq|MQ Water Temple GS Lizalfos Hallway"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Before Upper Water Switch",
+        "short_name": "Before Upper Water Switch",
+        "access_rules": [
+          "$ootmq|MQ Water Temple GS High Water Changer"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Central Pillar Chest",
+        "short_name": "Central Pillar",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Central Pillar Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS River",
+        "short_name": "River",
+        "access_rules": [
+          "$ootmq|MQ Water Temple GS River"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "short_name": "Key",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Side Loop Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Freestanding Key Area",
+        "short_name": "North Basement",
+        "access_rules": [
+          "$ootmq|MQ Water Temple GS Side Loop"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Triple Wall Torch",
+        "short_name": "South Basement",
+        "access_rules": [
+          "$ootmq|MQ Water Temple GS Three Torch"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Morpha",
+        "access_rules": [
+          "$oot|Water Temple Boss HC"
+        ],
+        "hosted_item": "water",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 230,
+        "y": 1350
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 230,
+        "y": 1350
+      }
+    ]
+  },
+  {
+    "name": "Shadow Temple",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Shadow Temple Map"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hover Boots Chest",
+        "short_name": "Dead Hand",
+        "access_rules": [
+          "$oot|Shadow Temple Hover Boots"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Shadow Temple Compass"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Early Silver Rupee Chest",
+        "short_name": "Early Silver Rupee",
+        "access_rules": [
+          "$oot|Shadow Temple Silver Rupees"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Blades Visible Chests",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$oot|Shadow Temple Spinning Blades Visible"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Blades Invisible Chests",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$oot|Shadow Temple Spinning Blades Invisible"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Like Like Room",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$oot|Shadow Temple GS Invisible Scythe"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Spikes Lower Chest",
+        "short_name": "Crusher Lower",
+        "access_rules": [
+          "$oot|Shadow Temple Falling Spikes Lower"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Falling Spikes Room",
+        "short_name": "Crusher",
+        "access_rules": [
+          "$oot|Shadow Temple GS Falling Spikes"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Spikes Upper Chests",
+        "short_name": "Crusher Upper",
+        "access_rules": [
+          "$oot|Shadow Temple Falling Spikes Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 2
+      },
+      {
+        "name": "Invisible Spikes Chest",
+        "short_name": "Invisible Spikes",
+        "access_rules": [
+          "$oot|Shadow Temple Invisible Spike Room"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "short_name": "Skull Pot",
+        "access_rules": [
+          "$oot|Shadow Temple Skull"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Single Giant Pot",
+        "short_name": "Single Skull",
+        "access_rules": [
+          "$oot|Shadow Temple GS Skull Pot"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Wind Hint Chest",
+        "short_name": "Wind Hint",
+        "access_rules": [
+          "$oot|Shadow Temple Wind Room Hint"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "After Wind Chest",
+        "short_name": "After Wind",
+        "access_rules": [
+          "$oot|Shadow Temple After Wind"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "After Wind Chest Invisible",
+        "short_name": "After Wind",
+        "access_rules": [
+          "$oot|Shadow Temple After Wind Invisible"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Near Ship",
+        "short_name": "Near Boat",
+        "access_rules": [
+          "$oot|Shadow Temple GS Near Boat"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Shadow Temple Boss Key Room 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Spike Walls Left Chest",
+        "short_name": "Near Boss Key",
+        "access_rules": [
+          "$oot|Shadow Temple Boss Key Room 2"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Triple Giant Pot",
+        "short_name": "Triple Skull",
+        "access_rules": [
+          "$oot|Shadow Temple GS Triple Skull Pot"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Floormaster Chest",
+        "short_name": "Floormaster",
+        "access_rules": [
+          "$oot|Shadow Temple Invisible Floormaster"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hover Boots Chest",
+        "short_name": "Dead Hand 1",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Hover Boots Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Early Gibdos Chest",
+        "short_name": "Early Gibdos",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple First Gibdos Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Near Ship Invisible Chest",
+        "short_name": "Shortcut",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Boat Passage Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Blades Chests",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Second Silver Rupee Visible Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 2
+      },
+      {
+        "name": "Beamos Silver Rupees Chest",
+        "short_name": "Beamos Silvers",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Huge Pit Silver Rupee Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Falling Spikes Lower Chest",
+        "short_name": "Crusher Lower",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Spike Curtain Ground Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Falling Spikes Room",
+        "short_name": "Crusher",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple GS Spike Curtain"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Falling Spikes Upper Chests",
+        "short_name": "Crusher Upper",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Spike Curtain Upper Cage Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 2
+      },
+      {
+        "name": "Invisible Spikes Chest",
+        "short_name": "Invisible Spikes",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Invisible Spike Floor Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Stalfos Room Chest",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Stalfos Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wind Hint Chest",
+        "short_name": "Wind Hint",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Wind Hint Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Wind Hint Room",
+        "short_name": "Wind Hint",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple GS Wind Hint"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "After Wind Gibdos Chest",
+        "short_name": "After Wind",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple After Wind Gibdos Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "After Wind Bomb Chest",
+        "short_name": "After Wind",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple After Wind Bomb Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "GS After Wind",
+        "short_name": "After Wind",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple GS After Wind Bomb"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS After Ship",
+        "short_name": "After Ship",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple GS After Boat"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Spike Walls Left Chest",
+        "short_name": "Near Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Crushing Wall Left Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "short_name": "Triple Skull",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Triple Pot Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Flower Chest",
+        "short_name": "Dead Hand 2",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Hidden Dead Hand Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_ShadowTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Near Boss",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple GS Pre-Boss"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bongo Bongo",
+        "access_rules": [
+          "$oot|Shadow Temple Boss HC"
+        ],
+        "hosted_item": "shadow",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 430,
+        "y": 1350
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 430,
+        "y": 1350
+      }
+    ]
+  },
+  {
+    "name": "Spirit Temple",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Child Bridge Chest",
+        "short_name": "Child Left",
+        "access_rules": [
+          "$oot|Spirit Temple Child First Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Child Early Torches Chest",
+        "short_name": "Child Right",
+        "access_rules": [
+          "$oot|Spirit Temple Child Second Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Metal Fence",
+        "short_name": "Metal Fence",
+        "access_rules": [
+          "$oot|Spirit Temple GS Child Fence"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Child Climb Chests",
+        "short_name": "Child Climb",
+        "access_rules": [
+          "$oot|Spirit Temple Child Climb 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "GS Sun on Floor Room",
+        "short_name": "Child Climb",
+        "access_rules": [
+          "$oot|Spirit Temple GS Child Climb"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Sun Block Room Chest",
+        "short_name": "Sun Block",
+        "access_rules": [
+          "$oot|Spirit Temple Sun Block Room Torches"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Hall After Sun Block Room",
+        "short_name": "Before Knuckle",
+        "access_rules": [
+          "$oot|Spirit Temple GS Iron Knuckle"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Front Left Chest",
+        "short_name": "Entry Front Left",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Entrance Initial Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Back Left Chest",
+        "short_name": "Entry Back Left",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Lobby Back-Left Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Back Right Chest",
+        "short_name": "Entry Back Right",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Lobby Back-Right Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Enemy Chest",
+        "short_name": "Child Left",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Map Room Back Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Child Hammer Switch Chest",
+        "short_name": "Hammer Switch",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Paradox Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Block Hallway Chest",
+        "short_name": "Silver Block",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Silver Block Room Target Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Sun Block Room Chest",
+        "short_name": "Sun Block",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Sun Block Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Sun Block Room",
+        "short_name": "Sun Block",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple GS Sun Block Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Silver Gauntlets Chest",
+        "short_name": "Right Hand",
+        "access_rules": [
+          "$oot|Spirit Temple Silver Gauntlets"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Spirit Temple Statue Base"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$oot|Spirit Temple GS Statue"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Lullaby"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Early Adult Right Chest",
+        "short_name": "Boulders",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Silver Rupees"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Boulder Room",
+        "short_name": "Boulders",
+        "access_rules": [
+          "$oot|Spirit Temple GS Boulders"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Mirror Chests",
+        "short_name": "Mirror",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Suns on Wall 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Statue Room Hand Chest",
+        "short_name": "Statue Hand",
+        "access_rules": [
+          "$oot|Spirit Temple Statue Hands"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Statue Room Northeast Chest",
+        "short_name": "Statue Ledge",
+        "access_rules": [
+          "$oot|Spirit Temple Statue Upper Right"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Near Four Armos Chest",
+        "short_name": "Near Armos",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Late Sun on Wall"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hallway Invisible Chests",
+        "short_name": "Invisible Hallway",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Invisible 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Child Climb North Chest",
+        "short_name": "Child Climb Ground",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Child Upper Ground Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Child Climb South Chest",
+        "short_name": "Child Climb Ledge",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Child Upper Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Statue Room Lullaby Chest",
+        "short_name": "Statue Boxes",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Chest in Box"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Statue Room Invisible Chest",
+        "short_name": "Statue Ledge",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Statue Room Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Leever Room Chest",
+        "short_name": "Leever",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Purple Leever Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Leever Room",
+        "short_name": "Leever",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple GS Leever Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Symphony Room Chest",
+        "short_name": "Symphony",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Symphony Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Symphony Room",
+        "short_name": "Symphony",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple GS Symphony Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Front Right Chest",
+        "short_name": "Entry Front Right",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Lobby Front-Right Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Beamos Room Chest",
+        "short_name": "Beamos",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Beamos Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest Switch Chest",
+        "short_name": "Chest Switch",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Dinolfos Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Shield Chest",
+        "short_name": "Left Hand",
+        "access_rules": [
+          "$oot|Spirit Temple Mirror Shield"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Boss Key Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Topmost Chest",
+        "short_name": "Topmost Sun",
+        "access_rules": [
+          "$oot|Spirit Temple Adult Topmost Sun on Wall"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Nine Thrones Room North",
+        "short_name": "Iron Knuckle 1",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple GS Top Floor Left Wall"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Nine Thrones Room West",
+        "short_name": "Iron Knuckle 2",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple GS Top Floor Back Wall"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Puzzle Invisible Chest",
+        "short_name": "Mirror Puzzle",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Topmost Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Twinrova",
+        "access_rules": [
+          "$oot|Spirit Temple Boss HC"
+        ],
+        "hosted_item": "spirit",
+        "chest_unopened_img": "images/HC.png",
+        "chest_opened_img": "images/HC_grey.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 330,
+        "y": 1350
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 330,
+        "y": 1350
+      }
+    ]
+  },
+  {
+    "name": "Bottom of the Well",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Front Left Fake Wall Chest",
+        "short_name": "Front Hidden",
+        "access_rules": [
+          "$oot|Bottom of the Well Front West"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Right Bottom Fake Wall Chest",
+        "short_name": "Right Hidden",
+        "access_rules": [
+          "$oot|Bottom of the Well East"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Center Large",
+        "access_rules": [
+          "$oot|Bottom of the Well Compass"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Center Skulltula Chest",
+        "short_name": "Center Small",
+        "access_rules": [
+          "$oot|Bottom of the Well Blood Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS West Inner Room",
+        "short_name": "West Inner",
+        "access_rules": [
+          "$oot|Bottom of the Well GS Inner West"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS East Inner Room",
+        "short_name": "East Inner",
+        "access_rules": [
+          "$oot|Bottom of the Well GS Inner East"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Fire Keese Chest",
+        "access_rules": [
+          "$oot|Bottom of the Well Pits"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Like Like Chest",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$oot|Bottom of the Well East Cage"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Like Like Cage",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$oot|Bottom of the Well GS East Cage"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "short_name": "Coffin Key",
+        "access_rules": [
+          "$oot|Bottom of the Well Coffin"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Front Center Bombable Chest",
+        "short_name": "Front Bombable",
+        "access_rules": [
+          "$oot|Bottom of the Well Under Debris"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Back Left Bombable Chest",
+        "short_name": "Back Bombable",
+        "access_rules": [
+          "$oot|Bottom of the Well Back West"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "$oot|Bottom of the Well Map"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Left Chest",
+        "short_name": "Underwater Left",
+        "access_rules": [
+          "$oot|Bottom of the Well Underwater"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Front Chest",
+        "short_name": "Underwater Front",
+        "access_rules": [
+          "$oot|Bottom of the Well Underwater 2"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lens of Truth Chest",
+        "short_name": "Dead Hand",
+        "access_rules": [
+          "$oot|Bottom of the Well Lens"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Invisible Chest",
+        "access_rules": [
+          "$oot|Bottom of the Well Lens Side Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS West Inner Room",
+        "short_name": "West Inner",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well GS West Middle Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "East Inner Room Freestanding Key",
+        "short_name": "East Inner",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well East Middle Room Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Dead Hand",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Dead Hand Freestanding Key",
+        "short_name": "Dead Hand Key",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Dead Hand Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lens of Truth Chest",
+        "short_name": "Lens",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Lens Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_BottomoftheWell_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement",
+        "short_name": "Basement",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well GS Basement"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Coffin Room",
+        "short_name": "Coffin",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well GS Coffin Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 430,
+        "y": 1465
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 430,
+        "y": 1465
+      }
+    ]
+  },
+  {
+    "name": "Ganons Castle",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Forest Trial Chest",
+        "short_name": "Forest Trial",
+        "access_rules": [
+          "$oot|Ganon Castle Forest Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Trial Chests",
+        "short_name": "Water Trial",
+        "access_rules": [
+          "$oot|Ganon Castle Water Chest 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Shadow Trial Front Chest",
+        "short_name": "Shadow Trial 1",
+        "access_rules": [
+          "$oot|Ganon Castle Shadow Chest 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Shadow Trial Golden Gauntlets Chest",
+        "short_name": "Shadow Trial 2",
+        "access_rules": [
+          "$oot|Ganon Castle Shadow Chest 2"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Light Trial Chests",
+        "short_name": "Light Trial Front",
+        "access_rules": [
+          "$oot|Ganon Castle Light Chest Around 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 6
+      },
+      {
+        "name": "Light Trial Invisible Enemies Chest",
+        "short_name": "Light Trial Enemies",
+        "access_rules": [
+          "$oot|Ganon Castle Light Chest Center"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Light Trial Lullaby Chest",
+        "short_name": "Light Trial Lullaby",
+        "access_rules": [
+          "$oot|Ganon Castle Light Chest Lullaby"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial Crystal Switch Chest",
+        "short_name": "Spirit Trial 1",
+        "access_rules": [
+          "$oot|Ganon Castle Spirit Chest 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial Invisible Chest",
+        "short_name": "Spirit Trial 2",
+        "access_rules": [
+          "$oot|Ganon Castle Spirit Chest 2"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Deku Scrubs",
+        "access_rules": [
+          "$oot|Ganon Castle Left-Center Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_GanonCastle_false"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 4
+      },
+      {
+        "name": "Forest Trial Freestanding Key",
+        "short_name": "Forest Trial Key",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Forest Trial Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Forest Trial Eye Switch Chest",
+        "short_name": "Forest Trial 1",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Forest Trial First Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Forest Trial Frozen Eye Switch Chest",
+        "short_name": "Forest Trial 2",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Forest Trial Second Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Trial Chest",
+        "short_name": "Water Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Water Trial Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Shadow Trial Bomb Flower Chest",
+        "short_name": "Shadow Trial 1",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Shadow Trial Bomb Flower Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Shadow Trial Eye Switch Chest",
+        "short_name": "Shadow Trial 2",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Shadow Trial Switch Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Light Trial Lullaby Chest",
+        "short_name": "Light Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Light Trial Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial First Chest",
+        "short_name": "Spirit Trial 1",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Spirit Trial First Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial Invisible Chest",
+        "short_name": "Spirit Trial 2",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Spirit Trial Second Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial Sun Chests",
+        "short_name": "Spirit Trial Sun",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Spirit Trial Back Right Sun Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 4
+      },
+      {
+        "name": "Deku Scrubs",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Leftmost Scrub"
+        ],
+        "visibility_rules": [
+          "setting_scrubShuffleOot_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/deku_scrub.png",
+        "chest_opened_img": "images/deku_scrub_grey.png",
+        "clear_as_group": false,
+        "item_count": 5
+      },
+      {
+        "name": "Ganons Tower Boss Key Chest",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$oot|Ganon Castle Boss Key"
+        ],
+        "chest_unopened_img": "images/chest_golden_closed.png",
+        "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 530,
+        "y": 1350
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 530,
+        "y": 1350
+      }
+    ]
+  },
+  {
+    "name": "Gerudo Training Ground",
+    "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Lobby Chests",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Beamos Chest",
+        "short_name": "Beamos",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Lizalfos"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Stalfos Chest",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Stalfos"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Before Heavy Block Chest",
+        "short_name": "Wolfos",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Near Block"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Heavy Block Chests",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Behind Block Visible 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 3
+      },
+      {
+        "name": "Heavy Block Chest Invisible",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Behind Block Invisible"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Eye Statue Chest",
+        "short_name": "Eye Statue",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Eye Statue"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Near Scarecrow Chest",
+        "short_name": "Near Scarecrow",
+        "access_rules": [
+          "$oot|Gerudo Training Maze Upper Cage"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hammer Room Clear Chest",
+        "short_name": "Flaming Enemies",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Hammer Room"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Hammer Room Switch Chest",
+        "short_name": "Hammer Switch",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Hammer Room Switch"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Key",
+        "short_name": "Ledge Key",
+        "access_rules": [
+          "$oot|Gerudo Training Freestanding Key"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/small_key.png",
+        "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+      {
+        "name": "Maze Right Chests",
+        "short_name": "Maze Right",
+        "access_rules": [
+          "$oot|Gerudo Training Maze Side Chest 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Underwater Silver Rupee Chest",
+        "short_name": "Toilet",
+        "access_rules": [
+          "$oot|Gerudo Training Water"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hidden Ceiling Chest",
+        "short_name": "Hidden Ceiling",
+        "access_rules": [
+          "$oot|Gerudo Training Maze Upper Fake Ceiling"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path First Chest",
+        "short_name": "Maze 1",
+        "access_rules": [
+          "$oot|Gerudo Training Maze Chest 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Second Chest",
+        "short_name": "Maze 2",
+        "access_rules": [
+          "$oot|Gerudo Training Maze Chest 2"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Third Chest",
+        "short_name": "Maze 3",
+        "access_rules": [
+          "$oot|Gerudo Training Maze Chest 3"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Final Chest",
+        "short_name": "Ice Arrows",
+        "access_rules": [
+          "$oot|Gerudo Training Maze Chest 4"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lobby Chests",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Entryway Left Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "First Iron Knuckle Chest",
+        "short_name": "Knuckle 1",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Left Side Iron Knuckle Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Before Heavy Block Chest",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Stalfos Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Heavy Block Chest",
+        "short_name": "Freezards",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Silver Block Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eye Statue Chest",
+        "short_name": "Eye Statue",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Spinning Statue Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Second Iron Knuckle Chest",
+        "short_name": "Knuckle 2",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Torch Slug Room Clear Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Flame Circle Chest",
+        "short_name": "Flame Circle",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Torch Slug Room Switch Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Maze Right Chests",
+        "short_name": "Maze Right",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Right Side Middle Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Dinolfos Chest",
+        "short_name": "Dinolfos",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Right Side Dinolfos Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Silver Rupee Chest",
+        "short_name": "Toilet",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Water Room Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 1
+      },
+      {
+        "name": "Hidden Ceiling Chest",
+        "short_name": "Hidden Ceiling",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze First Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path First Chest",
+        "short_name": "Maze 1",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Second Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Second Chest",
+        "short_name": "Maze 2",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Third Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Maze Path Third Chest",
+        "short_name": "Maze 3",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Maze Fourth Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Ice Arrows Chest",
+        "short_name": "Ice Arrows",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Ice Arrows Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot_er_locations",
+        "size": 50,
+        "x": 330,
+        "y": 1465
+      },
+      {
+        "map": "oot_er_exits",
+        "size": 50,
+        "x": 330,
+        "y": 1465
+      }
+    ]
+  }
+]

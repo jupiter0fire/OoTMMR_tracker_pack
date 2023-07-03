@@ -1,0 +1,23 @@
+[
+    {
+        "name": "KF Outside Deku Tree -> Deku Tree Split",
+        "short_name": "Deku Tree",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "badge_size": 50,
+                "size": 50,
+                "x": 2420,
+                "y": 880
+            }
+        ]
+    }
+]
