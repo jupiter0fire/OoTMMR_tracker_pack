@@ -15,6 +15,13 @@ local OOTMM_SHARED = {
   ["NutsSticks"] = { "NUT", "STICK" },
   ["Ocarina"] = { "OCARINA" },
   ["Wallets"] = { "WALLET" },
+  ["MagicArrowFire"] = { "ARROW_FIRE" },
+  ["MagicArrowIce"] = { "ARROW_ICE" },
+  ["SongEpona"] = { "SONG_EPONA" },
+  ["SongStorms"] = { "SONG_STORMS" },
+  ["SongTime"] = { "SONG_TIME" },
+  ["Hookshot"] = { "HOOKSHOT" },
+  ["Lens"] = { "LENS" }
 }
 local OOTMM_SHARED_PREV = {
   ["BombBags"] = { 0 },
@@ -23,6 +30,13 @@ local OOTMM_SHARED_PREV = {
   ["NutsSticks"] = { 0, 0 },
   ["Ocarina"] = { 0 },
   ["Wallets"] = { 0 },
+  ["MagicArrowFire"] = { 0 },
+  ["MagicArrowIce"] = { 0 },
+  ["SongEpona"] = { 0 },
+  ["SongStorms"] = { 0 },
+  ["SongTime"] = { 0 },
+  ["Hookshot"] = { 0 },
+  ["Lens"] = { 0 }
 }
 local OOTMM_SKIP_STAGE = {
   ["fairyOcarinaMm_false"] = {
