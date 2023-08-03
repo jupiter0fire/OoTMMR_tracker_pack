@@ -13,15 +13,17 @@
       },
       {
         "img": "images/setting_goldSkulltulaTokens_dungeons.png",
+        "inherit_codes": false,
         "codes": "setting_goldSkulltulaTokens,setting_goldSkulltulaTokens_dungeons"
       },
       {
         "img": "images/setting_goldSkulltulaTokens_overworld.png",
+        "inherit_codes": false,
         "codes": "setting_goldSkulltulaTokens,setting_goldSkulltulaTokens_overworld"
       },
       {
         "img": "images/setting_goldSkulltulaTokens_all.png",
-        "codes": "setting_goldSkulltulaTokens,setting_goldSkulltulaTokens_all"
+        "codes": "setting_goldSkulltulaTokens,setting_goldSkulltulaTokens_dungeons,setting_goldSkulltulaTokens_overworld"
       }
     ]
   },
@@ -57,7 +59,7 @@
       {
         "img": "images/setting_smallKeyShuffleOot_ownDungeon.png",
         "codes": "setting_smallKeyShuffleOot,setting_smallKeyShuffleOot_ownDungeon",
-        "inherit_codes": false,
+
         "img_mods": "@disabled"
       },
       {
