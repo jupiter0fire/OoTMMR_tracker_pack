@@ -195,9 +195,18 @@
   },
   {
     "name": "Lens of Truth",
-    "type": "toggle",
-    "img": "images/lens.png",
-    "codes": "OOT_LENS"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/lens.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/lens.png",
+        "codes": "OOT_LENS"
+      }
+    ]
   },
   {
     "name": "Din's Fire",
@@ -585,11 +594,18 @@
   },
   {
     "name": "Epona's Song",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/song_epona.png",
-    "initial_active_state": false,
-    "codes": "OOT_SONG_EPONA"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/song_epona.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/song_epona.png",
+        "codes": "OOT_SONG_EPONA"
+      }
+    ]
   },
   {
     "name": "Epona's Song Check",
@@ -625,19 +641,33 @@
   },
   {
     "name": "Song of Time",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/song_time.png",
-    "initial_active_state": false,
-    "codes": "OOT_SONG_TIME"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/song_time.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/song_time.png",
+        "codes": "OOT_SONG_TIME"
+      }
+    ]
   },
   {
     "name": "Song of Storms",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/song_storms.png",
-    "initial_active_state": false,
-    "codes": "OOT_SONG_STORMS"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/song_storms.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/song_storms.png",
+        "codes": "OOT_SONG_STORMS"
+      }
+    ]
   },
   {
     "name": "Minuet of Forest",

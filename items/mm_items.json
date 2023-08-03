@@ -189,17 +189,33 @@
   },
   {
     "name": "MM Lens of Truth",
-    "type": "toggle",
-    "img": "images/items/mm_lens.png",
-    "codes": "MM_LENS"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_lens.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_lens.png",
+        "codes": "MM_LENS"
+      }
+    ]
   },
   {
     "name": "MM Song of Time",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/mm_songoftime.png",
-    "initial_active_state": false,
-    "codes": "MM_SONG_TIME"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_songoftime.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_songoftime.png",
+        "codes": "MM_SONG_TIME"
+      }
+    ]
   },
   {
     "name": "MM Song of Time Check",
@@ -227,10 +243,18 @@
   },
   {
     "name": "MM Epona's Song",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/mm_epona.png",
-    "codes": "MM_SONG_EPONA"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_epona.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_epona.png",
+        "codes": "MM_SONG_EPONA"
+      }
+    ]
   },
   {
     "name": "MM Epona's Song Check",
@@ -241,10 +265,18 @@
   },
   {
     "name": "MM Song of Storms",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/mm_songofstorms.png",
-    "codes": "MM_SONG_STORMS"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_songofstorms.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_songofstorms.png",
+        "codes": "MM_SONG_STORMS"
+      }
+    ]
   },
   {
     "name": "MM Song of Storms Check",

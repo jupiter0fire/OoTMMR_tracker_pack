@@ -49,7 +49,7 @@ local OOTMM_SKIP_STAGE = {
   },
   ["shortHookshotMm_false"] = {
     ["item"] = "MM_HOOKSHOT",
-    ["rule"] = function() return true end
+    ["rule"] = function() return Tracker:ProviderCountForCode("setting_sharedHookshot_false") > 0 end
   },
 }
 local OOTMM_SKIP_STAGE_PREV = {
