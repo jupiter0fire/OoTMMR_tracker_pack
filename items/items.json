@@ -73,9 +73,18 @@
   },
   {
     "name": "Fire Arrows",
-    "type": "toggle",
-    "img": "images/firearrow.png",
-    "codes": "OOT_ARROW_FIRE"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/firearrow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/firearrow.png",
+        "codes": "OOT_ARROW_FIRE"
+      }
+    ]
   },
   {
     "name": "Ice Arrows",
@@ -85,9 +94,18 @@
   },
   {
     "name": "Light Arrows",
-    "type": "toggle",
-    "img": "images/lightarrow.png",
-    "codes": "OOT_ARROW_LIGHT"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/lightarrow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/lightarrow.png",
+        "codes": "OOT_ARROW_LIGHT"
+      }
+    ]
   },
   {
     "name": "Magic Beans",

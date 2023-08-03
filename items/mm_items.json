@@ -25,9 +25,18 @@
   },
   {
     "name": "MM Fire Arrows",
-    "type": "toggle",
-    "img": "images/items/mm_firearrow.png",
-    "codes": "MM_ARROW_FIRE"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_firearrow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_firearrow.png",
+        "codes": "MM_ARROW_FIRE"
+      }
+    ]
   },
   {
     "name": "MM Ice Arrows",
@@ -37,9 +46,18 @@
   },
   {
     "name": "MM Light Arrows",
-    "type": "toggle",
-    "img": "images/items/mm_lightarrow.png",
-    "codes": "MM_ARROW_LIGHT"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_lightarrow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_lightarrow.png",
+        "codes": "MM_ARROW_LIGHT"
+      }
+    ]
   },
   {
     "name": "MM Magic Beans",
