@@ -661,7 +661,8 @@
               {
                 "name": "HF Ocarina of Time Item",
                 "access_rules": [
-                  "$oot|Hyrule Field Ocarina of Time"
+                  "$oot|Hyrule Field Ocarina of Time",
+                  "{}"
                 ],
                 "short_name": "Item",
                 "item_count": 1
@@ -670,7 +671,8 @@
                 "name": "Song from Ocarina of Time",
                 "short_name": "Song",
                 "access_rules": [
-                  "$oot|Hyrule Field Song of Time"
+                  "$oot|Hyrule Field Song of Time",
+                  "{}"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1505,7 +1507,8 @@
                 "name": "Kak 10 Gold Skulltula Reward",
                 "short_name": "10 Tokens",
                 "access_rules": [
-                  "$oot|Skulltula House 10 Tokens"
+                  "$oot|Skulltula House 10 Tokens",
+                  "{}"
                 ],
                 "item_count": 1
               },
@@ -1513,7 +1516,8 @@
                 "name": "Kak 20 Gold Skulltula Reward",
                 "short_name": "20 Tokens",
                 "access_rules": [
-                  "$oot|Skulltula House 20 Tokens"
+                  "$oot|Skulltula House 20 Tokens",
+                  "{}"
                 ],
                 "item_count": 1
               },
@@ -1521,7 +1525,8 @@
                 "name": "Kak 30 Gold Skulltula Reward",
                 "short_name": "30 Tokens",
                 "access_rules": [
-                  "$oot|Skulltula House 30 Tokens"
+                  "$oot|Skulltula House 30 Tokens",
+                  "{}"
                 ],
                 "item_count": 1
               },
@@ -1529,7 +1534,8 @@
                 "name": "Kak 40 Gold Skulltula Reward",
                 "short_name": "40 Tokens",
                 "access_rules": [
-                  "$oot|Skulltula House 40 Tokens"
+                  "$oot|Skulltula House 40 Tokens",
+                  "{}"
                 ],
                 "item_count": 1
               },
@@ -1537,7 +1543,8 @@
                 "name": "Kak 50 Gold Skulltula Reward",
                 "short_name": "50 Tokens",
                 "access_rules": [
-                  "$oot|Skulltula House 50 Tokens"
+                  "$oot|Skulltula House 50 Tokens",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -4699,7 +4706,8 @@
                   {
                     "name": "Stray Fairy",
                     "access_rules": [
-                      "$mm|Clock Town Great Fairy"
+                      "$mm|Clock Town Great Fairy",
+                      "{}"
                     ],
                     "item_count": 1
                   },
@@ -4708,7 +4716,8 @@
                     "chest_unopened_img": "images/system/chest_brown_closed.png",
                     "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
-                      "$mm|Clock Town Great Fairy Alt"
+                      "$mm|Clock Town Great Fairy Alt",
+                      "{}"
                     ],
                     "item_count": 1
                   }
@@ -6452,7 +6461,8 @@
                   {
                     "name": "15 Stray Fairies in Woodfall Temple",
                     "access_rules": [
-                      "$mm|Woodfall Great Fairy"
+                      "$mm|Woodfall Great Fairy",
+                      "{}"
                     ],
                     "item_count": 1
                   }
@@ -6812,7 +6822,8 @@
               {
                 "name": "Talk to him after opening the track",
                 "access_rules": [
-                  "$mm|Goron Powder Keg"
+                  "$mm|Goron Powder Keg",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -6959,7 +6970,8 @@
                   {
                     "name": "15 Stray Fairies in Snowhead Temple",
                     "access_rules": [
-                      "$mm|Snowhead Great Fairy"
+                      "$mm|Snowhead Great Fairy",
+                      "{}"
                     ],
                     "item_count": 1
                   }
@@ -7191,7 +7203,8 @@
                     "chest_unopened_img": "images/system/unknownsong.png",
                     "chest_opened_img": "images/system/unknownsong_check.png",
                     "access_rules": [
-                      "$mm|Laboratory Zora Song"
+                      "$mm|Laboratory Zora Song",
+                      "{}"
                     ],
                     "item_count": 1
                   }
@@ -7445,7 +7458,8 @@
                   {
                     "name": "15 Stray Fairies in Great Bay Temple",
                     "access_rules": [
-                      "$mm|Great Bay Great Fairy"
+                      "$mm|Great Bay Great Fairy",
+                      "{}"
                     ],
                     "item_count": 1
                   }
@@ -7467,14 +7481,16 @@
                   {
                     "name": "Beaver Brothers Race Prize",
                     "access_rules": [
-                      "$mm|Waterfall Rapids Beaver Race 1"
+                      "$mm|Waterfall Rapids Beaver Race 1",
+                      "{}"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Beaver Brothers Race Rematch",
                     "access_rules": [
-                      "$mm|Waterfall Rapids Beaver Race 2"
+                      "$mm|Waterfall Rapids Beaver Race 2",
+                      "{}"
                     ],
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
@@ -7936,7 +7952,8 @@
                       {
                         "name": "15 Stray Fairies in Stone Tower Temple",
                         "access_rules": [
-                          "$mm|Ikana Great Fairy"
+                          "$mm|Ikana Great Fairy",
+                          "{}"
                         ],
                         "item_count": 1
                       }

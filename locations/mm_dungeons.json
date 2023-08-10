@@ -16,7 +16,8 @@
         "chest_unopened_img": "images/system/unknownmask.png",
         "chest_opened_img": "images/system/unknownmask_grey.png",
         "access_rules": [
-          "$mm|Swamp Spider House Mask of Truth"
+          "$mm|Swamp Spider House Mask of Truth",
+          "{}"
         ],
         "item_count": 1
       },
@@ -343,7 +344,8 @@
       {
         "name": "Collect 30 Tokens",
         "access_rules": [
-          "$mm|Ocean Spider House Wallet"
+          "$mm|Ocean Spider House Wallet",
+          "{}"
         ],
         "item_count": 1
       },
@@ -915,7 +917,8 @@
         "chest_unopened_img": "images/system/unknownmask.png",
         "chest_opened_img": "images/system/unknownmask_grey.png",
         "access_rules": [
-          "$mm|Moon Fierce Deity Mask"
+          "$mm|Moon Fierce Deity Mask",
+          "{}"
         ],
         "item_count": 1
       },
