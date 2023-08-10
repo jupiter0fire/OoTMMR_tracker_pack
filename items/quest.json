@@ -24,19 +24,20 @@
         "codes": "OOT_WALLET,OOT_WALLET0"
       },
       {
-        "img": "images/items/mm_wallet.png",
-        "img_mods": "overlay|images/system/mm_overlay_99.png",
+        "img": "images/wallet.png",
         "codes": "OOT_WALLET1,OOT_WALLET"
       },
       {
-        "img": "images/items/mm_wallet.png",
-        "img_mods": "overlay|images/system/mm_overlay_200.png",
+        "img": "images/wallet1.png",
         "codes": "OOT_WALLET2,OOT_WALLET"
       },
       {
-        "img": "images/items/mm_wallet.png",
-        "img_mods": "overlay|images/system/mm_overlay_500_green.png",
+        "img": "images/wallet2.png",
         "codes": "OOT_WALLET3,OOT_WALLET"
+      },
+      {
+        "img": "images/wallet3.png",
+        "codes": "OOT_WALLET4,OOT_WALLET"
       }
     ]
   },

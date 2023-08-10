@@ -736,17 +736,19 @@
       {
         "img": "images/items/mm_wallet99.png",
         "img_mods": "overlay|images/system/mm_overlay_99.png",
-        "codes": "MM_WALLET1"
+        "codes": "MM_WALLET1,MM_WALLET"
       },
       {
-        "img": "images/items/mm_wallet.png",
-        "img_mods": "overlay|images/system/mm_overlay_200.png",
-        "codes": "MM_WALLET2"
+        "img": "images/wallet1.png",
+        "codes": "MM_WALLET2,MM_WALLET"
       },
       {
-        "img": "images/items/mm_giantwallet.png",
-        "img_mods": "overlay|images/system/mm_overlay_500_green.png",
-        "codes": "MM_WALLET3"
+        "img": "images/wallet2.png",
+        "codes": "MM_WALLET3,MM_WALLET"
+      },
+      {
+        "img": "images/wallet3.png",
+        "codes": "MM_WALLET4,MM_WALLET"
       }
     ]
   },
