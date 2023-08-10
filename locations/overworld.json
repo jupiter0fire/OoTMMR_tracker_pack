@@ -864,14 +864,16 @@
               {
                 "name": "Child Fishing",
                 "access_rules": [
-                  "$oot|Fishing Pond Child"
+                  "$oot|Fishing Pond Child",
+                  "{}"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Adult Fishing",
                 "access_rules": [
-                  "$oot|Fishing Pond Adult"
+                  "$oot|Fishing Pond Adult",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -3241,7 +3243,8 @@
               {
                 "name": "ZR Frogs Ocarina Game",
                 "access_rules": [
-                  "$oot|Zora River Frogs Game"
+                  "$oot|Zora River Frogs Game",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -4932,7 +4935,8 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "$mm|Stock Pot Inn Couple's Mask"
+                      "$mm|Stock Pot Inn Couple's Mask",
+                      "{}"
                     ],
                     "item_count": 1
                   },
@@ -5825,7 +5829,8 @@
               {
                 "name": "Night 1: 2:30 AM - 3:45 AM - Save the Cows",
                 "access_rules": [
-                  "$mm|Romani Ranch Aliens"
+                  "$mm|Romani Ranch Aliens",
+                  "{}"
                 ],
                 "item_count": 1
               },
@@ -5834,7 +5839,8 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "$mm|Romani Ranch Cremia Escort"
+                  "$mm|Romani Ranch Cremia Escort",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -6356,7 +6362,8 @@
                         "chest_unopened_img": "images/system/unknownmask.png",
                         "chest_opened_img": "images/system/unknownmask_grey.png",
                         "access_rules": [
-                          "$mm|Deku Shrine Mask of Scents"
+                          "$mm|Deku Shrine Mask of Scents",
+                          "{}"
                         ],
                         "item_count": 1
                       }
@@ -6514,7 +6521,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm|Mountain Village Frog Choir HP"
+                  "$mm|Mountain Village Frog Choir HP",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -6766,7 +6774,8 @@
               {
                 "name": "Win Race After Beating Snowhead Temple",
                 "access_rules": [
-                  "$mm|Goron Race Reward"
+                  "$mm|Goron Race Reward",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -7708,7 +7717,8 @@
               {
                 "name": "Defeat Big Poe",
                 "access_rules": [
-                  "$mm|Beneath The Graveyard Dampe Chest"
+                  "$mm|Beneath The Graveyard Dampe Chest",
+                  "{}"
                 ],
                 "item_count": 1
               }
