@@ -5371,14 +5371,14 @@
                   {
                     "name": "Gift From Kafei - Day 2: 4:30 PM",
                     "access_rules": [
-                      "$mm|Curiosity Shop Back Room Pendant of Memories"
+                      "$mm|Kafei Hideout Pendant of Memories"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Curiosity Shop Man Gifts - Final Day: 1 PM - 9 PM First Item",
                     "access_rules": [
-                      "$mm|Curiosity Shop Back Room Owner Reward 1"
+                      "$mm|Kafei Hideout Owner Reward 1"
                     ],
                     "item_count": 2
                   }
