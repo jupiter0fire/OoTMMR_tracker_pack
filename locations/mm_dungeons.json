@@ -692,7 +692,8 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "access_rules": [
-          "$mm|Ocean Spider House Chest HP"
+          "$mm|Ocean Spider House Chest HP",
+          "{}"
         ],
         "item_count": 1
       }
@@ -885,7 +886,8 @@
         "chest_unopened_img": "images/system/unknownsong.png",
         "chest_opened_img": "images/system/unknownsong_check.png",
         "access_rules": [
-          "$mm|Ancient Castle of Ikana Song Emptiness"
+          "$mm|Ancient Castle of Ikana Song Emptiness",
+          "{}"
         ],
         "item_count": 1
       },
@@ -1410,7 +1412,8 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Ice Arrows",
         "access_rules": [
-          "$mm|Great Bay Temple Ice Arrow"
+          "$mm|Great Bay Temple Ice Arrow",
+          "{}"
         ],
         "item_count": 1
       },

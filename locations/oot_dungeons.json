@@ -1783,7 +1783,8 @@
         "name": "Scarecrow Chest",
         "short_name": "Scarecrow",
         "access_rules": [
-          "$oot|Fire Temple Scarecrow Chest"
+          "$oot|Fire Temple Scarecrow Chest",
+          "{}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -1818,7 +1819,8 @@
         "name": "Megaton Hammer Chest",
         "short_name": "Hammer",
         "access_rules": [
-          "$oot|Fire Temple Hammer"
+          "$oot|Fire Temple Hammer",
+          "{}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -4244,7 +4246,8 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "$oot|Gerudo Training Water"
+          "$oot|Gerudo Training Water",
+          "{}"
         ],
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"

@@ -1435,7 +1435,8 @@
               {
                 "name": "Song",
                 "access_rules": [
-                  "$oot|Kakariko Song Shadow"
+                  "$oot|Kakariko Song Shadow",
+                  "{}"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -3212,7 +3213,8 @@
                 "name": "OGC Great Fairy Reward",
                 "short_name": "Reward",
                 "access_rules": [
-                  "$oot|Great Fairy Defense Upgrade"
+                  "$oot|Great Fairy Defense Upgrade",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -3515,14 +3517,16 @@
               {
                 "name": "ZD King Zora Thawed",
                 "access_rules": [
-                  "$oot|Zora Domain Tunic"
+                  "$oot|Zora Domain Tunic",
+                  "{}"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Prescription",
                 "access_rules": [
-                  "$oot|Zora Domain Eyeball Frog"
+                  "$oot|Zora Domain Eyeball Frog",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -4044,7 +4048,8 @@
           {
             "name": "GF HBA",
             "access_rules": [
-              "$oot|Gerudo Fortress Archery Reward 1"
+              "$oot|Gerudo Fortress Archery Reward 1",
+              "{}"
             ],
             "sections": [
               {
@@ -4182,7 +4187,8 @@
                 "name": "Wasteland Chest",
                 "short_name": "Chest",
                 "access_rules": [
-                  "$oot|Haunted Wasteland Chest"
+                  "$oot|Haunted Wasteland Chest",
+                  "{}"
                 ],
                 "item_count": 1
               },
@@ -4926,7 +4932,8 @@
                   {
                     "name": "Midnight Item From Anju - Night 1: 11:30 PM",
                     "access_rules": [
-                      "$mm|Stock Pot Inn Letter to Kafei"
+                      "$mm|Stock Pot Inn Letter to Kafei",
+                      "{}"
                     ],
                     "item_count": 1
                   },
@@ -4984,14 +4991,16 @@
                     "chest_unopened_img": "images/system/unknownmask.png",
                     "chest_opened_img": "images/system/unknownmask_grey.png",
                     "access_rules": [
-                      "$mm|Milk Bar Troupe Leader Mask"
+                      "$mm|Milk Bar Troupe Leader Mask",
+                      "{}"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Delivery To Madame Aroma - Final Night",
                     "access_rules": [
-                      "$mm|Milk Bar Madame Aroma Bottle"
+                      "$mm|Milk Bar Madame Aroma Bottle",
+                      "{}"
                     ],
                     "item_count": 1
                   },
@@ -5074,7 +5083,8 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm|Clock Town Bank Reward 3"
+                      "$mm|Clock Town Bank Reward 3",
+                      "{}"
                     ],
                     "item_count": 1
                   }
@@ -5862,7 +5872,8 @@
                 "chest_unopened_img": "images/system/unknownmask.png",
                 "chest_opened_img": "images/system/unknownmask_grey.png",
                 "access_rules": [
-                  "$mm|Cucco Shack Bunny Mask"
+                  "$mm|Cucco Shack Bunny Mask",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -6126,7 +6137,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm|Tourist Information Boat Cruise"
+                  "$mm|Tourist Information Boat Cruise",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -6582,14 +6594,16 @@
               {
                 "name": "Melt the ice and buy it for 100 Rupees - Day 1",
                 "access_rules": [
-                  "$mm|Blacksmith Razor Blade"
+                  "$mm|Blacksmith Razor Blade",
+                  "{}"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Show the Gold Dust - Day 2",
                 "access_rules": [
-                  "$mm|Blacksmith Gilded Sword"
+                  "$mm|Blacksmith Gilded Sword",
+                  "{}"
                 ],
                 "item_count": 1
               }
@@ -7136,7 +7150,8 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm|Great Bay Coast Fisherman HP"
+                      "$mm|Great Bay Coast Fisherman HP",
+                      "{}"
                     ],
                     "item_count": 1
                   }
@@ -7246,7 +7261,8 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm|Pinnacle Rock HP"
+                  "$mm|Pinnacle Rock HP",
+                  "{}"
                 ],
                 "item_count": 1
               },
