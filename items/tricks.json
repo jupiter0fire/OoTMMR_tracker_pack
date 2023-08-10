@@ -87,15 +87,15 @@
     "name": "Enter Child Zora's Domain with Cucco",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_oot_child_domain.png",
-    "codes": "TRICK_OOT_CHILD_DOMAIN"
+    "img": "images/trick_oot_domain_cucco.png",
+    "codes": "TRICK_OOT_DOMAIN_CUCCO"
   },
   {
-    "name": "Enter Adult Zora's Domain using Hover Boots",
+    "name": "Enter Zora's Domain using Hover Boots",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_oot_adult_domain.png",
-    "codes": "TRICK_OOT_ADULT_DOMAIN"
+    "img": "images/trick_oot_domain_hover.png",
+    "codes": "TRICK_OOT_DOMAIN_HOVER"
   },
   {
     "name": "Drain Water Temple using Longshot",
@@ -110,6 +110,20 @@
     "initial_active_state": false,
     "img": "images/trick_oot_sand_river_nothing.png",
     "codes": "TRICK_OOT_SAND_RIVER_NOTHING"
+  },
+  {
+    "name": "Break mud walls with blue fire arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_bfa_mudwalls.png",
+    "codes": "TRICK_OOT_BFA_MUDWALLS"
+  },
+  {
+    "name": "Access Jabu-Jabu Pre-Boss using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_jabu_boss_hover.png",
+    "codes": "TRICK_OOT_JABU_BOSS_HOVER"
   },
   {
     "name": "Enter Shadow Temple using Fire Arrows",
@@ -341,6 +355,20 @@
     "initial_active_state": false,
     "img": "images/trick_mm_post_office_game.png",
     "codes": "TRICK_MM_POST_OFFICE_GAME"
+  },
+  {
+    "name": "Access SHT Pillar Fireless with Precise Stick Run",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_sht_sticks_run.png",
+    "codes": "TRICK_MM_SHT_STICKS_RUN"
+  },
+  {
+    "name": "Snowhead Temple Skip Raising Pillar",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_sht_pillarless.png",
+    "codes": "TRICK_MM_SHT_PILLARLESS"
   },
   {
     "name": "Well's Hot Spring Water without Killing Dexihand",

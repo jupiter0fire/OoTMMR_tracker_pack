@@ -91,6 +91,11 @@
       },
       {
         "type": "item",
+        "item": "setting_blueFireArrows",
+        "height": 16
+      }
+      {
+        "type": "item",
         "item": "setting_agelessSwords",
         "height": 16
       },
@@ -357,12 +362,12 @@
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_CHILD_DOMAIN",
+        "item": "TRICK_OOT_DOMAIN_CUCCO",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_ADULT_DOMAIN",
+        "item": "TRICK_OOT_DOMAIN_HOVER",
         "height": 16
       },
       {
@@ -378,6 +383,16 @@
       {
         "type": "item",
         "item": "TRICK_OOT_DEAD_HAND_STICKS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_BFA_MUDWALLS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_JABU_BOSS_HOVER",
         "height": 16
       },
       {
@@ -505,6 +520,16 @@
       {
         "type": "item",
         "item": "TRICK_MM_PALACE_GUARD_SKIP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_SHT_STICKS_RUN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_SHT_PILLARLESS",
         "height": 16
       },
       {
