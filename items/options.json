@@ -1280,6 +1280,122 @@
     ]
   },
   {
+    "name": "OoT Shops Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceOotShops_affordable.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotShops_vanilla.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotShops_weighted.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotShops_random.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "OoT Scrubs Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceOotScrubs_affordable.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotScrubs_vanilla.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotScrubs_weighted.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotScrubs_random.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Shops Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceMmShops_affordable.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmShops_vanilla.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmShops_weighted.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmShops_random.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Tingle Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceMmTingle_affordable.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmTingle_vanilla.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmTingle_weighted.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmTingle_random.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Medallions",
     "type": "progressive",
     "allow_disabled": false,

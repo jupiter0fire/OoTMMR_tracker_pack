@@ -36,6 +36,16 @@
       },
       {
         "type": "item",
+        "item": "setting_priceOotShops",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_priceOotScrubs",
+        "height": 16
+      },   
+      {
+        "type": "item",
         "item": "setting_doorOfTime",
         "height": 16
       },
@@ -194,6 +204,16 @@
       {
         "type": "item",
         "item": "setting_shuffleMerchantsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_priceMmShops",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_priceMmTingle",
         "height": 16
       },
       {
