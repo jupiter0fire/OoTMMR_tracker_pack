@@ -40,9 +40,18 @@
   },
   {
     "name": "MM Ice Arrows",
-    "type": "toggle",
-    "img": "images/items/mm_icearrow.png",
-    "codes": "MM_ARROW_ICE"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_icearrow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_icearrow.png",
+        "codes": "MM_ARROW_ICE"
+      }
+    ]
   },
   {
     "name": "MM Light Arrows",

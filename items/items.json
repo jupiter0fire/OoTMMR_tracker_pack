@@ -88,9 +88,18 @@
   },
   {
     "name": "Ice Arrows",
-    "type": "toggle",
-    "img": "images/icearrow.png",
-    "codes": "OOT_ARROW_ICE"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/icearrow.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/icearrow.png",
+        "codes": "OOT_ARROW_ICE"
+      }
+    ]
   },
   {
     "name": "Light Arrows",
