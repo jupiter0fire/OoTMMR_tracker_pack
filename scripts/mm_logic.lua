@@ -398,6 +398,11 @@ function _mm_logic()
         ["progressiveShieldsOot_progressive"] = false,
         ["progressiveSwordsOot_goron"] = true,
         ["progressiveSwordsOot_progressive"] = false,
+        ["erBoss_none"] = true,
+        ["erDungeons_none"] = true,
+        ["erIndoors_none"] = true,
+        ["erRegions_none"] = true,
+        ["erIkanaCastle"] = false,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for
