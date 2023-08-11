@@ -19,6 +19,7 @@ function _mm_logic()
         OOTMM_DEBUG = OOTMM_DEBUG,
         MM_TIME_SLICES = MM_TIME_SLICES,
         MM_TIME_SLICES_INDEX = MM_TIME_SLICES_INDEX,
+        PRICE_HELPER = PRICE_HELPER,
         os = os,
         pairs = pairs,
         ipairs = ipairs,
@@ -513,6 +514,35 @@ function _mm_logic()
         OOTMM_RUNTIME_CURRENT_TIME = time_index
     end
 
+    local OOTMM_RANGE_TO_SETTING = {
+        OOT_SHOPS = "priceOotShops",
+        OOT_SCRUBS = "priceOotScrubs",
+        MM_SHOPS = "priceMmShops",
+        MM_SHOPS_EX = "priceMmShops",
+        MM_TINGLE = "priceMmTingle",
+    }
+    function price(range, id, value)
+        local price = PRICE_HELPER.default_prices[id + PRICE_HELPER.range_index[range]]
+
+        if not OOTMM_RANGE_TO_SETTING[range] then
+            print("price(): Unknown range " .. range)
+        end
+
+        if OOTMM_RANGE_TO_SETTING[range] then
+            if setting(OOTMM_RANGE_TO_SETTING[range], "affordable") then
+                price = 10
+            elseif setting(OOTMM_RANGE_TO_SETTING[range], "weighted") then
+                price = 0
+            elseif setting(OOTMM_RANGE_TO_SETTING[range], "random") then
+                price = 0
+            elseif not setting(OOTMM_RANGE_TO_SETTING[range], "vanilla") then
+                return true
+            end
+        end
+
+        return price <= value
+    end
+
     function trace(event, line)
         local s = debug.getinfo(2).short_src
         print(s .. ":" .. line)
@@ -575,7 +605,7 @@ function _mm_logic()
         return other_is_better
     end
 
-    local function check_rule(rule, earliest_time, used_events)
+    local function check_rule(node, earliest_time, used_events)
         -- Check the rule and return its result as well as all used events.
         OOTMM_RUNTIME_STATE["_check_rule_events_used"] = {}
         OOTMM_RUNTIME_STATE["_check_rule_mm_time_used"] = false
@@ -586,12 +616,34 @@ function _mm_logic()
 
         -- Find the earliest time for which the rule is true by iterating over all possible times, starting at the previous earliest_time.
         set_time(earliest_time)
-        local result = rule()
+        local result = node.rule()
 
-        while not result and OOTMM_RUNTIME_STATE["_check_rule_mm_time_used"] and earliest_time < #MM_TIME_SLICES do
+        -- Make sure we're actually allowed to stay in this time slice.
+        -- node.mm_stay is a dict with time slice keys with further rules for each of them.
+        -- If node.mm_stay is nil, or node.mm_stay[earliest_time] is nil, there are no restrictions.
+        -- if node.mm_stay[earliest_time]() is true, we can stay.
+        -- If node.mm_stay[earliest_time]() is false, we're not allowed to stay.
+        -- if node.mm_stay then
+        --     print("mm_stay", earliest_time, node.mm_stay)
+        --     for k, v in pairs(node.mm_stay) do
+        --         print(k, v)
+        --     end
+        --     -- -- print("mm_stay", earliest_time, node.mm_stay[earliest_time])
+        -- end
+
+        local can_stay = (not node.mm_stay or not node.mm_stay[MM_TIME_SLICES[earliest_time]] or node.mm_stay[MM_TIME_SLICES[earliest_time]]())
+        result = result and can_stay
+
+        -- FIXME: If this is false because of an mm_stay rule, we should not try to increase earliest_time in the loop below, but abort here! (this is fixed, but doesn't actually fix the logic - there's a new problem now!)
+
+        -- FIXME: We'll probably need to start saving all time slices for which the current place/location/whatever is true. Keeping track of only the earliest one is not enough anymore ever since "stay" was added to the randomizer's logic.
+
+        while can_stay and not result and OOTMM_RUNTIME_STATE["_check_rule_mm_time_used"] and earliest_time < #MM_TIME_SLICES do
             earliest_time = earliest_time + 1
             set_time(earliest_time)
-            result = rule()
+            result = node.rule()
+            can_stay = (not node.mm_stay or not node.mm_stay[MM_TIME_SLICES[earliest_time]] or node.mm_stay[MM_TIME_SLICES[earliest_time]]())
+            result = result and can_stay
         end
 
         -- Try to find events used even for rules like this (an exit):
@@ -601,8 +653,8 @@ function _mm_logic()
         -- node at DAY3_AM_06_00, we will never trigger the BUY_KEG event check.
         --
         -- TODO: Make sure there is no combination of rules for which this STILL won't return used events...
-        set_time(-1)            -- Make all time checks return false
-        local _ignored = rule() -- We don't care about the result, we just want to check which events were used.
+        set_time(-1)                 -- Make all time checks return false
+        local _ignored = node.rule() -- We don't care about the result, we just want to check which events were used.
 
         if not result then
             earliest_time = nil
@@ -652,12 +704,12 @@ function _mm_logic()
 
             if current.child then
                 set_age("child")
-                active.child, earliest_child, events_used, mm_time_used_child = check_rule(current.rule, current.child,
+                active.child, earliest_child, events_used, mm_time_used_child = check_rule(current, current.child,
                     events_used)
             end
             if current.adult then
                 set_age("adult")
-                active.adult, earliest_adult, events_used, mm_time_used_adult = check_rule(current.rule, current.adult,
+                active.adult, earliest_adult, events_used, mm_time_used_adult = check_rule(current, current.adult,
                     events_used)
             end
 
@@ -671,6 +723,13 @@ function _mm_logic()
                     local saved_place = result.places_available[current.name]
                     if place_logic and (saved_place == nil or update_node_if_better(saved_place, activated_current)) then
                         for new_type, new_rules in pairs(place_logic) do
+                            if new_type ~= "exits" and new_type ~= "events" and new_type ~= "locations" then
+                                -- Ignore anything but these three; they're special cases.
+                                -- At the time of writing, the only other type is "mm_stay",
+                                -- but reversing this rule would potentially lead to problems
+                                -- in the future.
+                                goto continue
+                            end
                             for new_name, new_rule in pairs(new_rules) do
                                 local node = new_node(activated_current)
                                 node.type = string.sub(new_type, 1, -2) -- exits -> exit; events -> event; locations -> location
@@ -678,9 +737,11 @@ function _mm_logic()
                                 node.rule = new_rule
                                 node.child = earliest_child
                                 node.adult = earliest_adult
+                                node.mm_stay = place_logic["stay"] -- nil is fine here
 
                                 SearchQueue:push(node)
                             end
+                            ::continue::
                         end
                     end
                     if saved_place == nil then
@@ -733,6 +794,10 @@ function _mm_logic()
 		return mm_time('before', x)
 	end
 
+	function between(a, b)
+		return after(a) and before(b)
+	end
+
 	function is_day1()
 		return before(NIGHT1_PM_06_00)
 	end
@@ -781,12 +846,32 @@ function _mm_logic()
 		return after(NIGHT1_AM_12_00) and before(DAY2_AM_06_00) or (after(NIGHT2_AM_12_00) and before(DAY3_AM_06_00)) or after(NIGHT3_AM_12_00)
 	end
 
+	function can_play_sun()
+		return can_play(SONG_SUN) or can_play(SHARED_SONG_SUN)
+	end
+
+	function can_play_time()
+		return can_play(SONG_TIME) or can_play(SHARED_SONG_TIME)
+	end
+
+	function can_play_epona()
+		return can_play(SONG_EPONA) or can_play(SHARED_SONG_EPONA)
+	end
+
+	function can_play_storms()
+		return can_play(SONG_STORMS) or can_play(SHARED_SONG_STORMS)
+	end
+
 	function has_bottle()
 		return has('BOTTLE_EMPTY') or has('BOTTLE_POTION_RED') or has('BOTTLE_MILK') or event('GOLD_DUST_USED') or has('BOTTLE_CHATEAU')
 	end
 
+	function has_ocarina_n(x)
+		return has('OCARINA', x) or has('SHARED_OCARINA', x)
+	end
+
 	function has_ocarina()
-		return cond(setting('sharedOcarina'), cond(setting('fairyOcarinaMm'), has('OCARINA'), has('OCARINA', 2)), has('OCARINA'))
+		return cond(setting('sharedOcarina'), cond(setting('fairyOcarinaMm'), has_ocarina_n(1), has_ocarina_n(2)), has_ocarina_n(1))
 	end
 
 	function can_play(song)
@@ -794,7 +879,7 @@ function _mm_logic()
 	end
 
 	function can_break_boulders()
-		return has_explosives() or has('MASK_GORON')
+		return has_explosives() or has_mask_goron()
 	end
 
 	function can_use_lens()
@@ -802,7 +887,7 @@ function _mm_logic()
 	end
 
 	function can_use_lens_strict()
-		return has_magic() and has('LENS')
+		return has_magic() and (has('LENS') or has('SHARED_LENS'))
 	end
 
 	function has_explosives()
@@ -810,15 +895,15 @@ function _mm_logic()
 	end
 
 	function can_use_fire_arrows()
-		return has_magic() and has_arrows() and has('ARROW_FIRE')
+		return has_magic() and has_arrows() and (has('ARROW_FIRE') or has('SHARED_ARROW_FIRE'))
 	end
 
 	function can_use_ice_arrows()
-		return has_magic() and has_arrows() and has('ARROW_ICE')
+		return has_magic() and has_arrows() and (has('ARROW_ICE') or has('SHARED_ARROW_ICE'))
 	end
 
 	function can_use_light_arrows()
-		return has_magic() and has_arrows() and has('ARROW_LIGHT')
+		return has_magic() and has_arrows() and (has('ARROW_LIGHT') or has('SHARED_ARROW_LIGHT'))
 	end
 
 	function can_use_keg()
@@ -834,15 +919,19 @@ function _mm_logic()
 	end
 
 	function can_use_elegy2()
-		return can_play(SONG_EMPTINESS) and (has('MASK_ZORA') or has('MASK_GORON'))
+		return can_play(SONG_EMPTINESS) and (has_mask_zora() or has_mask_goron())
 	end
 
 	function can_use_elegy3()
-		return can_play(SONG_EMPTINESS) and has('MASK_ZORA') and has('MASK_GORON')
+		return can_play(SONG_EMPTINESS) and has_mask_zora() and has_mask_goron()
+	end
+
+	function has_bomb_bag()
+		return has('BOMB_BAG') or has('SHARED_BOMB_BAG')
 	end
 
 	function has_bombchu()
-		return has('BOMB_BAG') and (renewable(BOMBCHU) or renewable(BOMBCHU_5) or renewable(BOMBCHU_10) or renewable(BOMBCHU_20))
+		return has_bomb_bag() and (renewable(BOMBCHU) or renewable(BOMBCHU_5) or renewable(BOMBCHU_10) or renewable(BOMBCHU_20))
 	end
 
 	function has_beans()
@@ -854,7 +943,7 @@ function _mm_logic()
 	end
 
 	function can_use_beans()
-		return has_beans() and (has_bottle() or can_play(SONG_STORMS))
+		return has_beans() and (has_bottle() or can_play_storms())
 	end
 
 	function scarecrow_hookshot_short()
@@ -866,7 +955,7 @@ function _mm_logic()
 	end
 
 	function goron_fast_roll()
-		return has('MASK_GORON') and has_magic()
+		return has_mask_goron() and has_magic()
 	end
 
 	function can_use_deku_bubble()
@@ -874,7 +963,7 @@ function _mm_logic()
 	end
 
 	function has_weapon_range()
-		return has_arrows() or can_hookshot_short() or has('MASK_ZORA') or can_use_deku_bubble()
+		return has_arrows() or can_hookshot_short() or has_mask_zora() or can_use_deku_bubble()
 	end
 
 	function has_paper()
@@ -882,7 +971,7 @@ function _mm_logic()
 	end
 
 	function can_fight()
-		return has_weapon() or has('MASK_ZORA') or has('MASK_GORON')
+		return has_weapon() or has_mask_zora() or has_mask_goron()
 	end
 
 	function has_goron_song_half()
@@ -894,11 +983,11 @@ function _mm_logic()
 	end
 
 	function can_lullaby_half()
-		return has_ocarina() and has_goron_song_half() and has('MASK_GORON')
+		return has_ocarina() and has_goron_song_half() and has_mask_goron()
 	end
 
 	function can_lullaby()
-		return has_ocarina() and has_goron_song() and has('MASK_GORON')
+		return has_ocarina() and has_goron_song() and has_mask_goron()
 	end
 
 	function has_shield()
@@ -906,31 +995,39 @@ function _mm_logic()
 	end
 
 	function can_activate_crystal()
-		return can_break_boulders() or has_weapon() or has_arrows() or can_hookshot_short() or has('MASK_DEKU') or has('MASK_ZORA')
+		return can_break_boulders() or has_weapon() or has_arrows() or can_hookshot_short() or has('MASK_DEKU') or has_mask_zora()
 	end
 
 	function can_evade_gerudo()
-		return has_arrows() or can_hookshot_short() or has('MASK_ZORA') or has('MASK_STONE')
+		return has_arrows() or can_hookshot_short() or has_mask_zora() or has('MASK_STONE')
 	end
 
-	function has_hot_water()
+	function has_hot_water_mtn()
 		return event('GORON_GRAVEYARD_HOT_WATER') or event('TWIN_ISLANDS_HOT_WATER')
 	end
 
 	function has_hot_water_distance()
-		return can_soar() and (event('GORON_GRAVEYARD_HOT_WATER') or event('TWIN_ISLANDS_HOT_WATER') or event('WELL_HOT_WATER'))
+		return can_play(SONG_SOARING) and (event('GORON_GRAVEYARD_HOT_WATER') or event('TWIN_ISLANDS_HOT_WATER') or event('WELL_HOT_WATER'))
+	end
+
+	function has_hot_water_er()
+		return (event('GORON_GRAVEYARD_HOT_WATER') or event('TWIN_ISLANDS_HOT_WATER') or event('WELL_HOT_WATER')) and er_enabled()
 	end
 
 	function can_goron_bomb_jump()
-		return trick('MM_GORON_BOMB_JUMP') and has('MASK_GORON') and (has_bombs() or trick_keg_explosives())
+		return trick('MM_GORON_BOMB_JUMP') and has_mask_goron() and (has_bombs() or trick_keg_explosives())
+	end
+
+	function can_hookshot_n(x)
+		return has('HOOKSHOT', x) or has('SHARED_HOOKSHOT', x)
 	end
 
 	function can_hookshot_short()
-		return has('HOOKSHOT')
+		return can_hookshot_n(1)
 	end
 
 	function can_hookshot()
-		return cond(setting('shortHookshotMm'), has('HOOKSHOT', 2), has('HOOKSHOT'))
+		return cond(setting('shortHookshotMm'), can_hookshot_n(2), can_hookshot_n(1))
 	end
 
 	function has_blue_potion()
@@ -958,35 +1055,43 @@ function _mm_logic()
 	end
 
 	function trick_sht_fireless()
-		return has_hot_water_distance() and trick('MM_SHT_FIRELESS')
+		return (has_hot_water_distance() and has('OWL_SNOWHEAD') or has_hot_water_er()) and trick('MM_SHT_FIRELESS')
+	end
+
+	function trick_sht_fireless_er()
+		return has_hot_water_er() and trick('MM_SHT_FIRELESS')
 	end
 
 	function can_reset_time_on_moon()
-		return can_play(SONG_TIME) or (setting('majoraChild', 'none') and event('MAJORA') and trick('MM_MAJORA_LOGIC'))
+		return can_play_time() or (setting('majoraChild', 'none') and event('MAJORA') and trick('MM_MAJORA_LOGIC'))
 	end
 
 	function can_reset_time()
-		return can_play(SONG_TIME) or (event('MAJORA') and trick('MM_MAJORA_LOGIC'))
+		return can_play_time() or (event('MAJORA') and trick('MM_MAJORA_LOGIC'))
 	end
 
 	function has_sticks()
-		return event('STICKS') or renewable(STICK) or renewable(STICKS_5) or renewable(STICKS_10) or (setting('sharedNutsSticks') and event('OOT_STICKS'))
+		return event('STICKS') or renewable(STICK) or renewable(SHARED_STICK) or renewable(SHARED_STICKS_5) or renewable(SHARED_STICKS_10) or (setting('sharedNutsSticks') and event('OOT_STICKS'))
 	end
 
 	function has_nuts()
-		return event('NUTS') or renewable(NUT) or renewable(NUTS_5) or renewable(NUTS_10) or (setting('sharedNutsSticks') and event('OOT_NUTS'))
+		return event('NUTS') or renewable(NUT) or renewable(NUTS_5) or renewable(NUTS_10) or renewable(SHARED_NUT) or renewable(SHARED_NUTS_5) or renewable(SHARED_NUTS_10) or (setting('sharedNutsSticks') and event('OOT_NUTS'))
+	end
+
+	function has_bow()
+		return has('BOW') or has('SHARED_BOW')
 	end
 
 	function has_arrows()
-		return has('BOW') and (event('ARROWS') or renewable(ARROWS_5) or renewable(ARROWS_10) or renewable(ARROWS_30) or renewable(ARROWS_40))
+		return has_bow() and (event('ARROWS') or renewable(ARROWS_10) or renewable(ARROWS_30) or renewable(ARROWS_40) or renewable(SHARED_ARROWS_5) or renewable(SHARED_ARROWS_10) or renewable(SHARED_ARROWS_30) or renewable(SHARED_ARROWS_40))
 	end
 
 	function has_bombs()
-		return has('BOMB_BAG') and (event('BOMBS') or renewable(BOMBS_5) or renewable(BOMBS_10) or renewable(BOMBS_20) or renewable(BOMBS_30))
+		return has_bomb_bag() and (event('BOMBS') or renewable(BOMBS_5) or renewable(BOMBS_10) or renewable(BOMBS_20) or renewable(BOMBS_30) or renewable(SHARED_BOMBS_5) or renewable(SHARED_BOMBS_10) or renewable(SHARED_BOMBS_20) or renewable(SHARED_BOMBS_30))
 	end
 
 	function has_magic()
-		return has('MAGIC_UPGRADE') and (event('MAGIC') or has_green_potion() or has_blue_potion() or event('CHATEAU'))
+		return (has('MAGIC_UPGRADE') or has('SHARED_MAGIC_UPGRADE')) and (event('MAGIC') or has_green_potion() or has_blue_potion() or event('CHATEAU'))
 	end
 
 	function has_rupees()
@@ -1029,24 +1134,28 @@ function _mm_logic()
 		return event('BOMBERS_NORTH3') and event('BOMBERS_EAST3') and event('BOMBERS_WEST3')
 	end
 
-	function can_soar()
-		return has_ocarina() and has('SONG_SOARING') and (has('OWL_CLOCK_TOWN') or has('OWL_MILK_ROAD') or has('OWL_SOUTHERN_SWAMP') or has('OWL_WOODFALL') or has('OWL_MOUNTAIN_VILLAGE') or has('OWL_SNOWHEAD') or has('OWL_GREAT_BAY') or has('OWL_ZORA_CAPE') or has('OWL_IKANA_CANYON') or has('OWL_STONE_TOWER'))
-	end
-
-	function can_oot_warp()
-		return setting('crossWarpOot') and has_ocarina() and (has('OOT_SONG_TP_LIGHT') or has('OOT_SONG_TP_FOREST') or has('OOT_SONG_TP_FIRE') or has('OOT_SONG_TP_WATER') or has('OOT_SONG_TP_SPIRIT') or has('OOT_SONG_TP_SHADOW'))
-	end
-
-	function can_warp()
-		return can_soar() or can_oot_warp()
-	end
-
 	function has_wallet(n)
-		return cond(setting('childWallets'), has('WALLET', n), has('WALLET', n - 1))
+		return cond(setting('childWallets'), has('WALLET', n) or has('SHARED_WALLET', n), has('WALLET', n - 1) or has('SHARED_WALLET', n - 1))
 	end
 
 	function can_use_wallet(n)
-		return event('RUPEES') and has_wallet(n)
+		return has_rupees() and has_wallet(n)
+	end
+
+	function wallet_price(range, id)
+		return price(range, id, 0) or (has_rupees() and (price(range, id, 99) and has_wallet(1) or (price(range, id, 200) and has_wallet(2)) or (price(range, id, 500) and has_wallet(3)) or (setting('colossalWallets') and price(range, id, 999) and has_wallet(4)) or (setting('bottomlessWallets') and price(range, id, 9999) and has_wallet(5))))
+	end
+
+	function shop_price(id)
+		return wallet_price(MM_SHOPS, id)
+	end
+
+	function shop_ex_price(id)
+		return wallet_price(MM_SHOPS_EX, id)
+	end
+
+	function tingle_price(id)
+		return wallet_price(MM_TINGLE, id)
 	end
 
 	function boss_key(x)
@@ -1055,6 +1164,30 @@ function _mm_logic()
 
 	function small_keys(x, count)
 		return setting('smallKeyShuffleMm', 'removed') or has(x, count)
+	end
+
+	function has_mask_bunny()
+		return has('MASK_BUNNY') or has('SHARED_MASK_BUNNY')
+	end
+
+	function has_mask_truth()
+		return has('MASK_TRUTH') or has('SHARED_MASK_TRUTH')
+	end
+
+	function has_mask_keaton()
+		return has('MASK_KEATON') or has('SHARED_MASK_KEATON')
+	end
+
+	function has_mask_zora()
+		return has('MASK_ZORA') or has('SHARED_MASK_ZORA')
+	end
+
+	function has_mask_goron()
+		return has('MASK_GORON') or has('SHARED_MASK_GORON')
+	end
+
+	function er_enabled()
+		return not setting('erDungeons', 'none') or not setting('erIndoors', 'none') or (not setting('erRegions', 'none')) or (not setting('erBoss', 'none'))
 	end
 
 
@@ -1163,7 +1296,7 @@ function _mm_logic()
     },
     ["Beneath the Well North Section"] = {
         ["events"] = {
-            ["WELL_HOT_WATER"] = function () return event('FISH') and (has_explosives() or has('MASK_ZORA') or trick_keg_explosives() or trick('MM_WELL_HSW')) end,
+            ["WELL_HOT_WATER"] = function () return event('FISH') and (has_explosives() or has_mask_zora() or trick_keg_explosives() or trick('MM_WELL_HSW')) end,
             ["WATER"] = function () return true end,
             ["FISH"] = function () return true end,
             ["BUGS"] = function () return event('WATER') and (can_use_fire_arrows() or has_sticks()) end,
@@ -1192,7 +1325,7 @@ function _mm_logic()
             ["BUGS"] = function () return has_bottle() end,
         },
         ["locations"] = {
-            ["Beneath the Well Cow"] = function () return (event('WELL_HOT_WATER') or has_hot_water_distance()) and can_play(SONG_EPONA) end,
+            ["Beneath the Well Cow"] = function () return (event('WELL_HOT_WATER') or (has_hot_water_distance() and has('OWL_IKANA_CANYON')) or has_hot_water_er()) and can_play_epona() end,
         },
     },
     ["Beneath the Well Middle Section"] = {
@@ -1238,20 +1371,20 @@ function _mm_logic()
     },
     ["Great Bay Temple"] = {
         ["exits"] = {
-            ["Great Bay Temple Entrance"] = function () return can_play(SONG_TIME) or ((can_hookshot() or can_oot_warp()) and event('MAJORA') and trick('MM_MAJORA_LOGIC')) end,
+            ["Great Bay Temple Entrance"] = function () return can_reset_time() end,
             ["Zora Cape Peninsula"] = function () return can_hookshot() end,
         },
     },
     ["Great Bay Temple Entrance"] = {
         ["events"] = {
-            ["ARROWS"] = function () return can_hookshot() or can_oot_warp() end,
-            ["BOMBS"] = function () return can_hookshot() or can_oot_warp() end,
-            ["RUPEES"] = function () return can_hookshot() or can_oot_warp() end,
+            ["ARROWS"] = function () return true end,
+            ["BOMBS"] = function () return true end,
+            ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
             ["Great Bay Temple Entrance"] = function () return true end,
             ["Great Bay Temple Water Wheel"] = function () return true end,
-            ["Great Bay Temple Boss"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_GYORG') end,
+            ["Great Bay Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_GYORG') end,
         },
         ["locations"] = {
             ["Great Bay Temple Entrance Chest"] = function () return has_sticks() or can_use_fire_arrows() end,
@@ -1263,10 +1396,10 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Great Bay Temple Entrance"] = function () return true end,
-            ["Great Bay Temple Central Room"] = function () return has('MASK_ZORA') end,
+            ["Great Bay Temple Central Room"] = function () return has_mask_zora() end,
         },
         ["locations"] = {
-            ["Great Bay Temple SF Water Wheel Platform"] = function () return has('MASK_ZORA') or (has('MASK_GREAT_FAIRY') and (has_arrows() or can_hookshot())) end,
+            ["Great Bay Temple SF Water Wheel Platform"] = function () return has_mask_zora() or (has('MASK_GREAT_FAIRY') and (has_arrows() or can_hookshot())) end,
             ["Great Bay Temple SF Water Wheel Skulltula"] = function () return true end,
         },
     },
@@ -1281,12 +1414,12 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Great Bay Temple SF Central Room Barrel"] = function () return true end,
-            ["Great Bay Temple SF Central Room Underwater Pot"] = function () return has('MASK_ZORA') or (has_arrows() and has('MASK_GREAT_FAIRY')) end,
+            ["Great Bay Temple SF Central Room Underwater Pot"] = function () return has_mask_zora() or (has_arrows() and has('MASK_GREAT_FAIRY')) end,
         },
     },
     ["Great Bay Temple Map Room"] = {
         ["events"] = {
-            ["MAGIC"] = function () return can_hookshot() or can_oot_warp() end,
+            ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
             ["Great Bay Temple Baba Room"] = function () return true end,
@@ -1307,7 +1440,7 @@ function _mm_logic()
     },
     ["Great Bay Temple Compass Room"] = {
         ["events"] = {
-            ["MAGIC"] = function () return can_hookshot() or can_oot_warp() end,
+            ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
             ["Great Bay Temple Baba Room"] = function () return true end,
@@ -1331,7 +1464,7 @@ function _mm_logic()
     },
     ["Great Bay Temple Ice Arrow Room"] = {
         ["events"] = {
-            ["MAGIC"] = function () return (has_weapon() or has('MASK_ZORA') or has('MASK_DEKU') or has_explosives()) and (can_hookshot() or can_oot_warp()) end,
+            ["MAGIC"] = function () return has_weapon() or has_mask_zora() or has('MASK_DEKU') or has_explosives() end,
         },
         ["exits"] = {
             ["Great Bay Temple Red Pipe 1"] = function () return true end,
@@ -1343,7 +1476,7 @@ function _mm_logic()
     ["Great Bay Temple Red Pipe 2"] = {
         ["events"] = {
             ["GB_PIPE_RED2"] = function () return can_use_ice_arrows() end,
-            ["MAGIC"] = function () return can_hookshot() or can_oot_warp() end,
+            ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
             ["Great Bay Temple Map Room"] = function () return true end,
@@ -1396,16 +1529,21 @@ function _mm_logic()
     ["Great Bay Temple Pre-Boss"] = {
         ["exits"] = {
             ["Great Bay Temple Central Room"] = function () return true end,
-            ["Great Bay Temple Boss"] = function () return boss_key(BOSS_KEY_GB) and event('GB_PIPE_GREEN') and event('GB_PIPE_GREEN2') end,
+            ["Great Bay Temple Boss Access"] = function () return boss_key(BOSS_KEY_GB) and event('GB_PIPE_GREEN') and event('GB_PIPE_GREEN2') end,
         },
         ["locations"] = {
             ["Great Bay Temple SF Pre-Boss Above Water"] = function () return can_use_ice_arrows() or (has('MASK_GREAT_FAIRY') and (has_arrows() or can_hookshot())) end,
             ["Great Bay Temple SF Pre-Boss Underwater"] = function () return true end,
         },
     },
+    ["Great Bay Temple Boss Access"] = {
+        ["exits"] = {
+            ["Great Bay Temple Boss"] = function () return true end,
+        },
+    },
     ["Great Bay Temple Boss"] = {
         ["exits"] = {
-            ["Great Bay Temple After Boss"] = function () return has_magic() and (has('MASK_ZORA') and has_arrows() or has('MASK_FIERCE_DEITY')) end,
+            ["Great Bay Temple After Boss"] = function () return has_magic() and (has_mask_zora() and has_arrows() or has('MASK_FIERCE_DEITY')) end,
         },
     },
     ["Great Bay Temple After Boss"] = {
@@ -1470,13 +1608,13 @@ function _mm_logic()
     },
     ["Moon Trial Zora"] = {
         ["events"] = {
-            ["MOON_TRIAL_ZORA"] = function () return has('MASK_ZORA') end,
+            ["MOON_TRIAL_ZORA"] = function () return has_mask_zora() end,
         },
         ["exits"] = {
             ["Moon"] = function () return true end,
         },
         ["locations"] = {
-            ["Moon Trial Zora HP"] = function () return has('MASK_ZORA') end,
+            ["Moon Trial Zora HP"] = function () return has_mask_zora() end,
         },
     },
     ["Moon Trial Link Entrance"] = {
@@ -1521,13 +1659,13 @@ function _mm_logic()
     },
     ["Moon Boss"] = {
         ["events"] = {
-            ["MAJORA_PHASE_1"] = function () return has_arrows() or has('MASK_ZORA') or (has('MASK_FIERCE_DEITY') and has_magic()) end,
-            ["MAJORA"] = function () return not setting('goal', 'triforce') and event('MAJORA_PHASE_1') and (has_weapon() or has('MASK_ZORA') or (has('MASK_FIERCE_DEITY') and has_magic())) end,
+            ["MAJORA_PHASE_1"] = function () return has_arrows() or has_mask_zora() or (has('MASK_FIERCE_DEITY') and has_magic()) end,
+            ["MAJORA"] = function () return not setting('goal', 'triforce') and event('MAJORA_PHASE_1') and (has_weapon() or has_mask_zora() or (has('MASK_FIERCE_DEITY') and has_magic())) end,
         },
     },
     ["Ocean Spider House"] = {
         ["exits"] = {
-            ["Ocean Spider House Front"] = function () return (can_play(SONG_TIME) or ((has('MASK_GORON') or can_warp()) and event('MAJORA') and trick('MM_MAJORA_LOGIC'))) and (has_explosives() or trick_keg_explosives()) end,
+            ["Ocean Spider House Front"] = function () return can_reset_time() and (has_explosives() or trick_keg_explosives()) end,
             ["Great Bay Coast"] = function () return true end,
         },
         ["locations"] = {
@@ -1536,8 +1674,8 @@ function _mm_logic()
     },
     ["Ocean Spider House Front"] = {
         ["events"] = {
-            ["MAGIC"] = function () return has('MASK_GORON') or can_warp() end,
-            ["ARROWS"] = function () return has('MASK_GORON') or can_warp() end,
+            ["MAGIC"] = function () return true end,
+            ["ARROWS"] = function () return true end,
         },
         ["exits"] = {
             ["Ocean Spider House"] = function () return true end,
@@ -1546,16 +1684,16 @@ function _mm_logic()
         ["locations"] = {
             ["Ocean Skulltula Entrance Right Wall"] = function () return can_hookshot_short() end,
             ["Ocean Skulltula Entrance Left Wall"] = function () return can_hookshot_short() end,
-            ["Ocean Skulltula Entrance Web"] = function () return can_hookshot_short() or (can_use_fire_arrows() and has('MASK_ZORA')) end,
+            ["Ocean Skulltula Entrance Web"] = function () return can_hookshot_short() or (can_use_fire_arrows() and has_mask_zora()) end,
         },
     },
     ["Ocean Spider House Back"] = {
         ["locations"] = {
-            ["Ocean Skulltula 2nd Room Ceiling Edge"] = function () return can_hookshot_short() or has('MASK_ZORA') end,
-            ["Ocean Skulltula 2nd Room Ceiling Plank"] = function () return can_hookshot_short() or has('MASK_ZORA') end,
+            ["Ocean Skulltula 2nd Room Ceiling Edge"] = function () return can_hookshot_short() or has_mask_zora() end,
+            ["Ocean Skulltula 2nd Room Ceiling Plank"] = function () return can_hookshot_short() or has_mask_zora() end,
             ["Ocean Skulltula 2nd Room Jar"] = function () return true end,
             ["Ocean Skulltula 2nd Room Webbed Hole"] = function () return can_hookshot_short() end,
-            ["Ocean Skulltula 2nd Room Behind Skull 1"] = function () return can_hookshot_short() or has('MASK_ZORA') end,
+            ["Ocean Skulltula 2nd Room Behind Skull 1"] = function () return can_hookshot_short() or has_mask_zora() end,
             ["Ocean Skulltula 2nd Room Behind Skull 2"] = function () return true end,
             ["Ocean Skulltula 2nd Room Webbed Pot"] = function () return true end,
             ["Ocean Skulltula 2nd Room Upper Pot"] = function () return true end,
@@ -1563,20 +1701,20 @@ function _mm_logic()
             ["Ocean Skulltula Library Hole Behind Picture"] = function () return can_hookshot() end,
             ["Ocean Skulltula Library Hole Behind Cabinet"] = function () return can_hookshot_short() end,
             ["Ocean Skulltula Library On Corner Bookshelf"] = function () return true end,
-            ["Ocean Skulltula Library Behind Picture"] = function () return can_hookshot_short() or has_arrows() or has('MASK_ZORA') or can_use_deku_bubble() end,
+            ["Ocean Skulltula Library Behind Picture"] = function () return can_hookshot_short() or has_arrows() or has_mask_zora() or can_use_deku_bubble() end,
             ["Ocean Skulltula Library Behind Bookcase 1"] = function () return true end,
             ["Ocean Skulltula Library Behind Bookcase 2"] = function () return true end,
-            ["Ocean Skulltula Library Ceiling Edge"] = function () return can_hookshot_short() or has('MASK_ZORA') end,
+            ["Ocean Skulltula Library Ceiling Edge"] = function () return can_hookshot_short() or has_mask_zora() end,
             ["Ocean Skulltula Colored Skulls Chandelier 1"] = function () return true end,
             ["Ocean Skulltula Colored Skulls Chandelier 2"] = function () return true end,
             ["Ocean Skulltula Colored Skulls Chandelier 3"] = function () return true end,
-            ["Ocean Skulltula Colored Skulls Behind Picture"] = function () return can_hookshot_short() or has('MASK_ZORA') or (has('MASK_GORON') and (has_arrows() or can_use_deku_bubble())) end,
+            ["Ocean Skulltula Colored Skulls Behind Picture"] = function () return can_hookshot_short() or has_mask_zora() or (has_mask_goron() and (has_arrows() or can_use_deku_bubble())) end,
             ["Ocean Skulltula Colored Skulls Pot"] = function () return true end,
-            ["Ocean Skulltula Colored Skulls Ceiling Edge"] = function () return can_hookshot_short() or has('MASK_ZORA') end,
+            ["Ocean Skulltula Colored Skulls Ceiling Edge"] = function () return can_hookshot_short() or has_mask_zora() end,
             ["Ocean Spider House Chest HP"] = function () return has_arrows() and (has('MASK_CAPTAIN') or trick('MM_CAPTAIN_SKIP')) end,
             ["Ocean Skulltula Storage Room Behind Boat"] = function () return true end,
-            ["Ocean Skulltula Storage Room Ceiling Web"] = function () return can_use_fire_arrows() and (can_hookshot_short() or has('MASK_ZORA')) end,
-            ["Ocean Skulltula Storage Room Behind Crate"] = function () return can_hookshot_short() or has('MASK_ZORA') or (has('MASK_GORON') and (has_arrows() or can_use_deku_bubble() or has_explosives() or trick_keg_explosives())) end,
+            ["Ocean Skulltula Storage Room Ceiling Web"] = function () return can_use_fire_arrows() and (can_hookshot_short() or has_mask_zora()) end,
+            ["Ocean Skulltula Storage Room Behind Crate"] = function () return can_hookshot_short() or has_mask_zora() or (has_mask_goron() and (has_arrows() or can_use_deku_bubble() or has_explosives() or trick_keg_explosives())) end,
             ["Ocean Skulltula Storage Room Crate"] = function () return true end,
             ["Ocean Skulltula Storage Room Jar"] = function () return can_hookshot_short() end,
         },
@@ -1589,38 +1727,38 @@ function _mm_logic()
     },
     ["Tingle Town"] = {
         ["locations"] = {
-            ["Tingle Map Clock Town"] = function () return can_use_wallet(1) end,
-            ["Tingle Map Woodfall"] = function () return can_use_wallet(1) end,
+            ["Tingle Map Clock Town"] = function () return tingle_price(0) end,
+            ["Tingle Map Woodfall"] = function () return tingle_price(1) end,
         },
     },
     ["Tingle Swamp"] = {
         ["locations"] = {
-            ["Tingle Map Woodfall"] = function () return can_use_wallet(1) end,
-            ["Tingle Map Snowhead"] = function () return can_use_wallet(1) end,
+            ["Tingle Map Woodfall"] = function () return tingle_price(2) end,
+            ["Tingle Map Snowhead"] = function () return tingle_price(3) end,
         },
     },
     ["Tingle Mountain"] = {
         ["locations"] = {
-            ["Tingle Map Snowhead"] = function () return can_use_wallet(1) end,
-            ["Tingle Map Ranch"] = function () return can_use_wallet(1) end,
+            ["Tingle Map Snowhead"] = function () return tingle_price(4) end,
+            ["Tingle Map Ranch"] = function () return tingle_price(5) end,
         },
     },
     ["Tingle Ranch"] = {
         ["locations"] = {
-            ["Tingle Map Ranch"] = function () return can_use_wallet(1) end,
-            ["Tingle Map Great Bay"] = function () return can_use_wallet(1) end,
+            ["Tingle Map Ranch"] = function () return tingle_price(6) end,
+            ["Tingle Map Great Bay"] = function () return tingle_price(7) end,
         },
     },
     ["Tingle Great Bay"] = {
         ["locations"] = {
-            ["Tingle Map Great Bay"] = function () return can_use_wallet(1) end,
-            ["Tingle Map Ikana"] = function () return can_use_wallet(1) end,
+            ["Tingle Map Great Bay"] = function () return tingle_price(8) end,
+            ["Tingle Map Ikana"] = function () return tingle_price(9) end,
         },
     },
     ["Tingle Ikana"] = {
         ["locations"] = {
-            ["Tingle Map Ikana"] = function () return can_use_wallet(1) end,
-            ["Tingle Map Clock Town"] = function () return can_use_wallet(1) end,
+            ["Tingle Map Ikana"] = function () return tingle_price(10) end,
+            ["Tingle Map Clock Town"] = function () return tingle_price(11) end,
         },
     },
     ["SOARING"] = {
@@ -1640,8 +1778,7 @@ function _mm_logic()
     ["Owl Clock Town"] = {
         ["exits"] = {
             ["Clock Town South"] = function () return can_reset_time() end,
-            ["OOT Market"] = function () return age('child') end,
-            ["OOT Market Destroyed"] = function () return age('adult') end,
+            ["OOT Market"] = function () return true end,
             ["Clock Tower Roof"] = function () return after(NIGHT3_AM_12_00) end,
         },
         ["locations"] = {
@@ -1650,7 +1787,7 @@ function _mm_logic()
     },
     ["Owl Milk Road"] = {
         ["exits"] = {
-            ["Milk Road Front"] = function () return can_reset_time() end,
+            ["Milk Road"] = function () return can_reset_time() end,
         },
         ["locations"] = {
             ["Milk Road Owl Statue"] = function () return has_sticks() or has_weapon() end,
@@ -1742,15 +1879,14 @@ function _mm_logic()
             ["MAIL_LETTER"] = function () return has('LETTER_TO_KAFEI') and before(DAY2_AM_11_30) end,
         },
         ["exits"] = {
-            ["OOT Market"] = function () return age('child') end,
-            ["OOT Market Destroyed"] = function () return age('adult') end,
+            ["OOT Market"] = function () return true end,
             ["Termina Field"] = function () return true end,
             ["Clock Town South Upper West"] = function () return true end,
             ["Clock Town South Lower West"] = function () return true end,
             ["Clock Town South Upper East"] = function () return true end,
             ["Clock Town South Lower East"] = function () return true end,
             ["Clock Town North"] = function () return true end,
-            ["Clock Town Laundry Pool"] = function () return true end,
+            ["Laundry Pool"] = function () return true end,
             ["Clock Tower Roof"] = function () return after(NIGHT3_AM_12_00) end,
             ["Owl Clock Town"] = function () return true end,
         },
@@ -1813,7 +1949,7 @@ function _mm_logic()
             ["Clock Town Tree HP"] = function () return true end,
             ["Clock Town Bomber Notebook"] = function () return event('BOMBER_CODE') or event('GUESS_BOMBER') end,
             ["Clock Town Blast Mask"] = function () return event('SAKON_BOMB_BAG') end,
-            ["Clock Town Keaton HP"] = function () return has('MASK_KEATON') end,
+            ["Clock Town Keaton HP"] = function () return has_mask_keaton() end,
         },
     },
     ["Clock Town West"] = {
@@ -1856,24 +1992,43 @@ function _mm_logic()
             ["Town Archery"] = function () return before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00)) end,
             ["Chest Game"] = function () return before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00)) end,
             ["Honey & Darling Game"] = function () return before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00)) end,
-            ["Stock Pot Inn"] = function () return is_day() or has('ROOM_KEY') or is_night3() end,
+            ["Stock Pot Inn"] = function () return has('ROOM_KEY') or between(DAY1_AM_08_00, NIGHT1_PM_08_00) or between(DAY2_AM_08_00, NIGHT2_PM_08_00) or after(DAY3_AM_08_00) end,
             ["Stock Pot Inn Roof"] = function () return has('MASK_DEKU') end,
             ["Milk Bar"] = function () return after(DAY1_AM_10_00) and before(NIGHT1_PM_09_00) or (after(DAY2_AM_10_00) and before(NIGHT2_PM_09_00)) or (after(DAY3_AM_10_00) and before(NIGHT3_PM_09_00)) or (has('MASK_ROMANI') and (after(NIGHT1_PM_10_00) and before(NIGHT1_AM_05_00)) or (after(NIGHT2_PM_10_00) and before(NIGHT2_AM_05_00)) or after(NIGHT3_PM_10_00)) end,
-            ["Astral Observatory"] = function () return event('BOMBER_CODE') or trick('MM_BOMBER_SKIP') end,
+            ["Astral Observatory Passage"] = function () return event('BOMBER_CODE') or trick('MM_BOMBER_SKIP') end,
         },
         ["locations"] = {
             ["Clock Town Silver Rupee Chest"] = function () return true end,
             ["Clock Town Postman Hat"] = function () return event('POSTMAN_FREEDOM') and before(NIGHT3_AM_05_00) end,
         },
     },
-    ["Clock Town Laundry Pool"] = {
+    ["Astral Observatory Passage"] = {
+        ["events"] = {
+            ["MAGIC"] = function () return true end,
+            ["RUPEES"] = function () return true end,
+        },
+        ["exits"] = {
+            ["Clock Town East"] = function () return true end,
+            ["Astral Observatory Junction"] = function () return true end,
+        },
+        ["locations"] = {
+            ["Astral Observatory Passage Chest"] = function () return has_explosives() or trick_keg_explosives() end,
+        },
+    },
+    ["Astral Observatory Junction"] = {
+        ["exits"] = {
+            ["Astral Observatory Passage"] = function () return true end,
+            ["Astral Observatory"] = function () return true end,
+        },
+    },
+    ["Laundry Pool"] = {
         ["events"] = {
             ["FROG_1"] = function () return has('MASK_DON_GERO') end,
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
             ["Clock Town South"] = function () return true end,
-            ["Curiosity Shop Back Room"] = function () return event('MAIL_LETTER') and (after(DAY2_PM_02_00) and before(NIGHT2_PM_10_00)) or (event('MEET_KAFEI') and (after(DAY3_PM_01_00) and before(NIGHT3_PM_10_00))) end,
+            ["Kafei Hideout"] = function () return event('MAIL_LETTER') and (after(DAY2_PM_02_00) and before(NIGHT2_PM_10_00)) or (event('MEET_KAFEI') and (after(DAY3_PM_01_00) and before(NIGHT3_PM_10_00))) end,
         },
         ["locations"] = {
             ["Clock Town Guru Guru Mask Bremen"] = function () return is_night1() or is_night2() end,
@@ -1886,33 +2041,33 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Clock Town Great Fairy"] = function () return has('STRAY_FAIRY_TOWN') end,
-            ["Clock Town Great Fairy Alt"] = function () return has('STRAY_FAIRY_TOWN') and (has('MASK_DEKU') or has('MASK_GORON') or has('MASK_ZORA')) end,
+            ["Clock Town Great Fairy Alt"] = function () return has('STRAY_FAIRY_TOWN') and (has('MASK_DEKU') or has_mask_goron() or has_mask_zora()) end,
         },
     },
     ["Clock Tower Roof"] = {
         ["events"] = {
-            ["MAGIC"] = function () return can_play(SONG_TIME) end,
+            ["MAGIC"] = function () return can_play_time() end,
         },
         ["exits"] = {
             ["Moon"] = function () return can_play(SONG_ORDER) and special(MOON) end,
         },
         ["locations"] = {
-            ["Clock Tower Roof Skull Kid Ocarina"] = function () return has_weapon_range() and can_play(SONG_TIME) end,
-            ["Clock Tower Roof Skull Kid Song of Time"] = function () return has_weapon_range() and can_play(SONG_TIME) end,
+            ["Clock Tower Roof Skull Kid Ocarina"] = function () return has_weapon_range() and can_play_time() end,
+            ["Clock Tower Roof Skull Kid Song of Time"] = function () return has_weapon_range() and can_play_time() end,
         },
     },
     ["Bomb Shop"] = {
         ["events"] = {
-            ["BUY_KEG"] = function () return has('MASK_GORON') and has('POWDER_KEG') and can_use_wallet(1) end,
+            ["BUY_KEG"] = function () return has_mask_goron() and has('POWDER_KEG') and can_use_wallet(1) end,
         },
         ["exits"] = {
             ["Clock Town West"] = function () return true end,
         },
         ["locations"] = {
-            ["Bomb Shop Item 1"] = function () return can_use_wallet(1) end,
-            ["Bomb Shop Item 2"] = function () return can_use_wallet(1) end,
-            ["Bomb Shop Bomb Bag"] = function () return can_use_wallet(1) end,
-            ["Bomb Shop Bomb Bag 2"] = function () return event('SAKON_BOMB_BAG') and can_use_wallet(1) end,
+            ["Bomb Shop Item 1"] = function () return shop_price(0) end,
+            ["Bomb Shop Item 2"] = function () return shop_price(1) end,
+            ["Bomb Shop Bomb Bag"] = function () return shop_price(2) end,
+            ["Bomb Shop Bomb Bag 2"] = function () return event('SAKON_BOMB_BAG') and shop_price(3) end,
         },
     },
     ["Trading Post"] = {
@@ -1923,14 +2078,14 @@ function _mm_logic()
             ["Clock Town West"] = function () return true end,
         },
         ["locations"] = {
-            ["Trading Post Item 1"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
-            ["Trading Post Item 2"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
-            ["Trading Post Item 3"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
-            ["Trading Post Item 4"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
-            ["Trading Post Item 5"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
-            ["Trading Post Item 6"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
-            ["Trading Post Item 7"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
-            ["Trading Post Item 8"] = function () return can_use_wallet(1) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 1"] = function () return shop_price(5) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 2"] = function () return shop_price(6) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 3"] = function () return shop_price(7) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 4"] = function () return shop_price(8) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 5"] = function () return shop_price(9) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 6"] = function () return shop_price(10) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 7"] = function () return shop_price(11) and before(NIGHT3_PM_09_00) end,
+            ["Trading Post Item 8"] = function () return shop_price(12) and before(NIGHT3_PM_09_00) end,
         },
     },
     ["Curiosity Shop"] = {
@@ -1938,21 +2093,21 @@ function _mm_logic()
             ["Clock Town West"] = function () return true end,
         },
         ["locations"] = {
-            ["Bomb Shop Bomb Bag 2"] = function () return can_use_wallet(2) and is_night3() end,
-            ["Curiosity Shop All-Night Mask"] = function () return (event('SAKON_BOMB_BAG') or event('SAKON_BOOM')) and can_use_wallet(3) and is_night3() end,
+            ["Bomb Shop Bomb Bag 2"] = function () return shop_ex_price(0) and is_night3() end,
+            ["Curiosity Shop All-Night Mask"] = function () return (event('SAKON_BOMB_BAG') or event('SAKON_BOOM')) and shop_price(4) and is_night3() end,
         },
     },
-    ["Curiosity Shop Back Room"] = {
+    ["Kafei Hideout"] = {
         ["events"] = {
-            ["MEET_KAFEI"] = function () return before(DAY3_AM_06_00) end,
+            ["MEET_KAFEI"] = function () return event('MAIL_LETTER') and before(DAY3_AM_06_00) end,
         },
         ["exits"] = {
-            ["Clock Town Laundry Pool"] = function () return true end,
+            ["Laundry Pool"] = function () return true end,
         },
         ["locations"] = {
-            ["Curiosity Shop Back Room Pendant of Memories"] = function () return before(DAY3_AM_06_00) or event('SAKON_BOMB_BAG') or event('SAKON_BOOM') end,
-            ["Curiosity Shop Back Room Owner Reward 1"] = function () return after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00) end,
-            ["Curiosity Shop Back Room Owner Reward 2"] = function () return after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00) end,
+            ["Kafei Hideout Pendant of Memories"] = function () return event('MAIL_LETTER') and (before(DAY3_AM_06_00) or event('SAKON_BOMB_BAG') or event('SAKON_BOOM')) end,
+            ["Kafei Hideout Owner Reward 1"] = function () return event('MEET_KAFEI') and between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
+            ["Kafei Hideout Owner Reward 2"] = function () return event('MEET_KAFEI') and between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
         },
     },
     ["Post Office"] = {
@@ -1963,7 +2118,7 @@ function _mm_logic()
             ["Clock Town West"] = function () return true end,
         },
         ["locations"] = {
-            ["Post Office HP"] = function () return (has('MASK_BUNNY') or trick('MM_POST_OFFICE_GAME')) and (after(DAY1_PM_03_00) and before(NIGHT1_AM_12_00) or (event('MAIL_LETTER') and after(NIGHT2_PM_06_00) and before(NIGHT2_AM_12_00))) end,
+            ["Post Office HP"] = function () return (has_mask_bunny() or trick('MM_POST_OFFICE_GAME')) and (after(DAY1_PM_03_00) and before(NIGHT1_AM_12_00) or (event('MAIL_LETTER') and after(NIGHT2_PM_06_00) and before(NIGHT2_AM_12_00))) end,
         },
     },
     ["Swordsman School"] = {
@@ -1996,10 +2151,18 @@ function _mm_logic()
             ["Clock Town East"] = function () return true end,
         },
         ["locations"] = {
-            ["Milk Bar Troupe Leader Mask"] = function () return has('MASK_ROMANI') and has_ocarina() and has('MASK_DEKU') and has('MASK_ZORA') and has('MASK_GORON') and (after(NIGHT1_PM_10_00) and before(NIGHT1_AM_05_00) or (after(NIGHT2_PM_10_00) and before(NIGHT2_AM_05_00))) end,
+            ["Milk Bar Troupe Leader Mask"] = function () return has_ocarina() and has('MASK_DEKU') and has_mask_zora() and has_mask_goron() and (after(NIGHT1_PM_10_00) and before(NIGHT1_AM_05_00) or (after(NIGHT2_PM_10_00) and before(NIGHT2_AM_05_00))) end,
             ["Milk Bar Madame Aroma Bottle"] = function () return has('MASK_KAFEI') and has('LETTER_TO_MAMA') and (after(NIGHT3_PM_06_00) and before(NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Purchase Milk"] = function () return has('MASK_ROMANI') and can_use_wallet(1) and (after(NIGHT1_PM_10_00) and before(DAY2_AM_06_00) or (after(NIGHT2_PM_10_00) and before(DAY3_AM_06_00)) or (after(NIGHT3_PM_06_00) and before(NIGHT3_PM_09_00)) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Purchase Chateau"] = function () return has('MASK_ROMANI') and can_use_wallet(2) and (after(NIGHT1_PM_10_00) and before(DAY2_AM_06_00) or (after(NIGHT2_PM_10_00) and before(DAY3_AM_06_00)) or (after(NIGHT3_PM_06_00) and before(NIGHT3_PM_09_00)) or after(NIGHT3_PM_10_00)) end,
+        },
+        ["stay"] = {
+            ["NIGHT1_PM_09_00"] = function () return false end,
+            ["NIGHT1_AM_05_00"] = function () return false end,
+            ["NIGHT2_PM_09_00"] = function () return false end,
+            ["NIGHT2_AM_05_00"] = function () return false end,
+            ["NIGHT3_PM_09_00"] = function () return false end,
+            ["NIGHT3_AM_05_00"] = function () return false end,
         },
     },
     ["Town Archery"] = {
@@ -2007,8 +2170,8 @@ function _mm_logic()
             ["Clock Town East"] = function () return true end,
         },
         ["locations"] = {
-            ["Town Archery Reward 1"] = function () return has('BOW') and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
-            ["Town Archery Reward 2"] = function () return has('BOW') and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
+            ["Town Archery Reward 1"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
+            ["Town Archery Reward 2"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
         },
     },
     ["Chest Game"] = {
@@ -2016,27 +2179,27 @@ function _mm_logic()
             ["Clock Town East"] = function () return true end,
         },
         ["locations"] = {
-            ["Chest Game HP"] = function () return has('MASK_GORON') and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or is_day3()) end,
+            ["Chest Game HP"] = function () return has_mask_goron() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or is_day3()) end,
         },
     },
     ["Honey & Darling Game"] = {
         ["events"] = {
-            ["HD_REWARD_1"] = function () return has('BOMB_BAG') and before(NIGHT1_PM_10_00) end,
-            ["HD_REWARD_2"] = function () return has('BOMB_BAG') and after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00) end,
-            ["HD_REWARD_3"] = function () return (has('BOW') or can_use_deku_bubble()) and is_day3() end,
+            ["HD_REWARD_1"] = function () return has_bomb_bag() and before(NIGHT1_PM_10_00) end,
+            ["HD_REWARD_2"] = function () return has_bomb_bag() and after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00) end,
+            ["HD_REWARD_3"] = function () return (has_bow() or can_use_deku_bubble()) and is_day3() end,
         },
         ["exits"] = {
             ["Clock Town East"] = function () return true end,
         },
         ["locations"] = {
             ["Honey & Darling Reward 1"] = function () return can_use_wallet(1) and (event('HD_REWARD_1') or event('HD_REWARD_2') or event('HD_REWARD_3')) end,
-            ["Honey & Darling Reward 2"] = function () return can_use_wallet(1) and has('BOW') and event('HD_REWARD_1') and event('HD_REWARD_2') and event('HD_REWARD_3') end,
+            ["Honey & Darling Reward 2"] = function () return can_use_wallet(1) and has_bow() and event('HD_REWARD_1') and event('HD_REWARD_2') and event('HD_REWARD_3') end,
         },
     },
     ["Stock Pot Inn"] = {
         ["events"] = {
             ["SETUP_MEET"] = function () return has('MASK_KAFEI') and after(DAY1_PM_01_45) and before(NIGHT1_PM_09_00) end,
-            ["MEET_ANJU"] = function () return event('SETUP_MEET') and (has('MASK_DEKU') or has('ROOM_KEY')) end,
+            ["MEET_ANJU"] = function () return event('SETUP_MEET') and after(NIGHT1_AM_12_00) and before(DAY2_AM_06_00) end,
             ["DELIVER_PENDANT"] = function () return has('PENDANT_OF_MEMORIES') and (after(DAY2_AM_06_00) and before(NIGHT2_PM_09_00) or (after(DAY3_AM_06_00) and before(DAY3_AM_11_30))) end,
             ["BUGS"] = function () return has_bottle() end,
             ["FISH"] = function () return has_bottle() end,
@@ -2050,11 +2213,17 @@ function _mm_logic()
             ["Stock Pot Inn Guest Room Chest"] = function () return has('ROOM_KEY') end,
             ["Stock Pot Inn Staff Room Chest"] = function () return is_night3() end,
             ["Stock Pot Inn Room Key"] = function () return after(DAY1_PM_01_45) and before(DAY1_PM_04_00) end,
-            ["Stock Pot Inn Letter to Kafei"] = function () return event('MEET_ANJU') end,
+            ["Stock Pot Inn Letter to Kafei"] = function () return cond(setting('erIndoors', 'none'), event('MEET_ANJU') and (has('ROOM_KEY') or has('MASK_DEKU')), event('MEET_ANJU')) end,
             ["Stock Pot Inn Couple's Mask"] = function () return event('SUN_MASK') and event('DELIVER_PENDANT') and event('MEET_ANJU') and after(NIGHT3_AM_04_00) end,
             ["Stock Pot Inn Grandma HP 1"] = function () return has('MASK_ALL_NIGHT') and (is_day1() or is_day2()) end,
             ["Stock Pot Inn Grandma HP 2"] = function () return has('MASK_ALL_NIGHT') and (is_day1() or is_day2()) end,
             ["Stock Pot Inn ??? HP"] = function () return has_paper() and midnight() end,
+        },
+        ["stay"] = {
+            ["NIGHT1_PM_08_00"] = function () return has('ROOM_KEY') end,
+            ["DAY2_AM_06_00"] = function () return has('ROOM_KEY') end,
+            ["NIGHT2_PM_08_00"] = function () return has('ROOM_KEY') end,
+            ["DAY3_AM_06_00"] = function () return has('ROOM_KEY') end,
         },
     },
     ["Stock Pot Inn Roof"] = {
@@ -2082,15 +2251,10 @@ function _mm_logic()
             ["SCRUB_TELESCOPE"] = function () return true end,
             ["TEAR_TELESCOPE"] = function () return true end,
             ["SCARECROW"] = function () return has_ocarina() end,
-            ["MAGIC"] = function () return true end,
-            ["RUPEES"] = function () return true end,
         },
         ["exits"] = {
-            ["Clock Town East"] = function () return true end,
+            ["Astral Observatory Junction"] = function () return true end,
             ["Astral Observatory Balcony"] = function () return true end,
-        },
-        ["locations"] = {
-            ["Astral Observatory Passage Chest"] = function () return has_explosives() or trick_keg_explosives() end,
         },
     },
     ["Astral Observatory Balcony"] = {
@@ -2117,9 +2281,9 @@ function _mm_logic()
             ["Clock Town East"] = function () return true end,
             ["Clock Town West"] = function () return true end,
             ["Road to Southern Swamp"] = function () return true end,
-            ["Behind Large Icicles"] = function () return has_arrows() or has_hot_water_distance() end,
-            ["Milk Road Front"] = function () return true end,
-            ["Great Bay Fence"] = function () return can_play(SONG_EPONA) or (can_goron_bomb_jump() and has_bombs()) end,
+            ["Behind Large Icicles"] = function () return has_arrows() or (has_hot_water_distance() and has('OWL_CLOCK_TOWN')) or has_hot_water_er() end,
+            ["Milk Road"] = function () return true end,
+            ["Great Bay Fence"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) end,
             ["Road to Ikana Front"] = function () return true end,
             ["Astral Observatory Balcony"] = function () return has('MASK_DEKU') or (can_goron_bomb_jump() and has_bombs()) end,
             ["Grass Grotto"] = function () return true end,
@@ -2135,7 +2299,7 @@ function _mm_logic()
             ["Canyon Gossip Grotto"] = function () return true end,
         },
         ["locations"] = {
-            ["Termina Field Water Chest"] = function () return has('MASK_ZORA') end,
+            ["Termina Field Water Chest"] = function () return has_mask_zora() end,
             ["Termina Field Tall Grass Chest"] = function () return true end,
             ["Termina Field Tree Stump Chest"] = function () return can_hookshot_short() or can_use_beans() end,
             ["Termina Field Kamaro Mask"] = function () return can_play(SONG_HEALING) and midnight() end,
@@ -2180,7 +2344,7 @@ function _mm_logic()
             ["Termina Field"] = function () return true end,
         },
         ["locations"] = {
-            ["Termina Field Bio Baba Grotto"] = function () return has('MASK_ZORA') end,
+            ["Termina Field Bio Baba Grotto"] = function () return has_mask_zora() end,
         },
     },
     ["Dodongo Grotto"] = {
@@ -2188,7 +2352,7 @@ function _mm_logic()
             ["Termina Field"] = function () return true end,
         },
         ["locations"] = {
-            ["Termina Field Dodongo Grotto"] = function () return has_weapon() or has_explosives() or has('MASK_GORON') or has_arrows() end,
+            ["Termina Field Dodongo Grotto"] = function () return has_weapon() or has_explosives() or has_mask_goron() or has_arrows() end,
         },
     },
     ["Pillar Grotto"] = {
@@ -2234,15 +2398,15 @@ function _mm_logic()
             ["Termina Field"] = function () return true end,
         },
         ["locations"] = {
-            ["Termina Field Cow Front"] = function () return can_play(SONG_EPONA) end,
-            ["Termina Field Cow Back"] = function () return can_play(SONG_EPONA) end,
+            ["Termina Field Cow Front"] = function () return can_play_epona() end,
+            ["Termina Field Cow Back"] = function () return can_play_epona() end,
         },
     },
     ["Swamp Gossip Grotto"] = {
         ["events"] = {
             ["BUGS"] = function () return has_bottle() end,
             ["MUSHROOM"] = function () return has_bottle() and has('MASK_SCENTS') end,
-            ["SWAMP_SONG"] = function () return has_ocarina() and (has('MASK_GORON') and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has('MASK_ZORA') and has('SONG_ZORA'))) end,
+            ["SWAMP_SONG"] = function () return has_ocarina() and (has_mask_goron() and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has_mask_zora() and has('SONG_ZORA'))) end,
         },
         ["exits"] = {
             ["Termina Field"] = function () return true end,
@@ -2254,7 +2418,7 @@ function _mm_logic()
     ["Mountain Gossip Grotto"] = {
         ["events"] = {
             ["BUGS"] = function () return has_bottle() end,
-            ["MOUNTAIN_SONG"] = function () return has_ocarina() and (has('MASK_GORON') and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has('MASK_ZORA') and has('SONG_ZORA'))) end,
+            ["MOUNTAIN_SONG"] = function () return has_ocarina() and (has_mask_goron() and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has_mask_zora() and has('SONG_ZORA'))) end,
         },
         ["exits"] = {
             ["Termina Field"] = function () return true end,
@@ -2271,7 +2435,7 @@ function _mm_logic()
             ["ARROWS"] = function () return true end,
             ["BUGS"] = function () return has_bottle() end,
             ["MUSHROOM"] = function () return has_bottle() and has('MASK_SCENTS') end,
-            ["OCEAN_SONG"] = function () return has_ocarina() and (has('MASK_GORON') and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has('MASK_ZORA') and has('SONG_ZORA'))) end,
+            ["OCEAN_SONG"] = function () return has_ocarina() and (has_mask_goron() and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has_mask_zora() and has('SONG_ZORA'))) end,
         },
         ["exits"] = {
             ["Termina Field"] = function () return true end,
@@ -2288,7 +2452,7 @@ function _mm_logic()
             ["ARROWS"] = function () return true end,
             ["BUGS"] = function () return has_bottle() end,
             ["MUSHROOM"] = function () return has_bottle() and has('MASK_SCENTS') end,
-            ["CANYON_SONG"] = function () return has_ocarina() and (has('MASK_GORON') and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has('MASK_ZORA') and has('SONG_ZORA'))) end,
+            ["CANYON_SONG"] = function () return has_ocarina() and (has_mask_goron() and has_goron_song() or (has('MASK_DEKU') and has('SONG_AWAKENING')) or (has_mask_zora() and has('SONG_ZORA'))) end,
         },
         ["exits"] = {
             ["Termina Field"] = function () return true end,
@@ -2326,8 +2490,8 @@ function _mm_logic()
             ["Road to Southern Swamp"] = function () return true end,
         },
         ["locations"] = {
-            ["Swamp Archery Reward 1"] = function () return has('BOW') and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
-            ["Swamp Archery Reward 2"] = function () return has('BOW') and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
+            ["Swamp Archery Reward 1"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
+            ["Swamp Archery Reward 2"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
         },
     },
     ["Road to Southern Swamp Grotto"] = {
@@ -2359,17 +2523,18 @@ function _mm_logic()
             ["BOMBS"] = function () return true end,
             ["ARROWS"] = function () return true end,
             ["MAGIC"] = function () return true end,
+            ["WATER"] = function () return has_bottle() end,
         },
         ["exits"] = {
             ["Road to Southern Swamp"] = function () return true end,
             ["Tourist Information"] = function () return true end,
-            ["Swamp Back"] = function () return event('BOAT_RIDE') or has('MASK_ZORA') or event('CLEAN_SWAMP') or (has('MASK_DEKU') and (has_arrows() or can_hookshot_short())) end,
+            ["Swamp Back"] = function () return event('BOAT_RIDE') or has_mask_zora() or event('CLEAN_SWAMP') or (has('MASK_DEKU') and (has_arrows() or can_hookshot_short())) end,
             ["Swamp Potion Shop"] = function () return true end,
             ["Woods of Mystery"] = function () return true end,
             ["Owl Swamp"] = function () return true end,
         },
         ["locations"] = {
-            ["Southern Swamp HP"] = function () return has('DEED_LAND') and has('MASK_DEKU') or (trick('MM_SOUTHERN_SWAMP_SCRUB_HP_GORON') and has('MASK_GORON')) end,
+            ["Southern Swamp HP"] = function () return has('DEED_LAND') and has('MASK_DEKU') or (trick('MM_SOUTHERN_SWAMP_SCRUB_HP_GORON') and has_mask_goron()) end,
             ["Southern Swamp Scrub Deed"] = function () return has('DEED_LAND') end,
             ["Southern Swamp Scrub Shop"] = function () return has('MASK_DEKU') and can_use_wallet(1) end,
         },
@@ -2380,17 +2545,17 @@ function _mm_logic()
             ["PICTURE_BIG_OCTO"] = function () return has('PICTOGRAPH_BOX') end,
         },
         ["exits"] = {
-            ["Swamp Front"] = function () return event('BOAT_RIDE') or event('CLEAN_SWAMP') or has('MASK_ZORA') or ((has_arrows() or can_hookshot()) and (has('MASK_DEKU') or has('MASK_GORON'))) end,
+            ["Swamp Front"] = function () return event('BOAT_RIDE') or event('CLEAN_SWAMP') or has_mask_zora() or ((has_arrows() or can_hookshot()) and (has('MASK_DEKU') or has_mask_goron())) end,
             ["Deku Palace Front"] = function () return true end,
-            ["Near Swamp Spider House"] = function () return has('MASK_DEKU') or has('MASK_ZORA') or event('CLEAN_SWAMP') end,
+            ["Near Swamp Spider House"] = function () return has('MASK_DEKU') or has_mask_zora() or event('CLEAN_SWAMP') end,
             ["Swamp Canopy Back"] = function () return event('CLEAN_SWAMP') end,
         },
     },
     ["Near Swamp Spider House"] = {
         ["exits"] = {
             ["Swamp Spider House"] = function () return has_sticks() or has_arrows() end,
-            ["Swamp Back"] = function () return has('MASK_DEKU') or has('MASK_ZORA') or event('CLEAN_SWAMP') end,
-            ["Near Swamp Grotto"] = function () return has('MASK_DEKU') or has('MASK_ZORA') or event('CLEAN_SWAMP') end,
+            ["Swamp Back"] = function () return has('MASK_DEKU') or has_mask_zora() or event('CLEAN_SWAMP') end,
+            ["Near Swamp Grotto"] = function () return has('MASK_DEKU') or has_mask_zora() or event('CLEAN_SWAMP') end,
         },
     },
     ["Near Swamp Grotto"] = {
@@ -2398,8 +2563,8 @@ function _mm_logic()
             ["MUSHROOM"] = function () return has_bottle() and has('MASK_SCENTS') end,
         },
         ["exits"] = {
-            ["Swamp Front"] = function () return (has_arrows() or can_hookshot()) and has('MASK_GORON') end,
-            ["Near Swamp Spider House"] = function () return has('MASK_DEKU') or has('MASK_ZORA') or event('CLEAN_SWAMP') end,
+            ["Swamp Front"] = function () return (has_arrows() or can_hookshot()) and has_mask_goron() end,
+            ["Near Swamp Spider House"] = function () return has('MASK_DEKU') or has_mask_zora() or event('CLEAN_SWAMP') end,
             ["Southern Swamp Grotto"] = function () return true end,
         },
     },
@@ -2426,9 +2591,13 @@ function _mm_logic()
         ["events"] = {
             ["BOAT_RIDE"] = function () return event('PICTURE_SWAMP') or event('KOUME') end,
         },
+        ["exits"] = {
+            ["Swamp Front"] = function () return true end,
+            ["Swamp Back"] = function () return event('BOAT_RIDE') end,
+        },
         ["locations"] = {
             ["Tourist Information Pictobox"] = function () return event('KOUME') end,
-            ["Tourist Information Boat Cruise"] = function () return event('KOUME') and event('CLEAN_SWAMP') and has('BOW') end,
+            ["Tourist Information Boat Cruise"] = function () return event('KOUME') and event('CLEAN_SWAMP') and has_bow() end,
             ["Tourist Information Tingle Picture"] = function () return event('PICTURE_TINGLE') or event('PICTURE_DEKU_KING') end,
         },
     },
@@ -2473,9 +2642,9 @@ function _mm_logic()
             ["Swamp Front"] = function () return true end,
         },
         ["locations"] = {
-            ["Swamp Potion Shop Item 1"] = function () return event('MUSHROOM') and can_use_wallet(1) and (first_day() or event('MEET_KOUME')) end,
-            ["Swamp Potion Shop Item 2"] = function () return can_use_wallet(1) and (first_day() or event('MEET_KOUME')) end,
-            ["Swamp Potion Shop Item 3"] = function () return can_use_wallet(1) and (first_day() or event('MEET_KOUME')) end,
+            ["Swamp Potion Shop Item 1"] = function () return event('MUSHROOM') and shop_price(13) and (first_day() or event('MEET_KOUME')) end,
+            ["Swamp Potion Shop Item 2"] = function () return shop_price(14) and (first_day() or event('MEET_KOUME')) end,
+            ["Swamp Potion Shop Item 3"] = function () return shop_price(15) and (first_day() or event('MEET_KOUME')) end,
         },
     },
     ["Deku Palace Front"] = {
@@ -2513,7 +2682,7 @@ function _mm_logic()
     },
     ["Deku Palace Throne"] = {
         ["events"] = {
-            ["PICTURE_DEKU_KING"] = function () return has('PICTORGRAPH_BOX') and has('MASK_DEKU') end,
+            ["PICTURE_DEKU_KING"] = function () return has('PICTOGRAPH_BOX') and has('MASK_DEKU') end,
             ["RETURN_PRINCESS"] = function () return event('DEKU_PRINCESS') and has('MASK_DEKU') end,
         },
         ["exits"] = {
@@ -2565,7 +2734,7 @@ function _mm_logic()
     },
     ["Swamp Canopy Back"] = {
         ["exits"] = {
-            ["Swamp Back"] = function () return has('MASK_DEKU') or has('MASK_ZORA') or event('CLEAN_SWAMP') end,
+            ["Swamp Back"] = function () return has('MASK_DEKU') or has_mask_zora() or event('CLEAN_SWAMP') end,
             ["Woodfall"] = function () return true end,
             ["Swamp Canopy Front"] = function () return has('MASK_DEKU') end,
         },
@@ -2603,7 +2772,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Woodfall"] = function () return has('MASK_DEKU') or event('CLEAN_SWAMP') end,
-            ["Woodfall Near Great Fairy Fountain"] = function () return has('MASK_DEKU') end,
+            ["Woodfall Near Fairy Fountain"] = function () return has('MASK_DEKU') end,
             ["Woodfall Front of Temple"] = function () return event('OPEN_WOODFALL_TEMPLE') end,
             ["Owl Woodfall"] = function () return true end,
         },
@@ -2611,19 +2780,19 @@ function _mm_logic()
             ["Woodfall Near Owl Chest"] = function () return has('MASK_DEKU') or can_hookshot() end,
         },
     },
-    ["Woodfall Near Great Fairy Fountain"] = {
+    ["Woodfall Near Fairy Fountain"] = {
         ["exits"] = {
             ["Woodfall"] = function () return has('MASK_DEKU') or event('CLEAN_SWAMP') end,
             ["Woodfall Shrine"] = function () return has('MASK_DEKU') end,
-            ["Woodfall Great Fairy Fountain"] = function () return true end,
+            ["Woodfall Fairy Fountain"] = function () return true end,
         },
         ["locations"] = {
             ["Woodfall Near Owl Chest"] = function () return can_hookshot() end,
         },
     },
-    ["Woodfall Great Fairy Fountain"] = {
+    ["Woodfall Fairy Fountain"] = {
         ["exits"] = {
-            ["Woodfall Near Great Fairy Fountain"] = function () return true end,
+            ["Woodfall Near Fairy Fountain"] = function () return true end,
         },
         ["locations"] = {
             ["Woodfall Great Fairy"] = function () return has('STRAY_FAIRY_WF', 15) end,
@@ -2645,7 +2814,7 @@ function _mm_logic()
     },
     ["Behind Large Icicles"] = {
         ["exits"] = {
-            ["Termina Field"] = function () return has_arrows() or has_hot_water_distance() end,
+            ["Termina Field"] = function () return has_arrows() or has_hot_water_mtn() or has_hot_water_er() end,
             ["Mountain Village Path Lower"] = function () return true end,
         },
     },
@@ -2679,10 +2848,10 @@ function _mm_logic()
         ["exits"] = {
             ["Mountain Village Path Upper"] = function () return true end,
             ["Twin Islands"] = function () return true end,
-            ["Near Goron Graveyard"] = function () return can_use_lens_strict() or trick('MM_DARMANI_WALL') or (event('BOSS_SNOWHEAD') and (has('MASK_GORON') or has('MASK_ZORA'))) end,
+            ["Near Goron Graveyard"] = function () return can_use_lens_strict() or trick('MM_DARMANI_WALL') or (event('BOSS_SNOWHEAD') and (has_mask_goron() or has_mask_zora())) end,
             ["Path to Snowhead Front"] = function () return true end,
             ["Blacksmith"] = function () return true end,
-            ["Near Village Grotto"] = function () return event('BOSS_SNOWHEAD') and has('MASK_GORON') end,
+            ["Near Village Grotto"] = function () return event('BOSS_SNOWHEAD') and has_mask_goron() end,
             ["Owl Mountain"] = function () return true end,
         },
         ["locations"] = {
@@ -2695,7 +2864,7 @@ function _mm_logic()
         ["exits"] = {
             ["Mountain Village Grotto"] = function () return true end,
             ["Mountain Village"] = function () return true end,
-            ["Near Goron Graveyard"] = function () return has('MASK_GORON') end,
+            ["Near Goron Graveyard"] = function () return has_mask_goron() end,
         },
     },
     ["Mountain Village Grotto"] = {
@@ -2719,7 +2888,7 @@ function _mm_logic()
     },
     ["Blacksmith"] = {
         ["events"] = {
-            ["BLACKSMITH_ENABLED"] = function () return event('BOSS_SNOWHEAD') or can_use_fire_arrows() or has_hot_water() or has_hot_water_distance() end,
+            ["BLACKSMITH_ENABLED"] = function () return event('BOSS_SNOWHEAD') or can_use_fire_arrows() or has_hot_water_mtn() or has_hot_water_er() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')) end,
             ["GOLD_DUST_USED"] = function () return can_use_wallet(2) and has('BOTTLED_GOLD_DUST') and event('BLACKSMITH_ENABLED') end,
         },
         ["exits"] = {
@@ -2739,15 +2908,15 @@ function _mm_logic()
         ["exits"] = {
             ["Mountain Village"] = function () return true end,
             ["Goron Village"] = function () return true end,
-            ["Near Goron Race"] = function () return has('MASK_GORON') or scarecrow_hookshot() end,
-            ["Near Ramp Grotto"] = function () return has('MASK_GORON') end,
-            ["Twin Islands Frozen Grotto"] = function () return can_use_fire_arrows() or event('BOSS_SNOWHEAD') or has_hot_water() or has_hot_water_distance() end,
+            ["Near Goron Race"] = function () return has_mask_goron() or scarecrow_hookshot() end,
+            ["Near Ramp Grotto"] = function () return has_mask_goron() end,
+            ["Twin Islands Frozen Grotto"] = function () return can_use_fire_arrows() or event('BOSS_SNOWHEAD') or has_hot_water_mtn() or has_hot_water_er() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')) end,
             ["Tingle Mountain"] = function () return has_weapon_range() end,
         },
         ["locations"] = {
-            ["Twin Islands Underwater Chest 1"] = function () return event('BOSS_SNOWHEAD') and has('MASK_ZORA') end,
-            ["Twin Islands Underwater Chest 2"] = function () return event('BOSS_SNOWHEAD') and has('MASK_ZORA') end,
-            ["Goron Elder"] = function () return (has('MASK_GORON') and (can_use_fire_arrows() or has_hot_water() or has_hot_water_distance())) and (first_day() or second_day()) end,
+            ["Twin Islands Underwater Chest 1"] = function () return event('BOSS_SNOWHEAD') and has_mask_zora() end,
+            ["Twin Islands Underwater Chest 2"] = function () return event('BOSS_SNOWHEAD') and has_mask_zora() end,
+            ["Goron Elder"] = function () return (has_mask_goron() and (can_use_fire_arrows() or has_hot_water_mtn() or has_hot_water_er() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')))) and (first_day() or second_day()) end,
         },
     },
     ["Twin Islands Ramp Grotto"] = {
@@ -2801,7 +2970,7 @@ function _mm_logic()
     },
     ["Goron Village"] = {
         ["events"] = {
-            ["POWDER_KEG_TRIAL"] = function () return (event('BOSS_SNOWHEAD') or can_use_fire_arrows()) and has('MASK_GORON') end,
+            ["POWDER_KEG_TRIAL"] = function () return (event('BOSS_SNOWHEAD') or can_use_fire_arrows()) and has_mask_goron() end,
             ["BUY_KEG"] = function () return event('POWDER_KEG_TRIAL') and has('POWDER_KEG') and can_use_wallet(2) end,
             ["MAGIC"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -2813,12 +2982,12 @@ function _mm_logic()
         ["exits"] = {
             ["Twin Islands"] = function () return true end,
             ["Front of Lone Peak Shrine"] = function () return true end,
-            ["Goron Shrine"] = function () return first_day() or has('MASK_GORON') end,
+            ["Goron Shrine"] = function () return first_day() or has_mask_goron() end,
         },
         ["locations"] = {
             ["Goron Village HP"] = function () return has('DEED_SWAMP') and has('MASK_DEKU') end,
             ["Goron Village Scrub Deed"] = function () return has('DEED_SWAMP') and has('MASK_DEKU') end,
-            ["Goron Village Scrub Bomb Bag"] = function () return has('MASK_GORON') and can_use_wallet(2) end,
+            ["Goron Village Scrub Bomb Bag"] = function () return has_mask_goron() and can_use_wallet(2) end,
             ["Goron Powder Keg"] = function () return event('POWDER_KEG_TRIAL') end,
         },
     },
@@ -2856,11 +3025,11 @@ function _mm_logic()
     },
     ["Goron Graveyard"] = {
         ["events"] = {
-            ["GORON_GRAVEYARD_HOT_WATER"] = function () return has_bottle() and has('MASK_GORON') end,
-            ["WATER"] = function () return has_bottle() and has('MASK_GORON') end,
+            ["GORON_GRAVEYARD_HOT_WATER"] = function () return has_bottle() and has_mask_goron() end,
+            ["WATER"] = function () return has_bottle() and has_mask_goron() end,
         },
         ["exits"] = {
-            ["Mountain Village"] = function () return true end,
+            ["Near Goron Graveyard"] = function () return true end,
         },
         ["locations"] = {
             ["Goron Graveyard Mask"] = function () return can_use_lens_strict() and can_play(SONG_HEALING) end,
@@ -2877,7 +3046,7 @@ function _mm_logic()
             ["Goron Shop"] = function () return true end,
         },
         ["locations"] = {
-            ["Goron Baby"] = function () return has('MASK_GORON') and can_lullaby_half() end,
+            ["Goron Baby"] = function () return has_mask_goron() and can_lullaby_half() end,
         },
     },
     ["Goron Shop"] = {
@@ -2885,9 +3054,9 @@ function _mm_logic()
             ["Goron Shrine"] = function () return true end,
         },
         ["locations"] = {
-            ["Goron Shop Item 1"] = function () return can_use_wallet(1) end,
-            ["Goron Shop Item 2"] = function () return can_use_wallet(1) end,
-            ["Goron Shop Item 3"] = function () return can_use_wallet(1) end,
+            ["Goron Shop Item 1"] = function () return shop_price(16) end,
+            ["Goron Shop Item 2"] = function () return shop_price(17) end,
+            ["Goron Shop Item 3"] = function () return shop_price(18) end,
         },
     },
     ["Path to Snowhead Front"] = {
@@ -2936,7 +3105,7 @@ function _mm_logic()
     },
     ["Snowhead Entrance"] = {
         ["events"] = {
-            ["OPEN_SNOWHEAD_TEMPLE"] = function () return can_lullaby() or (event('BOSS_SNOWHEAD') and has('MASK_GORON')) end,
+            ["OPEN_SNOWHEAD_TEMPLE"] = function () return can_lullaby() or (event('BOSS_SNOWHEAD') and has_mask_goron()) end,
             ["MAGIC"] = function () return true end,
             ["BOMBS"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -2944,7 +3113,7 @@ function _mm_logic()
         ["exits"] = {
             ["Path to Snowhead Back"] = function () return true end,
             ["Snowhead"] = function () return event('OPEN_SNOWHEAD_TEMPLE') end,
-            ["Snowhead Near Great Fairy Fountain"] = function () return event('OPEN_SNOWHEAD_TEMPLE') end,
+            ["Snowhead Near Fairy Fountain"] = function () return event('OPEN_SNOWHEAD_TEMPLE') end,
             ["Owl Snowhead"] = function () return true end,
         },
     },
@@ -2952,10 +3121,10 @@ function _mm_logic()
         ["exits"] = {
             ["Snowhead Entrance"] = function () return true end,
             ["Snowhead Temple"] = function () return true end,
-            ["Snowhead Near Great Fairy Fountain"] = function () return event('BOSS_SNOWHEAD') end,
+            ["Snowhead Near Fairy Fountain"] = function () return event('BOSS_SNOWHEAD') end,
         },
     },
-    ["Snowhead Near Great Fairy Fountain"] = {
+    ["Snowhead Near Fairy Fountain"] = {
         ["events"] = {
             ["MAGIC"] = function () return event('OPEN_SNOWHEAD_TEMPLE') and can_break_boulders() or event('BOSS_SNOWHEAD') end,
             ["RUPEES"] = function () return (event('OPEN_SNOWHEAD_TEMPLE') or event('BOSS_SNOWHEAD')) and can_use_light_arrows() end,
@@ -2963,12 +3132,12 @@ function _mm_logic()
         ["exits"] = {
             ["Snowhead Entrance"] = function () return true end,
             ["Snowhead"] = function () return event('BOSS_SNOWHEAD') end,
-            ["Snowhead Great Fairy Fountain"] = function () return true end,
+            ["Snowhead Fairy Fountain"] = function () return true end,
         },
     },
-    ["Snowhead Great Fairy Fountain"] = {
+    ["Snowhead Fairy Fountain"] = {
         ["exits"] = {
-            ["Snowhead Near Great Fairy Fountain"] = function () return true end,
+            ["Snowhead Near Fairy Fountain"] = function () return true end,
         },
         ["locations"] = {
             ["Snowhead Great Fairy"] = function () return has('STRAY_FAIRY_SH', 15) end,
@@ -2985,33 +3154,25 @@ function _mm_logic()
             ["Goron Race Reward"] = function () return event('BOSS_SNOWHEAD') and goron_fast_roll() end,
         },
     },
-    ["Milk Road Front"] = {
+    ["Milk Road"] = {
         ["events"] = {
+            ["PICTURE_TINGLE"] = function () return has('PICTOGRAPH_BOX') end,
+            ["RUPEES"] = function () return true end,
             ["MAGIC"] = function () return true end,
             ["ARROWS"] = function () return true end,
         },
         ["exits"] = {
-            ["Milk Road Back"] = function () return true end,
             ["Termina Field"] = function () return true end,
             ["Gorman Track Front"] = function () return true end,
             ["Owl Milk Road"] = function () return true end,
-        },
-    },
-    ["Milk Road Back"] = {
-        ["events"] = {
-            ["PICTURE_TINGLE"] = function () return has('PICTOGRAPH_BOX') end,
-            ["RUPEES"] = function () return true end,
-        },
-        ["exits"] = {
             ["Near Romani Ranch"] = function () return after(DAY3_AM_06_00) or can_use_keg() end,
-            ["Milk Road Front"] = function () return true end,
             ["Behind Gorman Fence"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or final_day() end,
             ["Tingle Ranch"] = function () return has_weapon_range() end,
         },
     },
     ["Near Romani Ranch"] = {
         ["exits"] = {
-            ["Milk Road Back"] = function () return after(DAY3_AM_06_00) or can_use_keg() end,
+            ["Milk Road"] = function () return after(DAY3_AM_06_00) or can_use_keg() end,
             ["Romani Ranch"] = function () return true end,
         },
     },
@@ -3050,8 +3211,8 @@ function _mm_logic()
             ["Romani Ranch"] = function () return true end,
         },
         ["locations"] = {
-            ["Doggy Racetrack Chest"] = function () return (can_use_beans() or has('MASK_ZORA') or can_hookshot_short() or trick('MM_DOG_RACE_CHEST_NOTHING')) and (after(DAY1_AM_06_00) and before(NIGHT1_PM_08_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_08_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_08_00))) end,
-            ["Doggy Racetrack HP"] = function () return has('MASK_TRUTH') and (after(DAY1_AM_06_00) and before(NIGHT1_PM_08_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_08_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_08_00))) end,
+            ["Doggy Racetrack Chest"] = function () return (can_use_beans() or has_mask_zora() or can_hookshot_short() or trick('MM_DOG_RACE_CHEST_NOTHING')) and (after(DAY1_AM_06_00) and before(NIGHT1_PM_08_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_08_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_08_00))) end,
+            ["Doggy Racetrack HP"] = function () return has_mask_truth() and (after(DAY1_AM_06_00) and before(NIGHT1_PM_08_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_08_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_08_00))) end,
         },
     },
     ["Stables"] = {
@@ -3059,9 +3220,9 @@ function _mm_logic()
             ["Romani Ranch"] = function () return true end,
         },
         ["locations"] = {
-            ["Romani Ranch Barn Cow Left"] = function () return (before(NIGHT1_AM_02_30) or event('ALIENS')) and can_play(SONG_EPONA) end,
-            ["Romani Ranch Barn Cow Right Front"] = function () return (before(NIGHT1_AM_02_30) or event('ALIENS')) and can_play(SONG_EPONA) end,
-            ["Romani Ranch Barn Cow Right Back"] = function () return (before(NIGHT1_AM_02_30) or event('ALIENS')) and can_play(SONG_EPONA) end,
+            ["Romani Ranch Barn Cow Left"] = function () return (before(NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
+            ["Romani Ranch Barn Cow Right Front"] = function () return (before(NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
+            ["Romani Ranch Barn Cow Right Back"] = function () return (before(NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
         },
     },
     ["Ranch House"] = {
@@ -3071,7 +3232,7 @@ function _mm_logic()
     },
     ["Great Bay Fence"] = {
         ["exits"] = {
-            ["Termina Field"] = function () return can_play(SONG_EPONA) or (can_goron_bomb_jump() and has_bombs()) end,
+            ["Termina Field"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) end,
             ["Great Bay Coast"] = function () return true end,
         },
     },
@@ -3087,7 +3248,7 @@ function _mm_logic()
         ["exits"] = {
             ["Fisher's Hut"] = function () return true end,
             ["Great Bay Fence"] = function () return true end,
-            ["Great Bay Coast Fortress"] = function () return has('MASK_ZORA') end,
+            ["Great Bay Coast Fortress"] = function () return has_mask_zora() end,
             ["Pinnacle Rock Entrance"] = function () return true end,
             ["Laboratory"] = function () return true end,
             ["Zora Cape"] = function () return true end,
@@ -3105,7 +3266,7 @@ function _mm_logic()
     },
     ["Great Bay Coast Fortress"] = {
         ["exits"] = {
-            ["Great Bay Coast"] = function () return has('MASK_ZORA') end,
+            ["Great Bay Coast"] = function () return has_mask_zora() end,
             ["Pirate Fortress"] = function () return true end,
         },
     },
@@ -3144,8 +3305,8 @@ function _mm_logic()
             ["Great Bay Coast"] = function () return true end,
         },
         ["locations"] = {
-            ["Great Bay Coast Cow Front"] = function () return can_play(SONG_EPONA) end,
-            ["Great Bay Coast Cow Back"] = function () return can_play(SONG_EPONA) end,
+            ["Great Bay Coast Cow Front"] = function () return can_play_epona() end,
+            ["Great Bay Coast Cow Back"] = function () return can_play_epona() end,
         },
     },
     ["Fisher's Hut"] = {
@@ -3158,22 +3319,22 @@ function _mm_logic()
     },
     ["Pinnacle Rock Entrance"] = {
         ["exits"] = {
-            ["Pinnacle Rock"] = function () return has('MASK_ZORA') and (event('SEAHORSE') or trick('MM_NO_SEAHORSE')) end,
+            ["Pinnacle Rock"] = function () return has_mask_zora() and (event('SEAHORSE') or trick('MM_NO_SEAHORSE')) end,
             ["Great Bay Coast"] = function () return true end,
         },
     },
     ["Pinnacle Rock"] = {
         ["events"] = {
-            ["ZORA_EGGS_PINNACLE_ROCK"] = function () return has('MASK_ZORA') and has_bottle() end,
+            ["ZORA_EGGS_PINNACLE_ROCK"] = function () return has_mask_zora() and has_bottle() end,
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
             ["Pinnacle Rock Entrance"] = function () return true end,
         },
         ["locations"] = {
-            ["Pinnacle Rock Chest 1"] = function () return has('MASK_ZORA') end,
-            ["Pinnacle Rock Chest 2"] = function () return has('MASK_ZORA') end,
-            ["Pinnacle Rock HP"] = function () return has('MASK_ZORA') and event('SEAHORSE') end,
+            ["Pinnacle Rock Chest 1"] = function () return has_mask_zora() end,
+            ["Pinnacle Rock Chest 2"] = function () return has_mask_zora() end,
+            ["Pinnacle Rock HP"] = function () return has_mask_zora() and event('SEAHORSE') end,
         },
     },
     ["Laboratory"] = {
@@ -3181,7 +3342,7 @@ function _mm_logic()
             ["Great Bay Coast"] = function () return true end,
         },
         ["locations"] = {
-            ["Laboratory Zora Song"] = function () return event('ZORA_EGGS_HOOKSHOT_ROOM') and event('ZORA_EGGS_BARREL_MAZE') and event('ZORA_EGGS_LONE_GUARD') and event('ZORA_EGGS_TREASURE_ROOM') and event('ZORA_EGGS_PINNACLE_ROCK') and has('MASK_ZORA') and has_ocarina() end,
+            ["Laboratory Zora Song"] = function () return event('ZORA_EGGS_HOOKSHOT_ROOM') and event('ZORA_EGGS_BARREL_MAZE') and event('ZORA_EGGS_LONE_GUARD') and event('ZORA_EGGS_TREASURE_ROOM') and event('ZORA_EGGS_PINNACLE_ROCK') and has_mask_zora() and has_ocarina() end,
             ["Laboratory Fish HP"] = function () return has_bottle() end,
         },
     },
@@ -3192,15 +3353,15 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Great Bay Coast"] = function () return true end,
-            ["Zora Cape Near Hall"] = function () return has('MASK_ZORA') end,
-            ["Zora Cape Peninsula"] = function () return has('MASK_ZORA') or trick('MM_ZORA_HALL_HUMAN') end,
+            ["Zora Cape Near Hall"] = function () return has_mask_zora() end,
+            ["Zora Cape Peninsula"] = function () return has_mask_zora() or trick('MM_ZORA_HALL_HUMAN') end,
             ["Waterfall Cliffs"] = function () return can_hookshot() end,
             ["Great Bay Near Fairy Fountain"] = function () return can_hookshot() end,
             ["Zora Cape Grotto"] = function () return can_break_boulders() end,
         },
         ["locations"] = {
-            ["Zora Cape Underwater Chest"] = function () return has('MASK_ZORA') end,
-            ["Zora Cape Waterfall HP"] = function () return has('MASK_ZORA') end,
+            ["Zora Cape Underwater Chest"] = function () return has_mask_zora() end,
+            ["Zora Cape Waterfall HP"] = function () return has_mask_zora() end,
         },
     },
     ["Zora Cape Grotto"] = {
@@ -3250,19 +3411,19 @@ function _mm_logic()
             ["Waterfall Cliffs"] = function () return true end,
         },
         ["locations"] = {
-            ["Waterfall Rapids Beaver Race 1"] = function () return has('MASK_ZORA') end,
-            ["Waterfall Rapids Beaver Race 2"] = function () return has('MASK_ZORA') end,
+            ["Waterfall Rapids Beaver Race 1"] = function () return has_mask_zora() end,
+            ["Waterfall Rapids Beaver Race 2"] = function () return has_mask_zora() end,
         },
     },
     ["Zora Cape Near Hall"] = {
         ["exits"] = {
-            ["Zora Cape"] = function () return has('MASK_ZORA') end,
-            ["Zora Hall Entrance"] = function () return has('MASK_ZORA') end,
+            ["Zora Cape"] = function () return has_mask_zora() end,
+            ["Zora Hall Entrance"] = function () return has_mask_zora() end,
         },
     },
     ["Zora Hall Entrance"] = {
         ["exits"] = {
-            ["Zora Cape Near Hall"] = function () return has('MASK_ZORA') end,
+            ["Zora Cape Near Hall"] = function () return has_mask_zora() end,
             ["Zora Hall"] = function () return true end,
         },
     },
@@ -3271,10 +3432,10 @@ function _mm_logic()
             ["Zora Hall Entrance"] = function () return true end,
             ["Zora Cape Peninsula"] = function () return true end,
             ["Zora Shop"] = function () return true end,
-            ["Drummer Room"] = function () return has('MASK_ZORA') end,
-            ["Japas' Room"] = function () return has('MASK_ZORA') end,
-            ["Evan's Room"] = function () return has('MASK_ZORA') end,
-            ["Lulu's Room"] = function () return has('MASK_ZORA') end,
+            ["Tijo's Room"] = function () return has_mask_zora() end,
+            ["Japas' Room"] = function () return has_mask_zora() end,
+            ["Evan's Room"] = function () return has_mask_zora() end,
+            ["Lulu's Room"] = function () return has_mask_zora() end,
         },
         ["locations"] = {
             ["Zora Hall Scene Lights"] = function () return can_use_fire_arrows() end,
@@ -3285,12 +3446,12 @@ function _mm_logic()
             ["Zora Hall"] = function () return true end,
         },
         ["locations"] = {
-            ["Zora Shop Item 1"] = function () return can_use_wallet(1) end,
-            ["Zora Shop Item 2"] = function () return can_use_wallet(1) end,
-            ["Zora Shop Item 3"] = function () return can_use_wallet(1) end,
+            ["Zora Shop Item 1"] = function () return shop_price(19) end,
+            ["Zora Shop Item 2"] = function () return shop_price(20) end,
+            ["Zora Shop Item 3"] = function () return shop_price(21) end,
         },
     },
-    ["Drummer Room"] = {
+    ["Tijo's Room"] = {
         ["exits"] = {
             ["Zora Hall"] = function () return true end,
         },
@@ -3313,32 +3474,32 @@ function _mm_logic()
             ["Zora Hall"] = function () return true end,
         },
         ["locations"] = {
-            ["Zora Hall Scrub HP"] = function () return trick('MM_ZORA_HALL_SCRUB_HP_NO_DEKU') and (has('MASK_GORON') or has('MASK_ZORA')) or (has('MASK_GORON') and has('MASK_DEKU') and has('DEED_MOUNTAIN')) end,
-            ["Zora Hall Scrub Shop"] = function () return has('MASK_ZORA') and can_use_wallet(1) end,
-            ["Zora Hall Scrub Deed"] = function () return has('DEED_MOUNTAIN') and has('MASK_GORON') end,
+            ["Zora Hall Scrub HP"] = function () return trick('MM_ZORA_HALL_SCRUB_HP_NO_DEKU') and (has_mask_goron() or has_mask_zora()) or (has_mask_goron() and has('MASK_DEKU') and has('DEED_MOUNTAIN')) end,
+            ["Zora Hall Scrub Shop"] = function () return has_mask_zora() and can_use_wallet(1) end,
+            ["Zora Hall Scrub Deed"] = function () return has('DEED_MOUNTAIN') and has_mask_goron() end,
         },
     },
     ["Zora Cape Peninsula"] = {
         ["exits"] = {
-            ["Zora Cape"] = function () return has('MASK_ZORA') or trick('MM_ZORA_HALL_HUMAN') end,
+            ["Zora Cape"] = function () return has_mask_zora() or trick('MM_ZORA_HALL_HUMAN') end,
             ["Zora Hall"] = function () return true end,
-            ["Great Bay Temple"] = function () return has('MASK_ZORA') and can_hookshot() and can_play(SONG_ZORA) end,
+            ["Great Bay Temple"] = function () return has_mask_zora() and can_hookshot() and can_play(SONG_ZORA) end,
             ["Owl Zora Cape"] = function () return true end,
         },
     },
     ["Behind Gorman Fence"] = {
         ["exits"] = {
-            ["Milk Road Back"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or final_day() end,
+            ["Milk Road"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or final_day() end,
             ["Gorman Track Back"] = function () return true end,
         },
     },
     ["Gorman Track Front"] = {
         ["exits"] = {
-            ["Milk Road Front"] = function () return true end,
+            ["Milk Road"] = function () return true end,
             ["Gorman Track Back"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) end,
         },
         ["locations"] = {
-            ["Gorman Track Garo Mask"] = function () return can_play(SONG_EPONA) and can_use_wallet(1) and is_day() end,
+            ["Gorman Track Garo Mask"] = function () return can_play_epona() and can_use_wallet(1) and is_day() end,
             ["Gorman Track Milk Purchase"] = function () return can_use_wallet(1) and is_day() end,
         },
     },
@@ -3354,8 +3515,8 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Termina Field"] = function () return true end,
-            ["Road to Ikana Grotto"] = function () return has('MASK_GORON') end,
-            ["Road to Ikana Center"] = function () return can_play(SONG_EPONA) or (can_goron_bomb_jump() and has_bombs()) end,
+            ["Road to Ikana Grotto"] = function () return has_mask_goron() end,
+            ["Road to Ikana Center"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) end,
         },
         ["locations"] = {
             ["Road to Ikana Chest"] = function () return can_hookshot() or (can_hookshot_short() and trick('MM_SHORT_HOOK_HARD')) end,
@@ -3384,7 +3545,7 @@ function _mm_logic()
             ["RUPEES"] = function () return can_use_light_arrows() and is_night() end,
         },
         ["exits"] = {
-            ["Road to Ikana Front"] = function () return can_play(SONG_EPONA) or (can_goron_bomb_jump() and has_bombs()) end,
+            ["Road to Ikana Front"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) end,
             ["Road to Ikana Top"] = function () return (has('MASK_GARO') or has('MASK_GIBDO')) and (can_hookshot() or (can_hookshot_short() and trick('MM_SHORT_HOOK_HARD'))) end,
             ["Ikana Graveyard"] = function () return true end,
         },
@@ -3481,8 +3642,8 @@ function _mm_logic()
             ["Swamp Front"] = function () return true end,
         },
         ["locations"] = {
-            ["Ikana Valley Scrub Rupee"] = function () return has('DEED_OCEAN') and has('MASK_ZORA') end,
-            ["Ikana Valley Scrub HP"] = function () return has('DEED_OCEAN') and has('MASK_ZORA') and has('MASK_DEKU') end,
+            ["Ikana Valley Scrub Rupee"] = function () return has('DEED_OCEAN') and has_mask_zora() end,
+            ["Ikana Valley Scrub HP"] = function () return has('DEED_OCEAN') and has_mask_zora() and has('MASK_DEKU') end,
             ["Ikana Valley Scrub Shop"] = function () return can_use_wallet(2) end,
         },
     },
@@ -3523,7 +3684,7 @@ function _mm_logic()
             ["Ikana Valley"] = function () return true end,
             ["Ikana Fairy Fountain"] = function () return true end,
             ["Ikana Spring Water Cave"] = function () return true end,
-            ["Music Box House"] = function () return event('IKANA_CURSE_LIFTED') or event('BOSS_STONE_TOWER') end,
+            ["Music Box House"] = function () return event('IKANA_CURSE_LIFTED') and (has_explosives() or has('MASK_STONE')) end,
             ["Ghost Hut"] = function () return true end,
             ["Beneath the Well Entrance"] = function () return true end,
             ["Ikana Castle Entrance"] = function () return true end,
@@ -3542,7 +3703,7 @@ function _mm_logic()
     },
     ["Ikana Spring Water Cave"] = {
         ["events"] = {
-            ["IKANA_CURSE_LIFTED"] = function () return can_play(SONG_STORMS) end,
+            ["IKANA_CURSE_LIFTED"] = function () return can_play_storms() end,
         },
         ["exits"] = {
             ["Ikana Canyon"] = function () return true end,
@@ -3599,7 +3760,7 @@ function _mm_logic()
             ["MAGIC"] = function () return true end,
             ["BOMBS"] = function () return true end,
             ["ARROWS"] = function () return true end,
-            ["RUPEES"] = function () return has('MASK_GORON') end,
+            ["RUPEES"] = function () return has_mask_goron() end,
         },
         ["exits"] = {
             ["Stone Tower"] = function () return true end,
@@ -3610,10 +3771,10 @@ function _mm_logic()
     },
     ["Stone Tower Front of Temple"] = {
         ["events"] = {
-            ["MAGIC"] = function () return has('MASK_GORON') or has('MASK_ZORA') or (scarecrow_hookshot() and can_fight()) end,
-            ["BOMBS"] = function () return has('MASK_GORON') or has('MASK_ZORA') or (scarecrow_hookshot() and can_fight()) end,
-            ["ARROWS"] = function () return has('MASK_GORON') or has('MASK_ZORA') or (scarecrow_hookshot() and can_fight()) end,
-            ["RUPEES"] = function () return has('MASK_GORON') or has('MASK_ZORA') or (scarecrow_hookshot() and can_fight()) end,
+            ["MAGIC"] = function () return has_mask_goron() or has_mask_zora() or (scarecrow_hookshot() and can_fight()) end,
+            ["BOMBS"] = function () return has_mask_goron() or has_mask_zora() or (scarecrow_hookshot() and can_fight()) end,
+            ["ARROWS"] = function () return has_mask_goron() or has_mask_zora() or (scarecrow_hookshot() and can_fight()) end,
+            ["RUPEES"] = function () return has_mask_goron() or has_mask_zora() or (scarecrow_hookshot() and can_fight()) end,
         },
         ["exits"] = {
             ["Stone Tower"] = function () return true end,
@@ -3647,7 +3808,7 @@ function _mm_logic()
     },
     ["Pirate Fortress"] = {
         ["exits"] = {
-            ["Great Bay Coast Fortress"] = function () return has('MASK_ZORA') end,
+            ["Great Bay Coast Fortress"] = function () return has_mask_zora() end,
             ["Pirate Fortress Entrance"] = function () return can_reset_time() end,
         },
     },
@@ -3657,14 +3818,14 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Pirate Fortress"] = function () return true end,
-            ["Pirate Fortress Sewers"] = function () return has('MASK_ZORA') and has('MASK_GORON') end,
+            ["Pirate Fortress Sewers"] = function () return has_mask_zora() and has_mask_goron() end,
             ["Pirate Fortress Entrance Balcony"] = function () return can_hookshot() or (can_hookshot_short() and trick('MM_PFI_BOAT_HOOK')) end,
             ["Pirate Fortress Entrance Lookout"] = function () return can_hookshot_short() and trick('MM_PFI_BOAT_HOOK') end,
         },
         ["locations"] = {
-            ["Pirate Fortress Entrance Chest 1"] = function () return has('MASK_ZORA') end,
-            ["Pirate Fortress Entrance Chest 2"] = function () return has('MASK_ZORA') end,
-            ["Pirate Fortress Entrance Chest 3"] = function () return has('MASK_ZORA') end,
+            ["Pirate Fortress Entrance Chest 1"] = function () return has_mask_zora() end,
+            ["Pirate Fortress Entrance Chest 2"] = function () return has_mask_zora() end,
+            ["Pirate Fortress Entrance Chest 3"] = function () return has_mask_zora() end,
         },
     },
     ["Pirate Fortress Entrance Balcony"] = {
@@ -3677,13 +3838,13 @@ function _mm_logic()
     ["Pirate Fortress Sewers"] = {
         ["exits"] = {
             ["Pirate Fortress Entrance"] = function () return true end,
-            ["Pirate Fortress Sewers End"] = function () return has('MASK_ZORA') end,
+            ["Pirate Fortress Sewers End"] = function () return has_mask_zora() end,
         },
         ["locations"] = {
-            ["Pirate Fortress Sewers Chest 1"] = function () return has('MASK_ZORA') end,
-            ["Pirate Fortress Sewers Chest 2"] = function () return has('MASK_ZORA') end,
-            ["Pirate Fortress Sewers Chest 3"] = function () return has('MASK_ZORA') end,
-            ["Pirate Fortress Sewers HP"] = function () return has('MASK_ZORA') end,
+            ["Pirate Fortress Sewers Chest 1"] = function () return has_mask_zora() end,
+            ["Pirate Fortress Sewers Chest 2"] = function () return has_mask_zora() end,
+            ["Pirate Fortress Sewers Chest 3"] = function () return has_mask_zora() end,
+            ["Pirate Fortress Sewers HP"] = function () return has_mask_zora() end,
         },
     },
     ["Pirate Fortress Sewers End"] = {
@@ -3693,7 +3854,7 @@ function _mm_logic()
             ["NUTS"] = function () return true end,
         },
         ["exits"] = {
-            ["Pirate Fortress Entrance"] = function () return has('MASK_ZORA') end,
+            ["Pirate Fortress Entrance"] = function () return has_mask_zora() end,
             ["Pirate Fortress Entrance Balcony"] = function () return true end,
         },
     },
@@ -3725,7 +3886,7 @@ function _mm_logic()
     ["Pirate Fortress Hookshot Room Lower"] = {
         ["events"] = {
             ["FORTRESS_BEEHIVE"] = function () return has('MASK_STONE') and can_hookshot_short() and (has_arrows() or can_use_deku_bubble()) end,
-            ["ZORA_EGGS_HOOKSHOT_ROOM"] = function () return can_hookshot_short() and has('MASK_ZORA') and has_bottle() and event('FORTRESS_BEEHIVE') end,
+            ["ZORA_EGGS_HOOKSHOT_ROOM"] = function () return can_hookshot_short() and has_mask_zora() and has_bottle() and event('FORTRESS_BEEHIVE') end,
         },
         ["exits"] = {
             ["Pirate Fortress Interior"] = function () return true end,
@@ -3755,7 +3916,7 @@ function _mm_logic()
     },
     ["Pirate Fortress Barrel Maze Aquarium"] = {
         ["events"] = {
-            ["ZORA_EGGS_BARREL_MAZE"] = function () return can_hookshot_short() and has('MASK_ZORA') and has_bottle() end,
+            ["ZORA_EGGS_BARREL_MAZE"] = function () return can_hookshot_short() and has_mask_zora() and has_bottle() end,
             ["ARROWS"] = function () return true end,
             ["RUPEES"] = function () return true end,
         },
@@ -3785,7 +3946,7 @@ function _mm_logic()
     },
     ["Pirate Fortress Lone Guard Aquarium"] = {
         ["events"] = {
-            ["ZORA_EGGS_LONE_GUARD"] = function () return can_hookshot_short() and has('MASK_ZORA') and has_bottle() end,
+            ["ZORA_EGGS_LONE_GUARD"] = function () return can_hookshot_short() and has_mask_zora() and has_bottle() end,
             ["ARROWS"] = function () return true end,
         },
         ["exits"] = {
@@ -3793,7 +3954,7 @@ function _mm_logic()
             ["Pirate Fortress Lone Guard Exit"] = function () return true end,
         },
         ["locations"] = {
-            ["Pirate Fortress Interior Aquarium"] = function () return has('MASK_ZORA') and can_hookshot_short() end,
+            ["Pirate Fortress Interior Aquarium"] = function () return has_mask_zora() and can_hookshot_short() end,
         },
     },
     ["Pirate Fortress Lone Guard Exit"] = {
@@ -3819,7 +3980,7 @@ function _mm_logic()
     },
     ["Pirate Fortress Treasure Room Aquarium"] = {
         ["events"] = {
-            ["ZORA_EGGS_TREASURE_ROOM"] = function () return can_hookshot_short() and has('MASK_ZORA') and has_bottle() end,
+            ["ZORA_EGGS_TREASURE_ROOM"] = function () return can_hookshot_short() and has_mask_zora() and has_bottle() end,
             ["ARROWS"] = function () return true end,
         },
         ["exits"] = {
@@ -3906,8 +4067,8 @@ function _mm_logic()
     ["Snowhead Temple Entrance"] = {
         ["exits"] = {
             ["Snowhead Temple"] = function () return true end,
-            ["Snowhead Temple Main"] = function () return has('MASK_GORON') or has('MASK_ZORA') end,
-            ["Snowhead Temple Boss"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_GOHT') end,
+            ["Snowhead Temple Main"] = function () return has_mask_goron() or has_mask_zora() end,
+            ["Snowhead Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_GOHT') end,
         },
     },
     ["Snowhead Temple Main"] = {
@@ -3966,7 +4127,7 @@ function _mm_logic()
             ["Snowhead Temple Center Level 1"] = function () return true end,
             ["Snowhead Temple Center Level 2 Dual"] = function () return goron_fast_roll() end,
             ["Snowhead Temple Fire Arrow"] = function () return goron_fast_roll() or (can_use_lens() and scarecrow_hookshot() and has('MASK_DEKU')) end,
-            ["Snowhead Temple Center Level 3 Iced"] = function () return can_use_fire_arrows() or (trick_sht_fireless() and scarecrow_hookshot() and has('MASK_GORON')) end,
+            ["Snowhead Temple Center Level 3 Iced"] = function () return can_use_fire_arrows() or (trick_sht_fireless() and scarecrow_hookshot() and has_mask_goron()) or trick_sht_fireless_er() end,
             ["Snowhead Temple Center Level 3 Snow"] = function () return can_use_lens() and scarecrow_hookshot() end,
         },
         ["locations"] = {
@@ -3985,7 +4146,7 @@ function _mm_logic()
     },
     ["Snowhead Temple Pillars Room"] = {
         ["events"] = {
-            ["SNOWHEAD_RAISE_PILLAR"] = function () return has('MASK_GORON') and (can_use_fire_arrows() or event('SHT_STICK_RUN')) end,
+            ["SNOWHEAD_RAISE_PILLAR"] = function () return has_mask_goron() and (can_use_fire_arrows() or (event('SHT_STICK_RUN') and trick('MM_SHT_STICKS_RUN'))) end,
         },
         ["exits"] = {
             ["Snowhead Temple Center Level 1"] = function () return true end,
@@ -3999,7 +4160,7 @@ function _mm_logic()
             ["Snowhead Temple Center Level 1"] = function () return true end,
         },
         ["locations"] = {
-            ["Snowhead Temple Central Room Bottom"] = function () return has('MASK_GORON') end,
+            ["Snowhead Temple Central Room Bottom"] = function () return has_mask_goron() end,
         },
     },
     ["Snowhead Temple Block Room"] = {
@@ -4008,7 +4169,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Snowhead Temple Center Level 1"] = function () return true end,
-            ["Snowhead Temple Block Room Upper"] = function () return can_hookshot_short() or (event('SNOWHEAD_PUSH_BLOCK') and has('MASK_ZORA')) end,
+            ["Snowhead Temple Block Room Upper"] = function () return can_hookshot_short() or (event('SNOWHEAD_PUSH_BLOCK') and has_mask_zora()) end,
         },
         ["locations"] = {
             ["Snowhead Temple Block Room"] = function () return true end,
@@ -4032,7 +4193,7 @@ function _mm_logic()
         ["locations"] = {
             ["Snowhead Temple Compass"] = function () return true end,
             ["Snowhead Temple Compass Room Ledge"] = function () return can_use_fire_arrows() or trick_sht_fireless() end,
-            ["Snowhead Temple SF Compass Room Crate"] = function () return ((can_use_fire_arrows() or trick_sht_fireless()) or can_hookshot_short()) and (has_explosives() or has('MASK_GORON')) or (has('MASK_GREAT_FAIRY') and (has_bombs() or trick_keg_explosives())) or can_goron_bomb_jump() end,
+            ["Snowhead Temple SF Compass Room Crate"] = function () return ((can_use_fire_arrows() or trick_sht_fireless()) or can_hookshot_short()) and (has_explosives() or has_mask_goron()) or (has('MASK_GREAT_FAIRY') and (has_bombs() or trick_keg_explosives())) or can_goron_bomb_jump() end,
         },
     },
     ["Snowhead Temple Icicles"] = {
@@ -4042,7 +4203,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Snowhead Temple Icicle Room Alcove"] = function () return can_use_lens() end,
-            ["Snowhead Temple Icicle Room"] = function () return (has_arrows() or has('MASK_ZORA') or can_use_lens()) and can_break_boulders() or (can_hookshot_short() and (has_explosives() or trick_keg_explosives())) end,
+            ["Snowhead Temple Icicle Room"] = function () return (has_arrows() or has_mask_zora() or can_use_lens()) and can_break_boulders() or (can_hookshot_short() and (has_explosives() or trick_keg_explosives())) end,
         },
     },
     ["Snowhead Temple Dual Switches"] = {
@@ -4076,7 +4237,7 @@ function _mm_logic()
         ["exits"] = {
             ["Snowhead Temple Map Room Upper"] = function () return true end,
             ["Snowhead Temple Center Level 2 Dual"] = function () return true end,
-            ["Snowhead Temple Center Level 3 Iced"] = function () return has('MASK_GORON') or can_hookshot() end,
+            ["Snowhead Temple Center Level 3 Iced"] = function () return has_mask_goron() or can_hookshot() end,
             ["Snowhead Temple Snow Room"] = function () return small_keys(SMALL_KEY_SH, 3) end,
             ["Snowhead Temple Fire Arrow"] = function () return true end,
         },
@@ -4090,9 +4251,9 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Snowhead Temple Map Room Upper"] = function () return true end,
-            ["Snowhead Temple Center Level 2 Dual"] = function () return has_weapon() or has('MASK_ZORA') or has('MASK_GORON') end,
+            ["Snowhead Temple Center Level 2 Dual"] = function () return has_weapon() or has_mask_zora() or has_mask_goron() end,
             ["Snowhead Temple Fire Arrow"] = function () return true end,
-            ["Snowhead Temple Center Level 3 Snow"] = function () return has('MASK_GORON') or can_hookshot() end,
+            ["Snowhead Temple Center Level 3 Snow"] = function () return has_mask_goron() or can_hookshot() end,
             ["Snowhead Temple Center Level 4"] = function () return event('SNOWHEAD_RAISE_PILLAR') end,
         },
         ["locations"] = {
@@ -4102,7 +4263,7 @@ function _mm_logic()
     ["Snowhead Temple Snow Room"] = {
         ["exits"] = {
             ["Snowhead Temple Center Level 3 Snow"] = function () return small_keys(SMALL_KEY_SH, 3) end,
-            ["Snowhead Temple Dinolfos Room"] = function () return can_use_fire_arrows() end,
+            ["Snowhead Temple Dinolfos Room"] = function () return can_use_fire_arrows() or trick_sht_fireless_er() end,
         },
         ["locations"] = {
             ["Snowhead Temple SF Snow Room"] = function () return can_use_lens() and (has_arrows() or can_hookshot_short()) and has('MASK_GREAT_FAIRY') end,
@@ -4110,10 +4271,11 @@ function _mm_logic()
     },
     ["Snowhead Temple Dinolfos Room"] = {
         ["exits"] = {
-            ["Snowhead Temple Snow Room"] = function () return true end,
+            ["Snowhead Temple Snow Room"] = function () return can_use_fire_arrows() or trick_sht_fireless_er() end,
             ["Snowhead Temple Boss Key Room"] = function () return event('SNOWHEAD_RAISE_PILLAR') end,
             ["Snowhead Temple Center Level 3 Iced"] = function () return true end,
             ["Snowhead Temple Center Level 3 Snow"] = function () return true end,
+            ["Snowhead Temple Center Level 4"] = function () return trick('MM_SHT_PILLARLESS') and (can_use_fire_arrows() or has_bombs()) end,
         },
         ["locations"] = {
             ["Snowhead Temple SF Dinolfos 1"] = function () return true end,
@@ -4125,6 +4287,7 @@ function _mm_logic()
             ["Snowhead Temple Dinolfos Room"] = function () return event('SNOWHEAD_RAISE_PILLAR') end,
             ["Snowhead Temple Center Level 3 Iced"] = function () return true end,
             ["Snowhead Temple Center Level 3 Snow"] = function () return event('SNOWHEAD_RAISE_PILLAR') end,
+            ["Snowhead Temple Center Level 4"] = function () return trick('MM_SHT_PILLARLESS') and (can_use_fire_arrows() or has_bombs()) end,
         },
         ["locations"] = {
             ["Snowhead Temple Boss Key"] = function () return true end,
@@ -4134,9 +4297,14 @@ function _mm_logic()
         ["exits"] = {
             ["Snowhead Temple Center Level 3 Iced"] = function () return true end,
             ["Snowhead Temple Center Level 3 Snow"] = function () return true end,
-            ["Snowhead Temple Boss"] = function () return goron_fast_roll() and boss_key(BOSS_KEY_SH) end,
-            ["Snowhead Temple Boss Key Room"] = function () return has('MASK_GORON') end,
-            ["Snowhead Temple Dinolfos Room"] = function () return has('MASK_GORON') end,
+            ["Snowhead Temple Boss Access"] = function () return goron_fast_roll() and boss_key(BOSS_KEY_SH) end,
+            ["Snowhead Temple Boss Key Room"] = function () return has_mask_goron() end,
+            ["Snowhead Temple Dinolfos Room"] = function () return has_mask_goron() end,
+        },
+    },
+    ["Snowhead Temple Boss Access"] = {
+        ["exits"] = {
+            ["Snowhead Temple Boss"] = function () return true end,
         },
     },
     ["Snowhead Temple Boss"] = {
@@ -4187,7 +4355,7 @@ function _mm_logic()
     ["Stone Tower Temple West"] = {
         ["exits"] = {
             ["Stone Tower Temple Entrance"] = function () return true end,
-            ["Stone Tower Temple West Garden"] = function () return can_play(SONG_EMPTINESS) and has('MASK_GORON') and (has_explosives() or trick_keg_explosives()) end,
+            ["Stone Tower Temple West Garden"] = function () return can_play(SONG_EMPTINESS) and has_mask_goron() and (has_explosives() or trick_keg_explosives()) end,
         },
     },
     ["Stone Tower Temple West Garden"] = {
@@ -4196,7 +4364,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Stone Tower Temple Under West Garden"] = function () return true end,
-            ["Stone Tower Temple Center Ledge"] = function () return small_keys(SMALL_KEY_ST, 4) or (small_keys(SMALL_KEY_ST, 3) and has('MASK_ZORA')) end,
+            ["Stone Tower Temple Center Ledge"] = function () return small_keys(SMALL_KEY_ST, 4) or (small_keys(SMALL_KEY_ST, 3) and has_mask_zora()) end,
         },
     },
     ["Stone Tower Temple Under West Garden"] = {
@@ -4211,17 +4379,17 @@ function _mm_logic()
     },
     ["Stone Tower Temple Center Ledge"] = {
         ["exits"] = {
-            ["Stone Tower Temple West Garden"] = function () return small_keys(SMALL_KEY_ST, 4) or (small_keys(SMALL_KEY_ST, 3) and has('MASK_GORON') and (has_explosives() or trick_keg_explosives()) and can_play(SONG_EMPTINESS)) end,
+            ["Stone Tower Temple West Garden"] = function () return small_keys(SMALL_KEY_ST, 4) or (small_keys(SMALL_KEY_ST, 3) and has_mask_goron() and (has_explosives() or trick_keg_explosives()) and can_play(SONG_EMPTINESS)) end,
             ["Stone Tower Temple Center"] = function () return true end,
         },
         ["locations"] = {
-            ["Stone Tower Temple Center Sun Block Chest"] = function () return (has('MASK_ZORA') or has('MASK_DEKU') or has_explosives() or (has_magic() and (has_weapon() and has('SPIN_UPGRADE'))) or has('SWORD', 3) or has('GREAT_FAIRY_SWORD') or can_use_ice_arrows()) and can_use_light_arrows() end,
+            ["Stone Tower Temple Center Sun Block Chest"] = function () return (has_mask_zora() or has('MASK_DEKU') or has_explosives() or (has_magic() and (has_weapon() and has('SPIN_UPGRADE'))) or has('SWORD', 3) or has('GREAT_FAIRY_SWORD') or can_use_ice_arrows()) and can_use_light_arrows() end,
         },
     },
     ["Stone Tower Temple Center"] = {
         ["exits"] = {
-            ["Stone Tower Temple Water Room"] = function () return has('MASK_ZORA') end,
-            ["Stone Tower Temple Center Ledge"] = function () return has('MASK_ZORA') end,
+            ["Stone Tower Temple Water Room"] = function () return has_mask_zora() end,
+            ["Stone Tower Temple Center Ledge"] = function () return has_mask_zora() end,
             ["Stone Tower Temple Water Bridge"] = function () return can_goron_bomb_jump() and can_use_ice_arrows() end,
         },
         ["locations"] = {
@@ -4230,27 +4398,27 @@ function _mm_logic()
     },
     ["Stone Tower Temple Water Room"] = {
         ["events"] = {
-            ["STONE_TOWER_WATER_CHEST_SWITCH"] = function () return has('MASK_ZORA') end,
+            ["STONE_TOWER_WATER_CHEST_SWITCH"] = function () return has_mask_zora() end,
             ["STONE_TOWER_EAST_ENTRY_BLOCK"] = function () return has_mirror_shield() or can_use_light_arrows() end,
         },
         ["exits"] = {
-            ["Stone Tower Temple Center"] = function () return has('MASK_ZORA') end,
+            ["Stone Tower Temple Center"] = function () return has_mask_zora() end,
             ["Stone Tower Temple Mirrors Room"] = function () return small_keys(SMALL_KEY_ST, 4) end,
             ["Stone Tower Temple Entrance"] = function () return event('STONE_TOWER_EAST_ENTRY_BLOCK') end,
         },
         ["locations"] = {
             ["Stone Tower Temple Compass"] = function () return event('STONE_TOWER_EAST_ENTRY_BLOCK') end,
-            ["Stone Tower Temple Water Sun Switch Chest"] = function () return has('MASK_ZORA') and event('STONE_TOWER_WATER_CHEST_SUN') end,
+            ["Stone Tower Temple Water Sun Switch Chest"] = function () return has_mask_zora() and event('STONE_TOWER_WATER_CHEST_SUN') end,
         },
     },
     ["Stone Tower Temple Mirrors Room"] = {
         ["exits"] = {
             ["Stone Tower Temple Water Room"] = function () return small_keys(SMALL_KEY_ST, 4) end,
-            ["Stone Tower Temple Wind Room"] = function () return has('MASK_GORON') and has_mirror_shield() or can_use_light_arrows() end,
+            ["Stone Tower Temple Wind Room"] = function () return has_mask_goron() and has_mirror_shield() or can_use_light_arrows() end,
         },
         ["locations"] = {
-            ["Stone Tower Temple Mirrors Room Center Chest"] = function () return has('MASK_GORON') and has_mirror_shield() or can_use_light_arrows() end,
-            ["Stone Tower Temple Mirrors Room Right Chest"] = function () return has('MASK_GORON') and has_mirror_shield() or can_use_light_arrows() end,
+            ["Stone Tower Temple Mirrors Room Center Chest"] = function () return has_mask_goron() and has_mirror_shield() or can_use_light_arrows() end,
+            ["Stone Tower Temple Mirrors Room Right Chest"] = function () return has_mask_goron() and has_mirror_shield() or can_use_light_arrows() end,
         },
     },
     ["Stone Tower Temple Wind Room"] = {
@@ -4260,7 +4428,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Stone Tower Temple Wind Room Ledge Chest"] = function () return has('MASK_DEKU') end,
-            ["Stone Tower Temple Wind Room Jail Chest"] = function () return (has('MASK_DEKU') or can_use_light_arrows()) and has('MASK_GORON') end,
+            ["Stone Tower Temple Wind Room Jail Chest"] = function () return (has('MASK_DEKU') or can_use_light_arrows()) and has_mask_goron() end,
         },
     },
     ["Stone Tower Temple Light Arrow Room"] = {
@@ -4304,7 +4472,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted"] = function () return true end,
             ["Stone Tower Temple Inverted East"] = function () return can_use_light_arrows() end,
             ["Stone Tower Temple Inverted Entrance Ledge"] = function () return trick('MM_ISTT_ENTRY_JUMP') and (has_bombs() or trick_keg_explosives()) end,
-            ["Stone Tower Temple Boss"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_TWINMOLD') end,
+            ["Stone Tower Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_TWINMOLD') end,
         },
         ["locations"] = {
             ["Stone Tower Temple Inverted Entrance Chest"] = function () return can_use_light_arrows() end,
@@ -4330,7 +4498,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Stone Tower Temple Inverted East"] = function () return true end,
-            ["Stone Tower Temple Inverted Center Bridge"] = function () return trick('MM_ISTT_EYEGORE') and (has('MASK_ZORA') and has_bombs() or (has_shield() and has_explosives())) end,
+            ["Stone Tower Temple Inverted Center Bridge"] = function () return trick('MM_ISTT_EYEGORE') and (has_mask_zora() and has_bombs() or (has_shield() and has_explosives())) end,
             ["Stone Tower Temple Inverted Boss Key Room"] = function () return trick('MM_ISTT_EYEGORE') end,
         },
         ["locations"] = {
@@ -4401,8 +4569,8 @@ function _mm_logic()
     ["Stone Tower Temple Inverted Center Bridge"] = {
         ["exits"] = {
             ["Stone Tower Temple Inverted Pre-Boss"] = function () return true end,
-            ["Stone Tower Temple Inverted Boss Key Room"] = function () return trick('MM_ISTT_EYEGORE') and (has('MASK_GORON') or (has_explosives() or (trick_keg_explosives() and can_hookshot() and small_keys(SMALL_KEY_ST, 4)))) end,
-            ["Stone Tower Temple Inverted Center"] = function () return trick('MM_ISTT_EYEGORE') and (has('MASK_GORON') or (has_explosives() or (trick_keg_explosives() and can_hookshot()))) end,
+            ["Stone Tower Temple Inverted Boss Key Room"] = function () return trick('MM_ISTT_EYEGORE') and (has_mask_goron() or (has_explosives() or (trick_keg_explosives() and can_hookshot() and small_keys(SMALL_KEY_ST, 4)))) end,
+            ["Stone Tower Temple Inverted Center"] = function () return trick('MM_ISTT_EYEGORE') and (has_mask_goron() or (has_explosives() or (trick_keg_explosives() and can_hookshot()))) end,
         },
         ["locations"] = {
             ["Stone Tower Temple Inverted Giant Mask"] = function () return true end,
@@ -4415,7 +4583,12 @@ function _mm_logic()
             ["ARROWS"] = function () return can_hookshot_short() end,
         },
         ["exits"] = {
-            ["Stone Tower Temple Boss"] = function () return can_hookshot_short() and boss_key(BOSS_KEY_ST) end,
+            ["Stone Tower Temple Boss Access"] = function () return can_hookshot_short() and boss_key(BOSS_KEY_ST) end,
+        },
+    },
+    ["Stone Tower Temple Boss Access"] = {
+        ["exits"] = {
+            ["Stone Tower Temple Boss"] = function () return true end,
         },
     },
     ["Stone Tower Temple Boss"] = {
@@ -4451,7 +4624,7 @@ function _mm_logic()
             ["Swamp Spider House"] = function () return true end,
         },
         ["locations"] = {
-            ["Swamp Skulltula Main Room Near Ceiling"] = function () return can_hookshot_short() or has('MASK_ZORA') or (has('MASK_DEKU') and (has_arrows() or has_magic() or (has_bombs() or has_bombchu() or trick_keg_explosives()))) end,
+            ["Swamp Skulltula Main Room Near Ceiling"] = function () return can_hookshot_short() or has_mask_zora() or (has('MASK_DEKU') and (has_arrows() or has_magic() or (has_bombs() or has_bombchu() or trick_keg_explosives()))) end,
             ["Swamp Skulltula Main Room Lower Right Soft Soil"] = function () return has_bottle() end,
             ["Swamp Skulltula Main Room Lower Left Soft Soil"] = function () return has_bottle() end,
             ["Swamp Skulltula Main Room Upper Soft Soil"] = function () return has_bottle() end,
@@ -4459,7 +4632,7 @@ function _mm_logic()
             ["Swamp Skulltula Main Room Pillar"] = function () return true end,
             ["Swamp Skulltula Main Room Water"] = function () return true end,
             ["Swamp Skulltula Main Room Jar"] = function () return true end,
-            ["Swamp Skulltula Gold Room Near Ceiling"] = function () return can_hookshot_short() or has('MASK_ZORA') or can_use_beans() end,
+            ["Swamp Skulltula Gold Room Near Ceiling"] = function () return can_hookshot_short() or has_mask_zora() or can_use_beans() end,
             ["Swamp Skulltula Gold Room Pillar"] = function () return true end,
             ["Swamp Skulltula Gold Room Wall"] = function () return true end,
             ["Swamp Skulltula Tree Room Hive"] = function () return has_weapon_range() end,
@@ -4468,7 +4641,7 @@ function _mm_logic()
             ["Swamp Skulltula Tree Room Tree 1"] = function () return true end,
             ["Swamp Skulltula Tree Room Tree 2"] = function () return true end,
             ["Swamp Skulltula Tree Room Tree 3"] = function () return true end,
-            ["Swamp Skulltula Monument Room Lower Wall"] = function () return can_hookshot_short() or has('MASK_ZORA') or (can_use_beans() and can_break_boulders()) end,
+            ["Swamp Skulltula Monument Room Lower Wall"] = function () return can_hookshot_short() or has_mask_zora() or (can_use_beans() and can_break_boulders()) end,
             ["Swamp Skulltula Monument Room On Monument"] = function () return true end,
             ["Swamp Skulltula Monument Room Crate 1"] = function () return true end,
             ["Swamp Skulltula Monument Room Crate 2"] = function () return true end,
@@ -4497,7 +4670,7 @@ function _mm_logic()
         ["exits"] = {
             ["Woodfall Temple"] = function () return true end,
             ["Woodfall Temple Main"] = function () return has('MASK_DEKU') or can_hookshot_short() end,
-            ["Woodfall Temple Boss"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_ODOLWA') end,
+            ["Woodfall Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_ODOLWA') end,
         },
         ["locations"] = {
             ["Woodfall Temple Entrance Chest"] = function () return has('MASK_DEKU') or can_hookshot_short() end,
@@ -4531,7 +4704,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Woodfall Temple Water Chest"] = function () return has('MASK_DEKU') or can_hookshot() or (can_hookshot_short() and event('WOODFALL_TEMPLE_MAIN_FLOWER')) or can_use_ice_arrows() end,
-            ["Woodfall Temple SF Water Room Beehive"] = function () return has_arrows() or can_use_deku_bubble() or (has('MASK_GREAT_FAIRY') and (has_bombs() or has_bombchu() or has('MASK_ZORA') or can_hookshot())) end,
+            ["Woodfall Temple SF Water Room Beehive"] = function () return has_arrows() or can_use_deku_bubble() or (has('MASK_GREAT_FAIRY') and (has_bombs() or has_bombchu() or has_mask_zora() or can_hookshot())) end,
         },
     },
     ["Woodfall Temple Map Room"] = {
@@ -4539,7 +4712,7 @@ function _mm_logic()
             ["Woodfall Temple Water Room"] = function () return true end,
         },
         ["locations"] = {
-            ["Woodfall Temple Map"] = function () return has('MASK_DEKU') or has_explosives() or has('MASK_GORON') end,
+            ["Woodfall Temple Map"] = function () return has('MASK_DEKU') or has_explosives() or has_mask_goron() end,
         },
     },
     ["Woodfall Temple Maze"] = {
@@ -4625,7 +4798,7 @@ function _mm_logic()
     },
     ["Woodfall Temple Pre-Boss"] = {
         ["exits"] = {
-            ["Woodfall Temple Boss"] = function () return boss_key(BOSS_KEY_WF) and (can_hookshot() or has('MASK_DEKU')) end,
+            ["Woodfall Temple Boss Access"] = function () return boss_key(BOSS_KEY_WF) and (can_hookshot() or has('MASK_DEKU')) end,
             ["Woodfall Temple Main Ledge"] = function () return true end,
         },
         ["locations"] = {
@@ -4641,6 +4814,11 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Woodfall"] = function () return true end,
+        },
+    },
+    ["Woodfall Temple Boss Access"] = {
+        ["exits"] = {
+            ["Woodfall Temple Boss"] = function () return true end,
         },
     },
     ["Woodfall Temple Boss"] = {
