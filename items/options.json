@@ -1294,7 +1294,8 @@
       {
         "img": "images/setting_priceOotShops_vanilla.png",
         "codes": "setting_priceOotShops,setting_priceOotShops_vanilla",
-        "inherit_codes": false
+        "inherit_codes": false,
+        "img_mods": "@disabled"
       },
       {
         "img": "images/setting_priceOotShops_weighted.png",
@@ -1323,7 +1324,8 @@
       {
         "img": "images/setting_priceOotScrubs_vanilla.png",
         "codes": "setting_priceOotScrubs,setting_priceOotScrubs_vanilla",
-        "inherit_codes": false
+        "inherit_codes": false,
+        "img_mods": "@disabled"
       },
       {
         "img": "images/setting_priceOotScrubs_weighted.png",
@@ -1352,7 +1354,8 @@
       {
         "img": "images/setting_priceMmShops_vanilla.png",
         "codes": "setting_priceMmShops,setting_priceMmShops_vanilla",
-        "inherit_codes": false
+        "inherit_codes": false,
+        "img_mods": "@disabled"
       },
       {
         "img": "images/setting_priceMmShops_weighted.png",
@@ -1381,7 +1384,8 @@
       {
         "img": "images/setting_priceMmTingle_vanilla.png",
         "codes": "setting_priceMmTingle,setting_priceMmTingle_vanilla",
-        "inherit_codes": false
+        "inherit_codes": false,
+        "img_mods": "@disabled"
       },
       {
         "img": "images/setting_priceMmTingle_weighted.png",
