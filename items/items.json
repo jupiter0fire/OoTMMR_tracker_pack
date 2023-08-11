@@ -90,7 +90,7 @@
     "name": "Ice Arrows",
     "type": "toggle",
     "img": "images/icearrow.png",
-    "codes": "icearrow,iarrow,ia"
+    "codes": "OOT_ARROW_ICE"
   },
   {
     "name": "Light Arrows",

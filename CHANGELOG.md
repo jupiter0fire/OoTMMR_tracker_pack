@@ -1,5 +1,16 @@
 # Releases
 
+## v1.12.4.1
+
+Logic updated to version 1.12.4 of the OOTMM Randomizer.
+
+Added more shared item settings.
+
+Added accessibility level "Inspect" to hintable locations.
+
+New settings:
+
+- Blue fire arrows
 ## v1.11.0.2
 
 Added Master Quest dungeons.

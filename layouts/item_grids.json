@@ -17,17 +17,17 @@
             "OOT_ARROW_FIRE",
             "OOT_SPELL_FIRE",
             "OOT_SWORD_KOKIRI",
-            "OOT_SWORD_MASTER"
+            "OOT_SHIELD_DEKU"
           ],
           [
             "OOT_SLINGSHOT",
             "OOT_OCARINA",
             "EVENT_OOT_BOMBCHUS",
             "OOT_HOOKSHOT",
-            "OOT_MAGIC_UPGRADE",
-            "OOT_SHIELD_DEKU",
-            "OOT_SHIELD_HYLIAN",
-            "OOT_SHIELD_MIRROR"
+            "OOT_ARROW_ICE",
+            "faroreswind",
+            "OOT_SWORD_MASTER",
+            "OOT_SHIELD_HYLIAN"
           ],
           [
             "OOT_BOOMERANG",
@@ -36,8 +36,8 @@
             "OOT_HAMMER",
             "OOT_ARROW_LIGHT",
             "OOT_SPELL_LOVE",
-            "OOT_SWORD_GORON",
-            "OOT_STRENGTH"
+            "OOT_SHIELD_MIRROR",
+            "OOT_SWORD_GORON"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -65,8 +65,8 @@
             "bottle3",
             "bottle4",
             "OOT_SCALE",
-            "OOT_STONE_OF_AGONY",
-            "OOT_GERUDO_CARD",
+            "OOT_MAGIC_UPGRADE",
+            "OOT_STRENGTH",
             "OOT_WALLET1"
           ]
         ]
@@ -529,6 +529,12 @@
             "rows": [
               [
                 "OOT_GS_TOKEN"
+              ],
+              [
+                "OOT_STONE_OF_AGONY"
+              ],
+              [
+                "OOT_GERUDO_CARD"
               ],
               [
                 "triforce"
