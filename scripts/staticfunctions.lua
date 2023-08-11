@@ -58,6 +58,7 @@ OOTMM = {
 MM_TIME_SLICES = {
     'DAY1_AM_06_00',
     'DAY1_AM_07_00',
+    'DAY1_AM_08_00',
     'DAY1_AM_10_00',
     'DAY1_PM_01_45',
     'DAY1_PM_03_00',
@@ -73,6 +74,7 @@ MM_TIME_SLICES = {
     'NIGHT1_AM_05_00',
     'DAY2_AM_06_00',
     'DAY2_AM_07_00',
+    'DAY2_AM_08_00',
     'DAY2_AM_10_00',
     'DAY2_AM_11_30',
     'DAY2_PM_02_00',
@@ -86,6 +88,7 @@ MM_TIME_SLICES = {
     'NIGHT2_AM_05_00',
     'DAY3_AM_06_00',
     'DAY3_AM_07_00',
+    'DAY3_AM_08_00',
     'DAY3_AM_10_00',
     'DAY3_AM_11_30',
     'DAY3_PM_01_00',
@@ -103,18 +106,23 @@ for i, v in ipairs(MM_TIME_SLICES) do
     MM_TIME_SLICES_INDEX[v] = i
 end
 
+function mm_time_index_to_string(index)
+    return MM_TIME_SLICES[index]
+end
+
 function new_node(values)
     if not values then
         values = {}
     end
 
     local node = {
-        ["type"] = nil,  -- "exit", "event", "location"
-        ["name"] = nil,  -- name of the exit/event/location
+        ["type"] = nil,    -- "exit", "event", "location"
+        ["name"] = nil,    -- name of the exit/event/location
         ["glitched"] = false,
-        ["child"] = nil, -- mm_time index, 1 to #MM_TIME_SLICES; alternatively, { start = 1, stop = #MM_TIME_SLICES }
-        ["adult"] = nil, -- mm_time index, 1 to #MM_TIME_SLICES; alternatively, { start = 1, stop = #MM_TIME_SLICES }
-        ["rule"] = nil,  -- function from actual logic here!
+        ["child"] = nil,   -- mm_time index, 1 to #MM_TIME_SLICES; alternatively, { start = 1, stop = #MM_TIME_SLICES }
+        ["adult"] = nil,   -- mm_time index, 1 to #MM_TIME_SLICES; alternatively, { start = 1, stop = #MM_TIME_SLICES }
+        ["rule"] = nil,    -- function from actual logic here!
+        ["mm_stay"] = nil, -- "stay" rule for mm_time; only relevant if type is "exit"
     }
 
     for k, v in pairs(values) do
@@ -137,14 +145,21 @@ function node_as_string(node)
         ":" .. tostring(node.child) .. ":" .. tostring(node.adult) .. ":" .. node.rule .. ":" .. node.name
 end
 
+PRICE_HELPER = {
+    index = {},
+    range_index = {},
+}
+
 -- require() isn't working in EmoTracker; look into this some more, but see README.md
 -- This is a bad workaround, but it works for now
 if EMO then
     ScriptHost:LoadScript("scripts/oot_logic.lua")
     ScriptHost:LoadScript("scripts/mm_logic.lua")
+    -- ScriptHost:LoadScript("scripts/includes/prices.lua")
 else
     dofile("generated/oot_logic.lua")
     dofile("generated/mm_logic.lua")
+    -- dofile("generated/includes/prices.lua")
 end
 OOTMM.oot.state = _oot_logic()
 OOTMM.mm.state = _mm_logic()
@@ -278,10 +293,17 @@ local function get_provider_count(code)
 end
 
 local OOTMM_MQ_SETTING_PREVIOUS = {}
+local OOTMM_MQ_DUNGEON_NAMES = {
+    ["Deku Tree"] = "DT",
+    ["Dodongo Cavern"] = "DC",
+    ["Jabu-Jabu"] = "JJ",
+    ["Ganon Castle"] = "Ganon",
+}
 local function reset_logic()
     -- TODO: MQ override should be moved entirely into the OoT module instead of yanking logic out and replacing it here!
     local mq_dungeons = {}
     local mq_reset_needed = false
+    local mq_price_params = {}
 
     -- Check whether any MQ dungeons are active
     for k, v in pairs(OOTMM.oot.state.MQlogic) do
@@ -298,16 +320,84 @@ local function reset_logic()
         end
         if mq_active then
             mq_dungeons[k] = mq_active
+            mq_price_params[OOTMM_MQ_DUNGEON_NAMES[k]] = true
         end
     end
 
-    -- Overwrite OoT logic MQ dungeons where needed
+    -- Overwrite OoT logic MQ dungeons where needed, and adjust scrub prices
     if mq_reset_needed then
         OOTMM.oot.state.logic = deep_copy_table(OOTMM.original_logic.oot)
         OOTMM.mm.state.logic = deep_copy_table(OOTMM.original_logic.mm)
 
         for k, v in pairs(mq_dungeons) do
             replace_with_mq_logic(k)
+        end
+
+        -- FIXME: Replace this hardcoded mess with auto-converted logic from prices.ts
+        -- Note to future self: You tried to auto convert this, you used typescript-to-lua. It fails in subtle ways. Use something else.
+        PRICE_HELPER.default_prices = { 10, 20, 60, 30, 15, 30, 10, 40, 180, 180, 180, 180, 100, 100, 100, 100, 50, 90,
+            200, 15, 20, 60, 300, 10, 10, 10, 40, 200, 25, 50, 80, 120, 20, 60, 90, 10, 35, 10, 15, 80, 200, 50, 30, 15,
+            300, 50, 30, 30, 20, 60, 90, 10, 35, 10, 15, 80, 200, 50, 30, 15, 300, 50, 30, 30, 40, 15, 20, 40, 40, 40,
+            40, 10, 20, 40, 40, 20, 40, 40, 40, 20, 40, 40, 40, 40, 20, 40, 40, 40, 40, 40, 40, 0, 40, 15, 20, 50, 20,
+            40, 40, 70, 40, 0, 30, 40, 50, 90, 500, 30, 80, 80, 50, 10, 30, 30, 30, 60, 10, 20, 40, 40, 80, 90, 20, 60,
+            100, 5, 40, 20, 40, 20, 40, 20, 40, 20, 40, 20, 40 }
+        PRICE_HELPER.range_index = {
+            ["OOT_SHOPS"] = 1,
+            ["OOT_SCRUBS"] = 65,
+            ["MM_SHOPS"] = 103,
+            ["MM_SHOPS_EX"] = 125,
+            ["MM_TINGLE"] = 126,
+            ["MAX"] = 138,
+        }
+
+        -- NOTE: This is partially translated from lib/combo/logic/price.ts
+        local OOT_SCRUBS_OVERWORLD = { 40, 15, 20, 40, 40, 40, 40, 10, 20, 40, 40, 20, 40, 40, 40, 20, 40, 40, 40, 40,
+            20, 40, 40, 40, 40, 40, 40 };
+        local OOT_SCRUBS_DT = { 0 };
+        local OOT_SCRUBS_DT_MQ = { 50 };
+        local OOT_SCRUBS_DC = { 40, 15, 20, 50 };
+        local OOT_SCRUBS_DC_MQ = { 40, 15, 50, 40 };
+        local OOT_SCRUBS_JJ = { 20 };
+        local OOT_SCRUBS_JJ_MQ = { 0 };
+        local OOT_SCRUBS_GC = { 40, 40, 70, 40, 0 };
+        local OOT_SCRUBS_GC_MQ = { 40, 40, 70, 40, 20 };
+
+        local ootScrubs = {}
+        table.insert(ootScrubs, OOT_SCRUBS_OVERWORLD)
+
+        if mq_price_params['DT'] then
+            table.insert(ootScrubs, OOT_SCRUBS_DT_MQ)
+        else
+            table.insert(ootScrubs, OOT_SCRUBS_DT)
+        end
+
+        if mq_price_params['DC'] then
+            table.insert(ootScrubs, OOT_SCRUBS_DC_MQ)
+        else
+            table.insert(ootScrubs, OOT_SCRUBS_DC)
+        end
+
+        if mq_price_params['JJ'] then
+            table.insert(ootScrubs, OOT_SCRUBS_JJ_MQ)
+        else
+            table.insert(ootScrubs, OOT_SCRUBS_JJ)
+        end
+
+        if mq_price_params['Ganon'] then
+            table.insert(ootScrubs, OOT_SCRUBS_GC_MQ)
+        else
+            table.insert(ootScrubs, OOT_SCRUBS_GC)
+        end
+
+        local ootScrubsFlat = {}
+        for i, v in ipairs(ootScrubs) do
+            for j, w in ipairs(v) do
+                table.insert(ootScrubsFlat, w)
+            end
+        end
+
+        for i, price in ipairs(ootScrubsFlat) do
+            PRICE_HELPER.default_prices[PRICE_HELPER.range_index.OOT_SCRUBS + i - 1] = price
         end
     end
 
