@@ -61,6 +61,8 @@ local OOTMM_SKIP_STAGE_PREV = {
 }
 local OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV = false
 local OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV = false
+local OOTMM_BOSS_KEY_SHUFFLEOOT_REMOVED_PREV = false
+local OOTMM_BOSS_KEY_SHUFFLEMM_REMOVED_PREV = false
 local OOTMM_SMALL_KEY_AMOUNTS = {
   ["OOT_SMALL_KEY_FOREST"] = {
     dungeon_name = "Forest Temple",
@@ -156,7 +158,7 @@ function tracker_on_accessibility_updating()
     end
 
     -- Handle max amounts for small keys in EmoTracker's GUI
-    local oot_keysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleOot_removed") > 0
+    local oot_smallkeysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleOot_removed") > 0
     for key_code, key_data in pairs(OOTMM_SMALL_KEY_AMOUNTS) do
       local item = Tracker:FindObjectForCode(key_code)
       local mq_setting_name = "setting_mq_" .. key_data.dungeon_name:gsub(" ", "") .. '_true'
@@ -175,30 +177,57 @@ function tracker_on_accessibility_updating()
       item.MaxCount = max_amount
 
       -- Handle keysanity; if active, set all keys to their max amount
-      if oot_keysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV then
-        if oot_keysanity_active and item.AcquiredCount == 0 then
+      if oot_smallkeysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV then
+        if oot_smallkeysanity_active and item.AcquiredCount == 0 then
           item.AcquiredCount = item.MaxCount
-        elseif not oot_keysanity_active and item.AcquiredCount == item.MaxCount then
+        elseif not oot_smallkeysanity_active and item.AcquiredCount == item.MaxCount then
           -- Try to be smart about small key handling; users would not like having to manually
           -- reset these to 0 if they're just cycling through small key settings.
           item.AcquiredCount = 0
         end
       end
     end
-    OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV = oot_keysanity_active
+    OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV = oot_smallkeysanity_active
 
-    local mm_keysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleMm_removed") > 0
+    local oot_bosskeysanity_active = Tracker:ProviderCountForCode("setting_bossKeyShuffleOot_removed") > 0
+    for _, key_code in pairs({ "OOT_BOSS_KEY_FOREST", "OOT_BOSS_KEY_FIRE", "OOT_BOSS_KEY_WATER", "OOT_BOSS_KEY_SPIRIT", "OOT_BOSS_KEY_SHADOW" }) do
+      local item = Tracker:FindObjectForCode(key_code)
+      if oot_bosskeysanity_active ~= OOTMM_BOSS_KEY_SHUFFLEOOT_REMOVED_PREV then
+        if oot_bosskeysanity_active and item.Active == false then
+          item.Active = true
+        elseif not oot_bosskeysanity_active and item.Active == true then
+          item.Active = false
+        end
+      end
+    end
+    OOTMM_BOSS_KEY_SHUFFLEOOT_REMOVED_PREV = oot_bosskeysanity_active
+
+    local mm_smallkeysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleMm_removed") > 0
     for _, key_code in pairs({ "MM_SMALL_KEY_WF", "MM_SMALL_KEY_SH", "MM_SMALL_KEY_GB", "MM_SMALL_KEY_ST" }) do
       local item = Tracker:FindObjectForCode(key_code)
-      if mm_keysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV then
-        if mm_keysanity_active and item.AcquiredCount == 0 then
+      if mm_smallkeysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV then
+        if mm_smallkeysanity_active and item.AcquiredCount == 0 then
           item.AcquiredCount = item.MaxCount
-        elseif not mm_keysanity_active and item.AcquiredCount == item.MaxCount then
+        elseif not mm_smallkeysanity_active and item.AcquiredCount == item.MaxCount then
           item.AcquiredCount = 0
         end
       end
     end
-    OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV = mm_keysanity_active
+    OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV = mm_smallkeysanity_active
+
+    local mm_bosskeysanity_active = Tracker:ProviderCountForCode("setting_bossKeyShuffleMM_removed") > 0
+    for _, key_code in pairs({ "MM_BOSS_KEY_WF", "MM_BOSS_KEY_SH", "MM_BOSS_KEY_GB", "MM_BOSS_KEY_ST" }) do
+      local item = Tracker:FindObjectForCode(key_code)
+      if mm_bosskeysanity_active ~= OOTMM_BOSS_KEY_SHUFFLEMM_REMOVED_PREV then
+        if mm_bosskeysanity_active and item.Active == false then
+          item.Active = true
+        elseif not mm_bosskeysanity_active and item.Active == true then
+          item.Active = false
+        end
+      end
+    end
+    OOTMM_BOSS_KEY_SHUFFLEMM_REMOVED_PREV = mm_bosskeysanity_active
+
   end
 
   -- Reset internal logic for all worlds
