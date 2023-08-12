@@ -3,6 +3,26 @@ local OOTMM_LOCATION_CHEST_LINKS = {
         "@Clock Town Tingle Maps/Map: Swamp",
         "@Swamp Tingle Maps/Map: Swamp",
     },
+    tingle_mountain = {
+        "@Swamp Tingle Maps/Map: Mountain",
+        "@Mountain Tingle Maps/Map: Mountain",
+    },
+    tingle_ocean = {
+        "@Milk Road Tingle Maps/Map: Ocean",
+        "@Ocean Tingle Maps/Map: Ocean",
+    },
+    tingle_canyon = {
+        "@Ocean Tingle Maps/Map: Canyon",
+        "@Ikana Canyon Tingle Maps/Map: Canyon",
+    },
+    tingle_ranch = {
+        "@Mountain Tingle Maps/Map: Ranch",
+        "@Milk Road Tingle Maps/Map: Ranch",
+    },
+    tingle_town = {
+        "@Clock Town Tingle Maps/Map: Clock Town",
+        "@Ikana Canyon Tingle Maps/Map: Clock Town",
+    },
 }
 local OOTMM_LOCATION_CHEST_LINKS_PREV = {}
 function on_update_location_chest_link()
