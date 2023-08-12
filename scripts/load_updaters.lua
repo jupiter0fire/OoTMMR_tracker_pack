@@ -177,8 +177,8 @@ function tracker_on_accessibility_updating()
       item.MaxCount = max_amount
 
       -- Handle keysanity; if active, set all keys to their max amount
-      if oot_smallkeysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV then
-        if oot_smallkeysanity_active and item.AcquiredCount == 0 then
+      if oot_smallkeysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEOOT_REMOVED_PREV or not HAS_KEYS then
+        if (oot_smallkeysanity_active and item.AcquiredCount == 0) or not HAS_KEYS then
           item.AcquiredCount = item.MaxCount
         elseif not oot_smallkeysanity_active and item.AcquiredCount == item.MaxCount then
           -- Try to be smart about small key handling; users would not like having to manually
@@ -192,8 +192,8 @@ function tracker_on_accessibility_updating()
     local oot_bosskeysanity_active = Tracker:ProviderCountForCode("setting_bossKeyShuffleOot_removed") > 0
     for _, key_code in pairs({ "OOT_BOSS_KEY_FOREST", "OOT_BOSS_KEY_FIRE", "OOT_BOSS_KEY_WATER", "OOT_BOSS_KEY_SPIRIT", "OOT_BOSS_KEY_SHADOW" }) do
       local item = Tracker:FindObjectForCode(key_code)
-      if oot_bosskeysanity_active ~= OOTMM_BOSS_KEY_SHUFFLEOOT_REMOVED_PREV then
-        if oot_bosskeysanity_active and item.Active == false then
+      if oot_bosskeysanity_active ~= OOTMM_BOSS_KEY_SHUFFLEOOT_REMOVED_PREV or not HAS_KEYS then
+        if (oot_bosskeysanity_active and item.Active == false) or not HAS_KEYS then
           item.Active = true
         elseif not oot_bosskeysanity_active and item.Active == true then
           item.Active = false
@@ -205,8 +205,8 @@ function tracker_on_accessibility_updating()
     local mm_smallkeysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleMm_removed") > 0
     for _, key_code in pairs({ "MM_SMALL_KEY_WF", "MM_SMALL_KEY_SH", "MM_SMALL_KEY_GB", "MM_SMALL_KEY_ST" }) do
       local item = Tracker:FindObjectForCode(key_code)
-      if mm_smallkeysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV then
-        if mm_smallkeysanity_active and item.AcquiredCount == 0 then
+      if mm_smallkeysanity_active ~= OOTMM_SMALL_KEY_SHUFFLEMM_REMOVED_PREV or not HAS_KEYS then
+        if (mm_smallkeysanity_active and item.AcquiredCount == 0) or not HAS_KEYS then
           item.AcquiredCount = item.MaxCount
         elseif not mm_smallkeysanity_active and item.AcquiredCount == item.MaxCount then
           item.AcquiredCount = 0
@@ -218,8 +218,8 @@ function tracker_on_accessibility_updating()
     local mm_bosskeysanity_active = Tracker:ProviderCountForCode("setting_bossKeyShuffleMM_removed") > 0
     for _, key_code in pairs({ "MM_BOSS_KEY_WF", "MM_BOSS_KEY_SH", "MM_BOSS_KEY_GB", "MM_BOSS_KEY_ST" }) do
       local item = Tracker:FindObjectForCode(key_code)
-      if mm_bosskeysanity_active ~= OOTMM_BOSS_KEY_SHUFFLEMM_REMOVED_PREV then
-        if mm_bosskeysanity_active and item.Active == false then
+      if mm_bosskeysanity_active ~= OOTMM_BOSS_KEY_SHUFFLEMM_REMOVED_PREV or not HAS_KEYS then
+        if (mm_bosskeysanity_active and item.Active == false) or not HAS_KEYS then
           item.Active = true
         elseif not mm_bosskeysanity_active and item.Active == true then
           item.Active = false
