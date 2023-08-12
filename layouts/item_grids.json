@@ -114,17 +114,17 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "5,0",
+        "margin": "0,0",
         "content": [
           {
             "type": "array",
             "orientation": "vertical",
-            "margin": "5,0",
+            "margin": "0,0",
             "content": [
               {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
                 "content": [
                   {
                     "type": "item",
@@ -173,7 +173,7 @@
               {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
                 "content": [
                   {
                     "type": "canvas",
@@ -324,7 +324,7 @@
               {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
                 "content": [
                   {
                     "type": "item",
