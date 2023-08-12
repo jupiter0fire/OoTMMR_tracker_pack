@@ -812,129 +812,173 @@
       },
       {
         "type": "array",
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "content": [
           {
             "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "scale": 0.9,
+            "orientation": "vertical",
             "content": [
               {
-                "type": "item",
-                "item": "mm_woodfall",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_woodfall",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_STRAY_FAIRY_WF",
+                    "margin": "3,4",
+                    "width": 32,
+                    "height": 32
+                  }
+                ]
               },
               {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_WF",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_snowhead",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_SH",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_great_bay",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_GB",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_stone_tower",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_ST",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_woodfall_label",
+                    "margin": "4,2",
+                    "width": 64,
+                    "height": 16
+                  }
+                ]
               }
             ]
           },
           {
             "type": "array",
-            "orientation": "horizontal",
-            "scale": 0.8,
-            "margin": "0,0",
+            "orientation": "vertical",
             "content": [
               {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
+                "scale": 0.9,
                 "content": [
                   {
                     "type": "item",
-                    "item": "mm_woodfall_label",
-                    "margin": "0,2",
-                    "width": 64,
-                    "height": 16
+                    "item": "mm_snowhead",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_STRAY_FAIRY_SH",
+                    "margin": "3,4",
+                    "width": 32,
+                    "height": 32
                   }
                 ]
               },
               {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "5,0",
-                "content": [
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
                   {
                     "type": "item",
                     "item": "mm_snowhead_label",
-                    "margin": "0,2",
+                    "margin": "4,2",
                     "width": 64,
                     "height": 16
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
               {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
+                "scale": 0.9,
                 "content": [
                   {
                     "type": "item",
-                    "item": "mm_greatbay_label",
-                    "margin": "0,2",
-                    "width": 64,
-                    "height": 16
+                    "item": "mm_great_bay",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_STRAY_FAIRY_GB",
+                    "margin": "3,4",
+                    "width": 32,
+                    "height": 32
                   }
                 ]
               },
               {
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_great_bay_label",
+                    "margin": "4,2",
+                    "width": 64,
+                    "height": 16
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+              {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
+                "scale": 0.9,
                 "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_stone_tower",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_STRAY_FAIRY_SH",
+                    "margin": "3,4",
+                    "width": 32,
+                    "height": 32
+                  }
+                ]
+              },
+              {
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
                   {
                     "type": "item",
                     "item": "mm_stonetower_label",
-                    "margin": "0,2",
+                    "margin": "4,2",
                     "width": 64,
                     "height": 16
                   }
@@ -1020,186 +1064,174 @@
       },
       {
         "type": "array",
-        "orientation": "vertical",
+        "orientation": "horizontal",
         "content": [
           {
             "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "scale": 0.9,
+            "orientation": "vertical",
             "content": [
               {
-                "type": "item",
-                "item": "mm_woodfall",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_woodfall",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "MM_STRAY_FAIRY_WF",
+                    "margin": "3,4",
+                    "width": 32,
+                    "height": 32
+                  }
+                ]
               },
               {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_WF",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_snowhead",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_SH",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_great_bay",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_GB",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
-              },
-              {
-                "type": "item",
-                "item": "mm_stone_tower",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "MM_STRAY_FAIRY_ST",
-                "margin": "3,4",
-                "width": 32,
-                "height": 32
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_woodfall_label",
+                    "margin": "4,2",
+                    "width": 64,
+                    "height": 16
+                  }
+                ]
               }
             ]
           },
           {
             "type": "array",
-            "orientation": "horizontal",
-            "scale": 0.8,
-            "margin": "0,0",
+            "orientation": "vertical",
             "content": [
               {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
+                "scale": 0.9,
                 "content": [
                   {
                     "type": "item",
-                    "item": "MM_BOSS_KEY_WF",
-                    "margin": "0,2",
-                    "width": 16,
-                    "height": 16
+                    "item": "mm_snowhead",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "mm_woodfall_label",
-                    "margin": "0,2",
+                    "item": "MM_STRAY_FAIRY_SH",
+                    "margin": "3,4",
                     "width": 32,
-                    "height": 12
-                  },
-                  {
-                    "type": "item",
-                    "item": "MM_SMALL_KEY_WF",
-                    "margin": "1,2",
-                    "width": 16,
-                    "height": 16
+                    "height": 32
                   }
                 ]
               },
               {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "5,0",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "MM_BOSS_KEY_SH",
-                    "margin": "0,2",
-                    "width": 16,
-                    "height": 16
-                  },
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
                   {
                     "type": "item",
                     "item": "mm_snowhead_label",
-                    "margin": "0,2",
-                    "width": 32,
-                    "height": 12
+                    "margin": "4,2",
+                    "width": 64,
+                    "height": 16
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+              {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_great_bay",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "MM_SMALL_KEY_SH",
-                    "margin": "1,2",
-                    "width": 16,
-                    "height": 16
+                    "item": "MM_STRAY_FAIRY_GB",
+                    "margin": "3,4",
+                    "width": 32,
+                    "height": 32
                   }
                 ]
               },
               {
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
+                  {
+                    "type": "item",
+                    "item": "mm_great_bay_label",
+                    "margin": "4,2",
+                    "width": 64,
+                    "height": 16
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+              {
                 "type": "array",
                 "orientation": "horizontal",
-                "margin": "5,0",
+                "margin": "0,0",
+                "scale": 0.9,
                 "content": [
                   {
                     "type": "item",
-                    "item": "MM_BOSS_KEY_GB",
-                    "margin": "0,2",
-                    "width": 16,
-                    "height": 16
+                    "item": "mm_stone_tower",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "mm_greatbay_label",
-                    "margin": "0,2",
+                    "item": "MM_STRAY_FAIRY_SH",
+                    "margin": "3,4",
                     "width": 32,
-                    "height": 12
-                  },
-                  {
-                    "type": "item",
-                    "item": "MM_SMALL_KEY_GB",
-                    "margin": "1,2",
-                    "width": 16,
-                    "height": 16
+                    "height": 32
                   }
                 ]
               },
               {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "5,0",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "MM_BOSS_KEY_ST",
-                    "margin": "0,2",
-                    "width": 16,
-                    "height": 16
-                  },
+              "type": "array",
+              "orientation": "horizontal",
+              "margin": "0,0",
+              "scale": 0.9,
+              "content": [
                   {
                     "type": "item",
                     "item": "mm_stonetower_label",
-                    "margin": "0,2",
-                    "width": 32,
-                    "height": 12
-                  },
-                  {
-                    "type": "item",
-                    "item": "MM_SMALL_KEY_ST",
-                    "margin": "1,2",
-                    "width": 16,
+                    "margin": "4,2",
+                    "width": 64,
                     "height": 16
                   }
                 ]
