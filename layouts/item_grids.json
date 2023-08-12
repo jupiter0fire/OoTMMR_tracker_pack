@@ -365,15 +365,11 @@
             "scale": 0.7,
             "rows": [
               [
-                "OOT_GS_TOKEN"
-              ],
-              [
+                "OOT_GS_TOKEN",
                 "OOT_STONE_OF_AGONY"
               ],
               [
-                "OOT_GERUDO_CARD"
-              ],
-              [
+                "OOT_GERUDO_CARD",
                 "triforce"
               ]
             ]
@@ -447,12 +443,12 @@
   {
         "type": "array",
         "orientation": "vertical",
-        "margin": "5,0",
+        "margin": "0,0",
         "content": [
           {
             "type": "array",
             "orientation": "horizontal",
-            "margin": "5,0",
+            "margin": "0,0",
             "content": [
               {
                 "type": "item",
@@ -501,7 +497,7 @@
           {
             "type": "array",
             "orientation": "horizontal",
-            "margin": "5,0",
+            "margin": "0,0",
             "content": [
               {
                 "type": "canvas",
@@ -652,7 +648,7 @@
           {
             "type": "array",
             "orientation": "horizontal",
-            "margin": "5,0",
+            "margin": "0,0",
             "content": [
               {
                 "type": "item",
