@@ -1,4 +1,5 @@
 ScriptHost:LoadScript("scripts/update_maps.lua")
+ScriptHost:LoadScript("scripts/update_items.lua")
 
 function tracker_on_begin_loading_save_file()
   PACK_READY = false
@@ -125,6 +126,9 @@ local OOTMM_SMALL_KEY_AMOUNTS = {
 }
 function tracker_on_accessibility_updating()
   if PACK_READY then
+    -- Handle linked locations, mainly tingle maps
+    on_update_location_chest_link()
+
     -- Handle shared items in EmoTracker's GUI
     for setting, items in pairs(OOTMM_SHARED) do
       if Tracker:ProviderCountForCode("setting_shared" .. setting .. "_true") > 0 then
