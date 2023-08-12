@@ -8,6 +8,9 @@
     "standard": {
       "display_name": "Map Tracker"
     },
+    "variant_keysanity": {
+      "display_name": "Map Tracker (Keysanity)"
+    },
     "variant_itemsonly": {
       "display_name": "Items Only"
     },
