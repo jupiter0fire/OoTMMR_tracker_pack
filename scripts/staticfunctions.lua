@@ -320,7 +320,9 @@ local function reset_logic()
         end
         if mq_active then
             mq_dungeons[k] = mq_active
-            mq_price_params[OOTMM_MQ_DUNGEON_NAMES[k]] = true
+            if OOTMM_MQ_DUNGEON_NAMES[k] then
+                mq_price_params[OOTMM_MQ_DUNGEON_NAMES[k]] = true
+            end
         end
     end
 
