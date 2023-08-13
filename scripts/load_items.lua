@@ -4,6 +4,7 @@ Tracker:AddItems("items/sequences.json")
 Tracker:AddItems("items/capture_items.json")
 Tracker:AddItems("items/tricks.json")
 Tracker:AddItems("items/options.json")
+Tracker:AddItems("items/options_keysanity.json")
 
 Tracker:AddItems("items/quest.json")
 Tracker:AddItems("items/mm_items.json")

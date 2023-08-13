@@ -11,6 +11,16 @@
       },
       {
         "type": "item",
+        "item": "setting_smallKeyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bossKeyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_scrubShuffleOot",
         "height": 16
       },
@@ -149,6 +159,16 @@
       {
         "type": "item",
         "item": "setting_tingleShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_smallKeyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bossKeyShuffleMm",
         "height": 16
       },
       {
