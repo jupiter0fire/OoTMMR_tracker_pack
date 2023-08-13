@@ -4,13 +4,23 @@
 
 Logic updated to version 1.12.4 of the OOTMM Randomizer.
 
+Added a new variant for non-keysanity, so you don't have to track your keys if they're in their own dungeon.
+
 Added more shared item settings.
 
-Added accessibility level "Inspect" to hintable locations.
+Added accessibility level "Inspect" for hintable locations.
+
+Tingle maps are now marked as collected in both locations (e.g. if you collect the swamp map in Clock Town, the swamp map check on the road to the south will be automatically marked as collected). 
 
 New settings:
 
 - Blue fire arrows
+- Price shuffle
+
+Bugfixes for:
+
+- OOT Skultulla setting not working properly
+
 ## v1.11.0.2
 
 Added Master Quest dungeons.
