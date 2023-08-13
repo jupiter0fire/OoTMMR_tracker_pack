@@ -13,9 +13,6 @@
     },
     "variant_itemsonly": {
       "display_name": "Items Only"
-    },
-    "variant_er": {
-      "display_name": "Entrance Randomizer"
     }
   }
 }
