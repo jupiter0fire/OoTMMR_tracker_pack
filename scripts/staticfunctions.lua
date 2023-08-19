@@ -299,6 +299,32 @@ local OOTMM_MQ_DUNGEON_NAMES = {
     ["Jabu-Jabu"] = "JJ",
     ["Ganon Castle"] = "Ganon",
 }
+local OOTMM_DUNGEON_ENTRANCE_NAMES = {
+    { from = "OOT Kokiri Forest Near Deku Tree", to = "OOT Deku Tree" },
+    { from = "OOT Death Mountain", to = "OOT Dodongo Cavern" },
+    { from = "OOT Zora Fountain", to = "OOT Jabu-Jabu" },
+    { from = "OOT Sacred Meadow", to = "OOT Forest Temple" },
+    { from = "OOT Fire Temple Entry", to = "OOT Fire Temple" },
+    { from = "OOT Lake Hylia", to = "OOT Water Temple" },
+    { from = "OOT Graveyard Upper", to = "OOT Shadow Temple" },    
+    { from = "OOT Desert Colossus", to = "OOT Spirit Temple" },
+    { from = "OOT Zora Fountain Frozen", to = "OOT Ice Cavern" },
+    { from = "OOT Kakariko", to = "OOT Bottom of the Well" },
+    { from = "OOT Gerudo Fortress Exterior", to = "OOT Gerudo Training Grounds" },
+    { from = "OOT Ganon Castle Exterior After Bridge", to = "OOT Ganon Castle" },
+    { from = "OOT Ganon Castle Stairs", to = "OOT Ganon Castle Tower" },
+    { from = "MM Woodfall Front of Temple", to = "MM Woodfall Temple" },
+    { from = "MM Snowhead", to = "MM Snowhead Temple" },
+    { from = "MM Zora Cape Peninsula", to = "MM Great Bay Temple" },
+    { from = "MM Stone Tower Front of Temple", to = "MM Stone Tower Temple" },
+    { from = "MM Stone Tower Top Inverted", to = "MM Stone Tower Temple Inverted" },
+    { from = "MM Great Bay Coast", to = "MM Ocean Spider House" },
+    { from = "MM Near Swamp Spider House", to = "MM Swamp Spider House" },
+    { from = "MM Great Bay Coast Fortress", to = "MM Pirate Fortress" },
+    { from = "MM Ikana Canyon", to = "MM Beneath the Well Entrance" },
+    { from = "MM Ikana Castle Exterior", to = "MM Ancient Castle of Ikana" },
+    { from = "MM Ikana Valley", to = "MM Secret Shrine" },
+}
 local function reset_logic()
     -- TODO: MQ override should be moved entirely into the OoT module instead of yanking logic out and replacing it here!
     local mq_dungeons = {}
