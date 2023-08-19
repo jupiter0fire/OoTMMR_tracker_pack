@@ -200,7 +200,7 @@ local OOTMM_SMALL_KEY_AMOUNTS = {
         end,
     },
 }
-function on_update_small_key_amounts()
+function on_update_oot_small_key_amounts()
     local oot_smallkeysanity_active = Tracker:ProviderCountForCode("setting_smallKeyShuffleOot_removed") > 0
     for key_code, key_data in pairs(OOTMM_SMALL_KEY_AMOUNTS) do
         local item = Tracker:FindObjectForCode(key_code)
