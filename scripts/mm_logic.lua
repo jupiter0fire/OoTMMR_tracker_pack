@@ -2488,18 +2488,10 @@ function _mm_logic()
             ["Clock Town East"] = function () return true end,
         },
         ["locations"] = {
-            ["Milk Bar Troupe Leader Mask"] = function () return has_ocarina() and has('MASK_DEKU') and has_mask_zora() and has_mask_goron() and (after(NIGHT1_PM_10_00) and before(NIGHT1_AM_05_00) or (after(NIGHT2_PM_10_00) and before(NIGHT2_AM_05_00))) end,
+            ["Milk Bar Troupe Leader Mask"] = function () return has('MASK_ROMANI') and has_ocarina() and has('MASK_DEKU') and has_mask_zora() and has_mask_goron() and (after(NIGHT1_PM_10_00) and before(NIGHT1_AM_05_00) or (after(NIGHT2_PM_10_00) and before(NIGHT2_AM_05_00))) end,
             ["Milk Bar Madame Aroma Bottle"] = function () return has('MASK_KAFEI') and has('LETTER_TO_MAMA') and (after(NIGHT3_PM_06_00) and before(NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Purchase Milk"] = function () return has('MASK_ROMANI') and can_use_wallet(1) and (after(NIGHT1_PM_10_00) and before(DAY2_AM_06_00) or (after(NIGHT2_PM_10_00) and before(DAY3_AM_06_00)) or (after(NIGHT3_PM_06_00) and before(NIGHT3_PM_09_00)) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Purchase Chateau"] = function () return has('MASK_ROMANI') and can_use_wallet(2) and (after(NIGHT1_PM_10_00) and before(DAY2_AM_06_00) or (after(NIGHT2_PM_10_00) and before(DAY3_AM_06_00)) or (after(NIGHT3_PM_06_00) and before(NIGHT3_PM_09_00)) or after(NIGHT3_PM_10_00)) end,
-        },
-        ["stay"] = {
-            ["NIGHT1_PM_09_00"] = function () return false end,
-            ["NIGHT1_AM_05_00"] = function () return false end,
-            ["NIGHT2_PM_09_00"] = function () return false end,
-            ["NIGHT2_AM_05_00"] = function () return false end,
-            ["NIGHT3_PM_09_00"] = function () return false end,
-            ["NIGHT3_AM_05_00"] = function () return false end,
         },
     },
     ["Town Archery"] = {
@@ -2536,7 +2528,7 @@ function _mm_logic()
     ["Stock Pot Inn"] = {
         ["events"] = {
             ["SETUP_MEET"] = function () return has('MASK_KAFEI') and after(DAY1_PM_01_45) and before(NIGHT1_PM_09_00) end,
-            ["MEET_ANJU"] = function () return event('SETUP_MEET') and after(NIGHT1_AM_12_00) and before(DAY2_AM_06_00) end,
+            ["MEET_ANJU"] = function () return event('SETUP_MEET') and (has('MASK_DEKU') or has('ROOM_KEY')) end,
             ["DELIVER_PENDANT"] = function () return has('PENDANT_OF_MEMORIES') and (after(DAY2_AM_06_00) and before(NIGHT2_PM_09_00) or (after(DAY3_AM_06_00) and before(DAY3_AM_11_30))) end,
             ["BUGS"] = function () return has_bottle() end,
             ["FISH"] = function () return has_bottle() end,
@@ -2555,12 +2547,6 @@ function _mm_logic()
             ["Stock Pot Inn Grandma HP 1"] = function () return has('MASK_ALL_NIGHT') and (is_day1() or is_day2()) end,
             ["Stock Pot Inn Grandma HP 2"] = function () return has('MASK_ALL_NIGHT') and (is_day1() or is_day2()) end,
             ["Stock Pot Inn ??? HP"] = function () return has_paper() and midnight() end,
-        },
-        ["stay"] = {
-            ["NIGHT1_PM_08_00"] = function () return has('ROOM_KEY') end,
-            ["DAY2_AM_06_00"] = function () return has('ROOM_KEY') end,
-            ["NIGHT2_PM_08_00"] = function () return has('ROOM_KEY') end,
-            ["DAY3_AM_06_00"] = function () return has('ROOM_KEY') end,
         },
     },
     ["Stock Pot Inn Roof"] = {
