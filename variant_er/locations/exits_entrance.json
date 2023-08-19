@@ -1,12 +1,12 @@
 [
     {
-        "name": "KF Outside Deku Tree -> Deku Tree Split",
+        "name": "Kokiri Forest Near Deku Tree -> Deku Tree",
         "short_name": "Deku Tree",
         "sections": [
             {
                 "name": "Capture",
                 "capture_item": true,
-                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
+                "capture_item_layout": "tracker_capture_dungeon",
                 "item_count": 1
             }
         ],

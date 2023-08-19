@@ -1,0 +1,32 @@
+{
+    "tracker_capture_dungeon": {
+        "type": "container",
+        "content": {
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,2",
+            "rows": [
+                [
+                    "entrance_dungeon_deku",
+                    "entrance_dungeon_dodongo",
+                    "entrance_dungeon_jabu"
+                ],
+                [
+                    "entrance_dungeon_forest",
+                    "entrance_dungeon_fire",
+                    "entrance_dungeon_water"
+                ],
+                [
+                    "entrance_dungeon_spirit",
+                    "entrance_dungeon_shadow",
+                    ""
+                ],
+                [
+                    "entrance_dungeon_botw",
+                    "entrance_dungeon_ice",
+                    "entrance_dungeon_gtg"
+                ]
+            ]
+        }
+    }
+}
