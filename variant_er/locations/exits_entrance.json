@@ -1,6 +1,6 @@
 [
     {
-        "name": "OOT Kokiri Forest Near Deku Tree -> OOT Deku Tree",
+        "name": "Kokiri Forest Near Deku Tree -> Deku Tree",
         "short_name": "Deku Tree",
         "sections": [
             {
@@ -13,10 +13,249 @@
         "map_locations": [
             {
                 "map": "oot_er_exits",
-                "badge_size": 50,
                 "size": 50,
                 "x": 2420,
                 "y": 880
+            }
+        ]
+    },
+    {
+        "name": "Death Mountain -> Dodongo Cavern",
+        "short_name": "Dodongo Cavern",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 1675,
+                "y": 240
+            }
+        ]
+    },
+    {
+        "name": "Zora Fountain -> Jabu-Jabu",
+        "short_name": "Jabu-Jabu",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 2475,
+                "y": 330
+            }
+        ]
+    },
+    {
+        "name": "Sacred Meadow -> Forest Temple",
+        "short_name": "Forest Temple",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 2145,
+                "y": 595
+            }
+        ]
+    },
+    {
+        "name": "Fire Temple Entry -> Fire Temple",
+        "short_name": "Fire Temple",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 1930,
+                "y": 60
+            }
+        ]
+    },
+    {
+        "name": "Lake Hylia -> Water Temple",
+        "short_name": "Water Temple",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 1020,
+                "y": 1370
+            }
+        ]
+    },
+    {
+        "name": "Graveyard Upper -> Shadow Temple",
+        "short_name": "Shadow Temple",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 2145,
+                "y": 345
+            }
+        ]
+    },
+    {
+        "name": "Desert Colossus -> Spirit Temple",
+        "short_name": "Spirit Temple",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 115,
+                "y": 300
+            }
+        ]
+    },
+    {
+        "name": "Zora Fountain Frozen -> Ice Cavern",
+        "short_name": "Ice Cavern",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 2505,
+                "y": 275
+            }
+        ]
+    },
+    {
+        "name": "Kakariko -> Bottom of the Well",
+        "short_name": "Bottom of the Well",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 1870,
+                "y": 385
+            }
+        ]
+    },
+    {
+        "name": "Gerudo Fortress Exterior -> Gerudo Training Grounds",
+        "short_name": "Gerudo Training Grounds",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 470,
+                "y": 445
+            }
+        ]
+    },
+    {
+        "name": "Ganon Castle Exterior After Bridge -> Ganon Castle",
+        "short_name": "Ganon Castle",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 1435,
+                "y": 205
+            }
+        ]
+    },
+    {
+        "name": "Ganon Castle Stairs -> Ganon Castle Tower",
+        "short_name": "Ganon Castle Tower",
+        "sections": [
+            {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_dungeon",
+                "item_count": 1
+            }
+        ],
+        "map_locations": [
+            {
+                "map": "oot_er_exits",
+                "size": 50,
+                "x": 1435,
+                "y": 255
             }
         ]
     }
