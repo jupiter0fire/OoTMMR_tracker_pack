@@ -1,6 +1,6 @@
 [
   {
-    "name": "Bow",
+    "name": "Fairy Bow",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
@@ -308,7 +308,7 @@
     "codes": "OOT_COJIRO"
   },
   {
-    "name": "Mushroom",
+    "name": "Odd Mushroom",
     "type": "toggle",
     "img": "images/mushroom.png",
     "codes": "OOT_ODD_MUSHROOM"
@@ -320,7 +320,7 @@
     "codes": "OOT_ODD_POTION"
   },
   {
-    "name": "Saw",
+    "name": "Poacher's Saw",
     "type": "toggle",
     "img": "images/saw.png",
     "codes": "OOT_POACHER_SAW"
@@ -338,7 +338,7 @@
     "codes": "OOT_PRESCRIPTION"
   },
   {
-    "name": "Frog",
+    "name": "Eyeball Frog",
     "type": "toggle",
     "img": "images/frog.png",
     "codes": "OOT_EYEBALL_FROG"
