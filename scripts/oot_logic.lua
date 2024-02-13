@@ -1156,7 +1156,7 @@ function _oot_logic()
 	end
 
 	function can_cut_grass()
-		return has_weapon() or can_boomerang() or has('STRENGTH')
+		return has_weapon() or can_boomerang() or has('STRENGTH') or has_explosives()
 	end
 
 	function can_kill_baba_sticks()
@@ -1168,7 +1168,7 @@ function _oot_logic()
 	end
 
 	function can_hit_scrub()
-		return has_nuts() or can_hit_triggers_distance() or has_shield_for_scrubs() or can_collect_distance() or can_hammer()
+		return has_nuts() or can_hit_triggers_distance() or has_shield_for_scrubs() or can_collect_distance() or can_hammer() or has_weapon()
 	end
 
 	function has_small_key_gerudo()
