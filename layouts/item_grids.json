@@ -255,7 +255,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "setting_mq_SpiritTemple",
+                        "item": "setting_mq_ShadowTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
@@ -279,7 +279,7 @@
                     "content": [
                       {
                         "type": "item",
-                        "item": "setting_mq_ShadowTemple",
+                        "item": "setting_mq_SpiritTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
@@ -579,7 +579,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "setting_mq_SpiritTemple",
+                    "item": "setting_mq_ShadowTemple",
                     "canvas_depth": 1,
                     "width": 28,
                     "height": 10.5
@@ -603,7 +603,7 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "setting_mq_ShadowTemple",
+                    "item": "setting_mq_SpiritTemple",
                     "canvas_depth": 1,
                     "width": 28,
                     "height": 10.5
