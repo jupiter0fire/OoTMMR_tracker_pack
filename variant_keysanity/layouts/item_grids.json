@@ -280,9 +280,9 @@
                     "height": 28,
                     "margin": "1,1",
                     "content": [
-                      {
+                      { 
                         "type": "item",
-                        "item": "setting_mq_SpiritTemple",
+                        "item": "setting_mq_ShadowTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
@@ -315,8 +315,8 @@
                     "margin": "1,1",
                     "content": [
                       {
-                        "type": "item",
-                        "item": "setting_mq_ShadowTemple",
+                       "type": "item",
+                        "item": "setting_mq_SpiritTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
