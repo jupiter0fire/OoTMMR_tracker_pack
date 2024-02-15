@@ -303,6 +303,11 @@
         "item": "setting_sharedOcarina",
         "height": 16
       }
+      {
+        "type": "item",
+        "item": "setting_sharedSongSun",
+        "height": 16
+      }
     ]
   },
   "layout_logic_tricks_oot": {
