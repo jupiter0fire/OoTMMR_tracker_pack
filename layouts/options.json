@@ -226,6 +226,11 @@
         "item": "setting_shortHookshotMm",
         "height": 16
       }
+      {
+        "type": "item",
+        "item": "setting_sunsongMm",
+        "height": 16
+      }
     ]
   },
   "layout_shared_items": {
