@@ -1156,7 +1156,7 @@ function _oot_logic()
 	end
 
 	function can_cut_grass()
-		return has_weapon() or can_boomerang() or has('STRENGTH')
+		return has_weapon() or can_boomerang() or has_explosives() or has('STRENGTH')
 	end
 
 	function can_kill_baba_sticks()
