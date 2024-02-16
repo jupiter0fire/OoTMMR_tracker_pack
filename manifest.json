@@ -1,9 +1,9 @@
 ﻿{
-  "name": "OoTMM Randomizer - Map and Item Tracker",
+  "name": "OoTMM Randomizer - Map and Item Tracker DEV",
   "game_name": "OOTMM Randomizer",
   "package_version": "1.12.4.1",
   "package_uid": "ootmmrando_overworldmap_jupiterfire",
-  "author": "Jupiterfire, wbsch",
+  "author": "Jupiterfire, wbsch, Pouhpouhh",
   "variants": {
     "standard": {
       "display_name": "Map Tracker"
