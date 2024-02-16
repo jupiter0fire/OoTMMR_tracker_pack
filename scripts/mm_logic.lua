@@ -1086,6 +1086,10 @@ function _mm_logic()
 	function has_bow()
 		return has('BOW') or has('SHARED_BOW')
 	end
+	
+	function can_sink()
+		return has('BOOTS_IRON')and has('TUNIC_ZORA') or has('BOOTS_IRON')and has('TUNIC_ALL') or has_mask_zora()
+	end
 
 	function has_arrows()
 		return has_bow() and (event('ARROWS') or renewable(ARROWS_10) or renewable(ARROWS_30) or renewable(ARROWS_40) or renewable(SHARED_ARROWS_5) or renewable(SHARED_ARROWS_10) or renewable(SHARED_ARROWS_30) or renewable(SHARED_ARROWS_40))
@@ -1401,7 +1405,7 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Great Bay Temple Entrance"] = function () return true end,
-            ["Great Bay Temple Central Room"] = function () return has_mask_zora() end,
+            ["Great Bay Temple Central Room"] = function () return can_sink() end,
         },
         ["locations"] = {
             ["Great Bay Temple SF Water Wheel Platform"] = function () return has_mask_zora() or (has('MASK_GREAT_FAIRY') and (has_arrows() or can_hookshot())) end,
@@ -2290,7 +2294,7 @@ function _mm_logic()
             ["Canyon Gossip Grotto"] = function () return true end,
         },
         ["locations"] = {
-            ["Termina Field Water Chest"] = function () return has_mask_zora() end,
+            ["Termina Field Water Chest"] = function () return can_sink() end,
             ["Termina Field Tall Grass Chest"] = function () return true end,
             ["Termina Field Tree Stump Chest"] = function () return can_hookshot_short() or can_use_beans() end,
             ["Termina Field Kamaro Mask"] = function () return can_play(SONG_HEALING) and midnight() end,
@@ -3257,7 +3261,7 @@ function _mm_logic()
     },
     ["Great Bay Coast Fortress"] = {
         ["exits"] = {
-            ["Great Bay Coast"] = function () return has_mask_zora() end,
+            ["Great Bay Coast"] = function () return has_mask_zora() or can_sink() end,
             ["Pirate Fortress"] = function () return true end,
         },
     },
@@ -3799,7 +3803,7 @@ function _mm_logic()
     },
     ["Pirate Fortress"] = {
         ["exits"] = {
-            ["Great Bay Coast Fortress"] = function () return has_mask_zora() end,
+            ["Great Bay Coast Fortress"] = function () return has_mask_zora() or can_sink() end,
             ["Pirate Fortress Entrance"] = function () return can_reset_time() end,
         },
     },

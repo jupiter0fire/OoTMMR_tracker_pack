@@ -702,7 +702,8 @@
             "MM_ARROW_LIGHT",
             "mm_spinattack",
             "MM_SHIELD_HERO",
-            "MM_SHIELD_MIRROR"
+			"MM_SHIELD_MIRROR",
+			"MM_OWL_CLOCK_TOWN"
           ],
           [
             "MM_BOMB_BAG",
@@ -712,7 +713,8 @@
             "MM_MAGIC_BEAN",
             "mm_bottle1",
             "mm_bottle2",
-            "mm_bottle3"
+            "mm_bottle3",
+            "MM_OWL_SOUTHERN_SWAMP"
           ],
           [
             "MM_POWDER_KEG",
@@ -722,7 +724,8 @@
             "MM_GREAT_FAIRY_SWORD",
             "mm_bottle4",
             "mm_bottle5",
-            "mm_bottle6"
+            "mm_bottle6",
+            "MM_OWL_WOODFALL",
           ],
           [
             "MM_SONG_TIME",
@@ -732,7 +735,8 @@
             "MM_SONG_STORMS",
             "MM_WALLET",
             "MM_MAGIC_UPGRADE",
-            "MM_MOON_TEAR"
+            "MM_MOON_TEAR",
+            "MM_OWL_MILK_ROAD"
           ],
           [
             "MM_SONG_AWAKENING",
@@ -742,7 +746,8 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_ROOM_KEY",
-            "MM_DEED_LAND"
+            "MM_DEED_LAND",
+			"MM_OWL_MOUNTAIN_VILLAGE"
           ],
           [
             "MM_MASK_POSTMAN",
@@ -752,7 +757,8 @@
             "MM_MASK_GREAT_FAIRY",
             "MM_MASK_DEKU",
             "MM_PENDANT_OF_MEMORIES",
-            "MM_DEED_SWAMP"
+            "MM_DEED_SWAMP",
+			"MM_OWL_SNOWHEAD"
           ],
           [
             "MM_MASK_KEATON",
@@ -762,7 +768,8 @@
             "MM_MASK_SCENTS",
             "MM_MASK_GORON",
             "MM_LETTER_TO_KAFEI",
-            "MM_DEED_MOUNTAIN"
+            "MM_DEED_MOUNTAIN",
+			"MM_OWL_GREAT_BAY"
           ],
           [
             "MM_MASK_ROMANI",
@@ -772,7 +779,8 @@
             "MM_MASK_TRUTH",
             "MM_MASK_ZORA",
             "MM_LETTER_TO_MAMA",
-            "MM_DEED_OCEAN"
+            "MM_DEED_OCEAN",
+			"MM_OWL_ZORA_CAPE"
           ],
           [
             "MM_MASK_KAMARO",
@@ -782,30 +790,24 @@
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN"
-          ]
-        ]
-      },
-      {
-        "type": "itemgrid",
-        "h_alignment": "left",
-        "item_margin": "1,1",
-        "scale": 0.7,
-        "rows": [
-          [
-            "MM_OWL_CLOCK_TOWN",
-            "MM_OWL_SOUTHERN_SWAMP",
-            "MM_OWL_WOODFALL",
-            "MM_OWL_MILK_ROAD",
-            "MM_OWL_MOUNTAIN_VILLAGE",
-            "MM_OWL_SNOWHEAD",
-            "MM_OWL_GREAT_BAY",
-            "MM_OWL_ZORA_CAPE",
-            "MM_OWL_IKANA_CANYON",
+            "MM_GS_TOKEN_OCEAN",
+			"MM_OWL_IKANA_CANYON"
+          ],
+		  [
+			"MM_SPELL_FIRE",
+			"MM_FW",
+			"MM_SPELL_LOVE",
+			"MM_STRENGTH",
+			"MM_SCALE",
+			"MM_TUNIC_GORON",
+			"MM_BOOTS_IRON",
+		  	"MM_BOOTS_HOVER",
             "MM_OWL_STONE_TOWER"
-          ]
+		 
+		  ]
         ]
       },
+
       {
         "type": "array",
         "orientation": "horizontal",
