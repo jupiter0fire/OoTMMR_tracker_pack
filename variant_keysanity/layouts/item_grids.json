@@ -280,25 +280,26 @@
                     "height": 28,
                     "margin": "1,1",
                     "content": [
-                      {
+                      { 
                         "type": "item",
-                        "item": "setting_mq_SpiritTemple",
+                        "item": "setting_mq_ShadowTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
                       },
                       {
                         "type": "item",
-                        "item": "OOT_SMALL_KEY_SPIRIT",
+                        "item": "OOT_SMALL_KEY_SHADOW",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
                         "width": 14,
                         "height": 14
+                        "type": "item",
                       },
                       {
                         "type": "item",
-                        "item": "OOT_BOSS_KEY_SPIRIT",
+                        "item": "OOT_BOSS_KEY_SHADOW",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
@@ -314,15 +315,14 @@
                     "margin": "1,1",
                     "content": [
                       {
-                        "type": "item",
-                        "item": "setting_mq_ShadowTemple",
+                       "type": "item",
+                        "item": "setting_mq_SpiritTemple",
                         "canvas_depth": 1,
                         "width": 28,
                         "height": 10.5
                       },
                       {
-                        "type": "item",
-                        "item": "OOT_SMALL_KEY_SHADOW",
+                       "item": "OOT_SMALL_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -331,12 +331,13 @@
                       },
                       {
                         "type": "item",
-                        "item": "OOT_BOSS_KEY_SHADOW",
+                        "item": "OOT_BOSS_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 16,
                         "canvas_top": 16,
                         "width": 14,
                         "height": 14
+                        
                       }
                     ]
                   },
