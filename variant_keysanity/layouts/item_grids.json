@@ -594,8 +594,8 @@
             "OOT_SONG_TP_FOREST",
             "OOT_SONG_TP_FIRE",
             "OOT_SONG_TP_WATER",
-            "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_SHADOW",
+            "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
             "OOT_GS_TOKEN",
             "triforce"
@@ -635,14 +635,14 @@
               },
               {
                 "type": "item",
-                "item": "spirit",
+                "item": "shadow",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
               },
               {
                 "type": "item",
-                "item": "shadow",
+                "item": "spirit",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
