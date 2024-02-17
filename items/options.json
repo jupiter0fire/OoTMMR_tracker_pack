@@ -28,6 +28,24 @@
     ]
   },
   {
+    "name": "OoT Item Ported to MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_OOT_into_MM_OFF.png",
+        "codes": "setting_OoT_Into_MM,setting_OoT_Into_MM_OFF",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_OOT_into_MM_ON.png",
+        "codes": "setting_OoT_Into_MM,setting_OoT_Into_MM_ON",
+      }
+    ]
+  },
+  {
     "name": "Houses Skulltula Tokens Shuffle",
     "type": "progressive",
     "allow_disabled": false,

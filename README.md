@@ -36,42 +36,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 ## TODOs:
 
-- [ ] [x] Add new items within tracker on MM side ( scales, strength upgrade, tunic, boots, Clocks As Items)
-- [ ] Add new items within tracker on OOT side ( Masks )
-- [ ] Add Ocarina Buttons within tracker on both side 
-- [ ] Update OoT Logic for Stone Mask 
-- [ ] Update OoT Logic for Blast Mask
-- [ ] Update OoT Logic for Ocarina Buttons
-- [ ] Update OoT Logic for OoT Enemy Souls
-- [ ] Update OoT Logic for OoT Boss Souls
-- [ ] Update OoT Logic for Quick age swap option
-- [ ] Update OoT Logic for pre completed dungeon option
-- [ ] Update OoT Logic for Hookshoot anywhere option
-- [ ] Update OoT Logic for Climb most surfaces option
-- [ ] Update MM Logic for Silver & Golden Scales
-- [ ] Update MM Logic for various Strength upgrades
-- [ ] Update MM Logic for various tunic
-- [ ] Update MM Logic for various boots
-- [ ] Update MM Logic for Clocks As Items option
-- [ ] Update MM Logic for Ocarina Buttons option
-- [ ] Update MM Logic for open dungeon option
-- [ ] Update MM Logic for skip Oath to order option
-- [ ] Update MM Logic for Fierce Deity Anywhere option
-- [ ] Update MM Logic for Hookshoot anywhere option
-- [ ] Update OoT Logic for Climb most surface option
-- [ ] Update MM Logic for MM Enemy Souls
-- [ ] Update MM Logic for MM Boss Souls
-- [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches, fishing shuffle, freestanding ruppes, freestanding hearts, silver ruppes, pots, fairy spot, bottle content)
-- [ ] Update Shared options
-- [ ] Add Coins, Skeleton Keys, Bottomless Wallet
-- [ ] Move half of Owl Statues to new row and increase text size so it is readable 
-- [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent
-- [ ] Update possible tricks for OoT
-- [ ] Update possible tricks for MM
-- [ ] Swap positions of Death Mountain and Goron city checks so they are in the right position on the map
-- [ ] Update/add Entrance randomization options
-
 ## Credits
 
 Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.

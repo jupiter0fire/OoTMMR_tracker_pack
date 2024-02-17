@@ -225,6 +225,11 @@
         "type": "item",
         "item": "setting_shortHookshotMm",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_OoT_Into_MM",
+        "height": 16
       }
     ]
   },
