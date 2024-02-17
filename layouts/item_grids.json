@@ -702,7 +702,7 @@
             "MM_ARROW_LIGHT",
             "mm_spinattack",
             "MM_SHIELD_HERO",
-            "MM_SHIELD_MIRROR"
+			"MM_SHIELD_MIRROR"
           ],
           [
             "MM_BOMB_BAG",
@@ -783,14 +783,24 @@
             "MM_MASK_FIERCE_DEITY",
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN"
-          ]
+          ],
+		  [
+			"MM_SPELL_FIRE",
+			"MM_FW",
+			"MM_SPELL_LOVE",
+			"MM_STRENGTH",
+			"MM_SCALE",
+			"MM_TUNIC_GORON",
+			"MM_BOOTS_IRON",
+		  	"MM_BOOTS_HOVER"
+		  ]
         ]
       },
-      {
+	  {
         "type": "itemgrid",
         "h_alignment": "left",
         "item_margin": "1,1",
-        "scale": 0.7,
+        "scale": 0.71,
         "rows": [
           [
             "MM_OWL_CLOCK_TOWN",
@@ -803,6 +813,22 @@
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
             "MM_OWL_STONE_TOWER"
+          ]
+        ]
+      },
+	  	  {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "0,0",
+        "scale": 1.25,
+        "rows": [
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND",
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL"
           ]
         ]
       },

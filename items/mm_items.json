@@ -445,14 +445,16 @@
     "codes": "mm_spinattack"
   },
   {
-    "name": "MM Shield",
+    "name": "MM Hero Shield",
     "type": "toggle",
+    "loop": true,
     "img": "images/items/mm_shield.png",
     "codes": "MM_SHIELD_HERO"
   },
   {
-    "name": "MM Shield",
+    "name": "MM Mirror Shield",
     "type": "toggle",
+    "loop": true,
     "img": "images/items/mm_mirror.png",
     "codes": "MM_SHIELD_MIRROR"
   },
@@ -1285,5 +1287,122 @@
     "type": "toggle",
     "img": "images/items/mm_pendant.png",
     "codes": "MM_PENDANT_OF_MEMORIES"
+  },
+  {
+    "name": "MM Hover Boots",
+    "type": "toggle",
+    "img": "images/hoverboots.png",
+    "codes": "MM_BOOTS_HOVER"
+  },
+  {
+    "name": "MM Iron Boots",
+    "type": "toggle",
+    "img": "images/ironboots.png",
+    "codes": "MM_BOOTS_IRON"
+  },
+  {
+    "name": "MM Zora Scales",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/scale1.png",
+        "codes": "MM_SCALE"
+      },
+      {
+        "img": "images/scale2.png",
+        "codes": "MM_GOLDSCALE"
+      }
+    ]
+  },
+  {
+    "name": "MM Strength Upgrades",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/lift1.png",
+        "codes": "MM_STRENGTH"
+      },
+      {
+        "img": "images/lift2.png",
+        "codes": "MM_STRENGTH2"
+      },
+      {
+        "img": "images/lift3.png",
+        "codes": "MM_STRENGTH3"
+      }
+    ]
+  },
+  {
+    "name": "MM Clock 1st Day",
+    "type": "toggle",
+    "img": "images/clock_day_1st.png",
+    "codes": "MM_DAY_1ST"
+  },
+  {
+    "name": "MM Clock 2nd Day",
+    "type": "toggle",
+    "img": "images/clock_day_2nd.png",
+    "codes": "MM_DAY_2ND"
+  },
+  {
+    "name": "MM Clock FINAL Day",
+    "type": "toggle",
+    "img": "images/clock_day_final.png",
+    "codes": "MM_DAY_FINAL"
+  },
+  {
+    "name": "MM Clock 1st Night",
+    "type": "toggle",
+    "img": "images/clock_night_1st.png",
+    "codes": "MM_NIGHT_1ST"
+  },
+  {
+    "name": "MM Clock 2nd Night",
+    "type": "toggle",
+    "img": "images/clock_night_2nd.png",
+    "codes": "MM_NIGHT_2ND"
+  },
+  {
+    "name": "MM Clock FINAL Night",
+    "type": "toggle",
+    "img": "images/clock_night_final.png",
+    "codes": "MM_NIGHT_FINAL"
+  }, 
+    {
+    "name": "MM Din's Fire",
+    "type": "toggle",
+    "img": "images/din.png",
+    "codes": "MM_SPELL_FIRE"
+  },
+  {
+    "name": "MM Farore's Wind",
+    "type": "toggle",
+    "img": "images/farore.png",
+    "codes": "MM_FW"
+  },
+  {
+    "name": "MM Nayru's Love",
+    "type": "toggle",
+    "img": "images/nayru.png",
+    "codes": "MM_SPELL_LOVE"
+  },
+  {
+    "name": "MM Tunic",
+    "type": "progressive",
+    "loop": true,
+    "stages": [
+      {
+		"img": "images/redtunic.png",
+		"codes": "MM_TUNIC_GORON"
+      },
+      {
+		"img": "images/bluetunic.png",
+		"codes": "MM_TUNIC_ZORA"
+      },
+      {
+		"img": "images/tunics.png",
+		"codes": "MM_TUNIC_ALL"
+      },
+    ]
   }
 ]
