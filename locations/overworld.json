@@ -247,7 +247,7 @@
             "short_name": "Ocarina Game",
             "sections": [
               {
-                "name": "ResidentSleeper",
+                "name": "First 5 Notes",
                 "access_rules": [
                   "$oot|Lost Woods Memory Game"
                 ],
@@ -859,7 +859,7 @@
             ]
           },
           {
-            "name": "Fishing Pont",
+            "name": "Fishing Pond",
             "sections": [
               {
                 "name": "Child Fishing",
@@ -2766,7 +2766,7 @@
                 ]
               },
               {
-                "name": "Market Bomchu Bowling",
+                "name": "Market Bombchu Bowling",
                 "access_rules": [
                   "$oot|Bombchu Bowling Reward 1"
                 ],
@@ -6734,7 +6734,7 @@
             ]
           },
           {
-            "name": "Gorn Elder",
+            "name": "Goron Elder",
             "short_name": "Goron Elder",
             "sections": [
               {
@@ -7827,7 +7827,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Wizrobe",
+                    "name": "Wizzrobe",
                     "access_rules": [
                       "$mm|Secret Shrine Boss 2 Chest"
                     ],

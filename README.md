@@ -45,10 +45,10 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update OoT Logic for Ocarina Buttons
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
-- [ ] Update OoT Logic for  Quick age swap option
+- [ ] Update OoT Logic for Quick age swap option
 - [ ] Update OoT Logic for pre completed dungeon option
 - [ ] Update OoT Logic for Hookshoot anywhere option
-- [ ] Update OoT Logic for Climb most surface option
+- [ ] Update OoT Logic for Climb most surfaces option
 - [ ] Update MM Logic for Silver & Golden Scales
 - [ ] Update MM Logic for various Strength upgrades
 - [ ] Update MM Logic for various tunic
@@ -70,6 +70,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
+- [ ] Swap positions of Death Mountain and Goron city checks so they are in the right position on the map
 - [ ] Update/add Entrance randomization options
 
 ## Credits
