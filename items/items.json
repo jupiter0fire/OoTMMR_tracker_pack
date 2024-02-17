@@ -726,6 +726,48 @@
     "initial_active_state": false,
     "codes": "OOT_SONG_TP_LIGHT"
   },
+    {
+    "name": "OOT Stone Mask",
+    "type": "toggle",
+    "img": "images/items/mm_stone.png",
+    "codes": "OOT_MASK_STONE"
+  },
+  {
+    "name": "OOT Blast Mask",
+    "type": "toggle",
+    "img": "images/items/mm_blast.png",
+    "codes": "OOT_MASK_BLAST"
+  },
+  {
+    "name": "OOT C UP Button",
+    "type": "toggle",
+    "img": "images/system/C-Up.png",
+    "codes": "OOT_C_UP"
+  },
+  {
+    "name": "OOT C LEFT Button",
+    "type": "toggle",
+    "img": "images/system/C-Left.png",
+    "codes": "OOT_C_LEFT"
+  },
+    {
+    "name": "OOT C RIGHT Button",
+    "type": "toggle",
+    "img": "images/system/C-Right.png",
+    "codes": "OOT_C_RIGHT"
+  },
+    {
+    "name": "OOT C DOWN Button",
+    "type": "toggle",
+    "img": "images/system/C-Down.png",
+    "codes": "OOT_C_DOWN"
+  },
+    {
+    "name": "OOT C A Button",
+    "type": "toggle",
+    "img": "images/system/A Button.png",
+    "codes": "OOT_C_A"
+  },
   {
     "name": "Dummy",
     "type": "toggle",

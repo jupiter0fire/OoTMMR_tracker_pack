@@ -1387,6 +1387,36 @@
     "codes": "MM_SPELL_LOVE"
   },
   {
+    "name": "MM C UP Button",
+    "type": "toggle",
+    "img": "images/system/C-Up.png",
+    "codes": "MM_C_UP"
+  },
+  {
+    "name": "MM C LEFT Button",
+    "type": "toggle",
+    "img": "images/system/C-Left.png",
+    "codes": "MM_C_LEFT"
+  },
+    {
+    "name": "MM C RIGHT Button",
+    "type": "toggle",
+    "img": "images/system/C-Right.png",
+    "codes": "MM_C_RIGHT"
+  },
+    {
+    "name": "MM C DOWN Button",
+    "type": "toggle",
+    "img": "images/system/C-Down.png",
+    "codes": "MM_C_DOWN"
+  },
+    {
+    "name": "MM C A Button",
+    "type": "toggle",
+    "img": "images/system/A Button.png",
+    "codes": "MM_C_A"
+  },
+  {
     "name": "MM Tunic",
     "type": "progressive",
     "loop": true,

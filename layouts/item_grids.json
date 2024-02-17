@@ -111,6 +111,21 @@
           ]
         ]
       },
+	  {
+	    "type": "itemgrid",
+        "h_alignment": "center",
+        "item_margin": "1,1",
+        "scale": 0.8,
+        "rows": [
+          [
+            "OOT_C_UP",
+            "OOT_C_LEFT",
+            "OOT_C_RIGHT",
+            "OOT_C_DOWN",
+            "OOT_C_A"
+          ]
+        ]
+      },
       {
         "type": "array",
         "orientation": "horizontal",
@@ -371,6 +386,10 @@
               [
                 "OOT_GERUDO_CARD",
                 "triforce"
+              ],
+			                [
+                "OOT_MASK_STONE",
+                "OOT_MASK_BLAST"
               ]
             ]
           }
@@ -798,16 +817,25 @@
       },
 	  {
         "type": "itemgrid",
-        "h_alignment": "left",
+        "h_alignment": "center",
         "item_margin": "1,1",
-        "scale": 0.71,
+        "scale": 1.0,
         "rows": [
+          [
+            "MM_C_UP",
+            "MM_C_LEFT",
+            "MM_C_RIGHT",
+            "MM_C_DOWN",
+            "MM_C_A"
+          ],
           [
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_SOUTHERN_SWAMP",
             "MM_OWL_WOODFALL",
             "MM_OWL_MILK_ROAD",
-            "MM_OWL_MOUNTAIN_VILLAGE",
+            "MM_OWL_MOUNTAIN_VILLAGE"
+          ],
+		  [
             "MM_OWL_SNOWHEAD",
             "MM_OWL_GREAT_BAY",
             "MM_OWL_ZORA_CAPE",

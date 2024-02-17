@@ -38,8 +38,8 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - [ ] Delete unused lua/json parts
 - [x] Add new item within tracker on MM side ( scales, strength upgrade, tunic, boots, Clocks As Items)
-- [ ] Add new item within tracker on OOT side ( Mask )
-- [ ] Add Ocarina Buttons within tracker on both side 
+- [x] Add new item within tracker on OOT side ( Mask )
+- [x] Add Ocarina Buttons within tracker on both side 
 - [ ] Update OoT Logic for Stone Mask 
 - [ ] Update OoT Logic for Blast Mask
 - [ ] Update OoT Logic for Ocarina Buttons
@@ -66,7 +66,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Add new checks to the map (grass patches, fishing shuffle, freestanding ruppes, freestanding hearts, silver ruppes, pots, fairy spot, bottle content)
 - [ ] Update Shared options
 - [ ] Add Coins, Skeleton Keys, Bottomless Wallet
-- [ ] Move half of Owl Statues to new row and increase text size so it is readable 
+- [x] Move half of Owl Statues to new row and increase text size so it is readable 
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
