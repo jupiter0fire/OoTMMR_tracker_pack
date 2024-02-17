@@ -36,8 +36,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 ## TODOs:
 
-- [ ] Delete unused lua/json parts
-
 ## Credits
 
 Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
