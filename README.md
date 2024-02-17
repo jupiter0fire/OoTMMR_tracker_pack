@@ -37,6 +37,19 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 ## TODOs:
 
 - [ ] Delete unused lua/json parts
+- [ ] Add new checks to the map (grass patches, fishing shuffle etc)
+- [ ] Add Silver/ Gold Scales to MM
+- [ ] Add Goron Bracelet, Silver and Golden Gauntlets to MM
+- [ ] Add Sun's Song to MM
+- [ ] Add Blast Mask to OOT
+- [ ] Add Zora/Goron Tunics to MM
+- [ ] Add Din’s Fire, Farore’s Wind & Nayru’s Love to MM
+- [ ] Add Stone Mask to OOT
+- [ ] Add Coins, Skeleton Keys, Bottomless Wallet, Clocks As Items, Enemy Souls, NPC Souls, Boss Souls, Ocarina Buttons (all to both games shared except unique enemies, NPC's and clocks)
+- [ ] Move half of Owl Statues to new row and increase text size so it is readable 
+- [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent
+- [ ] Add new checks to the map (grass patches, fishing shuffle etc)
+
 
 ## Credits
 
