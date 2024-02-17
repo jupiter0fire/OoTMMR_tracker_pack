@@ -321,7 +321,8 @@
                         "height": 10.5
                       },
                       {
-                       "item": "OOT_SMALL_KEY_SPIRIT",
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
