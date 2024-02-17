@@ -1332,6 +1332,42 @@
       }
     ]
   },
+  {
+    "name": "MM Clock 1st Day",
+    "type": "toggle",
+    "img": "images/clock_day_1st.png",
+    "codes": "MM_DAY_1ST"
+  },
+  {
+    "name": "MM Clock 2nd Day",
+    "type": "toggle",
+    "img": "images/clock_day_2nd.png",
+    "codes": "MM_DAY_2ND"
+  },
+  {
+    "name": "MM Clock FINAL Day",
+    "type": "toggle",
+    "img": "images/clock_day_final.png",
+    "codes": "MM_DAY_FINAL"
+  },
+  {
+    "name": "MM Clock 1st Night",
+    "type": "toggle",
+    "img": "images/clock_night_1st.png",
+    "codes": "MM_NIGHT_1ST"
+  },
+  {
+    "name": "MM Clock 2nd Night",
+    "type": "toggle",
+    "img": "images/clock_night_2nd.png",
+    "codes": "MM_NIGHT_2ND"
+  },
+  {
+    "name": "MM Clock FINAL Night",
+    "type": "toggle",
+    "img": "images/clock_night_final.png",
+    "codes": "MM_NIGHT_FINAL"
+  }, 
     {
     "name": "MM Din's Fire",
     "type": "toggle",

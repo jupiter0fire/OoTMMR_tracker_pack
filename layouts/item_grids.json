@@ -816,6 +816,22 @@
           ]
         ]
       },
+	  	  {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "0,0",
+        "scale": 1.25,
+        "rows": [
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND",
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL"
+          ]
+        ]
+      },
       {
         "type": "array",
         "orientation": "horizontal",
