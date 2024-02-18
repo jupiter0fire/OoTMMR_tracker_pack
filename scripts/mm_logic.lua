@@ -1088,7 +1088,7 @@ function _mm_logic()
 	end
 	
 	function can_sink()
-		return has('BOOTS_IRON')and has('TUNIC_ZORA') or has('BOOTS_IRON')and has('TUNIC_ALL') or has_mask_zora()
+		return has('BOOTS_IRON') and has('TUNIC_ZORA') or has('BOOTS_IRON') and has('TUNIC_ALL') or has_mask_zora()
 	end
 
 	function has_arrows()
