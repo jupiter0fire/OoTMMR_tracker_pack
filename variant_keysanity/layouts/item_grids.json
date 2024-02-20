@@ -1029,6 +1029,7 @@
             "mm_spinattack",
             "MM_SHIELD_HERO",
             "MM_SHIELD_MIRROR"
+            "MM_SPELL_FIRE"  
           ],
           [
             "MM_BOMB_BAG",
@@ -1039,6 +1040,7 @@
             "mm_bottle1",
             "mm_bottle2",
             "mm_bottle3"
+            "MM_FW"
           ],
           [
             "MM_POWDER_KEG",
@@ -1049,6 +1051,7 @@
             "mm_bottle4",
             "mm_bottle5",
             "mm_bottle6"
+            "MM_SPELL_LOVE"
           ],
           [
             "MM_SONG_TIME",
@@ -1059,6 +1062,7 @@
             "MM_WALLET",
             "MM_MAGIC_UPGRADE",
             "MM_MOON_TEAR"
+            "MM_STRENGTH"
           ],
           [
             "MM_SONG_AWAKENING",
@@ -1069,6 +1073,7 @@
             "MM_STRAY_FAIRY_TOWN",
             "MM_ROOM_KEY",
             "MM_DEED_LAND"
+            "MM_STRENGTH2"
           ],
           [
             "MM_MASK_POSTMAN",
@@ -1079,6 +1084,7 @@
             "MM_MASK_DEKU",
             "MM_PENDANT_OF_MEMORIES",
             "MM_DEED_SWAMP"
+            "MM_STRENGTH3"
           ],
           [
             "MM_MASK_KEATON",
@@ -1089,6 +1095,7 @@
             "MM_MASK_GORON",
             "MM_LETTER_TO_KAFEI",
             "MM_DEED_MOUNTAIN"
+            "MM_TUNIC_GORON"
           ],
           [
             "MM_MASK_ROMANI",
@@ -1099,6 +1106,7 @@
             "MM_MASK_ZORA",
             "MM_LETTER_TO_MAMA",
             "MM_DEED_OCEAN"
+            "MM_TUNIC_ZORA"
           ],
           [
             "MM_MASK_KAMARO",
@@ -1393,6 +1401,16 @@
             "MM_MASK_CAPTAIN",
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY"
+           ],
+           [
+            "MM_SPELL_FIRE",
+            "MM_FW",
+            "MM_SPELL_LOVE",
+            "MM_STRENGTH",
+            "MM_STRENGTH2",
+            "MM_STRENGTH3",
+            "MM_TUNIC_GORON",
+            "MM_TUNIC_ZORA"
           ]
         ]
       },
