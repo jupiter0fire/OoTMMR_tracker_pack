@@ -1028,7 +1028,7 @@
             "MM_ARROW_LIGHT",
             "mm_spinattack",
             "MM_SHIELD_HERO",
-            "MM_SHIELD_MIRROR"
+            "MM_SHIELD_MIRROR",
             "MM_SPELL_FIRE"  
           ],
           [
@@ -1039,7 +1039,7 @@
             "MM_MAGIC_BEAN",
             "mm_bottle1",
             "mm_bottle2",
-            "mm_bottle3"
+            "mm_bottle3",
             "MM_FW"
           ],
           [
@@ -1050,7 +1050,7 @@
             "MM_GREAT_FAIRY_SWORD",
             "mm_bottle4",
             "mm_bottle5",
-            "mm_bottle6"
+            "mm_bottle6",
             "MM_SPELL_LOVE"
           ],
           [
@@ -1061,7 +1061,7 @@
             "MM_SONG_STORMS",
             "MM_WALLET",
             "MM_MAGIC_UPGRADE",
-            "MM_MOON_TEAR"
+            "MM_MOON_TEAR",
             "MM_STRENGTH"
           ],
           [
@@ -1072,7 +1072,7 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_ROOM_KEY",
-            "MM_DEED_LAND"
+            "MM_DEED_LAND",
             "MM_STRENGTH2"
           ],
           [
@@ -1094,7 +1094,7 @@
             "MM_MASK_SCENTS",
             "MM_MASK_GORON",
             "MM_LETTER_TO_KAFEI",
-            "MM_DEED_MOUNTAIN"
+            "MM_DEED_MOUNTAIN",
             "MM_TUNIC_GORON"
           ],
           [
@@ -1105,7 +1105,7 @@
             "MM_MASK_TRUTH",
             "MM_MASK_ZORA",
             "MM_LETTER_TO_MAMA",
-            "MM_DEED_OCEAN"
+            "MM_DEED_OCEAN",
             "MM_TUNIC_ZORA"
           ],
           [
