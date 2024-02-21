@@ -1390,7 +1390,7 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN",
+            "MM_GS_TOKEN_OCEAN"
           ],
           [
             "MM_MASK_DEKU",
@@ -1597,7 +1597,7 @@
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
-                  ]
+                  }
                 ]
                },
                {
