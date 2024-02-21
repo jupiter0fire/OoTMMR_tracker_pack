@@ -1387,22 +1387,15 @@
     "codes": "MM_SPELL_LOVE"
   },
   {
-    "name": "MM Tunic",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-		"img": "images/redtunic.png",
-		"codes": "MM_TUNIC_GORON"
-      },
-      {
-		"img": "images/bluetunic.png",
-		"codes": "MM_TUNIC_ZORA"
-      },
-      {
-		"img": "images/tunics.png",
-		"codes": "MM_TUNIC_ALL"
-      },
+    "name": "MM Goron Tunic",
+    "type": "toggle",
+    "img": "images/redtunic.png",
+    "codes": "MM_TUNIC_GORON"
+  },
+  {	
+    "name": "MM Zora Tunic",
+    "type": "toggle",
+    "img": "images/bluetunic.png",
+    "codes": "MM_TUNIC_ZORA"
+      }
     ]
-  }
-]
