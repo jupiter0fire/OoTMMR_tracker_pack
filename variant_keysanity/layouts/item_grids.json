@@ -1124,7 +1124,7 @@
         "type": "itemgrid",
         "h_alignment": "left",
         "item_margin": "1,1",
-        "scale": 0.8,
+        "scale": 0.9,
         "rows": [
           [
             "MM_OWL_CLOCK_TOWN",
