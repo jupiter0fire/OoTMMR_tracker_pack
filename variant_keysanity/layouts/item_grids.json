@@ -1408,13 +1408,12 @@
             "type": "array",
             "orientation": "Vertical",
             "scale": 0.9,
+            "content": [
+          {
+             "type": "array",
+            "orientation": "horizontal",
             "margin": "0,0",
             "content": [
-              {
-                "type": "array",
-                "orientation": "horizontal",
-                "margin": "0,0",
-                "content": [
               {
                 "type": "item",
                 "item": "mm_woodfall",
