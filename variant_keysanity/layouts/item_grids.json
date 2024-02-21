@@ -1073,7 +1073,7 @@
             "MM_STRAY_FAIRY_TOWN",
             "MM_ROOM_KEY",
             "MM_DEED_LAND",
-            "MM_STRENGTH2"
+            "MM_BOOTS_HOVER"
           ],
           [
             "MM_MASK_POSTMAN",
@@ -1084,7 +1084,7 @@
             "MM_MASK_DEKU",
             "MM_PENDANT_OF_MEMORIES",
             "MM_DEED_SWAMP",
-            "MM_STRENGTH3"
+            "MM_BOOTS_IRON"
           ],
           [
             "MM_MASK_KEATON",
@@ -1116,7 +1116,8 @@
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN"
+            "MM_GS_TOKEN_OCEAN",
+            "MM_SCALE"
           ]
         ]
       },
