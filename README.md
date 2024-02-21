@@ -51,7 +51,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update OoT Logic for Climb most surfaces option
 - [ ] Update MM Logic for Silver & Golden Scales
 - [ ] Update MM Logic for various Strength upgrades
-- [ ] Update MM Logic for various tunic
+- [ ] Update MM Logic for various tunics
 - [ ] Update MM Logic for various boots
 - [ ] Update MM Logic for Clocks As Items option
 - [ ] Update MM Logic for Ocarina Buttons option
@@ -63,7 +63,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for MM Enemy Souls
 - [ ] Update MM Logic for MM Boss Souls
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches, fishing shuffle, freestanding ruppes, freestanding hearts, silver ruppes, pots, fairy spot, bottle content)
+- [ ] Add new checks to the map (grass patches, fishing shuffle, freestanding rupees, freestanding hearts, silver rupees, pots, fairy spot, bottle content)
 - [ ] Update Shared options
 - [ ] Add Coins, Skeleton Keys, Bottomless Wallet
 - [x] Move half of Owl Statues to new row and increase text size so it is readable 

@@ -1387,52 +1387,51 @@
     "codes": "MM_SPELL_LOVE"
   },
   {
-    "name": "MM C UP Button",
+    "name": "MM Goron Tunic",
     "type": "toggle",
-    "img": "images/system/C-Up.png",
-    "codes": "MM_C_UP"
+    "img": "images/redtunic.png",
+    "codes": "MM_TUNIC_GORON"
+  },
+  {	
+    "name": "MM Zora Tunic",
+    "type": "toggle",
+    "img": "images/bluetunic.png",
+    "codes": "MM_TUNIC_ZORA"
   },
   {
-    "name": "MM C LEFT Button",
+    "name": "MM A Button",
     "type": "toggle",
-    "img": "images/system/C-Left.png",
-    "codes": "MM_C_LEFT"
-  },
-    {
-    "name": "MM C RIGHT Button",
-    "type": "toggle",
-    "img": "images/system/C-Right.png",
-    "codes": "MM_C_RIGHT"
-  },
-    {
-    "name": "MM C DOWN Button",
-    "type": "toggle",
-    "img": "images/system/C-Down.png",
-    "codes": "MM_C_DOWN"
-  },
-    {
-    "name": "MM C A Button",
-    "type": "toggle",
-    "img": "images/system/A Button.png",
-    "codes": "MM_C_A"
+    "img": "images/items/A Button.png",
+    "codes": "MM_BUTTON_A"
   },
   {
-    "name": "MM Tunic",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-		"img": "images/redtunic.png",
-		"codes": "MM_TUNIC_GORON"
-      },
-      {
-		"img": "images/bluetunic.png",
-		"codes": "MM_TUNIC_ZORA"
-      },
-      {
-		"img": "images/tunics.png",
-		"codes": "MM_TUNIC_ALL"
-      },
+    "name": "MM B Button",
+    "type": "toggle",
+    "img": "images/items/B Button.png",
+    "codes": "MM_BUTTON_B"}
+  },
+  {
+    "name": "MM C-Up Button",
+    "type": "toggle",
+    "img": "images/items/C-Up.png",
+    "codes": "MM_BUTTON_C-UP"}
+  },
+  {
+    "name": "MM C-Down Button",
+    "type": "toggle",
+    "img": "images/items/C-Down.png",
+    "codes": "MM_BUTTON_C-DOWN"}
+  },
+  {
+    "name": "MM C-Left Button",
+    "type": "toggle",
+    "img": "images/items/C-Left.png",
+    "codes": "MM_BUTTON_C-LEFT"}
+  },
+  {
+    "name": "MM C-Right Button",
+    "type": "toggle",
+    "img": "images/items/C-Right.png",
+    "codes": "MM_BUTTON_C-RIGHT"
+      }
     ]
-  }
-]

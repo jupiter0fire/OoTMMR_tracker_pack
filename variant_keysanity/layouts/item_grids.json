@@ -53,8 +53,8 @@
             "OOT_SONG_TP_FOREST",
             "OOT_SONG_TP_FIRE",
             "OOT_SONG_TP_WATER",
-            "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_SHADOW",
+            "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
             "OOT_TUNIC_GORON",
             "OOT_TUNIC_ZORA"
@@ -164,14 +164,14 @@
                   },
                   {
                     "type": "item",
-                    "item": "spirit",
+                    "item": "shadow",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
                   },
                   {
                     "type": "item",
-                    "item": "shadow",
+                    "item": "spirit",
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
@@ -336,7 +336,8 @@
                         "height": 10.5
                       },
                       {
-                       "item": "OOT_SMALL_KEY_SPIRIT",
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_SPIRIT",
                         "canvas_depth": 1,
                         "canvas_left": 0,
                         "canvas_top": 16,
@@ -351,7 +352,6 @@
                         "canvas_top": 16,
                         "width": 14,
                         "height": 14
-                        
                       }
                     ]
                   },
@@ -614,8 +614,8 @@
             "OOT_SONG_TP_FOREST",
             "OOT_SONG_TP_FIRE",
             "OOT_SONG_TP_WATER",
-            "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_SHADOW",
+            "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
             "OOT_GS_TOKEN",
             "triforce"
@@ -655,14 +655,14 @@
               },
               {
                 "type": "item",
-                "item": "spirit",
+                "item": "shadow",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
               },
               {
                 "type": "item",
-                "item": "shadow",
+                "item": "spirit",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
@@ -1047,7 +1047,8 @@
             "MM_ARROW_LIGHT",
             "mm_spinattack",
             "MM_SHIELD_HERO",
-            "MM_SHIELD_MIRROR"
+            "MM_SHIELD_MIRROR",
+            "MM_SPELL_FIRE"  
           ],
           [
             "MM_BOMB_BAG",
@@ -1057,7 +1058,8 @@
             "MM_MAGIC_BEAN",
             "mm_bottle1",
             "mm_bottle2",
-            "mm_bottle3"
+            "mm_bottle3",
+            "MM_FW"
           ],
           [
             "MM_POWDER_KEG",
@@ -1067,7 +1069,8 @@
             "MM_GREAT_FAIRY_SWORD",
             "mm_bottle4",
             "mm_bottle5",
-            "mm_bottle6"
+            "mm_bottle6",
+            "MM_SPELL_LOVE"
           ],
           [
             "MM_SONG_TIME",
@@ -1077,7 +1080,8 @@
             "MM_SONG_STORMS",
             "MM_WALLET",
             "MM_MAGIC_UPGRADE",
-            "MM_MOON_TEAR"
+            "MM_MOON_TEAR",
+            "MM_STRENGTH"
           ],
           [
             "MM_SONG_AWAKENING",
@@ -1087,7 +1091,8 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_ROOM_KEY",
-            "MM_DEED_LAND"
+            "MM_DEED_LAND",
+            "MM_BOOTS_HOVER"
           ],
           [
             "MM_MASK_POSTMAN",
@@ -1097,7 +1102,8 @@
             "MM_MASK_GREAT_FAIRY",
             "MM_MASK_DEKU",
             "MM_PENDANT_OF_MEMORIES",
-            "MM_DEED_SWAMP"
+            "MM_DEED_SWAMP",
+            "MM_BOOTS_IRON"
           ],
           [
             "MM_MASK_KEATON",
@@ -1107,7 +1113,8 @@
             "MM_MASK_SCENTS",
             "MM_MASK_GORON",
             "MM_LETTER_TO_KAFEI",
-            "MM_DEED_MOUNTAIN"
+            "MM_DEED_MOUNTAIN",
+            "MM_TUNIC_GORON"
           ],
           [
             "MM_MASK_ROMANI",
@@ -1436,7 +1443,7 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN",
+            "MM_GS_TOKEN_OCEAN"
           ],
           [
             "MM_MASK_DEKU",
@@ -1450,15 +1457,15 @@
           ]
         ]
       },
-      {
-        "type": "array",
-        "orientation": "vertical",
-        "content": [
-          {
+        {
+         "type": "array",
+         "orientation": "Vertical",
+         "scale": 0.9,
+         "content": [
+           {
             "type": "array",
             "orientation": "horizontal",
             "margin": "0,0",
-            "scale": 0.9,
             "content": [
               {
                 "type": "item",
@@ -1635,11 +1642,84 @@
                     "height": 16
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-}
+               },
+               {
+                "type": "array",
+                "orientation": "vertical",
+                "content": [
+                  {
+                   "type": "array",
+                   "orientation": "horizontal",
+                   "margin": "0,0",
+                   "scale": 0.9,
+                   "content": [
+                     {
+                      "type": "item",
+                      "item": "MM_SPELL_FIRE",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_FW",
+                      "margin": "3,4",
+                      "width": 28,
+                      "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_SPELL_LOVE",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_STRENGTH",
+                     "margin": "3,4",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_BOOTS_HOVER",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_BOOTS_IRON",
+                     "margin": "3,4",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_TUNIC_GORON",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {  
+                      "type": "item",
+                     "item": "MM_TUNIC_ZORA",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },  
+                   {
+                     "type": "item",
+                     "item": "MM_SCALE",
+                     "margin": "3,4",
+                     "width": 28,
+                     "height": 28
+                  }]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }]}}
