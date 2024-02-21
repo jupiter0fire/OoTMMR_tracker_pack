@@ -1410,6 +1410,7 @@
             "MM_STRENGTH2",
             "MM_STRENGTH3",
             "MM_TUNIC_GORON",
+            "MM_TUNIC_ZORA"
           ]
         ]
       },
@@ -1658,6 +1659,13 @@
                      "width": 28,
                      "height": 28
                    },
+                   {  
+                      "type": "item",
+                     "item": "MM_TUNIC_ZORA",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },  
                    {
                      "type": "item",
                      "item": "MM_SCALE",
