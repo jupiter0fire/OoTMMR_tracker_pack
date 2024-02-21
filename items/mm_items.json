@@ -1397,5 +1397,41 @@
     "type": "toggle",
     "img": "images/bluetunic.png",
     "codes": "MM_TUNIC_ZORA"
+  },
+  {
+    "name": "MM A Button",
+    "type": "toggle",
+    "img": "images/items/A Button.png",
+    "codes": "MM_TUNIC_GORON",
+  },
+  {
+    "name": "MM B Button",
+    "type": "toggle",
+    "img": "images/items/B Button.png",
+    "codes": "MM_TUNIC_GORON"},
+  },
+  {
+    "name": "MM C-Up Button",
+    "type": "toggle",
+    "img": "images/items/C-Up.png",
+    "codes": "MM_TUNIC_GORON"},
+  },
+  {
+    "name": "MM C-Down Button",
+    "type": "toggle",
+    "img": "images/items/C-Down.png",
+    "codes": "MM_TUNIC_GORON"},
+  },
+  {
+    "name": "MM C-Left Button",
+    "type": "toggle",
+    "img": "images/items/C-Left.png",
+    "codes": "MM_TUNIC_GORON"},
+  },
+  {
+    "name": "MM C-Right Button",
+    "type": "toggle",
+    "img": "images/items/C-Right.png",
+    "codes": "MM_TUNIC_GORON"
       }
     ]
