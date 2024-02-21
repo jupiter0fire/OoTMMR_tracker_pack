@@ -1597,6 +1597,74 @@
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
+                   ]
+                 ]
+               },
+               {
+                "type": "array",
+                "orientation": "vertical",
+                "content": [
+                  {
+                   "type": "array",
+                   "orientation": "horizontal",
+                   "margin": "0,0",
+                   "scale": 0.9,
+                   "content": [
+                     {
+                      "type": "item",
+                      "item": "MM_SPELL_FIRE",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_FW",
+                      "margin": "3,4",
+                      "width": 28,
+                      "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_SPELL_LOVE",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_STRENGTH",
+                     "margin": "3,4",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_STRENGTH2",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MMM_STRENGTH3",
+                     "margin": "3,4",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_TUNIC_GORON",
+                     "margin": "1,1",
+                     "width": 28,
+                     "height": 28
+                   },
+                   {
+                     "type": "item",
+                     "item": "MM_TUNIC_ZORA",
+                     "margin": "3,4",
+                     "width": 28,
+                     "height": 28
                   }
                 ]
               }
