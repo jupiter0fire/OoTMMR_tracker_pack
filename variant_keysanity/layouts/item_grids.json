@@ -547,7 +547,8 @@
               ], 
               [
                 "OOT_MASK_BLAST",
-                "OOT_MASK_STONE"
+                "OOT_MASK_STONE",
+                "OOT_KEY_SKELETON"
               ]
             ]
           }
@@ -670,15 +671,22 @@
                 "height": 28
               },
               {
-                 "type": "item",
+                "type": "item",
                 "item": "OOT_MASK_BLAST",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
               },
               {
-                 "type": "item",
+                "type": "item",
                 "item": "OOT_MASK_STONE",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                "type": "item",
+                "item": "OOT_KEY_SKELETON",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
