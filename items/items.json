@@ -386,7 +386,7 @@
     "codes": "OOT_BUTTON_C-UP"
   },
   {
-    "name": "Oot C-Down Button",
+    "name": "OoT C-Down Button",
     "type": "toggle",
     "img": "images/system/C-Down.png",
     "codes": "OOT_BUTTON_C-DOWN"
@@ -398,7 +398,7 @@
     "codes": "OOT_BUTTON_C-LEFT"
   },
   {
-    "name": "Oot C-Right Button",
+    "name": "OoT C-Right Button",
     "type": "toggle",
     "img": "images/system/C-Right.png",
     "codes": "OOT_BUTTON_C-RIGHT"
