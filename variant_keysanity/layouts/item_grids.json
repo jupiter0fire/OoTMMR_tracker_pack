@@ -122,6 +122,15 @@
             "margin": "0,0",
             "content": [
               {
+                 "type": "item",
+                 "item": "OOT_BUTTON_A",
+                 "margin": "1,1",
+                 "width": 28,
+                 "height": 28
+              }
+            ]
+          },
+          {
                 "type": "array",
                 "orientation": "horizontal",
                 "margin": "0,0",
