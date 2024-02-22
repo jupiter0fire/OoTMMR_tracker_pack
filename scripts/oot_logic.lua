@@ -1172,11 +1172,11 @@ function _oot_logic()
 	end
 
 	function has_small_key_gerudo()
-		return setting('gerudoFortress', 'open') or cond(setting('gerudoFortress', 'single'), has('SMALL_KEY_GF', 1), has('SMALL_KEY_GF', 4))
+		return setting('gerudoFortress', 'open') or cond(setting('gerudoFortress', 'single'), has('SMALL_KEY_GF', 1), has('SMALL_KEY_GF', 4)) or has('OOT_KEY_SKELETON)
 	end
 
 	function can_rescue_carpenter()
-		return has_small_key_gerudo() and (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks()))
+		return has_small_key_gerudo() or has('OOT_KEY_SKELETON) and (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks()))
 	end
 
 	function carpenters_rescued()
@@ -1216,7 +1216,7 @@ function _oot_logic()
 	end
 
 	function has_small_keys_fire(x)
-		return setting('smallKeyShuffleOot', 'removed') or cond(setting('smallKeyShuffleOot', 'anywhere'), has('SMALL_KEY_FIRE', x + 1), has('SMALL_KEY_FIRE', x))
+		return setting('smallKeyShuffleOot', 'removed') or cond(setting('smallKeyShuffleOot', 'anywhere'), has('SMALL_KEY_FIRE', x + 1), has('SMALL_KEY_FIRE', x) or has('OOT_KEY_SKELETON)
 	end
 
 	function king_zora_moved()
@@ -1374,7 +1374,7 @@ function _oot_logic()
             ["Bottom of the Well East"] = function () return has_lens() end,
             ["Bottom of the Well Front West"] = function () return has_lens() end,
             ["Bottom of the Well Underwater"] = function () return can_play(SONG_ZELDA) end,
-            ["Bottom of the Well East Cage"] = function () return small_keys(SMALL_KEY_BOTW, 3) and has_lens() end,
+            ["Bottom of the Well East Cage"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has('OOT_KEY_SKELETON) and has_lens() end,
             ["Bottom of the Well Blood Chest"] = function () return has_lens() end,
             ["Bottom of the Well Underwater 2"] = function () return can_play(SONG_ZELDA) end,
             ["Bottom of the Well Map"] = function () return has_explosives_or_hammer() or (has_bombflowers() and (small_keys(SMALL_KEY_BOTW, 3) or can_use_din())) end,
