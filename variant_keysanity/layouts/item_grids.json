@@ -1401,6 +1401,17 @@
             "MM_MASK_CAPTAIN",
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY"
+          ],
+          [
+            "MM_SPELL_FIRE",
+            "MM_FW",
+            "MM_SPELL_LOVE",
+            "MM_STRENGTH",
+            "MM_BOOTS_IRON",
+            "MM_BOOTS_HOVER",
+            "MM_TUNIC_GORON",
+            "MM_TUNIC_ZORA",
+            "MM_SCALE"
           ]
         ]
       },
@@ -1596,7 +1607,7 @@
                 "content": [
                   {
                    "type": "array",
-                   "orientation": "horizontal",
+                   "orientation": "vertical",
                    "margin": "0,0",
                    "scale": 0.9,
                    "content": [
@@ -1650,7 +1661,7 @@
                      "height": 28
                    },
                    {  
-                      "type": "item",
+                     "type": "item",
                      "item": "MM_TUNIC_ZORA",
                      "margin": "1,1",
                      "width": 28,
