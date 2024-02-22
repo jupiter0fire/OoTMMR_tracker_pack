@@ -39,7 +39,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Delete unused lua/json parts
 - [X] Add new items within tracker on MM side ( scales, strength upgrade, tunic, boots, Clocks As Items)
 - [X] Add new items within tracker on OOT side ( Masks )
-- [ ] Add Ocarina Buttons within tracker on both sides
+- [X] Add Ocarina Buttons within tracker on both sides
 - [ ] Update OoT Logic for Stone Mask 
 - [X] Update OoT Logic for Blast Mask
 - [ ] Update OoT Logic for Ocarina Buttons
