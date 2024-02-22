@@ -65,7 +65,9 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
 - [ ] Add new checks to the map (grass patches, fishing shuffle, freestanding rupees, freestanding hearts, silver rupees, pots, fairy spot, bottle content)
 - [ ] Update Shared options
-- [ ] Add Coins, Skeleton Keys, Bottomless Wallet
+- [ ] Add Coins
+- [ ] Add Skeleton Keys
+- [X] Add Bottomless Wallet
 - [ ] Move half of Owl Statues to new row and increase text size so it is readable 
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent
 - [ ] Update possible tricks for OoT
