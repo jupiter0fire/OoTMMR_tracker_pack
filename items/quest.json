@@ -38,6 +38,10 @@
       {
         "img": "images/wallet3.png",
         "codes": "OOT_WALLET4,OOT_WALLET"
+      },
+      {
+        "img": "images/items/wallet-bottomless_32x32 (2).png",
+        "codes": "OOT_WALLET5,OOT_WALLET"
       }
     ]
   },
