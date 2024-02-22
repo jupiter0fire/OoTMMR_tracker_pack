@@ -404,6 +404,29 @@
     "codes": "OOT_BUTTON_C-RIGHT"
   },
   {
+    "name": "OoT Red Coin",
+    "type": "toggle",
+    "img": "images/items/redcoin.png",
+    "codes": "OOT_COIN_RED"
+  },
+  {
+   "name": "OoT Green Coin",
+    "type": "toggle",
+    "img": "images/items/greencoin.png",
+    "codes": "OOT_COIN_GREEN"
+
+    "name": "OoT Blue Coin",
+    "type": "toggle",
+    "img": "images/items/bluecoin.png",
+    "codes": "OOT_COIN_BLUE"
+  },
+  {
+    "name": "OoT Yellow Coin",
+    "type": "toggle",
+    "img": "images/items/yellowcoin.png",
+    "codes": "OOT_COIN_YELLOW"
+  },
+  { 
     "name": "Hammer",
     "type": "toggle",
     "img": "images/hammer.png",
