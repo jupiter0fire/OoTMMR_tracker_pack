@@ -1429,8 +1429,15 @@
             "MM_BOOTS_IRON",
             "MM_BOOTS_HOVER",
             "MM_TUNIC_GORON",
-            "MM_TUNIC_ZORA",
-            "MM_SCALE"
+            "MM_TUNIC_ZORA"
+          ],
+          [
+            "MM_BUTTON_A",
+            "MM_BUTTON_B",
+            "MM_BUTTON_C-UP",
+            "MM_BUTTON_C-DOWN",
+            "MM_BUTTON_C-LEFT",
+            "MM_BUTTON_C-RIGHT"
           ]
         ]
       },
@@ -1626,69 +1633,48 @@
                 "content": [
                   {
                    "type": "array",
-                   "orientation": "vertical",
+                   "orientation": "horizontal",
                    "margin": "0,0",
                    "scale": 0.9,
                    "content": [
                      {
                       "type": "item",
-                      "item": "MM_SPELL_FIRE",
+                      "item": "MM_BUTTON_A",
                       "margin": "1,1",
                       "width": 28,
                       "height": 28
                     },
                     {
                       "type": "item",
-                      "item": "MM_FW",
+                      "item": "MM_BUTTON_B",
                       "margin": "3,4",
                       "width": 28,
                       "height": 28
                    },
                    {
                      "type": "item",
-                     "item": "MM_SPELL_LOVE",
+                     "item": "MM_BUTTON_C-UP",
                      "margin": "1,1",
                      "width": 28,
                      "height": 28
                    },
                    {
                      "type": "item",
-                     "item": "MM_STRENGTH",
+                     "item": "MM_BUTTON_C-DOWN",
                      "margin": "3,4",
                      "width": 28,
                      "height": 28
                    },
                    {
                      "type": "item",
-                     "item": "MM_BOOTS_HOVER",
+                     "item": "MM_BUTTON_-C-LEFT",
                      "margin": "1,1",
                      "width": 28,
                      "height": 28
                    },
                    {
                      "type": "item",
-                     "item": "MM_BOOTS_IRON",
-                     "margin": "3,4",
-                     "width": 28,
-                     "height": 28
-                   },
-                   {
-                     "type": "item",
-                     "item": "MM_TUNIC_GORON",
-                     "margin": "1,1",
-                     "width": 28,
-                     "height": 28
-                   },
-                   {  
-                     "type": "item",
-                     "item": "MM_TUNIC_ZORA",
-                     "margin": "1,1",
-                     "width": 28,
-                     "height": 28
-                   },  
-                   {
-                     "type": "item",
-                     "item": "MM_SCALE",
+                     "item": "MM_BUTTON_C-RIGHT",
                      "margin": "3,4",
                      "width": 28,
                      "height": 28
