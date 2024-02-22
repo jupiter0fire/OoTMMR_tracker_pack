@@ -368,6 +368,42 @@
     "codes": "OOT_CLAIM_CHECK"
   },
   {
+    "name": "OoT A Button",
+    "type": "toggle",
+    "img": "images/system/A Button.png",
+    "codes": "OOT_BUTTON_A"
+  }.
+  {
+    "name": "OoT B Button",
+    "type": "toggle",
+    "img": "images/system/B Button.png",
+    "codes": "OOT_BUTTON_B"
+  }.
+  {
+    "name": "OoT C-Up Button",
+    "type": "toggle",
+    "img": "images/system/C-Up Button.png",
+    "codes": "OOT_BUTTON_C-UP"
+  },
+  {
+    "name": "Oot C-Down Button",
+    "type": "toggle",
+    "img": "images/system/C-Down Button.png",
+    "codes": "OOT_BUTTON_C-DOWN"
+  },
+  {
+    "name": "OoT C-Left Button",
+    "type": "toggle",
+    "img": "images/system/C-Left Button.png",
+    "codes": "OOT_BUTTON_C-LEFT"
+  },
+  {
+    "name": "Oot C-Right Button",
+    "type": "toggle",
+    "img": "images/system/C-Right Button.png",
+    "codes": "OOT_BUTTON_C-RIGHT"
+  },
+  {
     "name": "Hammer",
     "type": "toggle",
     "img": "images/hammer.png",
