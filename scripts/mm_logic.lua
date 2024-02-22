@@ -907,10 +907,22 @@ function _mm_logic()
 		return has('MM_SCALE') or has('MM_BOOTS_IRON')()
 	end
 
+	function can_lift()
+		return has('MM_STRENGTH)
+	end
+
 	function can_dive_big()
 		return has('MM_GOLDSCALE') or has('MM_BOOTS_IRON')()
 	end
-	
+
+	function can_lift_silver()
+		return has('MM_STRENGTH2)
+	end
+
+	function can_lift_gold()
+		return has('MM_STRENGTH3)
+	end
+
 	function can_use_ice_arrows()
 		return has_magic() and has_arrows() and (has('ARROW_ICE') or has('SHARED_ARROW_ICE'))
 	end
