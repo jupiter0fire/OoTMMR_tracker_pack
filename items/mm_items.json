@@ -760,6 +760,10 @@
       {
         "img": "images/wallet3.png",
         "codes": "MM_WALLET4,MM_WALLET"
+      },
+      {
+        "img": "images/items/wallet-bottomless_32x32 (2).png",
+        "codes": "MM_WALLET5,MM_WALLET"
       }
     ]
   },
