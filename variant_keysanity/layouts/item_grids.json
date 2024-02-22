@@ -533,7 +533,7 @@
             "type": "itemgrid",
             "h_alignment": "left",
             "item_margin": "1,1",
-            "scale": 0.75,
+            "scale": 0.875,
             "rows": [
               [
                 "OOT_GS_TOKEN",
