@@ -1465,5 +1465,11 @@
     "img": "images/items/yellowcoin.png",
     "codes": "MM_COIN_YELLOW"
     "max_quantity": 99
+  },
+  {
+    "name": "MM Skeleton Key",
+    "type": "toggle",
+    "img": "images/items/skeleton_key.png",
+    "codes": "MM_KEY_SKELETON"
       }
     ]
