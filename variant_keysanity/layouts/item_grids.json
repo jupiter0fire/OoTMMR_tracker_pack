@@ -1073,7 +1073,7 @@
             "MM_STRAY_FAIRY_TOWN",
             "MM_ROOM_KEY",
             "MM_DEED_LAND",
-            "MM_BOOTS_HOVER"
+            "MM_BOOTS_IRON"
           ],
           [
             "MM_MASK_POSTMAN",
@@ -1084,7 +1084,7 @@
             "MM_MASK_DEKU",
             "MM_PENDANT_OF_MEMORIES",
             "MM_DEED_SWAMP",
-            "MM_BOOTS_IRON"
+            "MM_BOOTS_HOVER"
           ],
           [
             "MM_MASK_KEATON",
@@ -1105,7 +1105,8 @@
             "MM_MASK_TRUTH",
             "MM_MASK_ZORA",
             "MM_LETTER_TO_MAMA",
-            "MM_DEED_OCEAN"
+            "MM_DEED_OCEAN",
+            "MM_TUNIC_ZORA"
           ],
           [
             "MM_MASK_KAMARO",
