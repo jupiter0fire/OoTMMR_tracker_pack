@@ -382,25 +382,25 @@
   {
     "name": "OoT C-Up Button",
     "type": "toggle",
-    "img": "images/system/C-Up Button.png",
+    "img": "images/system/C-Up.png",
     "codes": "OOT_BUTTON_C-UP"
   },
   {
     "name": "Oot C-Down Button",
     "type": "toggle",
-    "img": "images/system/C-Down Button.png",
+    "img": "images/system/C-Down.png",
     "codes": "OOT_BUTTON_C-DOWN"
   },
   {
     "name": "OoT C-Left Button",
     "type": "toggle",
-    "img": "images/system/C-Left Button.png",
+    "img": "images/system/C-Left.png",
     "codes": "OOT_BUTTON_C-LEFT"
   },
   {
     "name": "Oot C-Right Button",
     "type": "toggle",
-    "img": "images/system/C-Right Button.png",
+    "img": "images/system/C-Right.png",
     "codes": "OOT_BUTTON_C-RIGHT"
   },
   {
