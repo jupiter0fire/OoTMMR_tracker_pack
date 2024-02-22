@@ -68,7 +68,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Add Coins
 - [ ] Add Skeleton Keys
 - [X] Add Bottomless Wallet
-- [ ] Move half of Owl Statues to new row and increase text size so it is readable 
+- [X] Move half of Owl Statues to new row and increase text size so it is readable 
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
