@@ -1060,7 +1060,7 @@ function _oot_logic()
 	end
 
 	function has_explosives()
-		return has_bombs() or has_bombchu() or has_OOT_MASK_BLAST()
+		return has_bombs() or has_bombchu() or has OOT_MASK_BLAST()
 	end
 
 	function has_bombflowers()
