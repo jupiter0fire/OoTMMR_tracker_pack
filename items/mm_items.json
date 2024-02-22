@@ -1347,7 +1347,7 @@
   {
     "name": "MM Clock FINAL Day",
     "type": "toggle",
-    "img": "images/clock_day_final.png",
+    "img": "images/clock_5.png",
     "codes": "MM_DAY_FINAL"
   },
   {
@@ -1365,7 +1365,7 @@
   {
     "name": "MM Clock FINAL Night",
     "type": "toggle",
-    "img": "images/clock_night_final.png",
+    "img": "images/clock_6.png",
     "codes": "MM_NIGHT_FINAL"
   }, 
     {
