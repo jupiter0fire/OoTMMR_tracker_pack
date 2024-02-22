@@ -102,7 +102,7 @@
         "type": "itemgrid",
         "h_alignment": "left",
         "item_margin": "1,1",
-        "scale": 0.7,
+        "scale": 0.75,
         "rows": [
           [
             "OOT_POCKET_CUCCO",
