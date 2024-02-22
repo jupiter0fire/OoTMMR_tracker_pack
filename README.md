@@ -49,7 +49,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update OoT Logic for pre completed dungeon option
 - [ ] Update OoT Logic for Hookshoot anywhere option
 - [ ] Update OoT Logic for Climb most surfaces option
-- [ ] Update MM Logic for Silver & Golden Scales
+- [X] Update MM Logic for Silver & Golden Scales
 - [ ] Update MM Logic for various Strength upgrades
 - [ ] Update MM Logic for various tunics
 - [ ] Update MM Logic for various boots
