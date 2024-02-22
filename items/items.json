@@ -432,6 +432,12 @@
     "max_quantity": 99
   },
   { 
+    "name": "OoT Skeleton Key",
+    "type": "toggle",
+    "img": "images/items/skeleton_key.png",
+    "codes": "OOT_KEY_SKELETON"
+  },
+  {
     "name": "Hammer",
     "type": "toggle",
     "img": "images/hammer.png",
