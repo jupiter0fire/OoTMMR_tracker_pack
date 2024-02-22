@@ -1642,60 +1642,6 @@
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
-                  }
-                ]
-               },
-               {
-                "type": "array",
-                "orientation": "vertical",
-                "content": [
-                  {
-                   "type": "array",
-                   "orientation": "horizontal",
-                   "margin": "0,0",
-                   "scale": 0.9,
-                   "content": [
-                     {
-                      "type": "item",
-                      "item": "MM_BUTTON_A",
-                      "margin": "1,1",
-                      "width": 28,
-                      "height": 28
-                    },
-                    {
-                      "type": "item",
-                      "item": "MM_BUTTON_B",
-                      "margin": "3,4",
-                      "width": 28,
-                      "height": 28
-                   },
-                   {
-                     "type": "item",
-                     "item": "MM_BUTTON_C-UP",
-                     "margin": "1,1",
-                     "width": 28,
-                     "height": 28
-                   },
-                   {
-                     "type": "item",
-                     "item": "MM_BUTTON_C-DOWN",
-                     "margin": "3,4",
-                     "width": 28,
-                     "height": 28
-                   },
-                   {
-                     "type": "item",
-                     "item": "MM_BUTTON_-C-LEFT",
-                     "margin": "1,1",
-                     "width": 28,
-                     "height": 28
-                   },
-                   {
-                     "type": "item",
-                     "item": "MM_BUTTON_C-RIGHT",
-                     "margin": "3,4",
-                     "width": 28,
-                     "height": 28
                   }]
                 }
               ]
