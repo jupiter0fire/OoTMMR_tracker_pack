@@ -903,6 +903,14 @@ function _mm_logic()
 		return has_magic() and has_arrows() and (has('ARROW_FIRE') or has('SHARED_ARROW_FIRE'))
 	end
 
+	function can_dive_small()
+		return has('MM_SCALE') or has('MM_BOOTS_IRON')()
+	end
+
+	function can_dive_big()
+		return has('MM_GOLDSCALE') or has('MM_BOOTS_IRON')()
+	end
+	
 	function can_use_ice_arrows()
 		return has_magic() and has_arrows() and (has('ARROW_ICE') or has('SHARED_ARROW_ICE'))
 	end
