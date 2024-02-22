@@ -17,7 +17,8 @@
             "OOT_ARROW_FIRE",
             "OOT_SPELL_FIRE",
             "OOT_SWORD_KOKIRI",
-            "OOT_SHIELD_DEKU"
+            "OOT_SHIELD_DEKU",
+            "OOT_BUTTON_A"
           ],
           [
             "OOT_SLINGSHOT",
@@ -27,7 +28,8 @@
             "OOT_ARROW_ICE",
             "faroreswind",
             "OOT_SWORD_MASTER",
-            "OOT_SHIELD_HYLIAN"
+            "OOT_SHIELD_HYLIAN",
+            "OOT_BUTTON_B"
           ],
           [
             "OOT_BOOMERANG",
@@ -37,7 +39,8 @@
             "OOT_ARROW_LIGHT",
             "OOT_SPELL_LOVE",
             "OOT_SWORD_GORON",
-            "OOT_SHIELD_MIRROR"
+            "OOT_SHIELD_MIRROR",
+            "OOT_BUTTON_C-UP"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -47,7 +50,8 @@
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
             "OOT_BOOTS_IRON",
-            "OOT_BOOTS_HOVER"
+            "OOT_BOOTS_HOVER",
+            "OOT_BUTTON_C-DOWN"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -57,7 +61,8 @@
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
             "OOT_TUNIC_GORON",
-            "OOT_TUNIC_ZORA"
+            "OOT_TUNIC_ZORA",
+            "OOT_BUTTON_C-LEFT"
           ],
           [
             "bottle1",
@@ -67,7 +72,8 @@
             "OOT_SCALE",
             "OOT_MAGIC_UPGRADE",
             "OOT_STRENGTH",
-            "OOT_WALLET1"
+            "OOT_WALLET1",
+            "OOT_BUTTON_C-RIGHT"
           ]
         ]
       },
@@ -116,20 +122,6 @@
         "orientation": "horizontal",
         "margin": "0,0",
         "content": [
-          {
-            "type": "array",
-            "orientation": "vertical",
-            "margin": "0,0",
-            "content": [
-              {
-                 "type": "item",
-                 "item": "OOT_BUTTON_A",
-                 "margin": "1,1",
-                 "width": 28,
-                 "height": 28
-              }
-            ]
-          },
           {
                 "type": "array",
                 "orientation": "horizontal",
