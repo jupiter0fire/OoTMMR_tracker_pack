@@ -17,8 +17,7 @@
             "OOT_ARROW_FIRE",
             "OOT_SPELL_FIRE",
             "OOT_SWORD_KOKIRI",
-            "OOT_SHIELD_DEKU",
-            "OOT_BUTTON_A"
+            "OOT_SHIELD_DEKU"
           ],
           [
             "OOT_SLINGSHOT",
@@ -28,8 +27,7 @@
             "OOT_ARROW_ICE",
             "faroreswind",
             "OOT_SWORD_MASTER",
-            "OOT_SHIELD_HYLIAN",
-            "OOT_BUTTON_B"
+            "OOT_SHIELD_HYLIAN"
           ],
           [
             "OOT_BOOMERANG",
@@ -39,8 +37,7 @@
             "OOT_ARROW_LIGHT",
             "OOT_SPELL_LOVE",
             "OOT_SWORD_GORON",
-            "OOT_SHIELD_MIRROR",
-            "OOT_BUTTON_C-UP"
+            "OOT_SHIELD_MIRROR"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -50,8 +47,7 @@
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
             "OOT_BOOTS_IRON",
-            "OOT_BOOTS_HOVER",
-            "OOT_BUTTON_C-DOWN"
+            "OOT_BOOTS_HOVER"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -61,8 +57,7 @@
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
             "OOT_TUNIC_GORON",
-            "OOT_TUNIC_ZORA",
-            "OOT_BUTTON_C-LEFT"
+            "OOT_TUNIC_ZORA"
           ],
           [
             "bottle1",
@@ -72,8 +67,7 @@
             "OOT_SCALE",
             "OOT_MAGIC_UPGRADE",
             "OOT_STRENGTH",
-            "OOT_WALLET1",
-            "OOT_BUTTON_C-RIGHT"
+            "OOT_WALLET1"
           ]
         ]
       },
@@ -123,6 +117,11 @@
         "margin": "0,0",
         "content": [
           {
+            "type": "array",
+            "orientation": "vertical",
+            "margin": "0,0",
+            "content": [
+              {
                 "type": "array",
                 "orientation": "horizontal",
                 "margin": "0,0",
@@ -539,14 +538,17 @@
               [
                 "OOT_MASK_BLAST",
                 "OOT_MASK_STONE"
-               ]
+              ]
             ]
-        },
-    {
-      "item_grid_small_oot": {
-      "type": "array",
-      "orientation": "vertical",
-      "content": [
+          }
+        ]
+      }
+    ]
+  },
+  "item_grid_small_oot": {
+    "type": "array",
+    "orientation": "vertical",
+    "content": [
       {
         "type": "itemgrid",
         "h_alignment": "left",
@@ -1660,6 +1662,4 @@
           ]
         }
       ]
-    }
-  }]
-}}
+    }}
