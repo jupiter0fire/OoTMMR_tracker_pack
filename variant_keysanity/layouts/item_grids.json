@@ -534,6 +534,10 @@
               [
                 "OOT_GERUDO_CARD",
                 "triforce"
+              ], 
+              [
+                "OOT_MASK_BLAST",
+                "OOT_MASK_STONE"
               ]
             ]
           }
@@ -651,6 +655,20 @@
               {
                 "type": "item",
                 "item": "free",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                 "type": "item",
+                "item": "OOT_MASK_BLAST",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                 "type": "item",
+                "item": "OOT_MAST STONE",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
