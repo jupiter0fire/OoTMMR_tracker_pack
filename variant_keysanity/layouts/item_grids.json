@@ -1461,6 +1461,14 @@
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
             "MM_BUTTON_C-RIGHT"
+          ],
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND"
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL"
           ]
         ]
       },
