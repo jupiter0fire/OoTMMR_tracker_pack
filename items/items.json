@@ -372,13 +372,13 @@
     "type": "toggle",
     "img": "images/system/A Button.png",
     "codes": "OOT_BUTTON_A"
-  }.
+  },
   {
     "name": "OoT B Button",
     "type": "toggle",
     "img": "images/system/B Button.png",
     "codes": "OOT_BUTTON_B"
-  }.
+  },
   {
     "name": "OoT C-Up Button",
     "type": "toggle",
