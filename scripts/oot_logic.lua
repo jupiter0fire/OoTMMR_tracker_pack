@@ -1216,7 +1216,7 @@ function _oot_logic()
 	end
 
 	function has_small_keys_fire(x)
-		return setting('smallKeyShuffleOot', 'removed') or cond(setting('smallKeyShuffleOot', 'anywhere'), has('SMALL_KEY_FIRE', x + 1), has('SMALL_KEY_FIRE', x) or has('OOT_KEY_SKELETON)
+		return setting('smallKeyShuffleOot', 'removed') or cond(setting('smallKeyShuffleOot', 'anywhere'), has('SMALL_KEY_FIRE', x + 1), has('SMALL_KEY_FIRE', x) or has('OOT_KEY_SKELETON')
 	end
 
 	function king_zora_moved()
