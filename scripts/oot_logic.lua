@@ -1115,6 +1115,10 @@ function _oot_logic()
 		return has('SCALE', 2) or has_iron_boots()
 	end
 
+	function can_evade_gerudo()
+		return has_arrows() or can_hookshot_short() or has('MASK_STONE')
+	end
+
 	function hidden_grotto_bomb()
 		return stone_of_agony() and has_explosives_or_hammer()
 	end
