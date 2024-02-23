@@ -1115,6 +1115,56 @@
         ]
       },
       {
+        "name": "Lake Hylia",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "LH Grass Patches",
+            "sections": [
+              {
+                "name": "LH Grass Patches",
+                "access_rules": [
+                  "$oot|Lake Hylia grass patches x3"
+                ],
+                "chest_unopened_img": "images/Grass.png",
+                "chest_opened_img": "images/GrassTick.png",
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1022,
+                "y": 1156
+              }
+            ]
+          },
+           {
+        "name": "Lake Hylia",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "LH Grass Around Scarecrows",
+            "sections": [
+              {
+                "name": "LH Scarecrow Grass",
+                "access_rules": [
+                  "$oot|Lake Hylia Grass Near Scarecrows"
+                ],
+                "chest_unopened_img": "images/Grass.png",
+                "chest_opened_img": "images/GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1140,
+                "y": 1182
+              }
+            ]
+          },
+      {
         "name": "Lon Lon Ranch",
         "color": "#09a09d",
         "children": [
