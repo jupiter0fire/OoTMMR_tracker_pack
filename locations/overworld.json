@@ -894,7 +894,7 @@
                 ],
                  "chest_unopened_img": "images/HylianLoach.png",
                 "chest_opened_img": "images/HylianLoachTick.png",
-                "item_count": 1
+                "item_count": 2
               },
               {
                 "name": "Adult Fishing",
@@ -903,7 +903,7 @@
                 ],
                  "chest_unopened_img": "images/HylianLoach.png",
                  "chest_opened_img": "images/HylianLoachTick.png",
-                 "item_count": 2
+                 "item_count": 1
               }
             ],
             "map_locations": [
