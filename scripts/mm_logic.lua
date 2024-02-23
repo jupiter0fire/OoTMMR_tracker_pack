@@ -907,12 +907,12 @@ function _mm_logic()
 		return has('MM_SCALE') or has('MM_BOOTS_IRON')()
 	end
 
-	function can_lift()
-		return has('MM_STRENGTH)()
-	end
-
 	function can_dive_big()
 		return has('MM_GOLDSCALE') or has('MM_BOOTS_IRON')()
+	end
+
+	function can_lift()
+		return has('MM_STRENGTH)()
 	end
 
 	function can_lift_silver()
