@@ -549,6 +549,9 @@
                 "OOT_MASK_BLAST",
                 "OOT_MASK_STONE",
                 "OOT_KEY_SKELETON"
+              ],
+              [
+                "OOT_SONG_EMPTINESS"
               ]
             ]
           }
@@ -690,7 +693,13 @@
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
-              }
+              },
+              {
+                  "type": "item",
+                "item": "OOT_SONG_EMPTINESS",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
             ]
           },
           {
