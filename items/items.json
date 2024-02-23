@@ -437,13 +437,6 @@
     "img": "images/items/skeleton_key.png",
     "codes": "OOT_KEY_SKELETON"
   },
-   {
-    "name": "OOT Elegy of Emptiness",
-    "type": "toggle",
-    "loop": true,
-    "img": "images/items/mm_elegy.png",
-    "codes": "OOT_SONG_EMPTINESS"
-  },
   {
     "name": "Hammer",
     "type": "toggle",
@@ -814,6 +807,14 @@
     "img": "images/song_prelude.png",
     "initial_active_state": false,
     "codes": "OOT_SONG_TP_LIGHT"
+  },
+   {
+    "name": "OOT Elegy of Emptiness",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_elegy.png",
+    "initial_active_state": false,
+    "codes": "OOT_SONG_EMPTINESS"
   },
   {
     "name": "Dummy",
