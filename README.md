@@ -45,6 +45,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] Add Fairy Fountain Checks to map
 - [X] Add OoT Grass Checks to Map
 - [ ] Add MM Grass Checks to Map
+- [ ] Add logic to grass and fairy fountain checks
 - [ ] Update OoT Logic for Ocarina Buttons
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
