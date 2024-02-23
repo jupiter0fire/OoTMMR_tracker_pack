@@ -68,7 +68,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for MM Enemy Souls
 - [ ] Update MM Logic for MM Boss Souls
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches, fishing shuffle, freestanding rupees, freestanding hearts, silver rupees, pots, fairy spot, bottle content)
+- [ ] Add new checks to the map (grass patches - done, fishing shuffle - loaches done, freestanding rupees, freestanding hearts, silver rupees, pots, fairy spot, bottle content, fairy Fountains - done)
 - [ ] Update Shared options
 - [X] Add Coins, Add Skeleton Keys, Add Bottomless Wallet
 - [X] Add Logic for Coins, Skeleton Keys, and Bottomless Wallet
