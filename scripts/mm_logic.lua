@@ -908,7 +908,7 @@ function _mm_logic()
 	end
 
 	function can_lift()
-		return has('MM_STRENGTH)
+		return has('MM_STRENGTH)()
 	end
 
 	function can_dive_big()
@@ -916,11 +916,11 @@ function _mm_logic()
 	end
 
 	function can_lift_silver()
-		return has('MM_STRENGTH2)
+		return has('MM_STRENGTH2)()
 	end
 
 	function can_lift_gold()
-		return has('MM_STRENGTH3)
+		return has('MM_STRENGTH3)()
 	end
 
 	function can_use_ice_arrows()
