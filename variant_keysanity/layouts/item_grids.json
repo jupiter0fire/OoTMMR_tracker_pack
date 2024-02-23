@@ -94,6 +94,7 @@
             "OOT_MASK_GORON",
             "OOT_MASK_ZORA",
             "OOT_MASK_GERUDO",
+            "OOT_COIN_RED"
           ]
         ]
       },
@@ -114,6 +115,7 @@
             "OOT_EYEBALL_FROG",
             "OOT_EYE_DROPS",
             "OOT_CLAIM_CHECK",
+            "OOT_COIN_GREEN"
           ]
         ]
       },
@@ -536,7 +538,7 @@
               [
                 "OOT_GS_TOKEN",
                 "OOT_STONE_OF_AGONY",
-                "OOT_SONG_"
+                "OOT_SONG_EMPTINESS"
               ],
               [
                 "OOT_GERUDO_CARD",
@@ -696,6 +698,13 @@
                 "width": 28,
                 "height": 28
               },
+              {
+                  "type": "item",
+                "item": "OOT_SONG_EMPTINESS",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28}
+            ]
           },
           {
             "type": "array",
@@ -1451,7 +1460,7 @@
             "MM_SONG_AWAKENING",
             "MM_SONG_GORON",
             "MM_SONG_ZORA",
-            "MM_SONG_",
+            "MM_SONG_EMPTINESS",
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_GS_TOKEN_SWAMP",
