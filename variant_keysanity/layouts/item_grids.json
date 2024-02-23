@@ -94,7 +94,6 @@
             "OOT_MASK_GORON",
             "OOT_MASK_ZORA",
             "OOT_MASK_GERUDO",
-            "OOT_COIN_RED"
           ]
         ]
       },
@@ -115,7 +114,6 @@
             "OOT_EYEBALL_FROG",
             "OOT_EYE_DROPS",
             "OOT_CLAIM_CHECK",
-            "OOT_COIN_GREEN"
           ]
         ]
       },
@@ -538,7 +536,6 @@
               [
                 "OOT_GS_TOKEN",
                 "OOT_STONE_OF_AGONY",
-                "OOT_SONG_EMPTINESS"
               ],
               [
                 "OOT_GERUDO_CARD",
