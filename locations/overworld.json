@@ -28,34 +28,6 @@
             ]
           },
           {
-           "name": "OOT",
-           "chest_unopened_img": "images/chest_brown_closed.png",
-           "chest_opened_img": "images/chest_brown_open.png",
-           "children": [
-          {
-           "name": "Kokiri Forest",
-           "color": "#18a50e",
-           "children": [
-          {
-            "name": "Test",
-            "sections": [
-              {
-                "name": "Test 1",
-                "access_rules": [
-                  "$oot|Kokiri Forest Kokiri Sword Chest"
-                ],
-                "item_count": 1
-              }
-            ],
-             "map_locations": [
-              {
-                "map": "oot",
-                "x": 2238,
-                "y": 978
-              }
-            ]
-          },
-          {
             "name": "KF Midos House",
             "sections": [
               {
