@@ -27,15 +27,15 @@
               }
             ]
           },
-            {
-    "name": "OOT",
-    "chest_unopened_img": "images/chest_brown_closed.png",
-    "chest_opened_img": "images/chest_brown_open.png",
-    "children": [
-      {
-        "name": "Kokiri Forest",
-        "color": "#18a50e",
-        "children": [
+          {
+           "name": "OOT",
+           "chest_unopened_img": "images/chest_brown_closed.png",
+           "chest_opened_img": "images/chest_brown_open.png",
+           "children": [
+          {
+           "name": "Kokiri Forest",
+           "color": "#18a50e",
+           "children": [
           {
             "name": "Test",
             "sections": [
@@ -47,7 +47,7 @@
                 "item_count": 1
               }
             ],
-            "map_locations": [
+             "map_locations": [
               {
                 "map": "oot",
                 "x": 2238,
