@@ -835,6 +835,106 @@
           }
         ]
       },
+       {
+        "name": "Hyrule Field",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "HF Grass Patch",
+            "sections": [
+              {
+                "name": "HF Grass Patch",
+                "access_rules": [
+                  "$oot|Hyrule Field grass Near KF"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1732,
+                "y": 688
+              }
+            ]
+          },
+             {
+        "name": "Hyrule Field",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "HF Grass Patch",
+            "sections": [
+              {
+                "name": "HF Grass Patch",
+                "access_rules": [
+                  "$oot|Hyrule Field grass Near LLR"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1494,
+                "y": 528
+              }
+            ]
+          },
+             {
+        "name": "Hyrule Field",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "HF Grass Patch",
+            "sections": [
+              {
+                "name": "HF Grass Patch",
+                "access_rules": [
+                  "$oot|Hyrule Field grass Near SE Grotto"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1420,
+                "y": 872
+              }
+            ]
+          },
+             {
+        "name": "Hyrule Field",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "HF Grass Patch",
+            "sections": [
+              {
+                "name": "HF Grass Patch",
+                "access_rules": [
+                  "$oot|Hyrule Field grass Near LLR rear"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1346,
+                "y": 816
+              }
+            ]
+          },
       {
         "name": "Lake Hylia",
         "color": "#0936a0",
@@ -8134,4 +8234,4 @@
       }
     ]
   }
-]}]}]
+]}]}]}]}]}]}]
