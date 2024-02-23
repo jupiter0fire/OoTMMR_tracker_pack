@@ -538,16 +538,18 @@
               [
                 "OOT_GS_TOKEN",
                 "OOT_STONE_OF_AGONY",
+                "OOT_KEY_SKELETON"
               ],
               [
                 "OOT_GERUDO_CARD",
                 "OOT_WALLET1",
                 "triforce",
-                "OOT_KEY_SKELETON"
               ],
               [
                 "OOT_COIN_RED",
                 "OOT_COIN_GREEN",
+              ],
+              [
                 "OOT_COIN_BLUE",
                 "OOT_COIN_YELLOW"
               ]
