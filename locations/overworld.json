@@ -28,6 +28,90 @@
             ]
           },
           {
+        "name": "Kokiri Forest",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "KF Grass Boulder Area",
+            "sections": [
+              {
+                "name": "HF Grass Patch",
+                "access_rules": [
+                  "$oot|KF Grass In Boulder Area"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2058,
+                "y": 992
+              }
+            ]
+          },
+          {
+        "name": "Kokiri Forest",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "KF Grass Outside Saria's House",
+            "sections": [
+              {
+                "name": "KF Grass",
+                "access_rules": [
+                  "$oot|Child Kokiri Forest grass"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+                 },
+              {
+                "name": "Adult Grass Patch",
+                "access_rules": [
+                  "$oot|Adult Grass Patch"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2214,
+                "y": 958
+              }
+            ]
+          },
+          {
+        "name": "Kokiri Forest",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "KF Training Area Grass",
+            "sections": [
+              {
+                "name": "KF Grass",
+                "access_rules": [
+                  "$oot|Kokiri Forest grass in Training Area"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2116,
+                "y": 962
+              }
+            ]
+          },
+          {
             "name": "KF Midos House",
             "sections": [
               {
@@ -1991,6 +2075,31 @@
                 ]
               },
               {
+                "name": "Graveyard",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "Graveyard Grass Patch",
+            "sections": [
+              {
+                "name": "Graveyard Grass Patch",
+                "access_rules": [
+                  "$oot|Graveyard Grass In Entrance area"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1992,
+                "y": 384
+              }
+            ]
+          },
+              {
                 "name": "Graveyard Dampes Grave",
                 "short_name": "Dampes Grave",
                 "access_rules": [
@@ -3334,6 +3443,31 @@
             ]
           },
           {
+        "name": "HC Grass",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "HC Grass Near Tree",
+            "sections": [
+              {
+                "name": "HF Grass Near Tree",
+                "access_rules": [
+                  "$oot|HC Grass Near Castle"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1472,
+                "y": 192
+              }
+            ]
+          },
+          {
             "name": "HC Storms Grotto",
             "sections": [
               {
@@ -3457,6 +3591,31 @@
                 "map": "oot",
                 "x": 2000,
                 "y": 505
+              }
+            ]
+          },
+          {
+        "name": "Zora River",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "ZR Grass Patch",
+            "sections": [
+              {
+                "name": "ZR Grass Patch",
+                "access_rules": [
+                  "$oot|Zora River grass Near HF"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1982,
+                "y": 528
               }
             ]
           },
@@ -8234,4 +8393,4 @@
       }
     ]
   }
-]}]}]}]}]}]}]
+]}]}]}]}]}]}]}]}]}]}]}]}]
