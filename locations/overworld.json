@@ -644,7 +644,7 @@
                 "short_name": "Deku Scrub",
                 "chest_unopened_img": "images/deku_scrub.png",
                 "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count":fish
+                "item_count":"fish"
               }
             ],
             "map_locations": [
@@ -864,7 +864,7 @@
               {
                 "name": "Child Fishing",
                 "access_rules": [
-                  "$oot|Fishing Pond Child",
+                  "$oot|Fishing Pond Child"
                 ],
                 "chest_opened_img": "images/HylianLoach.png",
                 "item_count": 2
@@ -872,7 +872,7 @@
               {
                 "name": "Adult Fishing",
                 "access_rules": [
-                  "$oot|Fishing Pond Adult",
+                  "$oot|Fishing Pond Adult"
                 ],
                 "chest_opened_img": "images/HylianLoach.png",
                 "chest_unopened_img": "images/HylianLoach.png",
@@ -8053,4 +8053,4 @@
       }
     ]
   }
-]}]}]
+]
