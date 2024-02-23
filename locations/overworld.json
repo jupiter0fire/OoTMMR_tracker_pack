@@ -644,7 +644,7 @@
                 "short_name": "Deku Scrub",
                 "chest_unopened_img": "images/deku_scrub.png",
                 "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count":"fish"
+                "item_count":""
               }
             ],
             "map_locations": [
@@ -913,8 +913,8 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1270,
-                "y": 1215
+                "x": 1278,
+                "y": 1246
               }
             ]
           },
