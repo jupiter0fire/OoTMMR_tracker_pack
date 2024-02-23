@@ -94,6 +94,7 @@
             "OOT_MASK_GORON",
             "OOT_MASK_ZORA",
             "OOT_MASK_GERUDO",
+            "OOT_MASK_BLAST"
           ]
         ]
       },
@@ -114,6 +115,7 @@
             "OOT_EYEBALL_FROG",
             "OOT_EYE_DROPS",
             "OOT_CLAIM_CHECK",
+            "OOT_MASK_STONE"
           ]
         ]
       },
@@ -540,12 +542,7 @@
               [
                 "OOT_GERUDO_CARD",
                 "OOT_WALLET1",
-                "triforce"
-                
-              ], 
-              [
-                "OOT_MASK_BLAST",
-                "OOT_MASK_STONE",
+                "triforce",
                 "OOT_KEY_SKELETON"
               ],
               [
