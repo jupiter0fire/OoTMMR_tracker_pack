@@ -437,6 +437,13 @@
     "img": "images/items/skeleton_key.png",
     "codes": "OOT_KEY_SKELETON"
   },
+   {
+    "name": "MM Elegy of Emptiness",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_elegy.png",
+    "codes": "MM_SONG_EMPTINESS"
+  },
   {
     "name": "Hammer",
     "type": "toggle",
