@@ -866,17 +866,44 @@
                 "access_rules": [
                   "$oot|Fishing Pond Child"
                 ],
-                "chest_opened_img": "images/HylianLoach.png",
-                "item_count": 2
+                "item_count": 1
               },
               {
                 "name": "Adult Fishing",
                 "access_rules": [
                   "$oot|Fishing Pond Adult"
                 ],
-                "chest_opened_img": "images/HylianLoach.png",
-                "chest_unopened_img": "images/HylianLoach.png",
-                "item_count": 3
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1270,
+                "y": 1215
+              }
+            ]
+          },
+          {
+            "name": "Fishing Pond",
+            "sections": [
+              {
+                "name": "Child Hylian Loach",
+                "access_rules": [
+                  "$oot|Fishing Pond Child"
+                ],
+                 "chest_unopened_img": "images/HylianLoach.png",
+                "chest_opened_img": "images/HylianLoachTick.png",
+                "item_count": 1
+              },
+              {
+                "name": "Adult Fishing",
+                "access_rules": [
+                  "$oot|Adult Hylian Loach"
+                ],
+                 "chest_unopened_img": "images/HylianLoach.png",
+                 "chest_opened_img": "images/HylianLoachTick.png",
+                 "item_count": 2
               }
             ],
             "map_locations": [
