@@ -865,7 +865,6 @@
                 "name": "Child Fishing",
                 "access_rules": [
                   "$oot|Fishing Pond Child",
-                  "{}"
                 ],
                 "chest_opened_img": "images/HylianLoach.png",
                 "item_count": 2
@@ -874,7 +873,6 @@
                 "name": "Adult Fishing",
                 "access_rules": [
                   "$oot|Fishing Pond Adult",
-                  "{}"
                 ],
                 "chest_opened_img": "images/HylianLoach.png",
                 "chest_unopened_img": "images/HylianLoach.png",
