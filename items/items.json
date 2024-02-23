@@ -438,11 +438,11 @@
     "codes": "OOT_KEY_SKELETON"
   },
    {
-    "name": "MM Elegy of Emptiness",
+    "name": "OOT Elegy of Emptiness",
     "type": "toggle",
     "loop": true,
     "img": "images/items/mm_elegy.png",
-    "codes": "MM_SONG_EMPTINESS"
+    "codes": "OOT_SONG_EMPTINESS"
   },
   {
     "name": "Hammer",
