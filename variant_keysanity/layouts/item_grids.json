@@ -60,8 +60,8 @@
             "OOT_SONG_TP_SHADOW",
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
+            "OOT_SONG_EMPTINESS",
             "OOT_TUNIC_GORON",
-            "OOT_TUNIC_ZORA",
             "OOT_BUTTON_C-LEFT"
           ],
           [
@@ -72,7 +72,7 @@
             "OOT_SCALE",
             "OOT_MAGIC_UPGRADE",
             "OOT_STRENGTH",
-            "OOT_WALLET1",
+            "OOT_TUNIC_ZORA",
             "OOT_BUTTON_C-RIGHT"
           ]
         ]
@@ -538,12 +538,13 @@
               [
                 "OOT_GS_TOKEN",
                 "OOT_STONE_OF_AGONY",
-                "OOT_COIN_BLUE"
+                "OOT_SONG_EMPTINESS"
               ],
               [
                 "OOT_GERUDO_CARD",
-                "triforce",
-                "OOT_COIN_YELLOW"
+                "OOT_WALLET1",
+                "triforce"
+                
               ], 
               [
                 "OOT_MASK_BLAST",
@@ -551,7 +552,10 @@
                 "OOT_KEY_SKELETON"
               ],
               [
-                "OOT_SONG_EMPTINESS"
+                "OOT_COIN_RED",
+                "OOT_COIN_GREEN",
+                "OOT_COIN_BLUE",
+                "OOT_COIN_YELLOW"
               ]
             ]
           }
