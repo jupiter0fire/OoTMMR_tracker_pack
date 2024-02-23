@@ -760,6 +760,10 @@
       {
         "img": "images/wallet3.png",
         "codes": "MM_WALLET4,MM_WALLET"
+      },
+      {
+        "img": "images/items/wallet-bottomless_32x32 (2).png",
+        "codes": "MM_WALLET5,MM_WALLET"
       }
     ]
   },
@@ -1347,7 +1351,7 @@
   {
     "name": "MM Clock FINAL Day",
     "type": "toggle",
-    "img": "images/clock_day_final.png",
+    "img": "images/clock_5.png",
     "codes": "MM_DAY_FINAL"
   },
   {
@@ -1365,7 +1369,7 @@
   {
     "name": "MM Clock FINAL Night",
     "type": "toggle",
-    "img": "images/clock_night_final.png",
+    "img": "images/clock_6.png",
     "codes": "MM_NIGHT_FINAL"
   }, 
     {
@@ -1408,30 +1412,64 @@
     "name": "MM B Button",
     "type": "toggle",
     "img": "images/items/B Button.png",
-    "codes": "MM_BUTTON_B"}
+    "codes": "MM_BUTTON_B"
   },
   {
     "name": "MM C-Up Button",
     "type": "toggle",
     "img": "images/items/C-Up.png",
-    "codes": "MM_BUTTON_C-UP"}
+    "codes": "MM_BUTTON_C-UP"
   },
   {
     "name": "MM C-Down Button",
     "type": "toggle",
     "img": "images/items/C-Down.png",
-    "codes": "MM_BUTTON_C-DOWN"}
+    "codes": "MM_BUTTON_C-DOWN"
   },
   {
     "name": "MM C-Left Button",
     "type": "toggle",
     "img": "images/items/C-Left.png",
-    "codes": "MM_BUTTON_C-LEFT"}
+    "codes": "MM_BUTTON_C-LEFT"
   },
   {
     "name": "MM C-Right Button",
     "type": "toggle",
     "img": "images/items/C-Right.png",
     "codes": "MM_BUTTON_C-RIGHT"
+  },
+  {
+     "name": "MM Red Coin",
+    "type": "consumable",
+    "img": "images/items/redcoin.png",
+    "codes": "MM_COIN_RED",
+    "max_quantity": 99
+  },
+  {
+    "name": "MM Green Coin",
+    "type": "consumable",
+    "img": "images/items/greencoin.png",
+    "codes": "MM_COIN_GREEN",
+    "max_quantity": 99
+  },
+  {
+    "name": "MM Blue Coin",
+    "type": "consumable",
+    "img": "images/items/bluecoin.png",
+    "codes": "MM_COIN_BLUE",
+    "max_quantity": 99
+  },
+  {
+    "name": "MM Yellow Coin",
+    "type": "consumable",
+    "img": "images/items/yellowcoin.png",
+    "codes": "MM_COIN_YELLOW",
+    "max_quantity": 99
+  },
+  {
+    "name": "MM Skeleton Key",
+    "type": "toggle",
+    "img": "images/items/skeleton_key.png",
+    "codes": "MM_KEY_SKELETON"
       }
     ]

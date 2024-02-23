@@ -1060,7 +1060,7 @@ function _oot_logic()
 	end
 
 	function has_explosives()
-		return has_bombs() or has_bombchu()
+		return has_bombs() or has_bombchu() or has ('OOT_MASK_BLAST')
 	end
 
 	function has_bombflowers()
@@ -1148,7 +1148,7 @@ function _oot_logic()
 	end
 
 	function can_damage()
-		return has_weapon() or can_use_sticks() or has_explosives() or can_use_slingshot() or can_use_din()
+		return has_weapon() or can_use_sticks() or has_explosives() or can_use_slingshot() or can_use_din() 
 	end
 
 	function can_damage_skull()

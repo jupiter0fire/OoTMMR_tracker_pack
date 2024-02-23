@@ -266,6 +266,18 @@
     "codes": "OOT_MASK_SPOOKY,OOT_MASK"
   },
   {
+    "name": "Blast Mask",
+    "type": "toggle",
+    "img": "images/items/mm_blast.png",
+    "codes": "OOT_MASK_BLAST,OOT_MASK"
+  },
+  {
+    "name": "Stone Mask",
+    "type": "toggle",
+    "img": "images/items/mm_stone.png",
+    "codes": "OOT_MASK_STONE,OOT_MASK"
+  },
+  {
     "name": "Bunny Hood",
     "type": "toggle",
     "img": "images/bunny.png",
@@ -354,6 +366,76 @@
     "type": "toggle",
     "img": "images/claim.png",
     "codes": "OOT_CLAIM_CHECK"
+  },
+  {
+    "name": "OoT A Button",
+    "type": "toggle",
+    "img": "images/system/A Button.png",
+    "codes": "OOT_BUTTON_A"
+  },
+  {
+    "name": "OoT B Button",
+    "type": "toggle",
+    "img": "images/system/B Button.png",
+    "codes": "OOT_BUTTON_B"
+  },
+  {
+    "name": "OoT C-Up Button",
+    "type": "toggle",
+    "img": "images/system/C-Up.png",
+    "codes": "OOT_BUTTON_C-UP"
+  },
+  {
+    "name": "OoT C-Down Button",
+    "type": "toggle",
+    "img": "images/system/C-Down.png",
+    "codes": "OOT_BUTTON_C-DOWN"
+  },
+  {
+    "name": "OoT C-Left Button",
+    "type": "toggle",
+    "img": "images/system/C-Left.png",
+    "codes": "OOT_BUTTON_C-LEFT"
+  },
+  {
+    "name": "OoT C-Right Button",
+    "type": "toggle",
+    "img": "images/system/C-Right.png",
+    "codes": "OOT_BUTTON_C-RIGHT"
+  },
+  {
+    "name": "OoT Red Coin",
+    "type": "consumable",
+    "img": "images/items/redcoin.png",
+    "codes": "OOT_COIN_RED",
+    "max_quantity": 99
+  },
+  {
+    "name": "OoT Green Coin",
+    "type": "consumable",
+    "img": "images/items/greencoin.png",
+    "codes": "OOT_COIN_GREEN",
+    "max_quantity": 99
+  },
+  {
+    "name": "OoT Blue Coin",
+    "type": "consumable",
+    "img": "images/items/bluecoin.png",
+    "codes": "OOT_COIN_BLUE",
+    "max_quantity": 99
+  },
+  {
+    "name": "OoT Yellow Coin",
+    "type": "consumable",
+    "img": "images/items/yellowcoin.png",
+    "codes": "OOT_COIN_YELLOW",
+    "max_quantity": 99
+  },
+  { 
+    "name": "OoT Skeleton Key",
+    "type": "toggle",
+    "img": "images/items/skeleton_key.png",
+    "codes": "OOT_KEY_SKELETON"
   },
   {
     "name": "Hammer",
