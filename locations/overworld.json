@@ -862,17 +862,21 @@
             "name": "Fishing Pond",
             "sections": [
               {
-                "name": "Child Fishing",
+                "name": "Child Fishing Lunker Reward",
                 "access_rules": [
                   "$oot|Fishing Pond Child"
                 ],
+                "chest_unopened_img": "images/HyruleBass.png",
+                "chest_opened_img": "images/HyruleBassTick.png",
                 "item_count": 1
               },
               {
-                "name": "Adult Fishing",
+                "name": "Adult Fishing Lunker Reward",
                 "access_rules": [
                   "$oot|Fishing Pond Adult"
                 ],
+                "chest_unopened_img": "HyruleBass.png",
+                "chest_opened_img": "images/HyruleBassTick.png",
                 "item_count": 1
               }
             ],
