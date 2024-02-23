@@ -1251,8 +1251,8 @@
                 "access_rules": [
                   "$oot|Lake Hylia Grass Near Scarecrows"
                 ],
-                "chest_unopened_img": "images/Grass.png",
-                "chest_opened_img": "images/GrassTick.png",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/MM_GrassTick.png",
                 "item_count": 1
               }
             ],
