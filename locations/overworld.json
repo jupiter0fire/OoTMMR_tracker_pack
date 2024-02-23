@@ -1624,12 +1624,12 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "Kak Grass",
+            "name": "Kakariko Grass Around Tree",
             "sections": [
               {
                 "name": "Kak Grass",
                 "access_rules": [
-                  "$oot|Kak Grass around tree"
+                  "$oot|Kak Grass Around Tree"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
@@ -1639,7 +1639,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1754,
+                "x": 1734,
                 "y": 406
               }
             ]
@@ -3589,7 +3589,7 @@
                 "access_rules": [
                   "$oot|HF Fairy Fountain"
                 ],
-                "chest_unopened_img": "images/Fary.png",
+                "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyTick.png",
                 "item_count": 1
               }
