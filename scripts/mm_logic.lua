@@ -911,10 +911,6 @@ function _mm_logic()
 		return has('MM_GOLDSCALE') or has('MM_BOOTS_IRON')()
 	end
 
-	function can_lift()
-		return has('MM_STRENGTH')()
-	end
-
 	function can_lift_silver()
 		return has('MM_STRENGTH2')()
 	end
