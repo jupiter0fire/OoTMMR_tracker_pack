@@ -71,7 +71,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
-- [ ] Swap positions of Death Mountain and Goron city checks so they are in the right position on the map
 - [ ] Update/add Entrance randomization options
 
 ## Credits
