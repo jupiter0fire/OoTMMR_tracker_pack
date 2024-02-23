@@ -50,8 +50,8 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update OoT Logic for Hookshoot anywhere option
 - [ ] Update OoT Logic for Climb most surfaces option
 - [X] Update MM Logic for Silver & Golden Scales
-- [ ] Update MM Logic for various Strength upgrades
-- [ ] Update MM Logic for various tunics
+- [X] Update MM Logic for various Strength upgrades
+- [X] Update MM Logic for various tunics
 - [ ] Update MM Logic for various boots
 - [ ] Update MM Logic for Clocks As Items option
 - [ ] Update MM Logic for Ocarina Buttons option
