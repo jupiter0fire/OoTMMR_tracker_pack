@@ -875,7 +875,7 @@
                 "access_rules": [
                   "$oot|Fishing Pond Adult"
                 ],
-                "chest_unopened_img": "HyruleBass.png",
+                "chest_unopened_img": "images/HyruleBass.png",
                 "chest_opened_img": "images/HyruleBassTick.png",
                 "item_count": 1
               }
