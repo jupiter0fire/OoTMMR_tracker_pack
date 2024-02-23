@@ -1172,11 +1172,11 @@ function _oot_logic()
 	end
 
 	function has_small_key_gerudo()
-		return setting('gerudoFortress', 'open') or cond(setting('gerudoFortress', 'single'), has('SMALL_KEY_GF', 1), has('SMALL_KEY_GF', 4)) or has('OOT_KEY_SKELETON)
+		return setting('gerudoFortress', 'open') or cond(setting('gerudoFortress', 'single'), has('SMALL_KEY_GF', 1), has('SMALL_KEY_GF', 4)) or has('OOT_KEY_SKELETON')
 	end
 
 	function can_rescue_carpenter()
-		return has_small_key_gerudo() or has('OOT_KEY_SKELETON) and (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks()))
+		return has_small_key_gerudo() or has('OOT_KEY_SKELETON') and (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks()))
 	end
 
 	function carpenters_rescued()
