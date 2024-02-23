@@ -967,6 +967,10 @@ function _mm_logic()
 		return has_beans() and (has_bottle() or can_play_storms())
 	end
 
+	function can_cut_grass()
+		return has_weapon() or has_explosives() or has('STRENGTH')
+	end
+
 	function scarecrow_hookshot_short()
 		return has_ocarina() and can_hookshot_short()
 	end
