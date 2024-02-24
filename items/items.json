@@ -408,28 +408,28 @@
     "type": "consumable",
     "img": "images/items/redcoin.png",
     "codes": "OOT_COIN_RED",
-    "max_quantity": 99
+    "max_quantity": 999
   },
   {
     "name": "OoT Green Coin",
     "type": "consumable",
     "img": "images/items/greencoin.png",
     "codes": "OOT_COIN_GREEN",
-    "max_quantity": 99
+    "max_quantity": 999
   },
   {
     "name": "OoT Blue Coin",
     "type": "consumable",
     "img": "images/items/bluecoin.png",
     "codes": "OOT_COIN_BLUE",
-    "max_quantity": 99
+    "max_quantity": 999
   },
   {
     "name": "OoT Yellow Coin",
     "type": "consumable",
     "img": "images/items/yellowcoin.png",
     "codes": "OOT_COIN_YELLOW",
-    "max_quantity": 99
+    "max_quantity": 999
   },
   { 
     "name": "OoT Skeleton Key",
@@ -849,6 +849,14 @@
     "type": "toggle",
     "img": "images/system/A Button.png",
     "codes": "OOT_C_A"
+  },
+   {
+    "name": "OOT Elegy of Emptiness",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_elegy.png",
+    "initial_active_state": false,
+    "codes": "OOT_SONG_EMPTINESS"
   },
   {
     "name": "Dummy",
