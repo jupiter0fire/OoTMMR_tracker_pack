@@ -4817,10 +4817,10 @@
             "color": "#0936a0",
             "children": [
           {
-            "name": "Fairy Fountain Shuffle",
+            "name": "Oasis Fairy Fountain",
             "sections": [
               {
-                "name": "Colossus Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
                   "$oot|Desert Colossus Fairy Fountain"
                 ],
