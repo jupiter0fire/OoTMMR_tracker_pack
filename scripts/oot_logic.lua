@@ -1163,6 +1163,10 @@ function _oot_logic()
 		return has_weapon() or can_boomerang()  or has_explosives() or has('STRENGTH')
 	end
 
+	function can_cut_grass()
+		return has_weapon() or can_boomerang()  or has_explosives() or has('STRENGTH')
+	end
+
 	function can_kill_baba_sticks()
 		return can_boomerang() or (has_weapon() and (is_child() or has_nuts() or can_hookshot() or can_hammer()))
 	end
