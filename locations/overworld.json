@@ -35,9 +35,9 @@
             "name": "KF Grass Boulder Area",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|KF Grass In Boulder Area"
+                  "$oot|Kokiri Forest Grass In Boulder Area"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
@@ -60,18 +60,18 @@
             "name": "KF Grass Outside Saria's House",
             "sections": [
               {
-                "name": "KF Grass",
+                "name": "Grass Shuffle (Child)",
                 "access_rules": [
-                  "$oot|Child Kokiri Forest grass"
+                  "$oot|Kokiri Forest Child Kokiri Forest grass"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
                 "item_count": 1
                  },
               {
-                "name": "Adult Grass Patch",
+                "name": "Grass Shuffle (Adult)",
                 "access_rules": [
-                  "$oot|Adult Grass Patch"
+                  "$oot|Kokiri Forest Adult Grass Patch"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
@@ -94,7 +94,7 @@
             "name": "KF Training Area Grass",
             "sections": [
               {
-                "name": "KF Grass",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Kokiri Forest grass in Training Area"
                 ],
@@ -503,16 +503,16 @@
             ]
           },
               {
-        "name": "Lost Woods Grass",
+        "name": "Lost Woods Grass Clusters",
         "color": "#0936a0",
         "children": [
           {
-            "name": "LW Small Grass Clusters",
+            "name": "Grass Shuffle",
             "sections": [
               {
                 "name": "4 Groups Of 3",
                 "access_rules": [
-                  "$oot|LW Grass Clusters"
+                  "$oot|Lost Woods Grass Clusters"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
@@ -719,7 +719,7 @@
             "name": "SFM Fairy Fountain",
             "sections": [
               {
-                "name": "SFM Fairy Fountain shuffle",
+                "name": "Fairy Fountain shuffle",
                 "access_rules": [
                   "$oot|SFM Fairy Fountain"
                 ],
@@ -977,7 +977,7 @@
             "name": "HF Grass Patch",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Hyrule Field grass Near KF"
                 ],
@@ -999,7 +999,7 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "HF Grass Patch",
+            "name": "Grass Shuffle",
             "sections": [
               {
                 "name": "HF Grass Patch",
@@ -1027,7 +1027,7 @@
             "name": "HF Grass Patch",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Hyrule Field grass Near SE Grotto"
                 ],
@@ -1052,7 +1052,7 @@
             "name": "HF Grass Patch",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Hyrule Field grass Near LLR rear"
                 ],
@@ -1356,7 +1356,7 @@
             "name": "LH Grass Patches",
             "sections": [
               {
-                "name": "LH Grass Patches",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Lake Hylia grass patches x3"
                 ],
@@ -1381,7 +1381,7 @@
             "name": "LH Grass Around Scarecrows",
             "sections": [
               {
-                "name": "LH Scarecrow Grass",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Lake Hylia Grass Near Scarecrows"
                 ],
@@ -1627,9 +1627,9 @@
             "name": "Kakariko Grass Around Tree",
             "sections": [
               {
-                "name": "Kak Grass",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|Kak Grass Around Tree"
+                  "$oot|Kakariko Grass Around Tree"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
@@ -1652,9 +1652,9 @@
             "name": "Near Cucco Lady",
             "sections": [
               {
-                "name": "Kak Grass Near Cucco Lady",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|Kak Grass Near Cucco Lady"
+                  "$oot|Kakariko Grass Near Cucco Lady"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
@@ -2182,7 +2182,7 @@
             "name": "Graveyard Grass Patch",
             "sections": [
               {
-                "name": "Graveyard Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Graveyard Grass In Entrance area"
                 ],
@@ -2240,7 +2240,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Graveyard Fairy Fountain",
+                    "name": "Fairy Fountain Shuffle",
                     "short_name": "Fairy Fountain",
                     "access_rules": [
                     "$oot|Graveyard Fairy Fountain"
@@ -3560,9 +3560,9 @@
             "name": "HC Grass Near Tree",
             "sections": [
               {
-                "name": "HF Grass Near Tree",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|HC Grass Near Castle"
+                  "$oot|Hyrule Castle Grass Near Castle"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/MM_GrassTick.png",
@@ -3585,9 +3585,9 @@
             "name": "HF Fairy Fountain",
             "sections": [
               {
-                "name": "HF Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|HF Fairy Fountain"
+                  "$oot|Hyrule Field Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyTick.png",
@@ -3737,7 +3737,7 @@
             "name": "ZR Grass Patch",
             "sections": [
               {
-                "name": "ZR Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Zora River grass Near HF"
                 ],
@@ -3762,9 +3762,9 @@
             "name": "ZR Fairy Fountain",
             "sections": [
               {
-                "name": "ZR Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|ZR Fairy Fountain"
+                  "$oot|Zora River Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyTick.png",
@@ -4048,9 +4048,9 @@
             "name": "ZD Fairy Fountain",
             "sections": [
               {
-                "name": "ZD Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|ZD Fairy Fountain"
+                  "$oot|Zora Domain Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyTick.png",
@@ -4576,12 +4576,12 @@
             "color": "#0936a0",
             "children": [
           {
-            "name": "GF Fairy Fountain",
+            "name": "Fairy Fountain Shuffle",
             "sections": [
               {
                 "name": "GF Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|GF Fairy Fountain"
+                  "$oot|Gerudo Fortress Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyTick.png",
@@ -4817,12 +4817,12 @@
             "color": "#0936a0",
             "children": [
           {
-            "name": "Colossus Fairy Fountain",
+            "name": "Fairy Fountain Shuffle",
             "sections": [
               {
                 "name": "Colossus Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|GF Fairy Fountain"
+                  "$oot|Desert Colossus Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyTick.png",
