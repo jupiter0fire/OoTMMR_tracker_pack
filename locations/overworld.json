@@ -721,7 +721,7 @@
               {
                 "name": "Fairy Fountain shuffle",
                 "access_rules": [
-                  "$oot|SFM Fairy Fountain"
+                  "$oot|Sacred Meadow Fairy Fountain"
                 ],
                  "chest_unopened_img": "images/Fairy.png",
                 "chest_opened_img": "images/FairyTick.png",
