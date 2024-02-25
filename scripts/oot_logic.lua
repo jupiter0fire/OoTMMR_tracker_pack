@@ -2346,6 +2346,11 @@ function _oot_logic()
             ["Kokiri Forest GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Kokiri Forest GS Night Child"] = function () return is_child() and gs_night() and can_damage_skull() end,
             ["Kokiri Forest GS Night Adult"] = function () return is_adult() and can_collect_distance() and gs_night() end,
+	    ["Kokiri Forest Grass In Boulder Area"] = function () return is_child() and can_cut_grass() end,
+	    ["Kokiri Forest Child Kokiri Forest grass"] = function () return is_child() and can_cut_grass() end,
+	    ["Kokiri Forest Adult Grass Patch"] function () return is_adult() and can_cut_grass() end,
+	    ["Kokiri Forest grass in Training Area"] function () return is_child() and can_cut_grass() end,
+	    
         },
     },
     ["Kokiri Forest Near Deku Tree"] = {
@@ -2445,6 +2450,11 @@ function _oot_logic()
         ["locations"] = {
             ["Hyrule Field Ocarina of Time"] = function () return has_spiritual_stones() end,
             ["Hyrule Field Song of Time"] = function () return has_spiritual_stones() end,
+	    ["Hyrule Field grass Near KF"] function () return is_child() or is_adult() and can_cut_grass() end,
+	    ["Hyrule Field grass Near LLR"] function () return is_child() or is_adult() and can_cut_grass() end,
+	    ["Hyrule Field grass Near SE Grotto"] function () return is_child() or is_adult() and can_cut_grass() end,
+            ["Hyrule Field grass Near LLR rear"] function () return is_child() or is_adult() and can_cut_grass() end,
+	    ["Hyrule Field Fairy Fountain"] = function () return has_explosives_or_hammer() end,
         },
     },
     ["Hyrule Field Scrub Grotto"] = {
@@ -2762,6 +2772,7 @@ function _oot_logic()
             ["Zelda's Letter"] = function () return met_zelda() end,
             ["Zelda's Song"] = function () return met_zelda() end,
             ["Hyrule Castle GS Tree"] = function () return can_damage_skull() end,
+	    ["Hyrule Castle Grass Near Castle"] = function () return is_child() and can_cut_grass() end,
         },
     },
     ["Near Fairy Fountain Din"] = {
@@ -2859,6 +2870,7 @@ function _oot_logic()
             ["Lost Woods Odd Mushroom"] = function () return adult_trade(COJIRO) end,
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) end,
             ["Lost Woods GS Soil Bridge"] = function () return gs_soil() and can_damage_skull() end,
+	    ["Lost Woods Grass Clusters" function () return is_child() and can_cut_grass() end,
         },
     },
     ["Lost Woods Generic Grotto"] = {
@@ -2958,6 +2970,7 @@ function _oot_logic()
             ["Saria's Song"] = function () return met_zelda() and is_child() end,
             ["Sacred Meadow Sheik Song"] = function () return is_adult() end,
             ["Sacred Meadow GS Night Adult"] = function () return is_adult() and can_collect_distance() and gs_night() end,
+	    ["Sacred Meadow Fairy Fountain"] = function () return met_zelda() and is_child() end,
         },
     },
     ["Sacred Meadow Storms Grotto"] = {
@@ -3007,6 +3020,8 @@ function _oot_logic()
             ["Kakariko GS House of Skulltula"] = function () return gs_night() and is_child() end,
             ["Kakariko GS Bazaar"] = function () return gs_night() and is_child() end,
             ["Kakariko GS Ladder"] = function () return gs_night() and is_child() and (can_use_slingshot() or has_bombchu()) end,
+	    ["Kakariko Grass Around Tree"] = function () return is_child() or is_adult() and can_cut_grass() end,
+	    ["Kakariko Grass Near Cucco Lady"] = function () return is_child() or is_adult() and can_cut_grass() end,
         },
     },
     ["Kakariko Rooftop"] = {
@@ -3182,6 +3197,8 @@ function _oot_logic()
             ["Graveyard Crate HP"] = function () return can_ride_bean(BEAN_GRAVEYARD) or can_longshot() end,
             ["Graveyard GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Graveyard GS Wall"] = function () return is_child() and can_boomerang() and gs_night() end,
+	    ["Graveyard Grass In Entrance area"] = function () return is_child() and can_cut_grass() end,
+	    ["Graveyard Fairy Tomb"] = function () return is_adult() or is_night() and has_explosives_or_hammer() end,
         },
     },
     ["Graveyard Upper"] = {
@@ -3391,9 +3408,11 @@ function _oot_logic()
         ["exits"] = {
             ["Hyrule Field"] = function () return true end,
             ["Zora River"] = function () return is_adult() or has_explosives_or_hammer() or has_hover_boots() end,
+	    ["Zora River Fairy Fountain"] = function () return has_explosives_or_hammer() end,
         },
         ["locations"] = {
             ["Zora River GS Tree"] = function () return is_child() and can_damage_skull() end,
+	    ["Zora River grass Near HF"] function () return is_child() and can_cut_grass() end,
         },
     },
     ["Zora River"] = {
@@ -3475,6 +3494,7 @@ function _oot_logic()
             ["Zora Domain Tunic"] = function () return is_adult() and has_blue_fire() end,
             ["Zora Domain Eyeball Frog"] = function () return has_blue_fire() and adult_trade(PRESCRIPTION) end,
             ["Zora Domain GS Waterfall"] = function () return is_adult() and gs_night() and (has_ranged_weapon_adult() or can_boomerang() or has_magic()) end,
+	    ["Zora Domain Fairy Fountain"] = function () return can_play_storms() end,
         },
     },
     ["Zora Domain Back"] = {
@@ -3531,6 +3551,8 @@ function _oot_logic()
             ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() end,
             ["Lake Hylia GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Lake Hylia GS Big Tree"] = function () return is_adult() and gs_night() and can_longshot() end,
+	    ["Lake Hylia grass patches x3"] function () return is_child() or is_adult() and can_cut_grass() end,
+	    ["Lake Hylia Grass Near Scarecrows"] function () return is_child() or is_adult() and can_cut_grass() end,
         },
     },
     ["Laboratory"] = {
@@ -3784,6 +3806,7 @@ function _oot_logic()
             ["Gerudo Fortress Archery Reward 1"] = function () return can_ride_epona() and can_use_bow() and has('GERUDO_CARD') and can_use_wallet(1) and is_day() end,
             ["Gerudo Fortress Archery Reward 2"] = function () return can_ride_epona() and can_use_bow() and has('GERUDO_CARD') and can_use_wallet(1) and is_day() end,
             ["Gerudo Fortress GS Target"] = function () return is_adult() and can_collect_distance() and gs_night() and has('GERUDO_CARD') end,
+	    ["Gerudo Fortress Fairy Fountain"] = function () return can_ride_epona() and can_play_storms() end,
         },
     },
     ["Gerudo Fortress Lower-Right Ledge"] = {
@@ -3905,6 +3928,7 @@ function _oot_logic()
             ["Desert Colossus GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Desert Colossus GS Tree"] = function () return is_adult() and can_collect_distance() and gs_night() end,
             ["Desert Colossus GS Plateau"] = function () return is_adult() and gs_night() and (can_collect_distance() or can_ride_bean(BEAN_DESERT_COLOSSUS)) end,
+	    ["Desert Colossus Fairy Fountain"] = function () return is_child or is_adult and can_play_storms() end,
         },
     },
     ["Desert Colossus Spirit Exit"] = {
