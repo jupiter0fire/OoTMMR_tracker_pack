@@ -47,7 +47,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Add MM Grass Checks to Map
 - [X] Add Elegy of Emptiness to OoT
 - [X] Add logic to grass and fairy fountain checks
-- [ ] Add Big Fairy Shuffle
 - [ ] Update OoT Logic for Ocarina Buttons
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
@@ -69,7 +68,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for MM Enemy Souls
 - [ ] Update MM Logic for MM Boss Souls
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches - done, fishing shuffle - loaches done, freestanding rupees, freestanding hearts, silver rupees, pots, fairy spot, bottle content, fairy Fountains - done)
+- [ ] Add new checks to the map (grass patches - done, fishing shuffle - loaches done, freestanding rupees, freestanding hearts, silver rupees, pots, Big Fairy shuffle, bottle content, fairy Fountains - done)
 - [ ] Update Shared options
 - [X] Add Coins, Add Skeleton Keys, Add Bottomless Wallet
 - [X] Add Logic for Coins, Skeleton Keys, and Bottomless Wallet
