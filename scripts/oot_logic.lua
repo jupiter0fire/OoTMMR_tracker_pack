@@ -788,11 +788,11 @@ function _oot_logic()
     end
 
     	function is_child()
-		return age('child') or has_('SWORD_KOKIRI'))
+		return age('child')
 	end
 
 	function is_adult()
-		return age('adult') or has_('SWORD_MASTER'))
+		return age('adult')
 	end
 
 	function is_day()
