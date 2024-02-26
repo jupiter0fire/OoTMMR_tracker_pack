@@ -6115,10 +6115,18 @@
               {
                 "name": "Climb the pillar",
                 "access_rules": [
-                  "$mm|Termina Field Pillar Grotto"
+                  "$mm|East Pillar Grotto Grass"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "East Pillar Grotto Grass",
+                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Peahat Grotto Grass"
+                ],
+                "item_count": 1
             ],
             "map_locations": [
               {
@@ -6140,7 +6148,15 @@
                   "$mm|Termina Field Peahat Grotto"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Peahat Grotto Grass Patch"",
+                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Peahat Grotto Grass"
+                ],
+                "item_count": 1
             ],
             "map_locations": [
               {
@@ -6184,7 +6200,15 @@
                   "$mm|Termina Field Cow Front"
                 ],
                 "item_count": 2
-              }
+              },
+              {
+               "name": "Cow Grotto Grass Patch"",
+                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Termina Field Grotto Grass"
+                ],
+                "item_count": 1
             ],
             "map_locations": [
               {
@@ -6209,7 +6233,15 @@
                   "$mm|Termina Field Bio Baba Grotto"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+               "name": "Bio Baba Grotto Grass"",
+                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Bio Baba Grotto Grass"
+                ],
+                "item_count": 1
             ],
             "map_locations": [
               {
@@ -6262,6 +6294,14 @@
                 "y": 360
               },
               {
+                "name": "Canyon Gossip Grotto Grass"",
+                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Canyon Gossip Grotto Grass"
+                ],
+                "item_count": 1
+            ],
                 "map": "termina",
                 "x": 596,
                 "y": 322
@@ -6272,6 +6312,14 @@
                 "y": 276
               },
               {
+                "name": "Ocean Gossip Grotto Grass"",
+                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Ocean Gossip Grotto Grass"
+                ],
+                "item_count": 1
+            ],
                 "map": "termina",
                 "x": 496,
                 "y": 300
@@ -7707,7 +7755,15 @@
                       "setting_cowShuffleMm_true"
                     ],
                     "item_count": 2
-                  }
+                  },
+                  {
+                   "name": "Great Bay Ledge Grotto Grass"",
+                   "chest_unopened_img": "imagesMM_Grass.png",
+                   "chest_opened_img": "images/GrassGreyscale.png",
+                   "access_rules": [
+                    "$mm|Great Bay Ledge Grotto Grass"
+                  ],
+                  "item_count": 1
                 ],
                 "map_locations": [
                   {
