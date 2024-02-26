@@ -40,7 +40,7 @@
                   "$oot|Kokiri Forest Grass In Boulder Area"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -65,7 +65,7 @@
                   "$oot|Kokiri Forest Child Kokiri Forest grass"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
                  },
               {
@@ -74,7 +74,7 @@
                   "$oot|Kokiri Forest Adult Grass Patch"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -99,7 +99,7 @@
                   "$oot|Kokiri Forest grass in Training Area"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -515,7 +515,7 @@
                   "$oot|Lost Woods Grass Clusters"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 4
               }
             ],
@@ -982,7 +982,7 @@
                   "$oot|Hyrule Field grass Near KF"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1007,7 +1007,7 @@
                   "$oot|Hyrule Field grass Near LLR"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1032,7 +1032,7 @@
                   "$oot|Hyrule Field grass Near SE Grotto"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1057,7 +1057,7 @@
                   "$oot|Hyrule Field grass Near LLR rear"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1101,7 +1101,7 @@
                   "$oot|Fishing Pond Child"
                 ],
                 "chest_unopened_img": "images/HyruleBass.png",
-                "chest_opened_img": "images/HyruleBassTick.png",
+                "chest_opened_img": "images/HyruleBassGreyscale.png",
                 "item_count": 1
               },
               {
@@ -1110,7 +1110,7 @@
                   "$oot|Fishing Pond Adult"
                 ],
                 "chest_unopened_img": "images/HyruleBass.png",
-                "chest_opened_img": "images/HyruleBassTick.png",
+                "chest_opened_img": "images/HyruleBassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1131,7 +1131,7 @@
                   "$oot|Fishing Pond Child"
                 ],
                  "chest_unopened_img": "images/HylianLoach.png",
-                "chest_opened_img": "images/HylianLoachTick.png",
+                "chest_opened_img": "images/LoachGreyscale.png",
                 "item_count": 2
               },
               {
@@ -1140,7 +1140,7 @@
                   "$oot|Adult Hylian Loach"
                 ],
                  "chest_unopened_img": "images/HylianLoach.png",
-                 "chest_opened_img": "images/HylianLoachTick.png",
+                 "chest_opened_img": "images/LoachGreyscale.png",
                  "item_count": 1
               }
             ],
@@ -1361,7 +1361,7 @@
                   "$oot|Lake Hylia grass patches x3"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 3
               }
             ],
@@ -1386,7 +1386,7 @@
                   "$oot|Lake Hylia Grass Near Scarecrows"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1632,7 +1632,7 @@
                   "$oot|Kakariko Grass Around Tree"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1657,7 +1657,7 @@
                   "$oot|Kakariko Grass Near Cucco Lady"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -2187,7 +2187,7 @@
                   "$oot|Graveyard Grass In Entrance area"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -2246,7 +2246,7 @@
                     "$oot|Graveyard Fairy Fountain"
                 ],
                     "chest_unopened_img": "images/Fairy.png",
-                    "chest_opened_img": "images/FairyTick.png",
+                    "chest_opened_img": "images/FairyGreyscale.png",
                     "item_count": 1
               }
         ],
@@ -3565,7 +3565,7 @@
                   "$oot|Hyrule Castle Grass Near Castle"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -3590,7 +3590,7 @@
                   "$oot|Hyrule Field Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -3742,7 +3742,7 @@
                   "$oot|Zora River grass Near HF"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -3767,7 +3767,7 @@
                   "$oot|Zora River Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4053,7 +4053,7 @@
                   "$oot|Zora Domain Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4584,7 +4584,7 @@
                   "$oot|Gerudo Fortress Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4825,7 +4825,7 @@
                   "$oot|Desert Colossus Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
