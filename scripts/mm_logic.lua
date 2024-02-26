@@ -2344,6 +2344,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Termina Field Peahat Grotto"] = function () return (can_fight() or has_arrows() or has('MASK_DEKU')) and is_day() end,
+            ["Peahat Grotto Grass"] = function () return true end,
         },
     },
     ["Bio Baba Grotto"] = {
@@ -2356,6 +2357,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Termina Field Bio Baba Grotto"] = function () return has_mask_zora() end,
+	    ["Bio Baba Grotto Grass"] = function () return true end,
         },
     },
     ["Dodongo Grotto"] = {
@@ -2383,6 +2385,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Termina Field Pillar Grotto"] = function () return true end,
+	    ["East Pillar Grotto Grass"] = function () return true end,
         },
     },
     ["Scrub Grotto"] = {
@@ -2411,6 +2414,7 @@ function _mm_logic()
         ["locations"] = {
             ["Termina Field Cow Front"] = function () return can_play_epona() end,
             ["Termina Field Cow Back"] = function () return can_play_epona() end,
+	    ["Termina Field Grotto Grass"] = function () return true end,
         },
     },
     ["Swamp Gossip Grotto"] = {
@@ -2453,6 +2457,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
+	     ["Ocean Gossip Grotto Grass"] = function () return has_explosives end,
         },
     },
     ["Canyon Gossip Grotto"] = {
@@ -2470,6 +2475,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
+	    ["Canyon Grotto Grass"] = function () return has_explosives end,
         },
     },
     ["Road to Southern Swamp"] = {
