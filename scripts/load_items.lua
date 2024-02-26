@@ -1,5 +1,8 @@
-
-Tracker:AddItems("items/capture_spawns.json")
+if HAS_ER then
+	Tracker:AddItems("items/capture_entrance.json")
+else
+	Tracker:AddItems("items/capture_spawns.json")
+end
 Tracker:AddItems("items/sequences.json")
 Tracker:AddItems("items/capture_items.json")
 Tracker:AddItems("items/tricks.json")

@@ -24,9 +24,15 @@
     "img": "images/map_entrance.png"
   },
   {
-    "name": "termina_er",
+    "name": "termina_er_locations",
     "location_size": 15,
     "location_border_thickness": 3,
-    "img": "images/mm_overworld.png"
+    "img": "images/mm_overworld_er.png"
+  },
+  {
+    "name": "termina_er_exits",
+    "location_size": 15,
+    "location_border_thickness": 3,
+    "img": "images/mm_overworld_er.png"
   }
 ]
