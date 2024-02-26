@@ -6318,7 +6318,7 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
-                  "$mm|Ocean Gossip Grotto Grass"
+                  "$mm|Ocean Gossip Grotto"
                 ],
                 "item_count": 1
              }
@@ -6327,19 +6327,19 @@
               {
                 "map": "termina",
                 "x": 496,
-                "y": 300}
-          ]},
+                "y": 300}]
+              },
           {
                "name": "Canyon Gossip Grotto Grass",
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
-                  "$mm|Canyon Gossip Grotto Grass"
+                  "$mm|Canyon Gossip Grotto"
                 ],
                 "item_count": 1
               }
             ],
-                    "map_locations": [
+                "map_locations": [
               {
                 "map": "termina",
                 "x": 550,
@@ -8680,7 +8680,7 @@
                             "chest_unopened_img": "images/deactivated_owl_statue.png",
                             "chest_opened_img": "images/activated_owl_statue.png",
                             "item_count": 1
-                          }
+                          }]}
                         ],
                         "map_locations": [
                           {
@@ -8703,4 +8703,4 @@
       }
     ]
   }
-]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
+]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
