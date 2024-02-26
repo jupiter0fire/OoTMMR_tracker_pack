@@ -44,9 +44,15 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] Update OoT Logic for Blast Mask
 - [X] Add Fairy Fountain Checks to map
 - [X] Add OoT Grass Checks to Map
-- [ ] Add MM Grass Checks to Map
+- [X] Add Coins, Add Skeleton Keys, Add Bottomless Wallet
+- [X] Add Logic for Coins, Skeleton Keys, and Bottomless Wallet
+- [X] Move half of Owl Statues to new row and increase text size so it is readable 
 - [X] Add Elegy of Emptiness to OoT
-- [ ] Add logic to grass and fairy fountain checks
+- [X] Add logic to grass and fairy fountain checks
+- [X] Update MM Logic for Silver & Golden Scales
+- [X] Update MM Logic for various Strength upgrades
+- [X] Update MM Logic for various tunics
+- [ ] Add MM Grass Checks to Map
 - [ ] Update OoT Logic for Ocarina Buttons
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
@@ -54,9 +60,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update OoT Logic for pre completed dungeon option
 - [ ] Update OoT Logic for Hookshoot anywhere option
 - [ ] Update OoT Logic for Climb most surfaces option
-- [X] Update MM Logic for Silver & Golden Scales
-- [X] Update MM Logic for various Strength upgrades
-- [X] Update MM Logic for various tunics
 - [ ] Update MM Logic for various boots
 - [ ] Update MM Logic for Clocks As Items option
 - [ ] Update MM Logic for Ocarina Buttons option
@@ -68,12 +71,10 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for MM Enemy Souls
 - [ ] Update MM Logic for MM Boss Souls
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches - done, fishing shuffle - loaches done, freestanding rupees, freestanding hearts, silver rupees, pots, fairy spot, bottle content, fairy Fountains - done)
+- [ ] Add new checks to the map (grass patches - done, fairy Fountains - done, fishing shuffle - loaches done, Big Fairy shuffle, freestanding rupees, freestanding hearts, silver rupees, pots, bottle content)
 - [ ] Update Shared options
-- [X] Add Coins, Add Skeleton Keys, Add Bottomless Wallet
-- [X] Add Logic for Coins, Skeleton Keys, and Bottomless Wallet
-- [X] Move half of Owl Statues to new row and increase text size so it is readable 
-- [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent - See how room is after all new items are added - MM keys/text could do with        a size upgrade top make it readable but its low priority
+- [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent - See how room is after all new items are added
+- [ ] MM keys/text could do with a size upgrade to make it readable but its low priority
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
 - [ ] Update/add Entrance randomization options

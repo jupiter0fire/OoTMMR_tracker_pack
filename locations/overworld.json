@@ -35,12 +35,12 @@
             "name": "KF Grass Boulder Area",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|KF Grass In Boulder Area"
+                  "$oot|Kokiri Forest Grass In Boulder Area"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -60,21 +60,21 @@
             "name": "KF Grass Outside Saria's House",
             "sections": [
               {
-                "name": "KF Grass",
+                "name": "Grass Shuffle (Child)",
                 "access_rules": [
-                  "$oot|Child Kokiri Forest grass"
+                  "$oot|Kokiri Forest Child Kokiri Forest grass"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
                  },
               {
-                "name": "Adult Grass Patch",
+                "name": "Grass Shuffle (Adult)",
                 "access_rules": [
-                  "$oot|Adult Grass Patch"
+                  "$oot|Kokiri Forest Adult Grass Patch"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -94,12 +94,12 @@
             "name": "KF Training Area Grass",
             "sections": [
               {
-                "name": "KF Grass",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Kokiri Forest grass in Training Area"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -503,19 +503,19 @@
             ]
           },
               {
-        "name": "Lost Woods Grass",
+        "name": "Lost Woods Grass Clusters",
         "color": "#0936a0",
         "children": [
           {
-            "name": "LW Small Grass Clusters",
+            "name": "Grass Shuffle",
             "sections": [
               {
                 "name": "4 Groups Of 3",
                 "access_rules": [
-                  "$oot|LW Grass Clusters"
+                  "$oot|Lost Woods Grass Clusters"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 4
               }
             ],
@@ -719,12 +719,12 @@
             "name": "SFM Fairy Fountain",
             "sections": [
               {
-                "name": "SFM Fairy Fountain shuffle",
+                "name": "Fairy Fountain shuffle",
                 "access_rules": [
-                  "$oot|SFM Fairy Fountain"
+                  "$oot|Sacred Meadow Fairy Fountain"
                 ],
                  "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -977,12 +977,12 @@
             "name": "HF Grass Patch",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Hyrule Field grass Near KF"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -999,7 +999,7 @@
         "color": "#0936a0",
         "children": [
           {
-            "name": "HF Grass Patch",
+            "name": "Grass Shuffle",
             "sections": [
               {
                 "name": "HF Grass Patch",
@@ -1007,7 +1007,7 @@
                   "$oot|Hyrule Field grass Near LLR"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1027,12 +1027,12 @@
             "name": "HF Grass Patch",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Hyrule Field grass Near SE Grotto"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1052,12 +1052,12 @@
             "name": "HF Grass Patch",
             "sections": [
               {
-                "name": "HF Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Hyrule Field grass Near LLR rear"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1101,7 +1101,7 @@
                   "$oot|Fishing Pond Child"
                 ],
                 "chest_unopened_img": "images/HyruleBass.png",
-                "chest_opened_img": "images/HyruleBassTick.png",
+                "chest_opened_img": "images/HyruleBassGreyscale.png",
                 "item_count": 1
               },
               {
@@ -1110,7 +1110,7 @@
                   "$oot|Fishing Pond Adult"
                 ],
                 "chest_unopened_img": "images/HyruleBass.png",
-                "chest_opened_img": "images/HyruleBassTick.png",
+                "chest_opened_img": "images/HyruleBassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1131,7 +1131,7 @@
                   "$oot|Fishing Pond Child"
                 ],
                  "chest_unopened_img": "images/HylianLoach.png",
-                "chest_opened_img": "images/HylianLoachTick.png",
+                "chest_opened_img": "images/LoachGreyscale.png",
                 "item_count": 2
               },
               {
@@ -1140,7 +1140,7 @@
                   "$oot|Adult Hylian Loach"
                 ],
                  "chest_unopened_img": "images/HylianLoach.png",
-                 "chest_opened_img": "images/HylianLoachTick.png",
+                 "chest_opened_img": "images/LoachGreyscale.png",
                  "item_count": 1
               }
             ],
@@ -1356,12 +1356,12 @@
             "name": "LH Grass Patches",
             "sections": [
               {
-                "name": "LH Grass Patches",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Lake Hylia grass patches x3"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 3
               }
             ],
@@ -1381,12 +1381,12 @@
             "name": "LH Grass Around Scarecrows",
             "sections": [
               {
-                "name": "LH Scarecrow Grass",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Lake Hylia Grass Near Scarecrows"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1627,12 +1627,12 @@
             "name": "Kakariko Grass Around Tree",
             "sections": [
               {
-                "name": "Kak Grass",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|Kak Grass Around Tree"
+                  "$oot|Kakariko Grass Around Tree"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -1652,12 +1652,12 @@
             "name": "Near Cucco Lady",
             "sections": [
               {
-                "name": "Kak Grass Near Cucco Lady",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|Kak Grass Near Cucco Lady"
+                  "$oot|Kakariko Grass Near Cucco Lady"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -2182,12 +2182,12 @@
             "name": "Graveyard Grass Patch",
             "sections": [
               {
-                "name": "Graveyard Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Graveyard Grass In Entrance area"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -2240,13 +2240,13 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Graveyard Fairy Fountain",
+                    "name": "Fairy Fountain Shuffle",
                     "short_name": "Fairy Fountain",
                     "access_rules": [
                     "$oot|Graveyard Fairy Fountain"
                 ],
                     "chest_unopened_img": "images/Fairy.png",
-                    "chest_opened_img": "images/FairyTick.png",
+                    "chest_opened_img": "images/FairyGreyscale.png",
                     "item_count": 1
               }
         ],
@@ -3560,12 +3560,12 @@
             "name": "HC Grass Near Tree",
             "sections": [
               {
-                "name": "HF Grass Near Tree",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|HC Grass Near Castle"
+                  "$oot|Hyrule Castle Grass Near Castle"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -3585,12 +3585,12 @@
             "name": "HF Fairy Fountain",
             "sections": [
               {
-                "name": "HF Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|HF Fairy Fountain"
+                  "$oot|Hyrule Field Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -3737,12 +3737,12 @@
             "name": "ZR Grass Patch",
             "sections": [
               {
-                "name": "ZR Grass Patch",
+                "name": "Grass Shuffle",
                 "access_rules": [
                   "$oot|Zora River grass Near HF"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/MM_GrassTick.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -3762,12 +3762,12 @@
             "name": "ZR Fairy Fountain",
             "sections": [
               {
-                "name": "ZR Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|ZR Fairy Fountain"
+                  "$oot|Zora River Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4048,12 +4048,12 @@
             "name": "ZD Fairy Fountain",
             "sections": [
               {
-                "name": "ZD Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|ZD Fairy Fountain"
+                  "$oot|Zora Domain Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4576,15 +4576,15 @@
             "color": "#0936a0",
             "children": [
           {
-            "name": "GF Fairy Fountain",
+            "name": "Fairy Fountain Shuffle",
             "sections": [
               {
                 "name": "GF Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|GF Fairy Fountain"
+                  "$oot|Gerudo Fortress Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4817,15 +4817,15 @@
             "color": "#0936a0",
             "children": [
           {
-            "name": "Colossus Fairy Fountain",
+            "name": "Oasis Fairy Fountain",
             "sections": [
               {
-                "name": "Colossus Fairy Fountain Shuffle",
+                "name": "Fairy Fountain Shuffle",
                 "access_rules": [
-                  "$oot|GF Fairy Fountain"
+                  "$oot|Desert Colossus Fairy Fountain"
                 ],
                 "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -6115,7 +6115,16 @@
               {
                 "name": "Climb the pillar",
                 "access_rules": [
-                  "$mm|Termina Field Pillar Grotto"
+                  "$mm|Termina Field Pillar Grotto"  
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "East Pillar Grotto Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|East Pillar Grotto Grass"
                 ],
                 "item_count": 1
               }
@@ -6138,6 +6147,15 @@
                 "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
                   "$mm|Termina Field Peahat Grotto"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Peahat Grotto Grass Patch",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Peahat Grotto Grass"
                 ],
                 "item_count": 1
               }
@@ -6184,6 +6202,15 @@
                   "$mm|Termina Field Cow Front"
                 ],
                 "item_count": 2
+              },
+              {
+               "name": "Cow Grotto Grass Patch",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Termina Field Grotto Grass"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -6207,6 +6234,15 @@
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
                   "$mm|Termina Field Bio Baba Grotto"
+                ],
+                "item_count": 1
+              },
+              {
+               "name": "Bio Baba Grotto Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Bio Baba Grotto Grass"
                 ],
                 "item_count": 1
               }
@@ -6260,8 +6296,8 @@
                 "map": "termina",
                 "x": 536,
                 "y": 360
-              },
-              {
+              }
+            ],
                 "map": "termina",
                 "x": 596,
                 "y": 322
@@ -6270,13 +6306,44 @@
                 "map": "termina",
                 "x": 550,
                 "y": 276
-              },
-              {
+              }
+            ],
                 "map": "termina",
                 "x": 496,
                 "y": 300
+              },
+              {
+                
+                "name": "Ocean Gossip Grotto Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Ocean Gossip Grotto Grass"
+                ],
+                "item_count": 1
+             }
+           ],
+                "map_locations": [
+              {
+                "map": "termina",
+                "x": 496,
+                "y": 300}
+          ]},
+          {
+               "name": "Canyon Gossip Grotto Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Canyon Gossip Grotto Grass"
+                ],
+                "item_count": 1
               }
-            ]
+            ],
+                    "map_locations": [
+              {
+                "map": "termina",
+                "x": 550,
+                "y": 276
           },
           {
             "name": "Moon's Tear",
@@ -7707,7 +7774,15 @@
                       "setting_cowShuffleMm_true"
                     ],
                     "item_count": 2
-                  }
+                  },
+                  {
+                   "name": "Great Bay Ledge Grotto Grass",
+                   "chest_unopened_img": "images/MM_Grass.png",
+                   "chest_opened_img": "images/GrassGreyscale.png",
+                   "access_rules": [
+                    "$mm|Great Bay Ledge Grotto Grass"
+                  ],
+                  "item_count": 1}
                 ],
                 "map_locations": [
                   {
@@ -8628,4 +8703,4 @@
       }
     ]
   }
-]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
+]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
