@@ -6115,16 +6115,16 @@
               {
                 "name": "Climb the pillar",
                 "access_rules": [
-                  "$mm|East Pillar Grotto Grass"
+                  "$mm|Termina Field Pillar Grotto"  
                 ],
                 "item_count": 1
               },
               {
                 "name": "East Pillar Grotto Grass",
-                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
-                  "$mm|Peahat Grotto Grass"
+                  "$mm|East Pillar Grotto Grass"
                 ],
                 "item_count": 1
               }
@@ -6296,15 +6296,6 @@
                 "map": "termina",
                 "x": 536,
                 "y": 360
-              },
-              {
-                "name": "Canyon Gossip Grotto Grass",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Canyon Gossip Grotto Grass"
-                ],
-                "item_count": 1
               }
             ],
                 "map": "termina",
@@ -6315,8 +6306,14 @@
                 "map": "termina",
                 "x": 550,
                 "y": 276
+              }
+            ],
+                "map": "termina",
+                "x": 496,
+                "y": 300
               },
               {
+                
                 "name": "Ocean Gossip Grotto Grass",
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -6324,13 +6321,29 @@
                   "$mm|Ocean Gossip Grotto Grass"
                 ],
                 "item_count": 1
-              }
-            ],
+             }
+           ],
+                "map_locations": [
+              {
                 "map": "termina",
                 "x": 496,
-                "y": 300
+                "y": 300}
+          ]},
+          {
+               "name": "Canyon Gossip Grotto Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Canyon Gossip Grotto Grass"
+                ],
+                "item_count": 1
               }
-            ]
+            ],
+                    "map_locations": [
+              {
+                "map": "termina",
+                "x": 550,
+                "y": 276
           },
           {
             "name": "Moon's Tear",
