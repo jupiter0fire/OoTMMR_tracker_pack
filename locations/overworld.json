@@ -724,7 +724,7 @@
                   "$oot|Sacred Meadow Fairy Fountain"
                 ],
                  "chest_unopened_img": "images/Fairy.png",
-                "chest_opened_img": "images/FairyTick.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
                 "item_count": 1
               }
             ],
