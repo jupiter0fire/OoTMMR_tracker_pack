@@ -6152,7 +6152,7 @@
               },
               {
                 "name": "Peahat Grotto Grass Patch",
-                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Peahat Grotto Grass"
@@ -6205,7 +6205,7 @@
               },
               {
                "name": "Cow Grotto Grass Patch",
-                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Termina Field Grotto Grass"
@@ -6239,7 +6239,7 @@
               },
               {
                "name": "Bio Baba Grotto Grass",
-                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Bio Baba Grotto Grass"
@@ -6299,7 +6299,7 @@
               },
               {
                 "name": "Canyon Gossip Grotto Grass",
-                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Canyon Gossip Grotto Grass"
@@ -6318,7 +6318,7 @@
               },
               {
                 "name": "Ocean Gossip Grotto Grass",
-                "chest_unopened_img": "imagesMM_Grass.png",
+                "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Ocean Gossip Grotto Grass"
@@ -7764,7 +7764,7 @@
                   },
                   {
                    "name": "Great Bay Ledge Grotto Grass",
-                   "chest_unopened_img": "imagesMM_Grass.png",
+                   "chest_unopened_img": "images/MM_Grass.png",
                    "chest_opened_img": "images/GrassGreyscale.png",
                    "access_rules": [
                     "$mm|Great Bay Ledge Grotto Grass"
