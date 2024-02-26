@@ -6127,6 +6127,7 @@
                   "$mm|Peahat Grotto Grass"
                 ],
                 "item_count": 1
+              }
             ],
             "map_locations": [
               {
@@ -6150,13 +6151,14 @@
                 "item_count": 1
               },
               {
-                "name": "Peahat Grotto Grass Patch"",
+                "name": "Peahat Grotto Grass Patch",
                 "chest_unopened_img": "imagesMM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Peahat Grotto Grass"
                 ],
                 "item_count": 1
+              }
             ],
             "map_locations": [
               {
@@ -6202,13 +6204,14 @@
                 "item_count": 2
               },
               {
-               "name": "Cow Grotto Grass Patch"",
+               "name": "Cow Grotto Grass Patch",
                 "chest_unopened_img": "imagesMM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Termina Field Grotto Grass"
                 ],
                 "item_count": 1
+              }
             ],
             "map_locations": [
               {
@@ -6235,13 +6238,14 @@
                 "item_count": 1
               },
               {
-               "name": "Bio Baba Grotto Grass"",
+               "name": "Bio Baba Grotto Grass",
                 "chest_unopened_img": "imagesMM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Bio Baba Grotto Grass"
                 ],
                 "item_count": 1
+              }
             ],
             "map_locations": [
               {
@@ -6294,13 +6298,14 @@
                 "y": 360
               },
               {
-                "name": "Canyon Gossip Grotto Grass"",
+                "name": "Canyon Gossip Grotto Grass",
                 "chest_unopened_img": "imagesMM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Canyon Gossip Grotto Grass"
                 ],
                 "item_count": 1
+              }
             ],
                 "map": "termina",
                 "x": 596,
@@ -6312,13 +6317,14 @@
                 "y": 276
               },
               {
-                "name": "Ocean Gossip Grotto Grass"",
+                "name": "Ocean Gossip Grotto Grass",
                 "chest_unopened_img": "imagesMM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Ocean Gossip Grotto Grass"
                 ],
                 "item_count": 1
+              }
             ],
                 "map": "termina",
                 "x": 496,
@@ -7757,13 +7763,13 @@
                     "item_count": 2
                   },
                   {
-                   "name": "Great Bay Ledge Grotto Grass"",
+                   "name": "Great Bay Ledge Grotto Grass",
                    "chest_unopened_img": "imagesMM_Grass.png",
                    "chest_opened_img": "images/GrassGreyscale.png",
                    "access_rules": [
                     "$mm|Great Bay Ledge Grotto Grass"
                   ],
-                  "item_count": 1
+                  "item_count": 1}
                 ],
                 "map_locations": [
                   {
@@ -8684,4 +8690,4 @@
       }
     ]
   }
-]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
+]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
