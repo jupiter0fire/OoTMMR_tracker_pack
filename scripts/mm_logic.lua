@@ -2529,6 +2529,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Road to Southern Swamp Grotto"] = function () return true end,
+	    ["Road to Southern Swamp Grotto"] = function () return true end,
         },
     },
     ["Swamp Front"] = {
@@ -2689,6 +2690,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Deku Palace HP"] = function () return true end,
+	    ["Deku Palace Grass"] = function () return has('MASK_DEKU') end,
         },
     },
     ["Deku Palace Upper"] = {
@@ -2737,6 +2739,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Deku Palace Grotto Chest"] = function () return can_use_beans() or can_hookshot() or (can_hookshot_short() and trick('MM_SHORT_HOOK_HARD')) end,
+	    ["Deku Palace Grotto Grass"] = function () return true end,
         },
     },
     ["Deku Palace Cliff"] = {
@@ -2775,6 +2778,7 @@ function _mm_logic()
             ["Woodfall Entrance Chest"] = function () return has('MASK_DEKU') or can_hookshot() or event('CLEAN_SWAMP') end,
             ["Woodfall HP Chest"] = function () return has('MASK_DEKU') or can_hookshot() end,
             ["Woodfall Near Owl Chest"] = function () return has('MASK_DEKU') or (event('CLEAN_SWAMP') and can_hookshot()) end,
+	    ["Woodfall Entrance Grass"] = function () return true end,
         },
     },
     ["Woodfall Front of Temple"] = {
