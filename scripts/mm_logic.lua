@@ -1824,7 +1824,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Southern Swamp Owl Statue"] = function () return has_sticks() or has_weapon() end,
-	    {"Southern Swamp Owl Grass"] = function () return true end,
+	    ["Southern Swamp Owl Grass"] = function () return true end,
         },
     },
     ["Owl Woodfall"] = {
