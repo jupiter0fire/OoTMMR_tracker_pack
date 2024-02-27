@@ -1824,6 +1824,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Southern Swamp Owl Statue"] = function () return has_sticks() or has_weapon() end,
+	    {"Southern Swamp Owl Grass"] = function () return true end,
         },
     },
     ["Owl Woodfall"] = {
@@ -2509,7 +2510,8 @@ function _mm_logic()
         ["locations"] = {
             ["Swamp Archery Reward 1"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
             ["Swamp Archery Reward 2"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
-        },
+            {"Swamp Archery Ledge Grass"] = function () return true end,
+	},
     },
     ["Road to Southern Swamp Grotto"] = {
         ["events"] = {
@@ -2630,6 +2632,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Swamp Potion Shop Kotake"] = function () return true end,
+	    {"Potion Shop Grass Patches"] = function () return true end,
         },
     },
     ["Woods of Mystery Grotto"] = {
