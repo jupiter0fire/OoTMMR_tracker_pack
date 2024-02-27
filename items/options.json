@@ -953,6 +953,26 @@
       }
     ]
   },
+      {
+    "name": "Grass Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_GrassShuffleOn_true.png",
+        "codes": "setting_GrassShuffleOnOOT,setting_GrassShuffleOnOOT_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_GrassShuffle_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_GrassShuffleOOT,setting_GrassShuffleOOT_false",
+        "inherit_codes": false
+      }
+    ]
+  },
     {
     "name": "Grass Shuffle (MM)",
     "type": "progressive",
@@ -962,13 +982,13 @@
     "stages": [
       {
         "img": "images/setting_GrassShuffleOn_true.png",
-        "codes": "setting_GrassShuffleOn,setting_GrassShuffleOn_true",
+        "codes": "setting_GrassShuffleOnMM,setting_GrassShuffleOnMM_true",
         "inherit_codes": false
       },
       {
         "img": "images/setting_GrassShuffle_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_GrassShuffle,setting_GrassShuffle_false",
+        "codes": "setting_GrassShuffleMM,setting_GrassShuffleMM_false",
         "inherit_codes": false
       }
     ]
