@@ -5,9 +5,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "size": 20,
-        "x": 494,
-        "y": 518
+        "size": 15,
+        "x": 15,
+        "y": 555
+      },
+      {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 15,
+        "y": 555
       }
     ],
     "sections": [
@@ -701,9 +707,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "size": 20,
-        "x": 290,
-        "y": 340
+        "size": 15,
+        "x": 55,
+        "y": 555
+      },
+	  {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 55,
+        "y": 555
       }
     ]
   },
@@ -820,9 +832,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "x": 320,
-        "y": 260,
-        "size": 20
+        "size": 15,
+        "x": 100,
+        "y": 555
+      },
+	  {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 100,
+        "y": 555
       }
     ]
   },
@@ -871,9 +889,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "x": 836,
-        "y": 238,
-        "size": 20
+        "size": 15,
+        "x": 140,
+        "y": 555
+      },
+      {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 140,
+        "y": 555
       }
     ]
   },
@@ -904,12 +928,77 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "x": 831,
-        "y": 300,
-        "size": 19
+        "size": 15,
+        "x": 175,
+        "y": 555
+      },
+      {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 175,
+        "y": 555
       }
     ]
   },
+	{
+	"name": "Secret Shrine Miniboss Gauntlet",
+	"chest_unopened_img": "images/system/chest_brown_closed.png",
+	"chest_opened_img": "images/system/chest_brown_open.png",
+	"short_name": "Boss Gauntlet",
+	"sections": [
+	  {
+		"name": "Dinolfos",
+		"access_rules": [
+		  "$mm|Secret Shrine Boss 1 Chest"
+		],
+		"item_count": 1
+	  },
+	  {
+		"name": "Wizzrobe",
+		"access_rules": [
+		  "$mm|Secret Shrine Boss 2 Chest"
+		],
+		"item_count": 1
+	  },
+	  {
+		"name": "Wart",
+		"access_rules": [
+		  "$mm|Secret Shrine Boss 3 Chest"
+		],
+		"item_count": 1
+	  },
+	  {
+		"name": "Garo Master",
+		"access_rules": [
+		  "$mm|Secret Shrine Boss 4 Chest"
+		],
+		"item_count": 1
+	  },
+	  {
+		"name": "Defeat all four minibosses",
+		"access_rules": [
+		  "$mm|Secret Shrine HP Chest"
+		],
+		"chest_unopened_img": "images/system/chest_unopened_big.png",
+		"chest_opened_img": "images/system/chest_open_big.png",
+		"item_count": 1
+	  }
+	],
+	"map_locations": [
+	  {
+		"map": "termina_er_locations",
+        "size": 15,
+        "x": 175,
+        "y": 515
+	  },
+	  {
+		"map": "termina_er_exits",
+        "size": 15,
+        "x": 175,
+        "y": 515
+	  }
+	]
+	},
   {
     "name": "Moon",
     "short_name": "Moon",
@@ -1260,9 +1349,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "size": 20,
-        "x": 542,
-        "y": 478
+        "size": 15,
+        "x": 15,
+        "y": 515
+      },
+      {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 15,
+        "y": 515
       }
     ]
   },
@@ -1539,9 +1634,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "size": 20,
+        "size": 15,
         "x": 100,
-        "y": 350
+        "y": 515
+      },
+      {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 100,
+        "y": 515
       }
     ]
   },
@@ -1850,9 +1951,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "size": 20,
-        "x": 956,
-        "y": 213
+        "size": 15,
+        "x": 140,
+        "y": 515
+      },
+      {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 140,
+        "y": 515
       }
     ]
   },
@@ -2128,9 +2235,15 @@
     "map_locations": [
       {
         "map": "termina_er_locations",
-        "size": 20,
-        "x": 488,
-        "y": 35
+        "size": 15,
+        "x": 55,
+        "y": 515
+      },
+      {
+        "map": "termina_er_exits",
+        "size": 15,
+        "x": 55,
+        "y": 515
       }
     ]
   }
