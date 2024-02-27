@@ -522,6 +522,8 @@
                             "map_locations": [
                               {
                                 "map": "oot",
+                                "force_invisibility_rules": [
+                                 "setting_setting_GrassShuffleOnOOT_true"
                                 "x": 2144,
                                 "y": 812
                               }
