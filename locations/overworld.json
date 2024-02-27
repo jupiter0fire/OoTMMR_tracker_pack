@@ -6297,53 +6297,92 @@
                 "x": 536,
                 "y": 360
               }
+            ]
+          },
+          {
+            "name": "Gossip Stones Puzzle Grottos",
+            "short_name": "Gossips Grottos",
+            "sections": [
+              {
+                "name": "Play a Dungeon Song in all four grottos",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Gossip Stones HP"
+                ],
+                "item_count": 1
+              }
             ],
+            "map_locations": [
+              {
                 "map": "termina",
                 "x": 596,
                 "y": 322
+              }
+            ]
+          },
+          {
+            "name": "Gossip Stones Puzzle Grottos",
+            "short_name": "Gossips Grottos",
+            "sections": [
+              {
+                "name": "Play a Dungeon Song in all four grottos",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Gossip Stones HP"
+                ],
+                "item_count": 1
               },
-             ],
+              {
+                "name": "Canyon Gossip Grotto Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                "$mm|Canyon Gossip Grotto"
+                ],
+                "item_count": 1}
+            ],
+            "map_locations": [
+              {
                 "map": "termina",
                 "x": 550,
                 "y": 276
               }
-            ],
-                "map": "termina",
-                "x": 496,
-                "y": 300
-              },
+            ]
+          },
+          {
+            "name": "Gossip Stones Puzzle Grottos",
+            "short_name": "Gossips Grottos",
+            "sections": [
               {
-                "name": "Ocean Gossip Grotto Grass",
+                "name": "Play a Dungeon Song in all four grottos",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Gossip Stones HP"
+                ],
+                "item_count": 1
+              },
+            {
+                "name": "Ocean Grotto Grass",
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "access_rules": [
                   "$mm|Ocean Gossip Grotto"
                 ],
-                "item_count": 1
-             }
-           ],
-                "map_locations": [
+                "item_count": 1}
+            ],
+            "map_locations": [
               {
                 "map": "termina",
                 "x": 496,
-                "y": 300}]
-              },
-          {
-               "name": "Canyon Gossip Grotto Grass",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Canyon Gossip Grotto"
-                ],
-                "item_count": 1
+                "y": 300
               }
-            ],
-                "map_locations": [
-              {
-                "map": "termina",
-                "x": 550,
-                "y": 276
-          },
+            ]
+           }
+        ]
+      },
           {
             "name": "Moon's Tear",
             "short_name": "Moon's Tear",
@@ -8702,4 +8741,4 @@
       }
     ]
   }
-]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
+]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
