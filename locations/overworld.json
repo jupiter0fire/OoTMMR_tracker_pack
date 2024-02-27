@@ -6076,7 +6076,15 @@
                   "$mm|Termina Field Tall Grass Grotto"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Grotto Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Termina Field Tall Grass Grotto"
+                ],
+                 "item_count": 1}
             ],
             "map_locations": [
               {
@@ -6718,7 +6726,15 @@
                   "$mm|Swamp Archery Reward 2"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Grass Hidden on Ledge",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Swamp Archery Ledge Grass"
+                ],
+                 "item_count": 1}
             ],
             "map_locations": [
               {
@@ -6844,6 +6860,65 @@
                   "$mm|Southern Swamp Owl Statue"
                 ],
                 "item_count": 1
+              },
+              {
+                   "name": "Southern Swamp Owl Grass",
+                   "chest_unopened_img": "images/MM_Grass.png",
+                   "chest_opened_img": "images/GrassGreyscale.png",
+                   "access_rules": [
+                    "$mm|Southern Swamp Owl Grass"
+                  ],
+                  "item_count": 1}]
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_owlShuffle_none"
+                ],
+                "x": 553,
+                "y": 425
+              }
+            ]
+          },
+          {
+            "name": "Southern Swamp Grass Patch",
+            "short_name": "Swamp Grass",
+            "sections": [
+              {
+                   "name": "Southern Swamp Grass Patch",
+                   "chest_unopened_img": "images/MM_Grass.png",
+                   "chest_opened_img": "images/GrassGreyscale.png",
+                   "access_rules": [
+                    "$mm|Southern Swamp Grass Patch"
+                  ],
+                  "item_count": 1}]
+          }
+        ],
+          "map_locations": [
+          {
+                 "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_owlShuffle_none"
+                ],
+                "x": 539,
+                "y": 404
+              }
+            ]
+          },
+          {
+            "name": "Potion Shop Grass Patches",
+            "short_name": "Potion Grass",
+            "sections": [
+                {
+                   "name": "Potion Shop Grass Patches",
+                   "chest_unopened_img": "images/MM_Grass.png",
+                   "chest_opened_img": "images/GrassGreyscale.png",
+                   "access_rules": [
+                    "$mm|Potion Shop Grass Patches"
+                  ],
+                  "item_count": 1}]
               }
             ],
             "map_locations": [
@@ -6877,6 +6952,7 @@
               }
             ]
           },
+          
           {
             "name": "Kotake Magic Potion Shop",
             "short_name": "Potion Shop",
@@ -8741,4 +8817,4 @@
       }
     ]
   }
-]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
+]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]}]
