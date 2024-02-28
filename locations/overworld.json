@@ -48,7 +48,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOnOOT_true"
+                      "setting_GrassShuffleOnOOT_none"
                     ],
                     "x": 2058,
                     "y": 992
