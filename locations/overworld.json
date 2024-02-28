@@ -48,7 +48,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                    "setting_GrassShuffleOnOOT_true"
+                      "setting_GrassShuffleOnOOT_true"
                     ],
                     "x": 2058,
                     "y": 992
@@ -85,7 +85,7 @@
                       {
                         "map": "oot",
                         "force_invisibility_rules": [
-                        "setting_GrassShuffleOnOOT_true"
+                          "setting_GrassShuffleOnOOT_true"
                         ],
                         "x": 2214,
                         "y": 958
@@ -113,7 +113,7 @@
                           {
                             "map": "oot",
                             "force_invisibility_rules": [
-                            "setting_GrassShuffleOnOOT_true"
+                              "setting_GrassShuffleOnOOT_true"
                             ],
                             "x": 2116,
                             "y": 962
@@ -532,8 +532,8 @@
                               {
                                 "map": "oot",
                                 "force_invisibility_rules": [
-                                 "setting_GrassShuffleOnOOT_true"
-                                 ],
+                                  "setting_GrassShuffleOnOOT_true"
+                                ],
                                 "x": 2144,
                                 "y": 812
                               }
@@ -1001,6 +1001,9 @@
                                 "map_locations": [
                                   {
                                     "map": "oot",
+                                    "force_invisibility_rules": [
+                                      "setting_GrassShuffleOnOOT_true"
+                                    ],
                                     "x": 1732,
                                     "y": 688
                                   }
@@ -1026,6 +1029,9 @@
                                     "map_locations": [
                                       {
                                         "map": "oot",
+                                        "force_invisibility_rules": [
+                                          "setting_GrassShuffleOnOOT_true"
+                                        ],
                                         "x": 1494,
                                         "y": 528
                                       }
@@ -1051,6 +1057,9 @@
                                         "map_locations": [
                                           {
                                             "map": "oot",
+                                            "force_invisibility_rules": [
+                                              "setting_GrassShuffleOnOOT_true"
+                                            ],
                                             "x": 1420,
                                             "y": 872
                                           }
@@ -1076,6 +1085,9 @@
                                             "map_locations": [
                                               {
                                                 "map": "oot",
+                                                "force_invisibility_rules": [
+                                                  "setting_GrassShuffleOnOOT_true"
+                                                ],
                                                 "x": 1346,
                                                 "y": 816
                                               }
@@ -1380,6 +1392,9 @@
                                                 "map_locations": [
                                                   {
                                                     "map": "oot",
+                                                    "force_invisibility_rules": [
+                                                      "setting_GrassShuffleOnOOT_true"
+                                                    ],
                                                     "x": 1042,
                                                     "y": 1156
                                                   }
@@ -1405,6 +1420,9 @@
                                                     "map_locations": [
                                                       {
                                                         "map": "oot",
+                                                        "force_invisibility_rules": [
+                                                          "setting_GrassShuffleOnOOT_true"
+                                                        ],
                                                         "x": 1140,
                                                         "y": 1182
                                                       }
@@ -1651,6 +1669,9 @@
                                                             "map_locations": [
                                                               {
                                                                 "map": "oot",
+                                                                "force_invisibility_rules": [
+                                                                  "setting_GrassShuffleOnOOT_true"
+                                                                ],
                                                                 "x": 1728,
                                                                 "y": 397
                                                               }
@@ -1676,6 +1697,9 @@
                                                                 "map_locations": [
                                                                   {
                                                                     "map": "oot",
+                                                                    "force_invisibility_rules": [
+                                                                      "setting_GrassShuffleOnOOT_true"
+                                                                    ],
                                                                     "x": 1910,
                                                                     "y": 410
                                                                   }
@@ -2206,6 +2230,9 @@
                                                                         "map_locations": [
                                                                           {
                                                                             "map": "oot",
+                                                                            "force_invisibility_rules": [
+                                                                              "setting_GrassShuffleOnOOT_true"
+                                                                            ],
                                                                             "x": 1992,
                                                                             "y": 384
                                                                           }
@@ -3583,6 +3610,9 @@
                                                                         "map_locations": [
                                                                           {
                                                                             "map": "oot",
+                                                                            "force_invisibility_rules": [
+                                                                              "setting_GrassShuffleOnOOT_true"
+                                                                            ],
                                                                             "x": 1470,
                                                                             "y": 165
                                                                           }
@@ -3760,6 +3790,9 @@
                                                                                 "map_locations": [
                                                                                   {
                                                                                     "map": "oot",
+                                                                                    "force_invisibility_rules": [
+                                                                                      "setting_GrassShuffleOnOOT_true"
+                                                                                    ],
                                                                                     "x": 1975,
                                                                                     "y": 538
                                                                                   }
