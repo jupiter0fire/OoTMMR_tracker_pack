@@ -953,7 +953,7 @@
       }
     ]
   },
-      {
+  {
     "name": "Grass Shuffle (OoT)",
     "type": "progressive",
     "allow_disabled": false,
@@ -973,7 +973,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Grass Shuffle (MM)",
     "type": "progressive",
     "allow_disabled": false,
