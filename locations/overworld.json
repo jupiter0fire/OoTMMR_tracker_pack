@@ -49,6 +49,7 @@
                     "map": "oot",
                     "force_invisibility_rules": [
                     "setting_GrassShuffleOnOOT_true"
+                    ],
                     "x": 2058,
                     "y": 992
                   }
@@ -85,6 +86,7 @@
                         "map": "oot",
                         "force_invisibility_rules": [
                         "setting_GrassShuffleOnOOT_true"
+                        ],
                         "x": 2214,
                         "y": 958
                       }
@@ -112,6 +114,7 @@
                             "map": "oot",
                             "force_invisibility_rules": [
                             "setting_GrassShuffleOnOOT_true"
+                            ],
                             "x": 2116,
                             "y": 962
                           }
