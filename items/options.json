@@ -954,7 +954,7 @@
     ]
   },
   {
-    "name": "Grass Shuffle (OoT)",
+    "name": "Grass Shuffle in OoT",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
@@ -974,7 +974,7 @@
     ]
   },
   {
-    "name": "Grass Shuffle (MM)",
+    "name": "Grass Shuffle in MM",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
