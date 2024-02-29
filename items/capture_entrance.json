@@ -48,6 +48,30 @@
     "codes": "entrance_dungeon_shadow"
   },
   {
+    "name": "Ganon Castle Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_ganon.png",
+    "codes": "entrance_dungeon_castle_ganon"
+  },
+  {
+    "name": "Ganon Tower Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_ganon_tower.png",
+    "codes": "entrance_dungeon_tower_ganon"
+  },
+  {
+    "name": "Spirit Temple Kid Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_spirit.png",
+    "codes": "entrance_dungeon_spirit_kid"
+  },
+  {
+    "name": "Spirit Temple Adult Split",
+    "type": "toggle",
+    "img": "images/entrance_dungeon_spirit.png",
+    "codes": "entrance_dungeon_spirit_adult"
+  },
+  {
     "name": "Bottom of the Well Split",
     "type": "toggle",
     "img": "images/entrance_dungeon_botw.png",
@@ -78,6 +102,48 @@
     "codes": "entrance_house_shop"
   },
   {
+    "name": "Market Bazaar (Child)",
+    "type": "toggle",
+    "img": "images/entrance_house_bazaar_kid.png",
+    "codes": "entrance_house_bazaar_kid"
+  },
+  {
+    "name": "Market Potion Shop (Child)",
+    "type": "toggle",
+    "img": "images/entrance_house_potion_kid.png",
+    "codes": "entrance_house_potion_kid"
+  },
+  {
+    "name": "Kakariko Bazaar (Adult)",
+    "type": "toggle",
+    "img": "images/entrance_house_bazaar_adult.png",
+    "codes": "entrance_house_bazaar_adult"
+  },
+  {
+    "name": "Kokiri Forest Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_shop_kokiri.png",
+    "codes": "entrance_house_shop_kokiri"
+  },
+  {
+    "name": "Goron city Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_shop_goroncity.png",
+    "codes": "entrance_house_shop_goroncity"
+  },
+  {
+    "name": "Zora Domain Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_shop_zoradomain.png",
+    "codes": "entrance_house_shop_zoradomain"
+  },
+  {
+    "name": "Market Bomb Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_shop_market_bomb.png",
+    "codes": "entrance_house_shop_market_bomb"
+  },
+  {
     "name": "Kak Potion Shop Front",
     "type": "toggle",
     "img": "images/entrance_house_potion_front.png",
@@ -88,6 +154,18 @@
     "type": "toggle",
     "img": "images/entrance_house_potion_back.png",
     "codes": "entrance_house_potion_back"
+  },
+  {
+    "name": "Kak Impa's House Front",
+    "type": "toggle",
+    "img": "images/entrance_house_impa_front.png",
+    "codes": "entrance_house_impa_front"
+  },
+  {
+    "name": "Kak Impa's House Back",
+    "type": "toggle",
+    "img": "images/entrance_house_impa_back.png",
+    "codes": "entrance_house_impa_back"
   },
   {
     "name": "Cow",
@@ -154,6 +232,12 @@
     "type": "toggle",
     "img": "images/entrance_house_talon_child.png",
     "codes": "entrance_house_talon_child"
+  },
+  {
+    "name": "Lon Lon Ranch Silo",
+    "type": "toggle",
+    "img": "images/entrance_house_llr_silo.png",
+    "codes": "entrance_house_llr_silo"
   },
   {
     "name": "Mask Shop",
@@ -512,37 +596,37 @@
   {
     "name": "Woodfall Temple",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_woodfall.png",
     "codes": "entrance_dungeon_woodfall"
   },
   {
     "name": "Snowhead Temple",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_snowhead.png",
     "codes": "entrance_dungeon_snowhead"
   },
   {
     "name": "Great Bay Temple",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_bay.png",
     "codes": "entrance_dungeon_greatbay"
   },
   {
     "name": "Stone Tower Temple",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_stone.png",
     "codes": "entrance_dungeon_stone"
   },
   {
     "name": "Inverted Stone Tower Temple",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_stone_inverted.png",
     "codes": "entrance_dungeon_invertedstone"
   },
   {
     "name": "Pirate Fortress Exterior",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_pirate_ext.png",
     "codes": "entrance_dungeon_pirate_ext"
   },
   {
@@ -554,470 +638,548 @@
   {
     "name": "Ikana Castle",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_ikana.png",
     "codes": "entrance_dungeon_ikana"
   },
   {
     "name": "Swamp Spider House",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_swamp.png",
     "codes": "entrance_dungeon_swamp"
   },
   {
     "name": "Ocean Spider House",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_ocean.png",
     "codes": "entrance_dungeon_ocean"
   },
   {
     "name": "Beneath the Well",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_well.png",
     "codes": "entrance_dungeon_well"
   },
   {
     "name": "Secret Shrine",
     "type": "toggle",
-    "img": "images/entrance_dungeon_deku.png",
+    "img": "images/mm_entrance_dungeon_shrine.png",
     "codes": "entrance_dungeon_secret"
   },
   {
-    "name": "ClockTown Great Fairy",
+    "name": "ClockTown Great Fairy Fountain",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_fairy_clocktown.png",
     "codes": "entrance_house_fairy_clocktown"
   },
   {
-    "name": "Woodfall Great Fairy",
+    "name": "Woodfall Great Fairy Fountain",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_fairy_woodfall.png",
     "codes": "entrance_house_fairy_woodfall"
   },
   {
-    "name": "Snowhead Great Fairy",
+    "name": "Snowhead Great Fairy Fountain",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_fairy_snowhead.png",
     "codes": "entrance_house_fairy_snowhead"
   },
   {
-    "name": "Greatbay Great Fairy",
+    "name": "Greatbay Great Fairy Fountain",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_fairy_greatbay.png",
     "codes": "entrance_house_fairy_greatbay"
   },
   {
-    "name": "Ikana Great Fairy",
+    "name": "Ikana Great Fairy Fountain",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_fairy_ikana.png",
     "codes": "entrance_house_fairy_ikana"
   },
   {
     "name": "Mayor's Residence",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_mayor.png",
     "codes": "entrance_house_town_mayor"
   },
   {
     "name": "Milk Bar",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_bar.png",
     "codes": "entrance_house_town_bar"
   },
   {
     "name": "Stock Pot Inn",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_Inn.png",
     "codes": "entrance_house_town_Inn"
+  },
+  {
+    "name": "Stock Pot Inn Roof",
+    "type": "toggle",
+    "img": "images/entrance_house_town_Inn_roof.png",
+    "codes": "entrance_house_town_Inn_roof"
+  },
+  {
+    "name": "Lottery Shop",
+    "type": "toggle",
+    "img": "images/entrance_house_town_lottery.png",
+    "codes": "entrance_house_town_lottery"
   },
   {
     "name": "Treasure Box Shop",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_treasure.png",
     "codes": "entrance_house_town_treasure"
   },
   {
     "name": "Town Shooting Gallery",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_shooting.png",
     "codes": "entrance_house_town_shooting"
   },
   {
     "name": "Honey & Darling",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_honey.png",
     "codes": "entrance_house_town_honey"
   },
   {
     "name": "Curiosity Shop Backroom",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_backroom.png",
     "codes": "entrance_house_town_backroom"
   },
   {
     "name": "Curiosity Shop",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_curiosity.png",
     "codes": "entrance_house_town_curiosity"
   },
   {
     "name": "Trading Post",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_trading.png",
     "codes": "entrance_house_town_trading"
   },
   {
     "name": "Bomb Shop",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_bomb.png",
     "codes": "entrance_house_town_bomb"
   },
   {
     "name": "Swordman's School",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_school.png",
     "codes": "entrance_house_town_school"
   },
   {
     "name": "Postman's Office",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_postman.png",
     "codes": "entrance_house_town_postman"
   },
   {
     "name": "Bomber's Secret Tunnel",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_tunnel.png",
     "codes": "entrance_house_town_tunnel"
   },
   {
     "name": "Observatory",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_town_observatory.png",
     "codes": "entrance_house_town_observatory"
   },
   {
     "name": "Potion Shop",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_swamp_potion.png",
     "codes": "entrance_house_swamp_potion"
   },
   {
     "name": "Tourist Center",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_swamp_tourist.png",
     "codes": "entrance_house_swamp_tourist"
   },
   {
     "name": "Swamp Shooting Gallery",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_swamp_shooting.png",
     "codes": "entrance_house_swamp_shooting"
+  },
+  {
+    "name": "Deku Shrine",
+    "type": "toggle",
+    "img": "images/entrance_house_deku_shrine.png",
+    "codes": "entrance_house_deku_shrine"
+  },
+  {
+    "name": "Deku Throne Room (King)",
+    "type": "toggle",
+    "img": "images/entrance_house_deku_king.png",
+    "codes": "entrance_house_deku_king"
+  },
+  {
+    "name": "Deku Throne Room (Monkey Cage)",
+    "type": "toggle",
+    "img": "images/entrance_house_deku_cage.png",
+    "codes": "entrance_house_deku_cage"
   },
   {
     "name": "Mountain Smithy",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_mountain_smithy.png",
     "codes": "entrance_house_mountain_smithy"
   },
   {
     "name": "Goron Graveyard",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_mountain_graveyard.png",
     "codes": "entrance_house_mountain_graveyard"
   },
   {
     "name": "Goron Racetrack",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_mountain_racetrack.png",
     "codes": "entrance_house_mountain_racetrack"
   },
   {
     "name": "Goron Shrine",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_mountain_shrine.png",
     "codes": "entrance_house_mountain_shrine"
   },
   {
     "name": "Goron Shop",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_mountain_shop.png",
     "codes": "entrance_house_mountain_shop"
   },
   {
     "name": "Doggo Racetrack",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_milk_racetrack.png",
     "codes": "entrance_house_milk_racetrack"
   },
   {
     "name": "Cucco Shack",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_milk_shack.png",
     "codes": "entrance_house_milk_shack"
   },
   {
     "name": "Ranch Barn",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_milk_barn.png",
     "codes": "entrance_house_milk_barn"
   },
   {
     "name": "Marine Lab",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_ocean_lab.png",
     "codes": "entrance_house_ocean_lab"
   },
   {
     "name": "Fisherman Hut",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_ocean_hut.png",
     "codes": "entrance_house_ocean_hut"
   },
   {
     "name": "Zora Shop",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_ocean_shop.png",
     "codes": "entrance_house_ocean_shop"
   },
   {
     "name": "Zora hall",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_ocean_hall.png",
     "codes": "entrance_house_ocean_hall"
   },
   {
-    "name": "Music Box House",
+    "name": "Tijo's room",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
-    "codes": "entrance_house_canyon_music"
+    "img": "images/entrance_house_ocean_tijo.png",
+    "codes": "entrance_house_ocean_tijo"
+  },
+  {
+    "name": "Japas's room",
+    "type": "toggle",
+    "img": "images/entrance_house_ocean_japas.png",
+    "codes": "entrance_house_ocean_japas"
+  },
+  {
+    "name": "Mikau's room",
+    "type": "toggle",
+    "img": "images/entrance_house_ocean_lulu.png",
+    "codes": "entrance_house_ocean_lulu"
+  },
+  {
+    "name": "Evan's room",
+    "type": "toggle",
+    "img": "images/entrance_house_ocean_evan.png",
+    "codes": "entrance_house_ocean_evan"
   },
   {
     "name": "Poe Shooting Game",
     "type": "toggle",
-    "img": "images/entrance_house_fairy.png",
+    "img": "images/entrance_house_canyon_poe.png",
     "codes": "entrance_house_canyon_poe"
+  },
+  {
+    "name": "Music (Pamela) house",
+    "type": "toggle",
+    "img": "images/entrance_house_canyon_music.png",
+    "codes": "entrance_house_canyon_music"
+  },
+  {
+    "name": "Sharp's Spring water cave",
+    "type": "toggle",
+    "img": "images/entrance_house_canyon_sharp.png",
+    "codes": "entrance_house_canyon_sharp"
+  },
+  {
+    "name": "Sakon's Hideout",
+    "type": "toggle",
+    "img": "images/entrance_house_canyon_sakon.png",
+    "codes": "entrance_house_canyon_sakon"
   },
   {
     "name": "North Clock Town",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_town_north.png",
     "codes": "entrance_overworld_town_north"
   },
   {
     "name": "East Clock Town",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_town_east.png",
     "codes": "entrance_overworld_town_east"
   },
   {
     "name": "South Clock Town",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_town_south.png",
     "codes": "entrance_overworld_town_south"
   },
   {
     "name": "West Clock Town",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_town_west.png",
     "codes": "entrance_overworld_town_west"
   },
   {
     "name": "Laundry Pool",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_town_laundry.png",
     "codes": "entrance_overworld_town_laundry"
   },
   {
     "name": "Top of Clock tower",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_town_tower.png",
     "codes": "entrance_overworld_town_tower"
   },
   {
     "name": "Termina Center",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_termina.png",
     "codes": "entrance_overworld_termina"
   },
   {
     "name": "Swamp Path",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_swamp_path.png",
     "codes": "entrance_overworld_swamp_path"
   },
   {
     "name": "Swamp (Near tourist)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_swamp_tourist.png",
     "codes": "entrance_overworld_swamp_tourist"
   },
   {
     "name": "Swamp (Near Palace entrance)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_swamp_palace_out.png",
     "codes": "entrance_overworld_swamp_palace_out"
   },
   {
     "name": "Swamp (Near Woodfall)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_swamp_woodfall_entrance.png",
     "codes": "entrance_overworld_swamp_woodfall_entrance"
   },
   {
     "name": "Lost wood",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_swamp_lostwood.png",
     "codes": "entrance_overworld_swamp_lostwood"
   },
   {
     "name": "Deku Palace",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_swamp_palace_in.png",
     "codes": "entrance_overworld_swamp_palace_in"
   },
   {
-    "name": "Monkey's cage",
+    "name": "Deku Palace Monkey's cage Entrance",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_swamp_palace_cage.png",
     "codes": "entrance_overworld_swamp_palace_cage"
   },
   {
     "name": "Woodfall (regular entrance)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_woodfall_normal.png",
     "codes": "entrance_overworld_woodfall_normal"
   },
   {
-    "name": "Woodfall (fairy fountain)",
+    "name": "Woodfall (fairy fountain entrance)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_woodfall_fairy.png",
     "codes": "entrance_overworld_woodfall_fairy"
   },
   {
     "name": "Mountain's path",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_mountain_path.png",
     "codes": "entrance_overworld_mountain_path"
   },
   {
     "name": "Mountain's village",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_mountain_village.png",
     "codes": "entrance_overworld_mountain_village"
   },
   {
     "name": "Twin Island",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_mountain_twin.png",
     "codes": "entrance_overworld_mountain_twin"
   },
   {
     "name": "Goron Village",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_mountain_goron.png",
     "codes": "entrance_overworld_mountain_goron"
   },
   {
     "name": "Road to snowhead (close to snowhead)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_mountain_road_high.png",
     "codes": "entrance_overworld_mountain_road_high"
   },
   {
     "name": "Road to snowhead (close to village)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_mountain_road_low.png",
     "codes": "entrance_overworld_mountain_road_low"
   },
   {
     "name": "Milk road",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_milk_road.png",
     "codes": "entrance_overworld_milk_road"
   },
   {
     "name": "Gorman Brother",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_milk_gorman.png",
     "codes": "entrance_overworld_milk_gorman"
   },
   {
     "name": "Romani Ranch",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_milk_ranch.png",
     "codes": "entrance_overworld_milk_ranch"
   },
   {
     "name": "Great bay Coast",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ocean_coast.png",
     "codes": "entrance_overworld_ocean_coast"
   },
   {
-    "name": "Zora Cape",
+    "name": "Zora Cape (near Zora Hall)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
-    "codes": "entrance_overworld_ocean_cape"
+    "img": "images/entrance_overworld_ocean_cape_zora.png",
+    "codes": "entrance_overworld_ocean_cape_zora"
+  },
+  {
+    "name": "Zora Cape (near Waterfall Rapid)",
+    "type": "toggle",
+    "img": "images/entrance_overworld_ocean_cape_beaver.png",
+    "codes": "entrance_overworld_ocean_cape_beaver"
   },
   {
     "name": "Waterfall Rapid",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ocean_waterfall.png",
     "codes": "entrance_overworld_ocean_waterfall"
   },
   {
     "name": "Pinnacle Rock",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ocean_pinnacle.png",
     "codes": "entrance_overworld_ocean_pinnacle"
   },
   {
     "name": "Road to ikana (from termina)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_road_low.png",
     "codes": "entrance_overworld_ikana_road_low"
   },
   {
     "name": "Road to ikana (from graveyard)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_road_mid.png",
     "codes": "entrance_overworld_ikana_road_mid"
   },
   {
     "name": "Road to ikana (from canyon)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_high.png",
     "codes": "entrance_overworld_ikana_high"
   },
   {
     "name": "Ikana Graveyard",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_graveyard.png",
     "codes": "entrance_overworld_ikana_graveyard"
   },
   {
     "name": "Ikana Canyon (from road)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_canyon_low.png",
     "codes": "entrance_overworld_ikana_canyon_low"
   },
   {
     "name": "Ikana Canyon (from higher part)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_canyon_high.png",
     "codes": "entrance_overworld_ikana_canyon_high"
   },
   {
     "name": "Ikana Canyon Tower",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_canyon_tower.png",
     "codes": "entrance_overworld_ikana_canyon_tower"
   },
   {
-    "name": "Ikana Canyon Outside ikana castle",
+    "name": "Ikana Canyon Outside ikana castle (Canyon Entrance)",
     "type": "toggle",
-    "img": "images/entrance_overworld_kak_impa.png",
+    "img": "images/entrance_overworld_ikana_canyon_castle.png",
     "codes": "entrance_overworld_ikana_canyon_castle"
+  },
+  {
+    "name": "Ikana Canyon Outside ikana castle (Well Entrance)",
+    "type": "toggle",
+    "img": "images/entrance_overworld_ikana_canyon_castle_well.png",
+    "codes": "entrance_overworld_ikana_canyon_castle_well"
   },
   {
     "name": "Moon",
@@ -1072,18 +1234,6 @@
     "type": "toggle",
     "img": "images/entrance_grotto_tektite.png",
     "codes": "entrance_grotto_twin"
-  },
-  {
-    "name": "Lens Grotto",
-    "type": "toggle",
-    "img": "images/entrance_grotto_tektite.png",
-    "codes": "entrance_grotto_lens"
-  },
-  {
-    "name": "Deku Shrine",
-    "type": "toggle",
-    "img": "images/entrance_grotto_tektite.png",
-    "codes": "entrance_grotto_deku_shrine"
   },
   {
     "name": "Bean Seller Grotto",
