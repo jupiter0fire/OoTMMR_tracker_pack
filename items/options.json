@@ -961,14 +961,14 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_GrassShuffleOoT_True.png.png",
-        "codes": "setting_GrassShuffleOOT,setting_GrassShuffleOOT_true",
+        "img": "images/Setting_GrassShuffleOoT_True.png.png",
+        "codes": "setting_grassShuffleOOT,setting_grassShuffleOOT_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_GrassShuffleOoT_false.png",
+        "img": "images/Setting_GrassShuffleOoT_True.png",
         "img_mods": "@disabled",
-        "codes": "setting_GrassShuffleOOT,setting_GrassShuffleOOT_false",
+        "codes": "setting_grassShuffleOOT,setting_grassShuffleOOT_false",
         "inherit_codes": false
       }
     ]
@@ -981,14 +981,14 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_GrassShuffleMM_True.png.png",
-        "codes": "setting_GrassShuffleMM,setting_GrassShuffleMM_true",
+        "img": "images/Setting_GrassShuffleMM_True.png.png",
+        "codes": "setting_grassShuffleMM,setting_grassShuffleMM_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_GrassShuffleMM_false.png",
+        "img": "images/Setting_GrassShuffleMM_False.png",
         "img_mods": "@disabled",
-        "codes": "setting_GrassShuffleMM,setting_GrassShuffleMM_false",
+        "codes": "setting_grassShuffleMM,setting_grassShuffleMM_false",
         "inherit_codes": false
       }
     ]
@@ -1002,18 +1002,18 @@
     "stages": [
       {
         "img": "setting_shuffleBigFairiesOoT_True.png",
-        "codes": "setting_ShuffleBigFairiesOoT,setting_ShuffleBigFairiesOoT_true",
+        "codes": "setting_bigFairyShuffleOOT,setting_bigFairyShuffleOOT_true",
         "inherit_codes": false
       },
       {
         "img": "setting_shuffleBigFairiesOoT_False.png",
         "img_mods": "@disabled",
-        "codes": "setting_ShuffleBigFairiesOoT,setting_ShuffleBigFairiesOoT_false",
+        "codes": "setting_bigFairyShuffleOOT,setting_bigFairyShuffleOOT_false",
         "inherit_codes": false
       }
     ]
   },
-    {
+  {
     "name": "Big Fairy Shuffle In MM",
     "type": "progressive",
     "allow_disabled": false,
@@ -1021,14 +1021,14 @@
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "setting_shuffleBigFairiesMM_True.png",
+        "img": "setting_shuffleBigFairiesMM_True_True.png",
         "codes": "setting_ShuffleBigFairiesMM,setting_ShuffleBigFairiesMM_true",
         "inherit_codes": false
       },
       {
-        "img": "setting_shuffleBigFairiesMM_False.png",
+        "img": "setting_shuffleBigFairiesOoT_False.png",
         "img_mods": "@disabled",
-        "codes": "setting_ShuffleBigFairiesMM,setting_ShuffleBigFairiesMM_false",
+        "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_false",
         "inherit_codes": false
       }
     ]
