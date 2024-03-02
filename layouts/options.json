@@ -16,12 +16,12 @@
       },
       {
         "type": "item",
-        "item": "setting_GrassShuffleOOT",
+        "item": "setting_grassShuffleOOT",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_BigFairyShuffleOOT",
+        "item": "setting_bigFairyShuffleOOT",
         "height": 16
       },
       {
@@ -43,7 +43,7 @@
         "type": "item",
         "item": "setting_priceOotScrubs",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "setting_doorOfTime",
@@ -178,12 +178,12 @@
       },
       {
         "type": "item",
-        "item": "setting_GrassShuffleMM",
+        "item": "setting_grassShuffleMM",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_BigFairyShuffleMM",
+        "item": "setting_bigFairyShuffleMM",
         "height": 16
       },
       {
