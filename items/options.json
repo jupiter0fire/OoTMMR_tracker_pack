@@ -961,7 +961,7 @@
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_GrassShuffleOn_true.png",
+        "img": "images/Setting_GrassShuffleOoT_True.png.png",
         "codes": "setting_GrassShuffleOnOOT,setting_GrassShuffleOnOOT_true",
         "inherit_codes": false
       },
@@ -981,7 +981,7 @@
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_GrassShuffleOn_true.png",
+        "img": "images/Setting_GrassShuffleOoT_True.png.png",
         "codes": "setting_GrassShuffleOnMM,setting_GrassShuffleOnMM_true",
         "inherit_codes": false
       },
@@ -989,6 +989,46 @@
         "img": "images/setting_GrassShuffle_false.png",
         "img_mods": "@disabled",
         "codes": "setting_GrassShuffleMM,setting_GrassShuffleMM_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Big Fairy Shuffle In OoT",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "setting_shuffleBigFairiesOoT_True.png",
+        "codes": "setting_ShuffleBigFairiesOoT,setting_ShuffleBigFairiesOoT_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "setting_shuffleBigFairiesOoT_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ShuffleBigFairiesOoT,setting_ShuffleBigFairiesOoT_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+    {
+    "name": "Big Fairy Shuffle In MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "setting_shuffleBigFairiesMM_True.png",
+        "codes": "setting_ShuffleBigFairiesMM,setting_ShuffleBigFairiesMM_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "setting_shuffleBigFairiesMM_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ShuffleBigFairiesMM,setting_ShuffleBigFairiesMM_false",
         "inherit_codes": false
       }
     ]
