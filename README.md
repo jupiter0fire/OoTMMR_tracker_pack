@@ -52,8 +52,8 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] Update MM Logic for Silver & Golden Scales
 - [X] Update MM Logic for various Strength upgrades
 - [X] Update MM Logic for various tunics
-- [ ] Add MM Grass Checks to Map
 - [ ] Update OoT Logic for Ocarina Buttons
+- [ ] Update OoT Logic for Elegy of Emptuness
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
 - [ ] Update OoT Logic for Quick age swap option
@@ -71,7 +71,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for MM Enemy Souls
 - [ ] Update MM Logic for MM Boss Souls
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches - done, fairy Fountains - done, fishing shuffle - loaches done, Big Fairy shuffle, freestanding rupees, freestanding hearts, silver rupees, pots, bottle content)
+- [ ] Add new checks to the map (grass patches - OoT done, fairy Fountains - done, fishing shuffle - loaches done, Big Fairy shuffle - In Progress, freestanding rupees, freestanding hearts, silver rupees, pots, bottle content)
 - [ ] Update Shared options
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent - See how room is after all new items are added
 - [ ] MM keys/text could do with a size upgrade to make it readable but its low priority
