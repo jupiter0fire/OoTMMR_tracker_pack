@@ -958,10 +958,10 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/Setting_GrassShuffleOoT_True.png.png",
+        "img": "images/setting_GrassShuffleOoT_True.png.png",
         "codes": "setting_GrassShuffleOOT,setting_GrassShuffleOOT_true",
         "inherit_codes": false
       },
@@ -978,10 +978,10 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/Setting_GrassShuffleMM_True.png.png",
+        "img": "images/setting_GrassShuffleMM_True.png.png",
         "codes": "setting_GrassShuffleMM,setting_GrassShuffleMM_true",
         "inherit_codes": false
       },
