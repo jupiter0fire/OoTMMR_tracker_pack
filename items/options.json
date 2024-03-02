@@ -966,7 +966,7 @@
         "inherit_codes": false
       },
       {
-        "img": "images/Setting_GrassShuffleOoT_True.png",
+        "img": "images/Setting_GrassShuffleOoT_False.png",
         "img_mods": "@disabled",
         "codes": "setting_grassShuffleOOT,setting_grassShuffleOOT_false",
         "inherit_codes": false
