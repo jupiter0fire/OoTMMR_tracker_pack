@@ -2612,7 +2612,7 @@
                                                                           "$oot|Death Mountain Big Fairy"
                                                                         ],
                                                                         "visibility_rules": [
-                                                                          "setting_BigFairyShuffle_true"
+                                                                          "setting_BigFairyShuffleOoT_true"
                                                                         ],
                                                                         "chest_unopened_img": "images/BigFairySun.png",
                                                                         "chest_opened_img": "images/BigFairySunGrey.png",
