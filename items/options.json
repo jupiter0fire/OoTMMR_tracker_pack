@@ -962,11 +962,11 @@
     "stages": [
       {
         "img": "images/Setting_GrassShuffleOoT_True.png.png",
-        "codes": "setting_GrassShuffleOnOOT,setting_GrassShuffleOnOOT_true",
+        "codes": "setting_GrassShuffleOOT,setting_GrassShuffleOOT_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_GrassShuffle_false.png",
+        "img": "images/setting_GrassShuffleOoT_false.png",
         "img_mods": "@disabled",
         "codes": "setting_GrassShuffleOOT,setting_GrassShuffleOOT_false",
         "inherit_codes": false
@@ -981,12 +981,12 @@
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/Setting_GrassShuffleOoT_True.png.png",
-        "codes": "setting_GrassShuffleOnMM,setting_GrassShuffleOnMM_true",
+        "img": "images/Setting_GrassShuffleMM_True.png.png",
+        "codes": "setting_GrassShuffleMM,setting_GrassShuffleMM_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_GrassShuffle_false.png",
+        "img": "images/setting_GrassShuffleMM_false.png",
         "img_mods": "@disabled",
         "codes": "setting_GrassShuffleMM,setting_GrassShuffleMM_false",
         "inherit_codes": false
