@@ -21,7 +21,7 @@
       },
       {
         "type": "item",
-        "item": "setting_BigFairyOOT",
+        "item": "setting_BigFairyShuffleOOT",
         "height": 16
       },
       {
@@ -183,7 +183,7 @@
       },
       {
         "type": "item",
-        "item": "setting_BigFairyMM",
+        "item": "setting_BigFairyShuffleMM",
         "height": 16
       },
       {
