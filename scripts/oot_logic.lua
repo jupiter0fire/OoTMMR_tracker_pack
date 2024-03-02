@@ -3280,6 +3280,7 @@ function _oot_logic()
             ["Death Mountain GS Entrance"] = function () return has_explosives() or (can_hammer() and has_ranged_weapon()) end,
             ["Death Mountain GS Soil"] = function () return gs_soil() and has_bombflowers() and can_damage_skull() end,
             ["Death Mountain GS Above Dodongo"] = function () return gs_night() and is_adult() and (can_hammer() or trick('OOT_DMT_RED_ROCK_GS')) end,
+            ["Death Mountain Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Death Mountain Summit"] = {
