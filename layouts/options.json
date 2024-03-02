@@ -21,6 +21,11 @@
       },
       {
         "type": "item",
+        "item": "setting_BigFairyOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_cowShuffleOot",
         "height": 16
       },
@@ -174,6 +179,11 @@
       {
         "type": "item",
         "item": "setting_GrassShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BigFairyMM",
         "height": 16
       },
       {
