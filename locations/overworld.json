@@ -2606,13 +2606,13 @@
                                                                     "name": "DMT Big Fairy",
                                                                     "sections": [
                                                                       {
-                                                                        "name": "Sun Song",
+                                                                        "name": "Play the Sun Song",
                                                                         "short_name": "DMT Fairy",
                                                                         "access_rules": [
                                                                           "$oot|Death Mountain Big Fairy"
                                                                         ],
                                                                         "visibility_rules": [
-                                                                          "setting_BigFairyShuffleOoT_true"
+                                                                          "setting_ShuffleBigFairiesOoT_true"
                                                                         ],
                                                                         "chest_unopened_img": "images/BigFairySun.png",
                                                                         "chest_opened_img": "images/BigFairySunGrey.png",
