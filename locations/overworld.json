@@ -1150,18 +1150,18 @@
                                                 "name": "Fishing Pond",
                                                 "sections": [
                                                   {
-                                                    "name": "Child Hylian Loach",
+                                                    "name": "Child Hylian Loaches",
                                                     "access_rules": [
-                                                      "$oot|Fishing Pond Child"
+                                                      "$oot|Fishing Pond Child Loaches"
                                                     ],
                                                     "chest_unopened_img": "images/HylianLoach.png",
                                                     "chest_opened_img": "images/LoachGreyscale.png",
                                                     "item_count": 2
                                                   },
                                                   {
-                                                    "name": "Adult Fishing",
+                                                    "name": "Adult Hylian Loach",
                                                     "access_rules": [
-                                                      "$oot|Adult Hylian Loach"
+                                                      "$oot|Fishing Pond Adult Hylian Loach"
                                                     ],
                                                     "chest_unopened_img": "images/HylianLoach.png",
                                                     "chest_opened_img": "images/LoachGreyscale.png",
@@ -1171,7 +1171,7 @@
                                                 "map_locations": [
                                                   {
                                                     "map": "oot",
-                                                    "x": 1278,
+                                                    "x": 1270,
                                                     "y": 1246
                                                   }
                                                 ]
