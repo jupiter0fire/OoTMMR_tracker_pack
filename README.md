@@ -48,12 +48,12 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] Add Logic for Coins, Skeleton Keys, and Bottomless Wallet
 - [X] Move half of Owl Statues to new row and increase text size so it is readable 
 - [X] Add Elegy of Emptiness to OoT
-- [X] Add logic to grass and fairy fountain checks
+- [X] Add logic to grass and fairy fountain checks (just needs to be added to the settings list)
 - [X] Update MM Logic for Silver & Golden Scales
 - [X] Update MM Logic for various Strength upgrades
 - [X] Update MM Logic for various tunics
 - [ ] Update OoT Logic for Ocarina Buttons
-- [ ] Update OoT Logic for Elegy of Emptuness
+- [ ] Update OoT Logic for Elegy of Emptiness
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
 - [ ] Update OoT Logic for Quick age swap option
@@ -63,16 +63,16 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for various boots
 - [ ] Update MM Logic for Clocks As Items option
 - [ ] Update MM Logic for Ocarina Buttons option
-- [ ] Update MM Logic for open dungeon option
-- [ ] Update MM Logic for skip Oath to order option
+- [ ] Update MM Logic for Open Dungeon option
+- [ ] Update MM Logic for Skip Oath to Order option
 - [ ] Update MM Logic for Fierce Deity Anywhere option
-- [ ] Update MM Logic for Hookshoot anywhere option
-- [ ] Update OoT Logic for Climb most surface option
+- [ ] Update MM Logic for Hookshoot Anywhere option
+- [ ] Update OoT Logic for Climb Most Surfaces option
 - [ ] Update MM Logic for MM Enemy Souls
 - [ ] Update MM Logic for MM Boss Souls
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
 - [ ] Add new checks to the map (grass patches - OoT done, fairy Fountains - done, fishing shuffle - loaches done, Big Fairy shuffle - In Progress, freestanding rupees, freestanding hearts, silver rupees, pots, bottle content)
-- [ ] Update Dungeon Checks
+- [ ] Update Dungeon Checks (grass0000 etc)
 - [ ] Update Shared options
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent - See how room is after all new items are added
 - [ ] MM keys/text could do with a size upgrade to make it readable but its low priority
