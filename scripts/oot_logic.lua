@@ -2459,6 +2459,7 @@ function _oot_logic()
 	    ["Hyrule Field grass Near SE Grotto"] = function () return is_child() and can_cut_grass() end,
             ["Hyrule Field grass Near LLR rear"] = function () return is_child() and can_cut_grass() end,
 	    ["Hyrule Field Fairy Fountain"] = function () return has_explosives_or_hammer() end,
+	    ["Hyrule Field Pond Big Fairy"] = function () return can_play_storms() end,
         },
     },
     ["Hyrule Field Scrub Grotto"] = {
@@ -2467,6 +2468,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Hyrule Field Grotto Scrub HP"] = function () return can_hit_scrub() and scrub_price(7) end,
+            ["Hyrule Field Grotto Big Fairy"] = function () return has_explosives_or_hammer() and can_play_storms() end,
         },
     },
     ["Hyrule Field Open Grotto"] = {
@@ -2875,6 +2877,7 @@ function _oot_logic()
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) end,
             ["Lost Woods GS Soil Bridge"] = function () return gs_soil() and can_damage_skull() end,
 	    ["Lost Woods Grass Clusters"] = function () return is_child() and can_cut_grass() end,
+	    ["Lost Woods Big Fairy"] = function () return can_play_storms() end,
         },
     },
     ["Lost Woods Generic Grotto"] = {
@@ -3273,6 +3276,7 @@ function _oot_logic()
             ["Death Mountain Summit"] = function () return event('BOULDER_DEATH_MOUNTAIN') or can_ride_bean(BEAN_DEATH_MOUNTAIN) end,
             ["Death Mountain Storms Grotto"] = function () return hidden_grotto_storms() end,
             ["Death Mountain Cow Grotto"] = function () return has_explosives_or_hammer() end,
+	    ["Death Mountain Cow Grotto Big Fairy"] = function () return has_explosives_or_hammer() and can_play_storms() end,
         },
         ["locations"] = {
             ["Death Mountain Chest"] = function () return has_explosives_or_hammer() end,
@@ -3554,10 +3558,12 @@ function _oot_logic()
             ["Lake Hylia HP"] = function () return can_ride_bean(BEAN_LAKE_HYLIA) or scarecrow_hookshot() end,
             ["Lake Hylia GS Lab Wall"] = function () return is_child() and gs_night() and (can_boomerang() or (trick('OOT_LAB_WALL_GS') and (can_use_sword() or can_use_sticks()))) end,
             ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() end,
+	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and can_play_storms() end,
             ["Lake Hylia GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Lake Hylia GS Big Tree"] = function () return is_adult() and gs_night() and can_longshot() end,
 	    ["Lake Hylia grass patches x3"] = function () return is_child() and can_cut_grass() end,
 	    ["Lake Hylia Grass Near Scarecrows"] = function () return is_child() and can_cut_grass() end,
+	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and can_play_storms() end,
         },
     },
     ["Laboratory"] = {
