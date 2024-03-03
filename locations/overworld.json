@@ -512,6 +512,31 @@
                         ]
                       },
                       {
+                        "name": "LW Big Fairy",
+                        "sections": [
+                          {
+                            "name": "Play the Song of Storms",
+                            "short_name": "NaviDive Fairy",
+                            "access_rules": [
+                              "$oot|Lost Woods Big Fairy"
+                            ],
+                            "visibility_rules": [
+                              "setting_ShuffleBigFairiesOoT_none"
+                            ],
+                            "chest_unopened_img": "images/BigFairyStorms.png",
+                            "chest_opened_img": "images/BigFairyStormsGrey.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "oot",
+                            "x": 2164,
+                            "y": 818
+                          }
+                        ]
+                      },
+                      {
                         "name": "Lost Woods Grass Clusters",
                         "color": "#0936a0",
                         "children": [
@@ -791,6 +816,16 @@
                                     "chest_unopened_img": "images/deku_scrub.png",
                                     "chest_opened_img": "images/deku_scrub_grey.png",
                                     "item_count": ""
+                                  },
+                                  {
+                                    "name": "HF Grotto Big Fairy",
+                                    "short_name": "HF Big Fairy",
+                                    "chest_unopened_img": "images/BigFairyStorms.png",
+                                    "chest_opened_img": "images/BigFairyStormsGrey.png",
+                                    "access_rules": [
+                                      "$oot|Hyrule Field Grotto Big Fairy"
+                                    ],
+                                    "item_count": 1
                                   }
                                 ],
                                 "map_locations": [
@@ -938,6 +973,31 @@
                                     "map": "oot",
                                     "x": 1550,
                                     "y": 405
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "HF Big Fairy",
+                                "sections": [
+                                  {
+                                    "name": "Play the Song of Storms",
+                                    "short_name": "HF Pond Fairy",
+                                    "access_rules": [
+                                      "$oot|Death Mountain Big Fairy"
+                                    ],
+                                    "visibility_rules": [
+                                      "setting_ShuffleBigFairiesOoT_none"
+                                    ],
+                                    "chest_unopened_img": "images/BigFairyStorms.png",
+                                    "chest_opened_img": "images/BigFairyStormsGrey.png",
+                                    "item_count": 1
+                                  }
+                                ],
+                                "map_locations": [
+                                  {
+                                    "map": "oot",
+                                    "x": 1764,
+                                    "y": 588
                                   }
                                 ]
                               },
@@ -1197,6 +1257,19 @@
                                                     ],
                                                     "chest_unopened_img": "images/skulltula.png",
                                                     "chest_opened_img": "images/skulltula_token.png",
+                                                    "item_count": 1
+                                                  },
+                                                  {
+                                                    "name": "LH Big Fairy",
+                                                    "short_name": "LH Big Fairy",
+                                                    "access_rules": [
+                                                      "$oot|Lake Hylia GS Island Big Fairy"
+                                                    ],
+                                                    "visibility_rules": [
+                                                      "setting_ShuffleBigFairiesOoT_none"
+                                                    ],
+                                                    "chest_unopened_img": "images/BigFairyStorms.png",
+                                                    "chest_opened_img": "images/BigFairyStormsGrey.png",
                                                     "item_count": 1
                                                   }
                                                 ],
@@ -2592,6 +2665,16 @@
                                                                         "chest_unopened_img": "images/cow.png",
                                                                         "chest_opened_img": "images/bottle_milk.png",
                                                                         "item_count": 1
+                                                                      },
+                                                                      {
+                                                                        "name": "DMT Cow Grotto Big Fairy",
+                                                                        "short_name": "DMT Cow Big Fairy",
+                                                                        "chest_unopened_img": "images/BigFairyStorms.png",
+                                                                        "chest_opened_img": "images/BigFairyStormsGrey.png",
+                                                                        "access_rules": [
+                                                                          "$oot|Death Mountain Cow Grotto Big Fairy"
+                                                                        ],
+                                                                        "item_count": 1
                                                                       }
                                                                     ],
                                                                     "map_locations": [
@@ -2602,7 +2685,7 @@
                                                                       }
                                                                     ]
                                                                   },
-                                                                   {
+                                                                  {
                                                                     "name": "DMT Big Fairy",
                                                                     "sections": [
                                                                       {
@@ -2612,7 +2695,7 @@
                                                                           "$oot|Death Mountain Big Fairy"
                                                                         ],
                                                                         "visibility_rules": [
-                                                                          "setting_ShuffleBigFairiesOoT_true"
+                                                                          "setting_ShuffleBigFairiesOoT_none"
                                                                         ],
                                                                         "chest_unopened_img": "images/BigFairySun.png",
                                                                         "chest_opened_img": "images/BigFairySunGrey.png",
