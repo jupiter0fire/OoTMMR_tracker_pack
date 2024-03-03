@@ -227,7 +227,7 @@
     "name": "Farore's Wind",
     "type": "toggle",
     "img": "images/farore.png",
-    "codes": "faroreswind,farores,fw"
+    "codes": "faroreswind,farores,fw,OOT_SPELL_FARORE"
   },
   {
     "name": "Nayru's Love",
@@ -472,42 +472,42 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle1,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle1,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "POTION_RED,BOTTLE_EMPTY,bottle1",
+        "codes": "OOT_BOTTLE,bottle1,POTION_RED,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle1",
+        "codes": "OOT_BOTTLE,bottle1,POTION_GREEN,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_blue.png",
-        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle1",
+        "codes": "OOT_BOTTLE,bottle1,POTION_BLUE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fire.png",
-        "codes": "bottle1,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle1,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle1,OOT_RUTO_LETTER",
+        "codes": "OOT_BOTTLE,bottle1,OOT_RUTO_LETTER,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_bugs.png",
-        "codes": "bottle1,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle1,OOT_BUGS,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fish.png",
-        "codes": "bottle1,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle1,OOT_FISH,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -519,42 +519,42 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle2,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle2,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "POTION_RED,BOTTLE_EMPTY,bottle2",
+        "codes": "OOT_BOTTLE,bottle2,POTION_RED,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle2",
+        "codes": "OOT_BOTTLE,bottle2,POTION_GREEN,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_blue.png",
-        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle2",
+        "codes": "OOT_BOTTLE,bottle2,POTION_BLUE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fire.png",
-        "codes": "bottle2,OOT_BLUE_FIRE",
+        "codes": "OOT_BOTTLE,bottle2,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle2,OOT_RUTO_LETTER",
+        "codes": "OOT_BOTTLE,bottle2,OOT_RUTO_LETTER,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_bugs.png",
-        "codes": "bottle2,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle2,OOT_BUGS,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fish.png",
-        "codes": "bottle2,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle2,OOT_FISH,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -566,42 +566,42 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle3,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle3,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "POTION_RED,BOTTLE_EMPTY,bottle3",
+        "codes": "OOT_BOTTLE,bottle3,POTION_RED,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle3",
+        "codes": "OOT_BOTTLE,bottle3,POTION_GREEN,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_blue.png",
-        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle3",
+        "codes": "OOT_BOTTLE,bottle3,POTION_BLUE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fire.png",
-        "codes": "bottle3,OOT_BLUE_FIRE",
+        "codes": "OOT_BOTTLE,bottle3,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle3,OOT_RUTO_LETTER",
+        "codes": "OOT_BOTTLE,bottle3,OOT_RUTO_LETTER,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_bugs.png",
-        "codes": "bottle3,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle3,OOT_BUGS,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fish.png",
-        "codes": "bottle3,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle3,OOT_FISH,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -613,42 +613,42 @@
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle4,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle4,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "POTION_RED,BOTTLE_EMPTY,bottle4",
+        "codes": "OOT_BOTTLE,bottle4,POTION_RED,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle4",
+        "codes": "OOT_BOTTLE,bottle4,POTION_GREEN,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_blue.png",
-        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle4",
+        "codes": "OOT_BOTTLE,bottle4,POTION_BLUE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fire.png",
-        "codes": "bottle4,OOT_BLUE_FIRE",
+        "codes": "OOT_BOTTLE,bottle4,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_letter.png",
-        "codes": "bottle4,OOT_RUTO_LETTER",
+        "codes": "OOT_BOTTLE,bottle4,OOT_RUTO_LETTER,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_bugs.png",
-        "codes": "bottle4,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle4,OOT_BUGS,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fish.png",
-        "codes": "bottle4,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "codes": "OOT_BOTTLE,bottle4,OOT_FISH,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]

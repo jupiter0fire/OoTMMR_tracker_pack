@@ -6,6 +6,18 @@
     "codes": "OOT_STONE_OF_AGONY"
   },
   {
+    "name": "Hyrule Bass",
+    "type": "toggle",
+    "img": "images/HyruleBass.png",
+    "codes": "OOT_BASS"
+  },
+  {
+    "name": "Hylian Loach",
+    "type": "toggle",
+    "img": "images/HylianLoach.png",
+    "codes": "OOT_LOACH"
+  },
+  {
     "name": "Gold Skulltula Tokens",
     "type": "consumable",
     "img": "images/skulltula_token.png",

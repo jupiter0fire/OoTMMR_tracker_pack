@@ -325,6 +325,12 @@
     "codes": "mm_soaring_check,mm_sos_check,mm_songofsoaring_check,mm_song_of_soaring_check,mm_soar_check,mm_soaringaccessible"
   },
   {
+    "name": "MM Sun's Song",
+    "type": "toggle",
+    "img": "images/song_sun.png",
+    "codes": "MM_SONG_SUN"
+  },
+  {
     "name": "MM Sonata of Awakening",
     "type": "toggle",
     "loop": true,
@@ -480,36 +486,36 @@
     "stages": [
       {
         "img": "images/items/mm_bottle.png",
-        "codes": "MM_BOTTLE_EMPTY,mm_bottle1"
+        "codes": "MM_BOTTLES,mm_bottle1,MM_BOTTLE_EMPTY"
       },
       {
         "img": "images/items/mm_redpotionog.png",
-        "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle1",
+        "codes": "MM_BOTTLES,mm_bottle1,MM_POTION_RED,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "MM_POTION_GREEN,MM_BOTTLE_EMPTY,mm_bottle1",
+        "codes": "MM_BOTTLES,mm_bottle1,MM_POTION_GREEN,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_bluepotionog.png",
-        "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle1",
+        "codes": "MM_BOTTLES,mm_bottle1,MM_POTION_BLUE,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_milk.png",
-        "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle1",
+        "codes": "MM_BOTTLES,mm_bottle1,MM_MILK,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle1",
+        "codes": "MM_BOTTLES,mm_bottle1,MM_BOTTLED_GOLD_DUST",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_chateau.png",
-        "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle1",
+        "codes": "MM_BOTTLES,mm_bottle1,MM_CHATEAU,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -521,77 +527,36 @@
     "stages": [
       {
         "img": "images/items/mm_bottle.png",
-        "codes": "MM_BOTTLE_EMPTY,mm_bottle2"
+        "codes": "MM_BOTTLES,mm_bottle2,MM_BOTTLE_EMPTY"
       },
       {
         "img": "images/items/mm_redpotionog.png",
-        "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle2",
+        "codes": "MM_BOTTLES,mm_bottle2,MM_POTION_RED,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "MM_POTION_GREEN,MM_BOTTLE_EMPTY,mm_bottle2",
+        "codes": "MM_BOTTLES,mm_bottle2,MM_POTION_GREEN,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_bluepotionog.png",
-        "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle2",
+        "codes": "MM_BOTTLES,mm_bottle2,MM_POTION_BLUE,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_milk.png",
-        "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle2",
+        "codes": "MM_BOTTLES,mm_bottle2,MM_MILK,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle2",
+        "codes": "MM_BOTTLES,mm_bottle2,MM_BOTTLED_GOLD_DUST",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_chateau.png",
-        "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle2",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "MM Bottle6",
-    "loop": true,
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/items/mm_bottle.png",
-        "codes": "MM_BOTTLE_EMPTY,mm_bottle6"
-      },
-      {
-        "img": "images/items/mm_redpotionog.png",
-        "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_green.png",
-        "codes": "MM_POTION_GREEN,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_bluepotionog.png",
-        "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_milk.png",
-        "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_chateau.png",
-        "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle6",
+        "codes": "MM_BOTTLES,mm_bottle2,MM_CHATEAU,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -603,36 +568,36 @@
     "stages": [
       {
         "img": "images/items/mm_bottle.png",
-        "codes": "MM_BOTTLE_EMPTY,mm_bottle3"
+        "codes": "MM_BOTTLES,mm_bottle3,MM_BOTTLE_EMPTY"
       },
       {
         "img": "images/items/mm_redpotionog.png",
-        "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle3",
+        "codes": "MM_BOTTLES,mm_bottle3,MM_POTION_RED,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "MM_POTION_GREEN,MM_BOTTLE_EMPTY,mm_bottle3",
+        "codes": "MM_BOTTLES,mm_bottle3,MM_POTION_GREEN,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_bluepotionog.png",
-        "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle3",
+        "codes": "MM_BOTTLES,mm_bottle3,MM_POTION_BLUE,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_milk.png",
-        "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle3",
+        "codes": "MM_BOTTLES,mm_bottle3,MM_MILK,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle3",
+        "codes": "MM_BOTTLES,mm_bottle3,MM_BOTTLED_GOLD_DUST",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_chateau.png",
-        "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle3",
+        "codes": "MM_BOTTLES,mm_bottle3,MM_CHATEAU,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -644,36 +609,36 @@
     "stages": [
       {
         "img": "images/items/mm_bottle.png",
-        "codes": "MM_BOTTLE_EMPTY,mm_bottle4"
+        "codes": "MM_BOTTLES,mm_bottle4,MM_BOTTLE_EMPTY"
       },
       {
         "img": "images/items/mm_redpotionog.png",
-        "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle4",
+        "codes": "MM_BOTTLES,mm_bottle4,MM_POTION_RED,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "MM_POTION_GREEN,MM_BOTTLE_EMPTY,mm_bottle4",
+        "codes": "MM_BOTTLES,mm_bottle4,MM_POTION_GREEN,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_bluepotionog.png",
-        "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle4",
+        "codes": "MM_BOTTLES,mm_bottle4,MM_POTION_BLUE,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_milk.png",
-        "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle4",
+        "codes": "MM_BOTTLES,mm_bottle4,MM_MILK,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle4",
+        "codes": "MM_BOTTLES,mm_bottle4,MM_BOTTLED_GOLD_DUST",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_chateau.png",
-        "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle4",
+        "codes": "MM_BOTTLES,mm_bottle4,MM_CHATEAU,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -688,33 +653,82 @@
         "codes": "MM_BOTTLE_EMPTY,mm_bottle5"
       },
       {
+        "img": "images/items/mm_bottle.png",
+        "codes": "MM_BOTTLES,mm_bottle5,MM_BOTTLE_EMPTY"
+      },
+      {
         "img": "images/items/mm_redpotionog.png",
-        "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle5",
+        "codes": "MM_BOTTLES,mm_bottle5,MM_POTION_RED,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "MM_POTION_GREEN,MM_BOTTLE_EMPTY,mm_bottle5",
+        "codes": "MM_BOTTLES,mm_bottle5,MM_POTION_GREEN,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_bluepotionog.png",
-        "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle5",
+        "codes": "MM_BOTTLES,mm_bottle5,MM_POTION_BLUE,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_milk.png",
-        "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle5",
+        "codes": "MM_BOTTLES,mm_bottle5,MM_MILK,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle5",
+        "codes": "MM_BOTTLES,mm_bottle5,MM_BOTTLED_GOLD_DUST",
         "inherit_codes": false
       },
       {
         "img": "images/items/mm_chateau.png",
-        "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle5",
+        "codes": "MM_BOTTLES,mm_bottle5,MM_CHATEAU,MM_BOTTLE_EMPTY",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Bottle6",
+    "loop": true,
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "MM_BOTTLE_EMPTY,mm_bottle6"
+      },
+      {
+        "img": "images/items/mm_bottle.png",
+        "codes": "MM_BOTTLES,mm_bottle6,MM_BOTTLE_EMPTY"
+      },
+      {
+        "img": "images/items/mm_redpotionog.png",
+        "codes": "MM_BOTTLES,mm_bottle6,MM_POTION_RED,MM_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/bottle_green.png",
+        "codes": "MM_BOTTLES,mm_bottle6,MM_POTION_GREEN,MM_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_bluepotionog.png",
+        "codes": "MM_BOTTLES,mm_bottle6,MM_POTION_BLUE,MM_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_milk.png",
+        "codes": "MM_BOTTLES,mm_bottle6,MM_MILK,MM_BOTTLE_EMPTY",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_dust.png",
+        "codes": "MM_BOTTLES,mm_bottle6,MM_BOTTLED_GOLD_DUST",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/items/mm_chateau.png",
+        "codes": "MM_BOTTLES,mm_bottle6,MM_CHATEAU,MM_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -1371,7 +1385,21 @@
     "type": "toggle",
     "img": "images/clock_6.png",
     "codes": "MM_NIGHT_FINAL"
-  }, 
+  },
+  {
+    "name": "Heart Pieces",
+    "type": "consumable",
+    "img": "images/HP.png",
+    "codes": "MM_HP,MM_PoH",
+    "max_quantity": 48
+  },
+  {
+    "name": "Heart Containers",
+    "type": "consumable",
+    "img": "images/HC.png",
+    "codes": "MM_HC",
+    "max_quantity": 4
+  },  
     {
     "name": "MM Din's Fire",
     "type": "toggle",
@@ -1382,7 +1410,7 @@
     "name": "MM Farore's Wind",
     "type": "toggle",
     "img": "images/farore.png",
-    "codes": "MM_FW"
+    "codes": "MM_FW,MM_SPELL_WIND"
   },
   {
     "name": "MM Nayru's Love",
