@@ -3577,6 +3577,9 @@ function _oot_logic()
         ["locations"] = {
             ["Fishing Pond Child"] = function () return is_child() and can_use_wallet(1) end,
             ["Fishing Pond Adult"] = function () return is_adult() and can_use_wallet(1) end,
+	    ["Fishing Pond Child Loaches"] = function () return is_child() and can_use_wallet(1) end,
+	    ["Fishing Pond Adult Hylian Loach"] = function () return is_child() and can_use_wallet(1) end,
+	    
         },
     },
     ["Lake Hylia Grotto"] = {
