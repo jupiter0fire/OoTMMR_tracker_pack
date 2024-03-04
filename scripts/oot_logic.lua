@@ -2947,6 +2947,7 @@ function _oot_logic()
         ["locations"] = {
             ["Lost Woods Grotto Scrub Nuts Upgrade"] = function () return can_hit_scrub() and scrub_price(3) end,
             ["Lost Woods Grotto Scrub Back"] = function () return can_hit_scrub() and scrub_price(4) end,
+	    ["Lost Woods Grotto Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Sacred Meadow Entryway"] = {
@@ -3221,6 +3222,7 @@ function _oot_logic()
         ["locations"] = {
             ["Graveyard Royal Tomb Song"] = function () return true end,
             ["Graveyard Royal Tomb Chest"] = function () return has_fire() end,
+	    ["Graveyard Royal Tomb Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Graveyard Shield Grave"] = {
