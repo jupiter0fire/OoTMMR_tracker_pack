@@ -589,6 +589,19 @@
                                 "chest_unopened_img": "images/deku_scrub.png",
                                 "chest_opened_img": "images/deku_scrub_grey.png",
                                 "item_count": 1
+                              },
+                              {
+                                "name": "LW Deku Scrub Grotto Big Fairy",
+                                "short_name": "LW Grotto Big Fairy",
+                                "access_rules": [
+                                  "$oot|Lost Woods Grotto Big Fairy"
+                                ],
+                                "visibility_rules": [
+                                  "setting_ShuffleBigFairiesOoT_none"
+                                ],
+                                "chest_unopened_img": "images/BigFairySun.png",
+                                "chest_opened_img": "images/BigFairySunGrey.png",
+                                "item_count": 1
                               }
                             ],
                             "map_locations": [
@@ -2414,7 +2427,7 @@
                                                                         ]
                                                                       },
                                                                       {
-                                                                        "name": "Royal Familys Tomb",
+                                                                        "name": "Royal Family's Tomb",
                                                                         "short_name": "Royal Tomb",
                                                                         "sections": [
                                                                           {
@@ -2428,11 +2441,24 @@
                                                                             "item_count": 1
                                                                           },
                                                                           {
-                                                                            "name": "Royal Familys Tomb Chest",
+                                                                            "name": "Royal Family's Tomb Chest",
                                                                             "short_name": "Chest",
                                                                             "access_rules": [
                                                                               "$oot|Graveyard Royal Tomb Chest"
                                                                             ],
+                                                                            "item_count": 1
+                                                                          },
+                                                                          {
+                                                                            "name": "Royal Family's Tomb Big Fairy",
+                                                                            "short_name": "RFT Big Fairy",
+                                                                            "access_rules": [
+                                                                              "$oot|Graveyard Royal Tomb Big Fairy"
+                                                                            ],
+                                                                            "visibility_rules": [
+                                                                              "setting_ShuffleBigFairiesOoT_none"
+                                                                            ],
+                                                                            "chest_unopened_img": "images/BigFairySun.png",
+                                                                            "chest_opened_img": "images/BigFairySunGrey.png",
                                                                             "item_count": 1
                                                                           }
                                                                         ],
@@ -2567,11 +2593,11 @@
                                                                         ]
                                                                       },
                                                                       {
-                                                                        "name": "DMT Above Dodongos Cavern",
+                                                                        "name": "DMT Above Dodongo's Cavern",
                                                                         "short_name": "Rock Above DC",
                                                                         "sections": [
                                                                           {
-                                                                            "name": "DMT GS Above Dodongos Cavern (Adult, N)",
+                                                                            "name": "DMT GS Above Dodongo's Cavern (Adult, N)",
                                                                             "short_name": "GS",
                                                                             "access_rules": [
                                                                               "$oot|Death Mountain GS Above Dodongo"
@@ -4193,7 +4219,7 @@
                                                                                     ]
                                                                                   },
                                                                                   {
-                                                                                    "name": "Zoras Domain Fairy Fountain",
+                                                                                    "name": "Zora's Domain Fairy Fountain",
                                                                                     "color": "#0936a0",
                                                                                     "children": [
                                                                                       {
@@ -4316,7 +4342,7 @@
                                                                                     ]
                                                                                   },
                                                                                   {
-                                                                                    "name": "Zoras Fountain",
+                                                                                    "name": "Zora's Fountain",
                                                                                     "children": [
                                                                                       {
                                                                                         "name": "ZF Great Fairy Fountain",
@@ -4749,7 +4775,7 @@
                                                                                             ]
                                                                                           },
                                                                                           {
-                                                                                            "name": "GF HBA",
+                                                                                            "name": "GF Horseback Archery",
                                                                                             "access_rules": [
                                                                                               "$oot|Gerudo Fortress Archery Reward 1",
                                                                                               "{}"
@@ -4829,7 +4855,7 @@
                                                                                             ]
                                                                                           },
                                                                                           {
-                                                                                            "name": "GF Archery Range",
+                                                                                            "name": "GF Archery Range GS",
                                                                                             "sections": [
                                                                                               {
                                                                                                 "name": "GF GS Archery Range (N)",
@@ -4854,7 +4880,7 @@
                                                                                             ]
                                                                                           },
                                                                                           {
-                                                                                            "name": "GF Top Floor",
+                                                                                            "name": "GF Top Floor Outside",
                                                                                             "sections": [
                                                                                               {
                                                                                                 "name": "GF GS Top Floor (N)",
