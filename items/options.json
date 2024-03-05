@@ -998,7 +998,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
         "img": "setting_shuffleBigFairiesOoT_True.png",
@@ -1018,7 +1018,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
         "img": "setting_shuffleBigFairiesMM_True.png",
