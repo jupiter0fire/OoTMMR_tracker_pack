@@ -521,7 +521,7 @@
                               "$oot|Lost Woods Big Fairy"
                             ],
                             "visibility_rules": [
-                              "setting_bigFairyShuffleOOT_none"
+                              "setting_bigFairyShuffleOOT_true"
                             ],
                             "chest_unopened_img": "images/BigFairyStorms.png",
                             "chest_opened_img": "images/BigFairyStormsGrey.png",
