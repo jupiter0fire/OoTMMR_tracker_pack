@@ -119,8 +119,8 @@
           ]
         ]
       },
-	  {
-	    "type": "itemgrid",
+      {
+        "type": "itemgrid",
         "h_alignment": "center",
         "item_margin": "1,1",
         "scale": 0.8,
@@ -303,7 +303,7 @@
                     "height": 28,
                     "margin": "1,1",
                     "content": [
-                      { 
+                      {
                         "type": "item",
                         "item": "setting_mq_ShadowTemple",
                         "canvas_depth": 1,
@@ -337,7 +337,7 @@
                     "margin": "1,1",
                     "content": [
                       {
-                       "type": "item",
+                        "type": "item",
                         "item": "setting_mq_SpiritTemple",
                         "canvas_depth": 1,
                         "width": 28,
@@ -710,11 +710,12 @@
                 "height": 28
               },
               {
-                  "type": "item",
+                "type": "item",
                 "item": "OOT_SONG_EMPTINESS",
                 "margin": "1,1",
                 "width": 28,
-                "height": 28}
+                "height": 28
+              }
             ]
           },
           {
@@ -1089,7 +1090,7 @@
             "mm_spinattack",
             "MM_SHIELD_HERO",
             "MM_SHIELD_MIRROR",
-            "MM_SPELL_FIRE"  
+            "MM_SPELL_FIRE"
           ],
           [
             "MM_BOMB_BAG",
@@ -1176,25 +1177,16 @@
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN"
-          ],
-		  [
-			"MM_SPELL_FIRE",
-			"MM_FW",
-			"MM_SPELL_LOVE",
-			"MM_STRENGTH",
-			"MM_SCALE",
-			"MM_TUNIC_GORON",
-			"MM_BOOTS_IRON",
-		  	"MM_BOOTS_HOVER"
-		  ]
+            "MM_GS_TOKEN_OCEAN",
+            "MM_KEY_SKELETON"
+          ]
         ]
       },
-	  {
+      {
         "type": "itemgrid",
         "h_alignment": "center",
         "item_margin": "1,1",
-        "scale": 1.0,
+        "scale": 1,
         "rows": [
           [
             "MM_C_UP",
@@ -1208,22 +1200,17 @@
             "MM_OWL_SOUTHERN_SWAMP",
             "MM_OWL_WOODFALL",
             "MM_OWL_MILK_ROAD",
-            "MM_OWL_MOUNTAIN_VILLAGE",
-            "MM_DAY_1ST",
-            "MM_NIGHT_1ST",
-            "MM_DAY_2ND"
+            "MM_OWL_MOUNTAIN_VILLAGE"
           ],
           [
             "MM_OWL_SNOWHEAD",
             "MM_OWL_GREAT_BAY",
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
-            "MM_OWL_STONE_TOWER",
-            "MM_NIGHT_2ND",
-            "MM_DAY_FINAL",
-            "MM_NIGHT_FINAL"
-          ]]
-        },    
+            "MM_OWL_STONE_TOWER"
+          ]
+        ]
+      },
       {
         "type": "itemgrid",
         "h_alignment": "left",
@@ -1236,12 +1223,11 @@
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT",
-            "MM_KEY_SKELETON"
+            "MM_BUTTON_C-RIGHT"
           ]
         ]
       },
-	  	  	  {
+      {
         "type": "itemgrid",
         "h_alignment": "left",
         "item_margin": "0,0",
@@ -1547,12 +1533,12 @@
           ]
         ]
       },
-        {
-         "type": "array",
-         "orientation": "Vertical",
-         "scale": 0.9,
-         "content": [
-           {
+      {
+        "type": "array",
+        "orientation": "Vertical",
+        "scale": 0.9,
+        "content": [
+          {
             "type": "array",
             "orientation": "horizontal",
             "margin": "0,0",
@@ -1730,11 +1716,13 @@
                     "margin": "1,2",
                     "width": 16,
                     "height": 16
-                  }]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }}
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
