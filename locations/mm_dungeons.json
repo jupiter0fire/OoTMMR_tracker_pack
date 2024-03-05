@@ -815,7 +815,7 @@
           "$mm_event_raw|ZORA_EGGS_TREASURE_ROOM"
         ],
         "hosted_item": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
-      }
+      },
         {
         "name": "Zora Egg 3",
         "access_rules": [
