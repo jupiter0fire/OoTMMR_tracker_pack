@@ -4844,6 +4844,19 @@
                                                                                                   "$oot|Gerudo Member Card"
                                                                                                 ],
                                                                                                 "item_count": 1
+                                                                                              },
+                                                                                              {
+                                                                                                "name": "Hideout Kitchen Big Fairy",
+                                                                                                "short_name": "Soup Fairy",
+                                                                                                "access_rules": [
+                                                                                                  "$oot|Gerudo Soup Big Fairy"
+                                                                                                ],
+                                                                                                "visibility_rules": [
+                                                                                                  "setting_ShuffleBigFairiesOoT_none"
+                                                                                                ],
+                                                                                                "chest_unopened_img": "images/BigFairySun.png",
+                                                                                                "chest_opened_img": "images/BigFairySunGrey.png",
+                                                                                                "item_count": 1
                                                                                               }
                                                                                             ],
                                                                                             "map_locations": [
