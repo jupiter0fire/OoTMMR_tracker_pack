@@ -1393,6 +1393,7 @@ function _oot_logic()
             ["Bottom of the Well GS East Cage"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has('OOT_KEY_SKELETON') and has_lens() and can_boomerang() end,
             ["Bottom of the Well GS Inner West"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has('OOT_KEY_SKELETON') and has_lens() and can_boomerang() end,
             ["Bottom of the Well GS Inner East"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has('OOT_KEY_SKELETON') and has_lens() and can_boomerang() end,
+	    ["Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
         },
     },
     ["Deku Tree"] = {
@@ -1969,6 +1970,7 @@ function _oot_logic()
         ["locations"] = {
             ["Ganon Castle Spirit Chest 1"] = function () return can_hookshot() end,
             ["Ganon Castle Spirit Chest 2"] = function () return can_hookshot() and has_bombchu() and has_lens() end,
+	    ["Ganon Castle Spirit Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Ganon Castle Shadow"] = {
@@ -4017,6 +4019,9 @@ function _oot_logic()
             ["Shadow Temple GS Skull Pot"] = function () return small_keys(SMALL_KEY_SHADOW, 2) or has('OOT_KEY_SKELETON') and can_hookshot() and has_lens() end,
             ["Shadow Temple GS Falling Spikes"] = function () return can_collect_distance() end,
             ["Shadow Temple GS Invisible Scythe"] = function () return can_collect_distance() end,
+	    ["Shadow Temple Beamos Big Fairy"] = function () return can_play_storms() end, 
+	    ["Shadow Temple Stalfos Big Fairy"] = function () return can_play_storms() end,
+        },
         },
     },
     ["Shadow Temple Wind"] = {
@@ -4025,6 +4030,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Shadow Temple Wind Room Hint"] = function () return has_lens() end,
+	    ["Shadow Temple After Wind Room Big Fairy"] = function () return can_play_sun() end,
             ["Shadow Temple After Wind"] = function () return true end,
             ["Shadow Temple After Wind Invisible"] = function () return has_explosives() and has_lens() end,
             ["Shadow Temple GS Near Boat"] = function () return small_keys(SMALL_KEY_SHADOW, 4) or has('OOT_KEY_SKELETON') and can_longshot() end,
@@ -4151,6 +4157,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Spirit Temple Adult Late Sun on Wall"] = function () return has_mirror_shield() end,
+	    ["Spirit Temple Near Four Armos Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Spirit Temple Adult Hand"] = {
@@ -4363,6 +4370,7 @@ function _oot_logic()
             ["MQ Bottom of the Well Dead Hand Key"] = function () return has_explosives() end,
             ["MQ Bottom of the Well East Middle Room Key"] = function () return can_play(SONG_ZELDA) end,
             ["MQ Bottom of the Well GS Basement"] = function () return can_damage_skull() end,
+	    ["MQ Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
             ["MQ Bottom of the Well GS West Middle Room"] = function () return can_play(SONG_ZELDA) and has_explosives() end,
             ["MQ Bottom of the Well GS Coffin Room"] = function () return can_damage_skull() and small_keys(SMALL_KEY_BOTW, 2) or has('OOT_KEY_SKELETON') end,
         },
@@ -4918,6 +4926,7 @@ function _oot_logic()
     },
     ["Ice Cavern Main"] = {
         ["exits"] = {
+	    ["Ice Cavern Big Fairy"] = function () return can_play_storms() end,
             ["Ice Cavern Map Room"] = function () return is_adult() or can_use_sticks() or has_explosives() end,
             ["Ice Cavern Compass Room"] = function () return is_adult() and has_blue_fire() end,
             ["Ice Cavern Big Room"] = function () return has_blue_fire() end,
@@ -5192,6 +5201,8 @@ function _oot_logic()
             ["MQ Spirit Temple Symphony Room Chest"] = function () return small_keys(SMALL_KEY_SPIRIT, 7) or has('OOT_KEY_SKELETON') and can_hammer() and can_play_time() and can_play_epona() and can_play_sun() and can_play_storms() and can_play(SONG_ZELDA) end,
             ["MQ Spirit Temple GS Leever Room"] = function () return true end,
             ["MQ Spirit Temple GS Symphony Room"] = function () return small_keys(SMALL_KEY_SPIRIT, 7) or has('OOT_KEY_SKELETON') and can_hammer() and can_play_time() and can_play_epona() and can_play_sun() and can_play_storms() and can_play(SONG_ZELDA) end,
+	    ["MQ Spirit Temple Fairy Symphony Room"] = function () return small_keys(SMALL_KEY_SPIRIT, 7) or has('OOT_KEY_SKELETON') and can_hammer() and can_play_time() and can_play_epona() and can_play_sun() and can_play_storms() and can_play(SONG_ZELDA) end,
+			
         },
     },
     ["Spirit Temple Adult Upper"] = {
