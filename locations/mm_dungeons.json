@@ -1,3 +1,4 @@
+[
   {
     "name": "Swamp Spider House",
     "short_name": "Swamp Spiders",
@@ -815,7 +816,7 @@
         ],
         "hosted_item": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
       },
-        {
+      {
         "name": "Zora Egg 3",
         "access_rules": [
           "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
