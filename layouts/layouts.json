@@ -172,7 +172,7 @@
                   "content": {
                     "type": "map",
                     "maps": [
-                      "termina"
+                      "termina_er_locations"
                     ]
                   }
                 },
@@ -192,7 +192,7 @@
                   "content": {
                     "type": "map",
                     "maps": [
-                      "termina"
+                      "termina_er_exits"
                     ]
                   }
                 }

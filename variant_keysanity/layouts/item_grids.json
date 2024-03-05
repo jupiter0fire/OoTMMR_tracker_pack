@@ -119,6 +119,21 @@
           ]
         ]
       },
+	  {
+	    "type": "itemgrid",
+        "h_alignment": "center",
+        "item_margin": "1,1",
+        "scale": 0.8,
+        "rows": [
+          [
+            "OOT_C_UP",
+            "OOT_C_LEFT",
+            "OOT_C_RIGHT",
+            "OOT_C_DOWN",
+            "OOT_C_A"
+          ]
+        ]
+      },
       {
         "type": "array",
         "orientation": "horizontal",
@@ -1161,17 +1176,33 @@
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN",
-            "MM_SCALE"
-          ]
+            "MM_GS_TOKEN_OCEAN"
+          ],
+		  [
+			"MM_SPELL_FIRE",
+			"MM_FW",
+			"MM_SPELL_LOVE",
+			"MM_STRENGTH",
+			"MM_SCALE",
+			"MM_TUNIC_GORON",
+			"MM_BOOTS_IRON",
+		  	"MM_BOOTS_HOVER"
+		  ]
         ]
       },
-      {
+	  {
         "type": "itemgrid",
-        "h_alignment": "left",
+        "h_alignment": "center",
         "item_margin": "1,1",
         "scale": 1.0,
         "rows": [
+          [
+            "MM_C_UP",
+            "MM_C_LEFT",
+            "MM_C_RIGHT",
+            "MM_C_DOWN",
+            "MM_C_A"
+          ],
           [
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_SOUTHERN_SWAMP",
@@ -1207,6 +1238,22 @@
             "MM_BUTTON_C-LEFT",
             "MM_BUTTON_C-RIGHT",
             "MM_KEY_SKELETON"
+          ]
+        ]
+      },
+	  	  	  {
+        "type": "itemgrid",
+        "h_alignment": "left",
+        "item_margin": "0,0",
+        "scale": 1.25,
+        "rows": [
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND",
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL"
           ]
         ]
       },
