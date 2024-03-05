@@ -931,6 +931,19 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "First Room Big Fairy",
+        "short_name": "Big Fairy",
+        "access_rules": [
+          "$oot|Ice Cavern Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_ShuffleBigFairiesOoT_none"
+        ],
+        "chest_unopened_img": "images/BigFairyStorms.png",
+        "chest_opened_img": "images/BigFairyStormsGrey.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Spinning Scythe Room",
         "short_name": "Spinning Scythe",
         "access_rules": [
@@ -2455,6 +2468,32 @@
         "item_count": 1
       },
       {
+        "name": "Beamos Big Fairy",
+        "short_name": "Big Fairy 1",
+        "access_rules": [
+          "$oot|Shadow Temple Beamos Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_ShuffleBigFairiesOoT_none"
+        ],
+        "chest_unopened_img": "images/BigFairyStorms.png",
+        "chest_opened_img": "images/BigFairyStormsGrey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Stalfos Platform Big Fairy",
+        "short_name": "Big Fairy 2",
+        "access_rules": [
+          "$oot|Shadow Temple Stalfos Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_ShuffleBigFairiesOoT_none"
+        ],
+        "chest_unopened_img": "images/BigFairyStorms.png",
+        "chest_opened_img": "images/BigFairyStormsGrey.png",
+        "item_count": 1
+      },
+      {
         "name": "Invisible Blades Visible Chests",
         "short_name": "Like Like",
         "access_rules": [
@@ -2571,6 +2610,19 @@
         "visibility_rules": [
           "setting_mq_ShadowTemple_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "After Wind Room Big Fairy",
+        "short_name": "Big Fairy 3",
+        "access_rules": [
+          "$oot|Shadow Temple After Wind Room Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_ShuffleBigFairiesOoT_none"
+        ],
+        "chest_unopened_img": "images/BigFairySun.png",
+        "chest_opened_img": "images/BigFairySunGrey.png",
         "item_count": 1
       },
       {
@@ -3278,6 +3330,19 @@
         "item_count": 1
       },
       {
+        "name": "Near Four Armos Big Fairy",
+        "short_name": "Armos Big Fairy",
+        "access_rules": [
+          "$ootmq|Spirit Temple Near Four Armos Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_ShuffleBigFairiesOoT_none"
+        ],
+        "chest_unopened_img": "images/BigFairySun.png",
+        "chest_opened_img": "images/BigFairySunGrey.png",
+        "item_count": 1
+      },
+      {
         "name": "Hallway Invisible Chests",
         "short_name": "Invisible Hallway",
         "access_rules": [
@@ -3379,6 +3444,19 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Big Fairy Symphony Room",
+        "short_name": "Symphony Big Fairy",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Fairy Symphony Room"
+        ],
+        "visibility_rules": [
+          "setting_ShuffleBigFairiesOoT_none,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/BigFairySun.png",
+        "chest_opened_img": "images/BigFairySunsGrey.png",
         "item_count": 1
       },
       {
@@ -3808,6 +3886,19 @@
         "item_count": 1
       },
       {
+        "name": "Big Fairy Basement",
+        "short_name": "Fairy Basement",
+        "access_rules": [
+          "$oot|Bottom of the Well Big Fairy Basement"
+        ],
+        "visibility_rules": [
+          "setting_ShuffleBigFairiesOoT_none"
+        ],
+        "chest_unopened_img": "images/BigFairySun.png",
+        "chest_opened_img": "images/BigFairySunGrey.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Coffin Room",
         "short_name": "Coffin",
         "access_rules": [
@@ -3922,6 +4013,17 @@
         ],
         "visibility_rules": [
           "setting_mq_GanonCastle_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial Big Fairy",
+        "short_name": "Spirit Big Fairy",
+        "access_rules": [
+          "$oot|Ganon Castle Spirit Big Fairy"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false,setting_ShuffleBigFairiesOoT_none"
         ],
         "item_count": 1
       },
