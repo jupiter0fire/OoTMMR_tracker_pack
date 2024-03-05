@@ -782,7 +782,7 @@
                                   {
                                     "map": "oot",
                                     "force_invisibility_rules": [
-                                      "setting_FountainShuffleOot_false",
+                                      "setting_FairyFountainShuffleOOT_none",
                                       {
                                         "x": 2148,
                                         "y": 680
@@ -2382,7 +2382,7 @@
                                                                               {
                                                                                 "map": "oot",
                                                                                 "force_invisibility_rules": [
-                                                                                  "setting_FountainShuffleOot_false",
+                                                                                  "setting_FairyFountainShuffleOOT_none",
                                                                                   {
                                                                                     "x": 2035,
                                                                                     "y": 360
@@ -3779,7 +3779,7 @@
                                                                                       {
                                                                                         "map": "oot",
                                                                                         "force_invisibility_rules": [
-                                                                                          "setting_FountainShuffleOot_none",
+                                                                                          "setting_FairyFountainShuffleOOT_none",
                                                                                           {
                                                                                             "x": 1186,
                                                                                             "y": 396
@@ -3962,7 +3962,7 @@
                                                                                                   {
                                                                                                     "map": "oot",
                                                                                                     "force_invisibility_rules": [
-                                                                                                      "setting_FountainShuffleOot_none",
+                                                                                                      "setting_FairyFountainShuffleOOT_none",
                                                                                                       {
                                                                                                         "x": 2142,
                                                                                                         "y": 500
@@ -4251,7 +4251,7 @@
                                                                                                           {
                                                                                                             "map": "oot",
                                                                                                             "force_invisibility_rules": [
-                                                                                                              "setting_FountainShuffleOot_none",
+                                                                                                              "setting_FairyFountainShuffleOOT_none",
                                                                                                               {
                                                                                                                 "x": 2510,
                                                                                                                 "y": 454
@@ -4785,7 +4785,7 @@
                                                                                                                   {
                                                                                                                     "map": "oot",
                                                                                                                     "force_invisibility_rules": [
-                                                                                                                      "setting_FountainShuffleOot_none",
+                                                                                                                      "setting_FairyFountainShuffleOOT_none",
                                                                                                                       {
                                                                                                                         "x": 562,
                                                                                                                         "y": 436
@@ -5042,7 +5042,7 @@
                                                                                                                           {
                                                                                                                             "map": "oot",
                                                                                                                             "force_invisibility_rules": [
-                                                                                                                              "setting_FountainShuffleOot_none",
+                                                                                                                              "setting_FairyFountainShuffleOOT_none",
                                                                                                                               {
                                                                                                                                 "x": 206,
                                                                                                                                 "y": 436
@@ -9916,7 +9916,7 @@
                                     {
                                       "map": "oot",
                                       "force_invisibility_rules": [
-                                        "setting_FountainShuffleOot_false",
+                                        "setting_FairyFountainShuffleOOT_none",
                                         {
                                           "x": 2148,
                                           "y": 680
@@ -11516,7 +11516,7 @@
                                                                                 {
                                                                                   "map": "oot",
                                                                                   "force_invisibility_rules": [
-                                                                                    "setting_FountainShuffleOot_false",
+                                                                                    "setting_FairyFountainShuffleOOT_none",
                                                                                     {
                                                                                       "x": 2035,
                                                                                       "y": 360
@@ -12913,7 +12913,7 @@
                                                                                         {
                                                                                           "map": "oot",
                                                                                           "force_invisibility_rules": [
-                                                                                            "setting_FountainShuffleOot_none",
+                                                                                            "setting_FairyFountainShuffleOOT_none",
                                                                                             {
                                                                                               "x": 1186,
                                                                                               "y": 396
@@ -13096,7 +13096,7 @@
                                                                                                     {
                                                                                                       "map": "oot",
                                                                                                       "force_invisibility_rules": [
-                                                                                                        "setting_FountainShuffleOot_none",
+                                                                                                        "setting_FairyFountainShuffleOOT_none",
                                                                                                         {
                                                                                                           "x": 2142,
                                                                                                           "y": 500
@@ -13385,7 +13385,7 @@
                                                                                                             {
                                                                                                               "map": "oot",
                                                                                                               "force_invisibility_rules": [
-                                                                                                                "setting_FountainShuffleOot_none",
+                                                                                                                "setting_FairyFountainShuffleOOT_none",
                                                                                                                 {
                                                                                                                   "x": 2510,
                                                                                                                   "y": 454
@@ -13919,7 +13919,7 @@
                                                                                                                     {
                                                                                                                       "map": "oot",
                                                                                                                       "force_invisibility_rules": [
-                                                                                                                        "setting_FountainShuffleOot_none",
+                                                                                                                        "setting_FairyFountainShuffleOOT_none",
                                                                                                                         {
                                                                                                                           "x": 562,
                                                                                                                           "y": 436
@@ -14176,7 +14176,7 @@
                                                                                                                             {
                                                                                                                               "map": "oot",
                                                                                                                               "force_invisibility_rules": [
-                                                                                                                                "setting_FountainShuffleOot_none",
+                                                                                                                                "setting_FairyFountainShuffleOOT_none",
                                                                                                                                 {
                                                                                                                                   "x": 206,
                                                                                                                                   "y": 436
