@@ -4022,8 +4022,7 @@ function _oot_logic()
             ["Shadow Temple GS Invisible Scythe"] = function () return can_collect_distance() end,
 	    ["Shadow Temple Beamos Big Fairy"] = function () return can_play_storms() end, 
 	    ["Shadow Temple Stalfos Big Fairy"] = function () return can_play_storms() end,
-        },
-        },
+          },
     },
     ["Shadow Temple Wind"] = {
         ["exits"] = {
