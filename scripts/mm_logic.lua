@@ -3896,6 +3896,7 @@ function _mm_logic()
         ["locations"] = {
             ["Pirate Fortress Interior Lower Chest"] = function () return true end,
             ["Pirate Fortress Interior Upper Chest"] = function () return can_hookshot() end,
+	    ["Pirate Fortress Freestanding Hearts"] = function () return can_hookshot() end,
         },
     },
     ["Pirate Fortress Hookshot Room Upper"] = {
