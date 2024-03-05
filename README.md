@@ -72,7 +72,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for MM Boss Souls
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
 - [ ] Add new checks to the map (grass patches - OoT done, fairy Fountains - done, fishing shuffle - loaches done, Big Fairy shuffle - OoT done, freestanding rupees (not all released by ootmm yet -
-      "wonder rupees" fall into this category), freestanding hearts, silver rupees, pots, bottle content)
+      "wonder rupees" fall into this category), freestanding hearts - MM done, silver rupees, pots, bottle content)
 - [ ] Update Dungeon Checks (grass etc) - OoT Big Fairies done
 - [ ] Update Shared options
 - [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent - See how room is after all new items are added
