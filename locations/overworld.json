@@ -521,7 +521,7 @@
                               "$oot|Lost Woods Big Fairy"
                             ],
                             "visibility_rules": [
-                              "setting_ShuffleBigFairiesOoT_none"
+                              "setting_bigFairyShuffleOOT_none"
                             ],
                             "chest_unopened_img": "images/BigFairyStorms.png",
                             "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -597,7 +597,7 @@
                                   "$oot|Lost Woods Grotto Big Fairy"
                                 ],
                                 "visibility_rules": [
-                                  "setting_ShuffleBigFairiesOoT_none"
+                                  "setting_bigFairyShuffleOOT"
                                 ],
                                 "chest_unopened_img": "images/BigFairySun.png",
                                 "chest_opened_img": "images/BigFairySunGrey.png",
@@ -1002,7 +1002,7 @@
                                           "$oot|Death Mountain Big Fairy"
                                         ],
                                         "visibility_rules": [
-                                          "setting_ShuffleBigFairiesOoT_none"
+                                          "setting_bigFairyShuffleOOT"
                                         ],
                                         "chest_unopened_img": "images/BigFairyStorms.png",
                                         "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -1282,7 +1282,7 @@
                                                           "$oot|Lake Hylia GS Island Big Fairy"
                                                         ],
                                                         "visibility_rules": [
-                                                          "setting_ShuffleBigFairiesOoT_none"
+                                                          "setting_bigFairyShuffleOOT"
                                                         ],
                                                         "chest_unopened_img": "images/BigFairyStorms.png",
                                                         "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -2461,7 +2461,7 @@
                                                                                       "$oot|Graveyard Royal Tomb Big Fairy"
                                                                                     ],
                                                                                     "visibility_rules": [
-                                                                                      "setting_ShuffleBigFairiesOoT_none"
+                                                                                      "setting_bigFairyShuffleOOT"
                                                                                     ],
                                                                                     "chest_unopened_img": "images/BigFairySun.png",
                                                                                     "chest_opened_img": "images/BigFairySunGrey.png",
@@ -2727,7 +2727,7 @@
                                                                                   "$oot|Death Mountain Big Fairy"
                                                                                 ],
                                                                                 "visibility_rules": [
-                                                                                  "setting_ShuffleBigFairiesOoT_none"
+                                                                                  "setting_bigFairyShuffleOOT"
                                                                                 ],
                                                                                 "chest_unopened_img": "images/BigFairySun.png",
                                                                                 "chest_opened_img": "images/BigFairySunGrey.png",
@@ -4870,7 +4870,7 @@
                                                                                                                           "$oot|Gerudo Soup Big Fairy"
                                                                                                                         ],
                                                                                                                         "visibility_rules": [
-                                                                                                                          "setting_ShuffleBigFairiesOoT_none"
+                                                                                                                          "setting_bigFairyShuffleOOT"
                                                                                                                         ],
                                                                                                                         "chest_unopened_img": "images/BigFairySun.png",
                                                                                                                         "chest_opened_img": "images/BigFairySunGrey.png",
@@ -9655,7 +9655,7 @@
                                 "$oot|Lost Woods Big Fairy"
                               ],
                               "visibility_rules": [
-                                "setting_ShuffleBigFairiesOoT_none"
+                                "setting_bigFairyShuffleOOT"
                               ],
                               "chest_unopened_img": "images/BigFairyStorms.png",
                               "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -9731,7 +9731,7 @@
                                     "$oot|Lost Woods Grotto Big Fairy"
                                   ],
                                   "visibility_rules": [
-                                    "setting_ShuffleBigFairiesOoT_none"
+                                    "setting_bigFairyShuffleOOT"
                                   ],
                                   "chest_unopened_img": "images/BigFairySun.png",
                                   "chest_opened_img": "images/BigFairySunGrey.png",
@@ -10136,7 +10136,7 @@
                                             "$oot|Death Mountain Big Fairy"
                                           ],
                                           "visibility_rules": [
-                                            "setting_ShuffleBigFairiesOoT_none"
+                                            "setting_bigFairyShuffleOOT"
                                           ],
                                           "chest_unopened_img": "images/BigFairyStorms.png",
                                           "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -10416,7 +10416,7 @@
                                                             "$oot|Lake Hylia GS Island Big Fairy"
                                                           ],
                                                           "visibility_rules": [
-                                                            "setting_ShuffleBigFairiesOoT_none"
+                                                            "setting_bigFairyShuffleOOT"
                                                           ],
                                                           "chest_unopened_img": "images/BigFairyStorms.png",
                                                           "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -11595,7 +11595,7 @@
                                                                                         "$oot|Graveyard Royal Tomb Big Fairy"
                                                                                       ],
                                                                                       "visibility_rules": [
-                                                                                        "setting_ShuffleBigFairiesOoT_none"
+                                                                                        "setting_bigFairyShuffleOOT"
                                                                                       ],
                                                                                       "chest_unopened_img": "images/BigFairySun.png",
                                                                                       "chest_opened_img": "images/BigFairySunGrey.png",
@@ -11861,7 +11861,7 @@
                                                                                     "$oot|Death Mountain Big Fairy"
                                                                                   ],
                                                                                   "visibility_rules": [
-                                                                                    "setting_ShuffleBigFairiesOoT_none"
+                                                                                    "setting_bigFairyShuffleOOT"
                                                                                   ],
                                                                                   "chest_unopened_img": "images/BigFairySun.png",
                                                                                   "chest_opened_img": "images/BigFairySunGrey.png",
@@ -14004,7 +14004,7 @@
                                                                                                                             "$oot|Gerudo Soup Big Fairy"
                                                                                                                           ],
                                                                                                                           "visibility_rules": [
-                                                                                                                            "setting_ShuffleBigFairiesOoT_none"
+                                                                                                                            "setting_bigFairyShuffleOOT"
                                                                                                                           ],
                                                                                                                           "chest_unopened_img": "images/BigFairySun.png",
                                                                                                                           "chest_opened_img": "images/BigFairySunGrey.png",
