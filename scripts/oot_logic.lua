@@ -2016,6 +2016,7 @@ function _oot_logic()
         ["locations"] = {
             ["Gerudo Fortress Jail 1"] = function () return has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks()) end,
             ["Gerudo Member Card"] = function () return carpenters_rescued() end,
+	    ["Gerudo Soup Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Gerudo Fortress Carpenter 1 Right"] = {
