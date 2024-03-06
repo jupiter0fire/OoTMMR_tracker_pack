@@ -1824,6 +1824,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Southern Swamp Owl Statue"] = function () return has_sticks() or has_weapon() end,
+	    ["Southern Swamp Owl Grass"] = function () return true end,
         },
     },
     ["Owl Woodfall"] = {
@@ -2509,7 +2510,8 @@ function _mm_logic()
         ["locations"] = {
             ["Swamp Archery Reward 1"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
             ["Swamp Archery Reward 2"] = function () return has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or (after(DAY2_AM_06_00) and before(NIGHT2_PM_10_00)) or (after(DAY3_AM_06_00) and before(NIGHT3_PM_10_00))) end,
-        },
+            ["Swamp Archery Ledge Grass"] = function () return true end,
+	},
     },
     ["Road to Southern Swamp Grotto"] = {
         ["events"] = {
@@ -2527,6 +2529,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Road to Southern Swamp Grotto"] = function () return true end,
+	    ["Road to Southern Swamp Grotto"] = function () return true end,
         },
     },
     ["Swamp Front"] = {
@@ -2630,6 +2633,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Swamp Potion Shop Kotake"] = function () return true end,
+	    ["Potion Shop Grass Patches"] = function () return true end,
         },
     },
     ["Woods of Mystery Grotto"] = {
@@ -2686,6 +2690,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Deku Palace HP"] = function () return true end,
+	    ["Deku Palace Grass"] = function () return has('MASK_DEKU') end,
         },
     },
     ["Deku Palace Upper"] = {
@@ -2734,6 +2739,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Deku Palace Grotto Chest"] = function () return can_use_beans() or can_hookshot() or (can_hookshot_short() and trick('MM_SHORT_HOOK_HARD')) end,
+	    ["Deku Palace Grotto Grass"] = function () return true end,
         },
     },
     ["Deku Palace Cliff"] = {
@@ -2772,6 +2778,7 @@ function _mm_logic()
             ["Woodfall Entrance Chest"] = function () return has('MASK_DEKU') or can_hookshot() or event('CLEAN_SWAMP') end,
             ["Woodfall HP Chest"] = function () return has('MASK_DEKU') or can_hookshot() end,
             ["Woodfall Near Owl Chest"] = function () return has('MASK_DEKU') or (event('CLEAN_SWAMP') and can_hookshot()) end,
+	    ["Woodfall Entrance Grass"] = function () return true end,
         },
     },
     ["Woodfall Front of Temple"] = {
@@ -3889,6 +3896,7 @@ function _mm_logic()
         ["locations"] = {
             ["Pirate Fortress Interior Lower Chest"] = function () return true end,
             ["Pirate Fortress Interior Upper Chest"] = function () return can_hookshot() end,
+	    ["Pirate Fortress Freestanding Hearts"] = function () return can_hookshot() end,
         },
     },
     ["Pirate Fortress Hookshot Room Upper"] = {

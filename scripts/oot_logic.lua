@@ -1393,6 +1393,7 @@ function _oot_logic()
             ["Bottom of the Well GS East Cage"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has('OOT_KEY_SKELETON') and has_lens() and can_boomerang() end,
             ["Bottom of the Well GS Inner West"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has('OOT_KEY_SKELETON') and has_lens() and can_boomerang() end,
             ["Bottom of the Well GS Inner East"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has('OOT_KEY_SKELETON') and has_lens() and can_boomerang() end,
+	    ["Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
         },
     },
     ["Deku Tree"] = {
@@ -1969,6 +1970,7 @@ function _oot_logic()
         ["locations"] = {
             ["Ganon Castle Spirit Chest 1"] = function () return can_hookshot() end,
             ["Ganon Castle Spirit Chest 2"] = function () return can_hookshot() and has_bombchu() and has_lens() end,
+	    ["Ganon Castle Spirit Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Ganon Castle Shadow"] = {
@@ -2014,6 +2016,7 @@ function _oot_logic()
         ["locations"] = {
             ["Gerudo Fortress Jail 1"] = function () return has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks()) end,
             ["Gerudo Member Card"] = function () return carpenters_rescued() end,
+	    ["Gerudo Soup Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Gerudo Fortress Carpenter 1 Right"] = {
@@ -2459,6 +2462,7 @@ function _oot_logic()
 	    ["Hyrule Field grass Near SE Grotto"] = function () return is_child() and can_cut_grass() end,
             ["Hyrule Field grass Near LLR rear"] = function () return is_child() and can_cut_grass() end,
 	    ["Hyrule Field Fairy Fountain"] = function () return has_explosives_or_hammer() end,
+	    ["Hyrule Field Pond Big Fairy"] = function () return can_play_storms() end,
         },
     },
     ["Hyrule Field Scrub Grotto"] = {
@@ -2467,6 +2471,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Hyrule Field Grotto Scrub HP"] = function () return can_hit_scrub() and scrub_price(7) end,
+            ["Hyrule Field Grotto Big Fairy"] = function () return has_explosives_or_hammer() and can_play_storms() end,
         },
     },
     ["Hyrule Field Open Grotto"] = {
@@ -2875,6 +2880,7 @@ function _oot_logic()
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) end,
             ["Lost Woods GS Soil Bridge"] = function () return gs_soil() and can_damage_skull() end,
 	    ["Lost Woods Grass Clusters"] = function () return is_child() and can_cut_grass() end,
+	    ["Lost Woods Big Fairy"] = function () return can_play_storms() end,
         },
     },
     ["Lost Woods Generic Grotto"] = {
@@ -2944,6 +2950,7 @@ function _oot_logic()
         ["locations"] = {
             ["Lost Woods Grotto Scrub Nuts Upgrade"] = function () return can_hit_scrub() and scrub_price(3) end,
             ["Lost Woods Grotto Scrub Back"] = function () return can_hit_scrub() and scrub_price(4) end,
+	    ["Lost Woods Grotto Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Sacred Meadow Entryway"] = {
@@ -3218,6 +3225,7 @@ function _oot_logic()
         ["locations"] = {
             ["Graveyard Royal Tomb Song"] = function () return true end,
             ["Graveyard Royal Tomb Chest"] = function () return has_fire() end,
+	    ["Graveyard Royal Tomb Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Graveyard Shield Grave"] = {
@@ -3273,6 +3281,7 @@ function _oot_logic()
             ["Death Mountain Summit"] = function () return event('BOULDER_DEATH_MOUNTAIN') or can_ride_bean(BEAN_DEATH_MOUNTAIN) end,
             ["Death Mountain Storms Grotto"] = function () return hidden_grotto_storms() end,
             ["Death Mountain Cow Grotto"] = function () return has_explosives_or_hammer() end,
+	    ["Death Mountain Cow Grotto Big Fairy"] = function () return has_explosives_or_hammer() and can_play_storms() end,
         },
         ["locations"] = {
             ["Death Mountain Chest"] = function () return has_explosives_or_hammer() end,
@@ -3280,6 +3289,7 @@ function _oot_logic()
             ["Death Mountain GS Entrance"] = function () return has_explosives() or (can_hammer() and has_ranged_weapon()) end,
             ["Death Mountain GS Soil"] = function () return gs_soil() and has_bombflowers() and can_damage_skull() end,
             ["Death Mountain GS Above Dodongo"] = function () return gs_night() and is_adult() and (can_hammer() or trick('OOT_DMT_RED_ROCK_GS')) end,
+            ["Death Mountain Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Death Mountain Summit"] = {
@@ -3553,10 +3563,12 @@ function _oot_logic()
             ["Lake Hylia HP"] = function () return can_ride_bean(BEAN_LAKE_HYLIA) or scarecrow_hookshot() end,
             ["Lake Hylia GS Lab Wall"] = function () return is_child() and gs_night() and (can_boomerang() or (trick('OOT_LAB_WALL_GS') and (can_use_sword() or can_use_sticks()))) end,
             ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() end,
+	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and can_play_storms() end,
             ["Lake Hylia GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Lake Hylia GS Big Tree"] = function () return is_adult() and gs_night() and can_longshot() end,
 	    ["Lake Hylia grass patches x3"] = function () return is_child() and can_cut_grass() end,
 	    ["Lake Hylia Grass Near Scarecrows"] = function () return is_child() and can_cut_grass() end,
+	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and can_play_storms() end,
         },
     },
     ["Laboratory"] = {
@@ -3576,6 +3588,9 @@ function _oot_logic()
         ["locations"] = {
             ["Fishing Pond Child"] = function () return is_child() and can_use_wallet(1) end,
             ["Fishing Pond Adult"] = function () return is_adult() and can_use_wallet(1) end,
+	    ["Fishing Pond Child Loaches"] = function () return is_child() and can_use_wallet(1) end,
+	    ["Fishing Pond Adult Hylian Loach"] = function () return is_child() and can_use_wallet(1) end,
+	    
         },
     },
     ["Lake Hylia Grotto"] = {
@@ -4005,7 +4020,9 @@ function _oot_logic()
             ["Shadow Temple GS Skull Pot"] = function () return small_keys(SMALL_KEY_SHADOW, 2) or has('OOT_KEY_SKELETON') and can_hookshot() and has_lens() end,
             ["Shadow Temple GS Falling Spikes"] = function () return can_collect_distance() end,
             ["Shadow Temple GS Invisible Scythe"] = function () return can_collect_distance() end,
-        },
+	    ["Shadow Temple Beamos Big Fairy"] = function () return can_play_storms() end, 
+	    ["Shadow Temple Stalfos Big Fairy"] = function () return can_play_storms() end,
+          },
     },
     ["Shadow Temple Wind"] = {
         ["exits"] = {
@@ -4013,6 +4030,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Shadow Temple Wind Room Hint"] = function () return has_lens() end,
+	    ["Shadow Temple After Wind Room Big Fairy"] = function () return can_play_sun() end,
             ["Shadow Temple After Wind"] = function () return true end,
             ["Shadow Temple After Wind Invisible"] = function () return has_explosives() and has_lens() end,
             ["Shadow Temple GS Near Boat"] = function () return small_keys(SMALL_KEY_SHADOW, 4) or has('OOT_KEY_SKELETON') and can_longshot() end,
@@ -4139,6 +4157,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Spirit Temple Adult Late Sun on Wall"] = function () return has_mirror_shield() end,
+	    ["Spirit Temple Near Four Armos Big Fairy"] = function () return can_play_sun() end,
         },
     },
     ["Spirit Temple Adult Hand"] = {
@@ -4351,6 +4370,7 @@ function _oot_logic()
             ["MQ Bottom of the Well Dead Hand Key"] = function () return has_explosives() end,
             ["MQ Bottom of the Well East Middle Room Key"] = function () return can_play(SONG_ZELDA) end,
             ["MQ Bottom of the Well GS Basement"] = function () return can_damage_skull() end,
+	    ["MQ Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
             ["MQ Bottom of the Well GS West Middle Room"] = function () return can_play(SONG_ZELDA) and has_explosives() end,
             ["MQ Bottom of the Well GS Coffin Room"] = function () return can_damage_skull() and small_keys(SMALL_KEY_BOTW, 2) or has('OOT_KEY_SKELETON') end,
         },
@@ -4906,6 +4926,7 @@ function _oot_logic()
     },
     ["Ice Cavern Main"] = {
         ["exits"] = {
+	    ["Ice Cavern Big Fairy"] = function () return can_play_storms() end,
             ["Ice Cavern Map Room"] = function () return is_adult() or can_use_sticks() or has_explosives() end,
             ["Ice Cavern Compass Room"] = function () return is_adult() and has_blue_fire() end,
             ["Ice Cavern Big Room"] = function () return has_blue_fire() end,
@@ -5180,6 +5201,8 @@ function _oot_logic()
             ["MQ Spirit Temple Symphony Room Chest"] = function () return small_keys(SMALL_KEY_SPIRIT, 7) or has('OOT_KEY_SKELETON') and can_hammer() and can_play_time() and can_play_epona() and can_play_sun() and can_play_storms() and can_play(SONG_ZELDA) end,
             ["MQ Spirit Temple GS Leever Room"] = function () return true end,
             ["MQ Spirit Temple GS Symphony Room"] = function () return small_keys(SMALL_KEY_SPIRIT, 7) or has('OOT_KEY_SKELETON') and can_hammer() and can_play_time() and can_play_epona() and can_play_sun() and can_play_storms() and can_play(SONG_ZELDA) end,
+	    ["MQ Spirit Temple Fairy Symphony Room"] = function () return small_keys(SMALL_KEY_SPIRIT, 7) or has('OOT_KEY_SKELETON') and can_hammer() and can_play_time() and can_play_epona() and can_play_sun() and can_play_storms() and can_play(SONG_ZELDA) end,
+			
         },
     },
     ["Spirit Temple Adult Upper"] = {

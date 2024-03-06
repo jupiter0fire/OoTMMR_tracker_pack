@@ -18,7 +18,7 @@
             "OOT_SPELL_FIRE",
             "OOT_SWORD_KOKIRI",
             "OOT_SHIELD_DEKU",
-	        "OOT_BUTTON_A"
+            "OOT_BUTTON_A"
           ],
           [
             "OOT_SLINGSHOT",
@@ -29,7 +29,7 @@
             "faroreswind",
             "OOT_SWORD_MASTER",
             "OOT_SHIELD_HYLIAN",
-			"OOT_BUTTON_B"
+            "OOT_BUTTON_B"
           ],
           [
             "OOT_BOOMERANG",
@@ -40,7 +40,7 @@
             "OOT_SPELL_LOVE",
             "OOT_SWORD_GORON",
             "OOT_SHIELD_MIRROR",
-			"OOT_BUTTON_C-UP"
+            "OOT_BUTTON_C-UP"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -51,7 +51,7 @@
             "OOT_SONG_STORMS",
             "OOT_BOOTS_IRON",
             "OOT_BOOTS_HOVER",
-			"OOT_BUTTON_C-DOWN"
+            "OOT_BUTTON_C-DOWN"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -62,7 +62,7 @@
             "OOT_SONG_TP_LIGHT",
             "OOT_TUNIC_GORON",
             "OOT_TUNIC_ZORA",
-			"OOT_BUTTON_C-LEFT"
+            "OOT_BUTTON_C-LEFT"
           ],
           [
             "bottle1",
@@ -73,7 +73,7 @@
             "OOT_MAGIC_UPGRADE",
             "OOT_STRENGTH",
             "OOT_WALLET1",
-			"OOT_BUTTON_C-RIGHT"
+            "OOT_BUTTON_C-RIGHT"
           ]
         ]
       },
@@ -322,7 +322,7 @@
                         "canvas_top": 17.5,
                         "width": 28,
                         "height": 10.5
-                      },
+                      }
                     ]
                   }
                 ]
@@ -450,7 +450,7 @@
           ]
         ]
       },
-  {
+      {
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
@@ -650,7 +650,7 @@
                     "canvas_top": 17.5,
                     "width": 28,
                     "height": 10.5
-                  },
+                  }
                 ]
               }
             ]
@@ -712,7 +712,7 @@
             "MM_ARROW_LIGHT",
             "mm_spinattack",
             "MM_SHIELD_HERO",
-			"MM_SHIELD_MIRROR"
+            "MM_SHIELD_MIRROR"
           ],
           [
             "MM_BOMB_BAG",
@@ -794,19 +794,19 @@
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN"
           ],
-		  [
-			"MM_SPELL_FIRE",
-			"MM_FW",
-			"MM_SPELL_LOVE",
-			"MM_STRENGTH",
-			"MM_SCALE",
-			"MM_TUNIC_GORON",
-			"MM_BOOTS_IRON",
-		  	"MM_BOOTS_HOVER"
-		  ]
+          [
+            "MM_SPELL_FIRE",
+            "MM_FW",
+            "MM_SPELL_LOVE",
+            "MM_STRENGTH",
+            "MM_SCALE",
+            "MM_TUNIC_GORON",
+            "MM_BOOTS_IRON",
+            "MM_BOOTS_HOVER"
+          ]
         ]
       },
-	  {
+      {
         "type": "itemgrid",
         "h_alignment": "center",
         "item_margin": "1,1",
@@ -828,7 +828,7 @@
           ]
         ]
       },
-	  	  {
+      {
         "type": "itemgrid",
         "h_alignment": "left",
         "item_margin": "0,0",
@@ -875,11 +875,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_woodfall_label",
@@ -918,11 +918,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_snowhead_label",
@@ -961,11 +961,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_great_bay_label",
@@ -1004,11 +1004,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_stonetower_label",
@@ -1082,7 +1082,7 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN",
+            "MM_GS_TOKEN_OCEAN"
           ],
           [
             "MM_MASK_DEKU",
@@ -1127,11 +1127,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_woodfall_label",
@@ -1170,11 +1170,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_snowhead_label",
@@ -1213,11 +1213,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_great_bay_label",
@@ -1256,11 +1256,11 @@
                 ]
               },
               {
-              "type": "array",
-              "orientation": "horizontal",
-              "margin": "0,0",
-              "scale": 0.9,
-              "content": [
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "scale": 0.9,
+                "content": [
                   {
                     "type": "item",
                     "item": "mm_stonetower_label",

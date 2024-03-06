@@ -21,6 +21,21 @@
       },
       {
         "type": "item",
+        "item": "setting_grassShuffleOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bigFairyShuffleOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_FairyFountainShuffleOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_cowShuffleOot",
         "height": 16
       },
@@ -38,7 +53,7 @@
         "type": "item",
         "item": "setting_priceOotScrubs",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "setting_doorOfTime",
@@ -169,6 +184,21 @@
       {
         "type": "item",
         "item": "setting_scrubShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_grassShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bigFairyShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_FairyFountainShuffleMM",
         "height": 16
       },
       {
