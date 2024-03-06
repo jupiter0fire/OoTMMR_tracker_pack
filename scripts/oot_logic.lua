@@ -2280,8 +2280,8 @@ function _oot_logic()
     },
     ["SPAWN"] = {
         ["exits"] = {
-            ["SPAWN CHILD"] = function () return is_child() end,
-            ["SPAWN ADULT"] = function () return is_adult() and event('TIME_TRAVEL') end,
+            ["SPAWN CHILD"] = function () return is_child() and (setting('StartingAge', 'child') or event('TIME_TRAVEL')) end,
+            ["SPAWN ADULT"] = function () return is_adult() and (setting('StartingAge', 'adult') or event('TIME_TRAVEL')) end,
         },
     },
     ["SPAWN CHILD"] = {
