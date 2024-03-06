@@ -18,7 +18,7 @@
             "OOT_SPELL_FIRE",
             "OOT_SWORD_KOKIRI",
             "OOT_SHIELD_DEKU",
-	    "OOT_BUTTON_A"
+	        "OOT_BUTTON_A"
           ],
           [
             "OOT_SLINGSHOT",
@@ -29,7 +29,7 @@
             "faroreswind",
             "OOT_SWORD_MASTER",
             "OOT_SHIELD_HYLIAN",
-	    "OOT_BUTTON_B"
+			"OOT_BUTTON_B"
           ],
           [
             "OOT_BOOMERANG",
@@ -40,7 +40,7 @@
             "OOT_SPELL_LOVE",
             "OOT_SWORD_GORON",
             "OOT_SHIELD_MIRROR",
-	    "OOT_BUTTON_C-UP"
+			"OOT_BUTTON_C-UP"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -51,7 +51,7 @@
             "OOT_SONG_STORMS",
             "OOT_BOOTS_IRON",
             "OOT_BOOTS_HOVER",
-	    "OOT_BUTTON_C-DOWN"
+			"OOT_BUTTON_C-DOWN"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -62,7 +62,7 @@
             "OOT_SONG_TP_LIGHT",
             "OOT_TUNIC_GORON",
             "OOT_TUNIC_ZORA",
-	    "OOT_BUTTON_C-LEFT"
+			"OOT_BUTTON_C-LEFT"
           ],
           [
             "bottle1",
@@ -73,7 +73,7 @@
             "OOT_MAGIC_UPGRADE",
             "OOT_STRENGTH",
             "OOT_WALLET1",
-	    "OOT_BUTTON_C-RIGHT"
+			"OOT_BUTTON_C-RIGHT"
           ]
         ]
       },

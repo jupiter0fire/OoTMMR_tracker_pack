@@ -28,6 +28,107 @@
     ]
   },
   {
+    "name": "Interior Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_shuffleInterior_none.png",
+        "codes": "setting_shuffle_interior,setting_shuffle_interior_none",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_shuffleInterior_full.png",
+        "codes": "setting_shuffle_interior,setting_shuffle_interior_full",
+      },
+      {
+        "img": "images/setting_shuffleInterior_extra.png",
+        "codes": "setting_shuffle_interior,setting_shuffle_interior_full,setting_shuffle_interior_extra",
+      }
+    ]
+  },
+  {
+    "name": "Starting Age",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_starting_age_child.png",
+        "codes": "setting_starting_age,setting_starting_age_child",
+      },
+      {
+        "img": "images/setting_starting_age_adult.png",
+        "codes": "setting_starting_age,setting_starting_age_adult",
+      },
+    ]
+  },
+  {
+    "name": "Dungeon Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_shuffleDungeon_off.png",
+        "codes": "setting_shuffle_dungeon,setting_shuffle_dungeon_off",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_shuffleDungeon_on.png",
+        "codes": "setting_shuffle_dungeon,setting_shuffle_dungeon_on",
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Boss Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_shuffleDungeonboss_off.png",
+        "codes": "setting_shuffle_dungeon_boss,setting_shuffle_dungeon_boss_off",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_shuffleDungeonboss_on.png",
+        "codes": "setting_shuffle_dungeon_boss,setting_shuffle_dungeon_boss_on",
+      }
+    ]
+  },
+  {
+    "name": "Overworld Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_shuffle_overworld_off.png",
+        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_off",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_shuffle_overworld_major.png",
+        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_major",
+      },
+      {
+        "img": "images/setting_shuffle_overworld_oneway.png",
+        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_oneway",
+      },
+      {
+        "img": "images/setting_shuffle_overworld_major_oneway.png",
+        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_major,setting_shuffle_overworld_oneway",
+      }
+    ]
+  },
+  {
     "name": "OoT Item Ported to MM",
     "type": "progressive",
     "allow_disabled": false,
