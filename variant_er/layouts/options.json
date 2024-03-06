@@ -6,11 +6,6 @@
     "content": [
       {
         "type": "item",
-        "item": "setting_starting_age",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_shuffle_interior",
         "height": 16
       },
@@ -36,6 +31,11 @@
     "orientation": "vertical",
     "item_margin": "1,2",
     "content": [
+      {
+        "type": "item",
+        "item": "setting_StartingAge",
+        "height": 16
+      },
       {
         "type": "item",
         "item": "setting_goldSkulltulaTokens",

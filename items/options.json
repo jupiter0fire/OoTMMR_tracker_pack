@@ -58,11 +58,13 @@
     "stages": [
       {
         "img": "images/setting_starting_age_child.png",
-        "codes": "setting_starting_age,setting_starting_age_child",
+        "codes": "setting_StartingAge,setting_StartingAge_child",
+        "inherit_codes": false,
       },
       {
         "img": "images/setting_starting_age_adult.png",
-        "codes": "setting_starting_age,setting_starting_age_adult",
+        "codes": "setting_StartingAge,setting_StartingAge_adult",
+        "inherit_codes": false,
       },
     ]
   },
