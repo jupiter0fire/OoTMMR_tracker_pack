@@ -6,6 +6,11 @@
     "content": [
       {
         "type": "item",
+        "item": "setting_StartingAge",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_goldSkulltulaTokens",
         "height": 16
       },
