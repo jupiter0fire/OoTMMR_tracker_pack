@@ -212,27 +212,6 @@
                     "width": 28,
                     "height": 28
                   },
-                  {
-                    "type": "item",
-                    "item": "deku",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
-                  {
-                    "type": "item",
-                    "item": "dodongo",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
-                  {
-                    "type": "item",
-                    "item": "jabu",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
                 ]
               },
               {
