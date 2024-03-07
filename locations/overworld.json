@@ -7479,7 +7479,8 @@
 						  "$mm|Woodfall Owl Statue"
 						],
 						  "force_invisibility_rules": [
-					             "setting_owlShuffle_none"
+					       "setting_owlShuffle_none"
+					         {}
 						"item_count": 1
 					  },
 					  {
@@ -7488,6 +7489,7 @@
 						"chest_opened_img": "images/GrassGreyscale.png",
 						"access_rules": [
 						  "$mm|Woodfall Entrance Grass"
+						        {}
 						],
 						  "force_invisibility_rules": [
 					             "setting_GrassShuffle_none"
