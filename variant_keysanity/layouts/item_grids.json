@@ -151,6 +151,27 @@
                 "content": [
                   {
                     "type": "item",
+                    "item": "deku",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "dodongo",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "jabu",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
                     "item": "forest",
                     "margin": "1,1",
                     "width": 28,
@@ -190,7 +211,28 @@
                     "margin": "1,1",
                     "width": 28,
                     "height": 28
-                  }
+                  },
+                  {
+                    "type": "item",
+                    "item": "deku",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "dodongo",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
+                  {
+                    "type": "item",
+                    "item": "jabu",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 28
+                  },
                 ]
               },
               {
@@ -377,27 +419,7 @@
                 "orientation": "horizontal",
                 "margin": "0,0",
                 "content": [
-                  {
-                    "type": "item",
-                    "item": "deku",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
-                  {
-                    "type": "item",
-                    "item": "dodongo",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
-                  {
-                    "type": "item",
-                    "item": "jabu",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 28
-                  },
+                
                   {
                     "type": "canvas",
                     "width": 28,
