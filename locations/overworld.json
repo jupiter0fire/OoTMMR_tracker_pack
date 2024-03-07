@@ -789,7 +789,7 @@
 				  {
 					"map": "oot",
 					"force_invisibility_rules": [
-					  "setting_FairyFountainShuffleOOT_none",
+					  "setting_FairyFountainShuffleOOT_none"
 					  ],
 						"x": 2148,
 						"y": 680
@@ -3809,7 +3809,7 @@
 					  {
 						"map": "oot",
 						"force_invisibility_rules": [
-						  "setting_FairyFountainShuffleOOT_none",
+						  "setting_FairyFountainShuffleOOT_none"
 						  ],
 							"x": 1186,
 							"y": 396
@@ -3996,7 +3996,7 @@
 					  {
 						"map": "oot",
 						"force_invisibility_rules": [
-						  "setting_FairyFountainShuffleOOT_none",
+						  "setting_FairyFountainShuffleOOT_none"
 						  ],
 							"x": 2142,
 							"y": 500
@@ -4287,7 +4287,7 @@
 				  {
 					"map": "oot",
 					"force_invisibility_rules": [
-					  "setting_FairyFountainShuffleOOT_none",
+					  "setting_FairyFountainShuffleOOT_none"
 					  ],
 						"x": 2510,
 						"y": 454
@@ -4823,7 +4823,7 @@
 				  {
 					"map": "oot",
 					"force_invisibility_rules": [
-					  "setting_FairyFountainShuffleOOT_none",
+					  "setting_FairyFountainShuffleOOT_none"
 					  ],
 						"x": 562,
 						"y": 436
@@ -5082,7 +5082,7 @@
 				  {
 					"map": "oot",
 					"force_invisibility_rules": [
-					  "setting_FairyFountainShuffleOOT_none",
+					  "setting_FairyFountainShuffleOOT_none"
 					  ],
 						"x": 206,
 						"y": 436
@@ -7509,8 +7509,7 @@
                   {
                     "name": "15 Stray Fairies in Woodfall Temple",
                     "access_rules": [
-                      "$mm|Woodfall Great Fairy",
-                      "{}"
+                      "$mm|Woodfall Great Fairy"
                     ],
                     "item_count": 1
                   }
@@ -7522,10 +7521,6 @@
                     "y": 462
                   }
                 ]
-              }
-            ]
-          }
-        ]
       },
       {
         "name": "Mountain",
@@ -9089,5 +9084,3 @@
         ]
       }
     ]
-  }
-]
