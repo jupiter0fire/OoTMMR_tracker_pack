@@ -1189,11 +1189,11 @@
         "scale": 1,
         "rows": [
           [
-            "MM_C_UP",
-            "MM_C_LEFT",
-            "MM_C_RIGHT",
-            "MM_C_DOWN",
-            "MM_C_A"
+            "EMPTYSPACE",
+            "EMPTYSPACE",
+            "EMPTYSPACE",
+            "EMPTYSPACE",
+            "EMPTYSPACE",
           ],
           [
             "MM_OWL_CLOCK_TOWN",
@@ -1214,12 +1214,13 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "item_margin": "1,0",
+        "item_margin": "1,1",
         "item_size": 27,
         "rows": [
           [
+            "EMPTYSPACE",
+            "EMPTYSPACE",
             "MM_BUTTON_A",
-            "MM_BUTTON_B",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
