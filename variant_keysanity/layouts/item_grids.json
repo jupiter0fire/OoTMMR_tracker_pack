@@ -54,7 +54,7 @@
             "OOT_BUTTON_C-LEFT"
           ],
           [
-            "OOT_SONG_TP_FOREST",
+            "OOT_SONG_TP_",
             "OOT_SONG_TP_FIRE",
             "OOT_SONG_TP_WATER",
             "OOT_SONG_TP_SHADOW",
@@ -231,7 +231,15 @@
                         "margin": "1,1",
                         "width": 28,
                         "height": 10.5
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
                       {
                         "type": "item",
                         "item": "setting_mq_DodongoCavern",
@@ -245,7 +253,15 @@
                         "margin": "1,1",
                         "width": 28,
                         "height": 10.5
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
                       {
                         "type": "item",
                         "item": "setting_mq_ForestTemple",
@@ -270,7 +286,15 @@
                         "canvas_top": 16,
                         "width": 14,
                         "height": 14
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
                       {
                         "type": "item",
                         "item": "setting_mq_FireTemple",
