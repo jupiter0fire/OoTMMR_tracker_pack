@@ -1,4 +1,31 @@
 {
+  "layout_entrance_randomizer": {
+    "type": "array",
+    "orientation": "vertical",
+    "item_margin": "1,2",
+    "content": [
+      {
+        "type": "item",
+        "item": "setting_shuffle_interior",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_dungeon",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_dungeon_boss",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffle_overworld",
+        "height": 16
+      }
+    ]
+  },
   "layout_main_oot": {
     "type": "array",
     "orientation": "vertical",
@@ -1032,6 +1059,14 @@
   "options_popup": {
     "type": "tabbed",
     "tabs": [
+      {
+        "title": "Settings entrance (For ER)",
+        "content": {
+          "type": "layout",
+          "key": "layout_entrance_randomizer",
+          "h_alignment": "left"
+        }
+      },
       {
         "title": "Settings OOT",
         "content": {
