@@ -1180,7 +1180,6 @@
         "scale": 1,
         "rows": [
           [
-            "EMPTYSPACE",
             "MM_DAY_1ST",
             "MM_NIGHT_1ST",
             "MM_DAY_2ND",
@@ -1189,7 +1188,6 @@
             "MM_NIGHT_FINAL"
           ],
           [
-            "EMPTYSPACE",
             "EMPTYSPACE",
             "MM_BUTTON_A",
             "MM_BUTTON_C-UP",
@@ -1294,7 +1292,7 @@
             "item": "mm_woodfall_label",
             "margin": "0,2",
             "width": 32,
-            "height": 16
+            "height": 18
           },
           {
             "type": "item",
@@ -1302,14 +1300,7 @@
             "margin": "0,2",
             "width": 16,
             "height": 16
-          }
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5,0",
-        "content": [
+          },
           {
             "type": "item",
             "item": "MM_SMALL_KEY_SH",
@@ -1322,7 +1313,7 @@
             "item": "mm_snowhead_label",
             "margin": "0,2",
             "width": 32,
-            "height": 16
+            "height": 18
           },
           {
             "type": "item",
@@ -1330,14 +1321,7 @@
             "margin": "0,2",
             "width": 16,
             "height": 16
-          }
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5,0",
-        "content": [
+          },
           {
             "type": "item",
             "item": "MM_SMALL_KEY_GB",
@@ -1350,7 +1334,7 @@
             "item": "mm_greatbay_label",
             "margin": "0,2",
             "width": 32,
-            "height": 16
+            "height": 18
           },
           {
             "type": "item",
@@ -1358,14 +1342,7 @@
             "margin": "0,2",
             "width": 16,
             "height": 16
-          }
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5,0",
-        "content": [
+          },
           {
             "type": "item",
             "item": "MM_SMALL_KEY_ST",
@@ -1378,7 +1355,7 @@
             "item": "mm_stonetower_label",
             "margin": "0,2",
             "width": 32,
-            "height": 16
+            "height": 18
           },
           {
             "type": "item",
@@ -1569,7 +1546,7 @@
             "item": "mm_woodfall_label",
             "margin": "0,2",
             "width": 32,
-            "height": 12
+            "height": 14
           },
           {
             "type": "item",
@@ -1577,14 +1554,7 @@
             "margin": "1,2",
             "width": 16,
             "height": 16
-          }
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5,0",
-        "content": [
+          },
           {
             "type": "item",
             "item": "MM_BOSS_KEY_SH",
@@ -1597,7 +1567,7 @@
             "item": "mm_snowhead_label",
             "margin": "0,2",
             "width": 32,
-            "height": 12
+            "height": 14
           },
           {
             "type": "item",
@@ -1605,14 +1575,7 @@
             "margin": "1,2",
             "width": 16,
             "height": 16
-          }
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5,0",
-        "content": [
+          },
           {
             "type": "item",
             "item": "MM_BOSS_KEY_GB",
@@ -1625,7 +1588,7 @@
             "item": "mm_greatbay_label",
             "margin": "0,2",
             "width": 32,
-            "height": 12
+            "height": 14
           },
           {
             "type": "item",
@@ -1633,10 +1596,8 @@
             "margin": "1,2",
             "width": 16,
             "height": 16
-          }
-        ]
-      },
-      {
+          },
+          {
         "type": "array",
         "orientation": "horizontal",
         "margin": "5,0",
@@ -1653,7 +1614,7 @@
             "item": "mm_stonetower_label",
             "margin": "0,2",
             "width": 32,
-            "height": 12
+            "height": 14
           },
           {
             "type": "item",
