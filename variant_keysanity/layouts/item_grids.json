@@ -29,7 +29,7 @@
             "faroreswind",
             "OOT_SWORD_MASTER",
             "OOT_SHIELD_HYLIAN",
-            "OOT_BUTTON_B"
+            "OOT_BUTTON_C-UP"
           ],
           [
             "OOT_BOOMERANG",
@@ -40,7 +40,7 @@
             "OOT_SPELL_LOVE",
             "OOT_SWORD_GORON",
             "OOT_SHIELD_MIRROR",
-            "OOT_BUTTON_C-UP"
+            "OOT_BUTTON_C-DOWN"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -51,7 +51,7 @@
             "OOT_SONG_STORMS",
             "OOT_BOOTS_IRON",
             "OOT_BOOTS_HOVER",
-            "OOT_BUTTON_C-DOWN"
+            "OOT_BUTTON_C-LEFT"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -62,7 +62,7 @@
             "OOT_SONG_TP_LIGHT",
             "OOT_SONG_EMPTINESS",
             "OOT_TUNIC_GORON",
-            "OOT_BUTTON_C-LEFT"
+            "OOT_BUTTON_C-RIGHT"
           ],
           [
             "bottle1",
@@ -73,7 +73,7 @@
             "OOT_MAGIC_UPGRADE",
             "OOT_STRENGTH",
             "OOT_TUNIC_ZORA",
-            "OOT_BUTTON_C-RIGHT"
+            "OOT_MASK_BLAST"
           ]
         ]
       },
@@ -94,7 +94,7 @@
             "OOT_MASK_GORON",
             "OOT_MASK_ZORA",
             "OOT_MASK_GERUDO",
-            "OOT_MASK_BLAST"
+            "OOT_MASK_STONE"
           ]
         ]
       },
@@ -115,7 +115,7 @@
             "OOT_EYEBALL_FROG",
             "OOT_EYE_DROPS",
             "OOT_CLAIM_CHECK",
-            "OOT_MASK_STONE"
+            "OOT_WALLET1",
           ]
         ]
       },
@@ -126,11 +126,11 @@
         "scale": 0.8,
         "rows": [
           [
-            "OOT_C_UP",
-            "OOT_C_LEFT",
-            "OOT_C_RIGHT",
-            "OOT_C_DOWN",
-            "OOT_C_A"
+          |"EMPTYSPACE",
+           "EMPTYSPACE",
+           "EMPTYSPACE",
+           "EMPTYSPACE",
+           "EMPTYSPACE"
           ]
         ]
       },
@@ -557,7 +557,6 @@
               ],
               [
                 "OOT_GERUDO_CARD",
-                "OOT_WALLET1",
                 "triforce"
               ],
               [
