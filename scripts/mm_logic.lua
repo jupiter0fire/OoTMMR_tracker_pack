@@ -2778,7 +2778,7 @@ function _mm_logic()
             ["Woodfall Entrance Chest"] = function () return has('MASK_DEKU') or can_hookshot() or event('CLEAN_SWAMP') end,
             ["Woodfall HP Chest"] = function () return has('MASK_DEKU') or can_hookshot() end,
             ["Woodfall Near Owl Chest"] = function () return has('MASK_DEKU') or (event('CLEAN_SWAMP') and can_hookshot()) end,
-	    ["Woodfall Entrance Grass"] = function () return true end,
+	    ["Woodfall Entrance Grass"] = function () return has('MASK_DEKU') or event('CLEAN_SWAMP') end,
         },
     },
     ["Woodfall Front of Temple"] = {
