@@ -5569,6 +5569,8 @@
                   },
                   {
                     "name": "Clock Town Tingle Maps",
+                     "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                    "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "short_name": "Town Tingle",
                     "sections": [
                       {
@@ -6674,6 +6676,8 @@
         "children": [
           {
             "name": "Milk Road Tingle Maps",
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "short_name": "Ranch Tingle",
             "sections": [
               {
@@ -6943,6 +6947,8 @@
           },
           {
             "name": "Swamp Tingle Maps",
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "short_name": "Swamp Tingle",
             "sections": [
               {
@@ -7698,6 +7704,8 @@
           },
           {
             "name": "Mountain Tingle Maps",
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "short_name": "Mountain Tingle",
             "sections": [
               {
@@ -8208,8 +8216,8 @@
               },
               {
                 "name": "Ocean Tingle Maps",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
+                "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                 "short_name": "GB Tingle",
                 "sections": [
                   {
@@ -8912,8 +8920,8 @@
                 "children": [
                   {
                     "name": "Ikana Canyon Tingle Maps",
-                    "chest_unopened_img": "images/system/chest_brown_closed.png",
-                    "chest_opened_img": "images/system/chest_brown_open.png",
+                    "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                    "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "short_name": "Canyon",
                     "sections": [
                       {
