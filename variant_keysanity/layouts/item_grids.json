@@ -1057,6 +1057,7 @@
                 }
               ]
             },
+            {
               "item_grid_tall_mm": {
                 "type": "array",
                 "orientation": "vertical",
