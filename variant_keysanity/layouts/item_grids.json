@@ -1202,23 +1202,31 @@
       },
       {
         "type": "itemgrid",
-        "h_alignment": "centre",
+        "h_alignment": "center",
         "item_margin": "1,1",
         "scale": 1.1,
         "rows": [
           [
+            "EMPTYSPACE",
+            "EMPTYSPACE",
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_SOUTHERN_SWAMP",
             "MM_OWL_WOODFALL",
             "MM_OWL_MILK_ROAD",
-            "MM_OWL_MOUNTAIN_VILLAGE"
+            "MM_OWL_MOUNTAIN_VILLAGE",
+            "EMPTYSPACE",
+            "EMPTYSPACE"
           ],
           [
+            "EMPTYSPACE",
+            "EMPTYSPACE",
             "MM_OWL_SNOWHEAD",
             "MM_OWL_GREAT_BAY",
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
-            "MM_OWL_STONE_TOWER"
+            "MM_OWL_STONE_TOWER",
+            "EMPTYSPACE",
+            "EMPTYSPACE"
           ]
         ]
       },
@@ -1303,7 +1311,7 @@
             "item": "mm_woodfall_label",
             "margin": "0,2",
             "width": 32,
-            "height": 18
+            "height": 24
           },
           {
             "type": "item",
@@ -1324,7 +1332,7 @@
             "item": "mm_snowhead_label",
             "margin": "0,2",
             "width": 32,
-            "height": 18
+            "height": 24
           },
           {
             "type": "item",
@@ -1345,7 +1353,7 @@
             "item": "mm_greatbay_label",
             "margin": "0,2",
             "width": 32,
-            "height": 18
+            "height": 24
           },
           {
             "type": "item",
@@ -1366,7 +1374,7 @@
             "item": "mm_stonetower_label",
             "margin": "0,2",
             "width": 32,
-            "height": 18
+            "height": 24
           },
           {
             "type": "item",
