@@ -246,7 +246,15 @@
                         "margin": "1,1",
                         "width": 28,
                         "height": 10.5
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
                       {
                         "type": "item",
                         "item": "setting_mq_Jabu-Jabu",
