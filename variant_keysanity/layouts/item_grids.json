@@ -1213,10 +1213,6 @@
         ]
       },
       {
-        "type": "array",
-        "orientation": "vertical",
-        "content": [
-          {
             "type": "array",
             "orientation": "horizontal",
             "margin": "0,0",
@@ -1281,12 +1277,6 @@
             ]
           },
           {
-            "type": "array",
-            "orientation": "horizontal",
-            "scale": 0.8,
-            "margin": "0,0",
-            "content": [
-              {
                 "type": "array",
                 "orientation": "horizontal",
                 "margin": "5,0",
@@ -1499,11 +1489,6 @@
                     ]
                   ]
                 },
-                {
-                  "type": "array",
-                  "orientation": "Vertical",
-                  "scale": 0.9,
-                  "content": [
                     {
                       "type": "array",
                       "orientation": "horizontal",
@@ -1567,12 +1552,6 @@
                         }
                       ]
                     },
-                    {
-                      "type": "array",
-                      "orientation": "horizontal",
-                      "scale": 0.8,
-                      "margin": "0,0",
-                      "content": [
                         {
                           "type": "array",
                           "orientation": "horizontal",
