@@ -1598,30 +1598,32 @@
             "height": 16
           },
           {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5,0",
-        "content": [
-          {
-            "type": "item",
-            "item": "MM_BOSS_KEY_ST",
-            "margin": "0,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "mm_stonetower_label",
-            "margin": "0,2",
-            "width": 32,
-            "height": 14
-          },
-          {
-            "type": "item",
-            "item": "MM_SMALL_KEY_ST",
-            "margin": "1,2",
-            "width": 16,
-            "height": 16
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "item",
+                "item": "MM_BOSS_KEY_ST",
+                "margin": "0,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "mm_stonetower_label",
+                "margin": "0,2",
+                "width": 32,
+                "height": 14
+              },
+              {
+                "type": "item",
+                "item": "MM_SMALL_KEY_ST",
+                "margin": "1,2",
+                "width": 16,
+                "height": 16
+              }
+            ]
           }
         ]
       }
