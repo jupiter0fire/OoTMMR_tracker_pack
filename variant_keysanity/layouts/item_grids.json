@@ -532,13 +532,6 @@
                 "margin": "0,0",
                 "content": [
                   {
-                    "type": "item",
-                    "item": "setting_mq_IceCavern",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
                     "type": "canvas",
                     "width": 66,
                     "height": 14,
@@ -559,6 +552,102 @@
                         "canvas_depth": 1,
                         "canvas_left": 34,
                         "canvas_top": 0,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 66,
+                    "height": 14,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "setting_mq_IceCavern",
+                        "margin": "1,1",
+                        "width": 28,
+                        "height": 10.5
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "th_label",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GF",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "setting_mq_GerudoTrainingGrounds",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GTG",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 66,
+                    "height": 14,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "setting_mq_GanonCastle",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GANON",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_GANON",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
                         "width": 14,
                         "height": 14
                       }
@@ -954,6 +1043,47 @@
                 "content": [
                   {
                     "type": "canvas",
+                    "width": 66,
+                    "height": 14,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "setting_mq_BottomoftheWell",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 2,
+                        "width": 28,
+                        "height": 10.5
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_BOTW",
+                        "canvas_depth": 1,
+                        "canvas_left": 34,
+                        "canvas_top": 0,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 66,
+                    "height": 14,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "setting_mq_IceCavern",
+                        "margin": "1,1",
+                        "width": 28,
+                        "height": 10.5
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
                     "width": 28,
                     "height": 28,
                     "margin": "1,1",
@@ -973,789 +1103,756 @@
                         "canvas_top": 16,
                         "width": 14,
                         "height": 14
-                      },
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 28,
+                    "height": 28,
+                    "margin": "1,1",
+                    "content": [
                       {
-                        "type": "canvas",
+                        "type": "item",
+                        "item": "setting_mq_GerudoTrainingGrounds",
+                        "canvas_depth": 1,
                         "width": 28,
-                        "height": 28,
-                        "margin": "1,1",
-                        "content": [
-                          {
-                            "type": "item",
-                            "item": "setting_mq_GerudoTrainingGrounds",
-                            "canvas_depth": 1,
-                            "width": 28,
-                            "height": 10.5
-                          },
-                          {
-                            "type": "item",
-                            "item": "OOT_SMALL_KEY_GTG",
-                            "canvas_depth": 1,
-                            "canvas_left": 0,
-                            "canvas_top": 16,
-                            "width": 14,
-                            "height": 14
-                          }
-                        ]
+                        "height": 10.5
                       },
                       {
-                        "type": "canvas",
-                        "width": 66,
-                        "height": 14,
-                        "margin": "1,1",
-                        "content": [
-                          {
-                            "type": "item",
-                            "item": "setting_mq_BottomoftheWell",
-                            "canvas_depth": 1,
-                            "canvas_left": 0,
-                            "canvas_top": 2,
-                            "width": 28,
-                            "height": 10.5
-                          },
-                          {
-                            "type": "item",
-                            "item": "OOT_SMALL_KEY_BOTW",
-                            "canvas_depth": 1,
-                            "canvas_left": 34,
-                            "canvas_top": 0,
-                            "width": 14,
-                            "height": 14
-                          },
-                          {
-                            "type": "canvas",
-                            "width": 66,
-                            "height": 14,
-                            "margin": "1,1",
-                            "content": [
-                              {
-                                "type": "item",
-                                "item": "setting_mq_IceCavern",
-                                "margin": "1,1",
-                                "width": 28,
-                                "height": 10.5
-                              },
-                              {
-                                "type": "item",
-                                "item": "setting_mq_GanonCastle",
-                                "canvas_depth": 1,
-                                "width": 28,
-                                "height": 10.5
-                              },
-                              {
-                                "type": "item",
-                                "item": "OOT_SMALL_KEY_GANON",
-                                "canvas_depth": 1,
-                                "canvas_left": 0,
-                                "canvas_top": 16,
-                                "width": 14,
-                                "height": 14
-                              },
-                              {
-                                "type": "item",
-                                "item": "OOT_BOSS_KEY_GANON",
-                                "canvas_depth": 1,
-                                "canvas_left": 16,
-                                "canvas_top": 16,
-                                "width": 14,
-                                "height": 14
-                              }
-                            ]
-                          }
-                        ]
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GTG",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      }
+                    ]
+                  },
+                  {
+                    "type": "canvas",
+                    "width": 66,
+                    "height": 14,
+                    "margin": "1,1",
+                    "content": [
+                      {
+                        "type": "item",
+                        "item": "setting_mq_GanonCastle",
+                        "canvas_depth": 1,
+                        "width": 28,
+                        "height": 10.5
                       },
                       {
-                        "type": "array",
-                        "orientation": "horizontal",
-                        "margin": "0,0",
-                        "content": [
-                          {
-                            "type": "item",
-                            "item": "setting_mq_DekuTree",
-                            "margin": "1,1",
-                            "width": 28,
-                            "height": 10.5
-                          },
-                          {
-                            "type": "item",
-                            "item": "setting_mq_DodongoCavern",
-                            "margin": "1,1",
-                            "width": 28,
-                            "height": 10.5
-                          },
-                          {
-                            "type": "item",
-                            "item": "setting_mq_Jabu-Jabu",
-                            "margin": "1,1",
-                            "width": 28,
-                            "height": 10.5
-                          }
-                        ]
+                        "type": "item",
+                        "item": "OOT_SMALL_KEY_GANON",
+                        "canvas_depth": 1,
+                        "canvas_left": 0,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
+                      },
+                      {
+                        "type": "item",
+                        "item": "OOT_BOSS_KEY_GANON",
+                        "canvas_depth": 1,
+                        "canvas_left": 16,
+                        "canvas_top": 16,
+                        "width": 14,
+                        "height": 14
                       }
                     ]
                   }
                 ]
               },
               {
-                "item_grid_tall_mm": {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                  {
+                    "type": "item",
+                    "item": "setting_mq_DekuTree",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "setting_mq_DodongoCavern",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "setting_mq_Jabu-Jabu",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "item_grid_tall_mm": {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "1,1",
+              "item_size": 28,
+              "rows": [
+                [
+                  "MM_OCARINA",
+                  "MM_BOW",
+                  "MM_ARROW_FIRE",
+                  "MM_ARROW_ICE",
+                  "MM_ARROW_LIGHT",
+                  "mm_spinattack",
+                  "MM_SHIELD_HERO",
+                  "MM_SHIELD_MIRROR",
+                  "MM_SPELL_FIRE"
+                ],
+                [
+                  "MM_BOMB_BAG",
+                  "MM_BOMBCHU",
+                  "MM_STICK",
+                  "MM_NUT",
+                  "MM_MAGIC_BEAN",
+                  "mm_bottle1",
+                  "mm_bottle2",
+                  "mm_bottle3",
+                  "MM_FW"
+                ],
+                [
+                  "MM_POWDER_KEG",
+                  "MM_PICTOGRAPH_BOX",
+                  "MM_LENS",
+                  "MM_HOOKSHOT",
+                  "MM_GREAT_FAIRY_SWORD",
+                  "mm_bottle4",
+                  "mm_bottle5",
+                  "mm_bottle6",
+                  "MM_SPELL_LOVE"
+                ],
+                [
+                  "MM_SONG_TIME",
+                  "MM_SONG_HEALING",
+                  "MM_SONG_EPONA",
+                  "MM_SONG_SOARING",
+                  "MM_SONG_STORMS",
+                  "MM_WALLET",
+                  "MM_MAGIC_UPGRADE",
+                  "MM_MOON_TEAR",
+                  "MM_STRENGTH"
+                ],
+                [
+                  "MM_SONG_AWAKENING",
+                  "MM_SONG_GORON",
+                  "MM_SONG_ZORA",
+                  "MM_SONG_EMPTINESS",
+                  "MM_SONG_ORDER",
+                  "MM_STRAY_FAIRY_TOWN",
+                  "MM_ROOM_KEY",
+                  "MM_DEED_LAND",
+                  "MM_BOOTS_IRON"
+                ],
+                [
+                  "MM_MASK_POSTMAN",
+                  "MM_MASK_ALL_NIGHT",
+                  "MM_MASK_BLAST",
+                  "MM_MASK_STONE",
+                  "MM_MASK_GREAT_FAIRY",
+                  "MM_MASK_DEKU",
+                  "MM_PENDANT_OF_MEMORIES",
+                  "MM_DEED_SWAMP",
+                  "MM_BOOTS_HOVER"
+                ],
+                [
+                  "MM_MASK_KEATON",
+                  "MM_MASK_BREMEN",
+                  "MM_MASK_BUNNY",
+                  "MM_MASK_DON_GERO",
+                  "MM_MASK_SCENTS",
+                  "MM_MASK_GORON",
+                  "MM_LETTER_TO_KAFEI",
+                  "MM_DEED_MOUNTAIN",
+                  "MM_TUNIC_GORON"
+                ],
+                [
+                  "MM_MASK_ROMANI",
+                  "MM_MASK_TROUPE_LEADER",
+                  "MM_MASK_KAFEI",
+                  "MM_MASK_COUPLE",
+                  "MM_MASK_TRUTH",
+                  "MM_MASK_ZORA",
+                  "MM_LETTER_TO_MAMA",
+                  "MM_DEED_OCEAN",
+                  "MM_TUNIC_ZORA"
+                ],
+                [
+                  "MM_MASK_KAMARO",
+                  "MM_MASK_GIBDO",
+                  "MM_MASK_GARO",
+                  "MM_MASK_CAPTAIN",
+                  "MM_MASK_GIANT",
+                  "MM_MASK_FIERCE_DEITY",
+                  "MM_GS_TOKEN_SWAMP",
+                  "MM_GS_TOKEN_OCEAN",
+                  "MM_KEY_SKELETON"
+                ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "center",
+              "item_margin": "1,1",
+              "scale": 1,
+              "rows": [
+                [
+                  "EMPTYSPACE",
+                  "EMPTYSPACE",
+                  "EMPTYSPACE",
+                  "EMPTYSPACE",
+                  "EMPTYSPACE"
+                ],
+                [
+                  "MM_OWL_CLOCK_TOWN",
+                  "MM_OWL_SOUTHERN_SWAMP",
+                  "MM_OWL_WOODFALL",
+                  "MM_OWL_MILK_ROAD",
+                  "MM_OWL_MOUNTAIN_VILLAGE"
+                ],
+                [
+                  "MM_OWL_SNOWHEAD",
+                  "MM_OWL_GREAT_BAY",
+                  "MM_OWL_ZORA_CAPE",
+                  "MM_OWL_IKANA_CANYON",
+                  "MM_OWL_STONE_TOWER"
+                ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "1,1",
+              "item_size": 27,
+              "rows": [
+                [
+                  "EMPTYSPACE",
+                  "EMPTYSPACE",
+                  "MM_BUTTON_A",
+                  "MM_BUTTON_C-UP",
+                  "MM_BUTTON_C-DOWN",
+                  "MM_BUTTON_C-LEFT",
+                  "MM_BUTTON_C-RIGHT"
+                ]
+              ]
+            },
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "0,0",
+              "scale": 1.25,
+              "rows": [
+                [
+                  "MM_DAY_1ST",
+                  "MM_NIGHT_1ST",
+                  "MM_DAY_2ND",
+                  "MM_NIGHT_2ND",
+                  "MM_DAY_FINAL",
+                  "MM_NIGHT_FINAL"
+                ]
+              ]
+            },
+            {
+              "type": "array",
+              "orientation": "vertical",
+              "content": [
+                {
                   "type": "array",
-                  "orientation": "vertical",
+                  "orientation": "horizontal",
+                  "margin": "0,0",
+                  "scale": 0.9,
                   "content": [
                     {
-                      "type": "itemgrid",
-                      "h_alignment": "left",
-                      "item_margin": "1,1",
-                      "item_size": 28,
-                      "rows": [
-                        [
-                          "MM_OCARINA",
-                          "MM_BOW",
-                          "MM_ARROW_FIRE",
-                          "MM_ARROW_ICE",
-                          "MM_ARROW_LIGHT",
-                          "mm_spinattack",
-                          "MM_SHIELD_HERO",
-                          "MM_SHIELD_MIRROR",
-                          "MM_SPELL_FIRE"
-                        ],
-                        [
-                          "MM_BOMB_BAG",
-                          "MM_BOMBCHU",
-                          "MM_STICK",
-                          "MM_NUT",
-                          "MM_MAGIC_BEAN",
-                          "mm_bottle1",
-                          "mm_bottle2",
-                          "mm_bottle3",
-                          "MM_FW"
-                        ],
-                        [
-                          "MM_POWDER_KEG",
-                          "MM_PICTOGRAPH_BOX",
-                          "MM_LENS",
-                          "MM_HOOKSHOT",
-                          "MM_GREAT_FAIRY_SWORD",
-                          "mm_bottle4",
-                          "mm_bottle5",
-                          "mm_bottle6",
-                          "MM_SPELL_LOVE"
-                        ],
-                        [
-                          "MM_SONG_TIME",
-                          "MM_SONG_HEALING",
-                          "MM_SONG_EPONA",
-                          "MM_SONG_SOARING",
-                          "MM_SONG_STORMS",
-                          "MM_WALLET",
-                          "MM_MAGIC_UPGRADE",
-                          "MM_MOON_TEAR",
-                          "MM_STRENGTH"
-                        ],
-                        [
-                          "MM_SONG_AWAKENING",
-                          "MM_SONG_GORON",
-                          "MM_SONG_ZORA",
-                          "MM_SONG_EMPTINESS",
-                          "MM_SONG_ORDER",
-                          "MM_STRAY_FAIRY_TOWN",
-                          "MM_ROOM_KEY",
-                          "MM_DEED_LAND",
-                          "MM_BOOTS_IRON"
-                        ],
-                        [
-                          "MM_MASK_POSTMAN",
-                          "MM_MASK_ALL_NIGHT",
-                          "MM_MASK_BLAST",
-                          "MM_MASK_STONE",
-                          "MM_MASK_GREAT_FAIRY",
-                          "MM_MASK_DEKU",
-                          "MM_PENDANT_OF_MEMORIES",
-                          "MM_DEED_SWAMP",
-                          "MM_BOOTS_HOVER"
-                        ],
-                        [
-                          "MM_MASK_KEATON",
-                          "MM_MASK_BREMEN",
-                          "MM_MASK_BUNNY",
-                          "MM_MASK_DON_GERO",
-                          "MM_MASK_SCENTS",
-                          "MM_MASK_GORON",
-                          "MM_LETTER_TO_KAFEI",
-                          "MM_DEED_MOUNTAIN",
-                          "MM_TUNIC_GORON"
-                        ],
-                        [
-                          "MM_MASK_ROMANI",
-                          "MM_MASK_TROUPE_LEADER",
-                          "MM_MASK_KAFEI",
-                          "MM_MASK_COUPLE",
-                          "MM_MASK_TRUTH",
-                          "MM_MASK_ZORA",
-                          "MM_LETTER_TO_MAMA",
-                          "MM_DEED_OCEAN",
-                          "MM_TUNIC_ZORA"
-                        ],
-                        [
-                          "MM_MASK_KAMARO",
-                          "MM_MASK_GIBDO",
-                          "MM_MASK_GARO",
-                          "MM_MASK_CAPTAIN",
-                          "MM_MASK_GIANT",
-                          "MM_MASK_FIERCE_DEITY",
-                          "MM_GS_TOKEN_SWAMP",
-                          "MM_GS_TOKEN_OCEAN",
-                          "MM_KEY_SKELETON"
-                        ]
-                      ]
+                      "type": "item",
+                      "item": "mm_woodfall",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
                     },
                     {
-                      "type": "itemgrid",
-                      "h_alignment": "center",
-                      "item_margin": "1,1",
-                      "scale": 1,
-                      "rows": [
-                        [
-                          "EMPTYSPACE",
-                          "EMPTYSPACE",
-                          "EMPTYSPACE",
-                          "EMPTYSPACE",
-                          "EMPTYSPACE"
-                        ],
-                        [
-                          "MM_OWL_CLOCK_TOWN",
-                          "MM_OWL_SOUTHERN_SWAMP",
-                          "MM_OWL_WOODFALL",
-                          "MM_OWL_MILK_ROAD",
-                          "MM_OWL_MOUNTAIN_VILLAGE"
-                        ],
-                        [
-                          "MM_OWL_SNOWHEAD",
-                          "MM_OWL_GREAT_BAY",
-                          "MM_OWL_ZORA_CAPE",
-                          "MM_OWL_IKANA_CANYON",
-                          "MM_OWL_STONE_TOWER"
-                        ]
-                      ]
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_WF",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
                     },
                     {
-                      "type": "itemgrid",
-                      "h_alignment": "left",
-                      "item_margin": "1,1",
-                      "item_size": 27,
-                      "rows": [
-                        [
-                          "EMPTYSPACE",
-                          "EMPTYSPACE",
-                          "MM_BUTTON_A",
-                          "MM_BUTTON_C-UP",
-                          "MM_BUTTON_C-DOWN",
-                          "MM_BUTTON_C-LEFT",
-                          "MM_BUTTON_C-RIGHT"
-                        ]
-                      ]
+                      "type": "item",
+                      "item": "mm_snowhead",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
                     },
                     {
-                      "type": "itemgrid",
-                      "h_alignment": "left",
-                      "item_margin": "0,0",
-                      "scale": 1.25,
-                      "rows": [
-                        [
-                          "MM_DAY_1ST",
-                          "MM_NIGHT_1ST",
-                          "MM_DAY_2ND",
-                          "MM_NIGHT_2ND",
-                          "MM_DAY_FINAL",
-                          "MM_NIGHT_FINAL"
-                        ]
-                      ]
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_SH",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
                     },
                     {
-                      "type": "array",
-                      "orientation": "vertical",
-                      "content": [
-                        {
-                          "type": "array",
-                          "orientation": "horizontal",
-                          "margin": "0,0",
-                          "scale": 0.9,
-                          "content": [
-                            {
-                              "type": "item",
-                              "item": "mm_woodfall",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_WF",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            },
-                            {
-                              "type": "item",
-                              "item": "mm_snowhead",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_SH",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            },
-                            {
-                              "type": "item",
-                              "item": "mm_great_bay",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_GB",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            },
-                            {
-                              "type": "item",
-                              "item": "mm_stone_tower",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_ST",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            }
-                          ]
-                        },
-                        {
-                          "type": "array",
-                          "orientation": "horizontal",
-                          "scale": 0.8,
-                          "margin": "0,0",
-                          "content": [
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_WF",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_woodfall_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_WF",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            },
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_SH",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_snowhead_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_SH",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            },
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_GB",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_greatbay_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_GB",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            },
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_ST",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_stonetower_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_ST",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
+                      "type": "item",
+                      "item": "mm_great_bay",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_GB",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "mm_stone_tower",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_ST",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
                     }
                   ]
                 },
-                "item_grid_small_mm": {
+                {
                   "type": "array",
-                  "orientation": "vertical",
+                  "orientation": "horizontal",
+                  "scale": 0.8,
+                  "margin": "0,0",
                   "content": [
                     {
-                      "type": "itemgrid",
-                      "h_alignment": "left",
-                      "item_margin": "1,1",
-                      "item_size": 28,
-                      "rows": [
-                        [
-                          "MM_OCARINA",
-                          "MM_BOW",
-                          "MM_ARROW_FIRE",
-                          "MM_ARROW_ICE",
-                          "MM_ARROW_LIGHT",
-                          "mm_spinattack",
-                          "MM_SHIELD_HERO",
-                          "MM_SHIELD_MIRROR"
-                        ],
-                        [
-                          "MM_BOMB_BAG",
-                          "MM_BOMBCHU",
-                          "MM_MAGIC_BEAN",
-                          "mm_bottle1",
-                          "MM_POWDER_KEG",
-                          "MM_PICTOGRAPH_BOX",
-                          "MM_LENS",
-                          "MM_HOOKSHOT"
-                        ],
-                        [
-                          "MM_MOON_TEAR",
-                          "MM_DEED_LAND",
-                          "MM_DEED_SWAMP",
-                          "MM_DEED_MOUNTAIN",
-                          "MM_DEED_OCEAN",
-                          "MM_ROOM_KEY",
-                          "MM_LETTER_TO_KAFEI",
-                          "MM_LETTER_TO_MAMA"
-                        ],
-                        [
-                          "MM_SONG_TIME",
-                          "MM_SONG_HEALING",
-                          "MM_SONG_EPONA",
-                          "MM_SONG_SOARING",
-                          "MM_SONG_STORMS",
-                          "MM_WALLET",
-                          "MM_MAGIC_UPGRADE",
-                          "MM_PENDANT_OF_MEMORIES"
-                        ],
-                        [
-                          "MM_SONG_AWAKENING",
-                          "MM_SONG_GORON",
-                          "MM_SONG_ZORA",
-                          "MM_SONG_EMPTINESS",
-                          "MM_SONG_ORDER",
-                          "MM_STRAY_FAIRY_TOWN",
-                          "MM_GS_TOKEN_SWAMP",
-                          "MM_GS_TOKEN_OCEAN"
-                        ],
-                        [
-                          "MM_MASK_DEKU",
-                          "MM_MASK_GORON",
-                          "MM_MASK_ZORA",
-                          "MM_MASK_GIBDO",
-                          "MM_MASK_GARO",
-                          "MM_MASK_CAPTAIN",
-                          "MM_MASK_GIANT",
-                          "MM_MASK_FIERCE_DEITY"
-                        ],
-                        [
-                          "MM_SPELL_FIRE",
-                          "MM_FW",
-                          "MM_SPELL_LOVE",
-                          "MM_STRENGTH",
-                          "MM_BOOTS_IRON",
-                          "MM_BOOTS_HOVER",
-                          "MM_TUNIC_GORON",
-                          "MM_TUNIC_ZORA"
-                        ],
-                        [
-                          "MM_BUTTON_A",
-                          "MM_BUTTON_B",
-                          "MM_BUTTON_C-UP",
-                          "MM_BUTTON_C-DOWN",
-                          "MM_BUTTON_C-LEFT",
-                          "MM_BUTTON_C-RIGHT"
-                        ],
-                        [
-                          "MM_DAY_1ST",
-                          "MM_NIGHT_1ST",
-                          "MM_DAY_2ND",
-                          "MM_NIGHT_2ND",
-                          "MM_DAY_FINAL",
-                          "MM_NIGHT_FINAL"
-                        ]
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "margin": "5,0",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_WF",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
+                        },
+                        {
+                          "type": "item",
+                          "item": "mm_woodfall_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_WF",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
+                        }
                       ]
                     },
                     {
                       "type": "array",
-                      "orientation": "Vertical",
-                      "scale": 0.9,
+                      "orientation": "horizontal",
+                      "margin": "5,0",
                       "content": [
                         {
-                          "type": "array",
-                          "orientation": "horizontal",
-                          "margin": "0,0",
-                          "content": [
-                            {
-                              "type": "item",
-                              "item": "mm_woodfall",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_WF",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            },
-                            {
-                              "type": "item",
-                              "item": "mm_snowhead",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_SH",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            },
-                            {
-                              "type": "item",
-                              "item": "mm_great_bay",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_GB",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            },
-                            {
-                              "type": "item",
-                              "item": "mm_stone_tower",
-                              "margin": "1,1",
-                              "width": 28,
-                              "height": 28
-                            },
-                            {
-                              "type": "item",
-                              "item": "MM_STRAY_FAIRY_ST",
-                              "margin": "3,4",
-                              "width": 32,
-                              "height": 32
-                            }
-                          ]
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_SH",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
                         },
                         {
-                          "type": "array",
-                          "orientation": "horizontal",
-                          "scale": 0.8,
-                          "margin": "0,0",
-                          "content": [
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_WF",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_woodfall_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_WF",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            },
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_SH",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_snowhead_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_SH",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            },
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_GB",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_greatbay_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_GB",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            },
-                            {
-                              "type": "array",
-                              "orientation": "horizontal",
-                              "margin": "5,0",
-                              "content": [
-                                {
-                                  "type": "item",
-                                  "item": "MM_BOSS_KEY_ST",
-                                  "margin": "0,2",
-                                  "width": 16,
-                                  "height": 16
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "mm_stonetower_label",
-                                  "margin": "0,2",
-                                  "width": 32,
-                                  "height": 12
-                                },
-                                {
-                                  "type": "item",
-                                  "item": "MM_SMALL_KEY_ST",
-                                  "margin": "1,2",
-                                  "width": 16,
-                                  "height": 16
-                                }
-                              ]
-                            }
-                          ]
+                          "type": "item",
+                          "item": "mm_snowhead_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_SH",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
+                        }
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "margin": "5,0",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_GB",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
+                        },
+                        {
+                          "type": "item",
+                          "item": "mm_greatbay_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_GB",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
+                        }
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "margin": "5,0",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_ST",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
+                        },
+                        {
+                          "type": "item",
+                          "item": "mm_stonetower_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_ST",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
                         }
                       ]
                     }
                   ]
                 }
-              }
-            ]
-          }
-        ]
+              ]
+            }
+          ]
+        },
+        "item_grid_small_mm": {
+          "type": "array",
+          "orientation": "vertical",
+          "content": [
+            {
+              "type": "itemgrid",
+              "h_alignment": "left",
+              "item_margin": "1,1",
+              "item_size": 28,
+              "rows": [
+                [
+                  "MM_OCARINA",
+                  "MM_BOW",
+                  "MM_ARROW_FIRE",
+                  "MM_ARROW_ICE",
+                  "MM_ARROW_LIGHT",
+                  "mm_spinattack",
+                  "MM_SHIELD_HERO",
+                  "MM_SHIELD_MIRROR"
+                ],
+                [
+                  "MM_BOMB_BAG",
+                  "MM_BOMBCHU",
+                  "MM_MAGIC_BEAN",
+                  "mm_bottle1",
+                  "MM_POWDER_KEG",
+                  "MM_PICTOGRAPH_BOX",
+                  "MM_LENS",
+                  "MM_HOOKSHOT"
+                ],
+                [
+                  "MM_MOON_TEAR",
+                  "MM_DEED_LAND",
+                  "MM_DEED_SWAMP",
+                  "MM_DEED_MOUNTAIN",
+                  "MM_DEED_OCEAN",
+                  "MM_ROOM_KEY",
+                  "MM_LETTER_TO_KAFEI",
+                  "MM_LETTER_TO_MAMA"
+                ],
+                [
+                  "MM_SONG_TIME",
+                  "MM_SONG_HEALING",
+                  "MM_SONG_EPONA",
+                  "MM_SONG_SOARING",
+                  "MM_SONG_STORMS",
+                  "MM_WALLET",
+                  "MM_MAGIC_UPGRADE",
+                  "MM_PENDANT_OF_MEMORIES"
+                ],
+                [
+                  "MM_SONG_AWAKENING",
+                  "MM_SONG_GORON",
+                  "MM_SONG_ZORA",
+                  "MM_SONG_EMPTINESS",
+                  "MM_SONG_ORDER",
+                  "MM_STRAY_FAIRY_TOWN",
+                  "MM_GS_TOKEN_SWAMP",
+                  "MM_GS_TOKEN_OCEAN"
+                ],
+                [
+                  "MM_MASK_DEKU",
+                  "MM_MASK_GORON",
+                  "MM_MASK_ZORA",
+                  "MM_MASK_GIBDO",
+                  "MM_MASK_GARO",
+                  "MM_MASK_CAPTAIN",
+                  "MM_MASK_GIANT",
+                  "MM_MASK_FIERCE_DEITY"
+                ],
+                [
+                  "MM_SPELL_FIRE",
+                  "MM_FW",
+                  "MM_SPELL_LOVE",
+                  "MM_STRENGTH",
+                  "MM_BOOTS_IRON",
+                  "MM_BOOTS_HOVER",
+                  "MM_TUNIC_GORON",
+                  "MM_TUNIC_ZORA"
+                ],
+                [
+                  "MM_BUTTON_A",
+                  "MM_BUTTON_B",
+                  "MM_BUTTON_C-UP",
+                  "MM_BUTTON_C-DOWN",
+                  "MM_BUTTON_C-LEFT",
+                  "MM_BUTTON_C-RIGHT"
+                ],
+                [
+                  "MM_DAY_1ST",
+                  "MM_NIGHT_1ST",
+                  "MM_DAY_2ND",
+                  "MM_NIGHT_2ND",
+                  "MM_DAY_FINAL",
+                  "MM_NIGHT_FINAL"
+                ]
+              ]
+            },
+            {
+              "type": "array",
+              "orientation": "Vertical",
+              "scale": 0.9,
+              "content": [
+                {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "margin": "0,0",
+                  "content": [
+                    {
+                      "type": "item",
+                      "item": "mm_woodfall",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_WF",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "mm_snowhead",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_SH",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "mm_great_bay",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_GB",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
+                    },
+                    {
+                      "type": "item",
+                      "item": "mm_stone_tower",
+                      "margin": "1,1",
+                      "width": 28,
+                      "height": 28
+                    },
+                    {
+                      "type": "item",
+                      "item": "MM_STRAY_FAIRY_ST",
+                      "margin": "3,4",
+                      "width": 32,
+                      "height": 32
+                    }
+                  ]
+                },
+                {
+                  "type": "array",
+                  "orientation": "horizontal",
+                  "scale": 0.8,
+                  "margin": "0,0",
+                  "content": [
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "margin": "5,0",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_WF",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
+                        },
+                        {
+                          "type": "item",
+                          "item": "mm_woodfall_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_WF",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
+                        }
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "margin": "5,0",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_SH",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
+                        },
+                        {
+                          "type": "item",
+                          "item": "mm_snowhead_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_SH",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
+                        }
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "margin": "5,0",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_GB",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
+                        },
+                        {
+                          "type": "item",
+                          "item": "mm_greatbay_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_GB",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
+                        }
+                      ]
+                    },
+                    {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "margin": "5,0",
+                      "content": [
+                        {
+                          "type": "item",
+                          "item": "MM_BOSS_KEY_ST",
+                          "margin": "0,2",
+                          "width": 16,
+                          "height": 16
+                        },
+                        {
+                          "type": "item",
+                          "item": "mm_stonetower_label",
+                          "margin": "0,2",
+                          "width": 32,
+                          "height": 12
+                        },
+                        {
+                          "type": "item",
+                          "item": "MM_SMALL_KEY_ST",
+                          "margin": "1,2",
+                          "width": 16,
+                          "height": 16
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }
