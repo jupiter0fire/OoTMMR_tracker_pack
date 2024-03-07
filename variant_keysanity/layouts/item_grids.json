@@ -1221,22 +1221,22 @@
             "type": "item",
             "item": "mm_woodfall",
             "margin": "1,1",
-            "width": 28,
-            "height": 28
+            "width": 30,
+            "height": 30
           },
           {
             "type": "item",
             "item": "MM_STRAY_FAIRY_WF",
             "margin": "3,4",
-            "width": 32,
-            "height": 32
+            "width": 34,
+            "height": 34
           },
           {
             "type": "item",
             "item": "mm_snowhead",
             "margin": "1,1",
-            "width": 28,
-            "height": 28
+            "width": 30,
+            "height": 30
           },
           {
             "type": "item",
@@ -1249,29 +1249,29 @@
             "type": "item",
             "item": "mm_great_bay",
             "margin": "1,1",
-            "width": 28,
-            "height": 28
+            "width": 30,
+            "height": 30
           },
           {
             "type": "item",
             "item": "MM_STRAY_FAIRY_GB",
             "margin": "3,4",
-            "width": 32,
-            "height": 32
+            "width": 34,
+            "height": 34
           },
           {
             "type": "item",
             "item": "mm_stone_tower",
             "margin": "1,1",
-            "width": 28,
-            "height": 28
+            "width": 30,
+            "height": 30
           },
           {
             "type": "item",
             "item": "MM_STRAY_FAIRY_ST",
             "margin": "3,4",
-            "width": 32,
-            "height": 32
+            "width": 34,
+            "height": 34
           }
         ]
       },
