@@ -825,8 +825,8 @@
       },
       {
         "name": "Freestanding Hearts",
-        "chest_unopened_img": "images/system/PFHearts.png",
-        "chest_opened_img": "images/system/PFHeartsGrey.png",
+        "chest_unopened_img": "images/PFHearts.png",
+        "chest_opened_img": "images/PFHeartsGrey.png",
         "access_rules": [
           "$mm|Pirate Fortress Freestanding Hearts"
         ],
