@@ -1222,10 +1222,11 @@
       {
         "type": "itemgrid",
         "h_alignment": "left",
-        "item_margin": "0,0",
-        "scale": 1.25,
+        "item_margin": "1.1",
+        "scale": 1,
         "rows": [
           [
+            "EMPTYSPACE",
             "MM_DAY_1ST",
             "MM_NIGHT_1ST",
             "MM_DAY_2ND",
@@ -1316,8 +1317,8 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "MM_BOSS_KEY_WF",
-                    "margin": "0,2",
+                    "item": "MM_SMALL_KEY_WF",
+                    "margin": "1,2",
                     "width": 16,
                     "height": 16
                   },
@@ -1326,12 +1327,12 @@
                     "item": "mm_woodfall_label",
                     "margin": "0,2",
                     "width": 32,
-                    "height": 12
+                    "height": 16
                   },
                   {
-                    "type": "item",
-                    "item": "MM_SMALL_KEY_WF",
-                    "margin": "1,2",
+                      "type": "item",
+                    "item": "MM_BOSS_KEY_WF",
+                    "margin": "0,2",
                     "width": 16,
                     "height": 16
                   }
@@ -1344,8 +1345,8 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "MM_BOSS_KEY_SH",
-                    "margin": "0,2",
+                    "item": "MM_SMALL_KEY_SH",
+                    "margin": "1,2",
                     "width": 16,
                     "height": 16
                   },
@@ -1354,12 +1355,12 @@
                     "item": "mm_snowhead_label",
                     "margin": "0,2",
                     "width": 32,
-                    "height": 12
+                    "height": 16
                   },
                   {
                     "type": "item",
-                    "item": "MM_SMALL_KEY_SH",
-                    "margin": "1,2",
+                    "item": "MM_BOSS_KEY_SH",
+                    "margin": "0,2",
                     "width": 16,
                     "height": 16
                   }
@@ -1371,9 +1372,9 @@
                 "margin": "5,0",
                 "content": [
                   {
-                    "type": "item",
-                    "item": "MM_BOSS_KEY_GB",
-                    "margin": "0,2",
+                     "type": "item",
+                    "item": "MM_SMALL_KEY_GB",
+                    "margin": "1,2",
                     "width": 16,
                     "height": 16
                   },
@@ -1382,12 +1383,12 @@
                     "item": "mm_greatbay_label",
                     "margin": "0,2",
                     "width": 32,
-                    "height": 12
+                    "height": 16
                   },
                   {
                     "type": "item",
-                    "item": "MM_SMALL_KEY_GB",
-                    "margin": "1,2",
+                    "item": "MM_BOSS_KEY_GB",
+                    "margin": "0,2",
                     "width": 16,
                     "height": 16
                   }
@@ -1400,8 +1401,8 @@
                 "content": [
                   {
                     "type": "item",
-                    "item": "MM_BOSS_KEY_ST",
-                    "margin": "0,2",
+                    "item": "MM_SMALL_KEY_ST",
+                    "margin": "1,2",
                     "width": 16,
                     "height": 16
                   },
@@ -1410,12 +1411,12 @@
                     "item": "mm_stonetower_label",
                     "margin": "0,2",
                     "width": 32,
-                    "height": 12
+                    "height": 16
                   },
                   {
                     "type": "item",
-                    "item": "MM_SMALL_KEY_ST",
-                    "margin": "1,2",
+                    "item": "MM_BOSS_KEY_ST",
+                    "margin": "0,2",
                     "width": 16,
                     "height": 16
                   }
