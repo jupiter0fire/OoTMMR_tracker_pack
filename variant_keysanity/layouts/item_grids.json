@@ -1189,17 +1189,20 @@
           ],
           [
             "EMPTYSPACE",
+            "EMPTYSPACE",
             "MM_BUTTON_A",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT"
+            "MM_BUTTON_C-RIGHT",
+            "EMPTYSPACE",
+            "EMPTYSPACE"
           ]
         ]
       },
       {
         "type": "itemgrid",
-        "h_alignment": "left",
+        "h_alignment": "centre",
         "item_margin": "1,1",
         "scale": 1.1,
         "rows": [
