@@ -225,7 +225,28 @@
                     "height": 28,
                     "margin": "1,1",
                     "content": [
-                      {
+                    {
+                    "type": "item",
+                    "item": "setting_mq_DekuTree",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "setting_mq_DodongoCavern",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                  {
+                    "type": "item",
+                    "item": "setting_mq_Jabu-Jabu",
+                    "margin": "1,1",
+                    "width": 28,
+                    "height": 10.5
+                  },
+                      { {
                         "type": "item",
                         "item": "setting_mq_ForestTemple",
                         "canvas_depth": 1,
@@ -249,15 +270,6 @@
                         "canvas_top": 16,
                         "width": 14,
                         "height": 14
-                      }
-                    ]
-                  },
-                  {
-                    "type": "canvas",
-                    "width": 28,
-                    "height": 28,
-                    "margin": "1,1",
-                    "content": [
                       {
                         "type": "item",
                         "item": "setting_mq_FireTemple",
@@ -487,27 +499,6 @@
                 "orientation": "horizontal",
                 "margin": "0,0",
                 "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_DekuTree",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "setting_mq_DodongoCavern",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "setting_mq_Jabu-Jabu",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 10.5
-                  },
                   {
                     "type": "item",
                     "item": "setting_mq_IceCavern",
