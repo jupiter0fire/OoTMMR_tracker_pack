@@ -7477,35 +7477,40 @@
 						"chest_opened_img": "images/activated_owl_statue.png",
 						"access_rules": [
 						  "$mm|Woodfall Owl Statue"
-						],
-						  "force_invisibility_rules": [
-					            "setting_owlShuffle_none",
-						"item_count": 1
-					  },
-					  {
+							                  ],
+                    "item_count": 1
+                  }
+                ],
+			                             "map_locations": [
+							     {
+					"map": "termina",
+					"force_invisibility_rules": [
+				         "setting_OwlShuffle_none"
+					],
+					"x": 530,
+					"y": 462
+				 }
+                                  ]
+                            },
+                         {
 						"name": "Woodfall Entrance Grass",
 						"chest_unopened_img": "images/MM_Grass.png",
 						"chest_opened_img": "images/GrassGreyscale.png",
 						"access_rules": [
 						  "$mm|Woodfall Entrance Grass"
-						],
-						  "force_invisibility_rules": [
-					             "setting_GrassShuffle_none"
-						"item_count": 1
-					  }
-					]
-				  }
-				],
-				"map_locations": [
+				       ],
+                                               "item_count": 1
+                                 }
+                                  ],
+			                             "map_locations": [
 				  {
 					"map": "termina",
+					"force_invisibility_rules": [
+				         "setting_GrassShuffle_none"
 					],
-					"x": 530,
-					"y": 462
-				  }
-				]
-			  },
-              {
+					"x": 526,
+					"y": 475
+				 ],
                 "name": "Woodfall Great Fairy Fountain",
                 "short_name": "Woodfall Great Fairy",
                 "sections": [
