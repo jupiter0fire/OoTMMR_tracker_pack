@@ -787,7 +787,7 @@ function _oot_logic()
         return result
     end
 
-    	function is_child()
+    function is_child()
 		return age('child')
 	end
 
