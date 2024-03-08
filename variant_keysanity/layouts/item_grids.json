@@ -1188,7 +1188,6 @@
             "MM_NIGHT_FINAL"
           ],
           [
-            "EMPTYSPACE",
             "MM_BUTTON_A",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
@@ -1204,7 +1203,6 @@
         "scale": 1.1,
         "rows": [
           [
-            "EMPTYSPACE",
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_SOUTHERN_SWAMP",
             "MM_OWL_WOODFALL",
