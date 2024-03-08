@@ -370,38 +370,38 @@
   {
     "name": "OoT A Button",
     "type": "toggle",
-    "img": "images/A Button.png",
+    "img": "images/system/A Button.png",
     "codes": "OOT_BUTTON_A"
   },
   {
     "name": "OoT B Button",
     "type": "toggle",
-    "img": "images/B Button.png",
+    "img": "images/system/B Button.png",
     "codes": "OOT_BUTTON_B"
   },
   {
     "name": "OoT C-Up Button",
     "type": "toggle",
-    "img": "images/C-Up.png",
-    "codes": "OOT_BUTTON_CUP"
+    "img": "images/system/C-Up.png",
+    "codes": "OOT_BUTTON_C-UP"
   },
   {
     "name": "OoT C-Down Button",
     "type": "toggle",
-    "img": "images/C-Down.png",
-    "codes": "OOT_BUTTON_CDOWN"
+    "img": "images/system/C-Down.png",
+    "codes": "OOT_BUTTON_C-DOWN"
   },
   {
     "name": "OoT C-Left Button",
     "type": "toggle",
-    "img": "images/C-Left.png",
-    "codes": "OOT_BUTTON_CLEFT"
+    "img": "images/system/C-Left.png",
+    "codes": "OOT_BUTTON_C-LEFT"
   },
   {
     "name": "OoT C-Right Button",
     "type": "toggle",
-    "img": "images/C-Right.png",
-    "codes": "OOT_BUTTON_CRIGHT"
+    "img": "images/system/C-Right.png",
+    "codes": "OOT_BUTTON_C-RIGHT"
   },
   {
     "name": "OoT Red Coin",
