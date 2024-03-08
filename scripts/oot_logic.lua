@@ -815,6 +815,10 @@ function _oot_logic()
 		return has_ocarina() and has(x)
 	end
 
+	function has_skeleton_key_oot()
+		return has_(OOT_KEY_SKELETON))
+	end
+
 	function has_sticks()
 		return event('STICKS') or renewable(STICK) or renewable(STICKS_5) or renewable(STICKS_10) or renewable(SHARED_STICK) or renewable(SHARED_STICKS_5) or renewable(SHARED_STICKS_10) or (setting('sharedNutsSticks') and event('MM_STICKS'))
 	end
