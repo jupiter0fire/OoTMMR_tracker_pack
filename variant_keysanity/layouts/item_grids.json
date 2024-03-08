@@ -1192,7 +1192,7 @@
       {
         "type": "itemgrid",
         "h_alignment": "center",
-        "item_margin": "1,1",
+        "item_margin": "1,2",
         "item_size": 24,
         "rows": [
           [
@@ -1229,8 +1229,8 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,0",
-        "scale": 0.9,
+        "margin": "1,1",
+        "scale": 1.1,
         "content": [
           {
             "type": "item",
