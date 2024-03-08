@@ -139,21 +139,6 @@
         ]
       },
       {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "item_margin": "1,1",
-        "scale": 0.8,
-        "rows": [
-          [
-            "EMPTYSPACE",
-            "EMPTYSPACE",
-            "EMPTYSPACE",
-            "EMPTYSPACE",
-            "EMPTYSPACE"
-          ]
-        ]
-      },
-      {
         "type": "array",
         "orientation": "horizontal",
         "margin": "0,0",
