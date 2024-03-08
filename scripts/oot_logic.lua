@@ -820,7 +820,7 @@ function _oot_logic()
 	end
 
 	function can_play_time()
-		return has_ocarina() and can_play('OOT_SONG_TIME') and has_('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and can_play('OOT_SONG_TIME') or can_play(SHARED_SONG_TIME) and has_('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_epona()
@@ -945,10 +945,6 @@ function _oot_logic()
 
 	function can_play_sun()
 		return can_play(SONG_SUN) or can_play(SHARED_SONG_SUN)
-	end
-
-	function can_play_time()
-		return can_play(SONG_TIME) or can_play(SHARED_SONG_TIME)
 	end
 
 	function can_play_epona()
