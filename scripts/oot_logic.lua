@@ -823,7 +823,7 @@ function _oot_logic()
 		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_CUP')
 	end
 
-	function has_oot_button_cdown)
+	function has_oot_button_cdown()
 		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_CDOWN')
 	end
 
