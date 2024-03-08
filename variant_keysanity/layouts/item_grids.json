@@ -1176,7 +1176,7 @@
       {
         "type": "itemgrid",
         "h_alignment": "center",
-        "item_margin": "1,1",
+        "item_margin": "0,0",
         "item_size": 34,
         "rows": [
           [
@@ -1192,7 +1192,7 @@
       {
         "type": "itemgrid",
         "h_alignment": "center",
-        "item_margin": "1,2",
+        "item_margin": "0,0",
         "item_size": 24,
         "rows": [
           [
@@ -1340,7 +1340,7 @@
           {
             "type": "item",
             "item": "MM_SMALL_KEY_GB",
-            "margin": "1,2",
+            "margin": "2,2",
             "width": 16,
             "height": 16
           },
@@ -1361,7 +1361,7 @@
           {
             "type": "item",
             "item": "MM_SMALL_KEY_ST",
-            "margin": "1,2",
+            "margin": "2,2",
             "width": 16,
             "height": 16
           },
