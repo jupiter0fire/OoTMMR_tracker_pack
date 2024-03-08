@@ -1229,7 +1229,7 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "1,1",
+        "margin": "0,0",
         "scale": 1.1,
         "content": [
           {
