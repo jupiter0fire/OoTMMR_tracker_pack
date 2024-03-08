@@ -1189,10 +1189,10 @@
           ],
           [
             "MM_BUTTON_A",
-            "MM__BUTTON_C-UP",
+            "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
-            "MM__BUTTON_C-RIGHT"
+            "MM_BUTTON_C-RIGHT"
           ]
         ]
       },
