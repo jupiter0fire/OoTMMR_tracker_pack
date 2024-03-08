@@ -816,7 +816,7 @@ function _oot_logic()
 	end
 
 	function has_skeleton_key_oot()
-		return has_('OOT_KEY_SKELETON')
+		return has('OOT_KEY_SKELETON')
 	end
 
 	function has_sticks()
