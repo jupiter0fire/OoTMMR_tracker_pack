@@ -1230,7 +1230,7 @@
         "type": "array",
         "orientation": "horizontal",
         "margin": "0,0",
-        "scale": 0.9,
+        "scale": 1.0,
         "content": [
           {
             "type": "item",
@@ -1292,7 +1292,7 @@
       },
       {
         "type": "array",
-        "orientation": "center",
+        "orientation": "horizontal",
         "margin": "5,0",
         "content": [
           {
