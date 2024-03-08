@@ -1353,13 +1353,13 @@
   {
     "name": "MM Clock 1st Day",
     "type": "toggle",
-    "img": "images/clock_day_1st.png",
+    "img": "images/clock_1.png",
     "codes": "MM_DAY_1ST"
   },
   {
     "name": "MM Clock 2nd Day",
     "type": "toggle",
-    "img": "images/clock_day_2nd.png",
+    "img": "images/clock_3.png",
     "codes": "MM_DAY_2ND"
   },
   {
@@ -1371,13 +1371,13 @@
   {
     "name": "MM Clock 1st Night",
     "type": "toggle",
-    "img": "images/clock_night_1st.png",
+    "img": "images/clock_2.png",
     "codes": "MM_NIGHT_1ST"
   },
   {
     "name": "MM Clock 2nd Night",
     "type": "toggle",
-    "img": "images/clock_night_2nd.png",
+    "img": "images/clock_4.png",
     "codes": "MM_NIGHT_2ND"
   },
   {
