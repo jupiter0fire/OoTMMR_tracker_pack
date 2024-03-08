@@ -1189,7 +1189,6 @@
           ],
           [
             "EMPTYSPACE",
-            "EMPTYSPACE",
             "MM_BUTTON_A",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
@@ -1206,7 +1205,6 @@
         "rows": [
           [
             "EMPTYSPACE",
-            "EMPTYSPACE",
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_SOUTHERN_SWAMP",
             "MM_OWL_WOODFALL",
@@ -1214,7 +1212,6 @@
             "MM_OWL_MOUNTAIN_VILLAGE"
           ],
           [
-            "EMPTYSPACE",
             "EMPTYSPACE",
             "MM_OWL_SNOWHEAD",
             "MM_OWL_GREAT_BAY",
