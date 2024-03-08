@@ -370,37 +370,37 @@
   {
     "name": "OoT A Button",
     "type": "toggle",
-    "img": "images/system/A Button.png",
+    "img": "images/A Button.png",
     "codes": "OOT_BUTTON_A"
   },
   {
     "name": "OoT B Button",
     "type": "toggle",
-    "img": "images/system/B Button.png",
+    "img": "images/B Button.png",
     "codes": "OOT_BUTTON_B"
   },
   {
     "name": "OoT C-Up Button",
     "type": "toggle",
-    "img": "images/system/C-Up.png",
+    "img": "images/C-Up.png",
     "codes": "OOT_BUTTON_CUP"
   },
   {
     "name": "OoT C-Down Button",
     "type": "toggle",
-    "img": "images/system/C-Down.png",
+    "img": "images/C-Down.png",
     "codes": "OOT_BUTTON_CDOWN"
   },
   {
     "name": "OoT C-Left Button",
     "type": "toggle",
-    "img": "images/system/C-Left.png",
+    "img": "images/C-Left.png",
     "codes": "OOT_BUTTON_CLEFT"
   },
   {
     "name": "OoT C-Right Button",
     "type": "toggle",
-    "img": "images/system/C-Right.png",
+    "img": "images/C-Right.png",
     "codes": "OOT_BUTTON_CRIGHT"
   },
   {
