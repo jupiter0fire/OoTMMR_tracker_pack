@@ -32,9 +32,9 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
   
 ## Unsupported Settings
 
-- Dungeon Reward Shuffle Anywhere      }
-- Boss Entrance Shuffle                } In testing
-- Dungeon Entrance Shuffle             }
+- Dungeon Reward Shuffle Anywhere - In Testing
+- Boss Entrance Shuffle - In testing
+- Dungeon Entrance Shuffle - In Testing
 
 ## TODOs:
 
