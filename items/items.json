@@ -383,25 +383,25 @@
     "name": "OoT C-Up Button",
     "type": "toggle",
     "img": "images/system/C-Up.png",
-    "codes": "OOT_BUTTON_C-UP"
+    "codes": "OOT_BUTTON_CUP"
   },
   {
     "name": "OoT C-Down Button",
     "type": "toggle",
     "img": "images/system/C-Down.png",
-    "codes": "OOT_BUTTON_C-DOWN"
+    "codes": "OOT_BUTTON_CDOWN"
   },
   {
     "name": "OoT C-Left Button",
     "type": "toggle",
     "img": "images/system/C-Left.png",
-    "codes": "OOT_BUTTON_C-LEFT"
+    "codes": "OOT_BUTTON_CLEFT"
   },
   {
     "name": "OoT C-Right Button",
     "type": "toggle",
     "img": "images/system/C-Right.png",
-    "codes": "OOT_BUTTON_C-RIGHT"
+    "codes": "OOT_BUTTON_CRIGHT"
   },
   {
     "name": "OoT Red Coin",
