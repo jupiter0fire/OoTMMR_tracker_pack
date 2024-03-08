@@ -815,6 +815,58 @@ function _oot_logic()
 		return has_ocarina() and has(x)
 	end
 
+	function can_play_sun()
+		return has_ocarina() and can_play('OOT_SONG_SUN') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_time()
+		return has_ocarina() and can_play('OOT_SONG_TIME') and has_('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_epona()
+		return has_ocarina() and can_play('OOT_SONG_EPONA') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_storms()
+		return has_ocarina() and can_play('OOT_SONG_STORMS') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A')
+	end
+
+	function can_play_zelda()
+		return has_ocarina() and can_play('OOT_SONG_ZELDA') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_saria()
+		return has_ocarina() and can_play('OOT_SONG_SARIA') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_elegy()
+		return has_ocarina() and can_play('OOT_SONG_EMPTINESS') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_tp_light() 
+		return has_ocarina() and can_play('SONG_TP_LIGHT') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_tp_forest()
+		return has_ocarina() and can_play('SONG_TP_FOREST') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_tp_fire()
+		return has_ocarina() and can_play('SONG_TP_FIRE') and has_('OOT_BUTTON_A') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_tp_water()
+		return has_ocarina() and can_play('SONG_TP_WATER') and has_('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT') and ('OOT_BUTTON_A')
+	end
+
+	function can_play_tp_shadow()
+		return has_ocarina() and can_play('SONG_TP_SHADOW') and has_('OOT_BUTTON_A') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+	end
+
+	function can_play_tp_spirit()
+		return has_ocarina() and can_play('SONG_TP_SPIRIT') and has_('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
+	end
+
 	function has_skeleton_key_oot()
 		return has('OOT_KEY_SKELETON')
 	end
@@ -1274,8 +1326,7 @@ function _oot_logic()
 	function has_mask_truth()
 		return has('MASK_TRUTH') or has('SHARED_MASK_TRUTH')
 	end
-
-
+	
     logic = {
     ["Deku Tree Boss"] = {
         ["locations"] = {
