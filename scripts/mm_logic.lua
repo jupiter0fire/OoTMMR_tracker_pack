@@ -963,6 +963,10 @@ function _mm_logic()
 		return has('SWORD') or has('GREAT_FAIRY_SWORD')
 	end
 
+	function has_Skeleton_Key_MM()
+		return has('MM_KEY_SKELETON')
+	end
+
 	function can_use_beans()
 		return has_beans() and (has_bottle() or can_play_storms())
 	end
