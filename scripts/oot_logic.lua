@@ -807,6 +807,26 @@ function _oot_logic()
 		return oot_time('day') and oot_time('night')
 	end
 
+	function has_oot_button_a()
+		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_A')
+	end
+
+	function has_oot_button_c-right()
+		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-RIGHT')
+	end
+
+	function has_oot_button_c-left()
+		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-LEFT')
+	end
+
+	function has_oot_button_c-up()
+		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-UP')
+	end
+
+	function has_oot_button_c-down)
+		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-DOWN')
+	end
+
 	function has_ocarina()
 		return has('OCARINA') or has('SHARED_OCARINA')
 	end
