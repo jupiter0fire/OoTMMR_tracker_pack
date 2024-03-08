@@ -28,17 +28,19 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - Click on a dungeon name to mark it as a mq dungeon (white letters = regular dungeon, red letters = mq dungeon).
 
+- For best results use keysanity options to see the new checks and items added with the newest upodates.
+  
 ## Unsupported Settings
 
-- Dungeon Reward Shuffle Anywhere
-- Boss Entrance Shuffle
-- Dungeon Entrance Shuffle
+- Dungeon Reward Shuffle Anywhere      }
+- Boss Entrance Shuffle                } In testing
+- Dungeon Entrance Shuffle             }
 
 ## TODOs:
 
 - [ ] Delete unused lua/json parts
-- [X] Add new items within tracker on MM side ( scales, strength upgrade, tunic, boots, Clocks As Items)
-- [X] Add new items within tracker on OOT side ( Masks )
+- [X] Add new items within tracker on MM side
+- [X] Add new items within tracker on OOT side
 - [X] Add Ocarina Buttons within tracker on both sides
 - [X] Update OoT Logic for Stone Mask 
 - [X] Update OoT Logic for Blast Mask
@@ -46,7 +48,9 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] Add OoT Grass Checks to Map
 - [X] Add Coins, Add Skeleton Keys, Add Bottomless Wallet
 - [X] Add Logic for Coins, Skeleton Keys, and Bottomless Wallet
-- [X] Move half of Owl Statues to new row and increase text size so it is readable 
+- [X] Move half of Owl Statues to new row and increase text size so it is readable
+- [X] MM keys/text could do with a size upgrade to make it readable
+- [X] Fix Keysanity Key locations - Done
 - [X] Add Elegy of Emptiness to OoT
 - [X] Add logic to grass and fairy fountain checks (just needs to be added to the settings list)
 - [X] Update MM Logic for Silver & Golden Scales
@@ -75,12 +79,10 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
       "wonder rupees" fall into this category), freestanding hearts - MM done, silver rupees, pots, bottle content)
 - [ ] Update Dungeon Checks (grass etc) - OoT Big Fairies done
 - [ ] Update Shared options
-- [ ] Fix Keysanity Key locations – either give main dungeons their own row or move BOTW/ICE next to TH to make key positions consistent - See how room is after all new items are added
-- [ ] MM keys/text could do with a size upgrade to make it readable but its low priority
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
 - [ ] Fix broadcast view item locations - Do last before release so only have to fiddle with once
-- [ ] Update/add Entrance randomization options
+- [ ] Update/add Entrance randomization options - In Progress
 
 ## Credits
 
