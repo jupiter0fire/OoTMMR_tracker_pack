@@ -1194,9 +1194,7 @@
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT",
-            "EMPTYSPACE",
-            "EMPTYSPACE"
+            "MM_BUTTON_C-RIGHT"
           ]
         ]
       },
@@ -1213,9 +1211,7 @@
             "MM_OWL_SOUTHERN_SWAMP",
             "MM_OWL_WOODFALL",
             "MM_OWL_MILK_ROAD",
-            "MM_OWL_MOUNTAIN_VILLAGE",
-            "EMPTYSPACE",
-            "EMPTYSPACE"
+            "MM_OWL_MOUNTAIN_VILLAGE"
           ],
           [
             "EMPTYSPACE",
@@ -1224,9 +1220,7 @@
             "MM_OWL_GREAT_BAY",
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
-            "MM_OWL_STONE_TOWER",
-            "EMPTYSPACE",
-            "EMPTYSPACE"
+            "MM_OWL_STONE_TOWER"
           ]
         ]
       },
