@@ -962,23 +962,7 @@ function _oot_logic()
 	function can_use_beans()
 		return is_child() and has('MAGIC_BEAN')
 	end
-
-	function can_play_sun()
-		return can_play(SONG_SUN) or can_play(SHARED_SONG_SUN)
-	end
-
-	function can_play_time()
-		return can_play(SONG_TIME) or can_play(SHARED_SONG_TIME)
-	end
-
-	function can_play_epona()
-		return can_play(SONG_EPONA) or can_play(SHARED_SONG_EPONA)
-	end
-
-	function can_play_storms()
-		return can_play(SONG_STORMS) or can_play(SHARED_SONG_STORMS)
-	end
-
+	
 	function age_sticks()
 		return is_child() or setting('agelessSticks')
 	end
