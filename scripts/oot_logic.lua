@@ -808,23 +808,23 @@ function _oot_logic()
 	end
 
 	function has_oot_button_a()
-		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_A')
+		return has('OOT_BUTTON_A')
 	end
 
-	function has_oot_button_cright()
-		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-RIGHT')
+	function has_oot_button_c_right()
+		return has('OOT_BUTTON_C-RIGHT')
 	end
 
-	function has_oot_button_cleft()
-		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-LEFT')
+	function has_oot_button_c_left()
+		return has('OOT_BUTTON_C-LEFT')
 	end
 
-	function has_oot_button_cup()
-		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-UP')
+	function has_oot_button_c_up()
+		return has('OOT_BUTTON_C-UP')
 	end
 
-	function has_oot_button_cdown()
-		return has('OCARINA') or has('SHARED_OCARINA') and has('OOT_BUTTON_C-DOWN')
+	function has_oot_button_c_down()
+		return has('OOT_BUTTON_C-DOWN')
 	end
 
 	function has_ocarina()
@@ -836,31 +836,31 @@ function _oot_logic()
 	end
 
 	function can_play_sun()
-		return has_ocarina() or has('SHARED_OCARINA') and ('OOT_SONG_SUN') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() or has('SHARED_OCARINA') and ('SONG_SUN') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_time()
-		return has_ocarina() or has('SHARED_OCARINA') and ('OOT_SONG_TIME') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() or has('SHARED_OCARINA') and ('SONG_TIME') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_epona()
-		return has_ocarina() or has('SHARED_OCARINA') and ('OOT_SONG_EPONA') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() or has('SHARED_OCARINA') and ('SONG_EPONA') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_storms()
-		return has_ocarina() or has('SHARED_OCARINA') and ('OOT_SONG_STORMS') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A')
+		return has_ocarina() or has('SHARED_OCARINA') and ('SONG_STORMS') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A')
 	end
 
 	function can_play_zelda()
-		return has_ocarina() or has('SHARED_OCARINA') and ('OOT_SONG_ZELDA') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() or has('SHARED_OCARINA') and ('SONG_ZELDA') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_saria()
-		return has_ocarina() or has('SHARED_OCARINA') and ('OOT_SONG_SARIA') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() or has('SHARED_OCARINA') and ('SONG_SARIA') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_elegy()
-		return has_ocarina()  and ('OOT_SONG_EMPTINESS') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina()  and ('SONG_EMPTINESS') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_tp_light() 
@@ -962,7 +962,7 @@ function _oot_logic()
 	function can_use_beans()
 		return is_child() and has('MAGIC_BEAN')
 	end
-	
+
 	function age_sticks()
 		return is_child() or setting('agelessSticks')
 	end
