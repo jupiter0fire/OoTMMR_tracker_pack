@@ -61,7 +61,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
 - [ ] Update OoT Logic for Quick age swap option
-- [ ] Update OoT Logic for pre completed dungeon option
 - [ ] Update OoT Logic for Hookshoot anywhere option
 - [ ] Update OoT Logic for Climb most surfaces option
 - [ ] Update MM Logic for various boots
