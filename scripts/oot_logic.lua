@@ -831,6 +831,10 @@ function _oot_logic()
 		return has('OCARINA') or has('SHARED_OCARINA')
 	end
 
+	function can_play(x)
+		return has_ocarina() and has(x)
+	end
+
 	function can_play_sun()
 		return has_ocarina() or has('SHARED_OCARINA') and ('SONG_SUN') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-RIGHT')
 	end
