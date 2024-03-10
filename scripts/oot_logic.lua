@@ -811,15 +811,15 @@ function _oot_logic()
 		return has('OOT_BUTTON_A')
 	end
 
-	function has_oot_button_c_right() has_oot_button_a()
+	function has_oot_button_c_right()
 		return has('OOT_BUTTON_C-RIGHT')
 	end
 
-	function has_oot_button_c_left() has_oot_button_c_right() has_oot_button_a()
+	function has_oot_button_c_left()
 		return has('OOT_BUTTON_C-LEFT')
 	end
 
-	function has_oot_button_c_up() has_oot_button_c_left() has_oot_button_c_right() has_oot_button_a()
+	function has_oot_button_c_up()
 		return has('OOT_BUTTON_C-UP')
 	end
 
