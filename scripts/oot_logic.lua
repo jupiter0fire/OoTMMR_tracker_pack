@@ -884,11 +884,11 @@ function _oot_logic()
 	end
 
 	function can_play_tp_spirit()
-		return has_ocarina() and ('SONG_TP_SPIRIT') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_SPIRIT') and has_oot_button_c_down() and oot_button_a() and oot_button_c_right()
 	end
 
 	function has_skeleton_key_oot()
-		return has_skeleton_key_oot()
+		return has_('OOT_KEY_SKELETON')
 	end
 
 	function has_sticks()
