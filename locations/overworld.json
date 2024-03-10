@@ -1280,6 +1280,7 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
+              }
             ],
             "map_locations": [
               {
@@ -1638,9 +1639,9 @@
                 "access_rules": [
                   "$oot|Laboratory Eye Drops"
                 ],
-                 "chest_unopened_img": "images/Eyeball_Frog.png",
-                 "chest_opened_img": "images/Eyeball_Frog_Grey.png",
-                 "item_count": 1
+                "chest_unopened_img": "images/Eyeball_Frog.png",
+                "chest_opened_img": "images/Eyeball_Frog_Grey.png",
+                "item_count": 1
               },
               {
                 "name": "LH GS Lab Crate",
