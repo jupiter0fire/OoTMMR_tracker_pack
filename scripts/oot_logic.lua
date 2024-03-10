@@ -1184,7 +1184,7 @@ function _oot_logic()
 	end
 
 	function hidden_grotto_storms()
-		return stone_of_agony() and can_play_storms()
+		return stone_of_agony() and )
 	end
 
 	function has_spiritual_stones()
@@ -2521,7 +2521,7 @@ function _oot_logic()
 	    ["Hyrule Field grass Near SE Grotto"] = function () return is_child() and can_cut_grass() end,
             ["Hyrule Field grass Near LLR rear"] = function () return is_child() and can_cut_grass() end,
 	    ["Hyrule Field Fairy Fountain"] = function () return has_explosives_or_hammer() end,
-	    ["Hyrule Field Pond Big Fairy"] = function () return can_play_storms() end,
+	    ["Hyrule Field Pond Big Fairy"] = function () return ) end,
         },
     },
     ["Hyrule Field Scrub Grotto"] = {
@@ -2530,7 +2530,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Hyrule Field Grotto Scrub HP"] = function () return can_hit_scrub() and scrub_price(7) end,
-            ["Hyrule Field Grotto Big Fairy"] = function () return has_explosives_or_hammer() and can_play_storms() end,
+            ["Hyrule Field Grotto Big Fairy"] = function () return has_explosives_or_hammer() and ) end,
         },
     },
     ["Hyrule Field Open Grotto"] = {
@@ -2939,7 +2939,7 @@ function _oot_logic()
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) end,
             ["Lost Woods GS Soil Bridge"] = function () return gs_soil() and can_damage_skull() end,
 	    ["Lost Woods Grass Clusters"] = function () return is_child() and can_cut_grass() end,
-	    ["Lost Woods Big Fairy"] = function () return can_play_storms() end,
+	    ["Lost Woods Big Fairy"] = function () return ) end,
         },
     },
     ["Lost Woods Generic Grotto"] = {
@@ -3189,7 +3189,7 @@ function _oot_logic()
     },
     ["Windmill"] = {
         ["events"] = {
-            ["WELL_DRAIN"] = function () return is_child() and can_play_storms() end,
+            ["WELL_DRAIN"] = function () return is_child() and ) end,
         },
         ["exits"] = {
             ["Kakariko"] = function () return true end,
@@ -3340,7 +3340,7 @@ function _oot_logic()
             ["Death Mountain Summit"] = function () return event('BOULDER_DEATH_MOUNTAIN') or can_ride_bean(BEAN_DEATH_MOUNTAIN) end,
             ["Death Mountain Storms Grotto"] = function () return hidden_grotto_storms() end,
             ["Death Mountain Cow Grotto"] = function () return has_explosives_or_hammer() end,
-	    ["Death Mountain Cow Grotto Big Fairy"] = function () return has_explosives_or_hammer() and can_play_storms() end,
+	    ["Death Mountain Cow Grotto Big Fairy"] = function () return has_explosives_or_hammer() and ) end,
         },
         ["locations"] = {
             ["Death Mountain Chest"] = function () return has_explosives_or_hammer() end,
@@ -3508,8 +3508,8 @@ function _oot_logic()
             ["Zora River Bean Seller"] = function () return is_child() and can_use_wallet(1) end,
             ["Zora River HP Pillar"] = function () return is_child() or has_hover_boots() end,
             ["Zora River HP Platform"] = function () return is_child() or has_hover_boots() end,
-            ["Zora River Frogs Storms"] = function () return is_child() and can_play_storms() end,
-            ["Zora River Frogs Game"] = function () return is_child() and can_play(SONG_ZELDA) and can_play(SONG_SARIA) and can_play_epona() and can_play_sun() and can_play_time() and can_play_storms() end,
+            ["Zora River Frogs Storms"] = function () return is_child() and ) end,
+            ["Zora River Frogs Game"] = function () return is_child() and can_play(SONG_ZELDA) and can_play(SONG_SARIA) and can_play_epona() and can_play_sun() and can_play_time() and ) end,
             ["Zora River GS Ladder"] = function () return is_child() and gs_night() and can_damage_skull() end,
             ["Zora River GS Near Grotto"] = function () return is_adult() and gs_night() and can_collect_distance() end,
             ["Zora River GS Near Bridge"] = function () return is_adult() and gs_night() and can_hookshot() end,
@@ -3567,7 +3567,7 @@ function _oot_logic()
             ["Zora Domain Tunic"] = function () return is_adult() and has_blue_fire() end,
             ["Zora Domain Eyeball Frog"] = function () return has_blue_fire() and adult_trade(PRESCRIPTION) end,
             ["Zora Domain GS Waterfall"] = function () return is_adult() and gs_night() and (has_ranged_weapon_adult() or can_boomerang() or has_magic()) end,
-	    ["Zora Domain Fairy Fountain"] = function () return can_play_storms() end,
+	    ["Zora Domain Fairy Fountain"] = function () return ) end,
         },
     },
     ["Zora Domain Back"] = {
@@ -3622,12 +3622,12 @@ function _oot_logic()
             ["Lake Hylia HP"] = function () return can_ride_bean(BEAN_LAKE_HYLIA) or scarecrow_hookshot() end,
             ["Lake Hylia GS Lab Wall"] = function () return is_child() and gs_night() and (can_boomerang() or (trick('OOT_LAB_WALL_GS') and (can_use_sword() or can_use_sticks()))) end,
             ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() end,
-	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and can_play_storms() end,
+	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and ) end,
             ["Lake Hylia GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Lake Hylia GS Big Tree"] = function () return is_adult() and gs_night() and can_longshot() end,
 	    ["Lake Hylia grass patches x3"] = function () return is_child() and can_cut_grass() end,
 	    ["Lake Hylia Grass Near Scarecrows"] = function () return is_child() and can_cut_grass() end,
-	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and can_play_storms() end,
+	    ["Lake Hylia GS Island Big Fairy"] = function () return is_child() and ) end,
         },
     },
     ["Laboratory"] = {
@@ -4006,7 +4006,7 @@ function _oot_logic()
             ["Desert Colossus GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Desert Colossus GS Tree"] = function () return is_adult() and can_collect_distance() and gs_night() end,
             ["Desert Colossus GS Plateau"] = function () return is_adult() and gs_night() and (can_collect_distance() or can_ride_bean(BEAN_DESERT_COLOSSUS)) end,
-	    ["Desert Colossus Fairy Fountain"] = function () return is_child and can_play_storms() end,
+	    ["Desert Colossus Fairy Fountain"] = function () return can_play_storms() end,
         },
     },
     ["Desert Colossus Spirit Exit"] = {
