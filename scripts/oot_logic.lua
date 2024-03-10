@@ -864,7 +864,7 @@ function _oot_logic()
 	end
 
 	function can_play_tp_light() 
-		return has_ocarina() and ('SONG_TP_LIGHT') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_LIGHT') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_tp_forest()
