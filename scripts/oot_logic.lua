@@ -2932,7 +2932,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Lost Woods Target"] = function () return can_use_slingshot() end,
-            ["Lost Woods Skull Kid"] = function () return is_child() and can_play(SONG_SARIA) end,
+            ["Lost Woods Skull Kid"] = function () return is_child() and can_play_saria() end,
             ["Lost Woods Memory Game"] = function () return is_child() and has_ocarina() and has_oot_button_c_down() and has_oot_button_c_up() and has_oot_button_c_left() and has_oot_button_c_right() and has_oot_button_a() end,
             ["Lost Woods Scrub Sticks Upgrade"] = function () return is_child() and can_hit_scrub() and scrub_price(0) end,
             ["Lost Woods Odd Mushroom"] = function () return adult_trade(COJIRO) end,
@@ -3256,7 +3256,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Kakariko"] = function () return true end,
-            ["Graveyard Royal Tomb"] = function () return can_play(SONG_ZELDA) end,
+            ["Graveyard Royal Tomb"] = function () return can_play_zelda() end,
             ["Graveyard Shield Grave"] = function () return is_adult() or is_night() end,
             ["Graveyard ReDead Grave"] = function () return is_adult() or is_night() end,
             ["Dampe Grave"] = function () return is_adult() end,
