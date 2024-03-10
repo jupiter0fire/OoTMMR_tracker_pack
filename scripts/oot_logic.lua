@@ -868,7 +868,7 @@ function _oot_logic()
 	end
 
 	function can_play_tp_forest()
-		return has_ocarina() and ('SONG_TP_FOREST') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_FOREST') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_tp_fire()
@@ -880,11 +880,11 @@ function _oot_logic()
 	end
 
 	function can_play_tp_shadow()
-		return has_ocarina() and ('SONG_TP_SHADOW') and has_('OOT_BUTTON_A') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_SHADOW') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_tp_spirit()
-		return has_ocarina() and ('SONG_TP_SPIRIT') and has_oot_button_c_down() and oot_button_a() and oot_button_c_right()
+		return has_ocarina() and ('SONG_TP_SPIRIT') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function has_skeleton_key_oot()
