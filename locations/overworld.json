@@ -418,7 +418,7 @@
             "short_name": "Ocarina Game",
             "sections": [
               {
-                "name": "ResidentSleeper",
+                "name": "First 5 notes",
                 "access_rules": [
                   "$oot|Lost Woods Memory Game"
                 ],
@@ -1267,7 +1267,20 @@
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
-              }
+              },
+              {
+                 {
+                "name": "HF Cow Grotto Grass",
+                "short_name": "HF Cow Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Cow"
+                ],
+                "visibility_rules": [
+                  "setting_GrassShuffleOot_none"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
             ],
             "map_locations": [
               {
@@ -1626,7 +1639,9 @@
                 "access_rules": [
                   "$oot|Laboratory Eye Drops"
                 ],
-                "item_count": 1
+                 "chest_unopened_img": "images/Eyeball_Frog.png",
+                 "chest_opened_img": "images/Eyeball_Frog_Grey.png",
+                 "item_count": 1
               },
               {
                 "name": "LH GS Lab Crate",
@@ -6057,7 +6072,7 @@
             ]
           },
           {
-            "name": "Desert Colossus Fairy Fountain",
+            "name": "Oasis Fairy Fountain",
             "color": "#0936a0",
             "children": [
               {
@@ -6066,7 +6081,7 @@
                   {
                     "name": "Fairy Fountain Shuffle",
                     "access_rules": [
-                      "$oot|Desert Colossus Fairy Fountain"
+                      "$oot|Oasis Fairy Fountain"
                     ],
                     "chest_unopened_img": "images/Fairy.png",
                     "chest_opened_img": "images/FairyGreyscale.png",
