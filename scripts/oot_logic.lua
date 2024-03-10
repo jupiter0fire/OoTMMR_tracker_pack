@@ -844,11 +844,11 @@ function _oot_logic()
 	end
 
 	function can_play_epona()
-		return has_ocarina() and ('SONG_EPONA') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_EPONA') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
 	end
 
 	function can_play_storms()
-		return has_ocarina() and ('SONG_STORMS') and has_('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A')
+		return has_ocarina() and ('SONG_STORMS') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A')
 	end
 
 	function can_play_zelda()
