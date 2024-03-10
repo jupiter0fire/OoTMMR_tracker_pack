@@ -4006,7 +4006,7 @@ function _oot_logic()
             ["Desert Colossus GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Desert Colossus GS Tree"] = function () return is_adult() and can_collect_distance() and gs_night() end,
             ["Desert Colossus GS Plateau"] = function () return is_adult() and gs_night() and (can_collect_distance() or can_ride_bean(BEAN_DESERT_COLOSSUS)) end,
-	    ["Desert Colossus Fairy Fountain"] = function () return is_child and can_play_storms() end,
+	    ["Desert Colossus Fairy Fountain"] = function () return can_play_storms() end,
         },
     },
     ["Desert Colossus Spirit Exit"] = {
