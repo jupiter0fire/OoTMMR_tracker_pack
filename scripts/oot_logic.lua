@@ -811,15 +811,15 @@ function _oot_logic()
 		return has('OOT_BUTTON_A')
 	end
 
-	function has_oot_button_c_right()
+	function has_oot_button_c_right() has_oot_button_a()
 		return has('OOT_BUTTON_C-RIGHT')
 	end
 
-	function has_oot_button_c_left()
+	function has_oot_button_c_left() has_oot_button_c_right() has_oot_button_a()
 		return has('OOT_BUTTON_C-LEFT')
 	end
 
-	function has_oot_button_c_up()
+	function has_oot_button_c_up() has_oot_button_c_left() has_oot_button_c_right() has_oot_button_a()
 		return has('OOT_BUTTON_C-UP')
 	end
 
@@ -2933,7 +2933,7 @@ function _oot_logic()
         ["locations"] = {
             ["Lost Woods Target"] = function () return can_use_slingshot() end,
             ["Lost Woods Skull Kid"] = function () return is_child() and can_play(SONG_SARIA) end,
-            ["Lost Woods Memory Game"] = function () return is_child() and has_ocarina() end,
+            ["Lost Woods Memory Game"] = function () return is_child() and has_ocarina() and has_oot_button_c_down() and has_oot_button_c_up() and has_oot_button_c_left() and has_oot_button_c_right() and has_oot_button_a() end,
             ["Lost Woods Scrub Sticks Upgrade"] = function () return is_child() and can_hit_scrub() and scrub_price(0) end,
             ["Lost Woods Odd Mushroom"] = function () return adult_trade(COJIRO) end,
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) end,
