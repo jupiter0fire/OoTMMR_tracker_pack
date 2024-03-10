@@ -836,55 +836,55 @@ function _oot_logic()
 	end
 
 	function can_play_sun()
-		return has_ocarina() and ('SONG_SUN') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_SUN') and has_oot_button_c_up() and has_oot_button_c_down() and has_oot_button_c_right()
 	end
 
 	function can_play_time()
-		return has_ocarina() and ('SONG_TIME') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TIME') and has_oot_button_c_down() and has_oot_button_a() and has_oot_button_c_right()
 	end
 
 	function can_play_epona()
-		return has_ocarina() and ('SONG_EPONA') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_EPONA') and has_oot_button_c_up() and has_oot_button_c_left() and has_oot_button_c_right()
 	end
 
 	function can_play_storms()
-		return has_ocarina() and ('SONG_STORMS') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A')
+		return has_ocarina() and ('SONG_STORMS') and has_oot_button_c_up() and has_oot_button_c_down() and has_oot_button_a()
 	end
 
 	function can_play_zelda()
-		return has_ocarina() and ('SONG_ZELDA') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_ZELDA') and has_oot_button_c_up() and has_oot_button_c_left() and has_oot_button_c_right()
 	end
 
 	function can_play_saria()
-		return has_ocarina() and ('SONG_SARIA') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_SARIA') and has_oot_button_c_down() and has_oot_button_c_left() and has_oot_button_c_right()
 	end
 
 	function can_play_elegy()
-		return has_ocarina() and ('SONG_EMPTINESS') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_EMPTINESS') and has_oot_button_c_up() and has_oot_button_c_down() and has_oot_button_c_left() and has_oot_button_c_right()
 	end
 
 	function can_play_tp_light() 
-		return has_ocarina() and ('SONG_TP_LIGHT') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_LIGHT') and has_oot_button_c_up() and has_oot_button_c_left() and has_oot_button_c_right()
 	end
 
 	function can_play_tp_forest()
-		return has_ocarina() and ('SONG_TP_FOREST') and ('OOT_BUTTON_C-UP') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_FOREST') and has_oot_button_c_up() and has_oot_button_a() and has_oot_button_c_left() and has_oot_button_c_right()
 	end
 
 	function can_play_tp_fire()
-		return has_ocarina() and ('SONG_TP_FIRE') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_FIRE') and has_oot_button_a() and has_oot_button_c_down() and has_oot_button_c_right()
 	end
 
 	function can_play_tp_water()
-		return has_ocarina() and ('SONG_TP_WATER') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT') and ('OOT_BUTTON_A')
+		return has_ocarina() and ('SONG_TP_WATER') and has_oot_button_c_down() and has_oot_button_c_left() and has_oot_button_c_right() and has_oot_button_a()
 	end
 
 	function can_play_tp_shadow()
-		return has_ocarina() and ('SONG_TP_SHADOW') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_C-LEFT') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_SHADOW') and has_oot_button_a() and has_oot_button_c_down() and has_oot_button_c_left() and has_oot_button_c_right()
 	end
 
 	function can_play_tp_spirit()
-		return has_ocarina() and ('SONG_TP_SPIRIT') and ('OOT_BUTTON_C-DOWN') and ('OOT_BUTTON_A') and ('OOT_BUTTON_C-RIGHT')
+		return has_ocarina() and ('SONG_TP_SPIRIT') and has_oot_button_c_down() and has_oot_button_a() and has_oot_button_c_right()
 	end
 
 	function has_skeleton_key_oot()
