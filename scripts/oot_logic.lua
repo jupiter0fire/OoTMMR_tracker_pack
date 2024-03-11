@@ -3282,7 +3282,7 @@ function _oot_logic()
             ["Graveyard"] = function () return true end,
         },
         ["locations"] = {
-            ["Graveyard Royal Tomb Song"] = function () return can_play_zelda() true
+            ["Graveyard Royal Tomb Song"] = function () return can_play_zelda() end,
             ["Graveyard Royal Tomb Chest"] = function () return has_fire() end,
 	    ["Graveyard Royal Tomb Big Fairy"] = function () return can_play_sun() end,
         },
