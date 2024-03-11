@@ -4308,6 +4308,8 @@
                     "access_rules": [
                       "$oot|Market Pot House Big Poes"
                     ],
+                    "chest_unopened_img": "images/Big_Poe.png",
+                    "chest_opened_img": "images/Big_Poe_Grey.png",
                     "item_count": 1
                   },
                   {
