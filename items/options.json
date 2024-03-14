@@ -1101,7 +1101,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 0,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "setting_shuffleBigFairyOoT_True.png",
