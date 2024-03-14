@@ -1104,7 +1104,7 @@
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "setting_shuffleBigFairyOoT_True.png",
+        "img": "setting_shuffleBigFairyOoT_true.png",
         "codes": "setting_bigFairyShuffleOOT,setting_bigFairyShuffleOOT_true",
         "inherit_codes": false
       },
@@ -1129,7 +1129,7 @@
         "inherit_codes": false
       },
       {
-        "img": "setting_shuffleBigFairyOoT_False.png",
+        "img": "setting_shuffleBigFairyMM_False.png",
         "img_mods": "@disabled",
         "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_false",
         "inherit_codes": false
