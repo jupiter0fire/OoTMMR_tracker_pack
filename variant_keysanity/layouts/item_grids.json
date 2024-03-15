@@ -1167,7 +1167,6 @@
         "item_size": 24,
         "rows": [
           [
-            "EMPTYSPACE",
             "MM_BUTTON_A",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
@@ -1437,7 +1436,6 @@
           ],
           [
             "MM_BUTTON_A",
-            "MM_BUTTON_B",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
