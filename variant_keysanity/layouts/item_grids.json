@@ -1171,21 +1171,6 @@
             "MM_GS_TOKEN_OCEAN",
             "MM_KEY_SKELETON"
           ],
-          [
-            "MM_DAY_1ST",
-            "MM_NIGHT_1ST",
-            "MM_DAY_2ND",
-            "MM_NIGHT_2ND",
-            "MM_DAY_FINAL",
-            "MM_NIGHT_FINAL"
-          ],
-          [
-            "MM_BUTTON_A",
-            "MM_BUTTON_C-UP",
-            "MM_BUTTON_C-DOWN",
-            "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT"
-          ]
         ]
       },
       {
@@ -1207,6 +1192,22 @@
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
             "MM_OWL_STONE_TOWER"
+          ],
+          [
+            "MM_BUTTON_A",
+            "MM_BUTTON_C-UP",
+            "MM_BUTTON_C-DOWN",
+            "MM_BUTTON_C-LEFT",
+            "MM_BUTTON_C-RIGHT"
+   
+          ],
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND",
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL"
           ]
         ]
       },
