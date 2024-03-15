@@ -591,7 +591,7 @@
             "OOT_BOOMERANG",
             "OOT_HAMMER",
             "OOT_OCARINA",
-            "OOT_BUTTON_C_UP"
+            "OOT_BUTTON_C-UP"
           ],
           [
             "OOT_STRENGTH",
@@ -602,7 +602,7 @@
             "OOT_GERUDO_CARD",
             "OOT_WALLET1",
             "OOT_TUNIC_GORON",
-            "OOT_BUTTON_C_DOWN"
+            "OOT_BUTTON_C-DOWN"
           ],
           [
             "OOT_MASK_BLAST",
@@ -613,7 +613,7 @@
             "OOT_SPELL_FIRE",
             "faroreswind",
             "OOT_SPELL_LOVE",
-            "OOT_BUTTON_C_RIGHT"
+            "OOT_BUTTON_C-LEFT"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -623,7 +623,8 @@
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
             "OOT_MAGIC_BEAN",
-            "OOT_TUNIC_ZORA"
+            "OOT_TUNIC_ZORA",
+            "OOT_BUTTON_C-RIGHT"
           ],
           [
             "OOT_SONG_TP_FOREST",
