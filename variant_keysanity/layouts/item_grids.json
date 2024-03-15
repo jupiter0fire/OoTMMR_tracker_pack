@@ -912,8 +912,8 @@
                     "type": "item",
                     "item": "OOT_SMALL_KEY_BOTW",
                     "canvas_depth": 1,
-                    "canvas_left": 34,
-                    "canvas_top": 0,
+                    "canvas_left": 16,
+                    "canvas_top": 16,
                     "width": 14,
                     "height": 14
                   }
