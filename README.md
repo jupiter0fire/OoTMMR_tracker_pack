@@ -80,7 +80,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update Shared options
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
-- [ ] Fix broadcast view item locations - Do last before release so only have to fiddle with once
+- [ ] Fix broadcast view item locations - mostly done - needs testing
 - [ ] Update/add Entrance randomization options - In Progress
 
 ## Credits
