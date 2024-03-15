@@ -634,21 +634,37 @@
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
             "OOT_SONG_EMPTINESS",
-            "OOT_GS_TOKEN"
+            "OOT_GS_TOKEN",
+             "OOT_STONE_OF_AGONY",
           ],
-  
         ]
       },
       {
-        "type": "array",
-        "orientation": "vertical",
-        "margin": "0,0",
-        "content": [
-          {
             "type": "array",
             "orientation": "horizontal",
             "margin": "0,0",
             "content": [
+             {
+                "type": "item",
+                "item": "deku",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                "type": "item",
+                "item": "dodongo",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
+              {
+                "type": "item",
+                "item": "jabu",
+                "margin": "1,1",
+                "width": 28,
+                "height": 28
+              },
               {
                 "type": "item",
                 "item": "forest",
@@ -866,34 +882,6 @@
               {
                 "type": "item",
                 "item": "free_label",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              }
-            ]
-          },
-          {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [
-              {
-                "type": "item",
-                "item": "deku",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "dodongo",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "jabu",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
