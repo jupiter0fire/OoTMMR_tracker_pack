@@ -1433,37 +1433,37 @@
   {
     "name": "MM A Button",
     "type": "toggle",
-    "img": "images/items/MM_Button_A.png",
+    "img": "images/system/A Button.png",
     "codes": "MM_BUTTON_A"
   },
   {
     "name": "MM B Button",
     "type": "toggle",
-    "img": "images/items/B Button.png",
+    "img": "images/system/B Button.png",
     "codes": "MM_BUTTON_B"
   },
   {
     "name": "MM C-Up Button",
     "type": "toggle",
-    "img": "images/items/MM__Button_C-Up.png",
+    "img": "images/system/C-Up.png",
     "codes": "MM_BUTTON_C-UP"
   },
   {
     "name": "MM C-Down Button",
     "type": "toggle",
-    "img": "images/items/MM_Button_C-Down.png",
+    "img": "images/system/C-Down.png",
     "codes": "MM_BUTTON_C-DOWN"
   },
   {
     "name": "MM C-Left Button",
     "type": "toggle",
-    "img": "images/items/MM_Button_C-Left.png",
+    "img": "images/system/C-Left.png",
     "codes": "MM_BUTTON_C-LEFT"
   },
   {
     "name": "MM C-Right Button",
     "type": "toggle",
-    "img": "images/items/MM__Button_C-Right.png",
+    "img": "images/system/C-Right.png",
     "codes": "MM_BUTTON_C-RIGHT"
   },
   {
