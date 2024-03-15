@@ -388,10 +388,10 @@
       }
     ]
   },
-  "item_grid_small_oot": {
-    "type": "array",
-    "orientation": "vertical",
-    "content": [
+"item_grid_small_oot": {
+"type": "array",
+"orientation": "vertical",
+"content": [
       {
         "type": "itemgrid",
         "h_alignment": "left",

@@ -28,7 +28,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - Click on a dungeon name to mark it as a mq dungeon (white letters = regular dungeon, red letters = mq dungeon).
 
-- For best results use keysanity options to see the new checks and items added with the newest upodates.
+- For best results use keysanity options to see the new checks and items added with the newest updates.
   
 ## Unsupported Settings
 
@@ -61,7 +61,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
 - [ ] Update OoT Logic for Quick age swap option
-- [ ] Update OoT Logic for pre completed dungeon option
 - [ ] Update OoT Logic for Hookshoot anywhere option
 - [ ] Update OoT Logic for Climb most surfaces option
 - [ ] Update MM Logic for various boots
