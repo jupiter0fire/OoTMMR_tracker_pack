@@ -1401,7 +1401,8 @@
             "MM_ARROW_LIGHT",
             "mm_spinattack",
             "MM_SHIELD_HERO",
-            "MM_SHIELD_MIRROR"
+            "MM_SHIELD_MIRROR",
+            "MM_BUTTON_A"
           ],
           [
             "MM_BOMB_BAG",
@@ -1411,7 +1412,8 @@
             "MM_POWDER_KEG",
             "MM_PICTOGRAPH_BOX",
             "MM_LENS",
-            "MM_HOOKSHOT"
+            "MM_HOOKSHOT",
+            "MM_BUTTON_C-UP"
           ],
           [
             "MM_MOON_TEAR",
@@ -1421,7 +1423,8 @@
             "MM_DEED_OCEAN",
             "MM_ROOM_KEY",
             "MM_LETTER_TO_KAFEI",
-            "MM_LETTER_TO_MAMA"
+            "MM_LETTER_TO_MAMA",
+            "MM_BUTTON_C-DOWN"
           ],
           [
             "MM_SONG_TIME",
@@ -1431,7 +1434,8 @@
             "MM_SONG_STORMS",
             "MM_WALLET",
             "MM_MAGIC_UPGRADE",
-            "MM_PENDANT_OF_MEMORIES"
+            "MM_PENDANT_OF_MEMORIES",
+            "MM_BUTTON_C-LEFT"
           ],
           [
             "MM_SONG_AWAKENING",
@@ -1441,7 +1445,8 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN"
+            "MM_GS_TOKEN_OCEAN",
+            "MM_BUTTON_C-RIGHT"
           ],
           [
             "MM_MASK_DEKU",
@@ -1462,13 +1467,6 @@
             "MM_BOOTS_HOVER",
             "MM_TUNIC_GORON",
             "MM_TUNIC_ZORA"
-          ],
-          [
-            "MM_BUTTON_A",
-            "MM_BUTTON_C-UP",
-            "MM_BUTTON_C-DOWN",
-            "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT"
           ],
           [
             "MM_DAY_1ST",
