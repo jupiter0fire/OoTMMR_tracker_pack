@@ -579,7 +579,8 @@
             "OOT_ARROW_FIRE",
             "OOT_ARROW_ICE",
             "OOT_ARROW_LIGHT",
-            "OOT_SLINGSHOT"
+            "OOT_SLINGSHOT",
+            "OOT_BUTTON_A"
           ],
           [
             "OOT_SHIELD_DEKU",
@@ -589,7 +590,8 @@
             "OOT_MAGIC_UPGRADE",
             "OOT_BOOMERANG",
             "OOT_HAMMER",
-            "OOT_OCARINA"
+            "OOT_OCARINA",
+            "OOT_BUTTON_C_UP"
           ],
           [
             "OOT_STRENGTH",
@@ -599,7 +601,30 @@
             "OOT_BOOTS_HOVER",
             "OOT_GERUDO_CARD",
             "OOT_WALLET1",
-            "OOT_TUNIC_GORON"
+            "OOT_TUNIC_GORON",
+            "OOT_BUTTON_C_DOWN"
+          ],
+          [
+            "OOT_MASK_BLAST",
+            "OOT_MASK_STONE",
+            "OOT_LENS",
+            "OOT_KEY_SKELETON",
+            "triforce",
+            "faroreswind",
+            "OOT_SPELL_LOVE",
+            "OOT_SPELL_FIRE",
+            "OOT_BUTTON_C_LEFT"
+          ],
+          [
+            "OOT_MASK_BLAST",
+            "OOT_MASK_STONE",
+            "OOT_LENS",
+            "OOT_KEY_SKELETON",
+            "triforce",
+            "OOT_SPELL_FIRE",
+            "faroreswind",
+            "OOT_SPELL_LOVE",
+            "OOT_BUTTON_C_RIGHT"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -621,15 +646,7 @@
             "OOT_SONG_EMPTINESS",
             "OOT_GS_TOKEN"
           ],
-          [
-            "OOT_MASK_BLAST",
-            "OOT_MASK_STONE",
-            "OOT_KEY_SKELETON",
-            "triforce",
-            "faroreswind",
-            "OOT_SPELL_LOVE",
-            "OOT_SPELL_FIRE" 
-          ]
+  
         ]
       },
       {
@@ -1160,6 +1177,7 @@
         "item_size": 24,
         "rows": [
           [
+            "EMPTYSPACE",
             "MM_BUTTON_A",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
