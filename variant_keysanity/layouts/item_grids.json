@@ -635,385 +635,383 @@
             "OOT_SONG_TP_LIGHT",
             "OOT_SONG_EMPTINESS",
             "OOT_GS_TOKEN",
-             "OOT_STONE_OF_AGONY",
-          ],
+            "OOT_STONE_OF_AGONY"
+          ]
         ]
       },
       {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
-            "content": [
-             {
-                "type": "item",
-                "item": "deku",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "dodongo",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "jabu",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "forest",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "fire",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "water",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "shadow",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "spirit",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "free",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-            ]
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "item",
+            "item": "deku",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
           },
           {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
+            "type": "item",
+            "item": "dodongo",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "jabu",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "forest",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "fire",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "water",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "shadow",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "spirit",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          },
+          {
+            "type": "item",
+            "item": "free",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
-                "type": "canvas",
+                "type": "item",
+                "item": "setting_mq_ForestTemple",
+                "canvas_depth": 1,
                 "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_ForestTemple",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_FOREST",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_FOREST",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_FireTemple",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_FIRE",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_FIRE",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_WaterTemple",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_WATER",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_WATER",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_SpiritTemple",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_SPIRIT",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_SPIRIT",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
-              },
-              {
-                "type": "canvas",
-                "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_ShadowTemple",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_SHADOW",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_SHADOW",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
+                "height": 10.5
               },
               {
                 "type": "item",
-                "item": "free_label",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
+                "item": "OOT_SMALL_KEY_FOREST",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              },
+              {
+                "type": "item",
+                "item": "OOT_BOSS_KEY_FOREST",
+                "canvas_depth": 1,
+                "canvas_left": 16,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
               }
             ]
           },
           {
-            "type": "array",
-            "orientation": "horizontal",
-            "margin": "0,0",
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
             "content": [
               {
-                "type": "canvas",
+                "type": "item",
+                "item": "setting_mq_FireTemple",
+                "canvas_depth": 1,
                 "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_BottomoftheWell",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 2,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_BOTW",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
+                "height": 10.5
               },
               {
-                "type": "canvas",
-                "width": 66,
-                "height": 14,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_IceCavern",
-                    "margin": "1,1",
-                    "width": 28,
-                    "height": 10.5
-                  }
-                ]
+                "type": "item",
+                "item": "OOT_SMALL_KEY_FIRE",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
               },
               {
-                "type": "canvas",
+                "type": "item",
+                "item": "OOT_BOSS_KEY_FIRE",
+                "canvas_depth": 1,
+                "canvas_left": 16,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "setting_mq_WaterTemple",
+                "canvas_depth": 1,
                 "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "th_label",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_GF",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
+                "height": 10.5
               },
               {
-                "type": "canvas",
+                "type": "item",
+                "item": "OOT_SMALL_KEY_WATER",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              },
+              {
+                "type": "item",
+                "item": "OOT_BOSS_KEY_WATER",
+                "canvas_depth": 1,
+                "canvas_left": 16,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "setting_mq_SpiritTemple",
+                "canvas_depth": 1,
                 "width": 28,
-                "height": 28,
-                "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_GerudoTrainingGrounds",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_GTG",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
+                "height": 10.5
               },
               {
-                "type": "canvas",
-                "width": 66,
-                "height": 14,
+                "type": "item",
+                "item": "OOT_SMALL_KEY_SPIRIT",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              },
+              {
+                "type": "item",
+                "item": "OOT_BOSS_KEY_SPIRIT",
+                "canvas_depth": 1,
+                "canvas_left": 16,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "setting_mq_ShadowTemple",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              },
+              {
+                "type": "item",
+                "item": "OOT_SMALL_KEY_SHADOW",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              },
+              {
+                "type": "item",
+                "item": "OOT_BOSS_KEY_SHADOW",
+                "canvas_depth": 1,
+                "canvas_left": 16,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "item": "free_label",
+            "margin": "1,1",
+            "width": 28,
+            "height": 28
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "setting_mq_BottomoftheWell",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 2,
+                "width": 28,
+                "height": 10.5
+              },
+              {
+                "type": "item",
+                "item": "OOT_SMALL_KEY_BOTW",
+                "canvas_depth": 1,
+                "canvas_left": 16,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 66,
+            "height": 14,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "setting_mq_IceCavern",
                 "margin": "1,1",
-                "content": [
-                  {
-                    "type": "item",
-                    "item": "setting_mq_GanonCastle",
-                    "canvas_depth": 1,
-                    "width": 28,
-                    "height": 10.5
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_SMALL_KEY_GANON",
-                    "canvas_depth": 1,
-                    "canvas_left": 0,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  },
-                  {
-                    "type": "item",
-                    "item": "OOT_BOSS_KEY_GANON",
-                    "canvas_depth": 1,
-                    "canvas_left": 16,
-                    "canvas_top": 16,
-                    "width": 14,
-                    "height": 14
-                  }
-                ]
+                "width": 28,
+                "height": 10.5
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "th_label",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              },
+              {
+                "type": "item",
+                "item": "OOT_SMALL_KEY_GF",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 28,
+            "height": 28,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "setting_mq_GerudoTrainingGrounds",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              },
+              {
+                "type": "item",
+                "item": "OOT_SMALL_KEY_GTG",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              }
+            ]
+          },
+          {
+            "type": "canvas",
+            "width": 66,
+            "height": 14,
+            "margin": "1,1",
+            "content": [
+              {
+                "type": "item",
+                "item": "setting_mq_GanonCastle",
+                "canvas_depth": 1,
+                "width": 28,
+                "height": 10.5
+              },
+              {
+                "type": "item",
+                "item": "OOT_SMALL_KEY_GANON",
+                "canvas_depth": 1,
+                "canvas_left": 0,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
+              },
+              {
+                "type": "item",
+                "item": "OOT_BOSS_KEY_GANON",
+                "canvas_depth": 1,
+                "canvas_left": 16,
+                "canvas_top": 16,
+                "width": 14,
+                "height": 14
               }
             ]
           }
