@@ -577,6 +577,7 @@
             "OOT_BOMB_BAG",
             "OOT_BOW",
             "OOT_ARROW_FIRE",
+            "OOT_ARROW_ICE",
             "OOT_ARROW_LIGHT",
             "OOT_SLINGSHOT",
             "OOT_OCARINA"
@@ -599,7 +600,7 @@
             "OOT_BOOTS_HOVER",
             "OOT_GERUDO_CARD",
             "OOT_WALLET1",
-            "OOT_MAGIC_BEAN"
+            "OOT_TUNIC_GORON",
           ],
           [
             "OOT_SONG_ZELDA",
@@ -608,7 +609,7 @@
             "OOT_SONG_SUN",
             "OOT_SONG_TIME",
             "OOT_SONG_STORMS",
-            "OOT_TUNIC_GORON",
+            "OOT_MAGIC_BEAN",
             "OOT_TUNIC_ZORA"
           ],
           [
@@ -618,6 +619,7 @@
             "OOT_SONG_TP_SHADOW",
             "OOT_SONG_TP_SPIRIT",
             "OOT_SONG_TP_LIGHT",
+            "OOT_SONG_EMPTINESS",
             "OOT_GS_TOKEN",
             "triforce"
           ]
@@ -692,13 +694,6 @@
               {
                 "type": "item",
                 "item": "OOT_KEY_SKELETON",
-                "margin": "1,1",
-                "width": 28,
-                "height": 28
-              },
-              {
-                "type": "item",
-                "item": "OOT_SONG_EMPTINESS",
                 "margin": "1,1",
                 "width": 28,
                 "height": 28
