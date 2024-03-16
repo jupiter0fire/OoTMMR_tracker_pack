@@ -1170,7 +1170,7 @@
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN",
             "MM_KEY_SKELETON"
-          ]
+          ],
         ]
       },
       {
@@ -1180,33 +1180,33 @@
         "scale": 1.1,
         "rows": [
           [
+            "MM_BUTTON_A",
+            "MM_BUTTON_C-UP",
+            "MM_BUTTON_C-DOWN",
+            "MM_BUTTON_C-LEFT",
+            "MM_BUTTON_C-RIGHT"
+          ],
+          [
+            "MM_OWL_CLOCK_TOWN",
+            "MM_OWL_MILK_ROAD",
+            "MM_OWL_SOUTHERN_SWAMP",
+            "MM_OWL_WOODFALL",
+            "MM_OWL_MOUNTAIN_VILLAGE"
+          ],
+          [
+            "MM_OWL_SNOWHEAD",
+            "MM_OWL_GREAT_BAY",
+            "MM_OWL_ZORA_CAPE",
+            "MM_OWL_IKANA_CANYON",
+            "MM_OWL_STONE_TOWER"
+          ],
+          [
             "MM_DAY_1ST",
             "MM_NIGHT_1ST",
             "MM_DAY_2ND",
             "MM_NIGHT_2ND",
             "MM_DAY_FINAL",
-            "MM_NIGHT_FINAL",
-            [
-              "MM_BUTTON_A",
-              "MM_BUTTON_C-UP",
-              "MM_BUTTON_C-DOWN",
-              "MM_BUTTON_C-LEFT",
-              "MM_BUTTON_C-RIGHT"
-            ],
-            [
-              "MM_OWL_CLOCK_TOWN",
-              "MM_OWL_MILK_ROAD",
-              "MM_OWL_SOUTHERN_SWAMP",
-              "MM_OWL_WOODFALL",
-              "MM_OWL_MOUNTAIN_VILLAGE"
-            ],
-            [
-              "MM_OWL_SNOWHEAD",
-              "MM_OWL_GREAT_BAY",
-              "MM_OWL_ZORA_CAPE",
-              "MM_OWL_IKANA_CANYON",
-              "MM_OWL_STONE_TOWER"
-            ]
+            "MM_NIGHT_FINAL"
           ]
         ]
       },
@@ -1451,6 +1451,14 @@
             "MM_BOOTS_HOVER",
             "MM_TUNIC_GORON",
             "MM_TUNIC_ZORA"
+          ],
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND",
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL"
           ]
         ]
       },
