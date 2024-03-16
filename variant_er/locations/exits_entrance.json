@@ -15,7 +15,7 @@
               {
                 "name": "Capture",
                 "capture_item": true,
-                "capture_item_layout": "tracker_capture_ow",
+                "capture_item_layout": "tracker_capture_item",
                 "item_count": 1
               }
             ],
@@ -96,10 +96,10 @@
               {
                 "name": "Capture",
                 "access_rules": [
-                  "$access_exit|Minuet of Forest Warp|Sacred Forest Meadow"
+                  "$oot|Minuet Warp"
                 ],
                 "visibility_rules": [
-                  "setting_entrance_warpsong_shuffle"
+                  "setting_OotWarpSong_enabled"
                 ],
                 "capture_item": true,
                 "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
