@@ -9,6 +9,87 @@
         "color": "#ffffff",
         "children": [
           {
+            "name": "TEST",
+            "short_name": "TEST SPAWN GRID",
+            "sections": [
+              {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_item",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_locations",
+                "badge_size": 50,
+                "x": 395,
+                "y": 890
+              },
+              {
+                "map": "oot_er_exits",
+                "badge_size": 50,
+                "x": 395,
+                "y": 890
+              }
+            ]
+          },
+          {
+            "name": "Child Spawn -> KF Links House",
+            "short_name": "Child Spawn",
+            "sections": [
+              {
+                "name": "Capture",
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_locations",
+                "badge_size": 50,
+                "x": 58,
+                "y": 1140
+              },
+              {
+                "map": "oot_er_exits",
+                "badge_size": 50,
+                "x": 58,
+                "y": 1140
+              }
+            ]
+          },
+          {
+            "name": "Adult Spawn -> Temple of Time",
+            "short_name": "Adult Spawn",
+            "sections": [
+              {
+                "name": "Capture",
+                "access_rules": [
+                  "$access_exit|Adult Spawn|Temple of Time"
+                ],
+                "capture_item": true,
+                "capture_item_layout": "tracker_capture_ow_grotto_interior_dungeon",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot_er_locations",
+                "badge_size": 50,
+                "x": 158,
+                "y": 1140
+              },
+              {
+                "map": "oot_er_exits",
+                "badge_size": 50,
+                "x": 158,
+                "y": 1140
+              }
+            ]
+          },
+          {
             "name": "Minuet of Forest Warp -> Sacred Forest Meadow",
             "short_name": "Minuet",
             "sections": [
