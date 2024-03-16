@@ -1180,6 +1180,13 @@
         "scale": 1.1,
         "rows": [
           [
+            "MM_BUTTON_A",
+            "MM_BUTTON_C-UP",
+            "MM_BUTTON_C-DOWN",
+            "MM_BUTTON_C-LEFT",
+            "MM_BUTTON_C-RIGHT"
+          ],
+          [
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_MILK_ROAD",
             "MM_OWL_SOUTHERN_SWAMP",
@@ -1192,13 +1199,6 @@
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
             "MM_OWL_STONE_TOWER"
-          ],
-          [
-            "MM_BUTTON_A",
-            "MM_BUTTON_C-UP",
-            "MM_BUTTON_C-DOWN",
-            "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT"
           ],
           [
             "MM_DAY_1ST",
