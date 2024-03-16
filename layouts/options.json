@@ -58,12 +58,22 @@
       },
       {
         "type": "item",
+        "item": "setting_heartShuffleOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_bigFairyShuffleOOT",
         "height": 16
       },
       {
         "type": "item",
         "item": "setting_FairyFountainShuffleOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_OcarinaButtonShuffleOOT",
         "height": 16
       },
       {
@@ -231,6 +241,16 @@
       {
         "type": "item",
         "item": "setting_FairyFountainShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_heartShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_OcarinaButtonShuffleMM",
         "height": 16
       },
       {

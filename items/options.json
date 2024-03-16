@@ -1075,6 +1075,46 @@
     ]
   },
   {
+    "name": "Ocarina Button Shuffle in OoT",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/Setting_OcarinaButtonShuffleOoT_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_OcarinaButtonShuffleOOT,setting_OcarinaButtonShuffleOOT_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_OcarinaButtonShuffleOoT_True.png",
+        "codes": "setting_OcarinaButtonShuffleOOT,setting_OcarinaButtonShuffleOOT_true",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ocarina Button Shuffle in MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/Setting_OcarinaButtonShuffleMM_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_OcarinaButtonShuffleMM,setting_OcarinaButtonShuffleMM_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_OcarinaButtonShuffleMM_True.png",
+        "codes": "setting_OcarinaButtonShuffleMM,setting_OcarinaButtonShuffleMM_true",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Grass Shuffle in OoT",
     "type": "progressive",
     "allow_disabled": false,
@@ -1082,14 +1122,14 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/Setting_GrassShuffleOoT_True.png",
-        "codes": "setting_grassShuffleOOT,setting_grassShuffleOOT_true",
-        "inherit_codes": false
-      },
-      {
         "img": "images/Setting_GrassShuffleOoT_False.png",
         "img_mods": "@disabled",
         "codes": "setting_grassShuffleOOT,setting_grassShuffleOOT_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_GrassShuffleOoT_True.png",
+        "codes": "setting_grassShuffleOOT,setting_grassShuffleOOT_true",
         "inherit_codes": false
       }
     ]
@@ -1102,14 +1142,54 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/Setting_GrassShuffleMM_True.png",
-        "codes": "setting_grassShuffleMM,setting_grassShuffleMM_true",
-        "inherit_codes": false
-      },
-      {
         "img": "images/Setting_GrassShuffleMM_False.png",
         "img_mods": "@disabled",
         "codes": "setting_grassShuffleMM,setting_grassShuffleMM_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_GrassShuffleMM_True.png",
+        "codes": "setting_grassShuffleMM,setting_grassShuffleMM_true",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Heart Shuffle in OoT",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/Setting_HeartShuffleOoT_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_heartShuffleOOT,setting_heartShuffleOOT_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_HeartShuffleOoT_True.png",
+        "codes": "setting_heartShuffleOOT,setting_heartShuffleOOT_true",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Heart Shuffle in MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/Setting_HeartShuffleMM_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_heartShuffleMM,setting_heartShuffleMM_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_HeartShuffleMM_True.png",
+        "codes": "setting_heartShuffleMM,setting_heartShuffleMM_true",
         "inherit_codes": false
       }
     ]
@@ -1119,17 +1199,17 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "setting_shuffleBigFairyOoT_true.png",
-        "codes": "setting_bigFairyShuffleOOT,setting_bigFairyShuffleOOT_true",
+        "img": "images/setting_shuffleBigFairyOoT_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bigFairyShuffleOOT,setting_bigFairyShuffleOOT_false",
         "inherit_codes": false
       },
       {
-        "img": "setting_shuffleBigFairyOoT_False.png",
-        "img_mods": "@disabled",
-        "codes": "setting_bigFairyShuffleOOT,setting_bigFairyShuffleOOT_false",
+        "img": "images/setting_shuffleBigFairyOoT_True.png",
+        "codes": "setting_bigFairyShuffleOOT,setting_bigFairyShuffleOOT_true",
         "inherit_codes": false
       }
     ]
@@ -1142,14 +1222,14 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "setting_shuffleBigFairyMM_True.png",
-        "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_true",
+        "img": "images/setting_shuffleBigFairyMM_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_false",
         "inherit_codes": false
       },
       {
-        "img": "setting_shuffleBigFairyMM_False.png",
-        "img_mods": "@disabled",
-        "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_false",
+        "img": "images/setting_shuffleBigFairyMM_True.png",
+        "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_true",
         "inherit_codes": false
       }
     ]
@@ -1162,14 +1242,14 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/Setting_FairyFountainShuffleOoT_True.png",
-        "codes": "setting_FairyFountainShuffleOOT,setting_FairyFountainShuffleOOT_true",
-        "inherit_codes": false
-      },
-      {
         "img": "images/Setting_FairyFountainShuffleOoT_False.png",
         "img_mods": "@disabled",
         "codes": "setting_FairyFountainShuffleOOT,setting_FairyFountainShuffleOOT_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_FairyFountainShuffleOoT_True.png",
+        "codes": "setting_FairyFountainShuffleOOT,setting_FairyFountainShuffleOOT_true",
         "inherit_codes": false
       }
     ]
@@ -1182,14 +1262,14 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/Setting_FairyFountainShuffleMM_True.png",
-        "codes": "setting_FairyFountainShuffleMM,setting_FairyFountainShuffleMM_true",
-        "inherit_codes": false
-      },
-      {
         "img": "images/Setting_FairyFountainShuffleMM_False.png",
         "img_mods": "@disabled",
         "codes": "setting_FairyFountainShuffleMM,setting_FairyFountainShuffleMM_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_FairyFountainShuffleMM_True.png",
+        "codes": "setting_FairyFountainShuffleMM,setting_FairyFountainShuffleMM_true",
         "inherit_codes": false
       }
     ]
