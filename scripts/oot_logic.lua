@@ -1502,10 +1502,10 @@ function _oot_logic()
 	    ["Deku Tree Basement Eye Switch Room Grass"] = function () return can_cut_grass() end, 
 	    ["Deku Tree Basement Water Room Grass"] = function () return can_cut_grass() end, 
 	    ["Deku Tree Basement Torch Room Grass"] = function () return can_cut_grass() end, 
-	    ["Deku Tree Basement Larva Room Grass"] = function () return can_cut_grass() end, 
+	    ["Deku Tree Basement Back Room Grass"] = function () return can_cut_grass() end, 
 	    ["Deku Tree Basement Pre-Boss Room Grass"] = function () return can_cut_grass() end, 
 	    ["Deku Tree Basement Boss Room Grass"] = function () return can_cut_grass() end, 
-	    ["Deku Tree Basement Compass Room Grass"] = function () return can_cut_grass() end, 
+	    ["Deku Tree Basement Compass Grass"] = function () return can_cut_grass() end, 
         },
     },
     ["Deku Tree Basement Back Room"] = {
@@ -4468,8 +4468,15 @@ function _oot_logic()
             ["MQ Deku Tree Map Chest"] = function () return true end,
             ["MQ Deku Tree Slingshot Chest"] = function () return has_weapon() or can_use_sticks() or has_ranged_weapon_child() end,
             ["MQ Deku Tree Slingshot Room Far Chest"] = function () return can_use_sticks() or has_fire() end,
+            ["MQ Deku Tree Slingshot Room Grass"] = function () return can_cut_grass() end,
             ["MQ Deku Tree Basement Chest"] = function () return can_use_sticks() or has_fire() end,
             ["MQ Deku Tree GS Lobby Crate"] = function () return can_damage_skull() end,
+            ["MQ Deku Tree Lobby Grass"] = function () return can_cut_grass() end,
+            ["MQ Deku Tree Upper Lobby Grass"] = function () return can_cut_grass() end,
+            ["MQ Deku Tree Room Before Compass Grass"] = function () return can_cut_grass() end,
+            ["MQ Deku Tree Basement Room Grass"] = function () return can_cut_grass() end,
+            ["MQ Deku Tree Room Before Spike Grass"] = function () return can_cut_grass() end,
+            ["MQ Deku Tree Spike Room Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Deku Tree Compass Room"] = {
@@ -4479,6 +4486,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Deku Tree Compass Chest"] = function () return true end,
             ["MQ Deku Tree GS Compass Room"] = function () return (has_explosives() or (can_play_time() and can_hammer())) and can_collect_distance() end,
+            ["MQ Deku Tree Compass Room Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Deku Tree Water Room"] = {
@@ -4519,6 +4527,9 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Deku Tree Scrub"] = function () return can_hit_scrub() and scrub_price(27) end,
+            ["MQ Deku Tree Larva Room Grass"] = function () return can_cut_grass() end,
+            ["MQ Deku Tree Graves Room Grass"] = function () return can_cut_grass() end,
+            ["MQ Deku Tree Back Room Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Deku Tree Before Boss"] = {
