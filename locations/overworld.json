@@ -4091,7 +4091,7 @@
               }
             ]
           },
-          { 
+          {
             "name": "Market Grass",
             "sections": [
               {
@@ -4100,12 +4100,12 @@
                   "$oot|Lost Woods Grass Clusters"
                 ],
                 "item_count": 1
-              ],
+              }
+            ],
             "force_invisibility_rules": [
               "setting_GrassShuffleOOT_false"
             ],
-              {
-              "map_locations": [
+            "map_locations": [
               {
                 "map": "oot",
                 "x": 1404,
