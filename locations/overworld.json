@@ -3304,8 +3304,8 @@
                 "access_rules": [
                   "$oot|Death Mountain Big Fairy"
                 ],
-                "force_invisibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
                 "chest_opened_img": "images/BigFairySunGrey.png",
