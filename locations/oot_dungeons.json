@@ -5,15 +5,160 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
-        "name": "Grass - Lobby",
+        "name": "Map Chest",
+        "short_name": "Map",
         "access_rules": [
-          "$oot|Deku Tree Lobby Grass"
+          "$oot|Deku Tree Map Chest"
         ],
-        "force_invisibility_rules": [
-          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
         ],
-        "chest_unopened_img": "images/MM_Grass.png",
-        "chest_opened_img": "images/GrassGreyscale.png",
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Room Chests",
+        "short_name": "Slingshot",
+        "access_rules": [
+          "$oot|Deku Tree Slingshot Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Compass Room Chests",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Deku Tree Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 2
+      },
+      {
+        "name": "GS Compass Room",
+        "short_name": "Compass",
+        "access_rules": [
+          "$oot|Deku Tree GS Compass"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Basement",
+        "access_rules": [
+          "$oot|Deku Tree Basement Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Vines",
+        "short_name": "Vines",
+        "access_rules": [
+          "$oot|Deku Tree GS Basement Vines"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Gate",
+        "short_name": "Gate",
+        "access_rules": [
+          "$oot|Deku Tree GS Basement Gate"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "GS Basement Back Room",
+        "short_name": "Back Room",
+        "access_rules": [
+          "$oot|Deku Tree GS Basement Back Room"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Map Chest",
+        "short_name": "Map",
+        "chest_unopened_img": "images/chest_brown_map.png",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Map Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "GS Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree GS Lobby Crate"
+        ],
+        "visibility_rules": [
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/skulltula.png",
+        "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Chest",
+        "short_name": "Slingshot",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Slingshot Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Room Back Chest",
+        "short_name": "Slingshot Back",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Slingshot Room Far Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Compass Chest"
+        ],
+        "visibility_rules": [
+          "setting_mq_DekuTree_true"
+        ],
+        "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
       },
       {
