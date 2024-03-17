@@ -53,7 +53,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2058,
                     "y": 992
@@ -61,7 +61,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2058,
                     "y": 992
@@ -100,7 +100,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2214,
                     "y": 958
@@ -108,7 +108,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2214,
                     "y": 958
@@ -138,7 +138,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2116,
                     "y": 962
@@ -146,7 +146,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2116,
                     "y": 962
@@ -637,7 +637,7 @@
                   "$oot|Lost Woods Big Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
+                  "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
                 "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -678,7 +678,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2144,
                     "y": 812
@@ -686,7 +686,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 2144,
                     "y": 812
@@ -731,7 +731,7 @@
                   "$oot|Lost Woods Grotto Big Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
+                  "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
                 "chest_opened_img": "images/BigFairySunGrey.png",
@@ -949,7 +949,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2148,
                     "y": 680
@@ -957,7 +957,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2148,
                     "y": 680
@@ -1219,7 +1219,7 @@
                   "$oot|Death Mountain Big Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
+                  "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
                 "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -1275,7 +1275,7 @@
                   "$oot|Hyrule Field Cow"
                 ],
                 "visibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -1318,7 +1318,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1732,
                 "y": 688
@@ -1326,7 +1326,7 @@
               {
                 "map": "oot_er_locations",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1732,
                 "y": 688
@@ -1356,7 +1356,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1494,
                 "y": 528
@@ -1364,7 +1364,7 @@
               {
                 "map": "oot_er_locations",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1494,
                 "y": 528
@@ -1394,7 +1394,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1420,
                 "y": 872
@@ -1402,7 +1402,7 @@
               {
                 "map": "oot_er_locations",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1420,
                 "y": 872
@@ -1432,7 +1432,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1346,
                 "y": 816
@@ -1440,7 +1440,7 @@
               {
                 "map": "oot_er_locations",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1346,
                 "y": 816
@@ -1577,7 +1577,7 @@
                   "$oot|Lake Hylia GS Island Big Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
+                  "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
                 "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -1817,7 +1817,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1042,
                 "y": 1156
@@ -1825,7 +1825,7 @@
               {
                 "map": "oot_er_locations",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1042,
                 "y": 1156
@@ -1855,7 +1855,7 @@
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1140,
                 "y": 1182
@@ -1863,7 +1863,7 @@
               {
                 "map": "oot_er_locations",
                 "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1140,
                 "y": 1182
@@ -2152,7 +2152,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1726,
                     "y": 410
@@ -2160,7 +2160,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1726,
                     "y": 410
@@ -2190,7 +2190,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1910,
                     "y": 410
@@ -2198,7 +2198,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1910,
                     "y": 410
@@ -2809,7 +2809,7 @@
                       {
                         "map": "oot",
                         "force_invisibility_rules": [
-                          "setting_GrassShuffleOOT_true"
+                          "setting_GrassShuffleOOT_false"
                         ],
                         "x": 1992,
                         "y": 384
@@ -2817,7 +2817,7 @@
                       {
                         "map": "oot_er_locations",
                         "force_invisibility_rules": [
-                          "setting_GrassShuffleOOT_true"
+                          "setting_GrassShuffleOOT_false"
                         ],
                         "x": 1992,
                         "y": 384
@@ -2886,7 +2886,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2035,
                     "y": 360
@@ -2894,7 +2894,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2035,
                     "y": 360
@@ -2983,7 +2983,7 @@
                       "$oot|Graveyard Royal Tomb Big Fairy"
                     ],
                     "visibility_rules": [
-                      "setting_bigFairyShuffleOOT_true"
+                      "setting_bigFairyShuffleOOT_false"
                     ],
                     "chest_unopened_img": "images/BigFairySun.png",
                     "chest_opened_img": "images/BigFairySunGrey.png",
@@ -3299,7 +3299,7 @@
                   "$oot|Death Mountain Big Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
+                  "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
                 "chest_opened_img": "images/BigFairySunGrey.png",
@@ -4524,7 +4524,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1470,
                     "y": 165
@@ -4532,7 +4532,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1470,
                     "y": 165
@@ -4562,7 +4562,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 1186,
                     "y": 396
@@ -4570,7 +4570,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 1186,
                     "y": 396
@@ -4752,7 +4752,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1975,
                     "y": 538
@@ -4760,7 +4760,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_true"
+                      "setting_GrassShuffleOOT_false"
                     ],
                     "x": 1975,
                     "y": 538
@@ -4790,7 +4790,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2142,
                     "y": 500
@@ -4798,7 +4798,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2142,
                     "y": 500
@@ -5147,7 +5147,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2510,
                     "y": 454
@@ -5155,7 +5155,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 2510,
                     "y": 454
@@ -5792,7 +5792,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 562,
                     "y": 436
@@ -5800,7 +5800,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 562,
                     "y": 436
@@ -5892,7 +5892,7 @@
                   "$oot|Gerudo Soup Big Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
+                  "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
                 "chest_opened_img": "images/BigFairySunGrey.png",
@@ -6094,7 +6094,7 @@
                   {
                     "map": "oot",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 206,
                     "y": 436
@@ -6102,7 +6102,7 @@
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_true"
+                      "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 206,
                     "y": 436
