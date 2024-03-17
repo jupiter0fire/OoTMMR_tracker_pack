@@ -221,11 +221,6 @@
         "item": "setting_fairyFountainShuffleMM",
         "height": 16
       },
-     {
-        "type": "item",
-        "item": "setting_bigFairyShuffleMM",
-        "height": 16
-      },
       {
         "type": "item",
         "item": "setting_heartShuffleMM",
