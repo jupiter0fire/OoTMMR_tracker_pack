@@ -1023,6 +1023,9 @@
                 "access_rules": [
                   "$oot|Hyrule Field Grotto Big Fairy"
                 ],
+                "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_false"
+                ],
                 "item_count": 1
               }
             ],
@@ -3272,6 +3275,9 @@
                 "chest_opened_img": "images/BigFairyStormsGrey.png",
                 "access_rules": [
                   "$oot|Death Mountain Cow Grotto Big Fairy"
+                ],
+                "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_false"
                 ],
                 "item_count": 1
               }
