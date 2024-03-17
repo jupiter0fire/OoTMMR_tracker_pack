@@ -21,11 +21,6 @@
       },
       {
         "type": "item",
-        "item": "setting_fairyFountainShuffleOOT",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_scrubShuffleOot",
         "height": 16
       },
@@ -39,14 +34,24 @@
         "item": "setting_fairyFountainShuffleOOT",
         "height": 16
       },
-      {
+     {
         "type": "item",
-        "item": "setting_cowShuffleOot",
+        "item": "setting_bigFairyShuffleOoT",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_grassShuffleMM",
+        "item": "setting_heartShuffleOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_OcarinaButtonShuffleOOT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_cowShuffleOot",
         "height": 16
       },
       {
@@ -62,16 +67,6 @@
       {
         "type": "item",
         "item": "setting_priceOotScrubs",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bigFairyShuffleMM",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_FairyFountainShuffleMM",
         "height": 16
       },
       {
@@ -214,6 +209,31 @@
       {
         "type": "item",
         "item": "setting_scrubShuffleMm",
+        "height": 16
+      },
+       {
+        "type": "item",
+        "item": "setting_grassShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyFountainShuffleMM",
+        "height": 16
+      },
+     {
+        "type": "item",
+        "item": "setting_bigFairyShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_heartShuffleMM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_OcarinaButtonShuffleMM",
         "height": 16
       },
       {
