@@ -17,6 +17,18 @@
         "item_count": 1
       },
       {
+        "name": "Deku Tree Lobby Grass",
+        "access_rules": [
+          "$oot|Deku Tree Lobby Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Slingshot Room Chests",
         "short_name": "Slingshot",
         "access_rules": [
@@ -26,6 +38,18 @@
           "setting_mq_DekuTree_false"
         ],
         "item_count": 2
+      },
+      {
+        "name": "Deku Tree Slingshot Room Grass",
+        "access_rules": [
+          "$oot|Deku Tree Slingshot Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "Compass Room Chests",
@@ -38,6 +62,18 @@
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 2
+      },
+      {
+        "name": "Deku Tree Compass Room Grass",
+        "access_rules": [
+          "$oot|Deku Tree Compass Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "GS Compass Room",
@@ -61,6 +97,18 @@
         "visibility_rules": [
           "setting_mq_DekuTree_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Basement Grass",
+        "access_rules": [
+          "$oot|Deku Tree Basement Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -90,6 +138,42 @@
         "item_count": 1
       },
       {
+        "name": "Deku Eye Switch Room Grass",
+        "access_rules": [
+          "$oot|Deku Tree Eye Switch Room Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Water Room Grass",
+        "access_rules": [
+          "$oot|Deku Tree Water Room Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Torch Room Grass",
+        "access_rules": [
+          "$oot|Deku Tree Torch Room Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Basement Back Room",
         "short_name": "Back Room",
         "access_rules": [
@@ -103,6 +187,18 @@
         "item_count": 1
       },
       {
+        "name": "Deku Tree Back Room Grass",
+        "access_rules": [
+          "$oot|Deku Tree Back Room Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "chest_unopened_img": "images/chest_brown_map.png",
@@ -112,6 +208,30 @@
         "visibility_rules": [
           "setting_mq_DekuTree_true"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Pre-Boss Room Grass",
+        "access_rules": [
+          "$oot|Deku Tree Pre-Boss Room Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Deku Tree Boss Grass",
+        "access_rules": [
+          "$oot|Deku Tree Boss Grass"
+        ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
