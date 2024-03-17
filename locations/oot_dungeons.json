@@ -9,13 +9,13 @@
         "access_rules": [
           "$oot|Deku Tree Lobby Grass"
         ],
+        "force_invisibility_rules": [
+          "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false"
+        ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
-      }
-    ],
-    "force_invisibility_rules": [
-      "setting_GrassShuffleOOT_false,setting_mq_DekuTree_false",
+      },
       {
         "name": "GS Compass Room",
         "short_name": "Compass",
