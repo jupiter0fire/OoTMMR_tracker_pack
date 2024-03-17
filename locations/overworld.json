@@ -1232,7 +1232,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1764,
+                "x": 1774,
                 "y": 588
               },
               {
@@ -8390,11 +8390,20 @@
               "$mm|Swamp Archery Reward 2"
             ],
             "item_count": 1
-          }
+          },
+          {
+            "name": "Grass Patches outside Gallery On Ledge",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png", 
+            "access_rules": [
+              "$mm|Swamp Archery Ledge Grass"
+            ],
+            "item_count": 1
         ],
         "map_locations": [
           {
             "map": "termina",
+            "access_rules": [
             "x": 563,
             "y": 414
           },
@@ -8546,7 +8555,7 @@
           {
             "map": "termina",
             "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+              "setting_grassShuffleMM_false"
             ],
             "x": 553,
             "y": 425
@@ -8554,7 +8563,7 @@
           {
             "map": "termina_er_locations",
             "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+              "setting_grassShuffleMM_false"
             ],
             "x": 553,
             "y": 425
@@ -8579,7 +8588,7 @@
           {
             "map": "termina",
             "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+              "setting_grassShuffleMM_false"
             ],
             "x": 539,
             "y": 404
@@ -8587,7 +8596,7 @@
           {
             "map": "termina_er_locations",
             "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+              "setting_grassShuffleMM_false"
             ],
             "x": 539,
             "y": 404
