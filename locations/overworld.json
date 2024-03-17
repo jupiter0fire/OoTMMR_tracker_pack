@@ -636,7 +636,7 @@
                 "access_rules": [
                   "$oot|Lost Woods Big Fairy"
                 ],
-                "visibility_rules": [
+                "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
@@ -1023,7 +1023,7 @@
                 "access_rules": [
                   "$oot|Hyrule Field Grotto Big Fairy"
                 ],
-                "visibility_rules": [
+                "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "item_count": 1
@@ -1221,7 +1221,7 @@
                 "access_rules": [
                   "$oot|Death Mountain Big Fairy"
                 ],
-                "visibility_rules": [
+                "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
@@ -1579,7 +1579,7 @@
                 "access_rules": [
                   "$oot|Lake Hylia GS Island Big Fairy"
                 ],
-                "visibility_rules": [
+                "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
@@ -2985,7 +2985,7 @@
                     "access_rules": [
                       "$oot|Graveyard Royal Tomb Big Fairy"
                     ],
-                    "visibility_rules": [
+                    "force_invisibility_rules": [
                       "setting_bigFairyShuffleOOT_false"
                     ],
                     "chest_unopened_img": "images/BigFairySun.png",
@@ -3276,7 +3276,7 @@
                 "access_rules": [
                   "$oot|Death Mountain Cow Grotto Big Fairy"
                 ],
-                "visibility_rules": [
+                "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "item_count": 1
@@ -3304,7 +3304,7 @@
                 "access_rules": [
                   "$oot|Death Mountain Big Fairy"
                 ],
-                "visibility_rules": [
+                "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
@@ -5897,7 +5897,7 @@
                 "access_rules": [
                   "$oot|Gerudo Soup Big Fairy"
                 ],
-                "visibility_rules": [
+               "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
