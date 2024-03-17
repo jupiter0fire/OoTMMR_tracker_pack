@@ -7612,11 +7612,17 @@
             "map_locations": [
               {
                 "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 563,
                 "y": 352
               },
               {
                 "map": "termina_er_locations",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 563,
                 "y": 352
               }
@@ -7678,6 +7684,9 @@
               },
               {
                 "map": "termina_er_locations",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 582,
                 "y": 302
               }
@@ -7697,6 +7706,11 @@
                 "item_count": 1
               },
               {
+                "map": "termina",
+                "x": 520,
+                "y": 355
+              },
+              {
                 "name": "Peahat Grotto Grass Patch",
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -7706,302 +7720,142 @@
                 "item_count": 1
               }
             ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 520,
-                "y": 355
-              },
-              {
-                "map": "termina_er_locations",
-                "x": 520,
-                "y": 355
-              }
-            ]
+            "map_locations": [],
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "map": "termina",
+            "x": 520,
+            "y": 355
           },
           {
-            "name": "Termina Field North Grotto",
-            "short_name": "Dodongo Grotto",
-            "sections": [
-              {
-                "name": "Kill the Dodongos",
-                "chest_unopened_img": "images/system/chest_unopened_big.png",
-                "chest_opened_img": "images/system/chest_open_big.png",
-                "access_rules": [
-                  "$mm|Termina Field Dodongo Grotto"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 525,
-                "y": 260
-              },
-              {
-                "map": "termina_er_locations",
-                "x": 525,
-                "y": 260
-              }
-            ]
-          },
-          {
-            "name": "Termina Field Cow Grotto",
-            "short_name": "Termina Field Cows",
-            "sections": [
-              {
-                "name": "Cows",
-                "chest_unopened_img": "images/system/cow.png",
-                "chest_opened_img": "images/system/milk.png",
-                "access_rules": [
-                  "$mm|Termina Field Cow Front"
-                ],
-                "item_count": 2
-              },
-              {
-                "name": "Cow Grotto Grass Patch",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Termina Field Grotto Grass"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "visibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 525,
-                "y": 340
-              },
-              {
-                "map": "termina_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 525,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "name": "West Termina Field Grotto",
-            "short_name": "Beehive Grotto",
-            "sections": [
-              {
-                "name": "Shoot the Beehives",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Bio Baba Grotto"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Bio Baba Grotto Grass",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Bio Baba Grotto Grass"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 475,
-                "y": 310
-              },
-              {
-                "map": "termina_er_locations",
-                "x": 475,
-                "y": 310
-              }
-            ]
-          },
-          {
-            "name": "Empty Grotto By Observatory",
-            "short_name": "Business Scrub Grotto",
-            "sections": [
-              {
-                "name": "Follow Scrub With Telescope",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Scrub"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 590,
-                "y": 335
-              },
-              {
-                "map": "termina_er_locations",
-                "x": 590,
-                "y": 335
-              }
-            ]
-          },
-          {
-            "name": "Gossip Stones Puzzle Grottos",
-            "short_name": "Gossips Grottos",
-            "sections": [
-              {
-                "name": "Play a Dungeon Song in all four grottos",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Gossip Stones HP"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 536,
-                "y": 360
-              },
-              {
-                "map": "termina_er_locations",
-                "x": 536,
-                "y": 360
-              }
-            ]
-          },
-          {
-            "name": "Gossip Stones Puzzle Grottos",
-            "short_name": "Gossips Grottos",
-            "sections": [
-              {
-                "name": "Play a Dungeon Song in all four grottos",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Gossip Stones HP"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "x": 596,
-                "y": 322
-              },
-              {
-                "map": "termina_er_locations",
-                "x": 596,
-                "y": 322
-              }
-            ]
-          },
-          {
-            "name": "Gossip Stones Puzzle Grottos",
-            "short_name": "Gossips Grottos",
-            "sections": [
-              {
-                "name": "Play a Dungeon Song in all four grottos",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Gossip Stones HP"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Canyon Gossip Grotto Grass",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Canyon Gossip Grotto"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 550,
-                "y": 276
-              },
-              {
-                "map": "termina_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 550,
-                "y": 276
-              }
-            ]
-          },
-          {
-            "name": "Gossip Stones Puzzle Grottos",
-            "short_name": "Gossips Grottos",
-            "sections": [
-              {
-                "name": "Play a Dungeon Song in all four grottos",
-                "chest_unopened_img": "images/system/heartpiece.png",
-                "chest_opened_img": "images/system/heartpiece_grey.png",
-                "access_rules": [
-                  "$mm|Termina Field Gossip Stones HP"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Ocean Grotto Grass",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Ocean Gossip Grotto"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 496,
-                "y": 300
-              },
-              {
-                "map": "termina_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 496,
-                "y": 300
-              }
-            ]
+            "map": "termina_er_locations",
+            "x": 520,
+            "y": 355
           }
         ]
       },
       {
-        "name": "Moon's Tear",
-        "short_name": "Moon's Tear",
+        "name": "Termina Field North Grotto",
+        "short_name": "Dodongo Grotto",
         "sections": [
           {
-            "name": "Look at Skull Kid through the telescope",
+            "name": "Kill the Dodongos",
+            "chest_unopened_img": "images/system/chest_unopened_big.png",
+            "chest_opened_img": "images/system/chest_open_big.png",
             "access_rules": [
-              "$mm|Astral Observatory Moon Tear"
+              "$mm|Termina Field Dodongo Grotto"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "x": 525,
+            "y": 260
+          },
+          {
+            "map": "termina_er_locations",
+            "x": 525,
+            "y": 260
+          }
+        ]
+      },
+      {
+        "name": "Termina Field Cow Grotto",
+        "short_name": "Termina Field Cows",
+        "sections": [
+          {
+            "name": "Cows",
+            "chest_unopened_img": "images/system/cow.png",
+            "chest_opened_img": "images/system/milk.png",
+            "access_rules": [
+              "$mm|Termina Field Cow Front"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Cow Grotto Grass Patch",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "access_rules": [
+              "$mm|Termina Field Grotto Grass"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 525,
+            "y": 340
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 525,
+            "y": 340
+          }
+        ]
+      },
+      {
+        "name": "West Termina Field Grotto",
+        "short_name": "Beehive Grotto",
+        "sections": [
+          {
+            "name": "Shoot the Beehives",
+            "chest_unopened_img": "images/system/heartpiece.png",
+            "chest_opened_img": "images/system/heartpiece_grey.png",
+            "access_rules": [
+              "$mm|Termina Field Bio Baba Grotto"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Bio Baba Grotto Grass",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "access_rules": [
+              "$mm|Bio Baba Grotto Grass"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 475,
+            "y": 310
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 475,
+            "y": 310
+          }
+        ]
+      },
+      {
+        "name": "Empty Grotto By Observatory",
+        "short_name": "Business Scrub Grotto",
+        "sections": [
+          {
+            "name": "Follow Scrub With Telescope",
+            "chest_unopened_img": "images/system/heartpiece.png",
+            "chest_opened_img": "images/system/heartpiece_grey.png",
+            "access_rules": [
+              "$mm|Termina Field Scrub"
             ],
             "item_count": 1
           }
@@ -8010,14 +7864,177 @@
           {
             "map": "termina",
             "x": 590,
-            "y": 347
+            "y": 335
           },
           {
             "map": "termina_er_locations",
             "x": 590,
-            "y": 347
+            "y": 335
           }
         ]
+      },
+      {
+        "name": "Gossip Stones Puzzle Grottos",
+        "short_name": "Gossips Grottos",
+        "sections": [
+          {
+            "name": "Play a Dungeon Song in all four grottos",
+            "chest_unopened_img": "images/system/heartpiece.png",
+            "chest_opened_img": "images/system/heartpiece_grey.png",
+            "access_rules": [
+              "$mm|Termina Field Gossip Stones HP"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "x": 536,
+            "y": 360
+          },
+          {
+            "map": "termina_er_locations",
+            "x": 536,
+            "y": 360
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stones Puzzle Grottos",
+        "short_name": "Gossips Grottos",
+        "sections": [
+          {
+            "name": "Play a Dungeon Song in all four grottos",
+            "chest_unopened_img": "images/system/heartpiece.png",
+            "chest_opened_img": "images/system/heartpiece_grey.png",
+            "access_rules": [
+              "$mm|Termina Field Gossip Stones HP"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "x": 596,
+            "y": 322
+          },
+          {
+            "map": "termina_er_locations",
+            "x": 596,
+            "y": 322
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stones Puzzle Grottos",
+        "short_name": "Gossips Grottos",
+        "sections": [
+          {
+            "name": "Play a Dungeon Song in all four grottos",
+            "chest_unopened_img": "images/system/heartpiece.png",
+            "chest_opened_img": "images/system/heartpiece_grey.png",
+            "access_rules": [
+              "$mm|Termina Field Gossip Stones HP"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Canyon Gossip Grotto Grass",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "access_rules": [
+              "$mm|Canyon Gossip Grotto"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 550,
+            "y": 276
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 550,
+            "y": 276
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stones Puzzle Grottos",
+        "short_name": "Gossips Grottos",
+        "sections": [
+          {
+            "name": "Play a Dungeon Song in all four grottos",
+            "chest_unopened_img": "images/system/heartpiece.png",
+            "chest_opened_img": "images/system/heartpiece_grey.png",
+            "access_rules": [
+              "$mm|Termina Field Gossip Stones HP"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Ocean Grotto Grass",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "access_rules": [
+              "$mm|Ocean Gossip Grotto"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 496,
+            "y": 300
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 496,
+            "y": 300
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Moon's Tear",
+    "short_name": "Moon's Tear",
+    "sections": [
+      {
+        "name": "Look at Skull Kid through the telescope",
+        "access_rules": [
+          "$mm|Astral Observatory Moon Tear"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 590,
+        "y": 347
+      },
+      {
+        "map": "termina_er_locations",
+        "x": 590,
+        "y": 347
       }
     ]
   },
