@@ -3370,6 +3370,8 @@
             "access_rules": [
               "$oot|Great Fairy Magic Upgrade"
             ],
+             "chest_unopened_img": "images/chest_brown_closed.png",
+             "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -4101,6 +4103,8 @@
                 "access_rules": [
                   "$oot|Shooting Gallery Child"
                 ],
+                 "chest_unopened_img": "images/chest_brown_closed.png",
+                 "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -4163,15 +4167,17 @@
                 "item_count": 1
               }
             ],
+             "chest_unopened_img": "images/chest_brown_closed.png",
+             "chest_opened_img": "images/chest_brown_open.png",
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1415,
+                "x": 1410,
                 "y": 325
               },
               {
                 "map": "oot_er_locations",
-                "x": 1415,
+                "x": 1410,
                 "y": 325
               }
             ]
@@ -4765,6 +4771,8 @@
               "$oot|Great Fairy Defense Upgrade",
               "{}"
             ],
+             "chest_unopened_img": "images/chest_brown_closed.png",
+             "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -6172,6 +6180,8 @@
                 "access_rules": [
                   "$oot|Great Fairy Nayru's Love"
                 ],
+                 "chest_unopened_img": "images/chest_brown_closed.png",
+                 "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
