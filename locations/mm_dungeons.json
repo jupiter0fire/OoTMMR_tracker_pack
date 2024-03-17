@@ -830,6 +830,9 @@
         "access_rules": [
           "$mm|Pirate Fortress Freestanding Hearts"
         ],
+        "visibility_rules": [
+          "setting_heartShuffleMM_false"
+        ],
         "item_count": 1
       },
       {
@@ -887,25 +890,6 @@
         ],
         "visibility_rules": [
           "setting_FairyFountainShuffleMM_false"
-        ],
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "x": 836,
-        "y": 238,
-        "size": 20
-      {
-        "name": "Beneath the Well Cow",
-        "chest_unopened_img": "images/system/cow.png",
-        "chest_opened_img": "images/system/milk.png",
-        "access_rules": [
-          "$mm|Beneath the Well Cow"
-        ],
-        "visibility_rules": [
-          "setting_cowShuffleMm_true"
         ],
         "item_count": 1
       }
@@ -1945,7 +1929,7 @@
     "map_locations": [
       {
         "map": "termina",
-		"size": 20,
+        "size": 20,
         "x": 775,
         "y": 228
       }
