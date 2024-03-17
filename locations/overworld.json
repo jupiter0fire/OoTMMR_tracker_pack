@@ -1277,7 +1277,7 @@
                 "access_rules": [
                   "$oot|Hyrule Field Cow"
                 ],
-                "visibility_rules": [
+                "force_invisibility_rules": [
                   "setting_GrassShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
@@ -3394,6 +3394,8 @@
             "access_rules": [
               "$oot|Death Mountain Prescription"
             ],
+            "chest_unopened_img": "images/Broken_Sword.png",
+            "chest_opened_img": "images/Broken_Sword_Grey.png",
             "item_count": 1
           },
           {
@@ -3401,13 +3403,17 @@
             "access_rules": [
               "$oot|Death Mountain Claim Check"
             ],
+            "chest_unopened_img": "images/Eyedrops.png",
+            "chest_opened_img": "images/Eyedrops_Grey.png",
             "item_count": 1
           },
           {
-            "name": "Help him",
+            "name": "Trade For Sword",
             "access_rules": [
               "$oot|Death Mountain Biggoron Sword"
             ],
+            "chest_unopened_img": "images/Claim_Check.png",
+            "chest_opened_img": "images/Claim_Check_Grey.png",
             "item_count": 1
           }
         ],
@@ -3467,6 +3473,8 @@
             "access_rules": [
               "$oot|Goron City Maze Center 1"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 2
           },
           {
@@ -3474,6 +3482,8 @@
             "access_rules": [
               "$oot|Goron City Maze Left"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -3512,6 +3522,8 @@
             "access_rules": [
               "$oot|Goron City Tunic"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -3537,6 +3549,8 @@
             "access_rules": [
               "$oot|Goron City Bomb Bag"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -3562,6 +3576,8 @@
             "access_rules": [
               "$oot|Goron City Medigoron Giant Knife"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -3613,6 +3629,8 @@
             "access_rules": [
               "$oot|Darunia"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -3753,6 +3771,8 @@
             "item_count": 1
           }
         ],
+        "chest_unopened_img": "images/chest_brown_closed.png",
+        "chest_opened_img": "images/chest_brown_open.png",
         "map_locations": [
           {
             "map": "oot",
@@ -3786,6 +3806,8 @@
             "access_rules": [
               "$oot|Death Mountain Crater Grotto"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -3865,6 +3887,8 @@
             "access_rules": [
               "$oot|Great Fairy Magic Upgrade 2"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -4099,6 +4123,8 @@
                 "access_rules": [
                   "$oot|Lost Woods Grass Clusters"
                 ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4108,8 +4134,8 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1404,
-                "y": 344
+                "x": 1436,
+                "y": 347
               },
               {
                 "map": "oot_er_locations",
@@ -4157,6 +4183,8 @@
                 "access_rules": [
                   "$oot|Treasure Game HP"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -4212,6 +4240,8 @@
                 "item_count": 1
               }
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "map_locations": [
               {
                 "map": "oot",
@@ -4291,6 +4321,8 @@
                 ]
               }
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "map_locations": [
               {
                 "map": "oot",
@@ -4349,6 +4381,8 @@
                 "item_count": 1
               }
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "map_locations": [
               {
                 "map": "oot",
@@ -4430,6 +4464,8 @@
         "access_rules": [
           "$oot|Temple of Time Light Arrows"
         ],
+        "chest_unopened_img": "images/OoT_Light_Arrow.png",
+        "chest_opened_img": "images/OoT_Light_Arrow_Grey.png",
         "item_count": 1
       },
       {
@@ -4437,6 +4473,8 @@
         "access_rules": [
           "$oot|Temple of Time Master Sword"
         ],
+        "chest_unopened_img": "images/Master_Sword.png",
+        "chest_opened_img": "images/Master_Sword_Grey.png",
         "item_count": 1
       }
     ],
@@ -5692,6 +5730,8 @@
                 "access_rules": [
                   "$oot|Gerudo Valley Chest"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -5716,6 +5756,8 @@
                 "access_rules": [
                   "$oot|Gerudo Valley Broken Goron Sword"
                 ],
+                "chest_unopened_img": "images/Poachers_Saw.png",
+                "chest_opened_img": "images/Poachers_Saw_Grey.png",
                 "item_count": 1
               }
             ],
@@ -5902,10 +5944,14 @@
             "sections": [
               {
                 "name": "1000 Points",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
                 "item_count": 1
               },
               {
                 "name": "1500 Points",
+                "chest_unopened_img": "images/Quiver.png",
+                "chest_opened_img": "images/Quiver_grey.png",
                 "item_count": 1
               }
             ],
@@ -6071,6 +6117,8 @@
                   "$oot|Haunted Wasteland Chest",
                   "{}"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               },
               {
