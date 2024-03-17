@@ -801,7 +801,7 @@
         "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
       },
       {
-        "name": "Well Guarded Chest",
+        "name": " Guarded Chest",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "access_rules": [
@@ -878,6 +878,25 @@
         ],
         "item_count": 1
       },
+      {
+        "name": "Beneath the Well Fairy Fountain",
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "access_rules": [
+          "$mm|Beneath the Well Fairy Fountain"
+        ],
+        "visibility_rules": [
+          "setting_FairyFountainShuffleMM_false"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 836,
+        "y": 238,
+        "size": 20
       {
         "name": "Beneath the Well Cow",
         "chest_unopened_img": "images/system/cow.png",
