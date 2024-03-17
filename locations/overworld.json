@@ -1232,7 +1232,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1774,
+                "x": 1764,
                 "y": 588
               },
               {
@@ -5897,7 +5897,7 @@
                 "access_rules": [
                   "$oot|Gerudo Soup Big Fairy"
                 ],
-               "force_invisibility_rules": [
+                "force_invisibility_rules": [
                   "setting_bigFairyShuffleOOT_false"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
@@ -6099,7 +6099,7 @@
                 "map_locations": [
                   {
                     "map": "oot",
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 206,
@@ -6107,7 +6107,7 @@
                   },
                   {
                     "map": "oot_er_locations",
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_FairyFountainShuffleOOT_false"
                     ],
                     "x": 206,
@@ -6161,7 +6161,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_scrubShuffleOot_false"
                 ],
                 "x": 195,
@@ -6169,7 +6169,7 @@
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_scrubShuffleOot_false"
                 ],
                 "x": 195,
@@ -6363,7 +6363,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_owlShuffle_none"
                     ],
                     "x": 90,
@@ -6371,7 +6371,7 @@
                   },
                   {
                     "map": "termina_er_locations",
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_owlShuffle_none"
                     ],
                     "x": 90,
@@ -6740,7 +6740,7 @@
                     "map": "termina",
                     "x": 120,
                     "y": 35,
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_tingleShuffle_vanilla"
                     ]
                   },
@@ -6748,7 +6748,7 @@
                     "map": "termina_er_locations",
                     "x": 120,
                     "y": 35,
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_tingleShuffle_vanilla"
                     ]
                   }
@@ -7269,7 +7269,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_shopShuffleMm_none"
                     ],
                     "x": 34,
@@ -7277,7 +7277,7 @@
                   },
                   {
                     "map": "termina_er_locations",
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_shopShuffleMm_none"
                     ],
                     "x": 34,
@@ -7772,8 +7772,8 @@
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_cowShuffleMm_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 525,
                 "y": 340
@@ -7781,7 +7781,7 @@
               {
                 "map": "termina_er_locations",
                 "force_invisibility_rules": [
-                  "setting_cowShuffleMm_false"
+                  "setting_GrassShuffleOOT_false"
                 ],
                 "x": 525,
                 "y": 340
@@ -7814,6 +7814,9 @@
             "map_locations": [
               {
                 "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 475,
                 "y": 310
               },
@@ -7931,11 +7934,17 @@
             "map_locations": [
               {
                 "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 550,
                 "y": 276
               },
               {
                 "map": "termina_er_locations",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 550,
                 "y": 276
               }
@@ -7967,11 +7976,17 @@
             "map_locations": [
               {
                 "map": "termina",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 496,
                 "y": 300
               },
               {
                 "map": "termina_er_locations",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
                 "x": 496,
                 "y": 300
               }
@@ -8311,7 +8326,7 @@
             "item_count": 1
           },
           {
-            "name": "Road to Southern Swamp Grotto",
+            "name": "Road to Swamp Grotto Grass",
             "chest_unopened_img": "images/MM_Grass.png",
             "chest_opened_img": "images/GrassGreyscale.png",
             "access_rules": [
@@ -8323,11 +8338,17 @@
         "map_locations": [
           {
             "map": "termina",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
             "x": 525,
             "y": 389
           },
           {
             "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
             "x": 525,
             "y": 389
           }
@@ -8390,20 +8411,11 @@
               "$mm|Swamp Archery Reward 2"
             ],
             "item_count": 1
-          },
-          {
-            "name": "Grass Patches outside Gallery On Ledge",
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png", 
-            "access_rules": [
-              "$mm|Swamp Archery Ledge Grass"
-            ],
-            "item_count": 1
+          }
         ],
         "map_locations": [
           {
             "map": "termina",
-            "access_rules": [
             "x": 563,
             "y": 414
           },
@@ -8555,7 +8567,7 @@
           {
             "map": "termina",
             "force_invisibility_rules": [
-              "setting_grassShuffleMM_false"
+              "setting_owlShuffle_none"
             ],
             "x": 553,
             "y": 425
@@ -8563,7 +8575,7 @@
           {
             "map": "termina_er_locations",
             "force_invisibility_rules": [
-              "setting_grassShuffleMM_false"
+              "setting_owlShuffle_none"
             ],
             "x": 553,
             "y": 425
@@ -8588,7 +8600,7 @@
           {
             "map": "termina",
             "force_invisibility_rules": [
-              "setting_grassShuffleMM_false"
+              "setting_owlShuffle_none"
             ],
             "x": 539,
             "y": 404
@@ -8596,7 +8608,7 @@
           {
             "map": "termina_er_locations",
             "force_invisibility_rules": [
-              "setting_grassShuffleMM_false"
+              "setting_owlShuffle_none"
             ],
             "x": 539,
             "y": 404
