@@ -3384,6 +3384,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Death Mountain Grotto"] = function () return true end,
+	    ["Death Mountain Grotto Grass"] = function () return can_play_storms() and can_cut_grass() end,
         },
     },
     ["Death Mountain Cow Grotto"] = {
@@ -3395,6 +3396,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Death Mountain Cow"] = function () return can_play_epona() end,
+	    ["Death Mountain Cow Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Fairy Fountain Magic"] = {
@@ -3539,6 +3541,8 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Zora River Grotto"] = function () return true end,
+	    ["Zora River Grotto Grass"] = function () return can_cut_grass() end,
+	
         },
     },
     ["Zora River Boulder Grotto"] = {
