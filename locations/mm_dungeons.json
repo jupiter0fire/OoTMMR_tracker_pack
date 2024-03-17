@@ -773,6 +773,18 @@
         "item_count": 1
       },
       {
+        "name": "Freestanding Hearts",
+        "chest_unopened_img": "images/PFHearts.png",
+        "chest_opened_img": "images/PFHeartsGrey.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Freestanding Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_heartShuffleMM_false"
+        ],
+        "item_count": 1
+      },
+      {
         "name": "Zora Egg 1",
         "access_rules": [
           "$mm_event_raw|ZORA_EGGS_HOOKSHOT_ROOM"
@@ -822,18 +834,6 @@
           "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
         ],
         "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
-      },
-      {
-        "name": "Freestanding Hearts",
-        "chest_unopened_img": "images/PFHearts.png",
-        "chest_opened_img": "images/PFHeartsGrey.png",
-        "access_rules": [
-          "$mm|Pirate Fortress Freestanding Hearts"
-        ],
-        "visibility_rules": [
-          "setting_heartShuffleMM_false"
-        ],
-        "item_count": 1
       },
       {
         "name": "Zora Egg 4",
