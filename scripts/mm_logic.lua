@@ -1334,6 +1334,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Beneath the Well Keese Chest"] = function () return event('WATER') and event('BUGS') and can_use_lens() end,
+	    ["Beneath the Well Fairy Fountain"] = function () return has('MASK_GIBDO') and has_blue_potion() end,
         },
     },
     ["Beneath the Well East Section"] = {
