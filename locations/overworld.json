@@ -636,8 +636,8 @@
                 "access_rules": [
                   "$oot|Lost Woods Big Fairy"
                 ],
-                "force_invisibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+               "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
                 "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -731,7 +731,7 @@
                   "$oot|Lost Woods Grotto Big Fairy"
                 ],
                 "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
                 "chest_opened_img": "images/BigFairySunGrey.png",
@@ -1023,8 +1023,8 @@
                 "access_rules": [
                   "$oot|Hyrule Field Grotto Big Fairy"
                 ],
-                "force_invisibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "item_count": 1
               }
@@ -1221,8 +1221,8 @@
                 "access_rules": [
                   "$oot|Death Mountain Big Fairy"
                 ],
-                "force_invisibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
                 "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -1232,8 +1232,8 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1764,
-                "y": 588
+                "x": 1774,
+                "y": 591
               },
               {
                 "map": "oot_er_locations",
@@ -1579,8 +1579,8 @@
                 "access_rules": [
                   "$oot|Lake Hylia GS Island Big Fairy"
                 ],
-                "force_invisibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+               "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "chest_unopened_img": "images/BigFairyStorms.png",
                 "chest_opened_img": "images/BigFairyStormsGrey.png",
@@ -2985,8 +2985,8 @@
                     "access_rules": [
                       "$oot|Graveyard Royal Tomb Big Fairy"
                     ],
-                    "force_invisibility_rules": [
-                      "setting_bigFairyShuffleOOT_false"
+                   "visibility_rules": [
+                      "setting_bigFairyShuffleOOT_true"
                     ],
                     "chest_unopened_img": "images/BigFairySun.png",
                     "chest_opened_img": "images/BigFairySunGrey.png",
@@ -3276,8 +3276,8 @@
                 "access_rules": [
                   "$oot|Death Mountain Cow Grotto Big Fairy"
                 ],
-                "force_invisibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "item_count": 1
               }
@@ -5897,8 +5897,8 @@
                 "access_rules": [
                   "$oot|Gerudo Soup Big Fairy"
                 ],
-                "force_invisibility_rules": [
-                  "setting_bigFairyShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_bigFairyShuffleOOT_true"
                 ],
                 "chest_unopened_img": "images/BigFairySun.png",
                 "chest_opened_img": "images/BigFairySunGrey.png",
