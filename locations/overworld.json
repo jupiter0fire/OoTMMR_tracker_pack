@@ -5195,6 +5195,8 @@
                 "access_rules": [
                   "$oot|Zora Domain Waterfall Chest"
                 ],
+                 "chest_unopened_img": "images/chest_brown_closed.png",
+                 "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
