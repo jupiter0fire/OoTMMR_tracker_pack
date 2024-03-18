@@ -523,6 +523,18 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "Lobby Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Lobby Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Side Room Near Lower Lizalfos",
         "short_name": "East Side",
         "access_rules": [
@@ -625,6 +637,18 @@
         "item_count": 1
       },
       {
+        "name": "Pre-Miniboss Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Pre-Miniboss Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Bomb Flower Platform Chest",
         "short_name": "Bomb Flower",
         "access_rules": [
@@ -633,6 +657,18 @@
         "visibility_rules": [
           "setting_mq_DodongoCavern_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Bag Room Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Bomb Bag Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -648,6 +684,18 @@
         "chest_opened_img": "images/deku_scrub_grey.png",
         "clear_as_group": false,
         "item_count": 2
+      },
+      {
+        "name": "East Corridor Side Room Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern East Corridor Side Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "Bomb Bag Chest",
@@ -669,6 +717,18 @@
         "visibility_rules": [
           "setting_mq_DodongoCavern_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Pre-Boss Room Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Pre-Boss Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
