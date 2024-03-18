@@ -4804,14 +4804,14 @@
             "access_rules": [
               "$oot|Zora River Frogs Storms"
             ],
-            "chest_unopened_img": "images/Frog.png",
+            "chest_unopened_img": "images/Froggo.png",
             "chest_opened_img": "images/Frog_Grey.png",
             "item_count": 1
           },
           {
             "name": "ZR Frogs Ocarina Game",
             "access_rules": [
-              "$oot|Zora River Frogs Game",
+              "$oot|Zora River Frogs Game",  
               "{}"
             ],
             "chest_unopened_img": "images/Froggy.png",
