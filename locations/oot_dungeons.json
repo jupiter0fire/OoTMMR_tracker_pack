@@ -756,13 +756,13 @@
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
-            {
+      {
         "name": "Vanilla Bomb Bag Room Grass",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Vanilla Bomb Bag Room Grass"
         ],
         "visibility_rules": [
-          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+          "setting_GrassShuffleOOT_truesetting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -786,19 +786,19 @@
           "$ootmq|MQ Dodongo Cavern GS Poe Room Side"
         ],
         "visibility_rules": [
-          " ,setting_mq_DodongoCavern_true"
+          "setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
       },
-           {
+      {
         "name": "Room Before Miniboss Grass",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Room Before Miniboss Grass"
         ],
         "visibility_rules": [
-          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -883,7 +883,7 @@
           "$ootmq|MQ Dodongo Cavern Compass Room Grass"
         ],
         "visibility_rules": [
-          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -953,13 +953,13 @@
         ],
         "item_count": 1
       },
-       {
+      {
         "name": "Boss Loop Side Room Grass",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Boss Loop Side Room Grass"
         ],
         "visibility_rules": [
-          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+          "setting_GrassShuffleOOT_true,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
@@ -1101,6 +1101,18 @@
         "item_count": 1
       },
       {
+        "name": "Jabu-Jabu Entrance Grass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Entrance Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -1135,6 +1147,18 @@
         "item_count": 1
       },
       {
+        "name": "Jabu-Jabu Main Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Main Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -1156,6 +1180,30 @@
           "setting_mq_Jabu-Jabu_true"
         ],
         "item_count": 2
+      },
+      {
+        "name": "Jabu-Jabu Main Room Basement Grass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Main Basement Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Jabu-Jabu Room After Big Octo Grass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Room After Big Octo Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
       },
       {
         "name": "Boomerang Room Chests",
@@ -1182,6 +1230,18 @@
         "item_count": 1
       },
       {
+        "name": "Jabu-Jabu Boomerang Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Boomerang Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Falling Like Like Room Chest",
         "short_name": "Like Like",
         "access_rules": [
@@ -1190,6 +1250,18 @@
         "visibility_rules": [
           "setting_mq_Jabu-Jabu_true"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Jabu-Jabu Torch Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Torch Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -1252,6 +1324,18 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Jabu-Jabu Grass Before Boss",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Before Boss"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -4233,7 +4317,7 @@
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
       },
-       {
+      {
         "name": "Dead Hand Grass",
         "access_rules": [
           "$ootmq|Bottom of the Well Dead Hand Grass"
