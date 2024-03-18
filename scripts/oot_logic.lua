@@ -1453,6 +1453,7 @@ function _oot_logic()
             ["Bottom of the Well GS Inner West"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has_skeleton_key_oot() and has_lens() and can_boomerang() end,
             ["Bottom of the Well GS Inner East"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has_skeleton_key_oot() and has_lens() and can_boomerang() end,
 	    ["Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
+	    ["Bottom of the Well Basement Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Deku Tree"] = {
@@ -1545,6 +1546,7 @@ function _oot_logic()
         ["locations"] = {
             ["Dodongo Cavern Map Chest"] = function () return true end,
             ["Dodongo Cavern Lobby Scrub"] = function () return can_hit_scrub() and scrub_price(31) end,
+	    ["Dodongo Cavern Lobby Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Dodongo Cavern Right Corridor"] = {
@@ -1563,6 +1565,8 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Dodongo Cavern GS Side Room"] = function () return can_damage_skull() end,
+	    ["Dodongo Cavern Pre-Miniboss Grass"] = function () return can_cut_grass() end,
+	    ["Dodongo Cavern East Corridor Side Room Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Dodongo Cavern Miniboss 1"] = {
@@ -1626,6 +1630,7 @@ function _oot_logic()
             ["Dodongo Cavern Bomb Bag Room 2"] = function () return can_longshot() or has_hover_boots() or (is_adult() and trick('OOT_DC_JUMP')) end,
             ["Dodongo Cavern Miniboss 2"] = function () return can_hit_triggers_distance() end,
             ["Dodongo Cavern Bomb Bag Side Room"] = function () return has_explosives_or_hammer() or has_blue_fire_arrows_mudwall() end,
+	    ["Dodongo Cavern Bomb Bag Room Grass"] = function () return can_cut_grass() end,
         },
         ["locations"] = {
             ["Dodongo Cavern Bomb Bag Side Chest"] = function () return true end,
@@ -1675,6 +1680,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Dodongo Cavern GS Near Boss"] = function () return true end,
+	    ["Dodongo Cavern Pre-Boss Room Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Fire Temple"] = {
@@ -4441,6 +4447,7 @@ function _oot_logic()
             ["MQ Bottom of the Well Compass Chest"] = function () return (has_weapon() or (can_use_sticks() and trick('OOT_DEAD_HAND_STICKS'))) and (has_ranged_weapon_child() or has_explosives() or can_play(SONG_ZELDA)) end,
             ["MQ Bottom of the Well Lens Chest"] = function () return can_play(SONG_ZELDA) and small_keys(SMALL_KEY_BOTW, 2) or has_skeleton_key_oot() and has_explosives() and (has_weapon() or can_use_sticks() or can_play_sun()) end,
             ["MQ Bottom of the Well Dead Hand Key"] = function () return has_explosives() end,
+	    ["MQ Bottom of the Well Dead Hand Grass"] = function () return can_cut_grass end,
             ["MQ Bottom of the Well East Middle Room Key"] = function () return can_play(SONG_ZELDA) end,
             ["MQ Bottom of the Well GS Basement"] = function () return can_damage_skull() end,
 	    ["MQ Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
@@ -4571,6 +4578,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Dodongo Cavern Compass Chest"] = function () return true end,
+	    ["MQ Dodongo Cavern Compass Room Grass"] = function () return can_cut_grass() end,
             ["MQ Dodongo Cavern Larvae Room Chest"] = function () return can_use_sticks() or has_fire() end,
             ["MQ Dodongo Cavern GS Larve Room"] = function () return can_use_sticks() or has_fire() end,
             ["MQ Dodongo Cavern Staircase Scrub"] = function () return can_hit_scrub() and scrub_price(31) end,
@@ -4602,6 +4610,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Dodongo Cavern Tunnel Side Scrub"] = function () return can_hit_scrub() and scrub_price(30) end,
+	    ["MQ Dodongo Cavern Room Before Miniboss Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Dodongo Cavern Lower Lizalfos"] = {
@@ -4625,6 +4634,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Dodongo Cavern Bomb Bag Chest"] = function () return true end,
+	    ["MQ Dodongo Cavern Vanilla Bomb Bag Room Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Dodongo Cavern Skull"] = {
@@ -4635,6 +4645,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Dodongo Cavern Chest Under Grave"] = function () return true end,
             ["MQ Dodongo Cavern GS Near Boss"] = function () return true end,
+            ["MQ Dodongo Cavern Boss Loop Side Room Grass"] = function () return can_cut_grass() end,
         },
     },
     ["Fire Temple"] = {
@@ -5048,8 +5059,9 @@ function _oot_logic()
             ["Jabu-Jabu Main"] = function () return event('JABU_MQ_START') end,
         },
         ["locations"] = {
+	    ["MQ Jabu-Jabu Entrance Grass"] = function () return can_cut_grass() end,
             ["MQ Jabu-Jabu Map Chest"] = function () return has_explosives_or_hammer() end,
-            ["MQ Jabu-Jabu Entry Chest"] = function () return can_use_slingshot() end,
+            ["MQ Jabu-Jabu Entry Chest"] = function () return can_use_slingshot() end,	
         },
     },
     ["Jabu-Jabu Main"] = {
@@ -5066,10 +5078,14 @@ function _oot_logic()
             ["MQ Jabu-Jabu Compass Chest"] = function () return can_use_slingshot() end,
             ["MQ Jabu-Jabu Second Room B1 Chest"] = function () return true end,
             ["MQ Jabu-Jabu Second Room 1F Chest"] = function () return has_hover_boots() or can_hookshot() or event('JABU_BIG_OCTO') end,
+	    ["MQ Jabu-Jabu Main Room Grass"] = function () return can_cut_grass() end,
+	    ["MQ Jabu-Jabu Main Room Basement Grass"] = function () return can_cut_grass() end,
+	    ["MQ Jabu-Jabu Room After Big Octo Grass Grass"] = function () return can_cut_grass() end,
             ["MQ Jabu-Jabu Third Room West Chest"] = function () return can_use_slingshot() end,
             ["MQ Jabu-Jabu Third Room East Chest"] = function () return can_use_slingshot() end,
             ["MQ Jabu-Jabu SoT Room Lower Chest"] = function () return true end,
             ["MQ Jabu-Jabu Boomerang Chest"] = function () return true end,
+            ["MQ Jabu-Jabu Boomerang Room Grass"] = function () return can_cut_grass() end,
             ["MQ Jabu-Jabu GS SoT Block"] = function () return can_play_time() end,
             ["MQ Jabu-Jabu Cow"] = function () return can_play_epona() and event('JABU_BIG_OCTO') and is_child() end,
         },
@@ -5084,6 +5100,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Jabu-Jabu Back Chest"] = function () return true end,
+	    ["MQ Jabu-Jabu Torch Room Grass"] = function () return can_cut_grass() end,
             ["MQ Jabu-Jabu GS Back"] = function () return event('JABU_TENTACLE_GREEN') end,
         },
     },
@@ -5105,6 +5122,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Jabu-Jabu Pre-Boss Chest"] = function () return can_use_slingshot() end,
+	    ["MQ Jabu-Jabu Grass Before Boss"] = function () return can_cut_grass() end,
             ["MQ Jabu-Jabu GS Pre-Boss"] = function () return can_boomerang() end,
         },
     },
