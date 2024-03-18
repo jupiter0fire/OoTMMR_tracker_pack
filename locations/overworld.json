@@ -1910,10 +1910,12 @@
             "name": "LLR Talons House",
             "sections": [
               {
-                "name": "LLR Talons Chickens",
+                "name": "LLR Talons Cucco Game",
                 "access_rules": [
                   "$oot|Lon Lon Ranch Talon Bottle"
                 ],
+                   "chest_unopened_img": "images/Cucco.png",
+                   "chest_opened_img": "images/Cucco_Grey.png",
                 "item_count": 1
               }
             ],
