@@ -1914,8 +1914,8 @@
                 "access_rules": [
                   "$oot|Lon Lon Ranch Talon Bottle"
                 ],
-                   "chest_unopened_img": "images/Cucco.png",
-                   "chest_opened_img": "images/Cucco_Grey.png",
+                "chest_unopened_img": "images/Cucco.png",
+                "chest_opened_img": "images/Cucco_Grey.png",
                 "item_count": 1
               }
             ],
@@ -3372,8 +3372,8 @@
             "access_rules": [
               "$oot|Great Fairy Magic Upgrade"
             ],
-             "chest_unopened_img": "images/chest_brown_closed.png",
-             "chest_opened_img": "images/chest_brown_open.png",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -4105,8 +4105,8 @@
                 "access_rules": [
                   "$oot|Shooting Gallery Child"
                 ],
-                 "chest_unopened_img": "images/chest_brown_closed.png",
-                 "chest_opened_img": "images/chest_brown_open.png",
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -4169,8 +4169,8 @@
                 "item_count": 1
               }
             ],
-             "chest_unopened_img": "images/chest_brown_closed.png",
-             "chest_opened_img": "images/chest_brown_open.png",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "map_locations": [
               {
                 "map": "oot",
@@ -4773,8 +4773,8 @@
               "$oot|Great Fairy Defense Upgrade",
               "{}"
             ],
-             "chest_unopened_img": "images/chest_brown_closed.png",
-             "chest_opened_img": "images/chest_brown_open.png",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -4804,6 +4804,8 @@
             "access_rules": [
               "$oot|Zora River Frogs Storms"
             ],
+            "chest_unopened_img": "images/Frog.png",
+            "chest_opened_img": "images/Frog_Grey.png",
             "item_count": 1
           },
           {
@@ -4812,6 +4814,8 @@
               "$oot|Zora River Frogs Game",
               "{}"
             ],
+            "chest_unopened_img": "images/Froggy.png",
+            "chest_opened_img": "images/Froggy_Grey.png",
             "item_count": 1
           }
         ],
@@ -4836,6 +4840,8 @@
         "sections": [
           {
             "name": "Buy Item",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -5901,8 +5907,8 @@
                 "access_rules": [
                   "$oot|Gerudo Fortress Chest"
                 ],
-                 "chest_unopened_img": "images/chest_brown_closed.png",
-                 "chest_opened_img": "images/chest_brown_open.png",
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -6035,8 +6041,8 @@
                 "access_rules": [
                   "$oot|Gerudo Member Card"
                 ],
-                 "chest_unopened_img": "images/Gerudo_Card.png",
-                 "chest_opened_img": "images/Gerudo_Card_Grey.png",
+                "chest_unopened_img": "images/Gerudo_Card.png",
+                "chest_opened_img": "images/Gerudo_Card_Grey.png",
                 "item_count": 1
               },
               {
@@ -6186,8 +6192,8 @@
                 "access_rules": [
                   "$oot|Great Fairy Nayru's Love"
                 ],
-                 "chest_unopened_img": "images/chest_brown_closed.png",
-                 "chest_opened_img": "images/chest_brown_open.png",
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
