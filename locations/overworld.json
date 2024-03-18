@@ -4945,9 +4945,21 @@
             "chest_unopened_img": "images/chest_brown_closed.png",
             "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2090,
+            "y": 540
           },
           {
-            "name": "ZR Storms Grotto Grass",
+            "map": "oot_er_locations",
+            "x": 2090,
+            "y": 540
+          },
+          {
+            "name": "ZR Open Grotto Grass",
             "sections": [
               {
                 "name": "Grass Shuffle",
