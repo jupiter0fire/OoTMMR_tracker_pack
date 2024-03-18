@@ -5899,6 +5899,8 @@
                 "access_rules": [
                   "$oot|Gerudo Fortress Chest"
                 ],
+                 "chest_unopened_img": "images/chest_brown_closed.png",
+                 "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -6031,6 +6033,8 @@
                 "access_rules": [
                   "$oot|Gerudo Member Card"
                 ],
+                 "chest_unopened_img": "images/Gerudo_Card.png",
+                 "chest_opened_img": "images/Gerudo_Card_Grey.png",
                 "item_count": 1
               },
               {
@@ -6246,7 +6250,7 @@
                   {
                     "map": "oot",
                     "visibility_rules": [
-                      "setting_FairyFountainShuffleOOT_false"
+                      "setting_FairyFountainShuffleOOT_true"
                     ],
                     "x": 206,
                     "y": 436
@@ -6254,7 +6258,7 @@
                   {
                     "map": "oot_er_locations",
                     "visibility_rules": [
-                      "setting_FairyFountainShuffleOOT_false"
+                      "setting_FairyFountainShuffleOOT_true"
                     ],
                     "x": 206,
                     "y": 436
