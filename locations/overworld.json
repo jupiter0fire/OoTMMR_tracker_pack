@@ -4945,13 +4945,23 @@
             "chest_unopened_img": "images/chest_brown_closed.png",
             "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
+          },
+          {
+            "name": "ZR Open Grotto Grass",
+            "short_name": "ZR Grotto Grass",
+            "access_rules": [
+              "$oot|Zora River Grotto Grass"
+            ],
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
           }
         ],
         "map_locations": [
           {
-            "visibility_rules": [
-              "setting_GrassShuffleOOT_true"
-            ],
             "map": "oot",
             "x": 2090,
             "y": 540
