@@ -756,6 +756,18 @@
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
       },
+            {
+        "name": "Vanilla Bomb Bag Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Vanilla Bomb Bag Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
       {
         "name": "Bomb Bag Chest",
         "short_name": "Bomb Bag",
@@ -778,6 +790,18 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+           {
+        "name": "Room Before Miniboss Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Room Before Miniboss Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -854,6 +878,18 @@
         "item_count": 1
       },
       {
+        "name": "Compass Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Compass Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Deku Scrub Staircase",
         "short_name": "Above Stairs",
         "access_rules": [
@@ -915,6 +951,18 @@
         "visibility_rules": [
           "setting_mq_DodongoCavern_true"
         ],
+        "item_count": 1
+      },
+       {
+        "name": "Boss Loop Side Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Boss Loop Side Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -4111,6 +4159,18 @@
         "item_count": 1
       },
       {
+        "name": "Basement Grass",
+        "access_rules": [
+          "$oot|Bottom of the Well Basement Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -4171,6 +4231,18 @@
         ],
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
+        "item_count": 1
+      },
+       {
+        "name": "Dead Hand Grass",
+        "access_rules": [
+          "$ootmq|Bottom of the Well Dead Hand Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
