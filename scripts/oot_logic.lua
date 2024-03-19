@@ -4478,7 +4478,10 @@ function _oot_logic()
             ["MQ Bottom of the Well Dead Hand Key"] = function () return has_explosives() end,
 	    ["MQ Bottom of the Well Dead Hand Grass"] = function () return can_cut_grass end,
             ["MQ Bottom of the Well East Middle Room Key"] = function () return can_play(SONG_ZELDA) end,
+	    ["MQ Bottom of the Well GS Main Room"] = function () return true end,
+	    ["MQ Bottom of the Well Coffin Hearts"] = function () return can_use_sticks() end,
             ["MQ Bottom of the Well GS Basement"] = function () return can_damage_skull() end,
+	    ["MQ Bottom of the Well GS Basement Hearts"] = function () return true end,
 	    ["MQ Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
             ["MQ Bottom of the Well GS West Middle Room"] = function () return can_play(SONG_ZELDA) and has_explosives() end,
             ["MQ Bottom of the Well GS Coffin Room"] = function () return can_damage_skull() and small_keys(SMALL_KEY_BOTW, 2) or has_skeleton_key_oot() end,
@@ -4669,6 +4672,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Dodongo Cavern Bomb Bag Chest"] = function () return true end,
 	    ["MQ Dodongo Cavern Vanilla Bomb Bag Room Grass"] = function () return can_cut_grass() end,
+	    ["MQ Dodongo Cavern Vanilla Bomb Bag Room Heart"] = function () return true end,
         },
     },
     ["Dodongo Cavern Skull"] = {
@@ -4741,6 +4745,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Fire Temple Maze Upper Chest"] = function () return true end,
             ["MQ Fire Temple Maze Side Room Chest"] = function () return true end,
+	    ["MQ Fire Temple Compass Chest"] = function () return true end,
             ["MQ Fire Temple Compass Chest"] = function () return has_explosives() end,
         },
     },
@@ -4834,6 +4839,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Forest Temple GS West Garden"] = function () return true end,
+	    ["MQ Forest Temple Garden Hearts"] = function () return true end,
         },
     },
     ["Forest Temple East Garden"] = {
@@ -4930,6 +4936,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Ganon Castle Light Trial Chest"] = function () return can_play(SONG_ZELDA) end,
+	    ["MQ Ganon Castle Light Trial Hearts"] = function () return can_play(SONG_ZELDA) end,
         },
     },
     ["Ganon Castle Forest"] = {
@@ -4954,6 +4961,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["MQ Ganon Castle Water Trial Chest"] = function () return has_blue_fire() end,
+	    ["MQ Ganon Castle Water Trial Heart"] = function () return has_blue_fire() end,
         },
     },
     ["Ganon Castle Spirit"] = {
@@ -5135,6 +5143,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Jabu-Jabu Back Chest"] = function () return true end,
 	    ["MQ Jabu-Jabu Torch Room Grass"] = function () return can_cut_grass() end,
+	    ["MQ Jabu-Jabu Hearts"] = function () return end,
             ["MQ Jabu-Jabu GS Back"] = function () return event('JABU_TENTACLE_GREEN') end,
         },
     },
@@ -5233,6 +5242,7 @@ function _oot_logic()
             ["MQ Shadow Temple After Wind Bomb Chest"] = function () return has_explosives() end,
             ["MQ Shadow Temple GS Wind Hint"] = function () return true end,
             ["MQ Shadow Temple GS After Wind Bomb"] = function () return has_explosives() end,
+	    ["MQ Shadow TempleInvisible Blades Hearts"] = function () return has_explosives() end,
         },
     },
     ["Shadow Temple Final Side Rooms"] = {
@@ -5251,6 +5261,7 @@ function _oot_logic()
         ["locations"] = {
             ["MQ Shadow Temple GS After Boat"] = function () return true end,
             ["MQ Shadow Temple GS Pre-Boss"] = function () return can_use_bow() end,
+	    ["MQ Shadow Temple Pre-Boss Hearts"] = function () return true end,
         },
     },
     ["Spirit Temple"] = {
@@ -5268,6 +5279,7 @@ function _oot_logic()
             ["MQ Spirit Temple Entrance Initial Chest"] = function () return true end,
             ["MQ Spirit Temple Lobby Back-Left Chest"] = function () return event('SPIRIT_LOBBY_BOULDERS') and can_hit_triggers_distance() end,
             ["MQ Spirit Temple Lobby Back-Right Chest"] = function () return can_hit_triggers_distance() or has_explosives() or can_hookshot() end,
+	    ["MQ Spirit Temple Hearts"] = function () return is_child() end,
             ["MQ Spirit Temple Compass Chest"] = function () return can_use_slingshot() and has_bow() and small_keys(SMALL_KEY_SPIRIT, 2) or has_skeleton_key_oot() and has_explosives() end,
             ["MQ Spirit Temple Sun Block Room Chest"] = function () return small_keys(SMALL_KEY_SPIRIT, 2) or has_skeleton_key_oot() and has_explosives() and can_play_time() and is_child() end,
             ["Spirit Temple Silver Gauntlets"] = function () return small_keys(SMALL_KEY_SPIRIT, 4) or has_skeleton_key_oot() and has_explosives() and can_play_time() and is_child() and (has_weapon() or can_use_sticks()) and has_lens() end,
