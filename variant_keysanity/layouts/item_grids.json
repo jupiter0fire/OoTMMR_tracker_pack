@@ -134,7 +134,9 @@
             "OOT_COIN_RED",
             "OOT_COIN_GREEN",
             "OOT_COIN_BLUE",
-            "OOT_COIN_YELLOW"
+            "OOT_COIN_YELLOW",
+            "OOT_BASS_CHILD",
+            "OOT_BASS_ADULT"
           ]
         ]
       },
@@ -1168,37 +1170,7 @@
             "MM_MASK_GIANT",
             "MM_MASK_FIERCE_DEITY",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN",
-            "MM_KEY_SKELETON"
-          ],
-        ]
-      },
-      {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "item_margin": "1,1",
-        "scale": 1.1,
-        "rows": [
-          [
-            "MM_BUTTON_A",
-            "MM_BUTTON_C-UP",
-            "MM_BUTTON_C-DOWN",
-            "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT"
-          ],
-          [
-            "MM_OWL_CLOCK_TOWN",
-            "MM_OWL_MILK_ROAD",
-            "MM_OWL_SOUTHERN_SWAMP",
-            "MM_OWL_WOODFALL",
-            "MM_OWL_MOUNTAIN_VILLAGE"
-          ],
-          [
-            "MM_OWL_SNOWHEAD",
-            "MM_OWL_GREAT_BAY",
-            "MM_OWL_ZORA_CAPE",
-            "MM_OWL_IKANA_CANYON",
-            "MM_OWL_STONE_TOWER"
+            "MM_GS_TOKEN_OCEAN"
           ],
           [
             "MM_DAY_1ST",
@@ -1207,161 +1179,191 @@
             "MM_NIGHT_2ND",
             "MM_DAY_FINAL",
             "MM_NIGHT_FINAL"
-          ]
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "scale": 1,
-        "content": [
+          ],
+          [
+            "MM_BUTTON_A",
+            "MM_BUTTON_C-UP",
+            "MM_BUTTON_C-DOWN",
+            "MM_BUTTON_C-LEFT",
+            "MM_BUTTON_C-RIGHT",
+            "MM_KEY_SKELETON"
+          ],
           {
-            "type": "item",
-            "item": "mm_woodfall",
-            "margin": "1,1",
-            "width": 30,
-            "height": 30
+            "type": "itemgrid",
+            "h_alignment": "center",
+            "item_margin": "1,1",
+            "scale": 1.1,
+            "rows": [
+              [
+                "MM_OWL_CLOCK_TOWN",
+                "MM_OWL_MILK_ROAD",
+                "MM_OWL_SOUTHERN_SWAMP",
+                "MM_OWL_WOODFALL",
+                "MM_OWL_MOUNTAIN_VILLAGE"
+              ],
+              [
+                "MM_OWL_SNOWHEAD",
+                "MM_OWL_GREAT_BAY",
+                "MM_OWL_ZORA_CAPE",
+                "MM_OWL_IKANA_CANYON",
+                "MM_OWL_STONE_TOWER"
+              ]
+            ]
           },
           {
-            "type": "item",
-            "item": "MM_STRAY_FAIRY_WF",
-            "margin": "3,4",
-            "width": 34,
-            "height": 34
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "0,0",
+            "scale": 1,
+            "content": [
+              {
+                "type": "item",
+                "item": "mm_woodfall",
+                "margin": "1,1",
+                "width": 30,
+                "height": 30
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_WF",
+                "margin": "3,4",
+                "width": 34,
+                "height": 34
+              },
+              {
+                "type": "item",
+                "item": "mm_snowhead",
+                "margin": "1,1",
+                "width": 30,
+                "height": 30
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_SH",
+                "margin": "3,4",
+                "width": 32,
+                "height": 32
+              },
+              {
+                "type": "item",
+                "item": "mm_great_bay",
+                "margin": "1,1",
+                "width": 30,
+                "height": 30
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_GB",
+                "margin": "3,4",
+                "width": 34,
+                "height": 34
+              },
+              {
+                "type": "item",
+                "item": "mm_stone_tower",
+                "margin": "1,1",
+                "width": 30,
+                "height": 30
+              },
+              {
+                "type": "item",
+                "item": "MM_STRAY_FAIRY_ST",
+                "margin": "3,4",
+                "width": 34,
+                "height": 34
+              }
+            ]
           },
           {
-            "type": "item",
-            "item": "mm_snowhead",
-            "margin": "1,1",
-            "width": 30,
-            "height": 30
-          },
-          {
-            "type": "item",
-            "item": "MM_STRAY_FAIRY_SH",
-            "margin": "3,4",
-            "width": 32,
-            "height": 32
-          },
-          {
-            "type": "item",
-            "item": "mm_great_bay",
-            "margin": "1,1",
-            "width": 30,
-            "height": 30
-          },
-          {
-            "type": "item",
-            "item": "MM_STRAY_FAIRY_GB",
-            "margin": "3,4",
-            "width": 34,
-            "height": 34
-          },
-          {
-            "type": "item",
-            "item": "mm_stone_tower",
-            "margin": "1,1",
-            "width": 30,
-            "height": 30
-          },
-          {
-            "type": "item",
-            "item": "MM_STRAY_FAIRY_ST",
-            "margin": "3,4",
-            "width": 34,
-            "height": 34
-          }
-        ]
-      },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "5,0",
-        "content": [
-          {
-            "type": "item",
-            "item": "MM_SMALL_KEY_WF",
-            "margin": "1,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "mm_woodfall_label",
-            "margin": "0,2",
-            "width": 32,
-            "height": 24
-          },
-          {
-            "type": "item",
-            "item": "MM_BOSS_KEY_WF",
-            "margin": "0,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "MM_SMALL_KEY_SH",
-            "margin": "1,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "mm_snowhead_label",
-            "margin": "0,2",
-            "width": 32,
-            "height": 24
-          },
-          {
-            "type": "item",
-            "item": "MM_BOSS_KEY_SH",
-            "margin": "0,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "MM_SMALL_KEY_GB",
-            "margin": "1,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "mm_greatbay_label",
-            "margin": "0,2",
-            "width": 32,
-            "height": 24
-          },
-          {
-            "type": "item",
-            "item": "MM_BOSS_KEY_GB",
-            "margin": "0,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "MM_SMALL_KEY_ST",
-            "margin": "1,2",
-            "width": 16,
-            "height": 16
-          },
-          {
-            "type": "item",
-            "item": "mm_stonetower_label",
-            "margin": "0,2",
-            "width": 32,
-            "height": 24
-          },
-          {
-            "type": "item",
-            "item": "MM_BOSS_KEY_ST",
-            "margin": "0,2",
-            "width": 16,
-            "height": 16
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "5,0",
+            "content": [
+              {
+                "type": "item",
+                "item": "MM_SMALL_KEY_WF",
+                "margin": "1,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "mm_woodfall_label",
+                "margin": "0,2",
+                "width": 32,
+                "height": 24
+              },
+              {
+                "type": "item",
+                "item": "MM_BOSS_KEY_WF",
+                "margin": "0,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "MM_SMALL_KEY_SH",
+                "margin": "1,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "mm_snowhead_label",
+                "margin": "0,2",
+                "width": 32,
+                "height": 24
+              },
+              {
+                "type": "item",
+                "item": "MM_BOSS_KEY_SH",
+                "margin": "0,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "MM_SMALL_KEY_GB",
+                "margin": "1,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "mm_greatbay_label",
+                "margin": "0,2",
+                "width": 32,
+                "height": 24
+              },
+              {
+                "type": "item",
+                "item": "MM_BOSS_KEY_GB",
+                "margin": "0,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "MM_SMALL_KEY_ST",
+                "margin": "1,2",
+                "width": 16,
+                "height": 16
+              },
+              {
+                "type": "item",
+                "item": "mm_stonetower_label",
+                "margin": "0,2",
+                "width": 32,
+                "height": 24
+              },
+              {
+                "type": "item",
+                "item": "MM_BOSS_KEY_ST",
+                "margin": "0,2",
+                "width": 16,
+                "height": 16
+              }
+            ]
           }
         ]
       }
