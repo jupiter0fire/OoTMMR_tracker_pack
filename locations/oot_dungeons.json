@@ -889,6 +889,18 @@
         "item_count": 1
       },
       {
+        "name": "Vanilla Bomb Bag Room Heart",
+        "access_rules": [
+          "$ootmq|Dodongo Cavern Vanilla Bomb Bag Room Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Bomb Bag Chest",
         "short_name": "Bomb Bag",
         "access_rules": [
@@ -1383,6 +1395,18 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
+      },
+      {
+        "name": "Jabu Jabu Hearts",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Tailpasaran Room",
@@ -2075,6 +2099,18 @@
         "item_count": 1
       },
       {
+        "name": "Garden Hearts",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Garden Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 3
+      },
+      {
         "name": "GS Level Island Courtyard",
         "short_name": "Outdoor West",
         "access_rules": [
@@ -2605,6 +2641,18 @@
           "setting_mq_FireTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Temple Hearts",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 3
       },
       {
         "name": "Compass Chest",
@@ -3491,6 +3539,18 @@
         "item_count": 2
       },
       {
+        "name": "Invisible Blades Hearts",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Invisible Blades Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },
+      {
         "name": "Beamos Silver Rupees Chest",
         "short_name": "Beamos Silvers",
         "access_rules": [
@@ -3694,6 +3754,18 @@
         "item_count": 1
       },
       {
+        "name": "Pre-Boss Hearts",
+        "access_rules": [
+          "$ootmq|MQ Shadow Pre-Boss Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 3
+      },
+      {
         "name": "Bongo Bongo",
         "access_rules": [
           "$oot|Shadow Temple Boss HC"
@@ -3860,6 +3932,18 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Spirit Child Hearts",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
       },
       {
         "name": "Map Chest",
@@ -4555,6 +4639,18 @@
         "item_count": 2
       },
       {
+        "name": "Main Room Hearts",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Main Room Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -4578,6 +4674,18 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Coffin Hearts",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Coffin Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
       },
       {
         "name": "East Inner Room Freestanding Key",
@@ -4652,6 +4760,18 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Basement Hearts",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Basement Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
       },
       {
         "name": "Big Fairy Basement",
@@ -4902,6 +5022,18 @@
         "item_count": 1
       },
       {
+        "name": "Water Trial Hearts",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Water Trial Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Shadow Trial Bomb Flower Chest",
         "short_name": "Shadow Trial 1",
         "access_rules": [
@@ -4934,6 +5066,18 @@
           "setting_mq_GanonCastle_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Light Trial Hearts",
+        "access_rules": [
+          "$ootmq|MQ Ganon Castle Light Trial Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
       },
       {
         "name": "Spirit Trial First Chest",
