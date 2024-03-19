@@ -1441,6 +1441,7 @@ function _oot_logic()
             ["Bottom of the Well East"] = function () return has_lens() end,
             ["Bottom of the Well Front West"] = function () return has_lens() end,
             ["Bottom of the Well Underwater"] = function () return can_play(SONG_ZELDA) end,
+	    ["Bottom of the Well Underwater Heart"] = function () return can_play(SONG_ZELDA) end,
             ["Bottom of the Well East Cage"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has_skeleton_key_oot() and has_lens() end,
             ["Bottom of the Well Blood Chest"] = function () return has_lens() end,
             ["Bottom of the Well Underwater 2"] = function () return can_play(SONG_ZELDA) end,
@@ -1454,6 +1455,7 @@ function _oot_logic()
             ["Bottom of the Well GS Inner East"] = function () return small_keys(SMALL_KEY_BOTW, 3) or has_skeleton_key_oot() and has_lens() and can_boomerang() end,
 	    ["Bottom of the Well Big Fairy Basement"] = function () return can_play_sun() end,
 	    ["Bottom of the Well Basement Grass"] = function () return can_cut_grass() end,
+	    ["Bottom of the Well Hearts"] = function () return true end,
         },
     },
     ["Deku Tree"] = {
@@ -1473,6 +1475,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Deku Tree Map Chest"] = function () return true end,
+            ["Deku Tree Lobby Hearts"] = function () return true end,
             ["Deku Tree Compass Chest"] = function () return true end,
             ["Deku Tree Compass Room Side Chest"] = function () return true end,
             ["Deku Tree GS Compass"] = function () return can_damage_skull() end,
@@ -1505,6 +1508,7 @@ function _oot_logic()
 	    ["Deku Tree Basement Torch Room Grass"] = function () return can_cut_grass() end, 
 	    ["Deku Tree Basement Back Room Grass"] = function () return can_cut_grass() end, 
 	    ["Deku Tree Basement Pre-Boss Room Grass"] = function () return can_cut_grass() end, 
+	    ["Deku Tree Basement Pre-Boss Room Hearts"] = function () return true end, 
 	    ["Deku Tree Basement Boss Room Grass"] = function () return can_cut_grass() end, 
 	    ["Deku Tree Basement Compass Grass"] = function () return can_cut_grass() end, 
         },
@@ -1554,6 +1558,7 @@ function _oot_logic()
             ["Dodongo Cavern Main"] = function () return true end,
             ["Dodongo Cavern Side Room"] = function () return true end,
             ["Dodongo Cavern Miniboss 1"] = function () return true end,
+	    ["Dodongo Cavern Lava Heart"] = function () return true end,
         },
         ["locations"] = {
             ["Dodongo Cavern GS Scarecrow"] = function () return scarecrow_hookshot() end,
@@ -1629,6 +1634,8 @@ function _oot_logic()
             ["Dodongo Cavern Stairs Top"] = function () return true end,
             ["Dodongo Cavern Bomb Bag Room 2"] = function () return can_longshot() or has_hover_boots() or (is_adult() and trick('OOT_DC_JUMP')) end,
             ["Dodongo Cavern Miniboss 2"] = function () return can_hit_triggers_distance() end,
+	    ["Dodongo Cavern Miniboss II Hearts"] = function () return true end,
+	    ["Dodongo Cavern Bomb Bag Room Heart"] = function () return true end,
             ["Dodongo Cavern Bomb Bag Side Room"] = function () return has_explosives_or_hammer() or has_blue_fire_arrows_mudwall() end,
 	    ["Dodongo Cavern Bomb Bag Room Grass"] = function () return can_cut_grass() end,
         },
@@ -1718,6 +1725,7 @@ function _oot_logic()
             ["Fire Temple Jail 2 Chest"] = function () return has_tunic_goron() and (is_adult() or can_play_time()) end,
             ["Fire Temple Jail 3 Chest"] = function () return is_adult() and has_tunic_goron() and has_explosives() end,
             ["Fire Temple GS Lava Side Room"] = function () return is_adult() and has_tunic_goron() and can_play_time() end,
+	    ["Fire Temple Ledge Hearts"] = function () return is_adult() and has_tunic_goron() end,
         },
     },
     ["Fire Temple Maze"] = {
@@ -1738,6 +1746,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Fire Temple Map"] = function () return true end,
+	    ["Fire Temple Map Room Hearts"] = function () return true end,
             ["Fire Temple Above Maze Chest"] = function () return true end,
             ["Fire Temple Below Maze Chest"] = function () return has_explosives() end,
         },
@@ -1745,6 +1754,7 @@ function _oot_logic()
     ["Fire Temple Scarecrow"] = {
         ["locations"] = {
             ["Fire Temple Scarecrow Chest"] = function () return true end,
+	    ["Fire Temple Elevator Hearts"] = function () return true end,
             ["Fire Temple GS Scarecrow Wall"] = function () return true end,
             ["Fire Temple GS Scarecrow Top"] = function () return true end,
         },
@@ -1838,6 +1848,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Forest Temple Garden West"] = function () return true end,
+	    ["Forest Temple Garden Heart"] = function () return true end,
             ["Forest Temple Floormaster"] = function () return true end,
             ["Forest Temple Maze"] = function () return true end,
         },
@@ -1877,6 +1888,7 @@ function _oot_logic()
         ["locations"] = {
             ["Forest Temple Garden"] = function () return can_hookshot() end,
             ["Forest Temple GS Garden East"] = function () return can_hookshot() end,
+	    ["Forest Temple Garden Pillars Hearts"] = function () return true end,
         },
     },
     ["Forest Temple Well"] = {
@@ -1886,6 +1898,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Forest Temple Well"] = function () return event('FOREST_WELL') end,
+	    ["Forest Temple Well Hearts"] = function () return true end,
         },
     },
     ["Forest Temple Maze"] = {
@@ -2026,6 +2039,9 @@ function _oot_logic()
     ["Ganon Castle Fire"] = {
         ["events"] = {
             ["GANON_TRIAL_FIRE"] = function () return has_tunic_goron_strict() and can_longshot() and can_lift_gold() and has_light_arrows() end,
+	},
+        ["locations"] = {
+            ["Ganon Castle Fire Heart"] = function () return has_tunic_goron_strict() and can_longshot() and can_lift_gold() and has_light_arrows() end,
         },
     },
     ["Ganon Castle Water"] = {
@@ -2043,6 +2059,7 @@ function _oot_logic()
             ["GANON_TRIAL_SPIRIT"] = function () return can_hookshot() and has_bombchu() and has_light_arrows() and has_mirror_shield() end,
         },
         ["locations"] = {
+	    ["Ganon Castle Spirit Heart"] = function () return true end,
             ["Ganon Castle Spirit Chest 1"] = function () return can_hookshot() end,
             ["Ganon Castle Spirit Chest 2"] = function () return can_hookshot() and has_bombchu() and has_lens() end,
 	    ["Ganon Castle Spirit Big Fairy"] = function () return can_play_sun() end,
@@ -2053,6 +2070,7 @@ function _oot_logic()
             ["GANON_TRIAL_SHADOW"] = function () return can_hammer() and has_light_arrows() and (can_longshot() or has_fire_arrows()) and (has_hover_boots() or has_fire()) and (has_lens() or (can_longshot() and has_hover_boots())) end,
         },
         ["locations"] = {
+	    ["Ganon Castle Shadow Hearts"] = function () return can_play_time() or can_hookshot() or has_hover_boots() or has_fire_arrows() end,
             ["Ganon Castle Shadow Chest 1"] = function () return can_play_time() or can_hookshot() or has_hover_boots() or has_fire_arrows() end,
             ["Ganon Castle Shadow Chest 2"] = function () return (can_longshot() or has_fire_arrows()) and (has_hover_boots() or has_fire()) end,
         },
@@ -2211,6 +2229,7 @@ function _oot_logic()
             ["Gerudo Training Grounds Maze"] = function () return true end,
         },
         ["locations"] = {
+	    ["Gerudo Training Grounds Entrance Hearts"] = function () return can_hit_triggers_distance() end,
             ["Gerudo Training Grounds Entrance 1"] = function () return can_hit_triggers_distance() end,
             ["Gerudo Training Grounds Entrance 2"] = function () return can_hit_triggers_distance() end,
             ["Gerudo Training Grounds Stalfos"] = function () return has_weapon() end,
@@ -2317,6 +2336,7 @@ function _oot_logic()
             ["Ice Cavern Sheik Song"] = function () return has_blue_fire() and (can_use_sticks() or can_use_sword_master() or can_use_sword_goron() or has_explosives()) end,
             ["Ice Cavern GS Scythe Room"] = function () return can_collect_distance() and (can_use_sticks() or can_use_sword_master() or can_use_sword_goron() or has_explosives()) end,
             ["Ice Cavern GS Block Room"] = function () return has_blue_fire() and can_collect_distance() and (can_use_sticks() or can_use_sword_master() or can_use_sword_goron() or has_explosives()) end,
+	    ["Ice Cavern Hearts"] = function () return true end,
             ["Ice Cavern GS HP Room"] = function () return has_blue_fire() and can_collect_distance() and (can_use_sticks() or can_use_sword_master() or can_use_sword_goron() or has_explosives()) end,
         },
     },
@@ -2432,6 +2452,8 @@ function _oot_logic()
 	    ["Kokiri Forest Child Kokiri Forest grass"] = function () return is_child() and can_cut_grass() end,
 	    ["Kokiri Forest Adult Grass Patch"] = function () return is_adult() and can_cut_grass() end,
 	    ["Kokiri Forest grass in Training Area"] = function () return is_child() and can_cut_grass() end,
+	    ["Kokiri Forest Saria Hearts"] = function () return is_child() end,
+	    ["Kokiri Forest Saria Hearts Roof"] = function () return is_child() end,
 	    
         },
     },
@@ -3357,6 +3379,7 @@ function _oot_logic()
             ["Death Mountain Storms Grotto"] = function () return hidden_grotto_storms() end,
             ["Death Mountain Cow Grotto"] = function () return has_explosives_or_hammer() end,
 	    ["Death Mountain Cow Grotto Big Fairy"] = function () return has_explosives_or_hammer() and can_play_storms() end,
+	    ["Death Mountain Cow Grotto Hearts"] = function () return has_explosives_or_hammer() end,
         },
         ["locations"] = {
             ["Death Mountain Chest"] = function () return has_explosives_or_hammer() end,
@@ -4082,6 +4105,8 @@ function _oot_logic()
         ["locations"] = {
             ["Shadow Temple Silver Rupees"] = function () return is_adult() and (can_hookshot() or has_hover_boots()) end,
             ["Shadow Temple Compass"] = function () return true end,
+	    ["Shadow Temple Scythe Hearts"] = function () return true end,
+	    ["Shadow Temple Scythe Shortcut Hearts"] = function () return true end,
         },
     },
     ["Shadow Temple Open"] = {
@@ -4123,7 +4148,9 @@ function _oot_logic()
             ["Shadow Temple Boss Key Room 1"] = function () return can_use_din() end,
             ["Shadow Temple Boss Key Room 2"] = function () return can_use_din() end,
             ["Shadow Temple Invisible Floormaster"] = function () return true end,
+	    ["Shadow Temple Invisible Floormaster Heart"] = function () return true end,
             ["Shadow Temple GS Triple Skull Pot"] = function () return can_collect_distance() end,
+	    ["Shadow Temple Pre-Boss Hearts"] = function () return true end,
         },
     },
     ["Spirit Temple"] = {
@@ -4147,6 +4174,7 @@ function _oot_logic()
     },
     ["Spirit Temple Child Back"] = {
         ["locations"] = {
+	    ["Spirit Temple Hearts"] = function () return is_child() end,
             ["Spirit Temple Child First Chest"] = function () return has_ranged_weapon_child() end,
             ["Spirit Temple Child Second Chest"] = function () return has_ranged_weapon_child() and (can_use_sticks() or can_use_din()) end,
             ["Spirit Temple GS Child Fence"] = function () return has_ranged_weapon_child() end,
@@ -4301,6 +4329,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Water Temple Bombable Chest"] = function () return event('WATER_LEVEL_MIDDLE') and has_explosives() end,
+	    ["Water Temple Hearts"] = function () return true end,
         },
     },
     ["Water Temple Map Room"] = {
@@ -4476,9 +4505,11 @@ function _oot_logic()
             ["MQ Deku Tree Slingshot Chest"] = function () return has_weapon() or can_use_sticks() or has_ranged_weapon_child() end,
             ["MQ Deku Tree Slingshot Room Far Chest"] = function () return can_use_sticks() or has_fire() end,
             ["MQ Deku Tree Slingshot Room Grass"] = function () return can_cut_grass() end,
+	    ["MQ Deku Tree Slingshot Room Heart"] = function () return true end,
             ["MQ Deku Tree Basement Chest"] = function () return can_use_sticks() or has_fire() end,
             ["MQ Deku Tree GS Lobby Crate"] = function () return can_damage_skull() end,
             ["MQ Deku Tree Lobby Grass"] = function () return can_cut_grass() end,
+	    ["MQ Deku Tree Lobby Heart"] = function () return true end,
             ["MQ Deku Tree Upper Lobby Grass"] = function () return can_cut_grass() end,
             ["MQ Deku Tree Room Before Compass Grass"] = function () return can_cut_grass() end,
             ["MQ Deku Tree Basement Room Grass"] = function () return can_cut_grass() end,
@@ -4491,6 +4522,8 @@ function _oot_logic()
             ["Deku Tree Lobby"] = function () return true end,
         },
         ["locations"] = {
+	    ["MQ Deku Tree Before Compass Room Heart"] = function () return true end,
+	    ["MQ Deku Tree Compass Room Heart"] = function () return true end,
             ["MQ Deku Tree Compass Chest"] = function () return true end,
             ["MQ Deku Tree GS Compass Room"] = function () return (has_explosives() or (can_play_time() and can_hammer())) and can_collect_distance() end,
             ["MQ Deku Tree Compass Room Grass"] = function () return can_cut_grass() end,
@@ -4537,6 +4570,7 @@ function _oot_logic()
             ["MQ Deku Tree Larva Room Grass"] = function () return can_cut_grass() end,
             ["MQ Deku Tree Graves Room Grass"] = function () return can_cut_grass() end,
             ["MQ Deku Tree Back Room Grass"] = function () return can_cut_grass() end,
+	    ["MQ Deku Tree Pre-Boss Hearts"] = function () return can_cut_grass() end,
         },
     },
     ["Deku Tree Before Boss"] = {
