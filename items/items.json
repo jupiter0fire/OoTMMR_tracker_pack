@@ -431,7 +431,21 @@
     "codes": "OOT_COIN_YELLOW",
     "max_quantity": 999
   },
-  { 
+  {
+    "name": "OoT Child Hyrule Bass",
+    "type": "consumable",
+    "img": "images/hyrule_bass_child.png",
+    "codes": "OOT_BASS_CHILD",
+    "max_quantity": 15
+  },
+  {
+    "name": "OoT Adult Hyrule Bass",
+    "type": "consumable",
+    "img": "images/Hyrule_bass_adult.png",
+    "codes": "OOT_BASS_ADULT",
+    "max_quantity": 15
+  },
+  {
     "name": "OoT Skeleton Key",
     "type": "toggle",
     "img": "images/items/skeleton_key.png",
@@ -808,7 +822,7 @@
     "initial_active_state": false,
     "codes": "OOT_SONG_TP_LIGHT"
   },
-   {
+  {
     "name": "OOT Elegy of Emptiness",
     "type": "toggle",
     "loop": true,
