@@ -868,6 +868,18 @@
         "item_count": 1
       },
       {
+        "name": "Cow Grass",
+        "access_rules": [
+          "$mm|Beneath the Well Cow Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Right Side Well Chest",
         "access_rules": [
           "$mm|Beneath the Well Skulltulla Chest"
@@ -875,10 +887,46 @@
         "item_count": 1
       },
       {
+        "name": "Grass Before Poe",
+        "access_rules": [
+          "$mm|Beneath the Well Grass Before Poe"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Grass Near End",
+        "access_rules": [
+          "$mm|Beneath the Well Grass Near End"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Left Side Well Chest",
         "access_rules": [
           "$mm|Beneath the Well Keese Chest"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Grass Left Side",
+        "access_rules": [
+          "$mm|Beneath the Well Grass Left Side"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -915,6 +963,18 @@
           "$mm|Ancient Castle of Ikana Song Emptiness",
           "{}"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Ikana Castle Grass",
+        "access_rules": [
+          "$mm|Ancient Castle of Ikana Exterior Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -1034,6 +1094,30 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Grass - Floor",
+        "access_rules": [
+          "$mm|Woodfall Temple Entrance Floor Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Grass - Ledge",
+        "access_rules": [
+          "$mm|Woodfall Temple Entrance Ledge Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Entrance Fairy",
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
@@ -1057,6 +1141,18 @@
         "visibility_rules": [
           "setting_strayFairyShuffle_ownDungeon"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Grass In Main Room",
+        "access_rules": [
+          "$mm|Woodfall Temple Main Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -1096,6 +1192,18 @@
         "item_count": 1
       },
       {
+        "name": "Water Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Water Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Fight Turtles - Map",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
@@ -1103,6 +1211,18 @@
         "access_rules": [
           "$mm|Woodfall Temple Map"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Map Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -1165,6 +1285,18 @@
         "visibility_rules": [
           "setting_strayFairyShuffle_mixed"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Pits Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Pits Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -1273,6 +1405,18 @@
         "item_count": 1
       },
       {
+        "name": "Pre-boss Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Pre-Boss Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Odolwa",
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
@@ -1281,6 +1425,18 @@
         ],
         "item_count": 1,
         "hosted_item": "mm_woodfall"
+      },
+      {
+        "name": "Boss Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Boss Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
@@ -1588,6 +1744,30 @@
         "visibility_rules": [
           "setting_strayFairyShuffle_mixed"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Grass",
+        "access_rules": [
+          "$mm|Stone Tower Temple Entrance Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "West Garden Grass",
+        "access_rules": [
+          "$mm|Stone Tower Temple West Garden Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -1924,6 +2104,66 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Entrance Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Entrance Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Dinolfos Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Dinolfos Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Wizzrobe Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Wizzrobe Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Wart Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Wart Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Garo Master Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Garo Master Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
       }
     ],
     "map_locations": [
@@ -2067,6 +2307,18 @@
         "visibility_rules": [
           "setting_strayFairyShuffle_mixed"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Grass",
+        "access_rules": [
+          "$mm|Snowhead Temple Basement Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
