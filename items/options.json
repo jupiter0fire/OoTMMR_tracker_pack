@@ -41,11 +41,11 @@
       },
       {
         "img": "images/setting_shuffleInterior_full.png",
-        "codes": "setting_shuffle_interior,setting_shuffle_interior_full",
+        "codes": "setting_shuffle_interior,setting_shuffle_interior_full"
       },
       {
         "img": "images/setting_shuffleInterior_extra.png",
-        "codes": "setting_shuffle_interior,setting_shuffle_interior_full,setting_shuffle_interior_extra",
+        "codes": "setting_shuffle_interior,setting_shuffle_interior_full,setting_shuffle_interior_extra"
       }
     ]
   },
@@ -59,13 +59,13 @@
       {
         "img": "images/setting_starting_age_child.png",
         "codes": "setting_StartingAge,setting_StartingAge_child",
-        "inherit_codes": false,
+        "inherit_codes": false
       },
       {
         "img": "images/setting_starting_age_adult.png",
         "codes": "setting_StartingAge,setting_StartingAge_adult",
-        "inherit_codes": false,
-      },
+        "inherit_codes": false
+      }
     ]
   },
   {
@@ -82,7 +82,7 @@
       },
       {
         "img": "images/setting_shuffleDungeon_on.png",
-        "codes": "setting_shuffle_dungeon,setting_shuffle_dungeon_on",
+        "codes": "setting_shuffle_dungeon,setting_shuffle_dungeon_on"
       }
     ]
   },
@@ -100,7 +100,7 @@
       },
       {
         "img": "images/setting_OotWarpSong_enabled.png",
-        "codes": "setting_OotWarpSong,setting_OotWarpSong_enabled",
+        "codes": "setting_OotWarpSong,setting_OotWarpSong_enabled"
       }
     ]
   },
@@ -118,7 +118,7 @@
       },
       {
         "img": "images/setting_shuffleDungeonboss_on.png",
-        "codes": "setting_shuffle_dungeon_boss,setting_shuffle_dungeon_boss_on",
+        "codes": "setting_shuffle_dungeon_boss,setting_shuffle_dungeon_boss_on"
       }
     ]
   },
@@ -136,15 +136,15 @@
       },
       {
         "img": "images/setting_shuffle_overworld_major.png",
-        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_major",
+        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_major"
       },
       {
         "img": "images/setting_shuffle_overworld_oneway.png",
-        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_oneway",
+        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_oneway"
       },
       {
         "img": "images/setting_shuffle_overworld_major_oneway.png",
-        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_major,setting_shuffle_overworld_oneway",
+        "codes": "setting_shuffle_overworld,setting_shuffle_overworld_major,setting_shuffle_overworld_oneway"
       }
     ]
   },
@@ -1250,26 +1250,6 @@
       {
         "img": "images/Setting_FairyFountainShuffleOoT_True.png",
         "codes": "setting_FairyFountainShuffleOOT,setting_FairyFountainShuffleOOT_true",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Fairy Fountain Shuffle in MM",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/Setting_FairyFountainShuffleMM_False.png",
-        "img_mods": "@disabled",
-        "codes": "setting_FairyFountainShuffleMM,setting_FairyFountainShuffleMM_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/Setting_FairyFountainShuffleMM_True.png",
-        "codes": "setting_FairyFountainShuffleMM,setting_FairyFountainShuffleMM_true",
         "inherit_codes": false
       }
     ]
