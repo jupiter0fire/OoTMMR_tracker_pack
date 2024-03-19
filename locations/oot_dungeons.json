@@ -29,6 +29,18 @@
         "item_count": 1
       },
       {
+        "name": "Lobby Hearts",
+        "access_rules": [
+          "$oot|Deku Tree Lobby Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Slingshot Room Chests",
         "short_name": "Slingshot",
         "access_rules": [
@@ -223,6 +235,18 @@
         "item_count": 1
       },
       {
+        "name": "Pre-Boss Hearts",
+        "access_rules": [
+          "$oot|Deku Tree Pre-Boss Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Deku Tree Boss Grass",
         "access_rules": [
           "$oot|Deku Tree Boss Grass"
@@ -260,6 +284,18 @@
         "item_count": 1
       },
       {
+        "name": "Lobby Heart",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Lobby Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Deku Tree Upper Lobby Grass",
         "access_rules": [
           "$ootmq|Deku Tree Upper Lobby Grass"
@@ -280,6 +316,18 @@
         "visibility_rules": [
           "setting_mq_DekuTree_true"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Slingshot Room Heart",
+        "access_rules": [
+          "$ootmq|MQ Deku Slingshot Room Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
         "item_count": 1
       },
       {
@@ -318,6 +366,18 @@
         "item_count": 1
       },
       {
+        "name": "Before Compass Room Heart",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Before Compass Room Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -327,6 +387,18 @@
           "setting_mq_DekuTree_true"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Room Heart",
+        "access_rules": [
+          "$ootmq|MQ Deku Tree Compass Room Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
         "item_count": 1
       },
       {
@@ -498,6 +570,18 @@
         "item_count": 1
       },
       {
+        "name": "Pre-Boss Heart",
+        "access_rules": [
+          "$ootmq|MQ Deku Pre-Boss Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Queen Gohma",
         "access_rules": [
           "$oot|Deku Tree Boss Container"
@@ -545,6 +629,18 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lava Heart",
+        "access_rules": [
+          "$oot|Dodongo Cavern Lava Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
         "item_count": 1
       },
       {
@@ -649,6 +745,18 @@
         "item_count": 1
       },
       {
+        "name": "Miniboss II Hearts",
+        "access_rules": [
+          "$oot|Dodongo Miniboss II Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Bomb Flower Platform Chest",
         "short_name": "Bomb Flower",
         "access_rules": [
@@ -669,6 +777,18 @@
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Bomb Bag Room Heart",
+        "access_rules": [
+          "$oot|Dodongo Bomb Bag Room Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
         "item_count": 1
       },
       {
@@ -1488,6 +1608,18 @@
         "item_count": 1
       },
       {
+        "name": "Ice Cavern Hearts",
+        "access_rules": [
+          "$oot|Ice Cavern Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -1664,6 +1796,18 @@
         "item_count": 1
       },
       {
+        "name": "Temple Garden Heart",
+        "access_rules": [
+          "$oot|Forest Temple Garden Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Raised Island Courtyard",
         "short_name": "Island",
         "access_rules": [
@@ -1701,6 +1845,18 @@
         "item_count": 1
       },
       {
+        "name": "Well Hearts",
+        "access_rules": [
+          "$oot|Forest Temple Well Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Level Island Courtyard",
         "short_name": "Outdoor West",
         "access_rules": [
@@ -1712,6 +1868,18 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Temple Garden Pillars Hearts",
+        "access_rules": [
+          "$oot|Forest Temple Garden Pillars Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
       },
       {
         "name": "Forest Temple Maze Chest",
@@ -2114,6 +2282,18 @@
         "item_count": 1
       },
       {
+        "name": "Ledge Above Main Hearts",
+        "access_rules": [
+          "$oot|Fire Temple Ledge Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Big Lava Room Lower Open Door Chest",
         "short_name": "Lava Room Open",
         "access_rules": [
@@ -2187,6 +2367,18 @@
         "item_count": 1
       },
       {
+        "name": "Map Room Hearts",
+        "access_rules": [
+          "$oot|Fire Temple Map Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Boulder Maze Upper Chest",
         "short_name": "Boulder Maze Upper",
         "access_rules": [
@@ -2209,6 +2401,18 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Elevator Hearts",
+        "access_rules": [
+          "$oot|Fire Temple Elevator Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
       },
       {
         "name": "GS Scarecrow Climb",
@@ -2615,6 +2819,18 @@
         "item_count": 1
       },
       {
+        "name": "Water Temple Hearts",
+        "access_rules": [
+          "$oot|Water Temple Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 4
+      },
+      {
         "name": "GS Falling Platform Room",
         "short_name": "Platform Room",
         "access_rules": [
@@ -2912,6 +3128,30 @@
         "item_count": 1
       },
       {
+        "name": "Scythe Hearts",
+        "access_rules": [
+          "$oot|Shadow Temple Scythe Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Scythe Shortcut Hearts",
+        "access_rules": [
+          "$oot|Shadow Temple Scythe Shortcut Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Beamos Big Fairy",
         "short_name": "Big Fairy 1",
         "access_rules": [
@@ -3154,6 +3394,30 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Floormaster Heart",
+        "access_rules": [
+          "$oot|Shadow Temple Invisible Floormaster Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Pre-Boss Hearts",
+        "access_rules": [
+          "$oot|Shadow Temple Pre-Boss Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
       },
       {
         "name": "Compass Chest",
@@ -3454,6 +3718,18 @@
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
+      {
+        "name": "Spirit Temple Hearts",
+        "access_rules": [
+          "$oot|Shadow Temple Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
       {
         "name": "Child Bridge Chest",
         "short_name": "Child Left",
@@ -4211,6 +4487,18 @@
         "item_count": 1
       },
       {
+        "name": "Underwater Heart",
+        "access_rules": [
+          "$oot|Bottom of the Well Underwater Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Underwater Front Chest",
         "short_name": "Underwater Front",
         "access_rules": [
@@ -4253,6 +4541,18 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
+      },
+      {
+        "name": "Basement Hearts",
+        "access_rules": [
+          "$oot|Bottom of the Well Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 2
       },
       {
         "name": "Map Chest",
@@ -4406,6 +4706,18 @@
         "item_count": 1
       },
       {
+        "name": "Fire Trial Heart",
+        "access_rules": [
+          "$oot|Ganon Castle Fire Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Water Trial Chests",
         "short_name": "Water Trial",
         "access_rules": [
@@ -4415,6 +4727,18 @@
           "setting_mq_GanonCastle_false"
         ],
         "item_count": 2
+      },
+      {
+        "name": "Shadow Trial Hearts",
+        "access_rules": [
+          "$oot|Ganon Castle Shadow Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
+        "item_count": 3
       },
       {
         "name": "Shadow Trial Front Chest",
@@ -4482,6 +4806,18 @@
         "visibility_rules": [
           "setting_mq_GanonCastle_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Spirit Trial Heart",
+        "access_rules": [
+          "$oot|Ganon Castle Spirit Heart"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
         "item_count": 1
       },
       {
@@ -4680,6 +5016,18 @@
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"
         ],
+        "item_count": 2
+      },
+      {
+        "name": "Lobby Hearts",
+        "access_rules": [
+          "$oot|Gerudo Training Grounds Entrance Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_HeartShuffleOOT_false"
+        ],
+        "chest_unopened_img": "images/Heart.png",
+        "chest_opened_img": "images/Heart_Grey.png",
         "item_count": 2
       },
       {
