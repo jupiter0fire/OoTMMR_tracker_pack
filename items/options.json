@@ -1215,26 +1215,6 @@
     ]
   },
   {
-    "name": "Big Fairy Shuffle In MM",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_shuffleBigFairyMM_False.png",
-        "img_mods": "@disabled",
-        "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_shuffleBigFairyMM_True.png",
-        "codes": "setting_bigFairyShuffleMM,setting_bigFairyShuffleMM_true",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Fairy Fountain Shuffle in OoT",
     "type": "progressive",
     "allow_disabled": false,
