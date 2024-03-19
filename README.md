@@ -76,7 +76,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
 - [ ] Add new checks to the map (grass patches - OoT done, fairy Fountains - done, fishing shuffle - loaches done, Big Fairy shuffle - OoT done, freestanding rupees (not all released by ootmm yet -
       "wonder rupees" fall into this category), freestanding hearts - done, silver rupees, pots, bottle content)
-- [ ] Update Dungeon Checks (grass etc) - OoT Big Fairies done, OoT Grass Shuffle Done, freestanding hearts Done
+- [ ] Update Dungeon Checks (grass etc) - Big Fairies done, Grass Shuffle Done, freestanding hearts Done
 - [ ] Update Shared options
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
