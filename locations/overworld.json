@@ -6647,6 +6647,8 @@
                     "access_rules": [
                       "$mm|Clock Town Business Scrub"
                     ],
+                      "chest_unopened_img": "images/chest_brown_closed.png",
+                      "chest_opened_img": "images/chest_brown_open.png",
                     "item_count": 1
                   }
                 ],
@@ -6942,6 +6944,8 @@
                     "access_rules": [
                       "$mm|Tingle Map Woodfall"
                     ],
+                     "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "item_count": 1
                   }
                 ],
@@ -6951,7 +6955,7 @@
                     "x": 120,
                     "y": 35,
                     "visibility_rules": [
-                      "setting_tingleShuffle_vanilla"
+                      "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   },
                   {
@@ -6959,7 +6963,7 @@
                     "x": 120,
                     "y": 35,
                     "visibility_rules": [
-                      "setting_tingleShuffle_vanilla"
+                      "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   }
                 ]
@@ -8250,7 +8254,7 @@
   },
   {
     "name": "Milk Road",
-    "color": "#e0ef0e",
+    "color": "#e0ef0e", 
     "children": [
       {
         "name": "Milk Road Tingle Maps",
@@ -8261,6 +8265,8 @@
             "access_rules": [
               "$mm|Tingle Map Ranch"
             ],
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           },
           {
@@ -8271,13 +8277,15 @@
             "item_count": 1
           }
         ],
+         "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
         "map_locations": [
           {
             "map": "termina",
             "x": 475,
             "y": 360,
             "force_invisibility_rules": [
-              "setting_tingleShuffle_vanilla"
+              "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
           {
@@ -8285,7 +8293,7 @@
             "x": 475,
             "y": 360,
             "force_invisibility_rules": [
-              "setting_tingleShuffle_vanilla"
+              "setting_tingleShuffle_vanillasetting_tingleShuffle_anywhere"
             ]
           }
         ]
@@ -8590,6 +8598,8 @@
             "access_rules": [
               "$mm|Tingle Map Woodfall"
             ],
+             "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           },
           {
@@ -8597,6 +8607,8 @@
             "access_rules": [
               "$mm|Tingle Map Snowhead"
             ],
+             "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           }
         ],
@@ -8606,7 +8618,7 @@
             "x": 537,
             "y": 401,
             "force_invisibility_rules": [
-              "setting_tingleShuffle_vanilla"
+              "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
           {
@@ -8614,7 +8626,7 @@
             "x": 537,
             "y": 401,
             "force_invisibility_rules": [
-              "setting_tingleShuffle_vanilla"
+              "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
         ]
@@ -8662,6 +8674,8 @@
             "access_rules": [
               "$mm|Southern Swamp Scrub Deed"
             ],
+              "chest_unopened_img": "images/chest_brown_closed.png",
+              "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9482,6 +9496,8 @@
             "access_rules": [
               "$mm|Tingle Map Snowhead"
             ],
+             "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           },
           {
@@ -9498,7 +9514,7 @@
             "x": 582,
             "y": 165,
             "force_invisibility_rules": [
-              "setting_tingleShuffle_vanilla"
+              "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
           {
@@ -9506,7 +9522,7 @@
             "x": 582,
             "y": 165,
             "force_invisibility_rules": [
-              "setting_tingleShuffle_vanilla"
+              "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
         ]
@@ -10098,6 +10114,8 @@
                 "access_rules": [
                   "$mm|Tingle Map Great Bay"
                 ],
+                 "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                 "item_count": 1
               },
               {
@@ -10114,7 +10132,7 @@
                 "x": 205,
                 "y": 300,
                 "force_invisibility_rules": [
-                  "setting_tingleShuffle_vanilla"
+                  "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                 ]
               },
               {
@@ -10122,7 +10140,7 @@
                 "x": 205,
                 "y": 300,
                 "force_invisibility_rules": [
-                  "setting_tingleShuffle_vanilla"
+                  "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                 ]
               }
             ]
@@ -10860,8 +10878,8 @@
             "children": [
               {
                 "name": "Ikana Canyon Tingle Maps",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
+                "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",               
                 "short_name": "Canyon",
                 "sections": [
                   {
@@ -10885,7 +10903,7 @@
                     "x": 800,
                     "y": 264,
                     "force_invisibility_rules": [
-                      "setting_tingleShuffle_vanilla"
+                      "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   },
                   {
@@ -10893,7 +10911,7 @@
                     "x": 800,
                     "y": 264,
                     "force_invisibility_rules": [
-                      "setting_tingleShuffle_vanilla"
+                      "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   }
                 ]
