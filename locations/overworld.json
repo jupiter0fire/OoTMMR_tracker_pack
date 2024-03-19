@@ -71,607 +71,2780 @@
             ]
           },
           {
-            "name": "Kokiri Forest",
-            "color": "#0936a0",
-            "children": [
-              {
-                "name": "KF Grass Outside Saria's House",
-                "sections": [
-                  {
-                    "name": "Grass Shuffle (Child)",
-                    "access_rules": [
-                      "$oot|Kokiri Forest Child Kokiri Forest grass"
-                    ],
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Grass Shuffle (Adult)",
-                    "access_rules": [
-                      "$oot|Kokiri Forest Adult Grass Patch"
-                    ],
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 2214,
-                    "y": 958
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 2214,
-                    "y": 958
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Kokiri Forest",
-            "color": "#0936a0",
-            "children": [
-              {
-                "name": "KF Training Area Grass",
-                "sections": [
-                  {
-                    "name": "Grass Shuffle",
-                    "access_rules": [
-                      "$oot|Kokiri Forest grass in Training Area"
-                    ],
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 2116,
-                    "y": 962
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 2116,
-                    "y": 962
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "KF Midos House",
+            "name": "KF Saria's House",
             "sections": [
               {
-                "name": "KF Midos Chests",
+                "name": "KF Saria's House Hearts",
                 "access_rules": [
-                  "$oot|Kokiri Forest Mido Top Left"
+                  "$oot|Kokiri Forest Saria Hearts"
                 ],
+                "chest_unopened_img": "images/Heart.png",
+                "chest_opened_img": "images/Heart_Grey.png",
+                "item_count": 4
+              },
+              {
+                "name": "KF Saria's House Hearts Roof",
+                "access_rules": [
+                  "$oot|Kokiri Forest Saria Hearts Roof"
+                ],
+                "chest_unopened_img": "images/Heart.png",
+                "chest_opened_img": "images/Heart_Grey.png",
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2214,
+                "y": 988
+              },
+              {
+                "map": "oot_er_locations",
+                "x": 2214,
+                "y": 988
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kokiri Forest",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "KF Grass Outside Saria's House",
+            "sections": [
+              {
+                "name": "Grass Shuffle (Child)",
+                "access_rules": [
+                  "$oot|Kokiri Forest Child Kokiri Forest grass"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              },
+              {
+                "name": "Grass Shuffle (Adult)",
+                "access_rules": [
+                  "$oot|Kokiri Forest Adult Grass Patch"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 2214,
+                "y": 958
+              },
+              {
+                "map": "oot_er_locations",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 2214,
+                "y": 958
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kokiri Forest",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "KF Training Area Grass",
+            "sections": [
+              {
+                "name": "Grass Shuffle",
+                "access_rules": [
+                  "$oot|Kokiri Forest grass in Training Area"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 2116,
+                "y": 962
+              },
+              {
+                "map": "oot_er_locations",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 2116,
+                "y": 962
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "KF Midos House",
+        "sections": [
+          {
+            "name": "KF Midos Chests",
+            "access_rules": [
+              "$oot|Kokiri Forest Mido Top Left"
+            ],
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2135,
+            "y": 900
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2135,
+            "y": 900
+          }
+        ]
+      },
+      {
+        "name": "KF Storms Grotto",
+        "sections": [
+          {
+            "name": "KF Storms Grotto Chest",
+            "short_name": "Chest",
+            "access_rules": [
+              "$oot|Kokiri Forest Storms Grotto"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2120,
+            "y": 845
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2120,
+            "y": 845
+          }
+        ]
+      },
+      {
+        "name": "KF Kokiri Shop",
+        "access_rules": [
+          "$oot|Kokiri Shop Item 1"
+        ],
+        "sections": [
+          {
+            "name": "Item 1",
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "item_count": 1
+          },
+          {
+            "name": "Item 3",
+            "item_count": 1
+          },
+          {
+            "name": "Item 4",
+            "item_count": 1
+          },
+          {
+            "name": "Item 5",
+            "item_count": 1
+          },
+          {
+            "name": "Item 6",
+            "item_count": 1
+          },
+          {
+            "name": "Item 7",
+            "item_count": 1
+          },
+          {
+            "name": "Item 8",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_shopShuffleOot_none"
+            ],
+            "x": 2220,
+            "y": 915
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_shopShuffleOot_none"
+            ],
+            "x": 2220,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "KF Links House",
+        "sections": [
+          {
+            "name": "KF Links House Cow",
+            "short_name": "Cow",
+            "access_rules": [
+              "$oot|Kokiri Forest Cow"
+            ],
+            "visibility_rules": [
+              "setting_cowShuffleOot_true"
+            ],
+            "chest_unopened_img": "images/cow.png",
+            "chest_opened_img": "images/bottle_milk.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2175,
+            "y": 1000
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2175,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "KF Know It All House",
+        "sections": [
+          {
+            "name": "KF GS Know It All House (Child, N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Kokiri Forest GS Night Child"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2055,
+            "y": 960
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2055,
+            "y": 960
+          }
+        ]
+      },
+      {
+        "name": "KF Bean Patch",
+        "sections": [
+          {
+            "name": "KF GS Bean Patch",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Kokiri Forest GS Soil"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2255,
+            "y": 915
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2255,
+            "y": 915
+          }
+        ]
+      },
+      {
+        "name": "KF House of Twins",
+        "sections": [
+          {
+            "name": "KF GS House of Twins (Adult, N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Kokiri Forest GS Night Adult"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2260,
+            "y": 980
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2260,
+            "y": 980
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lost Woods",
+    "color": "#18a50e",
+    "children": [
+      {
+        "name": "LW Near Shortcuts Grotto",
+        "access_rules": [
+          "$oot|Lost Woods Grotto Generic"
+        ],
+        "sections": [
+          {
+            "name": "LW Near Shortcuts Grotto Chest",
+            "short_name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2150,
+            "y": 775
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2150,
+            "y": 775
+          }
+        ]
+      },
+      {
+        "name": "LW Ocarina Memory Game",
+        "short_name": "Ocarina Game",
+        "sections": [
+          {
+            "name": "First 5 notes",
+            "access_rules": [
+              "$oot|Lost Woods Memory Game"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2190,
+            "y": 810
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2190,
+            "y": 810
+          }
+        ]
+      },
+      {
+        "name": "LW Target in Woods",
+        "sections": [
+          {
+            "name": "Shoot it",
+            "access_rules": [
+              "$oot|Lost Woods Target"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2190,
+            "y": 775
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2190,
+            "y": 775
+          }
+        ]
+      },
+      {
+        "name": "Skull Kid Meadow",
+        "sections": [
+          {
+            "name": "Give Cojiro",
+            "access_rules": [
+              "$oot|Lost Woods Odd Mushroom"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Give Odd Potion",
+            "access_rules": [
+              "$oot|Lost Woods Poacher's Saw"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Play Sarias Song",
+            "access_rules": [
+              "$oot|Lost Woods Skull Kid"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2085,
+            "y": 785
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2085,
+            "y": 785
+          }
+        ]
+      },
+      {
+        "name": "LW Deku Scrub Near Bridge",
+        "sections": [
+          {
+            "name": "Stick upgrade",
+            "access_rules": [
+              "$oot|Lost Woods Scrub Sticks Upgrade"
+            ],
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2015,
+            "y": 925
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2015,
+            "y": 925
+          }
+        ]
+      },
+      {
+        "name": "LW Bean Patch Near Bridge",
+        "sections": [
+          {
+            "name": "LW GS Bean Patch Near Bridge",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Lost Woods GS Soil Bridge"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2060,
+            "y": 825
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2060,
+            "y": 825
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lost Woods Bridge",
+    "color": "#18a50e",
+    "children": [
+      {
+        "name": "LW Bridge From Forest",
+        "color": "#18a50e",
+        "sections": [
+          {
+            "name": "LW Gift from Saria",
+            "access_rules": [
+              "$oot|Lost Woods Gift from Saria"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2030,
+            "y": 880
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2030,
+            "y": 880
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lost Woods Deep",
+    "color": "#18a50e",
+    "children": [
+      {
+        "name": "LW Deku Scrubs Near Deku Theater",
+        "short_name": "LW Deku Scrubs",
+        "sections": [
+          {
+            "name": "Deku Nuts / Deku Sticks",
+            "access_rules": [
+              "$oot|Lost Woods Scrub Near Theater Left"
+            ],
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 2110,
+            "y": 740
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 2110,
+            "y": 740
+          }
+        ]
+      },
+      {
+        "name": "LW Big Fairy",
+        "sections": [
+          {
+            "name": "Play the Song of Storms",
+            "short_name": "NaviDive Fairy",
+            "access_rules": [
+              "$oot|Lost Woods Big Fairy"
+            ],
+            "visibility_rules": [
+              "setting_bigFairyShuffleOOT_true"
+            ],
+            "chest_unopened_img": "images/BigFairyStorms.png",
+            "chest_opened_img": "images/BigFairyStormsGrey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2230,
+            "y": 740
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2230,
+            "y": 740
+          }
+        ]
+      },
+      {
+        "name": "Lost Woods Grass Clusters",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "Grass Shuffle",
+            "sections": [
+              {
+                "name": "4 Groups Of 3",
+                "access_rules": [
+                  "$oot|Lost Woods Grass Clusters"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 4
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
-                "x": 2135,
-                "y": 900
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2135,
-                "y": 900
-              }
-            ]
-          },
-          {
-            "name": "KF Storms Grotto",
-            "sections": [
-              {
-                "name": "KF Storms Grotto Chest",
-                "short_name": "Chest",
-                "access_rules": [
-                  "$oot|Kokiri Forest Storms Grotto"
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
                 ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2120,
-                "y": 845
+                "x": 2144,
+                "y": 812
               },
               {
                 "map": "oot_er_locations",
-                "x": 2120,
-                "y": 845
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 2144,
+                "y": 812
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "LW Scrubs Grotto",
+        "sections": [
           {
-            "name": "KF Kokiri Shop",
+            "name": "LW Deku Scrub Grotto Front",
+            "short_name": "Front",
             "access_rules": [
-              "$oot|Kokiri Shop Item 1"
+              "$oot|Lost Woods Grotto Scrub Nuts Upgrade"
             ],
-            "sections": [
-              {
-                "name": "Item 1",
-                "item_count": 1
-              },
-              {
-                "name": "Item 2",
-                "item_count": 1
-              },
-              {
-                "name": "Item 3",
-                "item_count": 1
-              },
-              {
-                "name": "Item 4",
-                "item_count": 1
-              },
-              {
-                "name": "Item 5",
-                "item_count": 1
-              },
-              {
-                "name": "Item 6",
-                "item_count": 1
-              },
-              {
-                "name": "Item 7",
-                "item_count": 1
-              },
-              {
-                "name": "Item 8",
-                "item_count": 1
-              }
+            "visibility_rules": [
+              "setting_scrubShuffleOot_true"
             ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
-                "x": 2220,
-                "y": 915
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
-                "x": 2220,
-                "y": 915
-              }
-            ]
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "item_count": 1
           },
           {
-            "name": "KF Links House",
-            "sections": [
-              {
-                "name": "KF Links House Cow",
-                "short_name": "Cow",
-                "access_rules": [
-                  "$oot|Kokiri Forest Cow"
-                ],
-                "visibility_rules": [
-                  "setting_cowShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/cow.png",
-                "chest_opened_img": "images/bottle_milk.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2175,
-                "y": 1000
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2175,
-                "y": 1000
-              }
-            ]
-          },
-          {
-            "name": "KF Know It All House",
-            "sections": [
-              {
-                "name": "KF GS Know It All House (Child, N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Kokiri Forest GS Night Child"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2055,
-                "y": 960
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2055,
-                "y": 960
-              }
-            ]
-          },
-          {
-            "name": "KF Bean Patch",
-            "sections": [
-              {
-                "name": "KF GS Bean Patch",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Kokiri Forest GS Soil"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2255,
-                "y": 915
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2255,
-                "y": 915
-              }
-            ]
-          },
-          {
-            "name": "KF House of Twins",
-            "sections": [
-              {
-                "name": "KF GS House of Twins (Adult, N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Kokiri Forest GS Night Adult"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2260,
-                "y": 980
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2260,
-                "y": 980
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lost Woods",
-        "color": "#18a50e",
-        "children": [
-          {
-            "name": "LW Near Shortcuts Grotto",
+            "name": "LW Deku Scrub Grotto Rear",
+            "short_name": "Rear",
             "access_rules": [
-              "$oot|Lost Woods Grotto Generic"
+              "$oot|Lost Woods Grotto Scrub Back"
             ],
-            "sections": [
-              {
-                "name": "LW Near Shortcuts Grotto Chest",
-                "short_name": "Chest",
-                "item_count": 1
-              }
+            "visibility_rules": [
+              "setting_scrubShuffleOot_true"
             ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2150,
-                "y": 775
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2150,
-                "y": 775
-              }
-            ]
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "item_count": 1
           },
           {
-            "name": "LW Ocarina Memory Game",
-            "short_name": "Ocarina Game",
-            "sections": [
-              {
-                "name": "First 5 notes",
-                "access_rules": [
-                  "$oot|Lost Woods Memory Game"
-                ],
-                "item_count": 1
-              }
+            "name": "LW Deku Scrub Grotto Big Fairy",
+            "short_name": "LW Grotto Big Fairy",
+            "access_rules": [
+              "$oot|Lost Woods Grotto Big Fairy"
             ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2190,
-                "y": 810
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2190,
-                "y": 810
-              }
-            ]
+            "visibility_rules": [
+              "setting_bigFairyShuffleOOT_true"
+            ],
+            "chest_unopened_img": "images/BigFairySun.png",
+            "chest_opened_img": "images/BigFairySunGrey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2190,
+            "y": 725
           },
           {
-            "name": "LW Target in Woods",
-            "sections": [
-              {
-                "name": "Shoot it",
-                "access_rules": [
-                  "$oot|Lost Woods Target"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2190,
-                "y": 775
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2190,
-                "y": 775
-              }
-            ]
-          },
-          {
-            "name": "Skull Kid Meadow",
-            "sections": [
-              {
-                "name": "Give Cojiro",
-                "access_rules": [
-                  "$oot|Lost Woods Odd Mushroom"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Give Odd Potion",
-                "access_rules": [
-                  "$oot|Lost Woods Poacher's Saw"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Play Sarias Song",
-                "access_rules": [
-                  "$oot|Lost Woods Skull Kid"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2085,
-                "y": 785
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2085,
-                "y": 785
-              }
-            ]
-          },
-          {
-            "name": "LW Deku Scrub Near Bridge",
-            "sections": [
-              {
-                "name": "Stick upgrade",
-                "access_rules": [
-                  "$oot|Lost Woods Scrub Sticks Upgrade"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2015,
-                "y": 925
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2015,
-                "y": 925
-              }
-            ]
-          },
-          {
-            "name": "LW Bean Patch Near Bridge",
-            "sections": [
-              {
-                "name": "LW GS Bean Patch Near Bridge",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Lost Woods GS Soil Bridge"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2060,
-                "y": 825
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2060,
-                "y": 825
-              }
-            ]
+            "map": "oot_er_locations",
+            "x": 2190,
+            "y": 725
           }
         ]
       },
       {
-        "name": "Lost Woods Bridge",
-        "color": "#18a50e",
-        "children": [
+        "name": "LW Near Deku Theater",
+        "sections": [
           {
-            "name": "LW Bridge From Forest",
-            "color": "#18a50e",
-            "sections": [
-              {
-                "name": "LW Gift from Saria",
-                "access_rules": [
-                  "$oot|Lost Woods Gift from Saria"
-                ],
-                "item_count": 1
-              }
+            "name": "LW GS Bean Patch Near Theater",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Lost Woods GS Soil Theater"
             ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2030,
-                "y": 880
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2030,
-                "y": 880
-              }
-            ]
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "LW GS Above Theater (N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Lost Woods GS Bean Ride"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2140,
+            "y": 740
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2140,
+            "y": 740
           }
         ]
       },
       {
-        "name": "Lost Woods Deep",
+        "name": "Deku Theater",
+        "sections": [
+          {
+            "name": "Deku Theater Skull Mask",
+            "short_name": "Skull Mask",
+            "access_rules": [
+              "$oot|Deku Theater Sticks Upgrade"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Deku Theater Mask of Truth",
+            "short_name": "Mask of Truth",
+            "access_rules": [
+              "$oot|Deku Theater Nuts Upgrade"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2080,
+            "y": 740
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2080,
+            "y": 740
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sacred Meadow",
+    "color": "#18a50e",
+    "children": [
+      {
+        "name": "Songs in Forest",
+        "sections": [
+          {
+            "name": "Song from Saria",
+            "short_name": "Song",
+            "access_rules": [
+              "$oot|Saria's Song"
+            ],
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
+          },
+          {
+            "name": "Song from Sheik",
+            "access_rules": [
+              "$oot|Sacred Meadow Sheik Song"
+            ],
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2155,
+            "y": 635
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2155,
+            "y": 635
+          }
+        ]
+      },
+      {
+        "name": "SFM Wolfos Grotto",
+        "access_rules": [
+          "$oot|Sacred Meadow Grotto"
+        ],
+        "sections": [
+          {
+            "name": "SFM Wolfos Grotto Chest",
+            "short_name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2185,
+            "y": 685
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 2185,
+            "y": 685
+          }
+        ]
+      },
+      {
+        "name": "SFM Storms Grotto",
+        "sections": [
+          {
+            "name": "SFM Deku Scrubs Grotto",
+            "short_name": "Deku Scrubs",
+            "access_rules": [
+              "$oot|Sacred Meadow Storms Grotto Back Scrub"
+            ],
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 2190,
+            "y": 635
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 2190,
+            "y": 635
+          }
+        ]
+      },
+      {
+        "name": "SFM Fairy Fountain",
         "color": "#18a50e",
         "children": [
           {
-            "name": "LW Deku Scrubs Near Deku Theater",
-            "short_name": "LW Deku Scrubs",
+            "name": "SFM Fairy Fountain",
             "sections": [
               {
-                "name": "Deku Nuts / Deku Sticks",
+                "name": "Fairy Fountain shuffle",
                 "access_rules": [
-                  "$oot|Lost Woods Scrub Near Theater Left"
+                  "$oot|Sacred Meadow Fairy Fountain"
                 ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "clear_as_group": false,
-                "item_count": 2
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
                 "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
+                  "setting_FairyFountainShuffleOOT_false"
                 ],
-                "x": 2110,
-                "y": 740
+                "x": 2148,
+                "y": 680
               },
               {
                 "map": "oot_er_locations",
                 "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
+                  "setting_FairyFountainShuffleOOT_false"
                 ],
-                "x": 2110,
-                "y": 740
+                "x": 2148,
+                "y": 680
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "SFM Maze",
+        "sections": [
+          {
+            "name": "SFM GS (Adult, N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Sacred Meadow GS Night Adult"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 2230,
+            "y": 665
           },
           {
-            "name": "LW Big Fairy",
+            "map": "oot_er_locations",
+            "x": 2230,
+            "y": 665
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hyrule Field",
+    "color": "#09a09d",
+    "children": [
+      {
+        "name": "HF Inside Fence Grotto",
+        "access_rules": [
+          "$oot|Hyrule Field Grotto Scrub HP"
+        ],
+        "sections": [
+          {
+            "name": "HF Deku Scrub Grotto",
+            "short_name": "Deku Scrub",
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "item_count": "1"
+          },
+          {
+            "name": "HF Grotto Big Fairy",
+            "short_name": "HF Big Fairy",
+            "chest_unopened_img": "images/BigFairyStorms.png",
+            "chest_opened_img": "images/BigFairyStormsGrey.png",
+            "access_rules": [
+              "$oot|Hyrule Field Grotto Big Fairy"
+            ],
+            "visibility_rules": [
+              "setting_bigFairyShuffleOOT_true"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1140,
+            "y": 1000
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1140,
+            "y": 1000
+          }
+        ]
+      },
+      {
+        "name": "HF Ocarina of Time",
+        "sections": [
+          {
+            "name": "HF Ocarina of Time Item",
+            "access_rules": [
+              "$oot|Hyrule Field Ocarina of Time",
+              "{}"
+            ],
+            "short_name": "Item",
+            "item_count": 1
+          },
+          {
+            "name": "Song from Ocarina of Time",
+            "short_name": "Song",
+            "access_rules": [
+              "$oot|Hyrule Field Song of Time",
+              "{}"
+            ],
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1440,
+            "y": 465
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1440,
+            "y": 465
+          }
+        ]
+      },
+      {
+        "name": "HF Southeast Grotto",
+        "access_rules": [
+          "$oot|Hyrule Field Grotto Southeast"
+        ],
+        "sections": [
+          {
+            "name": "HF Southeast Grotto Chest",
+            "short_name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1430,
+            "y": 925
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1430,
+            "y": 925
+          }
+        ]
+      },
+      {
+        "name": "HF Open Grotto",
+        "access_rules": [
+          "$oot|Hyrule Field Grotto Open"
+        ],
+        "sections": [
+          {
+            "name": "HF Open Grotto Chest",
+            "short_name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1205,
+            "y": 995
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1205,
+            "y": 995
+          }
+        ]
+      },
+      {
+        "name": "HF Near Market Grotto",
+        "short_name": "Boulda",
+        "access_rules": [
+          "$oot|Hyrule Field Grotto Market"
+        ],
+        "sections": [
+          {
+            "name": "HF Near Market Grotto Chest",
+            "short_name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1370,
+            "y": 440
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1370,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "HF Tektite Grotto",
+        "access_rules": [
+          "$oot|Hyrule Field Grotto Tektite HP"
+        ],
+        "sections": [
+          {
+            "name": "HF Tektite Grotto Freestanding PoH",
+            "short_name": "HP",
+            "chest_unopened_img": "images/HP.png",
+            "chest_opened_img": "images/HP_grey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1150,
+            "y": 480
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1150,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "HF Near Kak Grotto",
+        "sections": [
+          {
+            "name": "HF GS Near Kak Grotto",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Hyrule Field Grotto Near Kakariko GS"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1550,
+            "y": 405
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1550,
+            "y": 405
+          }
+        ]
+      },
+      {
+        "name": "HF Big Fairy",
+        "sections": [
+          {
+            "name": "Play the Song of Storms",
+            "short_name": "HF Pond Fairy",
+            "access_rules": [
+              "$oot|Death Mountain Big Fairy"
+            ],
+            "visibility_rules": [
+              "setting_bigFairyShuffleOOT_true"
+            ],
+            "chest_unopened_img": "images/BigFairyStorms.png",
+            "chest_opened_img": "images/BigFairyStormsGrey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1830,
+            "y": 580
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1830,
+            "y": 580
+          }
+        ]
+      },
+      {
+        "name": "HF Cow Grotto",
+        "sections": [
+          {
+            "name": "HF GS Cow Grotto",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Hyrule Field Grotto Near Gerudo GS"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "HF Cow Grotto Cow",
+            "short_name": "Cow",
+            "access_rules": [
+              "$oot|Hyrule Field Cow"
+            ],
+            "visibility_rules": [
+              "setting_cowShuffleOot_true"
+            ],
+            "chest_unopened_img": "images/cow.png",
+            "chest_opened_img": "images/bottle_milk.png",
+            "item_count": 1
+          },
+          {
+            "name": "HF Cow Grotto Grass",
+            "short_name": "HF Cow Grass",
+            "access_rules": [
+              "$oot|Hyrule Field Cow"
+            ],
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 970,
+            "y": 660
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 970,
+            "y": 660
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hyrule Field",
+    "color": "#0936a0",
+    "children": [
+      {
+        "name": "HF Grass Patch",
+        "sections": [
+          {
+            "name": "Grass Shuffle",
+            "access_rules": [
+              "$oot|Hyrule Field grass Near KF"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1732,
+            "y": 688
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1732,
+            "y": 688
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hyrule Field",
+    "color": "#0936a0",
+    "children": [
+      {
+        "name": "Grass Shuffle",
+        "sections": [
+          {
+            "name": "HF Grass Patch",
+            "access_rules": [
+              "$oot|Hyrule Field grass Near LLR"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1494,
+            "y": 528
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1494,
+            "y": 528
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hyrule Field",
+    "color": "#0936a0",
+    "children": [
+      {
+        "name": "HF Grass Patch",
+        "sections": [
+          {
+            "name": "Grass Shuffle",
+            "access_rules": [
+              "$oot|Hyrule Field grass Near SE Grotto"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1420,
+            "y": 872
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1420,
+            "y": 872
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hyrule Field",
+    "color": "#0936a0",
+    "children": [
+      {
+        "name": "HF Grass Patch",
+        "sections": [
+          {
+            "name": "Grass Shuffle",
+            "access_rules": [
+              "$oot|Hyrule Field grass Near LLR rear"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1346,
+            "y": 816
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1346,
+            "y": 816
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lake Hylia",
+    "color": "#0936a0",
+    "children": [
+      {
+        "name": "LH Underwater Item",
+        "sections": [
+          {
+            "name": "Dive down",
+            "access_rules": [
+              "$oot|Lake Hylia Underwater Bottle"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1050,
+            "y": 1265
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1050,
+            "y": 1265
+          }
+        ]
+      },
+      {
+        "name": "Fishing Pond",
+        "sections": [
+          {
+            "name": "Child Fishing Lunker Reward",
+            "access_rules": [
+              "$oot|Fishing Pond Child"
+            ],
+            "chest_unopened_img": "images/HyruleBass.png",
+            "chest_opened_img": "images/HyruleBassGreyscale.png",
+            "item_count": 1
+          },
+          {
+            "name": "Adult Fishing Lunker Reward",
+            "access_rules": [
+              "$oot|Fishing Pond Adult"
+            ],
+            "chest_unopened_img": "images/HyruleBass.png",
+            "chest_opened_img": "images/HyruleBassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1270,
+            "y": 1215
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1270,
+            "y": 1215
+          }
+        ]
+      },
+      {
+        "name": "Fishing Pond",
+        "sections": [
+          {
+            "name": "Child Hylian Loaches",
+            "access_rules": [
+              "$oot|Fishing Pond Child Loaches"
+            ],
+            "chest_unopened_img": "images/HylianLoach.png",
+            "chest_opened_img": "images/LoachGreyscale.png",
+            "item_count": 2
+          },
+          {
+            "name": "Adult Hylian Loach",
+            "access_rules": [
+              "$oot|Fishing Pond Adult Hylian Loach"
+            ],
+            "chest_unopened_img": "images/HylianLoach.png",
+            "chest_opened_img": "images/LoachGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1270,
+            "y": 1246
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1270,
+            "y": 1246
+          }
+        ]
+      },
+      {
+        "name": "LH Small Island",
+        "sections": [
+          {
+            "name": "Shoot the sun",
+            "access_rules": [
+              "$oot|Lake Hylia Fire Arrow"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "LH GS Small Island (N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Lake Hylia GS Island"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "LH Big Fairy",
+            "short_name": "LH Big Fairy",
+            "access_rules": [
+              "$oot|Lake Hylia GS Island Big Fairy"
+            ],
+            "visibility_rules": [
+              "setting_bigFairyShuffleOOT_true"
+            ],
+            "chest_unopened_img": "images/BigFairyStorms.png",
+            "chest_opened_img": "images/BigFairyStormsGrey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1135,
+            "y": 1405
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1135,
+            "y": 1405
+          }
+        ]
+      },
+      {
+        "name": "LH Lab Tower",
+        "sections": [
+          {
+            "name": "LH Freestanding PoH",
+            "short_name": "HP",
+            "access_rules": [
+              "$oot|Lake Hylia HP"
+            ],
+            "chest_unopened_img": "images/HP.png",
+            "chest_opened_img": "images/HP_grey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 960,
+            "y": 1160
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 960,
+            "y": 1160
+          }
+        ]
+      },
+      {
+        "name": "LH Lab",
+        "sections": [
+          {
+            "name": "LH Lab Dive",
+            "access_rules": [
+              "$oot|Laboratory Dive"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Give Frog",
+            "access_rules": [
+              "$oot|Laboratory Eye Drops"
+            ],
+            "chest_unopened_img": "images/Eyeball_Frog.png",
+            "chest_opened_img": "images/Eyeball_Frog_Grey.png",
+            "item_count": 1
+          },
+          {
+            "name": "LH GS Lab Crate",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Laboratory GS Crate"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 960,
+            "y": 1200
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 960,
+            "y": 1200
+          }
+        ]
+      },
+      {
+        "name": "LH Grotto",
+        "sections": [
+          {
+            "name": "LH Deku Scrubs Grotto",
+            "short_name": "Deku Scrubs",
+            "access_rules": [
+              "$oot|Lake Hylia Grotto Center Scrub"
+            ],
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 870,
+            "y": 1310
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 870,
+            "y": 1310
+          }
+        ]
+      },
+      {
+        "name": "LH Bean Patch",
+        "sections": [
+          {
+            "name": "LH GS Bean Patch",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Lake Hylia GS Soil"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1000,
+            "y": 1180
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1000,
+            "y": 1180
+          }
+        ]
+      },
+      {
+        "name": "LH Lab Wall",
+        "sections": [
+          {
+            "name": "LH GS Lab Wall (N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Lake Hylia GS Lab Wall"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 930,
+            "y": 1200
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 930,
+            "y": 1200
+          }
+        ]
+      },
+      {
+        "name": "LH Tree",
+        "sections": [
+          {
+            "name": "LH GS Tree (N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Lake Hylia GS Big Tree"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1010,
+            "y": 1415
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1010,
+            "y": 1415
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lake Hylia",
+    "color": "#0936a0",
+    "children": [
+      {
+        "name": "LH Grass Patches",
+        "sections": [
+          {
+            "name": "Grass Shuffle",
+            "access_rules": [
+              "$oot|Lake Hylia grass patches x3"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1042,
+            "y": 1156
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1042,
+            "y": 1156
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lake Hylia",
+    "color": "#0936a0",
+    "children": [
+      {
+        "name": "LH Grass Around Scarecrows",
+        "sections": [
+          {
+            "name": "Grass Shuffle",
+            "access_rules": [
+              "$oot|Lake Hylia Grass Near Scarecrows"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1140,
+            "y": 1182
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_GrassShuffleOOT_false"
+            ],
+            "x": 1140,
+            "y": 1182
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lon Lon Ranch",
+    "color": "#09a09d",
+    "children": [
+      {
+        "name": "Malon at Ranch",
+        "sections": [
+          {
+            "name": "Song from Malon",
+            "short_name": "Song",
+            "access_rules": [
+              "$oot|Lon Lon Ranch Malon Song"
+            ],
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1295,
+            "y": 645
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1295,
+            "y": 645
+          }
+        ]
+      },
+      {
+        "name": "LLR Talons House",
+        "sections": [
+          {
+            "name": "LLR Talons Cucco Game",
+            "access_rules": [
+              "$oot|Lon Lon Ranch Talon Bottle"
+            ],
+            "chest_unopened_img": "images/Cucco.png",
+            "chest_opened_img": "images/Cucco_Grey.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1345,
+            "y": 590
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1345,
+            "y": 590
+          }
+        ]
+      },
+      {
+        "name": "LLR Tower",
+        "sections": [
+          {
+            "name": "LLR Freestanding PoH",
+            "short_name": "HP",
+            "access_rules": [
+              "$oot|Lon Lon Ranch Silo HP"
+            ],
+            "chest_unopened_img": "images/HP.png",
+            "chest_opened_img": "images/HP_grey.png",
+            "item_count": 1
+          },
+          {
+            "name": "LLR Tower Cows",
+            "short_name": "Cows",
+            "access_rules": [
+              "$oot|Lon Lon Ranch Silo Cow Front"
+            ],
+            "visibility_rules": [
+              "setting_cowShuffleOot_true"
+            ],
+            "chest_unopened_img": "images/cow.png",
+            "chest_opened_img": "images/bottle_milk.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1225,
+            "y": 690
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1225,
+            "y": 690
+          }
+        ]
+      },
+      {
+        "name": "LLR Stables",
+        "sections": [
+          {
+            "name": "LLR Stables Cows",
+            "short_name": "Cows",
+            "access_rules": [
+              "$oot|Lon Lon Ranch Stables Cow Left"
+            ],
+            "visibility_rules": [
+              "setting_cowShuffleOot_true"
+            ],
+            "chest_unopened_img": "images/cow.png",
+            "chest_opened_img": "images/bottle_milk.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1300,
+            "y": 590
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1300,
+            "y": 590
+          }
+        ]
+      },
+      {
+        "name": "LLR Grotto",
+        "sections": [
+          {
+            "name": "LLR Deku Scrubs Grotto",
+            "short_name": "Deku Scrubs",
+            "access_rules": [
+              "$oot|Lon Lon Ranch Grotto Center Scrub"
+            ],
+            "chest_unopened_img": "images/deku_scrub.png",
+            "chest_opened_img": "images/deku_scrub_grey.png",
+            "clear_as_group": false,
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 1375,
+            "y": 690
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_scrubShuffleOot_false"
+            ],
+            "x": 1375,
+            "y": 690
+          }
+        ]
+      },
+      {
+        "name": "LLR GS",
+        "sections": [
+          {
+            "name": "LLR GS Tree",
+            "short_name": "Tree",
+            "access_rules": [
+              "$oot|Lon Lon Ranch GS Tree"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "LLR GS Rain Shed (N)",
+            "short_name": "Rain Shed",
+            "access_rules": [
+              "$oot|Lon Lon Ranch GS Rain Shed"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "LLR GS House Window (N)",
+            "short_name": "House Window",
+            "access_rules": [
+              "$oot|Lon Lon Ranch GS House"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "LLR GS Back Wall (N)",
+            "short_name": "Back Wall",
+            "access_rules": [
+              "$oot|Lon Lon Ranch GS Back Wall"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1325,
+            "y": 675
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1325,
+            "y": 675
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kakariko Village",
+    "color": "#6909a0",
+    "children": [
+      {
+        "name": "Kak Redead Grotto",
+        "access_rules": [
+          "$oot|Kakariko Grotto Front"
+        ],
+        "sections": [
+          {
+            "name": "Kak Redead Grotto Chest",
+            "short_name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1760,
+            "y": 380
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1760,
+            "y": 380
+          }
+        ]
+      },
+      {
+        "name": "Kakariko Grass Around Tree",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "Kakariko Grass Around Tree",
             "sections": [
               {
-                "name": "Play the Song of Storms",
-                "short_name": "NaviDive Fairy",
+                "name": "Grass Shuffle",
                 "access_rules": [
-                  "$oot|Lost Woods Big Fairy"
+                  "$oot|Kakariko Grass Around Tree"
                 ],
-                "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
-                ],
-                "chest_unopened_img": "images/BigFairyStorms.png",
-                "chest_opened_img": "images/BigFairyStormsGrey.png",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
-                "x": 2230,
-                "y": 740
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 1726,
+                "y": 410
               },
               {
                 "map": "oot_er_locations",
-                "x": 2230,
-                "y": 740
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 1726,
+                "y": 410
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kakariko Grass Near Graveyard",
+        "color": "#0936a0",
+        "children": [
+          {
+            "name": "Near Cucco Lady",
+            "sections": [
+              {
+                "name": "Grass Shuffle",
+                "access_rules": [
+                  "$oot|Kakariko Grass Near Cucco Lady"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 1910,
+                "y": 410
+              },
+              {
+                "map": "oot_er_locations",
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
+                ],
+                "x": 1910,
+                "y": 410
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Kak Open Grotto",
+        "access_rules": [
+          "$oot|Kakariko Grotto Back"
+        ],
+        "sections": [
+          {
+            "name": "Kak Open Grotto Chest",
+            "short_name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1870,
+            "y": 305
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1870,
+            "y": 305
+          }
+        ]
+      },
+      {
+        "name": "Kak Impas House Back",
+        "sections": [
+          {
+            "name": "Kak Impas House Freestanding PoH",
+            "short_name": "HP",
+            "access_rules": [
+              "$oot|Kakariko Impa House HP"
+            ],
+            "chest_unopened_img": "images/HP.png",
+            "chest_opened_img": "images/HP_grey.png",
+            "item_count": 1
+          },
+          {
+            "name": "Kak Impas House Cow",
+            "short_name": "Cow",
+            "access_rules": [
+              "$oot|Kakariko Cow"
+            ],
+            "visibility_rules": [
+              "setting_cowShuffleOot_true"
+            ],
+            "chest_unopened_img": "images/cow.png",
+            "chest_opened_img": "images/bottle_milk.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1830,
+            "y": 430
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1830,
+            "y": 430
+          }
+        ]
+      },
+      {
+        "name": "Kak Man on Roof",
+        "sections": [
+          {
+            "name": "Talk to him",
+            "access_rules": [
+              "$oot|Kakariko Man on Roof"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1830,
+            "y": 360
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1830,
+            "y": 360
+          }
+        ]
+      },
+      {
+        "name": "Kak Shooting Gallery",
+        "sections": [
+          {
+            "name": "Kak Shooting Gallery Reward",
+            "short_name": "Reward",
+            "access_rules": [
+              "$oot|Shooting Gallery Adult"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1830,
+            "y": 395
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1830,
+            "y": 395
+          }
+        ]
+      },
+      {
+        "name": "Kak Windmill",
+        "sections": [
+          {
+            "name": "Kak Windmill Freestanding PoH",
+            "short_name": "HP",
+            "access_rules": [
+              "$oot|Windmill HP"
+            ],
+            "chest_unopened_img": "images/HP.png",
+            "chest_opened_img": "images/HP_grey.png",
+            "item_count": 1
+          },
+          {
+            "name": "Song from Windmill",
+            "short_name": "Guru-Guru",
+            "access_rules": [
+              "$oot|Windmill Song of Storms"
+            ],
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1920,
+            "y": 345
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1920,
+            "y": 345
+          }
+        ]
+      },
+      {
+        "name": "Sheik in Kakariko",
+        "sections": [
+          {
+            "name": "Song",
+            "access_rules": [
+              "$oot|Kakariko Song Shadow",
+              "{}"
+            ],
+            "chest_unopened_img": "images/grey_note.png",
+            "chest_opened_img": "images/grey_note_check.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1795,
+            "y": 380
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1795,
+            "y": 380
+          }
+        ]
+      },
+      {
+        "name": "Anju",
+        "sections": [
+          {
+            "name": "Chickens",
+            "access_rules": [
+              "$oot|Kakariko Anju Bottle"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Anju Adult",
+            "access_rules": [
+              "$oot|Kakariko Anju Egg"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Show Happy Cucco",
+            "access_rules": [
+              "$oot|Kakariko Anju Cojiro"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1865,
+            "y": 430
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1865,
+            "y": 430
+          }
+        ]
+      },
+      {
+        "name": "Kak Odd Medicine Building",
+        "sections": [
+          {
+            "name": "Give Mushroom",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Odd Potion"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1860,
+            "y": 340
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1860,
+            "y": 340
+          }
+        ]
+      },
+      {
+        "name": "Kak House of Skulltula",
+        "sections": [
+          {
+            "name": "Kak 10 Gold Skulltula Reward",
+            "short_name": "10 Tokens",
+            "access_rules": [
+              "$oot|Skulltula House 10 Tokens",
+              "{}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Kak 20 Gold Skulltula Reward",
+            "short_name": "20 Tokens",
+            "access_rules": [
+              "$oot|Skulltula House 20 Tokens",
+              "{}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Kak 30 Gold Skulltula Reward",
+            "short_name": "30 Tokens",
+            "access_rules": [
+              "$oot|Skulltula House 30 Tokens",
+              "{}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Kak 40 Gold Skulltula Reward",
+            "short_name": "40 Tokens",
+            "access_rules": [
+              "$oot|Skulltula House 40 Tokens",
+              "{}"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Kak 50 Gold Skulltula Reward",
+            "short_name": "50 Tokens",
+            "access_rules": [
+              "$oot|Skulltula House 50 Tokens",
+              "{}"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1760,
+            "y": 420
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1760,
+            "y": 420
+          }
+        ]
+      },
+      {
+        "name": "Kak Potion Shop",
+        "sections": [
+          {
+            "name": "Item 1",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 1"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 2"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Item 3",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Item 4",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 4"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Item 5",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 5"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Item 6",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 6"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Item 7",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 7"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Item 8",
+            "access_rules": [
+              "$oot|Kakariko Potion Shop Item 8"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_shopShuffleOot_none"
+            ],
+            "x": 1795,
+            "y": 340
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_shopShuffleOot_none"
+            ],
+            "x": 1795,
+            "y": 340
+          }
+        ]
+      },
+      {
+        "name": "Kak Bazaar",
+        "access_rules": [
+          "$oot|Kakariko Bazaar Item 1"
+        ],
+        "sections": [
+          {
+            "name": "Item 1",
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "item_count": 1
+          },
+          {
+            "name": "Item 3",
+            "item_count": 1
+          },
+          {
+            "name": "Item 4",
+            "item_count": 1
+          },
+          {
+            "name": "Item 5",
+            "item_count": 1
+          },
+          {
+            "name": "Item 6",
+            "item_count": 1
+          },
+          {
+            "name": "Item 7",
+            "item_count": 1
+          },
+          {
+            "name": "Item 8",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "force_invisibility_rules": [
+              "setting_shopShuffleOot_none"
+            ],
+            "x": 1760,
+            "y": 340
+          },
+          {
+            "map": "oot_er_locations",
+            "force_invisibility_rules": [
+              "setting_shopShuffleOot_none"
+            ],
+            "x": 1760,
+            "y": 340
+          }
+        ]
+      },
+      {
+        "name": "Kak Above Impas House",
+        "sections": [
+          {
+            "name": "Kak GS Above Impas House (N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Kakariko GS Roof"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1795,
+            "y": 455
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1795,
+            "y": 455
+          }
+        ]
+      },
+      {
+        "name": "Kak Child GS",
+        "sections": [
+          {
+            "name": "Kak GS Tree (N)",
+            "short_name": "Tree",
+            "access_rules": [
+              "$oot|Kakariko GS Tree"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "Kak GS Skulltula House (N)",
+            "short_name": "Skulltula House",
+            "access_rules": [
+              "$oot|Kakariko GS House of Skulltula"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "Kak GS House Under Construction (N)",
+            "short_name": "Construction",
+            "access_rules": [
+              "$oot|Kakariko GS Shooting Gallery"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "Kak GS Guards House (N)",
+            "short_name": "Guards House",
+            "access_rules": [
+              "$oot|Kakariko GS Bazaar"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          },
+          {
+            "name": "Kak GS Watchtower (N)",
+            "short_name": "Watchtower",
+            "access_rules": [
+              "$oot|Kakariko GS Ladder"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1725,
+            "y": 380
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1725,
+            "y": 380
+          }
+        ]
+      },
+      {
+        "name": "Graveyard",
+        "children": [
+          {
+            "name": "Dampe",
+            "sections": [
+              {
+                "name": "Graveyard Dampe Gravedigging Tour",
+                "short_name": "HP",
+                "access_rules": [
+                  "$oot|Graveyard Dampe Game"
+                ],
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2035,
+                "y": 395
+              },
+              {
+                "map": "oot_er_locations",
+                "x": 2035,
+                "y": 395
               }
             ]
           },
           {
-            "name": "Lost Woods Grass Clusters",
+            "name": "Graveyard",
             "color": "#0936a0",
             "children": [
               {
-                "name": "Grass Shuffle",
+                "name": "Graveyard Grass Patch",
                 "sections": [
                   {
-                    "name": "4 Groups Of 3",
+                    "name": "Grass Shuffle",
                     "access_rules": [
-                      "$oot|Lost Woods Grass Clusters"
+                      "$oot|Graveyard Grass In Entrance area"
                     ],
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
-                    "item_count": 4
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -680,55 +2853,176 @@
                     "force_invisibility_rules": [
                       "setting_GrassShuffleOOT_false"
                     ],
-                    "x": 2144,
-                    "y": 812
+                    "x": 1992,
+                    "y": 384
                   },
                   {
                     "map": "oot_er_locations",
                     "force_invisibility_rules": [
                       "setting_GrassShuffleOOT_false"
                     ],
-                    "x": 2144,
-                    "y": 812
+                    "x": 1992,
+                    "y": 384
                   }
                 ]
               }
             ]
           },
           {
-            "name": "LW Scrubs Grotto",
+            "name": "Graveyard Dampes Grave",
+            "short_name": "Dampes Grave",
+            "access_rules": [
+              "$oot|Graveyard Dampe Tomb Reward 1"
+            ],
             "sections": [
               {
-                "name": "LW Deku Scrub Grotto Front",
-                "short_name": "Front",
-                "access_rules": [
-                  "$oot|Lost Woods Grotto Scrub Nuts Upgrade"
-                ],
-                "visibility_rules": [
-                  "setting_scrubShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
+                "name": "Graveyard Hookshot Chest",
+                "short_name": "Chest",
                 "item_count": 1
               },
               {
-                "name": "LW Deku Scrub Grotto Rear",
-                "short_name": "Rear",
+                "name": "Graveyard Dampe Race Freestanding PoH",
+                "short_name": "HP",
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2035,
+                "y": 325
+              },
+              {
+                "map": "oot_er_locations",
+                "x": 2035,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Shield Grave",
+            "short_name": "Shield Grave",
+            "sections": [
+              {
+                "name": "Graveyard Shield Grave Chest",
+                "short_name": "Chest",
                 "access_rules": [
-                  "$oot|Lost Woods Grotto Scrub Back"
+                  "$oot|Graveyard Fairy Tomb"
                 ],
-                "visibility_rules": [
-                  "setting_scrubShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
                 "item_count": 1
               },
               {
-                "name": "LW Deku Scrub Grotto Big Fairy",
-                "short_name": "LW Grotto Big Fairy",
+                "name": "Fairy Fountain Shuffle",
+                "short_name": "Fairy Fountain",
                 "access_rules": [
-                  "$oot|Lost Woods Grotto Big Fairy"
+                  "$oot|Graveyard Fairy Fountain"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_FairyFountainShuffleOOT_false"
+                ],
+                "x": 2035,
+                "y": 360
+              },
+              {
+                "map": "oot_er_locations",
+                "force_invisibility_rules": [
+                  "setting_FairyFountainShuffleOOT_false"
+                ],
+                "x": 2035,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Heart Piece Grave",
+            "short_name": "HP Grave",
+            "sections": [
+              {
+                "name": "Graveyard Heart Piece Grave Chest",
+                "short_name": "Play Suns Song",
+                "access_rules": [
+                  "$oot|Graveyard ReDead Tomb"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2070,
+                "y": 360
+              },
+              {
+                "map": "oot_er_locations",
+                "x": 2070,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "name": "Graveyard Ledge",
+            "sections": [
+              {
+                "name": "Graveyard Freestanding PoH",
+                "short_name": "Box HP",
+                "access_rules": [
+                  "$oot|Graveyard Crate HP"
+                ],
+                "chest_unopened_img": "images/HP.png",
+                "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1965,
+                "y": 325
+              },
+              {
+                "map": "oot_er_locations",
+                "x": 1965,
+                "y": 325
+              }
+            ]
+          },
+          {
+            "name": "Royal Family's Tomb",
+            "short_name": "Royal Tomb",
+            "sections": [
+              {
+                "name": "Song from Royal Familys Tomb",
+                "short_name": "Song",
+                "access_rules": [
+                  "$oot|Graveyard Royal Tomb Song"
+                ],
+                "chest_unopened_img": "images/grey_note.png",
+                "chest_opened_img": "images/grey_note_check.png",
+                "item_count": 1
+              },
+              {
+                "name": "Royal Family's Tomb Chest",
+                "short_name": "Chest",
+                "access_rules": [
+                  "$oot|Graveyard Royal Tomb Chest"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Royal Family's Tomb Big Fairy",
+                "short_name": "RFT Big Fairy",
+                "access_rules": [
+                  "$oot|Graveyard Royal Tomb Big Fairy"
                 ],
                 "visibility_rules": [
                   "setting_bigFairyShuffleOOT_true"
@@ -741,2012 +3035,122 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 2190,
-                "y": 725
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2190,
-                "y": 725
-              }
-            ]
-          },
-          {
-            "name": "LW Near Deku Theater",
-            "sections": [
-              {
-                "name": "LW GS Bean Patch Near Theater",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Lost Woods GS Soil Theater"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "LW GS Above Theater (N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Lost Woods GS Bean Ride"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2140,
-                "y": 740
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2140,
-                "y": 740
-              }
-            ]
-          },
-          {
-            "name": "Deku Theater",
-            "sections": [
-              {
-                "name": "Deku Theater Skull Mask",
-                "short_name": "Skull Mask",
-                "access_rules": [
-                  "$oot|Deku Theater Sticks Upgrade"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Deku Theater Mask of Truth",
-                "short_name": "Mask of Truth",
-                "access_rules": [
-                  "$oot|Deku Theater Nuts Upgrade"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2080,
-                "y": 740
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2080,
-                "y": 740
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Sacred Meadow",
-        "color": "#18a50e",
-        "children": [
-          {
-            "name": "Songs in Forest",
-            "sections": [
-              {
-                "name": "Song from Saria",
-                "short_name": "Song",
-                "access_rules": [
-                  "$oot|Saria's Song"
-                ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              },
-              {
-                "name": "Song from Sheik",
-                "access_rules": [
-                  "$oot|Sacred Meadow Sheik Song"
-                ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2155,
-                "y": 635
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2155,
-                "y": 635
-              }
-            ]
-          },
-          {
-            "name": "SFM Wolfos Grotto",
-            "access_rules": [
-              "$oot|Sacred Meadow Grotto"
-            ],
-            "sections": [
-              {
-                "name": "SFM Wolfos Grotto Chest",
-                "short_name": "Chest",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2185,
-                "y": 685
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2185,
-                "y": 685
-              }
-            ]
-          },
-          {
-            "name": "SFM Storms Grotto",
-            "sections": [
-              {
-                "name": "SFM Deku Scrubs Grotto",
-                "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$oot|Sacred Meadow Storms Grotto Back Scrub"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "clear_as_group": false,
-                "item_count": 2
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
-                ],
-                "x": 2190,
-                "y": 635
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
-                ],
-                "x": 2190,
-                "y": 635
-              }
-            ]
-          },
-          {
-            "name": "SFM Fairy Fountain",
-            "color": "#18a50e",
-            "children": [
-              {
-                "name": "SFM Fairy Fountain",
-                "sections": [
-                  {
-                    "name": "Fairy Fountain shuffle",
-                    "access_rules": [
-                      "$oot|Sacred Meadow Fairy Fountain"
-                    ],
-                    "chest_unopened_img": "images/Fairy.png",
-                    "chest_opened_img": "images/FairyGreyscale.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_false"
-                    ],
-                    "x": 2148,
-                    "y": 680
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_false"
-                    ],
-                    "x": 2148,
-                    "y": 680
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "SFM Maze",
-            "sections": [
-              {
-                "name": "SFM GS (Adult, N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Sacred Meadow GS Night Adult"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 2230,
-                "y": 665
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 2230,
-                "y": 665
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Field",
-        "color": "#09a09d",
-        "children": [
-          {
-            "name": "HF Inside Fence Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Scrub HP"
-            ],
-            "sections": [
-              {
-                "name": "HF Deku Scrub Grotto",
-                "short_name": "Deku Scrub",
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "item_count": "1"
-              },
-              {
-                "name": "HF Grotto Big Fairy",
-                "short_name": "HF Big Fairy",
-                "chest_unopened_img": "images/BigFairyStorms.png",
-                "chest_opened_img": "images/BigFairyStormsGrey.png",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Big Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1140,
-                "y": 1000
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1140,
-                "y": 1000
-              }
-            ]
-          },
-          {
-            "name": "HF Ocarina of Time",
-            "sections": [
-              {
-                "name": "HF Ocarina of Time Item",
-                "access_rules": [
-                  "$oot|Hyrule Field Ocarina of Time",
-                  "{}"
-                ],
-                "short_name": "Item",
-                "item_count": 1
-              },
-              {
-                "name": "Song from Ocarina of Time",
-                "short_name": "Song",
-                "access_rules": [
-                  "$oot|Hyrule Field Song of Time",
-                  "{}"
-                ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1440,
-                "y": 465
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1440,
-                "y": 465
-              }
-            ]
-          },
-          {
-            "name": "HF Southeast Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Southeast"
-            ],
-            "sections": [
-              {
-                "name": "HF Southeast Grotto Chest",
-                "short_name": "Chest",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1430,
-                "y": 925
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1430,
-                "y": 925
-              }
-            ]
-          },
-          {
-            "name": "HF Open Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Open"
-            ],
-            "sections": [
-              {
-                "name": "HF Open Grotto Chest",
-                "short_name": "Chest",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1205,
-                "y": 995
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1205,
-                "y": 995
-              }
-            ]
-          },
-          {
-            "name": "HF Near Market Grotto",
-            "short_name": "Boulda",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Market"
-            ],
-            "sections": [
-              {
-                "name": "HF Near Market Grotto Chest",
-                "short_name": "Chest",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1370,
-                "y": 440
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1370,
-                "y": 440
-              }
-            ]
-          },
-          {
-            "name": "HF Tektite Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Tektite HP"
-            ],
-            "sections": [
-              {
-                "name": "HF Tektite Grotto Freestanding PoH",
-                "short_name": "HP",
-                "chest_unopened_img": "images/HP.png",
-                "chest_opened_img": "images/HP_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1150,
-                "y": 480
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1150,
-                "y": 480
-              }
-            ]
-          },
-          {
-            "name": "HF Near Kak Grotto",
-            "sections": [
-              {
-                "name": "HF GS Near Kak Grotto",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Near Kakariko GS"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1550,
-                "y": 405
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1550,
-                "y": 405
-              }
-            ]
-          },
-          {
-            "name": "HF Big Fairy",
-            "sections": [
-              {
-                "name": "Play the Song of Storms",
-                "short_name": "HF Pond Fairy",
-                "access_rules": [
-                  "$oot|Death Mountain Big Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
-                ],
-                "chest_unopened_img": "images/BigFairyStorms.png",
-                "chest_opened_img": "images/BigFairyStormsGrey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1830,
-                "y": 580
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1830,
-                "y": 580
-              }
-            ]
-          },
-          {
-            "name": "HF Cow Grotto",
-            "sections": [
-              {
-                "name": "HF GS Cow Grotto",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Hyrule Field Grotto Near Gerudo GS"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "HF Cow Grotto Cow",
-                "short_name": "Cow",
-                "access_rules": [
-                  "$oot|Hyrule Field Cow"
-                ],
-                "visibility_rules": [
-                  "setting_cowShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/cow.png",
-                "chest_opened_img": "images/bottle_milk.png",
-                "item_count": 1
-              },
-              {
-                "name": "HF Cow Grotto Grass",
-                "short_name": "HF Cow Grass",
-                "access_rules": [
-                  "$oot|Hyrule Field Cow"
-                ],
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 970,
-                "y": 660
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 970,
-                "y": 660
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Field",
-        "color": "#0936a0",
-        "children": [
-          {
-            "name": "HF Grass Patch",
-            "sections": [
-              {
-                "name": "Grass Shuffle",
-                "access_rules": [
-                  "$oot|Hyrule Field grass Near KF"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1732,
-                "y": 688
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1732,
-                "y": 688
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Field",
-        "color": "#0936a0",
-        "children": [
-          {
-            "name": "Grass Shuffle",
-            "sections": [
-              {
-                "name": "HF Grass Patch",
-                "access_rules": [
-                  "$oot|Hyrule Field grass Near LLR"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1494,
-                "y": 528
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1494,
-                "y": 528
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Field",
-        "color": "#0936a0",
-        "children": [
-          {
-            "name": "HF Grass Patch",
-            "sections": [
-              {
-                "name": "Grass Shuffle",
-                "access_rules": [
-                  "$oot|Hyrule Field grass Near SE Grotto"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1420,
-                "y": 872
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1420,
-                "y": 872
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Hyrule Field",
-        "color": "#0936a0",
-        "children": [
-          {
-            "name": "HF Grass Patch",
-            "sections": [
-              {
-                "name": "Grass Shuffle",
-                "access_rules": [
-                  "$oot|Hyrule Field grass Near LLR rear"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1346,
-                "y": 816
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1346,
-                "y": 816
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lake Hylia",
-        "color": "#0936a0",
-        "children": [
-          {
-            "name": "LH Underwater Item",
-            "sections": [
-              {
-                "name": "Dive down",
-                "access_rules": [
-                  "$oot|Lake Hylia Underwater Bottle"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1050,
-                "y": 1265
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1050,
-                "y": 1265
-              }
-            ]
-          },
-          {
-            "name": "Fishing Pond",
-            "sections": [
-              {
-                "name": "Child Fishing Lunker Reward",
-                "access_rules": [
-                  "$oot|Fishing Pond Child"
-                ],
-                "chest_unopened_img": "images/HyruleBass.png",
-                "chest_opened_img": "images/HyruleBassGreyscale.png",
-                "item_count": 1
-              },
-              {
-                "name": "Adult Fishing Lunker Reward",
-                "access_rules": [
-                  "$oot|Fishing Pond Adult"
-                ],
-                "chest_unopened_img": "images/HyruleBass.png",
-                "chest_opened_img": "images/HyruleBassGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1270,
-                "y": 1215
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1270,
-                "y": 1215
-              }
-            ]
-          },
-          {
-            "name": "Fishing Pond",
-            "sections": [
-              {
-                "name": "Child Hylian Loaches",
-                "access_rules": [
-                  "$oot|Fishing Pond Child Loaches"
-                ],
-                "chest_unopened_img": "images/HylianLoach.png",
-                "chest_opened_img": "images/LoachGreyscale.png",
-                "item_count": 2
-              },
-              {
-                "name": "Adult Hylian Loach",
-                "access_rules": [
-                  "$oot|Fishing Pond Adult Hylian Loach"
-                ],
-                "chest_unopened_img": "images/HylianLoach.png",
-                "chest_opened_img": "images/LoachGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1270,
-                "y": 1246
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1270,
-                "y": 1246
-              }
-            ]
-          },
-          {
-            "name": "LH Small Island",
-            "sections": [
-              {
-                "name": "Shoot the sun",
-                "access_rules": [
-                  "$oot|Lake Hylia Fire Arrow"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "LH GS Small Island (N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Lake Hylia GS Island"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "LH Big Fairy",
-                "short_name": "LH Big Fairy",
-                "access_rules": [
-                  "$oot|Lake Hylia GS Island Big Fairy"
-                ],
-                "visibility_rules": [
-                  "setting_bigFairyShuffleOOT_true"
-                ],
-                "chest_unopened_img": "images/BigFairyStorms.png",
-                "chest_opened_img": "images/BigFairyStormsGrey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1135,
-                "y": 1405
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1135,
-                "y": 1405
-              }
-            ]
-          },
-          {
-            "name": "LH Lab Tower",
-            "sections": [
-              {
-                "name": "LH Freestanding PoH",
-                "short_name": "HP",
-                "access_rules": [
-                  "$oot|Lake Hylia HP"
-                ],
-                "chest_unopened_img": "images/HP.png",
-                "chest_opened_img": "images/HP_grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 960,
-                "y": 1160
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 960,
-                "y": 1160
-              }
-            ]
-          },
-          {
-            "name": "LH Lab",
-            "sections": [
-              {
-                "name": "LH Lab Dive",
-                "access_rules": [
-                  "$oot|Laboratory Dive"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Give Frog",
-                "access_rules": [
-                  "$oot|Laboratory Eye Drops"
-                ],
-                "chest_unopened_img": "images/Eyeball_Frog.png",
-                "chest_opened_img": "images/Eyeball_Frog_Grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "LH GS Lab Crate",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Laboratory GS Crate"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 960,
-                "y": 1200
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 960,
-                "y": 1200
-              }
-            ]
-          },
-          {
-            "name": "LH Grotto",
-            "sections": [
-              {
-                "name": "LH Deku Scrubs Grotto",
-                "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$oot|Lake Hylia Grotto Center Scrub"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "clear_as_group": false,
-                "item_count": 3
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
-                ],
-                "x": 870,
-                "y": 1310
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
-                ],
-                "x": 870,
-                "y": 1310
-              }
-            ]
-          },
-          {
-            "name": "LH Bean Patch",
-            "sections": [
-              {
-                "name": "LH GS Bean Patch",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Lake Hylia GS Soil"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1000,
-                "y": 1180
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1000,
-                "y": 1180
-              }
-            ]
-          },
-          {
-            "name": "LH Lab Wall",
-            "sections": [
-              {
-                "name": "LH GS Lab Wall (N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Lake Hylia GS Lab Wall"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 930,
-                "y": 1200
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 930,
-                "y": 1200
-              }
-            ]
-          },
-          {
-            "name": "LH Tree",
-            "sections": [
-              {
-                "name": "LH GS Tree (N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Lake Hylia GS Big Tree"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1010,
-                "y": 1415
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1010,
-                "y": 1415
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lake Hylia",
-        "color": "#0936a0",
-        "children": [
-          {
-            "name": "LH Grass Patches",
-            "sections": [
-              {
-                "name": "Grass Shuffle",
-                "access_rules": [
-                  "$oot|Lake Hylia grass patches x3"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 3
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1042,
-                "y": 1156
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1042,
-                "y": 1156
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lake Hylia",
-        "color": "#0936a0",
-        "children": [
-          {
-            "name": "LH Grass Around Scarecrows",
-            "sections": [
-              {
-                "name": "Grass Shuffle",
-                "access_rules": [
-                  "$oot|Lake Hylia Grass Near Scarecrows"
-                ],
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1140,
-                "y": 1182
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
-                "x": 1140,
-                "y": 1182
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Lon Lon Ranch",
-        "color": "#09a09d",
-        "children": [
-          {
-            "name": "Malon at Ranch",
-            "sections": [
-              {
-                "name": "Song from Malon",
-                "short_name": "Song",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch Malon Song"
-                ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1295,
-                "y": 645
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1295,
-                "y": 645
-              }
-            ]
-          },
-          {
-            "name": "LLR Talons House",
-            "sections": [
-              {
-                "name": "LLR Talons Cucco Game",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch Talon Bottle"
-                ],
-                "chest_unopened_img": "images/Cucco.png",
-                "chest_opened_img": "images/Cucco_Grey.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1345,
-                "y": 590
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1345,
-                "y": 590
-              }
-            ]
-          },
-          {
-            "name": "LLR Tower",
-            "sections": [
-              {
-                "name": "LLR Freestanding PoH",
-                "short_name": "HP",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch Silo HP"
-                ],
-                "chest_unopened_img": "images/HP.png",
-                "chest_opened_img": "images/HP_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "LLR Tower Cows",
-                "short_name": "Cows",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch Silo Cow Front"
-                ],
-                "visibility_rules": [
-                  "setting_cowShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/cow.png",
-                "chest_opened_img": "images/bottle_milk.png",
-                "item_count": 2
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1225,
-                "y": 690
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1225,
-                "y": 690
-              }
-            ]
-          },
-          {
-            "name": "LLR Stables",
-            "sections": [
-              {
-                "name": "LLR Stables Cows",
-                "short_name": "Cows",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch Stables Cow Left"
-                ],
-                "visibility_rules": [
-                  "setting_cowShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/cow.png",
-                "chest_opened_img": "images/bottle_milk.png",
-                "item_count": 2
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1300,
-                "y": 590
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1300,
-                "y": 590
-              }
-            ]
-          },
-          {
-            "name": "LLR Grotto",
-            "sections": [
-              {
-                "name": "LLR Deku Scrubs Grotto",
-                "short_name": "Deku Scrubs",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch Grotto Center Scrub"
-                ],
-                "chest_unopened_img": "images/deku_scrub.png",
-                "chest_opened_img": "images/deku_scrub_grey.png",
-                "clear_as_group": false,
-                "item_count": 3
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
-                ],
-                "x": 1375,
-                "y": 690
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_scrubShuffleOot_false"
-                ],
-                "x": 1375,
-                "y": 690
-              }
-            ]
-          },
-          {
-            "name": "LLR GS",
-            "sections": [
-              {
-                "name": "LLR GS Tree",
-                "short_name": "Tree",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch GS Tree"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "LLR GS Rain Shed (N)",
-                "short_name": "Rain Shed",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch GS Rain Shed"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "LLR GS House Window (N)",
-                "short_name": "House Window",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch GS House"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "LLR GS Back Wall (N)",
-                "short_name": "Back Wall",
-                "access_rules": [
-                  "$oot|Lon Lon Ranch GS Back Wall"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1325,
-                "y": 675
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1325,
-                "y": 675
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Kakariko Village",
-        "color": "#6909a0",
-        "children": [
-          {
-            "name": "Kak Redead Grotto",
-            "access_rules": [
-              "$oot|Kakariko Grotto Front"
-            ],
-            "sections": [
-              {
-                "name": "Kak Redead Grotto Chest",
-                "short_name": "Chest",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1760,
-                "y": 380
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1760,
-                "y": 380
-              }
-            ]
-          },
-          {
-            "name": "Kakariko Grass Around Tree",
-            "color": "#0936a0",
-            "children": [
-              {
-                "name": "Kakariko Grass Around Tree",
-                "sections": [
-                  {
-                    "name": "Grass Shuffle",
-                    "access_rules": [
-                      "$oot|Kakariko Grass Around Tree"
-                    ],
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 1726,
-                    "y": 410
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 1726,
-                    "y": 410
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Kakariko Grass Near Graveyard",
-            "color": "#0936a0",
-            "children": [
-              {
-                "name": "Near Cucco Lady",
-                "sections": [
-                  {
-                    "name": "Grass Shuffle",
-                    "access_rules": [
-                      "$oot|Kakariko Grass Near Cucco Lady"
-                    ],
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 1910,
-                    "y": 410
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "x": 1910,
-                    "y": 410
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "Kak Open Grotto",
-            "access_rules": [
-              "$oot|Kakariko Grotto Back"
-            ],
-            "sections": [
-              {
-                "name": "Kak Open Grotto Chest",
-                "short_name": "Chest",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1870,
-                "y": 305
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1870,
-                "y": 305
-              }
-            ]
-          },
-          {
-            "name": "Kak Impas House Back",
-            "sections": [
-              {
-                "name": "Kak Impas House Freestanding PoH",
-                "short_name": "HP",
-                "access_rules": [
-                  "$oot|Kakariko Impa House HP"
-                ],
-                "chest_unopened_img": "images/HP.png",
-                "chest_opened_img": "images/HP_grey.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak Impas House Cow",
-                "short_name": "Cow",
-                "access_rules": [
-                  "$oot|Kakariko Cow"
-                ],
-                "visibility_rules": [
-                  "setting_cowShuffleOot_true"
-                ],
-                "chest_unopened_img": "images/cow.png",
-                "chest_opened_img": "images/bottle_milk.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1830,
-                "y": 430
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1830,
-                "y": 430
-              }
-            ]
-          },
-          {
-            "name": "Kak Man on Roof",
-            "sections": [
-              {
-                "name": "Talk to him",
-                "access_rules": [
-                  "$oot|Kakariko Man on Roof"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1830,
+                "x": 2105,
                 "y": 360
               },
               {
                 "map": "oot_er_locations",
-                "x": 1830,
+                "x": 2105,
                 "y": 360
               }
             ]
           },
           {
-            "name": "Kak Shooting Gallery",
+            "name": "Graveyard Wall",
             "sections": [
               {
-                "name": "Kak Shooting Gallery Reward",
-                "short_name": "Reward",
+                "name": "Graveyard GS Wall (N)",
+                "short_name": "GS",
                 "access_rules": [
-                  "$oot|Shooting Gallery Adult"
+                  "$oot|Graveyard GS Wall"
                 ],
+                "visibility_rules": [
+                  "setting_goldSkulltulaTokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1830,
+                "x": 2070,
                 "y": 395
               },
               {
                 "map": "oot_er_locations",
-                "x": 1830,
+                "x": 2070,
                 "y": 395
               }
             ]
           },
           {
-            "name": "Kak Windmill",
+            "name": "Graveyard Bean Patch",
             "sections": [
               {
-                "name": "Kak Windmill Freestanding PoH",
+                "name": "Graveyard GS Bean Patch",
+                "short_name": "GS",
+                "access_rules": [
+                  "$oot|Graveyard GS Soil"
+                ],
+                "visibility_rules": [
+                  "setting_goldSkulltulaTokens_overworld"
+                ],
+                "chest_unopened_img": "images/skulltula.png",
+                "chest_opened_img": "images/skulltula_token.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2000,
+                "y": 325
+              },
+              {
+                "map": "oot_er_locations",
+                "x": 2000,
+                "y": 325
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Death Mountain",
+    "color": "#a01009",
+    "children": [
+      {
+        "name": "Death Mountain Trail",
+        "children": [
+          {
+            "name": "Top of DC",
+            "sections": [
+              {
+                "name": "DMT Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
-                  "$oot|Windmill HP"
+                  "$oot|Death Mountain HP"
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
                 "item_count": 1
-              },
-              {
-                "name": "Song from Windmill",
-                "short_name": "Guru-Guru",
-                "access_rules": [
-                  "$oot|Windmill Song of Storms"
-                ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1920,
-                "y": 345
+                "x": 1655,
+                "y": 195
               },
               {
                 "map": "oot_er_locations",
-                "x": 1920,
-                "y": 345
+                "x": 1655,
+                "y": 195
               }
             ]
           },
           {
-            "name": "Sheik in Kakariko",
+            "name": "DMT Chest",
             "sections": [
               {
-                "name": "Song",
+                "name": "Blast wall",
                 "access_rules": [
-                  "$oot|Kakariko Song Shadow",
-                  "{}"
+                  "$oot|Death Mountain Chest"
                 ],
-                "chest_unopened_img": "images/grey_note.png",
-                "chest_opened_img": "images/grey_note_check.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1795,
-                "y": 380
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1795,
-                "y": 380
-              }
-            ]
-          },
-          {
-            "name": "Anju",
-            "sections": [
-              {
-                "name": "Chickens",
-                "access_rules": [
-                  "$oot|Kakariko Anju Bottle"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Anju Adult",
-                "access_rules": [
-                  "$oot|Kakariko Anju Egg"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Show Happy Cucco",
-                "access_rules": [
-                  "$oot|Kakariko Anju Cojiro"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1865,
-                "y": 430
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1865,
-                "y": 430
-              }
-            ]
-          },
-          {
-            "name": "Kak Odd Medicine Building",
-            "sections": [
-              {
-                "name": "Give Mushroom",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Odd Potion"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1860,
-                "y": 340
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1860,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "name": "Kak House of Skulltula",
-            "sections": [
-              {
-                "name": "Kak 10 Gold Skulltula Reward",
-                "short_name": "10 Tokens",
-                "access_rules": [
-                  "$oot|Skulltula House 10 Tokens",
-                  "{}"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Kak 20 Gold Skulltula Reward",
-                "short_name": "20 Tokens",
-                "access_rules": [
-                  "$oot|Skulltula House 20 Tokens",
-                  "{}"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Kak 30 Gold Skulltula Reward",
-                "short_name": "30 Tokens",
-                "access_rules": [
-                  "$oot|Skulltula House 30 Tokens",
-                  "{}"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Kak 40 Gold Skulltula Reward",
-                "short_name": "40 Tokens",
-                "access_rules": [
-                  "$oot|Skulltula House 40 Tokens",
-                  "{}"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Kak 50 Gold Skulltula Reward",
-                "short_name": "50 Tokens",
-                "access_rules": [
-                  "$oot|Skulltula House 50 Tokens",
-                  "{}"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1760,
-                "y": 420
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1760,
-                "y": 420
-              }
-            ]
-          },
-          {
-            "name": "Kak Potion Shop",
-            "sections": [
-              {
-                "name": "Item 1",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 1"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Item 2",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 2"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Item 3",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 3"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Item 4",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 4"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Item 5",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 5"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Item 6",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 6"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Item 7",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 7"
-                ],
-                "item_count": 1
-              },
-              {
-                "name": "Item 8",
-                "access_rules": [
-                  "$oot|Kakariko Potion Shop Item 8"
-                ],
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
-                "x": 1795,
-                "y": 340
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
-                "x": 1795,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "name": "Kak Bazaar",
-            "access_rules": [
-              "$oot|Kakariko Bazaar Item 1"
-            ],
-            "sections": [
-              {
-                "name": "Item 1",
-                "item_count": 1
-              },
-              {
-                "name": "Item 2",
-                "item_count": 1
-              },
-              {
-                "name": "Item 3",
-                "item_count": 1
-              },
-              {
-                "name": "Item 4",
-                "item_count": 1
-              },
-              {
-                "name": "Item 5",
-                "item_count": 1
-              },
-              {
-                "name": "Item 6",
-                "item_count": 1
-              },
-              {
-                "name": "Item 7",
-                "item_count": 1
-              },
-              {
-                "name": "Item 8",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
-                "x": 1760,
-                "y": 340
-              },
-              {
-                "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
-                "x": 1760,
-                "y": 340
-              }
-            ]
-          },
-          {
-            "name": "Kak Above Impas House",
-            "sections": [
-              {
-                "name": "Kak GS Above Impas House (N)",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Kakariko GS Roof"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
-            ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1795,
-                "y": 455
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1795,
-                "y": 455
-              }
-            ]
-          },
-          {
-            "name": "Kak Child GS",
-            "sections": [
-              {
-                "name": "Kak GS Tree (N)",
-                "short_name": "Tree",
-                "access_rules": [
-                  "$oot|Kakariko GS Tree"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak GS Skulltula House (N)",
-                "short_name": "Skulltula House",
-                "access_rules": [
-                  "$oot|Kakariko GS House of Skulltula"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak GS House Under Construction (N)",
-                "short_name": "Construction",
-                "access_rules": [
-                  "$oot|Kakariko GS Shooting Gallery"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak GS Guards House (N)",
-                "short_name": "Guards House",
-                "access_rules": [
-                  "$oot|Kakariko GS Bazaar"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              },
-              {
-                "name": "Kak GS Watchtower (N)",
-                "short_name": "Watchtower",
-                "access_rules": [
-                  "$oot|Kakariko GS Ladder"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
               }
             ],
@@ -2754,419 +3158,29 @@
               {
                 "map": "oot",
                 "x": 1725,
-                "y": 380
+                "y": 195
               },
               {
                 "map": "oot_er_locations",
                 "x": 1725,
-                "y": 380
+                "y": 195
               }
             ]
           },
           {
-            "name": "Graveyard",
-            "children": [
+            "name": "DMT Storms Grotto",
+            "access_rules": [
+              "$oot|Death Mountain Grotto"
+            ],
+            "sections": [
               {
-                "name": "Dampe",
-                "sections": [
-                  {
-                    "name": "Graveyard Dampe Gravedigging Tour",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$oot|Graveyard Dampe Game"
-                    ],
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2035,
-                    "y": 395
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 2035,
-                    "y": 395
-                  }
-                ]
-              },
-              {
-                "name": "Graveyard",
-                "color": "#0936a0",
-                "children": [
-                  {
-                    "name": "Graveyard Grass Patch",
-                    "sections": [
-                      {
-                        "name": "Grass Shuffle",
-                        "access_rules": [
-                          "$oot|Graveyard Grass In Entrance area"
-                        ],
-                        "chest_unopened_img": "images/MM_Grass.png",
-                        "chest_opened_img": "images/GrassGreyscale.png",
-                        "item_count": 1
-                      }
-                    ],
-                    "map_locations": [
-                      {
-                        "map": "oot",
-                        "force_invisibility_rules": [
-                          "setting_GrassShuffleOOT_false"
-                        ],
-                        "x": 1992,
-                        "y": 384
-                      },
-                      {
-                        "map": "oot_er_locations",
-                        "force_invisibility_rules": [
-                          "setting_GrassShuffleOOT_false"
-                        ],
-                        "x": 1992,
-                        "y": 384
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "name": "Graveyard Dampes Grave",
-                "short_name": "Dampes Grave",
-                "access_rules": [
-                  "$oot|Graveyard Dampe Tomb Reward 1"
-                ],
-                "sections": [
-                  {
-                    "name": "Graveyard Hookshot Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Graveyard Dampe Race Freestanding PoH",
-                    "short_name": "HP",
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2035,
-                    "y": 325
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 2035,
-                    "y": 325
-                  }
-                ]
-              },
-              {
-                "name": "Graveyard Shield Grave",
-                "short_name": "Shield Grave",
-                "sections": [
-                  {
-                    "name": "Graveyard Shield Grave Chest",
-                    "short_name": "Chest",
-                    "access_rules": [
-                      "$oot|Graveyard Fairy Tomb"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Fairy Fountain Shuffle",
-                    "short_name": "Fairy Fountain",
-                    "access_rules": [
-                      "$oot|Graveyard Fairy Fountain"
-                    ],
-                    "chest_unopened_img": "images/Fairy.png",
-                    "chest_opened_img": "images/FairyGreyscale.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_false"
-                    ],
-                    "x": 2035,
-                    "y": 360
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_FairyFountainShuffleOOT_false"
-                    ],
-                    "x": 2035,
-                    "y": 360
-                  }
-                ]
-              },
-              {
-                "name": "Graveyard Heart Piece Grave",
-                "short_name": "HP Grave",
-                "sections": [
-                  {
-                    "name": "Graveyard Heart Piece Grave Chest",
-                    "short_name": "Play Suns Song",
-                    "access_rules": [
-                      "$oot|Graveyard ReDead Tomb"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2070,
-                    "y": 360
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 2070,
-                    "y": 360
-                  }
-                ]
-              },
-              {
-                "name": "Graveyard Ledge",
-                "sections": [
-                  {
-                    "name": "Graveyard Freestanding PoH",
-                    "short_name": "Box HP",
-                    "access_rules": [
-                      "$oot|Graveyard Crate HP"
-                    ],
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1965,
-                    "y": 325
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 1965,
-                    "y": 325
-                  }
-                ]
-              },
-              {
-                "name": "Royal Family's Tomb",
-                "short_name": "Royal Tomb",
-                "sections": [
-                  {
-                    "name": "Song from Royal Familys Tomb",
-                    "short_name": "Song",
-                    "access_rules": [
-                      "$oot|Graveyard Royal Tomb Song"
-                    ],
-                    "chest_unopened_img": "images/grey_note.png",
-                    "chest_opened_img": "images/grey_note_check.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Royal Family's Tomb Chest",
-                    "short_name": "Chest",
-                    "access_rules": [
-                      "$oot|Graveyard Royal Tomb Chest"
-                    ],
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Royal Family's Tomb Big Fairy",
-                    "short_name": "RFT Big Fairy",
-                    "access_rules": [
-                      "$oot|Graveyard Royal Tomb Big Fairy"
-                    ],
-                    "visibility_rules": [
-                      "setting_bigFairyShuffleOOT_true"
-                    ],
-                    "chest_unopened_img": "images/BigFairySun.png",
-                    "chest_opened_img": "images/BigFairySunGrey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2105,
-                    "y": 360
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 2105,
-                    "y": 360
-                  }
-                ]
-              },
-              {
-                "name": "Graveyard Wall",
-                "sections": [
-                  {
-                    "name": "Graveyard GS Wall (N)",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$oot|Graveyard GS Wall"
-                    ],
-                    "visibility_rules": [
-                      "setting_goldSkulltulaTokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2070,
-                    "y": 395
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 2070,
-                    "y": 395
-                  }
-                ]
-              },
-              {
-                "name": "Graveyard Bean Patch",
-                "sections": [
-                  {
-                    "name": "Graveyard GS Bean Patch",
-                    "short_name": "GS",
-                    "access_rules": [
-                      "$oot|Graveyard GS Soil"
-                    ],
-                    "visibility_rules": [
-                      "setting_goldSkulltulaTokens_overworld"
-                    ],
-                    "chest_unopened_img": "images/skulltula.png",
-                    "chest_opened_img": "images/skulltula_token.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 2000,
-                    "y": 325
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 2000,
-                    "y": 325
-                  }
-                ]
+                "name": "DMT Storms Grotto Chest",
+                "short_name": "Chest",
+                "item_count": 1
               }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "Death Mountain",
-        "color": "#a01009",
-        "children": [
-          {
-            "name": "Death Mountain Trail",
-            "children": [
+            ],
+            "map_locations": [
               {
-                "name": "Top of DC",
-                "sections": [
-                  {
-                    "name": "DMT Freestanding PoH",
-                    "short_name": "HP",
-                    "access_rules": [
-                      "$oot|Death Mountain HP"
-                    ],
-                    "chest_unopened_img": "images/HP.png",
-                    "chest_opened_img": "images/HP_grey.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1655,
-                    "y": 195
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 1655,
-                    "y": 195
-                  }
-                ]
-              },
-              {
-                "name": "DMT Chest",
-                "sections": [
-                  {
-                    "name": "Blast wall",
-                    "access_rules": [
-                      "$oot|Death Mountain Chest"
-                    ],
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1725,
-                    "y": 195
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 1725,
-                    "y": 195
-                  }
-                ]
-              },
-              {
-                "name": "DMT Storms Grotto",
-                "access_rules": [
-                  "$oot|Death Mountain Grotto"
-                ],
-                "sections": [
-                  {
-                    "name": "DMT Storms Grotto Chest",
-                    "short_name": "Chest",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "x": 1705,
-                    "y": 160
-                  },
-                  {
-                    "map": "oot_er_locations",
-                    "x": 1705,
-                    "y": 160
-                  },
-                  {
-                    "name": "DMT Storms Grotto Grass",
-                    "short_name": "DMT Grass",
-                    "access_rules": [
-                      "$oot|Death Mountain Grotto Grass"
-                    ],
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
-                    ],
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "item_count": 1
-                  }
-                ],
                 "map": "oot",
                 "x": 1705,
                 "y": 160
@@ -3175,99 +3189,120 @@
                 "map": "oot_er_locations",
                 "x": 1705,
                 "y": 160
-              }
-            ]
-          },
-          {
-            "name": "DMT Above Dodongos Cavern",
-            "short_name": "Rock Above DC",
-            "sections": [
+              },
               {
-                "name": "DMT GS Above Dodongos Cavern (Adult, N)",
-                "short_name": "GS",
+                "name": "DMT Storms Grotto Grass",
+                "short_name": "DMT Grass",
                 "access_rules": [
-                  "$oot|Death Mountain GS Above Dodongo"
+                  "$oot|Death Mountain Grotto Grass"
                 ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleOOT_false"
                 ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1690,
-                "y": 195
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1690,
-                "y": 195
-              }
-            ]
+            "map": "oot",
+            "x": 1705,
+            "y": 160
           },
           {
-            "name": "DMT Bean Patch",
-            "sections": [
-              {
-                "name": "DMT GS Bean Patch",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Death Mountain GS Soil"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
+            "map": "oot_er_locations",
+            "x": 1705,
+            "y": 160
+          }
+        ]
+      },
+      {
+        "name": "DMT Above Dodongos Cavern",
+        "short_name": "Rock Above DC",
+        "sections": [
+          {
+            "name": "DMT GS Above Dodongos Cavern (Adult, N)",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Death Mountain GS Above Dodongo"
             ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1715,
-                "y": 250
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1715,
-                "y": 250
-              }
-            ]
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1690,
+            "y": 195
           },
           {
-            "name": "DMT Near Kak",
-            "sections": [
-              {
-                "name": "DMT GS Near Kak",
-                "short_name": "GS",
-                "access_rules": [
-                  "$oot|Death Mountain GS Entrance"
-                ],
-                "visibility_rules": [
-                  "setting_goldSkulltulaTokens_overworld"
-                ],
-                "chest_unopened_img": "images/skulltula.png",
-                "chest_opened_img": "images/skulltula_token.png",
-                "item_count": 1
-              }
+            "map": "oot_er_locations",
+            "x": 1690,
+            "y": 195
+          }
+        ]
+      },
+      {
+        "name": "DMT Bean Patch",
+        "sections": [
+          {
+            "name": "DMT GS Bean Patch",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Death Mountain GS Soil"
             ],
-            "map_locations": [
-              {
-                "map": "oot",
-                "x": 1730,
-                "y": 285
-              },
-              {
-                "map": "oot_er_locations",
-                "x": 1730,
-                "y": 285
-              }
-            ]
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1715,
+            "y": 250
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1715,
+            "y": 250
+          }
+        ]
+      },
+      {
+        "name": "DMT Near Kak",
+        "sections": [
+          {
+            "name": "DMT GS Near Kak",
+            "short_name": "GS",
+            "access_rules": [
+              "$oot|Death Mountain GS Entrance"
+            ],
+            "visibility_rules": [
+              "setting_goldSkulltulaTokens_overworld"
+            ],
+            "chest_unopened_img": "images/skulltula.png",
+            "chest_opened_img": "images/skulltula_token.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "oot",
+            "x": 1730,
+            "y": 285
+          },
+          {
+            "map": "oot_er_locations",
+            "x": 1730,
+            "y": 285
           }
         ]
       }
