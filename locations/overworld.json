@@ -95,11 +95,17 @@
             "map_locations": [
               {
                 "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_HeartShuffleOOT_false"
+                ],
                 "x": 2214,
                 "y": 988
               },
               {
                 "map": "oot_er_locations",
+                "force_invisibility_rules": [
+                  "setting_HeartShuffleOOT_false"
+                ],
                 "x": 2214,
                 "y": 988
               }
@@ -3328,6 +3334,18 @@
             "chest_opened_img": "images/bottle_milk.png",
             "item_count": 1
           },
+           {
+                "name": "DMT Cow Grotto Hearts",
+                "access_rules": [
+                  "$oot|Death Mountain Cow Grotto Hearts"
+                ],
+                      "force_invisibility_rules": [
+                  "setting_HeartShuffleOOT_false"
+                ],
+                "chest_unopened_img": "images/Heart.png",
+                "chest_opened_img": "images/Heart_Grey.png",
+                "item_count": 4
+                  },
           {
             "name": "DMT Storms Grotto Grass",
             "short_name": "DMT Grass",
