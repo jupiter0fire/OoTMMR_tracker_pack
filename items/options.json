@@ -1255,6 +1255,26 @@
     ]
   },
   {
+    "name": "Fairy Fountain Shuffle in MM",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/Setting_FairyFountainShuffleOoT_False.png",
+        "img_mods": "@disabled",
+        "codes": "setting_FairyFountainShuffleMM,setting_FairyFountainShuffleMM_false",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/Setting_FairyFountainShuffleOoT_True.png",
+        "codes": "setting_FairyFountainShuffleMM,setting_FairyFountainShuffleMM_true",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Merchants Shuffle (MM)",
     "type": "progressive",
     "allow_disabled": false,
