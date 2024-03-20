@@ -2471,7 +2471,7 @@ function _oot_logic()
             ["Kokiri Forest"] = function () return true end,
         },
         ["locations"] = {
-            ["Kokiri Forest Cow"] = function () return is_adult() and event('MALON_COW') and can_play_epona() end,
+            ["Kokiri Forest Cow"] = function () return event('MALON_COW') and can_play_epona() end,
         },
     },
     ["Kokiri Forest"] = {
