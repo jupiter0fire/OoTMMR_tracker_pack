@@ -440,6 +440,8 @@
           {
             "name": "LW Near Shortcuts Grotto Chest",
             "short_name": "Chest",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -465,6 +467,8 @@
             "access_rules": [
               "$oot|Lost Woods Memory Game"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -513,6 +517,8 @@
             "access_rules": [
               "$oot|Lost Woods Odd Mushroom"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -520,6 +526,8 @@
             "access_rules": [
               "$oot|Lost Woods Poacher's Saw"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -527,6 +535,8 @@
             "access_rules": [
               "$oot|Lost Woods Skull Kid"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -614,6 +624,8 @@
             "access_rules": [
               "$oot|Lost Woods Gift from Saria"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -846,6 +858,8 @@
             "access_rules": [
               "$oot|Deku Theater Sticks Upgrade"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -854,6 +868,8 @@
             "access_rules": [
               "$oot|Deku Theater Nuts Upgrade"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -921,6 +937,8 @@
           {
             "name": "SFM Wolfos Grotto Chest",
             "short_name": "Chest",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
