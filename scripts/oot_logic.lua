@@ -831,6 +831,10 @@ function _oot_logic()
 		return has('OCARINA') or has('SHARED_OCARINA')
 	end
 
+	function has_oot_song_storms()
+		return has('OOT_SONG_STORMS')
+	end
+
 	function can_play(x)
 		return has_ocarina() and has(x)
 	end
@@ -840,7 +844,7 @@ function _oot_logic()
 	end
 
 	function can_play_time()
-		return has_ocarina() and ('SONG_TIME') and has_oot_button_cdown() and has_oot_button_a() and has_oot_button_cright()
+		return has_ocarina() and has_oot_song_storms() and has_oot_button_cdown() and has_oot_button_a() and has_oot_button_cright()
 	end
 
 	function can_play_epona()
