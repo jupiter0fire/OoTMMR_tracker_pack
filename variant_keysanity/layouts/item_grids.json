@@ -1172,17 +1172,6 @@
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN",
             "MM_KEY_SKELETON"
-          ],
-          [
-            "MM_BUTTON_A",
-            "MM_BUTTON_C-UP",
-            "MM_BUTTON_C-DOWN",
-            "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT",
-            "EMPTYSPACE",
-            "EMPTYSPACE",
-            "EMPTYSPACE",
-            "EMPTYSPACE"
           ]
         ]
       },
@@ -1199,7 +1188,7 @@
             "MM_NIGHT_2ND",
             "MM_DAY_FINAL",
             "MM_NIGHT_FINAL",
-            "EMPTYSPACE",
+            "EMPTYSPACE"
           ]
         ]
       },
@@ -1209,6 +1198,13 @@
         "item_margin": "1,1",
         "scale": 1.1,
         "rows": [
+          [
+            "MM_BUTTON_A",
+            "MM_BUTTON_C-UP",
+            "MM_BUTTON_C-DOWN",
+            "MM_BUTTON_C-LEFT",
+            "MM_BUTTON_C-RIGHT"
+          ],
           [
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_MILK_ROAD",
