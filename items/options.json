@@ -1075,46 +1075,6 @@
     ]
   },
   {
-    "name": "Ocarina Button Shuffle in OoT",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/Setting_OcarinaButtonShuffleOoT_False.png",
-        "img_mods": "@disabled",
-        "codes": "setting_OcarinaButtonShuffleOOT,setting_OcarinaButtonShuffleOOT_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/Setting_OcarinaButtonShuffleOoT_True.png",
-        "codes": "setting_OcarinaButtonShuffleOOT,setting_OcarinaButtonShuffleOOT_true",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Ocarina Button Shuffle in MM",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/Setting_OcarinaButtonShuffleMM_False.png",
-        "img_mods": "@disabled",
-        "codes": "setting_OcarinaButtonShuffleMM,setting_OcarinaButtonShuffleMM_false",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/Setting_OcarinaButtonShuffleMM_True.png",
-        "codes": "setting_OcarinaButtonShuffleMM,setting_OcarinaButtonShuffleMM_true",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Grass Shuffle in OoT",
     "type": "progressive",
     "allow_disabled": false,
