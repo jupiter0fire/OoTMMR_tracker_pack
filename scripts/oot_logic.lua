@@ -844,7 +844,7 @@ function _oot_logic()
 	end
 
 	function can_play_time()
-		return has_ocarina() and has_oot_song_storms() and has_oot_button_cdown() and has_oot_button_a() and has_oot_button_cright()
+		return has_ocarina() and ('SONG_TIME') and has_oot_button_cdown() and has_oot_button_a() and has_oot_button_cright()
 	end
 
 	function can_play_epona()
@@ -852,7 +852,7 @@ function _oot_logic()
 	end
 
 	function can_play_storms()
-		return has_ocarina() and ('SONG_STORMS') and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_a()
+		return has_ocarina() and has_oot_song_storms() and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_a()
 	end
 
 	function can_play_zelda()
