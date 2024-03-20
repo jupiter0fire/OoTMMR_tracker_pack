@@ -1174,23 +1174,23 @@
             "MM_KEY_SKELETON"
           ],
           [
-            "MM_DAY_1ST",
-            "MM_NIGHT_1ST",
-            "MM_DAY_2ND",
-            "MM_NIGHT_2ND",
-            "MM_DAY_FINAL",
-            "MM_NIGHT_FINAL",
-            "EMPTYSPACE",
-            "EMPTYSPACE",
-            "EMPTYSPACE"
-          ],
-          [
             "MM_BUTTON_A",
             "MM_BUTTON_C-UP",
             "MM_BUTTON_C-DOWN",
             "MM_BUTTON_C-LEFT",
             "MM_BUTTON_C-RIGHT",
             "EMPTYSPACE",
+            "EMPTYSPACE",
+            "EMPTYSPACE",
+            "EMPTYSPACE"
+          ],
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND",
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL",
             "EMPTYSPACE",
             "EMPTYSPACE",
             "EMPTYSPACE"
