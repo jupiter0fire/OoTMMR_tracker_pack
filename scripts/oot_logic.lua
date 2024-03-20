@@ -859,7 +859,7 @@ function _oot_logic()
 		return has('OOT_SONG_EMPTINESS')
 	end
 
-	function has_oot_TP_LIGHT()
+	function has_oot_tp_light()
 		return has('OOT_SONG_TP_LIGHT')
 	end
 
@@ -916,7 +916,7 @@ function _oot_logic()
 	end
 
 	function can_play_tp_light() 
-		return has_ocarina() and has_oot_TP_LIGHT() and has_oot_button_cup() and has_oot_button_cleft() and has_oot_button_cright()
+		return has_ocarina() and has_oot_tp_light() and has_oot_button_cup() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_tp_forest()
@@ -2471,7 +2471,7 @@ function _oot_logic()
             ["Kokiri Forest"] = function () return true end,
         },
         ["locations"] = {
-            ["Kokiri Forest Cow"] = function () return event('MALON_COW') and can_play_epona() end,
+            ["Kokiri Forest Cow"] = function () return is_adult() and event('MALON_COW') and can_play_epona() end,
         },
     },
     ["Kokiri Forest"] = {
@@ -3474,7 +3474,7 @@ function _oot_logic()
             ["Death Mountain"] = function () return true end,
         },
         ["locations"] = {
-            ["Death Mountain Grotto"] = function () return can_play_storms() end,
+            ["Death Mountain Grotto"] = function () return true end,
 	    ["Death Mountain Grotto Grass"] = function () return can_play_storms() and can_cut_grass() end,
         },
     },
@@ -3928,7 +3928,7 @@ function _oot_logic()
             ["Lake Hylia"] = function () return true end,
             ["Gerudo Fortress Exterior"] = function () return true end,
             ["Gerudo Valley"] = function () return is_child() or can_longshot() or can_ride_epona() or (is_adult() and carpenters_rescued()) end,
-            ["Gerudo Valley Storms Grotto"] = function () return hidden_grotto_storms() and is_adult() end,
+            ["Gerudo Valley Storms Grotto"] = function () return hidden_grotto_storms() end,
             ["Gerudo Valley Tent"] = function () return is_adult() end,
         },
         ["locations"] = {
