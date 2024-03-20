@@ -811,20 +811,20 @@ function _oot_logic()
 		return has('OOT_BUTTON_A')
 	end
 
-	function has_oot_button_c-right()
-		return has('OOT_BUTTON_C-RIGHT')
+	function has_oot_button_cright()
+		return has('OOT_BUTTON_CRIGHT')
 	end
 
-	function has_oot_button_c-left()
-		return has('OOT_BUTTON_C-LEFT')
+	function has_oot_button_cleft()
+		return has('OOT_BUTTON_CLEFT')
 	end
 
-	function has_oot_button_c-up()
-		return has('OOT_BUTTON_C-UP')
+	function has_oot_button_cup()
+		return has('OOT_BUTTON_CUP')
 	end
 
-	function has_oot_button_c-down()
-		return has('OOT_BUTTON_C-DOWN')
+	function has_oot_button_cdown()
+		return has('OOT_BUTTON_CDOWN')
 	end
 
 	function has_ocarina()
@@ -836,55 +836,55 @@ function _oot_logic()
 	end
 
 	function can_play_sun()
-		return has_ocarina() and ('SONG_SUN') and has_oot_button_c-up() and has_oot_button_c-down() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_SUN') and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_cright()
 	end
 
 	function can_play_time()
-		return has_ocarina() and ('SONG_TIME') and has_oot_button_c-down() and has_oot_button_a() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_TIME') and has_oot_button_cdown() and has_oot_button_a() and has_oot_button_cright()
 	end
 
 	function can_play_epona()
-		return has_ocarina() and ('SONG_EPONA') and has_oot_button_c-up() and has_oot_button_c-left() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_EPONA') and has_oot_button_cup() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_storms()
-		return has_ocarina() and ('OOT_SONG_STORMS') and has_oot_button_c-up() and has_oot_button_c-down() and has_oot_button_a()
+		return has_ocarina() and ('OOT_SONG_STORMS') and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_a()
 	end
 
 	function can_play_zelda()
-		return has_ocarina() and ('SONG_ZELDA') and has_oot_button_c-up() and has_oot_button_c-left() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_ZELDA') and has_oot_button_cup() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_saria()
-		return has_ocarina() and ('SONG_SARIA') and has_oot_button_c-down() and has_oot_button_c-left() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_SARIA') and has_oot_button_cdown() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_elegy()
-		return has_ocarina() and ('SONG_EMPTINESS') and has_oot_button_c-up() and has_oot_button_c-down() and has_oot_button_c-left() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_EMPTINESS') and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_tp_light() 
-		return has_ocarina() and ('SONG_TP_LIGHT') and has_oot_button_c-up() and has_oot_button_c-left() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_TP_LIGHT') and has_oot_button_cup() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_tp_forest()
-		return has_ocarina() and ('SONG_TP_FOREST') and has_oot_button_c-up() and has_oot_button_a() and has_oot_button_c-left() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_TP_FOREST') and has_oot_button_cup() and has_oot_button_a() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_tp_fire()
-		return has_ocarina() and ('SONG_TP_FIRE') and has_oot_button_a() and has_oot_button_c-down() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_TP_FIRE') and has_oot_button_a() and has_oot_button_cdown() and has_oot_button_cright()
 	end
 
 	function can_play_tp_water()
-		return has_ocarina() and ('SONG_TP_WATER') and has_oot_button_c-down() and has_oot_button_c-left() and has_oot_button_c-right() and has_oot_button_a()
+		return has_ocarina() and ('SONG_TP_WATER') and has_oot_button_cdown() and has_oot_button_cleft() and has_oot_button_cright() and has_oot_button_a()
 	end
 
 	function can_play_tp_shadow()
-		return has_ocarina() and ('SONG_TP_SHADOW') and has_oot_button_a() and has_oot_button_c-down() and has_oot_button_c-left() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_TP_SHADOW') and has_oot_button_a() and has_oot_button_cdown() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_tp_spirit()
-		return has_ocarina() and ('SONG_TP_SPIRIT') and has_oot_button_c-down() and has_oot_button_a() and has_oot_button_c-right()
+		return has_ocarina() and ('SONG_TP_SPIRIT') and has_oot_button_cdown() and has_oot_button_a() and has_oot_button_cright()
 	end
 
 	function has_skeleton_key_oot()
@@ -1088,7 +1088,7 @@ function _oot_logic()
 	end
 
 	function has_magic()
-		return (has('MAGIc-upGRADE') or has('SHARED_MAGIc-upGRADE')) and (event('MAGIC') or (setting('sharedMagic') and event('MM_MAGIC')) or (has_bottle() and (renewable(POTION_GREEN) or renewable(POTION_BLUE))))
+		return (has('MAGIcupGRADE') or has('SHARED_MAGIcupGRADE')) and (event('MAGIC') or (setting('sharedMagic') and event('MM_MAGIC')) or (has_bottle() and (renewable(POTION_GREEN) or renewable(POTION_BLUE))))
 	end
 
 	function can_use_din()
@@ -2971,7 +2971,7 @@ function _oot_logic()
         ["locations"] = {
             ["Lost Woods Target"] = function () return can_use_slingshot() end,
             ["Lost Woods Skull Kid"] = function () return is_child() and can_play_saria() end,
-            ["Lost Woods Memory Game"] = function () return is_child() and has_ocarina() and has_oot_button_c-down() and has_oot_button_c-up() and has_oot_button_c-left() and has_oot_button_c-right() and has_oot_button_a() end,
+            ["Lost Woods Memory Game"] = function () return is_child() and has_ocarina() and has_oot_button_cdown() and has_oot_button_cup() and has_oot_button_cleft() and has_oot_button_cright() and has_oot_button_a() end,
             ["Lost Woods Scrub Sticks Upgrade"] = function () return is_child() and can_hit_scrub() and scrub_price(0) end,
             ["Lost Woods Odd Mushroom"] = function () return adult_trade(COJIRO) end,
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) end,
@@ -4784,7 +4784,7 @@ function _oot_logic()
             ["Forest Temple Main"] = function () return small_keys(SMALL_KEY_FOREST, 1) or has_skeleton_key_oot() and (is_adult() or (has_nuts() or has_weapon() or has_explosives() or has_ranged_weapon_child())) end,
         },
         ["locations"] = {
-            ["MQ Forest Temple First Room Chest"] = function () return can_hit_triggers_distance() or can_hookshot() or has_explosives() or has_hover_boots() or can_use_din() or (has_weapon() and (has('MAGIc-upGRADE') or has('SHARED_MAGIc-upGRADE'))) end,
+            ["MQ Forest Temple First Room Chest"] = function () return can_hit_triggers_distance() or can_hookshot() or has_explosives() or has_hover_boots() or can_use_din() or (has_weapon() and (has('MAGIcupGRADE') or has('SHARED_MAGIcupGRADE'))) end,
             ["MQ Forest Temple GS Entryway"] = function () return can_collect_distance() end,
         },
     },
