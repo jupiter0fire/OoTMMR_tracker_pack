@@ -848,7 +848,7 @@ function _oot_logic()
 	end
 
 	function can_play_storms()
-		return has_ocarina() and ('OOT_SONG_STORMS') and (has_oot_button_cup() and (has_oot_button_cdown() and (has_oot_button_a()
+		return has_ocarina() and ('SONG_STORMS') and oot_button_cup() and oot_button_cdown() and oot_button_a()
 	end
 
 	function can_play_zelda()
