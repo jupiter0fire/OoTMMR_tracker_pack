@@ -2471,7 +2471,7 @@ function _oot_logic()
             ["Kokiri Forest"] = function () return true end,
         },
         ["locations"] = {
-            ["Kokiri Forest Cow"] = function () return is_adult() and event('MALON_COW') and can_play_epona() end,
+            ["Kokiri Forest Cow"] = function () return event('MALON_COW') and can_play_epona() end,
         },
     },
     ["Kokiri Forest"] = {
@@ -3474,7 +3474,7 @@ function _oot_logic()
             ["Death Mountain"] = function () return true end,
         },
         ["locations"] = {
-            ["Death Mountain Grotto"] = function () return true end,
+            ["Death Mountain Grotto"] = function () return can_play_storms() end,
 	    ["Death Mountain Grotto Grass"] = function () return can_play_storms() and can_cut_grass() end,
         },
     },
