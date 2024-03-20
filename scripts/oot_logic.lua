@@ -808,23 +808,23 @@ function _oot_logic()
 	end
 
 	function has_oot_button_a()
-		return has('OOT_BUTTON_A')
+		return has('BUTTON_A')
 	end
 
 	function has_oot_button_cright()
-		return has('OOT_BUTTON_CRIGHT')
+		return has('BUTTON_CRIGHT')
 	end
 
 	function has_oot_button_cleft()
-		return has('OOT_BUTTON_CLEFT')
+		return has('BUTTON_CLEFT')
 	end
 
 	function has_oot_button_cup()
-		return has('OOT_BUTTON_CUP')
+		return has('BUTTON_CUP')
 	end
 
 	function has_oot_button_cdown()
-		return has('OOT_BUTTON_CDOWN')
+		return has('BUTTON_CDOWN')
 	end
 
 	function has_ocarina()
@@ -848,7 +848,7 @@ function _oot_logic()
 	end
 
 	function can_play_storms()
-		return has_ocarina() and ('SONG_STORMS') and oot_button_cup() and oot_button_cdown() and oot_button_a()
+		return has_ocarina() and ('SONG_STORMS') and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_a()
 	end
 
 	function can_play_zelda()
@@ -888,7 +888,7 @@ function _oot_logic()
 	end
 
 	function has_skeleton_key_oot()
-		return has('OOT_KEY_SKELETON')
+		return has('KEY_SKELETON')
 	end
 
 	function has_sticks()
