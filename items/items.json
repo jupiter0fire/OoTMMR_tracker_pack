@@ -835,5 +835,11 @@
     "type": "toggle",
     "img": "images/rupee.png",
     "codes": "dummy"
+  },
+  {
+    "name": "Adult Dummy",
+    "type": "toggle",
+    "img": "images/emptyspace.png",
+    "codes": "dummy"
   }
 ]
