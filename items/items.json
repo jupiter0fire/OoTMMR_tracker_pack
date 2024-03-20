@@ -831,15 +831,15 @@
     "codes": "OOT_SONG_EMPTINESS"
   },
   {
-    "name": "Dummy",
-    "type": "toggle",
-    "img": "images/rupee.png",
-    "codes": "dummy"
-  },
-  {
     "name": "Adult Dummy",
     "type": "toggle",
     "img": "images/emptyspace.png",
+    "codes": "ADULT_DUMMY"
+  },
+  {
+    "name": "Dummy",
+    "type": "toggle",
+    "img": "images/rupee.png",
     "codes": "dummy"
   }
 ]
