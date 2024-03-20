@@ -29,7 +29,7 @@
             "faroreswind",
             "OOT_SWORD_MASTER",
             "OOT_SHIELD_HYLIAN",
-            "OOT_BUTTON_C-UP"
+            "OOT_BUTTON_CUP"
           ],
           [
             "OOT_BOOMERANG",
@@ -40,7 +40,7 @@
             "OOT_SPELL_LOVE",
             "OOT_SWORD_GORON",
             "OOT_SHIELD_MIRROR",
-            "OOT_BUTTON_C-DOWN"
+            "OOT_BUTTON_CDOWN"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -51,7 +51,7 @@
             "OOT_SONG_STORMS",
             "OOT_BOOTS_IRON",
             "OOT_BOOTS_HOVER",
-            "OOT_BUTTON_C-LEFT"
+            "OOT_BUTTON_CLEFT"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -62,7 +62,7 @@
             "OOT_SONG_TP_LIGHT",
             "OOT_SONG_EMPTINESS",
             "OOT_TUNIC_GORON",
-            "OOT_BUTTON_C-RIGHT"
+            "OOT_BUTTON_CRIGHT"
           ],
           [
             "bottle1",
@@ -593,7 +593,7 @@
             "OOT_BOOMERANG",
             "OOT_HAMMER",
             "OOT_OCARINA",
-            "OOT_BUTTON_C-UP"
+            "OOT_BUTTON_CUP"
           ],
           [
             "OOT_STRENGTH",
@@ -604,7 +604,7 @@
             "OOT_GERUDO_CARD",
             "OOT_WALLET1",
             "OOT_TUNIC_GORON",
-            "OOT_BUTTON_C-DOWN"
+            "OOT_BUTTON_CDOWN"
           ],
           [
             "OOT_MASK_BLAST",
@@ -615,7 +615,7 @@
             "OOT_SPELL_FIRE",
             "faroreswind",
             "OOT_SPELL_LOVE",
-            "OOT_BUTTON_C-LEFT"
+            "OOT_BUTTON_CLEFT"
           ],
           [
             "OOT_SONG_ZELDA",
@@ -626,7 +626,7 @@
             "OOT_SONG_STORMS",
             "OOT_MAGIC_BEAN",
             "OOT_TUNIC_ZORA",
-            "OOT_BUTTON_C-RIGHT"
+            "OOT_BUTTON_CRIGHT"
           ],
           [
             "OOT_SONG_TP_FOREST",
@@ -1200,10 +1200,10 @@
         "rows": [
           [
             "MM_BUTTON_A",
-            "MM_BUTTON_C-UP",
-            "MM_BUTTON_C-DOWN",
-            "MM_BUTTON_C-LEFT",
-            "MM_BUTTON_C-RIGHT"
+            "MM_BUTTON_CUP",
+            "MM_BUTTON_CDOWN",
+            "MM_BUTTON_CLEFT",
+            "MM_BUTTON_CRIGHT"
           ],
           [
             "MM_OWL_CLOCK_TOWN",
@@ -1408,7 +1408,7 @@
             "MM_PICTOGRAPH_BOX",
             "MM_LENS",
             "MM_HOOKSHOT",
-            "MM_BUTTON_C-UP"
+            "MM_BUTTON_CUP"
           ],
           [
             "MM_MOON_TEAR",
@@ -1419,7 +1419,7 @@
             "MM_ROOM_KEY",
             "MM_LETTER_TO_KAFEI",
             "MM_LETTER_TO_MAMA",
-            "MM_BUTTON_C-DOWN"
+            "MM_BUTTON_CDOWN"
           ],
           [
             "MM_SONG_TIME",
@@ -1430,7 +1430,7 @@
             "MM_WALLET",
             "MM_MAGIC_UPGRADE",
             "MM_PENDANT_OF_MEMORIES",
-            "MM_BUTTON_C-LEFT"
+            "MM_BUTTON_CLEFT"
           ],
           [
             "MM_SONG_AWAKENING",
@@ -1441,7 +1441,7 @@
             "MM_STRAY_FAIRY_TOWN",
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN",
-            "MM_BUTTON_C-RIGHT"
+            "MM_BUTTON_CRIGHT"
           ],
           [
             "MM_MASK_DEKU",
