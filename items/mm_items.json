@@ -1445,26 +1445,26 @@
   {
     "name": "MM C-Up Button",
     "type": "toggle",
-    "img": "images/system/C-Up.png",
-    "codes": "MM_BUTTON_C-UP"
+    "img": "images/system/CUp.png",
+    "codes": "MM_BUTTON_CUP"
   },
   {
     "name": "MM C-Down Button",
     "type": "toggle",
-    "img": "images/system/C-Down.png",
-    "codes": "MM_BUTTON_C-DOWN"
+    "img": "images/system/CDown.png",
+    "codes": "MM_BUTTON_CDOWN"
   },
   {
     "name": "MM C-Left Button",
     "type": "toggle",
-    "img": "images/system/C-Left.png",
-    "codes": "MM_BUTTON_C-LEFT"
+    "img": "images/system/CLeft.png",
+    "codes": "MM_BUTTON_CLEFT"
   },
   {
     "name": "MM C-Right Button",
     "type": "toggle",
-    "img": "images/system/C-Right.png",
-    "codes": "MM_BUTTON_C-RIGHT"
+    "img": "images/system/CRight.png",
+    "codes": "MM_BUTTON_CRIGHT"
   },
   {
      "name": "MM Red Coin",
