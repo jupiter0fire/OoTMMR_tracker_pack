@@ -912,7 +912,7 @@ function _oot_logic()
 	end
 
 	function can_play_elegy()
-		return has_ocarina() and ('SONG_EMPTINESS') and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_cleft() and has_oot_button_cright()
+		return has_ocarina() and has_oot_song_elegy() and has_oot_button_cup() and has_oot_button_cdown() and has_oot_button_cleft() and has_oot_button_cright()
 	end
 
 	function can_play_tp_light() 
