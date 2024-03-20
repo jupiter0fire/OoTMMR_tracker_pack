@@ -2163,6 +2163,8 @@
           {
             "name": "Kak Redead Grotto Chest",
             "short_name": "Chest",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2264,6 +2266,8 @@
           {
             "name": "Kak Open Grotto Chest",
             "short_name": "Chest",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2328,6 +2332,8 @@
             "access_rules": [
               "$oot|Kakariko Man on Roof"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2353,6 +2359,8 @@
             "access_rules": [
               "$oot|Shooting Gallery Adult"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2441,6 +2449,8 @@
             "access_rules": [
               "$oot|Kakariko Anju Bottle"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2448,6 +2458,8 @@
             "access_rules": [
               "$oot|Kakariko Anju Egg"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2455,6 +2467,8 @@
             "access_rules": [
               "$oot|Kakariko Anju Cojiro"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2479,6 +2493,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Odd Potion"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2505,6 +2521,8 @@
               "$oot|Skulltula House 10 Tokens",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2514,6 +2532,8 @@
               "$oot|Skulltula House 20 Tokens",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2523,6 +2543,8 @@
               "$oot|Skulltula House 30 Tokens",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2532,6 +2554,8 @@
               "$oot|Skulltula House 40 Tokens",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2541,6 +2565,8 @@
               "$oot|Skulltula House 50 Tokens",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2565,6 +2591,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 1"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2572,6 +2600,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 2"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2579,6 +2609,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 3"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2586,6 +2618,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 4"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2593,6 +2627,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 5"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2600,6 +2636,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 6"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2607,6 +2645,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 7"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -2614,6 +2654,8 @@
             "access_rules": [
               "$oot|Kakariko Potion Shop Item 8"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2644,34 +2686,50 @@
         "sections": [
           {
             "name": "Item 1",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
             "name": "Item 2",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
             "name": "Item 3",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
             "name": "Item 4",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
             "name": "Item 5",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
             "name": "Item 6",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
             "name": "Item 7",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
             "name": "Item 8",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2884,6 +2942,8 @@
               {
                 "name": "Graveyard Hookshot Chest",
                 "short_name": "Chest",
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               },
               {
@@ -2917,6 +2977,8 @@
                 "access_rules": [
                   "$oot|Graveyard Fairy Tomb"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               },
               {
@@ -2959,6 +3021,8 @@
                 "access_rules": [
                   "$oot|Graveyard ReDead Tomb"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -3022,6 +3086,8 @@
                 "access_rules": [
                   "$oot|Graveyard Royal Tomb Chest"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               },
               {
@@ -3157,6 +3223,8 @@
                 "access_rules": [
                   "$oot|Death Mountain Chest"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -3182,6 +3250,8 @@
               {
                 "name": "DMT Storms Grotto Chest",
                 "short_name": "Chest",
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -3334,18 +3404,18 @@
             "chest_opened_img": "images/bottle_milk.png",
             "item_count": 1
           },
-           {
-                "name": "DMT Cow Grotto Hearts",
-                "access_rules": [
-                  "$oot|Death Mountain Cow Grotto Hearts"
-                ],
-                      "force_invisibility_rules": [
-                  "setting_HeartShuffleOOT_false"
-                ],
-                "chest_unopened_img": "images/Heart.png",
-                "chest_opened_img": "images/Heart_Grey.png",
-                "item_count": 4
-                  },
+          {
+            "name": "DMT Cow Grotto Hearts",
+            "access_rules": [
+              "$oot|Death Mountain Cow Grotto Hearts"
+            ],
+            "force_invisibility_rules": [
+              "setting_HeartShuffleOOT_false"
+            ],
+            "chest_unopened_img": "images/Heart.png",
+            "chest_opened_img": "images/Heart_Grey.png",
+            "item_count": 4
+          },
           {
             "name": "DMT Storms Grotto Grass",
             "short_name": "DMT Grass",
@@ -6647,8 +6717,8 @@
                     "access_rules": [
                       "$mm|Clock Town Business Scrub"
                     ],
-                      "chest_unopened_img": "images/chest_brown_closed.png",
-                      "chest_opened_img": "images/chest_brown_open.png",
+                    "chest_unopened_img": "images/chest_brown_closed.png",
+                    "chest_opened_img": "images/chest_brown_open.png",
                     "item_count": 1
                   }
                 ],
@@ -6944,8 +7014,8 @@
                     "access_rules": [
                       "$mm|Tingle Map Woodfall"
                     ],
-                     "chest_unopened_img": "images/Tingle_Map_Icon.png",
-            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
+                    "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                    "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "item_count": 1
                   }
                 ],
@@ -8254,7 +8324,7 @@
   },
   {
     "name": "Milk Road",
-    "color": "#e0ef0e", 
+    "color": "#e0ef0e",
     "children": [
       {
         "name": "Milk Road Tingle Maps",
@@ -8277,8 +8347,8 @@
             "item_count": 1
           }
         ],
-         "chest_unopened_img": "images/Tingle_Map_Icon.png",
-            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
+        "chest_unopened_img": "images/Tingle_Map_Icon.png",
+        "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
         "map_locations": [
           {
             "map": "termina",
@@ -8598,7 +8668,7 @@
             "access_rules": [
               "$mm|Tingle Map Woodfall"
             ],
-             "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
             "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           },
@@ -8607,7 +8677,7 @@
             "access_rules": [
               "$mm|Tingle Map Snowhead"
             ],
-             "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
             "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           }
@@ -8674,8 +8744,8 @@
             "access_rules": [
               "$mm|Southern Swamp Scrub Deed"
             ],
-              "chest_unopened_img": "images/chest_brown_closed.png",
-              "chest_opened_img": "images/chest_brown_open.png",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9496,7 +9566,7 @@
             "access_rules": [
               "$mm|Tingle Map Snowhead"
             ],
-             "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
             "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           },
@@ -10114,8 +10184,8 @@
                 "access_rules": [
                   "$mm|Tingle Map Great Bay"
                 ],
-                 "chest_unopened_img": "images/Tingle_Map_Icon.png",
-            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
+                "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                 "item_count": 1
               },
               {
@@ -10879,7 +10949,7 @@
               {
                 "name": "Ikana Canyon Tingle Maps",
                 "chest_unopened_img": "images/Tingle_Map_Icon.png",
-            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",               
+                "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                 "short_name": "Canyon",
                 "sections": [
                   {
