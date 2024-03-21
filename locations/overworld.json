@@ -6919,60 +6919,37 @@
                       "$mm|Clock Town Keaton HP"
                     ],
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 143,
-                    "y": 16
                   },
                   {
-                    "map": "termina",
-                    "x": 457,
-                    "y": 367
-                  },
-                  {
-                    "map": "termina_er_locations",
-                    "x": 143,
-                    "y": 16
-                  },
-                  {
-                    "map": "termina_er_locations",
-                    "x": 457,
-                    "y": 367
-                  }
-                ]
-              },
-              {
-                "name": "Keaton Grass Cluster",
-                "sections": [
-                  {
-                    "name": "Grass Shuffle",
+                      "name": "Keaton Grass Shuffle",
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
                     "access_rules": [
                       "$mm|Clock Town Keaton Grass"
                     ],
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "termina",
-                    "visibility_rules": [
-                      "setting_GrassShuffleMM_true"
-                    ],
-                    "x": 173,
+                    "x": 143,
+                    "y": 16
+                  },
+                  {
+                    "map": "termina",
+                    "x": 457,
+                    "y": 367
+                  },
+                  {
+                    "map": "termina_er_locations",
+                    "x": 143,
                     "y": 16
                   },
                   {
                     "map": "termina_er_locations",
-                    "visibility_rules": [
-                      "setting_GrassShuffleMM_true"
-                    ],
-                    "x": 173,
-                    "y": 16
+                    "x": 457,
+                    "y": 367
                   }
                 ]
               },
