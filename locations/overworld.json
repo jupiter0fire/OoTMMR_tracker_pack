@@ -182,6 +182,7 @@
                 "map": "oot",
                 "visibility_rules": [
                   "setting_GrassShuffleOOT_true"
+                ],
                 "x": 2116,
                 "y": 962
               },
@@ -6920,7 +6921,7 @@
                     "item_count": 1
                   },
                   {
-                      "name": "Keaton Grass Shuffle",
+                    "name": "Keaton Grass Shuffle",
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
                     "access_rules": [
@@ -7028,6 +7029,8 @@
               },
               {
                 "name": "Clock Town Tingle Maps",
+                "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                 "short_name": "Town Tingle",
                 "sections": [
                   {
@@ -7042,8 +7045,6 @@
                     "access_rules": [
                       "$mm|Tingle Map Woodfall"
                     ],
-                    "chest_unopened_img": "images/Tingle_Map_Icon.png",
-                    "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "item_count": 1
                   }
                 ],
@@ -8382,7 +8383,7 @@
             "map": "termina",
             "x": 475,
             "y": 360,
-            "force_invisibility_rules": [
+            "visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
@@ -8390,8 +8391,8 @@
             "map": "termina_er_locations",
             "x": 475,
             "y": 360,
-            "force_invisibility_rules": [
-              "setting_tingleShuffle_vanillasetting_tingleShuffle_anywhere"
+            "visibility_rules": [
+              "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
         ]
@@ -8715,7 +8716,7 @@
             "map": "termina",
             "x": 537,
             "y": 401,
-            "force_invisibility_rules": [
+            "visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
@@ -8723,7 +8724,7 @@
             "map": "termina_er_locations",
             "x": 537,
             "y": 401,
-            "force_invisibility_rules": [
+            "visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
@@ -9611,7 +9612,7 @@
             "map": "termina",
             "x": 582,
             "y": 165,
-            "force_invisibility_rules": [
+            "visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
@@ -9619,7 +9620,7 @@
             "map": "termina_er_locations",
             "x": 582,
             "y": 165,
-            "force_invisibility_rules": [
+            "visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
@@ -10229,7 +10230,7 @@
                 "map": "termina",
                 "x": 205,
                 "y": 300,
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                 ]
               },
@@ -10237,7 +10238,7 @@
                 "map": "termina_er_locations",
                 "x": 205,
                 "y": 300,
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                 ]
               }
@@ -11000,7 +11001,7 @@
                     "map": "termina",
                     "x": 800,
                     "y": 264,
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   },
@@ -11008,7 +11009,7 @@
                     "map": "termina_er_locations",
                     "x": 800,
                     "y": 264,
-                    "force_invisibility_rules": [
+                    "visibility_rules": [
                       "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   }
