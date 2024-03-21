@@ -7762,7 +7762,7 @@
                     "visibility_rules": [
                       "setting_GrassShuffleMM_true"
                     ],
-                    "x": 35,
+                    "x": 40,
                     "y": 195
                   },
                   {
@@ -7770,7 +7770,7 @@
                     "visibility_rules": [
                       "setting_GrassShuffleMM_true"
                     ],
-                    "x": 35,
+                    "x": 40,
                     "y": 195
                   }
                 ]
@@ -7958,7 +7958,7 @@
               {
                 "map": "termina",
                 "visibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleMM_true"
                 ],
                 "x": 563,
                 "y": 352
@@ -7966,7 +7966,7 @@
               {
                 "map": "termina_er_locations",
                 "visibility_rules": [
-                  "setting_GrassShuffleOOT_true"
+                  "setting_GrassShuffleMM_true"
                 ],
                 "x": 563,
                 "y": 352
