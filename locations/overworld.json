@@ -7734,12 +7734,44 @@
                   {
                     "map": "termina",
                     "x": 25,
-                    "y": 214
+                    "y": 195
                   },
                   {
                     "map": "termina_er_locations",
                     "x": 25,
-                    "y": 214
+                    "y": 195
+                  }
+                ]
+              },
+              {
+                "name": "Laundry Pool Grass",
+                "sections": [
+                  {
+                    "name": "Grass Shuffle",
+                    "access_rules": [
+                      "$mm|Laundry Pool Grass"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "visibility_rules": [
+                      "setting_GrassShuffleMM_true"
+                    ],
+                    "x": 55,
+                    "y": 195
+                  },
+                  {
+                    "map": "oot_er_locations",
+                    "visibility_rules": [
+                      "setting_GrassShuffleMM_true"
+                    ],
+                    "x": 2058,
+                    "y": 992
                   }
                 ]
               },
@@ -7764,7 +7796,7 @@
                   {
                     "map": "termina",
                     "x": 25,
-                    "y": 195
+                    "y": 214
                   },
                   {
                     "map": "termina",
@@ -7774,7 +7806,7 @@
                   {
                     "map": "termina_er_locations",
                     "x": 25,
-                    "y": 195
+                    "y": 214
                   },
                   {
                     "map": "termina_er_locations",
