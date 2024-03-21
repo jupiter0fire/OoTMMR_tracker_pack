@@ -8383,7 +8383,7 @@
             "map": "termina",
             "x": 475,
             "y": 360,
-            "visibility_rules": [
+            "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
@@ -8391,7 +8391,7 @@
             "map": "termina_er_locations",
             "x": 475,
             "y": 360,
-            "visibility_rules": [
+            "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
@@ -8716,7 +8716,7 @@
             "map": "termina",
             "x": 537,
             "y": 401,
-            "visibility_rules": [
+            "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
@@ -8724,7 +8724,7 @@
             "map": "termina_er_locations",
             "x": 537,
             "y": 401,
-            "visibility_rules": [
+            "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
@@ -9612,7 +9612,7 @@
             "map": "termina",
             "x": 582,
             "y": 165,
-            "visibility_rules": [
+            "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           },
@@ -9620,7 +9620,7 @@
             "map": "termina_er_locations",
             "x": 582,
             "y": 165,
-            "visibility_rules": [
+            "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
           }
@@ -10230,7 +10230,7 @@
                 "map": "termina",
                 "x": 205,
                 "y": 300,
-                "visibility_rules": [
+                "force_visibility_rules": [
                   "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                 ]
               },
@@ -10238,7 +10238,7 @@
                 "map": "termina_er_locations",
                 "x": 205,
                 "y": 300,
-                "visibility_rules": [
+                "force_visibility_rules": [
                   "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                 ]
               }
@@ -11001,7 +11001,7 @@
                     "map": "termina",
                     "x": 800,
                     "y": 264,
-                    "visibility_rules": [
+                    "force_visibility_rules": [
                       "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   },
@@ -11009,7 +11009,7 @@
                     "map": "termina_er_locations",
                     "x": 800,
                     "y": 264,
-                    "visibility_rules": [
+                    "force_visibility_rules": [
                       "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   }
