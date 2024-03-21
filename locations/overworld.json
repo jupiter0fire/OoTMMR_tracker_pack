@@ -8891,10 +8891,10 @@
             "access_rules": [
               "$mm|Southern Swamp Owl Statue"
             ],
-              "force_invisibility_rules": [
+            "force_invisibility_rules": [
               "setting_owlShuffle_none"
-              ],
-              "item_count": 1
+            ],
+            "item_count": 1
           },
           {
             "name": "Southern Swamp Owl Grass",
@@ -9328,6 +9328,9 @@
             "access_rules": [
               "$mm|Woodfall Owl Statue"
             ],
+            "force_invisibility_rules": [
+              "setting_owlShuffle_none"
+            ],
             "item_count": 1
           },
           {
@@ -9338,7 +9341,7 @@
               "$mm|Woodfall Entrance Grass"
             ],
             "visibility_rules": [
-               "setting_GrassShuffleMM_true"
+              "setting_GrassShuffleMM_true"
             ],
             "item_count": 1
           }
@@ -9348,17 +9351,11 @@
     "map_locations": [
       {
         "map": "termina",
-        "force_invisibility_rules": [
-          "setting_owlShuffle_none"
-        ],
         "x": 530,
         "y": 462
       },
       {
         "map": "termina_er_locations",
-        "force_invisibility_rules": [
-          "setting_owlShuffle_none"
-        ],
         "x": 530,
         "y": 462
       }
