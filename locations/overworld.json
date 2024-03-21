@@ -52,16 +52,16 @@
                 "map_locations": [
                   {
                     "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
+                    "visibility_rules": [
+                      "setting_GrassShuffleOOT_true"
                     ],
                     "x": 2058,
                     "y": 992
                   },
                   {
                     "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
+                    "visibility_rules": [
+                      "setting_GrassShuffleOOT_true"
                     ],
                     "x": 2058,
                     "y": 992
@@ -95,15 +95,15 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_HeartShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_HeartShuffleOOT_true"
                 ],
                 "x": 2214,
                 "y": 988
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_HeartShuffleOOT_false"
                 ],
                 "x": 2214,
@@ -142,7 +142,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_GrassShuffleOOT_false"
                 ],
                 "x": 2214,
@@ -150,8 +150,8 @@
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 2214,
                 "y": 958
@@ -180,16 +180,15 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
-                ],
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 "x": 2116,
                 "y": 962
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 2116,
                 "y": 962
@@ -728,16 +727,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 2144,
                 "y": 812
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 2144,
                 "y": 812
@@ -1005,16 +1004,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2148,
                 "y": 680
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2148,
                 "y": 680
@@ -1334,8 +1333,8 @@
             "access_rules": [
               "$oot|Hyrule Field Cow"
             ],
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "chest_unopened_img": "images/MM_Grass.png",
             "chest_opened_img": "images/GrassGreyscale.png",
@@ -1377,16 +1376,16 @@
         "map_locations": [
           {
             "map": "oot",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1732,
             "y": 688
           },
           {
             "map": "oot_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1732,
             "y": 688
@@ -1415,16 +1414,16 @@
         "map_locations": [
           {
             "map": "oot",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1494,
             "y": 528
           },
           {
             "map": "oot_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1494,
             "y": 528
@@ -1453,16 +1452,16 @@
         "map_locations": [
           {
             "map": "oot",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1420,
             "y": 872
           },
           {
             "map": "oot_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1420,
             "y": 872
@@ -1491,16 +1490,16 @@
         "map_locations": [
           {
             "map": "oot",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1346,
             "y": 816
           },
           {
             "map": "oot_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1346,
             "y": 816
@@ -1882,16 +1881,16 @@
         "map_locations": [
           {
             "map": "oot",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1042,
             "y": 1156
           },
           {
             "map": "oot_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1042,
             "y": 1156
@@ -1920,16 +1919,16 @@
         "map_locations": [
           {
             "map": "oot",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1140,
             "y": 1182
           },
           {
             "map": "oot_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "x": 1140,
             "y": 1182
@@ -2221,16 +2220,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1726,
                 "y": 410
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1726,
                 "y": 410
@@ -2259,7 +2258,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1910,
@@ -2267,7 +2266,7 @@
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
+                "visibility_rules": [
                   "setting_GrassShuffleOOT_false"
                 ],
                 "x": 1910,
@@ -2934,16 +2933,16 @@
                 "map_locations": [
                   {
                     "map": "oot",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
+                    "visibility_rules": [
+                      "setting_GrassShuffleOOT_true"
                     ],
                     "x": 1992,
                     "y": 384
                   },
                   {
                     "map": "oot_er_locations",
-                    "force_invisibility_rules": [
-                      "setting_GrassShuffleOOT_false"
+                    "visibility_rules": [
+                      "setting_GrassShuffleOOT_true"
                     ],
                     "x": 1992,
                     "y": 384
@@ -3015,16 +3014,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2035,
                 "y": 360
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2035,
                 "y": 360
@@ -3292,8 +3291,8 @@
                 "access_rules": [
                   "$oot|Death Mountain Grotto Grass"
                 ],
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
@@ -3429,8 +3428,8 @@
             "access_rules": [
               "$oot|Death Mountain Cow Grotto Hearts"
             ],
-            "force_invisibility_rules": [
-              "setting_HeartShuffleOOT_false"
+            "visibility_rules": [
+              "setting_HeartShuffleOOT_true"
             ],
             "chest_unopened_img": "images/Heart.png",
             "chest_opened_img": "images/Heart_Grey.png",
@@ -3442,8 +3441,8 @@
             "access_rules": [
               "$oot|Death Mountain Cow Grass"
             ],
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "chest_unopened_img": "images/MM_Grass.png",
             "chest_opened_img": "images/GrassGreyscale.png",
@@ -4279,8 +4278,8 @@
                 "item_count": 1
               }
             ],
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
             ],
             "map_locations": [
               {
@@ -4785,16 +4784,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1470,
                 "y": 165
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1470,
                 "y": 165
@@ -4823,16 +4822,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 1186,
                 "y": 396
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 1186,
                 "y": 396
@@ -5021,16 +5020,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1975,
                 "y": 538
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1975,
                 "y": 538
@@ -5059,16 +5058,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2142,
                 "y": 500
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2142,
                 "y": 500
@@ -5434,16 +5433,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2510,
                 "y": 454
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 2510,
                 "y": 454
@@ -6089,16 +6088,16 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 562,
                 "y": 436
               },
               {
                 "map": "oot_er_locations",
-                "force_invisibility_rules": [
-                  "setting_FairyFountainShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
                 ],
                 "x": 562,
                 "y": 436
@@ -6927,9 +6926,6 @@
                     "access_rules": [
                       "$mm|Clock Town Keaton Grass"
                     ],
-                         "visibility_rules": [
-                         "setting_GrassShuffleMM_true"
-                         ],
                     "item_count": 1
                   }
                 ],
@@ -7928,16 +7924,16 @@
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 563,
                 "y": 352
               },
               {
                 "map": "termina_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 563,
                 "y": 352
@@ -8000,8 +7996,8 @@
               },
               {
                 "map": "termina_er_locations",
-                "force_invisibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                "visibility_rules": [
+                  "setting_GrassShuffleMM_true"
                 ],
                 "x": 582,
                 "y": 302
@@ -8037,8 +8033,8 @@
               }
             ],
             "map_locations": [],
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "map": "termina",
             "x": 520,
@@ -8104,16 +8100,16 @@
         "map_locations": [
           {
             "map": "termina",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 525,
             "y": 340
           },
           {
             "map": "termina_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 525,
             "y": 340
@@ -8146,16 +8142,16 @@
         "map_locations": [
           {
             "map": "termina",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 475,
             "y": 310
           },
           {
             "map": "termina_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 475,
             "y": 310
@@ -8269,16 +8265,16 @@
         "map_locations": [
           {
             "map": "termina",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 550,
             "y": 276
           },
           {
             "map": "termina_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 550,
             "y": 276
@@ -8311,16 +8307,16 @@
         "map_locations": [
           {
             "map": "termina",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 496,
             "y": 300
           },
           {
             "map": "termina_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 496,
             "y": 300
@@ -8675,16 +8671,16 @@
         "map_locations": [
           {
             "map": "termina",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffle_true"
             ],
             "x": 525,
             "y": 389
           },
           {
             "map": "termina_er_locations",
-            "force_invisibility_rules": [
-              "setting_GrassShuffleOOT_false"
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
             ],
             "x": 525,
             "y": 389
