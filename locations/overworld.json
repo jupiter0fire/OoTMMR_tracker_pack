@@ -8950,7 +8950,7 @@
             "force_invisibility_rules": [
               "setting_owlShuffle_none"
             ],
-            "x": 539,
+            "x": 505,
             "y": 404
           }
         ]
@@ -9315,11 +9315,11 @@
         ]
       },
       {
-        "name": "Woodfall Owl Statue and Grass",
+        "name": "Woodfall Owl Statue",
         "short_name": "Owl and Grass",
         "sections": [
           {
-            "name": "Woodfall Owl Statue and Grass Shuffle",
+            "name": "Woodfall Owl Statue",
             "chest_unopened_img": "images/deactivated_owl_statue.png",
             "chest_opened_img": "images/activated_owl_statue.png",
             "access_rules": [
@@ -9333,6 +9333,9 @@
             "chest_opened_img": "images/GrassGreyscale.png",
             "access_rules": [
               "$mm|Woodfall Entrance Grass"
+            ],
+            "visibility_rules": [
+               "setting_GrassShuffleMM_true"
             ],
             "item_count": 1
           }
