@@ -955,18 +955,8 @@
     "name": "Ancient Castle of Ikana",
     "short_name": "Ikana Castle",
     "sections": [
-      {
-        "name": "Defeat Igos Du Ikana",
-        "chest_unopened_img": "images/system/unknownsong.png",
-        "chest_opened_img": "images/system/unknownsong_check.png",
-        "access_rules": [
-          "$mm|Ancient Castle of Ikana Song Emptiness",
-          "{}"
-        ],
-        "item_count": 1
-      },
-      {
-        "name": "Ikana Castle Grass",
+         {
+        "name": "Ikana Castle Exterior Grass",
         "access_rules": [
           "$mm|Ancient Castle of Ikana Exterior Grass"
         ],
@@ -975,6 +965,16 @@
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Defeat Igos Du Ikana",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "$mm|Ancient Castle of Ikana Song Emptiness",
+          "{}"
+        ],
         "item_count": 1
       },
       {
