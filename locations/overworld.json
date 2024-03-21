@@ -7928,12 +7928,18 @@
                 "access_rules": [
                   "$mm|Termina Field Tall Grass Chest"
                 ],
+                "force_visibility_rules": [
+                  "setting_GrassShuffleMM_false,setting_GrassShuffleMM_true"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Chest on a stump",
                 "access_rules": [
                   "$mm|Termina Field Tree Stump Chest"
+                ],
+                "force_visibility_rules": [
+                  "setting_GrassShuffleMM_false,setting_GrassShuffleMM_true"
                 ],
                 "item_count": 1
               },
@@ -8941,7 +8947,7 @@
         "map_locations": [
           {
             "map": "termina",
-            "visibility_rules": [
+            "force_visibility_rules": [
               "setting_GrassShuffleMM_true"
             ],
             "x": 553,
