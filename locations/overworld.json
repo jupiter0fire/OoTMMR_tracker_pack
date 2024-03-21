@@ -9319,7 +9319,7 @@
       },
       {
         "name": "Woodfall Owl Statue",
-        "short_name": "Owl and Grass",
+        "short_name": "Owl",
         "sections": [
           {
             "name": "Woodfall Owl Statue",
@@ -9332,56 +9332,16 @@
               "setting_owlShuffle_none"
             ],
             "item_count": 1
-          },
-          {
-            "name": "Woodfall Entrance Grass",
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "access_rules": [
-              "$mm|Woodfall Entrance Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "item_count": 1
           }
-        ]
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "x": 530,
-        "y": 462
-      },
-      {
-        "map": "termina_er_locations",
-        "x": 530,
-        "y": 462
-      }
-    ]
-  },
-  {
-    "name": "Woodfall Great Fairy Fountain",
-    "short_name": "Woodfall Great Fairy",
-    "sections": [
-      {
-        "name": "15 Stray Fairies in Woodfall Temple",
-        "access_rules": [
-          "$mm|Woodfall Great Fairy"
         ],
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
+        "map_locations": [],
         "map": "termina",
-        "x": 554,
+        "x": 530,
         "y": 462
       },
       {
         "map": "termina_er_locations",
-        "x": 554,
+        "x": 530,
         "y": 462
       }
     ]
