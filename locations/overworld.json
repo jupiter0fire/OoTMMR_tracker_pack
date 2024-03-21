@@ -7053,7 +7053,7 @@
                     "map": "termina",
                     "x": 120,
                     "y": 35,
-                    "visibility_rules": [
+                    "force_visibility_rules": [
                       "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   },
@@ -7061,7 +7061,7 @@
                     "map": "termina_er_locations",
                     "x": 120,
                     "y": 35,
-                    "visibility_rules": [
+                    "force_visibility_rules": [
                       "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
                     ]
                   }
