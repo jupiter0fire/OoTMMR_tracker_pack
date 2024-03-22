@@ -8009,7 +8009,9 @@
                 "y": 302
               }
             ]
-          },
+          }
+        ]
+      },
           {
             "name": "Butterflies In The Grass",
             "short_name": "Peahat Grotto",
@@ -8081,7 +8083,9 @@
                     "y": 340
                   }
                 ]
-              },
+              }
+            ]
+          },
               {
                 "name": "West Termina Field Grotto",
                 "short_name": "Beehive Grotto",
@@ -9432,7 +9436,9 @@
                 "y": 537
               }
             ]
-          },
+          }
+        ]
+      },
           {
             "name": "Deku Shrine Race",
             "short_name": "Deku Shrine",
@@ -10764,12 +10770,12 @@
               {
                 "map": "termina",
                 "x": 270,
-                "y": 430
+                "y": 435
               },
               {
                 "map": "termina_er_locations",
                 "x": 270,
-                "y": 430
+                "y": 435
               }
             ]
           },
@@ -10898,9 +10904,7 @@
                 "y": 300
               }
             ]
-          }
-        ]
-      },
+          },
       {
         "name": "Shiro the Invisible Soldier",
         "short_name": "Invisible Soldier",
