@@ -1333,7 +1333,7 @@ function _mm_logic()
             ["RUPEES"] = function () return event('WATER') and (can_fight() or has_weapon_range() or has_explosives()) end,
         },
         ["locations"] = {
-	    ["Beneath the Well Grass Left Side"] = function () return can_cut_grass() end,
+	    ["Beneath the Well Grass Left Side"] = function () return true end,
             ["Beneath the Well Keese Chest"] = function () return event('WATER') and event('BUGS') and can_use_lens() end,
 	    ["Beneath the Well Fairy Fountain"] = function () return has('MASK_GIBDO') and has_blue_potion() end,
         },
@@ -1357,7 +1357,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Beneath the Well Cow"] = function () return (event('WELL_HOT_WATER') or (has_hot_water_distance() and has('OWL_IKANA_CANYON')) or has_hot_water_er()) and can_play_epona() end,
-	    ["Beneath the Well Grass Near End"] = function () return can_cut_grass() end,
+	    ["Beneath the Well Grass Near End"] = function () return true end,
         },
     },
     ["Beneath the Well Middle Section"] = {
@@ -1371,7 +1371,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Beneath the Well Skulltulla Chest"] = function () return has('MASK_GIBDO') and event('BUGS') end,
-	    ["Beneath the Well Grass Before Poe"] = function () return can_cut_grass() end,
+	    ["Beneath the Well Grass Before Poe"] = function () return true end,
         },
     },
     ["Beneath the Well Final Hall"] = {
@@ -1385,7 +1385,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Beneath the Well Skulltulla Chest"] = function () return has('MASK_GIBDO') and has_bottle() end,
-	    ["Beneath the Well Grass Near End"] = function () return can_cut_grass() end,
+	    ["Beneath the Well Grass Near End"] = function () return true end,
         },
     },
     ["Beneath the Well Sun Block"] = {
@@ -2068,6 +2068,7 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Guru Guru Mask Bremen"] = function () return is_night1() or is_night2() end,
             ["Clock Town Stray Fairy"] = function () return is_day() end,
+	    ["Laundry Pool Grass"] = function () return true end,
         },
     },
     ["Clock Town Fairy Fountain"] = {
@@ -2324,6 +2325,12 @@ function _mm_logic()
             ["Termina Field Tall Grass Chest"] = function () return true end,
             ["Termina Field Tree Stump Chest"] = function () return can_hookshot_short() or can_use_beans() end,
             ["Termina Field Kamaro Mask"] = function () return can_play(SONG_HEALING) and midnight() end,
+	    ["Termina Field NW Grass"] = function () return true end,
+	    ["Termina Field NW Grass Grotto"] = function () return true end,
+	    ["Termina Field NE Grass"] = function () return true end,
+	    ["Termina Field SW Grass"] = function () return true end,
+	    ["Termina Field SE Grass"] = function () return true end,
+            ["Termina Field East Observatory Grotto Grass"] = function () return true end,
         },
     },
     ["Grass Grotto"] = {
@@ -3767,7 +3774,7 @@ function _mm_logic()
             ["Ikana Canyon"] = function () return true end,
 				     },
         ["locations"] = {
-            ["Ancient Castle of Ikana Exterior Grass"] = function () return can_cut_grass() end,
+            ["Ancient Castle of Ikana Exterior Grass"] = function () return true end,
         },
     },
     ["Ikana Castle Exterior"] = {
@@ -4049,7 +4056,7 @@ function _mm_logic()
             ["Secret Shrine Main"] = function () return can_use_light_arrows() end,
 		  },
         ["locations"] = {
-            ["Secret Shrine Entrance Grass"] = function () return can_cut_grass() end,
+            ["Secret Shrine Entrance Grass"] = function () return true end,
         },
     },
     ["Secret Shrine Main"] = {
@@ -4072,7 +4079,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Secret Shrine Boss 1 Chest"] = function () return event('SECRET_SHRINE_1') end,
-            ["Secret Shrine Dinolfos Grass"] = function () return can_cut_grass() end,
+            ["Secret Shrine Dinolfos Grass"] = function () return true end,
         },
         },
     ["Secret Shrine Boss 2"] = {
@@ -4081,13 +4088,13 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Secret Shrine Boss 2 Chest"] = function () return event('SECRET_SHRINE_2') end,
-            ["Secret Shrine Wizzrobe Grass"] = function () return can_cut_grass() end,
+            ["Secret Shrine Wizzrobe Grass"] = function () return true end,
         },
     },
     ["Secret Shrine Boss 3"] = {
         ["events"] = {
             ["SECRET_SHRINE_3"] = function () return true end,
-            ["Secret Shrine Wart Grass"] = function () return can_cut_grass() end,
+            ["Secret Shrine Wart Grass"] = function () return true end,
         },
         ["locations"] = {
             ["Secret Shrine Boss 3 Chest"] = function () return event('SECRET_SHRINE_3') end,
@@ -4096,7 +4103,7 @@ function _mm_logic()
     ["Secret Shrine Boss 4"] = {
         ["events"] = {
             ["SECRET_SHRINE_4"] = function () return true end,
-            ["Secret Shrine Garo Master Grass"] = function () return can_cut_grass() end,
+            ["Secret Shrine Garo Master Grass"] = function () return true end,
         },
         ["locations"] = {
             ["Secret Shrine Boss 4 Chest"] = function () return event('SECRET_SHRINE_4') end,
@@ -4205,7 +4212,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Snowhead Temple Central Room Bottom"] = function () return has_mask_goron() end,
-	    ["Snowhead Temple Basement Grass"] = function () return can_cut_grass() end
+	    ["Snowhead Temple Basement Grass"] = function () return true end
         },
     },
     ["Snowhead Temple Block Room"] = {
@@ -4394,14 +4401,14 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Stone Tower Temple Entrance Chest"] = function () return has_arrows() end,
-            ["Stone Tower Temple Entrance Grass"] = function () return can_cut_grass() end,
+            ["Stone Tower Temple Entrance Grass"] = function () return true end,
             ["Stone Tower Temple Entrance Switch Chest"] = function () return event('STONE_TOWER_ENTRANCE_CHEST_SWITCH') end,
         },
     },
     ["Stone Tower Temple West"] = {
         ["exits"] = {
             ["Stone Tower Temple Entrance"] = function () return true end,
-	    ["Stone Tower Temple West Garden Grass"] = function () return can_cut_grass() end,
+	    ["Stone Tower Temple West Garden Grass"] = function () return true end,
             ["Stone Tower Temple West Garden"] = function () return can_play(SONG_EMPTINESS) and has_mask_goron() and (has_explosives() or trick_keg_explosives()) end,
         },
     },
@@ -4721,9 +4728,9 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Woodfall Temple Entrance Chest"] = function () return has('MASK_DEKU') or can_hookshot_short() end,
-            ["Woodfall Temple Entrance Floor Grass"] = function () return can_cut_grass() end,
+            ["Woodfall Temple Entrance Floor Grass"] = function () return true end,
             ["Woodfall Temple SF Entrance"] = function () return true end,
-	    ["Woodfall Temple Entrance Ledge Grass"] = function () return can_cut_grass() end,
+	    ["Woodfall Temple Entrance Ledge Grass"] = function () return true end,
         },
     },
     ["Woodfall Temple Main"] = {
@@ -4737,7 +4744,7 @@ function _mm_logic()
         ["exits"] = {
             ["Woodfall Temple Entrance"] = function () return true end,
             ["Woodfall Temple Water Room"] = function () return true end,
-            ["Woodfall Temple Water Room Grass"] = function () return can_cut_grass() end,
+            ["Woodfall Temple Water Room Grass"] = function () return true end,
             ["Woodfall Temple Maze"] = function () return small_keys(SMALL_KEY_WF, 1) end,
             ["Woodfall Temple Main Ledge"] = function () return event('WOODFALL_TEMPLE_MAIN_FLOWER') or event('WOODFALL_TEMPLE_MAIN_LADDER') or can_hookshot_short() end,
         },
@@ -4749,7 +4756,7 @@ function _mm_logic()
     ["Woodfall Temple Water Room"] = {
         ["exits"] = {
             ["Woodfall Temple Main"] = function () return true end,
-	    ["Woodfall Temple Main Grass"] = function () return can_cut_grass() end,
+	    ["Woodfall Temple Main Grass"] = function () return true end,
             ["Woodfall Temple Map Room"] = function () return has('MASK_DEKU') or can_hookshot_short() or can_use_ice_arrows() or event('WOODFALL_TEMPLE_MAIN_FLOWER') end,
             ["Woodfall Temple Water Room Upper"] = function () return has_arrows() and has('MASK_DEKU') end,
         },
@@ -4764,7 +4771,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Woodfall Temple Map"] = function () return has('MASK_DEKU') or has_explosives() or has_mask_goron() end,
-            ["Woodfall Temple Map Room Grass"] = function () return can_cut_grass() end,
+            ["Woodfall Temple Map Room Grass"] = function () return true end,
         },
     },
     ["Woodfall Temple Maze"] = {
@@ -4801,7 +4808,7 @@ function _mm_logic()
             ["RUPEES"] = function () return true end, 
         },
 	["locations"] = {
-            ["Woodfall Temple Map Room Grass"] = function () return can_cut_grass() end,
+            ["Woodfall Temple Map Room Grass"] = function () return true end,
         },
     },
         ["exits"] = {
@@ -4861,7 +4868,7 @@ function _mm_logic()
             ["Woodfall Temple SF Pre-Boss Left"] = function () return has('MASK_DEKU') or has('MASK_GREAT_FAIRY') end,
             ["Woodfall Temple SF Pre-Boss Top Right"] = function () return true end,
             ["Woodfall Temple SF Pre-Boss Pillar"] = function () return has('MASK_DEKU') or has('MASK_GREAT_FAIRY') end,
-	    ["Woodfall Temple SF Pre-Boss Grass"] = function () return can_cut_grass() end,
+	    ["Woodfall Temple SF Pre-Boss Grass"] = function () return true end,
         },
     },
     ["Woodfall Temple Princess Jail"] = {
@@ -4880,7 +4887,7 @@ function _mm_logic()
     ["Woodfall Temple Boss"] = {
         ["exits"] = {
             ["Woodfall Temple After Boss"] = function () return has('MASK_FIERCE_DEITY') and has_magic() or (has_arrows() and has_weapon()) end,
-	    ["Woodfall Temple Boss Room Grass"] = function () return can_cut_grass() end,
+	    ["Woodfall Temple Boss Room Grass"] = function () return true end,
         },
     },
     ["Woodfall Temple After Boss"] = {
