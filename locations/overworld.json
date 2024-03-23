@@ -8130,12 +8130,12 @@
         "map_locations": [
           {
             "map": "termina",
-            "x": 590,
+            "x": 594,
             "y": 335
           },
           {
             "map": "termina_er_locations",
-            "x": 590,
+            "x": 594,
             "y": 335
           }
         ]
@@ -10920,12 +10920,12 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 636,
+                "x": 630,
                 "y": 300
               },
               {
                 "map": "termina_er_locations",
-                "x": 636,
+                "x": 630,
                 "y": 300
               }
             ]
@@ -10947,12 +10947,12 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 631,
+                "x": 632,
                 "y": 312
               },
               {
                 "map": "termina_er_locations",
-                "x": 631,
+                "x": 632,
                 "y": 312
               }
             ]
