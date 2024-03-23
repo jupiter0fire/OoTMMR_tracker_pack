@@ -6664,7 +6664,7 @@
                   {
                     "map": "termina",
                     "visibility_rules": [
-                      "setting_owlShuffle_none"
+                      "setting_owlShuffle_anywhere"
                     ],
                     "x": 90,
                     "y": 100
@@ -6672,7 +6672,7 @@
                   {
                     "map": "termina_er_locations",
                     "visibility_rules": [
-                      "setting_owlShuffle_none"
+                      "setting_owlShuffle_anywhere"
                     ],
                     "x": 90,
                     "y": 100
@@ -8629,8 +8629,8 @@
             "map": "termina",
             "x": 485,
             "y": 376,
-            "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+            "visibility_rules": [
+              "setting_owlShuffle_anywhere"
             ]
           },
           {
@@ -8638,7 +8638,7 @@
             "x": 485,
             "y": 376,
             "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+              "setting_owlShuffle_anywhere"
             ]
           }
         ]
@@ -9108,8 +9108,8 @@
             "access_rules": [
               "$mm|Southern Swamp Owl Statue"
             ],
-            "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+            "visibility_rules": [
+              "setting_owlShuffle_anywhere"
             ],
             "item_count": 1
           },
@@ -9168,7 +9168,7 @@
           {
             "map": "termina_er_locations",
             "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+              "setting_owlShuffle_anywhere"
             ],
             "x": 505,
             "y": 404
@@ -9566,8 +9566,8 @@
         "access_rules": [
           "$mm|Woodfall Owl Statue"
         ],
-        "force_invisibility_rules": [
-          "setting_owlShuffle_none"
+        "visibility_rules": [
+          "setting_owlShuffle_anywhere"
         ],
         "item_count": 1
       }
@@ -9750,8 +9750,8 @@
         "map_locations": [
           {
             "map": "termina",
-            "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+            "visibility_rules": [
+              "setting_owlShuffle_anywhere"
             ],
             "x": 517,
             "y": 162
@@ -9759,7 +9759,7 @@
           {
             "map": "termina_er_locations",
             "force_invisibility_rules": [
-              "setting_owlShuffle_none"
+              "setting_owlShuffle_anywhere"
             ],
             "x": 517,
             "y": 162
@@ -10251,8 +10251,8 @@
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_owlShuffle_none"
+                "visibility_rules": [
+                  "setting_owlShuffle_anywhere"
                 ],
                 "x": 489,
                 "y": 100
@@ -10260,7 +10260,7 @@
               {
                 "map": "termina_er_locations",
                 "force_invisibility_rules": [
-                  "setting_owlShuffle_none"
+                  "setting_owlShuffle_anywhere"
                 ],
                 "x": 489,
                 "y": 100
@@ -10736,8 +10736,8 @@
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_owlShuffle_none"
+                "visibility_rules": [
+                  "setting_owlShuffle_anywhere"
                 ],
                 "x": 208,
                 "y": 410
@@ -10745,7 +10745,7 @@
               {
                 "map": "termina_er_locations",
                 "force_invisibility_rules": [
-                  "setting_owlShuffle_none"
+                  "setting_owlShuffle_anywhere"
                 ],
                 "x": 208,
                 "y": 410
@@ -11265,8 +11265,8 @@
                     "map_locations": [
                       {
                         "map": "termina",
-                        "force_invisibility_rules": [
-                          "setting_owlShuffle_none"
+                        "visibility_rules": [
+                          "setting_owlShuffle_anywhere"
                         ],
                         "x": 831,
                         "y": 256
@@ -11274,7 +11274,7 @@
                       {
                         "map": "termina_er_locations",
                         "force_invisibility_rules": [
-                          "setting_owlShuffle_none"
+                          "setting_owlShuffle_anywhere"
                         ],
                         "x": 831,
                         "y": 256
@@ -11410,8 +11410,8 @@
                         "map_locations": [
                           {
                             "map": "termina",
-                            "force_invisibility_rules": [
-                              "setting_owlShuffle_none"
+                            "visibility_rules": [
+                              "setting_owlShuffle_anywhere"
                             ],
                             "x": 952,
                             "y": 255
@@ -11419,7 +11419,7 @@
                           {
                             "map": "termina_er_locations",
                             "force_invisibility_rules": [
-                              "setting_owlShuffle_none"
+                              "setting_owlShuffle_anywhere"
                             ],
                             "x": 952,
                             "y": 255
