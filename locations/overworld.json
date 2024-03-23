@@ -8266,12 +8266,12 @@
       {
         "map": "termina",
         "x": 590,
-        "y": 347
+        "y": 365
       },
       {
         "map": "termina_er_locations",
         "x": 590,
-        "y": 347
+        "y": 365
       }
     ]
   },
@@ -8952,6 +8952,8 @@
             "access_rules": [
               "$mm|Swamp Archery Reward 1"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9034,6 +9036,8 @@
             "access_rules": [
               "$mm|Tourist Information Pictobox"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9180,6 +9184,8 @@
             "access_rules": [
               "$mm|Swamp Potion Shop Kotake"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9205,6 +9211,8 @@
             "access_rules": [
               "$mm|Swamp Potion Shop Item 2"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9212,6 +9220,8 @@
             "access_rules": [
               "$mm|Swamp Potion Shop Item 3"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9252,6 +9262,8 @@
             "access_rules": [
               "$mm|Woods of Mystery Grotto"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9305,6 +9317,8 @@
             "sections": [
               {
                 "name": "Get in",
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               },
               {
@@ -9410,6 +9424,8 @@
                 "access_rules": [
                   "$mm|Deku Palace Grotto Chest"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               },
               {
@@ -9512,6 +9528,8 @@
         "access_rules": [
           "$mm|Woodfall Near Owl Chest"
         ],
+        "chest_unopened_img": "images/chest_brown_closed.png",
+        "chest_opened_img": "images/chest_brown_open.png",
         "item_count": 1
       },
       {
@@ -9519,6 +9537,8 @@
         "access_rules": [
           "$mm|Woodfall Entrance Chest"
         ],
+        "chest_unopened_img": "images/chest_brown_closed.png",
+        "chest_opened_img": "images/chest_brown_open.png",
         "item_count": 1
       }
     ],
@@ -9630,6 +9650,8 @@
             "access_rules": [
               "$mm|Mountain Village Waterfall Chest"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9655,6 +9677,8 @@
             "access_rules": [
               "$mm|Mountain Village Tunnel Grotto"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9681,6 +9705,8 @@
               "$mm|Blacksmith Razor Blade",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9689,6 +9715,8 @@
               "$mm|Blacksmith Gilded Sword",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9783,6 +9811,8 @@
             "access_rules": [
               "$mm|Tingle Map Ranch"
             ],
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           }
         ],
@@ -9790,7 +9820,7 @@
           {
             "map": "termina",
             "x": 582,
-            "y": 165,
+            "y": 170,
             "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
@@ -9798,7 +9828,7 @@
           {
             "map": "termina_er_locations",
             "x": 582,
-            "y": 165,
+            "y": 170,
             "force_visibility_rules": [
               "setting_tingleShuffle_vanilla,setting_tingleShuffle_anywhere"
             ]
@@ -9814,6 +9844,8 @@
             "access_rules": [
               "$mm|Twin Islands Frozen Grotto Chest"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9839,6 +9871,8 @@
             "access_rules": [
               "$mm|Twin Islands Ramp Grotto Chest"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9856,7 +9890,7 @@
         ]
       },
       {
-        "name": "Gorn Elder",
+        "name": "Goron Elder",
         "short_name": "Goron Elder",
         "sections": [
           {
@@ -9948,6 +9982,8 @@
             "access_rules": [
               "$mm|Goron Village Scrub Deed"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9955,6 +9991,8 @@
             "access_rules": [
               "$mm|Goron Village Scrub Bomb Bag"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -9990,6 +10028,8 @@
               "$mm|Goron Powder Keg",
               "{}"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -10024,6 +10064,8 @@
             "access_rules": [
               "$mm|Lone Peak Shrine Invisible Chest"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -10031,6 +10073,8 @@
             "access_rules": [
               "$mm|Lone Peak Shrine Boulder Chest"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -10083,6 +10127,8 @@
             "access_rules": [
               "$mm|Goron Shop Item 1"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -10090,6 +10136,8 @@
             "access_rules": [
               "$mm|Goron Shop Item 2"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -10097,6 +10145,8 @@
             "access_rules": [
               "$mm|Goron Shop Item 3"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -10128,6 +10178,8 @@
             "access_rules": [
               "$mm|Path to Snowhead Grotto"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -10383,8 +10435,8 @@
           },
           {
             "name": "Ocean Tingle Maps",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "short_name": "GB Tingle",
             "sections": [
               {
@@ -10860,6 +10912,8 @@
                 "access_rules": [
                   "$mm|Road to Ikana Chest"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -10885,19 +10939,21 @@
                 "access_rules": [
                   "$mm|Road to Ikana Grotto"
                 ],
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "x": 684,
-                "y": 300
+                "x": 631,
+                "y": 312
               },
               {
                 "map": "termina_er_locations",
-                "x": 684,
-                "y": 300
+                "x": 631,
+                "y": 312
               }
             ]
           },
@@ -10918,13 +10974,13 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 631,
-                "y": 312
+                "x": 682,
+                "y": 315
               },
               {
                 "map": "termina_er_locations",
-                "x": 681,
-                "y": 312
+                "x": 682,
+                "y": 315
               }
             ]
           },
