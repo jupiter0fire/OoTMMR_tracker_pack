@@ -1196,7 +1196,7 @@
         "type": "itemgrid",
         "h_alignment": "center",
         "item_margin": "1.1",
-        "scale": 0.9,
+        "scale": 1.0,
         "rows": [
           [
             "MM_BUTTON_A",
