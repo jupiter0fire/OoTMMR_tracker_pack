@@ -1,5 +1,4 @@
-[
-  {
+{
     "name": "OOT",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
@@ -424,9 +423,7 @@
             "y": 980
           }
         ]
-      }
-    ]
-  },
+      },
   {
     "name": "Lost Woods",
     "color": "#18a50e",
@@ -11438,5 +11435,4 @@
         ]
       }
     ]
-  }
-]
+  }]}
