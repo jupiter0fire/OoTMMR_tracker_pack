@@ -1445,7 +1445,7 @@
   {
     "name": "MM C-Up Button",
     "type": "toggle",
-    "img": "images/items/MM__Button_C-Up.png",
+    "img": "images/items/MM_Button_C-Up.png",
     "codes": "MM_BUTTON_CUP"
   },
   {
@@ -1463,7 +1463,7 @@
   {
     "name": "MM C-Right Button",
     "type": "toggle",
-    "img": "images/items/MM__Button_C-Right.png",
+    "img": "images/items/MM_Button_C-Right.png",
     "codes": "MM_BUTTON_CRIGHT"
   },
   {
