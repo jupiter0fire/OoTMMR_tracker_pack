@@ -7029,8 +7029,6 @@
               },
               {
                 "name": "Clock Town Tingle Maps",
-                "chest_unopened_img": "images/Tingle_Map_Icon.png",
-                "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                 "short_name": "Town Tingle",
                 "sections": [
                   {
@@ -7038,6 +7036,8 @@
                     "access_rules": [
                       "$mm|Tingle Map Clock Town"
                     ],
+                    "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                    "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "item_count": 1
                   },
                   {
@@ -7045,6 +7045,8 @@
                     "access_rules": [
                       "$mm|Tingle Map Woodfall"
                     ],
+                    "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                    "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "item_count": 1
                   }
                 ],
@@ -8586,11 +8588,11 @@
             "access_rules": [
               "$mm|Tingle Map Great Bay"
             ],
+            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
             "item_count": 1
           }
         ],
-        "chest_unopened_img": "images/Tingle_Map_Icon.png",
-        "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
         "map_locations": [
           {
             "map": "termina",
@@ -10436,8 +10438,6 @@
               },
               {
                 "name": "Ocean Tingle Maps",
-                "chest_unopened_img": "images/Tingle_Map_Icon.png",
-                "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                 "short_name": "GB Tingle",
                 "sections": [
                   {
@@ -10454,6 +10454,8 @@
                     "access_rules": [
                       "$mm|Tingle Map Ikana"
                     ],
+                    "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                    "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                     "item_count": 1
                   }
                 ],
@@ -11211,8 +11213,6 @@
                     "children": [
                       {
                         "name": "Ikana Canyon Tingle Maps",
-                        "chest_unopened_img": "images/Tingle_Map_Icon.png",
-                        "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                         "short_name": "Canyon",
                         "sections": [
                           {
@@ -11220,6 +11220,8 @@
                             "access_rules": [
                               "$mm|Tingle Map Ikana"
                             ],
+                            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                             "item_count": 1
                           },
                           {
@@ -11227,6 +11229,8 @@
                             "access_rules": [
                               "$mm|Tingle Map Clock Town"
                             ],
+                            "chest_unopened_img": "images/Tingle_Map_Icon.png",
+                            "chest_opened_img": "images/Tingle_Map_Icon_Grey.png",
                             "item_count": 1
                           }
                         ],
