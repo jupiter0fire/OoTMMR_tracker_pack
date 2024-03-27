@@ -8073,11 +8073,11 @@
             "sections": [
               {
                 "name": "Kill the Dodongos",
-                "chest_unopened_img": "images/system/chest_unopened_big.png",
-                "chest_opened_img": "images/system/chest_open_big.png",
                 "access_rules": [
                   "$mm|Termina Field Dodongo Grotto"
                 ],
+                "chest_unopened_img": "images/system/chest_unopened_big.png",
+                "chest_opened_img": "images/system/chest_open_big.png",
                 "item_count": 1
               }
             ],
@@ -8322,7 +8322,7 @@
     "access_rules": [
       "$mm|Termina Field NW Grass Grotto"
     ],
-    "visibility_rules": [
+    "force_visibility_rules": [
       "setting_GrassShufflemm_true"
     ],
     "chest_unopened_img": "images/MM_Grass.png",
@@ -8333,13 +8333,13 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 551,
-        "y": 340
+        "x": 505,
+        "y": 280
       },
       {
         "map": "termina_er_locations",
-        "x": 551,
-        "y": 340
+        "x": 505,
+        "y": 280
       }
     ]
   },
