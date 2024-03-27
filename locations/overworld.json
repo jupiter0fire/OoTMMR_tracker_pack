@@ -6593,12 +6593,12 @@
         "map_locations": [
           {
             "map": "termina",
-            "x": 110,
+            "x": 111,
             "y": 552
           },
           {
             "map": "termina_er_locations",
-            "x": 117,
+            "x": 111,
             "y": 85
           }
         ]
@@ -9386,8 +9386,8 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 514,
-                    "y": 558
+                    "x": 512,
+                    "y": 555
                   },
                   {
                     "name": "Deku Palace West Side Grass",
@@ -9752,12 +9752,12 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 530,
+                    "x": 525,
                     "y": 184
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 530,
+                    "x": 525,
                     "y": 184
                   }
                 ]
