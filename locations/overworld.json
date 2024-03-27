@@ -8559,12 +8559,12 @@
       {
         "map": "termina",
         "x": 595,
-        "y": 347
+        "y": 349
       },
       {
         "map": "termina_er_locations",
         "x": 595,
-        "y": 347
+        "y": 349
       }
     ]
   },
@@ -9385,6 +9385,11 @@
                 ],
                 "map_locations": [
                   {
+                    "map": "termina",
+                    "x": 514,
+                    "y": 558
+                  },
+                  {
                     "name": "Deku Palace West Side Grass",
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
@@ -9655,7 +9660,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                  "x": 517,
+                    "x": 517,
                     "y": 175
                   },
                   {
@@ -9710,12 +9715,12 @@
                   {
                     "map": "termina",
                     "x": 531,
-                    "y": 134
+                    "y": 138
                   },
                   {
                     "map": "termina_er_locations",
                     "x": 531,
-                    "y": 134
+                    "y": 138
                   }
                 ]
               },
@@ -9778,7 +9783,7 @@
                       "setting_owlShuffle_anywhere"
                     ],
                     "x": 532,
-                    "y": 162
+                    "y": 158
                   },
                   {
                     "map": "termina_er_locations",
@@ -9786,7 +9791,7 @@
                       "setting_owlShuffle_anywhere"
                     ],
                     "x": 532,
-                    "y": 162
+                    "y": 158
                   }
                 ]
               },
