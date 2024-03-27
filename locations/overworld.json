@@ -8261,6 +8261,8 @@
         "access_rules": [
           "$mm|Astral Observatory Moon Tear"
         ],
+         "chest_unopened_img": "images/chest_brown_closed.png",
+    "chest_opened_img": "images/chest_brown_open.png",
         "item_count": 1
       }
     ],
@@ -8268,12 +8270,12 @@
       {
         "map": "termina",
         "x": 590,
-        "y": 365
+        "y": 367
       },
       {
         "map": "termina_er_locations",
         "x": 590,
-        "y": 365
+        "y": 367
       }
     ]
   },
@@ -9707,13 +9709,13 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 527,
-                    "y": 184
+                     "x": 532,
+                    "y": 162
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 527,
-                    "y": 184
+                    "x": 532,
+                    "y": 162
                   }
                 ]
               },
@@ -9745,13 +9747,13 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 532,
-                    "y": 162
+                    "x": 527,
+                    "y": 184
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 532,
-                    "y": 162
+                    "x": 527,
+                    "y": 184
                   }
                 ]
               },
@@ -9805,13 +9807,13 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 542,
-                    "y": 182
+                 "x": 514,
+                    "y": 163
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 542,
-                    "y": 182
+                   "x": 514,
+                    "y": 163
                   }
                 ]
               },
