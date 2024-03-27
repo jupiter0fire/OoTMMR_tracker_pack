@@ -52,7 +52,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] MM keys/text could do with a size upgrade to make it readable
 - [X] Fix Keysanity Key locations
 - [X] Add Elegy of Emptiness to OoT
-- [X] Add logic to grass and fairy fountain checks (just needs to be added to the settings list)
+- [X] Add logic to grass and fairy fountain checks
 - [X] Update MM Logic for Silver & Golden Scales
 - [X] Update MM Logic for various Strength upgrades
 - [X] Update MM Logic for various tunics
