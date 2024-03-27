@@ -7996,6 +7996,8 @@
                 "access_rules": [
                   "$mm|Termina Field Pillar Grotto"
                 ],
+                  "chest_unopened_img": "images/chest_brown_closed.png",
+                  "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -8522,12 +8524,12 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 579,
+        "x": 598,
         "y": 307
       },
       {
         "map": "termina_er_locations",
-        "x": 579,
+        "x": 598,
         "y": 307
       }
     ]
