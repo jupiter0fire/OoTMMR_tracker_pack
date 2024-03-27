@@ -2650,6 +2650,8 @@ function _mm_logic()
         ["locations"] = {
             ["Swamp Potion Shop Kotake"] = function () return true end,
 	    ["Potion Shop Grass Patches"] = function () return true end,
+            ["Woods of Mystery Grass Day 1"] = function () return true end,
+            ["Woods of Mystery Grass Day 2"] = function () return true end,
         },
     },
     ["Woods of Mystery Grotto"] = {
@@ -2898,6 +2900,7 @@ function _mm_logic()
             ["Mountain Village Waterfall Chest"] = function () return event('BOSS_SNOWHEAD') and can_use_lens() end,
             ["Mountain Village Don Gero Mask"] = function () return event('GORON_FOOD') end,
             ["Mountain Village Frog Choir HP"] = function () return event('BOSS_SNOWHEAD') and event('FROG_1') and event('FROG_2') and event('FROG_3') and event('FROG_4') end,
+            ["Mountain Village Grass Spring"] = function () return true end,
         },
     },
     ["Near Village Grotto"] = {
@@ -2924,6 +2927,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Mountain Village Tunnel Grotto"] = function () return true end,
+            ["Mountain Village Tunnel Grotto Grass"] = function () return true end,
         },
     },
     ["Blacksmith"] = {
@@ -2954,6 +2958,7 @@ function _mm_logic()
             ["Tingle Mountain"] = function () return has_weapon_range() end,
         },
         ["locations"] = {
+            ["Twin Islands Grass"] = function () return true end,
             ["Twin Islands Underwater Chest 1"] = function () return event('BOSS_SNOWHEAD') and has_mask_zora() end,
             ["Twin Islands Underwater Chest 2"] = function () return event('BOSS_SNOWHEAD') and has_mask_zora() end,
             ["Goron Elder"] = function () return (has_mask_goron() and (can_use_fire_arrows() or has_hot_water_mtn() or has_hot_water_er() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')))) and (first_day() or second_day()) end,
@@ -2976,6 +2981,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Twin Islands Ramp Grotto Chest"] = function () return true end,
+            ["Twin Islands Ramp Grotto Grass"] = function () return true end,
         },
     },
     ["Twin Islands Frozen Grotto"] = {
@@ -3050,6 +3056,7 @@ function _mm_logic()
             ["Lone Peak Shrine Lens Chest"] = function () return true end,
             ["Lone Peak Shrine Boulder Chest"] = function () return has_explosives() or trick_keg_explosives() end,
             ["Lone Peak Shrine Invisible Chest"] = function () return can_use_lens() end,
+            ["Lone Peak Shrine Grass"] = function () return true end,
         },
     },
     ["Near Goron Graveyard"] = {
@@ -4692,6 +4699,7 @@ function _mm_logic()
             ["Swamp Skulltula Tree Room Hive"] = function () return has_weapon_range() end,
             ["Swamp Skulltula Tree Room Grass 1"] = function () return true end,
             ["Swamp Skulltula Tree Room Grass 2"] = function () return true end,
+            ["Swamp Skulltula Tree Room Grass"] = function () return true end,
             ["Swamp Skulltula Tree Room Tree 1"] = function () return true end,
             ["Swamp Skulltula Tree Room Tree 2"] = function () return true end,
             ["Swamp Skulltula Tree Room Tree 3"] = function () return true end,
