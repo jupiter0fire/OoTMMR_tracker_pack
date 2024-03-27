@@ -63,6 +63,16 @@
       },
       {
         "type": "item",
+        "item": "setting_shuffleSilverRupeeOoT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFishing",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_bigFairyShuffleOOT",
         "height": 16
       },
@@ -240,6 +250,11 @@
       },
       {
         "type": "item",
+        "item": "setting_shuffleSilverRupeeMM",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_cowShuffleMm",
         "height": 16
       },
@@ -296,11 +311,6 @@
       {
         "type": "item",
         "item": "setting_shortHookshotMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_OoT_Into_MM",
         "height": 16
       }
     ]
