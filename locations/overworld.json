@@ -8097,12 +8097,12 @@
         "map_locations": [
           {
             "map": "termina",
-            "x": 525,
+            "x": 527,
             "y": 340
           },
           {
             "map": "termina_er_locations",
-            "x": 525,
+            "x": 537,
             "y": 340
           }
         ]
@@ -8478,6 +8478,31 @@
     ]
   },
   {
+    "name": "East Pillar Bombchu Chest",
+    "short_name": "East Pillar",
+    "sections": [
+      {
+        "name": "Climb the pillar",
+        "access_rules": [
+          "$mm|Termina Field Pillar Grotto"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 582,
+        "y": 302
+      },
+      {
+        "map": "termina_er_locations",
+        "x": 582,
+        "y": 302
+      }
+    ]
+  },
+  {
     "name": "East Pillar Grotto Grass",
     "short_name": "EP Grass",
     "sections": [
@@ -8497,13 +8522,13 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 579,
-        "y": 337
+        "x": 597,
+        "y": 292
       },
       {
         "map": "termina_er_locations",
-        "x": 579,
-        "y": 337
+        "x": 597,
+        "y": 292
       }
     ]
   },
@@ -8527,7 +8552,7 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 596,
+        "x": 579,
         "y": 307
       },
       {
