@@ -9826,18 +9826,6 @@
                     "chest_unopened_img": "images/chest_brown_closed.png",
                     "chest_opened_img": "images/chest_brown_open.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 531,
-                    "y": 138
-                  },
-                  {
-                    "map": "termina_er_locations",
-                    "x": 531,
-                    "y": 138
                   },
                   {
                     "name": "Path to Graveyard Grotto Grass",
@@ -9850,6 +9838,18 @@
                     "chest_unopened_img": "images/MM_Grass.png",
                     "chest_opened_img": "images/GrassGreyscale.png",
                     "item_count": 1
+                  }
+                      ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 531,
+                    "y": 138
+                  },
+                  {
+                    "map": "termina_er_locations",
+                    "x": 531,
+                    "y": 138
                   }
                 ]
               },
@@ -10044,7 +10044,9 @@
                     "map": "termina_er_locations",
                     "x": 578,
                     "y": 155
-                  },
+                  }
+                ]
+              },
                   {
                     "name": "Twin Islands Hot Spring Water Grotto",
                     "short_name": "Twin Islands Grotto",
@@ -11677,5 +11679,3 @@
         ]
       }
     ]
-  }
-]
