@@ -9655,13 +9655,13 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 529,
-                    "y": 147
+                  "x": 517,
+                    "y": 175
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 529,
-                    "y": 147
+                    "x": 517,
+                    "y": 175
                   }
                 ]
               },
@@ -9747,12 +9747,12 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 527,
+                    "x": 530,
                     "y": 184
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 527,
+                    "x": 530,
                     "y": 184
                   }
                 ]
