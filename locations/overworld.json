@@ -9260,6 +9260,39 @@
           }
         ]
       },
+        {
+        "name": "Potion Shop Grass Patches",
+        "short_name": "Potion Grass",
+        "sections": [
+          {
+            "name": "Potion Shop + Gossip Grass",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "access_rules": [
+              "$mm|Potion Shop Grass Patches"
+            ],
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "visibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 633,
+            "y": 435
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 633,
+            "y": 435
+          }
+        ]
+      },
       {
         "name": "Woods of Mystery Grotto",
         "short_name": "Woods of Mystery Grotto",
@@ -9284,6 +9317,99 @@
             "map": "termina_er_locations",
             "x": 650,
             "y": 440
+          },
+                  {
+            "name": "Woods of Mystery Grotto Grass",
+            "access_rules": [
+              "$mm|Woods of Mystery Grass Day 1"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "visibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 665,
+            "y": 440
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 665,
+            "y": 440
+          }
+        ]
+      },
+        {
+        "name": "Woods of Mystery Grass Day 1",
+        "short_name": "WOM Grass",
+        "sections": [
+          {
+            "name": "Woods of Mystery Grass Day 1",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "access_rules": [
+              "$mm|Woods of Mystery Grass Day 1"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "visibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 665,
+            "y": 440
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 665,
+            "y": 440
+          }
+        ]
+      },
+       {
+        "name": "Woods of Mystery Grass Day 2",
+        "short_name": "WOM Grass",
+        "sections": [
+          {
+            "name": "Woods of Mystery Grass Day 2",
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "access_rules": [
+              "$mm|Woods of Mystery Grass Day 2"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "visibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 665,
+            "y": 455
+          },
+          {
+            "map": "termina_er_locations",
+            "force_invisibility_rules": [
+              "setting_grassShuffleMM_true"
+            ],
+            "x": 665,
+            "y": 455
           }
         ]
       },
@@ -9733,9 +9859,21 @@
                     "map": "termina_er_locations",
                     "x": 531,
                     "y": 138
-                  }
-                ]
-              },
+                  },
+              {
+                "name": "Path to Graveyard Grotto Grass",
+                "access_rules": [
+                  "$mm|Mountain Village Tunnel Grotto Grass"
+                ],
+                "visibility_rules": [
+                  "setting_GrassShufflemm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              }
+           ]
+        },
               {
                 "name": "Mountain Smithy",
                 "short_name": "Mountain Smithy",
@@ -9774,6 +9912,33 @@
                   }
                 ]
               },
+                  {
+                          "name": "Mountain Village Grass (Spring)",
+                          "short_name": "Spring Grass",
+                          "sections": [
+                  {
+                        "name": "Mountain Village Grass (Spring)",
+                        "access_rules": [
+                          "$mm|Mountain Village Grass Spring"
+                        ],
+                       "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 3
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 540,
+                        "y": 184
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 540,
+                        "y": 184
+                      }
+                    ]
+                  },
               {
                 "name": "Mountain Village Owl Statue",
                 "short_name": "Owl Statue",
@@ -9876,6 +10041,52 @@
                   }
                 ]
               },
+               {
+                "name": "Twin Islands Grass",
+                "short_name": "Twin Grass",
+                "sections": [
+                  {
+                    "name": "Twin Islands Grass",
+                    "access_rules": [
+                      "$mm|Twin Islands Grass"
+                    ],
+                    "chest_unopened_img": "images/chest_brown_closed.png",
+                    "chest_opened_img": "images/chest_brown_open.png",
+                    "item_count": 1
+                         }
+                     ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                  "x": 582,
+                    "y": 185
+                  },
+                  {
+                    "map": "termina_er_locations",
+                    "x": 582,
+                    "y": 185
+                  },
+                         {
+                        "name": "Twin Islands Ramps Secret Grotto",
+                        "access_rules": [
+                          "$mm|Twin Islands Ramp Grotto Grass"
+                        ],
+                       "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 1
+                      }
+                     ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 578,
+                    "y": 155
+                  },
+                  {
+                    "map": "termina_er_locations",
+                    "x": 578,
+                    "y": 155
+                  },
               {
                 "name": "Twin Islands Hot Spring Water Grotto",
                 "short_name": "Twin Islands Grotto",
@@ -9915,8 +10126,17 @@
                     "chest_unopened_img": "images/chest_brown_closed.png",
                     "chest_opened_img": "images/chest_brown_open.png",
                     "item_count": 1
-                  }
-                ],
+                  },
+                         {
+                        "name": "Twin Islands Ramps Secret Grotto",
+                        "access_rules": [
+                          "$mm|Twin Islands Ramp Grotto Grass"
+                        ],
+                       "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 1
+                      }
+                     ],
                 "map_locations": [
                   {
                     "map": "termina",
@@ -10121,18 +10341,27 @@
                     "chest_unopened_img": "images/chest_brown_closed.png",
                     "chest_opened_img": "images/chest_brown_open.png",
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 697,
-                    "y": 62
                   },
                   {
-                    "map": "termina_er_locations",
-                    "x": 697,
-                    "y": 62
+                        "name": "Lone Peak Shrine Grass",
+                        "access_rules": [
+                          "$mm|Lone Peak Shrine Grass"
+                        ],
+                       "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 697,
+                        "y": 62
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 697,
+                        "y": 62
                   }
                 ]
               },
@@ -11489,4 +11718,6 @@
       }
     ]
   }
+]
+}
 ]
