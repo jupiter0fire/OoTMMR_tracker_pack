@@ -8097,13 +8097,13 @@
         "map_locations": [
           {
             "map": "termina",
-            "x": 537,
-            "y": 340
+            "x": 538,
+            "y": 348
           },
           {
             "map": "termina_er_locations",
-            "x": 537,
-            "y": 340
+            "x": 538,
+            "y": 348
           }
         ]
       }
@@ -8180,13 +8180,13 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 536,
-        "y": 360
+        "x": 520,
+        "y": 370
       },
       {
         "map": "termina_er_locations",
-        "x": 536,
-        "y": 360
+        "x": 520,
+        "y": 370
       }
     ]
   },
@@ -8384,36 +8384,6 @@
         "map": "termina_er_locations",
         "x": 520,
         "y": 339
-      }
-    ]
-  },
-  {
-    "name": "Peahat Grotto Grass",
-    "short_name": "Pea Grass",
-    "sections": [
-      {
-        "name": "Peahat Grotto Grass",
-        "access_rules": [
-          "$mm|Peahat Grotto Grass"
-        ],
-        "visibility_rules": [
-          "setting_GrassShufflemm_true"
-        ],
-        "chest_unopened_img": "images/MM_Grass.png",
-        "chest_opened_img": "images/GrassGreyscale.png",
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "x": 504,
-        "y": 355
-      },
-      {
-        "map": "termina_er_locations",
-        "x": 504,
-        "y": 355
       }
     ]
   },
