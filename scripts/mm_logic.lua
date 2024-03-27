@@ -2374,7 +2374,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Termina Field Bio Baba Grotto"] = function () return has_mask_zora() end,
-	    ["Bio Baba Grotto Grass"] = function () return true end,
+	    ["Termina Field Bio Baba Grotto Grass"] = function () return true end,
         },
     },
     ["Dodongo Grotto"] = {
