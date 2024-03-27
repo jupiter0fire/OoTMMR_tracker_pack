@@ -8261,8 +8261,8 @@
         "access_rules": [
           "$mm|Astral Observatory Moon Tear"
         ],
-         "chest_unopened_img": "images/chest_brown_closed.png",
-    "chest_opened_img": "images/chest_brown_open.png",
+        "chest_unopened_img": "images/chest_brown_closed.png",
+        "chest_opened_img": "images/chest_brown_open.png",
         "item_count": 1
       }
     ],
@@ -8878,8 +8878,8 @@
             "access_rules": [
               "$mm|Road to Southern Swamp Grotto"
             ],
-             "chest_unopened_img": "images/chest_brown_closed.png",
-             "chest_opened_img": "images/chest_brown_open.png",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9627,13 +9627,13 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 531,
-                    "y": 134
+                    "x": 517,
+                    "y": 162
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 531,
-                    "y": 134
+                    "x": 517,
+                    "y": 162
                   }
                 ]
               },
@@ -9709,13 +9709,13 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                     "x": 532,
-                    "y": 162
+                    "x": 531,
+                    "y": 134
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 532,
-                    "y": 162
+                    "x": 531,
+                    "y": 134
                   }
                 ]
               },
@@ -9777,7 +9777,7 @@
                     "visibility_rules": [
                       "setting_owlShuffle_anywhere"
                     ],
-                    "x": 517,
+                    "x": 532,
                     "y": 162
                   },
                   {
@@ -9785,7 +9785,7 @@
                     "force_invisibility_rules": [
                       "setting_owlShuffle_anywhere"
                     ],
-                    "x": 517,
+                    "x": 532,
                     "y": 162
                   }
                 ]
@@ -9807,12 +9807,12 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                 "x": 514,
+                    "x": 514,
                     "y": 138
                   },
                   {
                     "map": "termina_er_locations",
-                   "x": 514,
+                    "x": 514,
                     "y": 138
                   }
                 ]
