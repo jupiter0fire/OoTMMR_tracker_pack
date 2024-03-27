@@ -8253,33 +8253,6 @@
     ]
   },
   {
-    "name": "Moon's Tear",
-    "short_name": "Moon's Tear",
-    "sections": [
-      {
-        "name": "Look at Skull Kid through the telescope",
-        "access_rules": [
-          "$mm|Astral Observatory Moon Tear"
-        ],
-        "chest_unopened_img": "images/chest_brown_closed.png",
-        "chest_opened_img": "images/chest_brown_open.png",
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "x": 590,
-        "y": 367
-      },
-      {
-        "map": "termina_er_locations",
-        "x": 590,
-        "y": 367
-      }
-    ]
-  },
-  {
     "name": "NW Termina Field Grass Clusters",
     "short_name": "NW Grass",
     "sections": [
@@ -8288,7 +8261,7 @@
         "access_rules": [
           "$mm|Termina Field NW Grass"
         ],
-        "visibility_rules": [
+        "force_visibility_rules": [
           "setting_GrassShufflemm_true"
         ],
         "item_count": 2
@@ -8297,13 +8270,13 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 536,
-        "y": 340
+          "x": 493,
+          "y": 280
       },
       {
         "map": "termina_er_locations",
-        "x": 536,
-        "y": 340
+         "x": 493,
+        "y": 280
       }
     ]
   },
@@ -8354,12 +8327,12 @@
       {
         "map": "termina",
         "x": 568,
-        "y": 318
+        "y": 280
       },
       {
         "map": "termina_er_locations",
-        "x": 536,
-        "y": 340
+        "x": 568,
+        "y": 280
       }
     ]
   },
@@ -8383,22 +8356,22 @@
     "map_locations": [
       {
         "map": "termina",
-        "x": 507,
-        "y": 323
+       "x": 520,
+         "y": 339
       },
       {
         "map": "termina_er_locations",
-        "x": 507,
-        "y": 323
+      "x": 520,
+         "y": 339
       }
     ]
   },
   {
     "name": "Peahat Grotto Grass",
-    "short_name": "SW Grass",
+    "short_name": "Pea Grass",
     "sections": [
       {
-        "name": "Pea Grass",
+        "name": "Peahat Grotto Grass",
         "access_rules": [
           "$mm|Peahat Grotto Grass"
         ],
@@ -8552,6 +8525,8 @@
         "access_rules": [
           "$mm|Astral Observatory Moon Tear"
         ],
+        "chest_unopened_img": "images/chest_brown_closed.png",
+        "chest_opened_img": "images/chest_brown_open.png",
         "item_count": 1
       }
     ],
