@@ -8685,7 +8685,13 @@
             "map": "termina_er_locations",
             "x": 470,
             "y": 376
-          },
+          }
+        ]
+      },
+          {
+                  "name": "Gorman Race Track Grass",
+        "short_name": "Gorman Grass",
+        "sections": [
           {
             "name": "Gorman Race Track Grass",
             "access_rules": [
@@ -8792,7 +8798,10 @@
                 "map": "termina_er_locations",
                 "x": 470,
                 "y": 376
-              },
+              }
+            ]
+          },
+          
               {
                 "name": "Romani Ranch Cucco Shack",
                 "short_name": "Cucco Shack",
