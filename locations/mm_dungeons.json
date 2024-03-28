@@ -332,2136 +332,2136 @@
           "setting_housesSkulltulaTokens_cross"
         ],
         "item_count": 2
+      }
+    ]
+  },
+  {
+    "name": "Oceanside Spider House",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "short_name": "Ocean Spiders",
+    "sections": [
+      {
+        "name": "Collect 30 Tokens",
+        "access_rules": [
+          "$mm|Ocean Spider House Wallet",
+          "{}"
+        ],
+        "item_count": 1
       },
       {
-        "name": "Oceanside Spider House",
+        "name": "Entrance Slope",
+        "short_name": "Slope",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "item_count": 2,
+        "access_rules": [
+          "$mm|Ocean Skulltula Entrance Right Wall"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ]
+      },
+      {
+        "name": "Entrance Web",
+        "short_name": "Behind Web",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Entrance Web"
+        ],
+        "item_count": 1,
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ]
+      },
+      {
+        "name": "Main Room Behind Skull",
+        "short_name": "Behind Skull on Wall",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Behind Skull 1"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Webbed Pot",
+        "short_name": "Web Covered Pot 1F",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Webbed Pot"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Pot Upper",
+        "short_name": "Uncovered Pot Main Room",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Jar"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Wooden Beam",
+        "short_name": "Main Room Wood Beam",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Ceiling Plank"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Corner Bookshelf",
+        "short_name": "On Bookshelf",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Library On Corner Bookshelf"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Hole Behind Cabinets",
+        "short_name": "Behind Cabinets",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Library Hole Behind Cabinet"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Ceiling Black Space",
+        "short_name": "Library Black Space",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Library Ceiling Edge"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Hole Behind Painting",
+        "short_name": "Hole Behind Painting",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Library Hole Behind Picture"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Behind Painting",
+        "short_name": "Library Behind Painting",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Library Behind Picture"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Library Behind Bookshelf",
+        "short_name": "Behind Bookshelf",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Library Behind Bookcase 1"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Main Room Basement Black Space",
+        "short_name": "Basement Black Space",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Ceiling Edge"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Vase",
+        "short_name": "Vase in Basement",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Upper Pot"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Behind Skull",
+        "short_name": "Behind Skull in Basement",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Behind Skull 2"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Web Hole",
+        "short_name": "Basement Hole",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Webbed Hole"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Basement Pot",
+        "short_name": "Basement Pot on Crates",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula 2nd Room Lower Pot"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Crate",
+        "short_name": "Storage Room Crate",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Storage Room Crate"
+        ],
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Crate Alcove",
+        "short_name": "Storage Room Alcove",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Storage Room Behind Crate"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Behind Boat",
+        "short_name": "Behind Boat",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Storage Room Behind Boat"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Rafters",
+        "short_name": "Storage Room Rafters",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Storage Room Jar"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Storage Room Web",
+        "short_name": "Storage Room Behind Web",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Storage Room Ceiling Web"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Chandelier",
+        "short_name": "Mask Room Chandelier",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Colored Skulls Chandelier 1"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 3
+      },
+      {
+        "name": "Colored Mask Room Painting",
+        "short_name": "Mask Room Painting",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Colored Skulls Behind Picture"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Black Space",
+        "short_name": "Mask Room Black Space",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Colored Skulls Ceiling Edge"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Vase",
+        "short_name": "Mask Room Pot",
+        "chest_unopened_img": "images/system/skulltula_token.png",
+        "access_rules": [
+          "$mm|Ocean Skulltula Colored Skulls Pot"
+        ],
+        "chest_opened_img": "images/system/skulltula_token_gray.png",
+        "visibility_rules": [
+          "setting_housesSkulltulaTokens_cross"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Ocean Spider Treasure",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "$mm|Ocean Spider House Chest HP",
+          "{}"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 20,
+        "x": 290,
+        "y": 340
+      }
+    ]
+  },
+  {
+    "name": "Pirate Fortress",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Entrance Chests",
+        "access_rules": [
+          "$mm|Pirate Fortress Entrance Chest 1"
+        ],
+        "item_count": 3
+      },
+      {
+        "name": "PF Underwater Maze Chest",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Chest 1"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "PF Jail Room Underwater Chest 1",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Chest 2"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "PF Jail Room Underwater Chest 2",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers Chest 3"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "PF Jail Room PoH",
+        "access_rules": [
+          "$mm|Pirate Fortress Sewers HP"
+        ],
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lower Chest",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Lower Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Upper Chest",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Upper Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Hookshot Chest",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Hookshot"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Freestanding Hearts",
+        "chest_unopened_img": "images/PFHearts.png",
+        "chest_opened_img": "images/PFHeartsGrey.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Freestanding Hearts"
+        ],
+        "force_invisibility_rules": [
+          "setting_heartShuffleMM_false"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Zora Egg 1",
+        "access_rules": [
+          "$mm_event_raw|ZORA_EGGS_HOOKSHOT_ROOM"
+        ],
+        "hosted_item": "EVENT_MM_ZORA_EGGS_HOOKSHOT_ROOM"
+      },
+      {
+        "name": "Zora Egg 2",
+        "access_rules": [
+          "$mm_event_raw|ZORA_EGGS_BARREL_MAZE"
+        ],
+        "hosted_item": "EVENT_MM_ZORA_EGGS_BARREL_MAZE"
+      },
+      {
+        "name": "Fish Tank Chest",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Aquarium"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Zora Egg 3",
+        "access_rules": [
+          "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
+        ],
+        "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
+      },
+      {
+        "name": " Guarded Chest",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "$mm|Pirate Fortress Interior Silver Rupee Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Zora Egg 4",
+        "access_rules": [
+          "$mm_event_raw|ZORA_EGGS_TREASURE_ROOM"
+        ],
+        "hosted_item": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
+      },
+      {
+        "name": "Zora Egg 3",
+        "access_rules": [
+          "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
+        ],
+        "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
+      },
+      {
+        "name": "Zora Egg 4",
+        "access_rules": [
+          "$mm_event_raw|ZORA_EGGS_TREASURE_ROOM"
+        ],
+        "hosted_item": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 320,
+        "y": 260,
+        "size": 20
+      }
+    ]
+  },
+  {
+    "name": "Beneath the Well",
+    "short_name": "Well",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Mirror Shield Chest",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "access_rules": [
+          "$mm|Beneath the Well Mirror Shield"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Cow Grass",
+        "access_rules": [
+          "$mm|Beneath the Well Cow Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Right Side Well Chest",
+        "access_rules": [
+          "$mm|Beneath the Well Skulltulla Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Grass Before Poe",
+        "access_rules": [
+          "$mm|Beneath the Well Grass Before Poe"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Grass Near End",
+        "access_rules": [
+          "$mm|Beneath the Well Grass Near End"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Left Side Well Chest",
+        "access_rules": [
+          "$mm|Beneath the Well Keese Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Grass Left Side",
+        "access_rules": [
+          "$mm|Beneath the Well Grass Left Side"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Beneath the Well Fairy Fountain",
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "access_rules": [
+          "$mm|Beneath the Well Fairy Fountain"
+        ],
+        "visibility_rules": [
+          "setting_FairyFountainShuffleMM_false"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 836,
+        "y": 238,
+        "size": 20
+      }
+    ]
+  },
+  {
+    "name": "Ancient Castle of Ikana",
+    "short_name": "Ikana Castle",
+    "sections": [
+      {
+        "name": "Ikana Castle Exterior Grass",
+        "access_rules": [
+          "$mm|Ancient Castle of Ikana Exterior Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Defeat Igos Du Ikana",
+        "chest_unopened_img": "images/system/unknownsong.png",
+        "chest_opened_img": "images/system/unknownsong_check.png",
+        "access_rules": [
+          "$mm|Ancient Castle of Ikana Song Emptiness",
+          "{}"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Castle PoH",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "access_rules": [
+          "$mm|Ancient Castle of Ikana HP"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 831,
+        "y": 300,
+        "size": 19
+      }
+    ]
+  },
+  {
+    "name": "Moon",
+    "short_name": "Moon",
+    "sections": [
+      {
+        "name": "Fierce Deity Mask",
+        "chest_unopened_img": "images/system/unknownmask.png",
+        "chest_opened_img": "images/system/unknownmask_grey.png",
+        "access_rules": [
+          "$mm|Moon Fierce Deity Mask",
+          "{}"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Trial Deku HP",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "access_rules": [
+          "$mm|Moon Trial Deku HP"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Trial Goron HP",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "access_rules": [
+          "$mm|Moon Trial Goron HP"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Trial Zora HP",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "access_rules": [
+          "$mm|Moon Trial Zora HP"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Trial Link Chest 1",
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "Ocean Spiders",
-        "sections": [
-          {
-            "name": "Collect 30 Tokens",
-            "access_rules": [
-              "$mm|Ocean Spider House Wallet",
-              "{}"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Entrance Slope",
-            "short_name": "Slope",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "item_count": 2,
-            "access_rules": [
-              "$mm|Ocean Skulltula Entrance Right Wall"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ]
-          },
-          {
-            "name": "Entrance Web",
-            "short_name": "Behind Web",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Entrance Web"
-            ],
-            "item_count": 1,
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ]
-          },
-          {
-            "name": "Main Room Behind Skull",
-            "short_name": "Behind Skull on Wall",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Behind Skull 1"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Webbed Pot",
-            "short_name": "Web Covered Pot 1F",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Webbed Pot"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Pot Upper",
-            "short_name": "Uncovered Pot Main Room",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Jar"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Wooden Beam",
-            "short_name": "Main Room Wood Beam",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Ceiling Plank"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Library Corner Bookshelf",
-            "short_name": "On Bookshelf",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Library On Corner Bookshelf"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Library Hole Behind Cabinets",
-            "short_name": "Behind Cabinets",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Library Hole Behind Cabinet"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Library Ceiling Black Space",
-            "short_name": "Library Black Space",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Library Ceiling Edge"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Library Hole Behind Painting",
-            "short_name": "Hole Behind Painting",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Library Hole Behind Picture"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Library Behind Painting",
-            "short_name": "Library Behind Painting",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Library Behind Picture"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Library Behind Bookshelf",
-            "short_name": "Behind Bookshelf",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Library Behind Bookcase 1"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 2
-          },
-          {
-            "name": "Main Room Basement Black Space",
-            "short_name": "Basement Black Space",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Ceiling Edge"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Basement Vase",
-            "short_name": "Vase in Basement",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Upper Pot"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Basement Behind Skull",
-            "short_name": "Behind Skull in Basement",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Behind Skull 2"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Basement Web Hole",
-            "short_name": "Basement Hole",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Webbed Hole"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Basement Pot",
-            "short_name": "Basement Pot on Crates",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula 2nd Room Lower Pot"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Storage Room Crate",
-            "short_name": "Storage Room Crate",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Storage Room Crate"
-            ],
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Storage Room Crate Alcove",
-            "short_name": "Storage Room Alcove",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Storage Room Behind Crate"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Storage Room Behind Boat",
-            "short_name": "Behind Boat",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Storage Room Behind Boat"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Storage Room Rafters",
-            "short_name": "Storage Room Rafters",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Storage Room Jar"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Storage Room Web",
-            "short_name": "Storage Room Behind Web",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Storage Room Ceiling Web"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Colored Mask Room Chandelier",
-            "short_name": "Mask Room Chandelier",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Colored Skulls Chandelier 1"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 3
-          },
-          {
-            "name": "Colored Mask Room Painting",
-            "short_name": "Mask Room Painting",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Colored Skulls Behind Picture"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Colored Mask Room Black Space",
-            "short_name": "Mask Room Black Space",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Colored Skulls Ceiling Edge"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Colored Mask Room Vase",
-            "short_name": "Mask Room Pot",
-            "chest_unopened_img": "images/system/skulltula_token.png",
-            "access_rules": [
-              "$mm|Ocean Skulltula Colored Skulls Pot"
-            ],
-            "chest_opened_img": "images/system/skulltula_token_gray.png",
-            "visibility_rules": [
-              "setting_housesSkulltulaTokens_cross"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Ocean Spider Treasure",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "access_rules": [
-              "$mm|Ocean Spider House Chest HP",
-              "{}"
-            ],
-            "item_count": 1
-          }
+        "access_rules": [
+          "$mm|Moon Trial Link Chest 1"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 20,
-            "x": 290,
-            "y": 340
-          }
-        ]
+        "item_count": 1
       },
       {
-        "name": "Pirate Fortress",
+        "name": "Trial Link Chest 2",
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
-        "sections": [
-          {
-            "name": "Entrance Chests",
-            "access_rules": [
-              "$mm|Pirate Fortress Entrance Chest 1"
-            ],
-            "item_count": 3
-          },
-          {
-            "name": "PF Underwater Maze Chest",
-            "access_rules": [
-              "$mm|Pirate Fortress Sewers Chest 1"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "PF Jail Room Underwater Chest 1",
-            "access_rules": [
-              "$mm|Pirate Fortress Sewers Chest 2"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "PF Jail Room Underwater Chest 2",
-            "access_rules": [
-              "$mm|Pirate Fortress Sewers Chest 3"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "PF Jail Room PoH",
-            "access_rules": [
-              "$mm|Pirate Fortress Sewers HP"
-            ],
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "item_count": 1
-          },
-          {
-            "name": "Lower Chest",
-            "access_rules": [
-              "$mm|Pirate Fortress Interior Lower Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Upper Chest",
-            "access_rules": [
-              "$mm|Pirate Fortress Interior Upper Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Hookshot Chest",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "access_rules": [
-              "$mm|Pirate Fortress Interior Hookshot"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Freestanding Hearts",
-            "chest_unopened_img": "images/PFHearts.png",
-            "chest_opened_img": "images/PFHeartsGrey.png",
-            "access_rules": [
-              "$mm|Pirate Fortress Freestanding Hearts"
-            ],
-            "force_invisibility_rules": [
-              "setting_heartShuffleMM_false"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Zora Egg 1",
-            "access_rules": [
-              "$mm_event_raw|ZORA_EGGS_HOOKSHOT_ROOM"
-            ],
-            "hosted_item": "EVENT_MM_ZORA_EGGS_HOOKSHOT_ROOM"
-          },
-          {
-            "name": "Zora Egg 2",
-            "access_rules": [
-              "$mm_event_raw|ZORA_EGGS_BARREL_MAZE"
-            ],
-            "hosted_item": "EVENT_MM_ZORA_EGGS_BARREL_MAZE"
-          },
-          {
-            "name": "Fish Tank Chest",
-            "access_rules": [
-              "$mm|Pirate Fortress Interior Aquarium"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Zora Egg 3",
-            "access_rules": [
-              "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
-            ],
-            "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
-          },
-          {
-            "name": " Guarded Chest",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "access_rules": [
-              "$mm|Pirate Fortress Interior Silver Rupee Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Zora Egg 4",
-            "access_rules": [
-              "$mm_event_raw|ZORA_EGGS_TREASURE_ROOM"
-            ],
-            "hosted_item": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
-          },
-          {
-            "name": "Zora Egg 3",
-            "access_rules": [
-              "$mm_event_raw|ZORA_EGGS_LONE_GUARD"
-            ],
-            "hosted_item": "EVENT_MM_ZORA_EGGS_LONE_GUARD"
-          },
-          {
-            "name": "Zora Egg 4",
-            "access_rules": [
-              "$mm_event_raw|ZORA_EGGS_TREASURE_ROOM"
-            ],
-            "hosted_item": "EVENT_MM_ZORA_EGGS_TREASURE_ROOM"
-          }
+        "access_rules": [
+          "$mm|Moon Trial Link Chest 2"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 320,
-            "y": 260,
-            "size": 20
-          }
+        "item_count": 1
+      },
+      {
+        "name": "Trial Link HP",
+        "chest_unopened_img": "images/system/heartpiece.png",
+        "chest_opened_img": "images/system/heartpiece_grey.png",
+        "access_rules": [
+          "$mm|Moon Trial Link HP"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 20,
+        "x": 540,
+        "y": 302
+      }
+    ]
+  },
+  {
+    "name": "Woodfall Temple",
+    "short_name": "WFT",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Entrance Platform Chest",
+        "short_name": "Entrance Chest",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Entrance Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Grass - Floor",
+        "access_rules": [
+          "$mm|Woodfall Temple Entrance Floor Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Grass - Ledge",
+        "access_rules": [
+          "$mm|Woodfall Temple Entrance Ledge Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Fairy",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "short_name": "By Entrance Platform",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Entrance"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pots in Main Room",
+        "short_name": "Main Room Pots",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Main Pot"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Grass In Main Room",
+        "access_rules": [
+          "$mm|Woodfall Temple Main Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Kill Deku Baba in Main Room",
+        "short_name": "Kill Deku Baba",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Main Deku Baba"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest in Platform Room - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Small Key",
+        "access_rules": [
+          "$mm|Woodfall Temple Water Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Platform Room Beehive",
+        "short_name": "Wall Beehive",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Water Room Beehive"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Water Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Fight Turtles - Map",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Map",
+        "access_rules": [
+          "$mm|Woodfall Temple Map"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Map Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Kill Skulltula in Bridge Room",
+        "short_name": "Bridge Room Skulltula",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Maze Skulltula"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bridge Room Beehive",
+        "short_name": "Bridge Beehive",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Maze Beehive"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bridge Room Bubble",
+        "short_name": "Bubble under Bridge",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Maze Bubble"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Fight Dragonflies - Compass",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Compass",
+        "access_rules": [
+          "$mm|Woodfall Temple Compass"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dark Room Black Boes",
+        "short_name": "Dark Room Boes",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Dark Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pits Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Pits Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Bubble",
+        "short_name": "Main Room Bubble",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Main Bubble"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Switch",
+        "short_name": "Main Room Switch Chest",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Center Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dinolfos Mini Boss - Hero's Bow",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Hero's Bow Chest",
+        "access_rules": [
+          "$mm|Woodfall Temple Bow"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "chest_unopened_img": "images/system/chest_golden_closed.png",
+        "chest_opened_img": "images/system/chest_golden_open.png",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$mm|Woodfall Temple Boss Key Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Frog 2",
+        "hosted_item": "EVENT_MM_FROG_2",
+        "access_rules": [
+          "$mm_event_raw|FROG_2"
         ]
       },
       {
-        "name": "Beneath the Well",
-        "short_name": "Well",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "sections": [
-          {
-            "name": "Mirror Shield Chest",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "access_rules": [
-              "$mm|Beneath the Well Mirror Shield"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Cow Grass",
-            "access_rules": [
-              "$mm|Beneath the Well Cow Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Right Side Well Chest",
-            "access_rules": [
-              "$mm|Beneath the Well Skulltulla Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Grass Before Poe",
-            "access_rules": [
-              "$mm|Beneath the Well Grass Before Poe"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Grass Near End",
-            "access_rules": [
-              "$mm|Beneath the Well Grass Near End"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Left Side Well Chest",
-            "access_rules": [
-              "$mm|Beneath the Well Keese Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Grass Left Side",
-            "access_rules": [
-              "$mm|Beneath the Well Grass Left Side"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Beneath the Well Fairy Fountain",
-            "chest_unopened_img": "images/Fairy.png",
-            "chest_opened_img": "images/FairyGreyscale.png",
-            "access_rules": [
-              "$mm|Beneath the Well Fairy Fountain"
-            ],
-            "visibility_rules": [
-              "setting_FairyFountainShuffleMM_false"
-            ],
-            "item_count": 1
-          }
+        "name": "Final Room Lower Right Bubble",
+        "short_name": "Final Room Right Bubble",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Pre-Boss Bottom Right"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 836,
-            "y": 238,
-            "size": 20
-          }
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Final Room Upper Right Bubble",
+        "short_name": "Final Room Right Upper Bubble",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Pre-Boss Top Right"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Final Room Upper Left Bubble",
+        "short_name": "Final Room Left Bubble",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Pre-Boss Left"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Final Room Pillar Bubble",
+        "short_name": "Final Room Pillar",
+        "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Pre-Boss Pillar"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pre-boss Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple SF Pre-Boss Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Odolwa",
+        "chest_unopened_img": "images/system/heartcontainer.png",
+        "chest_opened_img": "images/system/heartcontainer_grey.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Boss Container"
+        ],
+        "item_count": 1,
+        "hosted_item": "mm_woodfall"
+      },
+      {
+        "name": "Boss Room Grass",
+        "access_rules": [
+          "$mm|Woodfall Temple Boss Room Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 20,
+        "x": 542,
+        "y": 478
+      }
+    ]
+  },
+  {
+    "name": "Great Bay Temple",
+    "short_name": "GBT",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Entrance Torches",
+        "short_name": "Light Torches",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple Entrance Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pinwheel Room Underwater Bubble",
+        "short_name": "Under Platform",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Water Wheel Platform"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pinwheel Room Skulltula",
+        "short_name": "Pinwheel Skulltula",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Water Wheel Skulltula"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Barrel",
+        "short_name": "Main Room Barrel",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Central Room Barrel"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Underwater Pot",
+        "short_name": "Pot in Center",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Central Room Underwater Pot"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest in Room with Ledges - Map",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Map",
+        "access_rules": [
+          "$mm|Great Bay Temple Map"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Pot",
+        "short_name": "Pot in Ledge Room",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Map Room Pot"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Hallway Bio Babas",
+        "short_name": "Bio Baba Hallway",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple Baba Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Water Room Alcove - Compass",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Compass",
+        "access_rules": [
+          "$mm|Great Bay Temple Compass"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Chest - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Small Key",
+        "access_rules": [
+          "$mm|Great Bay Temple Compass Room Underwater"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dexihand Pot",
+        "short_name": "Pot by Dexihands",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Compass Room Pot"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wart Miniboss - Ice Arrow",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Ice Arrows",
+        "access_rules": [
+          "$mm|Great Bay Temple Ice Arrow",
+          "{}"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Chest",
+        "chest_unopened_img": "images/system/chest_golden_closed.png",
+        "chest_opened_img": "images/system/chest_golden_open.png",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$mm|Great Bay Temple Boss Key"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Frog 4",
+        "hosted_item": "EVENT_MM_FROG_4",
+        "access_rules": [
+          "$mm_event_raw|FROG_4"
         ]
       },
       {
-        "name": "Ancient Castle of Ikana",
-        "short_name": "Ikana Castle",
-        "sections": [
-          {
-            "name": "Ikana Castle Exterior Grass",
-            "access_rules": [
-              "$mm|Ancient Castle of Ikana Exterior Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Defeat Igos Du Ikana",
-            "chest_unopened_img": "images/system/unknownsong.png",
-            "chest_opened_img": "images/system/unknownsong_check.png",
-            "access_rules": [
-              "$mm|Ancient Castle of Ikana Song Emptiness",
-              "{}"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Castle PoH",
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "access_rules": [
-              "$mm|Ancient Castle of Ikana HP"
-            ],
-            "item_count": 1
-          }
+        "name": "Green Valve Ceiling",
+        "short_name": "Green Room Ceiling",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple Green Pipe 1 Chest"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 831,
-            "y": 300,
-            "size": 19
-          }
-        ]
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
       },
       {
-        "name": "Moon",
-        "short_name": "Moon",
-        "sections": [
-          {
-            "name": "Fierce Deity Mask",
-            "chest_unopened_img": "images/system/unknownmask.png",
-            "chest_opened_img": "images/system/unknownmask_grey.png",
-            "access_rules": [
-              "$mm|Moon Fierce Deity Mask",
-              "{}"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Trial Deku HP",
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "access_rules": [
-              "$mm|Moon Trial Deku HP"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Trial Goron HP",
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "access_rules": [
-              "$mm|Moon Trial Goron HP"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Trial Zora HP",
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "access_rules": [
-              "$mm|Moon Trial Zora HP"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Trial Link Chest 1",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "access_rules": [
-              "$mm|Moon Trial Link Chest 1"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Trial Link Chest 2",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "access_rules": [
-              "$mm|Moon Trial Link Chest 2"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Trial Link HP",
-            "chest_unopened_img": "images/system/heartpiece.png",
-            "chest_opened_img": "images/system/heartpiece_grey.png",
-            "access_rules": [
-              "$mm|Moon Trial Link HP"
-            ],
-            "item_count": 1
-          }
+        "name": "Waterwheel Room Lower",
+        "short_name": "Waterwheel Lower Chest",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple Green Pipe 2 Lower Chest"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 20,
-            "x": 540,
-            "y": 302
-          }
-        ]
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
       },
       {
-        "name": "Woodfall Temple",
-        "short_name": "WFT",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "sections": [
-          {
-            "name": "Entrance Platform Chest",
-            "short_name": "Entrance Chest",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple Entrance Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Entrance Grass - Floor",
-            "access_rules": [
-              "$mm|Woodfall Temple Entrance Floor Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Entrance Grass - Ledge",
-            "access_rules": [
-              "$mm|Woodfall Temple Entrance Ledge Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Entrance Fairy",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "short_name": "By Entrance Platform",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Entrance"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pots in Main Room",
-            "short_name": "Main Room Pots",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Main Pot"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Grass In Main Room",
-            "access_rules": [
-              "$mm|Woodfall Temple Main Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Kill Deku Baba in Main Room",
-            "short_name": "Kill Deku Baba",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Main Deku Baba"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Chest in Platform Room - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Small Key",
-            "access_rules": [
-              "$mm|Woodfall Temple Water Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Platform Room Beehive",
-            "short_name": "Wall Beehive",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Water Room Beehive"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Water Room Grass",
-            "access_rules": [
-              "$mm|Woodfall Temple Water Room Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Fight Turtles - Map",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Map",
-            "access_rules": [
-              "$mm|Woodfall Temple Map"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Map Room Grass",
-            "access_rules": [
-              "$mm|Woodfall Temple Map Room Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Kill Skulltula in Bridge Room",
-            "short_name": "Bridge Room Skulltula",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Maze Skulltula"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Bridge Room Beehive",
-            "short_name": "Bridge Beehive",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Maze Beehive"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Bridge Room Bubble",
-            "short_name": "Bubble under Bridge",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Maze Bubble"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Fight Dragonflies - Compass",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Compass",
-            "access_rules": [
-              "$mm|Woodfall Temple Compass"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Dark Room Black Boes",
-            "short_name": "Dark Room Boes",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple Dark Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pits Room Grass",
-            "access_rules": [
-              "$mm|Woodfall Temple Pits Room Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Bubble",
-            "short_name": "Main Room Bubble",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Main Bubble"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Switch",
-            "short_name": "Main Room Switch Chest",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple Center Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Dinolfos Mini Boss - Hero's Bow",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Hero's Bow Chest",
-            "access_rules": [
-              "$mm|Woodfall Temple Bow"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Boss Key Chest",
-            "chest_unopened_img": "images/system/chest_golden_closed.png",
-            "chest_opened_img": "images/system/chest_golden_open.png",
-            "short_name": "Boss Key",
-            "access_rules": [
-              "$mm|Woodfall Temple Boss Key Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Frog 2",
-            "hosted_item": "EVENT_MM_FROG_2",
-            "access_rules": [
-              "$mm_event_raw|FROG_2"
-            ]
-          },
-          {
-            "name": "Final Room Lower Right Bubble",
-            "short_name": "Final Room Right Bubble",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Pre-Boss Bottom Right"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Final Room Upper Right Bubble",
-            "short_name": "Final Room Right Upper Bubble",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Pre-Boss Top Right"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Final Room Upper Left Bubble",
-            "short_name": "Final Room Left Bubble",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Pre-Boss Left"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Final Room Pillar Bubble",
-            "short_name": "Final Room Pillar",
-            "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Pre-Boss Pillar"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pre-boss Grass",
-            "access_rules": [
-              "$mm|Woodfall Temple SF Pre-Boss Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Odolwa",
-            "chest_unopened_img": "images/system/heartcontainer.png",
-            "chest_opened_img": "images/system/heartcontainer_grey.png",
-            "access_rules": [
-              "$mm|Woodfall Temple Boss Container"
-            ],
-            "item_count": 1,
-            "hosted_item": "mm_woodfall"
-          },
-          {
-            "name": "Boss Room Grass",
-            "access_rules": [
-              "$mm|Woodfall Temple Boss Room Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          }
+        "name": "Waterwheel Room Upper",
+        "short_name": "Waterwheel Upper Chest",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple Green Pipe 2 Upper Chest"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 20,
-            "x": 542,
-            "y": 478
-          }
-        ]
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
       },
       {
-        "name": "Great Bay Temple",
-        "short_name": "GBT",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "sections": [
-          {
-            "name": "Entrance Torches",
-            "short_name": "Light Torches",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple Entrance Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pinwheel Room Underwater Bubble",
-            "short_name": "Under Platform",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Water Wheel Platform"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pinwheel Room Skulltula",
-            "short_name": "Pinwheel Skulltula",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Water Wheel Skulltula"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Barrel",
-            "short_name": "Main Room Barrel",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Central Room Barrel"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Underwater Pot",
-            "short_name": "Pot in Center",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Central Room Underwater Pot"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Chest in Room with Ledges - Map",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Map",
-            "access_rules": [
-              "$mm|Great Bay Temple Map"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Map Room Pot",
-            "short_name": "Pot in Ledge Room",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Map Room Pot"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Hallway Bio Babas",
-            "short_name": "Bio Baba Hallway",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple Baba Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Water Room Alcove - Compass",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Compass",
-            "access_rules": [
-              "$mm|Great Bay Temple Compass"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Underwater Chest - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Small Key",
-            "access_rules": [
-              "$mm|Great Bay Temple Compass Room Underwater"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Dexihand Pot",
-            "short_name": "Pot by Dexihands",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Compass Room Pot"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Wart Miniboss - Ice Arrow",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Ice Arrows",
-            "access_rules": [
-              "$mm|Great Bay Temple Ice Arrow",
-              "{}"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Boss Key Chest",
-            "chest_unopened_img": "images/system/chest_golden_closed.png",
-            "chest_opened_img": "images/system/chest_golden_open.png",
-            "short_name": "Boss Key",
-            "access_rules": [
-              "$mm|Great Bay Temple Boss Key"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Frog 4",
-            "hosted_item": "EVENT_MM_FROG_4",
-            "access_rules": [
-              "$mm_event_raw|FROG_4"
-            ]
-          },
-          {
-            "name": "Green Valve Ceiling",
-            "short_name": "Green Room Ceiling",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple Green Pipe 1 Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Waterwheel Room Lower",
-            "short_name": "Waterwheel Lower Chest",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple Green Pipe 2 Lower Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Waterwheel Room Upper",
-            "short_name": "Waterwheel Upper Chest",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple Green Pipe 2 Upper Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Seesaw Room Underwater Barrel",
-            "short_name": "Seesaw Barrel",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Green Pipe 3 Barrel"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Seesaw Room Chest",
-            "short_name": "Seesaw Chest",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple Green Pipe 3 Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pre-Boss Exit Bubble",
-            "short_name": "By Boss Exit Fairy",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Pre-Boss Underwater"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pre-Boss Bubble",
-            "short_name": "Boss Room Bubble",
-            "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Great Bay Temple SF Pre-Boss Above Water"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Gyorg",
-            "chest_unopened_img": "images/system/heartcontainer.png",
-            "chest_opened_img": "images/system/heartcontainer_grey.png",
-            "access_rules": [
-              "$mm|Great Bay Temple Boss HC"
-            ],
-            "item_count": 1,
-            "hosted_item": "mm_great_bay"
-          }
+        "name": "Seesaw Room Underwater Barrel",
+        "short_name": "Seesaw Barrel",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Green Pipe 3 Barrel"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 20,
-            "x": 100,
-            "y": 350
-          }
-        ]
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
       },
       {
-        "name": "Stone Tower Temple",
-        "short_name": "STT",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "sections": [
-          {
-            "name": "Shoot the Statue Eye",
-            "short_name": "Entrance Eye Switch",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Entrance Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Entrance Grass",
-            "access_rules": [
-              "$mm|Stone Tower Temple Entrance Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "West Garden Grass",
-            "access_rules": [
-              "$mm|Stone Tower Temple West Garden Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Kill Armos in Lava Room - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Stone Tower Small Key 1",
-            "access_rules": [
-              "$mm|Stone Tower Temple Under West Garden Lava Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Lava Room Behind Sun Block - Map",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Map",
-            "access_rules": [
-              "$mm|Stone Tower Temple Map"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Basement Ceiling Chest",
-            "short_name": "Basement Fairy",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Under West Garden Ledge Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Across Water in Bridge Room - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Stone Tower Small Key 2",
-            "access_rules": [
-              "$mm|Stone Tower Temple Center Across Water Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Bridge Room Crystal Switch",
-            "short_name": "Bridge Room Switch",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Center Sun Block Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Behind Sun Block - Compass",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Compass",
-            "access_rules": [
-              "$mm|Stone Tower Temple Compass"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Underwater Chest",
-            "short_name": "Underwater Chest",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Water Sun Switch Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Mirror Room Sun Switch",
-            "short_name": "Sun in Mirror Room",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Mirrors Room Center Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Mirror Room Right Block",
-            "short_name": "Mirror Room Sun Block",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Mirrors Room Right Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Lava Room Fire Ring",
-            "short_name": "Lava Room Fire Ring",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Wind Room Jail Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Lava Room Ledge",
-            "short_name": "Lava Room Chest",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Wind Room Ledge Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Garo Master Miniboss - Light Arrow",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Light Arrows",
-            "access_rules": [
-              "$mm|Stone Tower Temple Light Arrow"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Pre-Boss Crystal Switch",
-            "short_name": "Pre Boss Crystal Switch",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Before Water Bridge Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Eyegore Chest",
-            "short_name": "Defeat Eyegore",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Water Bridge Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Inverted Entrance Sun",
-            "short_name": "Entrance Sun",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted Entrance Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Updraft Frozen Eye Chest",
-            "short_name": "Frozen Eye Chest",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted East Lower Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Across Bridge - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Inverted Tower Small Key 3",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted East Middle Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Updraft Room Flaming Chest",
-            "short_name": "Updraft Flaming Chest",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted East Upper Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "After Wizrobe Chest",
-            "short_name": "Defeat Wizrobe",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted Wizrobe Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Chest on Fire - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Inverted Tower Small Key 4",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted Under Wizrobe Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Inverted Stone Tower Temple Boss Key Chest",
-            "chest_unopened_img": "images/system/chest_golden_closed.png",
-            "chest_opened_img": "images/system/chest_golden_open.png",
-            "short_name": "Boss Key",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted Boss Key"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Death Armos Switch Chest in Inverted",
-            "short_name": "Inverted Death Armos",
-            "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Stone Tower Temple Entrance Switch Chest"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Defeat Eyegore - Giant's Mask",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Giant's Mask",
-            "access_rules": [
-              "$mm|Stone Tower Temple Inverted Giant Mask"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Twinmold",
-            "chest_unopened_img": "images/system/heartcontainer.png",
-            "chest_opened_img": "images/system/heartcontainer_grey.png",
-            "access_rules": [
-              "$mm|Stone Tower Boss HC"
-            ],
-            "item_count": 1,
-            "hosted_item": "mm_stone_tower"
-          }
+        "name": "Seesaw Room Chest",
+        "short_name": "Seesaw Chest",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple Green Pipe 3 Chest"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 20,
-            "x": 956,
-            "y": 213
-          }
-        ]
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
       },
       {
-        "name": "Secret Shrine Miniboss Gauntlet",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "short_name": "Boss Gauntlet",
-        "sections": [
-          {
-            "name": "Dinolfos",
-            "access_rules": [
-              "$mm|Secret Shrine Boss 1 Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Wizrobe",
-            "access_rules": [
-              "$mm|Secret Shrine Boss 2 Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Wart",
-            "access_rules": [
-              "$mm|Secret Shrine Boss 3 Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Garo Master",
-            "access_rules": [
-              "$mm|Secret Shrine Boss 4 Chest"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Defeat all four minibosses",
-            "access_rules": [
-              "$mm|Secret Shrine HP Chest"
-            ],
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "item_count": 1
-          },
-          {
-            "name": "Secret Shrine Entrance Grass",
-            "access_rules": [
-              "$mm|Secret Shrine Entrance Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Secret Shrine Dinolfos Grass",
-            "access_rules": [
-              "$mm|Secret Shrine Dinolfos Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Secret Shrine Wizzrobe Grass",
-            "access_rules": [
-              "$mm|Secret Shrine Wizzrobe Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Secret Shrine Wart Grass",
-            "access_rules": [
-              "$mm|Secret Shrine Wart Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Secret Shrine Garo Master Grass",
-            "access_rules": [
-              "$mm|Secret Shrine Garo Master Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          }
+        "name": "Pre-Boss Exit Bubble",
+        "short_name": "By Boss Exit Fairy",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Pre-Boss Underwater"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 20,
-            "x": 775,
-            "y": 228
-          }
-        ]
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
       },
       {
-        "name": "Snowhead Temple",
-        "short_name": "SHT",
-        "chest_unopened_img": "images/system/chest_brown_closed.png",
-        "chest_opened_img": "images/system/chest_brown_open.png",
-        "sections": [
-          {
-            "name": "Bridge Room Ledge Bubble",
-            "short_name": "Bridge Room Bubble",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple SF Bridge Under Platform"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Bridge Room Pillar Bubble",
-            "short_name": "Bridge Room Pillar",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple SF Bridge Pillar"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Chest Past Bridge Room - Map",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Map",
-            "access_rules": [
-              "$mm|Snowhead Temple Map"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Map Room Ground Fairy",
-            "short_name": "Room with Map Chest",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple SF Map Room"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Behind Double Blocks - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Small Key 1",
-            "access_rules": [
-              "$mm|Snowhead Temple Block Room"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Near Cracked Wall - Compass",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Compass",
-            "access_rules": [
-              "$mm|Snowhead Temple Compass"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Icicle Room Snowball - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Small Key 2",
-            "access_rules": [
-              "$mm|Snowhead Temple Icicle Room"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Icicle Room Fake Wall",
-            "short_name": "Ice Room Fake Wall",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Icicle Room Alcove"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Fake Ceiling Bubble Fairy",
-            "short_name": "Fake Ceiling Bubble",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple SF Dual Switches"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Wizrobe Mini Boss - Fire Arrow",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Fire Arrows",
-            "access_rules": [
-              "$mm|Snowhead Temple Fire Arrow"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Basement Chest",
-            "short_name": "Chest in Basement",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Central Room Bottom"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Basement Grass",
-            "access_rules": [
-              "$mm|Snowhead Temple Basement Grass"
-            ],
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ],
-            "chest_unopened_img": "images/MM_Grass.png",
-            "chest_opened_img": "images/GrassGreyscale.png",
-            "item_count": 1
-          },
-          {
-            "name": "Pillar Freezards",
-            "short_name": "Kill Freezards in Pillar Room",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Pillars Room"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Crate Fairy",
-            "short_name": "In Crate",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple SF Compass Room Crate"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Ice Puzzle Chest",
-            "short_name": "Ice Switch Puzzle",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Compass Room Ledge"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Double Block Chest",
-            "short_name": "Push Double BLocks",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Block Room Ledge"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Kill Freezards in Bridge Room - Small Key",
-            "chest_unopened_img": "images/system/chest_unopened_big.png",
-            "chest_opened_img": "images/system/chest_open_big.png",
-            "short_name": "Small Key 3",
-            "access_rules": [
-              "$mm|Snowhead Temple Bridge Room"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Map Room Ledge Chest",
-            "short_name": "Ledge in Map Room",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Map Alcove"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Snow Room Fake Wall",
-            "short_name": "Snow Fake Wall",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple SF Snow Room"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Dinolfos",
-            "short_name": "Dinolfos",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple SF Dinolfos 1"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_ownDungeon"
-            ],
-            "item_count": 2
-          },
-          {
-            "name": "Boss Key Chest",
-            "chest_unopened_img": "images/system/chest_golden_closed.png",
-            "chest_opened_img": "images/system/chest_golden_open.png",
-            "short_name": "Boss Key",
-            "access_rules": [
-              "$mm|Snowhead Temple Boss Key"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Main Room Fake Wall",
-            "short_name": "Main Room Fake Wall",
-            "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
-            "chest_opened_img": "images/system/mm_stray_fairy.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Central Room Alcove"
-            ],
-            "visibility_rules": [
-              "setting_strayFairyShuffle_mixed"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Goht",
-            "chest_unopened_img": "images/system/heartcontainer.png",
-            "chest_opened_img": "images/system/heartcontainer_grey.png",
-            "access_rules": [
-              "$mm|Snowhead Temple Boss HC"
-            ],
-            "item_count": 1,
-            "hosted_item": "mm_snowhead"
-          }
+        "name": "Pre-Boss Bubble",
+        "short_name": "Boss Room Bubble",
+        "chest_unopened_img": "images/system/mm_greatbay_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Great Bay Temple SF Pre-Boss Above Water"
         ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "size": 20,
-            "x": 488,
-            "y": 35
-          }
-        ]
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Gyorg",
+        "chest_unopened_img": "images/system/heartcontainer.png",
+        "chest_opened_img": "images/system/heartcontainer_grey.png",
+        "access_rules": [
+          "$mm|Great Bay Temple Boss HC"
+        ],
+        "item_count": 1,
+        "hosted_item": "mm_great_bay"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 20,
+        "x": 100,
+        "y": 350
+      }
+    ]
+  },
+  {
+    "name": "Stone Tower Temple",
+    "short_name": "STT",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Shoot the Statue Eye",
+        "short_name": "Entrance Eye Switch",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Entrance Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Entrance Grass",
+        "access_rules": [
+          "$mm|Stone Tower Temple Entrance Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "West Garden Grass",
+        "access_rules": [
+          "$mm|Stone Tower Temple West Garden Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Kill Armos in Lava Room - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Stone Tower Small Key 1",
+        "access_rules": [
+          "$mm|Stone Tower Temple Under West Garden Lava Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Behind Sun Block - Map",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Map",
+        "access_rules": [
+          "$mm|Stone Tower Temple Map"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Ceiling Chest",
+        "short_name": "Basement Fairy",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Under West Garden Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Across Water in Bridge Room - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Stone Tower Small Key 2",
+        "access_rules": [
+          "$mm|Stone Tower Temple Center Across Water Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bridge Room Crystal Switch",
+        "short_name": "Bridge Room Switch",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Center Sun Block Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Behind Sun Block - Compass",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Compass",
+        "access_rules": [
+          "$mm|Stone Tower Temple Compass"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Underwater Chest",
+        "short_name": "Underwater Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Water Sun Switch Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Room Sun Switch",
+        "short_name": "Sun in Mirror Room",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Mirrors Room Center Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Mirror Room Right Block",
+        "short_name": "Mirror Room Sun Block",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Mirrors Room Right Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Fire Ring",
+        "short_name": "Lava Room Fire Ring",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Wind Room Jail Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Ledge",
+        "short_name": "Lava Room Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Wind Room Ledge Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Garo Master Miniboss - Light Arrow",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Light Arrows",
+        "access_rules": [
+          "$mm|Stone Tower Temple Light Arrow"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Pre-Boss Crystal Switch",
+        "short_name": "Pre Boss Crystal Switch",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Before Water Bridge Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Eyegore Chest",
+        "short_name": "Defeat Eyegore",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Water Bridge Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Inverted Entrance Sun",
+        "short_name": "Entrance Sun",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted Entrance Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Updraft Frozen Eye Chest",
+        "short_name": "Frozen Eye Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted East Lower Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Across Bridge - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Inverted Tower Small Key 3",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted East Middle Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Updraft Room Flaming Chest",
+        "short_name": "Updraft Flaming Chest",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted East Upper Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "After Wizrobe Chest",
+        "short_name": "Defeat Wizrobe",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted Wizrobe Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest on Fire - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Inverted Tower Small Key 4",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted Under Wizrobe Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Inverted Stone Tower Temple Boss Key Chest",
+        "chest_unopened_img": "images/system/chest_golden_closed.png",
+        "chest_opened_img": "images/system/chest_golden_open.png",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted Boss Key"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Death Armos Switch Chest in Inverted",
+        "short_name": "Inverted Death Armos",
+        "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Entrance Switch Chest"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Defeat Eyegore - Giant's Mask",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Giant's Mask",
+        "access_rules": [
+          "$mm|Stone Tower Temple Inverted Giant Mask"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Twinmold",
+        "chest_unopened_img": "images/system/heartcontainer.png",
+        "chest_opened_img": "images/system/heartcontainer_grey.png",
+        "access_rules": [
+          "$mm|Stone Tower Boss HC"
+        ],
+        "item_count": 1,
+        "hosted_item": "mm_stone_tower"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 20,
+        "x": 956,
+        "y": 213
+      }
+    ]
+  },
+  {
+    "name": "Secret Shrine Miniboss Gauntlet",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "short_name": "Boss Gauntlet",
+    "sections": [
+      {
+        "name": "Dinolfos",
+        "access_rules": [
+          "$mm|Secret Shrine Boss 1 Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wizrobe",
+        "access_rules": [
+          "$mm|Secret Shrine Boss 2 Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wart",
+        "access_rules": [
+          "$mm|Secret Shrine Boss 3 Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Garo Master",
+        "access_rules": [
+          "$mm|Secret Shrine Boss 4 Chest"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Defeat all four minibosses",
+        "access_rules": [
+          "$mm|Secret Shrine HP Chest"
+        ],
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Entrance Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Entrance Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Dinolfos Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Dinolfos Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Wizzrobe Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Wizzrobe Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Wart Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Wart Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Secret Shrine Garo Master Grass",
+        "access_rules": [
+          "$mm|Secret Shrine Garo Master Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 20,
+        "x": 775,
+        "y": 228
+      }
+    ]
+  },
+  {
+    "name": "Snowhead Temple",
+    "short_name": "SHT",
+    "chest_unopened_img": "images/system/chest_brown_closed.png",
+    "chest_opened_img": "images/system/chest_brown_open.png",
+    "sections": [
+      {
+        "name": "Bridge Room Ledge Bubble",
+        "short_name": "Bridge Room Bubble",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Bridge Under Platform"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Bridge Room Pillar Bubble",
+        "short_name": "Bridge Room Pillar",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Bridge Pillar"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Chest Past Bridge Room - Map",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Map",
+        "access_rules": [
+          "$mm|Snowhead Temple Map"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Ground Fairy",
+        "short_name": "Room with Map Chest",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Map Room"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Behind Double Blocks - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Small Key 1",
+        "access_rules": [
+          "$mm|Snowhead Temple Block Room"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Near Cracked Wall - Compass",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Compass",
+        "access_rules": [
+          "$mm|Snowhead Temple Compass"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Icicle Room Snowball - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Small Key 2",
+        "access_rules": [
+          "$mm|Snowhead Temple Icicle Room"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Icicle Room Fake Wall",
+        "short_name": "Ice Room Fake Wall",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Icicle Room Alcove"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Fake Ceiling Bubble Fairy",
+        "short_name": "Fake Ceiling Bubble",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Dual Switches"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Wizrobe Mini Boss - Fire Arrow",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Fire Arrows",
+        "access_rules": [
+          "$mm|Snowhead Temple Fire Arrow"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Chest",
+        "short_name": "Chest in Basement",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Central Room Bottom"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Basement Grass",
+        "access_rules": [
+          "$mm|Snowhead Temple Basement Grass"
+        ],
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Pillar Freezards",
+        "short_name": "Kill Freezards in Pillar Room",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Pillars Room"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Crate Fairy",
+        "short_name": "In Crate",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Compass Room Crate"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Ice Puzzle Chest",
+        "short_name": "Ice Switch Puzzle",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Compass Room Ledge"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Double Block Chest",
+        "short_name": "Push Double BLocks",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Block Room Ledge"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Kill Freezards in Bridge Room - Small Key",
+        "chest_unopened_img": "images/system/chest_unopened_big.png",
+        "chest_opened_img": "images/system/chest_open_big.png",
+        "short_name": "Small Key 3",
+        "access_rules": [
+          "$mm|Snowhead Temple Bridge Room"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Map Room Ledge Chest",
+        "short_name": "Ledge in Map Room",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Map Alcove"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Snow Room Fake Wall",
+        "short_name": "Snow Fake Wall",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Snow Room"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Dinolfos",
+        "short_name": "Dinolfos",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple SF Dinolfos 1"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_ownDungeon"
+        ],
+        "item_count": 2
+      },
+      {
+        "name": "Boss Key Chest",
+        "chest_unopened_img": "images/system/chest_golden_closed.png",
+        "chest_opened_img": "images/system/chest_golden_open.png",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$mm|Snowhead Temple Boss Key"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Fake Wall",
+        "short_name": "Main Room Fake Wall",
+        "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
+        "chest_opened_img": "images/system/mm_stray_fairy.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Central Room Alcove"
+        ],
+        "visibility_rules": [
+          "setting_strayFairyShuffle_mixed"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Goht",
+        "chest_unopened_img": "images/system/heartcontainer.png",
+        "chest_opened_img": "images/system/heartcontainer_grey.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Boss HC"
+        ],
+        "item_count": 1,
+        "hosted_item": "mm_snowhead"
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "size": 20,
+        "x": 488,
+        "y": 35
       }
     ]
   }
