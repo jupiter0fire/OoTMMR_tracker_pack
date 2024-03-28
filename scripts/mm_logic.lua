@@ -3148,6 +3148,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Path to Snowhead Grotto"] = function () return true end,
+	    ["Path to Snowhead Grotto Grass"] = function () return true end,
         },
     },
     ["Snowhead Entrance"] = {
@@ -3240,6 +3241,7 @@ function _mm_logic()
             ["Romani Ranch Epona Song"] = function () return before(NIGHT1_PM_06_00) end,
             ["Romani Ranch Aliens"] = function () return before(NIGHT1_AM_02_30) and has_arrows() end,
             ["Romani Ranch Cremia Escort"] = function () return event('ALIENS') end,
+            ["Romani Ranch Grass Clusters"] = function () return true end,
         },
     },
     ["Cucco Shack"] = {
@@ -3309,6 +3311,7 @@ function _mm_logic()
             ["Great Bay Coast Zora Mask"] = function () return can_play(SONG_HEALING) end,
             ["Great Bay Coast HP"] = function () return can_use_beans() and scarecrow_hookshot() end,
             ["Great Bay Coast Fisherman HP"] = function () return can_use_wallet(1) and can_hookshot_short() and event('BOSS_GREAT_BAY') and (after(DAY1_AM_07_00) and before(NIGHT1_AM_04_00) or (after(DAY2_AM_07_00) and before(NIGHT2_AM_04_00)) or (after(DAY3_AM_07_00) and before(NIGHT3_AM_04_00))) end,
+	    ["Great Bay Coast Fisherman Grass"] = function () return true end,
         },
     },
     ["Great Bay Coast Fortress"] = {
@@ -3548,6 +3551,7 @@ function _mm_logic()
         ["locations"] = {
             ["Gorman Track Garo Mask"] = function () return can_play_epona() and can_use_wallet(1) and is_day() end,
             ["Gorman Track Milk Purchase"] = function () return can_use_wallet(1) and is_day() end,
+	    ["Gorman Track Grass"] = function () return true end,
         },
     },
     ["Gorman Track Back"] = {
@@ -3585,6 +3589,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Road to Ikana Grotto"] = function () return true end,
+	    ["Road to Ikana Grotto Grass"] = function () return true end,
         },
     },
     ["Road to Ikana Center"] = {
@@ -3615,6 +3620,8 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Ikana Graveyard Captain Mask"] = function () return can_play(SONG_AWAKENING) and has_arrows() and can_fight() end,
+	    ["Ikana Graveyard Grass Front"] = function () return true end,
+	    ["Ikana Graveyard Grass Back"] = function () return true end,
         },
     },
     ["Ikana Graveyard Grotto"] = {
@@ -3633,6 +3640,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Ikana Graveyard Grotto"] = function () return true end,
+            ["Ikana Graveyard Grotto Grass"] = function () return true end,
         },
     },
     ["Beneath The Graveyard Night 1"] = {
@@ -3710,6 +3718,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Ikana Valley Grotto"] = function () return true end,
+	    ["Ikana Valley Grotto Grass"] = function () return true end,
         },
     },
     ["Sakon Hideout"] = {
@@ -3746,6 +3755,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Ikana Great Fairy"] = function () return has('STRAY_FAIRY_ST', 15) end,
+	    ["Ikana Grass"] = function () return has('STRAY_FAIRY_ST', 15) end,
         },
     },
     ["Ikana Spring Water Cave"] = {
