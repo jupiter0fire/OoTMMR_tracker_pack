@@ -1825,6 +1825,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Milk Road Owl Statue"] = function () return has_sticks() or has_weapon() end,
+	    ["Milk Road Owl Grass"] = function () return true end,
         },
     },
     ["Owl Swamp"] = {
