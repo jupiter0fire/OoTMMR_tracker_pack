@@ -44,8 +44,9 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] Add Ocarina Buttons within tracker on both sides
 - [X] Update OoT Logic for Stone Mask 
 - [X] Update OoT Logic for Blast Mask
-- [X] Add Fairy Fountain Checks to map
-- [X] Add OoT Grass Checks to Map
+- [X] Add Fairy Fountain Shuffle Checks to map
+- [X] Add OoT Grass Shuffle Checks to Map
+- [X] Update Dungeon Checks (grass shuffle etc)
 - [X] Add Coins, Add Skeleton Keys, Add Bottomless Wallet
 - [X] Add Logic for Coins, Skeleton Keys, and Bottomless Wallet
 - [X] Move half of Owl Statues to new row and increase text size so it is readable
@@ -56,7 +57,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [X] Update MM Logic for Silver & Golden Scales
 - [X] Update MM Logic for various Strength upgrades
 - [X] Update MM Logic for various tunics
-- [ ] Update OoT Logic for Ocarina Buttons
+- [X] Update OoT Logic for Ocarina Buttons
 - [ ] Update OoT Logic for Elegy of Emptiness
 - [ ] Update OoT Logic for OoT Enemy Souls
 - [ ] Update OoT Logic for OoT Boss Souls
@@ -67,22 +68,22 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update MM Logic for Clocks As Items option
 - [ ] Update MM Logic for Ocarina Buttons option
 - [ ] Update MM Logic for Open Dungeon option
-- [ ] Update MM Logic for Skip Oath to Order option
-- [ ] Update MM Logic for Fierce Deity Anywhere option
 - [ ] Update MM Logic for Hookshoot Anywhere option
 - [ ] Update OoT Logic for Climb Most Surfaces option
 - [ ] Update MM Logic for MM Enemy Souls
 - [ ] Update MM Logic for MM Boss Souls
-- [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches - OoT done, fairy Fountains - done, fishing shuffle - done, Big Fairy shuffle - done, freestanding hearts - done, freestanding rupees (not all released by ootmm yet -
-      "wonder rupees" fall into this category), silver rupees, pots, bottle content)
-- [ ] Update Dungeon Checks (grass etc) - Big Fairies done, Grass Shuffle Done, freestanding hearts Done
 - [ ] Update Shared options
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
 - [ ] Fix broadcast view item locations - mostly done - needs testing
 - [ ] Update/add Entrance randomization options - In Progress
+- [ ] Update MM Logic for Fierce Deity Anywhere option - not in OOTMM yet
+- [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
+- [ ] Add new checks to the map (grass patches - OoT done - MM almost done, fairy Fountains - done, fishing shuffle - done, Big Fairy shuffle - done, freestanding hearts - done, beehives, snowballs, crates, freestanding rupees, (not all released by ootmm yet       "wonder rupees" fall into this category), silver rupees, pots, bottle content)
 
 ## Credits
 
 Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
+JupiterFire anmd Wbsch for creating the OOTMM Tracker Map and all original work
+That's Gotta Be Kane! - Shuffles, logic and misc updates
+PouhPouhh - Entrance Randomizer and misc updates
