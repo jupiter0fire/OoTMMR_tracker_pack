@@ -79,11 +79,11 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update/add Entrance randomization options - In Progress
 - [ ] Update MM Logic for Fierce Deity Anywhere option - not in OOTMM yet
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches - OoT done - MM almost done, fairy Fountains - done, fishing shuffle - done, Big Fairy shuffle - done, freestanding hearts - done, beehives, snowballs, crates, freestanding rupees, (not all released by ootmm yet       "wonder rupees" fall into this category), silver rupees, pots, bottle content)
+- [ ] Add new checks to the map (grass patches - OoT done - MM almost done, fairy Fountains - done, fishing shuffle - done, Big Fairy shuffle - done, freestanding hearts - done, beehives, snowballs, crates, freestanding rupees, (not all released by ootmm yet "wonder rupees" fall into this category), silver rupees, pots, bottle content)
 
 ## Credits
 
 - Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
 - JupiterFire anmd Wbsch for creating the OOTMM Tracker Map and all original work
-- [That's Gotta Be Kane! [https://github.com/ThatsGottaBeKane](url) - Shuffles, logic and misc updates
+- [That's Gotta Be Kane! (https://github.com/ThatsGottaBeKane) - Shuffles, logic and misc updates
 - PouhPouhh - Entrance Randomizer and misc updates
