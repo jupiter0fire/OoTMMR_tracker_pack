@@ -10138,115 +10138,9 @@
                       "setting_GrassShuffleMM_true"
                     ],
                     "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 582,
-                    "y": 170
                   },
                   {
-                    "map": "termina_er_locations",
-                    "x": 582,
-                    "y": 170
-                  }
-                ]
-              },
-              {
-                "name": "Goron Elder",
-                "short_name": "Goron Elder",
-                "sections": [
-                  {
-                    "name": "Unfreeze him",
-                    "access_rules": [
-                      "$mm|Goron Elder"
-                    ],
-                    "chest_unopened_img": "images/system/unknownsong.png",
-                    "chest_opened_img": "images/system/unknownsong_check.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 597,
-                    "y": 143
-                  },
-                  {
-                    "map": "termina_er_locations",
-                    "x": 597,
-                    "y": 143
-                  }
-                ]
-              },
-              {
-                "name": "Twin Islands Spring Chests",
-                "short_name": "Twin Islands Chests",
-                "access_rules": [
-                  "$mm|Twin Islands Underwater Chest 1"
-                ],
-                "sections": [
-                  {
-                    "name": "Gold Chest",
-                    "chest_unopened_img": "images/system/chest_unopened_big.png",
-                    "chest_opened_img": "images/system/chest_open_big.png",
-                    "item_count": 1
-                  },
-                  {
-                    "name": "Chest Inside Nook",
-                    "chest_unopened_img": "images/chest_brown_closed.png",
-                    "chest_opened_img": "images/chest_brown_open.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 594,
-                    "y": 170
-                  },
-                  {
-                    "map": "termina_er_locations",
-                    "x": 594,
-                    "y": 170
-                  }
-                ]
-              },
-              {
-                "name": "Goron Racetrack",
-                "short_name": "Goron Race",
-                "sections": [
-                  {
-                    "name": "Win Race After Beating Snowhead Temple",
-                    "access_rules": [
-                      "$mm|Goron Race Reward",
-                      "{}"
-                    ],
-                    "chest_unopened_img": "images/chest_brown_closed.png",
-                    "chest_opened_img": "images/chest_brown_open.png",
-                    "item_count": 1
-                  }
-                ],
-                "map_locations": [
-                  {
-                    "map": "termina",
-                    "x": 578,
-                    "y": 143
-                  },
-                  {
-                    "map": "termina_er_locations",
-                    "x": 578,
-                    "y": 143
-                  }
-                ]
-              },
-              {
-                "name": "Twin Islands Grass",
-                "short_name": "Twin Grass",
-                "sections": [
-                  {
-                    "name": "Twin Islands Grass",
+                    "name": "Twin Islands Entrance Grass",
                     "access_rules": [
                       "$mm|Twin Islands Grass"
                     ],
@@ -10261,13 +10155,101 @@
                     "map_locations": [
                       {
                         "map": "termina",
+                        "x": 582,
+                        "y": 170
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 582,
+                        "y": 170
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Goron Elder",
+                    "short_name": "Goron Elder",
+                    "sections": [
+                      {
+                        "name": "Unfreeze him",
+                        "access_rules": [
+                          "$mm|Goron Elder"
+                        ],
+                        "chest_unopened_img": "images/system/unknownsong.png",
+                        "chest_opened_img": "images/system/unknownsong_check.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 597,
+                        "y": 143
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 597,
+                        "y": 143
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Twin Islands Spring Chests",
+                    "short_name": "Twin Islands Chests",
+                    "access_rules": [
+                      "$mm|Twin Islands Underwater Chest 1"
+                    ],
+                    "sections": [
+                      {
+                        "name": "Gold Chest",
+                        "chest_unopened_img": "images/system/chest_unopened_big.png",
+                        "chest_opened_img": "images/system/chest_open_big.png",
+                        "item_count": 1
+                      },
+                      {
+                        "name": "Chest Inside Nook",
+                        "chest_unopened_img": "images/chest_brown_closed.png",
+                        "chest_opened_img": "images/chest_brown_open.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 594,
+                        "y": 170
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 594,
+                        "y": 170
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Goron Racetrack",
+                    "short_name": "Goron Race",
+                    "sections": [
+                      {
+                        "name": "Win Race After Beating Snowhead Temple",
+                        "access_rules": [
+                          "$mm|Goron Race Reward",
+                          "{}"
+                        ],
+                        "chest_unopened_img": "images/chest_brown_closed.png",
+                        "chest_opened_img": "images/chest_brown_open.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
                         "x": 578,
-                        "y": 155
+                        "y": 143
                       },
                       {
                         "map": "termina_er_locations",
                         "x": 578,
-                        "y": 155
+                        "y": 143
                       }
                     ]
                   },
