@@ -85,5 +85,5 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
 - JupiterFire anmd Wbsch for creating the OOTMM Tracker Map and all original work
-- [That's Gotta Be Kane!](https://discord.com/users/84330146058993666) - Shuffles, logic and misc updates
+- [That's Gotta Be Kane!](https://discord.com/users/843301460589936660)(https://github.com/ThatsGottaBeKane) - Shuffles, logic and misc updates
 - PouhPouhh - Entrance Randomizer and misc updates
