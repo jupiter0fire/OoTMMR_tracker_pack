@@ -8618,9 +8618,6 @@
             "access_rules": [
               "$mm|Milk Road Owl Statue"
             ],
-            "visibility_rules": [
-              "setting_owlShuffle_anywhere"
-            ],
             "item_count": 1
           }
         ],
@@ -8628,12 +8625,18 @@
           {
             "map": "termina",
             "x": 553,
-            "y": 425
+            "y": 425,
+            "force_visibility_rules": [
+              "setting_owlShuffle_anywhere"
+            ]
           },
           {
             "map": "termina_er_locations",
             "x": 553,
-            "y": 425
+            "y": 425,
+            "force_visibility_rules": [
+              "setting_owlShuffle_anywhere"
+            ]
           }
         ]
       },
@@ -8644,9 +8647,6 @@
         "access_rules": [
           "$mm|Southern Swamp Owl Grass"
         ],
-        "force_visibility_rules": [
-          "setting_GrassShuffleMM_true"
-        ],
         "item_count": 3
       }
     ],
@@ -8654,12 +8654,18 @@
       {
         "map": "termina",
         "x": 565,
-        "y": 425
+        "y": 425,
+        "force_visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ]
       },
       {
         "map": "termina_er_locations",
         "x": 565,
-        "y": 425
+        "y": 425,
+        "force_visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ]
       }
     ]
   },
@@ -8712,10 +8718,9 @@
           "$mm|Gorman Track Grass"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
-        "chest_opened_img": "images/GrassGreyscale.png",
-        "visibility_rules": [
-          "setting_GrassShuffleMM_true"
-        ],
+        "chest_opened_img": "images/GrassGreyscale.png"
+      },
+      {
         "item_count": 2
       },
       {
@@ -8723,12 +8728,18 @@
           {
             "map": "termina",
             "x": 553,
-            "y": 440
+            "y": 440,
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
+            ]
           },
           {
             "map": "termina_er_locations",
             "x": 553,
-            "y": 440
+            "y": 440,
+            "visibility_rules": [
+              "setting_GrassShuffleMM_true"
+            ]
           }
         ]
       }
@@ -8889,9 +8900,6 @@
                 "access_rules": [
                   "$mm|Romani Ranch Grass Clusters"
                 ],
-                "visibility_rules": [
-                  "setting_GrassShuffleMM_true"
-                ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 5
@@ -8901,12 +8909,18 @@
               {
                 "map": "termina",
                 "x": 400,
-                "y": 370
+                "y": 370,
+                "visibility_rules": [
+                  "setting_GrassShuffleMM_true"
+                ]
               },
               {
                 "map": "termina_er_locations",
                 "x": 400,
-                "y": 370
+                "y": 370,
+                "visibility_rules": [
+                  "setting_GrassShuffleMM_true"
+                ]
               }
             ]
           }
