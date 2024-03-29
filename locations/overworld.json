@@ -7996,8 +7996,8 @@
                 "access_rules": [
                   "$mm|Termina Field Pillar Grotto"
                 ],
-                "chest_unopened_img": "images/chest_brown_closed.png",
-                "chest_opened_img": "images/chest_brown_open.png",
+               "chest_unopened_img": "images/chest_brown_closed.png",
+               "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -8645,7 +8645,7 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "access_rules": [
-          "$mm|Southern Swamp Owl Grass"
+          "$mm|Milk Road Owl Grass"
         ],
         "item_count": 3
       }
