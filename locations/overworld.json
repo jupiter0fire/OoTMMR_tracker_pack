@@ -7996,8 +7996,8 @@
                 "access_rules": [
                   "$mm|Termina Field Pillar Grotto"
                 ],
-               "chest_unopened_img": "images/chest_brown_closed.png",
-               "chest_opened_img": "images/chest_brown_open.png",
+                "chest_unopened_img": "images/chest_brown_closed.png",
+                "chest_opened_img": "images/chest_brown_open.png",
                 "item_count": 1
               }
             ],
@@ -8718,29 +8718,25 @@
           "$mm|Gorman Track Grass"
         ],
         "chest_unopened_img": "images/MM_Grass.png",
-        "chest_opened_img": "images/GrassGreyscale.png"
-      },
-      {
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 2
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 553,
+        "y": 440,
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
+        ]
       },
       {
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 553,
-            "y": 440,
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ]
-          },
-          {
-            "map": "termina_er_locations",
-            "x": 553,
-            "y": 440,
-            "visibility_rules": [
-              "setting_GrassShuffleMM_true"
-            ]
-          }
+        "map": "termina_er_locations",
+        "x": 553,
+        "y": 440,
+        "visibility_rules": [
+          "setting_GrassShuffleMM_true"
         ]
       }
     ]
@@ -8910,16 +8906,16 @@
                 "map": "termina",
                 "x": 400,
                 "y": 370,
-                "visibility_rules": [
-                  "setting_GrassShuffleMM_true"
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleMM_false"
                 ]
               },
               {
                 "map": "termina_er_locations",
                 "x": 400,
                 "y": 370,
-                "visibility_rules": [
-                  "setting_GrassShuffleMM_true"
+                "force_invisibility_rules": [
+                  "setting_GrassShuffleMM_false"
                 ]
               }
             ]
