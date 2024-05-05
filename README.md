@@ -36,7 +36,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 ## TODOs:
 
-- [ ] Delete unused lua/json parts
+- [ ] Write MEET_ANJU rule for non-ER-cases
 
 ## Credits
 
