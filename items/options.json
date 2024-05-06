@@ -70,28 +70,67 @@
     ]
   },
   {
-    "name": "Dungeon Stray Fairy Shuffle",
+    "name": "Dungeon Chest Fairy Shuffle",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 0,
+    "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_strayFairyShuffle_vanilla.png",
-        "codes": "setting_strayFairyShuffle,setting_strayFairyShuffle_vanilla",
-        "img_mods": "@disabled"
+        "img": "images/setting_strayFairyChestShuffle_starting.png",
+        "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_starting",
+        "inherit_codes": false
       },
       {
-        "img": "images/setting_strayFairyShuffle_mixed.png",
-        "codes": "setting_strayFairyShuffle,setting_strayFairyShuffle_mixed"
+        "img": "images/setting_strayFairyChestShuffle_vanilla.png",
+        "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_vanilla",
+        "img_mods": "@disabled",
+        "inherit_codes": false
       },
       {
-        "img": "images/setting_strayFairyShuffle_ownDungeon.png",
-        "codes": "setting_strayFairyShuffle,setting_strayFairyShuffle_ownDungeon"
+        "img": "images/setting_strayFairyChestShuffle_ownDungeon.png",
+        "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_ownDungeon",
+        "inherit_codes": false
       },
       {
-        "img": "images/setting_strayFairyShuffle_anywhere.png",
-        "codes": "setting_strayFairyShuffle,setting_strayFairyShuffle_anywhere"
+        "img": "images/setting_strayFairyChestShuffle_anywhere.png",
+        "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_anywhere",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dungeon Freestanding Fairy Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_strayFairyOtherShuffle_removed.png",
+        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_removed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_strayFairyOtherShuffle_starting.png",
+        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_starting",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_strayFairyOtherShuffle_vanilla.png",
+        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_vanilla",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_strayFairyOtherShuffle_ownDungeon.png",
+        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_ownDungeon",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_strayFairyOtherShuffle_anywhere.png",
+        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_anywhere",
+        "inherit_codes": false
       }
     ]
   },
@@ -171,6 +210,286 @@
       {
         "img": "images/setting_shopShuffleMm_full.png",
         "codes": "setting_shopShuffleMm,setting_shopShuffleMm_full",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Pots Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shufflePotsOot_true.png",
+        "codes": "setting_shufflePotsOot,setting_shufflePotsOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shufflePotsOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shufflePotsOot,setting_shufflePotsOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Pots Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shufflePotsMm_true.png",
+        "codes": "setting_shufflePotsMm,setting_shufflePotsMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shufflePotsMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shufflePotsMm,setting_shufflePotsMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Grass Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleGrassOot_true.png",
+        "codes": "setting_shuffleGrassOot,setting_shuffleGrassOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleGrassOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleGrassOot,setting_shuffleGrassOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Grass Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleGrassMm_true.png",
+        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleGrassMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Freestanding Rupees Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleFreeRupeesOot_true.png",
+        "codes": "setting_shuffleFreeRupeesOot,setting_shuffleFreeRupeesOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleFreeRupeesOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleFreeRupeesOot,setting_shuffleFreeRupeesOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Freestanding Rupees Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleFreeRupeesMm_true.png",
+        "codes": "setting_shuffleFreeRupeesMm,setting_shuffleFreeRupeesMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleFreeRupeesMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleFreeRupeesMm,setting_shuffleFreeRupeesMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Freestanding Hearts Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleFreeHeartsOot_true.png",
+        "codes": "setting_shuffleFreeHeartsOot,setting_shuffleFreeHeartsOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleFreeHeartsOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleFreeHeartsOot,setting_shuffleFreeHeartsOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Freestanding Hearts Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shuffleFreeHeartsMm_true.png",
+        "codes": "setting_shuffleFreeHeartsMm,setting_shuffleFreeHeartsMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shuffleFreeHeartsMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shuffleFreeHeartsMm,setting_shuffleFreeHeartsMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Diving Game Rupee Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_divingGameRupeeShuffle_true.png",
+        "codes": "setting_divingGameRupeeShuffle,setting_divingGameRupeeShuffle_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_divingGameRupeeShuffle_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_divingGameRupeeShuffle,setting_divingGameRupeeShuffle_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Fairy Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_fairyFountainFairyShuffleOot_true.png",
+        "codes": "setting_fairyFountainFairyShuffleOot,setting_fairyFountainFairyShuffleOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_fairyFountainFairyShuffleOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_fairyFountainFairyShuffleOot,setting_fairyFountainFairyShuffleOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Fairy Fountain Fairy Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_fairyFountainFairyShuffleMm_true.png",
+        "codes": "setting_fairyFountainFairyShuffleMm,setting_fairyFountainFairyShuffleMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_fairyFountainFairyShuffleMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_fairyFountainFairyShuffleMm,setting_fairyFountainFairyShuffleMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Fairy Spot Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_fairySpotShuffleOot_true.png",
+        "codes": "setting_fairySpotShuffleOot,setting_fairySpotShuffleOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_fairySpotShuffleOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_fairySpotShuffleOot,setting_fairySpotShuffleOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Moon Crash Behavior",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_moonCrash_reset.png",
+        "codes": "setting_moonCrash,setting_moonCrash_reset",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_moonCrash_cycle.png",
+        "codes": "setting_moonCrash,setting_moonCrash_cycle",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Starting Age",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_startingAge_child.png",
+        "codes": "setting_startingAge,setting_startingAge_child",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_startingAge_adult.png",
+        "codes": "setting_startingAge,setting_startingAge_adult",
         "inherit_codes": false
       }
     ]
@@ -2379,5 +2698,29 @@
     "disabled_img_mods": "@enabled",
     "max_quantity": 266,
     "initial_quantity": 0
+  },
+  {
+    "name": "Silver Rupee Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_silverRupeeShuffle_vanilla.png",
+        "codes": "setting_silverRupeeShuffle,setting_silverRupeeShuffle_vanilla",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_silverRupeeShuffle_ownDungeon.png",
+        "codes": "setting_silverRupeeShuffle,setting_silverRupeeShuffle_ownDungeon",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_silverRupeeShuffle_anywhere.png",
+        "codes": "setting_silverRupeeShuffle,setting_silverRupeeShuffle_anywhere",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

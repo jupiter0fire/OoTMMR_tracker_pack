@@ -21,12 +21,52 @@
       },
       {
         "type": "item",
+        "item": "setting_silverRupeeShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_scrubShuffleOot",
         "height": 16
       },
       {
         "type": "item",
         "item": "setting_cowShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shufflePotsOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleGrassOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeRupeesOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeHeartsOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_divingGameRupeeShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyFountainFairyShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairySpotShuffleOot",
         "height": 16
       },
       {
@@ -44,6 +84,11 @@
         "item": "setting_priceOotScrubs",
         "height": 16
       },   
+      {
+        "type": "item",
+        "item": "setting_startingAge",
+        "height": 16
+      },
       {
         "type": "item",
         "item": "setting_doorOfTime",
@@ -178,7 +223,12 @@
       },
       {
         "type": "item",
-        "item": "setting_strayFairyShuffle",
+        "item": "setting_strayFairyChestShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_strayFairyOtherShuffle",
         "height": 16
       },
       {
@@ -189,6 +239,31 @@
       {
         "type": "item",
         "item": "setting_cowShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shufflePotsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleGrassMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeRupeesMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleFreeHeartsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyFountainFairyShuffleMm",
         "height": 16
       },
       {
@@ -214,6 +289,11 @@
       {
         "type": "item",
         "item": "setting_priceMmTingle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_moonCrash",
         "height": 16
       },
       {
