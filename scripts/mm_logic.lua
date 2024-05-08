@@ -440,7 +440,6 @@ function _mm_logic()
         ["erIndoors_none"] = true,
         ["erRegions_none"] = true,
         ["erIkanaCastle"] = false,
-        ["startingAge_child"] = true,
         ["timeTravelSword"] = true,
     }
     function setting(name, state)
