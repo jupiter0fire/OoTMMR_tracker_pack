@@ -116,6 +116,11 @@
       },
       {
         "type": "item",
+        "item": "setting_openZdShortcut",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_kakarikoGate",
         "height": 16
       },
@@ -132,6 +137,11 @@
       {
         "type": "item",
         "item": "setting_skipZelda",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_freeScarecrowOot",
         "height": 16
       },
       {
@@ -304,6 +314,11 @@
       {
         "type": "item",
         "item": "setting_bossWarpPads",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_openMoon",
         "height": 16
       },
       {
