@@ -21,6 +21,16 @@
       },
       {
         "type": "item",
+        "item": "setting_skeletonKeyOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bombchuBagOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_silverRupeeShuffle",
         "height": 16
       },
@@ -83,7 +93,7 @@
         "type": "item",
         "item": "setting_priceOotScrubs",
         "height": 16
-      },   
+      },
       {
         "type": "item",
         "item": "setting_startingAge",
@@ -156,7 +166,32 @@
       },
       {
         "type": "item",
+        "item": "setting_hookshotAnywhereOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_climbMostSurfacesOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_restoreBrokenActors",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_alterLostWoodsExits",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_blueFireArrows",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sunlightArrows",
         "height": 16
       },
       {
@@ -224,6 +259,56 @@
       {
         "type": "item",
         "item": "setting_bossKeyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_skeletonKeyMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bombchuBagMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_spellFireMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_spellWindMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_spellLoveMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bootsIronMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bootsHoverMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_tunicZoraMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scalesMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_strengthMm",
         "height": 16
       },
       {
@@ -328,6 +413,16 @@
       },
       {
         "type": "item",
+        "item": "setting_autoInvert",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_hookshotAnywhereMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_crossWarpMm",
         "height": 16
       },
@@ -344,6 +439,11 @@
       {
         "type": "item",
         "item": "setting_shortHookshotMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_progressiveClocks",
         "height": 16
       }
     ]
@@ -1115,25 +1215,43 @@
       {
         "title": "Settings OOT",
         "content": {
-          "type": "layout",
-          "key": "layout_main_oot",
-          "h_alignment": "left"
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_main_oot",
+            "h_alignment": "left"
+          }
         }
       },
       {
         "title": "Settings MM",
         "content": {
-          "type": "layout",
-          "key": "layout_main_mm",
-          "h_alignment": "left"
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_main_mm",
+            "h_alignment": "left"
+          }
         }
       },
       {
         "title": "Shared Items",
         "content": {
-          "type": "layout",
-          "key": "layout_shared_items",
-          "h_alignment": "left"
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_shared_items",
+            "h_alignment": "left"
+          }
         }
       },
       {

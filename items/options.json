@@ -1305,6 +1305,290 @@
     ]
   },
   {
+    "name": "Clocks",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_progressiveClocks_separate.png",
+        "codes": "setting_progressiveClocks,setting_progressiveClocks_separate",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_progressiveClocks_ascending.png",
+        "codes": "setting_progressiveClocks,setting_progressiveClocks_ascending",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_progressiveClocks_descending.png",
+        "codes": "setting_progressiveClocks,setting_progressiveClocks_descending",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Sunlight Arrows",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sunlightArrows_true.png",
+        "codes": "setting_sunlightArrows,setting_sunlightArrows_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sunlightArrows_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sunlightArrows,setting_sunlightArrows_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Skeleton Key (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_skeletonKeyOot_true.png",
+        "codes": "setting_skeletonKeyOot,setting_skeletonKeyOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_skeletonKeyOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_skeletonKeyOot,setting_skeletonKeyOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Skeleton Key (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_skeletonKeyMm_true.png",
+        "codes": "setting_skeletonKeyMm,setting_skeletonKeyMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_skeletonKeyMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_skeletonKeyMm,setting_skeletonKeyMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bombchu Bag (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_bombchuBagOot_true.png",
+        "codes": "setting_bombchuBagOot,setting_bombchuBagOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bombchuBagOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bombchuBagOot,setting_bombchuBagOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Bombchu Bag (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_bombchuBagMm_true.png",
+        "codes": "setting_bombchuBagMm,setting_bombchuBagMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bombchuBagMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bombchuBagMm,setting_bombchuBagMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Din's Fire (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_spellFireMm_true.png",
+        "codes": "setting_spellFireMm,setting_spellFireMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_spellFireMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_spellFireMm,setting_spellFireMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Farore's Wind (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_spellWindMm_true.png",
+        "codes": "setting_spellWindMm,setting_spellWindMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_spellWindMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_spellWindMm,setting_spellWindMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Nayru's Love (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_spellLoveMm_true.png",
+        "codes": "setting_spellLoveMm,setting_spellLoveMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_spellLoveMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_spellLoveMm,setting_spellLoveMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Iron Boots (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_bootsIronMm_true.png",
+        "codes": "setting_bootsIronMm,setting_bootsIronMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bootsIronMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bootsIronMm,setting_bootsIronMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hover Boots (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_bootsHoverMm_true.png",
+        "codes": "setting_bootsHoverMm,setting_bootsHoverMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bootsHoverMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bootsHoverMm,setting_bootsHoverMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Zora Tunic (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_tunicZoraMm_true.png",
+        "codes": "setting_tunicZoraMm,setting_tunicZoraMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_tunicZoraMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_tunicZoraMm,setting_tunicZoraMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Scales (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_scalesMm_true.png",
+        "codes": "setting_scalesMm,setting_scalesMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_scalesMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_scalesMm,setting_scalesMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Strength (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_strengthMm_true.png",
+        "codes": "setting_strengthMm,setting_strengthMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_strengthMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_strengthMm,setting_strengthMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Owl Statue Shuffle",
     "type": "progressive",
     "allow_disabled": false,
@@ -1540,6 +1824,143 @@
         "img": "images/setting_crossAge_false.png",
         "img_mods": "@disabled",
         "codes": "setting_crossAge,setting_crossAge_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Auto-Invert Time (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_autoInvert_never.png",
+        "codes": "setting_autoInvert,setting_autoInvert_never",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_autoInvert_firstCycle.png",
+        "codes": "setting_autoInvert,setting_autoInvert_firstCycle",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_autoInvert_always.png",
+        "codes": "setting_autoInvert,setting_autoInvert_always",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hookshot Anywhere (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_hookshotAnywhereOot_off.png",
+        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_off",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hookshotAnywhereOot_enabled.png",
+        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hookshotAnywhereOot_logical.png",
+        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_logical",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hookshot Anywhere (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_hookshotAnywhereMm_off.png",
+        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_off",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hookshotAnywhereMm_enabled.png",
+        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hookshotAnywhereMm_logical.png",
+        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_logical",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Climb Most Surfaces (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_climbMostSurfacesOot_off.png",
+        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_off",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_climbMostSurfacesOot_enabled.png",
+        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_climbMostSurfacesOot_logical.png",
+        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_logical",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Restore Broken Actors",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_restoreBrokenActors_true.png",
+        "codes": "setting_restoreBrokenActors,setting_restoreBrokenActors_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_restoreBrokenActors_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_restoreBrokenActors,setting_restoreBrokenActors_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Alter Lost Woods Exits",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_alterLostWoodsExits_true.png",
+        "codes": "setting_alterLostWoodsExits,setting_alterLostWoodsExits_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_alterLostWoodsExits_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_alterLostWoodsExits,setting_alterLostWoodsExits_false",
         "inherit_codes": false
       }
     ]
