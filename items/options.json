@@ -1589,6 +1589,186 @@
     ]
   },
   {
+    "name": "Ocarina Buttons Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_ocarinaButtonsShuffleOot_true.png",
+        "codes": "setting_ocarinaButtonsShuffleOot,setting_ocarinaButtonsShuffleOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_ocarinaButtonsShuffleOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ocarinaButtonsShuffleOot,setting_ocarinaButtonsShuffleOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ocarina Buttons Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_ocarinaButtonsShuffleMm_true.png",
+        "codes": "setting_ocarinaButtonsShuffleMm,setting_ocarinaButtonsShuffleMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_ocarinaButtonsShuffleMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ocarinaButtonsShuffleMm,setting_ocarinaButtonsShuffleMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Enemy Souls (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_soulsEnemyOot_true.png",
+        "codes": "setting_soulsEnemyOot,setting_soulsEnemyOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_soulsEnemyOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_soulsEnemyOot,setting_soulsEnemyOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Enemy Souls (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_soulsEnemyMm_true.png",
+        "codes": "setting_soulsEnemyMm,setting_soulsEnemyMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_soulsEnemyMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_soulsEnemyMm,setting_soulsEnemyMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Boss Souls (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossOot_true.png",
+        "codes": "setting_soulsBossOot,setting_soulsBossOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_soulsBossOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_soulsBossOot,setting_soulsBossOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Boss Souls (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_soulsBossMm_true.png",
+        "codes": "setting_soulsBossMm,setting_soulsBossMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_soulsBossMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_soulsBossMm,setting_soulsBossMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Misc. Souls (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_soulsMiscOot_true.png",
+        "codes": "setting_soulsMiscOot,setting_soulsMiscOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_soulsMiscOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_soulsMiscOot,setting_soulsMiscOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Misc. Souls (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_soulsMiscMm_true.png",
+        "codes": "setting_soulsMiscMm,setting_soulsMiscMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_soulsMiscMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_soulsMiscMm,setting_soulsMiscMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Clocks as Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_clocks_true.png",
+        "codes": "setting_clocks,setting_clocks_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_clocks_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_clocks,setting_clocks_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Owl Statue Shuffle",
     "type": "progressive",
     "allow_disabled": false,
