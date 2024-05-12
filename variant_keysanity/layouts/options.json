@@ -283,6 +283,21 @@
       },
       {
         "type": "item",
+        "item": "setting_townFairyShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_strayFairyChestShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_strayFairyOtherShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_skeletonKeyMm",
         "height": 16
       },
@@ -354,21 +369,6 @@
       {
         "type": "item",
         "item": "setting_clocks",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_townFairyShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_strayFairyChestShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_strayFairyOtherShuffle",
         "height": 16
       },
       {

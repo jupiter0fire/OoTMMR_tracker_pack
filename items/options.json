@@ -74,13 +74,8 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
-      {
-        "img": "images/setting_strayFairyChestShuffle_starting.png",
-        "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_starting",
-        "inherit_codes": false
-      },
       {
         "img": "images/setting_strayFairyChestShuffle_vanilla.png",
         "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_vanilla",
@@ -95,7 +90,6 @@
       {
         "img": "images/setting_strayFairyChestShuffle_anywhere.png",
         "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_anywhere",
-        "inherit_codes": false
       }
     ]
   },
@@ -104,16 +98,11 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 2,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_strayFairyOtherShuffle_removed.png",
         "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_removed",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_strayFairyOtherShuffle_starting.png",
-        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_starting",
         "inherit_codes": false
       },
       {
@@ -130,7 +119,6 @@
       {
         "img": "images/setting_strayFairyOtherShuffle_anywhere.png",
         "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_anywhere",
-        "inherit_codes": false
       }
     ]
   },
