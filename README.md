@@ -30,13 +30,20 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 ## Unsupported Settings
 
-- Dungeon Reward Shuffle Anywhere
-- Boss Entrance Shuffle
-- Dungeon Entrance Shuffle
+- Chest Game Small Key Shuffle
+- Owl Statue Shuffle
+- Pot Shuffle
+- Grass Shuffle
+- Freestanding Rupees Shuffle
+- Freestanding Hearts Shuffle
+- Fishing Pond Shuffle
+- Entrance Shuffle
 
 ## TODOs:
 
 - [ ] Write MEET_ANJU rule for non-ER-cases
+- [ ] Add Silver Rupees to the item grid
+- [ ] Implemend flags for cleared/uncleared dungeon states
 
 ## Credits
 

@@ -577,6 +577,36 @@
             ]
           },
           {
+            "name": "SFM Fairy Fountain",
+            "color": "#18a50e",
+            "children": [
+              {
+                "name": "SFM Fairy Fountain",
+                "sections": [
+                  {
+                    "name": "SFM Fairy Fountain",
+                    "access_rules": [
+                      "$oot|Sacred Meadow Fairy Fountain Fairy 1"
+                    ],
+                    "chest_unopened_img": "images/Fairy.png",
+                    "chest_opened_img": "images/FairyGreyscale.png",
+                    "item_count": 8
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "visibility_rules": [
+                      "setting_fairyFountainFairyShuffleOot_true"
+                    ],
+                    "x": 2148,
+                    "y": 680
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "name": "SFM Storms Grotto",
             "sections": [
               {
@@ -1847,6 +1877,19 @@
                       "$oot|Graveyard Fairy Tomb"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Fairy Fountain Shield Grave",
+                    "short_name": "Fairy Fountain",
+                    "access_rules": [
+                      "$oot|Graveyard Fairy Fountain Fairy 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_fairyFountainFairyShuffleOot_true"
+                    ],
+                    "chest_unopened_img": "images/Fairy.png",
+                    "chest_opened_img": "images/FairyGreyscale.png",
+                    "item_count": 8
                   }
                 ],
                 "map_locations": [
@@ -3501,6 +3544,19 @@
                   "$oot|Zora Domain Diving Game"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Diving Game Rupees",
+                "access_rules": [
+                  "$oot|Zora Domain Diving Game Green Rupee"
+                ],
+                "visibility_rules": [
+                  "setting_divingGameRupeeShuffle_true"
+                ],
+                "chest_unopened_img": "images/blue_check.png",
+                "chest_opened_img": "images/blue.png",
+                "item_count": 5,
+                "clear_as_group": false
               }
             ],
             "map_locations": [
