@@ -578,31 +578,25 @@
           },
           {
             "name": "SFM Fairy Fountain",
-            "color": "#18a50e",
-            "children": [
+            "sections": [
               {
                 "name": "SFM Fairy Fountain",
-                "sections": [
-                  {
-                    "name": "SFM Fairy Fountain",
-                    "access_rules": [
-                      "$oot|Sacred Meadow Fairy Fountain Fairy 1"
-                    ],
-                    "chest_unopened_img": "images/Fairy.png",
-                    "chest_opened_img": "images/FairyGreyscale.png",
-                    "item_count": 8
-                  }
+                "access_rules": [
+                  "$oot|Sacred Meadow Fairy Fountain Fairy 1"
                 ],
-                "map_locations": [
-                  {
-                    "map": "oot",
-                    "visibility_rules": [
-                      "setting_fairyFountainFairyShuffleOot_true"
-                    ],
-                    "x": 2148,
-                    "y": 680
-                  }
-                ]
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 2148,
+                "y": 680
               }
             ]
           },
@@ -860,6 +854,30 @@
                 "map": "oot",
                 "x": 970,
                 "y": 660
+              }
+            ]
+          },
+          {
+            "name": "HF Fairy Fountain",
+            "sections": [
+              {
+                "name": "HF Fairy Fountain",
+                "access_rules": [
+                  "$oot|Hyrule Field Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 1186,
+                "y": 396
               }
             ]
           }
@@ -3140,8 +3158,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": 
-                [
+                "force_invisibility_rules": [
                   "setting_skipZelda_true"
                 ],
                 "x": 1420,
@@ -3510,6 +3527,30 @@
                 "y": 465
               }
             ]
+          },
+          {
+            "name": "ZR Fairy Fountain",
+            "sections": [
+              {
+                "name": "ZR Fairy Fountain",
+                "access_rules": [
+                  "$oot|Zora River Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 2142,
+                "y": 500
+              }
+            ]
           }
         ]
       },
@@ -3688,6 +3729,30 @@
                 ],
                 "x": 2625,
                 "y": 500
+              }
+            ]
+          },
+          {
+            "name": "ZD Fairy Fountain",
+            "sections": [
+              {
+                "name": "ZD Fairy Fountain",
+                "access_rules": [
+                  "$oot|Zora Domain Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 2510,
+                "y": 454
               }
             ]
           }
@@ -4230,6 +4295,38 @@
                 "y": 390
               }
             ]
+          },
+          {
+            "name": "Gerudo Fortress Fairy Fountain",
+            "sections": [
+              {
+                "name": "GF Fairy Fountain",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 470,
+                "y": 390
+              },
+              {
+                "map": "oot_er_locations",
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
+                ],
+                "x": 562,
+                "y": 436
+              }
+            ]
           }
         ]
       },
@@ -4436,6 +4533,30 @@
                 "map": "oot",
                 "x": 235,
                 "y": 320
+              }
+            ]
+          },
+          {
+            "name": "Desert Colossus Oasis Fairies",
+            "sections": [
+              {
+                "name": "Oasis Fairies",
+                "access_rules": [
+                  "$oot|Desert Colossus Oasis Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 206,
+                "y": 436
               }
             ]
           }
