@@ -866,6 +866,18 @@
           "setting_cowShuffleMm_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Beneath the Well Fairy Fountain",
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "access_rules": [
+          "$mm|Beneath The Well Fairy Fountain Fairy 1"
+        ],
+        "visibility_rules": [
+          "setting_fairyFountainFairyShuffleMm_true"
+        ],
+        "item_count": 8
       }
     ],
     "map_locations": [

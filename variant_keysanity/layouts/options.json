@@ -273,6 +273,31 @@
       },
       {
         "type": "item",
+        "item": "setting_shopShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scrubShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_cowShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shuffleMerchantsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyFountainFairyShuffleMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_skeletonKeyMm",
         "height": 16
       },
@@ -344,51 +369,6 @@
       {
         "type": "item",
         "item": "setting_clocks",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_scrubShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_cowShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shufflePotsMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleGrassMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleFreeRupeesMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleFreeHeartsMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_fairyFountainFairyShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shopShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_shuffleMerchantsMm",
         "height": 16
       },
       {
