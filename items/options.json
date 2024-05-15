@@ -658,6 +658,55 @@
     ]
   },
   {
+    "name": "Allow adult link to be swordless",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_swordlessAdult_true.png",
+        "codes": "setting_swordlessAdult,setting_swordlessAdult_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_swordlessAdult_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_swordlessAdult,setting_swordlessAdult_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_rainbowBridge_open.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_rainbowBridge_vanilla.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_rainbowBridge_medallions.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_medallions",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_rainbowBridge_custom.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_custom",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Skip Oath to Order",
     "type": "progressive",
     "allow_disabled": false,
