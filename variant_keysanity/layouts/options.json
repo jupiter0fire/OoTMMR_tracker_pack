@@ -76,11 +76,6 @@
       },
       {
         "type": "item",
-        "item": "setting_fairySpotShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_priceOotShops",
         "height": 16
       },
@@ -106,6 +101,36 @@
       },
       {
         "type": "item",
+        "item": "setting_kakarikoGate",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_zoraKing",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_gerudoFortress",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_lacs",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_rainbowBridge",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_swordlessAdult",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_dekuTreeAdult",
         "height": 16
       },
@@ -126,32 +151,12 @@
       },
       {
         "type": "item",
-        "item": "setting_kakarikoGate",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_zoraKing",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_gerudoFortress",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_skipZelda",
         "height": 16
       },
       {
         "type": "item",
         "item": "setting_freeScarecrowOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_lacs",
         "height": 16
       },
       {
@@ -172,11 +177,6 @@
       {
         "type": "item",
         "item": "setting_restoreBrokenActors",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_alterLostWoodsExits",
         "height": 16
       },
       {
@@ -298,6 +298,51 @@
       },
       {
         "type": "item",
+        "item": "setting_priceMmShops",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_priceMmTingle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_moonCrash",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_majoraChild",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bossWarpPads",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_openMoon",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crossWarpMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crossAge",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_hookshotAnywhereMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_skeletonKeyMm",
         "height": 16
       },
@@ -369,56 +414,6 @@
       {
         "type": "item",
         "item": "setting_clocks",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_priceMmShops",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_priceMmTingle",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_moonCrash",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_majoraChild",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bossWarpPads",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_openMoon",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_crossAge",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_autoInvert",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_hookshotAnywhereMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_crossWarpMm",
         "height": 16
       },
       {
