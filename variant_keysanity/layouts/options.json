@@ -46,36 +46,6 @@
       },
       {
         "type": "item",
-        "item": "setting_skeletonKeyOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bombchuBagOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_ocarinaButtonsShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsEnemyOot",
-        "height": 16
-      },  
-      {
-        "type": "item",
-        "item": "setting_soulsBossOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsMiscOot",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_priceOotShops",
         "height": 16
       },
@@ -227,6 +197,36 @@
       {
         "type": "item",
         "item": "setting_agelessChildTrade",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_skeletonKeyOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bombchuBagOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_ocarinaButtonsShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsEnemyOot",
+        "height": 16
+      },  
+      {
+        "type": "item",
+        "item": "setting_soulsBossOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_soulsMiscOot",
         "height": 16
       }
     ]
