@@ -100,7 +100,7 @@
       },
       {
         "img": "images/setting_shuffleSilverRupeeOoT_On.png",
-        "codes": "setting_shuffleSilverRupeeOoT,setting_shuffleSilverRupeeOoT_true",
+        "codes": "setting_shuffleSilverRupeeOoT,setting_shuffleSilverRupeeOoT_true"
       }
     ]
   },
@@ -118,7 +118,7 @@
       },
       {
         "img": "images/setting_shuffleSilverRupeeMM_On.png",
-        "codes": "setting_shuffleSilverRupeeMM,setting_shuffleSilverRupeeMM_true",
+        "codes": "setting_shuffleSilverRupeeMM,setting_shuffleSilverRupeeMM_true"
       }
     ]
   },
@@ -136,7 +136,7 @@
       },
       {
         "img": "images/setting_shuffleFishingOoT_On.png",
-        "codes": "setting_shuffleFishing,setting_shuffleFishing_true",
+        "codes": "setting_shuffleFishing,setting_shuffleFishing_true"
       }
     ]
   },
