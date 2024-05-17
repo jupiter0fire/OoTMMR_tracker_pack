@@ -952,15 +952,33 @@
   },
   {
     "name": "MM Goron Mask",
-    "type": "toggle",
-    "img": "images/items/mm_goron.png",
-    "codes": "MM_MASK_GORON,MM_MASK_TRANSFORM,MM_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_goron.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_goron.png",
+        "codes": "MM_MASK_GORON,MM_MASK_TRANSFORM,MM_MASK"
+      }
+    ]
   },
   {
     "name": "MM Zora Mask",
-    "type": "toggle",
-    "img": "images/items/mm_zora.png",
-    "codes": "MM_MASK_ZORA,MM_MASK_TRANSFORM,MM_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_zora.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_zora.png",
+        "codes": "MM_MASK_ZORA,MM_MASK_TRANSFORM,MM_MASK"
+      }
+    ]
   },
   {
     "name": "MM Fierce Deity Mask",
@@ -994,9 +1012,18 @@
   },
   {
     "name": "MM Bunny Hood",
-    "type": "toggle",
-    "img": "images/items/mm_bunny.png",
-    "codes": "MM_MASK_BUNNY,MM_MASK_REGULAR,MM_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_bunny.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_bunny.png",
+        "codes": "MM_MASK_BUNNY,MM_MASK_REGULAR,MM_MASK"
+      }
+    ]
   },
   {
     "name": "MM Captain Hat",
@@ -1036,9 +1063,18 @@
   },
   {
     "name": "MM Keaton Mask",
-    "type": "toggle",
-    "img": "images/items/mm_keaton.png",
-    "codes": "MM_MASK_KEATON,MM_MASK_REGULAR,MM_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_keaton.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_keaton.png",
+        "codes": "MM_MASK_KEATON,MM_MASK_REGULAR,MM_MASK"
+      }
+    ]
   },
   {
     "name": "MM Kafei Mask",
@@ -1054,9 +1090,18 @@
   },
   {
     "name": "MM Mask of Truth",
-    "type": "toggle",
-    "img": "images/items/mm_maskoftruth.png",
-    "codes": "MM_MASK_TRUTH,MM_MASK_REGULAR,MM_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_maskoftruth.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_maskoftruth.png",
+        "codes": "MM_MASK_TRUTH,MM_MASK_REGULAR,MM_MASK"
+      }
+    ]
   },
   {
     "name": "MM Postman Hat",

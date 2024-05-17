@@ -89,7 +89,7 @@
       },
       {
         "img": "images/setting_strayFairyChestShuffle_anywhere.png",
-        "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_anywhere",
+        "codes": "setting_strayFairyChestShuffle,setting_strayFairyChestShuffle_anywhere"
       }
     ]
   },
@@ -118,7 +118,7 @@
       },
       {
         "img": "images/setting_strayFairyOtherShuffle_anywhere.png",
-        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_anywhere",
+        "codes": "setting_strayFairyOtherShuffle,setting_strayFairyOtherShuffle_anywhere"
       }
     ]
   },
@@ -1222,21 +1222,101 @@
     ]
   },
   {
-    "name": "Shared Masks",
+    "name": "Shared Goron Mask",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_sharedMasks_true.png",
-        "codes": "setting_sharedMasks,setting_sharedMasks_true",
+        "img": "images/setting_sharedMaskGoron_true.png",
+        "codes": "setting_sharedMaskGoron,setting_sharedMaskGoron_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_sharedMasks_false.png",
+        "img": "images/setting_sharedMaskGoron_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_sharedMasks,setting_sharedMasks_false",
+        "codes": "setting_sharedMaskGoron,setting_sharedMaskGoron_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Zora Mask",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMaskZora_true.png",
+        "codes": "setting_sharedMaskZora,setting_sharedMaskZora_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMaskZora_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMaskZora,setting_sharedMaskZora_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Bunny Hood",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMaskBunny_true.png",
+        "codes": "setting_sharedMaskBunny,setting_sharedMaskBunny_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMaskBunny_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMaskBunny,setting_sharedMaskBunny_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Keaton Mask",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMaskKeaton_true.png",
+        "codes": "setting_sharedMaskKeaton,setting_sharedMaskKeaton_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMaskKeaton_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMaskKeaton,setting_sharedMaskKeaton_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Mask of Truth",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMaskTruth_true.png",
+        "codes": "setting_sharedMaskTruth,setting_sharedMaskTruth_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMaskTruth_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMaskTruth,setting_sharedMaskTruth_false",
         "inherit_codes": false
       }
     ]
