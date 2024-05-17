@@ -1660,7 +1660,7 @@
         "name": "Big Lava Room Lower Open Door Chest",
         "short_name": "Lava Room Open",
         "access_rules": [
-          "$oot|Fire Temple Jail 2 Chest"
+          "$oot|Fire Temple Lava Room North Jail Chest"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -1672,7 +1672,7 @@
         "name": "Big Lava Room Blocked Door Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "$oot|Fire Temple Jail 3 Chest"
+          "$oot|Fire Temple Lava Room South Jail Chest"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -1696,7 +1696,7 @@
         "name": "Boulder Maze Side Room Chest",
         "short_name": "Boulder Maze Side",
         "access_rules": [
-          "$oot|Fire Temple Jail 4 Chest"
+          "$oot|Fire Temple Maze Jail Chest"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -4177,7 +4177,7 @@
         "name": "Heavy Block Chests",
         "short_name": "Like Like",
         "access_rules": [
-          "$oot|Gerudo Training Grounds Behind Block Visible 1"
+          "$oot|Gerudo Training Grounds Behind Block Visible"
         ],
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"

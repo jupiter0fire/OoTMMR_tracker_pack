@@ -33,7 +33,7 @@
               {
                 "name": "KF Midos Chests",
                 "access_rules": [
-                  "$oot|Kokiri Forest Mido Top Left"
+                  "$oot|Mido's House Top Left"
                 ],
                 "item_count": 4
               }
@@ -2060,7 +2060,7 @@
                     "name": "DMT Freestanding PoH",
                     "short_name": "HP",
                     "access_rules": [
-                      "$oot|Death Mountain HP"
+                      "$oot|Death Mountain Trail HP"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -2081,7 +2081,7 @@
                   {
                     "name": "Blast wall",
                     "access_rules": [
-                      "$oot|Death Mountain Chest"
+                      "$oot|Death Mountain Trail Chest"
                     ],
                     "item_count": 1
                   }
@@ -2101,7 +2101,7 @@
                 ],
                 "sections": [
                   {
-                    "name": "DMT Storms Grotto Chest",
+                    "name": "Death Mountain Trail Grotto",
                     "short_name": "Chest",
                     "item_count": 1
                   }
@@ -2249,21 +2249,21 @@
               {
                 "name": "Give Broken Sword",
                 "access_rules": [
-                  "$oot|Death Mountain Prescription"
+                  "$oot|Death Mountain Trail Prescription"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Eyedrops",
                 "access_rules": [
-                  "$oot|Death Mountain Claim Check"
+                  "$oot|Death Mountain Trail Claim Check"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Help him",
                 "access_rules": [
-                  "$oot|Death Mountain Biggoron Sword"
+                  "$oot|Death Mountain Trail Biggoron Sword"
                 ],
                 "item_count": 1
               }
@@ -2858,7 +2858,7 @@
                     "name": "Market Treasure Chest Game Reward",
                     "short_name": "Reward",
                     "access_rules": [
-                      "$oot|Treasure Game HP"
+                      "$oot|Treasure Chest Game HP"
                     ],
                     "item_count": 1
                   }
@@ -4861,7 +4861,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm|Deku Playground Reward 1"
+                      "$mm|Deku Playground Reward All Days"
                     ],
                     "item_count": 1
                   },
@@ -4870,7 +4870,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "$mm|Deku Playground Reward 2"
+                      "$mm|Deku Playground Reward Any Day"
                     ],
                     "item_count": 1
                   }
@@ -5059,7 +5059,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm|Honey & Darling Reward 2"
+                      "$mm|Honey & Darling Reward All Days"
                     ],
                     "item_count": 1
                   },
@@ -5068,7 +5068,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "$mm|Honey & Darling Reward 1"
+                      "$mm|Honey & Darling Reward Any Day"
                     ],
                     "item_count": 1
                   }
@@ -7999,28 +7999,28 @@
                   {
                     "name": "Dinolfos",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 1 Chest"
+                      "$mm|Secret Shrine Dinalfos Chest"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Wizrobe",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 2 Chest"
+                      "$mm|Secret Shrine Wizzrobe Chest"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Wart",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 3 Chest"
+                      "$mm|Secret Shrine Wart Chest"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Garo Master",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 4 Chest"
+                      "$mm|Secret Shrine Garo Master Chest"
                     ],
                     "item_count": 1
                   },

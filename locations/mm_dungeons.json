@@ -837,7 +837,7 @@
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
         "access_rules": [
-          "$mm|Beneath the Well Mirror Shield"
+          "$mm|Beneath The Well Mirror Shield"
         ],
         "item_count": 1
       },
@@ -968,7 +968,7 @@
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
         "access_rules": [
-          "$mm|Moon Trial Link Chest 1"
+          "$mm|Moon Trial Link Garo Master Chest"
         ],
         "item_count": 1
       },
@@ -977,7 +977,7 @@
         "chest_unopened_img": "images/system/chest_brown_closed.png",
         "chest_opened_img": "images/system/chest_brown_open.png",
         "access_rules": [
-          "$mm|Moon Trial Link Chest 2"
+          "$mm|Moon Trial Link Iron Knuckle Chest"
         ],
         "item_count": 1
       },
@@ -1811,7 +1811,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Inverted Tower Small Key 4",
         "access_rules": [
-          "$mm|Stone Tower Temple Inverted Under Wizrobe Chest"
+          "$mm|Stone Tower Temple Inverted Wizzrobe"
         ],
         "item_count": 1
       },
@@ -1853,7 +1853,7 @@
         "chest_unopened_img": "images/system/heartcontainer.png",
         "chest_opened_img": "images/system/heartcontainer_grey.png",
         "access_rules": [
-          "$mm|Stone Tower Boss HC"
+          "$mm|Stone Tower Temple Inverted Boss HC"
         ],
         "item_count": 1,
         "hosted_item": "mm_stone_tower"
