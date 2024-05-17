@@ -161,6 +161,11 @@
       },
       {
         "type": "item",
+        "item": "setting_bombchuBagOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_agelessSwords",
         "height": 16
       },
@@ -196,37 +201,17 @@
       },
       {
         "type": "item",
+        "item": "setting_agelessHookshot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessStrength",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_agelessChildTrade",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_skeletonKeyOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bombchuBagOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_ocarinaButtonsShuffleOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsEnemyOot",
-        "height": 16
-      },  
-      {
-        "type": "item",
-        "item": "setting_soulsBossOot",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsMiscOot",
         "height": 16
       }
     ]
@@ -348,81 +333,6 @@
       },
       {
         "type": "item",
-        "item": "setting_skeletonKeyMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bombchuBagMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_spellFireMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_spellWindMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_spellLoveMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bootsIronMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_bootsHoverMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_tunicZoraMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_scalesMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_strengthMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_ocarinaButtonsShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsEnemyMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsBossMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_soulsMiscMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_clocks",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_fairyOcarinaMm",
         "height": 16
       },
@@ -433,7 +343,7 @@
       },
       {
         "type": "item",
-        "item": "setting_progressiveClocks",
+        "item": "setting_bombchuBagMm",
         "height": 16
       }
     ]

@@ -1242,6 +1242,46 @@
     ]
   },
   {
+    "name": "Ageless Hookshot",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_agelessHookshot_true.png",
+        "codes": "setting_agelessHookshot,setting_agelessHookshot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_agelessHookshot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_agelessHookshot,setting_agelessHookshot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ageless Strength",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_agelessStrength_true.png",
+        "codes": "setting_agelessStrength,setting_agelessStrength_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_agelessStrength_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_agelessStrength,setting_agelessStrength_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shared Zora Mask",
     "type": "progressive",
     "allow_disabled": false,
