@@ -2736,6 +2736,9 @@ function _oot_logic()
             ["Market Bazaar"] = function () return is_day() and is_child() end,
             ["Market Potion Shop"] = function () return is_day() and is_child() end,
             ["MM Clock Town"] = function () return is_child() and is_day() end,
+	    },
+        ["locations"] = {
+	    ["Market Grass"] = function () return true end,
         },
     },
     ["Market Bazaar"] = {
