@@ -1177,22 +1177,6 @@
       },
       {
         "type": "itemgrid",
-        "h_alignment": "centre",
-        "item_margin": "1,1",
-        "item_size": 36,
-        "rows": [
-          [
-            "MM_DAY_1ST",
-            "MM_NIGHT_1ST",
-            "MM_DAY_2ND",
-            "MM_NIGHT_2ND",
-            "MM_DAY_FINAL",
-            "MM_NIGHT_FINAL"
-          ]
-        ]
-      },
-      {
-        "type": "itemgrid",
         "h_alignment": "center",
         "item_margin": "1.1",
         "scale": 1,
@@ -1373,6 +1357,22 @@
             "width": 16,
             "height": 16
           }
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "h_alignment": "centre",
+        "item_margin": "1,1",
+        "item_size": 36,
+        "rows": [
+          [
+            "MM_DAY_1ST",
+            "MM_NIGHT_1ST",
+            "MM_DAY_2ND",
+            "MM_NIGHT_2ND",
+            "MM_DAY_FINAL",
+            "MM_NIGHT_FINAL"
+          ]
         ]
       }
     ]
