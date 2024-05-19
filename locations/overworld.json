@@ -8261,8 +8261,8 @@
         "access_rules": [
           "$mm|Astral Observatory Moon Tear"
         ],
-   "chest_unopened_img": "images/chest_brown_closed.png",
-    "chest_opened_img": "images/chest_brown_open.png",
+        "chest_unopened_img": "images/chest_brown_closed.png",
+        "chest_opened_img": "images/chest_brown_open.png",
         "item_count": 1
       }
     ],
@@ -8398,7 +8398,7 @@
     "short_name": "SW Grass",
     "sections": [
       {
-        "name": "Pea Grass",
+        "name": "Peahat Grotto Grass",
         "access_rules": [
           "$mm|Peahat Grotto Grass"
         ],
@@ -8590,76 +8590,140 @@
         ]
       },
       {
-        "name": "Milk Road Owl Statue",
-        "short_name": "Owl Statue",
+        "name": "Milk Road Owl Statue Grass",
         "sections": [
           {
-            "name": "Milk Road Owl Statue",
-            "chest_unopened_img": "images/deactivated_owl_statue.png",
-            "chest_opened_img": "images/activated_owl_statue.png",
+            "name": "Owl Statue Grass",
             "access_rules": [
-              "$mm|Milk Road Owl Statue"
+              "$mm|Milk Road Owl Grass"
             ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
             "item_count": 1
           }
         ],
         "map_locations": [
           {
-            "map": "termina",
-            "x": 485,
-            "y": 376,
+            "map": "oot",
             "visibility_rules": [
-              "setting_owlShuffle_anywhere"
-            ]
+              "setting_GrassShuffleOOT_true"
+            ],
+            "x": 497,
+            "y": 388
           },
           {
-            "map": "termina_er_locations",
-            "x": 485,
-            "y": 376,
-            "force_invisibility_rules": [
-              "setting_owlShuffle_anywhere"
-            ]
+            "map": "oot_er_locations",
+            "visibility_rules": [
+              "setting_GrassShuffleOOT_true"
+            ],
+            "x": 497,
+            "y": 388
           }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Milk Road Owl Statue",
+    "short_name": "Owl Statue",
+    "sections": [
+      {
+        "name": "Milk Road Owl Statue",
+        "chest_unopened_img": "images/deactivated_owl_statue.png",
+        "chest_opened_img": "images/activated_owl_statue.png",
+        "access_rules": [
+          "$mm|Milk Road Owl Statue"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 485,
+        "y": 376,
+        "visibility_rules": [
+          "setting_owlShuffle_anywhere"
         ]
       },
       {
-        "name": "Milk Road Gorman Brothers - Any Day",
-        "short_name": "Gorman Race",
-        "sections": [
-          {
-            "name": "Win the race",
-            "chest_unopened_img": "images/system/unknownmask.png",
-            "chest_opened_img": "images/system/unknownmask_grey.png",
-            "access_rules": [
-              "$mm|Gorman Track Garo Mask"
-            ],
-            "item_count": 1
-          },
-          {
-            "name": "Buy Milk",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
-            "access_rules": [
-              "$mm|Gorman Track Milk Purchase"
-            ],
-            "visibility_rules": [
-              "setting_shuffleMerchantsMm_true"
-            ],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "termina",
-            "x": 470,
-            "y": 376
-          },
-          {
-            "map": "termina_er_locations",
-            "x": 470,
-            "y": 376
-          }
+        "map": "termina_er_locations",
+        "x": 485,
+        "y": 376,
+        "force_invisibility_rules": [
+          "setting_owlShuffle_anywhere"
         ]
+      }
+    ]
+  },
+  {
+    "name": "Milk Road Gorman Brothers - Any Day",
+    "short_name": "Gorman Race",
+    "sections": [
+      {
+        "name": "Win the race",
+        "chest_unopened_img": "images/system/unknownmask.png",
+        "chest_opened_img": "images/system/unknownmask_grey.png",
+        "access_rules": [
+          "$mm|Gorman Track Garo Mask"
+        ],
+        "item_count": 1
+      },
+      {
+        "name": "Buy Milk",
+        "chest_unopened_img": "images/system/chest_brown_closed.png",
+        "chest_opened_img": "images/system/chest_brown_open.png",
+        "access_rules": [
+          "$mm|Gorman Track Milk Purchase"
+        ],
+        "visibility_rules": [
+          "setting_shuffleMerchantsMm_true"
+        ],
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "termina",
+        "x": 470,
+        "y": 376
+      },
+      {
+        "map": "termina_er_locations",
+        "x": 470,
+        "y": 376
+      }
+    ]
+  },
+  {
+    "name": "Gorman Track Grass Patches",
+    "sections": [
+      {
+        "name": "Gorman Track Grass Patches",
+        "access_rules": [
+          "$mm|Gorman Track Grass"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      }
+    ],
+    "map_locations": [
+      {
+        "map": "oot",
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true"
+        ],
+        "x": 485,
+        "y": 388
+      },
+      {
+        "map": "oot_er_locations",
+        "visibility_rules": [
+          "setting_GrassShuffleOOT_true"
+        ],
+        "x": 497,
+        "y": 388
       }
     ]
   },
@@ -8853,8 +8917,8 @@
             "access_rules": [
               "$mm|Road to Southern Swamp Grotto"
             ],
-             "chest_unopened_img": "images/chest_brown_closed.png",
-             "chest_opened_img": "images/chest_brown_open.png",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -9684,7 +9748,7 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                     "x": 532,
+                    "x": 532,
                     "y": 162
                   },
                   {
@@ -9782,12 +9846,12 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                 "x": 514,
+                    "x": 514,
                     "y": 163
                   },
                   {
                     "map": "termina_er_locations",
-                   "x": 514,
+                    "x": 514,
                     "y": 163
                   }
                 ]
