@@ -8606,7 +8606,7 @@
           {
             "map": "termina",
             "x": 497,
-            "y": 388,
+            "y": 376,
             "visibility_rules": [
               "setting_GrassShufflemm_true"
             ]
@@ -8614,7 +8614,7 @@
           {
             "map": "termina_er_locations",
             "x": 497,
-            "y": 388,
+            "y": 376,
             "visibility_rules": [
               "setting_GrassShufflemm_true"
             ]
