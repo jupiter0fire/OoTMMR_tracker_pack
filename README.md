@@ -75,11 +75,11 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - [ ] Update Shared options
 - [ ] Update possible tricks for OoT
 - [ ] Update possible tricks for MM
-- [ ] Fix broadcast view item locations - mostly done - needs testing
+- [ ] Fix broadcast view item locations - mostly done - needs testing by someone who actually uses it
 - [ ] Update/add Entrance randomization options - In Progress
 - [ ] Update MM Logic for Fierce Deity Anywhere option - not in OOTMM yet
 - [ ] Update MM Logic for NPC Souls (EXPERIMENTAL, not a priority for now)
-- [ ] Add new checks to the map (grass patches - OoT done - MM almost done, fairy Fountains - done, fishing shuffle - done, Big Fairy shuffle - done, freestanding hearts - done, beehives, snowballs, crates, freestanding rupees, (not all released by ootmm yet "wonder rupees" fall into this category), silver rupees, pots, bottle content)
+- [ ] Add new checks to the map (grass shuffle (finally) finished - just testing now, fairy Fountains - done, fishing shuffle - done, Big Fairy shuffle - done, freestanding hearts - done, beehives, snowballs, crates, freestanding rupees, (not all released by ootmm yet "wonder rupees" fall into this category), silver rupees, pots, bottle content)
 
 ## Credits
 
