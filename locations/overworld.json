@@ -8604,7 +8604,7 @@
         ],
         "map_locations": [
           {
-            "map": "oot",
+            "map": "termina",
             "x": 497,
             "y": 388,
             "visibility_rules": [
@@ -8612,7 +8612,7 @@
             ]
           },
           {
-            "map": "oot_er_locations",
+            "map": "termina_er_locations",
             "x": 497,
             "y": 388,
             "visibility_rules": [
@@ -8708,7 +8708,7 @@
         ],
         "map_locations": [
           {
-            "map": "oot",
+            "map": "termina",
             "x": 485,
             "y": 388,
             "visibility_rules": [
@@ -8716,7 +8716,7 @@
             ]
           },
           {
-            "map": "oot_er_locations",
+            "map": "termina_er_locations",
             "x": 497,
             "y": 388,
             "visibility_rules": [
