@@ -10420,16 +10420,16 @@
                     "map_locations": [
                       {
                         "map": "termina",
-                        "x": 292,
-                        "y": 360,
+                        "x": 300,
+                        "y": 372,
                         "visibility_rules": [
                           "setting_GrassShufflemm_true"
                         ]
                       },
                       {
                         "map": "termina_er_locations",
-                        "x": 292,
-                        "y": 360,
+                        "x": 300,
+                        "y": 372,
                         "visibility_rules": [
                           "setting_GrassShufflemm_true"
                         ]
@@ -11272,6 +11272,72 @@
                         ]
                       },
                       {
+                        "name": "Ikana Graveyard Grotto Grass",
+                        "short_name": "Ikana Graveyard Grotto Grass",
+                        "sections": [
+                          {
+                            "name": "Ikana Graveyard Grotto Grass",
+                            "access_rules": [
+                              "$mm|Ikana Graveyard Grotto Grass"
+                            ],
+                            "chest_unopened_img": "images/MM_Grass.png",
+                            "chest_opened_img": "images/GrassGreyscale.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina",
+                            "x": 312,
+                            "y": 348,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          },
+                          {
+                            "map": "termina_er_locations",
+                            "x": 312,
+                            "y": 348,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Ikana Graveyard Grass",
+                        "short_name": "Ikana Graveyard Grass",
+                        "sections": [
+                          {
+                            "name": "Ikana Graveyard Grass",
+                            "access_rules": [
+                              "$mm|Ikana Graveyard Grass Front"
+                            ],
+                            "chest_unopened_img": "images/MM_Grass.png",
+                            "chest_opened_img": "images/GrassGreyscale.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina",
+                            "x": 684,
+                            "y": 253,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          },
+                          {
+                            "map": "termina_er_locations",
+                            "x": 684,
+                            "y": 348,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          }
+                        ]
+                      },
+                      {
                         "name": "Ikana Graveyard Graves Night 1",
                         "chest_unopened_img": "images/system/chest_brown_closed.png",
                         "chest_opened_img": "images/system/chest_brown_open.png",
@@ -11352,12 +11418,12 @@
                         "map_locations": [
                           {
                             "map": "termina",
-                            "x": 673,
+                            "x": 672,
                             "y": 253
                           },
                           {
                             "map": "termina_er_locations",
-                            "x": 673,
+                            "x": 672,
                             "y": 253
                           }
                         ]
@@ -11439,6 +11505,39 @@
                             ]
                           },
                           {
+                            "name": "Ikana Canyon Grotto Grass",
+                            "short_name": "Ikana Canyon Grotto Grass",
+                            "sections": [
+                              {
+                                "name": "Ikana Canyon Grotto Grass",
+                                "access_rules": [
+                                  "$mm|Ikana Valley Grotto Grass"
+                                ],
+                                "chest_unopened_img": "images/MM_Grass.png",
+                                "chest_opened_img": "images/GrassGreyscale.png",
+                                "item_count": 1
+                              }
+                            ],
+                            "map_locations": [
+                              {
+                                "map": "termina",
+                                "x": 790,
+                                "y": 208,
+                                "visibility_rules": [
+                                  "setting_GrassShufflemm_true"
+                                ]
+                              },
+                              {
+                                "map": "termina_er_locations",
+                                "x": 790,
+                                "y": 208,
+                                "visibility_rules": [
+                                  "setting_GrassShufflemm_true"
+                                ]
+                              }
+                            ]
+                          },
+                          {
                             "name": "Ikana Canyon",
                             "children": [
                               {
@@ -11513,6 +11612,39 @@
                                     ],
                                     "x": 831,
                                     "y": 256
+                                  }
+                                ]
+                              },
+                              {
+                                "name": "Ikana Canyon Owl Grass",
+                                "short_name": "Ikana Canyon Owl Grass",
+                                "sections": [
+                                  {
+                                    "name": "Ikana Canyon Owl Grass",
+                                    "access_rules": [
+                                      "$mm|Ikana Grass"
+                                    ],
+                                    "chest_unopened_img": "images/MM_Grass.png",
+                                    "chest_opened_img": "images/GrassGreyscale.png",
+                                    "item_count": 1
+                                  }
+                                ],
+                                "map_locations": [
+                                  {
+                                    "map": "termina",
+                                    "x": 831,
+                                    "y": 268,
+                                    "visibility_rules": [
+                                      "setting_GrassShufflemm_true"
+                                    ]
+                                  },
+                                  {
+                                    "map": "termina_er_locations",
+                                    "x": 831,
+                                    "y": 268,
+                                    "visibility_rules": [
+                                      "setting_GrassShufflemm_true"
+                                    ]
                                   }
                                 ]
                               },
