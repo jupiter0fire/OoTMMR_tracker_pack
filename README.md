@@ -51,10 +51,15 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 ## TODOs:
 
-- [ ] Write MEET_ANJU rule for non-ER-cases
-- [ ] Add Silver Rupees to the item grid
-- [ ] Implemend flags for cleared/uncleared dungeon states
+- [ ] Write MEET_ANJU rule for non-ER-cases (jupiterfire)
+- [ ] Add Silver Rupees to the item grid (jupiterfire)
+- [ ] Add Map Locations for Pot/Grass/Freestanding/FairySpot Shuffle (jupiterfire)
+- [ ] Adjust Tree Search for Age Change Upon Song of Time (wbsch)
+- [ ] Implement flags for cleared/uncleared dungeon states (wbsch)
+- [ ] Add new Items to Item Grid (jupiterfire)
+- [ ] Adjust Tree Search for ER Options (wbsch)
 
 ## Credits
 
 Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
+Thanks to [ThatsGottaBeKane](https://github.com/ThatsGottaBeKane) for help with locations and the item grid.
