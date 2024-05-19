@@ -4274,6 +4274,7 @@
           },
           {
             "name": "Market Grass",
+            "short_name": "Market Grass",
             "sections": [
               {
                 "name": "Market Grass",
@@ -4285,19 +4286,22 @@
                 "item_count": 1
               }
             ],
-            "visibility_rules": [
-              "setting_GrassShuffleOOT_true"
-            ],
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1440,
-                "y": 325
+                "x": 282,
+                "y": 420,
+                "visibility_rules": [
+                  "setting_GrassShuffleOot_true"
+                ]
               },
               {
                 "map": "oot_er_locations",
-                "x": 1440,
-                "y": 325
+                "x": 282,
+                "y": 420,
+                "visibility_rules": [
+                  "setting_GrassShuffleOot_true"
+                ]
               }
             ]
           },
