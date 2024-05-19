@@ -8695,6 +8695,7 @@
       },
       {
         "name": "Gorman Track Grass Patches",
+        "short_name": "Gorman Grass",
         "sections": [
           {
             "name": "Gorman Track Grass Patches",
@@ -8773,6 +8774,39 @@
                 "map": "termina_er_locations",
                 "x": 400,
                 "y": 350
+              }
+            ]
+          },
+          {
+            "name": "Romani Ranch Grass Patches",
+            "short_name": "Ranch Grass",
+            "sections": [
+              {
+                "name": "Ranch Grass Patches",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Clusters"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 5
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 400,
+                "y": 365,
+                "visibility_rules": [
+                  "setting_GrassShufflemm_true"
+                ]
+              },
+              {
+                "map": "termina_er_locations",
+                "x": 400,
+                "y": 365,
+                "visibility_rules": [
+                  "setting_GrassShufflemm_true"
+                ]
               }
             ]
           },
@@ -10370,6 +10404,72 @@
                     ]
                   },
                   {
+                    "name": "Great Bay Coast Garden Grass",
+                    "short_name": "Great Bay Garden Grass",
+                    "sections": [
+                      {
+                        "name": "Great Bay Garden Grass",
+                        "access_rules": [
+                          "$mm|Great Bay Coast Fisherman Grass"
+                        ],
+                        "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 292,
+                        "y": 360,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 292,
+                        "y": 360,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Great Bay Coast Grotto Grass",
+                    "short_name": "Great Bay Grotto Grass",
+                    "sections": [
+                      {
+                        "name": "Great Bay Coast Grotto",
+                        "access_rules": [
+                          "$mm|Great Bay Coast Fisherman Grotto Grass"
+                        ],
+                        "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 312,
+                        "y": 360,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 312,
+                        "y": 360,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "name": "Fisherman's House",
                     "short_name": "Fisherman Hut",
                     "sections": [
@@ -10723,6 +10823,39 @@
                         ]
                       },
                       {
+                        "name": "Zora Cape Grotto Grass",
+                        "short_name": "Zora Cape Grotto Grass",
+                        "sections": [
+                          {
+                            "name": "Zora Cape Grotto Grass",
+                            "access_rules": [
+                              "$mm|Zora Cape Grotto Grass"
+                            ],
+                            "chest_unopened_img": "images/MM_Grass.png",
+                            "chest_opened_img": "images/GrassGreyscale.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina",
+                            "x": 282,
+                            "y": 420,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          },
+                          {
+                            "map": "termina_er_locations",
+                            "x": 282,
+                            "y": 420,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          }
+                        ]
+                      },
+                      {
                         "name": "Zora Hall",
                         "chest_unopened_img": "images/system/chest_brown_closed.png",
                         "chest_opened_img": "images/system/chest_brown_open.png",
@@ -11014,13 +11147,46 @@
                         "map_locations": [
                           {
                             "map": "termina",
-                            "x": 632,
+                            "x": 644,
                             "y": 312
                           },
                           {
                             "map": "termina_er_locations",
-                            "x": 632,
+                            "x": 644,
                             "y": 312
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Road to Ikana Grotto Grass",
+                        "short_name": "Road to Ikana Grotto Grass",
+                        "sections": [
+                          {
+                            "name": "Road to Ikana Grotto Grass",
+                            "access_rules": [
+                              "$mm|Road to Ikana Grotto Grass"
+                            ],
+                            "chest_unopened_img": "images/MM_Grass.png",
+                            "chest_opened_img": "images/GrassGreyscale.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina",
+                            "x": 644,
+                            "y": 324,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          },
+                          {
+                            "map": "termina_er_locations",
+                            "x": 644,
+                            "y": 324,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
                           }
                         ]
                       },
