@@ -2096,13 +2096,13 @@
               },
               {
                 "name": "DMT Storms Grotto",
-                "access_rules": [
-                  "$oot|Death Mountain Grotto"
-                ],
                 "sections": [
                   {
-                    "name": "Death Mountain Trail Grotto",
+                    "name": "DMT Grotto Chest",
                     "short_name": "Chest",
+                    "access_rules": [
+                      "$oot|Death Mountain Trail Grotto"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -2122,7 +2122,7 @@
                     "name": "DMT GS Above Dodongos Cavern (Adult, N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$oot|Death Mountain GS Above Dodongo"
+                      "$oot|Death Mountain Trail GS Above Dodongo"
                     ],
                     "visibility_rules": [
                       "setting_goldSkulltulaTokens_overworld"
@@ -2147,7 +2147,7 @@
                     "name": "DMT GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "$oot|Death Mountain GS Soil"
+                      "$oot|Death Mountain Trail GS Soil"
                     ],
                     "visibility_rules": [
                       "setting_goldSkulltulaTokens_overworld"
@@ -2172,7 +2172,7 @@
                     "name": "DMT GS Near Kak",
                     "short_name": "GS",
                     "access_rules": [
-                      "$oot|Death Mountain GS Entrance"
+                      "$oot|Death Mountain Trail GS Entrance"
                     ],
                     "visibility_rules": [
                       "setting_goldSkulltulaTokens_overworld"
@@ -2205,7 +2205,7 @@
                 "name": "DMT Cow Grotto Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$oot|Death Mountain Cow"
+                  "$oot|Death Mountain Trail Cow"
                 ],
                 "visibility_rules": [
                   "setting_cowShuffleOot_true"
@@ -2283,7 +2283,7 @@
                 "name": "DMT GS Falling Rocks Path (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$oot|Death Mountain GS Before Climb"
+                  "$oot|Death Mountain Trail GS Before Climb"
                 ],
                 "visibility_rules": [
                   "setting_goldSkulltulaTokens_overworld"
@@ -6314,7 +6314,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm|Tourist Information Boat Cruise",
+                  "$mm|Tourist Information Boat Archery",
                   "{}"
                 ],
                 "item_count": 1

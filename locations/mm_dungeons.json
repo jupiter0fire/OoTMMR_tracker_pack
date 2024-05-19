@@ -844,14 +844,14 @@
       {
         "name": "Right Side Well Chest",
         "access_rules": [
-          "$mm|Beneath the Well Skulltulla Chest"
+          "$mm|Beneath The Well Skulltulla Chest"
         ],
         "item_count": 1
       },
       {
         "name": "Left Side Well Chest",
         "access_rules": [
-          "$mm|Beneath the Well Keese Chest"
+          "$mm|Beneath The Well Keese Chest"
         ],
         "item_count": 1
       },
@@ -860,7 +860,7 @@
         "chest_unopened_img": "images/system/cow.png",
         "chest_opened_img": "images/system/milk.png",
         "access_rules": [
-          "$mm|Beneath the Well Cow"
+          "$mm|Beneath The Well Cow"
         ],
         "visibility_rules": [
           "setting_cowShuffleMm_true"
@@ -1798,7 +1798,7 @@
         "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "$mm|Stone Tower Temple Inverted Wizrobe Chest"
+          "$mm|Stone Tower Temple Inverted Wizzrobe Chest"
         ],
         "visibility_rules": [
           "setting_strayFairyChestShuffle_ownDungeon"
@@ -1811,7 +1811,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Inverted Tower Small Key 4",
         "access_rules": [
-          "$mm|Stone Tower Temple Inverted Wizzrobe"
+          "$mm|Stone Tower Temple Inverted Death Armos Chest"
         ],
         "item_count": 1
       },
