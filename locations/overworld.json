@@ -6844,12 +6844,12 @@
                 "map_locations": [
                   {
                     "map": "termina",
-                    "x": 152,
+                    "x": 153,
                     "y": 28
                   },
                   {
                     "map": "termina_er_locations",
-                    "x": 152,
+                    "x": 153,
                     "y": 28
                   }
                 ]
@@ -6919,15 +6919,6 @@
                       "$mm|Clock Town Keaton HP"
                     ],
                     "item_count": 1
-                  },
-                  {
-                    "name": "Keaton Grass Shuffle",
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "access_rules": [
-                      "$mm|Clock Town Keaton Grass"
-                    ],
-                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -6937,19 +6928,42 @@
                     "y": 16
                   },
                   {
+                    "map": "termina_er_locations",
+                    "x": 143,
+                    "y": 16
+                  }
+                ]
+              },
+              {
+                "name": "Keaton Grass",
+                "short_name": "Keaton Grass",
+                "sections": [
+                  {
+                    "name": "Keaton Grass",
+                    "access_rules": [
+                      "$mm|Clock Town Keaton Grass"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
                     "map": "termina",
-                    "x": 457,
-                    "y": 367
+                    "x": 143,
+                    "y": 28,
+                    "visibility_rules": [
+                      "setting_GrassShufflemm_true"
+                    ]
                   },
                   {
                     "map": "termina_er_locations",
                     "x": 143,
-                    "y": 16
-                  },
-                  {
-                    "map": "termina_er_locations",
-                    "x": 457,
-                    "y": 367
+                    "y": 28,
+                    "visibility_rules": [
+                      "setting_GrassShufflemm_true"
+                    ]
                   }
                 ]
               },
@@ -8655,6 +8669,39 @@
         ]
       },
       {
+        "name": "Keaton Grass",
+        "short_name": "Keaton Grass",
+        "sections": [
+          {
+            "name": "Keaton Grass",
+            "access_rules": [
+              "$mm|Milk Road Keaton Grass"
+            ],
+            "chest_unopened_img": "images/MM_Grass.png",
+            "chest_opened_img": "images/GrassGreyscale.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "termina",
+            "x": 457,
+            "y": 379,
+            "visibility_rules": [
+              "setting_GrassShufflemm_true"
+            ]
+          },
+          {
+            "map": "termina_er_locations",
+            "x": 457,
+            "y": 379,
+            "visibility_rules": [
+              "setting_GrassShufflemm_true"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Milk Road Gorman Brothers - Any Day",
         "short_name": "Gorman Race",
         "sections": [
@@ -9178,15 +9225,6 @@
                   "setting_owlShuffle_anywhere"
                 ],
                 "item_count": 1
-              },
-              {
-                "name": "Southern Swamp Owl Grass and Patch",
-                "chest_unopened_img": "images/MM_Grass.png",
-                "chest_opened_img": "images/GrassGreyscale.png",
-                "access_rules": [
-                  "$mm|Southern Swamp Owl Grass"
-                ],
-                "item_count": 2
               }
             ],
             "map_locations": [
@@ -9205,6 +9243,39 @@
                 ],
                 "x": 553,
                 "y": 425
+              }
+            ]
+          },
+          {
+            "name": "Swamp Owl and Grass Patch",
+            "short_name": "Swamp Owl and Grass Patch",
+            "sections": [
+              {
+                "name": "Great Bay Ledge Grotto Grass",
+                "access_rules": [
+                  "$mm|Southern Swamp Owl Grass"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 541,
+                "y": 425,
+                "visibility_rules": [
+                  "setting_GrassShufflemm_true"
+                ]
+              },
+              {
+                "map": "termina_er_locations",
+                "x": 541,
+                "y": 425,
+                "visibility_rules": [
+                  "setting_GrassShufflemm_true"
+                ]
               }
             ]
           },
@@ -9386,15 +9457,6 @@
                     "chest_unopened_img": "images/chest_brown_closed.png",
                     "chest_opened_img": "images/chest_brown_open.png",
                     "item_count": 1
-                  },
-                  {
-                    "name": "Southern Swamp Grotto Grass",
-                    "chest_unopened_img": "images/MM_Grass.png",
-                    "chest_opened_img": "images/GrassGreyscale.png",
-                    "access_rules": [
-                      "$mm|Southern Swamp Grotto"
-                    ],
-                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -9407,6 +9469,39 @@
                     "map": "termina_er_locations",
                     "x": 480,
                     "y": 504
+                  }
+                ]
+              },
+              {
+                "name": "Southern Swamp Grotto Grass",
+                "short_name": "Southern Swamp Grotto Grass",
+                "sections": [
+                  {
+                    "name": "Southern Swamp Grotto Grass",
+                    "access_rules": [
+                      "$mm|Southern Swamp Grotto Grass"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 1
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 541,
+                    "y": 413,
+                    "visibility_rules": [
+                      "setting_GrassShufflemm_true"
+                    ]
+                  },
+                  {
+                    "map": "termina_er_locations",
+                    "x": 541,
+                    "y": 413,
+                    "visibility_rules": [
+                      "setting_GrassShufflemm_true"
+                    ]
                   }
                 ]
               },
@@ -10548,15 +10643,6 @@
                               "setting_cowShuffleMm_true"
                             ],
                             "item_count": 2
-                          },
-                          {
-                            "name": "Great Bay Ledge Grotto Grass",
-                            "chest_unopened_img": "images/MM_Grass.png",
-                            "chest_opened_img": "images/GrassGreyscale.png",
-                            "access_rules": [
-                              "$mm|Great Bay Ledge Grotto Grass"
-                            ],
-                            "item_count": 1
                           }
                         ],
                         "map_locations": [
@@ -10569,6 +10655,39 @@
                             "map": "termina_er_locations",
                             "x": 320,
                             "y": 300
+                          }
+                        ]
+                      },
+                      {
+                        "name": "Great Bay Ledge Grotto Grass",
+                        "short_name": "Zora Cape Grotto Grass",
+                        "sections": [
+                          {
+                            "name": "Great Bay Ledge Grotto Grass",
+                            "access_rules": [
+                              "$mm|Great Bay Coast Grotto Grass"
+                            ],
+                            "chest_unopened_img": "images/MM_Grass.png",
+                            "chest_opened_img": "images/GrassGreyscale.png",
+                            "item_count": 1
+                          }
+                        ],
+                        "map_locations": [
+                          {
+                            "map": "termina",
+                            "x": 320,
+                            "y": 312,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
+                          },
+                          {
+                            "map": "termina_er_locations",
+                            "x": 300,
+                            "y": 312,
+                            "visibility_rules": [
+                              "setting_GrassShufflemm_true"
+                            ]
                           }
                         ]
                       },
