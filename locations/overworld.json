@@ -104,7 +104,7 @@
               {
                 "map": "oot_er_locations",
                 "visibility_rules": [
-                  "setting_HeartShuffleOOT_false"
+                  "setting_HeartShuffleOOT_true"
                 ],
                 "x": 2214,
                 "y": 988
@@ -143,7 +143,7 @@
               {
                 "map": "oot",
                 "visibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 2214,
                 "y": 958
@@ -519,6 +519,8 @@
             "access_rules": [
               "$oot|Lost Woods Odd Mushroom"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -526,6 +528,8 @@
             "access_rules": [
               "$oot|Lost Woods Poacher's Saw"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           },
           {
@@ -533,6 +537,8 @@
             "access_rules": [
               "$oot|Lost Woods Skull Kid"
             ],
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -2260,7 +2266,7 @@
               {
                 "map": "oot",
                 "visibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1910,
                 "y": 410
@@ -2268,7 +2274,7 @@
               {
                 "map": "oot_er_locations",
                 "visibility_rules": [
-                  "setting_GrassShuffleOOT_false"
+                  "setting_GrassShuffleOOT_true"
                 ],
                 "x": 1910,
                 "y": 410
@@ -4272,7 +4278,7 @@
               {
                 "name": "Market Grass",
                 "access_rules": [
-                  "$oot|Lost Woods Grass Clusters"
+                  "$oot|Market Grass"
                 ],
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
