@@ -1172,19 +1172,12 @@
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN",
             "MM_KEY_SKELETON"
-          ],
-          [
-            "MM_BUTTON_A",
-            "MM_BUTTON_CUP",
-            "MM_BUTTON_CDOWN",
-            "MM_BUTTON_CLEFT",
-            "MM_BUTTON_CRIGHT"
           ]
         ]
       },
       {
         "type": "itemgrid",
-        "h_alignment": "left",
+        "h_alignment": "centre",
         "item_margin": "1,1",
         "item_size": 36,
         "rows": [
@@ -1194,17 +1187,23 @@
             "MM_DAY_2ND",
             "MM_NIGHT_2ND",
             "MM_DAY_FINAL",
-            "MM_NIGHT_FINAL",
-            "EMPTYSPACE"
+            "MM_NIGHT_FINAL"
           ]
         ]
       },
       {
         "type": "itemgrid",
         "h_alignment": "center",
-        "item_margin": "1,1",
-        "scale": 1.1,
+        "item_margin": "1.1",
+        "scale": 1,
         "rows": [
+          [
+            "MM_BUTTON_A",
+            "MM_BUTTON_CUP",
+            "MM_BUTTON_CDOWN",
+            "MM_BUTTON_CLEFT",
+            "MM_BUTTON_CRIGHT"
+          ],
           [
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_MILK_ROAD",
