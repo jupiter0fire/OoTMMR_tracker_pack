@@ -441,7 +441,6 @@ function _oot_logic()
         ["erRegions_none"] = true,
         ["erIkanaCastle"] = false,
         ["startingAge_child"] = true,
-        ["timeTravelSword"] = true,
         ["smallKeyShuffleChestGame_vanilla"] = true,
         ["ageChange_none"] = true,
         ["progressiveSwordsOot_separate"] = true,
