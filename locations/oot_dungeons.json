@@ -4103,7 +4103,7 @@
         "name": "Fairies near Scrubs",
         "short_name": "Fairies",
         "access_rules": [
-          "$oot|MQ Ganon Castle Fairy Fountain Fairy 1"
+          "$ootmq|MQ Ganon Castle Fairy Fountain Fairy 1"
         ],
         "visibility_rules": [
           "setting_mq_GanonCastle_true,setting_fairyFountainFairyShuffleOot_true"
