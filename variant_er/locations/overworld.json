@@ -33,7 +33,7 @@
               {
                 "name": "KF Midos Chests",
                 "access_rules": [
-                  "$oot|Kokiri Forest Mido Top Left"
+                  "$oot|Mido's House Top Left"
                 ],
                 "item_count": 4
               }
@@ -577,6 +577,30 @@
             ]
           },
           {
+            "name": "SFM Fairy Fountain",
+            "sections": [
+              {
+                "name": "SFM Fairy Fountain",
+                "access_rules": [
+                  "$oot|Sacred Meadow Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 2148,
+                "y": 680
+              }
+            ]
+          },
+          {
             "name": "SFM Storms Grotto",
             "sections": [
               {
@@ -830,6 +854,30 @@
                 "map": "oot_er_locations",
                 "x": 970,
                 "y": 660
+              }
+            ]
+          },
+          {
+            "name": "HF Fairy Fountain",
+            "sections": [
+              {
+                "name": "HF Fairy Fountain",
+                "access_rules": [
+                  "$oot|Hyrule Field Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 1186,
+                "y": 396
               }
             ]
           }
@@ -1847,6 +1895,19 @@
                       "$oot|Graveyard Fairy Tomb"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Fairy Fountain Shield Grave",
+                    "short_name": "Fairy Fountain",
+                    "access_rules": [
+                      "$oot|Graveyard Fairy Fountain Fairy 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_fairyFountainFairyShuffleOot_true"
+                    ],
+                    "chest_unopened_img": "images/Fairy.png",
+                    "chest_opened_img": "images/FairyGreyscale.png",
+                    "item_count": 8
                   }
                 ],
                 "map_locations": [
@@ -1999,7 +2060,7 @@
                     "name": "DMT Freestanding PoH",
                     "short_name": "HP",
                     "access_rules": [
-                      "$oot|Death Mountain HP"
+                      "$oot|Death Mountain Trail HP"
                     ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
@@ -2020,7 +2081,7 @@
                   {
                     "name": "Blast wall",
                     "access_rules": [
-                      "$oot|Death Mountain Chest"
+                      "$oot|Death Mountain Trail Chest"
                     ],
                     "item_count": 1
                   }
@@ -2035,13 +2096,13 @@
               },
               {
                 "name": "DMT Storms Grotto",
-                "access_rules": [
-                  "$oot|Death Mountain Grotto"
-                ],
                 "sections": [
                   {
-                    "name": "DMT Storms Grotto Chest",
+                    "name": "DMT Grotto Chest",
                     "short_name": "Chest",
+                    "access_rules": [
+                      "$oot|Death Mountain Trail Grotto"
+                    ],
                     "item_count": 1
                   }
                 ],
@@ -2061,7 +2122,7 @@
                     "name": "DMT GS Above Dodongos Cavern (Adult, N)",
                     "short_name": "GS",
                     "access_rules": [
-                      "$oot|Death Mountain GS Above Dodongo"
+                      "$oot|Death Mountain Trail GS Above Dodongo"
                     ],
                     "visibility_rules": [
                       "setting_goldSkulltulaTokens_overworld"
@@ -2086,7 +2147,7 @@
                     "name": "DMT GS Bean Patch",
                     "short_name": "GS",
                     "access_rules": [
-                      "$oot|Death Mountain GS Soil"
+                      "$oot|Death Mountain Trail GS Soil"
                     ],
                     "visibility_rules": [
                       "setting_goldSkulltulaTokens_overworld"
@@ -2111,7 +2172,7 @@
                     "name": "DMT GS Near Kak",
                     "short_name": "GS",
                     "access_rules": [
-                      "$oot|Death Mountain GS Entrance"
+                      "$oot|Death Mountain Trail GS Entrance"
                     ],
                     "visibility_rules": [
                       "setting_goldSkulltulaTokens_overworld"
@@ -2144,7 +2205,7 @@
                 "name": "DMT Cow Grotto Cow",
                 "short_name": "Cow",
                 "access_rules": [
-                  "$oot|Death Mountain Cow"
+                  "$oot|Death Mountain Trail Cow"
                 ],
                 "visibility_rules": [
                   "setting_cowShuffleOot_true"
@@ -2188,21 +2249,21 @@
               {
                 "name": "Give Broken Sword",
                 "access_rules": [
-                  "$oot|Death Mountain Prescription"
+                  "$oot|Death Mountain Trail Prescription"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Give Eyedrops",
                 "access_rules": [
-                  "$oot|Death Mountain Claim Check"
+                  "$oot|Death Mountain Trail Claim Check"
                 ],
                 "item_count": 1
               },
               {
                 "name": "Help him",
                 "access_rules": [
-                  "$oot|Death Mountain Biggoron Sword"
+                  "$oot|Death Mountain Trail Biggoron Sword"
                 ],
                 "item_count": 1
               }
@@ -2222,7 +2283,7 @@
                 "name": "DMT GS Falling Rocks Path (Adult, N)",
                 "short_name": "GS",
                 "access_rules": [
-                  "$oot|Death Mountain GS Before Climb"
+                  "$oot|Death Mountain Trail GS Before Climb"
                 ],
                 "visibility_rules": [
                   "setting_goldSkulltulaTokens_overworld"
@@ -2797,7 +2858,7 @@
                     "name": "Market Treasure Chest Game Reward",
                     "short_name": "Reward",
                     "access_rules": [
-                      "$oot|Treasure Game HP"
+                      "$oot|Treasure Chest Game HP"
                     ],
                     "item_count": 1
                   }
@@ -3467,6 +3528,30 @@
                 "y": 465
               }
             ]
+          },
+          {
+            "name": "ZR Fairy Fountain",
+            "sections": [
+              {
+                "name": "ZR Fairy Fountain",
+                "access_rules": [
+                  "$oot|Zora River Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 2142,
+                "y": 500
+              }
+            ]
           }
         ]
       },
@@ -3501,6 +3586,19 @@
                   "$oot|Zora Domain Diving Game"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Diving Game Rupees",
+                "access_rules": [
+                  "$oot|Zora Domain Diving Game Green Rupee"
+                ],
+                "visibility_rules": [
+                  "setting_divingGameRupeeShuffle_true"
+                ],
+                "chest_unopened_img": "images/blue_check.png",
+                "chest_opened_img": "images/blue.png",
+                "item_count": 5,
+                "clear_as_group": false
               }
             ],
             "map_locations": [
@@ -3632,6 +3730,30 @@
                 ],
                 "x": 2625,
                 "y": 500
+              }
+            ]
+          },
+          {
+            "name": "ZD Fairy Fountain",
+            "sections": [
+              {
+                "name": "ZD Fairy Fountain",
+                "access_rules": [
+                  "$oot|Zora Domain Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 2510,
+                "y": 454
               }
             ]
           }
@@ -4174,6 +4296,38 @@
                 "y": 390
               }
             ]
+          },
+          {
+            "name": "Gerudo Fortress Fairy Fountain",
+            "sections": [
+              {
+                "name": "GF Fairy Fountain",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Fairy Fountain Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 470,
+                "y": 390
+              },
+              {
+                "map": "oot_er_locations",
+                "visibility_rules": [
+                  "setting_FairyFountainShuffleOOT_true"
+                ],
+                "x": 562,
+                "y": 436
+              }
+            ]
           }
         ]
       },
@@ -4380,6 +4534,30 @@
                 "map": "oot_er_locations",
                 "x": 235,
                 "y": 320
+              }
+            ]
+          },
+          {
+            "name": "Desert Colossus Oasis Fairies",
+            "sections": [
+              {
+                "name": "Oasis Fairies",
+                "access_rules": [
+                  "$oot|Desert Colossus Oasis Fairy 1"
+                ],
+                "chest_unopened_img": "images/Fairy.png",
+                "chest_opened_img": "images/FairyGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_fairyFountainFairyShuffleOot_true"
+                ],
+                "x": 206,
+                "y": 436
               }
             ]
           }
@@ -4684,7 +4862,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm|Deku Playground Reward 1"
+                      "$mm|Deku Playground Reward All Days"
                     ],
                     "item_count": 1
                   },
@@ -4693,7 +4871,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "$mm|Deku Playground Reward 2"
+                      "$mm|Deku Playground Reward Any Day"
                     ],
                     "item_count": 1
                   }
@@ -4882,7 +5060,7 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "access_rules": [
-                      "$mm|Honey & Darling Reward 2"
+                      "$mm|Honey & Darling Reward All Days"
                     ],
                     "item_count": 1
                   },
@@ -4891,7 +5069,7 @@
                     "chest_unopened_img": "images/system/blue.png",
                     "chest_opened_img": "images/system/blue_check.png",
                     "access_rules": [
-                      "$mm|Honey & Darling Reward 1"
+                      "$mm|Honey & Darling Reward Any Day"
                     ],
                     "item_count": 1
                   }
@@ -6137,7 +6315,7 @@
                 "chest_unopened_img": "images/system/heartpiece.png",
                 "chest_opened_img": "images/system/heartpiece_grey.png",
                 "access_rules": [
-                  "$mm|Tourist Information Boat Cruise",
+                  "$mm|Tourist Information Boat Archery",
                   "{}"
                 ],
                 "item_count": 1
@@ -7822,28 +8000,28 @@
                   {
                     "name": "Dinolfos",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 1 Chest"
+                      "$mm|Secret Shrine Dinalfos Chest"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Wizrobe",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 2 Chest"
+                      "$mm|Secret Shrine Wizzrobe Chest"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Wart",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 3 Chest"
+                      "$mm|Secret Shrine Wart Chest"
                     ],
                     "item_count": 1
                   },
                   {
                     "name": "Garo Master",
                     "access_rules": [
-                      "$mm|Secret Shrine Boss 4 Chest"
+                      "$mm|Secret Shrine Garo Master Chest"
                     ],
                     "item_count": 1
                   },

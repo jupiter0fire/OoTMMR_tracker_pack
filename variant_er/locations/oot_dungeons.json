@@ -258,16 +258,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 30,
-        "y": 1465
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 30,
-        "y": 1465
+        "x": 2420,
+        "y": 880
       }
     ]
   },
@@ -635,16 +629,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 130,
-        "y": 1465
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 130,
-        "y": 1465
+        "x": 1675,
+        "y": 240
       }
     ]
   },
@@ -930,16 +918,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 230,
-        "y": 1465
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 230,
-        "y": 1465
+        "x": 2475,
+        "y": 330
       }
     ]
   },
@@ -1151,16 +1133,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 530,
-        "y": 1465
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 530,
-        "y": 1465
+        "x": 2505,
+        "y": 275
       }
     ]
   },
@@ -1606,16 +1582,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 30,
-        "y": 1350
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 30,
-        "y": 1350
+        "x": 2145,
+        "y": 595
       }
     ]
   },
@@ -1690,7 +1660,7 @@
         "name": "Big Lava Room Lower Open Door Chest",
         "short_name": "Lava Room Open",
         "access_rules": [
-          "$oot|Fire Temple Jail 2 Chest"
+          "$oot|Fire Temple Lava Room North Jail Chest"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -1702,7 +1672,7 @@
         "name": "Big Lava Room Blocked Door Chest",
         "short_name": "Lava Room Bombable",
         "access_rules": [
-          "$oot|Fire Temple Jail 3 Chest"
+          "$oot|Fire Temple Lava Room South Jail Chest"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -1726,7 +1696,7 @@
         "name": "Boulder Maze Side Room Chest",
         "short_name": "Boulder Maze Side",
         "access_rules": [
-          "$oot|Fire Temple Jail 4 Chest"
+          "$oot|Fire Temple Maze Jail Chest"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -1813,7 +1783,8 @@
         "name": "Scarecrow Chest",
         "short_name": "Scarecrow",
         "access_rules": [
-          "$oot|Fire Temple Scarecrow Chest"
+          "$oot|Fire Temple Scarecrow Chest",
+          "{}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -1848,7 +1819,8 @@
         "name": "Megaton Hammer Chest",
         "short_name": "Hammer",
         "access_rules": [
-          "$oot|Fire Temple Hammer"
+          "$oot|Fire Temple Hammer",
+          "{}"
         ],
         "visibility_rules": [
           "setting_mq_FireTemple_false"
@@ -2075,16 +2047,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 130,
-        "y": 1350
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 130,
-        "y": 1350
+        "x": 1930,
+        "y": 60
       }
     ]
   },
@@ -2429,16 +2395,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 230,
-        "y": 1350
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 230,
-        "y": 1350
+        "x": 1020,
+        "y": 1370
       }
     ]
   },
@@ -2986,16 +2946,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 430,
-        "y": 1350
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 430,
-        "y": 1350
+        "x": 2145,
+        "y": 345
       }
     ]
   },
@@ -3557,16 +3511,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 330,
-        "y": 1350
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 330,
-        "y": 1350
+        "x": 115,
+        "y": 300
       }
     ]
   },
@@ -3875,16 +3823,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 430,
-        "y": 1465
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 430,
-        "y": 1465
+        "x": 1870,
+        "y": 385
       }
     ]
   },
@@ -4006,6 +3948,19 @@
         "chest_opened_img": "images/deku_scrub_grey.png",
         "clear_as_group": false,
         "item_count": 4
+      },
+      {
+        "name": "Fairies near Scrubs",
+        "short_name": "Fairies",
+        "access_rules": [
+          "$oot|Ganon Castle Fairy Fountain Fairy 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_false,setting_fairyFountainFairyShuffleOot_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 8
       },
       {
         "name": "Forest Trial Freestanding Key",
@@ -4143,20 +4098,27 @@
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
+      },
+      {
+        "name": "Fairies near Scrubs",
+        "short_name": "Fairies",
+        "access_rules": [
+          "$oot|MQ Ganon Castle Fairy Fountain Fairy 1"
+        ],
+        "visibility_rules": [
+          "setting_mq_GanonCastle_true,setting_fairyFountainFairyShuffleOot_true"
+        ],
+        "chest_unopened_img": "images/Fairy.png",
+        "chest_opened_img": "images/FairyGreyscale.png",
+        "item_count": 8
       }
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 530,
-        "y": 1350
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 530,
-        "y": 1350
+        "x": 1435,
+        "y": 205
       }
     ]
   },
@@ -4215,7 +4177,7 @@
         "name": "Heavy Block Chests",
         "short_name": "Like Like",
         "access_rules": [
-          "$oot|Gerudo Training Grounds Behind Block Visible 1"
+          "$oot|Gerudo Training Grounds Behind Block Visible"
         ],
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"
@@ -4310,7 +4272,8 @@
         "name": "Underwater Silver Rupee Chest",
         "short_name": "Toilet",
         "access_rules": [
-          "$oot|Gerudo Training Water"
+          "$oot|Gerudo Training Water",
+          "{}"
         ],
         "visibility_rules": [
           "setting_mq_GerudoTrainingGrounds_false"
@@ -4545,16 +4508,10 @@
     ],
     "map_locations": [
       {
-        "map": "oot_er_locations",
+        "map": "oot",
         "size": 50,
-        "x": 330,
-        "y": 1465
-      },
-      {
-        "map": "oot_er_exits",
-        "size": 50,
-        "x": 330,
-        "y": 1465
+        "x": 470,
+        "y": 445
       }
     ]
   }

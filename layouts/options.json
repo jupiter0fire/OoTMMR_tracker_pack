@@ -11,6 +11,11 @@
       },
       {
         "type": "item",
+        "item": "setting_shopShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_scrubShuffleOot",
         "height": 16
       },
@@ -21,7 +26,12 @@
       },
       {
         "type": "item",
-        "item": "setting_shopShuffleOot",
+        "item": "setting_divingGameRupeeShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyFountainFairyShuffleOot",
         "height": 16
       },
       {
@@ -33,7 +43,12 @@
         "type": "item",
         "item": "setting_priceOotScrubs",
         "height": 16
-      },   
+      },
+      {
+        "type": "item",
+        "item": "setting_startingAge",
+        "height": 16
+      },
       {
         "type": "item",
         "item": "setting_doorOfTime",
@@ -42,21 +57,6 @@
       {
         "type": "item",
         "item": "setting_dekuTree",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_dekuTreeAdult",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_wellAdult",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_fireChild",
         "height": 16
       },
       {
@@ -76,12 +76,47 @@
       },
       {
         "type": "item",
+        "item": "setting_lacs",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_rainbowBridge",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_swordlessAdult",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_dekuTreeAdult",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_wellAdult",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fireChild",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_openZdShortcut",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_skipZelda",
         "height": 16
       },
       {
         "type": "item",
-        "item": "setting_lacs",
+        "item": "setting_freeScarecrowOot",
         "height": 16
       },
       {
@@ -91,7 +126,32 @@
       },
       {
         "type": "item",
+        "item": "setting_hookshotAnywhereOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_climbMostSurfacesOot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_restoreBrokenActors",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_blueFireArrows",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sunlightArrows",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bombchuBagOot",
         "height": 16
       },
       {
@@ -131,6 +191,16 @@
       },
       {
         "type": "item",
+        "item": "setting_agelessHookshot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessStrength",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_agelessChildTrade",
         "height": 16
       }
@@ -158,7 +228,17 @@
       },
       {
         "type": "item",
-        "item": "setting_strayFairyShuffle",
+        "item": "setting_strayFairyChestShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_strayFairyOtherShuffle",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_shopShuffleMm",
         "height": 16
       },
       {
@@ -173,17 +253,12 @@
       },
       {
         "type": "item",
-        "item": "setting_shopShuffleMm",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_owlShuffle",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_shuffleMerchantsMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_fairyFountainFairyShuffleMm",
         "height": 16
       },
       {
@@ -198,6 +273,11 @@
       },
       {
         "type": "item",
+        "item": "setting_moonCrash",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_majoraChild",
         "height": 16
       },
@@ -208,7 +288,22 @@
       },
       {
         "type": "item",
+        "item": "setting_openMoon",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_crossWarpMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_crossAge",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_hookshotAnywhereMm",
         "height": 16
       },
       {
@@ -224,6 +319,11 @@
       {
         "type": "item",
         "item": "setting_shortHookshotMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bombchuBagMm",
         "height": 16
       }
     ]
@@ -296,6 +396,31 @@
       {
         "type": "item",
         "item": "setting_sharedOcarina",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedMaskGoron",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedMaskZora",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedMaskBunny",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedMaskKeaton",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedMaskTruth",
         "height": 16
       }
     ]
@@ -995,25 +1120,43 @@
       {
         "title": "Settings OOT",
         "content": {
-          "type": "layout",
-          "key": "layout_main_oot",
-          "h_alignment": "left"
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_main_oot",
+            "h_alignment": "left"
+          }
         }
       },
       {
         "title": "Settings MM",
         "content": {
-          "type": "layout",
-          "key": "layout_main_mm",
-          "h_alignment": "left"
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_main_mm",
+            "h_alignment": "left"
+          }
         }
       },
       {
         "title": "Shared Items",
         "content": {
-          "type": "layout",
-          "key": "layout_shared_items",
-          "h_alignment": "left"
+          "type": "scroll",
+          "horizontal_scrollbar_visibility": "auto",
+          "vertical_scrollbar_visibility": "auto",
+          "max_height": 500,
+          "content": {
+            "type": "layout",
+            "key": "layout_shared_items",
+            "h_alignment": "left"
+          }
         }
       },
       {
