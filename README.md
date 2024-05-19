@@ -31,12 +31,22 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 ## Unsupported Settings
 
 - Chest Game Small Key Shuffle
+- Silver Rupees Shuffle
 - Owl Statue Shuffle
 - Pot Shuffle
 - Grass Shuffle
 - Freestanding Rupees Shuffle
 - Freestanding Hearts Shuffle
-- Fishing Pond Shuffle
+- Fishing Pond Fish Shuffle
+- Fairy Spot Shuffle
+- Age Change Upon Song of Time
+- Pre-Completed Dungeons
+- Most OOT items in MM
+- Extra Child Sword in OOT
+- MM items in OOT
+- Ocarina Buttons Shuffle
+- Soul Shuffle
+- Clock Shuffle
 - Entrance Shuffle
 
 ## TODOs:
