@@ -440,7 +440,15 @@ function _mm_logic()
         ["erIndoors_none"] = true,
         ["erRegions_none"] = true,
         ["erIkanaCastle"] = false,
+        ["startingAge_child"] = true,
         ["timeTravelSword"] = true,
+        ["smallKeyShuffleChestGame_vanilla"] = true,
+        ["ageChange_none"] = true,
+        ["progressiveSwordsOot_separate"] = true,
+        ["progressiveShieldsMm_separate"] = true,
+        ["progressiveGFS_separate"] = true,
+        ["progressiveShieldsOot_separate"] = true,
+        ["colossalWallets"] = true,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for
