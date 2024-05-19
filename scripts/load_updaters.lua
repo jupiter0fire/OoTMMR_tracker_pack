@@ -55,8 +55,7 @@ function tracker_on_accessibility_updated()
 end
 
 function tracker_on_pack_ready()
+  PACK_READY = true
   OOTMM_RESET_LOGIC()
   get_object("dummy").Active = not get_object("dummy").Active
-
-  PACK_READY = true
 end
