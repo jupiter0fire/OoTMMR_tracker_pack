@@ -8261,7 +8261,7 @@
         "access_rules": [
           "$mm|Astral Observatory Moon Tear"
         ],
-         "chest_unopened_img": "images/chest_brown_closed.png",
+   "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
         "item_count": 1
       }
@@ -8540,31 +8540,6 @@
         "map": "termina_er_locations",
         "x": 579,
         "y": 307
-      }
-    ]
-  },
-  {
-    "name": "Moon's Tear",
-    "short_name": "Moon's Tear",
-    "sections": [
-      {
-        "name": "Look at Skull Kid through the telescope",
-        "access_rules": [
-          "$mm|Astral Observatory Moon Tear"
-        ],
-        "item_count": 1
-      }
-    ],
-    "map_locations": [
-      {
-        "map": "termina",
-        "x": 595,
-        "y": 347
-      },
-      {
-        "map": "termina_er_locations",
-        "x": 595,
-        "y": 347
       }
     ]
   },
