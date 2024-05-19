@@ -87,3 +87,4 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - JupiterFire anmd Wbsch for creating the OOTMM Tracker Map and all original work
 - [That's Gotta Be Kane!](https://github.com/ThatsGottaBeKane) - Shuffles, logic and misc updates
 - PouhPouhh - Entrance Randomizer and misc updates
+- BusinessAlex - MM Clock Icon Design
