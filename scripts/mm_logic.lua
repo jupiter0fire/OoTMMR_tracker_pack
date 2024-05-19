@@ -3552,13 +3552,15 @@ function _mm_logic()
         ["locations"] = {
             ["Gorman Track Garo Mask"] = function () return can_play_epona() and can_use_wallet(1) and is_day() end,
             ["Gorman Track Milk Purchase"] = function () return can_use_wallet(1) and is_day() end,
-	    ["Gorman Track Grass"] = function () return true end,
         },
     },
     ["Gorman Track Back"] = {
         ["exits"] = {
             ["Behind Gorman Fence"] = function () return true end,
             ["Gorman Track Front"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) end,
+        },
+        ["locations"] = {
+	    ["Gorman Track Grass"] = function () return true end,
         },
     },
     ["Road to Ikana Front"] = {
