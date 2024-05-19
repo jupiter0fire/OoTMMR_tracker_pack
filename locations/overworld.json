@@ -9935,7 +9935,7 @@
                     "map_locations": [
                       {
                         "map": "termina",
-                        "x": 544,
+                        "x": 545,
                         "y": 162,
                         "visibility_rules": [
                           "setting_GrassShufflemm_true"
@@ -9943,7 +9943,7 @@
                       },
                       {
                         "map": "termina_er_locations",
-                        "x": 544,
+                        "x": 545,
                         "y": 162,
                         "visibility_rules": [
                           "setting_GrassShufflemm_true"
@@ -10009,7 +10009,7 @@
                         "visibility_rules": [
                           "setting_owlShuffle_anywhere"
                         ],
-                        "x": 517,
+                        "x": 530,
                         "y": 162
                       },
                       {
@@ -10017,7 +10017,7 @@
                         "force_invisibility_rules": [
                           "setting_owlShuffle_anywhere"
                         ],
-                        "x": 517,
+                        "x": 530,
                         "y": 162
                       }
                     ]
@@ -11575,12 +11575,12 @@
                         "map_locations": [
                           {
                             "map": "termina",
-                            "x": 696,
+                            "x": 697,
                             "y": 251
                           },
                           {
                             "map": "termina_er_locations",
-                            "x": 696,
+                            "x": 697,
                             "y": 251
                           }
                         ]
