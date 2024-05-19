@@ -9804,6 +9804,39 @@
                     ]
                   },
                   {
+                    "name": "Mountain Village Grass - Spring",
+                    "short_name": "Mountain Village Grass",
+                    "sections": [
+                      {
+                        "name": "Mountain Village Grass - Spring",
+                        "access_rules": [
+                          "$mm|Mountain Village Grass Spring"
+                        ],
+                        "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 527,
+                        "y": 178,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 527,
+                        "y": 178,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "name": "Frog Choir",
                     "short_name": "Frogs",
                     "sections": [
@@ -9886,6 +9919,39 @@
                     ]
                   },
                   {
+                    "name": "Path to Goron Graveyard Grotto Grass",
+                    "short_name": "Goron Graveyard Grotto Grass",
+                    "sections": [
+                      {
+                        "name": "Path to Goron Graveyard Grotto Grass",
+                        "access_rules": [
+                          "$mm|Mountain Village Tunnel Grotto Grass"
+                        ],
+                        "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 1
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 544,
+                        "y": 162,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      },
+                      {
+                        "map": "termina_er_locations",
+                        "x": 544,
+                        "y": 162,
+                        "visibility_rules": [
+                          "setting_GrassShufflemm_true"
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "name": "Mountain Smithy",
                     "short_name": "Mountain Smithy",
                     "sections": [
@@ -9914,12 +9980,12 @@
                       {
                         "map": "termina",
                         "x": 527,
-                        "y": 184
+                        "y": 190
                       },
                       {
                         "map": "termina_er_locations",
                         "x": 527,
-                        "y": 184
+                        "y": 190
                       }
                     ]
                   },
