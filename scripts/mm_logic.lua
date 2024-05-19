@@ -1986,6 +1986,7 @@ function _mm_logic()
             ["Clock Town Bomber Notebook"] = function () return event('BOMBER_CODE') or event('GUESS_BOMBER') end,
             ["Clock Town Blast Mask"] = function () return event('SAKON_BOMB_BAG') end,
             ["Clock Town Keaton HP"] = function () return has_mask_keaton() end,
+	    ["Clock Town Keaton Grass"] = function () return true end,
         },
     },
     ["Clock Town West"] = {
@@ -2622,6 +2623,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Southern Swamp Grotto"] = function () return true end,
+	    ["Southern Swamp Grotto Grass"] = function () return true end,
         },
     },
     ["Tourist Information"] = {
@@ -3217,6 +3219,9 @@ function _mm_logic()
             ["Near Romani Ranch"] = function () return after(DAY3_AM_06_00) or can_use_keg() end,
             ["Behind Gorman Fence"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or final_day() end,
             ["Tingle Ranch"] = function () return has_weapon_range() end,
+   },
+        ["locations"] = {
+	   ["Milk Road Keaton Grass"] = function () return true end,
         },
     },
     ["Near Romani Ranch"] = {
@@ -3359,6 +3364,7 @@ function _mm_logic()
         ["locations"] = {
             ["Great Bay Coast Cow Front"] = function () return can_play_epona() end,
             ["Great Bay Coast Cow Back"] = function () return can_play_epona() end,
+	    ["Great Bay Coast Grotto Grass"] = function () return true end,		
         },
     },
     ["Fisher's Hut"] = {
