@@ -1172,6 +1172,13 @@
             "MM_GS_TOKEN_SWAMP",
             "MM_GS_TOKEN_OCEAN",
             "MM_KEY_SKELETON"
+          ],
+          [
+            "MM_BUTTON_A",
+            "MM_BUTTON_CUP",
+            "MM_BUTTON_CDOWN",
+            "MM_BUTTON_CLEFT",
+            "MM_BUTTON_CRIGHT"
           ]
         ]
       },
@@ -1189,21 +1196,6 @@
             "MM_DAY_FINAL",
             "MM_NIGHT_FINAL",
             "EMPTYSPACE"
-          ]
-        ]
-      },
-      {
-        "type": "itemgrid",
-        "h_alignment": "center",
-        "item_margin": "1.1",
-        "scale": 1.0,
-        "rows": [
-          [
-            "MM_BUTTON_A",
-            "MM_BUTTON_CUP",
-            "MM_BUTTON_CDOWN",
-            "MM_BUTTON_CLEFT",
-            "MM_BUTTON_CRIGHT"
           ]
         ]
       },
