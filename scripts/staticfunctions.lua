@@ -23,6 +23,7 @@ else
         SequenceBreak = "SequenceBreak",
         Normal = "Normal",
     }
+    PACK_READY = true
 end
 
 OOTMM_RESET_LOGIC_FLAG = true
@@ -435,7 +436,7 @@ local function reset_logic()
 end
 
 local function get_availability(type, world, name)
-    if OOTMM_RESET_LOGIC_FLAG then
+    if PACK_READY and OOTMM_RESET_LOGIC_FLAG then
         reset_logic()
         OOTMM_RESET_LOGIC_FLAG = false
     end
