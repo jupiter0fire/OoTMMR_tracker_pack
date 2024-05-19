@@ -1151,6 +1151,8 @@
           {
             "name": "HF Southeast Grotto Chest",
             "short_name": "Chest",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
@@ -1202,6 +1204,8 @@
           {
             "name": "HF Near Market Grotto Chest",
             "short_name": "Chest",
+            "chest_unopened_img": "images/chest_brown_closed.png",
+            "chest_opened_img": "images/chest_brown_open.png",
             "item_count": 1
           }
         ],
