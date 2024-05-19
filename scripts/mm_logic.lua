@@ -3313,6 +3313,7 @@ function _mm_logic()
             ["Great Bay Coast HP"] = function () return can_use_beans() and scarecrow_hookshot() end,
             ["Great Bay Coast Fisherman HP"] = function () return can_use_wallet(1) and can_hookshot_short() and event('BOSS_GREAT_BAY') and (after(DAY1_AM_07_00) and before(NIGHT1_AM_04_00) or (after(DAY2_AM_07_00) and before(NIGHT2_AM_04_00)) or (after(DAY3_AM_07_00) and before(NIGHT3_AM_04_00))) end,
 	    ["Great Bay Coast Fisherman Grass"] = function () return true end,
+	    ["Great Bay Coast Fisherman Grotto Grass"] = function () return true end,
         },
     },
     ["Great Bay Coast Fortress"] = {
@@ -3431,6 +3432,7 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Zora Cape Grotto"] = function () return true end,
+	    ["Zora Cape Grotto Grass"] = function () return true end,
         },
     },
     ["Great Bay Near Fairy Fountain"] = {
