@@ -8605,19 +8605,19 @@
         "map_locations": [
           {
             "map": "oot",
+            "x": 497,
+            "y": 388,
             "visibility_rules": [
               "setting_GrassShuffleOOT_true"
-            ],
-            "x": 497,
-            "y": 388
+            ]
           },
           {
             "map": "oot_er_locations",
+            "x": 497,
+            "y": 388,
             "visibility_rules": [
               "setting_GrassShuffleOOT_true"
-            ],
-            "x": 497,
-            "y": 388
+            ]
           }
         ]
       },
@@ -8709,19 +8709,19 @@
         "map_locations": [
           {
             "map": "oot",
+            "x": 485,
+            "y": 388,
             "visibility_rules": [
               "setting_GrassShuffleOOT_true"
-            ],
-            "x": 485,
-            "y": 388
+            ]
           },
           {
             "map": "oot_er_locations",
+            "x": 497,
+            "y": 388,
             "visibility_rules": [
               "setting_GrassShuffleOOT_true"
-            ],
-            "x": 497,
-            "y": 388
+            ]
           }
         ]
       },
