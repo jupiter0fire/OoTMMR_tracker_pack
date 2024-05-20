@@ -38,6 +38,9 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Freestanding Hearts Shuffle
 - Fishing Pond Fish Shuffle
 - Fairy Spot Shuffle
+- Ganon Trials
+- Open Dungeons
+- Clear State Dungeons
 - Age Change Upon Song of Time
 - Pre-Completed Dungeons
 - Most OOT items in MM
@@ -50,7 +53,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 ## TODOs:
 
-- [ ] Write MEET_ANJU rule for non-ER-cases (jupiterfire)
 - [ ] Add Silver Rupees to the item grid (jupiterfire)
 - [ ] Add Map Locations for Pot/Grass/Freestanding/FairySpot Shuffle (jupiterfire)
 - [ ] Adjust Tree Search for Age Change Upon Song of Time (wbsch)
