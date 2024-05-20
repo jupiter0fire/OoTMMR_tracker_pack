@@ -49,7 +49,7 @@
       },
       {
         "img": "images/shield3.png",
-        "codes": "OOT_SHIELD_MIRROR"
+        "codes": "OOT_SHIELD_MIRROR,OOT_SHARED_SHIELD_MIRROR"
       }
     ]
   },

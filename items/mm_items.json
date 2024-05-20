@@ -470,7 +470,7 @@
       },
       {
         "img": "images/items/mm_mirror.png",
-        "codes": "MM_SHIELD_MIRROR"
+        "codes": "MM_SHIELD_MIRROR,MM_SHARED_SHIELD_MIRROR"
       }
     ]
   },
