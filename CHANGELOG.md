@@ -1,5 +1,35 @@
 # Releases
 
+## v22.0.1
+
+Logic updated to version 22.0.1 of the OOTMM Randomizer.
+
+New settings:
+
+- Ageless Hookshot
+- Ageless Strength
+- Allow Adult Link to be Swordless
+- Bombchu Bag (OOT + MM)
+- Climb Most Surfaces (OOT)
+- Cross-Games Age
+- Diving Game Rupee Shuffle
+- Fairy Fountain Fairy Shuffle (OOT + MM)
+- Free Scarecrow (OOT)
+- Hookshot Anywhere (OOT + MM)
+- Moon Crash Behavior
+- Open Zora's Domain Shortcut
+- Restore Broken Actors
+- Shared Bunny Hood
+- Shared Goron Mask
+- Shared Keaton Mask
+- Shared Mask of Truth
+- Shared Shields
+- Shared Zora Mask
+- Skip Oath to Order
+- Starting Age
+- Sunlight Arrows
+- Time Travel requires Master Sword
+
 ## v1.12.4.1
 
 Logic updated to version 1.12.4 of the OOTMM Randomizer.
