@@ -2,7 +2,7 @@
 
 ## v22.0.1
 
-Logic updated to version 22.0.1 of the OOTMM Randomizer.
+Logic updated to version v22.0 of the OOTMM Randomizer.
 
 New settings:
 
