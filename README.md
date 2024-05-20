@@ -32,7 +32,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 
 - Chest Game Small Key Shuffle
 - Silver Rupees Shuffle
-- Owl Statue Shuffle
 - Pot Shuffle
 - Grass Shuffle
 - Freestanding Rupees Shuffle
@@ -62,4 +61,5 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 ## Credits
 
 Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
+
 Thanks to [ThatsGottaBeKane](https://github.com/ThatsGottaBeKane) for help with locations and the item grid.
