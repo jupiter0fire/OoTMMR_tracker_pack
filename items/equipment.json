@@ -25,15 +25,33 @@
   },
   {
     "name": "Hylian Shield",
-    "type": "toggle",
-    "img": "images/shield2.png",
-    "codes": "OOT_SHIELD_HYLIAN"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/shield2.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/shield2.png",
+        "codes": "OOT_SHIELD_HYLIAN"
+      }
+    ]
   },
   {
     "name": "Mirror Shield",
-    "type": "toggle",
-    "img": "images/shield3.png",
-    "codes": "OOT_SHIELD_MIRROR"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/shield3.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/shield3.png",
+        "codes": "OOT_SHIELD_MIRROR"
+      }
+    ]
   },
   {
     "name": "Kokiri Tunic",

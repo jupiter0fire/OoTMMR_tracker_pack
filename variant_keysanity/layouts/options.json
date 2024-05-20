@@ -453,6 +453,16 @@
         "item": "setting_sharedMaskTruth",
         "height": 16
       }
+      {
+        "type": "item",
+        "item": "setting_sharedWallets",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedShields",
+        "height": 16
+      }
     ]
   },
   "layout_logic_tricks_oot": {

@@ -446,15 +446,33 @@
   },
   {
     "name": "MM Shield",
-    "type": "toggle",
-    "img": "images/items/mm_shield.png",
-    "codes": "MM_SHIELD_HERO"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_shield.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_shield.png",
+        "codes": "MM_SHIELD_HERO, MM_SHIELD_HYLIAN"
+      }
+    ]
   },
   {
     "name": "MM Shield",
-    "type": "toggle",
-    "img": "images/items/mm_mirror.png",
-    "codes": "MM_SHIELD_MIRROR"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_mirror.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_mirror.png",
+        "codes": "MM_SHIELD_MIRROR"
+      }
+    ]
   },
   {
     "name": "MM Ocarina",

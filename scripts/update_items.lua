@@ -72,7 +72,8 @@ local OOTMM_SHARED = {
     ["MaskZora"] = { "MASK_ZORA" },
     ["MaskBunny"] = { "MASK_BUNNY" },
     ["MaskKeaton"] = { "MASK_KEATON" },
-    ["MaskTruth"] = { "MASK_TRUTH" }
+    ["MaskTruth"] = { "MASK_TRUTH" },
+    ["Shields"] = { "SHIELD_HYLIAN", "SHIELD_MIRROR"}
 }
 local OOTMM_SHARED_PREV = {
     ["BombBags"] = { 0 },
@@ -93,7 +94,8 @@ local OOTMM_SHARED_PREV = {
     ["MaskZora"] = { 0 },
     ["MaskBunny"] = { 0 },
     ["MaskKeaton"] = { 0 },
-    ["MaskTruth"] = { 0 }
+    ["MaskTruth"] = { 0 },
+    ["Shields"] = { 0, 0 }
 }
 function on_update_shared_items()
     for setting, items in pairs(OOTMM_SHARED) do
