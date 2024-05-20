@@ -50,6 +50,36 @@
     ]
   },
   {
+    "name": "Tingle Maps Shuffle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_tingleShuffle_vanilla.png",
+        "codes": "setting_tingleShuffle,setting_tingleShuffle_vanilla",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_tingleShuffle_anywhere.png",
+        "codes": "setting_tingleShuffle,setting_tingleShuffle_anywhere",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_tingleShuffle_starting.png",
+        "codes": "setting_tingleShuffle,setting_tingleShuffle_starting",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_tingleShuffle_removed.png",
+        "codes": "setting_tingleShuffle,setting_tingleShuffle_removed",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Town Stray Fairy Shuffle",
     "type": "progressive",
     "allow_disabled": false,
@@ -74,7 +104,7 @@
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 0,
+    "initial_stage_idx": 1,
     "stages": [
       {
         "img": "images/setting_strayFairyChestShuffle_vanilla.png",
@@ -123,46 +153,6 @@
     ]
   },
   {
-    "name": "Cow Shuffle (OoT)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_cowShuffleOot_true.png",
-        "codes": "setting_cowShuffleOot,setting_cowShuffleOot_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_cowShuffleOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_cowShuffleOot,setting_cowShuffleOot_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Cow Shuffle (MM)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_cowShuffleMm_true.png",
-        "codes": "setting_cowShuffleMm,setting_cowShuffleMm_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_cowShuffleMm_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_cowShuffleMm,setting_cowShuffleMm_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Shop Shuffle (OoT)",
     "type": "progressive",
     "allow_disabled": false,
@@ -203,161 +193,121 @@
     ]
   },
   {
-    "name": "Pots Shuffle (OoT)",
+    "name": "Owl Statue Shuffle",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_shufflePotsOot_true.png",
-        "codes": "setting_shufflePotsOot,setting_shufflePotsOot_true",
+        "img": "images/setting_owlShuffle_none.png",
+        "img_mods": "@disabled",
+        "codes": "setting_owlShuffle,setting_owlShuffle_none",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shufflePotsOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_shufflePotsOot,setting_shufflePotsOot_false",
+        "img": "images/setting_owlShuffle_anywhere.png",
+        "codes": "setting_owlShuffle,setting_owlShuffle_anywhere",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Pots Shuffle (MM)",
+    "name": "Scrub Shuffle (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_shufflePotsMm_true.png",
-        "codes": "setting_shufflePotsMm,setting_shufflePotsMm_true",
+        "img": "images/setting_scrubShuffleOot_true.png",
+        "codes": "setting_scrubShuffleOot,setting_scrubShuffleOot_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shufflePotsMm_false.png",
+        "img": "images/setting_scrubShuffleOot_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_shufflePotsMm,setting_shufflePotsMm_false",
+        "codes": "setting_scrubShuffleOot,setting_scrubShuffleOot_false",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Grass Shuffle (OoT)",
+    "name": "Scrub Shuffle (MM)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_shuffleGrassOot_true.png",
-        "codes": "setting_shuffleGrassOot,setting_shuffleGrassOot_true",
+        "img": "images/setting_scrubShuffleMm_true.png",
+        "codes": "setting_scrubShuffleMm,setting_scrubShuffleMm_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shuffleGrassOot_false.png",
+        "img": "images/setting_scrubShuffleMm_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_shuffleGrassOot,setting_shuffleGrassOot_false",
+        "codes": "setting_scrubShuffleMm,setting_scrubShuffleMm_false",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Grass Shuffle (MM)",
+    "name": "Cow Shuffle (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_shuffleGrassMm_true.png",
-        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_true",
+        "img": "images/setting_cowShuffleOot_true.png",
+        "codes": "setting_cowShuffleOot,setting_cowShuffleOot_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shuffleGrassMm_false.png",
+        "img": "images/setting_cowShuffleOot_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_shuffleGrassMm,setting_shuffleGrassMm_false",
+        "codes": "setting_cowShuffleOot,setting_cowShuffleOot_false",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Freestanding Rupees Shuffle (OoT)",
+    "name": "Cow Shuffle (MM)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_shuffleFreeRupeesOot_true.png",
-        "codes": "setting_shuffleFreeRupeesOot,setting_shuffleFreeRupeesOot_true",
+        "img": "images/setting_cowShuffleMm_true.png",
+        "codes": "setting_cowShuffleMm,setting_cowShuffleMm_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shuffleFreeRupeesOot_false.png",
+        "img": "images/setting_cowShuffleMm_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_shuffleFreeRupeesOot,setting_shuffleFreeRupeesOot_false",
+        "codes": "setting_cowShuffleMm,setting_cowShuffleMm_false",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Freestanding Rupees Shuffle (MM)",
+    "name": "Merchants Shuffle (MM)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_shuffleFreeRupeesMm_true.png",
-        "codes": "setting_shuffleFreeRupeesMm,setting_shuffleFreeRupeesMm_true",
+        "img": "images/setting_shuffleMerchantsMm_true.png",
+        "codes": "setting_shuffleMerchantsMm,setting_shuffleMerchantsMm_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_shuffleFreeRupeesMm_false.png",
+        "img": "images/setting_shuffleMerchantsMm_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_shuffleFreeRupeesMm,setting_shuffleFreeRupeesMm_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Freestanding Hearts Shuffle (OoT)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_shuffleFreeHeartsOot_true.png",
-        "codes": "setting_shuffleFreeHeartsOot,setting_shuffleFreeHeartsOot_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_shuffleFreeHeartsOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_shuffleFreeHeartsOot,setting_shuffleFreeHeartsOot_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Freestanding Hearts Shuffle (MM)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_shuffleFreeHeartsMm_true.png",
-        "codes": "setting_shuffleFreeHeartsMm,setting_shuffleFreeHeartsMm_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_shuffleFreeHeartsMm_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_shuffleFreeHeartsMm,setting_shuffleFreeHeartsMm_false",
+        "codes": "setting_shuffleMerchantsMm,setting_shuffleMerchantsMm_false",
         "inherit_codes": false
       }
     ]
@@ -423,21 +373,121 @@
     ]
   },
   {
-    "name": "Fairy Spot Shuffle (OoT)",
+    "name": "OoT Shops Prices",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_fairySpotShuffleOot_true.png",
-        "codes": "setting_fairySpotShuffleOot,setting_fairySpotShuffleOot_true",
+        "img": "images/setting_priceOotShops_affordable.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_affordable",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_fairySpotShuffleOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_fairySpotShuffleOot,setting_fairySpotShuffleOot_false",
+        "img": "images/setting_priceOotShops_vanilla.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_priceOotShops_weighted.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotShops_random.png",
+        "codes": "setting_priceOotShops,setting_priceOotShops_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "OoT Scrubs Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceOotScrubs_affordable.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotScrubs_vanilla.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_priceOotScrubs_weighted.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceOotScrubs_random.png",
+        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Shops Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceMmShops_affordable.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmShops_vanilla.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_priceMmShops_weighted.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmShops_random.png",
+        "codes": "setting_priceMmShops,setting_priceMmShops_random",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "MM Tingle Prices",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_priceMmTingle_affordable.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_affordable",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmTingle_vanilla.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_priceMmTingle_weighted.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_weighted",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_priceMmTingle_random.png",
+        "codes": "setting_priceMmTingle,setting_priceMmTingle_random",
         "inherit_codes": false
       }
     ]
@@ -483,31 +533,6 @@
     ]
   },
   {
-    "name": "Age Change upon Song of Time",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_ageChange_none.png",
-        "codes": "setting_ageChange,setting_ageChange_none",
-        "img_mods": "@disabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_ageChange_oot.png",
-        "codes": "setting_ageChange,setting_ageChange_oot",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_ageChange_always.png",
-        "codes": "setting_ageChange,setting_ageChange_always",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Door of Time",
     "type": "progressive",
     "allow_disabled": false,
@@ -528,91 +553,26 @@
     ]
   },
   {
-    "name": "Tingle Maps Shuffle",
+    "name": "Deku Tree",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 0,
+    "initial_stage_idx": 2,
     "stages": [
       {
-        "img": "images/setting_tingleShuffle_vanilla.png",
-        "codes": "setting_tingleShuffle,setting_tingleShuffle_vanilla",
+        "img": "images/setting_dekuTree_closed.png",
+        "codes": "setting_dekuTree,setting_dekuTree_closed",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_dekuTree_vanilla.png",
+        "codes": "setting_dekuTree,setting_dekuTree_vanilla",
         "img_mods": "@disabled",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_tingleShuffle_anywhere.png",
-        "codes": "setting_tingleShuffle,setting_tingleShuffle_anywhere",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_tingleShuffle_starting.png",
-        "codes": "setting_tingleShuffle,setting_tingleShuffle_starting",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_tingleShuffle_removed.png",
-        "codes": "setting_tingleShuffle,setting_tingleShuffle_removed",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Scrub Shuffle (OoT)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_scrubShuffleOot_true.png",
-        "codes": "setting_scrubShuffleOot,setting_scrubShuffleOot_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_scrubShuffleOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_scrubShuffleOot,setting_scrubShuffleOot_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Scrub Shuffle (MM)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_scrubShuffleMm_true.png",
-        "codes": "setting_scrubShuffleMm,setting_scrubShuffleMm_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_scrubShuffleMm_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_scrubShuffleMm,setting_scrubShuffleMm_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Cross-Games OoT Warp Songs",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_crossWarpOot_true.png",
-        "codes": "setting_crossWarpOot,setting_crossWarpOot_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_crossWarpOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_crossWarpOot,setting_crossWarpOot_false",
+        "img": "images/setting_dekuTree_open.png",
+        "codes": "setting_dekuTree,setting_dekuTree_open",
         "inherit_codes": false
       }
     ]
@@ -638,21 +598,141 @@
     ]
   },
   {
-    "name": "Skip Child Zelda",
+    "name": "Zora King",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_skipZelda_true.png",
-        "codes": "setting_skipZelda,setting_skipZelda_true",
+        "img": "images/setting_zoraKing_vanilla.png",
+        "codes": "setting_zoraKing,setting_zoraKing_vanilla",
+        "img_mods": "@disabled",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_skipZelda_false.png",
+        "img": "images/setting_zoraKing_adult.png",
+        "codes": "setting_zoraKing,setting_zoraKing_adult",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_zoraKing_open.png",
+        "codes": "setting_zoraKing,setting_zoraKing_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Gerudo Fortress",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_gerudoFortress_vanilla.png",
+        "codes": "setting_gerudoFortress,setting_gerudoFortress_vanilla",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_gerudoFortress_single.png",
+        "codes": "setting_gerudoFortress,setting_gerudoFortress_single",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_gerudoFortress_open.png",
+        "codes": "setting_gerudoFortress,setting_gerudoFortress_open",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Light Arrow Cutscene",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_lacs_vanilla.png",
         "img_mods": "@disabled",
-        "codes": "setting_skipZelda,setting_skipZelda_false",
+        "codes": "setting_lacs,setting_lacs_vanilla",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_lacs_custom.png",
+        "codes": "setting_lacs,setting_lacs_custom",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 2,
+    "stages": [
+      {
+        "img": "images/setting_rainbowBridge_open.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_open",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_rainbowBridge_vanilla.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_vanilla",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_rainbowBridge_medallions.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_medallions",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_rainbowBridge_custom.png",
+        "codes": "setting_rainbowBridge,setting_rainbowBridge_custom",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Majora Child Requirements",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_majoraChild_none.png",
+        "img_mods": "@disabled",
+        "codes": "setting_majoraChild,setting_majoraChild_none",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_majoraChild_custom.png",
+        "codes": "setting_majoraChild,setting_majoraChild_custom",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Boss Warp Pads",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_bossWarpPads_bossBeaten.png",
+        "codes": "setting_bossWarpPads,setting_bossWarpPads_bossBeaten",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_bossWarpPads_remains.png",
+        "codes": "setting_bossWarpPads,setting_bossWarpPads_remains",
         "inherit_codes": false
       }
     ]
@@ -687,131 +767,12 @@
       {
         "img": "images/setting_timeTravelSword_true.png",
         "codes": "setting_timeTravelSword,setting_timeTravelSword_true",
+        "img_mods": "@disabled",
         "inherit_codes": false
       },
       {
         "img": "images/setting_timeTravelSword_false.png",
-        "img_mods": "@disabled",
         "codes": "setting_timeTravelSword,setting_timeTravelSword_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Rainbow Bridge",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 2,
-    "stages": [
-      {
-        "img": "images/setting_rainbowBridge_open.png",
-        "codes": "setting_rainbowBridge,setting_rainbowBridge_open",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_rainbowBridge_vanilla.png",
-        "codes": "setting_rainbowBridge,setting_rainbowBridge_vanilla",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_rainbowBridge_medallions.png",
-        "codes": "setting_rainbowBridge,setting_rainbowBridge_medallions",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_rainbowBridge_custom.png",
-        "codes": "setting_rainbowBridge,setting_rainbowBridge_custom",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Skip Oath to Order",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_openMoon_true.png",
-        "codes": "setting_openMoon,setting_openMoon_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_openMoon_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_openMoon,setting_openMoon_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Zora King",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_zoraKing_vanilla.png",
-        "codes": "setting_zoraKing,setting_zoraKing_vanilla",
-        "img_mods": "@disabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_zoraKing_adult.png",
-        "codes": "setting_zoraKing,setting_zoraKing_adult",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_zoraKing_open.png",
-        "codes": "setting_zoraKing,setting_zoraKing_open",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Deku Tree",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 2,
-    "stages": [
-      {
-        "img": "images/setting_dekuTree_closed.png",
-        "codes": "setting_dekuTree,setting_dekuTree_closed",
-        "img_mods": "@disabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_dekuTree_vanilla.png",
-        "codes": "setting_dekuTree,setting_dekuTree_vanilla",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_dekuTree_open.png",
-        "codes": "setting_dekuTree,setting_dekuTree_open",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Boss Warp Pads",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_bossWarpPads_bossBeaten.png",
-        "codes": "setting_bossWarpPads,setting_bossWarpPads_bossBeaten",
-        "inherit_codes": false,
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/setting_bossWarpPads_remains.png",
-        "codes": "setting_bossWarpPads,setting_bossWarpPads_remains",
         "inherit_codes": false
       }
     ]
@@ -837,6 +798,26 @@
     ]
   },
   {
+    "name": "Well as Adult",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_wellAdult_true.png",
+        "codes": "setting_wellAdult,setting_wellAdult_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_wellAdult_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_wellAdult,setting_wellAdult_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Fire Temple as Child",
     "type": "progressive",
     "allow_disabled": false,
@@ -857,21 +838,81 @@
     ]
   },
   {
-    "name": "Well as Adult",
+    "name": "Open Zora's Domain Shortcut",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_wellAdult_true.png",
-        "codes": "setting_wellAdult,setting_wellAdult_true",
+        "img": "images/setting_openZdShortcut_true.png",
+        "codes": "setting_openZdShortcut,setting_openZdShortcut_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_wellAdult_false.png",
+        "img": "images/setting_openZdShortcut_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_wellAdult,setting_wellAdult_false",
+        "codes": "setting_openZdShortcut,setting_openZdShortcut_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Skip Child Zelda",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_skipZelda_true.png",
+        "codes": "setting_skipZelda,setting_skipZelda_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_skipZelda_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_skipZelda,setting_skipZelda_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Skip Oath to Order",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_openMoon_true.png",
+        "codes": "setting_openMoon,setting_openMoon_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_openMoon_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_openMoon,setting_openMoon_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Free Scarecrow (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_freeScarecrowOot_true.png",
+        "codes": "setting_freeScarecrowOot,setting_freeScarecrowOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_freeScarecrowOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_freeScarecrowOot,setting_freeScarecrowOot_false",
         "inherit_codes": false
       }
     ]
@@ -902,61 +943,116 @@
     ]
   },
   {
-    "name": "Majora Child Requirements",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_majoraChild_none.png",
-        "img_mods": "@disabled",
-        "codes": "setting_majoraChild,setting_majoraChild_none",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_majoraChild_custom.png",
-        "codes": "setting_majoraChild,setting_majoraChild_custom",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Open Zora's Domain Shortcut",
+    "name": "Cross-Games Age",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_openZdShortcut_true.png",
-        "codes": "setting_openZdShortcut,setting_openZdShortcut_true",
+        "img": "images/setting_crossAge_true.png",
+        "codes": "setting_crossAge,setting_crossAge_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_openZdShortcut_false.png",
+        "img": "images/setting_crossAge_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_openZdShortcut,setting_openZdShortcut_false",
+        "codes": "setting_crossAge,setting_crossAge_false",
         "inherit_codes": false
       }
     ]
   },
   {
-    "name": "Light Arrow Cutscene",
+    "name": "Cross-Games OoT Warp Songs",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_crossWarpOot_true.png",
+        "codes": "setting_crossWarpOot,setting_crossWarpOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_crossWarpOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_crossWarpOot,setting_crossWarpOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hookshot Anywhere (OoT)",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_lacs_vanilla.png",
+        "img": "images/setting_hookshotAnywhereOot_off.png",
+        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_off",
         "img_mods": "@disabled",
-        "codes": "setting_lacs,setting_lacs_vanilla",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_lacs_custom.png",
-        "codes": "setting_lacs,setting_lacs_custom",
+        "img": "images/setting_hookshotAnywhereOot_enabled.png",
+        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hookshotAnywhereOot_logical.png",
+        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_logical",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hookshot Anywhere (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_hookshotAnywhereMm_off.png",
+        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_off",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hookshotAnywhereMm_enabled.png",
+        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_hookshotAnywhereMm_logical.png",
+        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_logical",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Climb Most Surfaces (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_climbMostSurfacesOot_off.png",
+        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_off",
+        "img_mods": "@disabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_climbMostSurfacesOot_enabled.png",
+        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_enabled",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_climbMostSurfacesOot_logical.png",
+        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_logical",
         "inherit_codes": false
       }
     ]
@@ -1162,26 +1258,6 @@
     ]
   },
   {
-    "name": "Shared Sun's Song",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_sharedSongSun_true.png",
-        "codes": "setting_sharedSongSun,setting_sharedSongSun_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_sharedSongSun_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_sharedSongSun,setting_sharedSongSun_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Shared Hookshots",
     "type": "progressive",
     "allow_disabled": false,
@@ -1257,46 +1333,6 @@
         "img": "images/setting_sharedMaskGoron_false.png",
         "img_mods": "@disabled",
         "codes": "setting_sharedMaskGoron,setting_sharedMaskGoron_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Ageless Hookshot",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_agelessHookshot_true.png",
-        "codes": "setting_agelessHookshot,setting_agelessHookshot_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_agelessHookshot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_agelessHookshot,setting_agelessHookshot_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Ageless Strength",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_agelessStrength_true.png",
-        "codes": "setting_agelessStrength,setting_agelessStrength_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_agelessStrength_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_agelessStrength,setting_agelessStrength_false",
         "inherit_codes": false
       }
     ]
@@ -1402,21 +1438,61 @@
     ]
   },
   {
-    "name": "Shared Health",
+    "name": "Shared Sun's Song",
     "type": "progressive",
     "allow_disabled": false,
     "loop": true,
     "initial_stage_idx": 1,
     "stages": [
       {
-        "img": "images/setting_sharedHealth_true.png",
-        "codes": "setting_sharedHealth,setting_sharedHealth_true",
+        "img": "images/setting_sharedSongSun_true.png",
+        "codes": "setting_sharedSongSun,setting_sharedSongSun_true",
         "inherit_codes": false
       },
       {
-        "img": "images/setting_sharedHealth_false.png",
+        "img": "images/setting_sharedSongSun_false.png",
         "img_mods": "@disabled",
-        "codes": "setting_sharedHealth,setting_sharedHealth_false",
+        "codes": "setting_sharedSongSun,setting_sharedSongSun_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ageless Hookshot",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_agelessHookshot_true.png",
+        "codes": "setting_agelessHookshot,setting_agelessHookshot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_agelessHookshot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_agelessHookshot,setting_agelessHookshot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ageless Strength",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_agelessStrength_true.png",
+        "codes": "setting_agelessStrength,setting_agelessStrength_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_agelessStrength_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_agelessStrength,setting_agelessStrength_false",
         "inherit_codes": false
       }
     ]
@@ -1946,46 +2022,6 @@
     ]
   },
   {
-    "name": "Owl Statue Shuffle",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_owlShuffle_none.png",
-        "img_mods": "@disabled",
-        "codes": "setting_owlShuffle,setting_owlShuffle_none",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_owlShuffle_anywhere.png",
-        "codes": "setting_owlShuffle,setting_owlShuffle_anywhere",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Merchants Shuffle (MM)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_shuffleMerchantsMm_true.png",
-        "codes": "setting_shuffleMerchantsMm,setting_shuffleMerchantsMm_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_shuffleMerchantsMm_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_shuffleMerchantsMm,setting_shuffleMerchantsMm_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Ageless Swords",
     "type": "progressive",
     "allow_disabled": false,
@@ -2146,46 +2182,6 @@
     ]
   },
   {
-    "name": "Free Scarecrow (OoT)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_freeScarecrowOot_true.png",
-        "codes": "setting_freeScarecrowOot,setting_freeScarecrowOot_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_freeScarecrowOot_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_freeScarecrowOot,setting_freeScarecrowOot_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Cross-Games Age",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_crossAge_true.png",
-        "codes": "setting_crossAge,setting_crossAge_true",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_crossAge_false.png",
-        "img_mods": "@disabled",
-        "codes": "setting_crossAge,setting_crossAge_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Auto-Invert Time (MM)",
     "type": "progressive",
     "allow_disabled": false,
@@ -2206,78 +2202,6 @@
       {
         "img": "images/setting_autoInvert_always.png",
         "codes": "setting_autoInvert,setting_autoInvert_always",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Hookshot Anywhere (OoT)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_hookshotAnywhereOot_off.png",
-        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_off",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_hookshotAnywhereOot_enabled.png",
-        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_enabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_hookshotAnywhereOot_logical.png",
-        "codes": "setting_hookshotAnywhereOot,setting_hookshotAnywhereOot_logical",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Hookshot Anywhere (MM)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_hookshotAnywhereMm_off.png",
-        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_off",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_hookshotAnywhereMm_enabled.png",
-        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_enabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_hookshotAnywhereMm_logical.png",
-        "codes": "setting_hookshotAnywhereMm,setting_hookshotAnywhereMm_logical",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Climb Most Surfaces (OoT)",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_climbMostSurfacesOot_off.png",
-        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_off",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_climbMostSurfacesOot_enabled.png",
-        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_enabled",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_climbMostSurfacesOot_logical.png",
-        "codes": "setting_climbMostSurfacesOot,setting_climbMostSurfacesOot_logical",
         "inherit_codes": false
       }
     ]
@@ -2342,31 +2266,6 @@
     ]
   },
   {
-    "name": "Gerudo Fortress",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 0,
-    "stages": [
-      {
-        "img": "images/setting_gerudoFortress_vanilla.png",
-        "codes": "setting_gerudoFortress,setting_gerudoFortress_vanilla",
-        "inherit_codes": false,
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/setting_gerudoFortress_single.png",
-        "codes": "setting_gerudoFortress,setting_gerudoFortress_single",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_gerudoFortress_open.png",
-        "codes": "setting_gerudoFortress,setting_gerudoFortress_open",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
     "name": "Blue Fire Arrows",
     "type": "progressive",
     "allow_disabled": false,
@@ -2382,126 +2281,6 @@
         "img": "images/setting_blueFireArrows_false.png",
         "img_mods": "@disabled",
         "codes": "setting_blueFireArrows,setting_blueFireArrows_false",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "OoT Shops Prices",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_priceOotShops_affordable.png",
-        "codes": "setting_priceOotShops,setting_priceOotShops_affordable",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceOotShops_vanilla.png",
-        "codes": "setting_priceOotShops,setting_priceOotShops_vanilla",
-        "inherit_codes": false,
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/setting_priceOotShops_weighted.png",
-        "codes": "setting_priceOotShops,setting_priceOotShops_weighted",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceOotShops_random.png",
-        "codes": "setting_priceOotShops,setting_priceOotShops_random",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "OoT Scrubs Prices",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_priceOotScrubs_affordable.png",
-        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_affordable",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceOotScrubs_vanilla.png",
-        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_vanilla",
-        "inherit_codes": false,
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/setting_priceOotScrubs_weighted.png",
-        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_weighted",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceOotScrubs_random.png",
-        "codes": "setting_priceOotScrubs,setting_priceOotScrubs_random",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "MM Shops Prices",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_priceMmShops_affordable.png",
-        "codes": "setting_priceMmShops,setting_priceMmShops_affordable",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceMmShops_vanilla.png",
-        "codes": "setting_priceMmShops,setting_priceMmShops_vanilla",
-        "inherit_codes": false,
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/setting_priceMmShops_weighted.png",
-        "codes": "setting_priceMmShops,setting_priceMmShops_weighted",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceMmShops_random.png",
-        "codes": "setting_priceMmShops,setting_priceMmShops_random",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "MM Tingle Prices",
-    "type": "progressive",
-    "allow_disabled": false,
-    "loop": true,
-    "initial_stage_idx": 1,
-    "stages": [
-      {
-        "img": "images/setting_priceMmTingle_affordable.png",
-        "codes": "setting_priceMmTingle,setting_priceMmTingle_affordable",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceMmTingle_vanilla.png",
-        "codes": "setting_priceMmTingle,setting_priceMmTingle_vanilla",
-        "inherit_codes": false,
-        "img_mods": "@disabled"
-      },
-      {
-        "img": "images/setting_priceMmTingle_weighted.png",
-        "codes": "setting_priceMmTingle,setting_priceMmTingle_weighted",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/setting_priceMmTingle_random.png",
-        "codes": "setting_priceMmTingle,setting_priceMmTingle_random",
         "inherit_codes": false
       }
     ]
