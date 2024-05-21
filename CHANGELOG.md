@@ -1,5 +1,9 @@
 # Releases
 
+## v22.0.2
+
+Bugfix release to make starting age adult work properly.
+
 ## v22.0.1
 
 Logic updated to version v22.0 of the OOTMM Randomizer.
