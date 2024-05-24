@@ -4208,6 +4208,9 @@
                 "access_rules": [
                   "$oot|Gerudo Fortress Jail 2"
                 ],
+                "visibility_rules": [
+                  "setting_gerudoFortress_vanilla"
+                ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
               },
@@ -4217,6 +4220,9 @@
                 "access_rules": [
                   "$oot|Gerudo Fortress Jail 3"
                 ],
+                "visibility_rules": [
+                  "setting_gerudoFortress_vanilla"
+                ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
               },
@@ -4225,6 +4231,9 @@
                 "short_name": "4 Torches",
                 "access_rules": [
                   "$oot|Gerudo Fortress Jail 4"
+                ],
+                "visibility_rules": [
+                  "setting_gerudoFortress_vanilla"
                 ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
@@ -4241,6 +4250,9 @@
             "map_locations": [
               {
                 "map": "oot",
+                "force_invisibility_rules": [
+                  "setting_gerudoFortress_open"
+                ],
                 "x": 505,
                 "y": 390
               }

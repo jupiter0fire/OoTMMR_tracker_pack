@@ -52,6 +52,7 @@ function _mm_logic()
 
     local _ENV = M
 
+    OOTMM_RUNTIME_ALL_GLITCHES_ENABLED = false
     OOTMM_RUNTIME_ALL_TRICKS_ENABLED = false
     OOTMM_RUNTIME_ACCESSIBILITY = {}
     OOTMM_RUNTIME_CACHE = {}

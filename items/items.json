@@ -200,7 +200,7 @@
     "name": "Bombchus",
     "type": "toggle",
     "img": "images/bombchu.png",
-    "codes": "EVENT_OOT_BOMBCHU"
+    "codes": "EVENT_OOT_BOMBCHU, OOT_BOMBCHU_5"
   },
   {
     "name": "Lens of Truth",
