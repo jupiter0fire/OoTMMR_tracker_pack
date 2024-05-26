@@ -1158,6 +1158,26 @@
     ]
   },
   {
+    "name": "Shared Bombchu Bags",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedBombchuBags_true.png",
+        "codes": "setting_sharedBombchuBags,setting_sharedBombchuBags_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedBombchuBags_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedBombchuBags,setting_sharedBombchuBags_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shared Magic",
     "type": "progressive",
     "allow_disabled": false,
