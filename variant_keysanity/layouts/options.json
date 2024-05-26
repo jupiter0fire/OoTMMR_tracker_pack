@@ -318,6 +318,11 @@
       },
       {
         "type": "item",
+        "item": "setting_freeScarecrowMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_openMoon",
         "height": 16
       },
@@ -734,7 +739,7 @@
       },
       {
         "type": "item",
-        "item": "TRICK_MM_SHT_FIRELESS",
+        "item": "TRICK_MM_SHT_HOT_WATER",
         "height": 16
       },
       {

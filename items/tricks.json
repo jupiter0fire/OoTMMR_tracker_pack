@@ -301,11 +301,11 @@
     "codes": "TRICK_MM_PALACE_GUARD_SKIP"
   },
   {
-    "name": "Complete Snowhead Temple without Fire Arrows",
+    "name": "Complete Snowhead Temple using Hot Spring Water",
     "type": "toggle",
     "initial_active_state": false,
-    "img": "images/trick_mm_sht_fireless.png",
-    "codes": "TRICK_MM_SHT_FIRELESS"
+    "img": "images/trick_mm_sht_hot_water.png",
+    "codes": "TRICK_MM_SHT_HOT_WATER"
   },
   {
     "name": "Use Powder Kegs as Explosives",
