@@ -520,11 +520,11 @@ function _oot_logic()
         return true
     end
 
-    function flag_set(flag) -- FIXME
+    function flag_on(flag) -- FIXME
         return true
     end
 
-    function flag_check_unset(flag) -- FIXME
+    function flag_off(flag) -- FIXME
         return true
     end
 
@@ -1172,6 +1172,150 @@ function _oot_logic()
 		return shared_soul_misc(SOUL_MISC_BUSINESS_SCRUB, SHARED_SOUL_MISC_BUSINESS_SCRUB)
 	end
 
+	function shared_soul_npc(a, b)
+		return cond(setting('sharedSoulsNpc'), soul_npc(b), soul_npc(a))
+	end
+
+	function soul_banker()
+		return shared_soul_npc(SOUL_NPC_BANKER, SHARED_SOUL_NPC_BANKER)
+	end
+
+	function soul_astronomer()
+		return shared_soul_npc(SOUL_NPC_ASTRONOMER, SHARED_SOUL_NPC_ASTRONOMER)
+	end
+
+	function soul_gorman()
+		return shared_soul_npc(SOUL_NPC_GORMAN, SHARED_SOUL_NPC_GORMAN)
+	end
+
+	function soul_honey_darling()
+		return shared_soul_npc(SOUL_NPC_HONEY_DARLING, SHARED_SOUL_NPC_HONEY_DARLING)
+	end
+
+	function soul_composer_bros()
+		return shared_soul_npc(SOUL_NPC_COMPOSER_BROS, SHARED_SOUL_NPC_COMPOSER_BROS)
+	end
+
+	function soul_citizen()
+		return shared_soul_npc(SOUL_NPC_CITIZEN, SHARED_SOUL_NPC_CITIZEN)
+	end
+
+	function soul_bombers()
+		return shared_soul_npc(SOUL_NPC_BOMBERS, SHARED_SOUL_NPC_BOMBERS)
+	end
+
+	function soul_fishing_pond_owner()
+		return shared_soul_npc(SOUL_NPC_FISHING_POND_OWNER, SHARED_SOUL_NPC_FISHING_POND_OWNER)
+	end
+
+	function soul_zora_shopkeeper()
+		return shared_soul_npc(SOUL_NPC_ZORA_SHOPKEEPER, SHARED_SOUL_NPC_ZORA_SHOPKEEPER)
+	end
+
+	function soul_zora()
+		return shared_soul_npc(SOUL_NPC_ZORA, SHARED_SOUL_NPC_ZORA)
+	end
+
+	function soul_goron_shopkeeper()
+		return shared_soul_npc(SOUL_NPC_GORON_SHOPKEEPER, SHARED_SOUL_NPC_GORON_SHOPKEEPER)
+	end
+
+	function soul_medigoron()
+		return shared_soul_npc(SOUL_NPC_MEDIGORON, SHARED_SOUL_NPC_MEDIGORON)
+	end
+
+	function soul_goron()
+		return shared_soul_npc(SOUL_NPC_GORON, SHARED_SOUL_NPC_GORON)
+	end
+
+	function soul_goron_child()
+		return shared_soul_npc(SOUL_NPC_GORON_CHILD, SHARED_SOUL_NPC_GORON_CHILD)
+	end
+
+	function soul_biggoron()
+		return shared_soul_npc(SOUL_NPC_BIGGORON, SHARED_SOUL_NPC_BIGGORON)
+	end
+
+	function soul_dampe()
+		return shared_soul_npc(SOUL_NPC_DAMPE, SHARED_SOUL_NPC_DAMPE)
+	end
+
+	function soul_guru_guru()
+		return shared_soul_npc(SOUL_NPC_GURU_GURU, SHARED_SOUL_NPC_GURU_GURU)
+	end
+
+	function soul_talon()
+		return shared_soul_npc(SOUL_NPC_TALON, SHARED_SOUL_NPC_TALON)
+	end
+
+	function soul_malon()
+		return shared_soul_npc(SOUL_NPC_MALON, SHARED_SOUL_NPC_MALON)
+	end
+
+	function soul_bombchu_bowling_lady()
+		return shared_soul_npc(SOUL_NPC_BOMBCHU_BOWLING_LADY, SHARED_SOUL_NPC_BOMBCHU_BOWLING_LADY)
+	end
+
+	function soul_shooting_gallery_owner()
+		return shared_soul_npc(SOUL_NPC_SHOOTING_GALLERY_OWNER, SHARED_SOUL_NPC_SHOOTING_GALLERY_OWNER)
+	end
+
+	function soul_poe_collector()
+		return shared_soul_npc(SOUL_NPC_POE_COLLECTOR, SHARED_SOUL_NPC_POE_COLLECTOR)
+	end
+
+	function soul_bazaar_shopkeeper()
+		return shared_soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER, SHARED_SOUL_NPC_BAZAAR_SHOPKEEPER)
+	end
+
+	function soul_bombchu_shopkeeper()
+		return shared_soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER, SHARED_SOUL_NPC_BOMBCHU_SHOPKEEPER)
+	end
+
+	function soul_ruto()
+		return shared_soul_npc(SOUL_NPC_RUTO, SHARED_SOUL_NPC_RUTO)
+	end
+
+	function soul_anju()
+		return shared_soul_npc(SOUL_NPC_ANJU, SHARED_SOUL_NPC_ANJU)
+	end
+
+	function soul_carpenters()
+		return shared_soul_npc(SOUL_NPC_CARPENTERS, SHARED_SOUL_NPC_CARPENTERS)
+	end
+
+	function soul_chest_game_owner()
+		return shared_soul_npc(SOUL_NPC_CHEST_GAME_OWNER, SHARED_SOUL_NPC_CHEST_GAME_OWNER)
+	end
+
+	function soul_rooftop_man()
+		return shared_soul_npc(SOUL_NPC_ROOFTOP_MAN, SHARED_SOUL_NPC_ROOFTOP_MAN)
+	end
+
+	function soul_bean_salesman()
+		return shared_soul_npc(SOUL_NPC_BEAN_SALESMAN, SHARED_SOUL_NPC_BEAN_SALESMAN)
+	end
+
+	function soul_scientist()
+		return shared_soul_npc(SOUL_NPC_SCIENTIST, SHARED_SOUL_NPC_SCIENTIST)
+	end
+
+	function soul_grog()
+		return shared_soul_npc(SOUL_NPC_GROG, SHARED_SOUL_NPC_GROG)
+	end
+
+	function soul_dog_lady()
+		return shared_soul_npc(SOUL_NPC_DOG_LADY, SHARED_SOUL_NPC_DOG_LADY)
+	end
+
+	function soul_carpet_man()
+		return shared_soul_npc(SOUL_NPC_CARPET_MAN, SHARED_SOUL_NPC_CARPET_MAN)
+	end
+
+	function soul_old_hag()
+		return shared_soul_npc(SOUL_NPC_OLD_HAG, SHARED_SOUL_NPC_OLD_HAG)
+	end
+
 	function is_goal_triforce()
 		return setting('goal', 'triforce') or setting('goal', 'triforce3')
 	end
@@ -1624,12 +1768,20 @@ function _oot_logic()
 		return (has('MAGIC_UPGRADE') or has('SHARED_MAGIC_UPGRADE')) and (event('MAGIC') or has_magic_jar() or (setting('sharedMagic') and event('MM_MAGIC')) or has_green_potion() or has_blue_potion())
 	end
 
-	function has_light_arrows()
-		return can_use_bow() and (has('ARROW_LIGHT') or has('SHARED_ARROW_LIGHT')) and has_magic()
+	function has_light_arrow()
+		return cond(setting('sharedMagicArrowLight'), has('SHARED_ARROW_LIGHT'), has('ARROW_LIGHT'))
+	end
+
+	function has_ice_arrow()
+		return cond(setting('sharedMagicArrowIce'), has('SHARED_ARROW_ICE'), has('ARROW_ICE'))
+	end
+
+	function can_use_light_arrows()
+		return has_light_arrow() and has_magic() and can_use_bow()
 	end
 
 	function has_blue_fire_arrows()
-		return can_use_bow() and (setting('blueFireArrows') and (has('ARROW_ICE') or has('SHARED_ARROW_ICE'))) and has_magic()
+		return setting('blueFireArrows') and has_ice_arrow() and has_magic() and can_use_bow()
 	end
 
 	function has_blue_fire_arrows_mudwall()
@@ -1637,7 +1789,7 @@ function _oot_logic()
 	end
 
 	function has_sunlight_arrows()
-		return can_use_bow() and (setting('sunlightArrows') and (has('ARROW_LIGHT') or has('SHARED_ARROW_LIGHT'))) and has_magic()
+		return setting('sunlightArrows') and can_use_light_arrows()
 	end
 
 	function has_fire_arrows()
@@ -1785,7 +1937,7 @@ function _oot_logic()
 	end
 
 	function can_rescue_carpenter()
-		return small_keys_hideout_all() and (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_npc(SOUL_NPC_CARPENTERS)
+		return small_keys_hideout_all() and (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_carpenters()
 	end
 
 	function carpenters_rescued()
@@ -1917,7 +2069,7 @@ function _oot_logic()
 	end
 
 	function small_keys_tcg(n)
-		return cond(setting('smallKeyShuffleChestGame', 'vanilla'), has_lens_strict() and can_use_wallet(1) and soul_npc(SOUL_NPC_TRASURE_CHEST_GAME_OWNER), has_skeleton_key() or has('KEY_RING_TCG') or has('SMALL_KEY_TCG', n))
+		return cond(setting('smallKeyShuffleChestGame', 'vanilla'), has_lens_strict() and can_use_wallet(1) and soul_chest_game_owner(), has_skeleton_key() or has('KEY_RING_TCG') or has('SMALL_KEY_TCG', n))
 	end
 
 	function small_keys_hideout_all()
@@ -2057,19 +2209,19 @@ function _oot_logic()
 	end
 
 	function glitch_equip_swap()
-		return glitch(OOT_EQUIP_SWAP) and ((has('SPELL_FIRE') or has('SHARED_SPELL_FIRE')) or (has_sticks() and (is_child() or setting('agelessSticks'))))
+		return trick('GLITCH_OOT_EQUIP_SWAP') and ((has('SPELL_FIRE') or has('SHARED_SPELL_FIRE')) or (has_sticks() and (is_child() or setting('agelessSticks'))))
 	end
 
 	function glitch_equip_swap_anyage()
-		return glitch(OOT_EQUIP_SWAP) and ((has('SPELL_FIRE') or has('SHARED_SPELL_FIRE')) or (has_sticks() and setting('agelessSticks')))
+		return trick('GLITCH_OOT_EQUIP_SWAP') and ((has('SPELL_FIRE') or has('SHARED_SPELL_FIRE')) or (has_sticks() and setting('agelessSticks')))
 	end
 
 	function glitch_ocarina_items()
-		return glitch(OOT_OCARINA_ITEMS) and (has_bugs() or has_fish())
+		return trick('GLITCH_OOT_OCARINA_ITEMS') and (has_bugs() or has_fish())
 	end
 
 	function glitch_megaflip()
-		return glitch(OOT_MEGAFLIP) and has_explosives() and has_one_hand_shield()
+		return trick('GLITCH_OOT_MEGAFLIP') and has_explosives() and has_one_hand_shield()
 	end
 
 	function soul_enemy(x)
@@ -3062,7 +3214,7 @@ function _oot_logic()
             ["Ganon Castle Water"] = function () return true end,
             ["Ganon Castle Spirit"] = function () return true end,
             ["Ganon Castle Shadow"] = function () return true end,
-            ["Ganon Castle Stairs"] = function () return ganon_barrier() end,
+            ["Ganon Castle Stairs"] = function () return true end,
             ["Ganon Castle Fairy Fountain"] = function () return has_lens() end,
         },
     },
@@ -3123,7 +3275,7 @@ function _oot_logic()
     },
     ["Ganon Castle Light End"] = {
         ["events"] = {
-            ["GANON_TRIAL_LIGHT"] = function () return has_light_arrows() end,
+            ["GANON_TRIAL_LIGHT"] = function () return can_use_light_arrows() end,
         },
         ["locations"] = {
             ["Ganon Castle Pot Light End 1"] = function () return true end,
@@ -3152,7 +3304,7 @@ function _oot_logic()
     },
     ["Ganon Castle Forest End"] = {
         ["events"] = {
-            ["GANON_TRIAL_FOREST"] = function () return has_light_arrows() end,
+            ["GANON_TRIAL_FOREST"] = function () return can_use_light_arrows() end,
         },
         ["locations"] = {
             ["Ganon Castle Pot Forest End 1"] = function () return true end,
@@ -3174,7 +3326,7 @@ function _oot_logic()
     },
     ["Ganon Castle Fire End"] = {
         ["events"] = {
-            ["GANON_TRIAL_FIRE"] = function () return has_light_arrows() end,
+            ["GANON_TRIAL_FIRE"] = function () return can_use_light_arrows() end,
         },
         ["locations"] = {
             ["Ganon Castle Pot Fire End 1"] = function () return true end,
@@ -3203,7 +3355,7 @@ function _oot_logic()
     },
     ["Ganon Castle Water End"] = {
         ["events"] = {
-            ["GANON_TRIAL_WATER"] = function () return has_light_arrows() end,
+            ["GANON_TRIAL_WATER"] = function () return can_use_light_arrows() end,
         },
         ["locations"] = {
             ["Ganon Castle Pot Water End 1"] = function () return true end,
@@ -3236,7 +3388,7 @@ function _oot_logic()
     },
     ["Ganon Castle Spirit End"] = {
         ["events"] = {
-            ["GANON_TRIAL_SPIRIT"] = function () return has_light_arrows() end,
+            ["GANON_TRIAL_SPIRIT"] = function () return can_use_light_arrows() end,
         },
         ["locations"] = {
             ["Ganon Castle Pot Spirit End 1"] = function () return true end,
@@ -3259,7 +3411,7 @@ function _oot_logic()
     },
     ["Ganon Castle Shadow End"] = {
         ["events"] = {
-            ["GANON_TRIAL_SHADOW"] = function () return has_light_arrows() end,
+            ["GANON_TRIAL_SHADOW"] = function () return can_use_light_arrows() end,
         },
         ["locations"] = {
             ["Ganon Castle Pot Shadow End 1"] = function () return true end,
@@ -3269,7 +3421,7 @@ function _oot_logic()
     ["Ganon Castle Stairs"] = {
         ["exits"] = {
             ["Ganon Castle"] = function () return true end,
-            ["Ganon Castle Tower"] = function () return true end,
+            ["Ganon Castle Tower"] = function () return ganon_barrier() end,
         },
     },
     ["Ganon Castle Tower"] = {
@@ -3292,7 +3444,7 @@ function _oot_logic()
     ["Ganon Castle Tower Boss"] = {
         ["events"] = {
             ["GANON_START"] = function () return not is_goal_triforce() end,
-            ["GANON"] = function () return event('GANON_START') and has_light_arrows() and soul_npc(SOUL_NPC_ZELDA) and can_use_sword_master() end,
+            ["GANON"] = function () return event('GANON_START') and can_use_light_arrows() and soul_npc(SOUL_NPC_ZELDA) and can_use_sword_master() end,
         },
         ["locations"] = {
             ["Ganon Tower Pot 01"] = function () return true end,
@@ -3327,7 +3479,7 @@ function _oot_logic()
             ["Gerudo Fortress Carpenter 1 Right"] = function () return true end,
         },
         ["locations"] = {
-            ["Gerudo Fortress Jail 1"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_npc(SOUL_NPC_CARPENTERS) end,
+            ["Gerudo Fortress Jail 1"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_carpenters() end,
             ["Gerudo Member Card"] = function () return carpenters_rescued() end,
             ["Gerudo Fortress Pot Jail 1 1"] = function () return true end,
             ["Gerudo Fortress Pot Jail 1 2"] = function () return true end,
@@ -3350,7 +3502,7 @@ function _oot_logic()
             ["Gerudo Fortress Carpenter 2 Top"] = function () return true end,
         },
         ["locations"] = {
-            ["Gerudo Fortress Jail 2"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_npc(SOUL_NPC_CARPENTERS) end,
+            ["Gerudo Fortress Jail 2"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_carpenters() end,
             ["Gerudo Member Card"] = function () return carpenters_rescued() end,
             ["Gerudo Fortress Pot Jail 2 1"] = function () return true end,
             ["Gerudo Fortress Pot Jail 2 2"] = function () return true end,
@@ -3383,7 +3535,7 @@ function _oot_logic()
             ["Gerudo Fortress Carpenter 4 Bottom"] = function () return true end,
         },
         ["locations"] = {
-            ["Gerudo Fortress Jail 4"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_npc(SOUL_NPC_CARPENTERS) end,
+            ["Gerudo Fortress Jail 4"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_carpenters() end,
             ["Gerudo Member Card"] = function () return carpenters_rescued() end,
         },
     },
@@ -3434,7 +3586,7 @@ function _oot_logic()
             ["Gerudo Fortress Center Ledge"] = function () return true end,
         },
         ["locations"] = {
-            ["Gerudo Fortress Jail 3"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_npc(SOUL_NPC_CARPENTERS) end,
+            ["Gerudo Fortress Jail 3"] = function () return (has_weapon() or ((can_boomerang() or has_nuts()) and can_use_sticks())) and soul_carpenters() end,
             ["Gerudo Member Card"] = function () return carpenters_rescued() end,
             ["Gerudo Fortress Pot Jail 3 1"] = function () return true end,
             ["Gerudo Fortress Pot Jail 3 2"] = function () return true end,
@@ -3712,8 +3864,8 @@ function _oot_logic()
     },
     ["Jabu-Jabu Main"] = {
         ["events"] = {
-            ["BIG_OCTO"] = function () return soul_octorok() and event('PARASITE') and soul_npc(SOUL_NPC_RUTO) and (has_weapon() or can_use_sticks()) end,
-            ["PARASITE"] = function () return soul_enemy(SOUL_ENEMY_PARASITE) and can_boomerang() and (soul_npc(SOUL_NPC_RUTO) or can_play_elegy()) end,
+            ["BIG_OCTO"] = function () return soul_octorok() and event('PARASITE') and soul_ruto() and (has_weapon() or can_use_sticks()) end,
+            ["PARASITE"] = function () return soul_enemy(SOUL_ENEMY_PARASITE) and can_boomerang() and (soul_ruto() or can_play_elegy()) end,
         },
         ["exits"] = {
             ["Jabu-Jabu"] = function () return true end,
@@ -3722,7 +3874,7 @@ function _oot_logic()
         ["locations"] = {
             ["Jabu-Jabu Map Chest"] = function () return event('PARASITE') end,
             ["Jabu-Jabu Compass Chest"] = function () return event('PARASITE') and soul_enemy(SOUL_ENEMY_SHABOM) end,
-            ["Jabu-Jabu Boomerang Chest"] = function () return soul_enemy(SOUL_ENEMY_STINGER) and soul_npc(SOUL_NPC_RUTO) end,
+            ["Jabu-Jabu Boomerang Chest"] = function () return soul_enemy(SOUL_ENEMY_STINGER) and soul_ruto() end,
             ["Jabu-Jabu GS Bottom Lower"] = function () return gs() and (can_collect_distance() or climb_anywhere()) end,
             ["Jabu-Jabu GS Bottom Upper"] = function () return gs() and (can_collect_distance() or climb_anywhere()) end,
             ["Jabu-Jabu GS Water Switch"] = function () return gs() end,
@@ -3837,6 +3989,7 @@ function _oot_logic()
             ["BEAN_KOKIRI_FOREST"] = function () return can_use_beans() end,
         },
         ["exits"] = {
+            ["Kokiri Forest Grass"] = function () return can_cut_grass() end,
             ["Link's House"] = function () return true end,
             ["Mido's House"] = function () return true end,
             ["Saria's House"] = function () return true end,
@@ -3854,34 +4007,6 @@ function _oot_logic()
             ["Kokiri Forest GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Kokiri Forest GS Night Child"] = function () return is_child() and gs_night() and can_damage_skull() end,
             ["Kokiri Forest GS Night Adult"] = function () return is_adult() and (can_collect_distance() or climb_anywhere()) and gs_night() end,
-            ["Kokiri Forest Grass 1"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass 2"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass 3"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass 4"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass 5"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass 6"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass 7"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass 8"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Grass Child 1"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Child 2"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Child 3"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Child 4"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Child Kokiri"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Child Crawl 1"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Child Crawl 2"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Child Crawl 3"] = function () return is_child() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 01"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 02"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 03"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 04"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 05"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 06"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 07"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 08"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 09"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 10"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 11"] = function () return is_adult() and can_cut_grass() end,
-            ["Kokiri Forest Grass Adult 12"] = function () return is_adult() and can_cut_grass() end,
             ["Kokiri Forest Rupee Child 1"] = function () return is_child() end,
             ["Kokiri Forest Rupee Child 2"] = function () return is_child() end,
             ["Kokiri Forest Rupee Crawl 1"] = function () return is_child() end,
@@ -3889,6 +4014,50 @@ function _oot_logic()
             ["Kokiri Forest Heart 1"] = function () return is_child() end,
             ["Kokiri Forest Heart 2"] = function () return is_child() end,
             ["Kokiri Forest Heart 3"] = function () return is_child() end,
+        },
+    },
+    ["Kokiri Forest Grass"] = {
+        ["exits"] = {
+            ["Kokiri Forest Grass Child"] = function () return is_child() end,
+            ["Kokiri Forest Grass Adult"] = function () return is_adult() end,
+        },
+        ["locations"] = {
+            ["Kokiri Forest Grass 1"] = function () return true end,
+            ["Kokiri Forest Grass 2"] = function () return true end,
+            ["Kokiri Forest Grass 3"] = function () return true end,
+            ["Kokiri Forest Grass 4"] = function () return true end,
+            ["Kokiri Forest Grass 5"] = function () return true end,
+            ["Kokiri Forest Grass 6"] = function () return true end,
+            ["Kokiri Forest Grass 7"] = function () return true end,
+            ["Kokiri Forest Grass 8"] = function () return true end,
+        },
+    },
+    ["Kokiri Forest Grass Child"] = {
+        ["locations"] = {
+            ["Kokiri Forest Grass Child 1"] = function () return true end,
+            ["Kokiri Forest Grass Child 2"] = function () return true end,
+            ["Kokiri Forest Grass Child 3"] = function () return true end,
+            ["Kokiri Forest Grass Child 4"] = function () return true end,
+            ["Kokiri Forest Grass Child Kokiri"] = function () return true end,
+            ["Kokiri Forest Grass Child Crawl 1"] = function () return true end,
+            ["Kokiri Forest Grass Child Crawl 2"] = function () return true end,
+            ["Kokiri Forest Grass Child Crawl 3"] = function () return true end,
+        },
+    },
+    ["Kokiri Forest Grass Adult"] = {
+        ["locations"] = {
+            ["Kokiri Forest Grass Adult 01"] = function () return true end,
+            ["Kokiri Forest Grass Adult 02"] = function () return true end,
+            ["Kokiri Forest Grass Adult 03"] = function () return true end,
+            ["Kokiri Forest Grass Adult 04"] = function () return true end,
+            ["Kokiri Forest Grass Adult 05"] = function () return true end,
+            ["Kokiri Forest Grass Adult 06"] = function () return true end,
+            ["Kokiri Forest Grass Adult 07"] = function () return true end,
+            ["Kokiri Forest Grass Adult 08"] = function () return true end,
+            ["Kokiri Forest Grass Adult 09"] = function () return true end,
+            ["Kokiri Forest Grass Adult 10"] = function () return true end,
+            ["Kokiri Forest Grass Adult 11"] = function () return true end,
+            ["Kokiri Forest Grass Adult 12"] = function () return true end,
         },
     },
     ["Kokiri Forest Adult Rupees"] = {
@@ -3915,16 +4084,19 @@ function _oot_logic()
     ["Kokiri Shop"] = {
         ["exits"] = {
             ["Kokiri Forest"] = function () return true end,
+            ["Kokiri Shop Items"] = function () return soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
         },
+    },
+    ["Kokiri Shop Items"] = {
         ["locations"] = {
-            ["Kokiri Shop Item 1"] = function () return shop_price(0) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
-            ["Kokiri Shop Item 2"] = function () return shop_price(1) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
-            ["Kokiri Shop Item 3"] = function () return shop_price(2) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
-            ["Kokiri Shop Item 4"] = function () return shop_price(3) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
-            ["Kokiri Shop Item 5"] = function () return shop_price(4) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
-            ["Kokiri Shop Item 6"] = function () return shop_price(5) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
-            ["Kokiri Shop Item 7"] = function () return shop_price(6) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
-            ["Kokiri Shop Item 8"] = function () return shop_price(7) and soul_npc(SOUL_NPC_KOKIRI_SHOPKEEPER) end,
+            ["Kokiri Shop Item 1"] = function () return shop_price(0) end,
+            ["Kokiri Shop Item 2"] = function () return shop_price(1) end,
+            ["Kokiri Shop Item 3"] = function () return shop_price(2) end,
+            ["Kokiri Shop Item 4"] = function () return shop_price(3) end,
+            ["Kokiri Shop Item 5"] = function () return shop_price(4) end,
+            ["Kokiri Shop Item 6"] = function () return shop_price(5) end,
+            ["Kokiri Shop Item 7"] = function () return shop_price(6) end,
+            ["Kokiri Shop Item 8"] = function () return shop_price(7) end,
         },
     },
     ["Mido's House"] = {
@@ -3969,23 +4141,30 @@ function _oot_logic()
     },
     ["Kokiri Forest Storms Grotto"] = {
         ["events"] = {
-            ["BOMBS_OR_BOMBCHU"] = function () return can_cut_grass() end,
-            ["RUPEES"] = function () return can_cut_grass() end,
-            ["SEEDS"] = function () return is_child() and can_cut_grass() end,
-            ["ARROWS"] = function () return is_adult() end,
-            ["MAGIC"] = function () return can_cut_grass() end,
             ["FISH"] = function () return has_bottle() end,
-            ["BUGS"] = function () return has_bottle() and can_cut_grass() end,
         },
         ["exits"] = {
             ["Kokiri Forest"] = function () return true end,
+            ["Kokiri Forest Storms Grotto Grass"] = function () return can_cut_grass() end,
         },
         ["locations"] = {
             ["Kokiri Forest Storms Grotto"] = function () return true end,
-            ["Kokiri Forest Storms Grotto Grass 1"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Storms Grotto Grass 2"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Storms Grotto Grass 3"] = function () return can_cut_grass() end,
-            ["Kokiri Forest Storms Grotto Grass 4"] = function () return can_cut_grass() end,
+        },
+    },
+    ["Kokiri Forest Storms Grotto Grass"] = {
+        ["events"] = {
+            ["BOMBS_OR_BOMBCHU"] = function () return true end,
+            ["RUPEES"] = function () return true end,
+            ["SEEDS"] = function () return is_child() end,
+            ["ARROWS"] = function () return is_adult() end,
+            ["MAGIC"] = function () return true end,
+            ["BUGS"] = function () return has_bottle() end,
+        },
+        ["locations"] = {
+            ["Kokiri Forest Storms Grotto Grass 1"] = function () return true end,
+            ["Kokiri Forest Storms Grotto Grass 2"] = function () return true end,
+            ["Kokiri Forest Storms Grotto Grass 3"] = function () return true end,
+            ["Kokiri Forest Storms Grotto Grass 4"] = function () return true end,
         },
     },
     ["Hyrule Field"] = {
@@ -4005,6 +4184,7 @@ function _oot_logic()
             ["Lake Hylia"] = function () return true end,
             ["Gerudo Valley"] = function () return true end,
             ["Lon Lon Ranch"] = function () return true end,
+            ["Hyrule Field Grass"] = function () return can_cut_grass() end,
             ["Hyrule Field Scrub Grotto"] = function () return hidden_grotto_bomb() end,
             ["Hyrule Field Open Grotto"] = function () return true end,
             ["Hyrule Field Southeast Grotto"] = function () return has_explosives_or_hammer() end,
@@ -4017,55 +4197,59 @@ function _oot_logic()
         ["locations"] = {
             ["Hyrule Field Ocarina of Time"] = function () return is_child() and has_spiritual_stones() end,
             ["Hyrule Field Song of Time"] = function () return is_child() and has_spiritual_stones() end,
-            ["Hyrule Field Grass Pack 1 Bush 01"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 02"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 03"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 04"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 05"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 06"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 07"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 08"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 09"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 10"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 11"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 1 Bush 12"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 01"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 02"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 03"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 04"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 05"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 06"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 07"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 08"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 09"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 10"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 11"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 2 Bush 12"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 01"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 02"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 03"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 04"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 05"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 06"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 07"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 08"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 09"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 10"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 11"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 3 Bush 12"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 01"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 02"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 03"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 04"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 05"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 06"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 07"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 08"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 09"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 10"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 11"] = function () return can_cut_grass() end,
-            ["Hyrule Field Grass Pack 4 Bush 12"] = function () return can_cut_grass() end,
             ["Hyrule Field River Big Fairy"] = function () return can_play_storms() end,
+        },
+    },
+    ["Hyrule Field Grass"] = {
+        ["locations"] = {
+            ["Hyrule Field Grass Pack 1 Bush 01"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 02"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 03"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 04"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 05"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 06"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 07"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 08"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 09"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 10"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 11"] = function () return true end,
+            ["Hyrule Field Grass Pack 1 Bush 12"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 01"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 02"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 03"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 04"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 05"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 06"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 07"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 08"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 09"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 10"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 11"] = function () return true end,
+            ["Hyrule Field Grass Pack 2 Bush 12"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 01"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 02"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 03"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 04"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 05"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 06"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 07"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 08"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 09"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 10"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 11"] = function () return true end,
+            ["Hyrule Field Grass Pack 3 Bush 12"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 01"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 02"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 03"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 04"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 05"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 06"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 07"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 08"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 09"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 10"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 11"] = function () return true end,
+            ["Hyrule Field Grass Pack 4 Bush 12"] = function () return true end,
         },
     },
     ["Hyrule Field Drawbridge"] = {
@@ -4211,6 +4395,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Market Entryway"] = function () return true end,
+            ["Market Grass"] = function () return is_child() and can_cut_grass_no_c_button() end,
             ["Back Alley"] = function () return is_child() end,
             ["Market Castle Entry"] = function () return true end,
             ["Temple of Time Entryway"] = function () return true end,
@@ -4221,15 +4406,17 @@ function _oot_logic()
             ["Market Potion Shop"] = function () return is_day() and is_child() end,
             ["MM Clock Town"] = function () return is_child() and (is_day() or setting('openMaskShop')) end,
         },
+    },
+    ["Market Grass"] = {
         ["locations"] = {
-            ["Market Grass 1"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Market Grass 2"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Market Grass 3"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Market Grass 4"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Market Grass 5"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Market Grass 6"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Market Grass 7"] = function () return is_child() and can_cut_grass_no_c_button() end,
-            ["Market Grass 8"] = function () return is_child() and can_cut_grass_no_c_button() end,
+            ["Market Grass 1"] = function () return true end,
+            ["Market Grass 2"] = function () return true end,
+            ["Market Grass 3"] = function () return true end,
+            ["Market Grass 4"] = function () return true end,
+            ["Market Grass 5"] = function () return true end,
+            ["Market Grass 6"] = function () return true end,
+            ["Market Grass 7"] = function () return true end,
+            ["Market Grass 8"] = function () return true end,
         },
     },
     ["Market Castle Entry"] = {
@@ -4242,46 +4429,55 @@ function _oot_logic()
     ["Market Bazaar"] = {
         ["exits"] = {
             ["Market"] = function () return true end,
+            ["Market Bazaar Items"] = function () return soul_bazaar_shopkeeper() end,
         },
+    },
+    ["Market Bazaar Items"] = {
         ["locations"] = {
-            ["Market Bazaar Item 1"] = function () return shop_price(32) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Market Bazaar Item 2"] = function () return shop_price(33) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Market Bazaar Item 3"] = function () return shop_price(34) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Market Bazaar Item 4"] = function () return shop_price(35) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Market Bazaar Item 5"] = function () return shop_price(36) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Market Bazaar Item 6"] = function () return shop_price(37) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Market Bazaar Item 7"] = function () return shop_price(38) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Market Bazaar Item 8"] = function () return shop_price(39) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
+            ["Market Bazaar Item 1"] = function () return shop_price(32) end,
+            ["Market Bazaar Item 2"] = function () return shop_price(33) end,
+            ["Market Bazaar Item 3"] = function () return shop_price(34) end,
+            ["Market Bazaar Item 4"] = function () return shop_price(35) end,
+            ["Market Bazaar Item 5"] = function () return shop_price(36) end,
+            ["Market Bazaar Item 6"] = function () return shop_price(37) end,
+            ["Market Bazaar Item 7"] = function () return shop_price(38) end,
+            ["Market Bazaar Item 8"] = function () return shop_price(39) end,
         },
     },
     ["Market Potion Shop"] = {
         ["exits"] = {
             ["Market"] = function () return true end,
+            ["Market Potion Shop Items"] = function () return soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
         },
+    },
+    ["Market Potion Shop Items"] = {
         ["locations"] = {
-            ["Market Potion Shop Item 1"] = function () return shop_price(40) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
-            ["Market Potion Shop Item 2"] = function () return shop_price(41) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
-            ["Market Potion Shop Item 3"] = function () return shop_price(42) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
-            ["Market Potion Shop Item 4"] = function () return shop_price(43) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
-            ["Market Potion Shop Item 5"] = function () return shop_price(44) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
-            ["Market Potion Shop Item 6"] = function () return shop_price(45) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
-            ["Market Potion Shop Item 7"] = function () return shop_price(46) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
-            ["Market Potion Shop Item 8"] = function () return shop_price(47) and soul_npc(SOUL_NPC_POTION_SHOPKEEPER) end,
+            ["Market Potion Shop Item 1"] = function () return shop_price(40) end,
+            ["Market Potion Shop Item 2"] = function () return shop_price(41) end,
+            ["Market Potion Shop Item 3"] = function () return shop_price(42) end,
+            ["Market Potion Shop Item 4"] = function () return shop_price(43) end,
+            ["Market Potion Shop Item 5"] = function () return shop_price(44) end,
+            ["Market Potion Shop Item 6"] = function () return shop_price(45) end,
+            ["Market Potion Shop Item 7"] = function () return shop_price(46) end,
+            ["Market Potion Shop Item 8"] = function () return shop_price(47) end,
         },
     },
     ["Market Bombchu Shop"] = {
         ["exits"] = {
             ["Back Alley"] = function () return true end,
+            ["Market Bombchu Shop Items"] = function () return soul_bombchu_shopkeeper() end,
         },
+    },
+    ["Market Bombchu Shop Items"] = {
         ["locations"] = {
-            ["Market Bombchu Shop Item 1"] = function () return shop_price(8) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
-            ["Market Bombchu Shop Item 2"] = function () return shop_price(9) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
-            ["Market Bombchu Shop Item 3"] = function () return shop_price(10) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
-            ["Market Bombchu Shop Item 4"] = function () return shop_price(11) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
-            ["Market Bombchu Shop Item 5"] = function () return shop_price(12) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
-            ["Market Bombchu Shop Item 6"] = function () return shop_price(13) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
-            ["Market Bombchu Shop Item 7"] = function () return shop_price(14) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
-            ["Market Bombchu Shop Item 8"] = function () return shop_price(15) and soul_npc(SOUL_NPC_BOMBCHU_SHOPKEEPER) end,
+            ["Market Bombchu Shop Item 1"] = function () return shop_price(8) end,
+            ["Market Bombchu Shop Item 2"] = function () return shop_price(9) end,
+            ["Market Bombchu Shop Item 3"] = function () return shop_price(10) end,
+            ["Market Bombchu Shop Item 4"] = function () return shop_price(11) end,
+            ["Market Bombchu Shop Item 5"] = function () return shop_price(12) end,
+            ["Market Bombchu Shop Item 6"] = function () return shop_price(13) end,
+            ["Market Bombchu Shop Item 7"] = function () return shop_price(14) end,
+            ["Market Bombchu Shop Item 8"] = function () return shop_price(15) end,
         },
     },
     ["Market Pot House"] = {
@@ -4290,65 +4486,73 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Market Entryway"] = function () return true end,
+            ["Market Pot House Child"] = function () return is_child() end,
+            ["Market Pot House Adult"] = function () return is_adult() end,
         },
+    },
+    ["Market Pot House Child"] = {
         ["locations"] = {
-            ["Market Pot House Big Poes"] = function () return is_adult() and has_big_poe() and soul_npc(SOUL_NPC_POE_COLLECTOR) end,
-            ["Market Pot House GS"] = function () return gs() and is_child() end,
-            ["Market Pot House Child Pot Ground 1"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 2"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 3"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 4"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 5"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 6"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 7"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 8"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 9"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 10"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 11"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 12"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 13"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 14"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 15"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 16"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 17"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 18"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 19"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 20"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 21"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 22"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 23"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 24"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 25"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 26"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 27"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 28"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 29"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 30"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 31"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 32"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 33"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 34"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 35"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 36"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 37"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 38"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 39"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 40"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 41"] = function () return is_child() end,
-            ["Market Pot House Child Pot Ground 42"] = function () return is_child() end,
-            ["Market Pot House Child Pot Above 1"] = function () return is_child() end,
-            ["Market Pot House Child Pot Above 2"] = function () return is_child() end,
-            ["Market Pot House Adult Pot 1"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 2"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 3"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 4"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 5"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 6"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 7"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 8"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 9"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 10"] = function () return is_adult() end,
-            ["Market Pot House Adult Pot 11"] = function () return is_adult() end,
+            ["Market Pot House GS"] = function () return gs() end,
+            ["Market Pot House Child Pot Ground 1"] = function () return true end,
+            ["Market Pot House Child Pot Ground 2"] = function () return true end,
+            ["Market Pot House Child Pot Ground 3"] = function () return true end,
+            ["Market Pot House Child Pot Ground 4"] = function () return true end,
+            ["Market Pot House Child Pot Ground 5"] = function () return true end,
+            ["Market Pot House Child Pot Ground 6"] = function () return true end,
+            ["Market Pot House Child Pot Ground 7"] = function () return true end,
+            ["Market Pot House Child Pot Ground 8"] = function () return true end,
+            ["Market Pot House Child Pot Ground 9"] = function () return true end,
+            ["Market Pot House Child Pot Ground 10"] = function () return true end,
+            ["Market Pot House Child Pot Ground 11"] = function () return true end,
+            ["Market Pot House Child Pot Ground 12"] = function () return true end,
+            ["Market Pot House Child Pot Ground 13"] = function () return true end,
+            ["Market Pot House Child Pot Ground 14"] = function () return true end,
+            ["Market Pot House Child Pot Ground 15"] = function () return true end,
+            ["Market Pot House Child Pot Ground 16"] = function () return true end,
+            ["Market Pot House Child Pot Ground 17"] = function () return true end,
+            ["Market Pot House Child Pot Ground 18"] = function () return true end,
+            ["Market Pot House Child Pot Ground 19"] = function () return true end,
+            ["Market Pot House Child Pot Ground 20"] = function () return true end,
+            ["Market Pot House Child Pot Ground 21"] = function () return true end,
+            ["Market Pot House Child Pot Ground 22"] = function () return true end,
+            ["Market Pot House Child Pot Ground 23"] = function () return true end,
+            ["Market Pot House Child Pot Ground 24"] = function () return true end,
+            ["Market Pot House Child Pot Ground 25"] = function () return true end,
+            ["Market Pot House Child Pot Ground 26"] = function () return true end,
+            ["Market Pot House Child Pot Ground 27"] = function () return true end,
+            ["Market Pot House Child Pot Ground 28"] = function () return true end,
+            ["Market Pot House Child Pot Ground 29"] = function () return true end,
+            ["Market Pot House Child Pot Ground 30"] = function () return true end,
+            ["Market Pot House Child Pot Ground 31"] = function () return true end,
+            ["Market Pot House Child Pot Ground 32"] = function () return true end,
+            ["Market Pot House Child Pot Ground 33"] = function () return true end,
+            ["Market Pot House Child Pot Ground 34"] = function () return true end,
+            ["Market Pot House Child Pot Ground 35"] = function () return true end,
+            ["Market Pot House Child Pot Ground 36"] = function () return true end,
+            ["Market Pot House Child Pot Ground 37"] = function () return true end,
+            ["Market Pot House Child Pot Ground 38"] = function () return true end,
+            ["Market Pot House Child Pot Ground 39"] = function () return true end,
+            ["Market Pot House Child Pot Ground 40"] = function () return true end,
+            ["Market Pot House Child Pot Ground 41"] = function () return true end,
+            ["Market Pot House Child Pot Ground 42"] = function () return true end,
+            ["Market Pot House Child Pot Above 1"] = function () return true end,
+            ["Market Pot House Child Pot Above 2"] = function () return true end,
+        },
+    },
+    ["Market Pot House Adult"] = {
+        ["locations"] = {
+            ["Market Pot House Big Poes"] = function () return has_big_poe() and soul_poe_collector() end,
+            ["Market Pot House Adult Pot 1"] = function () return true end,
+            ["Market Pot House Adult Pot 2"] = function () return true end,
+            ["Market Pot House Adult Pot 3"] = function () return true end,
+            ["Market Pot House Adult Pot 4"] = function () return true end,
+            ["Market Pot House Adult Pot 5"] = function () return true end,
+            ["Market Pot House Adult Pot 6"] = function () return true end,
+            ["Market Pot House Adult Pot 7"] = function () return true end,
+            ["Market Pot House Adult Pot 8"] = function () return true end,
+            ["Market Pot House Adult Pot 9"] = function () return true end,
+            ["Market Pot House Adult Pot 10"] = function () return true end,
+            ["Market Pot House Adult Pot 11"] = function () return true end,
         },
     },
     ["Back Alley"] = {
@@ -4364,7 +4568,7 @@ function _oot_logic()
             ["Back Alley"] = function () return true end,
         },
         ["locations"] = {
-            ["Market Dog Lady HP"] = function () return event('RICHARD') and is_night() and soul_npc(SOUL_NPC_HYLIAN_CITIZEN) end,
+            ["Market Dog Lady HP"] = function () return event('RICHARD') and is_night() and soul_dog_lady() end,
         },
     },
     ["Market Back Alley East Home"] = {
@@ -4378,16 +4582,19 @@ function _oot_logic()
         },
     },
     ["Bombchu Bowling"] = {
-        ["events"] = {
-            ["BOMBS"] = function () return can_use_wallet(2) end,
-            ["BOMBCHU"] = function () return can_use_wallet(1) end,
-        },
         ["exits"] = {
             ["Market"] = function () return true end,
+            ["Bombchu Bowling Rewards"] = function () return (has_bomb_bag() or has_bombchu_license()) and can_use_wallet(1) and soul_bombchu_bowling_lady() end,
+        },
+    },
+    ["Bombchu Bowling Rewards"] = {
+        ["events"] = {
+            ["BOMBCHU"] = function () return true end,
+            ["BOMBS"] = function () return can_use_wallet(2) end,
         },
         ["locations"] = {
-            ["Bombchu Bowling Reward 1"] = function () return (has_bomb_bag() or has_bombchu_license()) and can_use_wallet(1) and soul_npc(SOUL_NPC_BOMBCHU_BOWLING_LADY) end,
-            ["Bombchu Bowling Reward 2"] = function () return (has_bomb_bag() or has_bombchu_license()) and can_use_wallet(1) and soul_npc(SOUL_NPC_BOMBCHU_BOWLING_LADY) end,
+            ["Bombchu Bowling Reward 1"] = function () return true end,
+            ["Bombchu Bowling Reward 2"] = function () return true end,
         },
     },
     ["Shooting Gallery Child"] = {
@@ -4395,7 +4602,7 @@ function _oot_logic()
             ["Market"] = function () return true end,
         },
         ["locations"] = {
-            ["Shooting Gallery Child"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_SHOOTING_GALLERY_OWNER) end,
+            ["Shooting Gallery Child"] = function () return is_child() and can_use_wallet(1) and soul_shooting_gallery_owner() end,
         },
     },
     ["Temple of Time Entryway"] = {
@@ -4407,11 +4614,12 @@ function _oot_logic()
     ["Lon Lon Ranch"] = {
         ["events"] = {
             ["EPONA"] = function () return true end,
-            ["MALON_COW"] = function () return can_ride_epona() and event('EPONA') and is_day() and soul_npc(SOUL_NPC_MALON) end,
+            ["MALON_COW"] = function () return can_ride_epona() and event('EPONA') and is_day() and soul_malon() end,
             ["RUPEES"] = function () return is_child() end,
         },
         ["exits"] = {
             ["Hyrule Field"] = function () return true end,
+            ["Lon Lon Ranch Pots"] = function () return is_child() end,
             ["Lon Lon Ranch Silo"] = function () return true end,
             ["Lon Lon Ranch Stables"] = function () return true end,
             ["Lon Lon Ranch House"] = function () return is_day() end,
@@ -4423,13 +4631,17 @@ function _oot_logic()
             ["Lon Lon Ranch GS House"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_ranged_weapon() or has_explosives() or can_use_sword() or can_use_sticks() or can_use_din()))) end,
             ["Lon Lon Ranch GS Rain Shed"] = function () return is_child() and gs_night() end,
             ["Lon Lon Ranch GS Back Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_ranged_weapon() or has_explosives() or can_use_din()))) end,
-            ["Lon Lon Ranch Pot 1"] = function () return is_child() end,
-            ["Lon Lon Ranch Pot 2"] = function () return is_child() end,
-            ["Lon Lon Ranch Pot 3"] = function () return is_child() end,
-            ["Lon Lon Ranch Pot 4"] = function () return is_child() end,
-            ["Lon Lon Ranch Pot 5"] = function () return is_child() end,
-            ["Lon Lon Ranch Pot 6"] = function () return is_child() end,
-            ["Lon Lon Ranch Pot 7"] = function () return is_child() end,
+        },
+    },
+    ["Lon Lon Ranch Pots"] = {
+        ["locations"] = {
+            ["Lon Lon Ranch Pot 1"] = function () return true end,
+            ["Lon Lon Ranch Pot 2"] = function () return true end,
+            ["Lon Lon Ranch Pot 3"] = function () return true end,
+            ["Lon Lon Ranch Pot 4"] = function () return true end,
+            ["Lon Lon Ranch Pot 5"] = function () return true end,
+            ["Lon Lon Ranch Pot 6"] = function () return true end,
+            ["Lon Lon Ranch Pot 7"] = function () return true end,
         },
     },
     ["Lon Lon Ranch Stables"] = {
@@ -4456,7 +4668,7 @@ function _oot_logic()
             ["Lon Lon Ranch"] = function () return true end,
         },
         ["locations"] = {
-            ["Lon Lon Ranch Talon Bottle"] = function () return is_child() and woke_talon_child() and can_use_wallet(1) and is_day() and soul_npc(SOUL_NPC_TALON) end,
+            ["Lon Lon Ranch Talon Bottle"] = function () return is_child() and woke_talon_child() and can_use_wallet(1) and is_day() and soul_talon() end,
             ["Lon Lon Ranch Talon House Pot 1"] = function () return true end,
             ["Lon Lon Ranch Talon House Pot 2"] = function () return true end,
             ["Lon Lon Ranch Talon House Pot 3"] = function () return true end,
@@ -4474,8 +4686,8 @@ function _oot_logic()
     },
     ["Hyrule Castle"] = {
         ["events"] = {
-            ["MALON"] = function () return soul_npc(SOUL_NPC_MALON) end,
-            ["TALON_CHILD"] = function () return has('CHICKEN') and soul_npc(SOUL_NPC_TALON) end,
+            ["MALON"] = function () return soul_malon() end,
+            ["TALON_CHILD"] = function () return has('CHICKEN') and soul_talon() end,
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
             ["RUPEES"] = function () return true end,
             ["SEEDS"] = function () return is_child() end,
@@ -4485,7 +4697,7 @@ function _oot_logic()
         ["exits"] = {
             ["Market Castle Entry"] = function () return true end,
             ["Near Fairy Fountain Din"] = function () return has_explosives_or_hammer() end,
-            ["Hyrule Castle Courtyard"] = function () return woke_talon_child() or (has_hover_boots() and (soul_npc(SOUL_NPC_TALON) or setting('skipZelda'))) or climb_anywhere() or hookshot_anywhere() end,
+            ["Hyrule Castle Courtyard"] = function () return woke_talon_child() or (has_hover_boots() and (soul_talon() or setting('skipZelda'))) or climb_anywhere() or hookshot_anywhere() end,
             ["Hyrule Castle Near Grotto"] = function () return true end,
         },
         ["locations"] = {
@@ -4636,7 +4848,7 @@ function _oot_logic()
             ["Lost Woods Skull Kid"] = function () return is_child() and can_play_saria() end,
             ["Lost Woods Memory Game"] = function () return is_child() and can_play_minigame() end,
             ["Lost Woods Scrub Sticks Upgrade"] = function () return is_child() and business_scrub(0) end,
-            ["Lost Woods Odd Mushroom"] = function () return adult_trade(COJIRO) end,
+            ["Lost Woods Odd Mushroom"] = function () return soul_grog() and adult_trade(COJIRO) end,
             ["Lost Woods Poacher's Saw"] = function () return adult_trade(ODD_POTION) and soul_npc(SOUL_NPC_KOKIRI) end,
             ["Lost Woods GS Soil Bridge"] = function () return gs_soil() and can_damage_skull() end,
             ["Lost Woods Grass 1"] = function () return can_cut_grass() end,
@@ -4829,11 +5041,11 @@ function _oot_logic()
             ["ReDead Grotto"] = function () return hidden_grotto_bomb() end,
         },
         ["locations"] = {
-            ["Kakariko Anju Bottle"] = function () return is_child() and is_day() and soul_npc(SOUL_NPC_CUCCO_LADY) end,
-            ["Kakariko Anju Egg"] = function () return is_adult() and is_day() and soul_npc(SOUL_NPC_CUCCO_LADY) end,
-            ["Kakariko Anju Cojiro"] = function () return event('TALON_AWAKE') and is_day() and soul_npc(SOUL_NPC_CUCCO_LADY) end,
+            ["Kakariko Anju Bottle"] = function () return is_child() and is_day() and soul_anju() end,
+            ["Kakariko Anju Egg"] = function () return is_adult() and is_day() and soul_anju() end,
+            ["Kakariko Anju Cojiro"] = function () return event('TALON_AWAKE') and is_day() and soul_anju() end,
             ["Kakariko Song Shadow"] = function () return is_adult() and soul_npc(SOUL_NPC_SHEIK) and has('MEDALLION_FOREST') and has('MEDALLION_FIRE') and has('MEDALLION_WATER') end,
-            ["Kakariko Man on Roof"] = function () return (can_hookshot() or trick('OOT_MAN_ON_ROOF') or climb_anywhere()) and soul_npc(SOUL_NPC_HYLIAN_CITIZEN) end,
+            ["Kakariko Man on Roof"] = function () return (can_hookshot() or trick('OOT_MAN_ON_ROOF') or climb_anywhere()) and soul_rooftop_man() end,
             ["Kakariko GS Shooting Gallery"] = function () return gs_night() and is_child() end,
             ["Kakariko GS Tree"] = function () return gs_night() and is_child() end,
             ["Kakariko GS House of Skulltula"] = function () return gs_night() and is_child() end,
@@ -4888,14 +5100,14 @@ function _oot_logic()
             ["Kakariko"] = function () return true end,
         },
         ["locations"] = {
-            ["Kakariko Bazaar Item 1"] = function () return shop_price(48) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Kakariko Bazaar Item 2"] = function () return shop_price(49) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Kakariko Bazaar Item 3"] = function () return shop_price(50) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Kakariko Bazaar Item 4"] = function () return shop_price(51) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Kakariko Bazaar Item 5"] = function () return shop_price(52) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Kakariko Bazaar Item 6"] = function () return shop_price(53) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Kakariko Bazaar Item 7"] = function () return shop_price(54) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
-            ["Kakariko Bazaar Item 8"] = function () return shop_price(55) and soul_npc(SOUL_NPC_BAZAAR_SHOPKEEPER) end,
+            ["Kakariko Bazaar Item 1"] = function () return shop_price(48) and soul_bazaar_shopkeeper() end,
+            ["Kakariko Bazaar Item 2"] = function () return shop_price(49) and soul_bazaar_shopkeeper() end,
+            ["Kakariko Bazaar Item 3"] = function () return shop_price(50) and soul_bazaar_shopkeeper() end,
+            ["Kakariko Bazaar Item 4"] = function () return shop_price(51) and soul_bazaar_shopkeeper() end,
+            ["Kakariko Bazaar Item 5"] = function () return shop_price(52) and soul_bazaar_shopkeeper() end,
+            ["Kakariko Bazaar Item 6"] = function () return shop_price(53) and soul_bazaar_shopkeeper() end,
+            ["Kakariko Bazaar Item 7"] = function () return shop_price(54) and soul_bazaar_shopkeeper() end,
+            ["Kakariko Bazaar Item 8"] = function () return shop_price(55) and soul_bazaar_shopkeeper() end,
         },
     },
     ["Kakariko Potion Shop"] = {
@@ -4934,7 +5146,7 @@ function _oot_logic()
             ["Kakariko Back"] = function () return true end,
         },
         ["locations"] = {
-            ["Kakariko Potion Shop Odd Potion"] = function () return adult_trade(ODD_MUSHROOM) end,
+            ["Kakariko Potion Shop Odd Potion"] = function () return soul_old_hag() and adult_trade(ODD_MUSHROOM) end,
         },
     },
     ["Shooting Gallery Adult"] = {
@@ -4942,7 +5154,7 @@ function _oot_logic()
             ["Kakariko"] = function () return true end,
         },
         ["locations"] = {
-            ["Shooting Gallery Adult"] = function () return is_adult() and can_use_bow() and can_use_wallet(1) and soul_npc(SOUL_NPC_SHOOTING_GALLERY_OWNER) end,
+            ["Shooting Gallery Adult"] = function () return is_adult() and can_use_bow() and can_use_wallet(1) and soul_shooting_gallery_owner() end,
         },
     },
     ["Impa House Front"] = {
@@ -4972,7 +5184,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Windmill HP"] = function () return can_boomerang() or event('WINDMILL_TOP') or (is_adult() and trick('OOT_WINDMILL_HP_NOTHING')) or climb_anywhere() or hookshot_anywhere() end,
-            ["Windmill Song of Storms"] = function () return is_adult() and has_ocarina() and soul_npc(SOUL_NPC_GURU_GURU) end,
+            ["Windmill Song of Storms"] = function () return is_adult() and has_ocarina() and soul_guru_guru() end,
         },
     },
     ["Windmill Exit"] = {
@@ -4983,7 +5195,7 @@ function _oot_logic()
     },
     ["Kakariko Carpenter House"] = {
         ["events"] = {
-            ["TALON_AWAKE"] = function () return adult_trade(POCKET_CUCCO) and soul_npc(SOUL_NPC_TALON) end,
+            ["TALON_AWAKE"] = function () return adult_trade(POCKET_CUCCO) and soul_talon() end,
         },
         ["exits"] = {
             ["Kakariko"] = function () return true end,
@@ -5050,7 +5262,7 @@ function _oot_logic()
             ["Graveyard Upper"] = function () return climb_anywhere() or hookshot_anywhere() end,
         },
         ["locations"] = {
-            ["Graveyard Dampe Game"] = function () return is_child() and can_use_wallet(1) and is_dusk() and soul_npc(SOUL_NPC_DAMPE) end,
+            ["Graveyard Dampe Game"] = function () return is_child() and can_use_wallet(1) and is_dusk() and soul_dampe() end,
             ["Graveyard Crate HP"] = function () return can_ride_bean(BEAN_GRAVEYARD) or can_longshot() or climb_anywhere() or hookshot_anywhere() end,
             ["Graveyard GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Graveyard GS Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_ranged_weapon() or has_explosives() or can_use_din()))) end,
@@ -5116,15 +5328,15 @@ function _oot_logic()
             ["BOMBS_OR_BOMBCHU"] = function () return true end,
             ["SEEDS"] = function () return is_child() end,
             ["ARROWS"] = function () return is_adult() end,
-            ["WINDMILL_TOP"] = function () return is_adult() and can_play_time() and soul_npc(SOUL_NPC_DAMPE) end,
+            ["WINDMILL_TOP"] = function () return is_adult() and can_play_time() and soul_dampe() end,
         },
         ["exits"] = {
             ["Dampe Grave Entrance"] = function () return true end,
-            ["Windmill Exit"] = function () return is_adult() and can_play_time() and soul_npc(SOUL_NPC_DAMPE) end,
+            ["Windmill Exit"] = function () return is_adult() and can_play_time() and soul_dampe() end,
         },
         ["locations"] = {
-            ["Graveyard Dampe Tomb Reward 1"] = function () return soul_npc(SOUL_NPC_DAMPE) end,
-            ["Graveyard Dampe Tomb Reward 2"] = function () return is_adult() and soul_npc(SOUL_NPC_DAMPE) end,
+            ["Graveyard Dampe Tomb Reward 1"] = function () return soul_dampe() end,
+            ["Graveyard Dampe Tomb Reward 2"] = function () return is_adult() and soul_dampe() end,
             ["Graveyard Dampe Tomb Pot 1"] = function () return true end,
             ["Graveyard Dampe Tomb Pot 2"] = function () return true end,
             ["Graveyard Dampe Tomb Pot 3"] = function () return true end,
@@ -5134,11 +5346,11 @@ function _oot_logic()
             ["Graveyard Dampe Tomb Rupee 1"] = function () return true end,
             ["Graveyard Dampe Tomb Rupee 2"] = function () return true end,
             ["Graveyard Dampe Tomb Rupee 3"] = function () return true end,
-            ["Graveyard Dampe Tomb Rupee 4"] = function () return soul_npc(SOUL_NPC_DAMPE) end,
-            ["Graveyard Dampe Tomb Rupee 5"] = function () return soul_npc(SOUL_NPC_DAMPE) end,
-            ["Graveyard Dampe Tomb Rupee 6"] = function () return soul_npc(SOUL_NPC_DAMPE) end,
-            ["Graveyard Dampe Tomb Rupee 7"] = function () return soul_npc(SOUL_NPC_DAMPE) end,
-            ["Graveyard Dampe Tomb Rupee 8"] = function () return soul_npc(SOUL_NPC_DAMPE) end,
+            ["Graveyard Dampe Tomb Rupee 4"] = function () return soul_dampe() end,
+            ["Graveyard Dampe Tomb Rupee 5"] = function () return soul_dampe() end,
+            ["Graveyard Dampe Tomb Rupee 6"] = function () return soul_dampe() end,
+            ["Graveyard Dampe Tomb Rupee 7"] = function () return soul_dampe() end,
+            ["Graveyard Dampe Tomb Rupee 8"] = function () return soul_dampe() end,
         },
     },
     ["Dampe Grave Entrance"] = {
@@ -5184,9 +5396,9 @@ function _oot_logic()
             ["Fairy Fountain Magic"] = function () return has_explosives_or_hammer() end,
         },
         ["locations"] = {
-            ["Death Mountain Trail Prescription"] = function () return adult_trade(BROKEN_GORON_SWORD) and soul_npc(SOUL_NPC_BIGGORON) end,
-            ["Death Mountain Trail Claim Check"] = function () return adult_trade(EYE_DROPS) and soul_npc(SOUL_NPC_BIGGORON) end,
-            ["Death Mountain Trail Biggoron Sword"] = function () return adult_trade(CLAIM_CHECK) and soul_npc(SOUL_NPC_BIGGORON) end,
+            ["Death Mountain Trail Prescription"] = function () return adult_trade(BROKEN_GORON_SWORD) and soul_biggoron() end,
+            ["Death Mountain Trail Claim Check"] = function () return adult_trade(EYE_DROPS) and soul_biggoron() end,
+            ["Death Mountain Trail Biggoron Sword"] = function () return adult_trade(CLAIM_CHECK) and soul_biggoron() end,
             ["Death Mountain Trail GS Before Climb"] = function () return is_adult() and gs_night() and (can_hammer() or trick('OOT_DMT_RED_ROCK_GS')) end,
         },
     },
@@ -5266,8 +5478,8 @@ function _oot_logic()
         ["exits"] = {
             ["Goron City Shortcut"] = function () return event('GORON_CITY_SHORTCUT') or climb_anywhere() or hookshot_anywhere() end,
             ["Death Mountain"] = function () return true end,
-            ["Darunia Chamber"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_npc(SOUL_NPC_GORON_CHILD) or (is_child() and can_play_zelda()) end,
-            ["Goron Shop"] = function () return has_bombflowers() and (is_child() or time_travel_at_will() or (is_adult() and soul_npc(SOUL_NPC_GORON_CHILD))) or (can_use_bow() and soul_npc(SOUL_NPC_GORON_CHILD) and (is_adult() or time_travel_at_will())) or ((can_use_din() or event('DARUNIA_TORCH')) and (is_child() or time_travel_at_will())) end,
+            ["Darunia Chamber"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_goron_child() or (is_child() and can_play_zelda()) end,
+            ["Goron Shop"] = function () return has_bombflowers() and (is_child() or time_travel_at_will() or (is_adult() and soul_goron_child())) or (can_use_bow() and soul_goron_child() and (is_adult() or time_travel_at_will())) or ((can_use_din() or event('DARUNIA_TORCH')) and (is_child() or time_travel_at_will())) end,
             ["Goron City Grotto"] = function () return is_adult() and can_play_time() or (can_hookshot() and (has_tunic_goron_strict() or can_use_nayru())) or climb_anywhere() end,
         },
         ["locations"] = {
@@ -5275,9 +5487,9 @@ function _oot_logic()
             ["Goron City Maze Center 2"] = function () return has_explosives_or_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere() end,
             ["Goron City Maze Left"] = function () return can_hammer() or can_lift_silver() or climb_anywhere() or hookshot_anywhere() end,
             ["Goron City Big Pot HP"] = function () return is_child() and has_bombs() and (event('DARUNIA_TORCH') or has_fire()) end,
-            ["Goron City Tunic"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_npc(SOUL_NPC_GORON_CHILD) end,
-            ["Goron City Bomb Bag"] = function () return is_child() and has_explosives() and soul_npc(SOUL_NPC_GORON) end,
-            ["Goron City Medigoron Giant Knife"] = function () return is_adult() and (has_bombflowers() or can_hammer()) and can_use_wallet(2) and soul_npc(SOUL_NPC_MEDIGORON) end,
+            ["Goron City Tunic"] = function () return is_adult() and (has_explosives() or can_use_bow() or has_goron_bracelet()) and soul_goron_child() end,
+            ["Goron City Bomb Bag"] = function () return is_child() and has_explosives() and soul_goron() end,
+            ["Goron City Medigoron Giant Knife"] = function () return is_adult() and (has_bombflowers() or can_hammer()) and can_use_wallet(2) and soul_medigoron() end,
             ["Goron City GS Platform"] = function () return gs() and is_adult() end,
             ["Goron City GS Maze"] = function () return gs() and is_child() and (has_explosives_or_hammer() or (climb_anywhere() and can_damage_skull()) or hookshot_anywhere()) end,
             ["Goron City Pot Stairs 1"] = function () return true end,
@@ -5310,14 +5522,14 @@ function _oot_logic()
             ["Goron City"] = function () return true end,
         },
         ["locations"] = {
-            ["Goron Shop Item 1"] = function () return shop_price(24) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
-            ["Goron Shop Item 2"] = function () return shop_price(25) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
-            ["Goron Shop Item 3"] = function () return shop_price(26) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
-            ["Goron Shop Item 4"] = function () return shop_price(27) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
-            ["Goron Shop Item 5"] = function () return shop_price(28) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
-            ["Goron Shop Item 6"] = function () return shop_price(29) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
-            ["Goron Shop Item 7"] = function () return shop_price(30) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
-            ["Goron Shop Item 8"] = function () return shop_price(31) and soul_npc(SOUL_NPC_GORON_SHOPKEEPER) end,
+            ["Goron Shop Item 1"] = function () return shop_price(24) and soul_goron_shopkeeper() end,
+            ["Goron Shop Item 2"] = function () return shop_price(25) and soul_goron_shopkeeper() end,
+            ["Goron Shop Item 3"] = function () return shop_price(26) and soul_goron_shopkeeper() end,
+            ["Goron Shop Item 4"] = function () return shop_price(27) and soul_goron_shopkeeper() end,
+            ["Goron Shop Item 5"] = function () return shop_price(28) and soul_goron_shopkeeper() end,
+            ["Goron Shop Item 6"] = function () return shop_price(29) and soul_goron_shopkeeper() end,
+            ["Goron Shop Item 7"] = function () return shop_price(30) and soul_goron_shopkeeper() end,
+            ["Goron Shop Item 8"] = function () return shop_price(31) and soul_goron_shopkeeper() end,
         },
     },
     ["Goron City Grotto"] = {
@@ -5375,7 +5587,7 @@ function _oot_logic()
             ["Zora River Boulder Grotto"] = function () return has_explosives_or_hammer() end,
         },
         ["locations"] = {
-            ["Zora River Bean Seller"] = function () return is_child() and can_use_wallet(1) end,
+            ["Zora River Bean Seller"] = function () return is_child() and can_use_wallet(1) and soul_bean_salesman() end,
             ["Zora River HP Pillar"] = function () return is_child() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or glitch_megaflip() end,
             ["Zora River HP Platform"] = function () return is_child() or has_hover_boots() or climb_anywhere() or hookshot_anywhere() or glitch_megaflip() end,
             ["Zora River Frogs Storms"] = function () return is_child() and can_play_storms() end,
@@ -5458,12 +5670,12 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Zora Domain Waterfall Chest"] = function () return is_child() end,
-            ["Zora Domain Diving Game"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_ZORA) end,
-            ["Zora Domain Diving Game Green Rupee"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_ZORA) end,
-            ["Zora Domain Diving Game Blue Rupee"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_ZORA) end,
-            ["Zora Domain Diving Game Red Rupee"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_ZORA) end,
-            ["Zora Domain Diving Game Purple Rupee"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_ZORA) end,
-            ["Zora Domain Diving Game Huge Rupee"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_ZORA) end,
+            ["Zora Domain Diving Game"] = function () return is_child() and can_use_wallet(1) and soul_zora() end,
+            ["Zora Domain Diving Game Green Rupee"] = function () return is_child() and can_use_wallet(1) and soul_zora() end,
+            ["Zora Domain Diving Game Blue Rupee"] = function () return is_child() and can_use_wallet(1) and soul_zora() end,
+            ["Zora Domain Diving Game Red Rupee"] = function () return is_child() and can_use_wallet(1) and soul_zora() end,
+            ["Zora Domain Diving Game Purple Rupee"] = function () return is_child() and can_use_wallet(1) and soul_zora() end,
+            ["Zora Domain Diving Game Huge Rupee"] = function () return is_child() and can_use_wallet(1) and soul_zora() end,
             ["Zora Domain Tunic"] = function () return is_adult() and has_blue_fire() and soul_npc(SOUL_NPC_KING_ZORA) end,
             ["Zora Domain Eyeball Frog"] = function () return has_blue_fire() and adult_trade(PRESCRIPTION) and soul_npc(SOUL_NPC_KING_ZORA) end,
             ["Zora Domain GS Waterfall"] = function () return is_adult() and gs_night() and (has_ranged_weapon() or has_magic() or has_explosives()) end,
@@ -5485,14 +5697,14 @@ function _oot_logic()
             ["Zora Domain"] = function () return true end,
         },
         ["locations"] = {
-            ["Zora Shop Item 1"] = function () return shop_price(16) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
-            ["Zora Shop Item 2"] = function () return shop_price(17) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
-            ["Zora Shop Item 3"] = function () return shop_price(18) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
-            ["Zora Shop Item 4"] = function () return shop_price(19) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
-            ["Zora Shop Item 5"] = function () return shop_price(20) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
-            ["Zora Shop Item 6"] = function () return shop_price(21) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
-            ["Zora Shop Item 7"] = function () return shop_price(22) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
-            ["Zora Shop Item 8"] = function () return shop_price(23) and soul_npc(SOUL_NPC_ZORA_SHOPKEEPER) end,
+            ["Zora Shop Item 1"] = function () return shop_price(16) and soul_zora_shopkeeper() end,
+            ["Zora Shop Item 2"] = function () return shop_price(17) and soul_zora_shopkeeper() end,
+            ["Zora Shop Item 3"] = function () return shop_price(18) and soul_zora_shopkeeper() end,
+            ["Zora Shop Item 4"] = function () return shop_price(19) and soul_zora_shopkeeper() end,
+            ["Zora Shop Item 5"] = function () return shop_price(20) and soul_zora_shopkeeper() end,
+            ["Zora Shop Item 6"] = function () return shop_price(21) and soul_zora_shopkeeper() end,
+            ["Zora Shop Item 7"] = function () return shop_price(22) and soul_zora_shopkeeper() end,
+            ["Zora Shop Item 8"] = function () return shop_price(23) and soul_zora_shopkeeper() end,
         },
     },
     ["Zora Domain Grotto"] = {
@@ -5595,8 +5807,8 @@ function _oot_logic()
             ["Lake Hylia"] = function () return true end,
         },
         ["locations"] = {
-            ["Laboratory Dive"] = function () return has_scale_raw(2) or (trick('OOT_LAB_DIVE_NO_GOLD_SCALE') and has_iron_boots() and can_hookshot()) end,
-            ["Laboratory Eye Drops"] = function () return adult_trade(EYEBALL_FROG) end,
+            ["Laboratory Dive"] = function () return soul_scientist() and (has_scale_raw(2) or (trick('OOT_LAB_DIVE_NO_GOLD_SCALE') and has_iron_boots() and can_hookshot())) end,
+            ["Laboratory Eye Drops"] = function () return soul_scientist() and adult_trade(EYEBALL_FROG) end,
             ["Laboratory GS Crate"] = function () return gs() and has_iron_boots() and can_hookshot() end,
             ["Laboratory Rupee 1"] = function () return can_dive_big() end,
             ["Laboratory Rupee 2"] = function () return can_dive_big() end,
@@ -5608,41 +5820,41 @@ function _oot_logic()
             ["Lake Hylia"] = function () return true end,
         },
         ["locations"] = {
-            ["Fishing Pond Child"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) and (not setting('pondFishShuffle') or has_pond_fish(CHILD_FISH, 7, 14) or has_pond_fish(CHILD_LOACH, 14, 19)) end,
-            ["Fishing Pond Adult"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) and (not setting('pondFishShuffle') or has_pond_fish(ADULT_FISH, 8, 25) or has_pond_fish(ADULT_LOACH, 29, 36)) end,
-            ["Fishing Pond Child Fish 1"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 2"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 3"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 4"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 5"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 6"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 7"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 8"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 9"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 10"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 11"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 12"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 13"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 14"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Fish 15"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Loach 1"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Child Loach 2"] = function () return is_child() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 1"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 2"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 3"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 4"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 5"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 6"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 7"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 8"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 9"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 10"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 11"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 12"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 13"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 14"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Fish 15"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
-            ["Fishing Pond Adult Loach"] = function () return is_adult() and can_use_wallet(1) and soul_npc(SOUL_NPC_FISHING_POND_OWNER) end,
+            ["Fishing Pond Child"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() and (not setting('pondFishShuffle') or has_pond_fish(CHILD_FISH, 7, 14) or has_pond_fish(CHILD_LOACH, 14, 19)) end,
+            ["Fishing Pond Adult"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() and (not setting('pondFishShuffle') or has_pond_fish(ADULT_FISH, 8, 25) or has_pond_fish(ADULT_LOACH, 29, 36)) end,
+            ["Fishing Pond Child Fish 1"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 2"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 3"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 4"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 5"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 6"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 7"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 8"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 9"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 10"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 11"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 12"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 13"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 14"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Fish 15"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Loach 1"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Child Loach 2"] = function () return is_child() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 1"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 2"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 3"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 4"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 5"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 6"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 7"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 8"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 9"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 10"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 11"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 12"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 13"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 14"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Fish 15"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
+            ["Fishing Pond Adult Loach"] = function () return is_adult() and can_use_wallet(1) and soul_fishing_pond_owner() end,
         },
     },
     ["Lake Hylia Grotto"] = {
@@ -5900,7 +6112,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Gerudo Valley Chest"] = function () return is_adult() and (can_hammer() or hookshot_anywhere() or climb_anywhere()) or time_travel_at_will() end,
-            ["Gerudo Valley Broken Goron Sword"] = function () return adult_trade(POACHER_SAW) and soul_npc(SOUL_NPC_CARPENTERS) end,
+            ["Gerudo Valley Broken Goron Sword"] = function () return adult_trade(POACHER_SAW) and soul_carpenters() end,
             ["Gerudo Valley GS Tent"] = function () return is_adult() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_explosives() or has('SWORD_BIGGORON') or has_ranged_weapon() or can_use_din()))) end,
             ["Gerudo Valley GS Pillar"] = function () return is_adult() and can_collect_distance() and gs_night() end,
             ["Gerudo Valley Crate HP"] = function () return climb_anywhere() end,
@@ -6072,7 +6284,7 @@ function _oot_logic()
     },
     ["Haunted Wasteland Structure"] = {
         ["events"] = {
-            ["BOMBCHU"] = function () return can_use_wallet(2) end,
+            ["BOMBCHU"] = function () return soul_carpet_man() and can_use_wallet(2) end,
         },
         ["exits"] = {
             ["Haunted Wasteland Start"] = function () return can_longshot() or has_hover_boots() or trick('OOT_SAND_RIVER_NOTHING') end,
@@ -6104,20 +6316,25 @@ function _oot_logic()
             ["Desert Colossus Grotto"] = function () return can_lift_silver() end,
             ["Spirit Temple Adult Hand"] = function () return climb_anywhere() end,
             ["Spirit Temple Child Hand"] = function () return climb_anywhere() end,
+            ["Desert Colossus Oasis"] = function () return can_play_storms() end,
         },
         ["locations"] = {
             ["Desert Colossus HP"] = function () return can_ride_bean(BEAN_DESERT_COLOSSUS) end,
             ["Desert Colossus GS Soil"] = function () return gs_soil() and can_damage_skull() end,
             ["Desert Colossus GS Tree"] = function () return is_adult() and gs_night() and (can_collect_distance() or (climb_anywhere() and (has_explosives() or has_ranged_weapon() or can_use_din()))) end,
             ["Desert Colossus GS Plateau"] = function () return is_adult() and gs_night() and (can_collect_distance() and trick('OOT_COLOSSUS_GS_NO_BEAN') or can_ride_bean(BEAN_DESERT_COLOSSUS)) end,
-            ["Desert Colossus Oasis Fairy 1"] = function () return can_play_storms() end,
-            ["Desert Colossus Oasis Fairy 2"] = function () return can_play_storms() end,
-            ["Desert Colossus Oasis Fairy 3"] = function () return can_play_storms() end,
-            ["Desert Colossus Oasis Fairy 4"] = function () return can_play_storms() end,
-            ["Desert Colossus Oasis Fairy 5"] = function () return can_play_storms() end,
-            ["Desert Colossus Oasis Fairy 6"] = function () return can_play_storms() end,
-            ["Desert Colossus Oasis Fairy 7"] = function () return can_play_storms() end,
-            ["Desert Colossus Oasis Fairy 8"] = function () return can_play_storms() end,
+        },
+    },
+    ["Desert Colossus Oasis"] = {
+        ["locations"] = {
+            ["Desert Colossus Oasis Fairy 1"] = function () return true end,
+            ["Desert Colossus Oasis Fairy 2"] = function () return true end,
+            ["Desert Colossus Oasis Fairy 3"] = function () return true end,
+            ["Desert Colossus Oasis Fairy 4"] = function () return true end,
+            ["Desert Colossus Oasis Fairy 5"] = function () return true end,
+            ["Desert Colossus Oasis Fairy 6"] = function () return true end,
+            ["Desert Colossus Oasis Fairy 7"] = function () return true end,
+            ["Desert Colossus Oasis Fairy 8"] = function () return true end,
         },
     },
     ["Desert Colossus Spirit Exit"] = {
@@ -6332,7 +6549,7 @@ function _oot_logic()
     ["Spirit Temple"] = {
         ["events"] = {
             ["SPIRIT_CHILD_DOOR"] = function () return is_child() and small_keys_spirit(5) end,
-            ["SPIRIT_ADULT_DOOR"] = function () return can_lift_silver() and cond(setting('agelessBoots') or setting('agelessHookshot') or (not setting('climbMostSurfacesOot', 'off')) or (not setting('ageChange', 'none')), small_keys_spirit(5), small_keys_spirit(3)) end,
+            ["SPIRIT_ADULT_DOOR"] = function () return can_lift_silver() and cond(setting('agelessBoots') or setting('agelessHookshot') or setting('agelessStrength') or (not setting('climbMostSurfacesOot', 'off')) or (not setting('ageChange', 'none')), small_keys_spirit(5), small_keys_spirit(3)) end,
             ["MAGIC"] = function () return true end,
         },
         ["exits"] = {
@@ -6518,7 +6735,7 @@ function _oot_logic()
         },
         ["locations"] = {
             ["Spirit Temple Statue Hands"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), has_explosives() and (has_mirror_shield() or small_keys_spirit(2)) or small_keys_spirit(3) or (has_explosives() and small_keys_spirit(2)), (setting('agelessBoots') and trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots_raw() or (setting('agelessHookshot') and has_hookshot(1))) and has_explosives() or event('SPIRIT_ADULT_DOOR') or (event('SPIRIT_CHILD_DOOR') and (trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots() or can_hookshot())) or (time_travel_at_will() and has_explosives() and (has_hookshot(1) or (has_hover_boots_raw() and trick('OOT_SPIRIT_CHILD_HOVER'))))) and can_play_zelda() end,
-            ["Spirit Temple Statue Upper Right"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), has_explosives() and (has_mirror_shield() or small_keys_spirit(2)) or small_keys_spirit(3) or (has_explosives() and small_keys_spirit(2)), (setting('agelessBoots') and trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots_raw() or (setting('agelessHookshot') and has_hookshot(1))) and has_explosives() or event('SPIRIT_ADULT_DOOR') or (event('SPIRIT_CHILD_DOOR') and (trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots() or can_hookshot())) or (time_travel_at_will() and has_explosives() and (has_hookshot(1) or (has_hover_boots_raw() and trick('OOT_SPIRIT_CHILD_HOVER'))))) and can_play_zelda() end,
+            ["Spirit Temple Statue Upper Right"] = function () return cond(not setting('climbMostSurfacesOot', 'off'), has_explosives() and (has_mirror_shield() or small_keys_spirit(2)) or small_keys_spirit(3) or (has_explosives() and small_keys_spirit(2)), (setting('agelessBoots') and trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots_raw() or (setting('agelessHookshot') and has_hookshot(1))) and has_explosives() or (event('SPIRIT_ADULT_DOOR') and (has_hover_boots() or has_hookshot(1))) or (event('SPIRIT_CHILD_DOOR') and (trick('OOT_SPIRIT_CHILD_HOVER') and has_hover_boots() or can_hookshot())) or (time_travel_at_will() and has_explosives() and (has_hookshot(1) or (has_hover_boots_raw() and trick('OOT_SPIRIT_CHILD_HOVER'))))) and can_play_zelda() end,
             ["Spirit Temple Pot Adult Upper"] = function () return small_keys_spirit(4) end,
         },
     },
@@ -6578,7 +6795,7 @@ function _oot_logic()
             ["Treasure Chest Game Room 1"] = function () return small_keys_tcg(1) end,
         },
         ["locations"] = {
-            ["Treasure Chest Game Buy Key"] = function () return can_use_wallet(1) and soul_npc(SOUL_NPC_TRASURE_CHEST_GAME_OWNER) end,
+            ["Treasure Chest Game Buy Key"] = function () return can_use_wallet(1) and soul_chest_game_owner() end,
         },
     },
     ["Treasure Chest Game Room 1"] = {
@@ -7604,7 +7821,7 @@ function _oot_logic()
     },
     ["Ganon Castle Light"] = {
         ["events"] = {
-            ["GANON_TRIAL_LIGHT"] = function () return soul_lizalfos_dinalfos() and soul_enemy(SOUL_ENEMY_TORCH_SLUG) and has_light_arrows() and has_lens() and can_hookshot() and small_keys_ganon(3) end,
+            ["GANON_TRIAL_LIGHT"] = function () return soul_lizalfos_dinalfos() and soul_enemy(SOUL_ENEMY_TORCH_SLUG) and can_use_light_arrows() and has_lens() and can_hookshot() and small_keys_ganon(3) end,
         },
         ["locations"] = {
             ["MQ Ganon Castle Light Trial Chest"] = function () return soul_lizalfos_dinalfos() and soul_enemy(SOUL_ENEMY_TORCH_SLUG) and can_play_zelda() and has_weapon() end,
@@ -7616,7 +7833,7 @@ function _oot_logic()
     },
     ["Ganon Castle Forest"] = {
         ["events"] = {
-            ["GANON_TRIAL_FOREST"] = function () return soul_enemy(SOUL_ENEMY_STALFOS) and (can_play_time() or can_play_elegy()) and has_light_arrows() end,
+            ["GANON_TRIAL_FOREST"] = function () return soul_enemy(SOUL_ENEMY_STALFOS) and (can_play_time() or can_play_elegy()) and can_use_light_arrows() end,
         },
         ["locations"] = {
             ["MQ Ganon Castle Forest Trial Key"] = function () return can_hookshot() end,
@@ -7628,7 +7845,7 @@ function _oot_logic()
     },
     ["Ganon Castle Fire"] = {
         ["events"] = {
-            ["GANON_TRIAL_FIRE"] = function () return has_light_arrows() and has_tunic_goron_strict() and (can_longshot() or has_hover_boots()) and silver_rupees_ganon_fire() end,
+            ["GANON_TRIAL_FIRE"] = function () return can_use_light_arrows() and has_tunic_goron_strict() and (can_longshot() or has_hover_boots()) and silver_rupees_ganon_fire() end,
         },
         ["locations"] = {
             ["MQ Ganon Castle SR Fire Under Pillar"] = function () return has_tunic_goron() and can_lift_gold() end,
@@ -7654,7 +7871,7 @@ function _oot_logic()
     },
     ["Ganon Castle Water Silver Rupees"] = {
         ["events"] = {
-            ["GANON_TRIAL_WATER"] = function () return silver_rupees_ganon_water() and has_light_arrows() end,
+            ["GANON_TRIAL_WATER"] = function () return silver_rupees_ganon_water() and can_use_light_arrows() end,
         },
         ["locations"] = {
             ["MQ Ganon Castle SR Water Shallow Hole"] = function () return true end,
@@ -7668,7 +7885,7 @@ function _oot_logic()
     },
     ["Ganon Castle Spirit"] = {
         ["events"] = {
-            ["GANON_TRIAL_SPIRIT"] = function () return has_light_arrows() and has_fire_arrows() and can_reflect_light() and can_hammer() and has_bombchu() and (soul_iron_knuckle() or trick('OOT_HAMMER_WALLS')) end,
+            ["GANON_TRIAL_SPIRIT"] = function () return can_use_light_arrows() and has_fire_arrows() and can_reflect_light() and can_hammer() and has_bombchu() and (soul_iron_knuckle() or trick('OOT_HAMMER_WALLS')) end,
         },
         ["exits"] = {
             ["Ganon Castle Spirit Wallmaster"] = function () return soul_wallmaster() and can_hammer() and has_fire_arrows() and can_reflect_light() and has_bombchu() and (soul_iron_knuckle() or trick('OOT_HAMMER_WALLS')) end,
@@ -7686,7 +7903,7 @@ function _oot_logic()
     },
     ["Ganon Castle Shadow"] = {
         ["events"] = {
-            ["GANON_TRIAL_SHADOW"] = function () return has_lens() and has_light_arrows() and (has_hover_boots() or (can_hookshot() and has_fire() and can_use_bow())) and silver_rupees_ganon_shadow() end,
+            ["GANON_TRIAL_SHADOW"] = function () return has_lens() and can_use_light_arrows() and (has_hover_boots() or (can_hookshot() and has_fire() and can_use_bow())) and silver_rupees_ganon_shadow() end,
         },
         ["locations"] = {
             ["MQ Ganon Castle Shadow Trial Bomb Flower Chest"] = function () return (can_hookshot() or has_hover_boots()) and (can_use_bow() or (has_lens() and has_hover_boots() and (can_use_din() or has_bombflowers()))) end,
@@ -7902,7 +8119,7 @@ function _oot_logic()
     },
     ["Jabu-Jabu Main"] = {
         ["events"] = {
-            ["JABU_BIG_OCTO"] = function () return event('JABU_TENTACLE_GREEN') and soul_octorok() and (can_use_sticks() or has_weapon()) and soul_npc(SOUL_NPC_RUTO) end,
+            ["JABU_BIG_OCTO"] = function () return event('JABU_TENTACLE_GREEN') and soul_octorok() and (can_use_sticks() or has_weapon()) and soul_ruto() end,
             ["JABU_MQ_BACK"] = function () return can_use_slingshot() and has_explosives() end,
         },
         ["exits"] = {
@@ -7917,14 +8134,14 @@ function _oot_logic()
             ["MQ Jabu-Jabu Second Room 1F Chest"] = function () return can_use_slingshot() and (has_hover_boots() or can_hookshot() or event('JABU_BIG_OCTO')) end,
             ["MQ Jabu-Jabu Third Room West Chest"] = function () return can_use_slingshot() and (is_child() or (is_adult() and can_dive_small())) end,
             ["MQ Jabu-Jabu Third Room East Chest"] = function () return can_use_slingshot() and (is_child() or (is_adult() and can_dive_small())) end,
-            ["MQ Jabu-Jabu SoT Room Lower Chest"] = function () return (soul_npc(SOUL_NPC_RUTO) or can_play_elegy()) and (is_child() or (is_adult() and can_dive_small())) end,
-            ["MQ Jabu-Jabu Boomerang Chest"] = function () return (soul_npc(SOUL_NPC_RUTO) or can_play_elegy()) and soul_lizalfos_dinalfos() and soul_like_like() and soul_enemy(SOUL_ENEMY_STINGER) end,
-            ["MQ Jabu-Jabu GS SoT Block"] = function () return gs() and (soul_npc(SOUL_NPC_RUTO) or can_play_elegy()) and can_play_time() and (is_child() or (is_adult() and can_dive_small())) end,
+            ["MQ Jabu-Jabu SoT Room Lower Chest"] = function () return (soul_ruto() or can_play_elegy()) and (is_child() or (is_adult() and can_dive_small())) end,
+            ["MQ Jabu-Jabu Boomerang Chest"] = function () return (soul_ruto() or can_play_elegy()) and soul_lizalfos_dinalfos() and soul_like_like() and soul_enemy(SOUL_ENEMY_STINGER) end,
+            ["MQ Jabu-Jabu GS SoT Block"] = function () return gs() and (soul_ruto() or can_play_elegy()) and can_play_time() and (is_child() or (is_adult() and can_dive_small())) end,
             ["MQ Jabu-Jabu Cow"] = function () return can_play_epona() and event('JABU_BIG_OCTO') and can_use_slingshot() end,
             ["MQ Jabu-Jabu Pot Underwater Alcove 1"] = function () return is_child() or (is_adult() and can_dive_small()) end,
             ["MQ Jabu-Jabu Pot Underwater Alcove 2"] = function () return is_child() or (is_adult() and can_dive_small()) end,
-            ["MQ Jabu-Jabu Pot Boomerang Room 1"] = function () return (soul_npc(SOUL_NPC_RUTO) or can_play_elegy()) and (is_child() or (is_adult() and can_dive_small())) end,
-            ["MQ Jabu-Jabu Pot Boomerang Room 2"] = function () return (soul_npc(SOUL_NPC_RUTO) or can_play_elegy()) and (is_child() or (is_adult() and can_dive_small())) end,
+            ["MQ Jabu-Jabu Pot Boomerang Room 1"] = function () return (soul_ruto() or can_play_elegy()) and (is_child() or (is_adult() and can_dive_small())) end,
+            ["MQ Jabu-Jabu Pot Boomerang Room 2"] = function () return (soul_ruto() or can_play_elegy()) and (is_child() or (is_adult() and can_dive_small())) end,
             ["MQ Jabu-Jabu Grass Main Room Top 1"] = function () return (is_child() or (is_adult() and can_dive_small())) and can_cut_grass() and has_explosives_or_hammer() end,
             ["MQ Jabu-Jabu Grass Main Room Top 2"] = function () return (is_child() or (is_adult() and can_dive_small())) and can_cut_grass() and has_explosives_or_hammer() end,
             ["MQ Jabu-Jabu Grass Main Room Bottom 1"] = function () return (is_child() or (is_adult() and can_dive_small())) and can_cut_grass() end,
