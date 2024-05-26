@@ -55,6 +55,7 @@ end
 
 local OOTMM_SHARED = {
     ["BombBags"] = { "BOMB_BAG" },
+    ["BombchuBags"] = { "BOMBCHU" },
     ["Bows"] = { "BOW" },
     ["Magic"] = { "MAGIC_UPGRADE" },
     ["NutsSticks"] = { "NUT", "STICK" },
@@ -77,6 +78,7 @@ local OOTMM_SHARED = {
 }
 local OOTMM_SHARED_PREV = {
     ["BombBags"] = { 0 },
+    ["BombchuBags"] = { 0 },
     ["Bows"] = { 0 },
     ["Magic"] = { 0 },
     ["NutsSticks"] = { 0, 0 },

@@ -186,9 +186,18 @@
   },
   {
     "name": "MM Bombchu",
-    "type": "toggle",
-    "img": "images/items/mm_bombchu.png",
-    "codes": "MM_BOMBCHU"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_bombchu.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_bombchu.png",
+        "codes": "MM_BOMBCHU"
+      }
+    ]
   },
   {
     "name": "MM Powder Keg",

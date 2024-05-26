@@ -198,9 +198,18 @@
   },
   {
     "name": "Bombchus",
-    "type": "toggle",
-    "img": "images/bombchu.png",
-    "codes": "EVENT_OOT_BOMBCHU, OOT_BOMBCHU_5"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bombchu.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/bombchu.png",
+        "codes": "EVENT_OOT_BOMBCHU, OOT_BOMBCHU_5, OOT_BOMBCHU"
+      }
+    ]
   },
   {
     "name": "Lens of Truth",
