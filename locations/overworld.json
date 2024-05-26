@@ -6544,6 +6544,13 @@
                           "$mm|Deku Palace Grotto Chest"
                         ],
                         "item_count": 1
+                      },
+                      {
+                        "name": "Buy beans",
+                        "access_rules": [
+                          "$mm_event_raw|MAGIC_BEANS_PALACE"
+                        ], 
+                        "item_count": 1
                       }
                     ],
                     "map_locations": [

@@ -72,7 +72,7 @@
     "name": "MM Magic Beans",
     "type": "toggle",
     "img": "images/items/mm_bean.png",
-    "codes": "MM_MAGIC_BEAN"
+    "codes": "MM_MAGIC_BEAN, MM_MAGIC_BEANS_PALACE"
   },
   {
     "name": "MM Deku Sticks",

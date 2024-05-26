@@ -387,6 +387,7 @@ function _mm_logic()
             ["FROG_2"] = { ["type"] = "has" },
             ["FROG_3"] = { ["type"] = "has" },
             ["FROG_4"] = { ["type"] = "has" },
+            ["MAGIC_BEANS_PALACE"] = { ["type"] = "has" },
             ["NUTS"] = { ["type"] = "return", ["value"] = false },
             ["OOT_NUTS"] = { ["type"] = "return", ["value"] = false },
             ["SEAHORSE"] = { ["type"] = "has" },
