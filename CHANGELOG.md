@@ -1,5 +1,15 @@
 # Releases
 
+## v23.0.1
+
+Logic updated to version v23.0 of the OOTMM Randomizer.
+
+Fix glitched logic being active all the time - this led to checks being marked as green when you needed to use glitches in order to reach them.
+
+New setting:
+
+- Shared Bombchu Bags
+
 ## v22.0.2
 
 Bugfix release to make starting age adult work properly.

@@ -537,6 +537,41 @@
       },
       {
         "type": "item",
+        "item": "TRICK_OOT_KZ_SKIP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_LOST_WOODS_ADULT_GS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_WINDMILL_HP_NOTHING",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_LAB_DIVE_NO_GOLD_SCALE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_LAB_WALL_GS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_PASS_COLLISION",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_DMT_RED_ROCK_GS",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "TRICK_OOT_DEAD_HAND_STICKS",
         "height": 16
       },
@@ -552,42 +587,137 @@
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_DMT_RED_ROCK_GS",
+        "item": "TRICK_OOT_SPIRIT_CHILD_HOVER",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_KZ_SKIP",
+        "item": "TRICK_OOT_VALLEY_GATE_HOVER",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_LAB_DIVE_NO_GOLD_SCALE",
+        "item": "TRICK_OOT_MQ_ICE_SCARE_NOTHING",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_LAB_WALL_GS",
+        "item": "TRICK_OOT_MQ_ICE_SCARE_HOVER",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_LOST_WOODS_ADULT_GS",
+        "item": "TRICK_OOT_MQ_GTG_FLAMES",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_PASS_COLLISION",
+        "item": "TRICK_OOT_FORTRESS_JUMPS",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_SHADOW_FIRE_ARROW",
+        "item": "TRICK_OOT_COLOSSUS_GS_NO_BEAN",
         "height": 16
       },
       {
         "type": "item",
-        "item": "TRICK_OOT_WINDMILL_HP_NOTHING",
+        "item": "TRICK_OOT_ENTER_JABU",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_JABU_BOSS_HIGH_SWITCH",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_WATER_REVERSE_RIVER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_WATER_PIT_GS_CHU",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_SHADOW_BOAT_EARLY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_SPIRIT_BOSS_CLIMB_NO_HOOK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_ZR_FALLS_HOOK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_DC_BOULDER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_LAKE_SHORTCUT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_JJB_BOXLESS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_TENT_CHILD",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_WELL_ADULT_TT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_ADULT_GALLERY_TT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_GTG_CHILD_TT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_REVERSE_DAMPE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_GANON_FAIRY_TT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_GANON_CASTLE_ENTRY",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_SHADOW_TEMPLE_STICKS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_WATER_GOLD_SCALE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_OOT_COURTYARD_FROM_GANON",
         "height": 16
       }
     ]
@@ -600,6 +730,11 @@
       {
         "type": "item",
         "item": "TRICK_MM_LENS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_TUNICS",
         "height": 16
       },
       {
@@ -679,6 +814,11 @@
       },
       {
         "type": "item",
+        "item": "TRICK_MM_SHT_HOT_WATER",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "TRICK_MM_SHT_STICKS_RUN",
         "height": 16
       },
@@ -704,17 +844,12 @@
       },
       {
         "type": "item",
+        "item": "TRICK_MM_DOG_RACE_CHEST_NOTHING",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "TRICK_MM_MAJORA_LOGIC",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "TRICK_MM_POST_OFFICE_GAME",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "TRICK_MM_SHT_HOT_WATER",
         "height": 16
       },
       {
@@ -729,7 +864,222 @@
       },
       {
         "type": "item",
+        "item": "TRICK_MM_ZORA_HALL_DOORS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_IKANA_ROOF_PARKOUR",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_IKANA_PILLAR_TO_ENTRANCE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_POST_OFFICE_GAME",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "TRICK_MM_WELL_HSW",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ISTT_CHUCHU_LESS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_WATERWHEEL_GORON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_ENTRANCE_BOW",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_OOB_MOVEMENT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ST_UPDRAFTS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ESCAPE_CAGE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_FAIRY2_HOOK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_CENTRAL_GEYSER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_BANK_ONE_WALLET",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_BANK_NO_WALLET",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_CLOCK_TOWER_WAIT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_WFT_RUPEES_ICE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ISTT_RUPEES_GORON",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_BOMBER_BACKFLIP",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_NCT_TINGLE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_FIRELESS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_IGOS_DINS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_BIO_BABA_CHU",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_BIO_BABA_LUCK",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_WF_SHRINE_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_WFT_LOBBY_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_SOARING_ZORA",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_SOARING_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_LULLABY_SKIP_IRONS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_PATH_SNOWHEAD_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_WATERWHEEL_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_CENTER_POT_IRONS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_RED1_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GBT_GREEN2_UPPER_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GYORG_IRONS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_STT_LAVA_BLOCK_HOVERS",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_ISTT_ENTRY_HOVER",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_GYORG_POTS_DIVE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_STT_POT_BOMBCHU_DIVE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_STOCK_POT_WAIT",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_STAGE_LIGHTS_DIN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_RANCH_FARORE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_EVAN_FARORE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "TRICK_MM_KEG_TRIAL_HEATLESS",
         "height": 16
       }
     ]

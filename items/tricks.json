@@ -189,11 +189,207 @@
     "codes": "TRICK_OOT_DEAD_HAND_STICKS"
   },
   {
+    "name": "Access Adult Spirit as Child using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_spirit_child_hover.png",
+    "codes": "TRICK_OOT_SPIRIT_CHILD_HOVER"
+  },
+  {
+    "name": "Reach Gerudo Fortress as Child using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_valley_gate_hover.png",
+    "codes": "TRICK_OOT_VALLEY_GATE_HOVER"
+  },
+  {
+    "name": "MQ Ice Cavern GS without Scarecrow or Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_mq_ice_scare_nothing.png",
+    "codes": "TRICK_OOT_MQ_ICE_SCARE_NOTHING"
+  },
+  {
+    "name": "MQ Ice Cavern GS using only Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_mq_ice_scare_hover.png",
+    "codes": "TRICK_OOT_MQ_ICE_SCARE_HOVER"
+  },
+  {
+    "name": "MQ Gerudo Training Grounds Lava Room Walk along Flame Circles",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_mq_gtg_flames.png",
+    "codes": "TRICK_OOT_MQ_GTG_FLAMES"
+  },
+  {
+    "name": "Jump up to higher ledges outside Gerudo Fortress",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_fortress_jumps.png",
+    "codes": "TRICK_OOT_FORTRESS_JUMPS"
+  },
+  {
+    "name": "Desert Colossus Plateau GS without Bean Plant",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_colossus_gs_no_bean.png",
+    "codes": "TRICK_OOT_COLOSSUS_GS_NO_BEAN"
+  },
+  {
+    "name": "Enter Jabu-Jabu with Head Collision",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_enter_jabu.png",
+    "codes": "TRICK_OOT_ENTER_JABU"
+  },
+  {
+    "name": "Jabu Boss Switch without Boomerang or Climb Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_jabu_boss_high_switch.png",
+    "codes": "TRICK_OOT_JABU_BOSS_HIGH_SWITCH"
+  },
+  {
+    "name": "Water Temple Reverse River with Hookshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_water_reverse_river.png",
+    "codes": "TRICK_OOT_WATER_REVERSE_RIVER"
+  },
+  {
+    "name": "Water Temple Large Pit GS with Bombchu",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_water_pit_gs_chu.png",
+    "codes": "TRICK_OOT_WATER_PIT_GS_CHU"
+  },
+  {
+    "name": "Reach Shadow Temple Boat with Climb Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_shadow_boat_early.png",
+    "codes": "TRICK_OOT_SHADOW_BOAT_EARLY"
+  },
+  {
+    "name": "Reach Twinrova using Climb Anywhere and Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_spirit_boss_climb_no_hook.png",
+    "codes": "TRICK_OOT_SPIRIT_BOSS_CLIMB_NO_HOOK"
+  },
+  {
+    "name": "Use Hookshot Anywhere to get past the Zora's River Waterfall",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_zr_falls_hook.png",
+    "codes": "TRICK_OOT_ZR_FALLS_HOOK"
+  },
+  {
+    "name": "Skip Dodongo Cavern's Boulder using Ageless Hookshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_dc_boulder.png",
+    "codes": "TRICK_OOT_DC_BOULDER"
+  },
+  {
+    "name": "Move Between Lake Hylia and Zora's Domain with Ageless Hookshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_lake_shortcut.png",
+    "codes": "TRICK_OOT_LAKE_SHORTCUT"
+  },
+  {
+    "name": "Access Jabu-Jabu pre-boss without the box",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_jjb_boxless.png",
+    "codes": "TRICK_OOT_JJB_BOXLESS"
+  },
+  {
+    "name": "Enter the Gerudo Valley Tent as Child",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_tent_child.png",
+    "codes": "TRICK_OOT_TENT_CHILD"
+  },
+  {
+    "name": "Enter Bottom of the Well as Adult with Time Travel",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_well_adult_tt.png",
+    "codes": "TRICK_OOT_WELL_ADULT_TT"
+  },
+  {
+    "name": "Enter Adult Shooting Gallery as Child with Time Travel",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_adult_gallery_tt.png",
+    "codes": "TRICK_OOT_ADULT_GALLERY_TT"
+  },
+  {
+    "name": "Enter Gerudo Training Grounds as Child with Time Travel",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_gtg_child_tt.png",
+    "codes": "TRICK_OOT_GTG_CHILD_TT"
+  },
+  {
+    "name": "Navigate Dampe's Grave in Reverse",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_reverse_dampe.png",
+    "codes": "TRICK_OOT_REVERSE_DAMPE"
+  },
+  {
+    "name": "Ganon's Great Fairy with Age Swap and without Gold Gauntlets",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_ganon_fairy_tt.png",
+    "codes": "TRICK_OOT_GANON_FAIRY_TT"
+  },
+  {
+    "name": "Enter Ganon's Castle with Longshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_ganon_castle_entry.png",
+    "codes": "TRICK_OOT_GANON_CASTLE_ENTRY"
+  },
+  {
+    "name": "Enter Shadow Temple with Sticks & Fire Arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_shadow_temple_sticks.png",
+    "codes": "TRICK_OOT_SHADOW_TEMPLE_STICKS"
+  },
+  {
+    "name": "Enter Water Temple with Gold Scale and Longshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_water_gold_scale.png",
+    "codes": "TRICK_OOT_WATER_GOLD_SCALE"
+  },
+  {
+    "name": "Enter Zelda's Courtyard using Age Swap in Ganon's Castle",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_oot_courtyard_from_ganon.png",
+    "codes": "TRICK_OOT_COURTYARD_FROM_GANON"
+  },
+  {
     "name": "Fewer Lens Requirements (MM)",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_mm_lens.png",
     "codes": "TRICK_MM_LENS"
+  },
+  {
+    "name": "Fewer Tunic Requirements (MM)",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_tunics.png",
+    "codes": "TRICK_MM_TUNICS"
   },
   {
     "name": "Skip Planting Beans in Deku Palace",
@@ -343,11 +539,25 @@
     "codes": "TRICK_MM_ZORA_HALL_SCRUB_HP_NO_DEKU"
   },
   {
+    "name": "Access the doors in Zora Hall using Short Hookshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_zora_hall_doors.png",
+    "codes": "TRICK_MM_ZORA_HALL_DOORS"
+  },
+  {
     "name": "Jump from Ikana Castle's Roof Interior to Exterior",
     "type": "toggle",
     "initial_active_state": false,
     "img": "images/trick_mm_ikana_roof_parkour.png",
     "codes": "TRICK_MM_IKANA_ROOF_PARKOUR"
+  },
+  {
+    "name": "Jump from Ikana Castle's Roof to Entrance",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_ikana_pillar_to_entrance.png",
+    "codes": "TRICK_MM_IKANA_PILLAR_TO_ENTRANCE"
   },
   {
     "name": "Post Office Timing Game without Bunny Hood",
@@ -376,5 +586,278 @@
     "initial_active_state": false,
     "img": "images/trick_mm_well_hsw.png",
     "codes": "TRICK_MM_WELL_HSW"
+  },
+  {
+    "name": "ISTT Block Room without Chuchu Jellies",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_istt_chuchu_less.png",
+    "codes": "TRICK_MM_ISTT_CHUCHU_LESS"
+  },
+  {
+    "name": "Cross GBT Waterwheel Room as Goron",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_waterwheel_goron.png",
+    "codes": "TRICK_MM_GBT_WATERWHEEL_GORON"
+  },
+  {
+    "name": "Great Bay Temple Entrance Chest using only Bow",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_entrance_bow.png",
+    "codes": "TRICK_MM_GBT_ENTRANCE_BOW"
+  },
+  {
+    "name": "Walk Along Surfaces Out of Bounds",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_oob_movement.png",
+    "codes": "TRICK_MM_OOB_MOVEMENT"
+  },
+  {
+    "name": "Stone Tower Updrafts without Deku Mask",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_st_updrafts.png",
+    "codes": "TRICK_MM_ST_UPDRAFTS"
+  },
+  {
+    "name": "Escape the Monkey Cage with Hookshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_escape_cage.png",
+    "codes": "TRICK_MM_ESCAPE_CAGE"
+  },
+  {
+    "name": "GBT First Underwater Fairy with Short Hookshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_fairy2_hook.png",
+    "codes": "TRICK_MM_GBT_FAIRY2_HOOK"
+  },
+  {
+    "name": "GBT Central Room without Zora using Fire & Ice Arrows or an OoT Magic Spell",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_central_geyser.png",
+    "codes": "TRICK_MM_GBT_CENTRAL_GEYSER"
+  },
+  {
+    "name": "Bank Rewards Require One Less Wallet",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_bank_one_wallet.png",
+    "codes": "TRICK_MM_BANK_ONE_WALLET"
+  },
+  {
+    "name": "Bank Rewards Require No Wallets",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_bank_no_wallet.png",
+    "codes": "TRICK_MM_BANK_NO_WALLET"
+  },
+  {
+    "name": "Wait for the Clock Tower to Open When Shuffled",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_clock_tower_wait.png",
+    "codes": "TRICK_MM_CLOCK_TOWER_WAIT"
+  },
+  {
+    "name": "Collect the Pillar Rupees in Woodfall Temple using Ice Arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_wft_rupees_ice.png",
+    "codes": "TRICK_MM_WFT_RUPEES_ICE"
+  },
+  {
+    "name": "Collect the Floating Rupees in ISTT as Goron",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_istt_rupees_goron.png",
+    "codes": "TRICK_MM_ISTT_RUPEES_GORON"
+  },
+  {
+    "name": "Backflip over the Bomber in East Clock Town",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_bomber_backflip.png",
+    "codes": "TRICK_MM_BOMBER_BACKFLIP"
+  },
+  {
+    "name": "Jump slash Tingle in North Clock Town",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_nct_tingle.png",
+    "codes": "TRICK_MM_NCT_TINGLE"
+  },
+  {
+    "name": "Great Bay Temple without Fire Arrows",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_fireless.png",
+    "codes": "TRICK_MM_GBT_FIRELESS"
+  },
+  {
+    "name": "Burn Igos' curtains with Din's Fire",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_igos_dins.png",
+    "codes": "TRICK_MM_IGOS_DINS"
+  },
+  {
+    "name": "Destroy the Bio Baba Grotto Hive with a Bombchu",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_bio_baba_chu.png",
+    "codes": "TRICK_MM_BIO_BABA_CHU"
+  },
+  {
+    "name": "Bio Baba Grotto Lilypad Luck",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_bio_baba_luck.png",
+    "codes": "TRICK_MM_BIO_BABA_LUCK"
+  },
+  {
+    "name": "Woodfall Owl Chest with Hover Boots and Jump Slash",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_wf_shrine_hovers.png",
+    "codes": "TRICK_MM_WF_SHRINE_HOVERS"
+  },
+  {
+    "name": "Woodfall Temple Lobby with Damage Boost and Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_wft_lobby_hovers.png",
+    "codes": "TRICK_MM_WFT_LOBBY_HOVERS"
+  },
+  {
+    "name": "Zora Long Jump to the Soaring Tablet",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_soaring_zora.png",
+    "codes": "TRICK_MM_SOARING_ZORA"
+  },
+  {
+    "name": "Jump Slash or Damage Boost to the Soaring Tablet with Hover Boots and Bunny Hood",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_soaring_hovers.png",
+    "codes": "TRICK_MM_SOARING_HOVERS"
+  },
+  {
+    "name": "Skip playing Goron Lullaby by using Iron Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_lullaby_skip_irons.png",
+    "codes": "TRICK_MM_LULLABY_SKIP_IRONS"
+  },
+  {
+    "name": "Cross Path to Snowhead using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_path_snowhead_hovers.png",
+    "codes": "TRICK_MM_PATH_SNOWHEAD_HOVERS"
+  },
+  {
+    "name": "Cross GBT Waterwheel Room using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_waterwheel_hovers.png",
+    "codes": "TRICK_MM_GBT_WATERWHEEL_HOVERS"
+  },
+  {
+    "name": "Great Bay Temple Center Underwater Pot using only Iron Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_center_pot_irons.png",
+    "codes": "TRICK_MM_GBT_CENTER_POT_IRONS"
+  },
+  {
+    "name": "Reach the first red pipe in GBT using Hover Boots, Bunny Hood, and a Jump Slash",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_red1_hovers.png",
+    "codes": "TRICK_MM_GBT_RED1_HOVERS"
+  },
+  {
+    "name": "Reach the Upper Chest in GBT's Second Green Room using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gbt_green2_upper_hovers.png",
+    "codes": "TRICK_MM_GBT_GREEN2_UPPER_HOVERS"
+  },
+  {
+    "name": "Fight Gyorg as Human using Iron Boots and Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gyorg_irons.png",
+    "codes": "TRICK_MM_GYORG_IRONS"
+  },
+  {
+    "name": "Stone Tower Temple Map Chest using Hover Boots",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_stt_lava_block_hovers.png",
+    "codes": "TRICK_MM_STT_LAVA_BLOCK_HOVERS"
+  },
+  {
+    "name": "Inverted Stone Tower Temple Death Armos using Hover Boots and Bunny Hood",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_istt_entry_hover.png",
+    "codes": "TRICK_MM_ISTT_ENTRY_HOVER"
+  },
+  {
+    "name": "Dive Down for Gyorg's Pots with Blast Mask",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_gyorg_pots_dive.png",
+    "codes": "TRICK_MM_GYORG_POTS_DIVE"
+  },
+  {
+    "name": "STT Water Room Shallow Pots Dive with Bombchu",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_stt_pot_bombchu_dive.png",
+    "codes": "TRICK_MM_STT_POT_BOMBCHU_DIVE"
+  },
+  {
+    "name": "Wait outside Stock Pot Inn's roof for closing",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_stock_pot_wait.png",
+    "codes": "TRICK_MM_STOCK_POT_WAIT"
+  },
+  {
+    "name": "Light the Zora Hall Stage Lights using Din's Fire, Bow, and Hookshot",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_stage_lights_din.png",
+    "codes": "TRICK_MM_STAGE_LIGHTS_DIN"
+  },
+  {
+    "name": "Romani's Ranch locations using Farore's Wind and Time Reset",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_ranch_farore.png",
+    "codes": "TRICK_MM_RANCH_FARORE"
+  },
+  {
+    "name": "Evan's Piece of Heart using Farore's Wind and Time Reset",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_evan_farore.png",
+    "codes": "TRICK_MM_EVAN_FARORE"
+  },
+  {
+    "name": "Powder Keg Trial without Thawing Ice using Hookshot Anywhere",
+    "type": "toggle",
+    "initial_active_state": false,
+    "img": "images/trick_mm_keg_trial_heatless.png",
+    "codes": "TRICK_MM_KEG_TRIAL_HEATLESS"
   }
 ]
