@@ -215,6 +215,87 @@
                 "y": 980
               }
             ]
+          },
+          {
+            "name": "KF Grass Boulder Area",
+            "sections": [
+              {
+                "name": "Grass Boulder Area",
+                "access_rules": [
+                  "$oot|Kokiri Forest Grass Child Crawl 1"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 2058,
+                "y": 990
+              }
+            ]
+          },
+          {
+            "name": "KF Grass Near Saria's House",
+            "sections": [
+              {
+                "name": "Grass Near Saria's (Child)",
+                "access_rules": [
+                  "$oot|Kokiri Forest Grass Child 1"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 5
+              },
+              {
+                "name": "Grass Near Saria's (Adult)",
+                "access_rules": [
+                  "$oot|Kokiri Forest Grass Adult 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 2214,
+                "y": 958
+              }
+            ]
+          },
+          {
+            "name": "KF Training Area Grass",
+            "sections": [
+              {
+                "name": "Training Area Grass",
+                "access_rules": [
+                  "$oot|Kokiri Forest Grass 1"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 8
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 2116,
+                "y": 958
+              }
+            ]
           }
         ]
       },
@@ -6549,7 +6630,7 @@
                         "name": "Buy beans",
                         "access_rules": [
                           "$mm_event_raw|MAGIC_BEANS_PALACE"
-                        ], 
+                        ],
                         "item_count": 1
                       }
                     ],

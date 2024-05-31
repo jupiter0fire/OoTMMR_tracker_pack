@@ -26,6 +26,11 @@
       },
       {
         "type": "item",
+        "item": "setting_shuffleGrassOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_scrubShuffleOot",
         "height": 16
       },
