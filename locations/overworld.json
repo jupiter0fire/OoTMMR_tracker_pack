@@ -859,14 +859,26 @@
           },
           {
             "name": "HF Southeast Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Southeast"
-            ],
             "sections": [
               {
                 "name": "HF Southeast Grotto Chest",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Southeast"
+                ],
                 "short_name": "Chest",
                 "item_count": 1
+              },
+              {
+                "name": "HF SE Grotto Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Southeast Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -879,14 +891,26 @@
           },
           {
             "name": "HF Open Grotto",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Open"
-            ],
             "sections": [
               {
                 "name": "HF Open Grotto Chest",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Open"
+                ],
                 "short_name": "Chest",
                 "item_count": 1
+              },
+              {
+                "name": "HF Open Grotto Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Open Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -900,14 +924,27 @@
           {
             "name": "HF Near Market Grotto",
             "short_name": "Boulda",
-            "access_rules": [
-              "$oot|Hyrule Field Grotto Market"
-            ],
             "sections": [
               {
                 "name": "HF Near Market Grotto Chest",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Market"
+                ],
                 "short_name": "Chest",
                 "item_count": 1
+              },
+              {
+                "name": "HF Near Market Grotto Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Market Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "short_name": "Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -993,6 +1030,19 @@
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
+              },
+              {
+                "name": "HF Cow Grotto Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grotto Near Gerudo Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "short_name": "Grass",
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -1024,6 +1074,102 @@
                 ],
                 "x": 1186,
                 "y": 396
+              }
+            ]
+          },
+          {
+            "name": "HF Grass Near Kokiri Forest",
+            "sections": [
+              {
+                "name": "Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grass Pack 1 Bush 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 1732,
+                "y": 688
+              }
+            ]
+          },
+          {
+            "name": "HF Grass Near Market Entrance",
+            "sections": [
+              {
+                "name": "Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grass Pack 2 Bush 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 1494,
+                "y": 528
+              }
+            ]
+          },
+          {
+            "name": "HF Grass Near South East Grott",
+            "sections": [
+              {
+                "name": "Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grass Pack 3 Bush 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 1420,
+                "y": 872
+              }
+            ]
+          },
+          {
+            "name": "HF Grass South of Lon Lon Ranch",
+            "sections": [
+              {
+                "name": "Grass",
+                "access_rules": [
+                  "$oot|Hyrule Field Grass Pack 4 Bush 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 1346,
+                "y": 816
               }
             ]
           }
