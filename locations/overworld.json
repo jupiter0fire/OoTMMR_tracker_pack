@@ -56,6 +56,19 @@
                   "$oot|Kokiri Forest Storms Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "KF Storms Grotto Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Kokiri Forest Storms Grotto Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -305,14 +318,40 @@
         "children": [
           {
             "name": "LW Near Shortcuts Grotto",
-            "access_rules": [
-              "$oot|Lost Woods Grotto Generic"
-            ],
             "sections": [
               {
+                "name": "LW Near Shortcuts Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lost Woods Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 3
+              },
+              {
                 "name": "LW Near Shortcuts Grotto Chest",
+                "access_rules": [
+                  "$oot|Lost Woods Grotto Generic"
+                ],
                 "short_name": "Chest",
                 "item_count": 1
+              },
+              {
+                "name": "LW Near Shortcuts Grotto Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lost Woods Grotto Generic Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -502,6 +541,32 @@
           {
             "name": "LW Scrubs Grotto",
             "sections": [
+              {
+                "name": "LW Before Srubs Grotto Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lost Woods Grass Deep 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 3
+              },
+              {
+                "name": "LW Near Srubs Grotto Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lost Woods Grass Deep 4"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 3
+              },
               {
                 "name": "LW Deku Scrub Grotto Front",
                 "short_name": "Front",
