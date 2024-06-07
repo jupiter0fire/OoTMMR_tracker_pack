@@ -1410,6 +1410,18 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
+              },
+              {
+                "name": "Near Big Tree Grass",
+                "access_rules": [
+                  "$oot|Lake Hylia Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -1417,6 +1429,95 @@
                 "map": "oot",
                 "x": 1010,
                 "y": 1415
+              }
+            ]
+          },
+          {
+            "name": "LH Scarecrows",
+            "sections": [
+              {
+                "name": "LH Grass Near Scarecrows (Child)",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lake Hylia Grass Child 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
+              },
+              {
+                "name": "LH Broken Actor Grass (Child)",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lake Hylia Grass Child 5"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true,setting_restoreBrokenActors_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1150,
+                "y": 1180
+              }
+            ]
+          },
+          {
+            "name": "LH Grass Clusters",
+            "sections": [
+              {
+                "name": "LH Grass Cluster Near Lab 1",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lake Hylia Grass Pack 1 Bush 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "LH Grass Cluster Near Lab 2",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lake Hylia Grass Pack 2 Bush 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "LH Grass Cluster Near Lab 3",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Lake Hylia Grass Pack 3 Bush 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1042,
+                "y": 1156
               }
             ]
           }
