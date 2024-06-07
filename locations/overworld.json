@@ -3912,14 +3912,27 @@
           },
           {
             "name": "ZR Open Grotto",
-            "access_rules": [
-              "$oot|Zora River Grotto"
-            ],
             "sections": [
               {
                 "name": "ZR Open Grotto Chest",
                 "short_name": "Chest",
+                "access_rules": [
+                  "$oot|Zora River Grotto"
+                ],
                 "item_count": 1
+              },
+              {
+                "name": "ZR Open Grotto Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Zora River Grotto Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -3941,6 +3954,19 @@
                 ],
                 "chest_unopened_img": "images/HP.png",
                 "chest_opened_img": "images/HP_grey.png",
+                "item_count": 1
+              },
+              {
+                "name": "ZR Raised Ledge Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Zora River Grass"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 1
               }
             ],
@@ -4121,6 +4147,30 @@
                 ],
                 "x": 2142,
                 "y": 500
+              }
+            ]
+          },
+          {
+            "name": "ZR Grass Patch Near Entrance",
+            "sections": [
+              {
+                "name": "ZR Grass Patch Near Entrance",
+                "access_rules": [
+                  "$oot|Zora River Grass Pack Bush 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "x": 1975,
+                "y": 538
               }
             ]
           }
