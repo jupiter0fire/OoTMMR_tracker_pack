@@ -3087,6 +3087,19 @@
                   "$oot|Death Mountain Crater Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "DMC Upper Grotto Grass",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Grotto Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
