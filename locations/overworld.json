@@ -3591,6 +3591,48 @@
                     "y": 405
                   }
                 ]
+              },
+              {
+                "name": "Market Grass",
+                "sections": [
+                  {
+                    "name": "Market Near Entrance Grass",
+                    "access_rules": [
+                      "$oot|Market Grass 1"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 2
+                  },
+                  {
+                    "name": "Market Near Mask Shop Grass",
+                    "access_rules": [
+                      "$oot|Market Grass 3"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 3
+                  },
+                  {
+                    "name": "Market Potted Grass",
+                    "access_rules": [
+                      "$oot|Market Grass 6"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 3
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "x": 1445,
+                    "y": 325,
+                    "visibility_rules": [
+                      "setting_shuffleGrassOot_true"
+                    ]
+                  }
+                ]
               }
             ]
           }
