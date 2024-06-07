@@ -3760,6 +3760,19 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
+              },
+              {
+                "name": "HC Grass Near Tree",
+                "short_name": "Grass",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassOot_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -3790,7 +3803,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1465,
+                "x": 1470,
                 "y": 205
               }
             ]
