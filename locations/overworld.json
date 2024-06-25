@@ -8801,15 +8801,27 @@
                         "access_rules": [
                           "$mm|Ikana Canyon Owl Statue"
                         ],
+                        "visibility_rules": [
+                          "setting_owlShuffle_anywhere"
+                        ],
                         "item_count": 1
+                      },
+                      {
+                        "name": "Ikana Canyon Owl Grass",
+                        "access_rules": [
+                          "$mm|Ikana Canyon Grass 1"
+                        ],
+                        "visibility_rules": [
+                          "setting_shuffleGrassMm_true"
+                        ],
+                        "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "item_count": 4
                       }
                     ],
                     "map_locations": [
                       {
                         "map": "termina",
-                        "force_invisibility_rules": [
-                          "setting_owlShuffle_none"
-                        ],
                         "x": 831,
                         "y": 256
                       }
