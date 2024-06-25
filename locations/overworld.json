@@ -5471,6 +5471,42 @@
                       "$mm|Clock Town Keaton HP"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Keaton Grass 1",
+                    "access_rules": [
+                      "$mm|Clock Town Keaton Grass Reward 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Keaton Grass 2-5",
+                    "access_rules": [
+                      "$mm|Clock Town Keaton Grass Reward 2"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 4
+                  },
+                  {
+                    "name": "Keaton Grass 6-9",
+                    "access_rules": [
+                      "$mm|Clock Town Keaton Grass Reward 6"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 4
                   }
                 ],
                 "map_locations": [
@@ -6224,6 +6260,30 @@
                     "y": 173
                   }
                 ]
+              },
+              {
+                "name": "Laundry Pool Grass",
+                "sections": [
+                  {
+                    "name": "Grass Shuffle",
+                    "access_rules": [
+                      "$mm|Clock Town Laundry Pool Grass 1"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "item_count": 3
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "x": 40,
+                    "y": 195
+                  }
+                ]
               }
             ]
           },
@@ -6580,17 +6640,29 @@
                 "access_rules": [
                   "$mm|Milk Road Owl Statue"
                 ],
+                "visibility_rules": [
+                  "setting_owlShuffle_anywhere"
+                ],
                 "item_count": 1
+              },
+              {
+                "name": "Owl Statue Grass",
+                "access_rules": [
+                  "$mm|Milk Road Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
                 "x": 485,
-                "y": 376,
-                "force_invisibility_rules": [
-                  "setting_owlShuffle_none"
-                ]
+                "y": 376
               }
             ]
           },

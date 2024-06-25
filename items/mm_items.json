@@ -451,7 +451,7 @@
     "type": "toggle_badged",
     "base_item": "MM_SWORD",
     "img": "images/items/mm_spin.png",
-    "codes": "mm_spinattack"
+    "codes": "mm_spinattack,MM_SPIN_UPGRADE"
   },
   {
     "name": "MM Shield",
