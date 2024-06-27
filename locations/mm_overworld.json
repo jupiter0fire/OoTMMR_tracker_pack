@@ -261,7 +261,7 @@
                 ]
               },
               {
-                "name": "Keaton Grass Circle",
+                "name": "Clock Town Keaton Grass Circle",
                 "short_name": "Keaton",
                 "sections": [
                   {
@@ -312,15 +312,10 @@
                 ],
                 "map_locations": [
                   {
-                    "map": "termina",
-                    "x": 143,
-                    "y": 16
-                  },
-                  {
-                    "map": "termina",
-                    "x": 457,
-                    "y": 367
-                  }
+                      "map": "termina",
+                      "x": 143,
+                      "y": 16
+                    }
                 ]
               },
               {
@@ -1143,8 +1138,8 @@
             "map_locations": [
               {
                 "map": "termina",
-                "x": 507,
-                "y": 339
+                "x": 491,
+                "y": 323
               }
             ]
           },
@@ -1393,7 +1388,180 @@
                 "y": 347
               }
             ]
-          }          
+          },
+          {
+            "name": "NW Grass Patches (Inner Ring)",
+            "short_name": "NW Grass",
+            "sections": [
+              {
+                "name": "NW Grass Patch 1",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 01 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "NW Grass Patch 2",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 02 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 513,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "name": "NE Grass Patches (Inner Ring)",
+            "short_name": "NE Grass",
+            "sections": [
+              {
+                "name": "NE Grass Patch 1",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 03 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "NE Grass Patch 2",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 04 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 568,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "name": "SW Grass Patch (Inner Ring)",
+            "short_name": "SW Grass",
+            "sections": [
+              {
+                "name": "SW Grass Patch",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 05 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 507,
+                "y": 323
+              }
+            ]
+          },   
+          {
+            "name": "Grass Patches North of Takkuri (Outer Ring)",
+            "short_name": "SW Grass",
+            "sections": [
+              {
+                "name": "Grass Patch 1",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 06 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 2",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 07 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 3",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 08 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 507,
+                "y": 339
+              }
+            ]
+          },
+          {
+            "name": "Grass Patch Near Takkuri (Outer Ring)",
+            "short_name": "SW Grass",
+            "sections": [
+              {
+                "name": "Grass Patch",
+                "access_rules": [
+                  "$mm|Termina Field Grass Pack 09 Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 507,
+                "y": 355
+              }
+            ]
+          }         
         ]
       },
       {
@@ -1468,6 +1636,64 @@
             ]
           },
           {
+            "name": "Milk Road Grass Circle",
+            "short_name": "Keaton",
+            "sections": [
+              {
+                "name": "Keaton Quiz Reward",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Clock Town Keaton HP"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Keaton Grass 1",
+                "access_rules": [
+                  "$mm|Milk Road Keaton Grass Reward 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              },
+              {
+                "name": "Keaton Grass 2-5",
+                "access_rules": [
+                  "$mm|Milk Road Keaton Grass Reward 2"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
+              },
+              {
+                "name": "Keaton Grass 6-9",
+                "access_rules": [
+                  "$mm|Milk Road Keaton Grass Reward 6"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 457,
+                "y": 367
+              }
+            ]
+          },
+          {
             "name": "Milk Road Gorman Brothers - Any Day",
             "short_name": "Gorman Race",
             "sections": [
@@ -1498,6 +1724,40 @@
                 "map": "termina",
                 "x": 470,
                 "y": 376
+              }
+            ]
+          },
+          {
+            "name": "Gorman Track Grass Patches",
+            "short_name": "Gorman Track Grass",
+            "sections": [
+              {
+                "name": "Gorman Track Grass Patch 1",
+                "access_rules": [
+                  "$mm|Gorman Track Grass Pack 1 Grass 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              },
+              {
+                "name": "Gorman Track Grass Patch 2",
+                "access_rules": [
+                  "$mm|Gorman Track Grass Pack 2 Grass 01"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 485,
+                "y": 388,
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ]
               }
             ]
           }
