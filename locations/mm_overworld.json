@@ -1167,6 +1167,18 @@
                   "$mm|Termina Field Tall Grass Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass in Grotto near stump",
+                "access_rules": [
+                  "$mm|Termina Field Tall Grass Grotto Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -1209,6 +1221,18 @@
                   "$mm|Termina Field Pillar Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "East Pillar Grotto Grass",
+                "access_rules": [
+                  "$mm|Termina Field Pillar Grotto Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -1231,6 +1255,18 @@
                   "$mm|Termina Field Peahat Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Peahat Grotto Grass",
+                "access_rules": [
+                  "$mm|Peahat Grotto Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 12
               }
             ],
             "map_locations": [
@@ -1274,15 +1310,27 @@
                 "access_rules": [
                   "$mm|Termina Field Cow Front"
                 ],
+                "visibility_rules": [
+                  "setting_cowShuffleMm_true"
+                ],
                 "item_count": 2
+              },
+              {
+                "name": "Grass in Cow Grotto (72 Grass!)",
+                "access_rules": [
+                  "$mm|Termina Field Cow Grotto Grass 01"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_cowShuffleMm_false"
-                ],
                 "x": 525,
                 "y": 340
               }
@@ -1300,6 +1348,18 @@
                   "$mm|Termina Field Bio Baba Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Beehive Grotto Grass",
+                "access_rules": [
+                  "$mm|Bio Baba Grotto Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -1344,6 +1404,96 @@
                   "$mm|Termina Field Gossip Stones HP"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Ocean Gossip Stone Grotto Grass",
+                "access_rules": [
+                  "$mm|Ocean Gossip Grotto Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 5
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 496,
+                "y": 300
+              }
+            ]
+          },
+          {
+            "name": "Gossip Stones Puzzle Grottos",
+            "short_name": "Gossips Grottos",
+            "sections": [
+              {
+                "name": "Play a Dungeon Song in all four grottos",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Gossip Stones HP"
+                ],
+                "item_count": 1
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 550,
+                "y": 276
+              }
+            ]
+          },
+          {
+            "name": "Gossip Stones Puzzle Grottos",
+            "short_name": "Gossips Grottos",
+            "sections": [
+              {
+                "name": "Play a Dungeon Song in all four grottos",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Gossip Stones HP"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Ikana Gossip Stone Grotto Grass",
+                "access_rules": [
+                  "$mm|Canyon Gossip Grotto Grass 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 5
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 596,
+                "y": 322
+              }
+            ]
+          },
+          {
+            "name": "Gossip Stones Puzzle Grottos",
+            "short_name": "Gossips Grottos",
+            "sections": [
+              {
+                "name": "Play a Dungeon Song in all four grottos",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Termina Field Gossip Stones HP"
+                ],
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1351,21 +1501,6 @@
                 "map": "termina",
                 "x": 536,
                 "y": 360
-              },
-              {
-                "map": "termina",
-                "x": 596,
-                "y": 322
-              },
-              {
-                "map": "termina",
-                "x": 550,
-                "y": 276
-              },
-              {
-                "map": "termina",
-                "x": 496,
-                "y": 300
               }
             ]
           },
