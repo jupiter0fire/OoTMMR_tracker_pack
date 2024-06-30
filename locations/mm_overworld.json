@@ -2930,7 +2930,7 @@
               {
                 "map": "termina",
                 "x": 582,
-                "y": 165,
+                "y": 170,
                 "force_invisibility_rules": [
                   "setting_tingleShuffle_vanilla"
                 ]
@@ -2978,7 +2978,7 @@
             ]
           },
           {
-            "name": "Gorn Elder",
+            "name": "Goron Elder",
             "short_name": "Goron Elder",
             "sections": [
               {
@@ -3737,7 +3737,7 @@
                   {
                     "map": "termina",
                     "x": 270,
-                    "y": 430
+                    "y": 436
                   }
                 ]
               },
@@ -4071,7 +4071,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Wizrobe",
+                    "name": "Wizzrobe",
                     "access_rules": [
                       "$mm|Secret Shrine Wizzrobe Chest"
                     ],
