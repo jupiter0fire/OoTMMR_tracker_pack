@@ -2101,6 +2101,78 @@
             ]
           },
           {
+            "name": "Romani Ranch Grass Patches",
+            "sections": [
+              {
+                "name": "Grass Patch 1 along South Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 1 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 2 along South Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 2 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 3 along South Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 3 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch along North Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 4 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch behind Barn",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 5 Grass 01"
+                ],
+                "item_count": 9
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 400,
+                "y": 366
+              }
+            ]
+          },
+          {
             "name": "Romani Ranch Cucco Shack",
             "short_name": "Cucco Shack",
             "sections": [
@@ -2184,8 +2256,7 @@
         "color": "#058e2e",
         "children": [
           {
-            "name": "Swamp Path Bat Tree Heart Piece",
-            "short_name": "Bat Tree PoH",
+            "name": "Swamp Path Bat Tree",
             "sections": [
               {
                 "name": "Kill the bat and climb",
@@ -2195,6 +2266,30 @@
                   "$mm|Road to Southern Swamp HP"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass Patch 1 near tree",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grass Pack 1 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 2 near tree",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grass Pack 2 Grass 01"
+                ],
+                "item_count": 12
               }
             ],
             "map_locations": [
@@ -2215,6 +2310,18 @@
                   "$mm|Road to Southern Swamp Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Road to Swamp Grotto Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grotto Grass 01"
+                ],
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -2274,6 +2381,18 @@
                   "$mm|Swamp Archery Reward 2"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass near Swamp Archery",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grass 1"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
