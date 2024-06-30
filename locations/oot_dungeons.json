@@ -266,7 +266,7 @@
     ]
   },
   {
-    "name": "Dodongo Cavern",
+    "name": "Dodongo's Cavern",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
@@ -637,7 +637,7 @@
     ]
   },
   {
-    "name": "Jabu Jabus Belly",
+    "name": "Jabu Jabu's Belly",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
@@ -3831,7 +3831,7 @@
     ]
   },
   {
-    "name": "Ganons Castle",
+    "name": "Ganon's Castle",
     "chest_unopened_img": "images/chest_brown_closed.png",
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
@@ -4090,7 +4090,7 @@
         "item_count": 5
       },
       {
-        "name": "Ganons Tower Boss Key Chest",
+        "name": "Ganon's Tower Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
           "$oot|Ganon Castle Boss Key"
@@ -4117,7 +4117,7 @@
       {
         "map": "oot",
         "size": 50,
-        "x": 1435,
+        "x": 1429,
         "y": 205
       }
     ]

@@ -419,7 +419,7 @@
                 "item_count": 1
               },
               {
-                "name": "Play Sarias Song",
+                "name": "Play Saria's Song",
                 "access_rules": [
                   "$oot|Lost Woods Skull Kid"
                 ],
@@ -1199,7 +1199,7 @@
             ]
           },
           {
-            "name": "Fishing Pont",
+            "name": "Fishing Pond",
             "sections": [
               {
                 "name": "Child Fishing",
@@ -1550,10 +1550,10 @@
             ]
           },
           {
-            "name": "LLR Talons House",
+            "name": "LLR Talon's House",
             "sections": [
               {
-                "name": "LLR Talons Chickens",
+                "name": "LLR Talon's Chickens",
                 "access_rules": [
                   "$oot|Lon Lon Ranch Talon Bottle"
                 ],
@@ -1778,10 +1778,10 @@
             ]
           },
           {
-            "name": "Kak Impas House Back",
+            "name": "Kak Impa's House Back",
             "sections": [
               {
-                "name": "Kak Impas House Freestanding PoH",
+                "name": "Kak Impa's House Freestanding PoH",
                 "short_name": "HP",
                 "access_rules": [
                   "$oot|Kakariko Impa House HP"
@@ -1791,7 +1791,7 @@
                 "item_count": 1
               },
               {
-                "name": "Kak Impas House Cow",
+                "name": "Kak Impa's House Cow",
                 "short_name": "Cow",
                 "access_rules": [
                   "$oot|Kakariko Cow"
@@ -2136,10 +2136,10 @@
             ]
           },
           {
-            "name": "Kak Above Impas House",
+            "name": "Kak Above Impa's House",
             "sections": [
               {
-                "name": "Kak GS Above Impas House (N)",
+                "name": "Kak GS Above Impa's House (N)",
                 "short_name": "GS",
                 "access_rules": [
                   "$oot|Kakariko GS Roof"
@@ -2416,11 +2416,11 @@
                 ]
               },
               {
-                "name": "Royal Familys Tomb",
+                "name": "Royal Family's Tomb",
                 "short_name": "Royal Tomb",
                 "sections": [
                   {
-                    "name": "Song from Royal Familys Tomb",
+                    "name": "Song from Royal Family's Tomb",
                     "short_name": "Song",
                     "access_rules": [
                       "$oot|Graveyard Royal Tomb Song"
@@ -2430,7 +2430,7 @@
                     "item_count": 1
                   },
                   {
-                    "name": "Royal Familys Tomb Chest",
+                    "name": "Royal Family's Tomb Chest",
                     "short_name": "Chest",
                     "access_rules": [
                       "$oot|Graveyard Royal Tomb Chest"
@@ -2935,7 +2935,7 @@
             "name": "GC Darunias Joy",
             "sections": [
               {
-                "name": "Play Sarias Song",
+                "name": "Play Saria's Song",
                 "access_rules": [
                   "$oot|Darunia"
                 ],
@@ -3344,7 +3344,7 @@
                 ]
               },
               {
-                "name": "Market Bomchu Bowling",
+                "name": "Market Bombchu Bowling",
                 "access_rules": [
                   "$oot|Bombchu Bowling Reward 1"
                 ],
@@ -4177,7 +4177,7 @@
         ]
       },
       {
-        "name": "Zoras Domain",
+        "name": "Zora's Domain",
         "children": [
           {
             "name": "ZD Chest",
@@ -4381,7 +4381,7 @@
         ]
       },
       {
-        "name": "Zoras Fountain",
+        "name": "Zora's Fountain",
         "children": [
           {
             "name": "ZF Great Fairy Fountain",
