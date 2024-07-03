@@ -2101,6 +2101,78 @@
             ]
           },
           {
+            "name": "Romani Ranch Grass Patches",
+            "sections": [
+              {
+                "name": "Grass Patch 1 along South Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 1 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 2 along South Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 2 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 3 along South Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 3 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch along North Wall",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 4 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch behind Barn",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Romani Ranch Grass Pack 5 Grass 01"
+                ],
+                "item_count": 9
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 400,
+                "y": 366
+              }
+            ]
+          },
+          {
             "name": "Romani Ranch Cucco Shack",
             "short_name": "Cucco Shack",
             "sections": [
@@ -2184,8 +2256,7 @@
         "color": "#058e2e",
         "children": [
           {
-            "name": "Swamp Path Bat Tree Heart Piece",
-            "short_name": "Bat Tree PoH",
+            "name": "Swamp Path Bat Tree",
             "sections": [
               {
                 "name": "Kill the bat and climb",
@@ -2195,6 +2266,30 @@
                   "$mm|Road to Southern Swamp HP"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass Patch 1 near tree",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grass Pack 1 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 2 near tree",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grass Pack 2 Grass 01"
+                ],
+                "item_count": 12
               }
             ],
             "map_locations": [
@@ -2215,6 +2310,18 @@
                   "$mm|Road to Southern Swamp Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Road to Swamp Grotto Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grotto Grass 01"
+                ],
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -2274,13 +2381,25 @@
                   "$mm|Swamp Archery Reward 2"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass near Swamp Archery",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Grass 1"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
                 "x": 563,
-                "y": 414
+                "y": 412
               }
             ]
           },
@@ -2399,16 +2518,52 @@
                 "access_rules": [
                   "$mm|Southern Swamp Owl Statue"
                 ],
+                "visibility_rules": [
+                  "setting_owlShuffle_anywhere"
+                ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass near Swamp Owl Statue",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Owl 1"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_owlShuffle_none"
-                ],
                 "x": 553,
+                "y": 425
+              }
+            ]
+          },
+          {
+            "name": "Front of Swamp Grass Patch",
+            "sections": [
+              {
+                "name": "Grass Patch",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Front 01"
+                ],
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 565,
                 "y": 425
               }
             ]
@@ -2442,12 +2597,18 @@
                 "access_rules": [
                   "$mm|Swamp Potion Shop Item 2"
                 ],
+                "visibility_rules": [
+                  "setting_shopShuffleMm_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Red Potion (20 Rupees)",
                 "access_rules": [
                   "$mm|Swamp Potion Shop Item 3"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleMm_full"
                 ],
                 "item_count": 1
               },
@@ -2458,28 +2619,183 @@
                 "access_rules": [
                   "$mm|Swamp Potion Shop Item 1"
                 ],
+                "visibility_rules": [
+                  "setting_shopShuffleMm_full"
+                ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass Patch 1 near Potion Shop",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch Pack 1 Grass 01"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Grass Patch 2 near Potion Shop",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch Pack 2 Grass 01"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Grass near Gossip Stone",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Southern Swamp Grass Near Witch 1"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
               {
                 "map": "termina",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleMm_none"
-                ],
                 "x": 633,
                 "y": 423
               }
             ]
           },
           {
-            "name": "Woods of Mystery Grotto",
-            "short_name": "Woods of Mystery Grotto",
+            "name": "Woods of Mystery",
             "sections": [
               {
-                "name": "Day 2",
+                "name": "Woods of Mystery Grotto, Day 2",
                 "access_rules": [
                   "$mm|Woods of Mystery Grotto"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Woods of Mystery Grotto Grass, Day 2",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grotto Grass 01"
+                ],
+                "item_count": 14
+              },
+              {
+                "name": "Woods of Mystery Grass SW, Day 1",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass SW 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Woods of Mystery Grass South",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass S 1"
+                ],
+                "item_count": 3
+              },
+              {
+                "name": "Woods of Mystery Grass West",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass W 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Woods of Mystery Grass Center",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass Center 1"
+                ],
+                "item_count": 4
+              },
+              {
+                "name": "Woods of Mystery Grass East",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass E 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Woods of Mystery Grass NW, Day 3",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass NW 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Woods of Mystery Grass North",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass N 1"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Woods of Mystery Grass NE",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass NE 1"
+                ],
+                "item_count": 5
+              },
+              {
+                "name": "Woods of Mystery Grass SE",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Woods of Mystery Grass SE"
                 ],
                 "item_count": 1
               }
@@ -2518,13 +2834,26 @@
               {
                 "name": "Southern Swamp Grotto",
                 "short_name": "Swamp Grotto",
-                "access_rules": [
-                  "$mm|Southern Swamp Grotto"
-                ],
                 "sections": [
                   {
                     "name": "Get in",
+                    "access_rules": [
+                      "$mm|Southern Swamp Grotto"
+                    ],
                     "item_count": 1
+                    
+                  },
+                  {
+                    "name": "Southern Swamp Grotto Grass",
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Southern Swamp Grotto Grass 01"
+                    ],
+                    "item_count": 14
                   }
                 ],
                 "map_locations": [
@@ -2599,6 +2928,18 @@
                           "$mm_event_raw|MAGIC_BEANS_PALACE"
                         ],
                         "item_count": 1
+                      },
+                      {
+                        "name": "Magic Bean Seller Grotto Grass",
+                        "visibility_rules": [
+                          "setting_shuffleGrassMm_true"
+                        ],
+                        "chest_unopened_img": "images/MM_Grass.png",
+                        "chest_opened_img": "images/GrassGreyscale.png",
+                        "access_rules": [
+                          "$mm|Deku Palace Grotto Grass 01"
+                        ],
+                        "item_count": 12
                       }
                     ],
                     "map_locations": [
@@ -2682,6 +3023,18 @@
                       "$mm|Woodfall Entrance Chest"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Woodfall Entrance Grass",
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Woodfall Grass 1"
+                    ],
+                    "item_count": 6
                   }
                 ],
                 "map_locations": [
