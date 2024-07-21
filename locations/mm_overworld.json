@@ -1929,7 +1929,7 @@
             ]
           },
           {
-            "name": "Milk Road Grass Circle",
+            "name": "Milk Road Keaton Grass Circle",
             "short_name": "Keaton",
             "sections": [
               {
@@ -3174,6 +3174,18 @@
                   "$mm|Mountain Village Tunnel Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Path to Graveyard Grotto Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Mountain Village Tunnel Grotto Grass 01"
+                ],
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -3291,6 +3303,124 @@
             ]
           },
           {
+            "name": "Mountain Village Grass",
+            "sections": [
+              {
+                "name": "Mountain Village Grass Patch 1",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Mountain Village Grass Pack 1 Grass 1"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Mountain Village Grass Patch 2",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Mountain Village Grass Pack 2 Grass 1"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Mountain Village Grass Patch 3",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Mountain Village Grass Pack 3 Grass 1"
+                ],
+                "item_count": 9
+              },
+              {
+                "name": "Mountain Village Standalone Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Mountain Village Grass 1"
+                ],
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 543,
+                "y": 147
+              }
+            ]
+          },
+          {
+            "name": "Mountain Village Keaton Grass Circle",
+            "short_name": "Keaton",
+            "sections": [
+              {
+                "name": "Keaton Quiz Reward",
+                "chest_unopened_img": "images/system/heartpiece.png",
+                "chest_opened_img": "images/system/heartpiece_grey.png",
+                "access_rules": [
+                  "$mm|Clock Town Keaton HP"
+                ],
+                "item_count": 1
+              },
+              {
+                "name": "Keaton Grass 1",
+                "access_rules": [
+                  "$mm|Mountain Village Keaton Grass Reward 1"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 1
+              },
+              {
+                "name": "Keaton Grass 2-5",
+                "access_rules": [
+                  "$mm|Mountain Village Keaton Grass Reward 2"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
+              },
+              {
+                "name": "Keaton Grass 6-9",
+                "access_rules": [
+                  "$mm|Mountain Village Keaton Grass Reward 6"
+                ],
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "item_count": 4
+              }
+            ],
+            "map_locations": [
+              {
+                  "map": "termina",
+                  "x": 546,
+                  "y": 162
+                }
+            ]
+          },
+          {
             "name": "Twin Islands Hot Spring Water Grotto",
             "short_name": "Twin Islands Grotto",
             "sections": [
@@ -3320,6 +3450,18 @@
                   "$mm|Twin Islands Ramp Grotto Chest"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Twin Island Ramps Grotto Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Twin Islands Ramp Grotto Grass 01"
+                ],
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -3375,6 +3517,30 @@
                 "map": "termina",
                 "x": 597,
                 "y": 155
+              }
+            ]
+          },
+          {
+            "name": "Twin Islands Grass",
+            "sections": [
+              {
+                "name": "Twin Islands Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Twin Islands Grass 01"
+                ],
+                "item_count": 12
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 608,
+                "y": 170
               }
             ]
           },
@@ -3482,6 +3648,30 @@
                   "$mm|Lone Peak Shrine Boulder Chest"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grass Patch 1",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Lone Peak Shrine Grass Pack 1 Grass 01"
+                ],
+                "item_count": 12
+              },
+              {
+                "name": "Grass Patch 2",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Lone Peak Shrine Grass Pack 2 Grass 01"
+                ],
+                "item_count": 12
               }
             ],
             "map_locations": [
@@ -3561,6 +3751,18 @@
                   "$mm|Path to Snowhead Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Path to Snowhead Grotto Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Path to Snowhead Grotto Grass 01"
+                ],
+                "item_count": 14
               },
               {
                 "name": "Get the PoH",
