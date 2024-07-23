@@ -312,10 +312,10 @@
                 ],
                 "map_locations": [
                   {
-                      "map": "termina",
-                      "x": 143,
-                      "y": 16
-                    }
+                    "map": "termina",
+                    "x": 143,
+                    "y": 16
+                  }
                 ]
               },
               {
@@ -1622,7 +1622,7 @@
                 "y": 323
               }
             ]
-          },   
+          },
           {
             "name": "Grass Patches North of Takkuri (Outer Ring)",
             "short_name": "SW Grass",
@@ -1854,7 +1854,7 @@
                 "y": 318
               }
             ]
-          }             
+          }
         ]
       },
       {
@@ -2841,7 +2841,6 @@
                       "$mm|Southern Swamp Grotto"
                     ],
                     "item_count": 1
-                    
                   },
                   {
                     "name": "Southern Swamp Grotto Grass",
@@ -3414,10 +3413,10 @@
             ],
             "map_locations": [
               {
-                  "map": "termina",
-                  "x": 546,
-                  "y": 162
-                }
+                "map": "termina",
+                "x": 546,
+                "y": 162
+              }
             ]
           },
           {
@@ -3841,16 +3840,28 @@
         "children": [
           {
             "name": "Great Bay Coast Grotto",
-            "chest_unopened_img": "images/system/chest_brown_closed.png",
-            "chest_opened_img": "images/system/chest_brown_open.png",
             "short_name": "Great Bay Grotto",
             "sections": [
               {
                 "name": "Grotto Behind Fisherman Hut",
+                "chest_unopened_img": "images/system/chest_brown_closed.png",
+                "chest_opened_img": "images/system/chest_brown_open.png",
                 "access_rules": [
                   "$mm|Great Bay Coast Fisherman Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Grotto Behind Fisherman Hut",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Great Bay Coast Fisherman Grotto Grass 01"
+                ],
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -3871,6 +3882,18 @@
                   "$mm_event_raw|SEAHORSE"
                 ],
                 "hosted_item": "EVENT_MM_SEAHORSE"
+              },
+              {
+                "name": "Grass Near Fisherman's House",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Great Bay Coast Grass 1"
+                ],
+                "item_count": 5
               }
             ],
             "map_locations": [
@@ -3930,6 +3953,18 @@
                       "setting_cowShuffleMm_true"
                     ],
                     "item_count": 2
+                  },
+                  {
+                    "name": "Great Bay Ledge Grotto Grass (72 Grass!)",
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Great Bay Cow Grotto Grass 01"
+                    ],
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -4392,6 +4427,18 @@
                       "$mm|Road to Ikana Grotto"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Road to Ikana Grotto Grass",
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Road to Ikana Grotto Grass 01"
+                    ],
+                    "item_count": 14
                   }
                 ],
                 "map_locations": [
@@ -4460,6 +4507,18 @@
                   "$mm|Ikana Graveyard Grotto"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Ikana Graveyard Grotto Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Grotto Grass 01"
+                ],
+                "item_count": 14
               }
             ],
             "map_locations": [
@@ -4547,6 +4606,42 @@
             ]
           },
           {
+            "name": "Ikana Graveyard Grass",
+            "sections": [
+              {
+                "name": "Ikana Graveyard Grass near Graves",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Grass 1"
+                ],
+                "item_count": 5
+              },
+              {
+                "name": "Ikana Graveyard Upper Grass Patch",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Ikana Graveyard Grass Pack Grass 1"
+                ],
+                "item_count": 9
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 692,
+                "y": 270
+              }
+            ]
+          },
+          {
             "name": "Ikana Valley",
             "children": [
               {
@@ -4592,16 +4687,28 @@
               },
               {
                 "name": "Ikana Canyon Grotto",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
                 "short_name": "Canyon Grotto",
                 "sections": [
                   {
                     "name": "Behind the waterfall",
+                    "chest_unopened_img": "images/system/chest_brown_closed.png",
+                    "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
                       "$mm|Ikana Valley Grotto"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Ikana Canyon Grotto Grass",
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Ikana Valley Grotto Grass 01"
+                    ],
+                    "item_count": 14
                   }
                 ],
                 "map_locations": [
