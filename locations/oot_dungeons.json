@@ -1196,6 +1196,19 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Grass",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -1242,6 +1255,32 @@
         "item_count": 1
       },
       {
+        "name": "Main Room Upper Grass",
+        "short_name": "Main Upper",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Main Room Top 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },
+      {
+        "name": "Main Room Lower Grass",
+        "short_name": "Main Lower",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Main Room Top 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 3
+      },
+      {
         "name": "Basement Chests",
         "short_name": "Basement",
         "access_rules": [
@@ -1277,6 +1316,45 @@
         "item_count": 1
       },
       {
+        "name": "Boomerang Room Lower Grass",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Boomerang Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Big Octo Grass",
+        "short_name": "Big Octo",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Big Octo Top 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },
+      {
+        "name": "After Big Octo Grass",
+        "short_name": "After Big Octo",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Room After Big Octo"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Falling Like Like Room Chest",
         "short_name": "Like Like",
         "access_rules": [
@@ -1298,6 +1376,19 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Torch Room Grass",
+        "short_name": "Torch",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Torch Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -1360,6 +1451,19 @@
         ],
         "item_count": 1
       },
+      {
+        "name": "Before Boss Grass",
+        "short_name": "Before Boss",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Grass Before Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },      
       {
         "name": "Barinade",
         "access_rules": [
