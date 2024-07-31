@@ -6,6 +6,7 @@
     "sections": [
       {
         "name": "Lobby Grass",
+        "short_name": "Lobby",
         "access_rules": [
           "$oot|Deku Tree Grass Lobby 1"
         ],
@@ -30,6 +31,7 @@
       },
       {
         "name": "Slingshot Room Grass",
+        "short_name": "Slingshot",
         "access_rules": [
           "$oot|Deku Tree Grass Slingshot Room 1"
         ],
@@ -53,6 +55,7 @@
       },
       {
         "name": "Compass Room Grass",
+        "short_name": "Compass",
         "access_rules": [
           "$oot|Deku Tree Grass Compass Room 1"
         ],
@@ -90,6 +93,7 @@
       },
       {
         "name": "Basement Grass",
+        "short_name": "Basement",
         "access_rules": [
           "$oot|Deku Tree Grass Basement Main 1"
         ],
@@ -139,6 +143,7 @@
       },
       {
         "name": "Eye Switch Room Grass",
+        "short_name": "Eye Switch",
         "access_rules": [
           "$oot|Deku Tree Grass Eye Switch Room 1"
         ],
@@ -151,6 +156,7 @@
       },
       {
         "name": "Water Room Grass",
+        "short_name": "Water",
         "access_rules": [
           "$oot|Deku Tree Grass Water Room 1"
         ],
@@ -163,6 +169,7 @@
       },
       {
         "name": "Torch Room Grass",
+        "short_name": "Torch",
         "access_rules": [
           "$oot|Deku Tree Grass Torch Room 1"
         ],
@@ -175,6 +182,7 @@
       },
       {
         "name": "Larva Room Grass",
+        "short_name": "Larva",
         "access_rules": [
           "$oot|Deku Tree Grass Larva Room 1"
         ],
@@ -200,6 +208,7 @@
       },
       {
         "name": "Pre-Boss Room Grass",
+        "short_name": "Pre-Boss",
         "access_rules": [
           "$oot|Deku Tree Grass Pre-Boss Room 1"
         ],
@@ -212,6 +221,7 @@
       },
       {
         "name": "Lower Entrance Grass",
+        "short_name": "Lower Lobby",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Entrance Lower 1"
         ],
@@ -224,6 +234,7 @@
       },
       {
         "name": "Upper Entrance Grass",
+        "short_name": "Upper Lobby",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Entrance Upper 1"
         ],
@@ -261,6 +272,7 @@
       },
       {
         "name": "Slingshot Room Front Grass",
+        "short_name": "Slingshot",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Slingshot Room Front 1"
         ],
@@ -284,6 +296,7 @@
       },
       {
         "name": "Slingshot Room Back Grass",
+        "short_name": "Slingshot Back",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Slingshot Room Back 1"
         ],
@@ -307,6 +320,7 @@
       },
       {
         "name": "Grass Before Compass Room",
+        "short_name": "Before Compass",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Room Before Compass 1"
         ],
@@ -344,6 +358,7 @@
       },
       {
         "name": "Basement Lower Grass",
+        "short_name": "Basement Lower",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Basement Lower 1"
         ],
@@ -367,6 +382,7 @@
       },
       {
         "name": "Room Before Spike Grass",
+        "short_name": "Before Spike",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Room Before Spike 1"
         ],
@@ -390,6 +406,7 @@
       },
       {
         "name": "Spike Room Front Grass",
+        "short_name": "Spikes",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Spike Room Front 1"
         ],
@@ -413,6 +430,7 @@
       },
       {
         "name": "Spike Room Back Grass",
+        "short_name": "Spikes Back",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Spike Room Back 1"
         ],
@@ -425,6 +443,7 @@
       },
       {
         "name": "Larva Room Grass",
+        "short_name": "Larva",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Larvae Room 1"
         ],
@@ -450,6 +469,7 @@
       },
       {
         "name": "Gravestone Room Grass",
+        "short_name": "Gravestone",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Gravestone Room 1"
         ],
@@ -475,6 +495,7 @@
       },
       {
         "name": "Basement Back Room Grass",
+        "short_name": "Back Room",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Back Room 1"
         ],
@@ -499,6 +520,7 @@
       },
       {
         "name": "Basement Ledge Grass",
+        "short_name": "Basement Upper",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Basement Upper 1"
         ],
@@ -511,6 +533,7 @@
       },
       {
         "name": "Pre-Boss Room Grass",
+        "short_name": "Pre-Boss",
         "access_rules": [
           "$ootmq|MQ Deku Tree Grass Room Before Boss 1"
         ],
@@ -523,6 +546,7 @@
       },
       {
         "name": "Gohma's Lair Grass",
+        "short_name": "Gohma",
         "access_rules": [
           "$oot|Deku Tree Boss Grass 1"
         ],
@@ -573,6 +597,7 @@
       },
       {
         "name": "Side Room Near Lower Lizalfos Grass",
+        "short_name": "East Side",
         "access_rules": [
           "$oot|Dodongo Cavern Grass East Corridor Side Room"
         ],
@@ -674,6 +699,7 @@
       },
       {
         "name": "Bridge Grass",
+        "short_name": "Bridge",
         "access_rules": [
           "$oot|Dodongo Cavern Grass Lobby"
         ],
@@ -711,6 +737,7 @@
       },
       {
         "name": "Below Bomb Bag Grass",
+        "short_name": "Near Bomb Bag",
         "access_rules": [
           "$oot|Dodongo Cavern Grass Bomb Bag Room"
         ],
@@ -734,6 +761,7 @@
       },
       {
         "name": "Room With One Eye-Switch Grass",
+        "short_name": "One Eye-Switch",
         "access_rules": [
           "$oot|Dodongo Cavern Grass Pre-Miniboss"
         ],
@@ -757,6 +785,7 @@
       },
       {
         "name": "Before Boss Room Grass",
+        "short_name": "Before Boss",
         "access_rules": [
           "$oot|Dodongo Cavern Grass Pre-Boss"
         ],
@@ -818,6 +847,7 @@
       },
       {
         "name": "Green Corridor Grass",
+        "short_name": "Green Corridor",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Grass Green Corridor Side Room 1"
         ],
@@ -854,6 +884,7 @@
       },
       {
         "name": "Grass Before Upper Lizalfos",
+        "short_name": "Before Lizalfos",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Grass Room Before Miniboss"
         ],
@@ -915,6 +946,7 @@
       },
       {
         "name": "Compass Chest Room Grass",
+        "short_name": "Compass",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Grass Compass Room 1"
         ],
@@ -927,6 +959,7 @@
       },
       {
         "name": "Vanilla Bomb Bag Room Grass",
+        "short_name": "Bomb Bag",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Grass Vanilla Bomb Bag Room"
         ],
@@ -1003,6 +1036,7 @@
       },
       {
         "name": "Boss Loop Grass",
+        "short_name": "Boss Loop",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Grass Boss Loop"
         ],
@@ -1015,6 +1049,7 @@
       },
       {
         "name": "Boss Loop Side Room Grass",
+        "short_name": "Boss Loop Side",
         "access_rules": [
           "$ootmq|MQ Dodongo Cavern Grass Boss Loop Side Room"
         ],
