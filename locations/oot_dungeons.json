@@ -572,6 +572,18 @@
         "item_count": 1
       },
       {
+        "name": "Side Room Near Lower Lizalfos Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Grass East Corridor Side Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false,setting_restoreBrokenActors_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Scarecrow",
         "short_name": "Scarecrow",
         "access_rules": [
@@ -661,6 +673,18 @@
         "item_count": 1
       },
       {
+        "name": "Bridge Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Grass Lobby"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Bomb Flower Platform Chest",
         "short_name": "Bomb Flower",
         "access_rules": [
@@ -686,6 +710,18 @@
         "item_count": 2
       },
       {
+        "name": "Below Bomb Bag Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Grass Bomb Bag Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "Bomb Bag Chest",
         "short_name": "Bomb Bag",
         "access_rules": [
@@ -697,6 +733,18 @@
         "item_count": 1
       },
       {
+        "name": "Room With One Eye-Switch Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Grass Pre-Miniboss"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
         "name": "End of Bridge Chest",
         "short_name": "Bridge",
         "access_rules": [
@@ -705,6 +753,18 @@
         "visibility_rules": [
           "setting_mq_DodongoCavern_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Before Boss Room Grass",
+        "access_rules": [
+          "$oot|Dodongo Cavern Grass Pre-Boss"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_false"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -757,6 +817,18 @@
         "item_count": 1
       },
       {
+        "name": "Green Corridor Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Grass Green Corridor Side Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 2
+      },
+      {
         "name": "Deku Scrub Side Room Near Lower Lizalfos",
         "short_name": "East Side",
         "access_rules": [
@@ -778,6 +850,18 @@
         "visibility_rules": [
           "setting_mq_DodongoCavern_true"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Grass Before Upper Lizalfos",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Grass Room Before Miniboss"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true,setting_restoreBrokenActors_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -827,6 +911,30 @@
           "setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
+        "item_count": 1
+      },
+      {
+        "name": "Compass Chest Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Grass Compass Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 4
+      },
+      {
+        "name": "Vanilla Bomb Bag Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Grass Vanilla Bomb Bag Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true,setting_restoreBrokenActors_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
@@ -891,6 +999,30 @@
         "visibility_rules": [
           "setting_mq_DodongoCavern_true"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Boss Loop Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Grass Boss Loop"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Loop Side Room Grass",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Grass Boss Loop Side Room"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
       },
       {
