@@ -1033,6 +1033,32 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Bottom Grass",
+        "short_name": "Entrance Bottom",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Entrance Bottom 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 3
+      },
+      {
+        "name": "Entrance Ledge Grass",
+        "short_name": "Entrance Ledge",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Entrance Ledge 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 2
+      },
+      {
         "name": "Pots in Main Room",
         "short_name": "Main Room Pots",
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
@@ -1057,6 +1083,19 @@
           "setting_strayFairyOtherShuffle_ownDungeon"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Main Room Grass",
+        "short_name": "Main",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 3
       },
       {
         "name": "Chest in Platform Room - Small Key",
@@ -1090,6 +1129,19 @@
           "$mm|Woodfall Temple Map"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Map Room Grass",
+        "short_name": "Map Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Map Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 5
       },
       {
         "name": "Kill Skulltula in Bridge Room",
@@ -1131,6 +1183,19 @@
         "item_count": 1
       },
       {
+        "name": "Water Room Grass",
+        "short_name": "Water Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Water Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 2
+      },
+      {
         "name": "Fight Dragonflies - Compass",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
@@ -1139,6 +1204,19 @@
           "$mm|Woodfall Temple Compass"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Compass Room Grass",
+        "short_name": "Compass Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Compass Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 3
       },
       {
         "name": "Dark Room Black Boes",
@@ -1152,6 +1230,19 @@
           "setting_strayFairyChestShuffle_ownDungeon"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Pits Room Grass",
+        "short_name": "Pits Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Pits Room 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 11
       },
       {
         "name": "Main Room Bubble",
@@ -1207,6 +1298,19 @@
         ]
       },
       {
+        "name": "Final Room Grass",
+        "short_name": "Final Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Grass Pre-Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 5
+      },
+      {
         "name": "Final Room Lower Right Bubble",
         "short_name": "Final Room Right Bubble",
         "chest_unopened_img": "images/system/mm_woodfall_stray_fairy.png",
@@ -1257,6 +1361,19 @@
           "setting_strayFairyOtherShuffle_ownDungeon"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Boss Room Grass",
+        "short_name": "Boss Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Woodfall Temple Boss Grass 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 16
       },
       {
         "name": "Odolwa",
