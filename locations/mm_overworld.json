@@ -4726,11 +4726,37 @@
                 "short_name": "Boss Gauntlet",
                 "sections": [
                   {
+                    "name": "Entrance Grass",
+                    "short_name": "Entrance",
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Secret Shrine Grass Entrance 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "item_count": 6
+                  },
+                  {
                     "name": "Dinolfos",
                     "access_rules": [
                       "$mm|Secret Shrine Dinalfos Chest"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Dinolfos Room Grass",
+                    "short_name": "Dinolfos",
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Secret Shrine Grass Dinolfos 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "item_count": 4
                   },
                   {
                     "name": "Wizzrobe",
@@ -4740,6 +4766,19 @@
                     "item_count": 1
                   },
                   {
+                    "name": "Wizzrobe Room Grass",
+                    "short_name": "Wizzrobe",
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Secret Shrine Grass Wizzrobe 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "item_count": 5
+                  },
+                  {
                     "name": "Wart",
                     "access_rules": [
                       "$mm|Secret Shrine Wart Chest"
@@ -4747,11 +4786,37 @@
                     "item_count": 1
                   },
                   {
+                    "name": "Wart Room Grass",
+                    "short_name": "Wart",
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Secret Shrine Grass Wart 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "item_count": 8
+                  },
+                  {
                     "name": "Garo Master",
                     "access_rules": [
                       "$mm|Secret Shrine Garo Master Chest"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Garo Room Grass",
+                    "short_name": "Garo",
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Secret Shrine Grass Garo Master 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "item_count": 6
                   },
                   {
                     "name": "Defeat all four minibosses",
