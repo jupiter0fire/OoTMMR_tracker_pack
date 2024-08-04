@@ -1,5 +1,4 @@
 VARIANT = Tracker.ActiveVariantUID
-HAS_KEYS = VARIANT:find("keysanity")
 HAS_ER = VARIANT:find("er")
 PACK_READY = false
 
