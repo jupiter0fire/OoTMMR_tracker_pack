@@ -1694,6 +1694,32 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Grass",
+        "short_name": "Entrance Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Grass Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 3
+      },
+      {
+        "name": "Garden Room Grass",
+        "short_name": "Garden Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Stone Tower Temple Grass Garden 1"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 6
+      },
+      {
         "name": "Kill Armos in Lava Room - Small Key",
         "chest_unopened_img": "images/system/chest_unopened_big.png",
         "chest_opened_img": "images/system/chest_open_big.png",
