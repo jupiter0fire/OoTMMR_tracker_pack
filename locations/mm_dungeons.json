@@ -2107,6 +2107,19 @@
         "item_count": 1
       },
       {
+        "name": "Main Room Grass",
+        "short_name": "Main Room",
+        "chest_unopened_img": "images/MM_Grass.png",
+        "chest_opened_img": "images/GrassGreyscale.png",
+        "access_rules": [
+          "$mm|Snowhead Temple Grass 01"
+        ],
+        "visibility_rules": [
+          "setting_shuffleGrassMm_true"
+        ],
+        "item_count": 10
+      },
+      {
         "name": "Basement Chest",
         "short_name": "Chest in Basement",
         "chest_unopened_img": "images/system/mm_snowhead_stray_fairy.png",
