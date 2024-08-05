@@ -2037,6 +2037,18 @@ function _mm_logic()
 		return can_use_farore() and (has_hot_water_mtn() or has_hot_water_well())
 	end
 
+	function hit_target_range_melee()
+		return has_sticks() or has_nuts() or has_weapon() or has_bombs() or hit_target_range_close()
+	end
+
+	function hit_target_range_close()
+		return can_hookshot_short() or hit_target_range_far()
+	end
+
+	function hit_target_range_far()
+		return can_use_deku_bubble() or has_arrows() or has_mask_zora() or can_hookshot()
+	end
+
 	function has_bottle()
 		return has('BOTTLE_EMPTY') or has('BOTTLE_POTION_RED') or has('BOTTLE_POTION_GREEN') or has('BOTTLE_POTION_BLUE') or has('BOTTLE_MILK') or event('GOLD_DUST_USED') or has('BOTTLE_CHATEAU') or has('BOTTLE_FAIRY') or has('BOTTLE_POE') or has('BOTTLE_BIG_POE')
 	end
@@ -2219,8 +2231,6 @@ function _mm_logic()
         ["exits"] = {
             ["Ikana Castle Exterior"] = function () return true end,
             ["Ancient Castle of Ikana Interior"] = function () return can_reset_time_dungeon() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Ancient Castle of Ikana Interior"] = {
@@ -2232,8 +2242,6 @@ function _mm_logic()
             ["Ancient Castle of Ikana Interior North"] = function () return can_use_fire_short_range() end,
             ["Ancient Castle of Ikana Interior South"] = function () return can_use_fire_short_range() end,
             ["Ancient Castle of Ikana Behind Block"] = function () return has_mirror_shield() and event('IKANA_CASTLE_LIGHT2') or can_use_light_arrows() or short_hook_anywhere() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Ancient Castle of Ikana Pot Entrance 1"] = function () return true end,
@@ -2244,8 +2252,6 @@ function _mm_logic()
         ["exits"] = {
             ["Ancient Castle of Ikana Interior"] = function () return true end,
             ["Ancient Castle of Ikana Interior North 2"] = function () return has('MASK_DEKU') or short_hook_anywhere() or (can_use_nayru() and is_tall()) end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Ancient Castle of Ikana Pot Left First Room 1"] = function () return true end,
@@ -2260,8 +2266,6 @@ function _mm_logic()
         ["exits"] = {
             ["Ancient Castle of Ikana Interior North"] = function () return true end,
             ["Ancient Castle of Ikana Interior North 3"] = function () return can_use_lens() or short_hook_anywhere() or has_hover_boots() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Ancient Castle of Ikana Pot Left Second Room 1"] = function () return has('MASK_DEKU') or short_hook_anywhere() or has_hover_boots() end,
@@ -2274,8 +2278,6 @@ function _mm_logic()
         ["exits"] = {
             ["Ancient Castle of Ikana Interior North 2"] = function () return true end,
             ["Ancient Castle of Ikana Roof Exterior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Ancient Castle of Ikana Pot Left Third Room 1"] = function () return true end,
@@ -2292,9 +2294,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Interior North 3"] = function () return true end,
             ["Ancient Castle of Ikana Roof Interior"] = function () return can_goron_bomb_jump() or short_hook_anywhere() end,
             ["Ikana Castle Exterior"] = function () return true end,
-            ["Ikana Castle Entrance"] = function () return has('MASK_DEKU') or has_hover_boots() or trick('MM_IKANA_PILLAR_TO_ENTRANCE') end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
+            ["Ikana Castle Entrance"] = function () return trick('MM_IKANA_PILLAR_ENTRANCE_FLOAT') and (has('MASK_DEKU') or has_hover_boots()) or trick('MM_IKANA_PILLAR_ENTRANCE_JUMP') end,
         },
         ["locations"] = {
             ["Ancient Castle of Ikana HP"] = function () return (has_arrows() or can_hookshot_short()) and has('MASK_DEKU') or short_hook_anywhere() end,
@@ -2304,24 +2304,18 @@ function _mm_logic()
         ["exits"] = {
             ["Ancient Castle of Ikana Interior"] = function () return true end,
             ["Ancient Castle of Ikana Wizzrobe"] = function () return can_reset_time() and ((has_mirror_shield() and event('IKANA_CASTLE_LIGHT') or can_use_light_arrows()) or short_hook_anywhere()) end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Ancient Castle of Ikana Wizzrobe"] = {
         ["exits"] = {
             ["Ancient Castle of Ikana Interior South"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) and (can_use_light_arrows() or short_hook_anywhere()) and (can_fight() or has_arrows()) end,
             ["Ancient Castle of Ikana South Last"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) and (can_fight() or has_arrows()) end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Ancient Castle of Ikana South Last"] = {
         ["exits"] = {
             ["Ancient Castle of Ikana Wizzrobe"] = function () return true end,
             ["Ancient Castle of Ikana Roof Interior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Ancient Castle of Ikana Pot Right 1"] = function () return true end,
@@ -2337,16 +2331,12 @@ function _mm_logic()
             ["Ancient Castle of Ikana Interior South"] = function () return event('IKANA_CASTLE_LIGHT') end,
             ["Ancient Castle of Ikana South Last"] = function () return true end,
             ["Ancient Castle of Ikana Roof Exterior"] = function () return trick('MM_IKANA_ROOF_PARKOUR') or short_hook_anywhere() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Ancient Castle of Ikana Behind Block"] = {
         ["exits"] = {
             ["Ancient Castle of Ikana Interior"] = function () return can_use_light_arrows() or short_hook_anywhere() end,
             ["Ancient Castle of Ikana Pre-Boss"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Ancient Castle of Ikana Pre-Boss"] = {
@@ -2389,8 +2379,6 @@ function _mm_logic()
             ["Ikana Canyon"] = function () return true end,
             ["Beneath The Well North Section"] = function () return can_pass_gibdo() and has_blue_potion() and can_reset_time_dungeon() end,
             ["Beneath The Well East Section"] = function () return can_pass_gibdo() and has_beans() and can_reset_time_dungeon() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Beneath The Well Wallmaster Near Entrance"] = {
@@ -2422,8 +2410,6 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Beneath The Well Wallmaster Near Fountain"] = function () return soul_wallmaster() and has_water() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Beneath The Well Keese Chest"] = function () return has_water() and has_bugs() and can_use_lens() end,
@@ -2455,18 +2441,12 @@ function _mm_logic()
             ["Beneath The Well Entrance"] = function () return true end,
             ["Beneath The Well Middle Section"] = function () return can_pass_gibdo() and has_fish() end,
             ["Beneath The Well Cow Hall"] = function () return can_pass_gibdo() and has_nuts() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Beneath The Well Cow Hall"] = {
         ["events"] = {
             ["WELL_BIG_POE"] = function () return has_bombs() and has_weapon_range() end,
             ["BUGS"] = function () return true end,
-        },
-        ["exits"] = {
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Beneath The Well Cow"] = function () return (has_hot_water_well() or (has_hot_water_distance() and has('OWL_IKANA_CANYON')) or has_hot_water_er()) and can_play_epona() end,
@@ -2491,8 +2471,6 @@ function _mm_logic()
         ["exits"] = {
             ["Beneath The Well East Section"] = function () return true end,
             ["Beneath The Well Final Hall"] = function () return has_big_poe() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Beneath The Well Skulltulla Chest"] = function () return can_pass_gibdo() and has_bugs() and has_fire_sticks() end,
@@ -2517,8 +2495,6 @@ function _mm_logic()
             ["Beneath The Well Wallmaster Near Exit"] = function () return soul_wallmaster() end,
             ["Beneath The Well Middle Section"] = function () return true end,
             ["Beneath The Well Sun Block"] = function () return can_pass_gibdo() and has_milk() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Beneath The Well Grass Near End 1"] = function () return true end,
@@ -2532,8 +2508,6 @@ function _mm_logic()
         ["exits"] = {
             ["Beneath The Well Final Hall"] = function () return true end,
             ["Beneath The Well End"] = function () return has_mirror_shield() or can_use_light_arrows() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Beneath The Well Mirror Shield"] = function () return can_use_fire_short_range() or (has_sticks() and has_big_poe() and has_milk() and can_pass_gibdo()) end,
@@ -2543,8 +2517,6 @@ function _mm_logic()
         ["exits"] = {
             ["Beneath The Well Sun Block"] = function () return can_use_light_arrows() and can_reset_time_dungeon() end,
             ["Ikana Castle Exterior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Great Bay Temple"] = {
@@ -3035,8 +3007,6 @@ function _mm_logic()
         ["exits"] = {
             ["Ocean Spider House Front"] = function () return (has_explosives() or trick_keg_explosives()) and can_reset_time_dungeon() end,
             ["Great Bay Coast"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Ocean Spider House Wallet"] = function () return soul_citizen() and has('GS_TOKEN_OCEAN', 30) end,
@@ -3050,8 +3020,6 @@ function _mm_logic()
         ["exits"] = {
             ["Ocean Spider House"] = function () return true end,
             ["Ocean Spider House Back"] = function () return can_hookshot_short() or can_goron_bomb_jump() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Ocean Skulltula Entrance Right Wall"] = function () return gs() and can_hookshot_short() end,
@@ -3064,10 +3032,6 @@ function _mm_logic()
         },
     },
     ["Ocean Spider House Back"] = {
-        ["exits"] = {
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
-        },
         ["locations"] = {
             ["Ocean Skulltula 2nd Room Ceiling Edge"] = function () return gs() and (can_hookshot_short() or has_mask_zora()) end,
             ["Ocean Skulltula 2nd Room Ceiling Plank"] = function () return gs() and (can_hookshot_short() or has_mask_zora()) end,
@@ -3110,6 +3074,15 @@ function _mm_logic()
             ["Ocean Spider House Pot Storage Top 1"] = function () return has_fire_sticks() and can_hookshot_short() end,
             ["Ocean Spider House Pot Storage Top 2"] = function () return has_fire_sticks() and can_hookshot_short() end,
             ["Ocean Spider House Pot Storage Top 3"] = function () return has_fire_sticks() and can_hookshot_short() end,
+            ["Ocean Spider House Wonder Item Masks 1"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 2"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 3"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 4"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 5"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 6"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 7"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 8"] = function () return hit_target_range_close() end,
+            ["Ocean Spider House Wonder Item Masks 9"] = function () return hit_target_range_close() end,
         },
     },
     ["VOID"] = {
@@ -3380,6 +3353,9 @@ function _mm_logic()
             ["Clock Town South Chest Upper"] = function () return (can_hookshot() or short_hook_anywhere() or (has('MASK_DEKU') and event('CLOCK_TOWN_SCRUB')) or (can_goron_bomb_jump() and can_hookshot_short())) and final_day() end,
             ["Clock Town Business Scrub"] = function () return soul_business_scrub() and event('CLOCK_TOWN_SCRUB') end,
             ["Clock Town Post Box"] = function () return has('MASK_POSTMAN') end,
+            ["Clock Town South Wonder Item 1"] = function () return hit_target_range_far() end,
+            ["Clock Town South Wonder Item 2"] = function () return hit_target_range_far() end,
+            ["Clock Town South Wonder Item 3"] = function () return hit_target_range_far() end,
         },
     },
     ["Clock Town South Upper West"] = {
@@ -3503,6 +3479,15 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Silver Rupee Chest"] = function () return true end,
             ["Clock Town Postman Hat"] = function () return event('POSTMAN_FREEDOM') and between(NIGHT3_PM_06_00, NIGHT3_AM_05_00) end,
+            ["Clock Town East Wonder Item Target Left 1"] = function () return hit_target_range_melee() end,
+            ["Clock Town East Wonder Item Target Left 2"] = function () return hit_target_range_melee() end,
+            ["Clock Town East Wonder Item Target Left 3"] = function () return hit_target_range_melee() end,
+            ["Clock Town East Wonder Item Target Right 1"] = function () return hit_target_range_melee() end,
+            ["Clock Town East Wonder Item Target Right 2"] = function () return hit_target_range_melee() end,
+            ["Clock Town East Wonder Item Target Right 3"] = function () return hit_target_range_melee() end,
+            ["Clock Town East Wonder Item Basket 1"] = function () return true end,
+            ["Clock Town East Wonder Item Basket 2"] = function () return true end,
+            ["Clock Town East Wonder Item Basket 3"] = function () return true end,
         },
     },
     ["Clock Town East Postbox"] = {
@@ -3765,6 +3750,9 @@ function _mm_logic()
             ["Stock Pot Inn Grandma HP 1"] = function () return soul_old_hag() and has('MASK_ALL_NIGHT') and (is_day1() or is_day2()) end,
             ["Stock Pot Inn Grandma HP 2"] = function () return soul_old_hag() and has('MASK_ALL_NIGHT') and (is_day1() or is_day2()) end,
             ["Stock Pot Inn ??? HP"] = function () return soul_npc(SOUL_NPC_TOILET_HAND) and cond(setting('erIndoorsExtra'), has_paper() and midnight(), has_paper() and midnight() and (clock_night3() or has('ROOM_KEY') or has('MASK_DEKU') or has_hover_boots() or event('SPI_ROOF_FARORE') or trick('MM_STOCK_POT_WAIT'))) end,
+            ["Stock Pot Inn Wonder Item 1"] = function () return has_mask_zora() and has_magic() end,
+            ["Stock Pot Inn Wonder Item 2"] = function () return has_mask_zora() and has_magic() end,
+            ["Stock Pot Inn Wonder Item 3"] = function () return has_mask_zora() and has_magic() end,
         },
     },
     ["Clock Town East SPI Roof"] = {
@@ -4074,6 +4062,26 @@ function _mm_logic()
             ["Termina Field Grass Pack 18 Grass 11"] = function () return true end,
             ["Termina Field Grass Pack 18 Grass 12"] = function () return true end,
             ["Termina Field Rupee"] = function () return true end,
+            ["Termina Field Wonder Item Grass 1"] = function () return true end,
+            ["Termina Field Wonder Item Grass 2"] = function () return true end,
+            ["Termina Field Wonder Item Grass 3"] = function () return true end,
+            ["Termina Field Wonder Item Grass 4"] = function () return true end,
+            ["Termina Field Wonder Item Grass 5"] = function () return true end,
+            ["Termina Field Wonder Item Hollow Trunk"] = function () return goron_fast_roll() or has('MASK_DEKU') end,
+            ["Termina Field Wonder Item Fountains 1"] = function () return true end,
+            ["Termina Field Wonder Item Fountains 2"] = function () return true end,
+            ["Termina Field Wonder Item North Ramp"] = function () return goron_fast_roll() end,
+            ["Termina Field Wonder Item West Ramp"] = function () return true end,
+            ["Termina Field Wonder Item South West Ramp"] = function () return true end,
+            ["Termina Field Wonder Item Shell 1"] = function () return hit_target_range_close() end,
+            ["Termina Field Wonder Item Shell 2"] = function () return hit_target_range_close() end,
+            ["Termina Field Wonder Item Shell 3"] = function () return hit_target_range_close() end,
+            ["Termina Field Wonder Item Shell Side 1"] = function () return hit_target_range_melee() end,
+            ["Termina Field Wonder Item Shell Side 2"] = function () return hit_target_range_melee() end,
+            ["Termina Field Wonder Item Shell Side 3"] = function () return hit_target_range_melee() end,
+            ["Termina Field Wonder Item Graffiti 1"] = function () return true end,
+            ["Termina Field Wonder Item Graffiti 2"] = function () return true end,
+            ["Termina Field Wonder Item Graffiti 3"] = function () return true end,
         },
     },
     ["Grass Grotto"] = {
@@ -5620,6 +5628,12 @@ function _mm_logic()
             ["Romani Ranch Grass Pack 5 Grass 07"] = function () return true end,
             ["Romani Ranch Grass Pack 5 Grass 08"] = function () return true end,
             ["Romani Ranch Grass Pack 5 Grass 09"] = function () return true end,
+            ["Romani Ranch Wonder Item Fence 1"] = function () return true end,
+            ["Romani Ranch Wonder Item Fence 2"] = function () return true end,
+            ["Romani Ranch Wonder Item Fence 3"] = function () return true end,
+            ["Romani Ranch Wonder Item Fence 4"] = function () return true end,
+            ["Romani Ranch Wonder Item Fence 5"] = function () return true end,
+            ["Romani Ranch Wonder Item Fence 6"] = function () return true end,
         },
     },
     ["Cucco Shack"] = {
@@ -5632,6 +5646,12 @@ function _mm_logic()
         },
         ["locations"] = {
             ["Cucco Shack Bunny Mask"] = function () return soul_grog() and has('MASK_BREMEN') end,
+            ["Cucco Shack Wonder Item 1"] = function () return true end,
+            ["Cucco Shack Wonder Item 2"] = function () return true end,
+            ["Cucco Shack Wonder Item 3"] = function () return true end,
+            ["Cucco Shack Wonder Item 4"] = function () return true end,
+            ["Cucco Shack Wonder Item 5"] = function () return true end,
+            ["Cucco Shack Wonder Item 6"] = function () return true end,
         },
     },
     ["Doggy Racetrack"] = {
@@ -5658,6 +5678,8 @@ function _mm_logic()
             ["Romani Ranch Barn Cow Left"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
             ["Romani Ranch Barn Cow Right Front"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
             ["Romani Ranch Barn Cow Right Back"] = function () return (between(NIGHT1_PM_06_00, NIGHT1_AM_02_30) or event('ALIENS')) and can_play_epona() end,
+            ["Romani Ranch Barn Wonder Item 1"] = function () return true end,
+            ["Romani Ranch Barn Wonder Item 2"] = function () return true end,
         },
     },
     ["Ranch House"] = {
@@ -5685,13 +5707,14 @@ function _mm_logic()
             ["Fisher's Hut"] = function () return true end,
             ["Great Bay Fence"] = function () return true end,
             ["Great Bay Coast Fortress"] = function () return underwater_walking() end,
-            ["Pinnacle Rock Entrance"] = function () return true end,
+            ["Great Bay Coast Near Pinnacle"] = function () return true end,
             ["Laboratory"] = function () return true end,
             ["Zora Cape"] = function () return true end,
             ["Ocean Spider House"] = function () return true end,
             ["Great Bay Grotto"] = function () return true end,
             ["GBC Near Cow Grotto"] = function () return can_hookshot() end,
             ["Owl Great Bay"] = function () return true end,
+            ["Great Bay Coast Water Void"] = function () return true end,
         },
         ["locations"] = {
             ["Great Bay Coast Zora Mask"] = function () return can_play_healing() end,
@@ -5719,10 +5742,31 @@ function _mm_logic()
             ["Great Bay Coast Grass 5"] = function () return true end,
         },
     },
+    ["Great Bay Coast Water Void"] = {
+        ["exits"] = {
+            ["VOID"] = function () return true end,
+        },
+    },
+    ["Great Bay Coast Near Pinnacle"] = {
+        ["exits"] = {
+            ["Pinnacle Rock Entrance"] = function () return true end,
+            ["Great Bay Coast"] = function () return can_reset_time() end,
+            ["Great Bay Coast Near Pinnacle Water Void"] = function () return true end,
+            ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
+            ["WARP_SONGS"] = function () return has_mask_zora() end,
+        },
+    },
+    ["Great Bay Coast Near Pinnacle Water Void"] = {
+        ["exits"] = {
+            ["VOID"] = function () return true end,
+        },
+    },
     ["Great Bay Coast Fortress"] = {
         ["exits"] = {
-            ["Great Bay Coast"] = function () return underwater_walking() end,
+            ["Great Bay Coast"] = function () return underwater_walking() and can_reset_time() end,
             ["Pirate Fortress"] = function () return true end,
+            ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
+            ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
     },
     ["Great Bay Grotto"] = {
@@ -5860,8 +5904,11 @@ function _mm_logic()
     },
     ["Pinnacle Rock Entrance"] = {
         ["exits"] = {
-            ["Pinnacle Rock"] = function () return underwater_walking_strict() and (event('SEAHORSE') or trick('MM_NO_SEAHORSE')) end,
-            ["Great Bay Coast"] = function () return true end,
+            ["Pinnacle Rock"] = function () return can_reset_time() and underwater_walking_strict() and (event('SEAHORSE') or trick('MM_NO_SEAHORSE')) end,
+            ["Great Bay Coast Near Pinnacle"] = function () return true end,
+            ["Pinnacle Rock Water Void"] = function () return true end,
+            ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
+            ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
     },
     ["Pinnacle Rock"] = {
@@ -5871,6 +5918,7 @@ function _mm_logic()
             ["FISH"] = function () return true end,
         },
         ["exits"] = {
+            ["Pinnacle Rock Water Void"] = function () return true end,
             ["Pinnacle Rock Entrance"] = function () return true end,
         },
         ["locations"] = {
@@ -5888,6 +5936,11 @@ function _mm_logic()
             ["Pinnacle Rock Pot 09"] = function () return true end,
             ["Pinnacle Rock Pot 10"] = function () return true end,
             ["Pinnacle Rock Pot 11"] = function () return true end,
+        },
+    },
+    ["Pinnacle Rock Water Void"] = {
+        ["exits"] = {
+            ["VOID"] = function () return true end,
         },
     },
     ["Laboratory"] = {
@@ -5914,6 +5967,7 @@ function _mm_logic()
             ["Great Bay Near Fairy Fountain"] = function () return can_hookshot() and (has_explosives() or trick_keg_explosives() or short_hook_anywhere()) end,
             ["Zora Cape Grotto"] = function () return can_break_boulders() end,
             ["Zora Cape Pot Game"] = function () return soul_zora() and is_day() and (has_weapon() or has_mask_zora() or can_hookshot_short() or has_bow()) end,
+            ["Zora Cape Water Void"] = function () return true end,
         },
         ["locations"] = {
             ["Zora Cape Underwater Chest"] = function () return underwater_walking() end,
@@ -5998,8 +6052,10 @@ function _mm_logic()
     },
     ["Zora Cape Near Hall"] = {
         ["exits"] = {
-            ["Zora Cape"] = function () return underwater_walking() or (can_dive_small() and trick('MM_ZORA_HALL_HUMAN')) end,
+            ["Zora Cape"] = function () return can_reset_time() and underwater_walking() or (can_dive_small() and trick('MM_ZORA_HALL_HUMAN')) end,
             ["Zora Hall Entrance"] = function () return underwater_walking() or can_dive_small() end,
+            ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
+            ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
     },
     ["Zora Hall Entrance"] = {
@@ -6066,6 +6122,12 @@ function _mm_logic()
             ["Zora Hall"] = function () return true end,
             ["Great Bay Temple"] = function () return turtle_woken() and can_hookshot() end,
             ["Owl Zora Cape"] = function () return true end,
+            ["Zora Cape Water Void"] = function () return true end,
+        },
+    },
+    ["Zora Cape Water Void"] = {
+        ["exits"] = {
+            ["VOID"] = function () return true end,
         },
     },
     ["Behind Gorman Fence"] = {
@@ -6211,6 +6273,18 @@ function _mm_logic()
             ["Ikana Graveyard Grass Pack Grass 7"] = function () return true end,
             ["Ikana Graveyard Grass Pack Grass 8"] = function () return true end,
             ["Ikana Graveyard Grass Pack Grass 9"] = function () return true end,
+            ["Ikana Graveyard Wonder Item 01"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 02"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 03"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 04"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 05"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 06"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 07"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 08"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 09"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 10"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 11"] = function () return hit_target_range_close() end,
+            ["Ikana Graveyard Wonder Item 12"] = function () return hit_target_range_close() end,
         },
     },
     ["Ikana Graveyard Grotto"] = {
@@ -6609,8 +6683,6 @@ function _mm_logic()
         ["exits"] = {
             ["Great Bay Coast Fortress"] = function () return underwater_walking() or can_dive_small() end,
             ["Pirate Fortress Entrance"] = function () return can_reset_time_dungeon() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Entrance"] = {
@@ -6622,8 +6694,6 @@ function _mm_logic()
             ["Pirate Fortress Sewers"] = function () return underwater_walking() and has_mask_goron() end,
             ["Pirate Fortress Entrance Balcony"] = function () return can_hookshot() or (can_hookshot_short() and trick('MM_PFI_BOAT_HOOK')) end,
             ["Pirate Fortress Entrance Lookout"] = function () return can_hookshot_short() and trick('MM_PFI_BOAT_HOOK') end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Entrance Chest 1"] = function () return underwater_walking() end,
@@ -6636,16 +6706,14 @@ function _mm_logic()
             ["Pirate Fortress Entrance"] = function () return true end,
             ["Pirate Fortress Sewers End"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Sewers"] = {
         ["exits"] = {
-            ["Pirate Fortress Entrance"] = function () return true end,
-            ["Pirate Fortress Sewers Cage Room"] = function () return has_mask_zora() or (underwater_walking_strict() and can_lift_silver()) end,
-            ["SOARING"] = function () return underwater_walking() and can_play_soaring() end,
-            ["WARP_SONGS"] = function () return underwater_walking() end,
+            ["Pirate Fortress Sewers Entrance"] = function () return true end,
+            ["Pirate Fortress Sewers Cage Room"] = function () return can_reset_time() and has_mask_zora() or (underwater_walking_strict() and can_lift_silver()) end,
+            ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
+            ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
         ["locations"] = {
             ["Pirate Fortress Sewers Chest 1"] = function () return underwater_walking_strict() end,
@@ -6656,8 +6724,6 @@ function _mm_logic()
             ["Pirate Fortress Entrance"] = function () return true end,
             ["Pirate Fortress Sewers"] = function () return has_mask_zora() or (underwater_walking_strict() and can_lift_silver()) end,
             ["Pirate Fortress Sewers After Gate"] = function () return has_weapon_range() or (has_hover_boots() and can_activate_crystal()) end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Sewers Chest 2"] = function () return underwater_walking() end,
@@ -6676,8 +6742,6 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Entrance"] = function () return true end,
             ["Pirate Fortress Sewers End"] = function () return has_weapon_range() or has_bombs() or has_bombchu() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Sewers Pot Waterway 1"] = function () return true end,
@@ -6693,8 +6757,6 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Entrance Balcony"] = function () return has_weapon_range() or (has_hover_boots() and can_activate_crystal()) end,
             ["Pirate Fortress Sewers After Gate"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Sewers Pot End 1"] = function () return true end,
@@ -6703,6 +6765,13 @@ function _mm_logic()
             ["Pirate Fortress Sewers Rupee Water Elevator 1"] = function () return true end,
             ["Pirate Fortress Sewers Rupee Water Elevator 2"] = function () return true end,
             ["Pirate Fortress Sewers Rupee Water Elevator 3"] = function () return true end,
+        },
+    },
+    ["Pirate Fortress Sewers Entrance"] = {
+        ["exits"] = {
+            ["Pirate Fortress Entrance"] = function () return can_reset_time() end,
+            ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
+            ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
     },
     ["Pirate Fortress Interior"] = {
@@ -6718,8 +6787,6 @@ function _mm_logic()
             ["Pirate Fortress Lone Guard Exit"] = function () return short_hook_anywhere() end,
             ["Pirate Fortress Barrel Maze Exit"] = function () return short_hook_anywhere() or (can_hookshot() and has_hover_boots()) end,
             ["Pirate Fortress Treasure Room Exit"] = function () return short_hook_anywhere() or has_hover_boots() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Interior Lower Chest"] = function () return true end,
@@ -6727,6 +6794,12 @@ function _mm_logic()
             ["Pirate Fortress Interior Heart 1"] = function () return can_hookshot() or short_hook_anywhere() or has_hover_boots() end,
             ["Pirate Fortress Interior Heart 2"] = function () return can_hookshot() or short_hook_anywhere() or has_hover_boots() end,
             ["Pirate Fortress Interior Heart 3"] = function () return can_hookshot() or short_hook_anywhere() or has_hover_boots() end,
+            ["Pirate Fortress Interior Wonder Item Skull Eyes 1"] = function () return hit_target_range_close() end,
+            ["Pirate Fortress Interior Wonder Item Skull Eyes 2"] = function () return hit_target_range_close() end,
+            ["Pirate Fortress Interior Wonder Item Skull Eyes 3"] = function () return hit_target_range_close() end,
+            ["Pirate Fortress Interior Wonder Item Skull Eyes 4"] = function () return hit_target_range_close() end,
+            ["Pirate Fortress Interior Wonder Item Skull Eyes 5"] = function () return hit_target_range_close() end,
+            ["Pirate Fortress Interior Wonder Item Skull Eyes 6"] = function () return hit_target_range_close() end,
         },
     },
     ["Pirate Fortress Hookshot Room Upper"] = {
@@ -6736,8 +6809,6 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Pirate Fortress Interior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Interior Pot Beehive 1"] = function () return true end,
@@ -6751,11 +6822,12 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Pirate Fortress Interior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Interior Hookshot"] = function () return event('FORTRESS_BEEHIVE') end,
+            ["Pirate Fortress Interior Wonder Item Skull Forehead 1"] = function () return event('FORTRESS_BEEHIVE') and hit_target_range_close() end,
+            ["Pirate Fortress Interior Wonder Item Skull Forehead 2"] = function () return event('FORTRESS_BEEHIVE') and hit_target_range_close() end,
+            ["Pirate Fortress Interior Wonder Item Skull Forehead 3"] = function () return event('FORTRESS_BEEHIVE') and hit_target_range_close() end,
         },
     },
     ["Pirate Fortress Barrel Maze Entry"] = {
@@ -6763,8 +6835,6 @@ function _mm_logic()
             ["Pirate Fortress Interior"] = function () return true end,
             ["Pirate Fortress Entrance Lookout"] = function () return true end,
             ["Pirate Fortress Barrel Maze"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Entrance Lookout"] = {
@@ -6790,8 +6860,6 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Barrel Maze"] = function () return can_fight() and can_evade_gerudo() end,
             ["Pirate Fortress Barrel Maze Exit"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Interior Pot Barrel Maze 1"] = function () return true end,
@@ -6803,8 +6871,6 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Barrel Maze Aquarium"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Lone Guard Entry"] = {
@@ -6812,16 +6878,12 @@ function _mm_logic()
             ["Pirate Fortress Interior"] = function () return true end,
             ["Pirate Fortress Lone Guard"] = function () return true end,
             ["Pirate Fortress Treasure Room Entry"] = function () return can_hookshot() or short_hook_anywhere() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Lone Guard"] = {
         ["exits"] = {
             ["Pirate Fortress Lone Guard Aquarium"] = function () return can_fight() and can_evade_gerudo() end,
             ["Pirate Fortress Lone Guard Entry"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Lone Guard Aquarium"] = {
@@ -6832,8 +6894,6 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Lone Guard"] = function () return can_fight() and can_evade_gerudo() end,
             ["Pirate Fortress Lone Guard Exit"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Interior Aquarium"] = function () return underwater_walking() and can_hookshot_short() end,
@@ -6846,24 +6906,18 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Lone Guard Aquarium"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Treasure Room Entry"] = {
         ["exits"] = {
             ["Pirate Fortress Interior"] = function () return can_evade_gerudo() end,
             ["Pirate Fortress Treasure Room"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Pirate Fortress Treasure Room"] = {
         ["exits"] = {
             ["Pirate Fortress Treasure Room Aquarium"] = function () return can_fight() and can_evade_gerudo() end,
             ["Pirate Fortress Treasure Room Entry"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Interior Silver Rupee Chest"] = function () return can_evade_gerudo() end,
@@ -6877,8 +6931,6 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Treasure Room"] = function () return can_fight() and can_evade_gerudo() end,
             ["Pirate Fortress Treasure Room Exit"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Pirate Fortress Interior Pot Guarded 1"] = function () return true end,
@@ -6889,16 +6941,12 @@ function _mm_logic()
         ["exits"] = {
             ["Pirate Fortress Treasure Room Aquarium"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Secret Shrine"] = {
         ["exits"] = {
             ["Ikana Valley"] = function () return true end,
             ["Secret Shrine Entrance"] = function () return can_reset_time_dungeon() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
     },
     ["Secret Shrine Entrance"] = {
@@ -6912,8 +6960,6 @@ function _mm_logic()
         ["exits"] = {
             ["Secret Shrine Main"] = function () return can_use_light_arrows() end,
             ["Secret Shrine Rupees"] = function () return can_use_beans() or has_mask_zora() or hookshot_anywhere() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Secret Shrine Grass Entrance 1"] = function () return true end,
@@ -6954,8 +7000,6 @@ function _mm_logic()
             ["Secret Shrine Boss Wizzrobe"] = function () return true end,
             ["Secret Shrine Boss Wart"] = function () return true end,
             ["Secret Shrine Boss Garo Master"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Secret Shrine HP Chest"] = function () return soul_poe_collector() and event('SECRET_SHRINE_DINALFOS') and event('SECRET_SHRINE_WIZZROBE') and event('SECRET_SHRINE_WART') and event('SECRET_SHRINE_GARO') end,
@@ -6974,10 +7018,6 @@ function _mm_logic()
         ["events"] = {
             ["SECRET_SHRINE_DINALFOS"] = function () return soul_lizalfos_dinalfos() end,
         },
-        ["exits"] = {
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
-        },
         ["locations"] = {
             ["Secret Shrine Dinalfos Chest"] = function () return event('SECRET_SHRINE_DINALFOS') end,
             ["Secret Shrine Grass Dinolfos 1"] = function () return true end,
@@ -6989,10 +7029,6 @@ function _mm_logic()
     ["Secret Shrine Boss Wizzrobe"] = {
         ["events"] = {
             ["SECRET_SHRINE_WIZZROBE"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) end,
-        },
-        ["exits"] = {
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Secret Shrine Wizzrobe Chest"] = function () return event('SECRET_SHRINE_WIZZROBE') end,
@@ -7006,10 +7042,6 @@ function _mm_logic()
     ["Secret Shrine Boss Wart"] = {
         ["events"] = {
             ["SECRET_SHRINE_WART"] = function () return soul_enemy(SOUL_ENEMY_WART) end,
-        },
-        ["exits"] = {
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Secret Shrine Wart Chest"] = function () return event('SECRET_SHRINE_WART') end,
@@ -7026,10 +7058,6 @@ function _mm_logic()
     ["Secret Shrine Boss Garo Master"] = {
         ["events"] = {
             ["SECRET_SHRINE_GARO"] = function () return soul_enemy(SOUL_ENEMY_GARO) end,
-        },
-        ["exits"] = {
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Secret Shrine Garo Master Chest"] = function () return event('SECRET_SHRINE_GARO') end,
@@ -7889,8 +7917,6 @@ function _mm_logic()
         ["exits"] = {
             ["Near Swamp Spider House"] = function () return true end,
             ["Swamp Spider House Main"] = function () return can_reset_time_dungeon() end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Swamp Spider House Mask of Truth"] = function () return soul_citizen() and has('GS_TOKEN_SWAMP', 30) end,
@@ -7905,8 +7931,6 @@ function _mm_logic()
         },
         ["exits"] = {
             ["Swamp Spider House"] = function () return true end,
-            ["SOARING"] = function () return can_play_soaring() end,
-            ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Swamp Skulltula Main Room Near Ceiling"] = function () return gs() and (can_hookshot_short() or has_mask_zora() or (has('MASK_DEKU') and (has_arrows() or has_magic() or (has_bombs() or has_bombchu() or trick_keg_explosives())))) end,
@@ -7961,6 +7985,23 @@ function _mm_logic()
             ["Swamp Spider House Pot Jar Room 5"] = function () return true end,
             ["Swamp Spider House Pot Jar Room 6"] = function () return true end,
             ["Swamp Spider House Pot Jar Room 7"] = function () return true end,
+            ["Swamp Spider House Wonder Item Pillars 01"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 02"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 03"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 04"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 05"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 06"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 07"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 08"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 09"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 10"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 11"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pillars 12"] = function () return hit_target_range_close() end,
+            ["Swamp Spider House Wonder Item Pots 1"] = function () return true end,
+            ["Swamp Spider House Wonder Item Pots 2"] = function () return true end,
+            ["Swamp Spider House Wonder Item Pots 3"] = function () return true end,
+            ["Swamp Spider House Wonder Item Pots 4"] = function () return true end,
+            ["Swamp Spider House Wonder Item Pots 5"] = function () return true end,
         },
     },
     ["Woodfall Temple"] = {
