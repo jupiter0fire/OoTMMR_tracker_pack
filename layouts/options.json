@@ -567,6 +567,11 @@
       },
       {
         "type": "item",
+        "item": "TRICK_OOT_SHADOW_FIRE_ARROW",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "TRICK_OOT_KZ_SKIP",
         "height": 16
       },

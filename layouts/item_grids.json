@@ -2,6 +2,7 @@
   "item_grid_tall_oot": {
     "type": "array",
     "orientation": "vertical",
+    "scale": 1.2,
     "content": [
       {
         "type": "itemgrid",
@@ -544,6 +545,7 @@
   "item_grid_small_oot": {
     "type": "array",
     "orientation": "vertical",
+    "scale": 1.2,
     "content": [
       {
         "type": "itemgrid",
@@ -1013,6 +1015,7 @@
   "item_grid_tall_mm": {
     "type": "array",
     "orientation": "vertical",
+    "scale": 1.2,
     "content": [
       {
         "type": "itemgrid",
@@ -1327,6 +1330,7 @@
   "item_grid_small_mm": {
     "type": "array",
     "orientation": "vertical",
+    "scale": 1.2,
     "content": [
       {
         "type": "itemgrid",
@@ -1382,7 +1386,7 @@
             "MM_SONG_ORDER",
             "MM_STRAY_FAIRY_TOWN",
             "MM_GS_TOKEN_SWAMP",
-            "MM_GS_TOKEN_OCEAN",
+            "MM_GS_TOKEN_OCEAN"
           ],
           [
             "MM_MASK_DEKU",
