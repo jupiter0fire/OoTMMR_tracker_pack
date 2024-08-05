@@ -1,5 +1,13 @@
 # Releases
 
+## v24.0.1
+
+Logic updated to version v24.1 of the OOTMM Randomizer.
+
+New setting: 
+
+- Grass shuffle
+
 ## v23.0.1
 
 Logic updated to version v23.0 of the OOTMM Randomizer.
