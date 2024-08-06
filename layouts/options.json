@@ -141,6 +141,11 @@
       },
       {
         "type": "item",
+        "item": "setting_ootPreplantedBeans",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_crossWarpOot",
         "height": 16
       },
@@ -212,6 +217,16 @@
       {
         "type": "item",
         "item": "setting_agelessHookshot",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessBow",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_agelessSlingshot",
         "height": 16
       },
       {

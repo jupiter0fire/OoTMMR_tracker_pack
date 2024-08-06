@@ -1083,6 +1083,26 @@
     ]
   },
   {
+    "name": "Pre-Planted beans (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_ootPreplantedBeans_true.png",
+        "codes": "setting_ootPreplantedBeans,setting_ootPreplantedBeans_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_ootPreplantedBeans_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ootPreplantedBeans,setting_ootPreplantedBeans_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Cross-Games Age",
     "type": "progressive",
     "allow_disabled": false,
@@ -1933,6 +1953,46 @@
         "img": "images/setting_agelessHookshot_false.png",
         "img_mods": "@disabled",
         "codes": "setting_agelessHookshot,setting_agelessHookshot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ageless Bow",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_agelessBow_true.png",
+        "codes": "setting_agelessBow,setting_agelessBow_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_agelessBow_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_agelessBow,setting_agelessBow_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ageless Slingshot",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_agelessSlingshot_true.png",
+        "codes": "setting_agelessSlingshot,setting_agelessSlingshot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_agelessSlingshot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_agelessSlingshot,setting_agelessSlingshot_false",
         "inherit_codes": false
       }
     ]

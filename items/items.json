@@ -118,10 +118,9 @@
   },
   {
     "name": "Magic Beans",
-    "type": "consumable",
+    "type": "toggle",
     "img": "images/bean.png",
-    "codes": "OOT_MAGIC_BEAN",
-    "max_quantity": 10
+    "codes": "OOT_MAGIC_BEAN"
   },
   {
     "name": "Deku Sticks",

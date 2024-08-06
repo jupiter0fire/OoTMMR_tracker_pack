@@ -7,6 +7,9 @@ Logic updated to version v24.1 of the OOTMM Randomizer.
 New setting: 
 
 - Grass shuffle
+- Preplanted Beans
+- Ageless Bow
+- Ageless Slingshot
 
 ## v23.0.1
 

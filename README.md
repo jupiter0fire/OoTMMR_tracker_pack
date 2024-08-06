@@ -50,6 +50,7 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Soul Shuffle
 - Clock Shuffle
 - Entrance Shuffle
+- Open Dungeons OOT
 
 ## TODOs:
 
