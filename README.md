@@ -33,7 +33,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Chest Game Small Key Shuffle
 - Silver Rupees Shuffle
 - Pot Shuffle
-- Grass Shuffle
 - Freestanding Rupees Shuffle
 - Freestanding Hearts Shuffle
 - Fishing Pond Fish Shuffle
@@ -50,7 +49,6 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Soul Shuffle
 - Clock Shuffle
 - Entrance Shuffle
-- Open Dungeons OOT
 
 ## TODOs:
 
