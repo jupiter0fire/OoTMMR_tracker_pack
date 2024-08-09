@@ -443,7 +443,6 @@ function _mm_logic()
         ["erRegions_none"] = true,
         ["erIkanaCastle"] = false,
         ["smallKeyShuffleChestGame_vanilla"] = true,
-        ["ageChange_none"] = true,
         ["progressiveSwordsOot_separate"] = true,
         ["progressiveShieldsMm_separate"] = true,
         ["progressiveGFS_separate"] = true,

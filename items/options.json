@@ -693,6 +693,30 @@
     ]
   },
   {
+    "name": "Age Change upon Song of Time",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_ageChange_none.png",
+        "codes": "setting_ageChange,setting_ageChange_none",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_ageChange_oot.png",
+        "codes": "setting_ageChange,setting_ageChange_oot",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_ageChange_always.png",
+        "codes": "setting_ageChange,setting_ageChange_always",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Deku Tree",
     "type": "progressive",
     "allow_disabled": false,

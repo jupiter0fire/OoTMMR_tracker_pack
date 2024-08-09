@@ -443,7 +443,6 @@ function _oot_logic()
         ["erRegions_none"] = true,
         ["erIkanaCastle"] = false,
         ["smallKeyShuffleChestGame_vanilla"] = true,
-        ["ageChange_none"] = true,
         ["progressiveSwordsOot_separate"] = true,
         ["progressiveShieldsMm_separate"] = true,
         ["progressiveGFS_separate"] = true,
@@ -2542,7 +2541,9 @@ function _oot_logic()
             ["NUTS"] = function () return can_kill_baba_nuts() end,
         },
         ["exits"] = {
-            ["Deku Tree Slingshot Room"] = function () return soul_deku_scrub() and (has_shield_for_scrubs() or can_hammer()) end,
+            ["Deku Tree Slingshot Room"] = function () 
+                print(soul_deku_scrub(),has_shield_for_scrubs(),age_hammer(),has("HAMMER"))
+                return soul_deku_scrub() and (has_shield_for_scrubs() or can_hammer()) end,
             ["Deku Tree Basement"] = function () return has_fire() or has_nuts() or has_weapon() or has_explosives_or_hammer() or has_ranged_weapon() or can_use_sticks() end,
         },
         ["locations"] = {

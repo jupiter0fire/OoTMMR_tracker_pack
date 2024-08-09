@@ -6,14 +6,15 @@ Logic updated to version v24.1 of the OOTMM Randomizer.
 
 New settings:
 
-Grass shuffle
-Preplanted Beans
-Ageless Bow
-Ageless Slingshot
+- Grass shuffle
+- Preplanted Beans
+- Ageless Bow
+- Ageless Slingshot
+
 Deleted variants:
 
-"items-only", because there are way prettier and more functional item trackers (e.g. Linso)
-"non-keysanity", because keeping this up to date turned out to be more work than it was worth. If you dearly miss this, please step up and help us maintain the tracker pack :)
+- "items-only", because there are way prettier and more functional item trackers (e.g. Linso)
+- "non-keysanity", because keeping this up to date turned out to be more work than it was worth. If you dearly miss this, please step up and help us maintain the tracker pack :)
 
 ## v23.0.1
 
