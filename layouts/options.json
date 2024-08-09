@@ -116,21 +116,6 @@
       },
       {
         "type": "item",
-        "item": "setting_dekuTreeAdult",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_wellAdult",
-        "height": 16
-      },
-      {
-        "type": "item",
-        "item": "setting_fireChild",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_openZdShortcut",
         "height": 16
       },
