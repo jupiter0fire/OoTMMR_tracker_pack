@@ -337,5 +337,11 @@
     "type": "toggle",
     "img": "images/compass.png",
     "codes": "generic_compass"
+  },
+  {
+    "name": "Skeleton Key",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "codes": "OOT_SKELETON_KEY"
   }
 ]

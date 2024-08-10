@@ -166,6 +166,11 @@
       },
       {
         "type": "item",
+        "item": "setting_skeletonKeyOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_bombchuBagOot",
         "height": 16
       },
@@ -368,7 +373,17 @@
       },
       {
         "type": "item",
+        "item": "setting_skeletonKeyMm",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_bombchuBagMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_spellFireMm",
         "height": 16
       }
     ]

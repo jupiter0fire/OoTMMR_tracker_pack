@@ -1357,5 +1357,29 @@
     "type": "toggle",
     "img": "images/items/mm_pendant.png",
     "codes": "MM_PENDANT_OF_MEMORIES"
+  },
+  {
+    "name": "Skeleton Key",
+    "type": "toggle",
+    "img": "images/small_key.png",
+    "codes": "MM_SKELETON_KEY"
+  },
+  {
+    "name": "Din's Fire",
+    "type": "toggle",
+    "img": "images/din.png",
+    "codes": "MM_SPELL_FIRE"
+  },
+  {
+    "name": "Farore's Wind",
+    "type": "toggle",
+    "img": "images/farore.png",
+    "codes": "MM_SPELL_WIND"
+  },
+  {
+    "name": "Nayru's Love",
+    "type": "toggle",
+    "img": "images/nayru.png",
+    "codes": "MM_SPELL_LOVE"
   }
 ]

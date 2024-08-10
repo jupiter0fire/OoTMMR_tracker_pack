@@ -1782,6 +1782,46 @@
     ]
   },
   {
+    "name": "Skeleton Key (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_skeletonKeyOot_true.png",
+        "codes": "setting_skeletonKeyOot,setting_skeletonKeyOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_skeletonKeyOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_skeletonKeyOot,setting_skeletonKeyOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Skeleton Key (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_skeletonKeyMm_true.png",
+        "codes": "setting_skeletonKeyMm,setting_skeletonKeyMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_skeletonKeyMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_skeletonKeyMm,setting_skeletonKeyMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Bombchu Bag (OoT)",
     "type": "progressive",
     "allow_disabled": false,
@@ -1817,6 +1857,66 @@
         "img": "images/setting_bombchuBagMm_false.png",
         "img_mods": "@disabled",
         "codes": "setting_bombchuBagMm,setting_bombchuBagMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Din's Fire (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_spellFireMm_true.png",
+        "codes": "setting_spellFireMm,setting_spellFireMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_spellFireMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_spellFireMm,setting_spellFireMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Farore's Wind (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_spellWindMm_true.png",
+        "codes": "setting_spellWindMm,setting_spellWindMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_spellWindMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_spellWindMm,setting_spellWindMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Nayru's Love (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_spellLoveMm_true.png",
+        "codes": "setting_spellLoveMm,setting_spellLoveMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_spellLoveMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_spellLoveMm,setting_spellLoveMm_false",
         "inherit_codes": false
       }
     ]
