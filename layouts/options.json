@@ -385,6 +385,41 @@
         "type": "item",
         "item": "setting_spellFireMm",
         "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_spellWindMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_spellLoveMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bootsIronMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_bootsHoverMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_tunicZoraMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_scalesMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_strengthMm",
+        "height": 16
       }
     ]
   },

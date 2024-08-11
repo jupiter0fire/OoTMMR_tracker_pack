@@ -1922,6 +1922,106 @@
     ]
   },
   {
+    "name": "Iron Boots (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_bootsIronMm_true.png",
+        "codes": "setting_bootsIronMm,setting_bootsIronMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bootsIronMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bootsIronMm,setting_bootsIronMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hover Boots (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_bootsHoverMm_true.png",
+        "codes": "setting_bootsHoverMm,setting_bootsHoverMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_bootsHoverMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_bootsHoverMm,setting_bootsHoverMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Zora Tunic (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_tunicZoraMm_true.png",
+        "codes": "setting_tunicZoraMm,setting_tunicZoraMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_tunicZoraMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_tunicZoraMm,setting_tunicZoraMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Scales (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_scalesMm_true.png",
+        "codes": "setting_scalesMm,setting_scalesMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_scalesMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_scalesMm,setting_scalesMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Strength (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_strengthMm_true.png",
+        "codes": "setting_strengthMm,setting_strengthMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_strengthMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_strengthMm,setting_strengthMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Ageless Swords",
     "type": "progressive",
     "allow_disabled": false,

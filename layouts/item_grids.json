@@ -1120,7 +1120,14 @@
             "MM_SKELETON_KEY",
             "MM_SPELL_FIRE",
             "MM_SPELL_WIND",
-            "MM_SPELL_LOVE"
+            "MM_SPELL_LOVE",
+            "MM_BOOTS_IRON",
+            "MM_BOOTS_HOVER",
+            "MM_TUNIC_ZORA",
+            "MM_SCALE"
+          ],
+          [
+            "MM_STRENGTH"
           ]
         ]
       },

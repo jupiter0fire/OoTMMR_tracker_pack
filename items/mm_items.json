@@ -1381,5 +1381,55 @@
     "type": "toggle",
     "img": "images/nayru.png",
     "codes": "MM_SPELL_LOVE"
+  },
+  {
+    "name": "Iron Boots",
+    "type": "toggle",
+    "img": "images/ironboots.png",
+    "codes": "MM_BOOTS_IRON"
+  },
+  {
+    "name": "Hover Boots",
+    "type": "toggle",
+    "img": "images/hoverboots.png",
+    "codes": "MM_BOOTS_HOVER"
+  },
+  {
+    "name": "Zora Tunic",
+    "type": "toggle",
+    "img": "images/bluetunic.png",
+    "codes": "MM_TUNIC_ZORA"
+  },
+  {
+    "name": "Zora Scales",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/scale1.png",
+        "codes": "MM_SCALE"
+      },
+      {
+        "img": "images/scale2.png",
+        "codes": "MM_GOLDSCALE"
+      }
+    ]
+  },
+  {
+    "name": "Strength Upgrades",
+    "type": "progressive",
+    "stages": [
+      {
+        "img": "images/lift1.png",
+        "codes": "MM_STRENGTH"
+      },
+      {
+        "img": "images/lift2.png",
+        "codes": "MM_STRENGTH2"
+      },
+      {
+        "img": "images/lift3.png",
+        "codes": "MM_STRENGTH3"
+      }
+    ]
   }
 ]
