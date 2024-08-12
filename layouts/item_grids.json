@@ -71,7 +71,12 @@
             "OOT_WALLET1"
           ],
           [
-            "OOT_SKELETON_KEY"
+            "OOT_SKELETON_KEY",
+            "OOT_BUTTON_A",
+            "OOT_BUTTON_C_DOWN",
+            "OOT_BUTTON_C_LEFT",
+            "OOT_BUTTON_C_RIGHT",
+            "OOT_BUTTON_C_UP"
           ]
         ]
       },
@@ -1127,19 +1132,17 @@
             "MM_SCALE"
           ],
           [
-            "MM_STRENGTH"
-          ]
-        ]
-      },
-      {
-        "type": "itemgrid",
-        "h_alignment": "left",
-        "item_margin": "1,1",
-        "scale": 0.7,
-        "rows": [
-          [
+            "MM_STRENGTH",
             "MM_OWL_CLOCK_TOWN",
             "MM_OWL_SOUTHERN_SWAMP",
+            "MM_BUTTON_A",
+            "MM_BUTTON_C_DOWN",
+            "MM_BUTTON_C_LEFT",
+            "MM_BUTTON_C_RIGHT",
+            "MM_BUTTON_C_UP"
+          ],
+          [
+
             "MM_OWL_WOODFALL",
             "MM_OWL_MILK_ROAD",
             "MM_OWL_MOUNTAIN_VILLAGE",

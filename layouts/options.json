@@ -176,6 +176,11 @@
       },
       {
         "type": "item",
+        "item": "setting_ocarinaButtonsShuffleOot",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_agelessSwords",
         "height": 16
       },
@@ -419,6 +424,11 @@
       {
         "type": "item",
         "item": "setting_strengthMm",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_ocarinaButtonsShuffleMm",
         "height": 16
       }
     ]

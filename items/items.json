@@ -784,5 +784,35 @@
     "type": "toggle",
     "img": "images/rupee.png",
     "codes": "dummy"
+  },
+  {
+    "name": "A Button",
+    "type": "toggle",
+    "img": "images/button_a.png",
+    "codes": "OOT_BUTTON_A"
+  },
+  {
+    "name": "C Down Button",
+    "type": "toggle",
+    "img": "images/button_down.png",
+    "codes": "OOT_BUTTON_C_DOWN"
+  },
+  {
+    "name": "C Left Button",
+    "type": "toggle",
+    "img": "images/button_left.png",
+    "codes": "OOT_BUTTON_C_LEFT"
+  },
+  {
+    "name": "C Right Button",
+    "type": "toggle",
+    "img": "images/button_right.png",
+    "codes": "OOT_BUTTON_C_RIGHT"
+  },
+  {
+    "name": "C Up Button",
+    "type": "toggle",
+    "img": "images/button_up.png",
+    "codes": "OOT_BUTTON_C_UP"
   }
 ]

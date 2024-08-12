@@ -2022,6 +2022,46 @@
     ]
   },
   {
+    "name": "Ocarina Buttons Shuffle (OoT)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_ocarinaButtonsShuffleOot_true.png",
+        "codes": "setting_ocarinaButtonsShuffleOot,setting_ocarinaButtonsShuffleOot_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_ocarinaButtonsShuffleOot_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ocarinaButtonsShuffleOot,setting_ocarinaButtonsShuffleOot_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Ocarina Buttons Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_ocarinaButtonsShuffleMm_true.png",
+        "codes": "setting_ocarinaButtonsShuffleMm,setting_ocarinaButtonsShuffleMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_ocarinaButtonsShuffleMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_ocarinaButtonsShuffleMm,setting_ocarinaButtonsShuffleMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Ageless Swords",
     "type": "progressive",
     "allow_disabled": false,
