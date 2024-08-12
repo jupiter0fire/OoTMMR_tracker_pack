@@ -533,7 +533,8 @@ function _oot_logic()
         OOTMM_RUNTIME_STATE["_check_rule_mm_time_used"] = true
 
         if OOTMM_DEBUG then
-            print("case", case, "time_a", time_a, "time_b", time_b, "index", MM_TIME_SLICES_INDEX[time_a], "earliest_time",
+            print("case", case, "time_a", time_a, "time_b", time_b, "index", MM_TIME_SLICES_INDEX[time_a],
+                "earliest_time",
                 OOTMM_RUNTIME_CURRENT_TIME)
         end
         local r = _mm_time(case, time_a, time_b)
@@ -562,7 +563,8 @@ function _oot_logic()
         elseif case == "after" then
             return MM_TIME_SLICES_INDEX[time_a] <= OOTMM_RUNTIME_CURRENT_TIME
         elseif case == "between" then
-            return MM_TIME_SLICES_INDEX[time_a] >= OOTMM_RUNTIME_CURRENT_TIME and OOTMM_RUNTIME_CURRENT_TIME < MM_TIME_SLICES_INDEX[time_b]
+            return MM_TIME_SLICES_INDEX[time_a] >= OOTMM_RUNTIME_CURRENT_TIME and
+            OOTMM_RUNTIME_CURRENT_TIME < MM_TIME_SLICES_INDEX[time_b]
         else
             print(case)
             error("Invalid case: " .. case)
