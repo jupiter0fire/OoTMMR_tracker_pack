@@ -930,12 +930,30 @@ function _mm_logic()
 
         local current = SearchQueue:pop()
         while current ~= nil do
+            OOTMM_RUNTIME_STATE["_check_rule_events_used"] = {} -- FIXME: This is leaking all over the place now, and i hate it.
             local events_used = {}
             local active = { child = false, adult = false, }
             local earliest_child = nil       -- earliest time index at which this node's rule() is true; nil otherwise
             local earliest_adult = nil
             local mm_time_used_child = false -- true if rule() made use of mm_time
             local mm_time_used_adult = false
+
+            if current.age_change then
+                if current.child and not current.adult then
+                    if event('TIME_TRAVEL_AT_WILL') then
+                        current.adult = current.child
+                    else
+                        -- Make sure we get back here once we can time travel at will.
+                        events_used["TIME_TRAVEL_AT_WILL"] = true
+                    end
+                elseif current.adult and not current.child then
+                    if event('TIME_TRAVEL_AT_WILL') then
+                        current.child = current.adult
+                    else
+                        events_used["TIME_TRAVEL_AT_WILL"] = true
+                    end
+                end
+            end
 
             if current.child then
                 set_age("child")
@@ -973,6 +991,7 @@ function _mm_logic()
                                 node.child = earliest_child
                                 node.adult = earliest_adult
                                 node.mm_stay = place_logic["stay"] -- nil is fine here
+                                node.age_change = place_logic["age_change"]
 
                                 -- node.prev = current
                                 SearchQueue:push(node)
@@ -2233,6 +2252,7 @@ function _mm_logic()
             ["Ikana Castle Exterior"] = function () return true end,
             ["Ancient Castle of Ikana Interior"] = function () return can_reset_time_dungeon() end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Interior"] = {
         ["events"] = {
@@ -2248,6 +2268,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Pot Entrance 1"] = function () return true end,
             ["Ancient Castle of Ikana Pot Entrance 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Interior North"] = {
         ["exits"] = {
@@ -2258,6 +2279,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Pot Left First Room 1"] = function () return true end,
             ["Ancient Castle of Ikana Pot Left First Room 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Interior North 2"] = {
         ["events"] = {
@@ -2274,6 +2296,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Pot Left Second Room 3"] = function () return has('MASK_DEKU') or short_hook_anywhere() or has_hover_boots() end,
             ["Ancient Castle of Ikana Pot Left Second Room 4"] = function () return has('MASK_DEKU') or short_hook_anywhere() or has_hover_boots() end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Interior North 3"] = {
         ["exits"] = {
@@ -2284,6 +2307,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Pot Left Third Room 1"] = function () return true end,
             ["Ancient Castle of Ikana Pot Left Third Room 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Roof Exterior"] = {
         ["events"] = {
@@ -2300,18 +2324,21 @@ function _mm_logic()
         ["locations"] = {
             ["Ancient Castle of Ikana HP"] = function () return (has_arrows() or can_hookshot_short()) and has('MASK_DEKU') or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Interior South"] = {
         ["exits"] = {
             ["Ancient Castle of Ikana Interior"] = function () return true end,
             ["Ancient Castle of Ikana Wizzrobe"] = function () return can_reset_time() and ((has_mirror_shield() and event('IKANA_CASTLE_LIGHT') or can_use_light_arrows()) or short_hook_anywhere()) end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Wizzrobe"] = {
         ["exits"] = {
             ["Ancient Castle of Ikana Interior South"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) and (can_use_light_arrows() or short_hook_anywhere()) and (can_fight() or has_arrows()) end,
             ["Ancient Castle of Ikana South Last"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) and (can_fight() or has_arrows()) end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana South Last"] = {
         ["exits"] = {
@@ -2322,6 +2349,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Pot Right 1"] = function () return true end,
             ["Ancient Castle of Ikana Pot Right 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Roof Interior"] = {
         ["events"] = {
@@ -2333,12 +2361,14 @@ function _mm_logic()
             ["Ancient Castle of Ikana South Last"] = function () return true end,
             ["Ancient Castle of Ikana Roof Exterior"] = function () return trick('MM_IKANA_ROOF_PARKOUR') or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Behind Block"] = {
         ["exits"] = {
             ["Ancient Castle of Ikana Interior"] = function () return can_use_light_arrows() or short_hook_anywhere() end,
             ["Ancient Castle of Ikana Pre-Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Pre-Boss"] = {
         ["events"] = {
@@ -2355,6 +2385,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Boss Pot 3"] = function () return true end,
             ["Ancient Castle of Ikana Boss Pot 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana Throne Room"] = {
         ["exits"] = {
@@ -2366,6 +2397,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Boss Pot 7"] = function () return true end,
             ["Ancient Castle of Ikana Boss Pot 8"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ancient Castle of Ikana After Boss"] = {
         ["exits"] = {
@@ -2374,6 +2406,7 @@ function _mm_logic()
         ["locations"] = {
             ["Ancient Castle of Ikana Song Emptiness"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Entrance"] = {
         ["exits"] = {
@@ -2381,21 +2414,25 @@ function _mm_logic()
             ["Beneath The Well North Section"] = function () return can_pass_gibdo() and has_blue_potion() and can_reset_time_dungeon() end,
             ["Beneath The Well East Section"] = function () return can_pass_gibdo() and has_beans() and can_reset_time_dungeon() end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Wallmaster Near Entrance"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Wallmaster Near Fountain"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Wallmaster Near Exit"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well North Section"] = {
         ["events"] = {
@@ -2430,6 +2467,7 @@ function _mm_logic()
             ["Beneath The Well Fairy Fountain Fairy 7"] = function () return has_water() and has_bugs() end,
             ["Beneath The Well Fairy Fountain Fairy 8"] = function () return has_water() and has_bugs() end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well East Section"] = {
         ["events"] = {
@@ -2443,6 +2481,7 @@ function _mm_logic()
             ["Beneath The Well Middle Section"] = function () return can_pass_gibdo() and has_fish() end,
             ["Beneath The Well Cow Hall"] = function () return can_pass_gibdo() and has_nuts() end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Cow Hall"] = {
         ["events"] = {
@@ -2463,6 +2502,7 @@ function _mm_logic()
             ["Beneath The Well Grass Before Poe 3"] = function () return true end,
             ["Beneath The Well Grass Before Poe 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Middle Section"] = {
         ["events"] = {
@@ -2486,6 +2526,7 @@ function _mm_logic()
             ["Beneath The Well Pot Middle 09"] = function () return true end,
             ["Beneath The Well Pot Middle 10"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Final Hall"] = {
         ["events"] = {
@@ -2504,6 +2545,7 @@ function _mm_logic()
             ["Beneath The Well Grass Near End 4"] = function () return true end,
             ["Beneath The Well Grass Near End 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well Sun Block"] = {
         ["exits"] = {
@@ -2513,12 +2555,14 @@ function _mm_logic()
         ["locations"] = {
             ["Beneath The Well Mirror Shield"] = function () return can_use_fire_short_range() or (has_sticks() and has_big_poe() and has_milk() and can_pass_gibdo()) end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Well End"] = {
         ["exits"] = {
             ["Beneath The Well Sun Block"] = function () return can_use_light_arrows() and can_reset_time_dungeon() end,
             ["Ikana Castle Exterior"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple"] = {
         ["exits"] = {
@@ -2526,6 +2570,7 @@ function _mm_logic()
             ["Zora Cape Peninsula"] = function () return can_hookshot() or short_hook_anywhere() end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Entrance"] = {
         ["events"] = {
@@ -2543,6 +2588,7 @@ function _mm_logic()
         ["locations"] = {
             ["Great Bay Temple Entrance Chest"] = function () return has_sticks() or can_use_fire_short_range() or (has_arrows() and trick('MM_GBT_ENTRANCE_BOW')) end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Water Wheel"] = {
         ["events"] = {
@@ -2562,6 +2608,7 @@ function _mm_logic()
             ["Great Bay Temple Rupee Entrance 4"] = function () return true end,
             ["Great Bay Temple Rupee Entrance 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Central Room"] = {
         ["events"] = {
@@ -2582,6 +2629,7 @@ function _mm_logic()
             ["Great Bay Temple Pot Central Room 1"] = function () return true end,
             ["Great Bay Temple Pot Central Room 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Map Room"] = {
         ["events"] = {
@@ -2608,6 +2656,7 @@ function _mm_logic()
             ["Great Bay Temple Pot Map Room Water 7"] = function () return underwater_walking() or hookshot_anywhere() end,
             ["Great Bay Temple Pot Map Room Water 8"] = function () return underwater_walking() or hookshot_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Baba Room"] = {
         ["exits"] = {
@@ -2617,6 +2666,7 @@ function _mm_logic()
         ["locations"] = {
             ["Great Bay Temple Baba Chest"] = function () return soul_enemy(SOUL_ENEMY_BIO_BABA) and (has_mask_zora() or has_arrows() or (has_mask_blast() and short_hook_anywhere())) end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Compass Room"] = {
         ["events"] = {
@@ -2644,6 +2694,7 @@ function _mm_logic()
             ["Great Bay Temple Rupee Compass Room 1"] = function () return underwater_walking() or short_hook_anywhere() end,
             ["Great Bay Temple Rupee Compass Room 2"] = function () return underwater_walking() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Red Pipe 1"] = {
         ["events"] = {
@@ -2660,6 +2711,7 @@ function _mm_logic()
             ["Great Bay Temple Pot Red Pipe Before Wart 3"] = function () return underwater_walking() or hookshot_anywhere() end,
             ["Great Bay Temple Pot Red Pipe Before Wart 4"] = function () return underwater_walking() or hookshot_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Ice Arrow Room"] = {
         ["events"] = {
@@ -2692,6 +2744,7 @@ function _mm_logic()
             ["Great Bay Temple Pot Before Wart 11"] = function () return true end,
             ["Great Bay Temple Pot Before Wart 12"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Red Pipe 2"] = {
         ["events"] = {
@@ -2702,6 +2755,7 @@ function _mm_logic()
             ["Great Bay Temple Map Room"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Boss Key Room"] = {
         ["events"] = {
@@ -2711,6 +2765,7 @@ function _mm_logic()
             ["Great Bay Temple After Boss Key"] = function () return soul_enemy(SOUL_ENEMY_GEKKO) and can_use_ice_arrows() end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple After Boss Key"] = {
         ["exits"] = {
@@ -2721,6 +2776,7 @@ function _mm_logic()
         ["locations"] = {
             ["Great Bay Temple Boss Key"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Green Pipe 1"] = {
         ["events"] = {
@@ -2739,6 +2795,7 @@ function _mm_logic()
             ["Great Bay Temple Rupee Hookshot 1"] = function () return can_hookshot() or short_hook_anywhere() end,
             ["Great Bay Temple Rupee Hookshot 2"] = function () return can_hookshot() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Green Pipe 2"] = {
         ["exits"] = {
@@ -2757,6 +2814,7 @@ function _mm_logic()
             ["Great Bay Temple Pot Green Pipe 2 7"] = function () return can_dive_small() and (has_arrows() or has_bombchu()) or underwater_walking() or (can_use_ice_arrows() and short_hook_anywhere()) end,
             ["Great Bay Temple Pot Green Pipe 2 8"] = function () return can_dive_small() and (has_arrows() or has_bombchu()) or underwater_walking() or (can_use_ice_arrows() and short_hook_anywhere()) end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Green Pipe 3"] = {
         ["events"] = {
@@ -2774,6 +2832,7 @@ function _mm_logic()
             ["Great Bay Temple Pot Green Pipe 3 Upper 2"] = function () return can_use_fire_arrows() and can_use_ice_arrows() and is_tall() or (trick('MM_GBT_FIRELESS') and has('MASK_DEKU') and (has_mask_zora() or (is_adult() and (has_weapon() or has_sticks())))) or short_hook_anywhere() or has_hover_boots() end,
             ["Great Bay Temple Pot Green Pipe 3 Lower"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Pre-Boss"] = {
         ["exits"] = {
@@ -2792,11 +2851,13 @@ function _mm_logic()
             ["Great Bay Temple Pot Pre-Boss 7"] = function () return underwater_walking() or hookshot_anywhere() end,
             ["Great Bay Temple Pot Pre-Boss 8"] = function () return underwater_walking() or hookshot_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Boss Access"] = {
         ["exits"] = {
             ["Great Bay Temple Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple Boss"] = {
         ["exits"] = {
@@ -2813,6 +2874,7 @@ function _mm_logic()
             ["Great Bay Temple Boss Pot Underwater 3"] = function () return underwater_walking() end,
             ["Great Bay Temple Boss Pot Underwater 4"] = function () return underwater_walking() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Temple After Boss"] = {
         ["events"] = {
@@ -2829,6 +2891,7 @@ function _mm_logic()
             ["Great Bay Temple Boss Pot Underwater 3"] = function () return underwater_walking() or (has_mask_blast() and can_dive_big() and trick('MM_GYORG_POTS_DIVE')) end,
             ["Great Bay Temple Boss Pot Underwater 4"] = function () return underwater_walking() or (has_mask_blast() and can_dive_big() and trick('MM_GYORG_POTS_DIVE')) end,
         },
+        ["age_change"] = false,
     },
     ["Clock Tower Roof"] = {
         ["events"] = {
@@ -2846,6 +2909,7 @@ function _mm_logic()
             ["Clock Tower Roof Pot 3"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
             ["Clock Tower Roof Pot 4"] = function () return can_play_time() or event('MAJORA') or (setting('erMoon') and dungeon_er()) or setting('moonCrash', 'cycle') end,
         },
+        ["age_change"] = false,
     },
     ["Moon"] = {
         ["events"] = {
@@ -2861,6 +2925,7 @@ function _mm_logic()
         ["locations"] = {
             ["Moon Fierce Deity Mask"] = function () return soul_npc(SOUL_NPC_MOON_CHILDREN) and can_reset_time_on_moon() and masks(20) and event('MOON_TRIAL_DEKU') and event('MOON_TRIAL_GORON') and event('MOON_TRIAL_ZORA') and event('MOON_TRIAL_LINK') end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Deku Entrance"] = {
         ["exits"] = {
@@ -2870,6 +2935,7 @@ function _mm_logic()
         ["locations"] = {
             ["Moon Trial Deku HP"] = function () return has('MASK_DEKU') or hookshot_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Deku Exit"] = {
         ["events"] = {
@@ -2879,6 +2945,7 @@ function _mm_logic()
             ["Moon"] = function () return true end,
             ["Moon Trial Deku Entrance"] = function () return has('MASK_DEKU') end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Goron Entrance"] = {
         ["exits"] = {
@@ -2903,6 +2970,7 @@ function _mm_logic()
             ["Moon Trial Goron Pot 10"] = function () return goron_fast_roll() or hookshot_anywhere() end,
             ["Moon Trial Goron Pot 11"] = function () return goron_fast_roll() or hookshot_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Goron Exit"] = {
         ["events"] = {
@@ -2912,6 +2980,7 @@ function _mm_logic()
             ["Moon"] = function () return true end,
             ["Moon Trial Goron Entrance"] = function () return goron_fast_roll() end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Zora"] = {
         ["events"] = {
@@ -2923,6 +2992,7 @@ function _mm_logic()
         ["locations"] = {
             ["Moon Trial Zora HP"] = function () return underwater_walking() or can_dive_small() end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Entrance"] = {
         ["exits"] = {
@@ -2939,18 +3009,21 @@ function _mm_logic()
             ["Moon Trial Link Pot 7"] = function () return true end,
             ["Moon Trial Link Pot 8"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Dinalfos Fight"] = {
         ["exits"] = {
             ["Moon Trial Link Entrance"] = function () return soul_lizalfos_dinalfos() and (can_fight() or can_use_deku_bubble() or has_arrows()) end,
             ["Moon Trial Link Rest 1"] = function () return soul_lizalfos_dinalfos() and (can_fight() or can_use_deku_bubble() or has_arrows()) end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Rest 1"] = {
         ["exits"] = {
             ["Moon Trial Link Dinalfos Fight"] = function () return true end,
             ["Moon Trial Link Garo Fight"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Garo Fight"] = {
         ["exits"] = {
@@ -2960,12 +3033,14 @@ function _mm_logic()
         ["locations"] = {
             ["Moon Trial Link Garo Master Chest"] = function () return soul_enemy(SOUL_ENEMY_GARO) and (has_weapon() or has_mask_goron() or can_use_deku_bubble() or has_arrows()) and can_hookshot_short() end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Rest 2"] = {
         ["exits"] = {
             ["Moon Trial Link Garo Fight"] = function () return true end,
             ["Moon Trial Link Iron Knuckle Fight"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Iron Knuckle Fight"] = {
         ["exits"] = {
@@ -2975,6 +3050,7 @@ function _mm_logic()
         ["locations"] = {
             ["Moon Trial Link Iron Knuckle Chest"] = function () return soul_iron_knuckle() and (has_weapon() or has_mask_goron() or has_bombs() or has_bombchu() or (has_mask_blast() and masks(5))) end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Rest 3"] = {
         ["exits"] = {
@@ -2984,6 +3060,7 @@ function _mm_logic()
         ["locations"] = {
             ["Moon Trial Link HP"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Moon Trial Link Exit"] = {
         ["events"] = {
@@ -2993,6 +3070,7 @@ function _mm_logic()
             ["Moon Trial Link Rest 3"] = function () return true end,
             ["Moon"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Moon Boss"] = {
         ["events"] = {
@@ -3003,6 +3081,7 @@ function _mm_logic()
             ["Moon Majora Pot 1"] = function () return can_play_time() or event('MAJORA') end,
             ["Moon Majora Pot 2"] = function () return can_play_time() or event('MAJORA') end,
         },
+        ["age_change"] = false,
     },
     ["Ocean Spider House"] = {
         ["exits"] = {
@@ -3012,6 +3091,7 @@ function _mm_logic()
         ["locations"] = {
             ["Ocean Spider House Wallet"] = function () return soul_citizen() and has('GS_TOKEN_OCEAN', 30) end,
         },
+        ["age_change"] = false,
     },
     ["Ocean Spider House Front"] = {
         ["events"] = {
@@ -3031,6 +3111,7 @@ function _mm_logic()
             ["Ocean Spider House Pot Entrance 3"] = function () return true end,
             ["Ocean Spider House Pot Entrance 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ocean Spider House Back"] = {
         ["locations"] = {
@@ -3085,14 +3166,17 @@ function _mm_logic()
             ["Ocean Spider House Wonder Item Masks 8"] = function () return hit_target_range_close() end,
             ["Ocean Spider House Wonder Item Masks 9"] = function () return hit_target_range_close() end,
         },
+        ["age_change"] = false,
     },
     ["VOID"] = {
+        ["age_change"] = false,
     },
     ["GLOBAL"] = {
         ["exits"] = {
             ["WARP_SONGS"] = function () return true end,
             ["SOARING"] = function () return can_play_soaring() end,
         },
+        ["age_change"] = false,
     },
     ["WARP_SONGS"] = {
         ["exits"] = {
@@ -3103,42 +3187,49 @@ function _mm_logic()
             ["OOT SONG_TP_SPIRIT"] = function () return can_play_cross_tp_spirit() end,
             ["OOT SONG_TP_LIGHT"] = function () return can_play_cross_tp_light() end,
         },
+        ["age_change"] = false,
     },
     ["Tingle Town"] = {
         ["locations"] = {
             ["Tingle Map Clock Town"] = function () return tingle_price(0) end,
             ["Tingle Map Woodfall"] = function () return tingle_price(1) end,
         },
+        ["age_change"] = false,
     },
     ["Tingle Swamp"] = {
         ["locations"] = {
             ["Tingle Map Woodfall"] = function () return tingle_price(2) end,
             ["Tingle Map Snowhead"] = function () return tingle_price(3) end,
         },
+        ["age_change"] = false,
     },
     ["Tingle Mountain"] = {
         ["locations"] = {
             ["Tingle Map Snowhead"] = function () return tingle_price(4) end,
             ["Tingle Map Ranch"] = function () return tingle_price(5) end,
         },
+        ["age_change"] = false,
     },
     ["Tingle Ranch"] = {
         ["locations"] = {
             ["Tingle Map Ranch"] = function () return tingle_price(6) end,
             ["Tingle Map Great Bay"] = function () return tingle_price(7) end,
         },
+        ["age_change"] = false,
     },
     ["Tingle Great Bay"] = {
         ["locations"] = {
             ["Tingle Map Great Bay"] = function () return tingle_price(8) end,
             ["Tingle Map Ikana"] = function () return tingle_price(9) end,
         },
+        ["age_change"] = false,
     },
     ["Tingle Ikana"] = {
         ["locations"] = {
             ["Tingle Map Ikana"] = function () return tingle_price(10) end,
             ["Tingle Map Clock Town"] = function () return tingle_price(11) end,
         },
+        ["age_change"] = false,
     },
     ["SOARING"] = {
         ["exits"] = {
@@ -3153,6 +3244,7 @@ function _mm_logic()
             ["Owl Ikana"] = function () return has('OWL_IKANA_CANYON') end,
             ["Owl Stone Tower"] = function () return has('OWL_STONE_TOWER') end,
         },
+        ["age_change"] = false,
     },
     ["Owl Clock Town"] = {
         ["exits"] = {
@@ -3163,6 +3255,7 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Owl Statue"] = function () return has_sticks() or has_weapon() end,
         },
+        ["age_change"] = false,
     },
     ["Owl Milk Road"] = {
         ["events"] = {
@@ -3179,6 +3272,7 @@ function _mm_logic()
             ["Milk Road Grass 2"] = function () return true end,
             ["Milk Road Grass 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Owl Swamp"] = {
         ["events"] = {
@@ -3193,6 +3287,7 @@ function _mm_logic()
         ["locations"] = {
             ["Southern Swamp Owl Statue"] = function () return has_sticks() or has_weapon() end,
         },
+        ["age_change"] = false,
     },
     ["Owl Woodfall"] = {
         ["events"] = {
@@ -3210,6 +3305,7 @@ function _mm_logic()
             ["Woodfall Pot 2"] = function () return true end,
             ["Woodfall Pot 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Owl Mountain"] = {
         ["events"] = {
@@ -3224,6 +3320,7 @@ function _mm_logic()
         ["locations"] = {
             ["Mountain Village Owl Statue"] = function () return has_sticks() or has_weapon() end,
         },
+        ["age_change"] = false,
     },
     ["Owl Snowhead"] = {
         ["events"] = {
@@ -3238,6 +3335,7 @@ function _mm_logic()
         ["locations"] = {
             ["Snowhead Owl Statue"] = function () return has_sticks() or has_weapon() end,
         },
+        ["age_change"] = false,
     },
     ["Owl Great Bay"] = {
         ["events"] = {
@@ -3250,6 +3348,7 @@ function _mm_logic()
         ["locations"] = {
             ["Great Bay Coast Owl Statue"] = function () return has_sticks() or has_weapon() end,
         },
+        ["age_change"] = false,
     },
     ["Owl Zora Cape"] = {
         ["events"] = {
@@ -3268,6 +3367,7 @@ function _mm_logic()
             ["Zora Cape Pot Near Owl Statue 3"] = function () return true end,
             ["Zora Cape Pot Near Owl Statue 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Owl Ikana"] = {
         ["events"] = {
@@ -3286,6 +3386,7 @@ function _mm_logic()
             ["Ikana Canyon Grass 3"] = function () return true end,
             ["Ikana Canyon Grass 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Owl Stone Tower"] = {
         ["events"] = {
@@ -3304,11 +3405,13 @@ function _mm_logic()
             ["Stone Tower Pot Owl Statue 3"] = function () return true end,
             ["Stone Tower Pot Owl Statue 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Oath to Order"] = {
         ["locations"] = {
             ["Oath to Order"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town"] = {
         ["exits"] = {
@@ -3320,6 +3423,7 @@ function _mm_logic()
         ["locations"] = {
             ["Initial Song of Healing"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Tower Platform"] = {
         ["exits"] = {
@@ -3331,6 +3435,7 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Platform HP"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town South"] = {
         ["events"] = {
@@ -3358,30 +3463,35 @@ function _mm_logic()
             ["Clock Town South Wonder Item 2"] = function () return hit_target_range_far() end,
             ["Clock Town South Wonder Item 3"] = function () return hit_target_range_far() end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town South Upper West"] = {
         ["exits"] = {
             ["Clock Town West"] = function () return true end,
             ["Clock Town South"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town South Lower West"] = {
         ["exits"] = {
             ["Clock Town West"] = function () return true end,
             ["Clock Town South"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town South Upper East"] = {
         ["exits"] = {
             ["Clock Town East"] = function () return true end,
             ["Clock Town South"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town South Lower East"] = {
         ["exits"] = {
             ["Clock Town East"] = function () return true end,
             ["Clock Town South"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town North"] = {
         ["events"] = {
@@ -3422,6 +3532,7 @@ function _mm_logic()
             ["Clock Town Keaton Grass Reward 8"] = function () return keaton_grass_hard() end,
             ["Clock Town Keaton Grass Reward 9"] = function () return keaton_grass_hard() end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town North Postbox"] = {
         ["exits"] = {
@@ -3430,6 +3541,7 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Post Box"] = function () return has('MASK_POSTMAN') end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town West"] = {
         ["events"] = {
@@ -3454,6 +3566,7 @@ function _mm_logic()
             ["Clock Town Bank Reward 3"] = function () return soul_banker() and (can_use_wallet(3) or (can_use_wallet(2) and trick('MM_BANK_ONE_WALLET')) or (can_use_wallet(1) and trick('MM_BANK_NO_WALLET'))) end,
             ["Clock Town Rosa Sisters HP"] = function () return soul_citizen() and has('MASK_KAMARO') and (is_night1() or is_night2()) end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town East Main"] = {
         ["events"] = {
@@ -3490,6 +3603,7 @@ function _mm_logic()
             ["Clock Town East Wonder Item Basket 2"] = function () return true end,
             ["Clock Town East Wonder Item Basket 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town East Postbox"] = {
         ["exits"] = {
@@ -3498,6 +3612,7 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Post Box"] = function () return has('MASK_POSTMAN') end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town East"] = {
         ["events"] = {
@@ -3506,6 +3621,7 @@ function _mm_logic()
         ["exits"] = {
             ["Clock Town East Main"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town East Near Hideout"] = {
         ["exits"] = {
@@ -3514,6 +3630,7 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Bomber Notebook"] = function () return event('GUESS_BOMBER') end,
         },
+        ["age_change"] = false,
     },
     ["Astral Observatory Passage"] = {
         ["events"] = {
@@ -3534,12 +3651,14 @@ function _mm_logic()
             ["Astral Observatory Pot 2"] = function () return true end,
             ["Astral Observatory Pot 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Astral Observatory Junction"] = {
         ["exits"] = {
             ["Astral Observatory Passage"] = function () return true end,
             ["Astral Observatory"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Laundry Pool"] = {
         ["events"] = {
@@ -3560,6 +3679,7 @@ function _mm_logic()
             ["Clock Town Laundry Pool Rupee 2"] = function () return is_night2() end,
             ["Clock Town Laundry Pool Rupee 3"] = function () return is_night2() end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town Fairy Fountain"] = {
         ["exits"] = {
@@ -3569,6 +3689,7 @@ function _mm_logic()
             ["Clock Town Great Fairy"] = function () return has('STRAY_FAIRY_TOWN') end,
             ["Clock Town Great Fairy Alt"] = function () return has('STRAY_FAIRY_TOWN') and (has('MASK_DEKU') or has_mask_goron() or has_mask_zora()) end,
         },
+        ["age_change"] = false,
     },
     ["Bomb Shop"] = {
         ["events"] = {
@@ -3583,6 +3704,7 @@ function _mm_logic()
             ["Bomb Shop Bomb Bag"] = function () return soul_bombchu_shopkeeper() and shop_price(2) end,
             ["Bomb Shop Bomb Bag 2"] = function () return soul_bombchu_shopkeeper() and event('SAKON_BOMB_BAG') and shop_price(3) end,
         },
+        ["age_change"] = false,
     },
     ["Trading Post"] = {
         ["events"] = {
@@ -3603,6 +3725,7 @@ function _mm_logic()
             ["NIGHT2_PM_10_00"] = function () return false end,
             ["NIGHT3_PM_09_00"] = function () return false end,
         },
+        ["age_change"] = false,
     },
     ["Trading Post Items"] = {
         ["locations"] = {
@@ -3615,6 +3738,7 @@ function _mm_logic()
             ["Trading Post Item 7"] = function () return shop_price(11) end,
             ["Trading Post Item 8"] = function () return shop_price(12) end,
         },
+        ["age_change"] = false,
     },
     ["Curiosity Shop"] = {
         ["exits"] = {
@@ -3624,11 +3748,13 @@ function _mm_logic()
         ["locations"] = {
             ["Curiosity Shop All-Night Mask"] = function () return (event('SAKON_BOMB_BAG') or event('SAKON_BOOM')) and shop_price(4) and is_night3() end,
         },
+        ["age_change"] = false,
     },
     ["Curiosity Shop 2"] = {
         ["locations"] = {
             ["Bomb Shop Bomb Bag 2"] = function () return shop_ex_price(0) and is_night3() end,
         },
+        ["age_change"] = false,
     },
     ["Kafei Hideout"] = {
         ["events"] = {
@@ -3642,6 +3768,7 @@ function _mm_logic()
             ["Kafei Hideout Owner Reward 1"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
             ["Kafei Hideout Owner Reward 2"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
         },
+        ["age_change"] = false,
     },
     ["Post Office"] = {
         ["events"] = {
@@ -3653,6 +3780,7 @@ function _mm_logic()
         ["locations"] = {
             ["Post Office HP"] = function () return soul_citizen() and (has_mask_bunny() or trick('MM_POST_OFFICE_GAME')) and (between(DAY1_PM_03_00, NIGHT1_AM_12_00) or (event('MAIL_LETTER') and between(NIGHT2_PM_06_00, NIGHT2_AM_12_00))) end,
         },
+        ["age_change"] = false,
     },
     ["Swordsman School"] = {
         ["exits"] = {
@@ -3669,6 +3797,7 @@ function _mm_logic()
         ["stay"] = {
             ["NIGHT3_PM_11_00"] = function () return false end,
         },
+        ["age_change"] = false,
     },
     ["Lottery"] = {
         ["events"] = {
@@ -3677,6 +3806,7 @@ function _mm_logic()
         ["exits"] = {
             ["Clock Town West"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Mayor's Office"] = {
         ["exits"] = {
@@ -3686,6 +3816,7 @@ function _mm_logic()
             ["Mayor's Office Kafei's Mask"] = function () return soul_npc(SOUL_NPC_AROMA) and (between(DAY1_AM_10_00, NIGHT1_PM_08_00) or between(DAY2_AM_10_00, NIGHT2_PM_08_00)) end,
             ["Mayor's Office HP"] = function () return soul_npc(SOUL_NPC_MAYOR_DOTOUR) and has('MASK_COUPLE') and (between(DAY1_AM_10_00, NIGHT1_PM_08_00) or between(DAY2_AM_10_00, NIGHT2_PM_08_00) or between(DAY3_AM_10_00, NIGHT3_PM_06_00)) end,
         },
+        ["age_change"] = false,
     },
     ["Milk Bar"] = {
         ["exits"] = {
@@ -3697,6 +3828,7 @@ function _mm_logic()
             ["Milk Bar Purchase Milk"] = function () return soul_talon() and has('MASK_ROMANI') and can_use_wallet(1) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
             ["Milk Bar Purchase Chateau"] = function () return soul_talon() and has('MASK_ROMANI') and can_use_wallet(2) and (between(NIGHT1_PM_10_00, DAY2_AM_06_00) or between(NIGHT2_PM_10_00, DAY3_AM_06_00) or between(NIGHT3_PM_06_00, NIGHT3_PM_09_00) or after(NIGHT3_PM_10_00)) end,
         },
+        ["age_change"] = false,
     },
     ["Town Archery"] = {
         ["exits"] = {
@@ -3706,6 +3838,7 @@ function _mm_logic()
             ["Town Archery Reward 1"] = function () return soul_shooting_gallery_owner() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
             ["Town Archery Reward 2"] = function () return soul_shooting_gallery_owner() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
         },
+        ["age_change"] = false,
     },
     ["Chest Game"] = {
         ["exits"] = {
@@ -3714,6 +3847,7 @@ function _mm_logic()
         ["locations"] = {
             ["Chest Game HP"] = function () return soul_bombchu_bowling_lady() and has_mask_goron() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or is_day3()) end,
         },
+        ["age_change"] = false,
     },
     ["Honey & Darling Game"] = {
         ["events"] = {
@@ -3728,6 +3862,7 @@ function _mm_logic()
             ["Honey & Darling Reward Any Day"] = function () return can_use_wallet(1) and (event('HD_REWARD_1') or event('HD_REWARD_2') or event('HD_REWARD_3')) end,
             ["Honey & Darling Reward All Days"] = function () return can_use_wallet(1) and has_bow() and event('HD_REWARD_1') and event('HD_REWARD_2') and event('HD_REWARD_3') end,
         },
+        ["age_change"] = false,
     },
     ["Stock Pot Inn"] = {
         ["events"] = {
@@ -3755,12 +3890,14 @@ function _mm_logic()
             ["Stock Pot Inn Wonder Item 2"] = function () return has_mask_zora() and has_magic() end,
             ["Stock Pot Inn Wonder Item 3"] = function () return has_mask_zora() and has_magic() end,
         },
+        ["age_change"] = false,
     },
     ["Clock Town East SPI Roof"] = {
         ["exits"] = {
             ["Clock Town East"] = function () return true end,
             ["Stock Pot Inn"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stock Pot Inn Roof"] = {
         ["events"] = {
@@ -3769,6 +3906,7 @@ function _mm_logic()
         ["exits"] = {
             ["Clock Town East SPI Roof"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Deku Playground"] = {
         ["events"] = {
@@ -3783,6 +3921,7 @@ function _mm_logic()
             ["Deku Playground Reward Any Day"] = function () return has('MASK_DEKU') and can_use_wallet(1) and (event('DEKU_REWARD_1') or event('DEKU_REWARD_2') or event('DEKU_REWARD_3')) end,
             ["Deku Playground Reward All Days"] = function () return has('MASK_DEKU') and can_use_wallet(1) and event('DEKU_REWARD_1') and event('DEKU_REWARD_2') and event('DEKU_REWARD_3') end,
         },
+        ["age_change"] = false,
     },
     ["Astral Observatory"] = {
         ["events"] = {
@@ -3794,6 +3933,7 @@ function _mm_logic()
             ["Astral Observatory Junction"] = function () return true end,
             ["Astral Observatory Balcony"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Astral Observatory Balcony"] = {
         ["events"] = {
@@ -3806,6 +3946,7 @@ function _mm_logic()
         ["locations"] = {
             ["Astral Observatory Moon Tear"] = function () return event('TEAR_TELESCOPE') end,
         },
+        ["age_change"] = false,
     },
     ["Termina Field"] = {
         ["events"] = {
@@ -4084,6 +4225,7 @@ function _mm_logic()
             ["Termina Field Wonder Item Graffiti 2"] = function () return true end,
             ["Termina Field Wonder Item Graffiti 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Grass Grotto"] = {
         ["events"] = {
@@ -4117,6 +4259,7 @@ function _mm_logic()
             ["Termina Field Tall Grass Grotto Grass 13"] = function () return true end,
             ["Termina Field Tall Grass Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Peahat Grotto"] = {
         ["events"] = {
@@ -4140,6 +4283,7 @@ function _mm_logic()
             ["Peahat Grotto Grass 11"] = function () return true end,
             ["Peahat Grotto Grass 12"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Bio Baba Grotto"] = {
         ["events"] = {
@@ -4154,6 +4298,7 @@ function _mm_logic()
             ["Bio Baba Grotto Grass 1"] = function () return true end,
             ["Bio Baba Grotto Grass 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Dodongo Grotto"] = {
         ["exits"] = {
@@ -4162,6 +4307,7 @@ function _mm_logic()
         ["locations"] = {
             ["Termina Field Dodongo Grotto"] = function () return soul_dodongo() and (has_weapon() or has_explosives() or has_mask_goron() or has_arrows()) end,
         },
+        ["age_change"] = false,
     },
     ["Pillar Grotto"] = {
         ["events"] = {
@@ -4195,6 +4341,7 @@ function _mm_logic()
             ["Termina Field Pillar Grotto Grass 13"] = function () return true end,
             ["Termina Field Pillar Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Scrub Grotto"] = {
         ["events"] = {
@@ -4208,6 +4355,7 @@ function _mm_logic()
             ["Termina Field Scrub"] = function () return event('SCRUB_TELESCOPE') and can_use_wallet(2) end,
             ["Termina Field Scrub Pot"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Termina Field Cow Grotto"] = {
         ["events"] = {
@@ -4296,6 +4444,7 @@ function _mm_logic()
             ["Termina Field Cow Grotto Grass 71"] = function () return true end,
             ["Termina Field Cow Grotto Grass 72"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Gossip Grotto"] = {
         ["events"] = {
@@ -4310,6 +4459,7 @@ function _mm_logic()
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Gossip Grotto"] = {
         ["events"] = {
@@ -4323,6 +4473,7 @@ function _mm_logic()
         ["locations"] = {
             ["Termina Field Gossip Stones HP"] = function () return event('SWAMP_SONG') and event('MOUNTAIN_SONG') and event('OCEAN_SONG') and event('CANYON_SONG') end,
         },
+        ["age_change"] = false,
     },
     ["Ocean Gossip Grotto"] = {
         ["events"] = {
@@ -4346,6 +4497,7 @@ function _mm_logic()
             ["Ocean Gossip Grotto Grass 4"] = function () return true end,
             ["Ocean Gossip Grotto Grass 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Canyon Gossip Grotto"] = {
         ["events"] = {
@@ -4369,6 +4521,7 @@ function _mm_logic()
             ["Canyon Gossip Grotto Grass 4"] = function () return true end,
             ["Canyon Gossip Grotto Grass 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Road to Southern Swamp"] = {
         ["events"] = {
@@ -4414,6 +4567,7 @@ function _mm_logic()
             ["Road to Southern Swamp Grass 1"] = function () return true end,
             ["Road to Southern Swamp Grass 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Archery"] = {
         ["exits"] = {
@@ -4423,6 +4577,7 @@ function _mm_logic()
             ["Swamp Archery Reward 1"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
             ["Swamp Archery Reward 2"] = function () return soul_bazaar_shopkeeper() and has_bow() and can_use_wallet(1) and (before(NIGHT1_PM_10_00) or between(DAY2_AM_06_00, NIGHT2_PM_10_00) or between(DAY3_AM_06_00, NIGHT3_PM_10_00)) end,
         },
+        ["age_change"] = false,
     },
     ["Road to Southern Swamp Grotto"] = {
         ["events"] = {
@@ -4455,6 +4610,7 @@ function _mm_logic()
             ["Road to Southern Swamp Grotto Grass 13"] = function () return true end,
             ["Road to Southern Swamp Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Front"] = {
         ["events"] = {
@@ -4522,6 +4678,7 @@ function _mm_logic()
             ["Southern Swamp Rupee 1"] = function () return has('MASK_DEKU') or is_tall() or short_hook_anywhere() or has_hover_boots() end,
             ["Southern Swamp Rupee 2"] = function () return has('MASK_DEKU') or is_tall() or short_hook_anywhere() or has_hover_boots() end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Back"] = {
         ["events"] = {
@@ -4538,6 +4695,7 @@ function _mm_logic()
         ["locations"] = {
             ["Southern Swamp Song of Soaring"] = function () return has_mask_zora() and has_explosives() and trick('MM_SOARING_ZORA') end,
         },
+        ["age_change"] = false,
     },
     ["Near Swamp Spider House"] = {
         ["exits"] = {
@@ -4546,6 +4704,7 @@ function _mm_logic()
             ["Near Swamp Grotto"] = function () return has('MASK_DEKU') or is_tall() or is_swamp_cleared() or short_hook_anywhere() or has_hover_boots() end,
             ["Swamp Canopy Front"] = function () return short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Near Swamp Grotto"] = {
         ["events"] = {
@@ -4557,6 +4716,7 @@ function _mm_logic()
             ["Southern Swamp Grotto"] = function () return true end,
             ["Swamp Canopy Front"] = function () return short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Southern Swamp Grotto"] = {
         ["events"] = {
@@ -4590,6 +4750,7 @@ function _mm_logic()
             ["Southern Swamp Grotto Grass 13"] = function () return true end,
             ["Southern Swamp Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Tourist Information"] = {
         ["events"] = {
@@ -4604,6 +4765,7 @@ function _mm_logic()
             ["Tourist Information Boat Archery"] = function () return event('KOUME') and is_swamp_cleared() and has_bow() end,
             ["Tourist Information Tingle Picture"] = function () return soul_npc(SOUL_NPC_TOURIST_CENTER) and (event('PICTURE_TINGLE') or event('PICTURE_DEKU_KING')) and is_swamp_poisoned() end,
         },
+        ["age_change"] = false,
     },
     ["Woods of Mystery"] = {
         ["events"] = {
@@ -4640,6 +4802,7 @@ function _mm_logic()
             ["Woods of Mystery Grass NE 4"] = function () return true end,
             ["Woods of Mystery Grass NE 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Near Woods of Mystery Grotto"] = {
         ["exits"] = {
@@ -4650,11 +4813,13 @@ function _mm_logic()
         ["locations"] = {
             ["Woods of Mystery Grass SE"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woods of Mystery Lost"] = {
         ["exits"] = {
             ["Swamp Front"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woods of Mystery Grotto"] = {
         ["events"] = {
@@ -4688,6 +4853,7 @@ function _mm_logic()
             ["Woods of Mystery Grotto Grass 13"] = function () return true end,
             ["Woods of Mystery Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Potion Shop"] = {
         ["exits"] = {
@@ -4699,6 +4865,7 @@ function _mm_logic()
             ["Swamp Potion Shop Item 3"] = function () return soul_npc(SOUL_NPC_KOUME_KOTAKE) and shop_price(15) and (first_day() or event('MEET_KOUME')) end,
             ["Swamp Potion Shop Rupee"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Front"] = {
         ["events"] = {
@@ -4711,6 +4878,7 @@ function _mm_logic()
             ["Deku Palace Main"] = function () return has('MASK_DEKU') or trick('MM_PALACE_GUARD_SKIP') or short_hook_anywhere() end,
             ["Deku Palace Upper"] = function () return (is_swamp_cleared() or has('MASK_DEKU') or can_use_nayru()) and can_use_beans() end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Main"] = {
         ["exits"] = {
@@ -4746,6 +4914,7 @@ function _mm_logic()
             ["Deku Palace Rupee Left 11"] = function () return is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP') end,
             ["Deku Palace Rupee Left 12"] = function () return is_child() or has('MASK_DEKU') or trick('MM_PALACE_BEAN_SKIP') end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Upper"] = {
         ["events"] = {
@@ -4759,6 +4928,7 @@ function _mm_logic()
             ["Deku Palace Pot 1"] = function () return true end,
             ["Deku Palace Pot 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Throne"] = {
         ["events"] = {
@@ -4769,6 +4939,7 @@ function _mm_logic()
             ["Deku Palace Main"] = function () return true end,
             ["Deku Palace Cage"] = function () return event('RETURN_PRINCESS') and short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Near Cage"] = {
         ["exits"] = {
@@ -4776,6 +4947,7 @@ function _mm_logic()
             ["Deku Palace Upper"] = function () return has('MASK_DEKU') or short_hook_anywhere() end,
             ["Deku Palace Cage"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Cage"] = {
         ["exits"] = {
@@ -4785,6 +4957,7 @@ function _mm_logic()
         ["locations"] = {
             ["Deku Palace Sonata of Awakening"] = function () return is_swamp_poisoned() and has('MASK_DEKU') and has_ocarina() end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Grotto"] = {
         ["events"] = {
@@ -4812,12 +4985,14 @@ function _mm_logic()
             ["Deku Palace Grotto Grass 11"] = function () return true end,
             ["Deku Palace Grotto Grass 12"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Deku Palace Cliff"] = {
         ["exits"] = {
             ["Deku Palace Front"] = function () return has('MASK_DEKU') or is_swamp_cleared() or short_hook_anywhere() or can_use_nayru() or has_hover_boots() end,
             ["Swamp Canopy Front"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Canopy Front"] = {
         ["exits"] = {
@@ -4827,6 +5002,7 @@ function _mm_logic()
             ["Deku Palace Cliff"] = function () return true end,
             ["Swamp Canopy Back"] = function () return has('MASK_DEKU') or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Canopy Back"] = {
         ["exits"] = {
@@ -4838,6 +5014,7 @@ function _mm_logic()
         ["locations"] = {
             ["Southern Swamp Song of Soaring"] = function () return has('MASK_DEKU') or short_hook_anywhere() or (has_hover_boots() and has_mask_bunny() and (has_weapon() or has_explosives()) and trick('MM_SOARING_HOVERS')) or (has_mask_zora() and has_explosives() and trick('MM_SOARING_ZORA')) end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall"] = {
         ["events"] = {
@@ -4861,6 +5038,7 @@ function _mm_logic()
             ["Woodfall Grass 6"] = function () return true end,
             ["Woodfall Rupee"] = function () return has('MASK_DEKU') and (soul_deku_scrub() or is_swamp_cleared()) or hookshot_anywhere() or has_hover_boots() end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Front of Temple"] = {
         ["exits"] = {
@@ -4868,6 +5046,7 @@ function _mm_logic()
             ["Woodfall Shrine"] = function () return cond(setting('openDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'WF') or setting('clearStateDungeonsMm', 'both'), has('MASK_DEKU') or hookshot_anywhere(), true) end,
             ["Woodfall"] = function () return is_swamp_cleared() or can_use_nayru() end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Shrine"] = {
         ["events"] = {
@@ -4882,6 +5061,7 @@ function _mm_logic()
         ["locations"] = {
             ["Woodfall Near Owl Chest"] = function () return short_hook_anywhere() or (has_hover_boots() and has_mask_bunny() and has_weapon() and trick('MM_WF_SHRINE_HOVERS')) end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Near Fairy Fountain"] = {
         ["exits"] = {
@@ -4892,6 +5072,7 @@ function _mm_logic()
         ["locations"] = {
             ["Woodfall Near Owl Chest"] = function () return can_hookshot() or (is_adult() and can_hookshot_short() and (is_swamp_cleared() or can_use_nayru())) end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Fairy Fountain"] = {
         ["exits"] = {
@@ -4900,18 +5081,21 @@ function _mm_logic()
         ["locations"] = {
             ["Woodfall Great Fairy"] = function () return has('STRAY_FAIRY_WF', 15) end,
         },
+        ["age_change"] = false,
     },
     ["Near Deku Shrine"] = {
         ["exits"] = {
             ["Deku Palace Front"] = function () return is_swamp_cleared() or has('MASK_DEKU') or can_use_nayru() or has_hover_boots() end,
             ["Deku Shrine"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Deku Shrine"] = {
         ["exits"] = {
             ["Near Deku Shrine"] = function () return true end,
             ["Deku Shrine Main"] = function () return soul_npc(SOUL_NPC_BUTLER_DEKU) and event('RETURN_PRINCESS') end,
         },
+        ["age_change"] = false,
     },
     ["Deku Shrine Main"] = {
         ["exits"] = {
@@ -4941,6 +5125,7 @@ function _mm_logic()
             ["Deku Shrine Rupee Main 19"] = function () return true end,
             ["Deku Shrine Rupee Main 20"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Deku Shrine End"] = {
         ["locations"] = {
@@ -4956,12 +5141,14 @@ function _mm_logic()
             ["Deku Shrine Rupee End 09"] = function () return true end,
             ["Deku Shrine Rupee End 10"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Behind Large Icicles"] = {
         ["exits"] = {
             ["Termina Field"] = function () return has_arrows() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE')) or has_hot_water_farore() or has_hot_water_mtn() or has_hot_water_er() or short_hook_anywhere() or can_use_din() end,
             ["Mountain Village Path Lower"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Village Path Lower"] = {
         ["events"] = {
@@ -4973,6 +5160,7 @@ function _mm_logic()
             ["Behind Large Icicles"] = function () return true end,
             ["Mountain Village Path Upper"] = function () return can_break_snowballs() or is_spring() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Village Path Upper"] = {
         ["events"] = {
@@ -4983,6 +5171,7 @@ function _mm_logic()
             ["Mountain Village Path Lower"] = function () return true end,
             ["Mountain Village"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Village"] = {
         ["events"] = {
@@ -5049,6 +5238,7 @@ function _mm_logic()
             ["Mountain Village Keaton Grass Reward 9"] = function () return is_spring() and keaton_grass_hard() end,
             ["Mountain Village Rupee"] = function () return is_spring() and has_mask_goron() end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Village Elder"] = {
         ["exits"] = {
@@ -5057,6 +5247,7 @@ function _mm_logic()
         ["locations"] = {
             ["Goron Elder"] = function () return soul_npc(SOUL_NPC_GORON_ELDER) and is_winter() and final_day() and has_mask_goron() and (can_use_fire_short_range() or has_hot_water_er() or has_hot_water_mtn() or has_hot_water_farore() or (has_hot_water_distance() and has('OWL_MOUNTAIN_VILLAGE'))) end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Village Keaton"] = {
         ["exits"] = {
@@ -5065,6 +5256,7 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Keaton HP"] = function () return is_spring() and soul_npc(SOUL_NPC_KEATON) and has_mask_keaton() end,
         },
+        ["age_change"] = false,
     },
     ["Near Village Grotto"] = {
         ["exits"] = {
@@ -5072,6 +5264,7 @@ function _mm_logic()
             ["Mountain Village"] = function () return true end,
             ["Mountain Village Cliff"] = function () return is_spring() and (has_mask_goron() or short_hook_anywhere()) end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Village Grotto"] = {
         ["events"] = {
@@ -5105,6 +5298,7 @@ function _mm_logic()
             ["Mountain Village Tunnel Grotto Grass 13"] = function () return true end,
             ["Mountain Village Tunnel Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Blacksmith"] = {
         ["events"] = {
@@ -5118,6 +5312,7 @@ function _mm_logic()
             ["Blacksmith Razor Blade"] = function () return soul_npc(SOUL_NPC_BLACKSMITHS) and can_use_wallet(2) and event('BLACKSMITH_ENABLED') end,
             ["Blacksmith Gilded Sword"] = function () return event('GOLD_DUST_USED') end,
         },
+        ["age_change"] = false,
     },
     ["Twin Islands"] = {
         ["events"] = {
@@ -5154,6 +5349,7 @@ function _mm_logic()
             ["Twin Islands Rupee 3"] = function () return is_spring() and (underwater_walking() or can_dive_small()) end,
             ["Twin Islands Rupee 4"] = function () return is_spring() and (underwater_walking() or can_dive_small()) end,
         },
+        ["age_change"] = false,
     },
     ["Twin Islands Ramp Grotto"] = {
         ["events"] = {
@@ -5187,6 +5383,7 @@ function _mm_logic()
             ["Twin Islands Ramp Grotto Grass 13"] = function () return true end,
             ["Twin Islands Ramp Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Twin Islands Frozen Grotto"] = {
         ["events"] = {
@@ -5203,6 +5400,7 @@ function _mm_logic()
         ["locations"] = {
             ["Twin Islands Frozen Grotto Chest"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL')) end,
         },
+        ["age_change"] = false,
     },
     ["Near Goron Race"] = {
         ["events"] = {
@@ -5213,6 +5411,7 @@ function _mm_logic()
             ["Goron Race"] = function () return event('TRIAL_BOULDER') or (short_hook_anywhere() and trick('MM_HARD_HOOKSHOT')) end,
             ["Near Ramp Grotto"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Near Ramp Grotto"] = {
         ["events"] = {
@@ -5222,6 +5421,7 @@ function _mm_logic()
             ["Twin Islands"] = function () return true end,
             ["Twin Islands Ramp Grotto"] = function () return has_explosives() or trick_keg_explosives() or (trick('MM_KEG_EXPLOSIVES') and event('POWDER_KEG_TRIAL')) end,
         },
+        ["age_change"] = false,
     },
     ["Goron Village"] = {
         ["events"] = {
@@ -5245,12 +5445,14 @@ function _mm_logic()
             ["Goron Village Scrub Bomb Bag"] = function () return soul_business_scrub() and has_mask_goron() and can_use_wallet(2) end,
             ["Goron Powder Keg"] = function () return event('TRIAL_BOULDER') and (event('POWDER_KEG_TRIAL') or (short_hook_anywhere() and trick('MM_KEG_TRIAL_HEATLESS'))) end,
         },
+        ["age_change"] = false,
     },
     ["Front of Lone Peak Shrine"] = {
         ["exits"] = {
             ["Goron Village"] = function () return is_winter() and can_use_lens() end,
             ["Lone Peak Shrine"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Lone Peak Shrine"] = {
         ["events"] = {
@@ -5290,6 +5492,7 @@ function _mm_logic()
             ["Lone Peak Shrine Grass Pack 2 Grass 11"] = function () return true end,
             ["Lone Peak Shrine Grass Pack 2 Grass 12"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Mountain Village Cliff"] = {
         ["events"] = {
@@ -5301,6 +5504,7 @@ function _mm_logic()
             ["Goron Graveyard"] = function () return true end,
             ["Near Village Grotto"] = function () return is_spring() end,
         },
+        ["age_change"] = false,
     },
     ["Near Goron Graveyard"] = {
         ["events"] = {
@@ -5310,6 +5514,7 @@ function _mm_logic()
         ["exits"] = {
             ["Mountain Village Cliff"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Goron Graveyard"] = {
         ["exits"] = {
@@ -5319,6 +5524,7 @@ function _mm_logic()
         ["locations"] = {
             ["Goron Graveyard Mask"] = function () return can_use_lens_strict() and can_play_healing() end,
         },
+        ["age_change"] = false,
     },
     ["Goron Graveyard Water"] = {
         ["events"] = {
@@ -5330,6 +5536,7 @@ function _mm_logic()
         ["exits"] = {
             ["Goron Graveyard"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Goron Shrine"] = {
         ["events"] = {
@@ -5355,11 +5562,13 @@ function _mm_logic()
             ["Goron Shrine Pot 10"] = function () return true end,
             ["Goron Shrine Pot 11"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Goron Shrine From Shop"] = {
         ["exits"] = {
             ["Goron Shrine"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Goron Shop"] = {
         ["exits"] = {
@@ -5370,12 +5579,14 @@ function _mm_logic()
             ["Goron Shop Item 2"] = function () return soul_goron_shopkeeper() and shop_price(17) end,
             ["Goron Shop Item 3"] = function () return soul_goron_shopkeeper() and shop_price(18) end,
         },
+        ["age_change"] = false,
     },
     ["Path to Snowhead Front"] = {
         ["exits"] = {
             ["Mountain Village"] = function () return true end,
             ["Path to Snowhead Middle"] = function () return goron_fast_roll() or hookshot_anywhere() or (has_hover_boots() and trick('MM_PATH_SNOWHEAD_HOVERS')) end,
         },
+        ["age_change"] = false,
     },
     ["Path to Snowhead Middle"] = {
         ["exits"] = {
@@ -5385,6 +5596,7 @@ function _mm_logic()
         ["locations"] = {
             ["Path to Snowhead HP"] = function () return can_use_lens() and (scarecrow_hookshot() or hookshot_anywhere()) end,
         },
+        ["age_change"] = false,
     },
     ["Path to Snowhead Back"] = {
         ["events"] = {
@@ -5395,6 +5607,7 @@ function _mm_logic()
             ["Snowhead Entrance"] = function () return true end,
             ["Path to Snowhead Grotto"] = function () return has_explosives() or trick_keg_explosives() end,
         },
+        ["age_change"] = false,
     },
     ["Path to Snowhead Grotto"] = {
         ["events"] = {
@@ -5428,6 +5641,7 @@ function _mm_logic()
             ["Path to Snowhead Grotto Grass 13"] = function () return true end,
             ["Path to Snowhead Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Entrance"] = {
         ["events"] = {
@@ -5443,6 +5657,7 @@ function _mm_logic()
             ["Snowhead Near Fairy Fountain"] = function () return (blizzard_stopped() or (has_iron_boots() and trick('MM_LULLABY_SKIP_IRONS'))) and has_mask_goron() end,
             ["Owl Snowhead"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead"] = {
         ["exits"] = {
@@ -5450,6 +5665,7 @@ function _mm_logic()
             ["Snowhead Temple"] = function () return true end,
             ["Snowhead Near Fairy Fountain"] = function () return blizzard_stopped() or has_iron_boots() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Near Fairy Fountain"] = {
         ["events"] = {
@@ -5461,6 +5677,7 @@ function _mm_logic()
             ["Snowhead"] = function () return blizzard_stopped() or has_iron_boots() end,
             ["Snowhead Fairy Fountain"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Fairy Fountain"] = {
         ["exits"] = {
@@ -5469,6 +5686,7 @@ function _mm_logic()
         ["locations"] = {
             ["Snowhead Great Fairy"] = function () return has('STRAY_FAIRY_SH', 15) end,
         },
+        ["age_change"] = false,
     },
     ["Goron Race"] = {
         ["events"] = {
@@ -5510,6 +5728,7 @@ function _mm_logic()
             ["Goron Race Pot 29"] = function () return true end,
             ["Goron Race Pot 30"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Milk Road"] = {
         ["events"] = {
@@ -5539,6 +5758,7 @@ function _mm_logic()
             ["Milk Road Keaton Grass Reward 8"] = function () return keaton_grass_hard() end,
             ["Milk Road Keaton Grass Reward 9"] = function () return keaton_grass_hard() end,
         },
+        ["age_change"] = false,
     },
     ["Milk Road Keaton"] = {
         ["exits"] = {
@@ -5547,12 +5767,14 @@ function _mm_logic()
         ["locations"] = {
             ["Clock Town Keaton HP"] = function () return soul_npc(SOUL_NPC_KEATON) and has_mask_keaton() end,
         },
+        ["age_change"] = false,
     },
     ["Near Romani Ranch"] = {
         ["exits"] = {
             ["Milk Road"] = function () return after(DAY3_AM_06_00) or can_use_keg() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) end,
             ["Romani Ranch"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Romani Ranch"] = {
         ["events"] = {
@@ -5636,6 +5858,7 @@ function _mm_logic()
             ["Romani Ranch Wonder Item Fence 5"] = function () return true end,
             ["Romani Ranch Wonder Item Fence 6"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Cucco Shack"] = {
         ["events"] = {
@@ -5654,6 +5877,7 @@ function _mm_logic()
             ["Cucco Shack Wonder Item 5"] = function () return true end,
             ["Cucco Shack Wonder Item 6"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Doggy Racetrack"] = {
         ["events"] = {
@@ -5670,6 +5894,7 @@ function _mm_logic()
             ["Doggy Racetrack Pot 3"] = function () return true end,
             ["Doggy Racetrack Pot 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stables"] = {
         ["exits"] = {
@@ -5682,17 +5907,20 @@ function _mm_logic()
             ["Romani Ranch Barn Wonder Item 1"] = function () return true end,
             ["Romani Ranch Barn Wonder Item 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ranch House"] = {
         ["exits"] = {
             ["Romani Ranch"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Fence"] = {
         ["exits"] = {
             ["Termina Field"] = function () return can_play_epona() or (can_goron_bomb_jump() and has_bombs()) or short_hook_anywhere() end,
             ["Great Bay Coast"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Coast"] = {
         ["events"] = {
@@ -5742,11 +5970,13 @@ function _mm_logic()
             ["Great Bay Coast Grass 4"] = function () return true end,
             ["Great Bay Coast Grass 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Coast Water Void"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Coast Near Pinnacle"] = {
         ["exits"] = {
@@ -5756,11 +5986,13 @@ function _mm_logic()
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Coast Near Pinnacle Water Void"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Coast Fortress"] = {
         ["exits"] = {
@@ -5769,6 +6001,7 @@ function _mm_logic()
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Grotto"] = {
         ["events"] = {
@@ -5801,12 +6034,14 @@ function _mm_logic()
             ["Great Bay Coast Fisherman Grotto Grass 13"] = function () return true end,
             ["Great Bay Coast Fisherman Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["GBC Near Cow Grotto"] = {
         ["exits"] = {
             ["Great Bay Coast"] = function () return true end,
             ["Great Bay Cow Grotto"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Cow Grotto"] = {
         ["events"] = {
@@ -5894,6 +6129,7 @@ function _mm_logic()
             ["Great Bay Cow Grotto Grass 71"] = function () return true end,
             ["Great Bay Cow Grotto Grass 72"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Fisher's Hut"] = {
         ["events"] = {
@@ -5902,6 +6138,7 @@ function _mm_logic()
         ["exits"] = {
             ["Great Bay Coast"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pinnacle Rock Entrance"] = {
         ["exits"] = {
@@ -5911,6 +6148,7 @@ function _mm_logic()
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
+        ["age_change"] = false,
     },
     ["Pinnacle Rock"] = {
         ["events"] = {
@@ -5938,11 +6176,13 @@ function _mm_logic()
             ["Pinnacle Rock Pot 10"] = function () return true end,
             ["Pinnacle Rock Pot 11"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pinnacle Rock Water Void"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Laboratory"] = {
         ["exits"] = {
@@ -5952,6 +6192,7 @@ function _mm_logic()
             ["Laboratory Zora Song"] = function () return soul_scientist() and has_all_zora_eggs() and has_mask_zora() and has_ocarina() end,
             ["Laboratory Fish HP"] = function () return has_fish() end,
         },
+        ["age_change"] = false,
     },
     ["Zora Cape"] = {
         ["events"] = {
@@ -5976,6 +6217,7 @@ function _mm_logic()
             ["Zora Cape Pot Near Beavers 1"] = function () return true end,
             ["Zora Cape Pot Near Beavers 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Zora Cape Pot Game"] = {
         ["locations"] = {
@@ -5985,6 +6227,7 @@ function _mm_logic()
             ["Zora Cape Pot Game 4"] = function () return true end,
             ["Zora Cape Pot Game 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Zora Cape Grotto"] = {
         ["events"] = {
@@ -6017,12 +6260,14 @@ function _mm_logic()
             ["Zora Cape Grotto Grass 13"] = function () return true end,
             ["Zora Cape Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Near Fairy Fountain"] = {
         ["exits"] = {
             ["Zora Cape"] = function () return has_explosives() or trick_keg_explosives() or (not setting('erIndoorsMajor')) end,
             ["Great Bay Fairy Fountain"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Great Bay Fairy Fountain"] = {
         ["exits"] = {
@@ -6031,6 +6276,7 @@ function _mm_logic()
         ["locations"] = {
             ["Great Bay Great Fairy"] = function () return has('STRAY_FAIRY_GB', 15) end,
         },
+        ["age_change"] = false,
     },
     ["Waterfall Cliffs"] = {
         ["exits"] = {
@@ -6041,6 +6287,7 @@ function _mm_logic()
             ["Zora Cape Ledge Chest 1"] = function () return can_hookshot() end,
             ["Zora Cape Ledge Chest 2"] = function () return can_hookshot() end,
         },
+        ["age_change"] = false,
     },
     ["Waterfall Rapids"] = {
         ["exits"] = {
@@ -6050,6 +6297,7 @@ function _mm_logic()
             ["Waterfall Rapids Beaver Race 1"] = function () return has_mask_zora() end,
             ["Waterfall Rapids Beaver Race 2"] = function () return has_mask_zora() end,
         },
+        ["age_change"] = false,
     },
     ["Zora Cape Near Hall"] = {
         ["exits"] = {
@@ -6058,12 +6306,14 @@ function _mm_logic()
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
+        ["age_change"] = false,
     },
     ["Zora Hall Entrance"] = {
         ["exits"] = {
             ["Zora Cape Near Hall"] = function () return underwater_walking() or can_dive_small() end,
             ["Zora Hall"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Zora Hall"] = {
         ["exits"] = {
@@ -6078,6 +6328,7 @@ function _mm_logic()
         ["locations"] = {
             ["Zora Hall Scene Lights"] = function () return soul_zora() and (can_use_fire_arrows() or (trick('MM_STAGE_LIGHTS_DIN') and has_arrows() and can_use_din() and can_hookshot())) end,
         },
+        ["age_change"] = false,
     },
     ["Zora Shop"] = {
         ["exits"] = {
@@ -6088,16 +6339,19 @@ function _mm_logic()
             ["Zora Shop Item 2"] = function () return soul_zora_shopkeeper() and shop_price(20) end,
             ["Zora Shop Item 3"] = function () return soul_zora_shopkeeper() and shop_price(21) end,
         },
+        ["age_change"] = false,
     },
     ["Tijo's Room"] = {
         ["exits"] = {
             ["Zora Hall"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Japas' Room"] = {
         ["exits"] = {
             ["Zora Hall"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Evan's Room"] = {
         ["exits"] = {
@@ -6106,6 +6360,7 @@ function _mm_logic()
         ["locations"] = {
             ["Zora Hall Evan HP"] = function () return soul_npc(SOUL_NPC_ZORA_MUSICIANS) and can_play_evan() and (is_ocean_cursed() or (trick('MM_EVAN_FARORE') and can_use_farore())) end,
         },
+        ["age_change"] = false,
     },
     ["Lulu's Room"] = {
         ["exits"] = {
@@ -6116,6 +6371,7 @@ function _mm_logic()
             ["Zora Hall Scrub Shop"] = function () return soul_business_scrub() and has_mask_zora() and can_use_wallet(1) end,
             ["Zora Hall Scrub Deed"] = function () return soul_business_scrub() and has('DEED_MOUNTAIN') and has_mask_goron() end,
         },
+        ["age_change"] = false,
     },
     ["Zora Cape Peninsula"] = {
         ["exits"] = {
@@ -6125,17 +6381,20 @@ function _mm_logic()
             ["Owl Zora Cape"] = function () return true end,
             ["Zora Cape Water Void"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Zora Cape Water Void"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Behind Gorman Fence"] = {
         ["exits"] = {
             ["Milk Road"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or final_day() or short_hook_anywhere() end,
             ["Gorman Track Back"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Gorman Track Front"] = {
         ["exits"] = {
@@ -6146,12 +6405,14 @@ function _mm_logic()
             ["Gorman Track Garo Mask"] = function () return soul_gorman() and can_play_epona() and can_use_wallet(1) and is_day() end,
             ["Gorman Track Milk Purchase"] = function () return soul_gorman() and can_use_wallet(1) and is_day() end,
         },
+        ["age_change"] = false,
     },
     ["Gorman Track Back"] = {
         ["exits"] = {
             ["Behind Gorman Fence"] = function () return true end,
             ["Gorman Track"] = function () return can_goron_bomb_jump() and has_bombs() or (is_night2() and event('ALIENS')) or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Gorman Track"] = {
         ["exits"] = {
@@ -6184,6 +6445,7 @@ function _mm_logic()
             ["Gorman Track Grass Pack 2 Grass 11"] = function () return true end,
             ["Gorman Track Grass Pack 2 Grass 12"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Road to Ikana Front"] = {
         ["events"] = {
@@ -6197,6 +6459,7 @@ function _mm_logic()
         ["locations"] = {
             ["Road to Ikana Chest"] = function () return can_hookshot() or (can_hookshot_short() and trick('MM_HARD_HOOKSHOT')) end,
         },
+        ["age_change"] = false,
     },
     ["Road to Ikana Grotto"] = {
         ["events"] = {
@@ -6229,6 +6492,7 @@ function _mm_logic()
             ["Road to Ikana Grotto Grass 13"] = function () return true end,
             ["Road to Ikana Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Road to Ikana Center"] = {
         ["events"] = {
@@ -6244,6 +6508,7 @@ function _mm_logic()
             ["Road to Ikana Stone Mask"] = function () return can_use_lens_strict() and has_red_or_blue_potion() end,
             ["Road to Ikana Pot"] = function () return scarecrow_hookshot() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Graveyard"] = {
         ["events"] = {
@@ -6287,6 +6552,7 @@ function _mm_logic()
             ["Ikana Graveyard Wonder Item 11"] = function () return hit_target_range_close() end,
             ["Ikana Graveyard Wonder Item 12"] = function () return hit_target_range_close() end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Graveyard Grotto"] = {
         ["events"] = {
@@ -6319,6 +6585,7 @@ function _mm_logic()
             ["Ikana Graveyard Grotto Grass 13"] = function () return true end,
             ["Ikana Graveyard Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Graveyard Night 1"] = {
         ["events"] = {
@@ -6337,12 +6604,14 @@ function _mm_logic()
             ["Beneath The Graveyard Pot Night 1 Bats 2"] = function () return true end,
             ["Beneath The Graveyard Pot Night 1 Bats 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Graveyard Night 1/2 Exchange"] = {
         ["exits"] = {
             ["Beneath The Graveyard Night 1"] = function () return true end,
             ["Beneath The Graveyard Night 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Graveyard Night 2"] = {
         ["events"] = {
@@ -6370,11 +6639,13 @@ function _mm_logic()
             ["Beneath The Graveyard Rupee 6"] = function () return true end,
             ["Beneath The Graveyard Rupee 7"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Graveyard Night 3 Fake Exit"] = {
         ["exits"] = {
             ["Ikana Graveyard"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Graveyard Night 3"] = {
         ["events"] = {
@@ -6399,11 +6670,13 @@ function _mm_logic()
             ["Beneath The Graveyard Pot Dampe 09"] = function () return true end,
             ["Beneath The Graveyard Pot Dampe 10"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Beneath The Graveyard Night 3 Wallmaster"] = {
         ["exits"] = {
             ["VOID"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Road to Ikana Top"] = {
         ["events"] = {
@@ -6413,6 +6686,7 @@ function _mm_logic()
             ["Road to Ikana Center"] = function () return true end,
             ["Ikana Valley"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Valley"] = {
         ["events"] = {
@@ -6431,6 +6705,7 @@ function _mm_logic()
             ["Ikana Valley Scrub HP"] = function () return has('DEED_OCEAN') and has_mask_zora() and has('MASK_DEKU') or hookshot_anywhere() end,
             ["Ikana Valley Scrub Shop"] = function () return soul_business_scrub() and can_use_wallet(2) end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Valley Grotto"] = {
         ["events"] = {
@@ -6463,6 +6738,7 @@ function _mm_logic()
             ["Ikana Valley Grotto Grass 13"] = function () return true end,
             ["Ikana Valley Grotto Grass 14"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Sakon Hideout"] = {
         ["events"] = {
@@ -6478,6 +6754,7 @@ function _mm_logic()
             ["Sakon Hideout Pot Second Room 2"] = function () return soul_deku_baba() end,
             ["Sakon Hideout Pot Third Room"] = function () return soul_deku_baba() end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Canyon"] = {
         ["events"] = {
@@ -6500,6 +6777,7 @@ function _mm_logic()
             ["Tingle Ikana"] = function () return soul_npc(SOUL_NPC_TINGLE) and has_weapon_range() end,
             ["Owl Ikana"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Fairy Fountain"] = {
         ["exits"] = {
@@ -6508,6 +6786,7 @@ function _mm_logic()
         ["locations"] = {
             ["Ikana Great Fairy"] = function () return has('STRAY_FAIRY_ST', 15) end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Spring Water Cave"] = {
         ["events"] = {
@@ -6516,6 +6795,7 @@ function _mm_logic()
         ["exits"] = {
             ["Ikana Canyon"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Music Box House"] = {
         ["exits"] = {
@@ -6524,6 +6804,7 @@ function _mm_logic()
         ["locations"] = {
             ["Music Box House Gibdo Mask"] = function () return is_valley_cursed() and can_play_healing() end,
         },
+        ["age_change"] = false,
     },
     ["Ghost Hut"] = {
         ["exits"] = {
@@ -6532,6 +6813,7 @@ function _mm_logic()
         ["locations"] = {
             ["Ghost Hut HP"] = function () return soul_poe_collector() and (has_arrows() or can_hookshot_short() or can_use_deku_bubble()) and can_use_wallet(1) and is_valley_cursed() end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Castle Entrance"] = {
         ["events"] = {
@@ -6541,6 +6823,7 @@ function _mm_logic()
             ["Ikana Castle Exterior"] = function () return has_mirror_shield() and event('IKANA_CASTLE_LIGHT_ENTRANCE') or can_use_light_arrows() or short_hook_anywhere() end,
             ["Ikana Canyon"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Ikana Castle Exterior"] = {
         ["events"] = {
@@ -6570,6 +6853,7 @@ function _mm_logic()
             ["Ancient Castle of Ikana Grass 11"] = function () return true end,
             ["Ancient Castle of Ikana Grass 12"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower"] = {
         ["exits"] = {
@@ -6582,6 +6866,7 @@ function _mm_logic()
             ["Stone Tower Pot Climb 1"] = function () return can_hookshot_short() end,
             ["Stone Tower Pot Climb 2"] = function () return can_hookshot_short() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Top"] = {
         ["exits"] = {
@@ -6592,6 +6877,7 @@ function _mm_logic()
             ["Stone Tower Upper Scarecrow Ledge"] = function () return scarecrow_hookshot() or short_hook_anywhere() or (has_hover_boots() and has_weapon()) end,
             ["Owl Stone Tower"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Front of Temple"] = {
         ["exits"] = {
@@ -6602,6 +6888,7 @@ function _mm_logic()
             ["Stone Tower Lower Scarecrow Ledge"] = function () return has_mask_goron() or is_tall() or scarecrow_hookshot() or hookshot_anywhere() or has_hover_boots() or (short_hook_anywhere() and trick('MM_OOB_MOVEMENT')) end,
             ["Stone Tower Upper Scarecrow Ledge"] = function () return scarecrow_hookshot() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Lower Scarecrow Ledge"] = {
         ["events"] = {
@@ -6626,6 +6913,7 @@ function _mm_logic()
             ["Stone Tower Pot Lower Scarecrow 11"] = function () return true end,
             ["Stone Tower Pot Lower Scarecrow 12"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Upper Scarecrow Ledge"] = {
         ["events"] = {
@@ -6648,6 +6936,7 @@ function _mm_logic()
             ["Stone Tower Pot Higher Scarecrow 8"] = function () return true end,
             ["Stone Tower Pot Higher Scarecrow 9"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Top Inverted"] = {
         ["events"] = {
@@ -6658,6 +6947,7 @@ function _mm_logic()
             ["Stone Tower Top"] = function () return can_use_light_arrows() or setting('openDungeonsMm', 'ST') end,
             ["Stone Tower Top Inverted Upper"] = function () return can_use_beans() or hookshot_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Top Inverted Upper"] = {
         ["events"] = {
@@ -6679,12 +6969,14 @@ function _mm_logic()
             ["Stone Tower Inverted Pot 4"] = function () return true end,
             ["Stone Tower Inverted Pot 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress"] = {
         ["exits"] = {
             ["Great Bay Coast Fortress"] = function () return underwater_walking() or can_dive_small() end,
             ["Pirate Fortress Entrance"] = function () return can_reset_time_dungeon() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Entrance"] = {
         ["events"] = {
@@ -6701,6 +6993,7 @@ function _mm_logic()
             ["Pirate Fortress Entrance Chest 2"] = function () return underwater_walking() end,
             ["Pirate Fortress Entrance Chest 3"] = function () return underwater_walking() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Entrance Balcony"] = {
         ["exits"] = {
@@ -6708,6 +7001,7 @@ function _mm_logic()
             ["Pirate Fortress Sewers End"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Sewers"] = {
         ["exits"] = {
@@ -6719,6 +7013,7 @@ function _mm_logic()
         ["locations"] = {
             ["Pirate Fortress Sewers Chest 1"] = function () return underwater_walking_strict() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Sewers Cage Room"] = {
         ["exits"] = {
@@ -6738,6 +7033,7 @@ function _mm_logic()
             ["Pirate Fortress Sewers Rupee Near Cage 4"] = function () return true end,
             ["Pirate Fortress Sewers Rupee Cage"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Sewers After Gate"] = {
         ["exits"] = {
@@ -6748,6 +7044,7 @@ function _mm_logic()
             ["Pirate Fortress Sewers Pot Waterway 1"] = function () return true end,
             ["Pirate Fortress Sewers Pot Waterway 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Sewers End"] = {
         ["events"] = {
@@ -6767,6 +7064,7 @@ function _mm_logic()
             ["Pirate Fortress Sewers Rupee Water Elevator 2"] = function () return true end,
             ["Pirate Fortress Sewers Rupee Water Elevator 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Sewers Entrance"] = {
         ["exits"] = {
@@ -6774,6 +7072,7 @@ function _mm_logic()
             ["SOARING"] = function () return has_mask_zora() and can_play_soaring() end,
             ["WARP_SONGS"] = function () return has_mask_zora() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Interior"] = {
         ["events"] = {
@@ -6802,6 +7101,7 @@ function _mm_logic()
             ["Pirate Fortress Interior Wonder Item Skull Eyes 5"] = function () return hit_target_range_close() end,
             ["Pirate Fortress Interior Wonder Item Skull Eyes 6"] = function () return hit_target_range_close() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Hookshot Room Upper"] = {
         ["events"] = {
@@ -6815,6 +7115,7 @@ function _mm_logic()
             ["Pirate Fortress Interior Pot Beehive 1"] = function () return true end,
             ["Pirate Fortress Interior Pot Beehive 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Hookshot Room Lower"] = {
         ["events"] = {
@@ -6830,6 +7131,7 @@ function _mm_logic()
             ["Pirate Fortress Interior Wonder Item Skull Forehead 2"] = function () return event('FORTRESS_BEEHIVE') and hit_target_range_close() end,
             ["Pirate Fortress Interior Wonder Item Skull Forehead 3"] = function () return event('FORTRESS_BEEHIVE') and hit_target_range_close() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Barrel Maze Entry"] = {
         ["exits"] = {
@@ -6837,12 +7139,14 @@ function _mm_logic()
             ["Pirate Fortress Entrance Lookout"] = function () return true end,
             ["Pirate Fortress Barrel Maze"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Entrance Lookout"] = {
         ["exits"] = {
             ["Pirate Fortress Barrel Maze Entry"] = function () return true end,
             ["Pirate Fortress Entrance"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Barrel Maze"] = {
         ["exits"] = {
@@ -6851,6 +7155,7 @@ function _mm_logic()
             ["SOARING"] = function () return can_play_soaring() end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Barrel Maze Aquarium"] = {
         ["events"] = {
@@ -6867,12 +7172,14 @@ function _mm_logic()
             ["Pirate Fortress Interior Pot Barrel Maze 2"] = function () return true end,
             ["Pirate Fortress Interior Pot Barrel Maze 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Barrel Maze Exit"] = {
         ["exits"] = {
             ["Pirate Fortress Barrel Maze Aquarium"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Lone Guard Entry"] = {
         ["exits"] = {
@@ -6880,12 +7187,14 @@ function _mm_logic()
             ["Pirate Fortress Lone Guard"] = function () return true end,
             ["Pirate Fortress Treasure Room Entry"] = function () return can_hookshot() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Lone Guard"] = {
         ["exits"] = {
             ["Pirate Fortress Lone Guard Aquarium"] = function () return can_fight() and can_evade_gerudo() end,
             ["Pirate Fortress Lone Guard Entry"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Lone Guard Aquarium"] = {
         ["events"] = {
@@ -6902,18 +7211,21 @@ function _mm_logic()
             ["Pirate Fortress Interior Pot Chest Aquarium 2"] = function () return true end,
             ["Pirate Fortress Interior Pot Chest Aquarium 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Lone Guard Exit"] = {
         ["exits"] = {
             ["Pirate Fortress Lone Guard Aquarium"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Treasure Room Entry"] = {
         ["exits"] = {
             ["Pirate Fortress Interior"] = function () return can_evade_gerudo() end,
             ["Pirate Fortress Treasure Room"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Treasure Room"] = {
         ["exits"] = {
@@ -6923,6 +7235,7 @@ function _mm_logic()
         ["locations"] = {
             ["Pirate Fortress Interior Silver Rupee Chest"] = function () return can_evade_gerudo() end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Treasure Room Aquarium"] = {
         ["events"] = {
@@ -6937,18 +7250,21 @@ function _mm_logic()
             ["Pirate Fortress Interior Pot Guarded 1"] = function () return true end,
             ["Pirate Fortress Interior Pot Guarded 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Pirate Fortress Treasure Room Exit"] = {
         ["exits"] = {
             ["Pirate Fortress Treasure Room Aquarium"] = function () return true end,
             ["Pirate Fortress Interior"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine"] = {
         ["exits"] = {
             ["Ikana Valley"] = function () return true end,
             ["Secret Shrine Entrance"] = function () return can_reset_time_dungeon() end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine Entrance"] = {
         ["events"] = {
@@ -6970,6 +7286,7 @@ function _mm_logic()
             ["Secret Shrine Grass Entrance 5"] = function () return true end,
             ["Secret Shrine Grass Entrance 6"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine Rupees"] = {
         ["locations"] = {
@@ -6991,6 +7308,7 @@ function _mm_logic()
             ["Secret Shrine Rupee 16"] = function () return true end,
             ["Secret Shrine Rupee 17"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine Main"] = {
         ["events"] = {
@@ -7014,6 +7332,7 @@ function _mm_logic()
             ["Secret Shrine Pot 8"] = function () return true end,
             ["Secret Shrine Pot 9"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine Boss Dinalfos"] = {
         ["events"] = {
@@ -7026,6 +7345,7 @@ function _mm_logic()
             ["Secret Shrine Grass Dinolfos 3"] = function () return true end,
             ["Secret Shrine Grass Dinolfos 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine Boss Wizzrobe"] = {
         ["events"] = {
@@ -7039,6 +7359,7 @@ function _mm_logic()
             ["Secret Shrine Grass Wizzrobe 4"] = function () return true end,
             ["Secret Shrine Grass Wizzrobe 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine Boss Wart"] = {
         ["events"] = {
@@ -7055,6 +7376,7 @@ function _mm_logic()
             ["Secret Shrine Grass Wart 7"] = function () return true end,
             ["Secret Shrine Grass Wart 8"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Secret Shrine Boss Garo Master"] = {
         ["events"] = {
@@ -7069,6 +7391,7 @@ function _mm_logic()
             ["Secret Shrine Grass Garo Master 5"] = function () return true end,
             ["Secret Shrine Grass Garo Master 6"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple"] = {
         ["exits"] = {
@@ -7076,6 +7399,7 @@ function _mm_logic()
             ["Snowhead"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Entrance"] = {
         ["exits"] = {
@@ -7084,6 +7408,7 @@ function _mm_logic()
             ["Snowhead Temple Boss Access"] = function () return setting('bossWarpPads', 'remains') and has('REMAINS_GOHT') end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Main"] = {
         ["events"] = {
@@ -7102,6 +7427,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Entrance 1"] = function () return true end,
             ["Snowhead Temple Pot Entrance 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Bridge Front"] = {
         ["events"] = {
@@ -7124,6 +7450,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Bridge Room 4"] = function () return true end,
             ["Snowhead Temple Pot Bridge Room 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Bridge Back"] = {
         ["exits"] = {
@@ -7138,6 +7465,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Bridge Room After 1"] = function () return true end,
             ["Snowhead Temple Pot Bridge Room After 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Map Room"] = {
         ["exits"] = {
@@ -7149,6 +7477,7 @@ function _mm_logic()
             ["Snowhead Temple Map"] = function () return true end,
             ["Snowhead Temple SF Map Room"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Map Room Upper"] = {
         ["exits"] = {
@@ -7168,6 +7497,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Central Room Level 2 1"] = function () return true end,
             ["Snowhead Temple Pot Central Room Level 2 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Center Level 1"] = {
         ["exits"] = {
@@ -7182,6 +7512,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Central Room Scarecrow 1"] = function () return scarecrow_hookshot() or short_hook_anywhere() end,
             ["Snowhead Temple Pot Central Room Scarecrow 2"] = function () return scarecrow_hookshot() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Pillars Room"] = {
         ["events"] = {
@@ -7207,6 +7538,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Pillars Room Lower 6"] = function () return true end,
             ["Snowhead Temple Pot Pillars Room Lower 7"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Center Level 0"] = {
         ["events"] = {
@@ -7231,6 +7563,7 @@ function _mm_logic()
             ["Snowhead Temple Grass 09"] = function () return true end,
             ["Snowhead Temple Grass 10"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Block Room"] = {
         ["events"] = {
@@ -7246,6 +7579,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Block Room 1"] = function () return true end,
             ["Snowhead Temple Pot Block Room 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Block Room Upper"] = {
         ["exits"] = {
@@ -7258,6 +7592,7 @@ function _mm_logic()
             ["Snowhead Temple Flying Pot 1"] = function () return soul_flying_pot() end,
             ["Snowhead Temple Flying Pot 2"] = function () return soul_flying_pot() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Compass Room"] = {
         ["exits"] = {
@@ -7276,6 +7611,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Compass Room 4"] = function () return true end,
             ["Snowhead Temple Pot Compass Room 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Icicles"] = {
         ["exits"] = {
@@ -7290,6 +7626,7 @@ function _mm_logic()
             ["Snowhead Temple Rupee 2"] = function () return has_arrows() end,
             ["Snowhead Temple Rupee 3"] = function () return has_arrows() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Dual Switches Locked"] = {
         ["exits"] = {
@@ -7302,6 +7639,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Dual Switches 1"] = function () return true end,
             ["Snowhead Temple Pot Dual Switches 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Dual Switches Unlocked"] = {
         ["exits"] = {
@@ -7312,6 +7650,7 @@ function _mm_logic()
         ["locations"] = {
             ["Snowhead Temple SF Dual Switches"] = function () return can_use_lens() and ((has_arrows() or can_hookshot()) and has('MASK_GREAT_FAIRY')) end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Center Level 2 Dual"] = {
         ["exits"] = {
@@ -7324,6 +7663,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Central Room Scarecrow 1"] = function () return true end,
             ["Snowhead Temple Pot Central Room Scarecrow 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Fire Arrow"] = {
         ["exits"] = {
@@ -7336,6 +7676,7 @@ function _mm_logic()
             ["Snowhead Temple Fire Arrow"] = function () return soul_enemy(SOUL_ENEMY_WIZZROBE) end,
             ["Snowhead Temple Central Room Alcove"] = function () return (scarecrow_hookshot() or (short_hook_anywhere() and has_weapon())) and can_use_lens() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Center Level 3 Snow"] = {
         ["exits"] = {
@@ -7351,6 +7692,7 @@ function _mm_logic()
         ["locations"] = {
             ["Snowhead Temple Central Room Alcove"] = function () return can_use_lens() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Center Level 3 Iced"] = {
         ["events"] = {
@@ -7367,6 +7709,7 @@ function _mm_logic()
         ["locations"] = {
             ["Snowhead Temple Central Room Alcove"] = function () return can_use_lens() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Snow Room"] = {
         ["exits"] = {
@@ -7377,6 +7720,7 @@ function _mm_logic()
         ["locations"] = {
             ["Snowhead Temple SF Snow Room"] = function () return can_use_lens() and ((has_arrows() or can_hookshot_short()) and has('MASK_GREAT_FAIRY') or short_hook_anywhere()) end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Dinolfos Room"] = {
         ["exits"] = {
@@ -7391,6 +7735,7 @@ function _mm_logic()
             ["Snowhead Temple SF Dinolfos 1"] = function () return soul_lizalfos_dinalfos() and (can_fight() or has_arrows()) end,
             ["Snowhead Temple SF Dinolfos 2"] = function () return soul_lizalfos_dinalfos() and (can_fight() or has_arrows()) end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Boss Key Room"] = {
         ["exits"] = {
@@ -7410,6 +7755,7 @@ function _mm_logic()
             ["Snowhead Temple Pot Wizzrobe 4"] = function () return true end,
             ["Snowhead Temple Pot Wizzrobe 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Center Level 4"] = {
         ["exits"] = {
@@ -7420,11 +7766,13 @@ function _mm_logic()
             ["Snowhead Temple Dinolfos Room"] = function () return has_mask_goron() or short_hook_anywhere() end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Boss Access"] = {
         ["exits"] = {
             ["Snowhead Temple Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple Boss"] = {
         ["events"] = {
@@ -7451,6 +7799,7 @@ function _mm_logic()
             ["Snowhead Temple Boss Pot 09"] = function () return can_use_fire_short_range() or short_hook_anywhere() end,
             ["Snowhead Temple Boss Pot 10"] = function () return can_use_fire_short_range() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Snowhead Temple After Boss"] = {
         ["events"] = {
@@ -7465,6 +7814,7 @@ function _mm_logic()
             ["Snowhead Temple Boss HC"] = function () return true end,
             ["Snowhead Temple Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple"] = {
         ["exits"] = {
@@ -7472,6 +7822,7 @@ function _mm_logic()
             ["Stone Tower Front of Temple"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Entrance"] = {
         ["events"] = {
@@ -7494,6 +7845,7 @@ function _mm_logic()
             ["Stone Tower Temple Grass Entrance 2"] = function () return true end,
             ["Stone Tower Temple Grass Entrance 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple West"] = {
         ["exits"] = {
@@ -7501,6 +7853,7 @@ function _mm_logic()
             ["Stone Tower Temple West Garden"] = function () return can_play_emptiness() and has_mask_goron() and (has_explosives() or trick_keg_explosives()) end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple West Garden"] = {
         ["events"] = {
@@ -7519,6 +7872,7 @@ function _mm_logic()
             ["Stone Tower Temple Grass Garden 5"] = function () return true end,
             ["Stone Tower Temple Grass Garden 6"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Under West Garden"] = {
         ["exits"] = {
@@ -7533,6 +7887,7 @@ function _mm_logic()
             ["Stone Tower Temple Pot Lava Room 3"] = function () return true end,
             ["Stone Tower Temple Pot Lava Room 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Under West Garden After Block"] = {
         ["exits"] = {
@@ -7546,6 +7901,7 @@ function _mm_logic()
             ["Stone Tower Temple Pot Lava Room After Block 3"] = function () return true end,
             ["Stone Tower Temple Pot Lava Room After Block 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Center Ledge"] = {
         ["exits"] = {
@@ -7558,6 +7914,7 @@ function _mm_logic()
             ["Stone Tower Temple Center Sun Block Chest"] = function () return short_hook_anywhere() or (can_goron_bomb_jump() and can_use_ice_arrows() and can_use_light_arrows()) or (((has('MASK_DEKU') or has_explosives() or (has_magic() and (has_weapon() and has('SPIN_UPGRADE'))) or has_sword_level(3) or has('GREAT_FAIRY_SWORD') or can_use_ice_arrows()) and (has_mask_zora() or soul_enemy(SOUL_ENEMY_DEXIHAND))) and can_use_light_arrows()) end,
             ["Stone Tower Temple Rupee Center Room Left"] = function () return can_use_light_arrows() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Center"] = {
         ["exits"] = {
@@ -7571,6 +7928,7 @@ function _mm_logic()
             ["Stone Tower Temple Center Sun Block Chest"] = function () return (has_mask_zora() or (can_goron_bomb_jump() and can_use_ice_arrows())) and can_use_light_arrows() or short_hook_anywhere() end,
             ["Stone Tower Temple Rupee Center Room Right"] = function () return (has_mask_zora() or has('MASK_DEKU') or can_use_ice_arrows()) and can_use_light_arrows() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Water Room"] = {
         ["events"] = {
@@ -7595,6 +7953,7 @@ function _mm_logic()
             ["Stone Tower Temple Pot Water Room Bridge 1"] = function () return true end,
             ["Stone Tower Temple Pot Water Room Bridge 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Mirrors Room"] = {
         ["exits"] = {
@@ -7607,6 +7966,7 @@ function _mm_logic()
             ["Stone Tower Temple Pot Mirror Room 1"] = function () return true end,
             ["Stone Tower Temple Pot Mirror Room 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Wind Room"] = {
         ["exits"] = {
@@ -7627,6 +7987,7 @@ function _mm_logic()
             ["Stone Tower Temple Rupee Wind Room 5"] = function () return has('MASK_DEKU') or (trick('MM_ST_UPDRAFTS') and (short_hook_anywhere() or (has_hover_boots() and has_iron_boots()))) or hookshot_anywhere() end,
             ["Stone Tower Temple Rupee Wind Room 6"] = function () return has('MASK_DEKU') or (trick('MM_ST_UPDRAFTS') and (short_hook_anywhere() or (has_hover_boots() and has_iron_boots()))) or hookshot_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Light Arrow Room"] = {
         ["exits"] = {
@@ -7636,6 +7997,7 @@ function _mm_logic()
         ["locations"] = {
             ["Stone Tower Temple Light Arrow"] = function () return soul_enemy(SOUL_ENEMY_GARO) and (has_weapon() or has_mask_goron() or can_use_deku_bubble() or has_arrows()) end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Before Water Bridge"] = {
         ["events"] = {
@@ -7664,6 +8026,7 @@ function _mm_logic()
             ["Stone Tower Temple Rupee Before Water Bridge 7"] = function () return true end,
             ["Stone Tower Temple Rupee Before Water Bridge 8"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Water Bridge"] = {
         ["exits"] = {
@@ -7675,6 +8038,7 @@ function _mm_logic()
         ["locations"] = {
             ["Stone Tower Temple Water Bridge Chest"] = function () return soul_enemy(SOUL_ENEMY_EYEGORE) and (has_explosives() or has_arrows() or can_hookshot_short() or has_mask_zora() or has_mask_goron()) end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted"] = {
         ["exits"] = {
@@ -7682,6 +8046,7 @@ function _mm_logic()
             ["Stone Tower Top Inverted"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Entrance"] = {
         ["events"] = {
@@ -7699,6 +8064,7 @@ function _mm_logic()
         ["locations"] = {
             ["Stone Tower Temple Inverted Entrance Chest"] = function () return can_use_light_arrows() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted East"] = {
         ["events"] = {
@@ -7716,6 +8082,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Rupee Alcove 1"] = function () return can_use_light_arrows() and can_hookshot_short() or short_hook_anywhere() end,
             ["Stone Tower Temple Inverted Rupee Alcove 2"] = function () return can_use_light_arrows() and can_hookshot_short() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted East Bridge"] = {
         ["events"] = {
@@ -7735,6 +8102,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Rupee Dexihand 2"] = function () return true end,
             ["Stone Tower Temple Inverted Rupee Dexihand 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted East Ledge"] = {
         ["exits"] = {
@@ -7749,6 +8117,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Pot Updrafts Ledge 3"] = function () return true end,
             ["Stone Tower Temple Inverted Pot Updrafts Ledge 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Wizzrobe"] = {
         ["exits"] = {
@@ -7763,6 +8132,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Pot Wizzrobe 4"] = function () return can_hookshot() or short_hook_anywhere() end,
             ["Stone Tower Temple Inverted Pot Wizzrobe 5"] = function () return can_hookshot() or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Wizzrobe Ledge"] = {
         ["events"] = {
@@ -7778,6 +8148,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Pot Poe Wizzrobe Side 1"] = function () return true end,
             ["Stone Tower Temple Inverted Pot Poe Wizzrobe Side 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Death Armos Maze"] = {
         ["events"] = {
@@ -7793,6 +8164,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Pot Poe Maze Side 1"] = function () return true end,
             ["Stone Tower Temple Inverted Pot Poe Maze Side 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Center"] = {
         ["exits"] = {
@@ -7806,6 +8178,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Flying Pot Center 1"] = function () return (has('MASK_DEKU') and has_weapon_range() or hookshot_anywhere()) and soul_flying_pot() end,
             ["Stone Tower Temple Inverted Flying Pot Center 2"] = function () return (has('MASK_DEKU') and has_weapon_range() or hookshot_anywhere()) and soul_flying_pot() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Boss Key Room"] = {
         ["events"] = {
@@ -7824,6 +8197,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Pot Gomess 3"] = function () return true end,
             ["Stone Tower Temple Inverted Pot Gomess 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Entrance Ledge"] = {
         ["events"] = {
@@ -7834,6 +8208,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Center"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Entrance Top"] = {
         ["exits"] = {
@@ -7841,6 +8216,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Entrance"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Center Bridge"] = {
         ["exits"] = {
@@ -7853,6 +8229,7 @@ function _mm_logic()
         ["locations"] = {
             ["Stone Tower Temple Inverted Giant Mask"] = function () return soul_enemy(SOUL_ENEMY_EYEGORE) and (has_explosives() or has_arrows() or can_hookshot_short() or has_mask_zora() or has_mask_goron()) end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Inverted Pre-Boss"] = {
         ["events"] = {
@@ -7890,17 +8267,20 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Rupee Pre-Boss Back 3"] = function () return can_hookshot_short() and has_mask_zora() or (has_mask_goron() and trick('MM_ISTT_RUPEES_GORON')) or short_hook_anywhere() end,
             ["Stone Tower Temple Inverted Rupee Pre-Boss Back 4"] = function () return can_hookshot_short() and has_mask_zora() or (has_mask_goron() and trick('MM_ISTT_RUPEES_GORON')) or short_hook_anywhere() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Boss Access"] = {
         ["exits"] = {
             ["Stone Tower Temple Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower Temple Boss"] = {
         ["exits"] = {
             ["Stone Tower After Boss"] = function () return soul_boss(SOUL_BOSS_TWINMOLD) and (has_magic() and (has('MASK_GIANT') and has_sword() or has('MASK_FIERCE_DEITY'))) end,
             ["WARP_SONGS"] = function () return can_reset_time() end,
         },
+        ["age_change"] = false,
     },
     ["Stone Tower After Boss"] = {
         ["events"] = {
@@ -7913,6 +8293,7 @@ function _mm_logic()
             ["Stone Tower Temple Inverted Boss HC"] = function () return true end,
             ["Stone Tower Temple Inverted Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Spider House"] = {
         ["exits"] = {
@@ -7922,6 +8303,7 @@ function _mm_logic()
         ["locations"] = {
             ["Swamp Spider House Mask of Truth"] = function () return soul_citizen() and has('GS_TOKEN_SWAMP', 30) end,
         },
+        ["age_change"] = false,
     },
     ["Swamp Spider House Main"] = {
         ["events"] = {
@@ -8004,6 +8386,7 @@ function _mm_logic()
             ["Swamp Spider House Wonder Item Pots 4"] = function () return true end,
             ["Swamp Spider House Wonder Item Pots 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple"] = {
         ["exits"] = {
@@ -8011,6 +8394,7 @@ function _mm_logic()
             ["Woodfall Temple Entrance"] = function () return can_reset_time_dungeon() end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Entrance"] = {
         ["events"] = {
@@ -8034,6 +8418,7 @@ function _mm_logic()
             ["Woodfall Temple Grass Entrance Ledge 1"] = function () return has('MASK_DEKU') or can_hookshot_short() end,
             ["Woodfall Temple Grass Entrance Ledge 2"] = function () return has('MASK_DEKU') or can_hookshot_short() end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Main"] = {
         ["events"] = {
@@ -8063,6 +8448,7 @@ function _mm_logic()
             ["Woodfall Temple Grass Main Room 2"] = function () return true end,
             ["Woodfall Temple Grass Main Room 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Water Room"] = {
         ["exits"] = {
@@ -8077,6 +8463,7 @@ function _mm_logic()
             ["Woodfall Temple Grass Water Room 1"] = function () return true end,
             ["Woodfall Temple Grass Water Room 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Map Room"] = {
         ["exits"] = {
@@ -8091,6 +8478,7 @@ function _mm_logic()
             ["Woodfall Temple Grass Map Room 4"] = function () return true end,
             ["Woodfall Temple Grass Map Room 5"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Maze"] = {
         ["exits"] = {
@@ -8106,6 +8494,7 @@ function _mm_logic()
             ["Woodfall Temple Pot Maze 1"] = function () return true end,
             ["Woodfall Temple Pot Maze 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Compass Room"] = {
         ["exits"] = {
@@ -8118,6 +8507,7 @@ function _mm_logic()
             ["Woodfall Temple Grass Compass Room 2"] = function () return true end,
             ["Woodfall Temple Grass Compass Room 3"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Dark Room"] = {
         ["exits"] = {
@@ -8128,6 +8518,7 @@ function _mm_logic()
         ["locations"] = {
             ["Woodfall Temple Dark Chest"] = function () return soul_enemy(SOUL_ENEMY_BOE) end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Pits Room"] = {
         ["events"] = {
@@ -8152,6 +8543,7 @@ function _mm_logic()
             ["Woodfall Temple Grass Pits Room 10"] = function () return true end,
             ["Woodfall Temple Grass Pits Room 11"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Main Ledge"] = {
         ["events"] = {
@@ -8170,6 +8562,7 @@ function _mm_logic()
             ["Woodfall Temple Pot Main Room Upper 1"] = function () return true end,
             ["Woodfall Temple Pot Main Room Upper 2"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Water Room Upper"] = {
         ["exits"] = {
@@ -8186,6 +8579,7 @@ function _mm_logic()
             ["Woodfall Temple Pot Water Room 3"] = function () return true end,
             ["Woodfall Temple Pot Water Room 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Bow Room"] = {
         ["exits"] = {
@@ -8195,12 +8589,14 @@ function _mm_logic()
         ["locations"] = {
             ["Woodfall Temple Bow"] = function () return soul_lizalfos_dinalfos() and (can_fight() or has_arrows()) end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Boss Key Room"] = {
         ["exits"] = {
             ["Woodfall Temple Boss Key Room Cage"] = function () return soul_enemy(SOUL_ENEMY_GEKKO) and has_arrows() and (has('MASK_DEKU') or has_mask_goron() or has_explosives()) end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Boss Key Room Cage"] = {
         ["events"] = {
@@ -8216,6 +8612,7 @@ function _mm_logic()
             ["Woodfall Temple Pot Miniboss Room 3"] = function () return true end,
             ["Woodfall Temple Pot Miniboss Room 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Pre-Boss"] = {
         ["exits"] = {
@@ -8237,6 +8634,7 @@ function _mm_logic()
             ["Woodfall Temple Rupee Lower 3"] = function () return true end,
             ["Woodfall Temple Rupee Lower 4"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Pre-Boss Ledge"] = {
         ["exits"] = {
@@ -8249,6 +8647,7 @@ function _mm_logic()
             ["Woodfall Temple Rupee Upper Left"] = function () return has_mask_zora() or short_hook_anywhere() or (can_use_ice_arrows() and trick('MM_WFT_RUPEES_ICE')) or has_hover_boots() end,
             ["Woodfall Temple Rupee Upper Right"] = function () return has('MASK_DEKU') or has_mask_zora() or hookshot_anywhere() or (can_use_ice_arrows() and trick('MM_WFT_RUPEES_ICE')) or has_hover_boots() end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Princess Jail"] = {
         ["events"] = {
@@ -8258,11 +8657,13 @@ function _mm_logic()
             ["Woodfall"] = function () return true end,
             ["WARP_SONGS"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Boss Access"] = {
         ["exits"] = {
             ["Woodfall Temple Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple Boss"] = {
         ["exits"] = {
@@ -8287,6 +8688,7 @@ function _mm_logic()
             ["Woodfall Temple Boss Grass 15"] = function () return true end,
             ["Woodfall Temple Boss Grass 16"] = function () return true end,
         },
+        ["age_change"] = false,
     },
     ["Woodfall Temple After Boss"] = {
         ["events"] = {
@@ -8299,6 +8701,7 @@ function _mm_logic()
             ["Woodfall Temple Boss Container"] = function () return true end,
             ["Woodfall Temple Boss"] = function () return true end,
         },
+        ["age_change"] = false,
     },
 }
 
