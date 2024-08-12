@@ -1024,7 +1024,7 @@
         "type": "itemgrid",
         "h_alignment": "left",
         "item_margin": "1,1",
-        "item_size": 28,
+        "scale": 0.875,
         "rows": [
           [
             "MM_OCARINA",

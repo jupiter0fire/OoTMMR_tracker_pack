@@ -24,46 +24,46 @@
     ]
   },
   {
-    "name": "MM Fire Arrows",
+    "name": "Fire Arrows",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/mm_firearrow.png",
+        "img": "images/arrow_fire.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/items/mm_firearrow.png",
+        "img": "images/arrow_fire.png",
         "codes": "MM_ARROW_FIRE"
       }
     ]
   },
   {
-    "name": "MM Ice Arrows",
+    "name": "Ice Arrows",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/mm_icearrow.png",
+        "img": "images/arrow_ice.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/items/mm_icearrow.png",
+        "img": "images/arrow_ice.png",
         "codes": "MM_ARROW_ICE"
       }
     ]
   },
   {
-    "name": "MM Light Arrows",
+    "name": "Light Arrows",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/mm_lightarrow.png",
+        "img": "images/arrow_light.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/items/mm_lightarrow.png",
+        "img": "images/arrow_light.png",
         "codes": "MM_ARROW_LIGHT"
       }
     ]
@@ -75,25 +75,25 @@
     "codes": "MM_MAGIC_BEAN, MM_MAGIC_BEANS_PALACE"
   },
   {
-    "name": "MM Deku Sticks",
+    "name": "Deku Sticks",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "overlay|images/overlay_10.png",
         "codes": "MM_STICK"
       },
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "overlay|images/overlay_20.png"
       },
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "overlay|images/overlay_30_green.png"
       }
     ]
@@ -123,25 +123,25 @@
     ]
   },
   {
-    "name": "MM Bombs",
+    "name": "Bombs",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/mm_bomb.png",
+        "img": "images/bomb.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/items/mm_bomb.png",
+        "img": "images/bomb.png",
         "img_mods": "overlay|images/system/mm_overlay_20.png",
         "codes": "MM_BOMB_BAG"
       },
       {
-        "img": "images/items/mm_bomb.png",
+        "img": "images/bomb.png",
         "img_mods": "overlay|images/system/mm_overlay_30.png"
       },
       {
-        "img": "images/items/mm_bomb.png",
+        "img": "images/bomb.png",
         "img_mods": "overlay|images/system/mm_overlay_40_green.png"
       }
     ]
@@ -185,16 +185,16 @@
     "codes": "mm_seahorselocated"
   },
   {
-    "name": "MM Bombchu",
+    "name": "Bombchu",
     "type": "progressive",
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/items/mm_bombchu.png",
+        "img": "images/bombchu.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/items/mm_bombchu.png",
+        "img": "images/bombchu.png",
         "codes": "MM_BOMBCHU"
       }
     ]
@@ -484,7 +484,7 @@
     ]
   },
   {
-    "name": "MM Ocarina",
+    "name": "Ocarina",
     "type": "progressive",
     "loop": true,
     "stages": [
@@ -1361,7 +1361,7 @@
   {
     "name": "Skeleton Key",
     "type": "toggle",
-    "img": "images/small_key.png",
+    "img": "images/key_skeleton.png",
     "codes": "MM_SKELETON_KEY"
   },
   {
@@ -1385,13 +1385,13 @@
   {
     "name": "Iron Boots",
     "type": "toggle",
-    "img": "images/ironboots.png",
+    "img": "images/boots_iron.png",
     "codes": "MM_BOOTS_IRON"
   },
   {
     "name": "Hover Boots",
     "type": "toggle",
-    "img": "images/hoverboots.png",
+    "img": "images/boots_hover.png",
     "codes": "MM_BOOTS_HOVER"
   },
   {

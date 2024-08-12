@@ -341,7 +341,7 @@
   {
     "name": "Skeleton Key",
     "type": "toggle",
-    "img": "images/small_key.png",
+    "img": "images/key_skeleton.png",
     "codes": "OOT_SKELETON_KEY"
   }
 ]

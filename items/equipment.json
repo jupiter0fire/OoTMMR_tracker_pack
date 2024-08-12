@@ -116,13 +116,13 @@
   {
     "name": "Iron Boots",
     "type": "toggle",
-    "img": "images/ironboots.png",
+    "img": "images/boots_iron.png",
     "codes": "OOT_BOOTS_IRON"
   },
   {
     "name": "Hover Boots",
     "type": "toggle",
-    "img": "images/hoverboots.png",
+    "img": "images/boots_hover.png",
     "codes": "OOT_BOOTS_HOVER"
   },
   {

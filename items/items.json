@@ -77,11 +77,11 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/firearrow.png",
+        "img": "images/arrow_fire.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/firearrow.png",
+        "img": "images/arrow_fire.png",
         "codes": "OOT_ARROW_FIRE"
       }
     ]
@@ -92,11 +92,11 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/icearrow.png",
+        "img": "images/arrow_ice.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/icearrow.png",
+        "img": "images/arrow_ice.png",
         "codes": "OOT_ARROW_ICE"
       }
     ]
@@ -107,11 +107,11 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/lightarrow.png",
+        "img": "images/arrow_light.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/lightarrow.png",
+        "img": "images/arrow_light.png",
         "codes": "OOT_ARROW_LIGHT"
       }
     ]
@@ -128,20 +128,20 @@
     "allow_disabled": false,
     "stages": [
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "@disabled"
       },
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "overlay|images/overlay_10.png",
         "codes": "OOT_STICK"
       },
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "overlay|images/overlay_20.png"
       },
       {
-        "img": "images/stick.png",
+        "img": "images/deku_stick.png",
         "img_mods": "overlay|images/overlay_30_green.png"
       }
     ]
