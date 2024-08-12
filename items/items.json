@@ -59,7 +59,7 @@
       {
         "img": "images/nut.png",
         "img_mods": "overlay|images/overlay_20.png",
-        "codes": "OOT_NUT"
+        "codes": "OOT_NUT,OOT_NUTS_5"
       },
       {
         "img": "images/nut.png",
