@@ -124,6 +124,7 @@ function new_node(values)
         ["adult"] = nil,   -- mm_time index, 1 to #MM_TIME_SLICES; alternatively, { start = 1, stop = #MM_TIME_SLICES }
         ["rule"] = nil,    -- function from actual logic here!
         ["mm_stay"] = nil, -- "stay" rule for mm_time; only relevant if type is "exit"
+        ["age_change"] = nil, -- gets set elsewhere, and logic for this is weird :)
     }
 
     for k, v in pairs(values) do
@@ -197,6 +198,7 @@ local function run_search(mode)
         adult = 1,
         name = "SPAWN",
         rule = function() return true end,
+        age_change = false,
     }))
 
     local opposite = { oot = "mm", mm = "oot", OOT = "MM", MM = "OOT" }
