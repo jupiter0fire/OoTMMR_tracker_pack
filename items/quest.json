@@ -55,92 +55,11 @@
     ]
   },
   {
-    "name": "Heart Pieces",
-    "type": "consumable",
-    "img": "images/HP.png",
-    "codes": "HP,PoH",
-    "max_quantity": 36
-  },
-  {
-    "name": "Heart Containers",
-    "type": "consumable",
-    "img": "images/HC.png",
-    "codes": "HC",
-    "max_quantity": 8
-  },
-  {
-    "name": "Ice Traps",
-    "type": "consumable",
-    "img": "images/icetrap.png",
-    "codes": "icetrap",
-    "max_quantity": 999
-  },
-  {
     "name": "Triforce Piece",
     "type": "consumable",
     "img": "images/triforce_piece.png",
     "codes": "triforce",
     "max_quantity": 999
-  },
-  {
-    "name": "Rupee",
-    "type": "toggle",
-    "img": "images/rupee.png",
-    "codes": "rupee"
-  },
-  {
-    "name": "Forest Medallion",
-    "type": "toggle",
-    "img": "images/forestmedallion.png",
-    "codes": "forestmed"
-  },
-  {
-    "name": "Fire Medallion",
-    "type": "toggle",
-    "img": "images/firemedallion.png",
-    "codes": "firemed"
-  },
-  {
-    "name": "Water Medallion",
-    "type": "toggle",
-    "img": "images/watermedallion.png",
-    "codes": "watermed"
-  },
-  {
-    "name": "Spirit Medallion",
-    "type": "toggle",
-    "img": "images/spiritmedallion.png",
-    "codes": "spiritmed"
-  },
-  {
-    "name": "Shadow Medallion",
-    "type": "toggle",
-    "img": "images/shadowmedallion.png",
-    "codes": "shadowmed"
-  },
-  {
-    "name": "Light Medallion",
-    "type": "toggle",
-    "img": "images/lightmedallion.png",
-    "codes": "lightmed"
-  },
-  {
-    "name": "Kokiri's Emerald",
-    "type": "toggle",
-    "img": "images/emerald.png",
-    "codes": "emerald"
-  },
-  {
-    "name": "Goron's Ruby",
-    "type": "toggle",
-    "img": "images/ruby.png",
-    "codes": "ruby"
-  },
-  {
-    "name": "Zora's Sapphire",
-    "type": "toggle",
-    "img": "images/sapphire.png",
-    "codes": "sapphire"
   },
   {
     "name": "Forest Medallion Label",

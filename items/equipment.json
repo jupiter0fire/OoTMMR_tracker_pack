@@ -54,12 +54,6 @@
     ]
   },
   {
-    "name": "Kokiri Tunic",
-    "type": "static",
-    "img": "images/greentunic.png",
-    "codes": "greentunic"
-  },
-  {
     "name": "Goron Tunic",
     "type": "toggle",
     "img": "images/redtunic.png",
@@ -70,42 +64,6 @@
     "type": "toggle",
     "img": "images/bluetunic.png",
     "codes": "OOT_TUNIC_ZORA"
-  },
-  {
-    "name": "Goron and Zora Tunics",
-    "type": "composite_toggle",
-    "codes": "tunics",
-    "item_left": "redtunic",
-    "item_right": "bluetunic",
-    "images": [
-      {
-        "left": false,
-        "right": false,
-        "img": "images/tunics.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "left": true,
-        "right": false,
-        "img": "images/redtunic.png"
-      },
-      {
-        "left": false,
-        "right": true,
-        "img": "images/bluetunic.png"
-      },
-      {
-        "left": true,
-        "right": true,
-        "img": "images/tunics.png"
-      }
-    ]
-  },
-  {
-    "name": "Kokiri Boots",
-    "type": "static",
-    "img": "images/kokiriboots.png",
-    "codes": "kokiriboots"
   },
   {
     "name": "Gerudo Membership Card",
@@ -124,36 +82,6 @@
     "type": "toggle",
     "img": "images/boots_hover.png",
     "codes": "OOT_BOOTS_HOVER"
-  },
-  {
-    "name": "Iron and Hover Boots",
-    "type": "composite_toggle",
-    "codes": "boots",
-    "item_left": "ironboots",
-    "item_right": "hoverboots",
-    "images": [
-      {
-        "left": false,
-        "right": false,
-        "img": "images/boots.png",
-        "img_mods": "@disabled"
-      },
-      {
-        "left": true,
-        "right": false,
-        "img": "images/ironboots.png"
-      },
-      {
-        "left": false,
-        "right": true,
-        "img": "images/hoverboots.png"
-      },
-      {
-        "left": true,
-        "right": true,
-        "img": "images/boots.png"
-      }
-    ]
   },
   {
     "name": "Zora Scales",
