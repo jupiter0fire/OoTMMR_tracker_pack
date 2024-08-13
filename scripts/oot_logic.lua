@@ -448,6 +448,17 @@ function _oot_logic()
         ["progressiveGFS_separate"] = true,
         ["progressiveShieldsOot_separate"] = true,
         ["colossalWallets"] = true,
+        ["skeletonKeyMm"] = true,
+        ["skeletonKeyOot"] = true,
+        ["spellFireMm"] = true,
+        ["spellWindMm"] = true,
+        ["spellLoveMm"] = true,
+        ["bootsIronMm"] = true,
+        ["bootsHoverMm"] = true,
+        ["tunicZoraMm"] = true,
+        ["scalesMm"] = true,
+        ["strengthMm"] = true,
+        ["blastMaskOot"] = true,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for

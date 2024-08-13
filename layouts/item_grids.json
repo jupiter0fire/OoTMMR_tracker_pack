@@ -76,7 +76,8 @@
             "OOT_BUTTON_C_DOWN",
             "OOT_BUTTON_C_LEFT",
             "OOT_BUTTON_C_RIGHT",
-            "OOT_BUTTON_C_UP"
+            "OOT_BUTTON_C_UP",
+            "OOT_MASK_BLAST"
           ]
         ]
       },

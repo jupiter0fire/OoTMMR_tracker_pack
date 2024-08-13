@@ -716,6 +716,12 @@
     "codes": "OOT_BUTTON_C_UP"
   },
   {
+    "name": "Blast Mask",
+    "type": "toggle",
+    "img": "images/items/mm_blast.png",
+    "codes": "OOT_MASK_BLAST,OOT_MASK"
+  },
+  {
     "name": "Dummy",
     "type": "toggle",
     "img": "images/rupee.png",
