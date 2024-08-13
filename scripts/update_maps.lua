@@ -30,20 +30,6 @@ function update_collected_capture()
   end
 end
 
-function update_minimal_bottle()
-  local minimal_bottle = get_object("bottleminimal")
-  if minimal_bottle then
-    if has("ruto") then
-      minimal_bottle.CurrentStage = 2
-    elseif has("bottle") then
-      minimal_bottle.CurrentStage = 1
-    else
-      minimal_bottle.CurrentStage = 0
-    end
-  end
-end
-
 function update_maps()
   update_collected_capture()
-  update_minimal_bottle()
 end
