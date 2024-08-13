@@ -381,6 +381,12 @@
     ]
   },
   {
+    "name": "Bottle with Gold Dust",
+    "type": "toggle",
+    "codes": "MM_BOTTLED_GOLD_DUST",
+    "img": "images/items/mm_dust.png"
+  },
+  {
     "name": "Bottle1",
     "loop": true,
     "type": "progressive",
@@ -407,11 +413,6 @@
       {
         "img": "images/items/mm_milk.png",
         "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle1",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle1",
         "inherit_codes": false
       },
       {
@@ -451,54 +452,8 @@
         "inherit_codes": false
       },
       {
-        "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle2",
-        "inherit_codes": false
-      },
-      {
         "img": "images/items/mm_chateau.png",
         "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle2",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Bottle6",
-    "loop": true,
-    "type": "progressive",
-    "stages": [
-      {
-        "img": "images/items/mm_bottle.png",
-        "codes": "MM_BOTTLE_EMPTY,mm_bottle6"
-      },
-      {
-        "img": "images/items/mm_redpotionog.png",
-        "codes": "MM_POTION_RED,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_green.png",
-        "codes": "MM_POTION_GREEN,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_bluepotionog.png",
-        "codes": "MM_POTION_BLUE,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_milk.png",
-        "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle6",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_chateau.png",
-        "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle6",
         "inherit_codes": false
       }
     ]
@@ -530,11 +485,6 @@
       {
         "img": "images/items/mm_milk.png",
         "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle3",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle3",
         "inherit_codes": false
       },
       {
@@ -574,11 +524,6 @@
         "inherit_codes": false
       },
       {
-        "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle4",
-        "inherit_codes": false
-      },
-      {
         "img": "images/items/mm_chateau.png",
         "codes": "MM_CHATEAU,MM_BOTTLE_EMPTY,mm_bottle4",
         "inherit_codes": false
@@ -612,11 +557,6 @@
       {
         "img": "images/items/mm_milk.png",
         "codes": "MM_MILK,MM_BOTTLE_EMPTY,mm_bottle5",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/items/mm_dust.png",
-        "codes": "MM_BOTTLED_GOLD_DUST,mm_bottle5",
         "inherit_codes": false
       },
       {

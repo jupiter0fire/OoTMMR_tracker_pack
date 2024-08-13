@@ -61,10 +61,10 @@
             "OOT_TUNIC_ZORA"
           ],
           [
+            "OOT_RUTO_LETTER",
             "bottle1",
             "bottle2",
             "bottle3",
-            "bottle4",
             "OOT_SCALE",
             "OOT_MAGIC_UPGRADE",
             "OOT_STRENGTH",
@@ -583,7 +583,7 @@
           ],
           [
             "OOT_STRENGTH",
-            "bottle1",
+            "OOT_RUTO_LETTER",
             "OOT_SCALE",
             "OOT_BOOTS_IRON",
             "OOT_BOOTS_HOVER",
@@ -1047,9 +1047,9 @@
             "MM_STICK",
             "MM_NUT",
             "MM_MAGIC_BEAN",
+            "MM_BOTTLED_GOLD_DUST",
             "mm_bottle1",
-            "mm_bottle2",
-            "mm_bottle3"
+            "mm_bottle2"
           ],
           [
             "MM_POWDER_KEG",
@@ -1057,9 +1057,9 @@
             "MM_LENS",
             "MM_HOOKSHOT",
             "MM_GREAT_FAIRY_SWORD",
+            "mm_bottle3",
             "mm_bottle4",
-            "mm_bottle5",
-            "mm_bottle6"
+            "mm_bottle5"
           ],
           [
             "MM_SONG_TIME",
@@ -1371,7 +1371,7 @@
             "MM_BOMB_BAG",
             "MM_BOMBCHU",
             "MM_MAGIC_BEAN",
-            "mm_bottle1",
+            "MM_BOTTLED_GOLD_DUST",
             "MM_POWDER_KEG",
             "MM_PICTOGRAPH_BOX",
             "MM_LENS",

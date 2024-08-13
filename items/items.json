@@ -437,51 +437,10 @@
     "codes": "ocarinacrow,scarecrow,pierre"
   },
   {
-    "name": "Bottle 1",
-    "type": "progressive",
-    "loop": true,
-    "stages": [
-      {
-        "img": "images/bottle.png",
-        "codes": "bottle1,OOT_BOTTLE_EMPTY",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_red.png",
-        "codes": "POTION_RED,BOTTLE_EMPTY,bottle1",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_green.png",
-        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle1",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_blue.png",
-        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle1",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_fire.png",
-        "codes": "bottle1,OOT_BLUE_FIRE,OOT_BOTTLE_EMPTY",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_letter.png",
-        "codes": "bottle1,OOT_RUTO_LETTER",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_bugs.png",
-        "codes": "bottle1,OOT_BUGS,OOT_BOTTLE_EMPTY",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_fish.png",
-        "codes": "bottle1,OOT_FISH,OOT_BOTTLE_EMPTY",
-        "inherit_codes": false
-      }
-    ]
+    "name": " Ruto's Letter",
+    "type": "toggle",
+    "img": "images/bottle_letter.png",
+    "codes": "OOT_RUTO_LETTER"
   },
   {
     "name": "Bottle 2",
@@ -511,11 +470,6 @@
       {
         "img": "images/bottle_fire.png",
         "codes": "bottle2,OOT_BLUE_FIRE",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_letter.png",
-        "codes": "bottle2,OOT_RUTO_LETTER",
         "inherit_codes": false
       },
       {
@@ -561,11 +515,6 @@
         "inherit_codes": false
       },
       {
-        "img": "images/bottle_letter.png",
-        "codes": "bottle3,OOT_RUTO_LETTER",
-        "inherit_codes": false
-      },
-      {
         "img": "images/bottle_bugs.png",
         "codes": "bottle3,OOT_BUGS,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
@@ -578,48 +527,43 @@
     ]
   },
   {
-    "name": "Bottle 4",
+    "name": "Bottle 1",
     "type": "progressive",
     "loop": true,
     "stages": [
       {
         "img": "images/bottle.png",
-        "codes": "bottle4,OOT_BOTTLE_EMPTY",
+        "codes": "bottle1,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_red.png",
-        "codes": "POTION_RED,BOTTLE_EMPTY,bottle4",
+        "codes": "POTION_RED,BOTTLE_EMPTY,bottle1",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_green.png",
-        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle4",
+        "codes": "POTION_GREEN,BOTTLE_EMPTY,bottle1",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_blue.png",
-        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle4",
+        "codes": "POTION_BLUE,BOTTLE_EMPTY,bottle1",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fire.png",
-        "codes": "bottle4,OOT_BLUE_FIRE",
-        "inherit_codes": false
-      },
-      {
-        "img": "images/bottle_letter.png",
-        "codes": "bottle4,OOT_RUTO_LETTER",
+        "codes": "bottle1,OOT_BLUE_FIRE",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_bugs.png",
-        "codes": "bottle4,OOT_BUGS,OOT_BOTTLE_EMPTY",
+        "codes": "bottle1,OOT_BUGS,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       },
       {
         "img": "images/bottle_fish.png",
-        "codes": "bottle4,OOT_FISH,OOT_BOTTLE_EMPTY",
+        "codes": "bottle1,OOT_FISH,OOT_BOTTLE_EMPTY",
         "inherit_codes": false
       }
     ]
@@ -770,5 +714,11 @@
     "type": "toggle",
     "img": "images/button_up.png",
     "codes": "OOT_BUTTON_C_UP"
+  },
+  {
+    "name": "Dummy",
+    "type": "toggle",
+    "img": "images/rupee.png",
+    "codes": "dummy"
   }
 ]
