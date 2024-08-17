@@ -1283,5 +1283,11 @@
     "type": "toggle",
     "img": "images/button_up.png",
     "codes": "MM_BUTTON_C_UP"
-  }
+  },
+  {
+    "name": "Goron Tunic",
+    "type": "toggle",
+    "img": "images/redtunic.png",
+    "codes": "MM_TUNIC_GORON"
+  },
 ]

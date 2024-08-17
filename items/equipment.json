@@ -1,9 +1,24 @@
 [
   {
     "name": "Kokiri Sword",
-    "type": "toggle",
-    "img": "images/sword1.png",
-    "codes": "OOT_SWORD_KOKIRI"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages":  [
+      {
+        "img": "images/sword1.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/sword1.png",
+        "codes": "OOT_SWORD_KOKIRI"
+      },
+      {
+        "img": "images/items/mm_razor.png"
+      },
+      {
+        "img": "images/items/mm_gilded.png"
+      }
+    ]
   },
   {
     "name": "Master Sword",

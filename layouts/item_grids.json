@@ -77,7 +77,8 @@
             "OOT_BUTTON_C_LEFT",
             "OOT_BUTTON_C_RIGHT",
             "OOT_BUTTON_C_UP",
-            "OOT_MASK_BLAST"
+            "OOT_MASK_BLAST",
+            "OOT_MASK_STONE"
           ]
         ]
       },
@@ -1129,8 +1130,8 @@
             "MM_SPELL_LOVE",
             "MM_BOOTS_IRON",
             "MM_BOOTS_HOVER",
-            "MM_TUNIC_ZORA",
-            "MM_SCALE"
+            "MM_TUNIC_GORON",
+            "MM_TUNIC_ZORA"
           ],
           [
             "MM_STRENGTH",
@@ -1152,6 +1153,9 @@
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
             "MM_OWL_STONE_TOWER"
+          ],
+          [
+            "MM_SCALE"
           ]
         ]
       },

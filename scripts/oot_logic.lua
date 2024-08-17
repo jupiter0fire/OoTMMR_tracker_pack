@@ -459,6 +459,7 @@ function _oot_logic()
         ["scalesMm"] = true,
         ["strengthMm"] = true,
         ["blastMaskOot"] = true,
+        ["extraChildSwordsOot"] = true,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for

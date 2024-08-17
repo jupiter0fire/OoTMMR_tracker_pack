@@ -722,6 +722,12 @@
     "codes": "OOT_MASK_BLAST,OOT_MASK"
   },
   {
+    "name": "Stone Mask",
+    "type": "toggle",
+    "img": "images/items/mm_stone.png",
+    "codes": "OOT_MASK_STONE,OOT_MASK"
+  },
+  {
     "name": "Dummy",
     "type": "toggle",
     "img": "images/rupee.png",
