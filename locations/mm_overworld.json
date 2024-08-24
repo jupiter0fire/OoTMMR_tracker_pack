@@ -4164,17 +4164,29 @@
                 ]
               },
               {
-                "name": "Zora Cape Grotto",
-                "chest_unopened_img": "images/system/chest_brown_closed.png",
-                "chest_opened_img": "images/system/chest_brown_open.png",
+                "name": "Under The Rock By The Fairy Shrine",
                 "short_name": "ZC Grotto",
                 "sections": [
                   {
-                    "name": "Under The Rock By The Fairy Shrine",
+                    "name": "Zora Cape Grotto Chest",
+                    "chest_unopened_img": "images/system/chest_brown_closed.png",
+                    "chest_opened_img": "images/system/chest_brown_open.png",
                     "access_rules": [
                       "$mm|Zora Cape Grotto"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Zora Cape Grotto Grass",
+                    "visibility_rules": [
+                      "setting_shuffleGrassMm_true"
+                    ],
+                    "chest_unopened_img": "images/MM_Grass.png",
+                    "chest_opened_img": "images/GrassGreyscale.png",
+                    "access_rules": [
+                      "$mm|Zora Cape Grotto Grass 01"
+                    ],
+                    "item_count": 14
                   }
                 ],
                 "map_locations": [
