@@ -508,6 +508,10 @@ function _mm_logic()
             "MM_MASK_REGULAR",
             "MM_MASK_TRANSFORM",
             "OOT_MASK",
+            "OOT_COIN_RED",
+            "OOT_COIN_GREEN",
+            "OOT_COIN_BLUE",
+            "OOT_COIN_YELLOW",
         }
 
         local sum = 0

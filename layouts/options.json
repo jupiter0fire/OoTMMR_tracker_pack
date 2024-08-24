@@ -1206,6 +1206,26 @@
       },
       {
         "type": "item",
+        "item": "setting_BRIDGE_OOT_COIN_RED",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_COIN_GREEN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_COIN_BLUE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_COIN_YELLOW",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "BRIDGE",
         "height": 16
       }
@@ -1279,6 +1299,26 @@
       {
         "type": "item",
         "item": "setting_MOON_MM_MASK_TRANSFORM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_COIN_RED",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_COIN_GREEN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_COIN_BLUE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MOON_OOT_COIN_YELLOW",
         "height": 16
       },
       {
@@ -1365,6 +1405,26 @@
       },
       {
         "type": "item",
+        "item": "setting_LACS_OOT_COIN_RED",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_LACS_OOT_COIN_GREEN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_LACS_OOT_COIN_BLUE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_LACS_OOT_COIN_YELLOW",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_LACS_OOT_MASK",
         "height": 16
       },
@@ -1443,6 +1503,26 @@
       {
         "type": "item",
         "item": "setting_MAJORA_MM_MASK_TRANSFORM",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MAJORA_OOT_COIN_RED",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MAJORA_OOT_COIN_GREEN",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MAJORA_OOT_COIN_BLUE",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_MAJORA_OOT_COIN_YELLOW",
         "height": 16
       },
       {

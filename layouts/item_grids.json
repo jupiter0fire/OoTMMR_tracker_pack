@@ -79,6 +79,9 @@
             "OOT_BUTTON_C_UP",
             "OOT_MASK_BLAST",
             "OOT_MASK_STONE"
+          ],
+          [
+            "OOT_SONG_EMPTINESS"
           ]
         ]
       },
@@ -545,6 +548,14 @@
               [
                 "OOT_GERUDO_CARD",
                 "triforce"
+              ],
+              [
+                "OOT_COIN_RED",
+                "OOT_COIN_GREEN"
+              ],
+              [
+                "OOT_COIN_BLUE",
+                "OOT_COIN_YELLOW"
               ]
             ]
           }

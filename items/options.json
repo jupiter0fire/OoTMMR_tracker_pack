@@ -2368,6 +2368,82 @@
     ]
   },
   {
+    "name": "Rainbow Bridge Red Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_BRIDGE_OOT_COIN_RED",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Green Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_BRIDGE_OOT_COIN_GREEN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Blue Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_BRIDGE_OOT_COIN_BLUE",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Bridge Yellow Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_BRIDGE_OOT_COIN_YELLOW",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Rainbow Bridge Amount",
     "type": "consumable",
     "img": "images/setting_bridge_amount.png",
@@ -2638,6 +2714,82 @@
       {
         "img": "images/setting_special_masks.png",
         "codes": "setting_MOON_OOT_MASK",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Moon Red Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MOON_OOT_COIN_RED",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Moon Green Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MOON_OOT_COIN_GREEN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Moon Blue Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MOON_OOT_COIN_BLUE",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Moon Yellow Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MOON_OOT_COIN_YELLOW",
         "inherit_codes": false
       }
     ]
@@ -2918,6 +3070,82 @@
     ]
   },
   {
+    "name": "LACS Red Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_LACS_OOT_COIN_RED",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "LACS Green Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_LACS_OOT_COIN_GREEN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "LACS Blue Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_LACS_OOT_COIN_BLUE",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "LACS Yellow Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_LACS_OOT_COIN_YELLOW",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "LACS Amount",
     "type": "consumable",
     "img": "images/setting_lacs_amount.png",
@@ -3188,6 +3416,82 @@
       {
         "img": "images/setting_special_masks.png",
         "codes": "setting_MAJORA_OOT_MASK",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Majora Child Red Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MAJORA_OOT_COIN_RED",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Majora Child Green Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MAJORA_OOT_COIN_GREEN",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Majora Child Blue Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MAJORA_OOT_COIN_BLUE",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Majora Child Yellow Coins",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 0,
+    "stages": [
+      {
+        "img": "images/setting_special_masks.png",
+        "inherit_codes": false,
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/setting_special_masks.png",
+        "codes": "setting_MAJORA_OOT_COIN_YELLOW",
         "inherit_codes": false
       }
     ]

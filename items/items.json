@@ -206,7 +206,7 @@
       },
       {
         "img": "images/bombchu.png",
-        "codes": "EVENT_OOT_BOMBCHU, OOT_BOMBCHU_5, OOT_BOMBCHU"
+        "codes": "EVENT_OOT_BOMBCHU, OOT_BOMBCHU_5, OOT_BOMBCHU, OOT_SHARED_BOMBCHU"
       }
     ]
   },
@@ -726,6 +726,13 @@
     "type": "toggle",
     "img": "images/items/mm_stone.png",
     "codes": "OOT_MASK_STONE,OOT_MASK"
+  },
+  {
+    "name": "Elegy of Emptiness",
+    "type": "toggle",
+    "loop": true,
+    "img": "images/items/mm_elegy.png",
+    "codes": "OOT_SONG_EMPTINESS"
   },
   {
     "name": "Dummy",

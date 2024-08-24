@@ -62,6 +62,34 @@
     "max_quantity": 999
   },
   {
+    "name": "Red Coin",
+    "type": "consumable",
+    "img": "images/coin_red.png",
+    "codes": "OOT_COIN_RED",
+    "max_quantity": 999
+  },
+  {
+    "name": "Green Coin",
+    "type": "consumable",
+    "img": "images/coin_green.png",
+    "codes": "OOT_COIN_GREEN",
+    "max_quantity": 999
+  },
+  {
+    "name": "Blue Coin",
+    "type": "consumable",
+    "img": "images/coin_blue.png",
+    "codes": "OOT_COIN_BLUE",
+    "max_quantity": 999
+  },
+  {
+    "name": "Yellow Coin",
+    "type": "consumable",
+    "img": "images/coin_yellow.png",
+    "codes": "OOT_COIN_YELLOW",
+    "max_quantity": 999
+  },
+  {
     "name": "Forest Medallion Label",
     "type": "progressive",
     "allow_disabled": false,
