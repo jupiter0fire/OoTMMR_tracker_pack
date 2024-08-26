@@ -1282,6 +1282,26 @@
     ]
   },
   {
+    "name": "Clocks as Items",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_clocks_true.png",
+        "codes": "setting_clocks,setting_clocks_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_clocks_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_clocks,setting_clocks_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shared Nuts & Sticks",
     "type": "progressive",
     "allow_disabled": false,

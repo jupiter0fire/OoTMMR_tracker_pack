@@ -1290,4 +1290,40 @@
     "img": "images/redtunic.png",
     "codes": "MM_TUNIC_GORON"
   },
+  {
+    "name": "Clock (Day 1)",
+    "type": "toggle",
+    "img": "images/clock_1.png",
+    "codes": "MM_CLOCK1"
+  },
+  {
+    "name": "Clock (Night 1)",
+    "type": "toggle",
+    "img": "images/clock_2.png",
+    "codes": "MM_CLOCK2"
+  },
+  {
+    "name": "Clock (Day 2)",
+    "type": "toggle",
+    "img": "images/clock_3.png",
+    "codes": "MM_CLOCK3"
+  },
+  {
+    "name": "Clock (Night 2)",
+    "type": "toggle",
+    "img": "images/clock_4.png",
+    "codes": "MM_CLOCK4"
+  },
+  {
+    "name": "Clock (Day 3)",
+    "type": "toggle",
+    "img": "images/clock_5.png",
+    "codes": "MM_CLOCK5"
+  },
+  {
+    "name": "Clock (Night 3)",
+    "type": "toggle",
+    "img": "images/clock_6.png",
+    "codes": "MM_CLOCK6"
+  }
 ]

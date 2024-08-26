@@ -1166,7 +1166,13 @@
             "MM_OWL_STONE_TOWER"
           ],
           [
-            "MM_SCALE"
+            "MM_SCALE",
+            "MM_CLOCK1",
+            "MM_CLOCK2",
+            "MM_CLOCK3",
+            "MM_CLOCK4",
+            "MM_CLOCK5",
+            "MM_CLOCK6"
           ]
         ]
       },
