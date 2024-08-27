@@ -460,6 +460,7 @@ function _oot_logic()
         ["strengthMm"] = true,
         ["blastMaskOot"] = true,
         ["extraChildSwordsOot"] = true,
+        ["progressiveClocks_separate"] = true,
     }
     function setting(name, state)
         -- Settings are made available as Tracker items, e.g. for
@@ -579,7 +580,7 @@ function _oot_logic()
         elseif case == "after" then
             return MM_TIME_SLICES_INDEX[time_a] <= OOTMM_RUNTIME_CURRENT_TIME
         elseif case == "between" then
-            return MM_TIME_SLICES_INDEX[time_a] >= OOTMM_RUNTIME_CURRENT_TIME and
+            return OOTMM_RUNTIME_CURRENT_TIME >= MM_TIME_SLICES_INDEX[time_a] and
             OOTMM_RUNTIME_CURRENT_TIME < MM_TIME_SLICES_INDEX[time_b]
         else
             print(case)
