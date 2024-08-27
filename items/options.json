@@ -2395,12 +2395,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "codes": "setting_BRIDGE_OOT_COIN_RED",
         "inherit_codes": false
       }
@@ -2414,12 +2414,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "codes": "setting_BRIDGE_OOT_COIN_GREEN",
         "inherit_codes": false
       }
@@ -2433,12 +2433,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "codes": "setting_BRIDGE_OOT_COIN_BLUE",
         "inherit_codes": false
       }
@@ -2452,12 +2452,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "codes": "setting_BRIDGE_OOT_COIN_YELLOW",
         "inherit_codes": false
       }
@@ -2746,12 +2746,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "codes": "setting_MOON_OOT_COIN_RED",
         "inherit_codes": false
       }
@@ -2765,12 +2765,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "codes": "setting_MOON_OOT_COIN_GREEN",
         "inherit_codes": false
       }
@@ -2784,12 +2784,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "codes": "setting_MOON_OOT_COIN_BLUE",
         "inherit_codes": false
       }
@@ -2803,12 +2803,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "codes": "setting_MOON_OOT_COIN_YELLOW",
         "inherit_codes": false
       }
@@ -3097,12 +3097,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "codes": "setting_LACS_OOT_COIN_RED",
         "inherit_codes": false
       }
@@ -3116,12 +3116,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "codes": "setting_LACS_OOT_COIN_GREEN",
         "inherit_codes": false
       }
@@ -3135,12 +3135,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "codes": "setting_LACS_OOT_COIN_BLUE",
         "inherit_codes": false
       }
@@ -3154,12 +3154,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "codes": "setting_LACS_OOT_COIN_YELLOW",
         "inherit_codes": false
       }
@@ -3448,12 +3448,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_red.png",
         "codes": "setting_MAJORA_OOT_COIN_RED",
         "inherit_codes": false
       }
@@ -3467,12 +3467,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_green.png",
         "codes": "setting_MAJORA_OOT_COIN_GREEN",
         "inherit_codes": false
       }
@@ -3486,12 +3486,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_blue.png",
         "codes": "setting_MAJORA_OOT_COIN_BLUE",
         "inherit_codes": false
       }
@@ -3505,12 +3505,12 @@
     "initial_stage_idx": 0,
     "stages": [
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "inherit_codes": false,
         "img_mods": "@disabled"
       },
       {
-        "img": "images/setting_special_masks.png",
+        "img": "images/setting_special_coin_yellow.png",
         "codes": "setting_MAJORA_OOT_COIN_YELLOW",
         "inherit_codes": false
       }

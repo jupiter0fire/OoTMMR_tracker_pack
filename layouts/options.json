@@ -1206,11 +1206,6 @@
       },
       {
         "type": "item",
-        "item": "setting_BRIDGE_OOT_MASK",
-        "height": 16
-      },
-      {
-        "type": "item",
         "item": "setting_BRIDGE_OOT_COIN_RED",
         "height": 16
       },
@@ -1227,6 +1222,11 @@
       {
         "type": "item",
         "item": "setting_BRIDGE_OOT_COIN_YELLOW",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_BRIDGE_OOT_MASK",
         "height": 16
       },
       {
