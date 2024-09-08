@@ -62,6 +62,13 @@
     "max_quantity": 999
   },
   {
+    "name": "Show hintable locations",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/gossip_stone.png",
+    "codes": "gossip_stone"
+  },
+  {
     "name": "Red Coin",
     "type": "consumable",
     "img": "images/coin_red.png",

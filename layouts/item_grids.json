@@ -72,6 +72,16 @@
           ],
           [
             "OOT_SKELETON_KEY",
+            "OOT_GS_TOKEN",
+            "OOT_STONE_OF_AGONY",
+            "OOT_GERUDO_CARD",
+            "OOT_COIN_RED",
+            "OOT_COIN_GREEN",
+            "OOT_COIN_BLUE",
+            "OOT_COIN_YELLOW"
+          ],
+          [
+            "OOT_SONG_EMPTINESS",
             "OOT_BUTTON_A",
             "OOT_BUTTON_C_DOWN",
             "OOT_BUTTON_C_LEFT",
@@ -79,9 +89,6 @@
             "OOT_BUTTON_C_UP",
             "OOT_MASK_BLAST",
             "OOT_MASK_STONE"
-          ],
-          [
-            "OOT_SONG_EMPTINESS"
           ]
         ]
       },
@@ -542,20 +549,8 @@
             "scale": 0.7,
             "rows": [
               [
-                "OOT_GS_TOKEN",
-                "OOT_STONE_OF_AGONY"
-              ],
-              [
-                "OOT_GERUDO_CARD",
-                "triforce"
-              ],
-              [
-                "OOT_COIN_RED",
-                "OOT_COIN_GREEN"
-              ],
-              [
-                "OOT_COIN_BLUE",
-                "OOT_COIN_YELLOW"
+                "triforce",
+                "gossip_stone"
               ]
             ]
           }
@@ -1155,7 +1150,6 @@
             "MM_BUTTON_C_UP"
           ],
           [
-
             "MM_OWL_WOODFALL",
             "MM_OWL_MILK_ROAD",
             "MM_OWL_MOUNTAIN_VILLAGE",

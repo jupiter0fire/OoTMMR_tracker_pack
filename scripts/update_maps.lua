@@ -7,6 +7,7 @@ function get_first_free_bottle()
   end
   return nil
 end
+
 local capture_mappings = {
   ["capture_bottle"] = {
     1,
@@ -32,4 +33,12 @@ end
 
 function update_maps()
   update_collected_capture()
+end
+
+function hintable()
+  if has("gossip_stone") then
+    return AccessibilityLevel.Normal
+  else  
+    return AccessibilityLevel.None
+  end
 end

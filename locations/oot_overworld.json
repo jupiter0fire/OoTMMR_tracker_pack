@@ -832,7 +832,7 @@
                 "name": "HF Ocarina of Time Item",
                 "access_rules": [
                   "$oot|Hyrule Field Ocarina of Time",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "short_name": "Item",
                 "item_count": 1
@@ -842,7 +842,7 @@
                 "short_name": "Song",
                 "access_rules": [
                   "$oot|Hyrule Field Song of Time",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1205,7 +1205,7 @@
                 "name": "Child Fishing",
                 "access_rules": [
                   "$oot|Fishing Pond Child",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               },
@@ -1213,7 +1213,7 @@
                 "name": "Adult Fishing",
                 "access_rules": [
                   "$oot|Fishing Pond Adult",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               }
@@ -1890,7 +1890,7 @@
                 "name": "Song",
                 "access_rules": [
                   "$oot|Kakariko Song Shadow",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "chest_unopened_img": "images/grey_note.png",
                 "chest_opened_img": "images/grey_note_check.png",
@@ -1965,7 +1965,7 @@
                 "short_name": "10 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 10 Tokens",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               },
@@ -1974,7 +1974,7 @@
                 "short_name": "20 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 20 Tokens",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               },
@@ -1983,7 +1983,7 @@
                 "short_name": "30 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 30 Tokens",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               },
@@ -1992,7 +1992,7 @@
                 "short_name": "40 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 40 Tokens",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               },
@@ -2001,7 +2001,7 @@
                 "short_name": "50 Tokens",
                 "access_rules": [
                   "$oot|Skulltula House 50 Tokens",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               }
@@ -3846,7 +3846,7 @@
                 "short_name": "Reward",
                 "access_rules": [
                   "$oot|Great Fairy Defense Upgrade",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               }
@@ -3878,7 +3878,7 @@
                 "name": "ZR Frogs Ocarina Game",
                 "access_rules": [
                   "$oot|Zora River Frogs Game",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               }
@@ -4237,7 +4237,7 @@
                 "name": "ZD King Zora Thawed",
                 "access_rules": [
                   "$oot|Zora Domain Tunic",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               },
@@ -4245,7 +4245,7 @@
                 "name": "Give Prescription",
                 "access_rules": [
                   "$oot|Zora Domain Eyeball Frog",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               }
@@ -4792,7 +4792,7 @@
             "name": "GF HBA",
             "access_rules": [
               "$oot|Gerudo Fortress Archery Reward 1",
-              "{}"
+              "{$hintable}"
             ],
             "sections": [
               {
@@ -4975,7 +4975,7 @@
                 "short_name": "Chest",
                 "access_rules": [
                   "$oot|Haunted Wasteland Chest",
-                  "{}"
+                  "{$hintable}"
                 ],
                 "item_count": 1
               },
