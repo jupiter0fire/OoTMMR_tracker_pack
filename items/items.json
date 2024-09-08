@@ -687,45 +687,108 @@
   },
   {
     "name": "A Button",
-    "type": "toggle",
-    "img": "images/button_a.png",
-    "codes": "OOT_BUTTON_A"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_a.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_a.png",
+        "codes": "OOT_BUTTON_A"
+      }
+    ]
   },
   {
     "name": "C Down Button",
-    "type": "toggle",
-    "img": "images/button_down.png",
-    "codes": "OOT_BUTTON_C_DOWN"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_down.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_down.png",
+        "codes": "OOT_BUTTON_C_DOWN"
+      }
+    ]
   },
   {
     "name": "C Left Button",
-    "type": "toggle",
-    "img": "images/button_left.png",
-    "codes": "OOT_BUTTON_C_LEFT"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_left.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_left.png",
+        "codes": "OOT_BUTTON_C_LEFT"
+      }
+    ]
   },
   {
     "name": "C Right Button",
-    "type": "toggle",
-    "img": "images/button_right.png",
-    "codes": "OOT_BUTTON_C_RIGHT"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_right.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_right.png",
+        "codes": "OOT_BUTTON_C_RIGHT"
+      }
+    ]
   },
   {
     "name": "C Up Button",
-    "type": "toggle",
-    "img": "images/button_up.png",
-    "codes": "OOT_BUTTON_C_UP"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_up.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_up.png",
+        "codes": "OOT_BUTTON_C_UP"
+      }
+    ]
   },
   {
     "name": "Blast Mask",
-    "type": "toggle",
-    "img": "images/items/mm_blast.png",
-    "codes": "OOT_MASK_BLAST,OOT_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_blast.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_blast.png",
+        "codes": "OOT_MASK_BLAST,OOT_MASK"
+      }
+    ]
   },
   {
     "name": "Stone Mask",
-    "type": "toggle",
-    "img": "images/items/mm_stone.png",
-    "codes": "OOT_MASK_STONE,OOT_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_stone.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_stone.png",
+        "codes": "OOT_MASK_STONE,OOT_MASK"
+      }
+    ]
   },
   {
     "name": "Elegy of Emptiness",

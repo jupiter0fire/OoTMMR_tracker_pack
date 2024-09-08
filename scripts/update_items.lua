@@ -74,7 +74,12 @@ local OOTMM_SHARED = {
     ["MaskBunny"] = { "MASK_BUNNY" },
     ["MaskKeaton"] = { "MASK_KEATON" },
     ["MaskTruth"] = { "MASK_TRUTH" },
-    ["Shields"] = { "SHIELD_HYLIAN", "SHIELD_MIRROR"}
+    ["Shields"] = { "SHIELD_HYLIAN", "SHIELD_MIRROR"},
+    ["BootsHover"] = { "BOOTS_HOVER"},
+    ["BootsIron"] = { "BOOTS_IRON"},
+    ["MaskBlast"] = { "MASK_BLAST"},
+    ["MaskStone"] = { "MASK_STONE"},
+    ["OcarinaButtons"] = {"BUTTON_A", "BUTTON_C_DOWN", "BUTTON_C_LEFT", "BUTTON_C_UP", "BUTTON_C_RIGHT"}
 }
 local OOTMM_SHARED_PREV = {
     ["BombBags"] = { 0 },
@@ -97,7 +102,12 @@ local OOTMM_SHARED_PREV = {
     ["MaskBunny"] = { 0 },
     ["MaskKeaton"] = { 0 },
     ["MaskTruth"] = { 0 },
-    ["Shields"] = { 0, 0 }
+    ["Shields"] = { 0, 0 },
+    ["BootsHover"] = { 0 },
+    ["BootsIron"] = { 0 },
+    ["MaskBlast"] = { 0 },
+    ["MaskStone"] = { 0 },
+    ["OcarinaButtons"] = { 0, 0, 0, 0, 0 }
 }
 function on_update_shared_items()
     for setting, items in pairs(OOTMM_SHARED) do

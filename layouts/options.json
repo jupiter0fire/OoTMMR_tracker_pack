@@ -485,7 +485,27 @@
       },
       {
         "type": "item",
+        "item": "setting_sharedMaskBlast",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedMaskStone",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedSongElegy",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_sharedWallets",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedSwords",
         "height": 16
       },
       {
@@ -495,7 +515,62 @@
       },
       {
         "type": "item",
+        "item": "setting_sharedOcarinaButtons",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedSkeletonKey",
+        "height": 16
+      },
+      {
+        "type": "item",
         "item": "setting_sharedBombchuBags",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedSpellFire",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedSpellWind",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedSpellLove",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedBootsIron",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedBootsHover",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedTunicGoron",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedTunicZora",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedScales",
+        "height": 16
+      },
+      {
+        "type": "item",
+        "item": "setting_sharedStrength",
         "height": 16
       }
     ]

@@ -843,9 +843,18 @@
   },
   {
     "name": "Blast Mask",
-    "type": "toggle",
-    "img": "images/items/mm_blast.png",
-    "codes": "MM_MASK_BLAST,MM_MASK_REGULAR,MM_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_blast.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_blast.png",
+        "codes": "MM_MASK_BLAST,MM_MASK_REGULAR,MM_MASK"
+      }
+    ]
   },
   {
     "name": "All Night Mask",
@@ -972,9 +981,18 @@
   },
   {
     "name": "Stone Mask",
-    "type": "toggle",
-    "img": "images/items/mm_stone.png",
-    "codes": "MM_MASK_STONE,MM_MASK_REGULAR,MM_MASK"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_stone.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/items/mm_stone.png",
+        "codes": "MM_MASK_STONE,MM_MASK_REGULAR,MM_MASK"
+      }
+    ]
   },
   {
     "name": "Troupe Leader Mask",
@@ -1206,15 +1224,33 @@
   },
   {
     "name": "Iron Boots",
-    "type": "toggle",
-    "img": "images/boots_iron.png",
-    "codes": "MM_BOOTS_IRON"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/boots_iron.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/boots_iron.png",
+        "codes": "MM_BOOTS_IRON"
+      }
+    ]
   },
   {
     "name": "Hover Boots",
-    "type": "toggle",
-    "img": "images/boots_hover.png",
-    "codes": "MM_BOOTS_HOVER"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/boots_hover.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/boots_hover.png",
+        "codes": "MM_BOOTS_HOVER"
+      }
+    ]
   },
   {
     "name": "Zora Tunic",
@@ -1256,33 +1292,78 @@
   },
   {
     "name": "A Button",
-    "type": "toggle",
-    "img": "images/button_a.png",
-    "codes": "MM_BUTTON_A"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_a.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_a.png",
+        "codes": "MM_BUTTON_A"
+      }
+    ]
   },
   {
     "name": "C Down Button",
-    "type": "toggle",
-    "img": "images/button_down.png",
-    "codes": "MM_BUTTON_C_DOWN"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_down.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_down.png",
+        "codes": "MM_BUTTON_C_DOWN"
+      }
+    ]
   },
   {
     "name": "C Left Button",
-    "type": "toggle",
-    "img": "images/button_left.png",
-    "codes": "MM_BUTTON_C_LEFT"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_left.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_left.png",
+        "codes": "MM_BUTTON_C_LEFT"
+      }
+    ]
   },
   {
     "name": "C Right Button",
-    "type": "toggle",
-    "img": "images/button_right.png",
-    "codes": "MM_BUTTON_C_RIGHT"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_right.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_right.png",
+        "codes": "MM_BUTTON_C_RIGHT"
+      }
+    ]
   },
   {
     "name": "C Up Button",
-    "type": "toggle",
-    "img": "images/button_up.png",
-    "codes": "MM_BUTTON_C_UP"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/button_up.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/button_up.png",
+        "codes": "MM_BUTTON_C_UP"
+      }
+    ]
   },
   {
     "name": "Goron Tunic",

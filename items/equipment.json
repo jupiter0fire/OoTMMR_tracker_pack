@@ -88,15 +88,33 @@
   },
   {
     "name": "Iron Boots",
-    "type": "toggle",
-    "img": "images/boots_iron.png",
-    "codes": "OOT_BOOTS_IRON"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/boots_iron.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/boots_iron.png",
+        "codes": "OOT_BOOTS_IRON"
+      }
+    ]
   },
   {
     "name": "Hover Boots",
-    "type": "toggle",
-    "img": "images/boots_hover.png",
-    "codes": "OOT_BOOTS_HOVER"
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/boots_hover.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/boots_hover.png",
+        "codes": "OOT_BOOTS_HOVER"
+      }
+    ]
   },
   {
     "name": "Zora Scales",

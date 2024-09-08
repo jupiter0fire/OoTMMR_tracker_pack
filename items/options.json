@@ -1362,6 +1362,26 @@
     ]
   },
   {
+    "name": "Shared Skeleton Key",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSkeletonKey_true.png",
+        "codes": "setting_sharedSkeletonKey,setting_sharedSkeletonKey_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSkeletonKey_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSkeletonKey,setting_sharedSkeletonKey_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shared Bombchu Bags",
     "type": "progressive",
     "allow_disabled": false,
@@ -1377,6 +1397,186 @@
         "img": "images/setting_sharedBombchuBags_false.png",
         "img_mods": "@disabled",
         "codes": "setting_sharedBombchuBags,setting_sharedBombchuBags_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Din's Fire",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSpellFire_true.png",
+        "codes": "setting_sharedSpellFire,setting_sharedSpellFire_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSpellFire_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSpellFire,setting_sharedSpellFire_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Farore's Wind",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSpellWind_true.png",
+        "codes": "setting_sharedSpellWind,setting_sharedSpellWind_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSpellWind_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSpellWind,setting_sharedSpellWind_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Nayru's Love",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSpellLove_true.png",
+        "codes": "setting_sharedSpellLove,setting_sharedSpellLove_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSpellLove_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSpellLove,setting_sharedSpellLove_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Iron Boots",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedBootsIron_true.png",
+        "codes": "setting_sharedBootsIron,setting_sharedBootsIron_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedBootsIron_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedBootsIron,setting_sharedBootsIron_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Hover Boots",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedBootsHover_true.png",
+        "codes": "setting_sharedBootsHover,setting_sharedBootsHover_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedBootsHover_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedBootsHover,setting_sharedBootsHover_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Goron Tunic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedTunicGoron_true.png",
+        "codes": "setting_sharedTunicGoron,setting_sharedTunicGoron_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedTunicGoron_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedTunicGoron,setting_sharedTunicGoron_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Zora Tunic",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedTunicZora_true.png",
+        "codes": "setting_sharedTunicZora,setting_sharedTunicZora_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedTunicZora_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedTunicZora,setting_sharedTunicZora_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Scales",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedScales_true.png",
+        "codes": "setting_sharedScales,setting_sharedScales_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedScales_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedScales,setting_sharedScales_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Strength",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedStrength_true.png",
+        "codes": "setting_sharedStrength,setting_sharedStrength_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedStrength_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedStrength,setting_sharedStrength_false",
         "inherit_codes": false
       }
     ]
@@ -1682,6 +1882,26 @@
     ]
   },
   {
+    "name": "Shared Elegy of Emptiness",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSongElegy_true.png",
+        "codes": "setting_sharedSongElegy,setting_sharedSongElegy_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSongElegy_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSongElegy,setting_sharedSongElegy_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shared Wallets",
     "type": "progressive",
     "allow_disabled": false,
@@ -1702,6 +1922,26 @@
     ]
   },
   {
+    "name": "Shared Swords",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedSwords_true.png",
+        "codes": "setting_sharedSwords,setting_sharedSwords_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedSwords_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedSwords,setting_sharedSwords_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Shared Shields",
     "type": "progressive",
     "allow_disabled": false,
@@ -1717,6 +1957,66 @@
         "img": "images/setting_sharedShields_false.png",
         "img_mods": "@disabled",
         "codes": "setting_sharedShields,setting_sharedShields_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Ocarina Buttons",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedOcarinaButtons_true.png",
+        "codes": "setting_sharedOcarinaButtons,setting_sharedOcarinaButtons_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedOcarinaButtons_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedOcarinaButtons,setting_sharedOcarinaButtons_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Blast Mask",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMaskBlast_true.png",
+        "codes": "setting_sharedMaskBlast,setting_sharedMaskBlast_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMaskBlast_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMaskBlast,setting_sharedMaskBlast_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Shared Stone Mask",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_sharedMaskStone_true.png",
+        "codes": "setting_sharedMaskStone,setting_sharedMaskStone_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_sharedMaskStone_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_sharedMaskStone,setting_sharedMaskStone_false",
         "inherit_codes": false
       }
     ]
