@@ -23,6 +23,11 @@ local OOTMM_LOCATION_CHEST_LINKS = {
         "@Clock Town Tingle Maps/Map: Clock Town",
         "@Ikana Canyon Tingle Maps/Map: Clock Town",
     },
+    keaton_quiz = {
+        "@Clock Town Keaton Grass Circle/Keaton Quiz Reward",
+        "@Milk Road Keaton Grass Circle/Keaton Quiz Reward",
+        "@Mountain Village Keaton Grass Circle/Keaton Quiz Reward"
+    },
 }
 local OOTMM_LOCATION_CHEST_LINKS_PREV = {}
 function on_update_location_chest_link()
