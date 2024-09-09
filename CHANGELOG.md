@@ -1,5 +1,53 @@
 # Releases
 
+## v24.1.2
+
+New settings:
+
+- Age Change upon Song of Time
+- Ocarina Button Shuffle (OOT + MM)
+- Clock Shuffle
+- Extra Child Swords
+- Skeleton Key (OOT + MM)
+- Coins for Special Conditions
+- Elegy of Emptiness in OOT
+- Blast Mask in OOT
+- Stone Mask in OOT
+- Din's Fire in MM
+- Farore's Wind in MM
+- Nayru's Love in MM
+- Iron Boots in MM
+- Hover Boots in MM
+- Goron Tunic in MM
+- Zora Tunic in MM
+- Strength in MM
+- Scales in MM
+- Shared Swords
+- Shared Elegy of Emptiness
+- Shared Blast Mask
+- Shared Stone Mask
+- Shared Din's Fire
+- Shared Farore's Wind
+- Shared Nayru's Love
+- Shared Iron Boots
+- Shared Hover Boots
+- Shared Goron Tunic
+- Shared Zora Tunic
+- Shared Strength
+- Shared Scales
+
+Bugfixes:
+
+- Fixed Shared Bombchu Bags
+- Fixed Deku Nuts in OOT
+- Added missing grass checks in MM
+
+Added a Gossip Stone to toggle hintable locations on and off.
+Made a separate bottle for Ruto's Letter and Gold Dust.
+Linked Keaton Quiz locations so that checking one locations marks them all as checked.
+Deleted unsupported settings.
+Deleted unused code.
+
 ## v24.1.1
 
 Logic updated to version v24.1 of the OOTMM Randomizer.
