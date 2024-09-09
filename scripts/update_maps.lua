@@ -35,10 +35,3 @@ function update_maps()
   update_collected_capture()
 end
 
-function hintable()
-  if has("gossip_stone") then
-    return AccessibilityLevel.Normal
-  else  
-    return AccessibilityLevel.None
-  end
-end

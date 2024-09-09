@@ -481,3 +481,11 @@ end
 function mm_event_raw(event)
     return get_availability("event", "mm", event)
 end
+
+function hintable()
+    if has("gossip_stone") then
+      return AccessibilityLevel.Normal
+    else  
+      return AccessibilityLevel.None
+    end
+  end
