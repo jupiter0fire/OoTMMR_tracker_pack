@@ -2530,9 +2530,7 @@ function _oot_logic()
             ["Bottom of the Well Map"] = function () return has_explosives_or_hammer() or (has_bombflowers() and (small_keys_botw(3) or can_use_din())) or climb_anywhere() or hookshot_anywhere() end,
             ["Bottom of the Well Pits"] = function () return (small_keys_botw(3) or climb_anywhere()) and has_lens() end,
             ["Bottom of the Well Lens"] = function () return soul_enemy(SOUL_ENEMY_DEAD_HAND) and can_play_zelda() and (has_weapon() or (can_use_sticks() and trick('OOT_DEAD_HAND_STICKS'))) end,
-            ["Bottom of the Well Lens Side Chest"] = function () 
-                print(soul_enemy(SOUL_ENEMY_DEAD_HAND),can_play_zelda(),has_weapon(),can_use_sword_kokiri(),can_use_sword_master(),can_use_sword_goron(),can_use_sticks(),trick('OOT_DEAD_HAND_STICKS'))
-                return can_play_zelda() and has_lens() end,
+            ["Bottom of the Well Lens Side Chest"] = function () return can_play_zelda() and has_lens() end,
             ["Bottom of the Well GS East Cage"] = function () return gs() and (small_keys_botw(3) or climb_anywhere()) and has_lens() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or has_ranged_weapon() or has_explosives() or can_use_sticks() or can_use_din() or (age_sword_adult() and has('SWORD_BIGGORON'))))) end,
             ["Bottom of the Well GS Inner West"] = function () return gs() and small_keys_botw(3) and has_lens() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or has_ranged_weapon() or has_explosives() or can_use_sticks() or can_use_din() or (age_sword_adult() and has('SWORD_BIGGORON'))))) end,
             ["Bottom of the Well GS Inner East"] = function () return gs() and (small_keys_botw(3) or climb_anywhere()) and has_lens() and (can_collect_distance() or (climb_anywhere() and (can_use_sword_master() or has_ranged_weapon() or has_explosives() or can_use_sticks() or can_use_din() or (age_sword_adult() and has('SWORD_BIGGORON'))))) end,
