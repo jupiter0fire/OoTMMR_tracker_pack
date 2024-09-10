@@ -349,7 +349,7 @@
       },
       {
     "img": "images/key_skeleton.png",
-    "codes": "OOT_SKELETON_KEY"
+    "codes": "OOT_SKELETON_KEY,OOT_SHARED_SKELETON_KEY"
       }
     ]
   }

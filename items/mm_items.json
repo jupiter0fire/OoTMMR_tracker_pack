@@ -34,7 +34,7 @@
       },
       {
         "img": "images/arrow_fire.png",
-        "codes": "MM_ARROW_FIRE"
+        "codes": "MM_ARROW_FIRE,MM_SHARED_ARROW_FIRE"
       }
     ]
   },
@@ -49,7 +49,7 @@
       },
       {
         "img": "images/arrow_ice.png",
-        "codes": "MM_ARROW_ICE"
+        "codes": "MM_ARROW_ICE,MM_SHARED_ARROW_ICE"
       }
     ]
   },
@@ -64,7 +64,7 @@
       },
       {
         "img": "images/arrow_light.png",
-        "codes": "MM_ARROW_LIGHT"
+        "codes": "MM_ARROW_LIGHT,MM_SHARED_ARROW_LIGHT"
       }
     ]
   },
@@ -133,16 +133,16 @@
       },
       {
         "img": "images/bomb.png",
-        "img_mods": "overlay|images/system/mm_overlay_20.png",
+        "img_mods": "overlay|images/overlay_20.png",
         "codes": "MM_BOMB_BAG"
       },
       {
         "img": "images/bomb.png",
-        "img_mods": "overlay|images/system/mm_overlay_30.png"
+        "img_mods": "overlay|images/overlay_30.png"
       },
       {
         "img": "images/bomb.png",
-        "img_mods": "overlay|images/system/mm_overlay_40_green.png"
+        "img_mods": "overlay|images/overlay_40_green.png"
       }
     ]
   },
@@ -296,7 +296,7 @@
       },
       {
     "img": "images/items/mm_elegy.png",
-    "codes": "MM_SONG_EMPTINESS"
+    "codes": "MM_SONG_EMPTINESS,MM_SHARED_SONG_EMPTINESS"
       }
     ]
   },
@@ -356,7 +356,7 @@
       },
       {
         "img": "images/items/mm_shield.png",
-        "codes": "MM_SHIELD_HERO, MM_SHIELD_HYLIAN"
+        "codes": "MM_SHIELD_HERO, MM_SHIELD_HYLIAN, MM_SHARED_SHIELD_HYLIAN"
       }
     ]
   },
@@ -1000,7 +1000,7 @@
       },
       {
         "img": "images/items/mm_stone.png",
-        "codes": "MM_MASK_STONE,MM_MASK_REGULAR,MM_MASK"
+        "codes": "MM_MASK_STONE,MM_MASK_REGULAR,MM_MASK,MM_SHARED_MASK_STONE"
       }
     ]
   },
@@ -1219,7 +1219,7 @@
       },
       {
     "img": "images/key_skeleton.png",
-    "codes": "MM_SKELETON_KEY"
+    "codes": "MM_SKELETON_KEY,MM_SHARED_SKELETON_KEY"
       }
     ]
   },
@@ -1234,7 +1234,7 @@
       },
       {
         "img": "images/din.png",
-    "codes": "MM_SPELL_FIRE"
+    "codes": "MM_SPELL_FIRE,MM_SHARED_SPELL_FIRE"
       }
     ]
   },
@@ -1249,7 +1249,7 @@
       },
       {
     "img": "images/farore.png",
-    "codes": "MM_SPELL_WIND"
+    "codes": "MM_SPELL_WIND,MM_SHARED_SPELL_WIND"
       }
     ]
   },
@@ -1264,7 +1264,7 @@
       },
       {
     "img": "images/nayru.png",
-    "codes": "MM_SPELL_LOVE"
+    "codes": "MM_SPELL_LOVE,MM_SHARED_SPELL_LOVE"
       }
     ]
   },
@@ -1279,7 +1279,7 @@
       },
       {
         "img": "images/boots_iron.png",
-        "codes": "MM_BOOTS_IRON"
+        "codes": "MM_BOOTS_IRON,MM_SHARED_BOOTS_IRON"
       }
     ]
   },
@@ -1294,7 +1294,7 @@
       },
       {
         "img": "images/boots_hover.png",
-        "codes": "MM_BOOTS_HOVER"
+        "codes": "MM_BOOTS_HOVER,MM_SHARED_BOOTS_HOVER"
       }
     ]
   },
@@ -1309,7 +1309,7 @@
       },
       {
     "img": "images/bluetunic.png",
-    "codes": "MM_TUNIC_ZORA"
+    "codes": "MM_TUNIC_ZORA,MM_SHARED_TUNIC_ZORA"
       }
     ]
   },
@@ -1319,11 +1319,11 @@
     "stages": [
       {
         "img": "images/scale1.png",
-        "codes": "MM_SCALE"
+        "codes": "MM_SCALE,MM_SHARED_SCALE"
       },
       {
         "img": "images/scale2.png",
-        "codes": "MM_GOLDSCALE"
+        "codes": "MM_GOLDSCALE,MM_SHARED_GOLDSCALE"
       }
     ]
   },
@@ -1333,15 +1333,15 @@
     "stages": [
       {
         "img": "images/lift1.png",
-        "codes": "MM_STRENGTH"
+        "codes": "MM_STRENGTH,MM_SHARED_STRENGTH"
       },
       {
         "img": "images/lift2.png",
-        "codes": "MM_STRENGTH2"
+        "codes": "MM_STRENGTH2,MM_SHARED_STRENGTH2"
       },
       {
         "img": "images/lift3.png",
-        "codes": "MM_STRENGTH3"
+        "codes": "MM_STRENGTH3,MM_SHARED_STRENGTH3"
       }
     ]
   },
@@ -1356,7 +1356,7 @@
       },
       {
         "img": "images/button_a.png",
-        "codes": "MM_BUTTON_A"
+        "codes": "MM_BUTTON_A,MM_SHARED_BUTTON_A"
       }
     ]
   },
@@ -1371,7 +1371,7 @@
       },
       {
         "img": "images/button_down.png",
-        "codes": "MM_BUTTON_C_DOWN"
+        "codes": "MM_BUTTON_C_DOWN,MM_SHARED_BUTTON_C_DOWN"
       }
     ]
   },
@@ -1386,7 +1386,7 @@
       },
       {
         "img": "images/button_left.png",
-        "codes": "MM_BUTTON_C_LEFT"
+        "codes": "MM_BUTTON_C_LEFT,MM_SHARED_BUTTON_C_LEFT"
       }
     ]
   },
@@ -1401,7 +1401,7 @@
       },
       {
         "img": "images/button_right.png",
-        "codes": "MM_BUTTON_C_RIGHT"
+        "codes": "MM_BUTTON_C_RIGHT,MM_SHARED_BUTTON_C_RIGHT"
       }
     ]
   },
@@ -1416,7 +1416,7 @@
       },
       {
         "img": "images/button_up.png",
-        "codes": "MM_BUTTON_C_UP"
+        "codes": "MM_BUTTON_C_UP,MM_SHARED_BUTTON_C_UP"
       }
     ]
   },
@@ -1431,7 +1431,7 @@
       },
       {
     "img": "images/redtunic.png",
-    "codes": "MM_TUNIC_GORON"
+    "codes": "MM_TUNIC_GORON,MM_SHARED_TUNIC_GORON"
       }
     ]
   },

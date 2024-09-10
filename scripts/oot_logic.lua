@@ -174,8 +174,11 @@ function _oot_logic()
     OOTMM_HAS_OVERRIDES = {
         ["HOOKSHOT:2"] = "LONGSHOT",
         ["SCALE:2"] = "GOLDSCALE",
+        ["SHARED_SCALE:2"] = "SHARED_GOLDSCALE",
         ["STRENGTH:2"] = "STRENGTH2",
         ["STRENGTH:3"] = "STRENGTH3",
+        ["SHARED_STRENGTH:2"] = "SHARED_STRENGTH2",
+        ["SHARED_STRENGTH:3"] = "SHARED_STRENGTH3",
         ["WALLET:0"] = "WALLET0",
         ["WALLET:1"] = "WALLET1",
         ["WALLET:2"] = "WALLET2",
@@ -190,7 +193,7 @@ function _oot_logic()
         ["MEDALLION_SHADOW"] = "LACS_MED:2",
         ["OCARINA:2"] = "OCARINA2",
         ["SWORD:1"] = "SWORD_KOKIRI",
-        ["SHARED_SWORD:1"] = "SWORD_KOKIRI"
+        ["SHARED_SWORD:1"] = "SWORD_KOKIRI",
     }
     OOTMM_HAS_PREFIXES = {
         ["setting"] = true,

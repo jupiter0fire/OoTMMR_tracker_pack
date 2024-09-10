@@ -49,7 +49,7 @@
       },
       {
         "img": "images/shield2.png",
-        "codes": "OOT_SHIELD_HYLIAN"
+        "codes": "OOT_SHIELD_HYLIAN,OOT_SHARED_SHIELD_HYLIAN"
       }
     ]
   },
@@ -79,7 +79,7 @@
       },
       {
     "img": "images/redtunic.png",
-    "codes": "OOT_TUNIC_GORON"
+    "codes": "OOT_TUNIC_GORON,OOT_SHARED_TUNIC_GORON"
       }
     ]
   },
@@ -94,7 +94,7 @@
       },
       {
     "img": "images/bluetunic.png",
-    "codes": "OOT_TUNIC_ZORA"
+    "codes": "OOT_TUNIC_ZORA,OOT_SHARED_TUNIC_ZORA"
       }
     ]
   },
@@ -115,7 +115,7 @@
       },
       {
         "img": "images/boots_iron.png",
-        "codes": "OOT_BOOTS_IRON"
+        "codes": "OOT_BOOTS_IRON,OOT_SHARED_BOOTS_IRON"
       }
     ]
   },
@@ -130,7 +130,7 @@
       },
       {
         "img": "images/boots_hover.png",
-        "codes": "OOT_BOOTS_HOVER"
+        "codes": "OOT_BOOTS_HOVER,OOT_SHARED_BOOTS_HOVER"
       }
     ]
   },
@@ -140,11 +140,11 @@
     "stages": [
       {
         "img": "images/scale1.png",
-        "codes": "OOT_SCALE"
+        "codes": "OOT_SCALE,OOT_SHARED_SCALE"
       },
       {
         "img": "images/scale2.png",
-        "codes": "OOT_GOLDSCALE"
+        "codes": "OOT_GOLDSCALE,OOT_SHARED_GOLDSCALE"
       }
     ]
   },
@@ -154,15 +154,15 @@
     "stages": [
       {
         "img": "images/lift1.png",
-        "codes": "OOT_STRENGTH"
+        "codes": "OOT_STRENGTH,OOT_SHARED_STRENGTH"
       },
       {
         "img": "images/lift2.png",
-        "codes": "OOT_STRENGTH2"
+        "codes": "OOT_STRENGTH2,OOT_SHARED_STRENGTH2"
       },
       {
         "img": "images/lift3.png",
-        "codes": "OOT_STRENGTH3"
+        "codes": "OOT_STRENGTH3,OOT_SHARED_STRENGTH3"
       }
     ]
   }

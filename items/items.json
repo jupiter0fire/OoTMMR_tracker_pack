@@ -82,7 +82,7 @@
       },
       {
         "img": "images/arrow_fire.png",
-        "codes": "OOT_ARROW_FIRE"
+        "codes": "OOT_ARROW_FIRE,OOT_SHARED_ARROW_FIRE"
       }
     ]
   },
@@ -97,7 +97,7 @@
       },
       {
         "img": "images/arrow_ice.png",
-        "codes": "OOT_ARROW_ICE"
+        "codes": "OOT_ARROW_ICE,OOT_SHARED_ARROW_ICE"
       }
     ]
   },
@@ -112,7 +112,7 @@
       },
       {
         "img": "images/arrow_light.png",
-        "codes": "OOT_ARROW_LIGHT"
+        "codes": "OOT_ARROW_LIGHT,OOT_SHARED_ARROW_LIGHT"
       }
     ]
   },
@@ -236,7 +236,7 @@
       },
       {
         "img": "images/din.png",
-    "codes": "OOT_SPELL_FIRE"
+    "codes": "OOT_SPELL_FIRE,OOT_SHARED_SPELL_FIRE"
       }
     ]
   },
@@ -251,7 +251,7 @@
       },
       {
     "img": "images/farore.png",
-    "codes": "OOT_SPELL_WIND"
+    "codes": "OOT_SPELL_WIND,OOT_SHARED_SPELL_WIND"
       }
     ]
   },
@@ -266,7 +266,7 @@
       },
       {
     "img": "images/nayru.png",
-    "codes": "OOT_SPELL_LOVE"
+    "codes": "OOT_SPELL_LOVE,OOT_SHARED_SPELL_LOVE"
       }
     ]
   },
@@ -723,7 +723,7 @@
       },
       {
         "img": "images/button_a.png",
-        "codes": "OOT_BUTTON_A"
+        "codes": "OOT_BUTTON_A,OOT_SHARED_BUTTON_A"
       }
     ]
   },
@@ -738,7 +738,7 @@
       },
       {
         "img": "images/button_down.png",
-        "codes": "OOT_BUTTON_C_DOWN"
+        "codes": "OOT_BUTTON_C_DOWN,OOT_SHARED_BUTTON_C_DOWN"
       }
     ]
   },
@@ -753,7 +753,7 @@
       },
       {
         "img": "images/button_left.png",
-        "codes": "OOT_BUTTON_C_LEFT"
+        "codes": "OOT_BUTTON_C_LEFT,OOT_SHARED_BUTTON_C_LEFT"
       }
     ]
   },
@@ -768,7 +768,7 @@
       },
       {
         "img": "images/button_right.png",
-        "codes": "OOT_BUTTON_C_RIGHT"
+        "codes": "OOT_BUTTON_C_RIGHT,OOT_SHARED_BUTTON_C_RIGHT"
       }
     ]
   },
@@ -783,7 +783,7 @@
       },
       {
         "img": "images/button_up.png",
-        "codes": "OOT_BUTTON_C_UP"
+        "codes": "OOT_BUTTON_C_UP,OOT_SHARED_BUTTON_C_UP"
       }
     ]
   },
@@ -813,7 +813,7 @@
       },
       {
         "img": "images/items/mm_stone.png",
-        "codes": "OOT_MASK_STONE,OOT_MASK"
+        "codes": "OOT_MASK_STONE,OOT_MASK,OOT_SHARED_MASK_STONE"
       }
     ]
   },
@@ -828,7 +828,7 @@
       },
       {
     "img": "images/items/mm_elegy.png",
-    "codes": "OOT_SONG_EMPTINESS"
+    "codes": "OOT_SONG_EMPTINESS,OOT_SHARED_SONG_EMPTINESS"
       }
     ]
   },
