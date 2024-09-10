@@ -1154,9 +1154,9 @@
             "MM_OWL_WOODFALL",
             "MM_OWL_MILK_ROAD",
             "MM_OWL_MOUNTAIN_VILLAGE",
-            "MM_CLOCK2",
-            "MM_CLOCK4",
-            "MM_CLOCK6"
+            "MM_CLOCK1",
+            "MM_CLOCK3",
+            "MM_CLOCK5"
           ],
           [
             "MM_OWL_SNOWHEAD",
@@ -1164,9 +1164,9 @@
             "MM_OWL_ZORA_CAPE",
             "MM_OWL_IKANA_CANYON",
             "MM_OWL_STONE_TOWER",
-            "MM_CLOCK1",
-            "MM_CLOCK3",
-            "MM_CLOCK5"
+            "MM_CLOCK2",
+            "MM_CLOCK4",
+            "MM_CLOCK6"
           ]
         ]
       },
