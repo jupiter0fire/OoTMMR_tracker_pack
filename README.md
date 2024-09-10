@@ -40,23 +40,15 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 - Ganon Trials
 - Open Dungeons
 - Clear State Dungeons
-- Age Change Upon Song of Time
 - Pre-Completed Dungeons
-- Most OOT items in MM
-- Extra Child Sword in OOT
-- MM items in OOT
-- Ocarina Buttons Shuffle
 - Soul Shuffle
-- Clock Shuffle
 - Entrance Shuffle
 
 ## TODOs:
 
 - [ ] Add Silver Rupees to the item grid (jupiterfire)
-- [ ] Add Map Locations for Pot/Grass/Freestanding/FairySpot Shuffle (jupiterfire)
-- [ ] Adjust Tree Search for Age Change Upon Song of Time (wbsch)
+- [ ] Add Map Locations for Pot/Freestanding/FairySpot Shuffle (jupiterfire)
 - [ ] Implement flags for cleared/uncleared dungeon states (wbsch)
-- [ ] Add new Items to Item Grid (jupiterfire)
 - [ ] Adjust Tree Search for ER Options (wbsch)
 
 ## Credits
@@ -64,3 +56,5 @@ Green markings indicate that a check is logically reachable. Yellow markings mea
 Big thanks to [Hamsda](https://github.com/Hamsda/EmoTrackerPacks) and Pink Switch who let me use their OOTR/MMR tracker packs as the base for this tracker pack.
 
 Thanks to [ThatsGottaBeKane](https://github.com/ThatsGottaBeKane) for help with locations and the item grid.
+
+Thanks to BusinessAlex for providing us with pictures for items that weren't included in the base tracker packs.

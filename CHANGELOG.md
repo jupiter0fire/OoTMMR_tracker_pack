@@ -41,11 +41,16 @@ Bugfixes:
 - Fixed Shared Bombchu Bags
 - Fixed Deku Nuts in OOT
 - Added missing grass checks in MM
+- Fixed Shared Items not working properly.
 
 Added a Gossip Stone to toggle hintable locations on and off.
+
 Made a separate bottle for Ruto's Letter and Gold Dust.
+
 Linked Keaton Quiz locations so that checking one locations marks them all as checked.
+
 Deleted unsupported settings.
+
 Deleted unused code.
 
 ## v24.1.1
