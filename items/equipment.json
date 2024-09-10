@@ -10,7 +10,7 @@
       },
       {
         "img": "images/sword1.png",
-        "codes": "OOT_SWORD_KOKIRI"
+        "codes": "OOT_SWORD_KOKIRI, OOT_SHARED_SWORD"
       },
       {
         "img": "images/items/mm_razor.png"

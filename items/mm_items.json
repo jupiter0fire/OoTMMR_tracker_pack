@@ -318,7 +318,7 @@
     "stages": [
       {
         "img": "images/items/mm_kokiri.png",
-        "codes": "MM_SWORD, MM_SHARED_SWORD"
+        "codes": "MM_SWORD, MM_SHARED_SWORD, MM_SWORD_KOKIRI"
       },
       {
         "img": "images/items/mm_razor.png",
