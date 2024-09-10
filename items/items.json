@@ -227,21 +227,48 @@
   },
   {
     "name": "Din's Fire",
-    "type": "toggle",
-    "img": "images/din.png",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/din.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/din.png",
     "codes": "OOT_SPELL_FIRE"
+      }
+    ]
   },
   {
     "name": "Farore's Wind",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/farore.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/farore.png",
-    "codes": "faroreswind,farores,fw"
+    "codes": "OOT_SPELL_WIND"
+      }
+    ]
   },
   {
     "name": "Nayru's Love",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/nayru.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/nayru.png",
     "codes": "OOT_SPELL_LOVE"
+      }
+    ]
   },
   {
     "name": "Child Cucco",

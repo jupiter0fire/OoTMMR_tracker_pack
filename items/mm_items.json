@@ -318,13 +318,15 @@
     "stages": [
       {
         "img": "images/items/mm_kokiri.png",
-        "codes": "MM_SWORD"
+        "codes": "MM_SWORD, MM_SHARED_SWORD"
       },
       {
-        "img": "images/items/mm_razor.png"
+        "img": "images/items/mm_razor.png",
+        "codes": "MM_SWORD_RAZOR"
       },
       {
-        "img": "images/items/mm_gilded.png"
+        "img": "images/items/mm_gilded.png",
+        "codes": "MM_SWORD_GILDED"
       }
     ]
   },
@@ -1206,21 +1208,48 @@
   },
   {
     "name": "Din's Fire",
-    "type": "toggle",
-    "img": "images/din.png",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/din.png",
+        "img_mods": "@disabled"
+      },
+      {
+        "img": "images/din.png",
     "codes": "MM_SPELL_FIRE"
+      }
+    ]
   },
   {
     "name": "Farore's Wind",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/farore.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/farore.png",
     "codes": "MM_SPELL_WIND"
+      }
+    ]
   },
   {
     "name": "Nayru's Love",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/nayru.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/nayru.png",
     "codes": "MM_SPELL_LOVE"
+      }
+    ]
   },
   {
     "name": "Iron Boots",

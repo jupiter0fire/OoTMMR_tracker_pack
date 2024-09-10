@@ -189,6 +189,8 @@ function _mm_logic()
         ["MEDALLION_SPIRIT"] = "LACS_MED:1",
         ["MEDALLION_SHADOW"] = "LACS_MED:2",
         ["OCARINA:2"] = "OCARINA2",
+        ["SWORD:2"] = "SWORD_RAZOR",
+        ["SWORD:3"] = "SWORD_GILDED",
     }
     OOTMM_HAS_PREFIXES = {
         ["setting"] = true,
