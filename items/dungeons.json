@@ -340,8 +340,17 @@
   },
   {
     "name": "Skeleton Key",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/key_skeleton.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/key_skeleton.png",
     "codes": "OOT_SKELETON_KEY"
+      }
+    ]
   }
 ]

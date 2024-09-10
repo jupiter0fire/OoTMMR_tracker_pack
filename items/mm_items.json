@@ -287,10 +287,18 @@
   },
   {
     "name": "Elegy of Emptiness",
-    "type": "toggle",
-    "loop": true,
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_elegy.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/items/mm_elegy.png",
     "codes": "MM_SONG_EMPTINESS"
+      }
+    ]
   },
   {
     "name": "Oath to Order",
@@ -1202,9 +1210,18 @@
   },
   {
     "name": "Skeleton Key",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/key_skeleton.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/key_skeleton.png",
     "codes": "MM_SKELETON_KEY"
+      }
+    ]
   },
   {
     "name": "Din's Fire",
@@ -1283,9 +1300,18 @@
   },
   {
     "name": "Zora Tunic",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bluetunic.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/bluetunic.png",
     "codes": "MM_TUNIC_ZORA"
+      }
+    ]
   },
   {
     "name": "Zora Scales",
@@ -1396,9 +1422,18 @@
   },
   {
     "name": "Goron Tunic",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/redtunic.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/redtunic.png",
     "codes": "MM_TUNIC_GORON"
+      }
+    ]
   },
   {
     "name": "Clock (Day 1)",

@@ -819,10 +819,18 @@
   },
   {
     "name": "Elegy of Emptiness",
-    "type": "toggle",
-    "loop": true,
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/items/mm_elegy.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/items/mm_elegy.png",
     "codes": "OOT_SONG_EMPTINESS"
+      }
+    ]
   },
   {
     "name": "Dummy",

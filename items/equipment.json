@@ -70,15 +70,33 @@
   },
   {
     "name": "Goron Tunic",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/redtunic.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/redtunic.png",
     "codes": "OOT_TUNIC_GORON"
+      }
+    ]
   },
   {
     "name": "Zora Tunic",
-    "type": "toggle",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "img": "images/bluetunic.png",
+        "img_mods": "@disabled"
+      },
+      {
     "img": "images/bluetunic.png",
     "codes": "OOT_TUNIC_ZORA"
+      }
+    ]
   },
   {
     "name": "Gerudo Membership Card",
