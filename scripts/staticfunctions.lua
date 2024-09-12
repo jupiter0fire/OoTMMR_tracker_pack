@@ -484,8 +484,8 @@ end
 
 function hintable()
     if has("gossip_stone") then
-      return AccessibilityLevel.Normal
-    else  
-      return AccessibilityLevel.None
+        return AccessibilityLevel.Normal
+    else
+        return AccessibilityLevel.None
     end
-  end
+end
