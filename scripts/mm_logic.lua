@@ -3940,12 +3940,6 @@ function _mm_logic()
             ["Kafei Hideout Owner Reward 1"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
             ["Kafei Hideout Owner Reward 2"] = function () return between(DAY3_AM_06_00, NIGHT3_PM_10_00) end,
         },
-        ["stay"] = {
-            ["NIGHT2_PM_10_00"] = function () return false end,
-            ["NIGHT3_PM_10_00"] = function () return false end,
-            ["DAY2_AM_06_00"] = function () return false end,
-            ["DAY3_AM_06_00"] = function () return false end,
-        },
         ["age_change"] = false,
     },
     ["Post Office"] = {
