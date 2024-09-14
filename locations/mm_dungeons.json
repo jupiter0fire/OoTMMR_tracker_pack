@@ -1983,7 +1983,7 @@
         "chest_opened_img": "images/system/chest_open_big.png",
         "short_name": "Inverted Tower Small Key 3",
         "access_rules": [
-          "$mm|Stone Tower Temple Inverted East Middle Chest"
+          "$mm|Stone Tower Temple Inverted East Upper Chest"
         ],
         "item_count": 1
       },
@@ -1993,7 +1993,7 @@
         "chest_unopened_img": "images/system/mm_stonetower_stray_fairy.png",
         "chest_opened_img": "images/system/mm_stray_fairy.png",
         "access_rules": [
-          "$mm|Stone Tower Temple Inverted East Upper Chest"
+          "$mm|Stone Tower Temple Inverted East Middle Chest"
         ],
         "visibility_rules": [
           "setting_strayFairyChestShuffle_ownDungeon"
