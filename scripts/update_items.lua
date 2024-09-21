@@ -208,7 +208,7 @@ local OOTMM_SMALL_KEY_AMOUNTS = {
     },
     ["OOT_SMALL_KEY_WATER"] = {
         dungeon_name = "Water Temple",
-        vanilla = 6,
+        vanilla = 5,
         mq = 2,
     },
     ["OOT_SMALL_KEY_SPIRIT"] = {

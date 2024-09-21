@@ -2185,6 +2185,18 @@
                   "{$hintable}"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Potted Grass",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Cucco Shack Potted Plant 1 Grass"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -2393,7 +2405,19 @@
                   "$mm|Road to Southern Swamp Grass 1"
                 ],
                 "item_count": 2
-              }
+              },
+              {
+                "name": "Potted Grass near Swamp Archery",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Potted Plant 1 Grass"
+                ],
+                "item_count": 2
+              }              
             ],
             "map_locations": [
               {
@@ -3214,6 +3238,30 @@
                   "{$hintable}"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Potted Grass in front of Smithy (day)",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Mountain Village Potted Plant 1 Grass"
+                ],
+                "item_count": 2
+              },
+              {
+                "name": "Potted Grass inside Smithy (night)",
+                "visibility_rules": [
+                  "setting_shuffleGrassMm_true"
+                ],
+                "chest_unopened_img": "images/MM_Grass.png",
+                "chest_opened_img": "images/GrassGreyscale.png",
+                "access_rules": [
+                  "$mm|Blacksmith Potted Plant 1 Grass"
+                ],
+                "item_count": 2
               }
             ],
             "map_locations": [

@@ -326,7 +326,7 @@
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
-          "$mm|Swamp Skulltula Tree Room Grass 2"
+          "$mm|Swamp Skulltula Tree Room Grass 1"
         ],
         "visibility_rules": [
           "setting_housesSkulltulaTokens_cross"

@@ -138,7 +138,7 @@
     "type": "consumable",
     "img": "images/small_key.png",
     "codes": "OOT_SMALL_KEY_WATER",
-    "max_quantity": 6
+    "max_quantity": 5
   },
   {
     "name": "Water Temple Boss Key",
