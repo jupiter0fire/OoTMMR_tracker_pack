@@ -144,6 +144,19 @@
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
+              },
+              {
+                "name": "KF Links House Pot",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$oot|Link's House Pot"
+                ],
+                "visibility_rules": [
+                  "setting_cowShuffleOot_true"
+                ],
+                "chest_unopened_img": "images/cow.png",
+                "chest_opened_img": "images/bottle_milk.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
