@@ -1817,7 +1817,7 @@
             ]
           },
           {
-            "name": "Kak Impa's House Back",
+            "name": "Kak Impa's House",
             "sections": [
               {
                 "name": "Kak Impa's House Freestanding PoH",
@@ -1841,6 +1841,19 @@
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 1
+              },
+              {
+                "name": "Kak Impa's House Pots",
+                "short_name": "Cow",
+                "access_rules": [
+                  "$oot|Kakariko Pot 07"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -1986,6 +1999,18 @@
                   "$oot|Kakariko Potion Shop Odd Potion"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Pots near Medicine Building",
+                "access_rules": [
+                  "$oot|Kakariko Back Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
@@ -2061,12 +2086,18 @@
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 1"
                 ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 2",
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 2"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
                 ],
                 "item_count": 1
               },
@@ -2075,12 +2106,18 @@
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 3"
                 ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 4",
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 4"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
                 ],
                 "item_count": 1
               },
@@ -2089,12 +2126,18 @@
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 5"
                 ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 6",
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 6"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
                 ],
                 "item_count": 1
               },
@@ -2103,6 +2146,9 @@
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 7"
                 ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
@@ -2110,15 +2156,27 @@
                 "access_rules": [
                   "$oot|Kakariko Potion Shop Item 8"
                 ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
+              },
+              {
+                "name": "Pots near Potion Shop",
+                "access_rules": [
+                  "$oot|Kakariko Pot 01"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
                 "x": 1795,
                 "y": 340
               }
@@ -2126,49 +2184,103 @@
           },
           {
             "name": "Kak Bazaar",
-            "access_rules": [
-              "$oot|Kakariko Bazaar Item 1"
-            ],
             "sections": [
               {
                 "name": "Item 1",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 1"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 2",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 2"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 3",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 3"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 4",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 4"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 5",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 5"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 6",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 6"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 7",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 7"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
               },
               {
                 "name": "Item 8",
+                "access_rules": [
+                  "$oot|Kakariko Bazaar Item 8"
+                ],
+                "visibility_rules": [
+                  "setting_shopShuffleOot_full"
+                ],
                 "item_count": 1
+              },
+              {
+                "name": "Pots near Guard's House",
+                "access_rules": [
+                  "$oot|Kakariko Pot 04"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
               {
                 "map": "oot",
-                "force_invisibility_rules": [
-                  "setting_shopShuffleOot_none"
-                ],
                 "x": 1760,
                 "y": 340
               }
