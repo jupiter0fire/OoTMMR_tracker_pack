@@ -2464,21 +2464,37 @@
               {
                 "name": "Graveyard Dampes Grave",
                 "short_name": "Dampes Grave",
-                "access_rules": [
-                  "$oot|Graveyard Dampe Tomb Reward 1"
-                ],
                 "sections": [
                   {
                     "name": "Graveyard Hookshot Chest",
+                    "access_rules": [
+                      "$oot|Graveyard Dampe Tomb Reward 1"
+                    ],
                     "short_name": "Chest",
                     "item_count": 1
                   },
                   {
                     "name": "Graveyard Dampe Race Freestanding PoH",
                     "short_name": "HP",
+                    "access_rules": [
+                      "$oot|Graveyard Dampe Tomb Reward 2"
+                    ],
                     "chest_unopened_img": "images/HP.png",
                     "chest_opened_img": "images/HP_grey.png",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Graveyard Dampe Pots",
+                    "short_name": "Pots",
+                    "access_rules": [
+                      "$oot|Graveyard Dampe Tomb Pot 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsOot_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 6
                   }
                 ],
                 "map_locations": [
