@@ -4596,6 +4596,31 @@
             ]
           },
           {
+            "name": "ZD Pots near Shop",
+            "sections": [
+              {
+                "name": "ZD Pots near Shop",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Zora Domain Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 5
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2590,
+                "y": 500
+              }
+            ]
+          },
+          {
             "name": "ZD Fairy Fountain",
             "sections": [
               {
