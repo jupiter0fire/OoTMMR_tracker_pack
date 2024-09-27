@@ -3391,6 +3391,31 @@
             ]
           },
           {
+            "name": "DMC Pots near Darunia's room",
+            "sections": [
+              {
+                "name": "DMC Pots",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Death Mountain Crater Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 4
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1745,
+                "y": 70
+              }
+            ]
+          },
+          {
             "name": "DMC Hammer Grotto",
             "sections": [
               {
