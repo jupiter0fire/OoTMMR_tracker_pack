@@ -4728,6 +4728,19 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
+              },
+              {
+                "name": "ZF Hidden Cave Pots",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Zora Fountain Adult Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -4785,6 +4798,31 @@
                 "map": "oot",
                 "x": 2520,
                 "y": 350
+              }
+            ]
+          },
+          {
+            "name": "ZF Pots near Jabu",
+            "sections": [
+              {
+                "name": "ZF Pots near Jabu",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Zora Fountain Child Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 2485,
+                "y": 370
               }
             ]
           }
