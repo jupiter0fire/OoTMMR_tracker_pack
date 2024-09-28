@@ -3642,6 +3642,31 @@
                 ]
               },
               {
+                "name": "Market Back Alley",
+                "sections": [
+                  {
+                    "name": "Market Back Alley House Pots (Night)",
+                    "short_name": "Pot",
+                    "access_rules": [
+                      "$oot|Market Back Alley East House Pot 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsOot_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 3
+                  }
+                ],
+                "map_locations": [
+                  {
+                    "map": "oot",
+                    "x": 1390,
+                    "y": 290
+                  }
+                ]
+              },
+              {
                 "name": "Market Shooting Gallery",
                 "sections": [
                   {
@@ -3900,6 +3925,45 @@
                     "chest_unopened_img": "images/skulltula.png",
                     "chest_opened_img": "images/skulltula_token.png",
                     "item_count": 1
+                  },
+                  {
+                    "name": "Market Guard House Child Pots (42x)",
+                    "short_name": "Pots",
+                    "access_rules": [
+                      "$oot|Market Pot House Child Pot Ground 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsOot_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Market Guard House Child Pots Above",
+                    "short_name": "Pots",
+                    "access_rules": [
+                      "$oot|Market Pot House Child Pot Above 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsOot_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 2
+                  },
+                  {
+                    "name": "Market Guard House Adult Pots (11x)",
+                    "short_name": "Pots",
+                    "access_rules": [
+                      "$oot|Market Pot House Adult Pot 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsOot_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 1
                   }
                 ],
                 "map_locations": [
@@ -4058,7 +4122,7 @@
             "map_locations": [
               {
                 "map": "oot",
-                "x": 1490,
+                "x": 1525,
                 "y": 240
               }
             ]
@@ -4116,6 +4180,19 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
+              },
+              {
+                "name": "HC Storms Grotto Pots",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Hyrule Castle Grotto Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -4123,6 +4200,31 @@
                 "map": "oot",
                 "x": 1470,
                 "y": 205
+              }
+            ]
+          },
+          {
+            "name": "HC Gatehouse",
+            "sections": [
+              {
+                "name": "HC Gatehouse Pots",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Hyrule Castle Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true,setting_restoreBrokenActors_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1475,
+                "y": 240
               }
             ]
           }
