@@ -5474,6 +5474,19 @@
                 "chest_unopened_img": "images/skulltula.png",
                 "chest_opened_img": "images/skulltula_token.png",
                 "item_count": 1
+              },
+              {
+                "name": "Wasteland Pots",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Haunted Wasteland Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
