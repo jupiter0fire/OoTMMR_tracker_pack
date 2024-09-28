@@ -1082,6 +1082,19 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 2
+              },
+              {
+                "name": "HF Cow Grotto Pots",
+                "short_name": "Pot",
+                "access_rules": [
+                  "$oot|Hyrule Field Cow Grotto Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
               }
             ],
             "map_locations": [
