@@ -1602,6 +1602,31 @@
             ]
           },
           {
+            "name": "Rain Shed",
+            "sections": [
+              {
+                "name": "Rain Shed Pots",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Lon Lon Ranch Pot 5"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "oot",
+                "x": 1295,
+                "y": 680
+              }
+            ]
+          },
+          {
             "name": "LLR Talon's House",
             "sections": [
               {
@@ -1610,6 +1635,19 @@
                   "$oot|Lon Lon Ranch Talon Bottle"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Pots upstairs",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Lon Lon Ranch Talon House Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -1670,6 +1708,19 @@
                 "chest_unopened_img": "images/cow.png",
                 "chest_opened_img": "images/bottle_milk.png",
                 "item_count": 2
+              },
+              {
+                "name": "Pots outside Stables",
+                "short_name": "Pots",
+                "access_rules": [
+                  "$oot|Lon Lon Ranch Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
