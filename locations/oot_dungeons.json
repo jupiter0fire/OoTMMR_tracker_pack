@@ -1220,7 +1220,7 @@
           "$oot|Jabu-Jabu Pot Muscle Block Room 1"
         ],
         "visibility_rules": [
-          "setting_shufflePotsOot_true,setting_mq_Jabu"
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_false"
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
@@ -1631,7 +1631,7 @@
         ],
         "chest_unopened_img": "images/pot.png",
         "chest_opened_img": "images/pot_grey.png",
-        "item_count": 3
+        "item_count": 6
       },
       {
         "name": "Barinade",
