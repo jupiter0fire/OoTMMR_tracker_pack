@@ -1659,6 +1659,44 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "First Corridor Pots",
+        "access_rules": [
+          "$oot|Ice Cavern Pot First Corridor 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Pots Spinning Scythe Room",
+        "short_name": "Spinning Scythe",
+        "access_rules": [
+          "$oot|Ice Cavern Pot Scythe Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Flying Pot Spinning Scythe Room",
+        "short_name": "Spinning Scythe Flying",
+        "access_rules": [
+          "$oot|Ice Cavern Flying Pot Scythe Room"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Spinning Scythe Room",
         "short_name": "Spinning Scythe",
         "access_rules": [
@@ -1681,6 +1719,19 @@
           "setting_mq_IceCavern_false"
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
+        "item_count": 1
+      },
+      {
+        "name": "Pot near Map Chest",
+        "short_name": "Near Map Chest",
+        "access_rules": [
+          "$oot|Ice Cavern Pot Map Room"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
       },
       {
@@ -1733,6 +1784,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Before Boss Frozen Pots",
+        "short_name": "Before Boss",
+        "access_rules": [
+          "$oot|Ice Cavern Pot Red Ice 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Iron Boots Chest",
