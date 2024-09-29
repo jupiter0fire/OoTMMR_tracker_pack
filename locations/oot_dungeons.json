@@ -2413,6 +2413,19 @@
         "item_count": 1
       },
       {
+        "name": "Near Boss Pots",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$oot|Fire Temple Pot Pre-Boss Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "GS Boss Key Loop",
         "short_name": "Boss Key",
         "access_rules": [
@@ -2448,6 +2461,19 @@
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
+      },
+      {
+        "name": "Pots Big Lava Room",
+        "short_name": "Lava Room",
+        "access_rules": [
+          "$oot|Fire Temple Pot Lava Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "GS Song of Time Room",
@@ -2598,6 +2624,18 @@
         "item_count": 1
       },
       {
+        "name": "Flame Maze Left Side Pots",
+        "access_rules": [
+          "$oot|Fire Temple Pot Ring 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -2608,6 +2646,18 @@
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
+      },
+      {
+        "name": "Before Upper Miniboss",
+        "access_rules": [
+          "$oot|Fire Temple Pot Before Miniboss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Highest Goron Chest",
