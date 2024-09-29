@@ -1214,6 +1214,19 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "2 Octoroks Basement Pots",
+        "short_name": "2 Octoroks Basement",
+        "access_rules": [
+          "$oot|Jabu-Jabu Pot Muscle Block Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 5
+      },
+      {
         "name": "GS Water Switch Room",
         "short_name": "Water Switch",
         "access_rules": [
@@ -1225,6 +1238,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Pots Water Switch Room",
+        "short_name": "Water Switch",
+        "access_rules": [
+          "$oot|Jabu-Jabu Pot Alcove 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "Deku Scrub",
@@ -1298,6 +1324,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Pots After Miniboss",
+        "short_name": "After Miniboss",
+        "access_rules": [
+          "$oot|Jabu-Jabu Pot Big Octo Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "GS Near Boss",
@@ -1580,6 +1619,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 2
+      },
+      {
+        "name": "Pots Boss Room",
+        "short_name": "Boss Room",
+        "access_rules": [
+          "$oot|Jabu-Jabu Boss Pot 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "Barinade",
