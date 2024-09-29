@@ -1899,6 +1899,19 @@
         "item_count": 1
       },
       {
+        "name": "Pots Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$oot|Forest Temple Pot Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 6
+      },
+      {
         "name": "GS Lobby",
         "short_name": "Lobby",
         "access_rules": [
@@ -1922,6 +1935,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "First Stalfos Pots",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$oot|Forest Temple Pot Miniboss Lower 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Raised Island Courtyard Chest",
@@ -2044,6 +2070,19 @@
         "item_count": 1
       },
       {
+        "name": "2nd Stalfos Pots",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$oot|Forest Temple Pot Miniboss Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Blue Poe Chest",
         "short_name": "Blue Poe",
         "access_rules": [
@@ -2056,6 +2095,32 @@
         "item_count": 1
       },
       {
+        "name": "Blue Poe Pots",
+        "short_name": "Blue Poe",
+        "access_rules": [
+          "$oot|Forest Temple Pot Blue Poe 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Pots Frozen Eye Switch Room",
+        "short_name": "Frozen Eye Switch",
+        "access_rules": [
+          "$oot|Forest Temple Pot Rotating Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Falling Ceiling Room Chest",
         "short_name": "Checkerboard",
         "access_rules": [
@@ -2065,6 +2130,19 @@
           "setting_mq_ForestTemple_false"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Green Poe Pots",
+        "short_name": "Green Poe",
+        "access_rules": [
+          "$oot|Forest Temple Pot Green Poe Pot 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Basement Chest",
