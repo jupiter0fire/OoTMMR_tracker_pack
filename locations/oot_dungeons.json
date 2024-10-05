@@ -2980,6 +2980,19 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "Main Room F2 West Ledge",
+        "short_name": "Main West",
+        "access_rules": [
+          "$oot|Water Temple Pot Main Room Near Block 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -3002,6 +3015,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Pots Torches Room",
+        "short_name": "Torches Room",
+        "access_rules": [
+          "$oot|Water Temple Pot Ruto Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Torches Chest",
@@ -3029,6 +3055,19 @@
         "item_count": 1
       },
       {
+        "name": "Pots Behind Gate",
+        "short_name": "Behind Gate",
+        "access_rules": [
+          "$oot|Water Temple Pot Skull Cage 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -3041,6 +3080,19 @@
         "item_count": 1
       },
       {
+        "name": "Pots Compass Room",
+        "short_name": "Compass Room",
+        "access_rules": [
+          "$oot|Water Temple Pot Compass Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Central Bow Target Chest",
         "short_name": "Central Bow Target",
         "access_rules": [
@@ -3051,6 +3103,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Central Bow Target Pots",
+        "short_name": "Central Bow Target",
+        "access_rules": [
+          "$oot|Water Temple Pot Corridor 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Central Pillar",
@@ -3091,6 +3156,19 @@
         "item_count": 1
       },
       {
+        "name": "Pots Before Dark Link",
+        "short_name": "Before Dark Link",
+        "access_rules": [
+          "$oot|Water Temple Pot Before Dark Link 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Longshot Chest",
         "short_name": "Longshot",
         "access_rules": [
@@ -3113,6 +3191,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "River Pots",
+        "short_name": "River",
+        "access_rules": [
+          "$oot|Water Temple Pot River 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "River Chest",
@@ -3139,6 +3230,19 @@
         "item_count": 1
       },
       {
+        "name": "Pots Block Room",
+        "short_name": "Block Room",
+        "access_rules": [
+          "$oot|Water Temple Pot Blocks Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Near Boss Key Chest",
         "short_name": "Near Boss Key",
         "access_rules": [
@@ -3163,6 +3267,32 @@
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
+      },
+      {
+        "name": "Pots Boss Key Room",
+        "short_name": "Boss Key Room",
+        "access_rules": [
+          "$oot|Water Temple Pot Boss Key Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Main Room Pots Near Boss",
+        "short_name": "Main Near Boss",
+        "access_rules": [
+          "$oot|Water Temple Pot Main Room Near Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Map Chest",
