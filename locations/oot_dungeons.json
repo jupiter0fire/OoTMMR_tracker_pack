@@ -3458,6 +3458,32 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "Early Maze Pots",
+        "short_name": "Early Maze",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Early Maze 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 6
+      },
+      {
+        "name": "Early Maze Flying Pot",
+        "short_name": "Early Maze Flying",
+        "access_rules": [
+          "$oot|Shadow Temple Flying Pot Early Maze"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -3468,6 +3494,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
+      },
+      {
+        "name": "Map Room Pots",
+        "short_name": "Map",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Map Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Hover Boots Chest",
@@ -3540,6 +3579,19 @@
         "item_count": 1
       },
       {
+        "name": "Falling Spikes Lower Pots",
+        "short_name": "Crusher Lower",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Falling Spikes Bottom 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Falling Spikes Lower Chest",
         "short_name": "Crusher Lower",
         "access_rules": [
@@ -3573,6 +3625,19 @@
           "setting_mq_ShadowTemple_false"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 2
+      },
+      {
+        "name": "Falling Spikes Upper Pots",
+        "short_name": "Crusher Upper",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Falling Spikes Top 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
       },
       {
@@ -3648,6 +3713,32 @@
         "item_count": 1
       },
       {
+        "name": "After Wind Pots",
+        "short_name": "After Wind",
+        "access_rules": [
+          "$oot|Shadow Temple Pot After Wind 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "After Wind Flying Pots",
+        "short_name": "After Wind Flying",
+        "access_rules": [
+          "$oot|Shadow Temple Flying Pot After Wind 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Near Ship",
         "short_name": "Near Boat",
         "access_rules": [
@@ -3659,6 +3750,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "After Boat Pots",
+        "short_name": "After Boat",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Boat Before Bridge 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Boss Key Chest",
@@ -3685,6 +3789,19 @@
         "item_count": 1
       },
       {
+        "name": "Boss Key Room Pots",
+        "short_name": "Boss Key Room ",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Boss Key Room"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "GS Triple Giant Pot",
         "short_name": "Triple Skull",
         "access_rules": [
@@ -3708,6 +3825,32 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Invisible Floormaster Pots",
+        "short_name": "Floormaster",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Invisible Floormaster Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Before Boss Pots",
+        "short_name": "Before Boss",
+        "access_rules": [
+          "$oot|Shadow Temple Pot Boat After Bridge 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Compass Chest",
