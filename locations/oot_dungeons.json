@@ -4574,6 +4574,19 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "Entrance Pots",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Bottom of the Well Pot Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Front Left Fake Wall Chest",
         "short_name": "Front Hidden",
         "access_rules": [
@@ -4621,6 +4634,19 @@
         "item_count": 1
       },
       {
+        "name": "North Underwater Pot",
+        "short_name": "North Underwater",
+        "access_rules": [
+          "$oot|Bottom of the Well Pot Main Room Underwater"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "GS West Inner Room",
         "short_name": "West Inner",
         "access_rules": [
@@ -4632,6 +4658,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Pot West Inner Room",
+        "short_name": "West Inner",
+        "access_rules": [
+          "$oot|Bottom of the Well Flying Pot 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "GS East Inner Room",
@@ -4654,6 +4693,19 @@
         "visibility_rules": [
           "setting_mq_BottomoftheWell_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Fire Keese Pots",
+        "short_name": "Fire Keese",
+        "access_rules": [
+          "$oot|Bottom of the Well Pot Side Room"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
       },
       {
@@ -4716,6 +4768,19 @@
         "item_count": 1
       },
       {
+        "name": "West Hidden Pots",
+        "short_name": "West Hidden",
+        "access_rules": [
+          "$oot|Bottom of the Well Pot Main Room 3"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Map Chest",
         "short_name": "Basement",
         "access_rules": [
@@ -4738,6 +4803,19 @@
         ],
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
+        "item_count": 12
+      },
+      {
+        "name": "Basement Pots",
+        "short_name": "Basement",
+        "access_rules": [
+          "$oot|Bottom of the Well Pot Basement 01"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 12
       },
       {
