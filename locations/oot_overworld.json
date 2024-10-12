@@ -5296,7 +5296,7 @@
             ]
           },
           {
-            "name": "Carpenter Rescue",
+            "name": "GF Interior",
             "sections": [
               {
                 "name": "Hideout Jail Guard (1 Torch)",
@@ -5306,6 +5306,19 @@
                 ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
+              },
+              {
+                "name": "Jail 1 Pots",
+                "short_name": "1 Torch",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Pot Jail 1 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               },
               {
                 "name": "Hideout Jail Guard (2 Torches)",
@@ -5320,6 +5333,32 @@
                 "item_count": 1
               },
               {
+                "name": "Jail 2 Pots",
+                "short_name": "2 Torches",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Pot Jail 2 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 7
+              },
+              {
+                "name": "Kitchen Pots",
+                "short_name": "Kitchen",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Pot Kitchen 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
+              },
+              {
                 "name": "Hideout Jail Guard (3 Torches)",
                 "short_name": "3 Torches",
                 "access_rules": [
@@ -5330,6 +5369,19 @@
                 ],
                 "chest_unopened_img": "images/chest_brown_small_key.png",
                 "item_count": 1
+              },
+              {
+                "name": "Jail 3 Pots",
+                "short_name": "3 Torches",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Pot Jail 3 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
               },
               {
                 "name": "Hideout Jail Guard (4 Torches)",
@@ -5350,7 +5402,20 @@
                   "$oot|Gerudo Member Card"
                 ],
                 "item_count": 1
-              }
+              },
+              {
+                "name": "Break Room Pots",
+                "short_name": "Break Room",
+                "access_rules": [
+                  "$oot|Gerudo Fortress Pot Break Room 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsOot_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
+              }              
             ],
             "map_locations": [
               {
