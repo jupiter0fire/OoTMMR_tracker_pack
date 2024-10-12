@@ -956,7 +956,7 @@
           "$ootmq|MQ Dodongo Cavern GS Poe Room Side"
         ],
         "visibility_rules": [
-          " ,setting_mq_DodongoCavern_true"
+          "setting_goldSkulltulaTokens_dungeons,setting_mq_DodongoCavern_true"
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
@@ -1182,9 +1182,6 @@
         "short_name": "Boss Room",
         "access_rules": [
           "$oot|Dodongo Cavern Boss Chest"
-        ],
-        "visibility_rules": [
-          "setting_mq_DodongoCavern_false"
         ],
         "item_count": 1
       },
