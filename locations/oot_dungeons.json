@@ -4149,6 +4149,32 @@
     "chest_opened_img": "images/chest_brown_open.png",
     "sections": [
       {
+        "name": "Entrance Pots",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Lobby 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Entrance Flying Pots",
+        "short_name": "Entrance Flying",
+        "access_rules": [
+          "$oot|Spirit Temple Flying Pot Lobby 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Child Bridge Chest",
         "short_name": "Child Left",
         "access_rules": [
@@ -4158,6 +4184,32 @@
           "setting_mq_SpiritTemple_false"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Child Bridge Flying Pots",
+        "short_name": "Child Left",
+        "access_rules": [
+          "$oot|Spirit Temple Flying Pot Child After Bridge 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Child Anubis Room Pots",
+        "short_name": "Child Anubis",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Child Anubis Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Child Early Torches Chest",
@@ -4182,6 +4234,19 @@
         ],
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
+        "item_count": 1
+      },
+      {
+        "name": "Child Climb Pot",
+        "short_name": "Child Climb",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Child Climb"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
       },
       {
@@ -4232,6 +4297,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Pots After Sun Block Room",
+        "short_name": "Before Knuckle",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Child Hand Stairway 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Entrance Front Left Chest",
@@ -4372,6 +4450,32 @@
         "item_count": 1
       },
       {
+        "name": "Pots Lobby",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Statue Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 6
+      },
+      {
+        "name": "Flying Pots Lobby",
+        "short_name": "Lobby Flying",
+        "access_rules": [
+          "$oot|Spirit Temple Flying Pot Lobby 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Lobby",
         "short_name": "Lobby",
         "access_rules": [
@@ -4422,6 +4526,19 @@
         "item_count": 1
       },
       {
+        "name": "Adult Climb Flying Pots",
+        "short_name": "Adult Climb Flying",
+        "access_rules": [
+          "$oot|Spirit Temple Flying Pot Adult Climb 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "First Mirror Chests",
         "short_name": "Mirror",
         "access_rules": [
@@ -4453,6 +4570,19 @@
         "visibility_rules": [
           "setting_mq_SpiritTemple_false"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Adult Staircase Pot",
+        "short_name": "Adult Staircase",
+        "access_rules": [
+          "$oot|Spirit Temple Pot Adult Upper"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
       },
       {
@@ -4638,6 +4768,19 @@
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
+      },
+      {
+        "name": "Topmost Flying Pots",
+        "short_name": "Topmost",
+        "access_rules": [
+          "$oot|Spirit Temple Flying Pot Topmost 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_false"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 6
       },
       {
         "name": "Topmost Chest",
