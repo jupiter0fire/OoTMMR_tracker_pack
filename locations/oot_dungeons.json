@@ -963,6 +963,19 @@
         "item_count": 1
       },
       {
+        "name": "Green Corridor Pots",
+        "short_name": "Green Corridor",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Green Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Green Corridor Grass",
         "short_name": "Green Corridor",
         "access_rules": [
@@ -989,6 +1002,19 @@
         "item_count": 1
       },
       {
+        "name": "East Corridor Pots",
+        "short_name": "East Side",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot East Corridor 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Torch Puzzle Room Chest",
         "short_name": "Platform",
         "access_rules": [
@@ -998,6 +1024,19 @@
           "setting_mq_DodongoCavern_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Vanilla Bomb Bag Pots",
+        "short_name": "Bomb Bag",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Vanilla Bomb Bag Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Grass Before Upper Lizalfos",
@@ -1026,6 +1065,19 @@
         "item_count": 1
       },
       {
+        "name": "Miniboss Pots",
+        "short_name": "Miniboss",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Miniboss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Larvae Room Chest",
         "short_name": "Larvae",
         "access_rules": [
@@ -1048,6 +1100,32 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Before Miniboss Pots",
+        "short_name": "Before Miniboss",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Before Miniboss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "After Miniboss Pots",
+        "short_name": "After Miniboss",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot After Miniboss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Compass Chest",
@@ -1114,6 +1192,19 @@
         "item_count": 1
       },
       {
+        "name": "Pots near Stairs",
+        "short_name": "Near Stairs",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Stairs 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Deku Scrubs Lobby",
         "short_name": "Lobby",
         "access_rules": [
@@ -1141,6 +1232,19 @@
         "item_count": 1
       },
       {
+        "name": "Before Boss Pots",
+        "short_name": "Back Area",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Before Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Under Grave Chest",
         "short_name": "Under Grave",
         "access_rules": [
@@ -1150,6 +1254,19 @@
           "setting_mq_DodongoCavern_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Boss Loop Pots",
+        "short_name": "Boss Loop",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Before Boss Loop 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Boss Loop Grass",
@@ -1163,6 +1280,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
+      },
+      {
+        "name": "Boss Loop Side Room Pots",
+        "short_name": "Boss Loop Side",
+        "access_rules": [
+          "$ootmq|MQ Dodongo Cavern Pot Before Boss Loop Side Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_DodongoCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Boss Loop Side Room Grass",
