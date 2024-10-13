@@ -11,7 +11,7 @@ local names = {
   "Spirit Temple Reward",
   "Shadow Temple Reward",
   "MM Woodfall Temple Reward",
-  "MM Snowpeak Temple Reward",
+  "MM Snowhead Temple Reward",
   "MM Great Bay Temple Reward",
   "MM Stone Tower Temple Reward"
 }
