@@ -2515,6 +2515,19 @@
         "item_count": 1
       },
       {
+        "name": "Main Room Pots",
+        "short_name": "Main Room",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Pot Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 6
+      },
+      {
         "name": "Wolfos Chest",
         "short_name": "Wolfos",
         "access_rules": [
@@ -2525,6 +2538,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Bow Room Lower Pots",
+        "short_name": "Bow Room Lower",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Pot Bow Room Lower 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Raised Island Courtyard",
@@ -2651,6 +2677,32 @@
         "item_count": 1
       },
       {
+        "name": "Bow Room Upper Pots",
+        "short_name": "Bow Room Upper",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Pot Bow Room Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Blue Poe Pots",
+        "short_name": "Blue Poe",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Pot Blue Poe 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -2674,6 +2726,19 @@
         "item_count": 1
       },
       {
+        "name": "Green Poe Pots",
+        "short_name": "Green Poe",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Pot Green Poe 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Raised Island Courtyard Lower Chest",
         "short_name": "Island",
         "access_rules": [
@@ -2695,6 +2760,19 @@
           "setting_mq_ForestTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Basement Pots",
+        "short_name": "Basement",
+        "access_rules": [
+          "$ootmq|MQ Forest Temple Pot Antichamber 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ForestTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Phantom Ganon",
