@@ -3083,6 +3083,19 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Pots",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Near Boss Chest",
         "short_name": "Near Boss",
         "access_rules": [
@@ -3093,6 +3106,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Near Boss Pots",
+        "short_name": "Near Boss",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Pre-Boss 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Map Room Side Chest",
@@ -3115,6 +3141,19 @@
           "setting_mq_FireTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Hammer Loop Pots",
+        "short_name": "Hammer Loop",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Hammer Loop 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 8
       },
       {
         "name": "Map Chest",
@@ -3141,6 +3180,45 @@
         "item_count": 1
       },
       {
+        "name": "Lava Room Left Pot",
+        "short_name": "Lava Left",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Lava Room Left"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Alcove Pot",
+        "short_name": "Lava Alcove",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Lava Room Alcove"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Lava Room Right Pot",
+        "short_name": "Lava Right",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Lava Room Right"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
@@ -3152,6 +3230,19 @@
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
         "item_count": 1
+      },
+      {
+        "name": "Boss Key Room Pots",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Boss Key Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Big Lava Room Open Door",
@@ -3226,6 +3317,45 @@
         "item_count": 1
       },
       {
+        "name": "Grids Above Lava Pots",
+        "short_name": "Grids Above Lava",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Grids Above Lava 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Bridge Above Lava Pots",
+        "short_name": "Bridge Above Lava",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Bridge Above Lava Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Fire Maze Left Pots",
+        "short_name": "Fire Maze Left",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Fire Maze Room Left 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Fire Wall Maze Side Room",
         "short_name": "Fire Maze Side",
         "access_rules": [
@@ -3239,6 +3369,19 @@
         "item_count": 1
       },
       {
+        "name": "Fire Maze Right Pots",
+        "short_name": "Fire Maze Right",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Fire Maze Room Right 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Fire Wall Maze Center",
         "short_name": "Fire Maze Center",
         "access_rules": [
@@ -3250,6 +3393,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Fire Maze Back Right Pots",
+        "short_name": "Fire Maze Back Right",
+        "access_rules": [
+          "$ootmq|MQ Fire Temple Pot Fire Maze Room Back Right 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_FireTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Freestanding Key",
