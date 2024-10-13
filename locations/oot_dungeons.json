@@ -1479,6 +1479,19 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Pots",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pot Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Entrance Grass",
         "short_name": "Entrance",
         "access_rules": [
@@ -1554,7 +1567,7 @@
         "name": "Main Room Lower Grass",
         "short_name": "Main Lower",
         "access_rules": [
-          "$ootmq|MQ Jabu-Jabu Grass Main Room Top 1"
+          "$ootmq|MQ Jabu-Jabu Grass Main Room Bottom 1"
         ],
         "visibility_rules": [
           "setting_shuffleGrassOot_true,setting_mq_Jabu-Jabu_true"
@@ -1586,6 +1599,19 @@
         "item_count": 2
       },
       {
+        "name": "Underwater Alcove Pots",
+        "short_name": "Underwater Alcove",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pot Underwater Alcove 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Boomerang Chest Room",
         "short_name": "Boomerang",
         "access_rules": [
@@ -1610,6 +1636,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 1
+      },
+      {
+        "name": "Boomerang Room Pots",
+        "short_name": "Boomerang",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pot Boomerang Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Big Octo Grass",
@@ -1649,6 +1688,19 @@
         "item_count": 1
       },
       {
+        "name": "Like Like Room Pots",
+        "short_name": "Like Like",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pot Like-Like Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Tailpasaran Room",
         "short_name": "Tailpasaran",
         "access_rules": [
@@ -1676,7 +1728,7 @@
       },
       {
         "name": "GS Invisible Enemies Room",
-        "short_name": "Invis Enemies",
+        "short_name": "Invisible Enemies",
         "access_rules": [
           "$ootmq|MQ Jabu-Jabu GS Basement Side Room"
         ],
@@ -1746,6 +1798,19 @@
         "chest_unopened_img": "images/MM_Grass.png",
         "chest_opened_img": "images/GrassGreyscale.png",
         "item_count": 2
+      },
+      {
+        "name": "Before Boss Pot",
+        "short_name": "Before Boss",
+        "access_rules": [
+          "$ootmq|MQ Jabu-Jabu Pot Before Boss"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_Jabu-Jabu_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
       },
       {
         "name": "Pots Boss Room",
