@@ -5340,6 +5340,32 @@
         "item_count": 1
       },
       {
+        "name": "Lobby Cage Pots",
+        "short_name": "Lobby Cage",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Pot Lobby Cage 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Lobby Alcove Pot",
+        "short_name": "Lobby Alcove",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Pot Lobby Alcove"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -5376,6 +5402,19 @@
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
+      },
+      {
+        "name": "Side Room Pots",
+        "short_name": "Side Room",
+        "access_rules": [
+          "$ootmq|MQ Bottom of the Well Pot Side Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_BottomoftheWell_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "Compass Chest",
