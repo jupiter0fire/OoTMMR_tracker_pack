@@ -2015,6 +2015,45 @@
         "item_count": 1
       },
       {
+        "name": "Entrance Pot",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Pot Entrance"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "First Room Pots",
+        "short_name": "First Room",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Pot First Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Main Room Pots",
+        "short_name": "Main Room",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Pot Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -2037,6 +2076,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
+      },
+      {
+        "name": "Compass Room Pots",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Pot Compass Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Freestanding PoH",
@@ -2089,6 +2141,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Final Corridor Pots",
+        "short_name": "Final Corridor",
+        "access_rules": [
+          "$ootmq|MQ Ice Cavern Pot Final Corridor 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_IceCavern_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Iron Boots Chest",
