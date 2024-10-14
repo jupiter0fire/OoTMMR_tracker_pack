@@ -4526,6 +4526,45 @@
         "item_count": 2
       },
       {
+        "name": "Maze Pots",
+        "short_name": "Maze",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot Entrance Maze 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Maze Flying Pots Before Time Block",
+        "short_name": "Maze Flying Before Time Block",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Flying Pot Entrance Maze 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Maze Flying Pots After Time Block",
+        "short_name": "Maze Flying After Time Block",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Flying Pot Entrance Maze 3"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Compass Chest",
         "short_name": "Compass",
         "access_rules": [
@@ -4536,6 +4575,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_compass.png",
         "item_count": 1
+      },
+      {
+        "name": "Compass Room Pots",
+        "short_name": "Compass",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot Compass Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Hover Boots Chest",
@@ -4619,6 +4671,19 @@
         "item_count": 1
       },
       {
+        "name": "Guillotines Room Lower Pots",
+        "short_name": "Guillotines Lower",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot Guillotines Room Lower 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Falling Spikes Room",
         "short_name": "Crusher",
         "access_rules": [
@@ -4641,6 +4706,19 @@
           "setting_mq_ShadowTemple_true"
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
+        "item_count": 2
+      },
+      {
+        "name": "Guillotines Room Upper Pots",
+        "short_name": "Guillotines Upper",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot Guillotines Room Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 2
       },
       {
@@ -4726,6 +4804,32 @@
         "item_count": 1
       },
       {
+        "name": "Before Boat Pots",
+        "short_name": "Before Boat",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot Room Before Boat 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Before Boat Flying Pots",
+        "short_name": "Before Boat Flying",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Flying Pot Room Before Boat 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS After Ship",
         "short_name": "After Ship",
         "access_rules": [
@@ -4739,6 +4843,19 @@
         "item_count": 1
       },
       {
+        "name": "Before Bridge Pots",
+        "short_name": "Before Bridge",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot After Boat Before Bridge 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Boss Key Chest",
         "short_name": "Boss Key",
         "access_rules": [
@@ -4749,6 +4866,19 @@
         ],
         "chest_unopened_img": "images/chest_golden_closed.png",
         "chest_opened_img": "images/chest_golden_open.png",
+        "item_count": 1
+      },
+      {
+        "name": "Boss Key Room Pot",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot Boss Key Room"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
       },
       {
@@ -4787,6 +4917,19 @@
         "item_count": 1
       },
       {
+        "name": "Bomb Flower Room Pots",
+        "short_name": "Dead Hand 2",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot Bomb Flowers Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Near Boss",
         "short_name": "Near Boss",
         "access_rules": [
@@ -4798,6 +4941,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "After Bridge Pots",
+        "short_name": "After Bridge",
+        "access_rules": [
+          "$ootmq|MQ Shadow Temple Pot After Boat After Bridge 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_ShadowTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Bongo Bongo",
