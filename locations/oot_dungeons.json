@@ -5144,6 +5144,19 @@
         "item_count": 2
       },
       {
+        "name": "Entrance Pots",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Entrance Front Left Chest",
         "short_name": "Entry Front Left",
         "access_rules": [
@@ -5178,6 +5191,19 @@
         "item_count": 1
       },
       {
+        "name": "Child Entrance Pot",
+        "short_name": "Child Entrance",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Child Entrance"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Map Room Enemy Chest",
         "short_name": "Child Left",
         "access_rules": [
@@ -5200,6 +5226,32 @@
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
+      },
+      {
+        "name": "Child Boulders Pots",
+        "short_name": "Child Boulders",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Child Boulders 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Child Back Pots",
+        "short_name": "Child Back",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Child Back 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Child Hammer Switch Chest",
@@ -5247,6 +5299,19 @@
           "setting_mq_SpiritTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Sun Block Room Pots",
+        "short_name": "Sun Block",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Child Sun Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Sun Block Room",
@@ -5441,6 +5506,19 @@
         "item_count": 2
       },
       {
+        "name": "Child Climb Pot",
+        "short_name": "Child Climb",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Child Climb"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Child Climb North Chest",
         "short_name": "Child Climb Ground",
         "access_rules": [
@@ -5484,6 +5562,84 @@
           "setting_mq_SpiritTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Statue Room Lower Pots",
+        "short_name": "Statue Lower",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Statue Room Lower 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Statue Room Lower Flying Pot",
+        "short_name": "Statue Lower Flying",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Flying Pot Statue Room Lower"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Statue Room Stairs Flying Pot",
+        "short_name": "Statue Stairs Flying",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Flying Pot Statue Room Stairs"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Statue Room Upper Flying Pot",
+        "short_name": "Statue Upper Flying",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Flying Pot Statue Room Upper"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Statue Room Upper Pots",
+        "short_name": "Statue Upper",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Statue Room Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Adult Climb Pots",
+        "short_name": "Adult Climb",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Adult Climb 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Leever Room Chest",
@@ -5555,6 +5711,19 @@
           "setting_mq_SpiritTemple_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Topmost Climb Pots",
+        "short_name": "Topmost Climb",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Topmost Climb 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Chest Switch Chest",
@@ -5662,6 +5831,32 @@
         ],
         "chest_unopened_img": "images/chest_brown_small_key.png",
         "item_count": 1
+      },
+      {
+        "name": "Top Near Triforce Pots",
+        "short_name": "Top Near Triforce",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Top Near Triforce Symbol 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Top Near Lowering Platform Pots",
+        "short_name": "Top Near Lowering Platform",
+        "access_rules": [
+          "$ootmq|MQ Spirit Temple Pot Top Near Lowering Platform 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_SpiritTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Twinrova",
