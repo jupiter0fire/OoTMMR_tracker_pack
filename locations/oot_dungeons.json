@@ -3786,6 +3786,19 @@
         "item_count": 2
       },
       {
+        "name": "Ruto's Room Pots",
+        "short_name": "Ruto",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Ruto 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Map Chest",
         "short_name": "Map",
         "access_rules": [
@@ -3796,6 +3809,19 @@
         ],
         "chest_unopened_img": "images/chest_brown_map.png",
         "item_count": 1
+      },
+      {
+        "name": "Storage Room Pots",
+        "short_name": "Storage",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Storage Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "Longshot Chest",
@@ -3834,6 +3860,45 @@
         "item_count": 1
       },
       {
+        "name": "Twisted Room Entrance Pot",
+        "short_name": "Twisted Room Entrance",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Twisted Room Entrance"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Twisted Room Right Pots",
+        "short_name": "Twisted Room Right",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Twisted Room Right 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Twisted Room Cage Pots",
+        "short_name": "Twisted Room Cage",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Twisted Room Cage 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS Before Upper Water Switch",
         "short_name": "Before Upper Water Switch",
         "access_rules": [
@@ -3859,6 +3924,45 @@
         "item_count": 1
       },
       {
+        "name": "Before Dark Link Ledge Pots",
+        "short_name": "Before Dark Link Ledge",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Before Dark Link Ledge 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
+        "name": "Before Dark Link Near Door Pots",
+        "short_name": "Before Dark Link Near Door",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Before Dark Link Near Door 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "After Dark Link Pots",
+        "short_name": "After Dark Link",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot After Dark Link 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "GS River",
         "short_name": "River",
         "access_rules": [
@@ -3870,6 +3974,19 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "River Pots",
+        "short_name": "River",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot River 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Boss Key Chest",
@@ -3885,6 +4002,19 @@
         "item_count": 1
       },
       {
+        "name": "Boss Key Room Pot",
+        "short_name": "Boss Key",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Boss Key Room"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
         "name": "Freestanding Key",
         "short_name": "Key",
         "access_rules": [
@@ -3896,6 +4026,32 @@
         "chest_unopened_img": "images/small_key.png",
         "chest_opened_img": "images/small_key_check.png",
         "item_count": 1
+      },
+      {
+        "name": "Stalfos Pots",
+        "short_name": "Stalfos",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Stalfos Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Loop Pots",
+        "short_name": "Loop",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Loop 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "GS Freestanding Key Area",
@@ -3922,6 +4078,32 @@
         "chest_unopened_img": "images/skulltula.png",
         "chest_opened_img": "images/skulltula_token.png",
         "item_count": 1
+      },
+      {
+        "name": "Skull Cage Pot",
+        "short_name": "Skull Cage",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Skull Cage 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
+        "name": "Before High Water Pots",
+        "short_name": "Before High Water",
+        "access_rules": [
+          "$ootmq|MQ Water Temple Pot Room Before High Water 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_WaterTemple_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "Morpha",
