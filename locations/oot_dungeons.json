@@ -6982,6 +6982,19 @@
         "item_count": 2
       },
       {
+        "name": "Lobby Pots",
+        "short_name": "Lobby",
+        "access_rules": [
+          "$ootmq|MQ Gerudo Training Grounds Pot 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_GerudoTrainingGrounds_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "First Iron Knuckle Chest",
         "short_name": "Knuckle 1",
         "access_rules": [
