@@ -6618,6 +6618,19 @@
         "item_count": 1
       },
       {
+        "name": "Forest Trial End Pots",
+        "short_name": "Forest Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Pot Forest End 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Water Trial Chest",
         "short_name": "Water Trial",
         "access_rules": [
@@ -6627,6 +6640,19 @@
           "setting_mq_GanonCastle_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Water Trial End Pots",
+        "short_name": "Water Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Pot Water End 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Shadow Trial Bomb Flower Chest",
@@ -6652,6 +6678,32 @@
         "item_count": 1
       },
       {
+        "name": "Shadow Trial End Pots",
+        "short_name": "Shadow Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Pot Shadow End 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Fire Trial End Pots",
+        "short_name": "Fire Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Pot Fire End 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Light Trial Lullaby Chest",
         "short_name": "Light Trial",
         "access_rules": [
@@ -6661,6 +6713,19 @@
           "setting_mq_GanonCastle_true"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Light Trial End Pots",
+        "short_name": "Light Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Pot Light End 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Spirit Trial First Chest",
@@ -6697,6 +6762,19 @@
         "item_count": 4
       },
       {
+        "name": "Spirit Trial End Pots",
+        "short_name": "Spirit Trial",
+        "access_rules": [
+          "$ootmq|MQ Ganon Pot Spirit End 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsOot_true,setting_mq_GanonCastle_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Deku Scrubs",
         "access_rules": [
           "$ootmq|MQ Ganon Castle Leftmost Scrub"
@@ -6721,7 +6799,7 @@
       },
       {
         "name": "Ganondorf Pots (18x)",
-        "short_name": "Ganondorf",
+        "short_name": "Ganondorf (18x)",
         "access_rules": [
           "$oot|Ganon Tower Pot 01"
         ],
