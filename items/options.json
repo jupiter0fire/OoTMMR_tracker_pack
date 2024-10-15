@@ -333,6 +333,26 @@
     ]
   },
   {
+    "name": "Pots Shuffle (MM)",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": true,
+    "initial_stage_idx": 1,
+    "stages": [
+      {
+        "img": "images/setting_shufflePotsMm_true.png",
+        "codes": "setting_shufflePotsMm,setting_shufflePotsMm_true",
+        "inherit_codes": false
+      },
+      {
+        "img": "images/setting_shufflePotsMm_false.png",
+        "img_mods": "@disabled",
+        "codes": "setting_shufflePotsMm,setting_shufflePotsMm_false",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Grass Shuffle (OoT)",
     "type": "progressive",
     "allow_disabled": false,
