@@ -1281,11 +1281,10 @@
             ]
           },
           {
-            "name": "East Pillar Bombchu Chest",
-            "short_name": "East Pillar",
+            "name": "East Pillars",
             "sections": [
               {
-                "name": "Climb the pillar",
+                "name": "East Pillar Grotto Chest",
                 "access_rules": [
                   "$mm|Termina Field Pillar Grotto"
                 ],
@@ -1302,6 +1301,18 @@
                 "chest_unopened_img": "images/MM_Grass.png",
                 "chest_opened_img": "images/GrassGreyscale.png",
                 "item_count": 14
+              },
+              {
+                "name": "East Pillar Pot",
+                "access_rules": [
+                  "$mm|Termina Field Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -1450,6 +1461,18 @@
                 "access_rules": [
                   "$mm|Termina Field Scrub"
                 ],
+                "item_count": 1
+              },
+              {
+                "name": "Scrub Grotto Pot",
+                "access_rules": [
+                  "$mm|Termina Field Scrub Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
                 "item_count": 1
               }
             ],
@@ -2498,7 +2521,19 @@
                   "$mm|Road to Southern Swamp Potted Plant 1 Grass"
                 ],
                 "item_count": 2
-              }              
+              },
+              {
+                "name": "Pots near Swamp Archery",
+                "access_rules": [
+                  "$mm|Road to Southern Swamp Potted Plant 1 Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
+              }
             ],
             "map_locations": [
               {
@@ -2764,6 +2799,18 @@
                   "$mm|Southern Swamp Grass Near Witch 1"
                 ],
                 "item_count": 2
+              },
+              {
+                "name": "Pots near Potion Shop",
+                "access_rules": [
+                  "$mm|Southern Swamp Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
@@ -3055,6 +3102,30 @@
                     ]
                   },
                   {
+                    "name": "Deku Palace Legde",
+                    "sections": [
+                      {
+                        "name": "Deku Palace Ledge Pots",
+                        "access_rules": [
+                          "$mm|Deku Palace Pot 1"
+                        ],
+                        "visibility_rules": [
+                          "setting_shufflePotsMm_true"
+                        ],
+                        "chest_unopened_img": "images/pot.png",
+                        "chest_opened_img": "images/pot_grey.png",
+                        "item_count": 2
+                      }
+                    ],
+                    "map_locations": [
+                      {
+                        "map": "termina",
+                        "x": 500,
+                        "y": 537
+                      }
+                    ]
+                  },
+                  {
                     "name": "Deku Shrine Race",
                     "short_name": "Deku Shrine",
                     "sections": [
@@ -3067,6 +3138,18 @@
                           "{$hintable}"
                         ],
                         "item_count": 1
+                      },
+                      {
+                        "name": "Deku Shrine Pots",
+                        "access_rules": [
+                          "$mm|Deku Shrine Pot 1"
+                        ],
+                        "visibility_rules": [
+                          "setting_shufflePotsMm_true"
+                        ],
+                        "chest_unopened_img": "images/pot.png",
+                        "chest_opened_img": "images/pot_grey.png",
+                        "item_count": 2
                       }
                     ],
                     "map_locations": [
@@ -3102,8 +3185,7 @@
                 ]
               },
               {
-                "name": "Woodfall Chests",
-                "short_name": "Woodfall Chests",
+                "name": "Woodfall",
                 "sections": [
                   {
                     "name": "Tall Stump",
@@ -3139,6 +3221,18 @@
                       "$mm|Woodfall Grass 1"
                     ],
                     "item_count": 6
+                  },
+                  {
+                    "name": "Woodfall Pots before Temple",
+                    "access_rules": [
+                      "$mm|Woodfall Pot 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 3
                   }
                 ],
                 "map_locations": [
