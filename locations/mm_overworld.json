@@ -686,6 +686,18 @@
                       "$mm|Astral Observatory Passage Chest"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Tunnel Pots",
+                    "access_rules": [
+                      "$mm|Astral Observatory Passage Pot 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 4
                   }
                 ],
                 "map_locations": [
@@ -817,12 +829,18 @@
                     "access_rules": [
                       "$mm|Trading Post Item 1"
                     ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 2",
                     "access_rules": [
                       "$mm|Trading Post Item 2"
+                    ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
                     ],
                     "item_count": 1
                   },
@@ -831,12 +849,18 @@
                     "access_rules": [
                       "$mm|Trading Post Item 3"
                     ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 4",
                     "access_rules": [
                       "$mm|Trading Post Item 4"
+                    ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
                     ],
                     "item_count": 1
                   },
@@ -845,12 +869,18 @@
                     "access_rules": [
                       "$mm|Trading Post Item 5"
                     ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
+                    ],
                     "item_count": 1
                   },
                   {
                     "name": "Item 6",
                     "access_rules": [
                       "$mm|Trading Post Item 6"
+                    ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
                     ],
                     "item_count": 1
                   },
@@ -859,6 +889,9 @@
                     "access_rules": [
                       "$mm|Trading Post Item 7"
                     ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
+                    ],
                     "item_count": 1
                   },
                   {
@@ -866,15 +899,27 @@
                     "access_rules": [
                       "$mm|Trading Post Item 8"
                     ],
+                    "visibility_rules": [
+                      "setting_shopShuffleMm_full"
+                    ],
+                    "item_count": 1
+                  },
+                  {
+                    "name": "Trading Post Pot",
+                    "access_rules": [
+                      "$mm|Trading Post Pot"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
                     "item_count": 1
                   }
                 ],
                 "map_locations": [
                   {
                     "map": "termina",
-                    "force_invisibility_rules": [
-                      "setting_shopShuffleMm_none"
-                    ],
                     "x": 34,
                     "y": 168
                   }
@@ -943,6 +988,18 @@
                       "$mm|Swordsman School HP"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Pots (Final Night)",
+                    "access_rules": [
+                      "$mm|Swordsman School Pot 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 5
                   }
                 ],
                 "map_locations": [
@@ -1105,6 +1162,18 @@
                       "$mm|Clock Tower Roof Skull Kid Song of Time"
                     ],
                     "item_count": 1
+                  },
+                  {
+                    "name": "Clock Tower Pots",
+                    "access_rules": [
+                      "$mm|Clock Tower Roof Pot 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 4
                   }
                 ],
                 "map_locations": [
@@ -1505,8 +1574,8 @@
             ]
           },
           {
-            "name": "Moon's Tear",
-            "short_name": "Moon's Tear",
+            "name": "Astral Observatory",
+            "short_name": "Observatory",
             "sections": [
               {
                 "name": "Look at Skull Kid through the telescope",
@@ -1514,6 +1583,18 @@
                   "$mm|Astral Observatory Moon Tear"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Observatory Pots",
+                "access_rules": [
+                  "$mm|Astral Observatory Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 3
               }
             ],
             "map_locations": [
