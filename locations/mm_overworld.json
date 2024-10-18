@@ -3427,6 +3427,18 @@
                 "item_count": 2
               },
               {
+                "name": "Pots in front of Smithy (day)",
+                "access_rules": [
+                  "$mm|Mountain Village Potted Plant 1 Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
+              },
+              {
                 "name": "Potted Grass inside Smithy (night)",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_true"
@@ -3437,6 +3449,31 @@
                   "$mm|Blacksmith Potted Plant 1 Grass"
                 ],
                 "item_count": 2
+              },
+              {
+                "name": "Pots inside Smithy (night)",
+                "access_rules": [
+                  "$mm|Blacksmith Potted Plant 1 Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
+              },
+              {
+                "name": "Pot on Top of Smithy",
+                "short_name": "On Top of Smithy",
+                "access_rules": [
+                  "$mm|Mountain Village Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -3777,6 +3814,18 @@
                   "{$hintable}"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Goron Racetrack Pots (30x)",
+                "access_rules": [
+                  "$mm|Goron Race Pot 01"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -3905,17 +3954,28 @@
             ]
           },
           {
-            "name": "Baby Goron Teaching Lullaby",
-            "short_name": "Goron Baby",
+            "name": "Goron Shrine",
             "sections": [
               {
-                "name": "Talk to Baby Goron",
+                "name": "Baby Goron",
                 "chest_unopened_img": "images/system/unknownsong.png",
                 "chest_opened_img": "images/system/unknownsong_check.png",
                 "access_rules": [
                   "$mm|Goron Baby"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Goron Shrine Pots",
+                "access_rules": [
+                  "$mm|Goron Shrine Pot 01"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 11
               }
             ],
             "map_locations": [
