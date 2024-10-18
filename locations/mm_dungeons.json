@@ -35,6 +35,19 @@
         "item_count": 1
       },
       {
+        "name": "Main Room Lower Pots",
+        "short_name": "Main Lower",
+        "access_rules": [
+          "$mm|Swamp Spider House Pot Main Lower 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
+      },
+      {
         "name": "Main Room Dirt Patch Left",
         "short_name": "Lower Dirt Patch Left",
         "chest_unopened_img": "images/system/skulltula_token.png",
@@ -126,6 +139,19 @@
         "item_count": 1
       },
       {
+        "name": "Stone Room Pots",
+        "short_name": "Stone",
+        "access_rules": [
+          "$mm|Swamp Spider House Pot Monument Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Stone Room Behind Torch",
         "short_name": "Stone Room Torch",
         "chest_unopened_img": "images/system/skulltula_token.png",
@@ -137,6 +163,19 @@
           "setting_housesSkulltulaTokens_cross"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Main Room Upper Pots",
+        "short_name": "Main Upper",
+        "access_rules": [
+          "$mm|Swamp Spider House Pot Main Upper Left 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Main Room Upper Pillar",
@@ -176,6 +215,19 @@
           "$mm|Swamp Skulltula Main Room Upper Soft Soil"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Jar Room Pots",
+        "short_name": "Jars",
+        "access_rules": [
+          "$mm|Swamp Spider House Pot Jar Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 7
       },
       {
         "name": "Jar Room Beehives",
@@ -241,6 +293,32 @@
           "setting_housesSkulltulaTokens_cross"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Gold Room Lower Pots",
+        "short_name": "Gold Lower",
+        "access_rules": [
+          "$mm|Swamp Spider House Pot Gold Room Lower 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Gold Room Upper Pots",
+        "short_name": "Gold Upper",
+        "access_rules": [
+          "$mm|Swamp Spider House Pot Gold Room Upper 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
       },
       {
         "name": "Gold Room Hive",
