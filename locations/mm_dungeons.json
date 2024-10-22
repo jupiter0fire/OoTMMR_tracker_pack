@@ -454,6 +454,19 @@
         ]
       },
       {
+        "name": "Entrance Pots",
+        "short_name": "Entrance",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Entrance 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 4
+      },
+      {
         "name": "Main Room Behind Skull",
         "short_name": "Behind Skull on Wall",
         "chest_unopened_img": "images/system/skulltula_token.png",
@@ -467,8 +480,8 @@
         "item_count": 1
       },
       {
-        "name": "Main Room Webbed Pot",
-        "short_name": "Web Covered Pot 1F",
+        "name": "Main Room Webbed Pot Upper",
+        "short_name": "Web Covered Pot Upper",
         "chest_unopened_img": "images/system/skulltula_token.png",
         "chest_opened_img": "images/system/skulltula_token_gray.png",
         "access_rules": [
@@ -503,6 +516,43 @@
         "visibility_rules": [
           "setting_housesSkulltulaTokens_cross"
         ],
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Webbed Pot Lower",
+        "short_name": "Main Room Webbed Pot Lower",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Main Room Web"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 1
+      },
+      {
+        "name": "Main Room Pots",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Main Room 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
+        "name": "Main Room Boe Pot",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Main Room Boe"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
         "item_count": 1
       },
       {
@@ -675,6 +725,18 @@
         "item_count": 1
       },
       {
+        "name": "Storage Room Alcove Pots",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Storage 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Storage Room Behind Boat",
         "short_name": "Behind Boat",
         "chest_unopened_img": "images/system/skulltula_token.png",
@@ -688,6 +750,18 @@
         "item_count": 1
       },
       {
+        "name": "Storage Room Lower Pots",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Storage 3"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
+      },
+      {
         "name": "Storage Room Rafters",
         "short_name": "Storage Room Rafters",
         "chest_unopened_img": "images/system/skulltula_token.png",
@@ -699,6 +773,18 @@
           "setting_housesSkulltulaTokens_cross"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Storage Room Upper Pots",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Storage Top 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 3
       },
       {
         "name": "Storage Room Web",
@@ -764,6 +850,18 @@
           "setting_housesSkulltulaTokens_cross"
         ],
         "item_count": 1
+      },
+      {
+        "name": "Colored Mask Room Pots",
+        "access_rules": [
+          "$mm|Ocean Spider House Pot Colored Skulls 1"
+        ],
+        "visibility_rules": [
+          "setting_shufflePotsMm_true"
+        ],
+        "chest_unopened_img": "images/pot.png",
+        "chest_opened_img": "images/pot_grey.png",
+        "item_count": 2
       },
       {
         "name": "Ocean Spider Treasure",
