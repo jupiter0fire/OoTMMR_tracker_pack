@@ -2291,6 +2291,18 @@
                 "item_count": 1
               },
               {
+                "name": "Cucco Shack Pots",
+                "access_rules": [
+                  "$mm|Cucco Shack Potted Plant 1 Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 2
+              },
+              {
                 "name": "Potted Grass",
                 "visibility_rules": [
                   "setting_shuffleGrassMm_true"
@@ -2301,6 +2313,18 @@
                   "$mm|Cucco Shack Potted Plant 1 Grass"
                 ],
                 "item_count": 2
+              },
+              {
+                "name": "Cucco Shack Pots",
+                "access_rules": [
+                  "$mm|Cucco Shack Potted Plant 1 Pot"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 1
               }
             ],
             "map_locations": [
@@ -2330,6 +2354,18 @@
                   "$mm|Doggy Racetrack HP"
                 ],
                 "item_count": 1
+              },
+              {
+                "name": "Doggy Racetrack Pots",
+                "access_rules": [
+                  "$mm|Doggy Racetrack Pot 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 4
               }
             ],
             "map_locations": [
@@ -4210,6 +4246,30 @@
             ]
           },
           {
+            "name": "Zora Pot Game",
+            "sections": [
+              {
+                "name": "Zora Pot Game Pots",
+                "access_rules": [
+                  "$mm|Zora Cape Pot Game 1"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 5
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "termina",
+                "x": 260,
+                "y": 370
+              }
+            ]
+          },
+          {
             "name": "GB Easy To Swim To",
             "children": [
               {
@@ -4248,7 +4308,33 @@
                       "$mm|Great Bay Cow Grotto Grass 01"
                     ],
                     "item_count": 1
-                  }
+                  },
+                  {
+                    "name": "Great Bay on Ledge Pots",
+                    "short_name": "On Ledge Pots",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot Ledge 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 3
+                  },
+                  {
+                    "name": "Great Bay under Ledge Pots",
+                    "short_name": "Under Ledge Pots",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot 01"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 4
+                  }                   
                 ],
                 "map_locations": [
                   {
@@ -4278,6 +4364,54 @@
                     "map": "termina",
                     "x": 295,
                     "y": 300
+                  }
+                ]
+              },
+              {
+                "name": "Near Pirate Fortress",
+                "sections": [
+                  {
+                    "name": "Pots near Pirate Fortress",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot 09"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 2
+                  } 
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 295,
+                    "y": 280
+                  }
+                ]
+              },
+              {
+                "name": "Peninsula",
+                "sections": [
+                  {
+                    "name": "Pots on Peninsula",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot 11"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 2
+                  } 
+                ],
+                "map_locations": [
+                  {
+                    "map": "termina",
+                    "x": 260,
+                    "y": 320
                   }
                 ]
               },
@@ -4348,7 +4482,20 @@
                       "{$hintable}"
                     ],
                     "item_count": 1
-                  }
+                  },
+                  {
+                    "name": "Behind Lab Pots",
+                    "short_name": "Behind Lab",
+                    "access_rules": [
+                      "$mm|Great Bay Coast Pot 05"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 4
+                  } 
                 ],
                 "map_locations": [
                   {
@@ -4389,6 +4536,30 @@
                   "$mm_event_raw|ZORA_EGGS_PINNACLE_ROCK"
                 ],
                 "hosted_item": "EVENT_MM_ZORA_EGGS_PINNACLE_ROCK"
+              },
+              {
+                "name": "Pinnacle Rock Pots in Empty Holes",
+                "access_rules": [
+                  "$mm|Pinnacle Rock Pot 01"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 6
+              },
+              {
+                "name": "Pinnacle Rock Pots under Sea Snakes",
+                "access_rules": [
+                  "$mm|Pinnacle Rock Pot 04"
+                ],
+                "visibility_rules": [
+                  "setting_shufflePotsMm_true"
+                ],
+                "chest_unopened_img": "images/pot.png",
+                "chest_opened_img": "images/pot_grey.png",
+                "item_count": 5
               }
             ],
             "map_locations": [
@@ -4551,7 +4722,19 @@
                       "$mm|Zora Cape Owl Statue"
                     ],
                     "item_count": 1
-                  }
+                  },
+                  {
+                    "name": "Pots near Owl Statue",
+                    "access_rules": [
+                      "$mm|Zora Cape Pot Near Owl Statue 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 4
+                  } 
                 ],
                 "map_locations": [
                   {
@@ -4649,7 +4832,19 @@
                     "chest_unopened_img": "images/system/heartpiece.png",
                     "chest_opened_img": "images/system/heartpiece_grey.png",
                     "item_count": 1
-                  }
+                  },
+                  {
+                    "name": "Pots near Beavers",
+                    "access_rules": [
+                      "$mm|Zora Cape Pot Near Beavers 1"
+                    ],
+                    "visibility_rules": [
+                      "setting_shufflePotsMm_true"
+                    ],
+                    "chest_unopened_img": "images/pot.png",
+                    "chest_opened_img": "images/pot_grey.png",
+                    "item_count": 2
+                  } 
                 ],
                 "map_locations": [
                   {
