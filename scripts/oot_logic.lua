@@ -855,6 +855,7 @@ function _oot_logic()
         ["Spirit Temple SR Sun 4"] = "RUPEE_SILVER_SPIRIT_SUN",
         ["Spirit Temple SR Sun 5"] = "RUPEE_SILVER_SPIRIT_SUN",
     }
+    local CUSTOM_EVENT_ITEMS_LOCATIONS_SEEN = {}
     local function check_rule(node, earliest_time, used_events)
         -- Check the rule and return its result as well as all used events.
         OOTMM_RUNTIME_STATE["_check_rule_events_used"] = {}
@@ -919,7 +920,9 @@ function _oot_logic()
         end
 
         -- Handle special "custom event items"
-        if result and CUSTOM_EVENT_ITEMS_LOCATIONS[node.name] then
+        if result and CUSTOM_EVENT_ITEMS_LOCATIONS[node.name] and not CUSTOM_EVENT_ITEMS_LOCATIONS_SEEN[node.name] then
+             -- Some checks are duplicated, but should not be counted twice for the same kind of collection. Remember which ones we've seen and counted before.
+            CUSTOM_EVENT_ITEMS_LOCATIONS_SEEN[node.name] = true
             local item = CUSTOM_EVENT_ITEMS_LOCATIONS[node.name]
             local amount = OOTMM_RUNTIME_STATE["custom_event_items"][item] or 0
             amount = amount + 1
