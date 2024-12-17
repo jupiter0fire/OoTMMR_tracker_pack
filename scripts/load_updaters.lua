@@ -56,6 +56,7 @@ end
 
 function tracker_on_pack_ready()
   PACK_READY = true
+  on_ready_location_chest_link()
   OOTMM_RESET_LOGIC()
   get_object("dummy").Active = not get_object("dummy").Active
 end
