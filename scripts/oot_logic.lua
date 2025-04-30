@@ -1143,6 +1143,22 @@ function _oot_logic()
 		return cond(setting('sharedStrength'), has('SHARED_STRENGTH', x), has('STRENGTH', x))
 	end
 
+	function wisp_enabled_free()
+		return setting('regionState', 'free')
+	end
+
+	function wisp_enabled_boss(x)
+		return false
+	end
+
+	function wisp_enabled_reward(x)
+		return setting('regionState', 'reward') and has(x)
+	end
+
+	function wisp_enabled(boss, reward)
+		return wisp_enabled_free() or wisp_enabled_boss(boss) or wisp_enabled_reward(reward)
+	end
+
 	function shared_soul_enemy(a, b)
 		return cond(setting('sharedSoulsEnemy'), soul_enemy(b), soul_enemy(a))
 	end
@@ -2435,11 +2451,18 @@ function _oot_logic()
 		return setting('rainbowBridge', 'open') or (setting('rainbowBridge', 'vanilla') and rainbow_bridge_vanilla()) or (setting('rainbowBridge', 'medallions') and rainbow_bridge_medallions()) or (setting('rainbowBridge', 'custom') and special(BRIDGE))
 	end
 
+	function lake_water_control()
+		return setting('erBoss', 'none') and setting('regionState', 'dungeonBeaten') and event('BOSS_MORPHA') or event('CLEAR_STATE_LAKE')
+	end
+
 
     logic = {
     ["Deku Tree Boss"] = {
+        ["events"] = {
+            ["BOSS_GOHMA"] = function () return soul_boss(SOUL_BOSS_QUEEN_GOHMA) and (has_nuts() or can_use_slingshot()) and (can_use_sticks() or can_use_sword()) end,
+        },
         ["exits"] = {
-            ["Deku Tree After Boss"] = function () return soul_boss(SOUL_BOSS_QUEEN_GOHMA) and (has_nuts() or can_use_slingshot()) and (can_use_sticks() or can_use_sword()) end,
+            ["Deku Tree After Boss"] = function () return event('BOSS_GOHMA') end,
         },
         ["locations"] = {
             ["Deku Tree Boss Grass 1"] = function () return can_cut_grass() end,
@@ -2461,8 +2484,11 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Dodongo Cavern Boss"] = {
+        ["events"] = {
+            ["BOSS_KING_DODONGO"] = function () return (has_bombs() or (has_explosives() and has_strength_raw(1))) and soul_boss(SOUL_BOSS_KING_DODONGO) and (can_use_sticks() or can_use_sword()) end,
+        },
         ["exits"] = {
-            ["Dodongo Cavern After Boss"] = function () return (has_bombs() or (has_explosives() and has_strength_raw(1))) and soul_boss(SOUL_BOSS_KING_DODONGO) and (can_use_sticks() or can_use_sword()) end,
+            ["Dodongo Cavern After Boss"] = function () return event('BOSS_KING_DODONGO') end,
         },
         ["locations"] = {
             ["Dodongo Cavern Boss Chest"] = function () return true end,
@@ -2477,8 +2503,11 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Jabu-Jabu Boss"] = {
+        ["events"] = {
+            ["BOSS_BARINADE"] = function () return soul_boss(SOUL_BOSS_BARINADE) and can_boomerang() and (can_use_sticks() or can_use_sword()) end,
+        },
         ["exits"] = {
-            ["Jabu-Jabu After Boss"] = function () return soul_boss(SOUL_BOSS_BARINADE) and can_boomerang() and (can_use_sticks() or can_use_sword()) end,
+            ["Jabu-Jabu After Boss"] = function () return event('BOSS_BARINADE') end,
         },
         ["locations"] = {
             ["Jabu-Jabu Boss Pot 1"] = function () return true end,
@@ -2498,8 +2527,11 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Forest Temple Boss"] = {
+        ["events"] = {
+            ["BOSS_PHANTOM_GANON"] = function () return soul_boss(SOUL_BOSS_PHANTOM_GANON) and (has_ranged_weapon_adult() or can_use_slingshot()) and can_use_sword() end,
+        },
         ["exits"] = {
-            ["Forest Temple After Boss"] = function () return soul_boss(SOUL_BOSS_PHANTOM_GANON) and (has_ranged_weapon_adult() or can_use_slingshot()) and can_use_sword() end,
+            ["Forest Temple After Boss"] = function () return event('BOSS_PHANTOM_GANON') end,
         },
         ["age_change"] = false,
     },
@@ -2511,8 +2543,11 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Fire Temple Boss"] = {
+        ["events"] = {
+            ["BOSS_VOLVAGIA"] = function () return soul_boss(SOUL_BOSS_VOLVAGIA) and can_hammer() and has_tunic_goron_strict() end,
+        },
         ["exits"] = {
-            ["Fire Temple After Boss"] = function () return soul_boss(SOUL_BOSS_VOLVAGIA) and can_hammer() and has_tunic_goron_strict() end,
+            ["Fire Temple After Boss"] = function () return event('BOSS_VOLVAGIA') end,
         },
         ["age_change"] = false,
     },
@@ -2524,15 +2559,15 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Water Temple Boss"] = {
+        ["events"] = {
+            ["BOSS_MORPHA"] = function () return soul_boss(SOUL_BOSS_MORPHA) and can_hookshot() and can_use_sword() end,
+        },
         ["exits"] = {
-            ["Water Temple After Boss"] = function () return soul_boss(SOUL_BOSS_MORPHA) and can_hookshot() and can_use_sword() end,
+            ["Water Temple After Boss"] = function () return event('BOSS_MORPHA') end,
         },
         ["age_change"] = false,
     },
     ["Water Temple After Boss"] = {
-        ["events"] = {
-            ["WATER_TEMPLE_CLEARED"] = function () return true end,
-        },
         ["locations"] = {
             ["Water Temple Boss HC"] = function () return true end,
             ["Water Temple Boss"] = function () return true end,
@@ -2540,8 +2575,11 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Spirit Temple Boss"] = {
+        ["events"] = {
+            ["BOSS_TWINROVA"] = function () return soul_boss(SOUL_BOSS_TWINROVA) and soul_iron_knuckle() and has_mirror_shield() and can_use_sword() end,
+        },
         ["exits"] = {
-            ["Spirit Temple After Boss"] = function () return soul_boss(SOUL_BOSS_TWINROVA) and soul_iron_knuckle() and has_mirror_shield() and can_use_sword() end,
+            ["Spirit Temple After Boss"] = function () return event('BOSS_TWINROVA') end,
         },
         ["age_change"] = false,
     },
@@ -2553,8 +2591,11 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Shadow Temple Boss"] = {
+        ["events"] = {
+            ["BOSS_BONGO_BONGO"] = function () return soul_boss(SOUL_BOSS_BONGO_BONGO) and can_use_sword() and has_lens() and (can_use_bow() or can_use_slingshot()) end,
+        },
         ["exits"] = {
-            ["Shadow Temple After Boss"] = function () return soul_boss(SOUL_BOSS_BONGO_BONGO) and can_use_sword() and has_lens() and (can_use_bow() or can_use_slingshot()) end,
+            ["Shadow Temple After Boss"] = function () return event('BOSS_BONGO_BONGO') end,
         },
         ["age_change"] = false,
     },
@@ -5430,9 +5471,12 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Ganon Castle Exterior"] = {
+        ["events"] = {
+            ["BRIDGE_OPEN"] = function () return rainbow_bridge() end,
+        },
         ["exits"] = {
             ["Market Castle Entry"] = function () return true end,
-            ["Ganon Castle Exterior After Bridge"] = function () return rainbow_bridge() or (longshot_anywhere() and trick('OOT_GANON_CASTLE_ENTRY')) end,
+            ["Ganon Castle Exterior After Bridge"] = function () return event('BRIDGE_OPEN') or (longshot_anywhere() and trick('OOT_GANON_CASTLE_ENTRY')) end,
             ["Near Fairy Fountain Defense"] = function () return can_lift_gold() end,
         },
         ["locations"] = {
@@ -5441,8 +5485,11 @@ function _oot_logic()
         ["age_change"] = false,
     },
     ["Ganon Castle Exterior After Bridge"] = {
+        ["events"] = {
+            ["BRIDGE_OPEN"] = function () return is_adult() and rainbow_bridge() end,
+        },
         ["exits"] = {
-            ["Ganon Castle Exterior"] = function () return is_adult() and rainbow_bridge() end,
+            ["Ganon Castle Exterior"] = function () return is_adult() and event('BRIDGE_OPEN') end,
             ["Hyrule Castle Courtyard"] = function () return is_child() and trick('OOT_COURTYARD_FROM_GANON') end,
             ["Hyrule Castle"] = function () return is_child() end,
             ["Ganon Castle"] = function () return is_adult() end,
@@ -6619,6 +6666,7 @@ function _oot_logic()
     },
     ["Lake Hylia"] = {
         ["events"] = {
+            ["CLEAR_STATE_LAKE"] = function () return is_adult() and (wisp_enabled(BOSS_MORPHA, MEDALLION_WATER) or event('WISP_CLEAR_STATE_LAKE')) end,
             ["SCARECROW_CHILD"] = function () return is_child() and can_play_scarecrow() end,
             ["SCARECROW"] = function () return is_adult() and event('SCARECROW_CHILD') end,
             ["BEAN_LAKE_HYLIA"] = function () return can_use_beans() end,
@@ -6635,12 +6683,12 @@ function _oot_logic()
             ["Zora Domain Shortcut"] = function () return is_child() and (can_dive_small() or longshot_anywhere() or (trick('OOT_LAKE_SHORTCUT') and hookshot_anywhere())) or time_travel_at_will() or (is_adult() and setting('openZdShortcut')) end,
             ["Laboratory"] = function () return true end,
             ["Water Temple"] = function () return has_iron_boots() and has_tunic_zora() and (can_hookshot() or setting('openDungeonsOot', 'Water')) or (trick('OOT_WATER_GOLD_SCALE') and is_adult() and (can_longshot() or setting('openDungeonsOot', 'Water')) and has_scale_raw(2)) end,
-            ["Fishing Pond"] = function () return is_child() or event('WATER_TEMPLE_CLEARED') or (is_adult() and scarecrow_hookshot()) or can_ride_bean(BEAN_LAKE_HYLIA) or hookshot_anywhere() or climb_anywhere() or time_travel_at_will() end,
+            ["Fishing Pond"] = function () return is_child() or lake_water_control() or (is_adult() and scarecrow_hookshot()) or can_ride_bean(BEAN_LAKE_HYLIA) or hookshot_anywhere() or climb_anywhere() or time_travel_at_will() end,
             ["Lake Hylia Grotto"] = function () return true end,
         },
         ["locations"] = {
             ["Lake Hylia Underwater Bottle"] = function () return is_child() and can_dive_small() end,
-            ["Lake Hylia Fire Arrow"] = function () return is_adult() and can_use_bow() and (event('WATER_TEMPLE_CLEARED') or scarecrow_longshot() or longshot_anywhere() or climb_anywhere()) end,
+            ["Lake Hylia Fire Arrow"] = function () return is_adult() and can_use_bow() and (lake_water_control() or scarecrow_longshot() or longshot_anywhere() or climb_anywhere()) end,
             ["Lake Hylia HP"] = function () return can_ride_bean(BEAN_LAKE_HYLIA) or (is_adult() and scarecrow_hookshot()) or hookshot_anywhere() end,
             ["Lake Hylia GS Lab Wall"] = function () return is_child() and gs_night() and (can_collect_distance() or (trick('OOT_LAB_WALL_GS') and (can_use_sword() or can_use_sticks())) or (time_travel_at_will() and (scarecrow_hookshot() or hookshot_anywhere() or can_ride_bean(BEAN_LAKE_HYLIA)) and (has_explosives_or_hammer() or can_use_din() or can_use_slingshot()))) end,
             ["Lake Hylia GS Island"] = function () return is_child() and gs_night() and can_damage_skull() end,
@@ -7128,8 +7176,8 @@ function _oot_logic()
             ["Gerudo Fortress Archery Reward 1"] = function () return soul_thief_guard() and can_ride_epona() and can_use_bow() and has('GERUDO_CARD') and can_use_wallet(1) and is_day() end,
             ["Gerudo Fortress Archery Reward 2"] = function () return soul_thief_guard() and can_ride_epona() and can_use_bow() and has('GERUDO_CARD') and can_use_wallet(1) and is_day() end,
             ["Gerudo Fortress GS Target"] = function () return is_adult() and gs_night() and (has('GERUDO_CARD') or time_travel_at_will()) and (can_collect_distance() or (climb_anywhere() and can_damage())) end,
-            ["Gerudo Fortress Crate Main 1"] = function () return true end,
-            ["Gerudo Fortress Crate Main 2"] = function () return true end,
+            ["Gerudo Fortress Crate Main 1"] = function () return evade_gerudo() or is_child() end,
+            ["Gerudo Fortress Crate Main 2"] = function () return evade_gerudo() or is_child() end,
             ["Gerudo Fortress Crate Main 3"] = function () return true end,
             ["Gerudo Fortress Crate Main 4"] = function () return true end,
             ["Gerudo Fortress Crate Main 5"] = function () return true end,
@@ -7147,8 +7195,8 @@ function _oot_logic()
             ["Gerudo Fortress Crate Archery 11"] = function () return is_child() or has('GERUDO_CARD') end,
             ["Gerudo Fortress Crate Archery 12"] = function () return is_child() or has('GERUDO_CARD') end,
             ["Gerudo Fortress Crate Archery 13"] = function () return is_child() or has('GERUDO_CARD') end,
-            ["Gerudo Fortress Wonder Item Sign Entrance"] = function () return can_use_bow() end,
-            ["Gerudo Fortress Wonder Item Sign Archery"] = function () return can_use_bow() and has('GERUDO_CARD') end,
+            ["Gerudo Fortress Wonder Item Sign Entrance"] = function () return can_hookshot() end,
+            ["Gerudo Fortress Wonder Item Sign Archery"] = function () return can_hookshot() and has('GERUDO_CARD') end,
         },
         ["age_change"] = true,
     },
@@ -10934,7 +10982,7 @@ function _oot_logic()
     },
     ["Shadow Temple After Boat"] = {
         ["exits"] = {
-            ["Shadow Temple Boss"] = function () return boss_key(BOSS_KEY_SHADOW) and can_use_bow() or longshot_anywhere() or climb_anywhere() end,
+            ["Shadow Temple Boss"] = function () return boss_key(BOSS_KEY_SHADOW) and (can_use_bow() or longshot_anywhere() or climb_anywhere()) end,
             ["Shadow Temple Final Side Rooms"] = function () return can_use_bow() and (can_play_time() and can_longshot() or hookshot_anywhere()) or longshot_anywhere() or climb_anywhere() end,
         },
         ["locations"] = {
