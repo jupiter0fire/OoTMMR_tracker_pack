@@ -37,6 +37,33 @@ local OOTMM_LOCATION_CHEST_LINKS = {
 }
 local OOTMM_LOCATION_CHEST_LINKS_PREV = {}
 function on_update_location_chest_link()
+    handle_location_chest_link("update")
+end
+function on_reset_location_chest_link()
+    handle_location_chest_link("reset")
+end
+function on_ready_location_chest_link()
+    -- NOTE: I wrote this code months ago, and don't even remember what problem I was trying to solve. Apparently it fixes _some_ kind of chest link issue. If you're reading this because something is broken, the culprit is likely to be the code added along with this comment. Good luck! :)
+    print("FIXME: This is questionable, and only here so the function exists")
+    handle_location_chest_link("reset")
+end
+function handle_location_chest_link(called_for)
+    if called_for == "reset" then
+        -- INFO: This is insanely fugly, and could be handled so much better in every way. But it kind of works. For now. Time for a web port.
+
+        for group, location_names in pairs(OOTMM_LOCATION_CHEST_LINKS) do
+            local location_name = location_names[1]
+            local location = Tracker:FindObjectForCode(location_name)
+            if not location then
+                print("WARNING: location link '" .. location_name .. "' not found")
+            else
+                OOTMM_LOCATION_CHEST_LINKS_PREV[group] = location.AvailableChestCount
+            end
+        end
+
+        return
+    end -- else assume "update" to keep indentation low. did someone say "goto"?
+
     for group, locations in pairs(OOTMM_LOCATION_CHEST_LINKS) do
         local location_cache = {}
         for _, location_name in ipairs(locations) do
@@ -57,17 +84,6 @@ function on_update_location_chest_link()
                 OOTMM_LOCATION_CHEST_LINKS_PREV[group] = location_cache[locations[1]].AvailableChestCount
                 break
             end
-        end
-    end
-end
-function on_ready_location_chest_link()
-    for group, location_names in pairs(OOTMM_LOCATION_CHEST_LINKS) do
-        local location_name = location_names[1]
-        local location = Tracker:FindObjectForCode(location_name)
-        if not location then
-            print("WARNING: location link '" .. location_name .. "' not found")
-        else
-            OOTMM_LOCATION_CHEST_LINKS_PREV[group] = location.AvailableChestCount
         end
     end
 end
