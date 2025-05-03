@@ -9365,6 +9365,42 @@ function _mm_logic()
         },
         ["age_change"] = false,
     },
+    ["Deku Palace Near US Beans Grotto"] = {
+        ["exits"] = {
+            ["Deku Palace Near Beans Grotto"] = function () return true end,
+            ["Deku Palace Main"] = function () return true end,
+        },
+        ["age_change"] = false,
+    },
+    ["Deku Palace Near Beans Grotto"] = {
+        ["exits"] = {
+            ["Deku Palace Near US Beans Grotto"] = function () return true end,
+            ["Deku Palace Beans Grotto"] = function () return true end,
+        },
+        ["age_change"] = false,
+    },
+    ["Deku Palace Near JP Grotto Climb Left"] = {
+        ["locations"] = {
+            ["Deku Palace Rupee Layout-Dependant 1"] = function () return true end,
+            ["Deku Palace Rupee Layout-Dependant 2"] = function () return true end,
+        },
+        ["age_change"] = false,
+    },
+    ["Deku Palace Near JP Grotto Climb Right"] = {
+        ["age_change"] = false,
+    },
+    ["Deku Palace Near JP Grotto Line Start"] = {
+        ["age_change"] = false,
+    },
+    ["Deku Palace Corner Ledge Top"] = {
+        ["age_change"] = false,
+    },
+    ["Deku Palace Corner Ledge Middle"] = {
+        ["age_change"] = false,
+    },
+    ["Deku Palace Corner Ledge Bottom"] = {
+        ["age_change"] = false,
+    },
 }
 
     return M
