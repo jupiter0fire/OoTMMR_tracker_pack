@@ -107,6 +107,90 @@ for i, v in ipairs(MM_TIME_SLICES) do
     MM_TIME_SLICES_INDEX[v] = i
 end
 
+-- BEGIN NEW PRICE DEFINITIONS (inspired by price.ts)
+local function flatten_tables_of_tables(tables_of_tables)
+    local flat = {}
+    if tables_of_tables then
+        for _, sub_table in ipairs(tables_of_tables) do
+            if sub_table then -- Ensure sub_table is not nil
+                for _, item in ipairs(sub_table) do
+                    table.insert(flat, item)
+                end
+            end
+        end
+    end
+    return flat
+end
+
+local OOT_SHOP_KOKIRI = { 10, 20, 60, 30, 15, 30, 10, 40 }
+local OOT_SHOP_BOMBCHU = { 180, 180, 180, 180, 100, 100, 100, 100 }
+local OOT_SHOP_ZORA = { 50, 90, 200, 15, 20, 60, 300, 10 }
+local OOT_SHOP_GORON = { 10, 10, 40, 200, 25, 50, 80, 120 }
+local OOT_SHOP_BAZAAR = { 20, 60, 90, 10, 35, 10, 15, 80 }
+local OOT_SHOP_POTION = { 200, 50, 30, 15, 300, 50, 30, 30 }
+
+local OOT_SHOPS_TABLES = {
+  OOT_SHOP_KOKIRI, OOT_SHOP_BOMBCHU, OOT_SHOP_ZORA, OOT_SHOP_GORON,
+  OOT_SHOP_BAZAAR, OOT_SHOP_POTION, OOT_SHOP_BAZAAR, OOT_SHOP_POTION,
+}
+
+local OOT_SCRUBS_OVERWORLD = { 40, 15, 20, 40, 40, 40, 40, 10, 20, 40, 40, 20, 40, 40, 40, 20, 40, 40, 40, 40, 20, 40, 40, 40, 40, 40, 40 }
+local OOT_SCRUBS_DT = { 0 }
+local OOT_SCRUBS_DT_MQ = { 50 }
+local OOT_SCRUBS_DC = { 40, 15, 20, 50 }
+local OOT_SCRUBS_DC_MQ = { 40, 15, 50, 40 }
+local OOT_SCRUBS_JJ = { 20 }
+local OOT_SCRUBS_JJ_MQ = { 0 }
+local OOT_SCRUBS_GC = {40, 40, 70, 40, 0}
+local OOT_SCRUBS_GC_MQ = {40, 40, 70, 40, 20}
+
+-- Base OOT_SCRUBS (without MQ runtime decision, used for length/range calculation)
+local OOT_SCRUBS_BASE_TABLES = { OOT_SCRUBS_OVERWORLD, OOT_SCRUBS_DT, OOT_SCRUBS_DC, OOT_SCRUBS_JJ, OOT_SCRUBS_GC }
+
+local OOT_MERCHANTS_TABLE = {200, 200, 100, 30}
+
+local MM_SHOP_BOMB = {30, 40, 50, 90}
+local MM_SHOP_CURIOSITY = {500}
+local MM_SHOP_TRADING = {30, 80, 80, 50, 10, 30, 30, 30}
+local MM_SHOP_POTION = {60, 10, 20}
+local MM_SHOP_GORON = {40, 40, 80}
+local MM_SHOP_ZORA = {90, 20, 60}
+
+local MM_SHOPS_TABLES = { MM_SHOP_BOMB, MM_SHOP_CURIOSITY, MM_SHOP_TRADING, MM_SHOP_POTION, MM_SHOP_GORON, MM_SHOP_ZORA }
+
+local MM_SHOP_EX_CURIOSITY = {100}
+local MM_SHOPS_EX_TABLES = { MM_SHOP_EX_CURIOSITY }
+
+local MM_TINGLE_TABLE = {5, 40, 20, 40, 20, 40, 20, 40, 20, 40, 20, 40}
+
+local STATIC_PRICES_CATEGORIES = {
+    OOT_SHOPS = flatten_tables_of_tables(OOT_SHOPS_TABLES),
+    OOT_SCRUBS_BASE = flatten_tables_of_tables(OOT_SCRUBS_BASE_TABLES), -- "BASE" used for initial construction and length
+    OOT_MERCHANTS = OOT_MERCHANTS_TABLE,
+    MM_SHOPS = flatten_tables_of_tables(MM_SHOPS_TABLES),
+    MM_SHOPS_EX = flatten_tables_of_tables(MM_SHOPS_EX_TABLES),
+    MM_TINGLE = MM_TINGLE_TABLE,
+}
+
+local STATIC_PRICE_CATEGORY_ORDER = {"OOT_SHOPS", "OOT_SCRUBS_BASE", "OOT_MERCHANTS", "MM_SHOPS", "MM_SHOPS_EX", "MM_TINGLE"}
+
+local INITIAL_DEFAULT_PRICES = {}
+for _, key in ipairs(STATIC_PRICE_CATEGORY_ORDER) do
+    local prices_list = STATIC_PRICES_CATEGORIES[key]
+    for _, price in ipairs(prices_list) do
+        table.insert(INITIAL_DEFAULT_PRICES, price)
+    end
+end
+
+local STATIC_PRICE_RANGES = {}
+local current_offset = 1
+for _, key in ipairs(STATIC_PRICE_CATEGORY_ORDER) do
+    STATIC_PRICE_RANGES[key:gsub("_BASE", "")] = current_offset -- Store as "OOT_SCRUBS" for lookup
+    current_offset = current_offset + #STATIC_PRICES_CATEGORIES[key]
+end
+STATIC_PRICE_RANGES["MAX"] = current_offset
+-- END NEW PRICE DEFINITIONS
+
 function mm_time_index_to_string(index)
     return MM_TIME_SLICES[index]
 end
@@ -370,71 +454,53 @@ local function reset_logic()
             replace_with_mq_logic(k)
         end
 
-        -- FIXME: Replace this hardcoded mess with auto-converted logic from prices.ts
-        -- Note to future self: You tried to auto convert this, you used typescript-to-lua. It fails in subtle ways. Use something else.
-        PRICE_HELPER.default_prices = { 10, 20, 60, 30, 15, 30, 10, 40, 180, 180, 180, 180, 100, 100, 100, 100, 50, 90,
-            200, 15, 20, 60, 300, 10, 10, 10, 40, 200, 25, 50, 80, 120, 20, 60, 90, 10, 35, 10, 15, 80, 200, 50, 30, 15,
-            300, 50, 30, 30, 20, 60, 90, 10, 35, 10, 15, 80, 200, 50, 30, 15, 300, 50, 30, 30, 40, 15, 20, 40, 40, 40,
-            40, 10, 20, 40, 40, 20, 40, 40, 40, 20, 40, 40, 40, 40, 20, 40, 40, 40, 40, 40, 40, 0, 40, 15, 20, 50, 20,
-            40, 40, 70, 40, 0, 30, 40, 50, 90, 500, 30, 80, 80, 50, 10, 30, 30, 30, 60, 10, 20, 40, 40, 80, 90, 20, 60,
-            100, 5, 40, 20, 40, 20, 40, 20, 40, 20, 40, 20, 40 }
-        PRICE_HELPER.range_index = {
-            ["OOT_SHOPS"] = 1,
-            ["OOT_SCRUBS"] = 65,
-            ["MM_SHOPS"] = 103,
-            ["MM_SHOPS_EX"] = 125,
-            ["MM_TINGLE"] = 126,
-            ["MAX"] = 138,
-        }
+        -- Initialize PRICE_HELPER with new structure
+        PRICE_HELPER.default_prices = deep_copy_table(INITIAL_DEFAULT_PRICES)
+        PRICE_HELPER.range_index = deep_copy_table(STATIC_PRICE_RANGES) -- Or direct assignment: PRICE_HELPER.range_index = STATIC_PRICE_RANGES
 
-        -- NOTE: This is partially translated from lib/combo/logic/price.ts
-        local OOT_SCRUBS_OVERWORLD = { 40, 15, 20, 40, 40, 40, 40, 10, 20, 40, 40, 20, 40, 40, 40, 20, 40, 40, 40, 40,
-            20, 40, 40, 40, 40, 40, 40 };
-        local OOT_SCRUBS_DT = { 0 };
-        local OOT_SCRUBS_DT_MQ = { 50 };
-        local OOT_SCRUBS_DC = { 40, 15, 20, 50 };
-        local OOT_SCRUBS_DC_MQ = { 40, 15, 50, 40 };
-        local OOT_SCRUBS_JJ = { 20 };
-        local OOT_SCRUBS_JJ_MQ = { 0 };
-        local OOT_SCRUBS_GC = { 40, 40, 70, 40, 0 };
-        local OOT_SCRUBS_GC_MQ = { 40, 40, 70, 40, 20 };
-
-        local ootScrubs = {}
-        table.insert(ootScrubs, OOT_SCRUBS_OVERWORLD)
+        -- Dynamically build OOT scrub prices based on MQ settings
+        local oot_scrubs_parts = {}
+        table.insert(oot_scrubs_parts, OOT_SCRUBS_OVERWORLD)
 
         if mq_price_params['DT'] then
-            table.insert(ootScrubs, OOT_SCRUBS_DT_MQ)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_DT_MQ)
         else
-            table.insert(ootScrubs, OOT_SCRUBS_DT)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_DT)
         end
 
         if mq_price_params['DC'] then
-            table.insert(ootScrubs, OOT_SCRUBS_DC_MQ)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_DC_MQ)
         else
-            table.insert(ootScrubs, OOT_SCRUBS_DC)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_DC)
         end
 
         if mq_price_params['JJ'] then
-            table.insert(ootScrubs, OOT_SCRUBS_JJ_MQ)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_JJ_MQ)
         else
-            table.insert(ootScrubs, OOT_SCRUBS_JJ)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_JJ)
         end
 
         if mq_price_params['Ganon'] then
-            table.insert(ootScrubs, OOT_SCRUBS_GC_MQ)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_GC_MQ)
         else
-            table.insert(ootScrubs, OOT_SCRUBS_GC)
+            table.insert(oot_scrubs_parts, OOT_SCRUBS_GC)
         end
 
-        local ootScrubsFlat = {}
-        for i, v in ipairs(ootScrubs) do
-            for j, w in ipairs(v) do
-                table.insert(ootScrubsFlat, w)
+        local ootScrubsFlat = flatten_tables_of_tables(oot_scrubs_parts)
+
+        -- Update the OOT_SCRUBS portion of PRICE_HELPER.default_prices
+        local oot_scrubs_start_index = PRICE_HELPER.range_index.OOT_SCRUBS
+        if oot_scrubs_start_index then
+            for i, price in ipairs(ootScrubsFlat) do
+                local target_idx = oot_scrubs_start_index + i - 1
+                if target_idx <= #PRICE_HELPER.default_prices then
+                    PRICE_HELPER.default_prices[target_idx] = price
+                else
+                    print("Warning: ootScrubsFlat index " .. i .. " (abs " .. target_idx .. ") out of bounds for PRICE_HELPER.default_prices (len " .. #PRICE_HELPER.default_prices .. ")")
+                end
             end
-        end
-
-        for i, price in ipairs(ootScrubsFlat) do
-            PRICE_HELPER.default_prices[PRICE_HELPER.range_index.OOT_SCRUBS + i - 1] = price
+        else
+            print("Warning: PRICE_HELPER.range_index.OOT_SCRUBS is not defined.")
         end
     end
 
