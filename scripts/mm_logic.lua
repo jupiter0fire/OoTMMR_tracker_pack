@@ -3081,12 +3081,12 @@ function _mm_logic()
     },
     ["Great Bay Temple Green Pipe 2"] = {
         ["exits"] = {
-            ["Great Bay Temple Green Pipe 3"] = function () return can_use_ice_arrows() and (can_use_fire_arrows() or short_hook_anywhere() or trick('MM_GBT_FIRELESS')) or hookshot_anywhere() end,
+            ["Great Bay Temple Green Pipe 3"] = function () return can_use_ice_arrows() or hookshot_anywhere() end,
             ["WARP_SONGS"] = function () return true end,
         },
         ["locations"] = {
             ["Great Bay Temple Green Pipe 2 Lower Chest"] = function () return can_hookshot() or (can_use_ice_arrows() and can_hookshot_short()) or has_hover_boots() end,
-            ["Great Bay Temple Green Pipe 2 Upper Chest"] = function () return can_hookshot() and can_use_ice_arrows() and (can_use_fire_arrows() or trick('MM_GBT_FIRELESS')) or short_hook_anywhere() or (has_hover_boots() and trick('MM_GBT_GREEN2_UPPER_HOVERS')) end,
+            ["Great Bay Temple Green Pipe 2 Upper Chest"] = function () return can_hookshot() and can_use_ice_arrows() or short_hook_anywhere() or (has_hover_boots() and trick('MM_GBT_GREEN2_UPPER_HOVERS')) end,
             ["Great Bay Temple Pot Green Pipe 2 1"] = function () return can_dive_small() and (has_arrows() or has_bombchu() or can_hookshot()) or underwater_walking() or hookshot_anywhere() or (can_use_ice_arrows() and short_hook_anywhere()) end,
             ["Great Bay Temple Pot Green Pipe 2 2"] = function () return can_dive_small() and (has_arrows() or has_bombchu() or can_hookshot()) or underwater_walking() or hookshot_anywhere() or (can_use_ice_arrows() and short_hook_anywhere()) end,
             ["Great Bay Temple Pot Green Pipe 2 3"] = function () return can_dive_small() and (has_arrows() or has_bombchu() or can_hookshot()) or underwater_walking() or hookshot_anywhere() or (can_use_ice_arrows() and short_hook_anywhere()) end,
@@ -3222,19 +3222,19 @@ function _mm_logic()
     },
     ["Moon Butterflies"] = {
         ["locations"] = {
-            ["Moon Butterfly 01"] = function () return true end,
-            ["Moon Butterfly 02"] = function () return true end,
-            ["Moon Butterfly 03"] = function () return true end,
-            ["Moon Butterfly 04"] = function () return true end,
-            ["Moon Butterfly 05"] = function () return true end,
-            ["Moon Butterfly 06"] = function () return true end,
-            ["Moon Butterfly 07"] = function () return true end,
-            ["Moon Butterfly 08"] = function () return true end,
-            ["Moon Butterfly 09"] = function () return true end,
-            ["Moon Butterfly 10"] = function () return true end,
-            ["Moon Butterfly 11"] = function () return true end,
-            ["Moon Butterfly 12"] = function () return true end,
-            ["Moon Butterfly 13"] = function () return true end,
+            ["Moon Butterfly 01"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 02"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 03"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 04"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 05"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 06"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 07"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 08"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 09"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 10"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 11"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 12"] = function () return can_reset_time_on_moon() end,
+            ["Moon Butterfly 13"] = function () return can_reset_time_on_moon() end,
         },
         ["age_change"] = false,
     },
@@ -5867,7 +5867,7 @@ function _mm_logic()
     },
     ["Near Goron Race"] = {
         ["events"] = {
-            ["TRIAL_BOULDER"] = function () return can_use_keg() or (setting('erOverworld', 'none') and event('POWDER_KEG_TRIAL') and (has_mask_goron() or has_mask_bunny())) end,
+            ["TRIAL_BOULDER"] = function () return can_use_keg() or (setting('erOverworld', 'none') and event('POWDER_KEG_TRIAL')) end,
         },
         ["exits"] = {
             ["Twin Islands"] = function () return true end,
@@ -5893,7 +5893,7 @@ function _mm_logic()
     },
     ["Goron Village"] = {
         ["events"] = {
-            ["POWDER_KEG_TRIAL"] = function () return soul_medigoron() and (is_spring() or can_use_fire_short_range()) and can_carry_keg() and (has_mask_goron() or scarecrow_hookshot()) end,
+            ["POWDER_KEG_TRIAL"] = function () return soul_medigoron() and (is_spring() or can_use_fire_short_range()) and can_carry_keg() and (has_mask_goron() or (trick('MM_KEG_HOOKBUNNY') and scarecrow_hookshot() and has_mask_bunny()) or (trick('MM_KEG_HOVERBUNNY') and has_hover_boots() and has_mask_bunny())) end,
             ["BUY_KEG"] = function () return soul_medigoron() and event('POWDER_KEG_TRIAL') and event('TRIAL_BOULDER') and has('POWDER_KEG') and can_use_wallet(2) end,
             ["MAGIC"] = function () return true end,
             ["ARROWS"] = function () return true end,
@@ -7246,15 +7246,22 @@ function _mm_logic()
         ["exits"] = {
             ["Road to Ikana Top"] = function () return true end,
             ["Ikana Canyon"] = function () return (can_use_ice_arrows() and soul_octorok() or trick('MM_ICELESS_IKANA')) and can_hookshot() or short_hook_anywhere() end,
-            ["Secret Shrine"] = function () return true end,
             ["Sakon Hideout"] = function () return event('MEET_KAFEI') and at(NIGHT3_PM_06_00) end,
-            ["Ikana Valley Grotto"] = function () return true end,
-            ["Swamp Front"] = function () return true end,
+            ["Ikana Valley Near Secret Shrine"] = function () return can_swim() end,
+            ["Swamp Front"] = function () return underwater_walking() or can_swim() end,
         },
         ["locations"] = {
             ["Ikana Valley Scrub Rupee"] = function () return soul_business_scrub() and has('DEED_OCEAN') and has_mask_zora() end,
             ["Ikana Valley Scrub HP"] = function () return has('DEED_OCEAN') and has_mask_zora() and has('MASK_DEKU') or hookshot_anywhere() end,
             ["Ikana Valley Scrub Shop"] = function () return soul_business_scrub() and can_use_wallet(2) end,
+        },
+        ["age_change"] = false,
+    },
+    ["Ikana Valley Near Secret Shrine"] = {
+        ["exits"] = {
+            ["Secret Shrine"] = function () return true end,
+            ["Ikana Valley Grotto"] = function () return true end,
+            ["Ikana Valley"] = function () return can_swim() end,
         },
         ["age_change"] = false,
     },
@@ -7270,7 +7277,7 @@ function _mm_logic()
             ["BUGS"] = function () return true end,
         },
         ["exits"] = {
-            ["Ikana Valley"] = function () return true end,
+            ["Ikana Valley Near Secret Shrine"] = function () return true end,
         },
         ["locations"] = {
             ["Ikana Valley Grotto"] = function () return true end,
@@ -7857,7 +7864,7 @@ function _mm_logic()
     },
     ["Secret Shrine"] = {
         ["exits"] = {
-            ["Ikana Valley"] = function () return can_reset_time() end,
+            ["Ikana Valley Near Secret Shrine"] = function () return can_reset_time() end,
             ["Secret Shrine Entrance"] = function () return can_reset_time_dungeon() end,
         },
         ["age_change"] = false,

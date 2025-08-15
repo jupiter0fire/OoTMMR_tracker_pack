@@ -108,7 +108,7 @@ for i, v in ipairs(MM_TIME_SLICES) do
     MM_TIME_SLICES_INDEX[v] = i
 end
 
--- BEGIN NEW PRICE DEFINITIONS (inspired by price.ts)
+-- BEGIN AI SLOP (inspired by price.ts from the OoTMM sources)
 local function flatten_tables_of_tables(tables_of_tables)
     local flat = {}
     if tables_of_tables then
@@ -190,7 +190,7 @@ for _, key in ipairs(STATIC_PRICE_CATEGORY_ORDER) do
     current_offset = current_offset + #STATIC_PRICES_CATEGORIES[key]
 end
 STATIC_PRICE_RANGES["MAX"] = current_offset
--- END NEW PRICE DEFINITIONS
+-- END AI SLOP
 
 function mm_time_index_to_string(index)
     return MM_TIME_SLICES[index]
@@ -457,7 +457,7 @@ local function reset_logic()
 
         -- Initialize PRICE_HELPER with new structure
         PRICE_HELPER.default_prices = deep_copy_table(INITIAL_DEFAULT_PRICES)
-        PRICE_HELPER.range_index = deep_copy_table(STATIC_PRICE_RANGES) -- Or direct assignment: PRICE_HELPER.range_index = STATIC_PRICE_RANGES
+        PRICE_HELPER.range_index = deep_copy_table(STATIC_PRICE_RANGES)
 
         -- Dynamically build OOT scrub prices based on MQ settings
         local oot_scrubs_parts = {}

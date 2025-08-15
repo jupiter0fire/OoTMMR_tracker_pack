@@ -5396,7 +5396,7 @@ function _oot_logic()
             ["Lon Lon Ranch Pots"] = function () return is_child() end,
             ["Lon Lon Ranch Silo"] = function () return true end,
             ["Lon Lon Ranch Stables"] = function () return true end,
-            ["Lon Lon Ranch House"] = function () return is_day() end,
+            ["Lon Lon Ranch House"] = function () return is_adult() or is_day() end,
             ["Lon Lon Ranch Grotto"] = function () return is_child() end,
         },
         ["locations"] = {
@@ -5895,7 +5895,7 @@ function _oot_logic()
         },
         ["exits"] = {
             ["Hyrule Field"] = function () return true end,
-            ["Kakariko Trail Start"] = function () return setting('kakarikoGate', 'open') or event('KAKARIKO_GATE_OPEN') or is_adult() or climb_anywhere() or hookshot_anywhere() end,
+            ["Kakariko Trail Start"] = function () return setting('kakarikoGate', 'open') or event('KAKARIKO_GATE_OPEN') or (is_adult() and (not setting('kakarikoGate', 'closed'))) or climb_anywhere() or hookshot_anywhere() end,
             ["Graveyard"] = function () return true end,
             ["Kakariko Well"] = function () return is_adult() or has_iron_boots() or longshot_anywhere() or event('WELL_DRAIN') or setting('openDungeonsOot', 'BotW') end,
             ["Skulltula House"] = function () return true end,
@@ -5979,7 +5979,7 @@ function _oot_logic()
     },
     ["Kakariko Trail Start"] = {
         ["exits"] = {
-            ["Kakariko"] = function () return setting('kakarikoGate', 'open') or event('KAKARIKO_GATE_OPEN') or is_adult() or trick('OOT_PASS_COLLISION') or climb_anywhere() or hookshot_anywhere() end,
+            ["Kakariko"] = function () return setting('kakarikoGate', 'open') or event('KAKARIKO_GATE_OPEN') or (is_adult() and (not setting('kakarikoGate', 'closed'))) or trick('OOT_PASS_COLLISION') or climb_anywhere() or hookshot_anywhere() end,
             ["Death Mountain"] = function () return true end,
         },
         ["age_change"] = true,
