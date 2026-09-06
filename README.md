@@ -1,3 +1,5 @@
+# This tracker pack is deprecated! If you want to track OoTMM please use our new webtracker at [The Last Tracker](https://www.thelasttracker.org/)!
+
 # EmoTracker Pack (map + items) for OoTMM
 
 ## Usage
